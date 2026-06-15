@@ -390,13 +390,22 @@ function renderNewsPager() {
 }
 
 function filterNews() {
-  const src = document.getElementById('news-src').value;
-  const q = (document.getElementById('news-q').value || '').toLowerCase();
+  const src = document.getElementById('news-src').value; // 메뉴 선택값 (all, cisa, thn)
+  const q = (document.getElementById('news-q').value || '').toLowerCase(); // 검색어
+  
   newsFiltered = newsAll.filter(n => {
-    if (src !== 'all' && n.source !== src) return false;
+    const itemSource = (n.source || '').toLowerCase();
+    
+    // 💡 벤더사 필터 꼬임 방지를 위해 포함(includes) 조건으로 유연하게 매칭합니다.
+    if (src !== 'all') {
+      if (src === 'cisa' && !itemSource.includes('cisa')) return false;
+      if (src === 'thn' && !itemSource.includes('thn') && !itemSource.includes('hacker')) return false;
+    }
+    
     if (!q) return true;
     return (n.title + (n.desc||'')).toLowerCase().includes(q);
   });
+  
   newsPage = 0;
   renderNewsPage();
 }
@@ -406,51 +415,32 @@ async function loadNews(force) {
   el.innerHTML = '<div class="loading"><div class="spinner"></div><br>뉴스 불러오는 중...</div>';
   newsAll = [];
 
-  // 1) CISA Alerts — 직접 fetch (오류 수정 버전)
+  // 💡 CISA 직접 fetch는 브라우저 차단(CORS)이 나므로 걷어내고,
+  // GitHub Actions가 수집해 준 안전한 통합본(news.json) 파일만 가져옵니다[cite: 104].
   try {
-    const r = await fetch('https://www.cisa.gov/sites/default/files/feeds/alerts.json');
-    if (r.ok) {
-      const d = await r.json();
-      const entries = d.entries || d.items || d.alerts || [];
-      const items = entries.slice(0, 40).map(a => ({
-        source: 'cisa',
-        // 💡 CISA 데이터 포맷 규격에 맞게 매핑
-        title: a.title || '',
-        desc: a.summary || a.content || '',
-        url: a.url || a.id || 'https://www.cisa.gov/news-events/alerts',
-        date: a.updated || a.published || '',
-      }));
-      newsAll.push(...items);
+    const r = await fetch('./news.json'); // [cite: 104]
+    if (r.ok) { // [cite: 104]
+      newsAll = await r.json(); // [cite: 104]
+      document.getElementById('nb-news').style.display = newsAll.length ? '' : 'none'; // [cite: 104, 105]
     }
   } catch(e) { 
-    console.warn('CISA Alerts fetch 실패:', e.message);
+    console.warn('news.json 불러오기 실패:', e.message); // [cite: 105]
   }
 
-  // 2) GitHub Actions로 생성된 news.json — RSS 피드 통합본 fetch
-  try {
-    const r = await fetch('./news.json');
-    if (r.ok) {
-      const items = await r.json();
-      newsAll.push(...items);
-      document.getElementById('nb-news').style.display = items.length ? '' : 'none';
-    }
-  } catch(e) { 
-    console.warn('news.json 없음 (GitHub Actions 미실행):', e.message);
-  }
+  // 전체 뉴스를 최신 날짜 순으로 정렬 [cite: 106]
+  newsAll.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0)); // [cite: 106]
 
-  // 전체 뉴스를 날짜 내림차순(최신순)으로 정렬
-  newsAll.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
-
-  if (!newsAll.length) {
+  if (!newsAll.length) { // [cite: 106]
     el.innerHTML = `<div class="empty">
       <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 22h16a2 2 0 002-2V4a2 2 0 00-2-2H8a2 2 0 00-2 2v16a2 2 0 01-2 2zm0 0a2 2 0 01-2-2v-9c0-1.1.9-2 2-2h2"/></svg>
-      뉴스를 불러오지 못했습니다
+      뉴스를 불러오지 못했습니다 [cite: 107]
     </div>`;
-    return;
+    return; // [cite: 108]
   }
 
-  newsFiltered = [...newsAll];
-  renderNewsPage();
+  // 💡 [중요] 사용자가 처음에 'CISA Alerts' 메뉴를 누른 상태에서 뉴스를 켰을 때도 
+  // 바로 필터링이 먹히도록 filterNews()를 실행합니다.
+  filterNews();
 }
 // ── /News ─────────────────────────────────────────
 
