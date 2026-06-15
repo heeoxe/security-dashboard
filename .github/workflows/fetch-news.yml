@@ -10,12 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.0
 
       - name: Fetch RSS feeds & build news.json
         run: |
@@ -49,7 +47,6 @@ jobs:
                 title = (item.findtext("title") or "").strip()
                 link  = (item.findtext("link") or "").strip()
                 desc  = (item.findtext("description") or "").strip()
-                # strip HTML tags simply
                 import re
                 desc = re.sub(r"<[^>]+>", "", desc).strip()[:300]
                 pub   = item.findtext("pubDate") or ""
@@ -69,7 +66,6 @@ jobs:
             print(f"[{feed['source']}] {len(items)}개 수집")
             news.extend(items)
 
-          # 날짜 내림차순 정렬
           news.sort(key=lambda x: x.get("date", ""), reverse=True)
 
           with open("news.json", "w", encoding="utf-8") as f:
