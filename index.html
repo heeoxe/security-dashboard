@@ -6,28 +6,28 @@
 <title>Security Intel Dashboard</title>
 <style>
   :root {
-    --bg: #F5F5F5;
-    --bg2: #181c27;
-    --bg3: #1e2333;
-    --border: #2a2f42;
-    --border2: #363d56;
-    --text: #e8eaf0;
-    --text2: #8b91a8;
-    --text3: #555d78;
-    --accent: #4f7cff;
-    --accent2: #1a2a5e;
-    --critical: #ff4d4d;
-    --critical-bg: #2a0f0f;
-    --high: #ff9a3c;
-    --high-bg: #2a1a08;
-    --medium: #4f7cff;
-    --medium-bg: #0d1a3a;
-    --low: #3ecf8e;
-    --low-bg: #0a2318;
-    --cisa: #a78bfa;
-    --cisa-bg: #1e1433;
-    --nvd: #3ecf8e;
-    --nvd-bg: #0a2318;
+    --bg: #faf8f4;
+    --bg2: #ffffff;
+    --bg3: #f2efe9;
+    --border: #e8e3d9;
+    --border2: #d6cfc3;
+    --text: #2c2820;
+    --text2: #6b6358;
+    --text3: #a39b8e;
+    --accent: #3d6fcc;
+    --accent2: #e8eef8;
+    --critical: #c0392b;
+    --critical-bg: #fdf0ef;
+    --high: #b85c00;
+    --high-bg: #fdf4eb;
+    --medium: #2c5fa8;
+    --medium-bg: #eef2fb;
+    --low: #1e7a52;
+    --low-bg: #edf7f2;
+    --cisa: #6d4fb5;
+    --cisa-bg: #f3f0fb;
+    --nvd: #1e7a52;
+    --nvd-bg: #edf7f2;
     --radius: 8px;
     --radius-lg: 12px;
   }
@@ -36,7 +36,7 @@
 
   header { border-bottom: 1px solid var(--border); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; }
   .logo { font-size: 15px; font-weight: 600; letter-spacing: -0.3px; display: flex; align-items: center; gap: 10px; }
-  .logo-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px var(--accent); }
+  .logo-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 6px rgba(61,111,204,0.4); }
   .header-meta { font-size: 12px; color: var(--text3); }
 
   .stat-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border-bottom: 1px solid var(--border); }
@@ -48,7 +48,7 @@
   .sidebar { border-right: 1px solid var(--border); padding: 1.25rem 0; }
   .nav-section { padding: 0 1rem; margin-bottom: 1.5rem; }
   .nav-label { font-size: 10px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px; padding: 0 4px; }
-  .nav-item { display: flex; align-items: center; gap: 8px; padding: 7px 10px; border-radius: var(--radius); cursor: pointer; font-size: 13px; color: var(--text2); transition: all 0.15s; border: none; }
+  .nav-item { display: flex; align-items: center; gap: 8px; padding: 7px 10px; border-radius: var(--radius); cursor: pointer; font-size: 13px; color: var(--text2); transition: all 0.15s; border: none; background: none; width: 100%; text-align: left; }
   .nav-item:hover { background: var(--bg3); color: var(--text); }
   .nav-item.active { background: var(--accent2); color: var(--accent); font-weight: 500; }
   .nav-item svg { flex-shrink: 0; }
@@ -68,7 +68,7 @@
   .toolbar input { flex: 1; min-width: 200px; }
   .toolbar input:focus, .toolbar select:focus { border-color: var(--accent); }
   .toolbar select option { background: var(--bg2); }
-  .btn { height: 36px; padding: 0 16px; border-radius: var(--radius); border: 1px solid var(--border); background: var(--bg2); color: var(--text); font-size: 13px; cursor: pointer; display: inline-flex; }
+  .btn { height: 36px; padding: 0 16px; border-radius: var(--radius); border: 1px solid var(--border); background: var(--bg2); color: var(--text); font-size: 13px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s; white-space: nowrap; }
   .btn:hover { border-color: var(--border2); background: var(--bg3); }
   .btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
   .btn-primary:hover { opacity: 0.9; }
@@ -79,8 +79,8 @@
   .chip.on { border-color: var(--accent); color: var(--accent); background: var(--accent2); }
 
   .cards { display: flex; flex-direction: column; gap: 8px; }
-  .card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1rem 1.25rem; transition: border-color 0.15s; }
-  .card:hover { border-color: var(--border2); }
+  .card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1rem 1.25rem; transition: all 0.15s; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .card:hover { border-color: var(--border2); box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
   .card-top { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 8px; }
   .card-title { font-size: 13px; font-weight: 500; flex: 1; line-height: 1.4; color: var(--text); }
   .card-meta { display: flex; gap: 12px; flex-wrap: wrap; font-size: 11px; color: var(--text3); margin-bottom: 8px; }
@@ -90,13 +90,13 @@
   .card-footer .btn { height: 28px; font-size: 11px; padding: 0 10px; }
 
   .badge { display: inline-flex; align-items: center; font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 20px; white-space: nowrap; }
-  .bc { background: var(--critical-bg); color: var(--critical); border: 1px solid #4a1515; }
-  .bh { background: var(--high-bg); color: var(--high); border: 1px solid #4a2808; }
-  .bm { background: var(--medium-bg); color: var(--medium); border: 1px solid #0f2050; }
-  .bl { background: var(--low-bg); color: var(--low); border: 1px solid #0f3020; }
+  .bc { background: var(--critical-bg); color: var(--critical); border: 1px solid #f0c4c0; }
+  .bh { background: var(--high-bg); color: var(--high); border: 1px solid #f0d9c0; }
+  .bm { background: var(--medium-bg); color: var(--medium); border: 1px solid #c0d0ee; }
+  .bl { background: var(--low-bg); color: var(--low); border: 1px solid #b8dece; }
   .bn { background: var(--bg3); color: var(--text2); border: 1px solid var(--border); }
-  .src-cisa { background: var(--cisa-bg); color: var(--cisa); border: 1px solid #2d1f4a; font-size: 10px; }
-  .src-nvd { background: var(--nvd-bg); color: var(--nvd); border: 1px solid #0f3020; font-size: 10px; }
+  .src-cisa { background: var(--cisa-bg); color: var(--cisa); border: 1px solid #d0c4ee; font-size: 10px; }
+  .src-nvd { background: var(--nvd-bg); color: var(--nvd); border: 1px solid #b8dece; font-size: 10px; }
 
   .cvss-row { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
   .cvss-label { font-size: 11px; color: var(--text3); min-width: 64px; font-variant-numeric: tabular-nums; }
@@ -106,7 +106,7 @@
   .cve-id { font-family: 'SF Mono', 'Cascadia Code', monospace; font-size: 11px; color: var(--text3); }
 
   .loading { text-align: center; padding: 3rem; color: var(--text3); font-size: 13px; }
-  .spinner { display: inline-block; width: 20px; height: 20px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 8px; }
+  .spinner { display: inline-block; width: 20px; height: 20px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 12px; }
   @keyframes spin { to { transform: rotate(360deg); } }
 
   .empty { text-align: center; padding: 3rem; color: var(--text3); font-size: 13px; }
@@ -161,8 +161,13 @@
         <span class="nav-badge hot" id="nb-kev">—</span>
       </button>
       <button class="nav-item" onclick="switchPanel('nvd', this)">
-        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M21 19c0 1.66-4 3-9 3s-9-1.34-9-3"/></svg>
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
         NVD CVE
+      </button>
+      <button class="nav-item" onclick="switchPanel('news', this)">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 22h16a2 2 0 002-2V4a2 2 0 00-2-2H8a2 2 0 00-2 2v16a2 2 0 01-2 2zm0 0a2 2 0 01-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8M15 18h-5M10 6h8v4h-8z"/></svg>
+        보안 뉴스
+        <span class="nav-badge hot" id="nb-news" style="display:none">NEW</span>
       </button>
     </div>
     <div class="nav-section">
@@ -194,7 +199,7 @@
           <option value="vendor">벤더순</option>
         </select>
         <button class="btn" onclick="loadKev(true)">
-          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.35-4.35"/></svg>
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
           새로고침
         </button>
       </div>
@@ -230,9 +235,49 @@
 
     <!-- OWASP -->
     <div id="panel-owasp" class="panel">
-      <div class="owasp-grid" id="owasp-list">
-        <div class="loading" style="grid-column:1/-1"><div class="spinner"></div></div>
+      <div class="toolbar" style="margin-bottom:0.75rem">
+        <select id="owasp-cat" onchange="renderOwasp()" style="font-weight:500">
+          <option value="webapp">Web Application Top 10 (2021)</option>
+          <option value="llm">LLM AI Top 10 (2025)</option>
+          <option value="api">API Security Top 10 (2023)</option>
+          <option value="mobile">Mobile Top 10 (2024)</option>
+          <option value="k8s">Kubernetes Top 10 (2022)</option>
+          <option value="cicd">CI/CD Security Top 10 (2022)</option>
+          <option value="lowcode">Low-Code/No-Code Top 10 (2024)</option>
+          <option value="nhi">Non-Human Identities Top 10 (2025)</option>
+        </select>
+        <a id="owasp-link" class="btn" href="" target="_blank" rel="noopener">
+          <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
+          공식 페이지
+        </a>
       </div>
+      <div style="font-size:11px;color:var(--text3);margin-bottom:1rem" id="owasp-meta"></div>
+      <div class="owasp-grid" id="owasp-list"></div>
+    </div>
+
+    <!-- 보안 뉴스 -->
+    <div id="panel-news" class="panel">
+      <div class="toolbar">
+        <select id="news-src" onchange="filterNews()">
+          <option value="all">전체 소스</option>
+          <option value="cisa">CISA Alerts</option>
+          <option value="thn">The Hacker News</option>
+          <option value="bc">Bleeping Computer</option>
+        </select>
+        <input id="news-q" type="text" placeholder="키워드 검색..." oninput="filterNews()" />
+        <button class="btn" onclick="loadNews(true)">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+          새로고침
+        </button>
+      </div>
+      <div style="font-size:11px;color:var(--text3);margin-bottom:1rem;display:flex;align-items:center;gap:8px">
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+        CISA Alerts는 실시간 fetch · RSS 뉴스는 GitHub Actions로 매일 자동 갱신 (<code style="font-size:10px;background:var(--bg3);padding:1px 5px;border-radius:3px">news.json</code>)
+      </div>
+      <div class="cards" id="news-list">
+        <div class="loading"><div class="spinner"></div><br>뉴스 불러오는 중...</div>
+      </div>
+      <div class="pager" id="news-pager"></div>
     </div>
 
     <!-- 저장됨 -->
@@ -291,7 +336,121 @@ function switchPanel(id, el) {
   el.classList.add('active');
   if (id === 'saved') renderSaved();
   if (id === 'owasp') loadOwasp();
+  if (id === 'news') loadNews();
 }
+
+// ── News ──────────────────────────────────────────
+let newsAll = [], newsFiltered = [], newsPage = 0;
+
+function newsSourceBadge(src) {
+  const map = {
+    cisa: { label: 'CISA Alert', style: 'background:var(--cisa-bg);color:var(--cisa);border:1px solid #d0c4ee' },
+    thn:  { label: 'The Hacker News', style: 'background:#fff3e0;color:#b85c00;border:1px solid #f0d9c0' },
+    bc:   { label: 'Bleeping Computer', style: 'background:#e8f4fb;color:#1565a8;border:1px solid #b8d4ee' },
+  };
+  const s = map[src] || { label: src, style: 'background:var(--bg3);color:var(--text2);border:1px solid var(--border)' };
+  return `<span class="badge" style="font-size:10px;${s.style}">${s.label}</span>`;
+}
+
+function newsCard(item) {
+  const date = item.date ? new Date(item.date).toLocaleDateString('ko-KR', { year:'numeric', month:'short', day:'numeric' }) : '';
+  return `<div class="card">
+    <div class="card-top">
+      ${newsSourceBadge(item.source)}
+      <div class="card-title">${escHtml(item.title)}</div>
+    </div>
+    <div class="card-meta">
+      ${date ? `<span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${date}</span>` : ''}
+    </div>
+    ${item.desc ? `<div class="card-desc">${escHtml(item.desc.slice(0, 200))}${item.desc.length > 200 ? '…' : ''}</div>` : ''}
+    <div class="card-footer">
+      <a class="btn" href="${escHtml(item.url)}" target="_blank" rel="noopener">
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
+        원문 보기
+      </a>
+    </div>
+  </div>`;
+}
+
+function renderNewsPage() {
+  const el = document.getElementById('news-list');
+  const start = newsPage * PAGE, slice = newsFiltered.slice(start, start + PAGE);
+  if (!slice.length) { el.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>결과가 없습니다</div>'; renderNewsPager(); return; }
+  el.innerHTML = slice.map(newsCard).join('');
+  renderNewsPager();
+}
+
+function renderNewsPager() {
+  const total = Math.ceil(newsFiltered.length / PAGE);
+  const el = document.getElementById('news-pager');
+  if (total <= 1) { el.innerHTML = ''; return; }
+  el.innerHTML = `<button class="btn" onclick="newsPage=Math.max(0,newsPage-1);renderNewsPage()" ${newsPage===0?'disabled':''}>← 이전</button>
+    <span>${newsPage+1} / ${total} (${newsFiltered.length}개)</span>
+    <button class="btn" onclick="newsPage=Math.min(${total-1},newsPage+1);renderNewsPage()" ${newsPage>=total-1?'disabled':''}>다음 →</button>`;
+}
+
+function filterNews() {
+  const src = document.getElementById('news-src').value;
+  const q = (document.getElementById('news-q').value || '').toLowerCase();
+  newsFiltered = newsAll.filter(n => {
+    if (src !== 'all' && n.source !== src) return false;
+    if (!q) return true;
+    return (n.title + (n.desc||'')).toLowerCase().includes(q);
+  });
+  newsPage = 0;
+  renderNewsPage();
+}
+
+async function loadNews(force) {
+  const el = document.getElementById('news-list');
+  el.innerHTML = '<div class="loading"><div class="spinner"></div><br>뉴스 불러오는 중...</div>';
+  newsAll = [];
+
+  // 1) CISA Alerts — 직접 fetch
+  try {
+    const r = await fetch('https://www.cisa.gov/sites/default/files/feeds/alerts.json');
+    if (r.ok) {
+      const d = await r.json();
+      const items = (d.items || d.alerts || []).slice(0, 30).map(a => ({
+        source: 'cisa',
+        title: a.title || a.name || '',
+        desc: a.summary || a.description || '',
+        url: a.url || a.link || 'https://www.cisa.gov/news-events/alerts',
+        date: a.date_updated || a.date || a.pubDate || '',
+      }));
+      newsAll.push(...items);
+    }
+  } catch(e) { console.warn('CISA Alerts fetch 실패:', e.message); }
+
+  // 2) GitHub Actions로 생성된 news.json — 같은 레포에서 fetch
+  try {
+    const r = await fetch('./news.json');
+    if (r.ok) {
+      const items = await r.json();
+      newsAll.push(...items);
+      document.getElementById('nb-news').style.display = items.length ? '' : 'none';
+    }
+  } catch(e) { console.warn('news.json 없음 (GitHub Actions 미실행):', e.message); }
+
+  // 날짜 내림차순 정렬
+  newsAll.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
+
+  if (!newsAll.length) {
+    el.innerHTML = `<div class="empty">
+      <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 22h16a2 2 0 002-2V4a2 2 0 00-2-2H8a2 2 0 00-2 2v16a2 2 0 01-2 2zm0 0a2 2 0 01-2-2v-9c0-1.1.9-2 2-2h2"/></svg>
+      뉴스를 불러오지 못했습니다<br>
+      <small style="font-size:11px;color:var(--text3);margin-top:4px;display:block">
+        GitHub Actions 워크플로우가 아직 실행되지 않았거나 로컬 환경입니다<br>
+        <code style="font-size:10px;background:var(--bg3);padding:1px 5px;border-radius:3px">.github/workflows/fetch-news.yml</code> 을 레포에 추가하고 Actions를 실행해주세요
+      </small>
+    </div>`;
+    return;
+  }
+
+  newsFiltered = [...newsAll];
+  renderNewsPage();
+}
+// ── /News ─────────────────────────────────────────
 
 function sevClass(s) {
   return { CRITICAL: 'bc', HIGH: 'bh', MEDIUM: 'bm', LOW: 'bl' }[(s||'').toUpperCase()] || 'bn';
@@ -324,7 +483,7 @@ function kevCard(item) {
       <div class="card-title">${escHtml(item.title)}</div>
     </div>
     <div class="card-meta">
-      <span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${item.added || ''}</span>
+      <span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${item.added}</span>
       <span class="cve-id">${item.cve}</span>
       <span>${escHtml(item.vendor)} / ${escHtml(item.product)}</span>
       ${item.due ? `<span style="color:var(--high)">패치 마감 ${item.due}</span>` : ''}
@@ -333,7 +492,7 @@ function kevCard(item) {
     <div class="card-footer" style="margin-top:10px">
       <button class="btn" onclick='toggleSave(${JSON.stringify(bm)})'>${sv ? '★ 저장됨' : '☆ 저장'}</button>
       <a class="btn" href="https://www.cve.org/CVERecord?id=${item.cve}" target="_blank" rel="noopener">
-        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M9 9h6"/></svg>
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
         CVE 원문
       </a>
       <a class="btn" href="https://nvd.nist.gov/vuln/detail/${item.cve}" target="_blank" rel="noopener">NVD 상세</a>
@@ -352,7 +511,7 @@ function nvdCard(item) {
       <div class="card-title cve-id" style="font-size:13px">${item.cve}</div>
     </div>
     <div class="card-meta">
-      <span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${item.published || ''}</span>
+      <span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${item.published}</span>
       ${item.cwe ? `<span>${escHtml(item.cwe)}</span>` : ''}
     </div>
     ${cvss ? `<div class="cvss-row"><span class="cvss-label">CVSS ${cvss.toFixed(1)}</span><div class="cvss-track"><div class="cvss-fill" style="width:${Math.round(cvss/10*100)}%;background:${cvssColor(cvss)}"></div></div></div>` : ''}
@@ -361,7 +520,7 @@ function nvdCard(item) {
     <div class="card-footer">
       <button class="btn" onclick='toggleSave(${JSON.stringify(bm)})'>${sv ? '★ 저장됨' : '☆ 저장'}</button>
       <a class="btn" href="https://nvd.nist.gov/vuln/detail/${item.cve}" target="_blank" rel="noopener">
-        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M9 9h6"/></svg>
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
         NVD 원문
       </a>
     </div>
@@ -372,7 +531,7 @@ function renderKevPage() {
   const el = document.getElementById('kev-list');
   const start = kevPage * PAGE;
   const slice = kevFiltered.slice(start, start + PAGE);
-  if (!slice.length) { el.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>검색 결과가 없습니다</div>'; renderKevPager(); return; }
+  if (!slice.length) { el.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>결과가 없습니다</div>'; renderKevPager(); return; }
   el.innerHTML = slice.map(kevCard).join('');
   renderKevPager();
 }
@@ -438,7 +597,7 @@ async function loadKev(force) {
     kevFiltered = [...kevAll];
     renderKevPage();
   } catch (e) {
-    el.innerHTML = `<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>오류: ${e.message}<br><small style="font-size:11px">CISA 서버에 문제가 있을 수 있습니다</small></div>`;
+    el.innerHTML = `<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>로딩 실패: ${e.message}</div>`;
   }
 }
 
@@ -495,24 +654,162 @@ async function searchNvd() {
   }
 }
 
-const OWASP = [
-  { rank:'A01', name:'Broken Access Control', sev:'CRITICAL', desc:'인증된 사용자가 허가되지 않은 리소스에 접근할 수 있는 취약점. 2021년 가장 심각한 위협으로 94%의 테스트에서 발견.' },
-  { rank:'A02', name:'Cryptographic Failures', sev:'HIGH', desc:'민감한 데이터 전송 및 저장 시 암호화 미적용 또는 취약한 암호 알고리즘 사용으로 인한 데이터 노출 위험.' },
-  { rank:'A03', name:'Injection', sev:'CRITICAL', desc:'SQL, NoSQL, OS 명령어 등에 신뢰할 수 없는 데이터가 삽입되어 의도치 않은 명령이 실행되는 취약점.' },
-  { rank:'A04', name:'Insecure Design', sev:'HIGH', desc:'설계 단계의 보안 결함. 위협 모델링 부재, 보안 설계 패턴 미적용으로 발생하는 구조적 취약점.' },
-  { rank:'A05', name:'Security Misconfiguration', sev:'HIGH', desc:'불필요한 기능 활성화, 기본 계정, 오류 메시지의 과도한 정보 노출 등 잘못된 보안 설정.' },
-  { rank:'A06', name:'Vulnerable and Outdated Components', sev:'HIGH', desc:'알려진 취약점이 있는 구성 요소 사용. 미패치 OS, 프레임워크, 라이브러리 등이 대상.' },
-  { rank:'A07', name:'Identification and Authentication Failures', sev:'HIGH', desc:'세션 관리, 자격증��� 관리 취약점. 무차별 대입 공격, 약한 패스워드, 세션 고정 공격 등.' },
-  { rank:'A08', name:'Software and Data Integrity Failures', sev:'HIGH', desc:'무결성 검증 없는 소프트웨어 업데이트, CI/CD 파이프라인 취약점, 안전하지 않은 역직렬화.' },
-  { rank:'A09', name:'Security Logging and Monitoring Failures', sev:'MEDIUM', desc:'침해 사고 탐지·대응에 필요한 로깅·모니터링 부재. 공격자가 오래 은닉할 수 있는 환경.' },
-  { rank:'A10', name:'Server-Side Request Forgery (SSRF)', sev:'HIGH', desc:'서버가 사용자가 제공한 URL로 요청을 전송할 때 목적지 검증 없이 내부 리소스에 접근되는 취약점.' }
-];
+const OWASP_DATA = {
+  webapp: {
+    label: 'Web Application Top 10',
+    version: '2021',
+    url: 'https://owasp.org/www-project-top-ten/',
+    items: [
+      { rank:'A01', name:'Broken Access Control', sev:'CRITICAL', desc:'인증된 사용자가 허가되지 않은 리소스에 접근할 수 있는 취약점. 94%의 애플리케이션에서 발견되어 2021년 1위로 격상.' },
+      { rank:'A02', name:'Cryptographic Failures', sev:'HIGH', desc:'민감한 데이터 전송·저장 시 암호화 미적용 또는 취약한 암호 알고리즘 사용. 이전의 "Sensitive Data Exposure"에서 명칭 변경.' },
+      { rank:'A03', name:'Injection', sev:'CRITICAL', desc:'SQL, NoSQL, OS 명령어, LDAP 등에 신뢰할 수 없는 데이터가 삽입되어 의도치 않은 명령이 실행. XSS도 이 카테고리에 포함.' },
+      { rank:'A04', name:'Insecure Design', sev:'HIGH', desc:'설계 단계의 구조적 보안 결함. 위협 모델링 부재, 보안 설계 패턴 미적용. 2021년 신규 항목.' },
+      { rank:'A05', name:'Security Misconfiguration', sev:'HIGH', desc:'불필요한 기능 활성화, 기본 계정·패스워드 사용, 오류 메시지의 과도한 정보 노출 등 잘못된 보안 설정.' },
+      { rank:'A06', name:'Vulnerable and Outdated Components', sev:'HIGH', desc:'알려진 취약점이 있는 OS, 프레임워크, 라이브러리, 런타임 사용. 버전 관리 및 패치 프로세스 부재.' },
+      { rank:'A07', name:'Identification and Authentication Failures', sev:'HIGH', desc:'세션 관리, 자격증명 관리 취약점. 무차별 대입 공격, 약한 패스워드, 세션 고정 공격 등.' },
+      { rank:'A08', name:'Software and Data Integrity Failures', sev:'HIGH', desc:'무결성 검증 없는 소프트웨어 업데이트, CI/CD 파이프라인 취약점, 안전하지 않은 역직렬화. 2021년 신규.' },
+      { rank:'A09', name:'Security Logging and Monitoring Failures', sev:'MEDIUM', desc:'침해 사고 탐지·대응에 필요한 로깅·모니터링 부재. 공격자가 장기간 은닉 가능한 환경 조성.' },
+      { rank:'A10', name:'Server-Side Request Forgery (SSRF)', sev:'HIGH', desc:'서버가 사용자 제공 URL로 검증 없이 내부 리소스에 요청을 전송하는 취약점. 클라우드 환경에서 특히 위험.' },
+    ]
+  },
+  llm: {
+    label: 'LLM AI Top 10',
+    version: '2025',
+    url: 'https://genai.owasp.org/llm-top-10/',
+    items: [
+      { rank:'LLM01', name:'Prompt Injection', sev:'CRITICAL', desc:'악의적인 입력으로 LLM의 동작을 조작하여 의도치 않은 명령 실행, 데이터 유출, 권한 우회 등을 유발.' },
+      { rank:'LLM02', name:'Sensitive Information Disclosure', sev:'HIGH', desc:'LLM이 학습 데이터 또는 컨텍스트에서 PII, 기밀 정보, API 키 등 민감한 데이터를 노출.' },
+      { rank:'LLM03', name:'Supply Chain Vulnerabilities', sev:'HIGH', desc:'사전학습 모델, 플러그인, 외부 데이터소스 등 LLM 공급망의 취약점. 악성 모델·데이터 주입 위험.' },
+      { rank:'LLM04', name:'Data and Model Poisoning', sev:'HIGH', desc:'학습 데이터 또는 파인튜닝 단계에 악성 데이터를 삽입해 모델 동작을 의도적으로 변조.' },
+      { rank:'LLM05', name:'Improper Output Handling', sev:'HIGH', desc:'LLM 출력을 검증 없이 다운스트림 시스템에 전달. XSS, SSRF, 원격 코드 실행 등으로 이어질 수 있음.' },
+      { rank:'LLM06', name:'Excessive Agency', sev:'HIGH', desc:'LLM 에이전트에 과도한 권한·자율성 부여. 잘못된 판단이나 조작에 의해 의도치 않은 실제 행동 수행.' },
+      { rank:'LLM07', name:'System Prompt Leakage', sev:'MEDIUM', desc:'시스템 프롬프트에 포함된 기밀 지침, 비즈니스 로직, API 키 등이 사용자에게 노출되는 취약점.' },
+      { rank:'LLM08', name:'Vector and Embedding Weaknesses', sev:'MEDIUM', desc:'RAG 파이프라인의 벡터 DB 오염, 임베딩 역전 공격, 의미론적 유사도 조작 등.' },
+      { rank:'LLM09', name:'Misinformation', sev:'MEDIUM', desc:'LLM이 그럴듯하지만 부정확한 정보(할루시네이션)를 생성하여 의사결정 오류나 법적 문제 유발.' },
+      { rank:'LLM10', name:'Unbounded Consumption', sev:'MEDIUM', desc:'LLM 추론 리소스의 무제한 소비를 허용해 서비스 거부(DoS), 비용 폭증, 성능 저하 유발.' },
+    ]
+  },
+  api: {
+    label: 'API Security Top 10',
+    version: '2023',
+    url: 'https://owasp.org/API-Security/editions/2023/en/0x11-t10/',
+    items: [
+      { rank:'API1', name:'Broken Object Level Authorization', sev:'CRITICAL', desc:'API가 객체 접근 시 권한 검증 미흡. 공격자가 다른 사용자의 리소스 ID를 조작하여 무단 접근.' },
+      { rank:'API2', name:'Broken Authentication', sev:'CRITICAL', desc:'인증 메커니즘 취약. 약한 토큰, 만료 없는 세션, 무차별 대입 공격에 노출된 엔드포인트.' },
+      { rank:'API3', name:'Broken Object Property Level Authorization', sev:'HIGH', desc:'API가 반환하는 객체 속성 수준의 권한 검증 부재. 민감 필드 노출 또는 과도한 속성 수정 허용.' },
+      { rank:'API4', name:'Unrestricted Resource Consumption', sev:'HIGH', desc:'요청 빈도, 페이로드 크기, 응답 수 등에 제한 없어 DoS, 비용 폭증, 성능 저하 유발.' },
+      { rank:'API5', name:'Broken Function Level Authorization', sev:'HIGH', desc:'관리자 전용 기능에 일반 사용자 접근 허용. HTTP 메서드나 URL 경로 변경으로 권한 우회.' },
+      { rank:'API6', name:'Unrestricted Access to Sensitive Business Flows', sev:'HIGH', desc:'자동화 공격에 노출된 비즈니스 핵심 기능. 대량 구매, 계정 생성, 투표 조작 등에 악용.' },
+      { rank:'API7', name:'Server Side Request Forgery', sev:'HIGH', desc:'API가 사용자 제공 URL을 검증 없이 서버에서 요청. 내부 서비스, 클라우드 메타데이터 접근 가능.' },
+      { rank:'API8', name:'Security Misconfiguration', sev:'HIGH', desc:'불필요한 HTTP 메서드 허용, CORS 과도한 허용, 기본 설정 유지, 상세 오류 메시지 노출.' },
+      { rank:'API9', name:'Improper Inventory Management', sev:'MEDIUM', desc:'구버전 API, 문서화 안 된 엔드포인트, 불필요한 노출 환경(개발/스테이징)의 미관리.' },
+      { rank:'API10', name:'Unsafe Consumption of APIs', sev:'MEDIUM', desc:'서드파티 API를 신뢰하여 검증 없이 데이터 사용. 공급망 공격, 데이터 오염, SSRF로 이어짐.' },
+    ]
+  },
+  mobile: {
+    label: 'Mobile Top 10',
+    version: '2024',
+    url: 'https://owasp.org/www-project-mobile-top-10/',
+    items: [
+      { rank:'M01', name:'Improper Credential Usage', sev:'HIGH', desc:'하드코딩된 자격증명, 안전하지 않은 저장, 전송 중 자격증명 노출. 앱 바이너리 분석으로 추출 가능.' },
+      { rank:'M02', name:'Inadequate Supply Chain Security', sev:'HIGH', desc:'서드파티 SDK, 오픈소스 라이브러리의 악성 코드 삽입. 빌드 파이프라인 무결성 검증 부재.' },
+      { rank:'M03', name:'Insecure Authentication/Authorization', sev:'CRITICAL', desc:'클라이언트 사이드 인증 로직, 취약한 생체인증 구현, 서버 검증 없는 토큰 처리.' },
+      { rank:'M04', name:'Insufficient Input/Output Validation', sev:'HIGH', desc:'모바일 앱의 입출력 검증 부재로 인한 인젝션, XSS, 버퍼 오버플로우 취약점.' },
+      { rank:'M05', name:'Insecure Communication', sev:'HIGH', desc:'TLS 미적용, 인증서 검증 비활성화, 평문 프로토콜 사용. MITM 공격에 노출.' },
+      { rank:'M06', name:'Inadequate Privacy Controls', sev:'HIGH', desc:'과도한 권한 요청, 불필요한 개인정보 수집, 제3자와의 무단 데이터 공유.' },
+      { rank:'M07', name:'Insufficient Binary Protections', sev:'MEDIUM', desc:'역공학 방지 미흡. 디버깅 가능 상태, 난독화 부재, 루팅/탈옥 감지 미적용.' },
+      { rank:'M08', name:'Security Misconfiguration', sev:'MEDIUM', desc:'디버그 모드 활성화, 불필요한 권한, 기본 설정 유지, 백업 허용으로 인한 데이터 노출.' },
+      { rank:'M09', name:'Insecure Data Storage', sev:'HIGH', desc:'SharedPreferences, SQLite, 로그, 캐시에 민감 데이터 평문 저장. 루팅 기기에서 추출 가능.' },
+      { rank:'M10', name:'Insufficient Cryptography', sev:'HIGH', desc:'취약한 알고리즘(MD5, RC4), 하드코딩된 키, 잘못된 암호화 구현.' },
+    ]
+  },
+  k8s: {
+    label: 'Kubernetes Top 10',
+    version: '2022',
+    url: 'https://owasp.org/www-project-kubernetes-top-ten/',
+    items: [
+      { rank:'K01', name:'Insecure Workload Configurations', sev:'CRITICAL', desc:'privileged 컨테이너, hostNetwork/hostPID 사용, 루트 실행, 읽기전용 파일시스템 미적용 등 파드 보안 설정 미흡.' },
+      { rank:'K02', name:'Supply Chain Vulnerabilities', sev:'HIGH', desc:'검증되지 않은 컨테이너 이미지, 취약한 베이스 이미지, 서명 없는 이미지 사용.' },
+      { rank:'K03', name:'Overly Permissive RBAC', sev:'HIGH', desc:'과도한 ClusterRole 권한, 와일드카드 권한, 불필요한 cluster-admin 바인딩.' },
+      { rank:'K04', name:'Lack of Centralized Policy Enforcement', sev:'HIGH', desc:'Admission Controller, OPA/Gatekeeper 미적용으로 비준수 워크로드 배포 방지 불가.' },
+      { rank:'K05', name:'Inadequate Logging and Monitoring', sev:'MEDIUM', desc:'API 서버 감사 로그 미설정, 런타임 이상 행위 탐지 부재, 보안 이벤트 중앙화 미흡.' },
+      { rank:'K06', name:'Broken Authentication Mechanisms', sev:'HIGH', desc:'익명 인증 허용, 약한 ServiceAccount 토큰, 만료되지 않는 자격증명.' },
+      { rank:'K07', name:'Missing Network Segmentation Controls', sev:'HIGH', desc:'NetworkPolicy 미적용으로 파드 간 무제한 통신. 서비스 메시 없는 평문 내부 통신.' },
+      { rank:'K08', name:'Secrets Management Failures', sev:'HIGH', desc:'etcd에 평문 저장되는 Secret, 환경변수로 노출되는 시크릿, Vault 미사용.' },
+      { rank:'K09', name:'Misconfigured Cluster Components', sev:'HIGH', desc:'etcd 무인증 노출, kubelet 익명 접근, API 서버 과도한 노출.' },
+      { rank:'K10', name:'Outdated and Vulnerable Kubernetes Components', sev:'HIGH', desc:'패치되지 않은 Kubernetes 버전, 취약한 CNI·CSI 플러그인 사용.' },
+    ]
+  },
+  cicd: {
+    label: 'CI/CD Security Top 10',
+    version: '2022',
+    url: 'https://owasp.org/www-project-top-10-ci-cd-security-risks/',
+    items: [
+      { rank:'CICD-SEC-1', name:'Insufficient Flow Control Mechanisms', sev:'HIGH', desc:'코드 리뷰, 승인 없이 메인 브랜치에 직접 푸시 가능. 파이프라인 트리거 조건 검증 부재.' },
+      { rank:'CICD-SEC-2', name:'Inadequate Identity and Access Management', sev:'HIGH', desc:'과도한 CI/CD 시스템 권한, 공유 계정, 미회수된 토큰, MFA 미적용.' },
+      { rank:'CICD-SEC-3', name:'Dependency Chain Abuse', sev:'HIGH', desc:'타입스쿼팅, 의존성 혼동 공격, 악성 패키지 업데이트를 통한 공급망 침해.' },
+      { rank:'CICD-SEC-4', name:'Poisoned Pipeline Execution (PPE)', sev:'CRITICAL', desc:'저장소 코드 또는 파이프라인 설정 파일을 수정하여 CI 서버에서 악성 코드 실행.' },
+      { rank:'CICD-SEC-5', name:'Insufficient PBAC', sev:'HIGH', desc:'파이프라인 기반 접근 제어 미흡. 파이프라인이 불필요한 시크릿, 환경, 리소스에 접근 가능.' },
+      { rank:'CICD-SEC-6', name:'Insufficient Credential Hygiene', sev:'HIGH', desc:'코드에 하드코딩된 시크릿, 과도한 권한의 장기 토큰, 로그에 노출되는 자격증명.' },
+      { rank:'CICD-SEC-7', name:'Insecure System Configuration', sev:'MEDIUM', desc:'CI/CD 플랫폼의 기본 설정 유지, 불필요한 플러그인, 구버전 소프트웨어 사용.' },
+      { rank:'CICD-SEC-8', name:'Ungoverned Usage of 3rd Party Services', sev:'HIGH', desc:'검증 없이 사용하는 GitHub Actions, Docker Hub 이미지, 외부 파이프라인 서비스.' },
+      { rank:'CICD-SEC-9', name:'Improper Artifact Integrity Validation', sev:'HIGH', desc:'빌드 아티팩트, 컨테이너 이미지, 의존성의 서명 및 무결성 검증 미적용.' },
+      { rank:'CICD-SEC-10', name:'Insufficient Logging and Visibility', sev:'MEDIUM', desc:'파이프라인 실행 감사 로그 부재, 이상 빌드 탐지 불가, 아티팩트 출처 추적 불가.' },
+    ]
+  },
+  lowcode: {
+    label: 'Low-Code/No-Code Top 10',
+    version: '2024',
+    url: 'https://owasp.org/www-project-top-10-low-code-no-code-security-risks/',
+    items: [
+      { rank:'LCNC-SEC-01', name:'Account Impersonation', sev:'HIGH', desc:'LCNC 플랫폼의 공유 서비스 계정, 위임된 권한 남용으로 다른 사용자 권한으로 작업 실행.' },
+      { rank:'LCNC-SEC-02', name:'Authorization Misuse', sev:'HIGH', desc:'과도한 권한의 커넥터, 앱이 필요 이상의 데이터·시스템에 접근. 최소 권한 원칙 미적용.' },
+      { rank:'LCNC-SEC-03', name:'Data Leakage and Unexpected Consequences', sev:'HIGH', desc:'자동화 흐름에서 민감 데이터가 외부 서비스, 로그, 이메일로 의도치 않게 유출.' },
+      { rank:'LCNC-SEC-04', name:'Authentication and Secure Communication Failures', sev:'HIGH', desc:'외부 API 연동 시 인증 정보 평문 저장, TLS 검증 비활성화, 취약한 인증 방식 사용.' },
+      { rank:'LCNC-SEC-05', name:'Security Misconfiguration', sev:'MEDIUM', desc:'공개된 앱·API, 과도한 공유 권한, 기본 설정 유지, 게스트 접근 허용.' },
+      { rank:'LCNC-SEC-06', name:'Injection Handling Failures', sev:'HIGH', desc:'LCNC 플랫폼을 통한 SQL, 명령어, 수식 인젝션. 사용자 입력의 부적절한 처리.' },
+      { rank:'LCNC-SEC-07', name:'Vulnerable and Untrusted Components', sev:'HIGH', desc:'검증되지 않은 커뮤니티 커넥터, 서드파티 템플릿, 오래된 플랫폼 버전 사용.' },
+      { rank:'LCNC-SEC-08', name:'Data and Secret Handling Failures', sev:'HIGH', desc:'환경 변수, 앱 설정에 평문 저장되는 API 키·패스워드. 시크릿 관리 도구 미사용.' },
+      { rank:'LCNC-SEC-09', name:'Asset Management Failures', sev:'MEDIUM', desc:'사용 중인 앱·자동화·커넥터 목록 미관리. 퇴직자의 앱, 방치된 자동화 흐름.' },
+      { rank:'LCNC-SEC-10', name:'Security Logging and Monitoring Failures', sev:'MEDIUM', desc:'LCNC 플랫폼의 실행 로그·감사 추적 미설정. 이상 행위 탐지 및 사고 대응 불가.' },
+    ]
+  },
+  nhi: {
+    label: 'Non-Human Identities Top 10',
+    version: '2025',
+    url: 'https://owasp.org/www-project-non-human-identities-top-10/',
+    items: [
+      { rank:'NHI01', name:'Improper Offboarding', sev:'HIGH', desc:'서비스 계정, API 키, OAuth 토큰 등 비인간 자격증명의 퇴직·프로젝트 종료 시 미회수.' },
+      { rank:'NHI02', name:'Secret Leakage', sev:'CRITICAL', desc:'코드 저장소, 로그, 환경변수, 컨테이너 이미지에 API 키·토큰·인증서가 노출.' },
+      { rank:'NHI03', name:'Vulnerable Third-Party NHI', sev:'HIGH', desc:'서드파티 서비스에 부여된 OAuth 앱, GitHub Actions, 웹훅의 과도한 권한 및 취약점.' },
+      { rank:'NHI04', name:'Insecure Authentication', sev:'HIGH', desc:'장기 토큰, 만료 없는 API 키, 약한 시크릿, MFA 미적용 서비스 계정.' },
+      { rank:'NHI05', name:'Overprivileged NHI', sev:'HIGH', desc:'최소 권한 원칙 미적용 서비스 계정. 실제 필요 이상의 IAM 권한, 역할, 범위 부여.' },
+      { rank:'NHI06', name:'Insecure Cloud Deployment Configurations', sev:'HIGH', desc:'과도한 권한의 IAM 역할, 인스턴스 메타데이터 서비스(IMDS) 무제한 접근, 잘못된 워크로드 아이덴티티.' },
+      { rank:'NHI07', name:'Long-Lived Secrets', sev:'HIGH', desc:'수명이 긴 API 키, 인증서, 패스워드의 미교체. 자동 로테이션 부재.' },
+      { rank:'NHI08', name:'Environment Isolation Failure', sev:'HIGH', desc:'개발·스테이징·프로덕션 간 자격증명 공유. 테스트 환경 NHI가 프로덕션 리소스에 접근.' },
+      { rank:'NHI09', name:'NHI Reuse', sev:'MEDIUM', desc:'여러 애플리케이션·서비스가 동일한 서비스 계정·토큰 공유. 침해 시 영향 범위 확대.' },
+      { rank:'NHI10', name:'Human Use of NHI', sev:'MEDIUM', desc:'사람이 서비스 계정으로 로그인하거나 자동화용 토큰을 대화형으로 사용. 감사 추적 불가.' },
+    ]
+  }
+};
 
-let owaspLoaded = false;
-function loadOwasp() {
-  if (owaspLoaded) return;
-  owaspLoaded = true;
-  document.getElementById('owasp-list').innerHTML = OWASP.map(o => `
+const OWASP_URLS = {
+  webapp: 'https://owasp.org/www-project-top-ten/',
+  llm: 'https://genai.owasp.org/llm-top-10/',
+  api: 'https://owasp.org/API-Security/editions/2023/en/0x11-t10/',
+  mobile: 'https://owasp.org/www-project-mobile-top-10/',
+  k8s: 'https://owasp.org/www-project-kubernetes-top-ten/',
+  cicd: 'https://owasp.org/www-project-top-10-ci-cd-security-risks/',
+  lowcode: 'https://owasp.org/www-project-top-10-low-code-no-code-security-risks/',
+  nhi: 'https://owasp.org/www-project-non-human-identities-top-10/',
+};
+
+function renderOwasp() {
+  const cat = document.getElementById('owasp-cat').value;
+  const data = OWASP_DATA[cat];
+  document.getElementById('owasp-link').href = data.url;
+  document.getElementById('owasp-meta').textContent = `${data.label} · ${data.version} · 총 ${data.items.length}개 항목`;
+  document.getElementById('owasp-list').innerHTML = data.items.map(o => `
     <div class="owasp-card">
       <div class="owasp-rank">${o.rank} <span class="badge ${sevClass(o.sev)}" style="margin-left:6px;font-size:10px">${sevLabel(o.sev)}</span></div>
       <div class="owasp-name">${o.name}</div>
@@ -521,10 +818,14 @@ function loadOwasp() {
   `).join('');
 }
 
+function loadOwasp() {
+  renderOwasp();
+}
+
 function renderSaved() {
   const el = document.getElementById('saved-list');
   if (!bookmarks.length) {
-    el.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>저장된 항목이 없습니다<br>CISA KEV 또는 NVD에서 북마크하세요</div>';
+    el.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>저장된 항목이 없습니다</div>';
     return;
   }
   el.innerHTML = bookmarks.map(b => `<div class="card">
@@ -536,7 +837,7 @@ function renderSaved() {
     <div class="card-meta"><span class="cve-id">${b.cve}</span>${b.vendor ? `<span>${escHtml(b.vendor)}</span>` : ''}</div>
     <div class="card-footer" style="margin-top:8px">
       <button class="btn" onclick='toggleSave(${JSON.stringify(b)});renderSaved()'>
-        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/><path d="M10 11v6M14 11v6"/></svg>
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/></svg>
         삭제
       </button>
       <a class="btn" href="https://nvd.nist.gov/vuln/detail/${b.cve}" target="_blank" rel="noopener">NVD 상세</a>
