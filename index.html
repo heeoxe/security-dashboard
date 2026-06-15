@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Security Intel Dashboard</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --bg2: #181c27;
+    --bg3: #1e2333;
+    --border: #2a2f42;
+    --border2: #363d56;
+    --text: #e8eaf0;
+    --text2: #8b91a8;
+    --text3: #555d78;
+    --accent: #4f7cff;
+    --accent2: #1a2a5e;
+    --critical: #ff4d4d;
+    --critical-bg: #2a0f0f;
+    --high: #ff9a3c;
+    --high-bg: #2a1a08;
+    --medium: #4f7cff;
+    --medium-bg: #0d1a3a;
+    --low: #3ecf8e;
+    --low-bg: #0a2318;
+    --cisa: #a78bfa;
+    --cisa-bg: #1e1433;
+    --nvd: #3ecf8e;
+    --nvd-bg: #0a2318;
+    --radius: 8px;
+    --radius-lg: 12px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 14px; line-height: 1.6; min-height: 100vh; }
+
+  header { border-bottom: 1px solid var(--border); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+  .logo { font-size: 15px; font-weight: 600; letter-spacing: -0.3px; display: flex; align-items: center; gap: 10px; }
+  .logo-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px var(--accent); }
+  .header-meta { font-size: 12px; color: var(--text3); }
+
+  .stat-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border-bottom: 1px solid var(--border); }
+  .stat { background: var(--bg); padding: 1rem 1.5rem; }
+  .stat-label { font-size: 11px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+  .stat-value { font-size: 24px; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+  .layout { display: grid; grid-template-columns: 180px 1fr; min-height: calc(100vh - 57px - 65px); }
+  .sidebar { border-right: 1px solid var(--border); padding: 1.25rem 0; }
+  .nav-section { padding: 0 1rem; margin-bottom: 1.5rem; }
+  .nav-label { font-size: 10px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px; padding: 0 4px; }
+  .nav-item { display: flex; align-items: center; gap: 8px; padding: 7px 10px; border-radius: var(--radius); cursor: pointer; font-size: 13px; color: var(--text2); transition: all 0.15s; border: none; background: none; width: 100%; text-align: left; }
+  .nav-item:hover { background: var(--bg3); color: var(--text); }
+  .nav-item.active { background: var(--accent2); color: var(--accent); font-weight: 500; }
+  .nav-item svg { flex-shrink: 0; }
+  .nav-badge { margin-left: auto; font-size: 10px; background: var(--bg3); color: var(--text3); padding: 1px 6px; border-radius: 10px; }
+  .nav-badge.hot { background: var(--critical-bg); color: var(--critical); }
+
+  .main { padding: 1.5rem 2rem; overflow: auto; }
+  .panel { display: none; }
+  .panel.active { display: block; }
+
+  .toolbar { display: flex; gap: 8px; margin-bottom: 1.25rem; flex-wrap: wrap; }
+  .toolbar input, .toolbar select {
+    background: var(--bg2); border: 1px solid var(--border); color: var(--text);
+    border-radius: var(--radius); padding: 0 12px; height: 36px; font-size: 13px;
+    outline: none; transition: border-color 0.15s;
+  }
+  .toolbar input { flex: 1; min-width: 200px; }
+  .toolbar input:focus, .toolbar select:focus { border-color: var(--accent); }
+  .toolbar select option { background: var(--bg2); }
+  .btn { height: 36px; padding: 0 16px; border-radius: var(--radius); border: 1px solid var(--border); background: var(--bg2); color: var(--text); font-size: 13px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s; white-space: nowrap; }
+  .btn:hover { border-color: var(--border2); background: var(--bg3); }
+  .btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .btn-primary:hover { opacity: 0.9; }
+
+  .chip-row { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 1.25rem; }
+  .chip { padding: 4px 12px; border-radius: 20px; border: 1px solid var(--border); background: transparent; color: var(--text2); font-size: 12px; cursor: pointer; transition: all 0.15s; }
+  .chip:hover { border-color: var(--border2); color: var(--text); }
+  .chip.on { border-color: var(--accent); color: var(--accent); background: var(--accent2); }
+
+  .cards { display: flex; flex-direction: column; gap: 8px; }
+  .card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1rem 1.25rem; transition: border-color 0.15s; }
+  .card:hover { border-color: var(--border2); }
+  .card-top { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 8px; }
+  .card-title { font-size: 13px; font-weight: 500; flex: 1; line-height: 1.4; color: var(--text); }
+  .card-meta { display: flex; gap: 12px; flex-wrap: wrap; font-size: 11px; color: var(--text3); margin-bottom: 8px; }
+  .card-meta span { display: flex; align-items: center; gap: 4px; }
+  .card-desc { font-size: 12px; color: var(--text2); line-height: 1.6; margin-bottom: 8px; }
+  .card-footer { display: flex; gap: 6px; flex-wrap: wrap; }
+  .card-footer .btn { height: 28px; font-size: 11px; padding: 0 10px; }
+
+  .badge { display: inline-flex; align-items: center; font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 20px; white-space: nowrap; }
+  .bc { background: var(--critical-bg); color: var(--critical); border: 1px solid #4a1515; }
+  .bh { background: var(--high-bg); color: var(--high); border: 1px solid #4a2808; }
+  .bm { background: var(--medium-bg); color: var(--medium); border: 1px solid #0f2050; }
+  .bl { background: var(--low-bg); color: var(--low); border: 1px solid #0f3020; }
+  .bn { background: var(--bg3); color: var(--text2); border: 1px solid var(--border); }
+  .src-cisa { background: var(--cisa-bg); color: var(--cisa); border: 1px solid #2d1f4a; font-size: 10px; }
+  .src-nvd { background: var(--nvd-bg); color: var(--nvd); border: 1px solid #0f3020; font-size: 10px; }
+
+  .cvss-row { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
+  .cvss-label { font-size: 11px; color: var(--text3); min-width: 64px; font-variant-numeric: tabular-nums; }
+  .cvss-track { flex: 1; height: 3px; background: var(--bg3); border-radius: 2px; overflow: hidden; max-width: 160px; }
+  .cvss-fill { height: 100%; border-radius: 2px; }
+
+  .cve-id { font-family: 'SF Mono', 'Cascadia Code', monospace; font-size: 11px; color: var(--text3); }
+
+  .loading { text-align: center; padding: 3rem; color: var(--text3); font-size: 13px; }
+  .spinner { display: inline-block; width: 20px; height: 20px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 12px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .empty { text-align: center; padding: 3rem; color: var(--text3); font-size: 13px; }
+  .empty svg { display: block; margin: 0 auto 12px; opacity: 0.3; }
+
+  .pager { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 1.25rem; font-size: 12px; color: var(--text3); }
+  .pager .btn { height: 30px; font-size: 12px; padding: 0 12px; }
+
+  .section-title { font-size: 13px; font-weight: 500; color: var(--text2); margin-bottom: 1rem; display: flex; align-items: center; gap: 8px; }
+  .section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+  .owasp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
+  .owasp-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.125rem; cursor: pointer; transition: all 0.15s; }
+  .owasp-card:hover { border-color: var(--border2); transform: translateY(-1px); }
+  .owasp-rank { font-size: 11px; font-weight: 600; color: var(--text3); margin-bottom: 6px; letter-spacing: 0.5px; }
+  .owasp-name { font-size: 14px; font-weight: 500; margin-bottom: 6px; line-height: 1.3; }
+  .owasp-desc { font-size: 12px; color: var(--text2); line-height: 1.5; }
+
+  .tag { display: inline-block; font-size: 10px; background: var(--bg3); color: var(--text3); border: 1px solid var(--border); padding: 1px 7px; border-radius: 4px; margin: 2px 2px 0 0; }
+
+  @media (max-width: 768px) {
+    .layout { grid-template-columns: 1fr; }
+    .sidebar { display: none; }
+    .stat-bar { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-dot"></div>
+    Security Intel
+  </div>
+  <div class="header-meta" id="last-update">갱신 중...</div>
+</header>
+
+<div class="stat-bar">
+  <div class="stat"><div class="stat-label">CISA KEV 총계</div><div class="stat-value" id="s-kev">—</div></div>
+  <div class="stat"><div class="stat-label">최근 30일 추가</div><div class="stat-value" id="s-new" style="color:var(--high)">—</div></div>
+  <div class="stat"><div class="stat-label">저장된 항목</div><div class="stat-value" id="s-saved">0</div></div>
+  <div class="stat"><div class="stat-label">Critical / High</div><div class="stat-value" id="s-crit" style="color:var(--critical)">—</div></div>
+</div>
+
+<div class="layout">
+  <nav class="sidebar">
+    <div class="nav-section">
+      <div class="nav-label">피드</div>
+      <button class="nav-item active" onclick="switchPanel('kev', this)">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
+        CISA KEV
+        <span class="nav-badge hot" id="nb-kev">—</span>
+      </button>
+      <button class="nav-item" onclick="switchPanel('nvd', this)">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+        NVD CVE
+      </button>
+    </div>
+    <div class="nav-section">
+      <div class="nav-label">참조</div>
+      <button class="nav-item" onclick="switchPanel('owasp', this)">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        OWASP Top 10
+      </button>
+    </div>
+    <div class="nav-section">
+      <div class="nav-label">내 항목</div>
+      <button class="nav-item" onclick="switchPanel('saved', this)">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
+        저장됨
+        <span class="nav-badge" id="nb-saved">0</span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="main">
+
+    <!-- CISA KEV -->
+    <div id="panel-kev" class="panel active">
+      <div class="toolbar">
+        <input id="kev-q" type="text" placeholder="CVE ID, 제품명, 벤더 검색..." oninput="filterKev()" />
+        <select id="kev-sort" onchange="filterKev()">
+          <option value="date">최신 추가순</option>
+          <option value="due">패치 마감순</option>
+          <option value="vendor">벤더순</option>
+        </select>
+        <button class="btn" onclick="loadKev(true)">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+          새로고침
+        </button>
+      </div>
+      <div class="chip-row" id="kev-chips"></div>
+      <div class="cards" id="kev-list"><div class="loading"><div class="spinner"></div><br>CISA KEV 불러오는 중...</div></div>
+      <div class="pager" id="kev-pager"></div>
+    </div>
+
+    <!-- NVD -->
+    <div id="panel-nvd" class="panel">
+      <div class="toolbar">
+        <input id="nvd-q" type="text" placeholder="키워드 또는 CVE-YYYY-NNNNN..." />
+        <select id="nvd-sev">
+          <option value="">전체 심각도</option>
+          <option value="CRITICAL">Critical</option>
+          <option value="HIGH">High</option>
+          <option value="MEDIUM">Medium</option>
+          <option value="LOW">Low</option>
+        </select>
+        <button class="btn btn-primary" onclick="searchNvd()">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          검색
+        </button>
+      </div>
+      <div class="cards" id="nvd-list">
+        <div class="empty">
+          <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          키워드를 입력하고 검색하세요<br>빈 칸으로 검색하면 최근 30일 CVE 표시
+        </div>
+      </div>
+      <div class="pager" id="nvd-pager"></div>
+    </div>
+
+    <!-- OWASP -->
+    <div id="panel-owasp" class="panel">
+      <div class="owasp-grid" id="owasp-list">
+        <div class="loading" style="grid-column:1/-1"><div class="spinner"></div></div>
+      </div>
+    </div>
+
+    <!-- 저장됨 -->
+    <div id="panel-saved" class="panel">
+      <div class="cards" id="saved-list">
+        <div class="empty">
+          <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
+          저장된 항목이 없습니다<br>CISA KEV 또는 NVD에서 북마크하세요
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script>
+const PAGE = 15;
+let kevAll = [], kevFiltered = [], kevPage = 0;
+let nvdAll = [], nvdPage = 0;
+
+function loadBookmarks() {
+  try { return JSON.parse(localStorage.getItem('sid_bookmarks') || '[]'); } catch { return []; }
+}
+function saveBookmarks(bm) {
+  localStorage.setItem('sid_bookmarks', JSON.stringify(bm));
+}
+let bookmarks = loadBookmarks();
+
+function updateBadges() {
+  const cnt = bookmarks.length;
+  document.getElementById('s-saved').textContent = cnt;
+  document.getElementById('nb-saved').textContent = cnt;
+  const crit = bookmarks.filter(b => ['CRITICAL','HIGH'].includes((b.sev||'').toUpperCase())).length;
+  document.getElementById('s-crit').textContent = crit;
+}
+updateBadges();
+
+function isSaved(id) { return bookmarks.some(b => b.id === id); }
+function toggleSave(item) {
+  const idx = bookmarks.findIndex(b => b.id === item.id);
+  if (idx >= 0) bookmarks.splice(idx, 1);
+  else bookmarks.push(item);
+  saveBookmarks(bookmarks);
+  updateBadges();
+  rerenderCards();
+}
+function rerenderCards() {
+  renderKevPage();
+  if (nvdAll.length) renderNvdPage();
+}
+
+function switchPanel(id, el) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  document.getElementById('panel-' + id).classList.add('active');
+  el.classList.add('active');
+  if (id === 'saved') renderSaved();
+  if (id === 'owasp') loadOwasp();
+}
+
+function sevClass(s) {
+  return { CRITICAL: 'bc', HIGH: 'bh', MEDIUM: 'bm', LOW: 'bl' }[(s||'').toUpperCase()] || 'bn';
+}
+function sevLabel(s) {
+  return { CRITICAL: 'Critical', HIGH: 'High', MEDIUM: 'Medium', LOW: 'Low' }[(s||'').toUpperCase()] || s || 'N/A';
+}
+function cvssColor(v) {
+  if (v >= 9) return 'var(--critical)';
+  if (v >= 7) return 'var(--high)';
+  if (v >= 4) return 'var(--medium)';
+  return 'var(--low)';
+}
+function cvssToSev(v) {
+  if (v >= 9) return 'CRITICAL';
+  if (v >= 7) return 'HIGH';
+  if (v >= 4) return 'MEDIUM';
+  if (v > 0) return 'LOW';
+  return '';
+}
+
+function kevCard(item) {
+  const sv = isSaved(item.id);
+  const cvss = item.cvss || 0;
+  const bm = { id: item.id, cve: item.cve, title: item.title, sev: item.sev, vendor: item.vendor, source: 'CISA KEV' };
+  return `<div class="card">
+    <div class="card-top">
+      <span class="badge ${sevClass(item.sev)}">${sevLabel(item.sev)}</span>
+      <span class="badge src-cisa">CISA KEV</span>
+      <div class="card-title">${escHtml(item.title)}</div>
+    </div>
+    <div class="card-meta">
+      <span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${item.added}</span>
+      <span class="cve-id">${item.cve}</span>
+      <span>${escHtml(item.vendor)} / ${escHtml(item.product)}</span>
+      ${item.due ? `<span style="color:var(--high)">패치 마감 ${item.due}</span>` : ''}
+    </div>
+    ${cvss ? `<div class="cvss-row"><span class="cvss-label">CVSS ${cvss.toFixed(1)}</span><div class="cvss-track"><div class="cvss-fill" style="width:${Math.round(cvss/10*100)}%;background:${cvssColor(cvss)}"></div></div></div>` : ''}
+    <div class="card-footer" style="margin-top:10px">
+      <button class="btn" onclick='toggleSave(${JSON.stringify(bm)})'>${sv ? '★ 저장됨' : '☆ 저장'}</button>
+      <a class="btn" href="https://www.cve.org/CVERecord?id=${item.cve}" target="_blank" rel="noopener">
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
+        CVE 원문
+      </a>
+      <a class="btn" href="https://nvd.nist.gov/vuln/detail/${item.cve}" target="_blank" rel="noopener">NVD 상세</a>
+    </div>
+  </div>`;
+}
+
+function nvdCard(item) {
+  const sv = isSaved(item.id);
+  const cvss = item.cvss || 0;
+  const bm = { id: item.id, cve: item.cve, title: item.cve, sev: item.sev, source: 'NVD' };
+  return `<div class="card">
+    <div class="card-top">
+      <span class="badge ${sevClass(item.sev)}">${sevLabel(item.sev)}</span>
+      <span class="badge src-nvd">NVD</span>
+      <div class="card-title cve-id" style="font-size:13px">${item.cve}</div>
+    </div>
+    <div class="card-meta">
+      <span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${item.published}</span>
+      ${item.cwe ? `<span>${escHtml(item.cwe)}</span>` : ''}
+    </div>
+    ${cvss ? `<div class="cvss-row"><span class="cvss-label">CVSS ${cvss.toFixed(1)}</span><div class="cvss-track"><div class="cvss-fill" style="width:${Math.round(cvss/10*100)}%;background:${cvssColor(cvss)}"></div></div></div>` : ''}
+    <div class="card-desc" style="margin-top:8px">${escHtml(item.desc)}</div>
+    ${item.tags && item.tags.length ? `<div style="margin-bottom:6px">${item.tags.map(t=>`<span class="tag">${escHtml(t)}</span>`).join('')}</div>` : ''}
+    <div class="card-footer">
+      <button class="btn" onclick='toggleSave(${JSON.stringify(bm)})'>${sv ? '★ 저장됨' : '☆ 저장'}</button>
+      <a class="btn" href="https://nvd.nist.gov/vuln/detail/${item.cve}" target="_blank" rel="noopener">
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
+        NVD 원문
+      </a>
+    </div>
+  </div>`;
+}
+
+function renderKevPage() {
+  const el = document.getElementById('kev-list');
+  const start = kevPage * PAGE;
+  const slice = kevFiltered.slice(start, start + PAGE);
+  if (!slice.length) { el.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>결과가 없습니다</div>'; renderKevPager(); return; }
+  el.innerHTML = slice.map(kevCard).join('');
+  renderKevPager();
+}
+
+function renderKevPager() {
+  const total = Math.ceil(kevFiltered.length / PAGE);
+  const el = document.getElementById('kev-pager');
+  if (total <= 1) { el.innerHTML = ''; return; }
+  el.innerHTML = `<button class="btn" onclick="kevPage=Math.max(0,kevPage-1);renderKevPage()" ${kevPage===0?'disabled':''}>← 이전</button>
+    <span>${kevPage+1} / ${total} (${kevFiltered.length.toLocaleString()}개)</span>
+    <button class="btn" onclick="kevPage=Math.min(${total-1},kevPage+1);renderKevPage()" ${kevPage>=total-1?'disabled':''}>다음 →</button>`;
+}
+
+function filterKev() {
+  const q = (document.getElementById('kev-q').value || '').toLowerCase();
+  const sort = document.getElementById('kev-sort').value;
+  const active = document.querySelector('#kev-chips .chip.on');
+  const vendor = active ? active.dataset.v : '';
+  kevFiltered = kevAll.filter(k => {
+    if (vendor && k.vendor !== vendor) return false;
+    if (!q) return true;
+    return (k.cve + k.title + k.vendor + k.product).toLowerCase().includes(q);
+  });
+  if (sort === 'vendor') kevFiltered.sort((a, b) => a.vendor.localeCompare(b.vendor));
+  else if (sort === 'due') kevFiltered.sort((a, b) => (a.due || '9999').localeCompare(b.due || '9999'));
+  kevPage = 0;
+  renderKevPage();
+}
+
+function chipClick(el) {
+  document.querySelectorAll('#kev-chips .chip').forEach(c => c.classList.remove('on'));
+  el.classList.add('on');
+  filterKev();
+}
+
+async function loadKev(force) {
+  const el = document.getElementById('kev-list');
+  el.innerHTML = '<div class="loading"><div class="spinner"></div><br>CISA KEV 불러오는 중...</div>';
+  try {
+    const r = await fetch('https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json');
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const d = await r.json();
+    kevAll = (d.vulnerabilities || []).map(v => ({
+      id: v.cveID, cve: v.cveID, title: v.vulnerabilityName,
+      vendor: v.vendorProject, product: v.product,
+      sev: v.cvssV3 ? cvssToSev(parseFloat(v.cvssV3)) : '',
+      cvss: v.cvssV3 ? parseFloat(v.cvssV3) : null,
+      added: v.dateAdded, due: v.dueDate
+    })).sort((a, b) => b.added.localeCompare(a.added));
+
+    const ago30 = new Date(); ago30.setDate(ago30.getDate() - 30);
+    const newCnt = kevAll.filter(k => new Date(k.added) >= ago30).length;
+    document.getElementById('s-kev').textContent = kevAll.length.toLocaleString();
+    document.getElementById('s-new').textContent = newCnt;
+    document.getElementById('nb-kev').textContent = newCnt;
+    document.getElementById('last-update').textContent = '마지막 갱신 ' + new Date().toLocaleString('ko-KR', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+
+    const vendors = [...new Set(kevAll.slice(0, 300).map(k => k.vendor))].slice(0, 10);
+    document.getElementById('kev-chips').innerHTML =
+      '<button class="chip on" data-v="" onclick="chipClick(this)">전체</button>' +
+      vendors.map(v => `<button class="chip" data-v="${escAttr(v)}" onclick="chipClick(this)">${escHtml(v)}</button>`).join('');
+
+    kevFiltered = [...kevAll];
+    renderKevPage();
+  } catch (e) {
+    el.innerHTML = `<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>로딩 실패: ${e.message}</div>`;
+  }
+}
+
+function renderNvdPage() {
+  const el = document.getElementById('nvd-list');
+  const start = nvdPage * PAGE, slice = nvdAll.slice(start, start + PAGE);
+  if (!slice.length) { el.innerHTML = '<div class="empty">결과가 없습니다</div>'; renderNvdPager(); return; }
+  el.innerHTML = slice.map(nvdCard).join('');
+  renderNvdPager();
+}
+function renderNvdPager() {
+  const total = Math.ceil(nvdAll.length / PAGE);
+  const el = document.getElementById('nvd-pager');
+  if (total <= 1) { el.innerHTML = ''; return; }
+  el.innerHTML = `<button class="btn" onclick="nvdPage=Math.max(0,nvdPage-1);renderNvdPage()" ${nvdPage===0?'disabled':''}>← 이전</button>
+    <span>${nvdPage+1} / ${total} (${nvdAll.length}개)</span>
+    <button class="btn" onclick="nvdPage=Math.min(${total-1},nvdPage+1);renderNvdPage()" ${nvdPage>=total-1?'disabled':''}>다음 →</button>`;
+}
+
+async function searchNvd() {
+  const q = document.getElementById('nvd-q').value.trim();
+  const sev = document.getElementById('nvd-sev').value;
+  const el = document.getElementById('nvd-list');
+  el.innerHTML = '<div class="loading"><div class="spinner"></div><br>NVD 검색 중...</div>';
+  nvdPage = 0;
+  try {
+    let url = 'https://services.nvd.nist.gov/rest/json/cves/2.0?resultsPerPage=50';
+    if (q) url += /^CVE-/i.test(q) ? `&cveId=${encodeURIComponent(q)}` : `&keywordSearch=${encodeURIComponent(q)}`;
+    if (sev) url += `&cvssV3Severity=${sev}`;
+    if (!q && !sev) {
+      const d30 = new Date(Date.now() - 30 * 86400000).toISOString().replace(/\.\d+Z$/, '+00:00');
+      url += `&pubStartDate=${encodeURIComponent(d30)}`;
+    }
+    const r = await fetch(url);
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const d = await r.json();
+    nvdAll = (d.vulnerabilities || []).map(v => {
+      const c = v.cve;
+      const m = c.metrics?.cvssMetricV31?.[0] || c.metrics?.cvssMetricV30?.[0] || c.metrics?.cvssMetricV2?.[0];
+      const score = m?.cvssData?.baseScore || null;
+      const baseSev = m?.cvssData?.baseSeverity || m?.baseSeverity || '';
+      const desc = (c.descriptions || []).find(d => d.lang === 'en')?.value || '';
+      const cwe = (c.weaknesses || [])[0]?.description?.[0]?.value || '';
+      const tags = (c.configurations || []).flatMap(cfg =>
+        (cfg.nodes || []).flatMap(n => (n.cpeMatch || []).map(cp => {
+          const p = cp.criteria?.split(':'); return p && p[4] ? p[4] : null;
+        }))
+      ).filter(Boolean).slice(0, 5);
+      return { id: c.id, cve: c.id, sev: baseSev, cvss: score, published: (c.published || '').slice(0, 10), cwe, desc: desc.slice(0, 220) + (desc.length > 220 ? '…' : ''), tags };
+    });
+    renderNvdPage();
+  } catch (e) {
+    el.innerHTML = `<div class="empty">NVD API 오류: ${e.message}<br><small style="font-size:11px;color:var(--text3)">잠시 후 다시 시도하거나 키워드를 변경해보세요</small></div>`;
+  }
+}
+
+const OWASP = [
+  { rank:'A01', name:'Broken Access Control', sev:'CRITICAL', desc:'인증된 사용자가 허가되지 않은 리소스에 접근할 수 있는 취약점. 2021년 가장 심각한 위협으로 94%의 애플리케이션에서 발견.' },
+  { rank:'A02', name:'Cryptographic Failures', sev:'HIGH', desc:'민감한 데이터 전송 및 저장 시 암호화 미적용 또는 취약한 암호 알고리즘 사용으로 인한 데이터 노출.' },
+  { rank:'A03', name:'Injection', sev:'CRITICAL', desc:'SQL, NoSQL, OS 명령어 등에 신뢰할 수 없는 데이터가 삽입되어 의도치 않은 명령이 실행되는 취약점.' },
+  { rank:'A04', name:'Insecure Design', sev:'HIGH', desc:'설계 단계의 보안 결함. 위협 모델링 부재, 보안 설계 패턴 미적용으로 발생하는 구조적 취약점.' },
+  { rank:'A05', name:'Security Misconfiguration', sev:'HIGH', desc:'불필요한 기능 활성화, 기본 계정, 오류 메시지의 과도한 정보 노출 등 잘못된 보안 설정.' },
+  { rank:'A06', name:'Vulnerable and Outdated Components', sev:'HIGH', desc:'알려진 취약점이 있는 구성 요소 사용. 미패치 OS, 프레임워크, 라이브러리 등이 대상.' },
+  { rank:'A07', name:'Identification and Authentication Failures', sev:'HIGH', desc:'세션 관리, 자격증명 관리 취약점. 무차별 대입 공격, 약한 패스워드, 세션 고정 공격 등.' },
+  { rank:'A08', name:'Software and Data Integrity Failures', sev:'HIGH', desc:'무결성 검증 없는 소프트웨어 업데이트, CI/CD 파이프라인 취약점, 안전하지 않은 역직렬화.' },
+  { rank:'A09', name:'Security Logging and Monitoring Failures', sev:'MEDIUM', desc:'침해 사고 탐지·대응에 필요한 로깅·모니터링 부재. 공격자가 오래 은닉할 수 있는 환경 조성.' },
+  { rank:'A10', name:'Server-Side Request Forgery (SSRF)', sev:'HIGH', desc:'서버가 사용자가 제공한 URL로 요청을 전송할 때 목적지 검증 없이 내부 리소스에 접근되는 취약점.' },
+];
+
+let owaspLoaded = false;
+function loadOwasp() {
+  if (owaspLoaded) return;
+  owaspLoaded = true;
+  document.getElementById('owasp-list').innerHTML = OWASP.map(o => `
+    <div class="owasp-card">
+      <div class="owasp-rank">${o.rank} <span class="badge ${sevClass(o.sev)}" style="margin-left:6px;font-size:10px">${sevLabel(o.sev)}</span></div>
+      <div class="owasp-name">${o.name}</div>
+      <div class="owasp-desc">${o.desc}</div>
+    </div>
+  `).join('');
+}
+
+function renderSaved() {
+  const el = document.getElementById('saved-list');
+  if (!bookmarks.length) {
+    el.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>저장된 항목이 없습니다</div>';
+    return;
+  }
+  el.innerHTML = bookmarks.map(b => `<div class="card">
+    <div class="card-top">
+      <span class="badge ${sevClass(b.sev)}">${sevLabel(b.sev)}</span>
+      <span class="badge ${b.source === 'CISA KEV' ? 'src-cisa' : 'src-nvd'}">${b.source}</span>
+      <div class="card-title">${escHtml(b.title)}</div>
+    </div>
+    <div class="card-meta"><span class="cve-id">${b.cve}</span>${b.vendor ? `<span>${escHtml(b.vendor)}</span>` : ''}</div>
+    <div class="card-footer" style="margin-top:8px">
+      <button class="btn" onclick='toggleSave(${JSON.stringify(b)});renderSaved()'>
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/></svg>
+        삭제
+      </button>
+      <a class="btn" href="https://nvd.nist.gov/vuln/detail/${b.cve}" target="_blank" rel="noopener">NVD 상세</a>
+    </div>
+  </div>`).join('');
+}
+
+function escHtml(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function escAttr(s) { return String(s||'').replace(/"/g,'&quot;'); }
+
+document.getElementById('nvd-q').addEventListener('keydown', e => { if (e.key === 'Enter') searchNvd(); });
+
+loadKev();
+</script>
+</body>
+</html>
