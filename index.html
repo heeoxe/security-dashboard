@@ -406,23 +406,27 @@ async function loadNews(force) {
   el.innerHTML = '<div class="loading"><div class="spinner"></div><br>뉴스 불러오는 중...</div>';
   newsAll = [];
 
-  // 1) CISA Alerts — 직접 fetch
+  // 1) CISA Alerts — 직접 fetch (오류 수정 버전)
   try {
     const r = await fetch('https://www.cisa.gov/sites/default/files/feeds/alerts.json');
     if (r.ok) {
       const d = await r.json();
-      const items = (d.items || d.alerts || []).slice(0, 30).map(a => ({
+      const entries = d.entries || d.items || d.alerts || [];
+      const items = entries.slice(0, 40).map(a => ({
         source: 'cisa',
-        title: a.title || a.name || '',
-        desc: a.summary || a.description || '',
-        url: a.url || a.link || 'https://www.cisa.gov/news-events/alerts',
-        date: a.date_updated || a.date || a.pubDate || '',
+        // 💡 CISA 데이터 포맷 규격에 맞게 매핑
+        title: a.title || '',
+        desc: a.summary || a.content || '',
+        url: a.url || a.id || 'https://www.cisa.gov/news-events/alerts',
+        date: a.updated || a.published || '',
       }));
       newsAll.push(...items);
     }
-  } catch(e) { console.warn('CISA Alerts fetch 실패:', e.message); }
+  } catch(e) { 
+    console.warn('CISA Alerts fetch 실패:', e.message);
+  }
 
-  // 2) GitHub Actions로 생성된 news.json — 같은 레포에서 fetch
+  // 2) GitHub Actions로 생성된 news.json — RSS 피드 통합본 fetch
   try {
     const r = await fetch('./news.json');
     if (r.ok) {
@@ -430,19 +434,17 @@ async function loadNews(force) {
       newsAll.push(...items);
       document.getElementById('nb-news').style.display = items.length ? '' : 'none';
     }
-  } catch(e) { console.warn('news.json 없음 (GitHub Actions 미실행):', e.message); }
+  } catch(e) { 
+    console.warn('news.json 없음 (GitHub Actions 미실행):', e.message);
+  }
 
-  // 날짜 내림차순 정렬
+  // 전체 뉴스를 날짜 내림차순(최신순)으로 정렬
   newsAll.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
 
   if (!newsAll.length) {
     el.innerHTML = `<div class="empty">
       <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 22h16a2 2 0 002-2V4a2 2 0 00-2-2H8a2 2 0 00-2 2v16a2 2 0 01-2 2zm0 0a2 2 0 01-2-2v-9c0-1.1.9-2 2-2h2"/></svg>
-      뉴스를 불러오지 못했습니다<br>
-      <small style="font-size:11px;color:var(--text3);margin-top:4px;display:block">
-        GitHub Actions 워크플로우가 아직 실행되지 않았거나 로컬 환경입니다<br>
-        <code style="font-size:10px;background:var(--bg3);padding:1px 5px;border-radius:3px">.github/workflows/fetch-news.yml</code> 을 레포에 추가하고 Actions를 실행해주세요
-      </small>
+      뉴스를 불러오지 못했습니다
     </div>`;
     return;
   }
