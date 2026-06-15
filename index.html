@@ -354,6 +354,10 @@ function newsSourceBadge(src) {
 
 function newsCard(item) {
   const date = item.date ? new Date(item.date).toLocaleDateString('ko-KR', { year:'numeric', month:'short', day:'numeric' }) : '';
+  
+  let cleanDesc = (item.desc || '').replace(/<\/?[^>]+(>|$)/g, "");
+  cleanDesc = cleanDesc.replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").trim();
+
   return `<div class="card">
     <div class="card-top">
       ${newsSourceBadge(item.source)}
@@ -362,7 +366,9 @@ function newsCard(item) {
     <div class="card-meta">
       ${date ? `<span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${date}</span>` : ''}
     </div>
-    ${item.desc ? `<div class="card-desc">${escHtml(item.desc.slice(0, 200))}${item.desc.length > 200 ? '…' : ''}</div>` : ''}
+    
+    ${cleanDesc ? `<div class="card-desc">${escHtml(cleanDesc.slice(0, 220))}${cleanDesc.length > 220 ? '…' : ''}</div>` : ''}
+    
     <div class="card-footer">
       <a class="btn" href="${escHtml(item.url)}" target="_blank" rel="noopener">
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
