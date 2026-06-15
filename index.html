@@ -624,16 +624,14 @@ async function searchNvd() {
   el.innerHTML = '<div class="loading"><div class="spinner"></div><br>NVD 검색 중...</div>';
   nvdPage = 0;
   try {
-    // 기본 시작 주소 (결과 개수는 50개로 제한)
+    // 기본 시작 주소
     let url = 'https://services.nvd.nist.gov/rest/json/cves/2.0?resultsPerPage=50';
     
     // 1. 검색어가 있을 때
     if (q) {
       if (/^CVE-/i.test(q)) {
-        // CVE ID 직접 검색 시
         url += `&cveId=${encodeURIComponent(q.toUpperCase())}`;
       } else {
-        // 일반 키워드 검색 시 (keywordExactMatch 필수 포함)
         url += `&keywordSearch=${encodeURIComponent(q)}&keywordExactMatch`;
       }
     }
@@ -643,22 +641,21 @@ async function searchNvd() {
       url += `&cvssV3Severity=${sev}`;
     }
     
-    // 3. 검색어도 없고 심각도 선택도 안 했을 때 (최근 30일 데이터 가져오기)
+    // 3. 검색어도 없고 심각도 선택도 안 했을 때 (날짜 직접 계산 대신 안전한 파라미터 사용)
     if (!q && !sev) {
       const now = new Date();
-      const ago30 = new Date(Date.now() - 30 * 86400000);
+      // 안전하게 딱 5일 전부터 현재까지만 조회 (로컬 시간 왜곡 방지)
+      const ago5 = new Date(Date.now() - 5 * 86400000);
       
-      // NVD가 요구하는 날짜 포맷으로 변환 (예: 2026-06-15T00:00:00.000%2B09:00)
       const formatNvdDate = (d) => d.toISOString().replace(/\.\d+Z$/, '+00:00');
       
-      url += `&pubStartDate=${encodeURIComponent(formatNvdDate(ago30))}&pubEndDate=${encodeURIComponent(formatNvdDate(now))}`;
+      url += `&lastModStartDate=${encodeURIComponent(formatNvdDate(ago5))}&lastModEndDate=${encodeURIComponent(formatNvdDate(now))}`;
     }
 
     const r = await fetch(url);
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     const d = await r.json();
     
-    // 데이터 매핑 로직 (기존 코드와 동일)
     nvdAll = (d.vulnerabilities || []).map(v => {
       const c = v.cve;
       const m = c.metrics?.cvssMetricV31?.[0] || c.metrics?.cvssMetricV30?.[0] || c.metrics?.cvssMetricV2?.[0];
@@ -679,7 +676,6 @@ async function searchNvd() {
     el.innerHTML = `<div class="empty">NVD API 오류: ${e.message}<br><small style="font-size:11px;color:var(--text3)">잠시 후 다시 시도하거나 키워드를 변경해보세요</small></div>`;
   }
 }
-
 const OWASP_DATA = {
   webapp: {
     label: 'Web Application Top 10',
