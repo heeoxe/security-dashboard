@@ -6,7 +6,7 @@
 <title>Security Intel Dashboard</title>
 <style>
   :root {
-    --bg: #0f1117;
+    --bg: #F5F5F5;
     --bg2: #181c27;
     --bg3: #1e2333;
     --border: #2a2f42;
@@ -48,7 +48,7 @@
   .sidebar { border-right: 1px solid var(--border); padding: 1.25rem 0; }
   .nav-section { padding: 0 1rem; margin-bottom: 1.5rem; }
   .nav-label { font-size: 10px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px; padding: 0 4px; }
-  .nav-item { display: flex; align-items: center; gap: 8px; padding: 7px 10px; border-radius: var(--radius); cursor: pointer; font-size: 13px; color: var(--text2); transition: all 0.15s; border: none; background: none; width: 100%; text-align: left; }
+  .nav-item { display: flex; align-items: center; gap: 8px; padding: 7px 10px; border-radius: var(--radius); cursor: pointer; font-size: 13px; color: var(--text2); transition: all 0.15s; border: none; }
   .nav-item:hover { background: var(--bg3); color: var(--text); }
   .nav-item.active { background: var(--accent2); color: var(--accent); font-weight: 500; }
   .nav-item svg { flex-shrink: 0; }
@@ -68,7 +68,7 @@
   .toolbar input { flex: 1; min-width: 200px; }
   .toolbar input:focus, .toolbar select:focus { border-color: var(--accent); }
   .toolbar select option { background: var(--bg2); }
-  .btn { height: 36px; padding: 0 16px; border-radius: var(--radius); border: 1px solid var(--border); background: var(--bg2); color: var(--text); font-size: 13px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s; white-space: nowrap; }
+  .btn { height: 36px; padding: 0 16px; border-radius: var(--radius); border: 1px solid var(--border); background: var(--bg2); color: var(--text); font-size: 13px; cursor: pointer; display: inline-flex; }
   .btn:hover { border-color: var(--border2); background: var(--bg3); }
   .btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
   .btn-primary:hover { opacity: 0.9; }
@@ -106,7 +106,7 @@
   .cve-id { font-family: 'SF Mono', 'Cascadia Code', monospace; font-size: 11px; color: var(--text3); }
 
   .loading { text-align: center; padding: 3rem; color: var(--text3); font-size: 13px; }
-  .spinner { display: inline-block; width: 20px; height: 20px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 12px; }
+  .spinner { display: inline-block; width: 20px; height: 20px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 8px; }
   @keyframes spin { to { transform: rotate(360deg); } }
 
   .empty { text-align: center; padding: 3rem; color: var(--text3); font-size: 13px; }
@@ -161,7 +161,7 @@
         <span class="nav-badge hot" id="nb-kev">—</span>
       </button>
       <button class="nav-item" onclick="switchPanel('nvd', this)">
-        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M21 19c0 1.66-4 3-9 3s-9-1.34-9-3"/></svg>
         NVD CVE
       </button>
     </div>
@@ -194,7 +194,7 @@
           <option value="vendor">벤더순</option>
         </select>
         <button class="btn" onclick="loadKev(true)">
-          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.35-4.35"/></svg>
           새로고침
         </button>
       </div>
@@ -324,7 +324,7 @@ function kevCard(item) {
       <div class="card-title">${escHtml(item.title)}</div>
     </div>
     <div class="card-meta">
-      <span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${item.added}</span>
+      <span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${item.added || ''}</span>
       <span class="cve-id">${item.cve}</span>
       <span>${escHtml(item.vendor)} / ${escHtml(item.product)}</span>
       ${item.due ? `<span style="color:var(--high)">패치 마감 ${item.due}</span>` : ''}
@@ -333,7 +333,7 @@ function kevCard(item) {
     <div class="card-footer" style="margin-top:10px">
       <button class="btn" onclick='toggleSave(${JSON.stringify(bm)})'>${sv ? '★ 저장됨' : '☆ 저장'}</button>
       <a class="btn" href="https://www.cve.org/CVERecord?id=${item.cve}" target="_blank" rel="noopener">
-        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M9 9h6"/></svg>
         CVE 원문
       </a>
       <a class="btn" href="https://nvd.nist.gov/vuln/detail/${item.cve}" target="_blank" rel="noopener">NVD 상세</a>
@@ -352,7 +352,7 @@ function nvdCard(item) {
       <div class="card-title cve-id" style="font-size:13px">${item.cve}</div>
     </div>
     <div class="card-meta">
-      <span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${item.published}</span>
+      <span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${item.published || ''}</span>
       ${item.cwe ? `<span>${escHtml(item.cwe)}</span>` : ''}
     </div>
     ${cvss ? `<div class="cvss-row"><span class="cvss-label">CVSS ${cvss.toFixed(1)}</span><div class="cvss-track"><div class="cvss-fill" style="width:${Math.round(cvss/10*100)}%;background:${cvssColor(cvss)}"></div></div></div>` : ''}
@@ -361,7 +361,7 @@ function nvdCard(item) {
     <div class="card-footer">
       <button class="btn" onclick='toggleSave(${JSON.stringify(bm)})'>${sv ? '★ 저장됨' : '☆ 저장'}</button>
       <a class="btn" href="https://nvd.nist.gov/vuln/detail/${item.cve}" target="_blank" rel="noopener">
-        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M9 9h6"/></svg>
         NVD 원문
       </a>
     </div>
@@ -372,7 +372,7 @@ function renderKevPage() {
   const el = document.getElementById('kev-list');
   const start = kevPage * PAGE;
   const slice = kevFiltered.slice(start, start + PAGE);
-  if (!slice.length) { el.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>결과가 없습니다</div>'; renderKevPager(); return; }
+  if (!slice.length) { el.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>검색 결과가 없습니다</div>'; renderKevPager(); return; }
   el.innerHTML = slice.map(kevCard).join('');
   renderKevPager();
 }
@@ -438,7 +438,7 @@ async function loadKev(force) {
     kevFiltered = [...kevAll];
     renderKevPage();
   } catch (e) {
-    el.innerHTML = `<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>로딩 실패: ${e.message}</div>`;
+    el.innerHTML = `<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>오류: ${e.message}<br><small style="font-size:11px">CISA 서버에 문제가 있을 수 있습니다</small></div>`;
   }
 }
 
@@ -496,16 +496,16 @@ async function searchNvd() {
 }
 
 const OWASP = [
-  { rank:'A01', name:'Broken Access Control', sev:'CRITICAL', desc:'인증된 사용자가 허가되지 않은 리소스에 접근할 수 있는 취약점. 2021년 가장 심각한 위협으로 94%의 애플리케이션에서 발견.' },
-  { rank:'A02', name:'Cryptographic Failures', sev:'HIGH', desc:'민감한 데이터 전송 및 저장 시 암호화 미적용 또는 취약한 암호 알고리즘 사용으로 인한 데이터 노출.' },
+  { rank:'A01', name:'Broken Access Control', sev:'CRITICAL', desc:'인증된 사용자가 허가되지 않은 리소스에 접근할 수 있는 취약점. 2021년 가장 심각한 위협으로 94%의 테스트에서 발견.' },
+  { rank:'A02', name:'Cryptographic Failures', sev:'HIGH', desc:'민감한 데이터 전송 및 저장 시 암호화 미적용 또는 취약한 암호 알고리즘 사용으로 인한 데이터 노출 위험.' },
   { rank:'A03', name:'Injection', sev:'CRITICAL', desc:'SQL, NoSQL, OS 명령어 등에 신뢰할 수 없는 데이터가 삽입되어 의도치 않은 명령이 실행되는 취약점.' },
   { rank:'A04', name:'Insecure Design', sev:'HIGH', desc:'설계 단계의 보안 결함. 위협 모델링 부재, 보안 설계 패턴 미적용으로 발생하는 구조적 취약점.' },
   { rank:'A05', name:'Security Misconfiguration', sev:'HIGH', desc:'불필요한 기능 활성화, 기본 계정, 오류 메시지의 과도한 정보 노출 등 잘못된 보안 설정.' },
   { rank:'A06', name:'Vulnerable and Outdated Components', sev:'HIGH', desc:'알려진 취약점이 있는 구성 요소 사용. 미패치 OS, 프레임워크, 라이브러리 등이 대상.' },
-  { rank:'A07', name:'Identification and Authentication Failures', sev:'HIGH', desc:'세션 관리, 자격증명 관리 취약점. 무차별 대입 공격, 약한 패스워드, 세션 고정 공격 등.' },
+  { rank:'A07', name:'Identification and Authentication Failures', sev:'HIGH', desc:'세션 관리, 자격증��� 관리 취약점. 무차별 대입 공격, 약한 패스워드, 세션 고정 공격 등.' },
   { rank:'A08', name:'Software and Data Integrity Failures', sev:'HIGH', desc:'무결성 검증 없는 소프트웨어 업데이트, CI/CD 파이프라인 취약점, 안전하지 않은 역직렬화.' },
-  { rank:'A09', name:'Security Logging and Monitoring Failures', sev:'MEDIUM', desc:'침해 사고 탐지·대응에 필요한 로깅·모니터링 부재. 공격자가 오래 은닉할 수 있는 환경 조성.' },
-  { rank:'A10', name:'Server-Side Request Forgery (SSRF)', sev:'HIGH', desc:'서버가 사용자가 제공한 URL로 요청을 전송할 때 목적지 검증 없이 내부 리소스에 접근되는 취약점.' },
+  { rank:'A09', name:'Security Logging and Monitoring Failures', sev:'MEDIUM', desc:'침해 사고 탐지·대응에 필요한 로깅·모니터링 부재. 공격자가 오래 은닉할 수 있는 환경.' },
+  { rank:'A10', name:'Server-Side Request Forgery (SSRF)', sev:'HIGH', desc:'서버가 사용자가 제공한 URL로 요청을 전송할 때 목적지 검증 없이 내부 리소스에 접근되는 취약점.' }
 ];
 
 let owaspLoaded = false;
@@ -524,7 +524,7 @@ function loadOwasp() {
 function renderSaved() {
   const el = document.getElementById('saved-list');
   if (!bookmarks.length) {
-    el.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>저장된 항목이 없습니다</div>';
+    el.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>저장된 항목이 없습니다<br>CISA KEV 또는 NVD에서 북마크하세요</div>';
     return;
   }
   el.innerHTML = bookmarks.map(b => `<div class="card">
@@ -536,7 +536,7 @@ function renderSaved() {
     <div class="card-meta"><span class="cve-id">${b.cve}</span>${b.vendor ? `<span>${escHtml(b.vendor)}</span>` : ''}</div>
     <div class="card-footer" style="margin-top:8px">
       <button class="btn" onclick='toggleSave(${JSON.stringify(b)});renderSaved()'>
-        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/></svg>
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/><path d="M10 11v6M14 11v6"/></svg>
         삭제
       </button>
       <a class="btn" href="https://nvd.nist.gov/vuln/detail/${b.cve}" target="_blank" rel="noopener">NVD 상세</a>
