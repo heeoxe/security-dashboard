@@ -475,8 +475,22 @@ function cvssToSev(v) {
 function kevCard(item) {
   const sv = isSaved(item.id);
   const cvss = item.cvss || 0;
-  const bm = { id: item.id, cve: item.cve, title: item.title, sev: item.sev, vendor: item.vendor, source: 'CISA KEV' };
   
+  // 💡 모든 상세 데이터를 북마크 객체(bm)에 바인딩
+  const bm = { 
+    id: item.id, 
+    cve: item.cve, 
+    title: item.title, 
+    sev: item.sev, 
+    cvss: item.cvss,
+    date: item.added,
+    due: item.due,
+    vendor: item.vendor,
+    product: item.product,
+    desc: item.desc || '', // CISA KEV 원본에는 보통 본문이 생략되거나 짧습니다.
+    source: 'CISA KEV' 
+  };
+
   return `<div class="card">
     <div class="card-top">
       <span class="badge src-cisa">CISA KEV</span>
@@ -503,7 +517,21 @@ function kevCard(item) {
 function nvdCard(item) {
   const sv = isSaved(item.id);
   const cvss = item.cvss || 0;
-  const bm = { id: item.id, cve: item.cve, title: item.cve, sev: item.sev, source: 'NVD' };
+  
+  // 💡 모든 상세 데이터를 북마크 객체(bm)에 바인딩
+  const bm = { 
+    id: item.id, 
+    cve: item.cve, 
+    title: item.cve, 
+    sev: item.sev, 
+    cvss: item.cvss,
+    date: item.published,
+    cwe: item.cwe,
+    desc: item.desc,
+    tags: item.tags,
+    source: 'NVD' 
+  };
+
   return `<div class="card">
     <div class="card-top">
       <span class="badge ${sevClass(item.sev)}">${sevLabel(item.sev)}</span>
@@ -851,21 +879,41 @@ function renderSaved() {
     el.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>저장된 항목이 없습니다</div>';
     return;
   }
-  el.innerHTML = bookmarks.map(b => `<div class="card">
-    <div class="card-top">
-      <span class="badge ${sevClass(b.sev)}">${sevLabel(b.sev)}</span>
-      <span class="badge ${b.source === 'CISA KEV' ? 'src-cisa' : 'src-nvd'}">${b.source}</span>
-      <div class="card-title">${escHtml(b.title)}</div>
-    </div>
-    <div class="card-meta"><span class="cve-id">${b.cve}</span>${b.vendor ? `<span>${escHtml(b.vendor)}</span>` : ''}</div>
-    <div class="card-footer" style="margin-top:8px">
-      <button class="btn" onclick='toggleSave(${JSON.stringify(b)});renderSaved()'>
-        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/></svg>
-        삭제
-      </button>
-      <a class="btn" href="https://nvd.nist.gov/vuln/detail/${b.cve}" target="_blank" rel="noopener">NVD 상세</a>
-    </div>
-  </div>`).join('');
+  
+  el.innerHTML = bookmarks.map(b => {
+    const cvss = b.cvss || 0;
+    const tags = Array.isArray(b.tags) ? b.tags : [];
+
+    return `<div class="card">
+      <div class="card-top">
+        ${b.source === 'CISA KEV' ? '' : `<span class="badge ${sevClass(b.sev)}">${sevLabel(b.sev)}</span>`}
+        <span class="badge ${b.source === 'CISA KEV' ? 'src-cisa' : 'src-nvd'}">${b.source}</span>
+        <div class="card-title ${b.source === 'NVD' ? 'cve-id' : ''}" style="${b.source === 'NVD' ? 'font-size:13px' : ''}">${escHtml(b.title)}</div>
+      </div>
+      
+      <div class="card-meta">
+        ${b.date ? `<span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${b.date}</span>` : ''}
+        ${b.cwe ? `<span>${escHtml(b.cwe)}</span>` : ''}
+        ${b.source === 'CISA KEV' ? `<span class="cve-id">${b.cve}</span>` : ''}
+        ${b.vendor ? `<span>${escHtml(b.vendor)} / ${escHtml(b.product || '')}</span>` : ''}
+        ${b.due ? `<span style="color:var(--high)">패치 마감 ${b.due}</span>` : ''}
+      </div>
+      
+      ${cvss ? `<div class="cvss-row"><span class="cvss-label">CVSS ${cvss.toFixed(1)}</span><div class="cvss-track"><div class="cvss-fill" style="width:${Math.round(cvss/10*100)}%;background:${cvssColor(cvss)}"></div></div></div>` : ''}
+      
+      ${b.desc ? `<div class="card-desc" style="margin-top:8px">${escHtml(b.desc)}</div>` : ''}
+      
+      ${tags.length ? `<div style="margin-bottom:6px">${tags.map(t=>`<span class="tag">${escHtml(t)}</span>`).join('')}</div>` : ''}
+      
+      <div class="card-footer" style="margin-top:10px">
+        <button class="btn" onclick='toggleSave(${JSON.stringify(b)});renderSaved()'>
+          <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/></svg>
+          삭제
+        </button>
+        <a class="btn" href="https://nvd.nist.gov/vuln/detail/${b.cve}" target="_blank" rel="noopener">NVD 상세</a>
+      </div>
+    </div>`;
+  }).join('');
 }
 
 function escHtml(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
