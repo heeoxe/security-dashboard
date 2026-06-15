@@ -1,0 +1,43 @@
+name: Fetch CISA KEV Data
+
+on:
+  schedule:
+    - cron: '30 0 * * *'   # 매일 오전 9시 30분 KST (뉴스 실행 30분 뒤에 안전하게 실행)
+  workflow_dispatch:        # 수동 실행 버튼
+
+jobs:
+  fetch-cisa:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download CISA KEV JSON
+        run: |
+          python3 << 'EOF'
+          import json, urllib.request
+          try:
+              kev_url = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+              req = urllib.request.Request(kev_url, headers={"User-Agent": "Mozilla/5.0"})
+              with urllib.request.urlopen(req, timeout=15) as r:
+                  kev_data = json.loads(r.read().decode('utf-8'))
+              with open("kev.json", "w", encoding="utf-8") as f:
+                  json.dump(kev_data, f, ensure_ascii=False, indent=2)
+              print("CISA KEV 백업 완료 -> kev.json")
+          except Exception as e:
+              print(f"[WARN] CISA KEV 다운로드 실패: {e}")
+              exit(1)
+          EOF
+
+      - name: Commit kev.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add kev.json
+          git diff --cached --quiet && echo "변경사항 없음" || git commit -m "chore: update kev.json [$(date '+%Y-%m-%d')]"
+          git push
