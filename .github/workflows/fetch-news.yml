@@ -1,86 +1,64 @@
-name: Fetch Security News
+import urllib.request
+import xml.etree.ElementTree as ET
+import json
+from datetime import datetime
 
-on:
-  schedule:
-    - cron: '0 0 * * *'   # 매일 오전 9시 KST (UTC 00:00)
-  workflow_dispatch:        # 수동 실행 버튼
+# 💡 Bleeping Computer는 빼고, CISA와 THN 두 가지만 딱 깔끔하게 수집합니다.
+FEEDS = {
+    "cisa": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+    "thn": "https://feeds.feedburner.com/TheHackersNews"
+}
 
-jobs:
-  fetch:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    # 💡 env 위치
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4.2.0
-
-      - name: Fetch RSS feeds & build news.json
-        run: |
-          python3 << 'EOF'
-          import json, urllib.request, xml.etree.ElementTree as ET
-          from datetime import datetime, timezone
-          from email.utils import parsedate_to_datetime
-
-          FEEDS = [
-            {
-              "source": "thn",
-              "url": "https://feeds.feedburner.com/TheHackersNews",
-            },
-            {
-              "source": "bc",
-              "url": "https://www.bleepingcomputer.com/feed/",
-            },
-          ]
-
-          def parse_rss(source, url):
-            items = []
+def parse_rss(source, url):
+    items = []
+    try:
+        req = urllib.request.Request(
+            url, 
+            headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
+        )
+        with urllib.request.urlopen(req, timeout=15) as r:
+            xml_data = r.read()
+            
+        root = ET.fromstring(xml_data)
+        
+        for item in root.findall('.//item'):
+            title = item.find('title')
+            link = item.find('link')
+            desc = item.find('description')
+            pub_date = item.find('pubDate')
+            
+            date_str = pub_date.text if pub_date is not None else ""
             try:
-              req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-              with urllib.request.urlopen(req, timeout=15) as r:
-                tree = ET.parse(r)
-              root = tree.getroot()
-              channel = root.find("channel")
-              if channel is None:
-                channel = root
-              for item in channel.findall("item")[:20]:
-                title = (item.findtext("title") or "").strip()
-                link  = (item.findtext("link") or "").strip()
-                desc  = (item.findtext("description") or "").strip()
-                import re
-                desc = re.sub(r"<[^>]+>", "", desc).strip()[:300]
-                pub   = item.findtext("pubDate") or ""
-                try:
-                  date = parsedate_to_datetime(pub).astimezone(timezone.utc).isoformat()
-                except Exception:
-                  date = datetime.now(timezone.utc).isoformat()
-                if title and link:
-                  items.append({"source": source, "title": title, "desc": desc, "url": link, "date": date})
-            except Exception as e:
-              print(f"[WARN] {source} 피드 오류: {e}")
-            return items
+                if date_str:
+                    parsed_date = datetime.strptime(date_str.strip()[:25].strip(), "%a, %d %b %Y %H:%M:%S")
+                    date_str = parsed_date.isoformat()
+            except Exception:
+                pass
 
-          news = []
-          for feed in FEEDS:
-            items = parse_rss(feed["source"], feed["url"])
-            print(f"[{feed['source']}] {len(items)}개 수집")
-            news.extend(items)
+            items.append({
+                "source": source,  # 💡 "cisa" 또는 "thn"이 정확하게 박힙니다.
+                "title": title.text if title is not None else "",
+                "desc": desc.text if desc is not None else "",
+                "url": link.text if link is not None else "",
+                "date": date_str
+            })
+    except Exception as e:
+        print(f"[{source}] 피드 수집 중 에러 발생: {str(e)}")
+    return items
 
-          news.sort(key=lambda x: x.get("date", ""), reverse=True)
+def main():
+    all_news = []
+    for source, url in FEEDS.items():
+        feed_items = parse_rss(source, url)
+        all_news.extend(feed_items)
+        
+    # 최신 날짜 순 정렬 및 상위 50개 커트라인
+    all_news.sort(key=lambda x: x.get('date', ''), reverse=True)
+    all_news = all_news[:50]
+    
+    with open('news.json', 'w', encoding='utf-8') as f:
+        json.dump(all_news, f, ensure_ascii=False, indent=2)
+    print(f"news.json 빌드 완료! 총 {len(all_news)}개 적재됨.")
 
-          with open("news.json", "w", encoding="utf-8") as f:
-            json.dump(news, f, ensure_ascii=False, indent=2)
-
-          print(f"총 {len(news)}개 항목 → news.json 저장 완료")
-          EOF
-
-      - name: Commit news.json
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add news.json
-          git diff --cached --quiet && echo "변경사항 없음" || git commit -m "chore: update news.json [$(date '+%Y-%m-%d')]"
-          git push
+if __name__ == "__main__":
+    main()
