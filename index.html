@@ -476,10 +476,9 @@ function kevCard(item) {
   const sv = isSaved(item.id);
   const cvss = item.cvss || 0;
   const bm = { id: item.id, cve: item.cve, title: item.title, sev: item.sev, vendor: item.vendor, source: 'CISA KEV' };
+  
   return `<div class="card">
     <div class="card-top">
-      <span class="badge ${sevClass(item.sev)}">${sevLabel(item.sev)}</span>
-      <span class="badge src-cisa">CISA KEV</span>
       <div class="card-title">${escHtml(item.title)}</div>
     </div>
     <div class="card-meta">
