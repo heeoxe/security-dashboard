@@ -571,7 +571,8 @@ async function loadKev(force) {
   const el = document.getElementById('kev-list');
   el.innerHTML = '<div class="loading"><div class="spinner"></div><br>CISA KEV 불러오는 중...</div>';
   try {
-    const r = await fetch('https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json');
+    // 💡 내 레포지토리에 저장될 백업 파일을 읽도록 주소 변경
+    const r = await fetch('./kev.json'); 
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     const d = await r.json();
     kevAll = (d.vulnerabilities || []).map(v => ({
