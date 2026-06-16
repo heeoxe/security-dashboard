@@ -358,7 +358,7 @@
     <div id="dp-meta-section"></div>
     <div id="dp-desc-section"></div>
 
-    <div>
+    <!-- <div>
       <div class="detail-section-label">상태</div>
       <div class="detail-status">
         <button class="status-chip" data-s="신규" onclick="setStatus('신규')">신규</button>
@@ -366,12 +366,12 @@
         <button class="status-chip" data-s="완료" onclick="setStatus('완료')">완료</button>
         <button class="status-chip" data-s="보류" onclick="setStatus('보류')">보류</button>
       </div>
-    </div>
+    </div> -->
 
     <div>
       <div class="detail-section-label">태그</div>
       <div class="detail-tags-input">
-        <input id="dp-tag-input" type="text" placeholder="#패치필요, #검토중..." onkeydown="if(event.key==='Enter')addTag()" />
+        <input id="dp-tag-input" type="text" placeholder="카테고리" onkeydown="if(event.key==='Enter')addTag()" />
         <button class="btn" onclick="addTag()">추가</button>
       </div>
       <div id="dp-tags"></div>
@@ -379,7 +379,7 @@
 
     <div class="detail-memo">
       <div class="detail-section-label">메모</div>
-      <textarea id="dp-memo" placeholder="분석 내용, 조치 사항, 참고 링크 등 자유롭게 작성하세요..."></textarea>
+      <textarea id="dp-memo" placeholder="분석 내용, 조치 사항, 참고 링크 등 자유롭게 작성"></textarea>
     </div>
   </div>
   <div class="detail-footer">
