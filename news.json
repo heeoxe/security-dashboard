@@ -6,7 +6,52 @@
     "url": "https://www.cisa.gov/news-events/alerts/2026/06/03/cisa-adds-one-known-exploited-vulnerability-catalog",
     "date": "Wed, 03 Jun 26 12:00:00 +0000",
     "title_ko": "CISA, 알려진 악용 사례 있는 취약점 1건을 카탈로그에 추가",
-    "desc_ko": "CISA는 현재 악용되고 있다는 증거를 바탕으로 ‘알려진 악용 취약점(KEV) 카탈로그’에 새로운 취약점 하나를 추가했습니다.\n\nCVE-2026-45247 Mirasvit 전체 페이지 캐시 워머(Full Page Cache Warmer) 비신뢰 데이터 역직렬화 취약점\n\n이러한 유형의 취약점은 m"
+    "desc_ko": "CISA는 현재 악용되고 있다는 증거를 바탕으로 ‘알려진 악용 취약점(KEV) 카탈로그’에 새로운 취약점 하나를 추가했습니다.\n\nCVE-2026-45247 Mirasvit 전체 페이지 캐시 워머(Full Page Cache Warmer) 비신뢰 데이터 역직렬화 취약점\n\n이러한 유형의 취약점은 m에 대한 빈번한 공격 경로입니다."
+  },
+  {
+    "source": "cisa",
+    "title": "Rockwell Automation Logix 5370 & 5570 Controllers Vulnerable To Denial of Service Via CIP",
+    "desc": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could cause a denial-of-service condition that may result in a major nonrecoverable fault (MNRF).\nThe following versions of Rockwell Automation Logix 5370 &amp; 5570 Controllers Vulnerable To Denial of Service Via CIP are affected:\n\nCom",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-167-03",
+    "date": "Tue, 16 Jun 26 12:00:00 +0000",
+    "title_ko": "록웰 오토메이션(Rockwell Automation)의 Logix 5370 및 5570 컨트롤러, CIP를 통한 서비스 거부(DoS) 공격에 취약",
+    "desc_ko": "CSAF 보기\n요약\n이 취약점을 악용당할 경우 서비스 거부(DoS) 상태가 발생하여 복구 불가능한 중대 오류(MNRF)로 이어질 수 있습니다.\n다음 버전의 Rockwell Automation Logix 5370 및 5570 컨트롤러는 CIP를 통한 서비스 거부(DoS) 취약점에 노출되어 있습니다:\n\nCom"
+  },
+  {
+    "source": "cisa",
+    "title": "Rockwell Automation RSLinx ",
+    "desc": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability can lead to a denial of service, where the application will become unresponsive and will not recover on its own.\nThe following versions of RSLinx Classic Third-Party Vulnerability are affected:\n\nRSLinx Classic &lt;=4.50.00 (CVE-2020-135",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-167-02",
+    "date": "Tue, 16 Jun 26 12:00:00 +0000",
+    "title_ko": "록웰 오토메이션 RSLinx ",
+    "desc_ko": "CSAF 보기\n요약\n이 취약점을 악용당할 경우 서비스 거부(DoS)가 발생할 수 있으며, 이 경우 애플리케이션이 응답하지 않게 되고 자체적으로 복구되지 않습니다.\n다음 버전의 RSLinx Classic 타사 취약점이 영향을 받습니다:\n\nRSLinx Classic &lt;=4.50.00 (CVE-2020-135"
+  },
+  {
+    "source": "cisa",
+    "title": "Rockwell Automation FLEX I/O EtherNet/IP Adapters",
+    "desc": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to gain unauthorized access, account takeover, and cause loss of availability.\nThe following versions of Rockwell Automation FLEX I/O EtherNet/IP Adapters are affected:\n\n1794-AENTR V2.012 (CVE-2026-0646, CVE-2",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-167-05",
+    "date": "Tue, 16 Jun 26 12:00:00 +0000",
+    "title_ko": "록웰 오토메이션 FLEX I/O EtherNet/IP 어댑터",
+    "desc_ko": "CSAF 보기\n요약\n이러한 취약점을 악용할 경우, 공격자가 무단 접근 및 계정 탈취를 수행하고 가용성 손실을 초래할 수 있습니다.\n다음 버전의 Rockwell Automation FLEX I/O EtherNet/IP 어댑터가 이 취약점의 영향을 받습니다:\n\n1794-AENTR V2.012 (CVE-2026-0646, CVE-2"
+  },
+  {
+    "source": "cisa",
+    "title": "Rockwell Automation FactoryTalk Analytics PavilionX",
+    "desc": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could result in an attacker executing privileged operations.\nThe following versions of Rockwell Automation FactoryTalk Analytics PavilionX are affected:\n\nFactoryTalk Analytics PavilionX &lt;7.01 (CVE-2025-14272)\n\n\n\n\n\nCVSS\nVendor\nEquipme",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-167-01",
+    "date": "Tue, 16 Jun 26 12:00:00 +0000",
+    "title_ko": "록웰 오토메이션 팩토리톡 애널리틱스 파빌리온X",
+    "desc_ko": "CSAF 보기\n요약\n이 취약점을 악용하는 데 성공할 경우, 공격자가 특권 작업을 수행할 수 있습니다.\n다음 버전의 Rockwell Automation FactoryTalk Analytics PavilionX가 영향을 받습니다:\n\nFactoryTalk Analytics PavilionX &lt;7.01 (CVE-2025-14272)\n\n\n\n\nCVSS\n공급업체\nEquipme"
+  },
+  {
+    "source": "cisa",
+    "title": "Rockwell Automation CompactLogix",
+    "desc": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to cause a denial-of-service condition.\nThe following versions of Rockwell Automation CompactLogix are affected:\n\nCompactLogix 5370 L1\nCompactLogix 5370 L2\nCompactLogix 5370 L3\n\n\n\n\n\nCVSS\nVendor\nEquipment\nVulne",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-167-04",
+    "date": "Tue, 16 Jun 26 12:00:00 +0000",
+    "title_ko": "록웰 오토메이션 컴팩트로지ックス",
+    "desc_ko": "CSAF 보기\n요약\n이 취약점을 악용하는 데 성공할 경우, 공격자가 서비스 거부(DoS) 상태를 유발할 수 있습니다.\n다음 버전의 Rockwell Automation CompactLogix가 이 취약점의 영향을 받습니다:\n\nCompactLogix 5370 L1\nCompactLogix 5370 L2\nCompactLogix 5370 L3\n\n\n\n\nCVSS\n공급업체\n장비\n취약점"
   },
   {
     "source": "cisa",
@@ -15,7 +60,7 @@
     "url": "https://www.cisa.gov/news-events/alerts/2026/06/09/cisa-adds-three-known-exploited-vulnerabilities-catalog",
     "date": "Tue, 09 Jun 26 12:00:00 +0000",
     "title_ko": "CISA, 악용된 것으로 알려진 취약점 3건을 카탈로그에 추가",
-    "desc_ko": "CISA는 현재 악용되고 있다는 증거를 바탕으로 ‘알려진 악용 취약점(KEV) 카탈로그’에 세 가지 새로운 취약점을 추가했습니다.\n\nCVE-2026-7473 Arista Extensible Operating System 요소 누락에 따른 불완전한 비교 취약점\nCVE-2026-11645 Google Chromium V8 범위를 벗어난 읽기 및"
+    "desc_ko": "CISA는 현재 악용되고 있다는 증거를 바탕으로 ‘알려진 악용 취약점(KEV) 카탈로그’에 세 가지 새로운 취약점을 추가했습니다.\n\nCVE-2026-7473 Arista Extensible Operating System의 누락된 요소를 포함한 불완전한 비교 취약점\nCVE-2026-11645 Google Chromium V8의 범위를 벗어난 읽기 및"
   },
   {
     "source": "cisa",
@@ -24,7 +69,7 @@
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-160-02",
     "date": "Tue, 09 Jun 26 12:00:00 +0000",
     "title_ko": "지멘스 KACO Blueplanet 인버터",
-    "desc_ko": "CSAF 보기\n요약\nKACO blueplanet 인버터에는 공격자가 장치의 일련번호를 통해 인증 정보를 추출하고 이를 악용하여 무단 접근을 시도할 수 있는 여러 취약점이 존재합니다. KACO new energy GmbH는 해당 취약점이 발견된 여러 제품에 대한 새 버전을 출시했으며, 다음과 같이 권장합니다. "
+    "desc_ko": "CSAF 보기\n요약\nKACO blueplanet 인버터에는 공격자가 장치의 일련번호를 통해 인증 정보를 추출하고 이를 악용하여 무단 접근을 시도할 수 있는 여러 취약점이 존재합니다. KACO new energy GmbH는 영향을 받는 여러 제품에 대한 새 버전을 출시했으며 다음과 같이 권장합니다. "
   },
   {
     "source": "cisa",
@@ -32,8 +77,8 @@
     "desc": "View CSAF\nSummary\nSchneider Electric is aware of its vulnerability in its EcoStruxure Panel Server offer. The EcoStruxure Panel Server is a high performance, modular gateway with enhanced cybersecurity that provides easy and fast connections to multiple concurrent edge control or cloud applications.",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-160-03",
     "date": "Tue, 09 Jun 26 12:00:00 +0000",
-    "title_ko": "슈나이더 일렉트릭 에코스트럭처 패널 서버",
-    "desc_ko": "CSAF 보기\n요약\n슈나이더 일렉트릭은 자사의 EcoStruxure Panel Server 제품에 존재하는 취약점을 인지하고 있습니다. EcoStruxure Panel Server는 향상된 사이버 보안 기능을 갖춘 고성능 모듈형 게이트웨이로, 여러 에지 제어 애플리케이션이나 클라우드 애플리케이션에 동시에 쉽고 빠르게 연결할 수 있도록 지원합니다."
+    "title_ko": "슈나이더 일렉트릭 EcoStruxure 패널 서버",
+    "desc_ko": "CSAF 보기\n요약\n슈나이더 일렉트릭은 자사의 EcoStruxure Panel Server 제품에 존재하는 취약점을 인지하고 있습니다. EcoStruxure Panel Server는 강화된 사이버 보안 기능을 갖춘 고성능 모듈형 게이트웨이로, 여러 에지 제어 애플리케이션이나 클라우드 애플리케이션에 동시에 쉽고 빠르게 연결할 수 있게 해줍니다."
   },
   {
     "source": "cisa",
@@ -46,66 +91,21 @@
   },
   {
     "source": "cisa",
-    "title": "CISA and Partners Urge Hardening Automatic Tank Gauge Systems",
-    "desc": "CISA and Partners Urge Hardening Automatic Tank Gauge Systems\nOverview\nThe Cybersecurity and Infrastructure Security Agency (CISA), the Federal Bureau of Investigation (FBI), the National Security Agency (NSA), the Department of Energy (DOE), the Environmental Protection Agency (EPA), the Transporta",
-    "url": "https://www.cisa.gov/resources-tools/resources/cisa-and-partners-urge-hardening-automatic-tank-gauge-systems",
-    "date": "Tue, 02 Jun 26 12:00:00 +0000",
-    "title_ko": "CISA와 협력 기관들, 자동 탱크 계측 시스템의 보안 강화 촉구",
-    "desc_ko": "CISA 및 협력 기관들, 자동 탱크 계측 시스템 보안 강화 촉구\n개요\n사이버보안·인프라보안국(CISA), 연방수사국(FBI), 국가안보국(NSA), 에너지부(DOE), 환경보호국(EPA), 교통부(Transporta)"
-  },
-  {
-    "source": "cisa",
     "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
     "desc": "CISA has added two new vulnerabilities to its&nbsp;Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\n\nCVE-2022-0492 Linux Kernel Improper Authentication Vulnerability\nCVE-2025-48595 Android Framework Integer Overflow Vulnerability\n\nThese types of vulnerabilitie",
     "url": "https://www.cisa.gov/news-events/alerts/2026/06/02/cisa-adds-two-known-exploited-vulnerabilities-catalog",
     "date": "Tue, 02 Jun 26 12:00:00 +0000",
     "title_ko": "CISA, 악용된 것으로 알려진 취약점 2건을 카탈로그에 추가",
-    "desc_ko": "CISA는 현재 악용되고 있다는 증거를 바탕으로 ‘알려진 악용 취약점(KEV) 목록’에 두 가지 새로운 취약점을 추가했습니다.\n\nCVE-2022-0492 리눅스 커널 부적절한 인증 취약점\nCVE-2025-48595 안드로이드 프레임워크 정수 오버플로 취약점\n\n이러한 유형의 취약점은"
+    "desc_ko": "CISA는 현재 악용되고 있다는 증거를 바탕으로 ‘알려진 악용 취약점(KEV) 카탈로그’에 두 가지 새로운 취약점을 추가했습니다.\n\nCVE-2022-0492 리눅스 커널 부적절한 인증 취약점\nCVE-2025-48595 안드로이드 프레임워크 정수 오버플로 취약점\n\n이러한 유형의 취약점은"
   },
   {
     "source": "cisa",
-    "title": "MacGregor Voyage Data Recorder (VDR) G4e",
-    "desc": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could result in an attacker gaining administrator access to the device.\nThe following versions of MacGregor Voyage Data Recorder (VDR) G4e are affected:\n\nMacGregor Voyage Data Recorder (VDR) G4e &lt;V5.250\n\n\n\n\n\nCVSS\nVendor\nEquipment\n",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-01",
-    "date": "Thu, 28 May 26 12:00:00 +0000",
-    "title_ko": "맥그리거 항해 데이터 기록장치(VDR) G4e",
-    "desc_ko": "CSAF 보기\n요약\n이러한 취약점이 악용될 경우, 공격자가 해당 장치에 대한 관리자 권한을 획득할 수 있습니다.\n다음 버전의 MacGregor 항해 데이터 기록기(VDR) G4e가 영향을 받습니다:\n\nMacGregor 항해 데이터 기록기(VDR) G4e &lt;V5.250\n\n\n\n\nCVSS\n공급업체\n장비\n"
-  },
-  {
-    "source": "cisa",
-    "title": "KMW CCTV Security Cameras",
-    "desc": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability may grant full unauthorized access to camera feeds and settings.\nThe following versions of KMW CCTV Security Cameras are affected:\n\nKM-IP521 IPCAM_V4.04.91.230307\nKM-IP421 IPCAM_V4.04.53.210416&nbsp;\n\n\n\n\n\nCVSS\nVendor\nEquipment\nVulnerabi",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-06",
-    "date": "Thu, 28 May 26 12:00:00 +0000",
-    "title_ko": "KMW CCTV 보안 카메라",
-    "desc_ko": "CSAF 보기\n요약\n이 취약점을 악용하는 데 성공할 경우, 카메라 영상 및 설정에 대한 무단으로 완전한 접근 권한을 얻을 수 있습니다.\n다음 KMW CCTV 보안 카메라 버전이 영향을 받습니다:\n\nKM-IP521 IPCAM_V4.04.91.230307\nKM-IP421 IPCAM_V4.04.53.210416\n\n\n\n\nCVSS\n공급업체\n장비\n취약점"
-  },
-  {
-    "source": "cisa",
-    "title": "Jinan USR IOT Technology Limited (PUSR) USR-W610 RS232/485 to Wi-Fi/Ethernet Converter",
-    "desc": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could result in an attacker gaining administrator access to the device.\nThe following versions of Jinan USR IOT Technology Limited (PUSR) USR-W610 RS232/485 to Wi-Fi/Ethernet Converter are affected:\n\nUSR-W610 RS232/485 to Wi-Fi/Ethernet",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-02",
-    "date": "Thu, 28 May 26 12:00:00 +0000",
-    "title_ko": "Jinan USR IOT Technology Limited (PUSR) USR-W610 RS232/485-Wi-Fi/이더넷 변환기",
-    "desc_ko": "CSAF 보기\n요약\n이 취약점이 악용될 경우, 공격자가 해당 장치에 대한 관리자 권한을 획득할 수 있습니다.\nJinan USR IOT Technology Limited (PUSR)의 USR-W610 RS232/485-Wi-Fi/이더넷 변환기 중 다음 버전이 영향을 받습니다:\n\nUSR-W610 RS232/485-Wi-Fi/이더넷"
-  },
-  {
-    "source": "cisa",
-    "title": "ABB Busch-Welcome 2 Wire Door Opener Actuator",
-    "desc": "View CSAF\nSummary\nABB is aware of vulnerabilities in the product versions listed as affected in the advisory. An attacker who successfully exploited this vulnerability could gain physical, unauthorized access to a Building where the product is installed\nThe following versions of ABB Busch-Welcome 2 ",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-04",
-    "date": "Thu, 28 May 26 12:00:00 +0000",
-    "title_ko": "ABB Busch-Welcome 2선식 도어 오프너 액추에이터",
-    "desc_ko": "CSAF 보기\n요약\nABB는 본 권고문에 영향을 받는 것으로 명시된 제품 버전에 취약점이 존재함을 인지하고 있습니다. 공격자가 이 취약점을 성공적으로 악용할 경우, 해당 제품이 설치된 건물에 물리적으로 무단 침입할 수 있습니다.\n다음과 같은 버전의 ABB Busch-Welcome 2 "
-  },
-  {
-    "source": "cisa",
-    "title": "Supply Chain Compromises Impact Nx Console and GitHub Repositories",
-    "desc": "CISA is prioritizing the response to multiple emerging software supply chain intrusion campaigns targeting developer ecosystems Continuous Integration/Continuous Development (CI/CD) pipelines. These recent incidents, including the GitHub compromise via a malicious Nx Console Visual Studio Code (VS C",
-    "url": "https://www.cisa.gov/news-events/alerts/2026/05/28/supply-chain-compromises-impact-nx-console-and-github-repositories",
-    "date": "Thu, 28 May 26 12:00:00 +0000",
-    "title_ko": "공급망 침해로 인해 Nx 콘솔 및 GitHub 저장소에 영향 발생",
-    "desc_ko": "CISA는 개발자 생태계의 지속적 통합/지속적 개발(CI/CD) 파이프라인을 표적으로 삼는 다수의 신종 소프트웨어 공급망 침입 공격에 대한 대응을 최우선 과제로 삼고 있습니다. 이러한 최근 사건들에는 악성 Nx Console Visual Studio Code(VS C)를 통한 GitHub 침해 사건도 포함됩니다."
+    "title": "CISA and Partners Urge Hardening Automatic Tank Gauge Systems",
+    "desc": "CISA and Partners Urge Hardening Automatic Tank Gauge Systems\nOverview\nThe Cybersecurity and Infrastructure Security Agency (CISA), the Federal Bureau of Investigation (FBI), the National Security Agency (NSA), the Department of Energy (DOE), the Environmental Protection Agency (EPA), the Transporta",
+    "url": "https://www.cisa.gov/resources-tools/resources/cisa-and-partners-urge-hardening-automatic-tank-gauge-systems",
+    "date": "Tue, 02 Jun 26 12:00:00 +0000",
+    "title_ko": "CISA와 협력 기관들, 자동 탱크 계량 시스템 보안 강화 촉구",
+    "desc_ko": "CISA 및 협력 기관들, 자동 탱크 계량 시스템 보안 강화 촉구\n개요\n사이버보안 및 인프라 보안국(CISA), 연방수사국(FBI), 국가안보국(NSA), 에너지부(DOE), 환경보호청(EPA), 교통부(Transporta)"
   },
   {
     "source": "cisa",
@@ -118,21 +118,21 @@
   },
   {
     "source": "cisa",
-    "title": "Fourth Frontier Frontier X Mobile Application, Frontier X2",
-    "desc": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could allow an attacker to read and write arbitrary handle values and change clinical readings, which could result in taking control of the device and lead to patient harm.\nThe following versions of Fourth Frontier Frontier X Mobile App",
-    "url": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-148-01",
+    "title": "Jinan USR IOT Technology Limited (PUSR) USR-W610 RS232/485 to Wi-Fi/Ethernet Converter",
+    "desc": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could result in an attacker gaining administrator access to the device.\nThe following versions of Jinan USR IOT Technology Limited (PUSR) USR-W610 RS232/485 to Wi-Fi/Ethernet Converter are affected:\n\nUSR-W610 RS232/485 to Wi-Fi/Ethernet",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-02",
     "date": "Thu, 28 May 26 12:00:00 +0000",
-    "title_ko": "포스 프론티어 프론티어 X 모바일 애플리케이션, 프론티어 X2",
-    "desc_ko": "CSAF 보기\n요약\n이 취약점이 악용될 경우, 공격자가 임의의 핸들 값을 읽고 쓰거나 임상 측정값을 변경할 수 있으며, 이로 인해 장치를 장악하여 환자에게 피해를 입힐 수 있습니다.\n다음 버전의 Fourth Frontier Frontier X 모바일 앱"
+    "title_ko": "Jinan USR IOT Technology Limited (PUSR) USR-W610 RS232/485-Wi-Fi/이더넷 변환기",
+    "desc_ko": "CSAF 보기\n요약\n이 취약점을 악용하는 데 성공할 경우, 공격자가 해당 장치에 대한 관리자 권한을 획득할 수 있습니다.\nJinan USR IOT Technology Limited (PUSR)의 USR-W610 RS232/485-Wi-Fi/이더넷 변환기 중 다음 버전이 이 취약점의 영향을 받습니다:\n\nUSR-W610 RS232/485-Wi-Fi/이더넷"
   },
   {
     "source": "cisa",
-    "title": "Schneider Electric EcoStruxure Machine Expert HVAC",
-    "desc": "View CSAF\nSummary\nSchneider Electric is aware of a vulnerability in its EcostruxureTM Machine Expert HVAC product. The [EcostruxureTM Machine Expert HVAC](https://www.se.com/ww/en/download/document/EcoStruxureME_HVAC/) product is a programming software for Modicon M171-M172 logic controllers. Failur",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-07",
+    "title": "ABB EIBPORT",
+    "desc": "View CSAF\nSummary\nABB is aware of vulnerabilities in the product versions listed as affected in the advisory. A firmware update is available that resolves these privately reported vulnerabilities in the product versions listed as affected in the advisory. An attacker who successfully exploited these",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-03",
     "date": "Thu, 28 May 26 12:00:00 +0000",
-    "title_ko": "슈나이더 일렉트릭 EcoStruxure Machine Expert HVAC",
-    "desc_ko": "CSAF 보기\n요약\n슈나이더 일렉트릭은 자사의 Ecostruxure™ Machine Expert HVAC 제품에 취약점이 있음을 인지하고 있습니다. [EcostruxureTM Machine Expert HVAC](https://www.se.com/ww/en/download/document/EcoStruxureME_HVAC/) 제품은 Modicon M171-M172 로직 컨트롤러용 프로그래밍 소프트웨어입니다. 오류"
+    "title_ko": "ABB EIBPORT",
+    "desc_ko": "CSAF 보기\n요약\nABB는 본 권고문에 영향을 받는 것으로 명시된 제품 버전에 존재하는 취약점을 인지하고 있습니다. 본 권고문에 영향을 받는 것으로 명시된 제품 버전에서 비공개로 보고된 이러한 취약점을 해결하는 펌웨어 업데이트가 제공되고 있습니다. 이러한 취약점을 성공적으로 악용한 공격자는"
   },
   {
     "source": "cisa",
@@ -141,25 +141,7 @@
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-162-01",
     "date": "Thu, 11 Jun 26 12:00:00 +0000",
     "title_ko": "Yarbo 안드로이드/iOS 모바일 애플리케이션 및 클라우드 인프라",
-    "desc_ko": "CSAF 보기\n요약\n이 취약점을 악용하는 데 성공할 경우, 공격자가 하드코딩된 인증 정보를 탈취하고, 원격 측정 데이터에 접근하며, 로봇 군단에 운영 명령을 전송할 가능성이 있습니다.\n다음 버전의 Yarbo 안드로이드/iOS 모바일 애플리케이션 및 클라우드 인프라"
-  },
-  {
-    "source": "cisa",
-    "title": "Naxclow IoT Platform",
-    "desc": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to impersonate devices, intercept or manipulate communications, harvest sensitive credentials at scale, or gain unauthorized access.\nThe following versions of Naxclow IoT Platform are affected:\n\nSmart Doorbell",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-162-02",
-    "date": "Thu, 11 Jun 26 12:00:00 +0000",
-    "title_ko": "Naxclow IoT 플랫폼",
-    "desc_ko": "CSAF 보기\n요약\n이 취약점을 악용할 경우, 공격자가 기기를 사칭하거나, 통신을 가로채거나 조작하거나, 대량의 민감한 인증 정보를 탈취하거나, 무단 접근 권한을 획득할 수 있습니다.\n다음 버전의 Naxclow IoT Platform이 영향을 받습니다:\n\n스마트 도어벨"
-  },
-  {
-    "source": "cisa",
-    "title": "Brickcom Cameras",
-    "desc": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow a remote unauthenticated attacker to gain unauthorized access to live video feeds, retrieve sensitive visual information from affected premises, and obtain administrative control of the device.\nThe following versions of B",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-162-03",
-    "date": "Thu, 11 Jun 26 12:00:00 +0000",
-    "title_ko": "Brickcom 카메라",
-    "desc_ko": "CSAF 보기\n요약\n이 취약점을 악용하는 데 성공할 경우, 인증되지 않은 원격 공격자가 실시간 영상 피드에 무단으로 접근하고, 영향을 받은 시설에서 민감한 영상 정보를 수집하며, 해당 장치에 대한 관리자 권한을 획득할 수 있습니다.\n다음 버전의 B"
+    "desc_ko": "CSAF 보기\n요약\n이러한 취약점을 악용할 경우, 공격자가 하드코딩된 인증 정보를 탈취하고, 원격 측정 데이터에 접근하며, 로봇 군단에 운영 명령을 전송할 수도 있습니다.\n다음 버전의 Yarbo 안드로이드/iOS 모바일 애플리케이션 및 클라우드 인프라"
   },
   {
     "source": "cisa",
@@ -172,12 +154,30 @@
   },
   {
     "source": "cisa",
+    "title": "Naxclow IoT Platform",
+    "desc": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to impersonate devices, intercept or manipulate communications, harvest sensitive credentials at scale, or gain unauthorized access.\nThe following versions of Naxclow IoT Platform are affected:\n\nSmart Doorbell",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-162-02",
+    "date": "Thu, 11 Jun 26 12:00:00 +0000",
+    "title_ko": "Naxclow IoT 플랫폼",
+    "desc_ko": "CSAF 보기\n요약\n이러한 취약점을 악용할 경우, 공격자가 기기를 사칭하거나, 통신을 가로채거나 조작하거나, 대량의 민감한 인증 정보를 탈취하거나, 무단 접근 권한을 획득할 수 있습니다.\n다음 버전의 Naxclow IoT 플랫폼이 이 취약점의 영향을 받습니다:\n\n스마트 도어벨"
+  },
+  {
+    "source": "cisa",
+    "title": "Brickcom Cameras",
+    "desc": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow a remote unauthenticated attacker to gain unauthorized access to live video feeds, retrieve sensitive visual information from affected premises, and obtain administrative control of the device.\nThe following versions of B",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-162-03",
+    "date": "Thu, 11 Jun 26 12:00:00 +0000",
+    "title_ko": "Brickcom 카메라",
+    "desc_ko": "CSAF 보기\n요약\n이러한 취약점을 악용하는 데 성공할 경우, 인증되지 않은 원격 공격자가 실시간 영상 피드에 무단으로 접근하고, 영향을 받은 시설에서 민감한 시각적 정보를 수집하며, 해당 장치에 대한 관리자 권한을 획득할 수 있습니다.\n다음 버전의 B"
+  },
+  {
+    "source": "cisa",
     "title": "NAVTOR NavBox",
     "desc": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could allow a local attacker to gain unauthorized access to SOAP methods, resulting in a disruption of operations.\nThe following versions of NAVTOR NavBox are affected:\n\nNavBox 4.16.1.20 (CVE-2026-21404)\n\n\n\n\n\nCVSS\nVendor\nEquipment\nVulne",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-01",
     "date": "Thu, 04 Jun 26 12:00:00 +0000",
     "title_ko": "NAVTOR NavBox",
-    "desc_ko": "CSAF 보기\n요약\n이 취약점이 악용될 경우, 로컬 공격자가 SOAP 메서드에 무단으로 접근하여 운영 중단이 발생할 수 있습니다.\n다음 NAVTOR NavBox 버전이 영향을 받습니다:\n\nNavBox 4.16.1.20 (CVE-2026-21404)\n\n\n\n\nCVSS\n공급업체\n장비\n취약점"
+    "desc_ko": "CSAF 보기\n요약\n이 취약점을 악용하는 데 성공할 경우, 로컬 공격자가 SOAP 메서드에 무단으로 접근할 수 있게 되어 운영 중단이 발생할 수 있습니다.\n다음 NAVTOR NavBox 버전이 이 취약점의 영향을 받습니다:\n\nNavBox 4.16.1.20 (CVE-2026-21404)\n\n\n\n\nCVSS\n공급업체\n장비\n취약점"
   },
   {
     "source": "cisa",
@@ -186,25 +186,7 @@
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-03",
     "date": "Thu, 04 Jun 26 12:00:00 +0000",
     "title_ko": "B&R PPT30 운영 체제",
-    "desc_ko": "CSAF 보기\n요약\nB&amp;R은 본 권고문에 영향을 받는 것으로 명시된 제품 버전에 취약점이 존재함을 인지하고 있습니다. 공격자가 이 취약점을 성공적으로 악용할 경우, 해당 제품의 OPC-UA 서버에 접속할 수 없게 될 수 있습니다.\n다음 버전의 B&amp;R PPT30 운영 체제가 영향을 받습니다:\n"
-  },
-  {
-    "source": "cisa",
-    "title": "Hitachi Energy RTU500",
-    "desc": "View CSAF\nSummary\nHitachi Energy is aware of vulnerabilities that affect RTU500 product versions listed in this document. If exploited, these vulnerabilities primarily impact product availability, with potential secondary impacts on confidentiality and integrity. Please refer to the Recommended Imme",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-04",
-    "date": "Thu, 04 Jun 26 12:00:00 +0000",
-    "title_ko": "히타치 에너지 RTU500",
-    "desc_ko": "CSAF 보기\n요약\n히타치 에너지(Hitachi Energy)는 본 문서에 명시된 RTU500 제품 버전에 영향을 미치는 취약점을 인지하고 있습니다. 이러한 취약점이 악용될 경우, 주로 제품의 가용성에 영향을 미치며, 기밀성과 무결성에도 2차적인 영향이 발생할 수 있습니다. 권장 조치 사항을 참조하시기 바랍니다."
-  },
-  {
-    "source": "cisa",
-    "title": "Hitachi Energy MACH HiDraw",
-    "desc": "View CSAF\nSummary\nHitachi Energy is aware of a buffer overflow vulnerability that affects MACH HiDraw product versions listed in this document. Successful exploitation of this vulnerability could lead to a buffer overflow condition, potentially resulting in application outages (denial of service) an",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-05",
-    "date": "Thu, 04 Jun 26 12:00:00 +0000",
-    "title_ko": "히타치 에너지 MACH HiDraw",
-    "desc_ko": "CSAF 보기\n요약\n히타치 에너지(Hitachi Energy)는 본 문서에 명시된 MACH HiDraw 제품 버전에 영향을 미치는 버퍼 오버플로 취약점을 인지하고 있습니다. 이 취약점이 악용될 경우 버퍼 오버플로 현상이 발생하여, 애플리케이션 중단(서비스 거부)으로 이어질 수 있으며"
+    "desc_ko": "CSAF 보기\n요약\nB&amp;R은 본 권고문에 영향을 받는 것으로 명시된 제품 버전에 취약점이 존재함을 인지하고 있습니다. 공격자가 이 취약점을 성공적으로 악용할 경우, 해당 제품의 OPC-UA 서버에 접근할 수 없게 될 수 있습니다.\n다음 버전의 B&amp;R PPT30 운영 체제가 영향을 받습니다:\n"
   },
   {
     "source": "cisa",
@@ -213,7 +195,25 @@
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-02",
     "date": "Thu, 04 Jun 26 12:00:00 +0000",
     "title_ko": "히타치 에너지 ITT600 익스플로러",
-    "desc_ko": "CSAF 보기\n요약\n히타치 에너지(Hitachi Energy)는 본 문서에 명시된 ITT600 Explorer 제품 버전에 영향을 미치는 취약점을 인지하고 있습니다. 이러한 취약점은 해당 제품에 대한 서비스 거부(DoS) 공격을 수행하는 데 악용될 수 있습니다. 해당 취약점은 히타치 에너지 통합 테스트 툴(Hitachi Energy Integrated Testing Tool)에만 영향을 미칩니다."
+    "desc_ko": "CSAF 보기\n요약\n히타치 에너지(Hitachi Energy)는 본 문서에 나열된 ITT600 Explorer 제품 버전에 영향을 미치는 취약점을 파악하고 있습니다. 이러한 취약점은 악용될 경우 해당 제품에 대한 서비스 거부(DoS) 공격을 유발할 수 있습니다. 해당 취약점은 히타치 에너지 통합 테스트 도구(Hitachi Energy Integrated Testing Tool)에만 영향을 미칩니다."
+  },
+  {
+    "source": "cisa",
+    "title": "Hitachi Energy RTU500",
+    "desc": "View CSAF\nSummary\nHitachi Energy is aware of vulnerabilities that affect RTU500 product versions listed in this document. If exploited, these vulnerabilities primarily impact product availability, with potential secondary impacts on confidentiality and integrity. Please refer to the Recommended Imme",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-04",
+    "date": "Thu, 04 Jun 26 12:00:00 +0000",
+    "title_ko": "히타치 에너지 RTU500",
+    "desc_ko": "CSAF 보기\n요약\n히타치 에너지(Hitachi Energy)는 본 문서에 나열된 RTU500 제품 버전에 영향을 미치는 취약점을 파악하고 있습니다. 이러한 취약점이 악용될 경우, 주로 제품의 가용성에 영향을 미치며, 기밀성과 무결성에도 2차적인 영향이 발생할 가능성이 있습니다. 권장되는 즉각적인 조치 사항을 참조하시기 바랍니다."
+  },
+  {
+    "source": "cisa",
+    "title": "Hitachi Energy MACH HiDraw",
+    "desc": "View CSAF\nSummary\nHitachi Energy is aware of a buffer overflow vulnerability that affects MACH HiDraw product versions listed in this document. Successful exploitation of this vulnerability could lead to a buffer overflow condition, potentially resulting in application outages (denial of service) an",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-05",
+    "date": "Thu, 04 Jun 26 12:00:00 +0000",
+    "title_ko": "히타치 에너지 MACH HiDraw",
+    "desc_ko": "CSAF 보기\n요약\n히타치 에너지(Hitachi Energy)는 본 문서에 명시된 MACH HiDraw 제품 버전에 영향을 미치는 버퍼 오버플로 취약점을 확인했습니다. 이 취약점이 악용될 경우 버퍼 오버플로 현상이 발생할 수 있으며, 이로 인해 애플리케이션 중단(서비스 거부)이 발생할 가능성이 있습니다."
   },
   {
     "source": "cisa",
@@ -240,7 +240,7 @@
     "url": "https://www.cisa.gov/news-events/alerts/2026/06/01/cisa-adds-one-known-exploited-vulnerability-catalog",
     "date": "Mon, 01 Jun 26 12:00:00 +0000",
     "title_ko": "CISA, 알려진 악용 사례 있는 취약점 1건을 카탈로그에 추가",
-    "desc_ko": "CISA는 현재 악용되고 있다는 증거를 바탕으로 ‘알려진 악용 취약점(KEV) 카탈로그’에 새로운 취약점 하나를 추가했습니다.\n\nCVE-2024-21182 Oracle WebLogic Server 미지정 취약점\n\n이러한 유형의 취약점은 악의적인 사이버 공격자들이 자주 이용하는 공격 경로이며, 심각한"
+    "desc_ko": "CISA는 현재 악용되고 있다는 증거를 바탕으로 ‘알려진 악용 취약점(KEV) 카탈로그’에 새로운 취약점 하나를 추가했습니다.\n\nCVE-2024-21182 Oracle WebLogic Server 미상 취약점\n\n이러한 유형의 취약점은 악의적인 사이버 공격자들이 자주 이용하는 공격 경로이며, 심각한"
   },
   {
     "source": "cisa",
@@ -249,7 +249,7 @@
     "url": "https://www.cisa.gov/news-events/alerts/2026/05/29/cisa-adds-one-known-exploited-vulnerability-catalog",
     "date": "Fri, 29 May 26 12:00:00 +0000",
     "title_ko": "CISA, 알려진 악용 사례 있는 취약점 1건을 카탈로그에 추가",
-    "desc_ko": "CISA는 현재 악용되고 있다는 증거를 바탕으로 ‘알려진 악용 취약점(KEV) 카탈로그’에 새로운 취약점 하나를 추가했습니다.\n\nCVE-2026-0257 Palo Alto Networks PAN-OS 인증 우회 취약점\n\n이러한 유형의 취약점은 악의적인 사이버 공격자들이 자주 이용하는 공격 경로이며,"
+    "desc_ko": "CISA는 현재 악용되고 있다는 증거를 바탕으로 ‘알려진 악용 취약점(KEV) 카탈로그’에 새로운 취약점 하나를 추가했습니다.\n\nCVE-2026-0257 팔로알토 네트웍스(Palo Alto Networks) PAN-OS 인증 우회 취약점\n\n이러한 유형의 취약점은 악의적인 사이버 공격자들이 자주 이용하는 공격 경로이며,"
   },
   {
     "source": "cisa",
@@ -258,7 +258,7 @@
     "url": "https://www.cisa.gov/news-events/alerts/2026/06/12/cisa-adds-one-known-exploited-vulnerability-catalog",
     "date": "Fri, 12 Jun 26 12:00:00 +0000",
     "title_ko": "CISA, 알려진 악용 사례 있는 취약점 1건을 카탈로그에 추가",
-    "desc_ko": "CISA는 현재 악용되고 있다는 증거를 바탕으로 ‘악용된 것으로 확인된 취약점(KEV) 목록’에 새로운 취약점 하나를 추가했습니다.\n\nCVE-2026-35273 Oracle PeopleSoft Enterprise PeopleTools의 중요 기능에 대한 인증 누락 취약점\n\n이러한 유형의 취약점은 빈번하게 악용되는 공격 경로입니다."
+    "desc_ko": "CISA는 현재 악용되고 있다는 증거를 바탕으로 ‘알려진 악용 취약점(KEV) 카탈로그’에 새로운 취약점 하나를 추가했습니다.\n\nCVE-2026-35273 Oracle PeopleSoft Enterprise PeopleTools의 중요 기능에 대한 인증 누락 취약점\n\n이러한 유형의 취약점은 빈번하게 악용되는 공격 경로입니다."
   },
   {
     "source": "cisa",
@@ -267,7 +267,70 @@
     "url": "https://www.cisa.gov/news-events/alerts/2026/06/05/cisa-adds-one-known-exploited-vulnerability-catalog",
     "date": "Fri, 05 Jun 26 12:00:00 +0000",
     "title_ko": "CISA, 알려진 악용 사례 있는 취약점 1건을 카탈로그에 추가",
-    "desc_ko": "CISA는 현재 악용되고 있다는 증거를 바탕으로 ‘알려진 악용 취약점(KEV) 목록’에 새로운 취약점 하나를 추가했습니다.\n\nCVE-2026-28318 SolarWinds Serv-U 무제한 리소스 소비 취약점\n\n이러한 유형의 취약점은 악의적인 사이버 공격자들이 자주 이용하는 공격 경로이며"
+    "desc_ko": "CISA는 현재 악용되고 있다는 증거를 바탕으로 ‘알려진 악용 취약점(KEV) 카탈로그’에 새로운 취약점 하나를 추가했습니다.\n\nCVE-2026-28318 SolarWinds Serv-U 무제한 리소스 소비 취약점\n\n이러한 유형의 취약점은 악의적인 사이버 공격자들이 자주 이용하는 공격 경로이며,"
+  },
+  {
+    "source": "thn",
+    "title": "New Rokarolla Android Malware Steals PINs, SMS Codes, and Crypto Wallet Funds",
+    "desc": "Security researchers at&nbsp;Zimperium's zLabs&nbsp;have documented a new Android banking trojan, Rokarolla, that targets 217 banking and cryptocurrency apps and packs 137 remote commands.\n\nTogether, they give an operator near-total control of an infected phone: it lifts lock-screen PINs, reads and ",
+    "url": "https://thehackernews.com/2026/06/new-rokarolla-android-malware-steals.html",
+    "date": "2026-06-16T18:40:17",
+    "title_ko": "새로운 ‘로카롤라(Rokarolla)’ 안드로이드 악성코드, PIN, SMS 인증 코드 및 암호화폐 지갑 자금을 탈취",
+    "desc_ko": "Zimperium의 zLabs 소속 보안 연구원들은 217개의 은행 및 암호화폐 앱을 표적으로 삼고 137개의 원격 명령을 포함하는 새로운 안드로이드 뱅킹 트로이목마인 ‘Rokarolla’를 분석해 그 내용을 보고했습니다.\n\n이 기능들을 종합하면, 운영자는 감염된 휴대폰을 거의 완전히 제어할 수 있게 됩니다. 즉, 잠금 화면 PIN을 해제하고, 내용을 읽으며 "
+  },
+  {
+    "source": "thn",
+    "title": "Survey: 94% of Incidents Involve Anonymized Infrastructure. Teams Are Still Reactive",
+    "desc": "Security teams have never had more IP data at their disposal. Every day, analysts ingest enrichment feeds, geolocation data, reputation scores, telemetry, and threat intelligence from a growing ecosystem of vendors and platforms.\n\nYet despite this abundance of information, many organizations continu",
+    "url": "https://thehackernews.com/2026/06/survey-94-of-incidents-involve.html",
+    "date": "2026-06-16T17:00:00",
+    "title_ko": "설문조사: 사고의 94%가 익명화된 인프라와 관련되어 있다. 팀들은 여전히 사후 대응에 그치고 있다",
+    "desc_ko": "보안 팀은 그 어느 때보다 방대한 양의 IP 데이터를 활용할 수 있게 되었습니다. 분석가들은 매일, 점점 더 확대되고 있는 공급업체 및 플랫폼 생태계로부터 보강 피드, 지리적 위치 데이터, 평판 점수, 텔레메트리, 위협 인텔리전스 등을 수집하고 있습니다.\n\n그러나 이처럼 풍부한 정보가 있음에도 불구하고, 많은 조직은 여전히"
+  },
+  {
+    "source": "thn",
+    "title": "Attackers Exploit Three Fortinet FortiSandbox Flaws, One Patched Last Week",
+    "desc": "Bad actors are exploiting multiple security vulnerabilities in Fortinet FortiSandbox, according to threat intelligence firm Defused Cyber.\n\nIn a post shared on X, the company said it has observed exploitation of CVE-2026-39813, CVE-2026-39808, and CVE-2026-25089 over the past 24 hours.\n\nCVE-2026-398",
+    "url": "https://thehackernews.com/2026/06/attackers-exploit-three-fortinet.html",
+    "date": "2026-06-16T16:00:41",
+    "title_ko": "공격자들이 포티넷(Fortinet)의 포티샌드박스(FortiSandbox) 취약점 3개를 악용했으며, 그중 하나는 지난주에 패치되었다",
+    "desc_ko": "위협 인텔리전스 기업 Defused Cyber에 따르면, 악의적인 공격자들이 Fortinet FortiSandbox의 여러 보안 취약점을 악용하고 있는 것으로 나타났다.\n\n이 회사는 X에 게시한 글을 통해 지난 24시간 동안 CVE-2026-39813, CVE-2026-39808, CVE-2026-25089에 대한 악용 사례를 관찰했다고 밝혔다.\n\nCVE-2026-398"
+  },
+  {
+    "source": "thn",
+    "title": "China-Linked SprySOCKS Backdoor Expands to Windows with Driver-Based Stealth",
+    "desc": "Cybersecurity researchers have flagged two previously undocumented Windows variants of what was believed to be a Linux-only backdoor called SprySOCKS.\n\n\"The Windows variants discovered are internally marked as WIN_DRV and WIN_PLUS,\" ESET said in a report shared with The Hacker News. \"Both come with ",
+    "url": "https://thehackernews.com/2026/06/china-linked-sprysocks-backdoor-expands.html",
+    "date": "2026-06-16T15:14:34",
+    "title_ko": "중국과 연계된 ‘SprySOCKS’ 백도어, 드라이버 기반 은닉 기법으로 Windows로 확산",
+    "desc_ko": "사이버보안 연구원들은 ‘SprySOCKS’라는, 그동안 리눅스 전용 백도어로만 여겨졌던 악성코드의 이전에 보고된 바 없는 두 가지 윈도우 변종을 발견했다.\n\nESET은 ‘The Hacker News’와 공유한 보고서에서 “발견된 윈도우 변종들은 내부적으로 WIN_DRV와 WIN_PLUS로 표기되어 있다”고 밝혔다. “두 변종 모두 "
+  },
+  {
+    "source": "thn",
+    "title": "Fake Microsoft Alerts Used to Deploy North Korean NarwhalRAT Malware",
+    "desc": "The North Korean state-sponsored hacking group known as ScarCruft (aka APT37) has been observed using spear-phishing messages impersonating Microsoft Account security notifications to deliver malware called NarwhalRAT.\n\n\"The attack email contained a message impersonating an MS account security alert",
+    "url": "https://thehackernews.com/2026/06/fake-microsoft-alerts-used-to-deploy.html",
+    "date": "2026-06-16T13:44:55",
+    "title_ko": "북한의 ‘나르발RAT’ 악성코드 유포에 악용된 가짜 마이크로소프트 경고 메시지",
+    "desc_ko": "‘ScarCruft’(일명 APT37)로 알려진 북한 정부 후원 해킹 그룹이 마이크로소프트 계정 보안 알림을 사칭한 스피어 피싱 메시지를 이용해 ‘NarwhalRAT’라는 악성코드를 유포하는 것이 포착되었습니다.\n\n“이 공격 이메일에는 MS 계정 보안 경보를 사칭한 메시지가 포함되어 있었으며"
+  },
+  {
+    "source": "thn",
+    "title": "Cisco Releases Security Updates for Actively Exploited SD-WAN Manager Flaw",
+    "desc": "Cisco has released security updates for a medium-severity security flaw in Catalyst SD-WAN Manager that has come under active exploitation in the wild.\n\nThe vulnerability, tracked as CVE-2026-20262, carries a CVSS score of 6.5 out of 10.0.\n\n\"A vulnerability in the web UI of Cisco Catalyst SD-WAN Man",
+    "url": "https://thehackernews.com/2026/06/cisco-releases-security-updates-for.html",
+    "date": "2026-06-16T11:35:58",
+    "title_ko": "시스코, 현재 활발히 악용되고 있는 SD-WAN 매니저 취약점에 대한 보안 업데이트 발표",
+    "desc_ko": "시스코는 현재 야생에서 활발히 악용되고 있는 Catalyst SD-WAN Manager의 중등도 보안 결함에 대한 보안 업데이트를 발표했습니다.\n\nCVE-2026-20262로 추적되는 이 취약점은 10.0점 만점에 6.5점의 CVSS 점수를 기록했습니다.\n\n\"Cisco Catalyst SD-WAN Manager의 웹 UI에 존재하는 취약점으로 인해"
+  },
+  {
+    "source": "thn",
+    "title": "CISA Flags LiteSpeed cPanel Plugin Flaw Exploited for Root Privilege Escalation",
+    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a security flaw impacting LiteSpeed cPanel Plugin to its Known Exploited Vulnerabilities (KEV) catalog, requiring Federal Civilian Executive Branch (FCEB) agencies to apply the fixes by June 18, 2026.\n\nThe vulnerability in qu",
+    "url": "https://thehackernews.com/2026/06/cisa-flags-litespeed-cpanel-plugin-flaw.html",
+    "date": "2026-06-16T11:11:52",
+    "title_ko": "CISA, 루트 권한 상승에 악용된 LiteSpeed cPanel 플러그인 취약점 경고",
+    "desc_ko": "미국 사이버보안 및 인프라 보안국(CISA)은 LiteSpeed cPanel 플러그인에 영향을 미치는 보안 결함을 ‘알려진 악용 취약점(KEV)’ 목록에 추가했으며, 연방 민간 행정부(FCEB) 산하 기관들이 2026년 6월 18일까지 해당 수정 사항을 적용할 것을 요구했습니다.\n\nqu의 취약점은"
   },
   {
     "source": "thn",
@@ -275,8 +338,8 @@
     "desc": "A China-linked espionage group hid inside North American medical, academic, and military research networks for more than a year, quietly stealing sensitive research and defense email.\n\nThe way in was a backdoor on their REDCap research servers that stole login credentials. The exfiltration was the u",
     "url": "https://thehackernews.com/2026/06/chinese-hackers-abused-google-workspace.html",
     "date": "2026-06-16T01:14:06",
-    "title_ko": "중국 해커들이 구글 워크스페이스 정책을 악용해 연구 및 국방 관련 이메일을 탈취했다",
-    "desc_ko": "중국과 연계된 한 스파이 조직이 1년 넘게 북미의 의료, 학술 및 군사 연구 네트워크에 잠입해, 민감한 연구 및 국방 관련 이메일을 은밀히 탈취했다.\n\n이 조직은 REDCap 연구 서버에 설치된 백도어를 통해 로그인 자격 증명을 탈취함으로써 침투했다. 정보 유출은..."
+    "title_ko": "중국 해커들이 구글 워크스페이스 규정을 악용해 연구 및 국방 관련 이메일을 탈취했다",
+    "desc_ko": "중국과 연계된 한 첩보 조직이 1년 넘게 북미의 의료, 학술, 군사 연구 네트워크에 잠입해, 민감한 연구 및 국방 관련 이메일을 은밀히 탈취했다.\n\n이 조직은 REDCap 연구 서버에 설치된 백도어를 통해 로그인 자격 증명을 탈취함으로써 침투했다. 정보 유출은..."
   },
   {
     "source": "thn",
@@ -285,7 +348,7 @@
     "url": "https://thehackernews.com/2026/06/north-korean-hackers-are-turning.html",
     "date": "2026-06-16T01:02:52",
     "title_ko": "북한 해커들이 개발자 도구를 악성코드 유포 수단으로 악용하고 있다",
-    "desc_ko": "사이버 보안 연구원들은 ‘컨테이지어스 인터뷰(Contagious Interview, 일명 Famous Chollima, HexagonalRodent, Void Dokkaebi)’로 알려진 북한의 지속적인 위협 그룹과 유사한 양상을 보이는 두 건의 악성 사이버 캠페인을 적발했다.\n\n프루프포인트(Proofpoint)가 발표한 보고서에 따르면, 해당 위협 행위자는 b"
+    "desc_ko": "사이버 보안 연구원들은 ‘Contagious Interview’(일명 Famous Chollima, HexagonalRodent, Void Dokkaebi)로 알려진 북한의 지속적인 위협 클러스터와 유사한 특징을 보이는 두 건의 악성 사이버 캠페인을 지적했습니다.\n\nProofpoint가 발표한 보고서에 따르면, 해당 위협 행위자는 b"
   },
   {
     "source": "thn",
@@ -293,8 +356,8 @@
     "desc": "A default low-privilege account on a LiteLLM proxy can climb to full admin and run code on the server by chaining three vulnerabilities, researchers at Obsidian Security disclosed\n\nLiteLLM is a widely deployed open-source AI gateway that brokers calls to more than 100 model providers behind one Open",
     "url": "https://thehackernews.com/2026/06/litellm-vulnerability-chain-lets-low.html",
     "date": "2026-06-15T22:09:01",
-    "title_ko": "LiteLLM 취약점 체인을 통해 권한이 낮은 사용자도 AI 게이트웨이 서버를 장악할 수 있다",
-    "desc_ko": "Obsidian Security의 연구진에 따르면, LiteLLM 프록시의 기본 저권한 계정이 세 가지 취약점을 연쇄적으로 악용해 완전한 관리자 권한을 획득하고 서버에서 코드를 실행할 수 있는 것으로 밝혀졌다\n\nLiteLLM은 하나의 Open을 통해 100개 이상의 모델 제공업체로 호출을 중개하는, 널리 배포된 오픈소스 AI 게이트웨이이다"
+    "title_ko": "LiteLLM 취약점 연쇄를 통해 권한이 낮은 사용자도 AI 게이트웨이 서버를 장악할 수 있다",
+    "desc_ko": "Obsidian Security의 연구진에 따르면, LiteLLM 프록시의 기본 저권한 계정이 세 가지 취약점을 연쇄적으로 악용함으로써 완전한 관리자 권한을 획득하고 서버에서 코드를 실행할 수 있는 것으로 밝혀졌다.\n\nLiteLLM은 하나의 Open을 통해 100개 이상의 모델 제공업체로 호출을 중개하는, 널리 배포된 오픈소스 AI 게이트웨이이다."
   },
   {
     "source": "thn",
@@ -302,8 +365,8 @@
     "desc": "A single click on a trusted Microsoft link could have let an attacker pull emails, calendar details, and indexed files out of Microsoft 365 Copilot Enterprise Search.\n\nResearchers at Varonis Threat Labs chained three bugs into a one-click exfiltration path they call SearchLeak. Because the link poin",
     "url": "https://thehackernews.com/2026/06/one-click-microsoft-365-copilot-flaw.html",
     "date": "2026-06-15T20:39:05",
-    "title_ko": "마이크로소프트 365 코파일럿의 원클릭 취약점으로 인해 공격자가 이메일, 파일 및 MFA 코드를 탈취할 수 있었을 가능성",
-    "desc_ko": "신뢰할 수 있는 Microsoft 링크를 단 한 번만 클릭해도 공격자가 Microsoft 365 Copilot Enterprise Search에서 이메일, 일정 정보 및 색인된 파일을 유출할 수 있었을 것입니다.\n\nVaronis Threat Labs의 연구원들은 세 가지 취약점을 연결하여 ‘SearchLeak’이라 명명한 원클릭 정보 유출 경로를 만들어 냈습니다. 해당 링크가 가리키는"
+    "title_ko": "마이크로소프트 365 코파일럿의 ‘원클릭’ 취약점으로 인해 공격자가 이메일, 파일 및 MFA 코드를 탈취할 수 있었을 가능성",
+    "desc_ko": "신뢰할 수 있는 Microsoft 링크를 단 한 번만 클릭해도 공격자가 Microsoft 365 Copilot Enterprise Search에서 이메일, 캘린더 정보 및 색인된 파일을 유출할 수 있었을 것입니다.\n\nVaronis Threat Labs의 연구원들은 세 가지 버그를 연쇄적으로 연결하여 ‘SearchLeak’이라고 명명한 원클릭 정보 유출 경로를 만들어 냈습니다. 해당 링크가 가리키는 곳은"
   },
   {
     "source": "thn",
@@ -311,8 +374,8 @@
     "desc": "Stuff broke again. Not in a movie way. An old tool was left exposed. An abandoned package was abused. A deprecated feature was still running in prod.\n\nThis week is the same lesson in a new form: phishing kits are easier to rent, AI names are useful bait, old login paths still fail, and forgotten sof",
     "url": "https://thehackernews.com/2026/06/weekly-recap-chrome-0-day-unifi.html",
     "date": "2026-06-15T19:19:29",
-    "title_ko": "⚡ 주간 요약: 크롬 제로데이, UniFi 취약점, macOS 정보 탈취 악성코드, VPN 보안 결함 등",
-    "desc_ko": "또 뭔가 고장 났다. 영화 속 장면 같은 건 아니다. 오래된 도구가 노출된 채 방치되어 있었다. 버려진 패키지가 악용당했다. 더 이상 지원되지 않는 기능이 여전히 운영 환경에서 실행되고 있었다.\n\n이번 주에도 같은 교훈이 새로운 형태로 반복된다. 피싱 키트는 대여하기가 더 쉬워졌고, AI 이름은 유용한 미끼가 되었으며, 오래된 로그인 경로는 여전히 오류가 발생하고, 잊혀진 소프트웨어는…"
+    "title_ko": "⚡ 주간 요약: 크롬 0-데이 취약점, UniFi 악용 사례, macOS 정보 탈취형 악성코드, VPN 취약점 등",
+    "desc_ko": "또 뭔가 고장 났다. 영화 속 장면처럼 극적인 건 아니다. 오래된 도구가 노출된 채 방치되어 있었다. 버려진 패키지가 남용당했다. 더 이상 지원되지 않는 기능이 여전히 운영 환경에서 실행되고 있었다.\n\n이번 주에도 같은 교훈이 새로운 형태로 다시 찾아왔다. 피싱 키트를 대여하기가 더 쉬워졌고, AI 이름이 유용한 미끼가 되었으며, 오래된 로그인 경로는 여전히 오류가 발생하고, 잊혀진 소프트웨어는…"
   },
   {
     "source": "thn",
@@ -321,7 +384,7 @@
     "url": "https://thehackernews.com/2026/06/the-onboarding-password-mistake-that.html",
     "date": "2026-06-15T17:00:00",
     "title_ko": "불필요한 위험을 초래하는 온보딩 비밀번호 설정 실수",
-    "desc_ko": "신입 사원 온보딩은 IT 팀에게 매우 바쁜 시기입니다. 신입 사원들은 기기, 계정, 접근 권한, 비밀번호가 필요하며, 이 모든 것을 촉박한 시간 내에 제공해야 합니다.\n\n이는 대개 신입 사원이 시스템에 처음 접속할 수 있도록 임시 “첫날용” 비밀번호를 공유해야 함을 의미합니다. 문제는 이러한 비밀번호가"
+    "desc_ko": "신입 사원 온보딩 기간은 IT 팀에게 매우 바쁜 시기입니다. 신입 사원에게는 기기, 계정, 접근 권한, 비밀번호 등이 필요하며, 이 모든 것을 촉박한 시간 내에 제공해야 합니다.\n\n이는 대개 신입 사원이 시스템에 처음 접속할 수 있도록 임시 “첫날용” 비밀번호를 공유해야 함을 의미합니다. 문제는 이러한 비밀번호가"
   },
   {
     "source": "thn",
@@ -329,8 +392,8 @@
     "desc": "Cybersecurity researchers have discovered a network of 152 Google Chrome extensions that act as new tab live wallpaper add-ons to distribute a potentially unwanted program (PUP) family.\n\nThe cluster spans 38 separate Chrome Web Store publisher accounts and three brand backends: tabplugins[.]com, yow",
     "url": "https://thehackernews.com/2026/06/152-chrome-wallpaper-extensions-with.html",
     "date": "2026-06-15T16:37:50",
-    "title_ko": "10만 5천 건의 설치 기록을 가진 크롬 배경화면 확장 프로그램 152개, 애드웨어 및 가짜 트래픽과 연관",
-    "desc_ko": "사이버 보안 연구원들이 새로운 탭 라이브 배경화면 확장 프로그램으로 위장해 잠재적으로 원치 않는 프로그램(PUP) 계열을 유포하는 152개의 구글 크롬 확장 프로그램 네트워크를 발견했습니다.\n\n이 네트워크는 38개의 별도 크롬 웹 스토어 게시자 계정과 tabplugins[.]com, yow 등 세 개의 백엔드 서버로 구성되어 있습니다."
+    "title_ko": "10만 5천 건의 설치 건수를 기록한 크롬 배경화면 확장 프로그램 152개, 애드웨어 및 가짜 트래픽과 연관",
+    "desc_ko": "사이버보안 연구원들이 새로운 탭 라이브 배경화면 애드온으로 위장해 잠재적으로 원치 않는 프로그램(PUP) 계열을 유포하는 152개의 구글 크롬 확장 프로그램 네트워크를 발견했습니다.\n\n이 네트워크는 38개의 별도 크롬 웹 스토어 게시자 계정과 tabplugins[.]com, yow 등 세 가지 브랜드 백엔드로 구성되어 있습니다."
   },
   {
     "source": "thn",
@@ -339,7 +402,7 @@
     "url": "https://thehackernews.com/2026/06/popular-wordpress-plugin-scripts.html",
     "date": "2026-06-15T15:29:38",
     "title_ko": "인기 워드프레스 플러그인 스크립트가 변조되어 사이트에 숨겨진 백도어가 심어졌다",
-    "desc_ko": "한 공격자가 PushEngage, OptinMonster, TrustPulse를 실행 중인 워드프레스 사이트에서 사용하는 신뢰할 수 있는 자바스크립트 파일을 조작하여, 해당 파일을 사이트를 침입하는 수단으로 악용했습니다.\n\n파일이 로드될 당시 사이트 관리자가 로그인되어 있었다면, 이 코드는 공격자의 통제 하에 있는 관리자 계정을 생성했습니다."
+    "desc_ko": "한 공격자가 PushEngage, OptinMonster, TrustPulse를 실행 중인 워드프레스 사이트에서 사용하는 신뢰할 수 있는 자바스크립트 파일을 조작하여, 해당 파일을 사이트를 침입하는 수단으로 악용했습니다.\n\n파일이 로드될 당시 사이트 관리자가 로그인된 상태였을 경우, 이 코드는 공격자의 통제 하에 있는 관리자 계정을 생성했습니다."
   },
   {
     "source": "thn",
@@ -347,8 +410,8 @@
     "desc": "Cybersecurity researchers have disclosed details of fraudulent activity targeting users across the Middle East and North Africa by employing various fraudulent Facebook accounts impersonating politicians, public figures, and trusted organizations.\n\n\"These accounts promoted fake offers, including fre",
     "url": "https://thehackernews.com/2026/06/sniper-dz-scams-target-mena-users-via.html",
     "date": "2026-06-15T12:00:22",
-    "title_ko": "‘Sniper Dz’ 사기 집단, 가짜 페이스북 광고와 브라우저 알림을 통해 중동·북아프리카(MENA) 지역 사용자를 노린다",
-    "desc_ko": "사이버 보안 연구원들은 정치인, 공인, 신뢰받는 기관을 사칭한 다양한 가짜 페이스북 계정을 이용해 중동 및 북아프리카 지역 사용자를 대상으로 한 사기 행위의 세부 내용을 공개했다.\n\n\"이 계정들은 무료"
+    "title_ko": "‘Sniper Dz’ 사기 집단, 가짜 페이스북 제안 및 브라우저 알림을 통해 중동·북아프리카(MENA) 지역 사용자를 표적으로 삼고 있다",
+    "desc_ko": "사이버 보안 연구원들은 정치인, 공인, 신뢰받는 기관을 사칭하는 다양한 가짜 페이스북 계정을 이용해 중동 및 북아프리카 전역의 사용자를 대상으로 한 사기 행위의 세부 내용을 공개했습니다.\n\n“이 계정들은 무료"
   },
   {
     "source": "thn",
@@ -356,7 +419,7 @@
     "desc": "Palo Alto Networks has revealed that it has observed \"active exploitation\" of a recently disclosed PAN-OS vulnerability by an unknown threat actor to obtain unauthorized access to GlobalProtect portals.\n\nThe vulnerability in question is CVE-2026-0257 (CVSS score: 7.8), an authentication bypass flaw ",
     "url": "https://thehackernews.com/2026/06/palo-alto-warns-of-active-exploitation.html",
     "date": "2026-06-15T11:47:32",
-    "title_ko": "팔로알토, PAN-OS GlobalProtect VPN 취약점에 대한 활발한 악용 사례 주의 당부",
+    "title_ko": "팔로알토, PAN-OS GlobalProtect VPN 취약점에 대한 공격이 활발히 진행 중이라고 경고",
     "desc_ko": "팔로알토 네트웍스는 최근 공개된 PAN-OS 취약점을 악용해 GlobalProtect 포털에 무단으로 접근하려는 미확인 위협 행위자의 “적극적인 공격”이 포착되었다고 밝혔습니다.\n\n문제의 취약점은 CVE-2026-0257(CVSS 점수: 7.8)로, 인증 우회 결함입니다. "
   },
   {
@@ -366,7 +429,7 @@
     "url": "https://thehackernews.com/2026/06/critical-splunk-enterprise-flaw-lets.html",
     "date": "2026-06-13T18:53:03",
     "title_ko": "스플렁크 엔터프라이즈의 심각한 취약점으로 인해 공격자가 인증 없이 코드를 실행할 수 있음",
-    "desc_ko": "Splunk은 인증 없이 파일 작업을 수행하거나 심지어 원격 코드 실행까지 가능하게 할 수 있는 Splunk Enterprise의 심각한 보안 결함을 해결하기 위해 보안 업데이트를 발표했습니다.\n\nCVE-2026-20253으로 분류된 이 취약점은 CVSS 평가 시스템에서 9.8점으로 평가되었습니다.\n\n\"Splunk Enterprise에서"
+    "desc_ko": "Splunk은 Splunk Enterprise의 심각한 보안 결함을 해결하기 위한 보안 업데이트를 발표했습니다. 이 결함은 악용될 경우 인증 없이 파일 작업을 수행하거나 심지어 원격 코드 실행까지 가능하게 할 수 있습니다.\n\nCVE-2026-20253으로 추적되는 이 취약점은 CVSS 평가 시스템에서 9.8점으로 평가되었습니다.\n\n\"Splunk Enterprise에서는"
   },
   {
     "source": "thn",
@@ -374,8 +437,8 @@
     "desc": "Anthropic said on Friday it will \"abruptly disable\" its most advanced artificial intelligence (AI) models, Claude Fable 5 and Mythos 5, for all users after the U.S. government ordered it to suspend access to the models for foreign nationals, whether inside or outside the U.S., citing national securi",
     "url": "https://thehackernews.com/2026/06/us-orders-anthropic-to-suspend-fable-5.html",
     "date": "2026-06-13T11:12:50",
-    "title_ko": "미국, 앤트로픽에 외국인 이용자의 ‘Fable 5’ 및 ‘Mythos 5’ 접속 중단 명령",
-    "desc_ko": "앤트로픽(Anthropic)은 금요일, 미국 정부가 국가 안보를 이유로 미국 내외를 불문하고 외국 국적자의 해당 모델 접근을 중단하라고 명령함에 따라, 자사의 최첨단 인공지능(AI) 모델인 ‘클로드 페이블 5(Claude Fable 5)’와 ‘마이토스 5(Mythos 5)’에 대한 모든 사용자의 접근을 “즉시 차단”할 것이라고 밝혔다."
+    "title_ko": "미국, 앤트로픽에 외국인에 대한 ‘Fable 5’ 및 ‘Mythos 5’ 접근 권한 중단 명령",
+    "desc_ko": "앤트로픽(Anthropic)은 금요일, 미국 정부가 국가 안보를 이유로 미국 내외를 불문하고 외국 국적자의 해당 모델 접근을 중단하라고 명령함에 따라, 자사의 최첨단 인공지능(AI) 모델인 ‘클로드 페이블 5(Claude Fable 5)’와 ‘미토스 5(Mythos 5)’에 대한 모든 사용자의 접근을 “갑작스럽게 차단”할 것이라고 밝혔다."
   },
   {
     "source": "thn",
@@ -383,70 +446,7 @@
     "desc": "Attackers took over more than 400 packages in the Arch User Repository (AUR) this week and rewrote their build scripts to install a credential stealer on any machine that built them.\n\nThe malware is a Rust binary built to harvest developer secrets. When it lands with root, it can also load an eBPF r",
     "url": "https://thehackernews.com/2026/06/over-400-arch-linux-aur-packages.html",
     "date": "2026-06-13T01:03:25",
-    "title_ko": "400개가 넘는 Arch Linux AUR 패키지가 해킹되어 정보 탈취형 악성코드와 eBPF 루트킷이 배포되었다",
-    "desc_ko": "이번 주 공격자들은 Arch User Repository(AUR)에 있는 400개 이상의 패키지를 장악하고, 해당 패키지를 빌드하는 모든 시스템에 자격 증명 탈취 프로그램을 설치하도록 빌드 스크립트를 조작했습니다.\n\n이 악성코드는 개발자의 비밀 정보를 탈취하기 위해 제작된 Rust 바이너리입니다. 루트 권한을 획득하면 eBPF r"
-  },
-  {
-    "source": "thn",
-    "title": "Google Sues Chinese Smishing Network Accused of Using Gemini AI in Phishing",
-    "desc": "Google on Friday said it's pursuing legal action against a Chinese cybercrime network, accusing it of using its Gemini artificial intelligence (AI) agent to send phishing text messages targeting Americans.\n\nThe network is said to be behind the development and management of a phishing-as-a-service (P",
-    "url": "https://thehackernews.com/2026/06/google-sues-chinese-smishing-network.html",
-    "date": "2026-06-13T00:29:32",
-    "title_ko": "구글, 피싱에 제미니 AI를 사용한 혐의를 받는 중국 스미싱 조직을 상대로 소송 제기",
-    "desc_ko": "구글은 금요일, 자사의 인공지능(AI) 에이전트인 ‘제미니(Gemini)’를 이용해 미국인을 대상으로 한 피싱 문자 메시지를 발송한 혐의로 중국 사이버 범죄 조직을 상대로 법적 조치를 취하고 있다고 밝혔다.\n\n이 조직은 피싱-어-서비스(P"
-  },
-  {
-    "source": "thn",
-    "title": "China-Linked Hackers Backdoored Linux Login Software to Hide for Nearly a Decade",
-    "desc": "Instead of hiding on the laptops and servers defenders watch most closely, a China-nexus group spent close to a decade hidden inside the Linux login system itself.\n\nSygnia, which tracks the group as Velvet Ant, says it backdoored the PAM and OpenSSH components that decide who is allowed to sign in, ",
-    "url": "https://thehackernews.com/2026/06/china-linked-hackers-backdoored-linux.html",
-    "date": "2026-06-12T23:47:55",
-    "title_ko": "중국과 연계된 해커들이 리눅스 로그인 소프트웨어에 백도어를 심어 거의 10년 동안 잠복해 있었다",
-    "desc_ko": "방어 담당자들이 가장 면밀히 감시하는 노트북이나 서버에 숨는 대신, 중국과 연계된 한 해킹 집단은 거의 10년 동안 리눅스 로그인 시스템 자체에 숨어 지냈다.\n\n이 집단을 ‘벨벳 앤트(Velvet Ant)’로 추적하고 있는 시그니아(Sygnia)는, 이 집단이 로그인 권한을 결정하는 PAM 및 OpenSSH 구성 요소에 백도어를 심었다고 밝혔다. "
-  },
-  {
-    "source": "thn",
-    "title": "Agentjacking Attack Tricks AI Coding Agents Into Running Malicious Code",
-    "desc": "Cybersecurity researchers have described what they say is a new class of attack that can trick artificial intelligence (AI) coding agents into running arbitrary code on developer machines.\n\nCalled Agentjacking by Tenet Security, the attack can be triggered by means of a fake error report crafted usi",
-    "url": "https://thehackernews.com/2026/06/agentjacking-attack-tricks-ai-coding.html",
-    "date": "2026-06-12T17:34:33",
-    "title_ko": "에이전트 하이재킹 공격, AI 코딩 에이전트를 속여 악성 코드를 실행하게 만듦",
-    "desc_ko": "사이버 보안 연구진들은 인공지능(AI) 코딩 에이전트를 속여 개발자의 컴퓨터에서 임의의 코드를 실행하게 만드는 새로운 유형의 공격에 대해 설명했다.\n\nTenet Security가 ‘에이전트재킹(Agentjacking)’이라 명명한 이 공격은 위조된 오류 보고서를 통해 유발될 수 있으며, 이는"
-  },
-  {
-    "source": "thn",
-    "title": "Rethinking MDR as Attackers and Defenders Embrace AI",
-    "desc": "For most of the past decade, managed detection and response was the answer to a real problem. Security teams couldn't staff around the clock, couldn't hire enough analysts, and needed someone else to handle the alert queue. MDR stepped in. It worked well enough. Until now.\n\nThe threat landscape has ",
-    "url": "https://thehackernews.com/2026/06/rethinking-mdr-as-attackers-and.html",
-    "date": "2026-06-12T16:30:00",
-    "title_ko": "공격자와 방어자 모두 AI를 도입함에 따라 MDR을 재고하다",
-    "desc_ko": "지난 10년 동안 대부분 기간 동안, 관리형 탐지 및 대응(MDR)은 실제 문제에 대한 해결책이었습니다. 보안 팀은 24시간 상시 인력을 배치할 수도, 충분한 분석가를 채용할 수도 없었으며, 경보 대기열을 처리해 줄 외부 업체가 필요했습니다. MDR이 그 공백을 메웠고, 꽤 잘 작동했습니다. 지금까지는 말이죠.\n\n위협 환경은 "
-  },
-  {
-    "source": "thn",
-    "title": "LangGraph Flaw Chain Exposes Self-Hosted AI Agents to Remote Code Execution",
-    "desc": "Cybersecurity researchers have disclosed details of three now-patched security flaws impacting LangGraph, including a critical vulnerability chain that could result in remote code execution.\n\nLangGraph is an open-source framework created by LangChain to build complex, stateful, and multi-agent artif",
-    "url": "https://thehackernews.com/2026/06/langgraph-flaw-chain-exposes-self.html",
-    "date": "2026-06-12T15:20:36",
-    "title_ko": "LangGraph의 취약점 사슬로 인해 자체 호스팅 AI 에이전트가 원격 코드 실행 위험에 노출됨",
-    "desc_ko": "사이버 보안 연구원들이 LangGraph에 영향을 미치는 세 가지 보안 결함(현재는 패치됨)에 대한 세부 내용을 공개했는데, 여기에는 원격 코드 실행으로 이어질 수 있는 심각한 취약점 연쇄도 포함되어 있습니다.\n\nLangGraph는 LangChain이 개발한 오픈소스 프레임워크로, 복잡하고 상태를 유지하며 다중 에이전트 아티팩트를 구축하기 위해 설계되었습니다."
-  },
-  {
-    "source": "thn",
-    "title": "INTERPOL Operation Takes Down Sniper Dz Phishing Platform, Arrests Administrator",
-    "desc": "An INTERPOL-led operation last month resulted in the disruption of Sniper Dz, a decade-long phishing-as-a-service (PhaaS) platform, Group-IB said Thursday.\n\nThe effort, codenamed Operation Ramz, took place between October 2025 and February 2026, and saw authorities from 13 countries in the Middle Ea",
-    "url": "https://thehackernews.com/2026/06/interpol-takes-down-sniper-dz-phishing.html",
-    "date": "2026-06-12T14:22:55",
-    "title_ko": "인터폴 작전으로 ‘스나이퍼 DZ’ 피싱 플랫폼 적발, 운영자 체포",
-    "desc_ko": "그룹-IB는 목요일, 지난달 인터폴이 주도한 작전을 통해 10년 동안 운영되어 온 피싱-어-서비스(PhaaS) 플랫폼인 ‘스나이퍼 Dz’를 무력화했다고 밝혔다.\n\n'오퍼레이션 람즈(Operation Ramz)'라는 코드명으로 진행된 이번 작전은 2025년 10월부터 2026년 2월까지 진행되었으며, 중동 지역 13개국 당국이 참여했다."
-  },
-  {
-    "source": "thn",
-    "title": "Europol Disrupts AudiA6 Crypto Laundering Service Used by Ransomware Gangs",
-    "desc": "Authorities in Europe have disrupted AudiA6, a cryptocurrency laundering service used by ransomware gangs and cybercriminal networks.\n\nEuropol, in a statement issued Thursday, said the dismantling of AudiA6 cut off a \"key financial pipeline used to wash hundreds of millions in illicit profits.\" The ",
-    "url": "https://thehackernews.com/2026/06/europol-disrupts-audia6-crypto.html",
-    "date": "2026-06-12T12:08:41",
-    "title_ko": "유로폴, 랜섬웨어 조직이 이용하던 아우디 A6 암호화폐 자금세탁 서비스 차단",
-    "desc_ko": "유럽 당국은 랜섬웨어 조직과 사이버 범죄 네트워크가 이용하던 암호화폐 세탁 서비스인 ‘AudiA6’를 적발했다.\n\n유로폴은 목요일 발표한 성명에서 AudiA6의 해체로 “수억 달러에 달하는 불법 수익을 세탁하는 데 사용되던 주요 자금 흐름”이 차단되었다고 밝혔다. "
+    "title_ko": "400개가 넘는 Arch Linux AUR 패키지가 해킹당해 정보 탈취형 악성코드와 eBPF 루트킷이 배포됨",
+    "desc_ko": "이번 주, 공격자들은 Arch User Repository(AUR)에 등록된 400개 이상의 패키지를 장악하고, 해당 패키지를 빌드하는 모든 시스템에 자격 증명 탈취 프로그램을 설치하도록 빌드 스크립트를 조작했습니다.\n\n이 악성코드는 개발자의 비밀 정보를 탈취하기 위해 제작된 Rust 바이너리입니다. 루트 권한을 획득하면 eBPF r을 로드할 수도 있습니다."
   }
 ]
