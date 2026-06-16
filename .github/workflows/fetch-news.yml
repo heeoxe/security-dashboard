@@ -24,18 +24,29 @@ jobs:
           python-version: '3.10'
 
       - name: Run News Scraper
+        env:
+          DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
         run: |
           cat << 'EOF' > scraper.py
           import urllib.request
+          import urllib.parse
           import xml.etree.ElementTree as ET
           import json
+          import os
+          import re
           from datetime import datetime
+
+          DEEPL_KEY = os.environ.get("DEEPL_API_KEY", "")
+          DEEPL_URL = "https://api-free.deepl.com/v2/translate"
 
           # CISA와 THN 두 가지만 딱 깔끔하게 지정
           FEEDS = {
               "cisa": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
               "thn": "https://feeds.feedburner.com/TheHackersNews"
           }
+
+          def strip_html(text):
+              return re.sub(r"<[^>]+>", "", text or "").strip()
 
           def parse_rss(source, url):
               items = []
@@ -63,16 +74,43 @@ jobs:
                       except Exception:
                           pass
 
+                      title_text = title.text if title is not None else ""
+                      desc_text = strip_html(desc.text if desc is not None else "")[:300]
+
                       items.append({
                           "source": source,
-                          "title": title.text if title is not None else "",
-                          "desc": desc.text if desc is not None else "",
+                          "title": title_text,
+                          "desc": desc_text,
                           "url": link.text if link is not None else "",
                           "date": date_str
                       })
               except Exception as e:
                   print(f"[{source}] 피드 수집 중 에러 발생: {str(e)}")
               return items
+
+          def deepl_translate(texts):
+              """텍스트 리스트를 DeepL로 배치 번역. 실패 시 원문 반환."""
+              if not DEEPL_KEY or not texts:
+                  return texts
+              try:
+                  params = urllib.parse.urlencode(
+                      [("text", t) for t in texts] +
+                      [("source_lang", "EN"), ("target_lang", "KO")]
+                  ).encode()
+                  req = urllib.request.Request(
+                      DEEPL_URL,
+                      data=params,
+                      headers={
+                          "Authorization": f"DeepL-Auth-Key {DEEPL_KEY}",
+                          "Content-Type": "application/x-www-form-urlencoded"
+                      },
+                  )
+                  with urllib.request.urlopen(req, timeout=20) as r:
+                      result = json.load(r)
+                  return [t["text"] for t in result["translations"]]
+              except Exception as e:
+                  print(f"[WARN] DeepL 번역 오류: {e}")
+                  return texts  # 번역 실패 시 원문 그대로
 
           def main():
               all_news = []
@@ -84,7 +122,21 @@ jobs:
               # 최신 날짜 순 정렬 및 상위 50개 커트라인
               all_news.sort(key=lambda x: x.get('date', ''), reverse=True)
               all_news = all_news[:50]
-              
+
+              # DeepL 번역 — 제목 + 요약 배치 처리
+              if DEEPL_KEY and all_news:
+                  print(f"DeepL 번역 시작 ({len(all_news)}개 항목)...")
+                  titles = [n["title"] for n in all_news]
+                  descs  = [n["desc"]  for n in all_news]
+                  translated_titles = deepl_translate(titles)
+                  translated_descs  = deepl_translate(descs)
+                  for i, n in enumerate(all_news):
+                      n["title_ko"] = translated_titles[i]
+                      n["desc_ko"]  = translated_descs[i]
+                  print("번역 완료!")
+              else:
+                  print("[INFO] DEEPL_API_KEY 없음 — 번역 생략")
+
               with open('news.json', 'w', encoding='utf-8') as f:
                   json.dump(all_news, f, ensure_ascii=False, indent=2)
               print(f"news.json 빌드 완료! 총 {len(all_news)}개 적재됨.")
