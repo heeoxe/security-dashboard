@@ -127,6 +127,54 @@
 
   .tag { display: inline-block; font-size: 10px; background: var(--bg3); color: var(--text3); border: 1px solid var(--border); padding: 1px 7px; border-radius: 4px; margin: 2px 2px 0 0; }
 
+  /* 사이드 패널 */
+  .detail-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.2); z-index: 100; }
+  .detail-overlay.open { display: block; }
+  .detail-panel {
+    position: fixed; top: 0; right: -480px; width: 460px; height: 100vh;
+    background: var(--bg2); border-left: 1px solid var(--border);
+    box-shadow: -4px 0 24px rgba(0,0,0,0.08);
+    display: flex; flex-direction: column;
+    transition: right 0.25s cubic-bezier(.4,0,.2,1); z-index: 101;
+  }
+  .detail-panel.open { right: 0; }
+  .detail-header { padding: 1.125rem 1.25rem; border-bottom: 1px solid var(--border); display: flex; align-items: flex-start; gap: 10px; }
+  .detail-header-text { flex: 1; min-width: 0; }
+  .detail-source { font-size: 11px; color: var(--text3); margin-bottom: 6px; }
+  .detail-title { font-size: 14px; font-weight: 500; line-height: 1.4; color: var(--text); }
+  .detail-title-ko { font-size: 12px; color: var(--text3); margin-top: 4px; line-height: 1.4; }
+  .detail-close { flex-shrink: 0; width: 28px; height: 28px; border-radius: 6px; border: 1px solid var(--border); background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--text2); }
+  .detail-close:hover { background: var(--bg3); }
+  .detail-body { flex: 1; overflow-y: auto; padding: 1.25rem; display: flex; flex-direction: column; gap: 1.25rem; }
+  .detail-section-label { font-size: 11px; font-weight: 500; color: var(--text3); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+  .detail-meta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .detail-meta-item { background: var(--bg3); border-radius: var(--radius); padding: 8px 10px; }
+  .detail-meta-label { font-size: 10px; color: var(--text3); margin-bottom: 3px; }
+  .detail-meta-value { font-size: 12px; color: var(--text); font-weight: 500; }
+  .detail-desc { font-size: 12px; color: var(--text2); line-height: 1.7; background: var(--bg3); border-radius: var(--radius); padding: 10px 12px; }
+  .detail-memo textarea {
+    width: 100%; min-height: 100px; resize: vertical;
+    background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius);
+    color: var(--text); font-size: 13px; font-family: inherit; padding: 10px 12px;
+    outline: none; line-height: 1.6; transition: border-color 0.15s;
+  }
+  .detail-memo textarea:focus { border-color: var(--accent); }
+  .detail-tags-input { display: flex; gap: 6px; margin-bottom: 8px; }
+  .detail-tags-input input { flex: 1; height: 32px; padding: 0 10px; font-size: 12px; background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); color: var(--text); outline: none; }
+  .detail-tags-input input:focus { border-color: var(--accent); }
+  .detail-tags-input button { height: 32px; padding: 0 12px; font-size: 12px; }
+  .detail-tag { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; background: var(--accent2); color: var(--accent); border: 1px solid var(--border); padding: 2px 8px; border-radius: 20px; margin: 2px; cursor: pointer; }
+  .detail-tag:hover { background: var(--bg3); color: var(--text2); }
+  .detail-status { display: flex; gap: 6px; flex-wrap: wrap; }
+  .status-chip { padding: 4px 12px; border-radius: 20px; border: 1px solid var(--border); background: transparent; color: var(--text2); font-size: 12px; cursor: pointer; transition: all 0.15s; }
+  .status-chip.on { font-weight: 500; }
+  .status-chip[data-s="신규"].on { background: #eef2fb; color: var(--medium); border-color: var(--medium); }
+  .status-chip[data-s="검토중"].on { background: var(--high-bg); color: var(--high); border-color: var(--high); }
+  .status-chip[data-s="완료"].on { background: var(--low-bg); color: var(--low); border-color: var(--low); }
+  .status-chip[data-s="보류"].on { background: var(--bg3); color: var(--text2); border-color: var(--border2); }
+  .detail-footer { padding: 1rem 1.25rem; border-top: 1px solid var(--border); display: flex; gap: 8px; }
+  .detail-footer .btn { flex: 1; justify-content: center; }
+
   @media (max-width: 768px) {
     .layout { grid-template-columns: 1fr; }
     .sidebar { display: none; }
@@ -293,6 +341,59 @@
   </main>
 </div>
 
+<!-- 사이드 패널 -->
+<div class="detail-overlay" id="detail-overlay" onclick="closeDetail()"></div>
+<div class="detail-panel" id="detail-panel">
+  <div class="detail-header">
+    <div class="detail-header-text">
+      <div class="detail-source" id="dp-source"></div>
+      <div class="detail-title" id="dp-title"></div>
+      <div class="detail-title-ko" id="dp-title-ko"></div>
+    </div>
+    <button class="detail-close" onclick="closeDetail()">
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="detail-body">
+    <div id="dp-meta-section"></div>
+    <div id="dp-desc-section"></div>
+
+    <div>
+      <div class="detail-section-label">상태</div>
+      <div class="detail-status">
+        <button class="status-chip" data-s="신규" onclick="setStatus('신규')">신규</button>
+        <button class="status-chip" data-s="검토중" onclick="setStatus('검토중')">검토중</button>
+        <button class="status-chip" data-s="완료" onclick="setStatus('완료')">완료</button>
+        <button class="status-chip" data-s="보류" onclick="setStatus('보류')">보류</button>
+      </div>
+    </div>
+
+    <div>
+      <div class="detail-section-label">태그</div>
+      <div class="detail-tags-input">
+        <input id="dp-tag-input" type="text" placeholder="#패치필요, #검토중..." onkeydown="if(event.key==='Enter')addTag()" />
+        <button class="btn" onclick="addTag()">추가</button>
+      </div>
+      <div id="dp-tags"></div>
+    </div>
+
+    <div class="detail-memo">
+      <div class="detail-section-label">메모</div>
+      <textarea id="dp-memo" placeholder="분석 내용, 조치 사항, 참고 링크 등 자유롭게 작성하세요..."></textarea>
+    </div>
+  </div>
+  <div class="detail-footer">
+    <a class="btn" id="dp-link" href="" target="_blank" rel="noopener">
+      <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
+      원문 보기
+    </a>
+    <button class="btn btn-primary" onclick="saveDetail()">
+      <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+      저장
+    </button>
+  </div>
+</div>
+
 <script>
 const PAGE = 15;
 let kevAll = [], kevFiltered = [], kevPage = 0;
@@ -361,10 +462,9 @@ function newsCard(item) {
   let cleanDescKo = (item.desc_ko || '').replace(/<\/?[^>]+(>|$)/g, "");
   cleanDescKo = cleanDescKo.replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").trim();
 
-  return `<div class="card">
+  return `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(item)})'>
     <div class="card-top">
       ${newsSourceBadge(item.source)}
-
       <div class="card-title">${escHtml(item.title)}</div>
     </div>
     <div class="card-meta">
@@ -372,8 +472,7 @@ function newsCard(item) {
       ${hasKo ? `<span style="color:var(--text3);font-size:11px">${escHtml(item.title_ko)}</span>` : ''}
     </div>
     ${(hasKo ? cleanDescKo : cleanDesc) ? `<div class="card-desc">${escHtml((hasKo ? cleanDescKo : cleanDesc).slice(0, 220))}${(hasKo ? cleanDescKo : cleanDesc).length > 220 ? '…' : ''}</div>` : ''}
-    
-    <div class="card-footer">
+    <div class="card-footer" onclick="event.stopPropagation()">
       <a class="btn" href="${escHtml(item.url)}" target="_blank" rel="noopener">
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
         원문 보기
@@ -454,6 +553,138 @@ async function loadNews(force) {
 }
 // ── /News ─────────────────────────────────────────
 
+// ── Detail Panel ──────────────────────────────────
+let currentDetailId = null;
+
+function loadNotes() {
+  try { return JSON.parse(localStorage.getItem('sid_notes') || '{}'); } catch { return {}; }
+}
+function saveNotes(notes) {
+  localStorage.setItem('sid_notes', JSON.stringify(notes));
+}
+
+function openDetail(item) {
+  currentDetailId = item.id || item.url || item.cve || item.title;
+
+  // 헤더
+  document.getElementById('dp-source').textContent = item.source || '';
+  document.getElementById('dp-title').textContent = item.title || item.cve || '';
+  const koEl = document.getElementById('dp-title-ko');
+  if (item.title_ko) { koEl.textContent = item.title_ko; koEl.style.display = ''; }
+  else koEl.style.display = 'none';
+  document.getElementById('dp-link').href = item.url || (item.cve ? `https://nvd.nist.gov/vuln/detail/${item.cve}` : '#');
+
+  // 메타 정보
+  const metaItems = [];
+  if (item.added || item.date || item.published) metaItems.push({ label: '날짜', value: item.added || item.date || item.published });
+  if (item.cve) metaItems.push({ label: 'CVE ID', value: item.cve });
+  if (item.vendor) metaItems.push({ label: '벤더', value: item.vendor });
+  if (item.product) metaItems.push({ label: '제품', value: item.product });
+  if (item.due) metaItems.push({ label: '패치 마감', value: item.due });
+  if (item.cvss) metaItems.push({ label: 'CVSS', value: item.cvss.toFixed(1) });
+  if (item.sev) metaItems.push({ label: '심각도', value: item.sev });
+  if (item.cwe) metaItems.push({ label: 'CWE', value: item.cwe });
+
+  const metaSec = document.getElementById('dp-meta-section');
+  if (metaItems.length) {
+    metaSec.innerHTML = `<div class="detail-section-label">상세 정보</div>
+      <div class="detail-meta-grid">${metaItems.map(m =>
+        `<div class="detail-meta-item"><div class="detail-meta-label">${m.label}</div><div class="detail-meta-value">${escHtml(String(m.value))}</div></div>`
+      ).join('')}</div>`;
+  } else metaSec.innerHTML = '';
+
+  // 본문
+  const descSec = document.getElementById('dp-desc-section');
+  const desc = item.desc_ko || item.desc || '';
+  if (desc) {
+    const clean = desc.replace(/<[^>]+>/g, '').replace(/&nbsp;/g,' ').replace(/&amp;/g,'&').trim();
+    descSec.innerHTML = `<div class="detail-section-label">내용</div><div class="detail-desc">${escHtml(clean)}</div>`;
+  } else descSec.innerHTML = '';
+
+  // 저장된 노트 불러오기
+  const notes = loadNotes();
+  const note = notes[currentDetailId] || { status: '', tags: [], memo: '' };
+
+  // 상태
+  document.querySelectorAll('.status-chip').forEach(c => {
+    c.classList.toggle('on', c.dataset.s === note.status);
+  });
+
+  // 태그
+  renderDetailTags(note.tags || []);
+
+  // 메모
+  document.getElementById('dp-memo').value = note.memo || '';
+
+  // 패널 열기
+  document.getElementById('detail-overlay').classList.add('open');
+  document.getElementById('detail-panel').classList.add('open');
+}
+
+function closeDetail() {
+  document.getElementById('detail-overlay').classList.remove('open');
+  document.getElementById('detail-panel').classList.remove('open');
+  currentDetailId = null;
+}
+
+function setStatus(s) {
+  document.querySelectorAll('.status-chip').forEach(c => c.classList.toggle('on', c.dataset.s === s));
+}
+
+function renderDetailTags(tags) {
+  document.getElementById('dp-tags').innerHTML = tags.map(t =>
+    `<span class="detail-tag" onclick="removeTag('${escAttr(t)}')">${escHtml(t)} ×</span>`
+  ).join('');
+}
+
+function addTag() {
+  const input = document.getElementById('dp-tag-input');
+  const val = input.value.trim().replace(/^#/, '');
+  if (!val) return;
+  const notes = loadNotes();
+  const note = notes[currentDetailId] || { status: '', tags: [], memo: '' };
+  if (!note.tags.includes(val)) {
+    note.tags.push(val);
+    notes[currentDetailId] = note;
+    saveNotes(notes);
+    renderDetailTags(note.tags);
+  }
+  input.value = '';
+}
+
+function removeTag(t) {
+  const notes = loadNotes();
+  const note = notes[currentDetailId] || { status: '', tags: [], memo: '' };
+  note.tags = note.tags.filter(x => x !== t);
+  notes[currentDetailId] = note;
+  saveNotes(notes);
+  renderDetailTags(note.tags);
+}
+
+function saveDetail() {
+  if (!currentDetailId) return;
+  const status = document.querySelector('.status-chip.on')?.dataset.s || '';
+  const memo = document.getElementById('dp-memo').value;
+  const notes = loadNotes();
+  const note = notes[currentDetailId] || { tags: [] };
+  note.status = status;
+  note.memo = memo;
+  notes[currentDetailId] = note;
+  saveNotes(notes);
+
+  // 저장 완료 피드백
+  const btn = document.querySelector('.detail-footer .btn-primary');
+  const orig = btn.innerHTML;
+  btn.innerHTML = '✓ 저장됨';
+  btn.style.background = 'var(--low)';
+  btn.style.borderColor = 'var(--low)';
+  setTimeout(() => { btn.innerHTML = orig; btn.style.background = ''; btn.style.borderColor = ''; }, 1500);
+}
+
+// ESC 키로 닫기
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDetail(); });
+// ── /Detail Panel ─────────────────────────────────
+
 function sevClass(s) {
   return { CRITICAL: 'bc', HIGH: 'bh', MEDIUM: 'bm', LOW: 'bl' }[(s||'').toUpperCase()] || 'bn';
 }
@@ -493,7 +724,7 @@ function kevCard(item) {
     source: 'CISA KEV' 
   };
 
-  return `<div class="card">
+  return `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(item)})'>
     <div class="card-top">
       <span class="badge src-cisa">CISA KEV</span>
       <div class="card-title">${escHtml(item.title)}</div>
@@ -505,7 +736,7 @@ function kevCard(item) {
       ${item.due ? `<span style="color:var(--high)">패치 마감 ${item.due}</span>` : ''}
     </div>
     ${cvss ? `<div class="cvss-row"><span class="cvss-label">CVSS ${cvss.toFixed(1)}</span><div class="cvss-track"><div class="cvss-fill" style="width:${Math.round(cvss/10*100)}%;background:${cvssColor(cvss)}"></div></div></div>` : ''}
-    <div class="card-footer" style="margin-top:10px">
+    <div class="card-footer" style="margin-top:10px" onclick="event.stopPropagation()">
       <button class="btn" onclick='toggleSave(${JSON.stringify(bm)})'>${sv ? '★ 저장됨' : '☆ 저장'}</button>
       <a class="btn" href="https://www.cve.org/CVERecord?id=${item.cve}" target="_blank" rel="noopener">
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
@@ -534,7 +765,7 @@ function nvdCard(item) {
     source: 'NVD' 
   };
 
-  return `<div class="card">
+  return `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(item)})'>
     <div class="card-top">
       <span class="badge ${sevClass(item.sev)}">${sevLabel(item.sev)}</span>
       <span class="badge src-nvd">NVD</span>
@@ -547,7 +778,7 @@ function nvdCard(item) {
     ${cvss ? `<div class="cvss-row"><span class="cvss-label">CVSS ${cvss.toFixed(1)}</span><div class="cvss-track"><div class="cvss-fill" style="width:${Math.round(cvss/10*100)}%;background:${cvssColor(cvss)}"></div></div></div>` : ''}
     <div class="card-desc" style="margin-top:8px">${escHtml(item.desc)}</div>
     ${item.tags && item.tags.length ? `<div style="margin-bottom:6px">${item.tags.map(t=>`<span class="tag">${escHtml(t)}</span>`).join('')}</div>` : ''}
-    <div class="card-footer">
+    <div class="card-footer" onclick="event.stopPropagation()">
       <button class="btn" onclick='toggleSave(${JSON.stringify(bm)})'>${sv ? '★ 저장됨' : '☆ 저장'}</button>
       <a class="btn" href="https://nvd.nist.gov/vuln/detail/${item.cve}" target="_blank" rel="noopener">
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
