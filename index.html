@@ -168,9 +168,9 @@
   .detail-status { display: flex; gap: 6px; flex-wrap: wrap; }
   .status-chip { padding: 4px 12px; border-radius: 20px; border: 1px solid var(--border); background: transparent; color: var(--text2); font-size: 12px; cursor: pointer; transition: all 0.15s; }
   .status-chip.on { font-weight: 500; }
-  .status-chip[data-s="신규"].on { background: #eef2fb; color: var(--medium); border-color: var(--medium); }
-  .status-chip[data-s="검토중"].on { background: var(--high-bg); color: var(--high); border-color: var(--high); }
-  .status-chip[data-s="완료"].on { background: var(--low-bg); color: var(--low); border-color: var(--low); }
+  .status-chip[data-s="검토필요"].on { background: #eef2fb; color: var(--medium); border-color: var(--medium); }
+  .status-chip[data-s="검토완료"].on { background: var(--high-bg); color: var(--high); border-color: var(--high); }
+  .status-chip[data-s="N/A"].on { background: var(--low-bg); color: var(--low); border-color: var(--low); }
   .status-chip[data-s="보류"].on { background: var(--bg3); color: var(--text2); border-color: var(--border2); }
   .detail-footer { padding: 1rem 1.25rem; border-top: 1px solid var(--border); display: flex; gap: 8px; }
   .detail-footer .btn { flex: 1; justify-content: center; }
@@ -236,6 +236,11 @@
         <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
         저장된 뉴스
         <span class="nav-badge" id="nb-saved-news">0</span>
+      </button>
+      <button class="nav-item" onclick="switchPanel('memos', this)">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+        메모 모아보기
+        <span class="nav-badge" id="nb-memos">0</span>
       </button>
     </div>
     <div class="nav-section" style="margin-top:auto;padding-top:1rem;border-top:1px solid var(--border)">
@@ -340,6 +345,26 @@
       <div class="pager" id="news-pager"></div>
     </div>
 
+    <!-- 메모 모아보기 -->
+    <div id="panel-memos" class="panel">
+      <div class="toolbar" style="margin-bottom:1rem">
+        <input id="memo-q" type="text" placeholder="메모 내용, 제목 검색..." oninput="renderMemos()" />
+        <select id="memo-status" onchange="renderMemos()">
+          <option value="">전체 상태</option>
+          <option value="검토필요">검토필요</option>
+          <option value="검토완료">검토완료</option>
+          <option value="N/A">N/A</option>
+          <option value="보류">보류</option>
+        </select>
+      </div>
+      <div class="cards" id="memo-list">
+        <div class="empty">
+          <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          아직 작성된 메모가 없습니다
+        </div>
+      </div>
+    </div>
+
     <!-- 저장된 취약점 -->
     <div id="panel-saved-vuln" class="panel">
       <div class="cards" id="saved-vuln-list"></div>
@@ -420,9 +445,9 @@
     <div>
       <div class="detail-section-label">상태</div>
       <div class="detail-status">
-        <button class="status-chip" data-s="신규" onclick="setStatus('신규')">신규</button>
-        <button class="status-chip" data-s="검토중" onclick="setStatus('검토중')">검토중</button>
-        <button class="status-chip" data-s="완료" onclick="setStatus('완료')">완료</button>
+        <button class="status-chip" data-s="검토필요" onclick="setStatus('검토필요')">검토필요</button>
+        <button class="status-chip" data-s="검토완료" onclick="setStatus('검토완료')">검토완료</button>
+        <button class="status-chip" data-s="N/A" onclick="setStatus('N/A')">N/A</button>
         <button class="status-chip" data-s="보류" onclick="setStatus('보류')">보류</button>
       </div>
     </div>
@@ -430,7 +455,7 @@
     <div>
       <div class="detail-section-label">태그</div>
       <div class="detail-tags-input">
-        <input id="dp-tag-input" type="text" placeholder="#패치필요, #검토중..." onkeydown="if(event.key==='Enter')addTag()" />
+        <input id="dp-tag-input" type="text" placeholder="카테고리 입력..." onkeydown="if(event.key==='Enter')addTag()" />
         <button class="btn" onclick="addTag()">추가</button>
       </div>
       <div id="dp-tags"></div>
@@ -438,7 +463,7 @@
 
     <div class="detail-memo">
       <div class="detail-section-label">메모</div>
-      <textarea id="dp-memo" placeholder="분석 내용, 조치 사항, 참고 링크 등 자유롭게 작성하세요..."></textarea>
+      <textarea id="dp-memo" placeholder="분석 내용, 조치 사항, 참고 링크 등..."></textarea>
     </div>
   </div>
   <div class="detail-footer">
@@ -489,6 +514,7 @@ function switchPanel(id, el) {
   el.classList.add('active');
   if (id === 'saved-vuln') renderSavedVuln();
   if (id === 'saved-news') renderSavedNews();
+  if (id === 'memos') renderMemos();
   if (id === 'owasp') loadOwasp();
   if (id === 'settings') renderCfgStatus();
   if (id === 'news') loadNews();
@@ -833,6 +859,7 @@ function saveDetail() {
   const note = notes[currentDetailId] || { tags: [] };
   note.status = status;
   note.memo = memo;
+  note.updatedAt = new Date().toISOString();
   notes[currentDetailId] = note;
   saveNotes(notes);
   pushGist(); // Gist 자동 동기화
@@ -1274,11 +1301,87 @@ function loadOwasp() {
 function updateBadges() {
   const vulnBm = bookmarks.filter(b => b.type !== 'news');
   const newsBm = bookmarks.filter(b => b.type === 'news');
+  const notes = loadNotes();
+  const memoCnt = Object.values(notes).filter(n => n.memo && n.memo.trim()).length;
   document.getElementById('s-saved').textContent = bookmarks.length;
   document.getElementById('nb-saved-vuln').textContent = vulnBm.length;
   document.getElementById('nb-saved-news').textContent = newsBm.length;
+  document.getElementById('nb-memos').textContent = memoCnt;
   const crit = vulnBm.filter(b => ['CRITICAL','HIGH'].includes((b.sev||'').toUpperCase())).length;
   document.getElementById('s-crit').textContent = crit;
+}
+
+function statusColor(s) {
+  return { '검토필요': 'var(--medium)', '검토완료': 'var(--high)', 'N/A': 'var(--low)', '보류': 'var(--text3)' }[s] || 'var(--text3)';
+}
+function statusBg(s) {
+  return { '검토필요': 'var(--medium-bg)', '검토완료': 'var(--high-bg)', 'N/A': 'var(--low-bg)', '보류': 'var(--bg3)' }[s] || 'var(--bg3)';
+}
+
+function renderMemos() {
+  const el = document.getElementById('memo-list');
+  const notes = loadNotes();
+  const q = (document.getElementById('memo-q')?.value || '').toLowerCase();
+  const statusFilter = document.getElementById('memo-status')?.value || '';
+
+  const entries = Object.entries(notes)
+    .filter(([id, n]) => n.memo && n.memo.trim())
+    .filter(([id, n]) => {
+      if (statusFilter && n.status !== statusFilter) return false;
+      if (!q) return true;
+      return (n.memo + id + (n.tags||[]).join(' ')).toLowerCase().includes(q);
+    })
+    .sort((a, b) => (b[1].updatedAt||'').localeCompare(a[1].updatedAt||''));
+
+  document.getElementById('nb-memos').textContent = Object.values(notes).filter(n => n.memo && n.memo.trim()).length;
+
+  if (!entries.length) {
+    el.innerHTML = `<div class="empty">
+      <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+      ${q || statusFilter ? '검색 결과가 없습니다' : '아직 작성된 메모가 없습니다'}
+    </div>`;
+    return;
+  }
+
+  el.innerHTML = entries.map(([id, n]) => {
+    const tags = (n.tags || []).map(t => `<span class="tag">${escHtml(t)}</span>`).join('');
+    const statusEl = n.status ? `<span class="badge" style="font-size:10px;background:${statusBg(n.status)};color:${statusColor(n.status)};border:1px solid ${statusColor(n.status)}20">${n.status}</span>` : '';
+    // 제목: URL이면 도메인+경로만, 아니면 그대로
+    let displayId = id;
+    try { const u = new URL(id); displayId = u.hostname.replace('www.','') + u.pathname.slice(0,40); } catch {}
+
+    return `<div class="card" style="cursor:pointer" onclick="openDetailById('${escAttr(id)}')">
+      <div class="card-top">
+        ${statusEl}
+        <div class="card-title" style="font-size:12px;color:var(--text2);font-weight:400">${escHtml(displayId)}</div>
+      </div>
+      ${tags ? `<div style="margin-bottom:8px">${tags}</div>` : ''}
+      <div style="font-size:13px;color:var(--text);line-height:1.6;white-space:pre-wrap;background:var(--bg3);border-radius:var(--radius);padding:10px 12px">${escHtml(n.memo)}</div>
+    </div>`;
+  }).join('');
+}
+
+function openDetailById(id) {
+  // 메모 모아보기에서 클릭 시 — 사이드 패널을 메모 편집 모드로 열기
+  const notes = loadNotes();
+  const note = notes[id] || { status: '', tags: [], memo: '' };
+  currentDetailId = id;
+
+  let displayId = id;
+  try { const u = new URL(id); displayId = u.hostname.replace('www.','') + u.pathname; } catch {}
+
+  document.getElementById('dp-source').textContent = '메모';
+  document.getElementById('dp-title').textContent = displayId;
+  const koEl = document.getElementById('dp-title-ko');
+  koEl.style.display = 'none';
+  document.getElementById('dp-link').href = id.startsWith('http') ? id : '#';
+  document.getElementById('dp-meta-section').innerHTML = '';
+  document.getElementById('dp-desc-section').innerHTML = '';
+  document.querySelectorAll('.status-chip').forEach(c => c.classList.toggle('on', c.dataset.s === note.status));
+  renderDetailTags(note.tags || []);
+  document.getElementById('dp-memo').value = note.memo || '';
+  document.getElementById('detail-overlay').classList.add('open');
+  document.getElementById('detail-panel').classList.add('open');
 }
 
 function renderSavedVuln() {
