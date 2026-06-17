@@ -325,7 +325,7 @@
       </div>
       <div style="font-size:11px;color:var(--text3);margin-bottom:1rem;display:flex;align-items:center;gap:8px">
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
-        CISA Alerts는 실시간 fetch · RSS 뉴스는 GitHub Actions로 매일 자동 갱신 (<code style="font-size:10px;background:var(--bg3);padding:1px 5px;border-radius:3px">news.json</code>)
+        GitHub Actions로 매일 뉴스 자동 갱신 (<code style="font-size:10px;background:var(--bg3);padding:1px 5px;border-radius:3px"></code>)
       </div>
       <div class="cards" id="news-list">
         <div class="loading"><div class="spinner"></div><br>뉴스 불러오는 중...</div>
@@ -363,7 +363,7 @@
     <div id="dp-meta-section"></div>
     <div id="dp-desc-section"></div>
 
-    <div>
+    <!-- <div>
       <div class="detail-section-label">상태</div>
       <div class="detail-status">
         <button class="status-chip" data-s="신규" onclick="setStatus('신규')">신규</button>
@@ -371,12 +371,12 @@
         <button class="status-chip" data-s="완료" onclick="setStatus('완료')">완료</button>
         <button class="status-chip" data-s="보류" onclick="setStatus('보류')">보류</button>
       </div>
-    </div>
+    </div> -->
 
     <div>
       <div class="detail-section-label">태그</div>
       <div class="detail-tags-input">
-        <input id="dp-tag-input" type="text" placeholder="#패치필요, #검토중..." onkeydown="if(event.key==='Enter')addTag()" />
+        <input id="dp-tag-input" type="text" placeholder="카테고리 선택..." onkeydown="if(event.key==='Enter')addTag()" />
         <button class="btn" onclick="addTag()">추가</button>
       </div>
       <div id="dp-tags"></div>
@@ -473,6 +473,7 @@ function newsCard(item) {
       ${date ? `<span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${date}</span>` : ''}
       ${hasKo ? `<span style="color:var(--text3);font-size:11px">${escHtml(item.title_ko)}</span>` : ''}
     </div>
+    ${(hasKo ? cleanDescKo : cleanDesc) ? `<div class="card-desc">${escHtml((hasKo ? cleanDescKo : cleanDesc).slice(0, 220))}${(hasKo ? cleanDescKo : cleanDesc).length > 220 ? '…' : ''}</div>` : ''}
     <div class="card-footer" onclick="event.stopPropagation()">
       <button class="btn" onclick='toggleSave(${JSON.stringify(newsBm)})'>${sv ? '★ 저장됨' : '☆ 저장'}</button>
       <a class="btn" href="${escHtml(item.url)}" target="_blank" rel="noopener">
