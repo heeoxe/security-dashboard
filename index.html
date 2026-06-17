@@ -366,17 +366,15 @@
     <div>
       <div class="detail-section-label">상태</div>
       <div class="detail-status">
-        <button class="status-chip" data-s="신규" onclick="setStatus('신규')">신규</button>
-        <button class="status-chip" data-s="검토중" onclick="setStatus('검토중')">검토중</button>
-        <button class="status-chip" data-s="완료" onclick="setStatus('완료')">완료</button>
-        <button class="status-chip" data-s="보류" onclick="setStatus('보류')">보류</button>
+        <button class="status-chip" data-s="신규" onclick="setStatus('검토필요')">검토필요</button>
+        <button class="status-chip" data-s="검토중" onclick="setStatus('완료')">완료</button>
       </div>
     </div>
 
     <div>
       <div class="detail-section-label">태그</div>
       <div class="detail-tags-input">
-        <input id="dp-tag-input" type="text" placeholder="#패치필요, #검토중..." onkeydown="if(event.key==='Enter')addTag()" />
+        <input id="dp-tag-input" type="text" placeholder="카테고리..." onkeydown="if(event.key==='Enter')addTag()" />
         <button class="btn" onclick="addTag()">추가</button>
       </div>
       <div id="dp-tags"></div>
