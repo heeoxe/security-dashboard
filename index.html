@@ -452,21 +452,16 @@ function newsSourceBadge(src) {
   return `<span class="badge" style="font-size:10px;${s.style}">${s.label}</span>`;
 }
 
-function newsCard(item) {
+function newsCard(item, index) {
   const date = item.date ? new Date(item.date).toLocaleDateString('ko-KR', { year:'numeric', month:'short', day:'numeric' }) : '';
   
   const hasKo   = !!item.title_ko;
-  let cleanDesc = (item.desc || '').replace(/<\/?[^>]+(>|$)/g, "");
-  cleanDesc = cleanDesc.replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").trim();
-  let cleanDescKo = (item.desc_ko || '').replace(/<\/?[^>]+(>|$)/g, "");
-  cleanDescKo = cleanDescKo.replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").trim();
-
-  const itemId = item.url;
-  const newsBm = { id: itemId, title: item.title, title_ko: item.title_ko||'', desc: item.desc||'', desc_ko: item.desc_ko||'', url: item.url, date, source: item.source, type: 'news' };
+  const itemId = item.url || item.id || item.title;
   const sv = isSaved(itemId);
 
-  // 💡 [수정] onclick을 복잡한 객체 대신 escAttr을 거친 url 문자열 매개변수로 안전하게 변경합니다.
-  return `<div class="card" style="cursor:pointer" onclick="openDetailById('${escAttr(item.url)}', 'news')">
+  const newsBm = { id: itemId, title: item.title, title_ko: item.title_ko||'', desc: item.desc||'', desc_ko: item.desc_ko||'', url: item.url, date, source: item.source, type: 'news' };
+
+  return `<div class="card" style="cursor:pointer" onclick="openDetailByIndex(${index}, 'news')">
     <div class="card-top">
       ${newsSourceBadge(item.source)}
       <div class="card-title">${escHtml(item.title)}</div>
@@ -477,7 +472,7 @@ function newsCard(item) {
     </div>
     <div class="card-footer" onclick="event.stopPropagation()">
       <button class="btn" onclick='toggleSave(${JSON.stringify(newsBm)})'>${sv ? '★ 저장됨' : '☆ 저장'}</button>
-      <a class="btn" href="${escHtml(item.url)}" target="_blank" rel="noopener">
+      <a class="btn" href="${escHtml(item.url || item.id)}" target="_blank" rel="noopener">
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
         원문 보기
       </a>
@@ -489,7 +484,8 @@ function renderNewsPage() {
   const el = document.getElementById('news-list');
   const start = newsPage * PAGE, slice = newsFiltered.slice(start, start + PAGE);
   if (!slice.length) { el.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>결과가 없습니다</div>'; renderNewsPager(); return; }
-  el.innerHTML = slice.map(newsCard).join('');
+  
+  el.innerHTML = slice.map((item, i) => newsCard(item, start + i)).join('');
   renderNewsPager();
 }
 
@@ -528,8 +524,6 @@ async function loadNews(force) {
   el.innerHTML = '<div class="loading"><div class="spinner"></div><br>뉴스 불러오는 중...</div>';
   newsAll = [];
 
-  // 💡 CISA 직접 fetch는 브라우저 차단(CORS)이 나므로 걷어내고,
-  // GitHub Actions가 수집해 준 안전한 통합본(news.json) 파일만 가져옵니다[cite: 104].
   try {
     const r = await fetch('./news.json'); // [cite: 104]
     if (r.ok) { // [cite: 104]
@@ -570,19 +564,19 @@ function saveNotes(notes) {
 function openDetail(item) {
   currentDetailId = item.id || item.url || item.cve || item.title;
 
-  // 💡 [새로 추가] 주소 식별자를 받아 소스 배열에서 원본을 찾아 openDetail로 넘겨주는 중간 안전장치 함수
-function openDetailById(id, poolType) {
+function openDetailByIndex(index, poolType) {
   let targetItem = null;
   if (poolType === 'news') {
-    targetItem = newsAll.find(n => n.url === id);
+    targetItem = newsFiltered[index];
   } else if (poolType === 'bookmark') {
-    targetItem = bookmarks.find(b => b.id === id);
+    const newsBm = bookmarks.filter(b => b.type === 'news');
+    targetItem = newsBm[index];
   }
   
   if (targetItem) {
+    // CISA 데이터 누락 방지: url과 id가 크로스 오버되어 있어도 완벽 보완해 넘김
+    if (!targetItem.url && targetItem.id) targetItem.url = targetItem.id;
     openDetail(targetItem);
-  } else {
-    console.warn("상세 정보를 찾을 수 없습니다:", id);
   }
 }
 
@@ -1177,8 +1171,7 @@ function renderSavedNews() {
     el.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 22h16a2 2 0 002-2V4a2 2 0 00-2-2H8a2 2 0 00-2 2v16a2 2 0 01-2 2zm0 0a2 2 0 01-2-2v-9c0-1.1.9-2 2-2h2"/></svg>저장된 뉴스가 없습니다</div>';
     return;
   }
-  // 💡 [수정] onclick 구조를 openDetailById 주소 식별자 기반으로 파싱
-  el.innerHTML = newsBm.map(b => `<div class="card" style="cursor:pointer" onclick="openDetailById('${escAttr(b.id)}', 'bookmark')">
+  el.innerHTML = newsBm.map((b, i) => `<div class="card" style="cursor:pointer" onclick="openDetailByIndex(${i}, 'bookmark')">
     <div class="card-top">
       ${newsSourceBadge(b.source)}
       <div class="card-title">${escHtml(b.title)}</div>
@@ -1193,7 +1186,7 @@ function renderSavedNews() {
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/></svg>
         삭제
       </button>
-      <a class="btn" href="${escHtml(b.url)}" target="_blank" rel="noopener">원문 보기</a>
+      <a class="btn" href="${escHtml(b.url || b.id)}" target="_blank" rel="noopener">원문 보기</a>
     </div>
   </div>`).join('');
 }
