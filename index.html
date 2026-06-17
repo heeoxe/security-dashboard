@@ -330,12 +330,12 @@
 
     <!-- 저장됨 -->
     <div id="panel-saved" class="panel">
-      <div class="cards" id="saved-list">
-        <div class="empty">
-          <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
-          저장된 항목이 없습니다<br>CISA KEV 또는 NVD에서 북마크하세요
-        </div>
+      <div class="tabs" style="margin-bottom:1rem">
+        <button class="tab active" id="saved-tab-vuln" onclick="switchSavedTab('vuln')">취약점 (KEV/NVD)</button>
+        <button class="tab" id="saved-tab-news" onclick="switchSavedTab('news')">뉴스</button>
       </div>
+      <div id="saved-vuln-list" class="cards"></div>
+      <div id="saved-news-list" class="cards" style="display:none"></div>
     </div>
 
   </main>
@@ -358,7 +358,7 @@
     <div id="dp-meta-section"></div>
     <div id="dp-desc-section"></div>
 
-    <!-- <div>
+    <div>
       <div class="detail-section-label">상태</div>
       <div class="detail-status">
         <button class="status-chip" data-s="신규" onclick="setStatus('신규')">신규</button>
@@ -366,12 +366,12 @@
         <button class="status-chip" data-s="완료" onclick="setStatus('완료')">완료</button>
         <button class="status-chip" data-s="보류" onclick="setStatus('보류')">보류</button>
       </div>
-    </div> -->
+    </div>
 
     <div>
       <div class="detail-section-label">태그</div>
       <div class="detail-tags-input">
-        <input id="dp-tag-input" type="text" placeholder="카테고리" onkeydown="if(event.key==='Enter')addTag()" />
+        <input id="dp-tag-input" type="text" placeholder="#패치필요, #검토중..." onkeydown="if(event.key==='Enter')addTag()" />
         <button class="btn" onclick="addTag()">추가</button>
       </div>
       <div id="dp-tags"></div>
@@ -379,7 +379,7 @@
 
     <div class="detail-memo">
       <div class="detail-section-label">메모</div>
-      <textarea id="dp-memo" placeholder="분석 내용, 조치 사항, 참고 링크 등 자유롭게 작성"></textarea>
+      <textarea id="dp-memo" placeholder="분석 내용, 조치 사항, 참고 링크 등 자유롭게 작성하세요..."></textarea>
     </div>
   </div>
   <div class="detail-footer">
@@ -462,6 +462,9 @@ function newsCard(item) {
   let cleanDescKo = (item.desc_ko || '').replace(/<\/?[^>]+(>|$)/g, "");
   cleanDescKo = cleanDescKo.replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").trim();
 
+  const newsBm = { id: item.url, title: item.title, title_ko: item.title_ko||'', desc: item.desc||'', desc_ko: item.desc_ko||'', url: item.url, date, source: item.source, type: 'news' };
+  const sv = isSaved(item.url);
+
   return `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(item)})'>
     <div class="card-top">
       ${newsSourceBadge(item.source)}
@@ -473,6 +476,7 @@ function newsCard(item) {
     </div>
     ${(hasKo ? cleanDescKo : cleanDesc) ? `<div class="card-desc">${escHtml((hasKo ? cleanDescKo : cleanDesc).slice(0, 220))}${(hasKo ? cleanDescKo : cleanDesc).length > 220 ? '…' : ''}</div>` : ''}
     <div class="card-footer" onclick="event.stopPropagation()">
+      <button class="btn" onclick='toggleSave(${JSON.stringify(newsBm)})'>${sv ? '★ 저장됨' : '☆ 저장'}</button>
       <a class="btn" href="${escHtml(item.url)}" target="_blank" rel="noopener">
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
         원문 보기
@@ -1106,47 +1110,80 @@ function loadOwasp() {
   renderOwasp();
 }
 
-function renderSaved() {
-  const el = document.getElementById('saved-list');
-  if (!bookmarks.length) {
-    el.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>저장된 항목이 없습니다</div>';
-    return;
-  }
-  
-  el.innerHTML = bookmarks.map(b => {
-    const cvss = b.cvss || 0;
-    const tags = Array.isArray(b.tags) ? b.tags : [];
+let savedTab = 'vuln';
 
-    return `<div class="card">
+function switchSavedTab(tab) {
+  savedTab = tab;
+  document.getElementById('saved-tab-vuln').classList.toggle('active', tab === 'vuln');
+  document.getElementById('saved-tab-news').classList.toggle('active', tab === 'news');
+  document.getElementById('saved-vuln-list').style.display = tab === 'vuln' ? '' : 'none';
+  document.getElementById('saved-news-list').style.display = tab === 'news' ? '' : 'none';
+  renderSaved();
+}
+
+function renderSaved() {
+  const vulnBm = bookmarks.filter(b => b.type !== 'news');
+  const newsBm = bookmarks.filter(b => b.type === 'news');
+
+  // 취약점 탭
+  const vulnEl = document.getElementById('saved-vuln-list');
+  if (!vulnBm.length) {
+    vulnEl.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>저장된 취약점이 없습니다</div>';
+  } else {
+    vulnEl.innerHTML = vulnBm.map(b => {
+      const cvss = b.cvss || 0;
+      return `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(b)})'>
+        <div class="card-top">
+          ${b.sev ? `<span class="badge ${sevClass(b.sev)}">${sevLabel(b.sev)}</span>` : ''}
+          <span class="badge ${b.source === 'CISA KEV' ? 'src-cisa' : 'src-nvd'}">${b.source}</span>
+          <div class="card-title ${b.source === 'NVD' ? 'cve-id' : ''}">${escHtml(b.title)}</div>
+        </div>
+        <div class="card-meta">
+          ${b.date ? `<span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${b.date}</span>` : ''}
+          ${b.cve ? `<span class="cve-id">${b.cve}</span>` : ''}
+          ${b.vendor ? `<span>${escHtml(b.vendor)} / ${escHtml(b.product||'')}</span>` : ''}
+          ${b.due ? `<span style="color:var(--high)">패치 마감 ${b.due}</span>` : ''}
+        </div>
+        ${cvss ? `<div class="cvss-row"><span class="cvss-label">CVSS ${cvss.toFixed(1)}</span><div class="cvss-track"><div class="cvss-fill" style="width:${Math.round(cvss/10*100)}%;background:${cvssColor(cvss)}"></div></div></div>` : ''}
+        ${b.desc ? `<div class="card-desc" style="margin-top:8px">${escHtml(b.desc)}</div>` : ''}
+        <div class="card-footer" style="margin-top:10px" onclick="event.stopPropagation()">
+          <button class="btn" onclick='toggleSave(${JSON.stringify(b)});renderSaved()'>
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/></svg>
+            삭제
+          </button>
+          ${b.cve ? `<a class="btn" href="https://nvd.nist.gov/vuln/detail/${b.cve}" target="_blank" rel="noopener">NVD 상세</a>` : ''}
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  // 뉴스 탭
+  const newsEl = document.getElementById('saved-news-list');
+  if (!newsBm.length) {
+    newsEl.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 22h16a2 2 0 002-2V4a2 2 0 00-2-2H8a2 2 0 00-2 2v16a2 2 0 01-2 2zm0 0a2 2 0 01-2-2v-9c0-1.1.9-2 2-2h2"/></svg>저장된 뉴스가 없습니다</div>';
+  } else {
+    newsEl.innerHTML = newsBm.map(b => `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(b)})'>
       <div class="card-top">
-        ${b.source === 'CISA KEV' ? '' : `<span class="badge ${sevClass(b.sev)}">${sevLabel(b.sev)}</span>`}
-        <span class="badge ${b.source === 'CISA KEV' ? 'src-cisa' : 'src-nvd'}">${b.source}</span>
-        <div class="card-title ${b.source === 'NVD' ? 'cve-id' : ''}" style="${b.source === 'NVD' ? 'font-size:13px' : ''}">${escHtml(b.title)}</div>
+        ${newsSourceBadge(b.source)}
+        <div class="card-title">${escHtml(b.title)}</div>
       </div>
-      
       <div class="card-meta">
         ${b.date ? `<span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${b.date}</span>` : ''}
-        ${b.cwe ? `<span>${escHtml(b.cwe)}</span>` : ''}
-        ${b.source === 'CISA KEV' ? `<span class="cve-id">${b.cve}</span>` : ''}
-        ${b.vendor ? `<span>${escHtml(b.vendor)} / ${escHtml(b.product || '')}</span>` : ''}
-        ${b.due ? `<span style="color:var(--high)">패치 마감 ${b.due}</span>` : ''}
+        ${b.title_ko ? `<span style="color:var(--text3);font-size:11px">${escHtml(b.title_ko)}</span>` : ''}
       </div>
-      
-      ${cvss ? `<div class="cvss-row"><span class="cvss-label">CVSS ${cvss.toFixed(1)}</span><div class="cvss-track"><div class="cvss-fill" style="width:${Math.round(cvss/10*100)}%;background:${cvssColor(cvss)}"></div></div></div>` : ''}
-      
-      ${b.desc ? `<div class="card-desc" style="margin-top:8px">${escHtml(b.desc)}</div>` : ''}
-      
-      ${tags.length ? `<div style="margin-bottom:6px">${tags.map(t=>`<span class="tag">${escHtml(t)}</span>`).join('')}</div>` : ''}
-      
-      <div class="card-footer" style="margin-top:10px">
+      ${b.desc_ko || b.desc ? `<div class="card-desc">${escHtml((b.desc_ko||b.desc).slice(0,220))}…</div>` : ''}
+      <div class="card-footer" onclick="event.stopPropagation()">
         <button class="btn" onclick='toggleSave(${JSON.stringify(b)});renderSaved()'>
           <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/></svg>
           삭제
         </button>
-        <a class="btn" href="https://nvd.nist.gov/vuln/detail/${b.cve}" target="_blank" rel="noopener">NVD 상세</a>
+        <a class="btn" href="${escHtml(b.url)}" target="_blank" rel="noopener">원문 보기</a>
       </div>
-    </div>`;
-  }).join('');
+    </div>`).join('');
+  }
+
+  // 사이드바 뱃지 업데이트
+  document.getElementById('nb-saved').textContent = bookmarks.length;
 }
 
 function escHtml(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
