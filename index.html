@@ -325,7 +325,7 @@
       </div>
       <div style="font-size:11px;color:var(--text3);margin-bottom:1rem;display:flex;align-items:center;gap:8px">
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
-        GitHub Actions로 매일 뉴스 자동 갱신 (<code style="font-size:10px;background:var(--bg3);padding:1px 5px;border-radius:3px"></code>)
+        CISA Alerts는 실시간 fetch · RSS 뉴스는 GitHub Actions로 매일 자동 갱신 (<code style="font-size:10px;background:var(--bg3);padding:1px 5px;border-radius:3px">news.json</code>)
       </div>
       <div class="cards" id="news-list">
         <div class="loading"><div class="spinner"></div><br>뉴스 불러오는 중...</div>
@@ -363,7 +363,7 @@
     <div id="dp-meta-section"></div>
     <div id="dp-desc-section"></div>
 
-    <!-- <div>
+    <div>
       <div class="detail-section-label">상태</div>
       <div class="detail-status">
         <button class="status-chip" data-s="신규" onclick="setStatus('신규')">신규</button>
@@ -371,12 +371,12 @@
         <button class="status-chip" data-s="완료" onclick="setStatus('완료')">완료</button>
         <button class="status-chip" data-s="보류" onclick="setStatus('보류')">보류</button>
       </div>
-    </div> -->
+    </div>
 
     <div>
       <div class="detail-section-label">태그</div>
       <div class="detail-tags-input">
-        <input id="dp-tag-input" type="text" placeholder="카테고리 선택..." onkeydown="if(event.key==='Enter')addTag()" />
+        <input id="dp-tag-input" type="text" placeholder="#패치필요, #검토중..." onkeydown="if(event.key==='Enter')addTag()" />
         <button class="btn" onclick="addTag()">추가</button>
       </div>
       <div id="dp-tags"></div>
@@ -452,16 +452,19 @@ function newsSourceBadge(src) {
   return `<span class="badge" style="font-size:10px;${s.style}">${s.label}</span>`;
 }
 
-function newsCard(item, index) {
+function newsCard(item) {
   const date = item.date ? new Date(item.date).toLocaleDateString('ko-KR', { year:'numeric', month:'short', day:'numeric' }) : '';
   
   const hasKo   = !!item.title_ko;
-  const itemId = item.url || item.id || item.title;
-  const sv = isSaved(itemId);
+  let cleanDesc = (item.desc || '').replace(/<\/?[^>]+(>|$)/g, "");
+  cleanDesc = cleanDesc.replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").trim();
+  let cleanDescKo = (item.desc_ko || '').replace(/<\/?[^>]+(>|$)/g, "");
+  cleanDescKo = cleanDescKo.replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").trim();
 
-  const newsBm = { id: itemId, title: item.title, title_ko: item.title_ko||'', desc: item.desc||'', desc_ko: item.desc_ko||'', url: item.url, date, source: item.source, type: 'news' };
+  const newsBm = { id: item.url, title: item.title, title_ko: item.title_ko||'', desc: item.desc||'', desc_ko: item.desc_ko||'', url: item.url, date, source: item.source, type: 'news' };
+  const sv = isSaved(item.url);
 
-  return `<div class="card" style="cursor:pointer" onclick="openDetailByIndex(${index}, 'news')">
+  return `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(item)})'>
     <div class="card-top">
       ${newsSourceBadge(item.source)}
       <div class="card-title">${escHtml(item.title)}</div>
@@ -470,9 +473,10 @@ function newsCard(item, index) {
       ${date ? `<span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${date}</span>` : ''}
       ${hasKo ? `<span style="color:var(--text3);font-size:11px">${escHtml(item.title_ko)}</span>` : ''}
     </div>
+    ${(hasKo ? cleanDescKo : cleanDesc) ? `<div class="card-desc">${escHtml((hasKo ? cleanDescKo : cleanDesc).slice(0, 220))}${(hasKo ? cleanDescKo : cleanDesc).length > 220 ? '…' : ''}</div>` : ''}
     <div class="card-footer" onclick="event.stopPropagation()">
       <button class="btn" onclick='toggleSave(${JSON.stringify(newsBm)})'>${sv ? '★ 저장됨' : '☆ 저장'}</button>
-      <a class="btn" href="${escHtml(item.url || item.id)}" target="_blank" rel="noopener">
+      <a class="btn" href="${escHtml(item.url)}" target="_blank" rel="noopener">
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
         원문 보기
       </a>
@@ -484,8 +488,7 @@ function renderNewsPage() {
   const el = document.getElementById('news-list');
   const start = newsPage * PAGE, slice = newsFiltered.slice(start, start + PAGE);
   if (!slice.length) { el.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>결과가 없습니다</div>'; renderNewsPager(); return; }
-  
-  el.innerHTML = slice.map((item, i) => newsCard(item, start + i)).join('');
+  el.innerHTML = slice.map(newsCard).join('');
   renderNewsPager();
 }
 
@@ -524,6 +527,8 @@ async function loadNews(force) {
   el.innerHTML = '<div class="loading"><div class="spinner"></div><br>뉴스 불러오는 중...</div>';
   newsAll = [];
 
+  // 💡 CISA 직접 fetch는 브라우저 차단(CORS)이 나므로 걷어내고,
+  // GitHub Actions가 수집해 준 안전한 통합본(news.json) 파일만 가져옵니다[cite: 104].
   try {
     const r = await fetch('./news.json'); // [cite: 104]
     if (r.ok) { // [cite: 104]
@@ -563,22 +568,6 @@ function saveNotes(notes) {
 
 function openDetail(item) {
   currentDetailId = item.id || item.url || item.cve || item.title;
-
-function openDetailByIndex(index, poolType) {
-  let targetItem = null;
-  if (poolType === 'news') {
-    targetItem = newsFiltered[index];
-  } else if (poolType === 'bookmark') {
-    const newsBm = bookmarks.filter(b => b.type === 'news');
-    targetItem = newsBm[index];
-  }
-  
-  if (targetItem) {
-    // CISA 데이터 누락 방지: url과 id가 크로스 오버되어 있어도 완벽 보완해 넘김
-    if (!targetItem.url && targetItem.id) targetItem.url = targetItem.id;
-    openDetail(targetItem);
-  }
-}
 
   // 헤더
   document.getElementById('dp-source').textContent = item.source || '';
@@ -1171,7 +1160,7 @@ function renderSavedNews() {
     el.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 22h16a2 2 0 002-2V4a2 2 0 00-2-2H8a2 2 0 00-2 2v16a2 2 0 01-2 2zm0 0a2 2 0 01-2-2v-9c0-1.1.9-2 2-2h2"/></svg>저장된 뉴스가 없습니다</div>';
     return;
   }
-  el.innerHTML = newsBm.map((b, i) => `<div class="card" style="cursor:pointer" onclick="openDetailByIndex(${i}, 'bookmark')">
+  el.innerHTML = newsBm.map(b => `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(b)})'>
     <div class="card-top">
       ${newsSourceBadge(b.source)}
       <div class="card-title">${escHtml(b.title)}</div>
@@ -1186,7 +1175,7 @@ function renderSavedNews() {
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/></svg>
         삭제
       </button>
-      <a class="btn" href="${escHtml(b.url || b.id)}" target="_blank" rel="noopener">원문 보기</a>
+      <a class="btn" href="${escHtml(b.url)}" target="_blank" rel="noopener">원문 보기</a>
     </div>
   </div>`).join('');
 }
