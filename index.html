@@ -227,10 +227,15 @@
     </div>
     <div class="nav-section">
       <div class="nav-label">내 항목</div>
-      <button class="nav-item" onclick="switchPanel('saved', this)">
+      <button class="nav-item" id="nav-saved-vuln" onclick="switchPanel('saved-vuln', this)">
         <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
-        저장됨
-        <span class="nav-badge" id="nb-saved">0</span>
+        저장된 취약점
+        <span class="nav-badge" id="nb-saved-vuln">0</span>
+      </button>
+      <button class="nav-item" id="nav-saved-news" onclick="switchPanel('saved-news', this)">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
+        저장된 뉴스
+        <span class="nav-badge" id="nb-saved-news">0</span>
       </button>
     </div>
   </nav>
@@ -328,14 +333,14 @@
       <div class="pager" id="news-pager"></div>
     </div>
 
-    <!-- 저장됨 -->
-    <div id="panel-saved" class="panel">
-      <div class="tabs" style="margin-bottom:1rem">
-        <button class="tab active" id="saved-tab-vuln" onclick="switchSavedTab('vuln')">취약점 (KEV/NVD)</button>
-        <button class="tab" id="saved-tab-news" onclick="switchSavedTab('news')">뉴스</button>
-      </div>
-      <div id="saved-vuln-list" class="cards"></div>
-      <div id="saved-news-list" class="cards" style="display:none"></div>
+    <!-- 저장된 취약점 -->
+    <div id="panel-saved-vuln" class="panel">
+      <div class="cards" id="saved-vuln-list"></div>
+    </div>
+
+    <!-- 저장된 뉴스 -->
+    <div id="panel-saved-news" class="panel">
+      <div class="cards" id="saved-news-list"></div>
     </div>
 
   </main>
@@ -407,13 +412,6 @@ function saveBookmarks(bm) {
 }
 let bookmarks = loadBookmarks();
 
-function updateBadges() {
-  const cnt = bookmarks.length;
-  document.getElementById('s-saved').textContent = cnt;
-  document.getElementById('nb-saved').textContent = cnt;
-  const crit = bookmarks.filter(b => ['CRITICAL','HIGH'].includes((b.sev||'').toUpperCase())).length;
-  document.getElementById('s-crit').textContent = crit;
-}
 updateBadges();
 
 function isSaved(id) { return bookmarks.some(b => b.id === id); }
@@ -435,7 +433,8 @@ function switchPanel(id, el) {
   document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
   document.getElementById('panel-' + id).classList.add('active');
   el.classList.add('active');
-  if (id === 'saved') renderSaved();
+  if (id === 'saved-vuln') renderSavedVuln();
+  if (id === 'saved-news') renderSavedNews();
   if (id === 'owasp') loadOwasp();
   if (id === 'news') loadNews();
 }
@@ -1110,81 +1109,78 @@ function loadOwasp() {
   renderOwasp();
 }
 
-let savedTab = 'vuln';
-
-function switchSavedTab(tab) {
-  savedTab = tab;
-  document.getElementById('saved-tab-vuln').classList.toggle('active', tab === 'vuln');
-  document.getElementById('saved-tab-news').classList.toggle('active', tab === 'news');
-  document.getElementById('saved-vuln-list').style.display = tab === 'vuln' ? '' : 'none';
-  document.getElementById('saved-news-list').style.display = tab === 'news' ? '' : 'none';
-  renderSaved();
-}
-
-function renderSaved() {
+function updateBadges() {
   const vulnBm = bookmarks.filter(b => b.type !== 'news');
   const newsBm = bookmarks.filter(b => b.type === 'news');
+  document.getElementById('s-saved').textContent = bookmarks.length;
+  document.getElementById('nb-saved-vuln').textContent = vulnBm.length;
+  document.getElementById('nb-saved-news').textContent = newsBm.length;
+  const crit = vulnBm.filter(b => ['CRITICAL','HIGH'].includes((b.sev||'').toUpperCase())).length;
+  document.getElementById('s-crit').textContent = crit;
+}
 
-  // 취약점 탭
-  const vulnEl = document.getElementById('saved-vuln-list');
+function renderSavedVuln() {
+  const el = document.getElementById('saved-vuln-list');
+  const vulnBm = bookmarks.filter(b => b.type !== 'news');
   if (!vulnBm.length) {
-    vulnEl.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>저장된 취약점이 없습니다</div>';
-  } else {
-    vulnEl.innerHTML = vulnBm.map(b => {
-      const cvss = b.cvss || 0;
-      return `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(b)})'>
-        <div class="card-top">
-          ${b.sev ? `<span class="badge ${sevClass(b.sev)}">${sevLabel(b.sev)}</span>` : ''}
-          <span class="badge ${b.source === 'CISA KEV' ? 'src-cisa' : 'src-nvd'}">${b.source}</span>
-          <div class="card-title ${b.source === 'NVD' ? 'cve-id' : ''}">${escHtml(b.title)}</div>
-        </div>
-        <div class="card-meta">
-          ${b.date ? `<span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${b.date}</span>` : ''}
-          ${b.cve ? `<span class="cve-id">${b.cve}</span>` : ''}
-          ${b.vendor ? `<span>${escHtml(b.vendor)} / ${escHtml(b.product||'')}</span>` : ''}
-          ${b.due ? `<span style="color:var(--high)">패치 마감 ${b.due}</span>` : ''}
-        </div>
-        ${cvss ? `<div class="cvss-row"><span class="cvss-label">CVSS ${cvss.toFixed(1)}</span><div class="cvss-track"><div class="cvss-fill" style="width:${Math.round(cvss/10*100)}%;background:${cvssColor(cvss)}"></div></div></div>` : ''}
-        ${b.desc ? `<div class="card-desc" style="margin-top:8px">${escHtml(b.desc)}</div>` : ''}
-        <div class="card-footer" style="margin-top:10px" onclick="event.stopPropagation()">
-          <button class="btn" onclick='toggleSave(${JSON.stringify(b)});renderSaved()'>
-            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/></svg>
-            삭제
-          </button>
-          ${b.cve ? `<a class="btn" href="https://nvd.nist.gov/vuln/detail/${b.cve}" target="_blank" rel="noopener">NVD 상세</a>` : ''}
-        </div>
-      </div>`;
-    }).join('');
+    el.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>저장된 취약점이 없습니다</div>';
+    return;
   }
-
-  // 뉴스 탭
-  const newsEl = document.getElementById('saved-news-list');
-  if (!newsBm.length) {
-    newsEl.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 22h16a2 2 0 002-2V4a2 2 0 00-2-2H8a2 2 0 00-2 2v16a2 2 0 01-2 2zm0 0a2 2 0 01-2-2v-9c0-1.1.9-2 2-2h2"/></svg>저장된 뉴스가 없습니다</div>';
-  } else {
-    newsEl.innerHTML = newsBm.map(b => `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(b)})'>
+  el.innerHTML = vulnBm.map(b => {
+    const cvss = b.cvss || 0;
+    return `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(b)})'>
       <div class="card-top">
-        ${newsSourceBadge(b.source)}
-        <div class="card-title">${escHtml(b.title)}</div>
+        ${b.sev ? `<span class="badge ${sevClass(b.sev)}">${sevLabel(b.sev)}</span>` : ''}
+        <span class="badge ${b.source === 'CISA KEV' ? 'src-cisa' : 'src-nvd'}">${b.source}</span>
+        <div class="card-title ${b.source === 'NVD' ? 'cve-id' : ''}">${escHtml(b.title)}</div>
       </div>
       <div class="card-meta">
         ${b.date ? `<span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${b.date}</span>` : ''}
-        ${b.title_ko ? `<span style="color:var(--text3);font-size:11px">${escHtml(b.title_ko)}</span>` : ''}
+        ${b.cve ? `<span class="cve-id">${b.cve}</span>` : ''}
+        ${b.vendor ? `<span>${escHtml(b.vendor)} / ${escHtml(b.product||'')}</span>` : ''}
+        ${b.due ? `<span style="color:var(--high)">패치 마감 ${b.due}</span>` : ''}
       </div>
-      ${b.desc_ko || b.desc ? `<div class="card-desc">${escHtml((b.desc_ko||b.desc).slice(0,220))}…</div>` : ''}
-      <div class="card-footer" onclick="event.stopPropagation()">
-        <button class="btn" onclick='toggleSave(${JSON.stringify(b)});renderSaved()'>
+      ${cvss ? `<div class="cvss-row"><span class="cvss-label">CVSS ${cvss.toFixed(1)}</span><div class="cvss-track"><div class="cvss-fill" style="width:${Math.round(cvss/10*100)}%;background:${cvssColor(cvss)}"></div></div></div>` : ''}
+      ${b.desc ? `<div class="card-desc" style="margin-top:8px">${escHtml(b.desc)}</div>` : ''}
+      <div class="card-footer" style="margin-top:10px" onclick="event.stopPropagation()">
+        <button class="btn" onclick='toggleSave(${JSON.stringify(b)});renderSavedVuln()'>
           <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/></svg>
           삭제
         </button>
-        <a class="btn" href="${escHtml(b.url)}" target="_blank" rel="noopener">원문 보기</a>
+        ${b.cve ? `<a class="btn" href="https://nvd.nist.gov/vuln/detail/${b.cve}" target="_blank" rel="noopener">NVD 상세</a>` : ''}
       </div>
-    </div>`).join('');
-  }
-
-  // 사이드바 뱃지 업데이트
-  document.getElementById('nb-saved').textContent = bookmarks.length;
+    </div>`;
+  }).join('');
 }
+
+function renderSavedNews() {
+  const el = document.getElementById('saved-news-list');
+  const newsBm = bookmarks.filter(b => b.type === 'news');
+  if (!newsBm.length) {
+    el.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 22h16a2 2 0 002-2V4a2 2 0 00-2-2H8a2 2 0 00-2 2v16a2 2 0 01-2 2zm0 0a2 2 0 01-2-2v-9c0-1.1.9-2 2-2h2"/></svg>저장된 뉴스가 없습니다</div>';
+    return;
+  }
+  el.innerHTML = newsBm.map(b => `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(b)})'>
+    <div class="card-top">
+      ${newsSourceBadge(b.source)}
+      <div class="card-title">${escHtml(b.title)}</div>
+    </div>
+    <div class="card-meta">
+      ${b.date ? `<span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${b.date}</span>` : ''}
+      ${b.title_ko ? `<span style="color:var(--text3);font-size:11px">${escHtml(b.title_ko)}</span>` : ''}
+    </div>
+    ${b.desc_ko || b.desc ? `<div class="card-desc">${escHtml((b.desc_ko||b.desc).slice(0,220))}…</div>` : ''}
+    <div class="card-footer" onclick="event.stopPropagation()">
+      <button class="btn" onclick='toggleSave(${JSON.stringify(b)});renderSavedNews()'>
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/></svg>
+        삭제
+      </button>
+      <a class="btn" href="${escHtml(b.url)}" target="_blank" rel="noopener">원문 보기</a>
+    </div>
+  </div>`).join('');
+}
+
+function renderSaved() { renderSavedVuln(); renderSavedNews(); }
 
 function escHtml(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 function escAttr(s) { return String(s||'').replace(/"/g,'&quot;'); }
