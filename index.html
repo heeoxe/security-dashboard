@@ -473,7 +473,6 @@ function newsCard(item) {
       ${date ? `<span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${date}</span>` : ''}
       ${hasKo ? `<span style="color:var(--text3);font-size:11px">${escHtml(item.title_ko)}</span>` : ''}
     </div>
-    // ${(hasKo ? cleanDescKo : cleanDesc) ? `<div class="card-desc">${escHtml((hasKo ? cleanDescKo : cleanDesc).slice(0, 220))}${(hasKo ? cleanDescKo : cleanDesc).length > 220 ? '…' : ''}</div>` : ''}
     <div class="card-footer" onclick="event.stopPropagation()">
       <button class="btn" onclick='toggleSave(${JSON.stringify(newsBm)})'>${sv ? '★ 저장됨' : '☆ 저장'}</button>
       <a class="btn" href="${escHtml(item.url)}" target="_blank" rel="noopener">
