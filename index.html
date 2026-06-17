@@ -238,6 +238,13 @@
         <span class="nav-badge" id="nb-saved-news">0</span>
       </button>
     </div>
+    <div class="nav-section" style="margin-top:auto;padding-top:1rem;border-top:1px solid var(--border)">
+      <button class="nav-item" onclick="switchPanel('settings', this)">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+        설정
+        <span class="nav-badge" id="nb-gist" style="display:none;background:#edf7f2;color:#1e7a52">연결됨</span>
+      </button>
+    </div>
   </nav>
 
   <main class="main">
@@ -343,6 +350,53 @@
       <div class="cards" id="saved-news-list"></div>
     </div>
 
+    <!-- 설정 -->
+    <div id="panel-settings" class="panel">
+      <div style="max-width:520px">
+        <div class="section-title">Gist 동기화 설정</div>
+        <div class="card" style="margin-bottom:1rem">
+          <div style="font-size:12px;color:var(--text2);line-height:1.7;margin-bottom:1rem">
+            메모·태그·상태를 GitHub Gist에 저장하면 어느 기기에서든 동기화돼요.<br>
+            토큰과 Gist ID는 이 브라우저의 <code style="font-size:11px;background:var(--bg3);padding:1px 5px;border-radius:3px">localStorage</code>에만 저장되며 외부로 전송되지 않아요.
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div>
+              <div class="detail-section-label" style="margin-bottom:6px">GitHub Personal Access Token</div>
+              <div style="display:flex;gap:8px">
+                <input id="cfg-token" type="password" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx"
+                  style="flex:1;height:36px;padding:0 12px;font-size:13px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);color:var(--text);outline:none;font-family:var(--font-mono, monospace)" />
+                <button class="btn" onclick="toggleTokenVis()">보기</button>
+              </div>
+              <div style="font-size:11px;color:var(--text3);margin-top:4px">gist 스코프만 체크하면 됩니다</div>
+            </div>
+            <div>
+              <div class="detail-section-label" style="margin-bottom:6px">Gist ID</div>
+              <input id="cfg-gist" type="text" placeholder="5e6c826473d9ddff619c9ba794748896"
+                style="width:100%;height:36px;padding:0 12px;font-size:13px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);color:var(--text);outline:none;font-family:var(--font-mono, monospace)" />
+              <div style="font-size:11px;color:var(--text3);margin-top:4px">gist.github.com/username/<b>여기가 ID</b></div>
+            </div>
+          </div>
+          <div style="display:flex;gap:8px;margin-top:1rem">
+            <button class="btn btn-primary" onclick="saveCfg()">저장</button>
+            <button class="btn" onclick="testGist()">연결 테스트</button>
+            <button class="btn" onclick="pullGist(true)">Gist에서 불러오기</button>
+            <button class="btn" style="margin-left:auto;color:var(--critical)" onclick="clearCfg()">설정 초기화</button>
+          </div>
+          <div id="cfg-status" style="font-size:12px;margin-top:10px;display:none"></div>
+        </div>
+
+        <div class="section-title">동기화 상태</div>
+        <div class="card">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+            <div class="detail-meta-item"><div class="detail-meta-label">Gist 연결</div><div class="detail-meta-value" id="cfg-connected">미설정</div></div>
+            <div class="detail-meta-item"><div class="detail-meta-label">마지막 동기화</div><div class="detail-meta-value" id="cfg-last-sync">-</div></div>
+            <div class="detail-meta-item"><div class="detail-meta-label">저장된 메모</div><div class="detail-meta-value" id="cfg-note-count">0개</div></div>
+            <div class="detail-meta-item"><div class="detail-meta-label">저장 방식</div><div class="detail-meta-value">메모 저장 시 자동</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </main>
 </div>
 
@@ -366,16 +420,17 @@
     <div>
       <div class="detail-section-label">상태</div>
       <div class="detail-status">
-        <button class="status-chip" data-s="신규" onclick="setStatus('검토필요')">검토필요</button>
-        <button class="status-chip" data-s="검토중" onclick="setStatus('검토완료')">검토완료</button>
-        <button class="status-chip" data-s="완료" onclick="setStatus('N/A')">N/A</button>
+        <button class="status-chip" data-s="신규" onclick="setStatus('신규')">신규</button>
+        <button class="status-chip" data-s="검토중" onclick="setStatus('검토중')">검토중</button>
+        <button class="status-chip" data-s="완료" onclick="setStatus('완료')">완료</button>
+        <button class="status-chip" data-s="보류" onclick="setStatus('보류')">보류</button>
       </div>
     </div>
 
     <div>
       <div class="detail-section-label">태그</div>
       <div class="detail-tags-input">
-        <input id="dp-tag-input" type="text" placeholder="카테고리 입력..." onkeydown="if(event.key==='Enter')addTag()" />
+        <input id="dp-tag-input" type="text" placeholder="#패치필요, #검토중..." onkeydown="if(event.key==='Enter')addTag()" />
         <button class="btn" onclick="addTag()">추가</button>
       </div>
       <div id="dp-tags"></div>
@@ -435,6 +490,7 @@ function switchPanel(id, el) {
   if (id === 'saved-vuln') renderSavedVuln();
   if (id === 'saved-news') renderSavedNews();
   if (id === 'owasp') loadOwasp();
+  if (id === 'settings') renderCfgStatus();
   if (id === 'news') loadNews();
 }
 
@@ -552,6 +608,114 @@ async function loadNews(force) {
   filterNews();
 }
 // ── /News ─────────────────────────────────────────
+
+// ── Gist Sync ─────────────────────────────────────
+function getCfg() {
+  return {
+    token: localStorage.getItem('sid_gh_token') || '',
+    gistId: localStorage.getItem('sid_gist_id') || '',
+    lastSync: localStorage.getItem('sid_last_sync') || '',
+  };
+}
+
+function saveCfg() {
+  const token = document.getElementById('cfg-token').value.trim();
+  const gistId = document.getElementById('cfg-gist').value.trim();
+  if (!token || !gistId) { showCfgStatus('토큰과 Gist ID를 모두 입력해주세요', 'error'); return; }
+  localStorage.setItem('sid_gh_token', token);
+  localStorage.setItem('sid_gist_id', gistId);
+  showCfgStatus('설정이 저장됐어요!', 'ok');
+  renderCfgStatus();
+  const badge = document.getElementById('nb-gist');
+  badge.style.display = '';
+}
+
+function clearCfg() {
+  if (!confirm('설정을 초기화할까요? 토큰과 Gist ID가 삭제됩니다.')) return;
+  localStorage.removeItem('sid_gh_token');
+  localStorage.removeItem('sid_gist_id');
+  localStorage.removeItem('sid_last_sync');
+  document.getElementById('cfg-token').value = '';
+  document.getElementById('cfg-gist').value = '';
+  document.getElementById('nb-gist').style.display = 'none';
+  renderCfgStatus();
+  showCfgStatus('설정이 초기화됐어요', 'ok');
+}
+
+function toggleTokenVis() {
+  const el = document.getElementById('cfg-token');
+  el.type = el.type === 'password' ? 'text' : 'password';
+}
+
+function renderCfgStatus() {
+  const cfg = getCfg();
+  document.getElementById('cfg-token').value = cfg.token ? '•'.repeat(20) : '';
+  document.getElementById('cfg-token').type = 'password';
+  document.getElementById('cfg-gist').value = cfg.gistId;
+  document.getElementById('cfg-connected').textContent = cfg.token && cfg.gistId ? '✓ 연결됨' : '미설정';
+  document.getElementById('cfg-connected').style.color = cfg.token && cfg.gistId ? 'var(--low)' : 'var(--text3)';
+  document.getElementById('cfg-last-sync').textContent = cfg.lastSync ? new Date(cfg.lastSync).toLocaleString('ko-KR', {month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'}) : '-';
+  document.getElementById('cfg-note-count').textContent = Object.keys(loadNotes()).length + '개';
+  if (cfg.token && cfg.gistId) document.getElementById('nb-gist').style.display = '';
+}
+
+function showCfgStatus(msg, type) {
+  const el = document.getElementById('cfg-status');
+  el.style.display = '';
+  el.style.color = type === 'error' ? 'var(--critical)' : 'var(--low)';
+  el.textContent = msg;
+  setTimeout(() => { el.style.display = 'none'; }, 3000);
+}
+
+async function testGist() {
+  const token = document.getElementById('cfg-token').value.trim().replace(/•/g, '') || getCfg().token;
+  const gistId = document.getElementById('cfg-gist').value.trim();
+  if (!token || !gistId) { showCfgStatus('토큰과 Gist ID를 먼저 저장해주세요', 'error'); return; }
+  showCfgStatus('연결 테스트 중...', 'ok');
+  try {
+    const r = await fetch(`https://api.github.com/gists/${gistId}`, {
+      headers: { Authorization: `token ${token}`, Accept: 'application/vnd.github.v3+json' }
+    });
+    if (r.ok) showCfgStatus('✓ 연결 성공!', 'ok');
+    else showCfgStatus(`연결 실패 (HTTP ${r.status})`, 'error');
+  } catch(e) { showCfgStatus('연결 실패: ' + e.message, 'error'); }
+}
+
+async function pushGist() {
+  const cfg = getCfg();
+  if (!cfg.token || !cfg.gistId) return;
+  const notes = loadNotes();
+  try {
+    await fetch(`https://api.github.com/gists/${cfg.gistId}`, {
+      method: 'PATCH',
+      headers: { Authorization: `token ${cfg.token}`, Accept: 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ files: { 'notes.json': { content: JSON.stringify(notes, null, 2) } } })
+    });
+    const now = new Date().toISOString();
+    localStorage.setItem('sid_last_sync', now);
+  } catch(e) { console.warn('Gist push 실패:', e.message); }
+}
+
+async function pullGist(manual) {
+  const cfg = getCfg();
+  if (!cfg.token || !cfg.gistId) { if (manual) showCfgStatus('토큰과 Gist ID를 먼저 저장해주세요', 'error'); return; }
+  try {
+    const r = await fetch(`https://api.github.com/gists/${cfg.gistId}`, {
+      headers: { Authorization: `token ${cfg.token}`, Accept: 'application/vnd.github.v3+json' }
+    });
+    if (!r.ok) { if (manual) showCfgStatus(`불러오기 실패 (HTTP ${r.status})`, 'error'); return; }
+    const data = await r.json();
+    const content = data.files?.['notes.json']?.content;
+    if (content) {
+      const parsed = JSON.parse(content);
+      saveNotes(parsed);
+      const now = new Date().toISOString();
+      localStorage.setItem('sid_last_sync', now);
+      if (manual) { showCfgStatus(`✓ ${Object.keys(parsed).length}개 메모를 불러왔어요`, 'ok'); renderCfgStatus(); }
+    }
+  } catch(e) { if (manual) showCfgStatus('불러오기 실패: ' + e.message, 'error'); }
+}
+// ── /Gist Sync ────────────────────────────────────
 
 // ── Detail Panel ──────────────────────────────────
 let currentDetailId = null;
@@ -671,6 +835,7 @@ function saveDetail() {
   note.memo = memo;
   notes[currentDetailId] = note;
   saveNotes(notes);
+  pushGist(); // Gist 자동 동기화
 
   // 저장 완료 피드백
   const btn = document.querySelector('.detail-footer .btn-primary');
@@ -1184,7 +1349,11 @@ function escAttr(s) { return String(s||'').replace(/"/g,'&quot;'); }
 
 document.getElementById('nvd-q').addEventListener('keydown', e => { if (e.key === 'Enter') searchNvd(); });
 
+// 초기 로드
 loadKev();
+pullGist(false); // Gist에서 메모 자동 불러오기
+const _cfg = getCfg();
+if (_cfg.token && _cfg.gistId) document.getElementById('nb-gist').style.display = '';
 </script>
 </body>
 </html>
