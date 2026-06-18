@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -237,6 +238,10 @@
         <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         OWASP Top 10
       </button>
+      <button class="nav-item" onclick="switchPanel('compliance', this)">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        Compliance
+      </button>
     </div>
     <div class="nav-section">
       <div class="nav-label">내 항목</div>
@@ -331,6 +336,15 @@
       </div>
       <div style="font-size:11px;color:var(--text3);margin-bottom:1rem" id="owasp-meta"></div>
       <div class="owasp-grid" id="owasp-list"></div>
+    </div>
+
+    <!-- Compliance -->
+    <div id="panel-compliance" class="panel">
+      <div class="chip-row" id="compliance-chips">
+        <button class="chip on" data-cat="domestic" onclick="complianceChip(this)">국내 법령/규정</button>
+        <button class="chip" data-cat="global" onclick="complianceChip(this)">해외 프레임워크</button>
+      </div>
+      <div class="owasp-grid" id="compliance-list"></div>
     </div>
 
     <!-- 보안 뉴스 -->
@@ -545,6 +559,7 @@ function switchPanel(id, el) {
   if (id === 'saved-news') renderSavedNews();
   if (id === 'memos') renderMemos();
   if (id === 'owasp') loadOwasp();
+  if (id === 'compliance') renderCompliance('domestic');
   if (id === 'settings') renderCfgStatus();
   if (id === 'news') loadNews();
 }
@@ -1537,6 +1552,184 @@ function renderSavedNews() {
 }
 
 function renderSaved() { renderSavedVuln(); renderSavedNews(); }
+
+// ── Compliance ────────────────────────────────────
+const COMPLIANCE_DATA = {
+  domestic: [
+    {
+      id: 'pipa', name: '개인정보 보호법', abbr: 'PIPA',
+      authority: '개인정보보호위원회', version: '2023.09.15 시행 (전부개정)',
+      url: 'https://www.law.go.kr/법령/개인정보보호법',
+      summary: '개인정보의 수집·이용·제공·파기 등 전 생애주기에 걸친 보호 원칙을 규정. 2023년 전부개정으로 이동형 영상기기, 자동화된 결정, 개인정보 전송요구권 등 신설.',
+      tags: ['개인정보', '데이터보호', 'GDPR동등성'],
+      updates: [{ date: '2023-09-15', desc: '전부개정 시행 — 이동형 영상기기, 자동화된 결정, 전송요구권 신설' }]
+    },
+    {
+      id: 'itna', name: '정보통신망 이용촉진 및 정보보호 등에 관한 법률', abbr: '정보통신망법',
+      authority: '과학기술정보통신부', version: '2024.01 최근 개정',
+      url: 'https://www.law.go.kr/법령/정보통신망이용촉진및정보보호등에관한법률',
+      summary: '정보통신서비스 제공자의 개인정보 보호, 불법정보 유통 금지, 침해사고 대응 등을 규정. 개인정보 관련 조항 다수가 개인정보보호법으로 이관됨.',
+      tags: ['정보통신', '사이버보안', '침해사고'],
+      updates: [{ date: '2024-01', desc: '일부 개정 — 이용자 보호 조항 강화' }]
+    },
+    {
+      id: 'efta', name: '전자금융거래법', abbr: 'EFTA',
+      authority: '금융위원회', version: '2023.10 시행',
+      url: 'https://www.law.go.kr/법령/전자금융거래법',
+      summary: '전자금융거래의 안전성·신뢰성 확보를 위한 법률. 전자금융업자 허가, 이용자 보호, 사고 책임 등을 규정. 마이데이터, 오픈뱅킹 관련 조항 포함.',
+      tags: ['전자금융', '핀테크', '마이데이터'],
+      updates: [{ date: '2023-10', desc: '마이데이터 관련 조항 강화, 전자금융업 규제 체계 개편' }]
+    },
+    {
+      id: 'ismsp', name: '정보보호 및 개인정보보호 관리체계 인증', abbr: 'ISMS-P',
+      authority: '한국인터넷진흥원 (KISA)', version: '2023년 인증기준 v1.0',
+      url: 'https://isms.kisa.or.kr/',
+      summary: '정보보호(ISMS)와 개인정보보호(PIMS)를 통합한 인증 제도. 관리체계 수립·운영, 보호대책 요구사항, 개인정보 처리단계별 요구사항 총 102개 항목.',
+      tags: ['인증', 'ISMS', '개인정보', '관리체계'],
+      updates: [{ date: '2023-01', desc: '인증기준 일부 개정 — 클라우드·원격접근 관련 기준 강화' }]
+    },
+    {
+      id: 'fss', name: '금융감독원 IT·보안 검사 기준', abbr: '금감원 규정',
+      authority: '금융감독원 (FSS)', version: '2024년 검사매뉴얼',
+      url: 'https://www.fss.or.kr/',
+      summary: '금융회사 및 전자금융업자 대상 IT 내부통제, 정보보호 체계, 전산사고 예방·대응, 외부 위탁 관리 등을 점검하는 금감원 검사 기준.',
+      tags: ['금융감독', 'IT검사', '내부통제'],
+      updates: [{ date: '2024-01', desc: 'AI·클라우드 활용 관련 IT 리스크 점검 항목 추가' }]
+    },
+    {
+      id: 'netsep', name: '전자금융감독규정 망분리', abbr: '망분리 규제',
+      authority: '금융위원회 / 금융감독원', version: '전자금융감독규정 제15조',
+      url: 'https://www.law.go.kr/행정규칙/전자금융감독규정',
+      summary: '금융회사 임직원 업무망과 인터넷망의 분리 의무화. 내부망·외부망 간 자료 전송 통제, 망연계 솔루션 사용 기준 등을 규정. 클라우드 도입 시 예외 적용 논의 중.',
+      tags: ['망분리', '전자금융', '네트워크보안'],
+      updates: [{ date: '2023-12', desc: '클라우드 이용 시 망분리 예외 적용 가이드라인 논의 진행 중' }]
+    },
+  ],
+  global: [
+    {
+      id: 'gdpr', name: 'General Data Protection Regulation', abbr: 'GDPR',
+      authority: 'European Commission', version: 'Regulation (EU) 2016/679',
+      url: 'https://gdpr.eu/',
+      summary: 'EU 시민의 개인정보 보호를 위한 포괄적 규정. 정보주체 권리, 데이터 처리 원칙, DPO 지정, 위반 시 최대 매출의 4% 또는 2천만 유로 제재.',
+      tags: ['개인정보', 'EU', '데이터보호'],
+      updates: [{ date: '2024-01', desc: 'EDPB, AI 시스템의 GDPR 적용 가이드라인 발표' }]
+    },
+    {
+      id: 'iso27001', name: 'Information Security Management Systems', abbr: 'ISO 27001',
+      authority: 'ISO / IEC', version: 'ISO/IEC 27001:2022',
+      url: 'https://www.iso.org/standard/27001',
+      summary: '정보보호 관리체계(ISMS) 국제표준. 2022년 개정으로 위협 인텔리전스, 클라우드 보안, ICT 공급망 보안 등 11개 신규 통제 항목 추가. 총 93개 통제.',
+      tags: ['ISO', 'ISMS', '국제표준', '인증'],
+      updates: [{ date: '2022-10', desc: 'ISO 27001:2022 발행 — Annex A 통제 93개로 재편, 11개 신규 항목' }]
+    },
+    {
+      id: 'nistcsf', name: 'Cybersecurity Framework', abbr: 'NIST CSF',
+      authority: 'NIST (미국 국립표준기술연구소)', version: 'CSF 2.0 (2024.02)',
+      url: 'https://www.nist.gov/cyberframework',
+      summary: '식별·보호·탐지·대응·복구 5개 기능 + Govern 추가된 CSF 2.0. 공급망 리스크, 거버넌스 강화. 중소기업부터 대기업까지 적용 가능한 유연한 프레임워크.',
+      tags: ['NIST', '사이버보안', '미국', '프레임워크'],
+      updates: [{ date: '2024-02', desc: 'CSF 2.0 공식 발표 — Govern 기능 신설, 공급망 리스크 관리 강화' }]
+    },
+    {
+      id: 'euaiact', name: 'EU Artificial Intelligence Act', abbr: 'EU AI Act',
+      authority: 'European Commission', version: '2024.08.01 발효',
+      url: 'https://artificialintelligenceact.eu/',
+      summary: 'AI 시스템의 위험도에 따른 규제 체계. 금지 AI, 고위험 AI, 제한적 위험 AI로 분류. GPAI(범용 AI) 모델 규제 포함. 2025-2026년 단계적 시행.',
+      tags: ['AI규제', 'EU', '고위험AI', 'GPAI'],
+      updates: [{ date: '2024-08-01', desc: 'EU AI Act 발효 — 금지 AI 조항 2025.02, 고위험 AI 조항 2026.08 적용' }]
+    },
+    {
+      id: 'ccpa', name: 'California Consumer Privacy Act', abbr: 'CCPA/CPRA',
+      authority: 'California Privacy Protection Agency', version: 'CPRA (2023.01 시행)',
+      url: 'https://cppa.ca.gov/',
+      summary: '캘리포니아 소비자의 개인정보 권리 보호. CPRA로 강화되어 민감정보 처리 제한, 자동화된 의사결정 거부권, CPPA 신설. 글로벌 기업 대상 실질적 영향.',
+      tags: ['개인정보', '미국', '캘리포니아', 'CPRA'],
+      updates: [{ date: '2023-01', desc: 'CPRA 시행 — 민감정보 카테고리 신설, CPPA 집행 시작' }]
+    },
+    {
+      id: 'soc2', name: 'System and Organization Controls 2', abbr: 'SOC 2',
+      authority: 'AICPA', version: 'Trust Services Criteria 2017',
+      url: 'https://www.aicpa.org/',
+      summary: '서비스 조직의 보안·가용성·처리 무결성·기밀성·프라이버시 통제를 검증하는 인증. SaaS·클라우드 서비스 제공사가 고객에게 보안 신뢰성을 증명하는 수단.',
+      tags: ['SOC2', '클라우드', 'SaaS', '신뢰서비스'],
+      updates: [{ date: '2023-12', desc: 'AICPA, AI 시스템 관련 SOC 2 적용 가이던스 업데이트' }]
+    },
+  ]
+};
+
+const complianceItemMap = {};
+COMPLIANCE_DATA.domestic.forEach(i => complianceItemMap[i.id] = i);
+COMPLIANCE_DATA.global.forEach(i => complianceItemMap[i.id] = i);
+
+function complianceChip(el) {
+  document.querySelectorAll('#compliance-chips .chip').forEach(c => c.classList.remove('on'));
+  el.classList.add('on');
+  renderCompliance(el.dataset.cat);
+}
+
+function renderCompliance(cat) {
+  const items = COMPLIANCE_DATA[cat] || [];
+  const el = document.getElementById('compliance-list');
+  el.innerHTML = items.map(item => {
+    const notes = loadNotes();
+    const note = notes['compliance_' + item.id] || {};
+    const statusEl = note.status ? `<span class="badge" style="font-size:10px;background:${statusBg(note.status)};color:${statusColor(note.status)};border:1px solid ${statusColor(note.status)}40">${note.status}</span>` : '';
+    const tags = item.tags.map(t => `<span class="tag">${escHtml(t)}</span>`).join('');
+    const lastUpdate = item.updates[item.updates.length - 1];
+    const memoCount = (note.memos || []).length;
+    return `<div class="owasp-card" onclick="openComplianceDetail('${escAttr(item.id)}')">
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;flex-wrap:wrap">
+        <span class="badge" style="font-size:10px;background:var(--accent2);color:var(--accent);border:1px solid #c0d0ee">${escHtml(item.abbr)}</span>
+        ${statusEl}
+        ${memoCount ? `<span style="font-size:10px;color:var(--text3);margin-left:auto">📝 ${memoCount}</span>` : ''}
+      </div>
+      <div class="owasp-name">${escHtml(item.name)}</div>
+      <div style="font-size:11px;color:var(--text3);margin:4px 0 6px">${escHtml(item.authority)} · ${escHtml(item.version)}</div>
+      <div class="owasp-desc">${escHtml(item.summary)}</div>
+      ${lastUpdate ? `<div style="font-size:11px;color:var(--low);margin-top:8px">↑ ${escHtml(lastUpdate.date)} ${escHtml(lastUpdate.desc)}</div>` : ''}
+      <div style="margin-top:8px">${tags}</div>
+    </div>`;
+  }).join('');
+}
+
+function openComplianceDetail(id) {
+  const item = complianceItemMap[id];
+  if (!item) return;
+  const noteId = 'compliance_' + id;
+  currentDetailId = noteId;
+
+  document.getElementById('dp-source').textContent = item.authority;
+  document.getElementById('dp-title').textContent = `[${item.abbr}] ${item.name}`;
+  const koEl = document.getElementById('dp-title-ko');
+  koEl.textContent = item.version;
+  koEl.style.display = '';
+  document.getElementById('dp-link').href = item.url;
+
+  document.getElementById('dp-meta-section').innerHTML = `
+    <div class="detail-section-label">기본 정보</div>
+    <div class="detail-meta-grid">
+      <div class="detail-meta-item"><div class="detail-meta-label">약칭</div><div class="detail-meta-value">${escHtml(item.abbr)}</div></div>
+      <div class="detail-meta-item"><div class="detail-meta-label">소관기관</div><div class="detail-meta-value">${escHtml(item.authority)}</div></div>
+      <div class="detail-meta-item" style="grid-column:1/-1"><div class="detail-meta-label">현행 버전</div><div class="detail-meta-value">${escHtml(item.version)}</div></div>
+    </div>
+    <div style="margin-top:10px">
+      <div class="detail-section-label">개정 이력</div>
+      ${item.updates.map(u => `<div style="font-size:12px;color:var(--text2);padding:6px 0;border-bottom:1px solid var(--border);display:flex;gap:10px"><span style="color:var(--text3);white-space:nowrap">${u.date}</span><span>${escHtml(u.desc)}</span></div>`).join('')}
+    </div>`;
+
+  document.getElementById('dp-desc-section').innerHTML = `
+    <div class="detail-section-label">요약</div>
+    <div class="detail-desc">${escHtml(item.summary)}</div>`;
+
+  const notes = loadNotes();
+  const note = notes[noteId] || { status: '', tags: [], memos: [] };
+  document.querySelectorAll('.status-chip').forEach(c => c.classList.toggle('on', c.dataset.s === note.status));
+  renderDetailTags(note.tags || []);
+  renderMemoList();
+  document.getElementById('detail-overlay').classList.add('open');
+  document.getElementById('detail-panel').classList.add('open');
+}
+// ── /Compliance ───────────────────────────────────
 
 function escHtml(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 function escAttr(s) { return String(s||'').replace(/"/g,'&quot;'); }
