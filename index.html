@@ -79,6 +79,7 @@
   .chip.on { border-color: var(--accent); color: var(--accent); background: var(--accent2); }
 
   .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .cards-single { display: flex; flex-direction: column; gap: 8px; }
   .card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1rem 1.25rem; transition: all 0.15s; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
   .card:hover { border-color: var(--border2); box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
   .card-top { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 8px; }
@@ -116,6 +117,11 @@
   .pager .btn { height: 30px; font-size: 12px; padding: 0 12px; }
 
   .section-title { font-size: 13px; font-weight: 500; color: var(--text2); margin-bottom: 1rem; display: flex; align-items: center; gap: 8px; }
+  .memo-tabs { display: flex; gap: 0; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; margin-bottom: 1.25rem; width: fit-content; }
+  .memo-tab { padding: 7px 20px; font-size: 13px; font-weight: 500; color: var(--text2); background: var(--bg2); border: none; cursor: pointer; transition: all 0.15s; }
+  .memo-tab:not(:last-child) { border-right: 1px solid var(--border); }
+  .memo-tab:hover { background: var(--bg3); color: var(--text); }
+  .memo-tab.active { background: var(--accent2); color: var(--accent); }
   .section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
 
   .owasp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
@@ -357,7 +363,21 @@
           <option value="보류">보류</option>
         </select>
       </div>
-      <div class="cards" id="memo-list">
+      <div class="memo-tabs">
+        <button class="memo-tab active" id="memo-tab-vuln" onclick="switchMemoTab('vuln')">
+          취약점 <span id="memo-cnt-vuln" style="font-size:11px;color:var(--text3);margin-left:4px">0</span>
+        </button>
+        <button class="memo-tab" id="memo-tab-news" onclick="switchMemoTab('news')">
+          뉴스 <span id="memo-cnt-news" style="font-size:11px;color:var(--text3);margin-left:4px">0</span>
+        </button>
+      </div>
+      <div class="cards-single" id="memo-list-vuln">
+        <div class="empty">
+          <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          아직 작성된 메모가 없습니다
+        </div>
+      </div>
+      <div class="cards-single" id="memo-list-news" style="display:none">
         <div class="empty">
           <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
           아직 작성된 메모가 없습니다
@@ -1318,8 +1338,17 @@ function statusBg(s) {
   return { '검토필요': 'var(--medium-bg)', '검토완료': 'var(--high-bg)', 'N/A': 'var(--low-bg)', '보류': 'var(--bg3)' }[s] || 'var(--bg3)';
 }
 
+let memoActiveTab = 'vuln';
+
+function switchMemoTab(tab) {
+  memoActiveTab = tab;
+  document.querySelectorAll('.memo-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('memo-tab-' + tab).classList.add('active');
+  document.getElementById('memo-list-vuln').style.display = tab === 'vuln' ? '' : 'none';
+  document.getElementById('memo-list-news').style.display = tab === 'news' ? '' : 'none';
+}
+
 function renderMemos() {
-  const el = document.getElementById('memo-list');
   const notes = loadNotes();
   const q = (document.getElementById('memo-q')?.value || '').toLowerCase();
   const statusFilter = document.getElementById('memo-status')?.value || '';
@@ -1333,18 +1362,14 @@ function renderMemos() {
     })
     .sort((a, b) => (b[1].updatedAt||'').localeCompare(a[1].updatedAt||''));
 
-  document.getElementById('nb-memos').textContent = Object.values(notes).filter(n => n.memo && n.memo.trim()).length;
-
-  if (!allEntries.length) {
-    el.innerHTML = `<div class="empty">
-      <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-      ${q || statusFilter ? '검색 결과가 없습니다' : '아직 작성된 메모가 없습니다'}
-    </div>`;
-    return;
-  }
+  const totalCnt = Object.values(notes).filter(n => n.memo && n.memo.trim()).length;
+  document.getElementById('nb-memos').textContent = totalCnt;
 
   const vulnEntries = allEntries.filter(([id]) => !id.startsWith('http'));
   const newsEntries = allEntries.filter(([id]) => id.startsWith('http'));
+
+  document.getElementById('memo-cnt-vuln').textContent = vulnEntries.length;
+  document.getElementById('memo-cnt-news').textContent = newsEntries.length;
 
   function memoCard([id, n]) {
     const tags = (n.tags || []).map(t => `<span class="tag">${escHtml(t)}</span>`).join('');
@@ -1365,16 +1390,18 @@ function renderMemos() {
     </div>`;
   }
 
-  let html = '';
-  if (vulnEntries.length) {
-    html += `<div class="section-title" style="margin-bottom:0.75rem">취약점 (${vulnEntries.length})</div>`;
-    html += vulnEntries.map(memoCard).join('');
-  }
-  if (newsEntries.length) {
-    html += `<div class="section-title" style="margin-top:${vulnEntries.length ? '1.5rem' : '0'};margin-bottom:0.75rem">뉴스 (${newsEntries.length})</div>`;
-    html += newsEntries.map(memoCard).join('');
-  }
-  el.innerHTML = html;
+  const emptyHtml = (msg) => `<div class="empty">
+    <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+    ${msg}
+  </div>`;
+
+  document.getElementById('memo-list-vuln').innerHTML = vulnEntries.length
+    ? vulnEntries.map(memoCard).join('')
+    : emptyHtml(q || statusFilter ? '검색 결과가 없습니다' : '작성된 취약점 메모가 없습니다');
+
+  document.getElementById('memo-list-news').innerHTML = newsEntries.length
+    ? newsEntries.map(memoCard).join('')
+    : emptyHtml(q || statusFilter ? '검색 결과가 없습니다' : '작성된 뉴스 메모가 없습니다');
 }
 
 function openDetailById(id) {
