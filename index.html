@@ -1675,7 +1675,13 @@ function renderCompliance(cat) {
     const note = notes['compliance_' + item.id] || {};
     const statusEl = note.status ? `<span class="badge" style="font-size:10px;background:${statusBg(note.status)};color:${statusColor(note.status)};border:1px solid ${statusColor(note.status)}40">${note.status}</span>` : '';
     const tags = item.tags.map(t => `<span class="tag">${escHtml(t)}</span>`).join('');
-    const lastUpdate = item.updates[item.updates.length - 1];
+
+    // 사용자 입력 이력 우선, 없으면 하드코딩 기본값
+    const userUpdates = note.updates || [];
+    const allUpdates = [...userUpdates, ...item.updates].sort((a, b) => b.date.localeCompare(a.date));
+    const latestUpdate = allUpdates[0];
+    const isUserUpdate = latestUpdate && userUpdates.includes(latestUpdate);
+
     const memoCount = (note.memos || []).length;
     return `<div class="owasp-card" onclick="openComplianceDetail('${escAttr(item.id)}')">
       <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;flex-wrap:wrap">
@@ -1686,7 +1692,9 @@ function renderCompliance(cat) {
       <div class="owasp-name">${escHtml(item.name)}</div>
       <div style="font-size:11px;color:var(--text3);margin:4px 0 6px">${escHtml(item.authority)} · ${escHtml(item.version)}</div>
       <div class="owasp-desc">${escHtml(item.summary)}</div>
-      ${lastUpdate ? `<div style="font-size:11px;color:var(--low);margin-top:8px">↑ ${escHtml(lastUpdate.date)} ${escHtml(lastUpdate.desc)}</div>` : ''}
+      ${latestUpdate ? `<div style="font-size:11px;color:var(--low);margin-top:8px;display:flex;align-items:center;gap:4px">
+        ${isUserUpdate ? '✎' : '↑'} <strong>${escHtml(latestUpdate.date)}</strong> ${escHtml(latestUpdate.desc)}
+      </div>` : ''}
       <div style="margin-top:8px">${tags}</div>
     </div>`;
   }).join('');
@@ -1705,17 +1713,8 @@ function openComplianceDetail(id) {
   koEl.style.display = '';
   document.getElementById('dp-link').href = item.url;
 
-  document.getElementById('dp-meta-section').innerHTML = `
-    <div class="detail-section-label">기본 정보</div>
-    <div class="detail-meta-grid">
-      <div class="detail-meta-item"><div class="detail-meta-label">약칭</div><div class="detail-meta-value">${escHtml(item.abbr)}</div></div>
-      <div class="detail-meta-item"><div class="detail-meta-label">소관기관</div><div class="detail-meta-value">${escHtml(item.authority)}</div></div>
-      <div class="detail-meta-item" style="grid-column:1/-1"><div class="detail-meta-label">현행 버전</div><div class="detail-meta-value">${escHtml(item.version)}</div></div>
-    </div>
-    <div style="margin-top:10px">
-      <div class="detail-section-label">개정 이력</div>
-      ${item.updates.map(u => `<div style="font-size:12px;color:var(--text2);padding:6px 0;border-bottom:1px solid var(--border);display:flex;gap:10px"><span style="color:var(--text3);white-space:nowrap">${u.date}</span><span>${escHtml(u.desc)}</span></div>`).join('')}
-    </div>`;
+  // 기본 정보 + 개정 이력 (사용자 입력 + 하드코딩 통합)
+  renderComplianceUpdates(id);
 
   document.getElementById('dp-desc-section').innerHTML = `
     <div class="detail-section-label">요약</div>
@@ -1728,6 +1727,102 @@ function openComplianceDetail(id) {
   renderMemoList();
   document.getElementById('detail-overlay').classList.add('open');
   document.getElementById('detail-panel').classList.add('open');
+}
+
+function renderComplianceUpdates(id) {
+  const item = complianceItemMap[id];
+  const noteId = 'compliance_' + id;
+  const notes = loadNotes();
+  const note = notes[noteId] || {};
+  const userUpdates = note.updates || [];
+  const builtinUpdates = item.updates.map(u => ({ ...u, builtin: true }));
+  const allUpdates = [...userUpdates, ...builtinUpdates].sort((a, b) => b.date.localeCompare(a.date));
+
+  document.getElementById('dp-meta-section').innerHTML = `
+    <div class="detail-section-label">기본 정보</div>
+    <div class="detail-meta-grid">
+      <div class="detail-meta-item"><div class="detail-meta-label">약칭</div><div class="detail-meta-value">${escHtml(item.abbr)}</div></div>
+      <div class="detail-meta-item"><div class="detail-meta-label">소관기관</div><div class="detail-meta-value">${escHtml(item.authority)}</div></div>
+      <div class="detail-meta-item" style="grid-column:1/-1"><div class="detail-meta-label">현행 버전</div><div class="detail-meta-value">${escHtml(item.version)}</div></div>
+    </div>
+
+    <div style="margin-top:1rem">
+      <div class="detail-section-label" style="display:flex;align-items:center;justify-content:space-between">
+        개정 이력
+        <button class="btn" style="height:24px;font-size:11px;padding:0 10px" onclick="toggleUpdateForm('${escAttr(id)}')">+ 추가</button>
+      </div>
+
+      <div id="update-form-${id}" style="display:none;margin-bottom:10px;background:var(--bg3);border-radius:var(--radius);padding:10px">
+        <div style="display:flex;gap:8px;margin-bottom:8px">
+          <input id="update-date-${id}" type="date" style="height:32px;padding:0 8px;font-size:12px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);color:var(--text);outline:none;flex:0 0 140px" />
+          <input id="update-desc-${id}" type="text" placeholder="개정 내용 요약..." style="flex:1;height:32px;padding:0 10px;font-size:12px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);color:var(--text);outline:none" />
+        </div>
+        <div style="display:flex;gap:6px">
+          <button class="btn btn-primary" style="height:26px;font-size:11px" onclick="saveUpdateEntry('${escAttr(id)}')">저장</button>
+          <button class="btn" style="height:26px;font-size:11px" onclick="toggleUpdateForm('${escAttr(id)}')">취소</button>
+        </div>
+      </div>
+
+      <div id="update-list-${id}">
+        ${allUpdates.length ? allUpdates.map((u, i) => `
+          <div style="font-size:12px;color:var(--text2);padding:7px 0;border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start">
+            <span style="color:var(--text3);white-space:nowrap;min-width:72px">${escHtml(u.date)}</span>
+            <span style="flex:1">${escHtml(u.desc)}</span>
+            ${!u.builtin ? `<button onclick="deleteUpdateEntry('${escAttr(id)}',${userUpdates.indexOf(u)})" style="background:none;border:none;cursor:pointer;color:var(--text3);font-size:11px;padding:0 2px;flex-shrink:0">✕</button>` : `<span style="font-size:10px;color:var(--text3);flex-shrink:0">기본</span>`}
+          </div>`).join('') : `<div style="font-size:12px;color:var(--text3);padding:6px 0">등록된 이력이 없습니다</div>`}
+      </div>
+    </div>`;
+}
+
+function toggleUpdateForm(id) {
+  const el = document.getElementById(`update-form-${id}`);
+  el.style.display = el.style.display === 'none' ? '' : 'none';
+  if (el.style.display !== 'none') {
+    const today = new Date().toISOString().slice(0,10);
+    document.getElementById(`update-date-${id}`).value = today;
+    document.getElementById(`update-desc-${id}`).focus();
+  }
+}
+
+function saveUpdateEntry(id) {
+  const date = document.getElementById(`update-date-${id}`).value;
+  const desc = document.getElementById(`update-desc-${id}`).value.trim();
+  if (!date || !desc) return;
+
+  const noteId = 'compliance_' + id;
+  const notes = loadNotes();
+  const note = notes[noteId] || { status: '', tags: [], memos: [], updates: [] };
+  if (!note.updates) note.updates = [];
+  note.updates.push({ date, desc });
+  note.updates.sort((a, b) => b.date.localeCompare(a.date));
+  note.updatedAt = new Date().toISOString();
+  notes[noteId] = note;
+  saveNotes(notes);
+  pushGist();
+
+  toggleUpdateForm(id);
+  renderComplianceUpdates(id);
+
+  // 카드도 갱신
+  const cat = document.querySelector('#compliance-chips .chip.on')?.dataset.cat || 'domestic';
+  renderCompliance(cat);
+}
+
+function deleteUpdateEntry(id, idx) {
+  if (!confirm('이 개정 이력을 삭제할까요?')) return;
+  const noteId = 'compliance_' + id;
+  const notes = loadNotes();
+  const note = notes[noteId] || {};
+  if (!note.updates) return;
+  note.updates.splice(idx, 1);
+  note.updatedAt = new Date().toISOString();
+  notes[noteId] = note;
+  saveNotes(notes);
+  pushGist();
+  renderComplianceUpdates(id);
+
+  const cat = document.querySelector('#compliance-chips .chip.on')?.dataset.cat || 'domestic';
+  renderCompliance(cat);
 }
 // ── /Compliance ───────────────────────────────────
 
