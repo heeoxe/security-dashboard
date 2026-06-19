@@ -139,6 +139,8 @@
   .owasp-name { font-size: 14px; font-weight: 500; margin-bottom: 6px; line-height: 1.3; }
   .owasp-desc { font-size: 12px; color: var(--text2); line-height: 1.5; }
 
+  .compliance-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 10px; }
+  
   .tag { display: inline-block; font-size: 10px; background: var(--bg3); color: var(--text3); border: 1px solid var(--border); padding: 1px 7px; border-radius: 4px; margin: 2px 2px 0 0; }
 
   /* 사이드 패널 */
@@ -344,7 +346,7 @@
         <button class="chip on" data-cat="domestic" onclick="complianceChip(this)">국내 법령/규정</button>
         <button class="chip" data-cat="global" onclick="complianceChip(this)">해외 프레임워크</button>
       </div>
-      <div class="owasp-grid" id="compliance-list"></div>
+      <div class="compliance-grid" id="compliance-list"></div>
     </div>
 
     <!-- 보안 뉴스 -->
@@ -1603,6 +1605,14 @@ const COMPLIANCE_DATA = {
       summary: '금융회사 임직원 업무망과 인터넷망의 분리 의무화. 내부망·외부망 간 자료 전송 통제, 망연계 솔루션 사용 기준 등을 규정. 클라우드 도입 시 예외 적용 논의 중.',
       tags: ['망분리', '전자금융', '네트워크보안'],
       updates: [{ date: '2023-12', desc: '클라우드 이용 시 망분리 예외 적용 가이드라인 논의 진행 중' }]
+    },
+    {
+      id: 'PIPA Decree', name: '개인정보보호법 시행령', abbr: 'PIPA Decree',
+      authority: '개인정보보호위원회', version: '2026.05.19 시행 (일부개정)',
+      url: 'https://www.law.go.kr/법령/개인정보보호법시행령',
+      summary: '개인정보 보호법에서 위임한 구체적 사항을 규정. 안전성 확보조치 기준(암호화, 접속기록 보관 등), 과징금 부과 기준, 고유식별정보 처리 제한, 그리고 전송요구권(마이데이터)의 대상 및 절차 등 실무적 이행 기준 명시.',
+      tags: ['개인정보', '데이터보호', 'GDPR동등성'],
+      updates: [{ date: '2026-05-19', desc: '과징금 산정기준 구체화' }]
     },
   ],
   global: [
