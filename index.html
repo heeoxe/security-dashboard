@@ -1724,7 +1724,7 @@ function openComplianceDetail(id) {
   const note = notes[noteId] || { status: '', tags: [], memos: [] };
   document.querySelectorAll('.status-chip').forEach(c => c.classList.toggle('on', c.dataset.s === note.status));
   renderDetailTags(note.tags || []);
-  renderMemoList();
+  renderDetailMemos();
   document.getElementById('detail-overlay').classList.add('open');
   document.getElementById('detail-panel').classList.add('open');
 }
