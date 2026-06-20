@@ -1,12 +1,66 @@
 [
   {
     "source": "thn",
+    "title": "Hackers Exploit Gravity SMTP WordPress Plugin Bug to Expose API Keys",
+    "desc": "Threat actors are exploiting a recently patched security flaw impacting Gravity SMTP, a WordPress plugin that's installed on about 100,000 sites.\n\nThe vulnerability, tracked as CVE-2026-4020 (CVSS score: 5.3), is a medium-severity information disclosure flaw that can allow unauthenticated attackers ",
+    "url": "https://thehackernews.com/2026/06/hackers-exploit-gravity-smtp-wordpress.html",
+    "date": "2026-06-20T15:26:04",
+    "title_ko": "해커들이 Gravity SMTP 워드프레스 플러그인의 취약점을 악용해 API 키를 유출시켰다",
+    "desc_ko": "악의적인 공격자들이 약 10만 개의 사이트에 설치된 워드프레스 플러그인인 ‘Gravity SMTP’에 영향을 미치는, 최근 패치된 보안 취약점을 악용하고 있습니다.\n\nCVE-2026-4020(CVSS 점수: 5.3)로 추적되는 이 취약점은 중등도의 정보 유출 결함으로, 인증되지 않은 공격자가 "
+  },
+  {
+    "source": "thn",
+    "title": "Unpatchable 'usbliter8' Exploit Breaks Apple A12 and A13 SecureROM Boot Chain",
+    "desc": "Security researchers at&nbsp;Paradigm Shift&nbsp;have published a working exploit, dubbed&nbsp;usbliter8, that achieves arbitrary code execution inside the SecureROM of Apple's A12 and A13 chips.\n\nThat code is burned into the silicon at manufacture. No software update can reach it. Affected devices ",
+    "url": "https://thehackernews.com/2026/06/unpatchable-usbliter8-exploit-breaks.html",
+    "date": "2026-06-20T00:07:41",
+    "title_ko": "패치할 수 없는 ‘usbliter8’ 익스플로잇, 애플 A12 및 A13 SecureROM 부트 체인 무력화",
+    "desc_ko": "Paradigm Shift의 보안 연구원들은 애플의 A12 및 A13 칩 내 SecureROM에서 임의 코드 실행을 가능하게 하는 ‘usbliter8’이라는 이름의 작동 가능한 익스플로잇을 공개했습니다.\n\n이 코드는 제조 과정에서 칩에 영구적으로 각인됩니다. 어떤 소프트웨어 업데이트로도 이 부분에 접근할 수 없습니다. 영향을 받는 기기 "
+  },
+  {
+    "source": "thn",
+    "title": "The Gentlemen RaaS Uses GentleKiller EDR Framework Targeting 400 Security Processes",
+    "desc": "The Gentlemen ransomware-as-a-service (RaaS) operation is actively developing and maintaining a suite of endpoint detection and response (EDR) killers that it hands out to affiliates for impairing system defenses before deploying the encryptor.\n\nThis mature portfolio of EDR-terminating tools is cent",
+    "url": "https://thehackernews.com/2026/06/the-gentlemen-raas-uses-gentlekiller.html",
+    "date": "2026-06-20T00:03:07",
+    "title_ko": "‘The Gentlemen RaaS’는 400개의 보안 프로세스를 표적으로 삼는 GentleKiller EDR 프레임워크를 활용합니다.",
+    "desc_ko": "‘젠틀맨(Gentlemen)’ 랜섬웨어-어-서비스(RaaS) 조직은 암호화 도구를 배포하기 전에 시스템 방어 체계를 무력화하기 위해 제휴사들에게 배포하는 일련의 엔드포인트 탐지 및 대응(EDR) 차단 도구를 적극적으로 개발하고 유지하고 있다.\n\n이 성숙한 EDR 차단 도구 포트폴리오는 주로"
+  },
+  {
+    "source": "thn",
+    "title": "AutoJack Attack Lets One Web Page Hijack AI Agent for Host Code Execution",
+    "desc": "Microsoft researchers have detailed an exploit chain, named&nbsp;AutoJack, that turns an AI browsing agent into a delivery vehicle for remote code execution.\n\nSteer the agent to load an attacker's web page, and that page's JavaScript can reach a privileged local service on the same machine and spawn",
+    "url": "https://thehackernews.com/2026/06/autojack-attack-lets-one-web-page.html",
+    "date": "2026-06-19T21:00:47",
+    "title_ko": "‘AutoJack Attack’을 통해 단일 웹 페이지가 AI 에이전트를 탈취하여 호스트 코드를 실행할 수 있게 된다",
+    "desc_ko": "마이크로소프트 연구진은 AI 브라우징 에이전트를 원격 코드 실행의 매개체로 활용하는 ‘AutoJack’이라는 이름의 익스플로잇 체인을 상세히 설명했다.\n\n에이전트를 조종해 공격자의 웹 페이지를 불러오게 하면, 해당 페이지의 자바스크립트가 동일한 시스템 내의 권한이 높은 로컬 서비스에 접근하여"
+  },
+  {
+    "source": "thn",
+    "title": "Operation Endgame Disrupts SocGholish Servers, Cleans 14,971 WordPress Sites",
+    "desc": "Dutch law enforcement authorities, along with counterparts from  Canada  , Germany, and the U.S., have disrupted malicious infrastructure associated with  SocGholish  and cleaned up nearly 15,000 infected WordPress websites.\n\n\"With these actions we deprive cybercriminals of access to infected comput",
+    "url": "https://thehackernews.com/2026/06/operation-endgame-disrupts-socgholish.html",
+    "date": "2026-06-19T20:37:54",
+    "title_ko": "‘오퍼레이션 엔드게임’, SocGholish 서버 마비시키고 14,971개 워드프레스 사이트 정리",
+    "desc_ko": "네덜란드 법 집행 당국은 캐나다, 독일, 미국의 관련 기관들과 협력하여 ‘SocGholish’와 관련된 악성 인프라를 무력화하고, 감염된 워드프레스 웹사이트 약 15,000개를 복구했습니다.\n\n“이러한 조치를 통해 우리는 사이버 범죄자들이 감염된 컴퓨터에 접근할 수 없도록 차단했습니다.”"
+  },
+  {
+    "source": "thn",
+    "title": "CISA Warns Fortinet Customers as FortiBleed Hits 86,644 FortiGate Devices",
+    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday urged Fortinet customers with FortiGate appliances to take steps to secure against ongoing malicious activity aimed at thousands of internet-accessible devices.\n\nThe sweeping campaign, believed to be the work of Russian-spe",
+    "url": "https://thehackernews.com/2026/06/cisa-warns-fortinet-customers-as.html",
+    "date": "2026-06-19T19:30:21",
+    "title_ko": "FortiBleed가 86,644대의 FortiGate 기기에 영향을 미치자 CISA가 Fortinet 고객들에게 경고를 발령했다",
+    "desc_ko": "미국 사이버보안·인프라보안국(CISA)은 목요일, FortiGate 장비를 사용하는 포티넷(Fortinet) 고객들에게 인터넷에 연결된 수천 대의 기기를 겨냥한 지속적인 악성 활동에 대비해 보안 조치를 취할 것을 촉구했다.\n\n이 대규모 공격은 러시아계 해커들의 소행으로 추정되며..."
+  },
+  {
+    "source": "thn",
     "title": "From Assistive to Agentic: The AI Shift That's Redefining Threat Management",
     "desc": "Introduction\n\nThe average enterprise security team has 40 or more security tools, giving a lot of visibility into internal telemetry and asset data. But often, these tools are working in siloes, generating (overlapping) alerts and data. And yet, breach dwell times remain stubbornly long (~43 days), ",
     "url": "https://thehackernews.com/2026/06/from-assistive-to-agentic-ai-shift.html",
     "date": "2026-06-19T17:28:00",
     "title_ko": "‘보조적’에서 ‘주체적’으로: 위협 관리의 개념을 재정의하는 AI의 변화",
-    "desc_ko": "서론\n\n일반적인 기업 보안 팀은 40개 이상의 보안 도구를 보유하고 있어 내부 텔레메트리 및 자산 데이터에 대한 폭넓은 가시성을 확보하고 있습니다. 하지만 이러한 도구들은 종종 서로 단절된 상태로 작동하며, (중복되는) 경보와 데이터를 생성합니다. 그럼에도 불구하고, 침해 후 체류 시간은 여전히 매우 긴 편입니다(약 43일), "
+    "desc_ko": "서론\n\n일반적인 기업 보안 팀은 40개 이상의 보안 도구를 보유하고 있어 내부 텔레메트리 및 자산 데이터에 대한 폭넓은 가시성을 확보하고 있습니다. 하지만 이러한 도구들은 종종 서로 단절된 상태로 작동하며, (중복되는) 경보와 데이터를 생성합니다. 그럼에도 불구하고, 침해 후 체류 시간은 여전히 유난히 긴 편입니다(약 43일), "
   },
   {
     "source": "thn",
@@ -15,7 +69,7 @@
     "url": "https://thehackernews.com/2026/06/forget-data-leakage-shadow-ais-real.html",
     "date": "2026-06-19T16:00:00",
     "title_ko": "데이터 유출은 잊어라: 섀도우 AI의 진정한 위협은 접근 제어다",
-    "desc_ko": "기업 내 AI에 대한 우려의 첫 번째 물결은 매우 단순했습니다. 직원들이 민감한 데이터를 공개 AI 도구에 복사해 붙여넣는 것이 전부였죠. 보안 팀은 사용 정책, 도메인 차단, 데이터 유출 방지 규칙 등을 통해 대응했습니다. 당시로서는 타당한 대응이었습니다.\n\n하지만 이제는 더 이상 그 대응책이 문제에 맞지 않습니다.\n\nS"
+    "desc_ko": "기업 내 AI에 대한 우려의 첫 번째 물결은 매우 단순했습니다. 직원들이 민감한 데이터를 공개 AI 도구에 복사해 붙여넣는 것이 전부였죠. 보안 팀은 사용 정책, 도메인 차단, 데이터 유출 방지 규칙 등을 통해 대응했습니다. 당시로서는 타당한 대응이었습니다.\n\n하지만 이제는 더 이상 이 문제가 해결되지 않습니다.\n\nS"
   },
   {
     "source": "thn",
@@ -33,7 +87,7 @@
     "url": "https://thehackernews.com/2026/06/apple-patches-beats-studio-buds-flaw.html",
     "date": "2026-06-19T12:06:09",
     "title_ko": "애플, 마이크를 통해 인근 공격자가 엿들을 수 있게 하는 ‘비츠 스튜디오 버즈’ 결함 패치",
-    "desc_ko": "애플은 주변에 있는 해커가 이를 악용해 사용자의 대화를 도청할 수 있는 고위험 취약점을 패치하기 위해 ‘Beats Studio Buds’ 무선 이어버드를 업데이트했습니다.\n\nCVE-2025-20701(CVSS 점수: 8.8)로 추적되는 이 취약점은 Airoha 블루투스에 영향을 미치는 잘못된 인증 문제를 의미합니다."
+    "desc_ko": "애플은 주변에 있는 해커가 이를 악용해 사용자의 대화를 도청할 수 있는 고위험 취약점을 해결하기 위해 ‘Beats Studio Buds’ 무선 이어버드를 업데이트했습니다.\n\nCVE-2025-20701(CVSS 점수: 8.8)로 추적되는 이 취약점은 Airoha 블루투스에 영향을 미치는 잘못된 인증 문제를 의미합니다."
   },
   {
     "source": "thn",
@@ -68,7 +122,7 @@
     "desc": "Microsoft has disclosed details of a Windows-based cryptocurrency clipper campaign that has targeted users since February 2026 with clipboard-intercepting malware with self-spreading capabilities and using the Tor anonymity network to hide communication.\n\"The clipper in this campaign relies on Windo",
     "url": "https://thehackernews.com/2026/06/microsoft-details-windows-clipper.html",
     "date": "2026-06-18T20:00:42",
-    "title_ko": "마이크로소프트, USB LNK 웜과 Tor 기반 C2를 활용한 ‘Windows Clipper’ 악성코드 캠페인을 상세히 공개",
+    "title_ko": "마이크로소프트, USB LNK 웜과 Tor 기반 C2를 활용한 ‘Windows Clipper’ 악성코드 캠페인의 세부 내용 공개",
     "desc_ko": "마이크로소프트는 2026년 2월부터 사용자를 표적으로 삼아온 윈도우 기반 암호화폐 클리퍼 캠페인의 세부 내용을 공개했다. 이 캠페인은 자체 확산 기능을 갖춘 클립보드 가로채기 악성코드를 사용하며, 통신을 숨기기 위해 Tor 익명화 네트워크를 활용한다.\n\"이 캠페인의 클리퍼는 Windo에 의존하며"
   },
   {
@@ -78,7 +132,7 @@
     "url": "https://thehackernews.com/2026/06/inc-ransomware-claims-830-victims-since.html",
     "date": "2026-06-18T19:42:48",
     "title_ko": "INC 랜섬웨어, 2023년 이후 830명 이상의 피해자를 기록하며 2026년 주요 RaaS 위협으로 부상",
-    "desc_ko": "사이버보안 연구원들은 INC가 초기 단계의 랜섬웨어-어-서비스(RaaS) 조직에서 2026년에는 가장 활발한 사이버 범죄 조직 중 하나로 발전한 과정을 추적했으며, 이 조직은 2023년 8월 이후 최소 830명의 피해자를 낸 것으로 밝혀졌습니다.\n\n\"LockBit의 활동 차질과 BlackCat의 폐쇄는 기회를 창출했다\""
+    "desc_ko": "사이버보안 연구원들은 INC가 초기 단계의 랜섬웨어-어-서비스(RaaS) 조직에서 2026년에는 가장 활발한 사이버 범죄 조직 중 하나로 발전해 온 과정을 분석했으며, 이 조직은 2023년 8월 이후 최소 830명의 피해자를 낸 것으로 밝혀졌습니다.\n\n\"LockBit의 활동 차질과 BlackCat의 폐쇄는 기회를 창출했다\""
   },
   {
     "source": "thn",
@@ -96,7 +150,7 @@
     "url": "https://thehackernews.com/2026/06/dragonforce-hackers-abuse-microsoft.html",
     "date": "2026-06-18T19:00:07",
     "title_ko": "드래곤포스 해커들, 마이크로소프트 팀즈 릴레이를 악용해 백도어를 숨기고 C2 트래픽을 우회하다",
-    "desc_ko": "DragonForce 랜섬웨어와 연관된 위협 행위자들이 ‘Backdoor.Turn’이라는 맞춤형 Go 기반 원격 접속 트로이목마(RAT)를 사용하여 Microsoft Teams 중계 인프라 내에서 명령 및 제어(C2) 트래픽을 은폐하는 것이 포착되었습니다.\n\n브로드컴(Broadcom) 산하 시만텍(Symantec)과 카본(Carbon)의 조사 결과에 따르면 "
+    "desc_ko": "DragonForce 랜섬웨어와 연관된 위협 행위자들이 ‘Backdoor.Turn’이라는 맞춤형 Go 기반 원격 접속 트로이목마(RAT)를 사용하여 Microsoft Teams 중계 인프라 내에서 명령 및 제어(C2) 트래픽을 은폐하는 것이 관찰되었습니다.\n\n브로드컴(Broadcom) 산하 시만텍(Symantec)과 카본(Carbon)의 조사 결과에 따르면 "
   },
   {
     "source": "thn",
@@ -105,7 +159,7 @@
     "url": "https://thehackernews.com/2026/06/crypto-clipper-campaign-abuses-fake.html",
     "date": "2026-06-17T23:44:24",
     "title_ko": "‘크립토 클리퍼’ 캠페인은 가짜 리뷰, AI 내레이터, VirusTotal 댓글을 악용하고 있다",
-    "desc_ko": "체크포인트 리서치(Check Point Research)의 최신 조사 결과에 따르면, 신원 미상의 위협 행위자가 합법적인 뉴스 웹사이트의 유료 또는 홍보 게시물을 악용해 불법 복제 소프트웨어에 대한 관심을 유도하는 것으로 확인되었습니다.\n\n또한 이 위협 행위자는 중앙 허브 역할을 하는 전용 워드프레스 피싱 페이지를 운영하고 있으며,"
+    "desc_ko": "체크포인트 리서치(Check Point Research)의 최신 조사 결과에 따르면, 신원 미상의 위협 행위자가 합법적인 뉴스 웹사이트의 유료 또는 홍보 게시물을 악용해 불법 복제 소프트웨어에 대한 관심을 불러일으키고 있는 것으로 확인되었습니다.\n\n또한 이 위협 행위자는 중앙 허브 역할을 하는 전용 워드프레스 피싱 페이지를 운영하고 있으며,"
   },
   {
     "source": "thn",
@@ -123,7 +177,7 @@
     "url": "https://thehackernews.com/2026/06/junior-hacker-used-tailscale-and.html",
     "date": "2026-06-17T21:30:56",
     "title_ko": "신입 해커, C2 서버가 오프라인 상태가 된 후에도 테일스케일(Tailscale)과 오픈SSH를 이용해 접속 권한을 유지했다",
-    "desc_ko": "프랑스어를 구사하는 해커가 프랑스의 한 소규모 자동차 업체에 침입해 키로거를 심고, 은행 및 이메일 로그인 정보를 훔쳤습니다.\n\n마지막 단계에서 한 가지 행동이 나타나기 전까지는 흔한 사건이었습니다.\n\n자신의 명령 및 제어 서버가 접속 불가 상태가 되기 직전, 그는 피해자의 컴퓨터에 OpenSSH와 Tailscale을 설치하여"
+    "desc_ko": "프랑스어를 구사하는 해커가 프랑스의 한 소규모 자동차 업체에 침입해 키로거를 심고, 은행 및 이메일 로그인 정보를 훔쳤습니다.\n\n마지막 단계에 이르기 전까지는 별다른 특이점이 없는 평범한 사건이었습니다.\n\n자신의 명령 및 제어 서버가 접속 불가 상태가 되기 직전, 그는 피해자의 컴퓨터에 OpenSSH와 Tailscale을 설치하여"
   },
   {
     "source": "thn",
@@ -141,7 +195,7 @@
     "url": "https://thehackernews.com/2026/06/malicious-jetbrains-plugins-steal-ai.html",
     "date": "2026-06-17T19:21:58",
     "title_ko": "악성 JetBrains 플러그인이 AI API 키를 탈취하고, 크롬 확장 프로그램이 챗봇 대화 내용을 가로채고 있다",
-    "desc_ko": "사이버보안 연구원들은 JetBrains 마켓플레이스에서 인공지능(AI) 제공업체 키를 유출할 수 있는 악성 플러그인 15개 이상을 배포한 “조직적인 악성코드 캠페인”을 적발했습니다.\n\n“모든 플러그인은 DeepSeek 및 기타 대형 언어 모델(LLM)을 기반으로 한 AI 코딩 보조 도구로 위장하고 있습니다.”"
+    "desc_ko": "사이버보안 연구원들은 JetBrains 마켓플레이스에서 인공지능(AI) 제공업체 키를 유출할 수 있는 악성 플러그인 15개 이상을 배포한 “조직적인 악성코드 캠페인”을 적발했습니다.\n\n“모든 플러그인은 DeepSeek 및 기타 대형 언어 모델(LLM)을 기반으로 한 AI 코딩 보조 도구인 척 위장하고 있습니다.”"
   },
   {
     "source": "thn",
@@ -150,7 +204,7 @@
     "url": "https://thehackernews.com/2026/06/the-top-10-attack-surface-exposures-in.html",
     "date": "2026-06-17T16:00:00",
     "title_ko": "2026년 공격 표면 취약점 상위 10가지",
-    "desc_ko": "보안 침해 사고가 항상 제로데이 취약점에서 시작되는 것은 아닙니다. 노출된 관리자 패널이 무차별 대입 공격을 받거나, 이전 공격에서 사용된 인증 정보가 재사용될 수도 있습니다. 하지만 취약점이 실제로 발견될 경우 — 올해 초 발생한 ‘MongoBleed’처럼, 공격자가 인증 절차 없이도 서버 메모리에서 인증 정보와 세션 토큰을 추출할 수 있었던 사례처럼 —"
+    "desc_ko": "보안 침해 사고가 항상 제로데이 취약점에서 시작되는 것은 아닙니다. 노출된 관리자 패널이 무차별 대입 공격을 당하거나, 이전 공격에서 사용된 인증 정보가 재사용될 수도 있습니다. 하지만 취약점이 실제로 발견될 경우 — 올해 초 발생한 ‘MongoBleed’처럼, 공격자가 인증 절차 없이도 서버 메모리에서 인증 정보와 세션 토큰을 추출할 수 있게 된 사례처럼 —"
   },
   {
     "source": "thn",
@@ -168,7 +222,7 @@
     "url": "https://thehackernews.com/2026/06/cisa-warns-of-actively-exploited-joomla.html",
     "date": "2026-06-17T11:20:46",
     "title_ko": "CISA, PHP 코드 실행을 허용하는 Joomla JCE 취약점이 활발히 악용되고 있다고 경고",
-    "desc_ko": "미국 사이버보안 및 인프라 보안국(CISA)은 화요일, Widget Factory Joomla 콘텐츠 편집기(JCE)에 영향을 미치는 최고 심각도 보안 결함을 ‘알려진 악용 취약점(KEV)’ 목록에 추가하며, 현재 활발히 악용되고 있다는 증거를 제시했다.\n\nCVE-202로 추적되는 이 취약점은"
+    "desc_ko": "미국 사이버보안 및 인프라 보안국(CISA)은 화요일, Widget Factory Joomla 콘텐츠 편집기(JCE)에 영향을 미치는 최고 심각도의 보안 결함을 ‘알려진 악용 취약점(KEV)’ 목록에 추가하며, 현재 이 취약점이 활발히 악용되고 있다는 증거를 제시했다.\n\nCVE-202로 추적되는 이 취약점은"
   },
   {
     "source": "thn",
@@ -177,7 +231,7 @@
     "url": "https://thehackernews.com/2026/06/google-vertex-ai-sdk-flaw-let-attackers.html",
     "date": "2026-06-17T00:35:41",
     "title_ko": "구글 Vertex AI SDK의 취약점으로 인해 공격자가 버킷 스쿼팅을 통해 모델 업로드를 가로챌 수 있음",
-    "desc_ko": "Python용 Google Cloud Vertex AI SDK의 결함으로 인해, 피해자의 프로젝트에 접근 권한이 없는 공격자라도 피해자의 머신러닝 모델을 탈취하여 Google의 서비스 인프라 내에서 코드를 실행할 수 있게 되었습니다.\n\n이 결함을 발견하고 Google의 버그 바운티 프로그램을 통해 보고한 팔로알토 네트웍스(Palo Alto Networks)의 Unit 42는"
+    "desc_ko": "Python용 Google Cloud Vertex AI SDK의 결함으로 인해, 피해자의 프로젝트에 접근 권한이 없는 공격자라도 피해자의 머신러닝 모델을 탈취하여 Google의 서비스 인프라 내에서 코드를 실행할 수 있게 되었습니다.\n\n이 결함을 발견하고 Google의 버그 바운티 프로그램을 통해 보고한 팔로알토 네트웍스의 Unit 42는"
   },
   {
     "source": "thn",
@@ -186,7 +240,7 @@
     "url": "https://thehackernews.com/2026/06/clickfix-campaigns-expand-malware.html",
     "date": "2026-06-16T23:11:28",
     "title_ko": "ClickFix 캠페인, 새로운 로더와 가짜 업데이트 미끼를 활용해 악성코드 유포 범위 확대",
-    "desc_ko": "Morphisec, BlueVoyant, Huntress가 각각 발표한 독립적인 보고서에 따르면, 사이버 보안 연구원들은 BabaDeda Loader, Lorem Ipsum Loader, Potemkin이라는 세 가지 악성코드 로더를 유포하는 여러 건의 ClickFix 캠페인을 적발했습니다.\n\n2026년 4월에 관찰된 BabaDeda Loader와 관련된 공격은, "
+    "desc_ko": "Morphisec, BlueVoyant, Huntress가 각각 발표한 독립적인 보고서에 따르면, 사이버 보안 연구원들은 BabaDeda Loader, Lorem Ipsum Loader, Potemkin이라는 세 가지 악성코드 로더를 유포하는 여러 ClickFix 캠페인을 적발했습니다.\n\n2026년 4월에 관찰된 BabaDeda Loader를 이용한 공격은, "
   },
   {
     "source": "thn",
@@ -194,8 +248,8 @@
     "desc": "Security researchers at&nbsp;Zimperium's zLabs&nbsp;have documented a new Android banking trojan, Rokarolla, that targets 217 banking and cryptocurrency apps and packs 137 remote commands.\n\nTogether, they give an operator near-total control of an infected phone: it lifts lock-screen PINs, reads and ",
     "url": "https://thehackernews.com/2026/06/new-rokarolla-android-malware-steals.html",
     "date": "2026-06-16T18:40:17",
-    "title_ko": "새로운 ‘로카롤라(Rokarolla)’ 안드로이드 악성코드, PIN, SMS 인증 코드 및 암호화폐 지갑 자금을 탈취",
-    "desc_ko": "Zimperium의 zLabs 소속 보안 연구원들은 217개의 은행 및 암호화폐 앱을 표적으로 삼고 137개의 원격 명령을 포함하고 있는 새로운 안드로이드 뱅킹 트로이목마 ‘Rokarolla’를 분석해 공개했습니다.\n\n이 기능들을 종합하면, 운영자는 감염된 휴대폰을 거의 완전히 제어할 수 있게 됩니다. 즉, 잠금 화면 PIN을 해제하고, 내용을 읽으며 "
+    "title_ko": "새로운 ‘로카롤라(Rokarolla)’ 안드로이드 악성코드, PIN 번호·SMS 인증 코드·암호화폐 지갑 자금을 탈취",
+    "desc_ko": "Zimperium의 zLabs 소속 보안 연구원들은 217개의 은행 및 암호화폐 앱을 표적으로 삼고 137개의 원격 명령을 포함하고 있는 새로운 안드로이드 뱅킹 트로이목마 ‘Rokarolla’를 분석해 그 내용을 보고했습니다.\n\n이 기능들을 종합하면, 운영자는 감염된 휴대폰을 거의 완전히 제어할 수 있게 됩니다. 즉, 잠금 화면 PIN을 해제하고, 내용을 읽으며 "
   },
   {
     "source": "thn",
@@ -213,7 +267,7 @@
     "url": "https://thehackernews.com/2026/06/attackers-exploit-three-fortinet.html",
     "date": "2026-06-16T16:00:41",
     "title_ko": "공격자들이 포티넷(Fortinet)의 포티샌드박스(FortiSandbox) 취약점 3개를 악용했으며, 그중 하나는 지난주에 패치되었다",
-    "desc_ko": "위협 인텔리전스 기업 Defused Cyber에 따르면, 악의적인 공격자들이 Fortinet FortiSandbox의 여러 보안 취약점을 악용하고 있는 것으로 나타났다.\n\n이 회사는 X에 게시한 글을 통해 지난 24시간 동안 CVE-2026-39813, CVE-2026-39808, CVE-2026-25089에 대한 악용 사례를 확인했다고 밝혔다.\n\nCVE-2026-398"
+    "desc_ko": "위협 인텔리전스 기업 Defused Cyber에 따르면, 악의적인 공격자들이 Fortinet FortiSandbox의 여러 보안 취약점을 악용하고 있는 것으로 나타났다.\n\n이 회사는 X에 게시한 글을 통해 지난 24시간 동안 CVE-2026-39813, CVE-2026-39808, CVE-2026-25089에 대한 악용 사례를 포착했다고 밝혔다.\n\nCVE-2026-398"
   },
   {
     "source": "thn",
@@ -222,7 +276,7 @@
     "url": "https://thehackernews.com/2026/06/china-linked-sprysocks-backdoor-expands.html",
     "date": "2026-06-16T15:14:34",
     "title_ko": "중국과 연계된 ‘SprySOCKS’ 백도어, 드라이버 기반 은닉 기법으로 Windows로 확산",
-    "desc_ko": "사이버보안 연구원들은 ‘SprySOCKS’라는, 그동안 리눅스 전용 백도어로만 여겨졌던 악성코드의 이전에 보고된 바 없는 두 가지 윈도우 변종을 발견했다.\n\nESET은 The Hacker News와 공유한 보고서에서 “발견된 윈도우 변종들은 내부적으로 WIN_DRV와 WIN_PLUS로 표기되어 있다”고 밝혔다. “두 변종 모두 "
+    "desc_ko": "사이버보안 연구원들은 ‘SprySOCKS’라는, 그동안 리눅스 전용 백도어로만 여겨졌던 악성코드의 이전에 보고된 바 없는 두 가지 윈도우 변종을 발견했다.\n\nESET은 ‘The Hacker News’와 공유한 보고서에서 “발견된 윈도우 변종들은 내부적으로 WIN_DRV와 WIN_PLUS로 표시되어 있다”고 밝혔다. “두 변종 모두 "
   },
   {
     "source": "thn",
@@ -230,8 +284,8 @@
     "desc": "The North Korean state-sponsored hacking group known as ScarCruft (aka APT37) has been observed using spear-phishing messages impersonating Microsoft Account security notifications to deliver a new malware called NarwhalRAT.\n\n\"The attack email contained a message impersonating an MS account security",
     "url": "https://thehackernews.com/2026/06/fake-microsoft-alerts-used-to-deploy.html",
     "date": "2026-06-16T13:44:55",
-    "title_ko": "북한의 ‘나르왈RAT’ 악성코드를 유포하는 데 사용된 가짜 마이크로소프트 경고",
-    "desc_ko": "‘ScarCruft’(일명 APT37)로 알려진 북한 정부 후원 해킹 그룹이 마이크로소프트 계정 보안 알림을 사칭한 스피어 피싱 메시지를 이용해 ‘NarwhalRAT’라는 새로운 악성코드를 유포하는 것이 포착되었습니다.\n\n“이 공격 이메일에는 MS 계정 보안 알림을 사칭한 메시지가 포함되어 있었으며"
+    "title_ko": "북한의 ‘나르발RAT’ 악성코드 유포에 악용된 가짜 마이크로소프트 경고 메시지",
+    "desc_ko": "‘ScarCruft’(일명 APT37)로 알려진 북한 정부 후원 해킹 그룹이 마이크로소프트 계정 보안 알림을 사칭한 스피어 피싱 메시지를 이용해 ‘NarwhalRAT’라는 새로운 악성코드를 유포하는 것이 포착되었습니다.\n\n“이 공격 이메일에는 MS 계정 보안 알림을 사칭한 메시지가 포함되어 있었는데,"
   },
   {
     "source": "thn",
@@ -240,7 +294,7 @@
     "url": "https://thehackernews.com/2026/06/cisco-releases-security-updates-for.html",
     "date": "2026-06-16T11:35:58",
     "title_ko": "시스코, 현재 활발히 악용되고 있는 SD-WAN 매니저 취약점에 대한 보안 업데이트 발표",
-    "desc_ko": "시스코는 현재 야생에서 활발히 악용되고 있는 Catalyst SD-WAN Manager의 중등도 보안 결함에 대한 보안 업데이트를 발표했습니다.\n\nCVE-2026-20262로 추적되는 이 취약점은 CVSS 점수 10.0점 만점에 6.5점을 기록했습니다.\n\n\"Cisco Catalyst SD-WAN Manager의 웹 UI에 존재하는 취약점으로 인해"
+    "desc_ko": "시스코는 현재 실제 환경에서 활발히 악용되고 있는 Catalyst SD-WAN Manager의 중등도 보안 결함에 대한 보안 업데이트를 발표했습니다.\n\nCVE-2026-20262로 추적되는 이 취약점은 10.0점 만점에 6.5점의 CVSS 점수를 기록했습니다.\n\n\"Cisco Catalyst SD-WAN Manager의 웹 UI에 존재하는 취약점으로 인해"
   },
   {
     "source": "thn",
@@ -276,7 +330,7 @@
     "url": "https://thehackernews.com/2026/06/litellm-vulnerability-chain-lets-low.html",
     "date": "2026-06-15T22:09:01",
     "title_ko": "LiteLLM 취약점 연쇄를 통해 권한이 낮은 사용자도 AI 게이트웨이 서버를 장악할 수 있다",
-    "desc_ko": "Obsidian Security의 연구진에 따르면, LiteLLM 프록시의 기본 저권한 계정이 세 가지 취약점을 연쇄적으로 악용함으로써 전체 관리자 권한을 획득하고 서버에서 코드를 실행할 수 있는 것으로 밝혀졌다.\n\nLiteLLM은 하나의 Open을 통해 100개 이상의 모델 제공업체로 호출을 중개하는, 널리 배포된 오픈소스 AI 게이트웨이이다."
+    "desc_ko": "Obsidian Security의 연구진에 따르면, LiteLLM 프록시의 기본 저권한 계정이 세 가지 취약점을 연쇄적으로 악용함으로써 완전한 관리자 권한을 획득하고 서버에서 코드를 실행할 수 있는 것으로 밝혀졌다.\n\nLiteLLM은 하나의 Open을 통해 100개 이상의 모델 제공업체로 호출을 중개하는, 널리 배포된 오픈소스 AI 게이트웨이이다."
   },
   {
     "source": "thn",
@@ -321,7 +375,7 @@
     "url": "https://thehackernews.com/2026/06/popular-wordpress-plugin-scripts.html",
     "date": "2026-06-15T15:29:38",
     "title_ko": "인기 워드프레스 플러그인 스크립트가 변조되어 사이트에 숨겨진 백도어가 심어졌다",
-    "desc_ko": "한 공격자가 PushEngage, OptinMonster, TrustPulse를 실행 중인 워드프레스 사이트에서 사용되는 신뢰할 수 있는 자바스크립트 파일을 조작하여, 해당 파일을 사이트를 침입하는 수단으로 활용했습니다.\n\n파일이 로드될 당시 사이트 관리자가 로그인된 상태였을 경우, 이 코드는 공격자의 통제 하에 관리자 계정을 생성했습니다."
+    "desc_ko": "한 공격자가 PushEngage, OptinMonster, TrustPulse를 실행 중인 워드프레스 사이트에서 사용하는 신뢰할 수 있는 자바스크립트 파일을 조작하여, 해당 파일을 사이트를 침입하는 수단으로 악용했습니다.\n\n파일이 로드될 당시 사이트 관리자가 로그인된 상태였을 경우, 이 코드는 공격자의 통제 하에 있는 관리자 계정을 생성했습니다."
   },
   {
     "source": "thn",
@@ -357,7 +411,7 @@
     "url": "https://thehackernews.com/2026/06/us-orders-anthropic-to-suspend-fable-5.html",
     "date": "2026-06-13T11:12:50",
     "title_ko": "미국, 앤트로픽에 외국인에 대한 ‘Fable 5’ 및 ‘Mythos 5’ 접속 중단 명령",
-    "desc_ko": "앤트로픽(Anthropic)은 금요일, 미국 정부가 국가 안보를 이유로 미국 내외를 불문하고 외국 국적자의 해당 모델 접근을 중단하라고 명령함에 따라, 자사의 최첨단 인공지능(AI) 모델인 ‘클로드 페이블 5(Claude Fable 5)’와 ‘미토스 5(Mythos 5)’에 대한 모든 사용자의 접근을 “갑작스럽게 차단”할 것이라고 밝혔다."
+    "desc_ko": "앤트로픽(Anthropic)은 금요일, 미국 정부가 국가 안보를 이유로 미국 내외를 불문하고 외국 국적자의 해당 모델 접근을 중단하라고 명령함에 따라, 자사의 최첨단 인공지능(AI) 모델인 ‘클로드 페이블 5(Claude Fable 5)’와 ‘마이토스 5(Mythos 5)’에 대한 모든 사용자의 접근을 “갑작스럽게 차단”할 것이라고 밝혔다."
   },
   {
     "source": "thn",
@@ -365,7 +419,7 @@
     "desc": "Attackers took over more than 400 packages in the Arch User Repository (AUR) this week and rewrote their build scripts to install a credential stealer on any machine that built them.\n\nThe malware is a Rust binary built to harvest developer secrets. When it lands with root, it can also load an eBPF r",
     "url": "https://thehackernews.com/2026/06/over-400-arch-linux-aur-packages.html",
     "date": "2026-06-13T01:03:25",
-    "title_ko": "400개가 넘는 Arch Linux AUR 패키지가 해킹되어 정보 탈취형 악성코드와 eBPF 루트킷이 배포되었다",
+    "title_ko": "400개가 넘는 Arch Linux AUR 패키지가 해킹되어 정보 탈취형 악성코드와 eBPF 루트킷이 배포됨",
     "desc_ko": "이번 주, 공격자들은 Arch User Repository(AUR)에 등록된 400개 이상의 패키지를 장악하고, 해당 패키지를 빌드하는 모든 시스템에 자격 증명 탈취 프로그램을 설치하도록 빌드 스크립트를 조작했습니다.\n\n이 악성코드는 개발자의 비밀 정보를 탈취하기 위해 제작된 Rust 바이너리입니다. 루트 권한을 획득하면 eBPF r을 로드할 수도 있습니다."
   },
   {
@@ -384,7 +438,7 @@
     "url": "https://thehackernews.com/2026/06/china-linked-hackers-backdoored-linux.html",
     "date": "2026-06-12T23:47:55",
     "title_ko": "중국과 연계된 해커들이 리눅스 로그인 소프트웨어에 백도어를 심어 거의 10년 동안 잠복해 있었다",
-    "desc_ko": "방어 담당자들이 가장 면밀히 감시하는 노트북이나 서버에 숨는 대신, 중국과 연계된 한 해커 집단은 거의 10년 동안 리눅스 로그인 시스템 자체에 숨어 지냈다.\n\n이 집단을 ‘벨벳 앤트(Velvet Ant)’로 추적하고 있는 시그니아(Sygnia)는, 이 집단이 누가 로그인할 수 있는지 결정하는 PAM 및 OpenSSH 구성 요소에 백도어를 심었다고 밝혔으며, "
+    "desc_ko": "방어 담당자들이 가장 면밀히 감시하는 노트북이나 서버에 숨는 대신, 중국과 연계된 한 해커 집단은 거의 10년 동안 리눅스 로그인 시스템 자체에 숨어 지냈다.\n\n이 집단을 ‘벨벳 앤트(Velvet Ant)’로 추적하고 있는 시그니아(Sygnia)는, 이 집단이 로그인 허용 여부를 결정하는 PAM 및 OpenSSH 구성 요소에 백도어를 심었다고 밝혔으며, "
   },
   {
     "source": "thn",
@@ -393,60 +447,6 @@
     "url": "https://thehackernews.com/2026/06/agentjacking-attack-tricks-ai-coding.html",
     "date": "2026-06-12T17:34:33",
     "title_ko": "‘에이전트재킹(Agentjacking)’ 공격, AI 코딩 에이전트를 속여 악성 코드를 실행하게 만듦",
-    "desc_ko": "사이버보안 연구진들은 인공지능(AI) 코딩 에이전트를 속여 개발자의 컴퓨터에서 임의의 코드를 실행하게 만드는, 이른바 새로운 유형의 공격에 대해 설명했다.\n\nTenet Security가 ‘Agentjacking’이라고 명명한 이 공격은 위조된 오류 보고서를 통해 유발될 수 있으며, 이 오류 보고서는"
-  },
-  {
-    "source": "thn",
-    "title": "Rethinking MDR as Attackers and Defenders Embrace AI",
-    "desc": "For most of the past decade, managed detection and response was the answer to a real problem. Security teams couldn't staff around the clock, couldn't hire enough analysts, and needed someone else to handle the alert queue. MDR stepped in. It worked well enough. Until now.\n\nThe threat landscape has ",
-    "url": "https://thehackernews.com/2026/06/rethinking-mdr-as-attackers-and.html",
-    "date": "2026-06-12T16:30:00",
-    "title_ko": "공격자와 방어자 모두 AI를 도입함에 따라 MDR을 재고하다",
-    "desc_ko": "지난 10년 동안 대부분의 기간 동안, 관리형 탐지 및 대응(MDR)은 실제 문제에 대한 해결책이었습니다. 보안 팀은 24시간 내내 인력을 배치할 수도 없었고, 충분한 분석가를 채용할 수도 없었으며, 경보 대기열을 처리해 줄 다른 주체가 필요했습니다. MDR이 그 공백을 메웠습니다. 그럭저럭 잘 작동했습니다. 지금까지는 말이죠.\n\n위협 환경은 "
-  },
-  {
-    "source": "thn",
-    "title": "LangGraph Flaw Chain Exposes Self-Hosted AI Agents to Remote Code Execution",
-    "desc": "Cybersecurity researchers have disclosed details of three now-patched security flaws impacting LangGraph, including a critical vulnerability chain that could result in remote code execution.\n\nLangGraph is an open-source framework created by LangChain to build complex, stateful, and multi-agent artif",
-    "url": "https://thehackernews.com/2026/06/langgraph-flaw-chain-exposes-self.html",
-    "date": "2026-06-12T15:20:36",
-    "title_ko": "LangGraph의 취약점 연쇄로 인해 자체 호스팅 AI 에이전트가 원격 코드 실행 위험에 노출됨",
-    "desc_ko": "사이버 보안 연구원들이 LangGraph에 영향을 미치는 세 가지 보안 결함(현재는 패치됨)에 대한 세부 정보를 공개했는데, 여기에는 원격 코드 실행으로 이어질 수 있는 치명적인 취약점 연쇄도 포함되어 있습니다.\n\nLangGraph는 LangChain이 개발한 오픈소스 프레임워크로, 복잡하고 상태를 유지하며 다중 에이전트 아티팩트를 구축하기 위한 것입니다."
-  },
-  {
-    "source": "thn",
-    "title": "INTERPOL Operation Takes Down Sniper Dz Phishing Platform, Arrests Administrator",
-    "desc": "An INTERPOL-led operation last month resulted in the disruption of Sniper Dz, a decade-long phishing-as-a-service (PhaaS) platform, Group-IB said Thursday.\n\nThe effort, codenamed Operation Ramz, took place between October 2025 and February 2026, and saw authorities from 13 countries in the Middle Ea",
-    "url": "https://thehackernews.com/2026/06/interpol-takes-down-sniper-dz-phishing.html",
-    "date": "2026-06-12T14:22:55",
-    "title_ko": "인터폴 작전으로 ‘스나이퍼 Dz’ 피싱 플랫폼 적발, 운영자 체포",
-    "desc_ko": "그룹-IB는 목요일, 지난달 인터폴이 주도한 작전을 통해 10년 동안 운영되어 온 피싱-어-서비스(PhaaS) 플랫폼인 ‘스나이퍼 Dz’를 무력화했다고 밝혔다.\n\n‘오퍼레이션 람즈(Operation Ramz)’라는 코드명으로 진행된 이번 작전은 2025년 10월부터 2026년 2월까지 진행되었으며, 중동 지역 13개국 당국이 참여했다."
-  },
-  {
-    "source": "thn",
-    "title": "Europol Disrupts AudiA6 Crypto Laundering Service Used by Ransomware Gangs",
-    "desc": "Authorities in Europe have disrupted AudiA6, a cryptocurrency laundering service used by ransomware gangs and cybercriminal networks.\n\nEuropol, in a statement issued Thursday, said the dismantling of AudiA6 cut off a \"key financial pipeline used to wash hundreds of millions in illicit profits.\" The ",
-    "url": "https://thehackernews.com/2026/06/europol-disrupts-audia6-crypto.html",
-    "date": "2026-06-12T12:08:41",
-    "title_ko": "유로폴, 랜섬웨어 조직이 이용하던 ‘AudiA6’ 암호화폐 자금세탁 서비스 차단",
-    "desc_ko": "유럽 당국은 랜섬웨어 조직과 사이버 범죄 네트워크가 이용하던 암호화폐 세탁 서비스인 ‘AudiA6’를 적발했다.\n\n유로폴은 목요일 발표한 성명에서, AudiA6의 해체로 “수억에 달하는 불법 수익을 세탁하는 데 사용되던 핵심 자금 흐름”이 차단되었다고 밝혔다. 이 "
-  },
-  {
-    "source": "thn",
-    "title": "ShinyHunters Exploits Oracle PeopleSoft Zero-Day (CVE-2026-35273) to Breach Universities",
-    "desc": "The ShinyHunters extortion crew exploited an unpatched flaw in Oracle PeopleSoft to break into enterprise systems, steal data, and demand payment to keep it private. The campaign hit universities hardest.\n\nGoogle's Mandiant attributes it to the group it tracks as UNC6240, and dates the activity betw",
-    "url": "https://thehackernews.com/2026/06/shinyhunters-exploits-oracle-peoplesoft.html",
-    "date": "2026-06-12T01:59:23",
-    "title_ko": "ShinyHunters, 오라클 피플소프트 제로데이(CVE-2026-35273)를 악용해 대학 시스템에 침입",
-    "desc_ko": "‘ShinyHunters’라는 갈취 범죄 조직은 오라클 피플소프트(Oracle PeopleSoft)의 패치되지 않은 취약점을 악용해 기업 시스템에 침입하고, 데이터를 훔친 뒤 이를 공개하지 않겠다는 조건으로 금전을 요구했습니다. 이 공격은 대학들을 가장 심하게 타격했습니다.\n\n구글 산하 맨디언트(Mandiant)는 이 공격을 자사가 ‘UNC6240’으로 추적 중인 조직의 소행으로 지목했으며, 해당 활동 시기를"
-  },
-  {
-    "source": "thn",
-    "title": "New Attacks Trick OpenClaw AI Agent Into Running Code and Leaking Secrets",
-    "desc": "Two security teams have shown, in separate research published this week, that OpenClaw, the popular self-hosted AI agent, can be driven to run attacker-controlled code or hand over sensitive data through ordinary-looking inputs.\n\nImperva buried instructions inside shared contacts, vCards, and locati",
-    "url": "https://thehackernews.com/2026/06/new-attacks-trick-openclaw-ai-agent.html",
-    "date": "2026-06-11T23:16:32",
-    "title_ko": "새로운 공격 기법으로 OpenClaw AI 에이전트를 속여 코드를 실행하게 하고 기밀 정보를 유출하게 만듦",
-    "desc_ko": "이번 주 발표된 별도의 연구에서 두 보안 팀이, 널리 사용되는 자체 호스팅형 AI 에이전트인 ‘OpenClaw’가 겉보기에는 평범해 보이는 입력값을 통해 공격자가 제어하는 코드를 실행하거나 민감한 데이터를 유출하도록 유도될 수 있음을 밝혀냈다.\n\nImperva는 공유 연락처, vCard 및 위치 정보 내에 명령어를 숨겨두었으며,"
+    "desc_ko": "사이버보안 연구진들은 인공지능(AI) 코딩 에이전트를 속여 개발자의 컴퓨터에서 임의의 코드를 실행하게 만드는, 이른바 새로운 유형의 공격에 대해 설명했다.\n\nTenet Security가 ‘에이전트재킹(Agentjacking)’이라고 명명한 이 공격은, 위조된 오류 보고서를 이용해 유발될 수 있으며"
   }
 ]
