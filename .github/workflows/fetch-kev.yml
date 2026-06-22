@@ -2,7 +2,7 @@ name: Fetch CISA KEV Data
 
 on:
   schedule:
-    - cron: '30 0 * * *'   # 매일 오전 9시 30분 KST (뉴스 실행 30분 뒤에 안전하게 실행)
+    - cron: '0 23 * * *' # 매일 KST 오전 8시 (UTC 23:00 전날)
   workflow_dispatch:        # 수동 실행 버튼
 
 jobs:
