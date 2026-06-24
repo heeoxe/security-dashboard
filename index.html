@@ -148,12 +148,12 @@
   .detail-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.2); z-index: 100; }
   .detail-overlay.open { display: block; }
   .detail-panel {
-    position: fixed; top: 0; right: -480px; width: 460px; height: 100vh;
-    background: var(--bg2); border-left: 1px solid var(--border);
-    box-shadow: -4px 0 24px rgba(0,0,0,0.08);
-    display: flex; flex-direction: column;
-    transition: right 0.25s cubic-bezier(.4,0,.2,1); z-index: 101;
-  }
+   position: fixed; top: 0; right: -480px; width: 460px; height: 100vh;
+   background: var(--bg2); border-left: 1px solid var(--border);
+   box-shadow: -4px 0 24px rgba(0,0,0,0.08);
+   display: flex; flex-direction: column;
+   transition: right 0.25s cubic-bezier(.4,0,.2,1); z-index: 101;
+}
   .detail-panel.open { right: 0; }
   .detail-header { padding: 1.125rem 1.25rem; border-bottom: 1px solid var(--border); display: flex; align-items: flex-start; gap: 10px; }
   .detail-header-text { flex: 1; min-width: 0; }
