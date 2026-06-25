@@ -1363,17 +1363,61 @@ function renderOwasp() {
   const data = OWASP_DATA[cat];
   document.getElementById('owasp-link').href = data.url;
   document.getElementById('owasp-meta').textContent = `${data.label} · ${data.version} · 총 ${data.items.length}개 항목`;
-  document.getElementById('owasp-list').innerHTML = data.items.map(o => `
-    <div class="owasp-card">
-      <div class="owasp-rank">${o.rank} <span class="badge ${sevClass(o.sev)}" style="margin-left:6px;font-size:10px">${sevLabel(o.sev)}</span></div>
+  document.getElementById('owasp-list').innerHTML = data.items.map(o => {
+    const noteId = `owasp_${cat}_${o.rank}`;
+    const notes = loadNotes();
+    const note = notes[noteId] || {};
+    const statusEl = note.status ? `<span class="badge" style="font-size:10px;background:${statusBg(note.status)};color:${statusColor(note.status)};border:1px solid ${statusColor(note.status)}40;margin-left:6px">${note.status}</span>` : '';
+    const memoCount = (note.memos || []).length;
+    return `<div class="owasp-card" onclick="openOwaspDetail('${escAttr(cat)}','${escAttr(o.rank)}')">
+      <div class="owasp-rank">
+        ${o.rank}
+        <span class="badge ${sevClass(o.sev)}" style="margin-left:6px;font-size:10px">${sevLabel(o.sev)}</span>
+        ${statusEl}
+        ${memoCount ? `<span style="font-size:10px;color:var(--text3);float:right">📝 ${memoCount}</span>` : ''}
+      </div>
       <div class="owasp-name">${o.name}</div>
       <div class="owasp-desc">${o.desc}</div>
-    </div>
-  `).join('');
+    </div>`;
+  }).join('');
 }
 
 function loadOwasp() {
   renderOwasp();
+}
+
+function openOwaspDetail(cat, rank) {
+  const data = OWASP_DATA[cat];
+  const o = data.items.find(i => i.rank === rank);
+  if (!o) return;
+  const noteId = `owasp_${cat}_${rank}`;
+  currentDetailId = noteId;
+
+  document.getElementById('dp-source').textContent = `${data.label} · ${data.version}`;
+  document.getElementById('dp-title').textContent = `${o.rank} ${o.name}`;
+  const koEl = document.getElementById('dp-title-ko');
+  koEl.style.display = 'none';
+  document.getElementById('dp-link').href = data.url;
+
+  document.getElementById('dp-meta-section').innerHTML = `
+    <div class="detail-section-label">항목 정보</div>
+    <div class="detail-meta-grid">
+      <div class="detail-meta-item"><div class="detail-meta-label">카테고리</div><div class="detail-meta-value">${escHtml(data.label)}</div></div>
+      <div class="detail-meta-item"><div class="detail-meta-label">버전</div><div class="detail-meta-value">${escHtml(data.version)}</div></div>
+      <div class="detail-meta-item"><div class="detail-meta-label">Rank</div><div class="detail-meta-value">${escHtml(o.rank)}</div></div>
+      <div class="detail-meta-item"><div class="detail-meta-label">심각도</div><div class="detail-meta-value">${escHtml(sevLabel(o.sev))}</div></div>
+    </div>`;
+
+  document.getElementById('dp-desc-section').innerHTML = `
+    <div class="detail-section-label">설명</div>
+    <div class="detail-desc">${escHtml(o.desc)}</div>`;
+
+  const notes = loadNotes();
+  const note = notes[noteId] || { status: '', tags: [], memos: [] };
+  document.querySelectorAll('.status-chip').forEach(c => c.classList.toggle('on', c.dataset.s === note.status));
+  renderDetailTags(note.tags || []);
+  renderDetailMemos(note.memos || []);
+  document.getElementById('detail-overlay').classList.add('open');
 }
 
 function updateBadges() {
