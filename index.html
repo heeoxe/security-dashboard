@@ -144,19 +144,16 @@
   
   .tag { display: inline-block; font-size: 10px; background: var(--bg3); color: var(--text3); border: 1px solid var(--border); padding: 1px 7px; border-radius: 4px; margin: 2px 2px 0 0; }
 
-  /* 사이드 패널 */
- .detail-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 100; }
- .detail-overlay.open { display: flex; align-items: center; justify-content: center; }
- .detail-panel {
-   position: relative; top: auto; right: auto; width: 720px; max-width: 90vw;
-   height: 85vh; max-height: 85vh;
-   background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius-lg);
-   box-shadow: 0 8px 40px rgba(0,0,0,0.18);
-   display: flex; flex-direction: column;
-   transition: none; z-index: 101;
-   transform: none !important;
- }
-  .detail-panel.open { right: auto; }
+  /* 팝업 모달 */
+  .detail-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 100; }
+  .detail-overlay.open { display: flex; align-items: center; justify-content: center; }
+  .detail-panel {
+    width: 720px; max-width: 90vw; height: 85vh; max-height: 85vh;
+    background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius-lg);
+    box-shadow: 0 8px 40px rgba(0,0,0,0.18);
+    display: flex; flex-direction: column;
+    position: relative; z-index: 101;
+  }
   .detail-header { padding: 1.125rem 1.25rem; border-bottom: 1px solid var(--border); display: flex; align-items: flex-start; gap: 10px; }
   .detail-header-text { flex: 1; min-width: 0; }
   .detail-source { font-size: 11px; color: var(--text3); margin-bottom: 6px; }
@@ -471,9 +468,9 @@
   </main>
 </div>
 
-<!-- 사이드 패널 -->
-<div class="detail-overlay" id="detail-overlay" onclick="closeDetail()"></div>
-<div class="detail-panel" id="detail-panel">
+<!-- 팝업 모달 -->
+<div class="detail-overlay" id="detail-overlay" onclick="closeDetail()">
+<div class="detail-panel" id="detail-panel" onclick="event.stopPropagation()">
   <div class="detail-header">
     <div class="detail-header-text">
       <div class="detail-source" id="dp-source"></div>
@@ -523,6 +520,7 @@
       저장
     </button>
   </div>
+</div>
 </div>
 
 <script>
@@ -858,7 +856,6 @@ function openDetail(item) {
 
   // 패널 열기
   document.getElementById('detail-overlay').classList.add('open');
-  document.getElementById('detail-panel').classList.add('open');
 }
 
 function closeDetail() {
@@ -903,59 +900,20 @@ function removeTag(t) {
 function renderDetailMemos(memos) {
   const el = document.getElementById('dp-memo-list');
   if (!memos || !memos.length) { el.innerHTML = ''; return; }
-  // 최신순으로 인덱스 매핑 (원본 인덱스 유지)
-  const indexed = memos.map((m, i) => ({ m, i })).reverse();
-  el.innerHTML = indexed.map(({ m, i }) => {
-    const t = m.createdAt ? new Date(m.createdAt).toLocaleString('ko-KR', { month:'short', day:'numeric', hour:'2-digit', minute:'2-digit' }) : '';
-    const editedMark = m.editedAt ? `<span style="font-size:10px;color:var(--text3);margin-left:4px">(수정됨)</span>` : '';
-    return `<div class="dp-memo-item" id="dp-memo-item-${i}">
+  el.innerHTML = memos.map((m, i) => {
+    const t = m.createdAt ? new Date(m.createdAt).toLocaleString('ko-KR', {month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'}) : '';
+    return `<div class="dp-memo-item">
       <div class="dp-memo-item-header">
-        <span class="dp-memo-item-time">${t}${editedMark}</span>
-        <div style="display:flex;gap:4px">
-          <button style="font-size:10px;color:var(--accent);border:none;background:none;cursor:pointer;padding:0 2px" onclick="editMemo(${i})">수정</button>
-          <button class="dp-memo-item-del" onclick="deleteMemo(${i})" title="삭제">✕</button>
-        </div>
+        <span class="dp-memo-item-time">${t}</span>
+        <button class="dp-memo-item-del" onclick="deleteMemo(${i})" title="삭제">✕</button>
       </div>
-      <div id="dp-memo-text-${i}" class="dp-memo-item-text">${escHtml(m.text)}</div>
-      <div id="dp-memo-edit-${i}" style="display:none;margin-top:6px">
-        <textarea id="dp-memo-edit-input-${i}" style="width:100%;min-height:72px;resize:vertical;background:var(--bg2);border:1px solid var(--accent);border-radius:var(--radius);color:var(--text);font-size:12px;font-family:inherit;padding:8px 10px;outline:none;line-height:1.6">${escHtml(m.text)}</textarea>
-        <div style="display:flex;gap:6px;margin-top:6px">
-          <button class="btn btn-primary" style="height:26px;font-size:11px" onclick="saveEditMemo(${i})">저장</button>
-          <button class="btn" style="height:26px;font-size:11px" onclick="cancelEditMemo(${i})">취소</button>
-        </div>
-      </div>
+      <div class="dp-memo-item-text">${escHtml(m.text)}</div>
     </div>`;
-  }).join('');
-}
-
-function editMemo(i) {
-  document.getElementById(`dp-memo-text-${i}`).style.display = 'none';
-  document.getElementById(`dp-memo-edit-${i}`).style.display = '';
-  document.getElementById(`dp-memo-edit-input-${i}`).focus();
-}
-
-function cancelEditMemo(i) {
-  document.getElementById(`dp-memo-text-${i}`).style.display = '';
-  document.getElementById(`dp-memo-edit-${i}`).style.display = 'none';
-}
-
-function saveEditMemo(i) {
-  const text = document.getElementById(`dp-memo-edit-input-${i}`).value.trim();
-  if (!text) return;
-  const notes = loadNotes();
-  const note = notes[currentDetailId] || { memos: [] };
-  note.memos[i].text = text;
-  note.memos[i].editedAt = new Date().toISOString();
-  note.updatedAt = new Date().toISOString();
-  notes[currentDetailId] = note;
-  saveNotes(notes);
-  pushGist();
-  renderDetailMemos(note.memos);
+  }).reverse().join(''); // 최신순
 }
 
 function deleteMemo(idx) {
   if (!currentDetailId) return;
-  if (!confirm('이 메모를 삭제할까요?')) return;
   const notes = loadNotes();
   const note = notes[currentDetailId] || { tags: [], memos: [] };
   note.memos = (note.memos || []).filter((_, i) => i !== idx);
@@ -1405,58 +1363,13 @@ function renderOwasp() {
   const data = OWASP_DATA[cat];
   document.getElementById('owasp-link').href = data.url;
   document.getElementById('owasp-meta').textContent = `${data.label} · ${data.version} · 총 ${data.items.length}개 항목`;
-  document.getElementById('owasp-list').innerHTML = data.items.map(o => {
-    const noteId = `owasp_${cat}_${o.rank}`;
-    const notes = loadNotes();
-    const note = notes[noteId] || {};
-    const statusEl = note.status ? `<span class="badge" style="font-size:10px;background:${statusBg(note.status)};color:${statusColor(note.status)};border:1px solid ${statusColor(note.status)}40;margin-left:6px">${note.status}</span>` : '';
-    const memoCount = (note.memos || []).length;
-    return `<div class="owasp-card" onclick="openOwaspDetail('${escAttr(cat)}','${escAttr(o.rank)}')">
-      <div class="owasp-rank">
-        ${o.rank}
-        <span class="badge ${sevClass(o.sev)}" style="margin-left:6px;font-size:10px">${sevLabel(o.sev)}</span>
-        ${statusEl}
-        ${memoCount ? `<span style="font-size:10px;color:var(--text3);float:right">📝 ${memoCount}</span>` : ''}
-      </div>
+  document.getElementById('owasp-list').innerHTML = data.items.map(o => `
+    <div class="owasp-card">
+      <div class="owasp-rank">${o.rank} <span class="badge ${sevClass(o.sev)}" style="margin-left:6px;font-size:10px">${sevLabel(o.sev)}</span></div>
       <div class="owasp-name">${o.name}</div>
       <div class="owasp-desc">${o.desc}</div>
-    </div>`;
-  }).join('');
-}
-
-function openOwaspDetail(cat, rank) {
-  const data = OWASP_DATA[cat];
-  const o = data.items.find(i => i.rank === rank);
-  if (!o) return;
-  const noteId = `owasp_${cat}_${rank}`;
-  currentDetailId = noteId;
-
-  document.getElementById('dp-source').textContent = `${data.label} · ${data.version}`;
-  document.getElementById('dp-title').textContent = `${o.rank} ${o.name}`;
-  const koEl = document.getElementById('dp-title-ko');
-  koEl.style.display = 'none';
-  document.getElementById('dp-link').href = data.url;
-
-  document.getElementById('dp-meta-section').innerHTML = `
-    <div class="detail-section-label">항목 정보</div>
-    <div class="detail-meta-grid">
-      <div class="detail-meta-item"><div class="detail-meta-label">카테고리</div><div class="detail-meta-value">${escHtml(data.label)}</div></div>
-      <div class="detail-meta-item"><div class="detail-meta-label">버전</div><div class="detail-meta-value">${escHtml(data.version)}</div></div>
-      <div class="detail-meta-item"><div class="detail-meta-label">Rank</div><div class="detail-meta-value">${escHtml(o.rank)}</div></div>
-      <div class="detail-meta-item"><div class="detail-meta-label">심각도</div><div class="detail-meta-value">${escHtml(sevLabel(o.sev))}</div></div>
-    </div>`;
-
-  document.getElementById('dp-desc-section').innerHTML = `
-    <div class="detail-section-label">설명</div>
-    <div class="detail-desc">${escHtml(o.desc)}</div>`;
-
-  const notes = loadNotes();
-  const note = notes[noteId] || { status: '', tags: [], memos: [] };
-  document.querySelectorAll('.status-chip').forEach(c => c.classList.toggle('on', c.dataset.s === note.status));
-  renderDetailTags(note.tags || []);
-  renderDetailMemos(note.memos || []);
-  document.getElementById('detail-overlay').classList.add('open');
-  document.getElementById('detail-panel').classList.add('open');
+    </div>
+  `).join('');
 }
 
 function loadOwasp() {
@@ -1575,7 +1488,6 @@ function openDetailById(id) {
   document.getElementById('dp-memo').value = '';
   renderDetailMemos(note.memos || []);
   document.getElementById('detail-overlay').classList.add('open');
-  document.getElementById('detail-panel').classList.add('open');
 }
 
 function renderSavedVuln() {
@@ -1830,7 +1742,6 @@ function openComplianceDetail(id) {
   renderDetailTags(note.tags || []);
   renderDetailMemos();
   document.getElementById('detail-overlay').classList.add('open');
-  document.getElementById('detail-panel').classList.add('open');
 }
 
 function renderComplianceUpdates(id) {
