@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -363,7 +365,7 @@
       </div>
       <div style="font-size:11px;color:var(--text3);margin-bottom:1rem;display:flex;align-items:center;gap:8px">
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
-        매일 자동 갱신 (<code style="font-size:10px;background:var(--bg3);padding:1px 5px;border-radius:3px">news.json</code>)
+        CISA Alerts는 실시간 fetch · RSS 뉴스는 GitHub Actions로 매일 자동 갱신 (<code style="font-size:10px;background:var(--bg3);padding:1px 5px;border-radius:3px">news.json</code>)
       </div>
       <div class="cards" id="news-list">
         <div class="loading"><div class="spinner"></div><br>뉴스 불러오는 중...</div>
@@ -1009,24 +1011,19 @@ function cvssToSev(v) {
 function kevCard(item) {
   const sv = isSaved(item.id);
   const cvss = item.cvss || 0;
-  
+  const note = loadNotes()[item.id] || {};
+  const statusEl = note.status ? `<span class="badge" style="font-size:10px;background:${statusBg(note.status)};color:${statusColor(note.status)};border:1px solid ${statusColor(note.status)}40">${note.status}</span>` : '';
+
   const bm = { 
-    id: item.id, 
-    cve: item.cve, 
-    title: item.title, 
-    sev: item.sev, 
-    cvss: item.cvss,
-    date: item.added,
-    due: item.due,
-    vendor: item.vendor,
-    product: item.product,
-    desc: item.desc || '', // CISA KEV 원본에는 보통 본문이 생략되거나 짧습니다.
-    source: 'CISA KEV' 
+    id: item.id, cve: item.cve, title: item.title, sev: item.sev, cvss: item.cvss,
+    date: item.added, due: item.due, vendor: item.vendor, product: item.product,
+    desc: item.desc || '', source: 'CISA KEV' 
   };
 
   return `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(item)})'>
     <div class="card-top">
       <span class="badge src-cisa">CISA KEV</span>
+      ${statusEl}
       <div class="card-title">${escHtml(item.title)}</div>
     </div>
     <div class="card-meta">
@@ -1051,6 +1048,7 @@ function nvdCard(item) {
   const sv = isSaved(item.id);
   const cvss = item.cvss || 0;
   
+  // 모든 상세 데이터를 북마크 객체에 바인딩
   const bm = { 
     id: item.id, 
     cve: item.cve, 
@@ -1064,10 +1062,14 @@ function nvdCard(item) {
     source: 'NVD' 
   };
 
+  const note = loadNotes()[item.id] || {};
+  const statusEl = note.status ? `<span class="badge" style="font-size:10px;background:${statusBg(note.status)};color:${statusColor(note.status)};border:1px solid ${statusColor(note.status)}40">${note.status}</span>` : '';
+
   return `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(item)})'>
     <div class="card-top">
       <span class="badge ${sevClass(item.sev)}">${sevLabel(item.sev)}</span>
       <span class="badge src-nvd">NVD</span>
+      ${statusEl}
       <div class="card-title cve-id" style="font-size:13px">${item.cve}</div>
     </div>
     <div class="card-meta">
@@ -1890,6 +1892,7 @@ function saveUpdateEntry(id) {
   toggleUpdateForm(id);
   renderComplianceUpdates(id);
 
+  // 카드 갱신
   const cat = document.querySelector('#compliance-chips .chip.on')?.dataset.cat || 'domestic';
   renderCompliance(cat);
 }
@@ -1917,6 +1920,7 @@ function escAttr(s) { return String(s||'').replace(/"/g,'&quot;'); }
 
 document.getElementById('nvd-q').addEventListener('keydown', e => { if (e.key === 'Enter') searchNvd(); });
 
+// 초기 로드
 loadKev();
 pullGist(false); // Gist에서 메모 자동 불러오기
 const _cfg = getCfg();
