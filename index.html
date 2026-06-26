@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -144,7 +142,6 @@
   
   .tag { display: inline-block; font-size: 10px; background: var(--bg3); color: var(--text3); border: 1px solid var(--border); padding: 1px 7px; border-radius: 4px; margin: 2px 2px 0 0; }
 
-  /* 팝업 모달 */
   .detail-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 100; }
   .detail-overlay.open { display: flex; align-items: center; justify-content: center; }
   .detail-panel {
@@ -366,7 +363,7 @@
       </div>
       <div style="font-size:11px;color:var(--text3);margin-bottom:1rem;display:flex;align-items:center;gap:8px">
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
-        CISA Alerts는 실시간 fetch · RSS 뉴스는 GitHub Actions로 매일 자동 갱신 (<code style="font-size:10px;background:var(--bg3);padding:1px 5px;border-radius:3px">news.json</code>)
+        매일 자동 갱신 (<code style="font-size:10px;background:var(--bg3);padding:1px 5px;border-radius:3px">news.json</code>)
       </div>
       <div class="cards" id="news-list">
         <div class="loading"><div class="spinner"></div><br>뉴스 불러오는 중...</div>
@@ -634,7 +631,6 @@ function filterNews() {
   newsFiltered = newsAll.filter(n => {
     const itemSource = (n.source || '').toLowerCase();
     
-    // 💡 벤더사 필터 꼬임 방지를 위해 포함(includes) 조건으로 유연하게 매칭합니다.
     if (src !== 'all') {
       if (src === 'cisa' && !itemSource.includes('cisa')) return false;
       if (src === 'thn' && !itemSource.includes('thn') && !itemSource.includes('hacker')) return false;
@@ -676,8 +672,6 @@ async function loadNews(force) {
     return; // [cite: 108]
   }
 
-  // 💡 [중요] 사용자가 처음에 'CISA Alerts' 메뉴를 누른 상태에서 뉴스를 켰을 때도 
-  // 바로 필터링이 먹히도록 filterNews()를 실행합니다.
   filterNews();
 }
 // ── /News ─────────────────────────────────────────
@@ -900,16 +894,53 @@ function removeTag(t) {
 function renderDetailMemos(memos) {
   const el = document.getElementById('dp-memo-list');
   if (!memos || !memos.length) { el.innerHTML = ''; return; }
-  el.innerHTML = memos.map((m, i) => {
-    const t = m.createdAt ? new Date(m.createdAt).toLocaleString('ko-KR', {month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'}) : '';
-    return `<div class="dp-memo-item">
+  const indexed = memos.map((m, i) => ({ m, i })).reverse();
+  el.innerHTML = indexed.map(({ m, i }) => {
+    const t = m.createdAt ? new Date(m.createdAt).toLocaleString('ko-KR', { month:'short', day:'numeric', hour:'2-digit', minute:'2-digit' }) : '';
+    const editedMark = m.editedAt ? `<span style="font-size:10px;color:var(--text3);margin-left:4px">(수정됨)</span>` : '';
+    return `<div class="dp-memo-item" id="dp-memo-item-${i}">
       <div class="dp-memo-item-header">
-        <span class="dp-memo-item-time">${t}</span>
-        <button class="dp-memo-item-del" onclick="deleteMemo(${i})" title="삭제">✕</button>
+        <span class="dp-memo-item-time">${t}${editedMark}</span>
+        <div style="display:flex;gap:4px">
+          <button style="font-size:10px;color:var(--accent);border:none;background:none;cursor:pointer;padding:0 2px" onclick="editMemo(${i})">수정</button>
+          <button class="dp-memo-item-del" onclick="deleteMemo(${i})" title="삭제">✕</button>
+        </div>
       </div>
-      <div class="dp-memo-item-text">${escHtml(m.text)}</div>
+      <div id="dp-memo-text-${i}" class="dp-memo-item-text">${escHtml(m.text)}</div>
+      <div id="dp-memo-edit-${i}" style="display:none;margin-top:6px">
+        <textarea id="dp-memo-edit-input-${i}" style="width:100%;min-height:72px;resize:vertical;background:var(--bg2);border:1px solid var(--accent);border-radius:var(--radius);color:var(--text);font-size:12px;font-family:inherit;padding:8px 10px;outline:none;line-height:1.6">${escHtml(m.text)}</textarea>
+        <div style="display:flex;gap:6px;margin-top:6px">
+          <button class="btn btn-primary" style="height:26px;font-size:11px" onclick="saveEditMemo(${i})">저장</button>
+          <button class="btn" style="height:26px;font-size:11px" onclick="cancelEditMemo(${i})">취소</button>
+        </div>
+      </div>
     </div>`;
-  }).reverse().join(''); // 최신순
+  }).join('');
+}
+
+function editMemo(i) {
+  document.getElementById(`dp-memo-text-${i}`).style.display = 'none';
+  document.getElementById(`dp-memo-edit-${i}`).style.display = '';
+  document.getElementById(`dp-memo-edit-input-${i}`).focus();
+}
+
+function cancelEditMemo(i) {
+  document.getElementById(`dp-memo-text-${i}`).style.display = '';
+  document.getElementById(`dp-memo-edit-${i}`).style.display = 'none';
+}
+
+function saveEditMemo(i) {
+  const text = document.getElementById(`dp-memo-edit-input-${i}`).value.trim();
+  if (!text) return;
+  const notes = loadNotes();
+  const note = notes[currentDetailId] || { memos: [] };
+  note.memos[i].text = text;
+  note.memos[i].editedAt = new Date().toISOString();
+  note.updatedAt = new Date().toISOString();
+  notes[currentDetailId] = note;
+  saveNotes(notes);
+  pushGist();
+  renderDetailMemos(note.memos);
 }
 
 function deleteMemo(idx) {
@@ -979,7 +1010,6 @@ function kevCard(item) {
   const sv = isSaved(item.id);
   const cvss = item.cvss || 0;
   
-  // 💡 모든 상세 데이터를 북마크 객체(bm)에 바인딩
   const bm = { 
     id: item.id, 
     cve: item.cve, 
@@ -1021,7 +1051,6 @@ function nvdCard(item) {
   const sv = isSaved(item.id);
   const cvss = item.cvss || 0;
   
-  // 💡 모든 상세 데이터를 북마크 객체(bm)에 바인딩
   const bm = { 
     id: item.id, 
     cve: item.cve, 
@@ -1102,7 +1131,6 @@ async function loadKev(force) {
   const el = document.getElementById('kev-list');
   el.innerHTML = '<div class="loading"><div class="spinner"></div><br>CISA KEV 불러오는 중...</div>';
   try {
-    // 💡 내 레포지토리에 저장될 백업 파일을 읽도록 주소 변경
     const r = await fetch('./kev.json'); 
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     const d = await r.json();
@@ -1862,7 +1890,6 @@ function saveUpdateEntry(id) {
   toggleUpdateForm(id);
   renderComplianceUpdates(id);
 
-  // 카드도 갱신
   const cat = document.querySelector('#compliance-chips .chip.on')?.dataset.cat || 'domestic';
   renderCompliance(cat);
 }
@@ -1890,7 +1917,6 @@ function escAttr(s) { return String(s||'').replace(/"/g,'&quot;'); }
 
 document.getElementById('nvd-q').addEventListener('keydown', e => { if (e.key === 'Enter') searchNvd(); });
 
-// 초기 로드
 loadKev();
 pullGist(false); // Gist에서 메모 자동 불러오기
 const _cfg = getCfg();
