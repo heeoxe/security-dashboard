@@ -1571,10 +1571,13 @@ function renderSavedVuln() {
   }
   el.innerHTML = vulnBm.map(b => {
     const cvss = b.cvss || 0;
+    const note = loadNotes()[b.id] || {};
+    const statusEl = note.status ? `<span class="badge" style="font-size:10px;background:${statusBg(note.status)};color:${statusColor(note.status)};border:1px solid ${statusColor(note.status)}40">${note.status}</span>` : '';
     return `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(b)})'>
       <div class="card-top">
         ${b.sev ? `<span class="badge ${sevClass(b.sev)}">${sevLabel(b.sev)}</span>` : ''}
         <span class="badge ${b.source === 'CISA KEV' ? 'src-cisa' : 'src-nvd'}">${b.source}</span>
+        ${statusEl}
         <div class="card-title ${b.source === 'NVD' ? 'cve-id' : ''}">${escHtml(b.title)}</div>
       </div>
       <div class="card-meta">
