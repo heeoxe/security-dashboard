@@ -1011,8 +1011,6 @@ function cvssToSev(v) {
 function kevCard(item) {
   const sv = isSaved(item.id);
   const cvss = item.cvss || 0;
-  const note = loadNotes()[item.id] || {};
-  const statusEl = note.status ? `<span class="badge" style="font-size:10px;background:${statusBg(note.status)};color:${statusColor(note.status)};border:1px solid ${statusColor(note.status)}40">${note.status}</span>` : '';
 
   const bm = { 
     id: item.id, cve: item.cve, title: item.title, sev: item.sev, cvss: item.cvss,
@@ -1023,7 +1021,6 @@ function kevCard(item) {
   return `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(item)})'>
     <div class="card-top">
       <span class="badge src-cisa">CISA KEV</span>
-      ${statusEl}
       <div class="card-title">${escHtml(item.title)}</div>
     </div>
     <div class="card-meta">
@@ -1062,14 +1059,11 @@ function nvdCard(item) {
     source: 'NVD' 
   };
 
-  const note = loadNotes()[item.id] || {};
-  const statusEl = note.status ? `<span class="badge" style="font-size:10px;background:${statusBg(note.status)};color:${statusColor(note.status)};border:1px solid ${statusColor(note.status)}40">${note.status}</span>` : '';
 
   return `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(item)})'>
     <div class="card-top">
       <span class="badge ${sevClass(item.sev)}">${sevLabel(item.sev)}</span>
       <span class="badge src-nvd">NVD</span>
-      ${statusEl}
       <div class="card-title cve-id" style="font-size:13px">${item.cve}</div>
     </div>
     <div class="card-meta">
@@ -1574,9 +1568,12 @@ function renderSavedVuln() {
   el.innerHTML = vulnBm.map(b => {
     const cvss = b.cvss || 0;
     return `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(b)})'>
+  const note = loadNotes()[b.id] || {};
+  const statusEl = note.status ? `<span class="badge" style="font-size:10px;background:${statusBg(note.status)};color:${statusColor(note.status)};border:1px solid ${statusColor(note.status)}40">${note.status}</span>` : '';
       <div class="card-top">
         ${b.sev ? `<span class="badge ${sevClass(b.sev)}">${sevLabel(b.sev)}</span>` : ''}
-        <span class="badge ${b.source === 'CISA KEV' ? 'src-cisa' : 'src-nvd'}">${b.source}</span>
+        <span class="badge ${b.source === 'CISA KEV' ? 'src-cisa' : 'src-nvd'}">${b.source}</span> 
+        ${statusEl}
         <div class="card-title ${b.source === 'NVD' ? 'cve-id' : ''}">${escHtml(b.title)}</div>
       </div>
       <div class="card-meta">
