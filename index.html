@@ -1565,6 +1565,9 @@ function openDetailById(id) {
 function renderSavedVuln() {
   const el = document.getElementById('saved-vuln-list');
   const vulnBm = bookmarks.filter(b => b.type !== 'news');
+  const note = loadNotes()[b.id] || {};
+  const statusEl = note.status ? `<span class="badge" style="font-size:10px;background:${statusBg(note.status)};color:${statusColor(note.status)};border:1px solid ${statusColor(note.status)}40">${note.status}</span>` : '';
+  
   if (!vulnBm.length) {
     el.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>저장된 취약점이 없습니다</div>';
     return;
@@ -1573,7 +1576,7 @@ function renderSavedVuln() {
     const cvss = b.cvss || 0;
     return `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(b)})'>
       <div class="card-top">
-        ${b.sev ? `<span class="badge ${sevClass(b.sev)}">${sevLabel(b.sev)}</span>` : ''}
+        ${b.sev ? `<span class="badge ${sevClass(b.sev)}">${sevLabel(b.sev)}</span>` : ''} ${statusEl}
         <span class="badge ${b.source === 'CISA KEV' ? 'src-cisa' : 'src-nvd'}">${b.source}</span>
         <div class="card-title ${b.source === 'NVD' ? 'cve-id' : ''}">${escHtml(b.title)}</div>
       </div>
