@@ -1201,15 +1201,15 @@ async function searchNvd() {
       url += `&cvssV3Severity=${sev}`;
     }
     
-    // 3. 검색어도 없고 심각도 선택도 안 했을 때 (날짜 직접 계산 대신 안전한 파라미터 사용)
+    // 3. 검색어도 없고 심각도 선택도 안 했을 때 (최근 게시된 CVE 기준, 안전한 파라미터 사용)
     if (!q && !sev) {
       const now = new Date();
-      // 안전하게 딱 30일 전부터 현재까지만 조회 (KEV와 동일 기간, 로컬 시간 왜곡 방지)
+      // 안전하게 딱 30일 전부터 현재까지 게시(publish)된 CVE만 조회 (KEV와 동일 기간)
       const ago30 = new Date(Date.now() - 30 * 86400000);
       
       const formatNvdDate = (d) => d.toISOString().replace(/\.\d+Z$/, '+00:00');
       
-      url += `&lastModStartDate=${encodeURIComponent(formatNvdDate(ago30))}&lastModEndDate=${encodeURIComponent(formatNvdDate(now))}`;
+      url += `&pubStartDate=${encodeURIComponent(formatNvdDate(ago30))}&pubEndDate=${encodeURIComponent(formatNvdDate(now))}`;
     }
 
     const r = await fetch(url);
@@ -1230,6 +1230,9 @@ async function searchNvd() {
       ).filter(Boolean).slice(0, 5);
       return { id: c.id, cve: c.id, sev: baseSev, cvss: score, published: (c.published || '').slice(0, 10), cwe, desc: desc.slice(0, 220) + (desc.length > 220 ? '…' : ''), tags };
     });
+
+    // 최신 게시일 순으로 정렬 (검색/필터 결과에도 동일 적용)
+    nvdAll.sort((a, b) => (b.published || '').localeCompare(a.published || ''));
     
     renderNvdPage();
   } catch (e) {
