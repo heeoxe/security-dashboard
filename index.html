@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -308,10 +310,7 @@
         </button>
       </div>
       <div class="cards" id="nvd-list">
-        <div class="empty">
-          <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-          키워드를 입력하고 검색하세요<br>빈 칸으로 검색하면 최근 30일 CVE 표시
-        </div>
+        <div class="loading"><div class="spinner"></div><br>최근 30일 CVE 불러오는 중...</div>
       </div>
       <div class="pager" id="nvd-pager"></div>
     </div>
@@ -563,6 +562,7 @@ function switchPanel(id, el) {
   if (id === 'compliance') renderCompliance('domestic');
   if (id === 'settings') renderCfgStatus();
   if (id === 'news') loadNews();
+  if (id === 'nvd' && !nvdAll.length) searchNvd();
 }
 
 // ── News ──────────────────────────────────────────
@@ -1204,12 +1204,12 @@ async function searchNvd() {
     // 3. 검색어도 없고 심각도 선택도 안 했을 때 (날짜 직접 계산 대신 안전한 파라미터 사용)
     if (!q && !sev) {
       const now = new Date();
-      // 안전하게 딱 5일 전부터 현재까지만 조회 (로컬 시간 왜곡 방지)
-      const ago5 = new Date(Date.now() - 5 * 86400000);
+      // 안전하게 딱 30일 전부터 현재까지만 조회 (KEV와 동일 기간, 로컬 시간 왜곡 방지)
+      const ago30 = new Date(Date.now() - 30 * 86400000);
       
       const formatNvdDate = (d) => d.toISOString().replace(/\.\d+Z$/, '+00:00');
       
-      url += `&lastModStartDate=${encodeURIComponent(formatNvdDate(ago5))}&lastModEndDate=${encodeURIComponent(formatNvdDate(now))}`;
+      url += `&lastModStartDate=${encodeURIComponent(formatNvdDate(ago30))}&lastModEndDate=${encodeURIComponent(formatNvdDate(now))}`;
     }
 
     const r = await fetch(url);
