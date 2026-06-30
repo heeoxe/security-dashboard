@@ -1063,13 +1063,18 @@ function nvdCard(item) {
 
   const note = loadNotes()[item.id] || {};
 
+  // 설명 첫 문장을 제목처럼 추출 (보통 "A vulnerability was found in X..." 형태)
+  const firstSentence = (item.desc || '').split(/(?<=\.)\s+/)[0] || '';
+  const titleSummary = firstSentence.length > 100 ? firstSentence.slice(0, 100) + '…' : firstSentence;
+
   return `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(item)})'>
     <div class="card-top">
       <span class="badge ${sevClass(item.sev)}">${sevLabel(item.sev)}</span>
       <span class="badge src-nvd">NVD</span>
-      <div class="card-title cve-id" style="font-size:13px">${item.cve}</div>
+      <div class="card-title">${escHtml(titleSummary || item.cve)}</div>
     </div>
     <div class="card-meta">
+      <span class="cve-id">${item.cve}</span>
       <span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${item.published}</span>
       ${item.cwe ? `<span>${escHtml(item.cwe)}</span>` : ''}
     </div>
@@ -1576,12 +1581,17 @@ function renderSavedVuln() {
     const cvss = b.cvss || 0;
     const note = loadNotes()[b.id] || {};
     const statusEl = note.status ? `<span class="badge" style="font-size:10px;background:${statusBg(note.status)};color:${statusColor(note.status)};border:1px solid ${statusColor(note.status)}40">${note.status}</span>` : '';
+    let displayTitle = b.title;
+    if (b.source === 'NVD' && b.desc) {
+      const firstSentence = b.desc.split(/(?<=\.)\s+/)[0] || '';
+      displayTitle = firstSentence.length > 100 ? firstSentence.slice(0, 100) + '…' : (firstSentence || b.title);
+    }
     return `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(b)})'>
       <div class="card-top">
         ${b.sev ? `<span class="badge ${sevClass(b.sev)}">${sevLabel(b.sev)}</span>` : ''}
         <span class="badge ${b.source === 'CISA KEV' ? 'src-cisa' : 'src-nvd'}">${b.source}</span>
         ${statusEl}
-        <div class="card-title ${b.source === 'NVD' ? 'cve-id' : ''}">${escHtml(b.title)}</div>
+        <div class="card-title">${escHtml(displayTitle)}</div>
       </div>
       <div class="card-meta">
         ${b.date ? `<span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${b.date}</span>` : ''}
