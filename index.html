@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -228,6 +226,11 @@
         <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
         NVD CVE
       </button>
+      <button class="nav-item" onclick="switchPanel('mitre', this)">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+        MITRE CVE
+        <span class="nav-badge hot" id="nb-mitre" style="display:none">NEW</span>
+      </button>
       <button class="nav-item" onclick="switchPanel('news', this)">
         <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 22h16a2 2 0 002-2V4a2 2 0 00-2-2H8a2 2 0 00-2 2v16a2 2 0 01-2 2zm0 0a2 2 0 01-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8M15 18h-5M10 6h8v4h-8z"/></svg>
         보안 뉴스
@@ -313,6 +316,28 @@
         <div class="loading"><div class="spinner"></div><br>최근 30일 CVE 불러오는 중...</div>
       </div>
       <div class="pager" id="nvd-pager"></div>
+    </div>
+
+    <!-- MITRE CVE -->
+    <div id="panel-mitre" class="panel">
+      <div style="font-size:12px;color:var(--text2);margin-bottom:1rem;padding:10px 12px;background:var(--bg3);border-radius:var(--radius);line-height:1.6">
+        <strong>MITRE CVE</strong> — NVD보다 빠른 원천 CVE 데이터베이스. CVSS 점수는 없거나 늦게 붙지만 신규 취약점을 가장 먼저 확인할 수 있어요.
+      </div>
+      <div class="toolbar">
+        <input id="mitre-q" type="text" placeholder="키워드, 벤더명, CVE-YYYY-NNNNN..." />
+        <button class="btn btn-primary" onclick="searchMitre()">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          검색
+        </button>
+        <button class="btn" onclick="loadMitre(true)">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+          새로고침
+        </button>
+      </div>
+      <div class="cards" id="mitre-list">
+        <div class="loading"><div class="spinner"></div><br>최근 30일 MITRE CVE 불러오는 중...</div>
+      </div>
+      <div class="pager" id="mitre-pager"></div>
     </div>
 
     <!-- OWASP -->
@@ -563,6 +588,7 @@ function switchPanel(id, el) {
   if (id === 'settings') renderCfgStatus();
   if (id === 'news') loadNews();
   if (id === 'nvd' && !nvdAll.length) searchNvd();
+  if (id === 'mitre' && !mitreAll.length) loadMitre();
 }
 
 // ── News ──────────────────────────────────────────
@@ -1181,6 +1207,132 @@ function renderNvdPager() {
     <span>${nvdPage+1} / ${total} (${nvdAll.length}개)</span>
     <button class="btn" onclick="nvdPage=Math.min(${total-1},nvdPage+1);renderNvdPage()" ${nvdPage>=total-1?'disabled':''}>다음 →</button>`;
 }
+
+// ── MITRE CVE ─────────────────────────────────────
+let mitreAll = [], mitrePage = 0;
+const MITRE_PAGE = 15;
+
+function mitreCard(item) {
+  const firstSentence = (item.desc || '').split(/(?<=\.)\s+/)[0] || '';
+  const titleSummary = firstSentence.length > 120 ? firstSentence.slice(0, 120) + '…' : (firstSentence || item.cve);
+  const bm = { id: item.cve, cve: item.cve, title: titleSummary, desc: item.desc || '', date: item.published, source: 'MITRE' };
+  const sv = isSaved(item.cve);
+  const note = loadNotes()[item.cve] || {};
+  const statusEl = note.status ? `<span class="badge" style="font-size:10px;background:${statusBg(note.status)};color:${statusColor(note.status)};border:1px solid ${statusColor(note.status)}40">${note.status}</span>` : '';
+
+  return `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify({...item, id: item.cve, title: titleSummary, source: "MITRE"})})'>
+    <div class="card-top">
+      <span class="badge" style="background:#f3f0fb;color:#6d4fb5;border:1px solid #d0c4ee;font-size:10px">MITRE</span>
+      ${statusEl}
+      <div class="card-title">${escHtml(titleSummary)}</div>
+    </div>
+    <div class="card-meta">
+      <span class="cve-id">${item.cve}</span>
+      <span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${item.published}</span>
+      ${item.state ? `<span style="font-size:10px">${escHtml(item.state)}</span>` : ''}
+    </div>
+    ${item.desc ? `<div class="card-desc" style="margin-top:6px">${escHtml(item.desc.slice(0, 200))}${item.desc.length > 200 ? '…' : ''}</div>` : ''}
+    <div class="card-footer" onclick="event.stopPropagation()">
+      <button class="btn" onclick='toggleSave(${JSON.stringify(bm)})'>${sv ? '★ 저장됨' : '☆ 저장'}</button>
+      <a class="btn" href="https://www.cve.org/CVERecord?id=${item.cve}" target="_blank" rel="noopener">
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
+        MITRE 원문
+      </a>
+    </div>
+  </div>`;
+}
+
+function renderMitrePage() {
+  const el = document.getElementById('mitre-list');
+  const start = mitrePage * MITRE_PAGE;
+  const slice = mitreAll.slice(start, start + MITRE_PAGE);
+  if (!slice.length) { el.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>결과가 없습니다</div>'; renderMitrePager(); return; }
+  el.innerHTML = slice.map(mitreCard).join('');
+  renderMitrePager();
+}
+
+function renderMitrePager() {
+  const total = Math.ceil(mitreAll.length / MITRE_PAGE);
+  const el = document.getElementById('mitre-pager');
+  if (total <= 1) { el.innerHTML = ''; return; }
+  el.innerHTML = `<button class="btn" onclick="mitrePage=Math.max(0,mitrePage-1);renderMitrePage()" ${mitrePage===0?'disabled':''}>← 이전</button>
+    <span>${mitrePage+1} / ${total} (${mitreAll.length.toLocaleString()}개)</span>
+    <button class="btn" onclick="mitrePage=Math.min(${total-1},mitrePage+1);renderMitrePage()" ${mitrePage>=total-1?'disabled':''}>다음 →</button>`;
+}
+
+async function loadMitre(force) {
+  const el = document.getElementById('mitre-list');
+  el.innerHTML = '<div class="loading"><div class="spinner"></div><br>MITRE CVE 불러오는 중...</div>';
+  mitrePage = 0;
+
+  try {
+    // 최근 30일 기준으로 가져오기
+    const ago30 = new Date(Date.now() - 30 * 86400000).toISOString().slice(0, 10);
+    const today = new Date().toISOString().slice(0, 10);
+    const url = `https://cveawg.mitre.org/api/cves?datePublicStart=${ago30}&datePublicEnd=${today}&resultAction=changes&resultsPerPage=100`;
+
+    const r = await fetch(url);
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const d = await r.json();
+
+    mitreAll = (d.cveRecords || []).map(v => {
+      const meta = v.cveMetadata || {};
+      const containers = v.containers?.cna || {};
+      const desc = (containers.descriptions || []).find(d => d.lang === 'en')?.value || '';
+      return {
+        cve: meta.cveId || '',
+        published: (meta.datePublished || '').slice(0, 10),
+        updated: (meta.dateUpdated || '').slice(0, 10),
+        state: meta.state || '',
+        desc: desc,
+        assignerName: meta.assignerShortName || '',
+      };
+    }).filter(v => v.cve).sort((a, b) => (b.published || '').localeCompare(a.published || ''));
+
+    const badge = document.getElementById('nb-mitre');
+    if (mitreAll.length) { badge.textContent = mitreAll.length; badge.style.display = ''; }
+
+    renderMitrePage();
+  } catch(e) {
+    el.innerHTML = `<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>로딩 실패: ${e.message}</div>`;
+  }
+}
+
+async function searchMitre() {
+  const q = document.getElementById('mitre-q').value.trim();
+  if (!q) { loadMitre(true); return; }
+
+  const el = document.getElementById('mitre-list');
+  el.innerHTML = '<div class="loading"><div class="spinner"></div><br>MITRE CVE 검색 중...</div>';
+  mitrePage = 0;
+
+  try {
+    let url;
+    if (/^CVE-/i.test(q)) {
+      url = `https://cveawg.mitre.org/api/cve/${encodeURIComponent(q.toUpperCase())}`;
+      const r = await fetch(url);
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      const v = await r.json();
+      const meta = v.cveMetadata || {};
+      const desc = (v.containers?.cna?.descriptions || []).find(d => d.lang === 'en')?.value || '';
+      mitreAll = [{ cve: meta.cveId, published: (meta.datePublished || '').slice(0,10), updated: (meta.dateUpdated||'').slice(0,10), state: meta.state||'', desc, assignerName: meta.assignerShortName||'' }];
+    } else {
+      url = `https://cveawg.mitre.org/api/cves?keyword=${encodeURIComponent(q)}&resultsPerPage=100`;
+      const r = await fetch(url);
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      const d = await r.json();
+      mitreAll = (d.cveRecords || []).map(v => {
+        const meta = v.cveMetadata || {};
+        const desc = (v.containers?.cna?.descriptions || []).find(d => d.lang === 'en')?.value || '';
+        return { cve: meta.cveId||'', published:(meta.datePublished||'').slice(0,10), updated:(meta.dateUpdated||'').slice(0,10), state:meta.state||'', desc, assignerName:meta.assignerShortName||'' };
+      }).filter(v => v.cve).sort((a, b) => (b.published||'').localeCompare(a.published||''));
+    }
+    renderMitrePage();
+  } catch(e) {
+    el.innerHTML = `<div class="empty">MITRE API 오류: ${e.message}</div>`;
+  }
+}
+// ── /MITRE CVE ────────────────────────────────────
 
 async function searchNvd() {
   const q = document.getElementById('nvd-q').value.trim();
