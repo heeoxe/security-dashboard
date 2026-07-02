@@ -21,7 +21,7 @@ jobs:
           node-version: 20
 
       - name: Fetch GitHub Advisory DB -> advisory.json
-        run: node scripts/fetch-advisory.mjs
+        run: node scripts/fetch-advisory.js
         env:
           # 별도 PAT 없이 워크플로우 기본 토큰으로 충분 (읽기 전용, 초당 요청 여유 있음)
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
