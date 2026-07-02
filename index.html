@@ -2085,6 +2085,7 @@ function escHtml(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&
 function escAttr(s) { return String(s||'').replace(/"/g,'&quot;'); }
 
 document.getElementById('nvd-q').addEventListener('keydown', e => { if (e.key === 'Enter') searchNvd(); });
+document.getElementById('mitre-q').addEventListener('keydown', e => { if (e.key === 'Enter') searchMitre(); });
 
 // 초기 로드
 loadKev();
