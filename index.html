@@ -625,7 +625,7 @@ function newsCard(item) {
       ${hasKo ? `<span style="color:var(--text3);font-size:11px">${escHtml(item.title_ko)}</span>` : ''}
     </div>
     <div class="card-footer" onclick="event.stopPropagation()">
-      <button class="btn" onclick='toggleSave(${JSON.stringify(newsBm)})'>${sv ? '★ 저장됨' : '☆ 저장'}</button>
+      <button class="btn" onclick='toggleSave(${jsonAttr(newsBm)})'>${sv ? '★ 저장됨' : '☆ 저장'}</button>
       <a class="btn" href="${escHtml(item.url)}" target="_blank" rel="noopener">
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
         원문 보기
@@ -1046,7 +1046,7 @@ function kevCard(item) {
     desc: item.desc || '', source: 'CISA KEV' 
   };
 
-  return `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(item)})'>
+  return `<div class="card" style="cursor:pointer" onclick='openDetail(${jsonAttr(item)})'>
     <div class="card-top">
       <span class="badge src-cisa">CISA KEV</span>
       <div class="card-title">${escHtml(item.title)}</div>
@@ -1059,7 +1059,7 @@ function kevCard(item) {
     </div>
     ${cvss ? `<div class="cvss-row"><span class="cvss-label">CVSS ${cvss.toFixed(1)}</span><div class="cvss-track"><div class="cvss-fill" style="width:${Math.round(cvss/10*100)}%;background:${cvssColor(cvss)}"></div></div></div>` : ''}
     <div class="card-footer" style="margin-top:10px" onclick="event.stopPropagation()">
-      <button class="btn" onclick='toggleSave(${JSON.stringify(bm)})'>${sv ? '★ 저장됨' : '☆ 저장'}</button>
+      <button class="btn" onclick='toggleSave(${jsonAttr(bm)})'>${sv ? '★ 저장됨' : '☆ 저장'}</button>
       <a class="btn" href="https://www.cve.org/CVERecord?id=${item.cve}" target="_blank" rel="noopener">
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
         CVE 원문
@@ -1093,7 +1093,7 @@ function nvdCard(item) {
   const firstSentence = (item.desc || '').split(/(?<=\.)\s+/)[0] || '';
   const titleSummary = firstSentence.length > 100 ? firstSentence.slice(0, 100) + '…' : firstSentence;
 
-  return `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(item)})'>
+  return `<div class="card" style="cursor:pointer" onclick='openDetail(${jsonAttr(item)})'>
     <div class="card-top">
       <span class="badge ${sevClass(item.sev)}">${sevLabel(item.sev)}</span>
       <span class="badge src-nvd">NVD</span>
@@ -1108,7 +1108,7 @@ function nvdCard(item) {
     <div class="card-desc" style="margin-top:8px">${escHtml(item.desc)}</div>
     ${item.tags && item.tags.length ? `<div style="margin-bottom:6px">${item.tags.map(t=>`<span class="tag">${escHtml(t)}</span>`).join('')}</div>` : ''}
     <div class="card-footer" onclick="event.stopPropagation()">
-      <button class="btn" onclick='toggleSave(${JSON.stringify(bm)})'>${sv ? '★ 저장됨' : '☆ 저장'}</button>
+      <button class="btn" onclick='toggleSave(${jsonAttr(bm)})'>${sv ? '★ 저장됨' : '☆ 저장'}</button>
       <a class="btn" href="https://nvd.nist.gov/vuln/detail/${item.cve}" target="_blank" rel="noopener">
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
         NVD 원문
@@ -1229,7 +1229,7 @@ function mitreCard(item) {
   const cvss = item.cvss || 0;
   const ecoTags = (item.ecosystems || []).map(e => `<span class="tag">${escHtml(e)}</span>`).join('');
 
-  return `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify({...item, id: noteId, sev: item.severity, source: "GHSA"})})'>
+  return `<div class="card" style="cursor:pointer" onclick='openDetail(${jsonAttr({...item, id: noteId, sev: item.severity, source: "GHSA"})})'>
     <div class="card-top">
       ${item.severity ? `<span class="badge ${sevClass(item.severity)}">${sevLabel(item.severity)}</span>` : ''}
       ${advisoryTypeBadge(item)}
@@ -1245,7 +1245,7 @@ function mitreCard(item) {
     ${item.desc ? `<div class="card-desc" style="margin-top:6px">${escHtml(item.desc.slice(0, 220))}${item.desc.length > 220 ? '…' : ''}</div>` : ''}
     ${ecoTags ? `<div style="margin-top:6px">${ecoTags}</div>` : ''}
     <div class="card-footer" onclick="event.stopPropagation()">
-      <button class="btn" onclick='toggleSave(${JSON.stringify(bm)})'>${sv ? '★ 저장됨' : '☆ 저장'}</button>
+      <button class="btn" onclick='toggleSave(${jsonAttr(bm)})'>${sv ? '★ 저장됨' : '☆ 저장'}</button>
       <a class="btn" href="${item.url}" target="_blank" rel="noopener">
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
         GHSA 원문
@@ -1751,7 +1751,7 @@ function renderSavedVuln() {
       const firstSentence = b.desc.split(/(?<=\.)\s+/)[0] || '';
       displayTitle = firstSentence.length > 100 ? firstSentence.slice(0, 100) + '…' : (firstSentence || b.title);
     }
-    return `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(b)})'>
+    return `<div class="card" style="cursor:pointer" onclick='openDetail(${jsonAttr(b)})'>
       <div class="card-top">
         ${b.sev ? `<span class="badge ${sevClass(b.sev)}">${sevLabel(b.sev)}</span>` : ''}
         <span class="badge ${b.source === 'CISA KEV' ? 'src-cisa' : 'src-nvd'}">${b.source}</span>
@@ -1767,7 +1767,7 @@ function renderSavedVuln() {
       ${cvss ? `<div class="cvss-row"><span class="cvss-label">CVSS ${cvss.toFixed(1)}</span><div class="cvss-track"><div class="cvss-fill" style="width:${Math.round(cvss/10*100)}%;background:${cvssColor(cvss)}"></div></div></div>` : ''}
       ${b.desc ? `<div class="card-desc" style="margin-top:8px">${escHtml(b.desc)}</div>` : ''}
       <div class="card-footer" style="margin-top:10px" onclick="event.stopPropagation()">
-        <button class="btn" onclick='toggleSave(${JSON.stringify(b)});renderSavedVuln()'>
+        <button class="btn" onclick='toggleSave(${jsonAttr(b)});renderSavedVuln()'>
           <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/></svg>
           삭제
         </button>
@@ -1784,7 +1784,7 @@ function renderSavedNews() {
     el.innerHTML = '<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 22h16a2 2 0 002-2V4a2 2 0 00-2-2H8a2 2 0 00-2 2v16a2 2 0 01-2 2zm0 0a2 2 0 01-2-2v-9c0-1.1.9-2 2-2h2"/></svg>저장된 뉴스가 없습니다</div>';
     return;
   }
-  el.innerHTML = newsBm.map(b => `<div class="card" style="cursor:pointer" onclick='openDetail(${JSON.stringify(b)})'>
+  el.innerHTML = newsBm.map(b => `<div class="card" style="cursor:pointer" onclick='openDetail(${jsonAttr(b)})'>
     <div class="card-top">
       ${newsSourceBadge(b.source)}
       <div class="card-title">${escHtml(b.title)}</div>
@@ -1795,7 +1795,7 @@ function renderSavedNews() {
     </div>
     ${b.desc_ko || b.desc ? `<div class="card-desc">${escHtml((b.desc_ko||b.desc).slice(0,220))}…</div>` : ''}
     <div class="card-footer" onclick="event.stopPropagation()">
-      <button class="btn" onclick='toggleSave(${JSON.stringify(b)});renderSavedNews()'>
+      <button class="btn" onclick='toggleSave(${jsonAttr(b)});renderSavedNews()'>
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/></svg>
         삭제
       </button>
@@ -2096,6 +2096,10 @@ function deleteUpdateEntry(id, idx) {
 
 function escHtml(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 function escAttr(s) { return String(s||'').replace(/"/g,'&quot;'); }
+// onclick='...' 처럼 홑따옴표로 감싼 HTML 속성 안에 JSON.stringify(...) 결과를 넣을 때 쓰는 헬퍼.
+// 설명/제목 텍스트에 아포스트로피(')가 하나라도 있으면 속성이 거기서 끊겨 나머지 JSON이
+// 화면에 그대로 텍스트로 새는 문제가 있어서, & 와 ' 를 HTML 엔티티로 치환해 안전하게 만든다.
+function jsonAttr(obj) { return JSON.stringify(obj).replace(/&/g, '&amp;').replace(/'/g, '&#39;'); }
 
 document.getElementById('nvd-q').addEventListener('keydown', e => { if (e.key === 'Enter') searchNvd(); });
 document.getElementById('mitre-q').addEventListener('keydown', e => { if (e.key === 'Enter') searchMitre(); });
