@@ -415,18 +415,18 @@
         <button class="memo-tab" id="memo-tab-news" onclick="switchMemoTab('news')">
           뉴스 <span id="memo-cnt-news" style="font-size:11px;color:var(--text3);margin-left:4px">0</span>
         </button>
+        <button class="memo-tab" id="memo-tab-owasp" onclick="switchMemoTab('owasp')">
+          OWASP <span id="memo-cnt-owasp" style="font-size:11px;color:var(--text3);margin-left:4px">0</span>
+        </button>
       </div>
       <div class="cards-single" id="memo-list-vuln">
-        <div class="empty">
-          <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-          아직 작성된 메모가 없습니다
-        </div>
+        <div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>아직 작성된 메모가 없습니다</div>
       </div>
       <div class="cards-single" id="memo-list-news" style="display:none">
-        <div class="empty">
-          <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-          아직 작성된 메모가 없습니다
-        </div>
+        <div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>아직 작성된 메모가 없습니다</div>
+      </div>
+      <div class="cards-single" id="memo-list-owasp" style="display:none">
+        <div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>아직 작성된 메모가 없습니다</div>
       </div>
     </div>
 
@@ -1003,13 +1003,18 @@ function saveDetail() {
   renderDetailMemos(note.memos);
   pushGist();
 
-  // 저장 완료 피드백
+  // 저장 완료 피드백 후 팝업 닫기
   const btn = document.querySelector('.detail-footer .btn-primary');
   const orig = btn.innerHTML;
   btn.innerHTML = '✓ 저장됨';
   btn.style.background = 'var(--low)';
   btn.style.borderColor = 'var(--low)';
-  setTimeout(() => { btn.innerHTML = orig; btn.style.background = ''; btn.style.borderColor = ''; }, 1500);
+  setTimeout(() => {
+    btn.innerHTML = orig;
+    btn.style.background = '';
+    btn.style.borderColor = '';
+    closeDetail();
+  }, 800);
 }
 
 // ESC 키로 닫기
@@ -1240,6 +1245,7 @@ function mitreCard(item) {
       ${item.cve ? `<span class="cve-id">${item.cve}</span>` : ''}
       <span class="cve-id" style="color:var(--text3)">${item.ghsa}</span>
       <span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${item.published}</span>
+      ${item.title_ko ? `<span style="font-size:11px;color:var(--text3)">${escHtml(item.title_ko)}</span>` : ''}
     </div>
     ${cvss ? `<div class="cvss-row"><span class="cvss-label">CVSS ${cvss.toFixed(1)}</span><div class="cvss-track"><div class="cvss-fill" style="width:${Math.round(cvss/10*100)}%;background:${cvssColor(cvss)}"></div></div></div>` : ''}
     ${item.desc ? `<div class="card-desc" style="margin-top:6px">${escHtml(item.desc.slice(0, 220))}${item.desc.length > 220 ? '…' : ''}</div>` : ''}
@@ -1649,6 +1655,7 @@ function switchMemoTab(tab) {
   document.getElementById('memo-tab-' + tab).classList.add('active');
   document.getElementById('memo-list-vuln').style.display = tab === 'vuln' ? '' : 'none';
   document.getElementById('memo-list-news').style.display = tab === 'news' ? '' : 'none';
+  document.getElementById('memo-list-owasp').style.display = tab === 'owasp' ? '' : 'none';
 }
 
 function renderMemos() {
@@ -1669,17 +1676,21 @@ function renderMemos() {
   const totalCnt = Object.values(notes).filter(n => n.memos && n.memos.length).length;
   document.getElementById('nb-memos').textContent = totalCnt;
 
-  const vulnEntries = allEntries.filter(([id]) => !id.startsWith('http'));
+  const vulnEntries = allEntries.filter(([id]) => !id.startsWith('http') && !id.startsWith('owasp_') && !id.startsWith('compliance_'));
   const newsEntries = allEntries.filter(([id]) => id.startsWith('http'));
+  const owaspEntries = allEntries.filter(([id]) => id.startsWith('owasp_'));
 
   document.getElementById('memo-cnt-vuln').textContent = vulnEntries.length;
   document.getElementById('memo-cnt-news').textContent = newsEntries.length;
+  document.getElementById('memo-cnt-owasp').textContent = owaspEntries.length;
 
-  function memoCard([id, n]) {
+  function memoCard([id, n], overrideDisplayId) {
     const tags = (n.tags || []).map(t => `<span class="tag">${escHtml(t)}</span>`).join('');
     const statusEl = n.status ? `<span class="badge" style="font-size:10px;background:${statusBg(n.status)};color:${statusColor(n.status)};border:1px solid ${statusColor(n.status)}40">${n.status}</span>` : '';
-    let displayId = id;
-    try { const u = new URL(id); displayId = u.hostname.replace('www.','') + u.pathname.slice(0,50); } catch {}
+    let displayId = overrideDisplayId || id;
+    if (!overrideDisplayId) {
+      try { const u = new URL(id); displayId = u.hostname.replace('www.','') + u.pathname.slice(0,50); } catch {}
+    }
     const memos = (n.memos || []);
     const memosHtml = memos.slice().reverse().map(m => {
       const t = m.createdAt ? new Date(m.createdAt).toLocaleString('ko-KR',{month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'}) : '';
@@ -1710,6 +1721,18 @@ function renderMemos() {
   document.getElementById('memo-list-news').innerHTML = newsEntries.length
     ? newsEntries.map(memoCard).join('')
     : emptyHtml(q || statusFilter ? '검색 결과가 없습니다' : '작성된 뉴스 메모가 없습니다');
+
+  document.getElementById('memo-list-owasp').innerHTML = owaspEntries.length
+    ? owaspEntries.map(([id, n]) => {
+        // owasp_webapp_A01 형태에서 이름 추출
+        const parts = id.split('_');
+        const cat = parts[1] || '';
+        const rank = parts.slice(2).join('_') || '';
+        const owaspItem = OWASP_DATA[cat]?.items?.find(i => i.rank === rank);
+        const displayId = owaspItem ? `[${rank}] ${owaspItem.name}` : id;
+        return memoCard([id, n], displayId);
+      }).join('')
+    : emptyHtml(q || statusFilter ? '검색 결과가 없습니다' : '작성된 OWASP 메모가 없습니다');
 }
 
 function openDetailById(id) {
