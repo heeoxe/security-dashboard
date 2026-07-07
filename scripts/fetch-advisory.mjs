@@ -1,13 +1,3 @@
-// scripts/fetch-advisory.js
-// GitHub Advisory Database(REST API)를 수집해 advisory.json으로 저장한다.
-// - type=reviewed   : GitHub이 큐레이션한 항목 (주로 오픈소스 패키지 취약점)
-// - type=unreviewed : NVD 원본을 그대로 미러링한 항목 (Cisco/Microsoft/Palo Alto 등
-//                      패키지 생태계에 얽매이지 않는 벤더 전반의 CVE가 여기 포함됨)
-// 두 타입을 모두 가져와 합쳐야 "주요 벤더 CVE"까지 폭넓게 커버할 수 있다.
-//
-// 실행: GITHUB_TOKEN=xxx node scripts/fetch-advisory.js
-// (GitHub Actions에서는 secrets.GITHUB_TOKEN 을 그대로 쓰면 됨 — 별도 PAT 불필요)
-
 import { writeFile } from 'node:fs/promises';
 
 const TOKEN = process.env.GITHUB_TOKEN || '';
