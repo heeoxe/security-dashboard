@@ -137,15 +137,6 @@ main().catch((e) => {
   process.exit(1);
 });
 
-function authHeaders() {
-  const h = {
-    Accept: 'application/vnd.github+json',
-    'X-GitHub-Api-Version': '2022-11-28',
-  };
-  if (TOKEN) h.Authorization = `Bearer ${TOKEN}`;
-  return h;
-}
-
 function nextUrlFromLinkHeader(linkHeader) {
   if (!linkHeader) return null;
   const parts = linkHeader.split(',');
