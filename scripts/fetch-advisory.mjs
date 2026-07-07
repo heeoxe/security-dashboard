@@ -35,6 +35,7 @@ async function fetchType(type) {
     type,
     published: `>=${since}`,
   });
+
   let url = `https://api.github.com/advisories?${params.toString()}`;
   let page = 0;
 
@@ -91,6 +92,7 @@ async function deepLTranslate(texts) {
       },
       body: params.toString(),
     });
+
     if (!res.ok) throw new Error(`DeepL HTTP ${res.status}`);
     const data = await res.json();
     return data.translations.map(t => t.text);
@@ -101,7 +103,7 @@ async function deepLTranslate(texts) {
 }
 
 async function main() {
-  const [reviewed, unreviewed] = await Promise.all([
+  const [reviewed, unreviewed ] = await Promise.all([
     fetchType('reviewed'),
     fetchType('unreviewed'),
   ]);
@@ -121,92 +123,11 @@ async function main() {
     console.log(`DeepL 번역 시작 (${merged.length}개)...`);
     const titles = merged.map(a => a.title);
     const translated = await deepLTranslate(titles);
-    merged.forEach((a, i) => { a.title_ko = translated[i]; });
+    merged.forEach((a, i) => {
+      a.title_ko = translated[i];
+    });
     console.log('번역 완료!');
   }
-
-  await writeFile('advisory.json', JSON.stringify(merged, null, 2));
-  console.log(
-    `advisory.json 저장 완료: reviewed=${reviewed.length}, unreviewed=${unreviewed.length}, ` +
-    `중복 제거 후=${merged.length} (최근 ${DAYS}일, since=${since})`
-  );
-}
-
-main().catch((e) => {
-  console.error(e);
-  process.exit(1);
-});
-
-function nextUrlFromLinkHeader(linkHeader) {
-  if (!linkHeader) return null;
-  const parts = linkHeader.split(',');
-  const next = parts.find((p) => p.includes('rel="next"'));
-  if (!next) return null;
-  const m = next.match(/<([^>]+)>/);
-  return m ? m[1] : null;
-}
-
-async function fetchType(type) {
-  const items = [];
-  const params = new URLSearchParams({
-    per_page: String(PER_PAGE),
-    sort: 'published',
-    direction: 'desc',
-    type,
-    published: `>=${since}`,
-  });
-  let url = `https://api.github.com/advisories?${params.toString()}`;
-  let page = 0;
-
-  while (url && page < MAX_PAGES_PER_TYPE) {
-    const res = await fetch(url, { headers: authHeaders() });
-    if (!res.ok) {
-      const body = await res.text().catch(() => '');
-      throw new Error(`[${type}] GET ${url} -> HTTP ${res.status} ${body.slice(0, 300)}`);
-    }
-    const data = await res.json();
-    items.push(...data);
-    url = nextUrlFromLinkHeader(res.headers.get('link'));
-    page += 1;
-  }
-  return items;
-}
-
-function normalize(a) {
-  const vulns = a.vulnerabilities || [];
-  return {
-    ghsa: a.ghsa_id,
-    cve: a.cve_id || null,
-    title: a.summary || '',
-    desc: a.description || '',
-    severity: (a.severity || '').toUpperCase(),
-    cvss: a.cvss?.score ?? a.cvss_severities?.cvss_v3?.score ?? null,
-    cwes: (a.cwes || []).map((c) => c.cwe_id).filter(Boolean),
-    published: (a.published_at || '').slice(0, 10),
-    updated: (a.updated_at || '').slice(0, 10),
-    type: a.type, // 'reviewed' | 'unreviewed'
-    ecosystems: [...new Set(vulns.map((v) => v.package?.ecosystem).filter(Boolean))],
-    packages: [...new Set(vulns.map((v) => v.package?.name).filter(Boolean))].slice(0, 8),
-    url: a.html_url,
-    withdrawn: !!a.withdrawn_at,
-  };
-}
-
-async function main() {
-  const [reviewed, unreviewed] = await Promise.all([
-    fetchType('reviewed'),
-    fetchType('unreviewed'),
-  ]);
-
-  const byGhsa = new Map();
-  for (const a of [...reviewed, ...unreviewed]) {
-    if (a.withdrawn_at) continue;
-    byGhsa.set(a.ghsa_id, normalize(a));
-  }
-
-  const merged = [...byGhsa.values()].sort((a, b) =>
-    (b.published || '').localeCompare(a.published || '')
-  );
 
   await writeFile('advisory.json', JSON.stringify(merged, null, 2));
   console.log(
