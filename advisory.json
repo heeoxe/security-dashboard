@@ -1,5 +1,349 @@
 [
   {
+    "ghsa": "GHSA-2rhx-q7hx-f25r",
+    "cve": "CVE-2026-57869",
+    "title": "Broken object-level access controls and the use of a deterministic pattern during random ID...",
+    "desc": "Broken object-level access controls and the use of a deterministic pattern during random ID generation in MicroRealEstate allows attackers to access documents uploaded by landlords or tenants without authorization.\n\nThis issue affects MicroRealEstate: through 1.0.0-alpha3.",
+    "severity": "HIGH",
+    "cvss": 0,
+    "cwes": [
+      "CWE-639"
+    ],
+    "published": "2026-07-07",
+    "updated": "2026-07-07",
+    "type": "unreviewed",
+    "ecosystems": [],
+    "packages": [],
+    "url": "https://github.com/advisories/GHSA-2rhx-q7hx-f25r",
+    "withdrawn": false
+  },
+  {
+    "ghsa": "GHSA-qjq2-685q-j8gv",
+    "cve": "CVE-2026-57868",
+    "title": "MicroRealEstate is affected by broken object-level access controls in PDF generator functionality...",
+    "desc": "MicroRealEstate is affected by broken object-level access controls in PDF generator functionality.\n\nThis issue affects MicroRealEstate: through 1.0.0-alpha3.",
+    "severity": "HIGH",
+    "cvss": 0,
+    "cwes": [
+      "CWE-639"
+    ],
+    "published": "2026-07-07",
+    "updated": "2026-07-07",
+    "type": "unreviewed",
+    "ecosystems": [],
+    "packages": [],
+    "url": "https://github.com/advisories/GHSA-qjq2-685q-j8gv",
+    "withdrawn": false
+  },
+  {
+    "ghsa": "GHSA-q763-mg7g-9g46",
+    "cve": "CVE-2026-12375",
+    "title": "The uncanny-automator-pro WordPress plugin before 7.3.0.6 was distributed with malicious code...",
+    "desc": "The uncanny-automator-pro WordPress plugin before 7.3.0.6 was distributed with malicious code after the vendor's uncanny-automator-pro WordPress plugin before 7.3.0.6 update/distribution infrastructure was compromised; the injected backdoor grants unauthenticated attackers an administrator session on affected sites and beacons the site's secret keys and administrator details to attacker-controlled servers.",
+    "severity": "UNKNOWN",
+    "cvss": 0,
+    "cwes": [],
+    "published": "2026-07-07",
+    "updated": "2026-07-07",
+    "type": "unreviewed",
+    "ecosystems": [],
+    "packages": [],
+    "url": "https://github.com/advisories/GHSA-q763-mg7g-9g46",
+    "withdrawn": false
+  },
+  {
+    "ghsa": "GHSA-wvw5-gh7q-m6w3",
+    "cve": "CVE-2026-12277",
+    "title": "The Frontend File Manager Plugin WordPress plugin through 23.6 does not validate a file path...",
+    "desc": "The Frontend File Manager Plugin WordPress plugin through 23.6 does not validate a file path derived from user input before deleting the referenced file, allowing unauthenticated users to delete arbitrary files on the server (such as wp-config.php) when guest upload mode is enabled. Deleting wp-config.php forces the site into its setup routine, which can be leveraged toward a full site takeover.",
+    "severity": "UNKNOWN",
+    "cvss": 0,
+    "cwes": [],
+    "published": "2026-07-07",
+    "updated": "2026-07-07",
+    "type": "unreviewed",
+    "ecosystems": [],
+    "packages": [],
+    "url": "https://github.com/advisories/GHSA-wvw5-gh7q-m6w3",
+    "withdrawn": false
+  },
+  {
+    "ghsa": "GHSA-5fwf-q2jf-gp4v",
+    "cve": "CVE-2026-14345",
+    "title": "The WPFunnels – Funnel Builder for WooCommerce with Checkout & One Click Upsell plugin for...",
+    "desc": "The WPFunnels – Funnel Builder for WooCommerce with Checkout & One Click Upsell plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 3.12.7 via the 'postData' parameter parameter. This is due to unsanitized write of attacker-controlled postData values into a PHP-includeable .log file combined with the use of include_once to render that file in wpfnl_show_log. This makes it possible for unauthenticated attackers to execute code on the server. Exploitation requires that the Log Settings \"Enable Logs\" toggle is on and that an administrator subsequently opens the polluted log file via the plugin's Log Settings View UI; however, the nonce required to reach the optin endpoint is publicly emitted on every funnel step page, so the injection step itself is fully unauthenticated.",
+    "severity": "CRITICAL",
+    "cvss": 9.8,
+    "cwes": [
+      "CWE-434"
+    ],
+    "published": "2026-07-07",
+    "updated": "2026-07-07",
+    "type": "unreviewed",
+    "ecosystems": [],
+    "packages": [],
+    "url": "https://github.com/advisories/GHSA-5fwf-q2jf-gp4v",
+    "withdrawn": false
+  },
+  {
+    "ghsa": "GHSA-3wm2-j8jq-jcw8",
+    "cve": "CVE-2026-4375",
+    "title": "The DoLeads Integrator WordPress plugin through 0.65, wp2epub WordPress plugin through 0.65 have...",
+    "desc": "The DoLeads Integrator WordPress plugin through 0.65, wp2epub WordPress plugin through 0.65 have been seen to be used to achieve RCE, once they are added adding to a blog, for example using a vulnerability where unclosed extensions from wordpress.org can be installed by unauthorized users.",
+    "severity": "UNKNOWN",
+    "cvss": 0,
+    "cwes": [],
+    "published": "2026-07-07",
+    "updated": "2026-07-07",
+    "type": "unreviewed",
+    "ecosystems": [],
+    "packages": [],
+    "url": "https://github.com/advisories/GHSA-3wm2-j8jq-jcw8",
+    "withdrawn": false
+  },
+  {
+    "ghsa": "GHSA-56qr-p95w-94vh",
+    "cve": "CVE-2026-57871",
+    "title": "Relative path traversal vulnerability in MicroRealEstate file upload functionality allows...",
+    "desc": "Relative path traversal vulnerability in MicroRealEstate file upload functionality allows attackers to potentially overwrite system files.\n\nThis issue affects MicroRealEstate: through 1.0.0-alpha3.",
+    "severity": "HIGH",
+    "cvss": 0,
+    "cwes": [
+      "CWE-23"
+    ],
+    "published": "2026-07-07",
+    "updated": "2026-07-07",
+    "type": "unreviewed",
+    "ecosystems": [],
+    "packages": [],
+    "url": "https://github.com/advisories/GHSA-56qr-p95w-94vh",
+    "withdrawn": false
+  },
+  {
+    "ghsa": "GHSA-j5cw-4r7c-4vw8",
+    "cve": "CVE-2026-57867",
+    "title": "MicroRealEstate allows adversaries to bypass authentication due to a lack of token state...",
+    "desc": "MicroRealEstate allows adversaries to bypass authentication due to a lack of token state management. This would permit adversaries targeting MicroRealEstate deployments to brute-force One-Time Passwords (OTP) to log in as any user. This issue affects MicroRealEstate: through 1.0.0-alpha3.",
+    "severity": "HIGH",
+    "cvss": 0,
+    "cwes": [
+      "CWE-288"
+    ],
+    "published": "2026-07-07",
+    "updated": "2026-07-07",
+    "type": "unreviewed",
+    "ecosystems": [],
+    "packages": [],
+    "url": "https://github.com/advisories/GHSA-j5cw-4r7c-4vw8",
+    "withdrawn": false
+  },
+  {
+    "ghsa": "GHSA-qj2j-73pj-4fxf",
+    "cve": "CVE-2026-10834",
+    "title": "The WP Travel Engine  WordPress plugin before 6.8.1 does not properly validate the source of a...",
+    "desc": "The WP Travel Engine  WordPress plugin before 6.8.1 does not properly validate the source of a user-supplied profile image path before moving the file, allowing authenticated users with subscriber-level access and above to relocate arbitrary files within the WordPress uploads directory into their own profile-image path. This removes the targeted media from its original location and can break content across the site.",
+    "severity": "UNKNOWN",
+    "cvss": 0,
+    "cwes": [],
+    "published": "2026-07-07",
+    "updated": "2026-07-07",
+    "type": "unreviewed",
+    "ecosystems": [],
+    "packages": [],
+    "url": "https://github.com/advisories/GHSA-qj2j-73pj-4fxf",
+    "withdrawn": false
+  },
+  {
+    "ghsa": "GHSA-2m7v-q2j4-mr6f",
+    "cve": "CVE-2026-58315",
+    "title": "Cross-site request forgery vulnerability exists in SEIKO EPSON Web Config. If a user views a...",
+    "desc": "Cross-site request forgery vulnerability exists in SEIKO EPSON Web Config. If a user views a malicious page while logged into Web Config, unintended operations may be performed.",
+    "severity": "MEDIUM",
+    "cvss": 4.3,
+    "cwes": [
+      "CWE-352"
+    ],
+    "published": "2026-07-07",
+    "updated": "2026-07-07",
+    "type": "unreviewed",
+    "ecosystems": [],
+    "packages": [],
+    "url": "https://github.com/advisories/GHSA-2m7v-q2j4-mr6f",
+    "withdrawn": false
+  },
+  {
+    "ghsa": "GHSA-jj92-236g-5h8p",
+    "cve": "CVE-2026-57870",
+    "title": "Broken object-level access control on the Template API in MicroRealEstate allows attackers to...",
+    "desc": "Broken object-level access control on the Template API in MicroRealEstate allows attackers to retrieve document templates used by other organizations without authorization.\n\nThis issue affects MicroRealEstate: through 1.0.0-alpha3.",
+    "severity": "MEDIUM",
+    "cvss": 0,
+    "cwes": [
+      "CWE-639"
+    ],
+    "published": "2026-07-07",
+    "updated": "2026-07-07",
+    "type": "unreviewed",
+    "ecosystems": [],
+    "packages": [],
+    "url": "https://github.com/advisories/GHSA-jj92-236g-5h8p",
+    "withdrawn": false
+  },
+  {
+    "ghsa": "GHSA-56pq-38g7-f784",
+    "cve": "CVE-2026-27790",
+    "title": "Uncaught Exception (CWE-248) in the T20 Readers allows an authenticated and authorized operator...",
+    "desc": "Uncaught Exception (CWE-248) in the T20 Readers allows an authenticated and authorized operator to trigger a restart by sending specific requests, resulting in a temporary denial of service. Version of Command Centre affected:\n\n\n\n\n\n  *  9.50 prior to vCR9.50.260616a (distributed in 9.50.1587(MR1))\n  *  9.40 prior to vCR9.40.260616a (distributed in 9.40.3130(MR3))\n  *  9.30 prior to vCR9.30.260616a (distributed in 9.30.3983(MR5))\n  *  9.20 prior to vCR9.20.260616a (distributed in 9.20.4349(MR7))\n  *  all versions of 9.10 and prior.",
+    "severity": "LOW",
+    "cvss": 2.7,
+    "cwes": [
+      "CWE-248"
+    ],
+    "published": "2026-07-07",
+    "updated": "2026-07-07",
+    "type": "unreviewed",
+    "ecosystems": [],
+    "packages": [],
+    "url": "https://github.com/advisories/GHSA-56pq-38g7-f784",
+    "withdrawn": false
+  },
+  {
+    "ghsa": "GHSA-2c5j-956x-xmg8",
+    "cve": "CVE-2026-27844",
+    "title": "Uncaught Exception (CWE-248) in the Controller 6000 and Controller 7000 diagnostic web interface...",
+    "desc": "Uncaught Exception (CWE-248) in the Controller 6000 and Controller 7000 diagnostic web interface allows an authenticated and authorized operator to trigger a Controller restart by sending specific requests, resulting in a temporary denial of service. \nVersion of Command Centre affected:\n\n\n\n\n\n  *  9.50 prior to vCR9.50.260616a (distributed in 9.50.1587(MR1))\n  *  9.40 prior to vCR9.40.260616a (distributed in 9.40.3130(MR3))\n  *  9.30 prior to vCR9.30.260616a (distributed in 9.30.3983(MR5))\n  *  9.20 prior to vCR9.20.260616a (distributed in 9.20.4349(MR7))\n  *  all versions of 9.10 and prior.",
+    "severity": "LOW",
+    "cvss": 2.7,
+    "cwes": [
+      "CWE-248"
+    ],
+    "published": "2026-07-07",
+    "updated": "2026-07-07",
+    "type": "unreviewed",
+    "ecosystems": [],
+    "packages": [],
+    "url": "https://github.com/advisories/GHSA-2c5j-956x-xmg8",
+    "withdrawn": false
+  },
+  {
+    "ghsa": "GHSA-j55v-w58w-8mxc",
+    "cve": "CVE-2026-26053",
+    "title": "An Incorrect Privilege Assignment (CWE-266) vulnerability in the Command Centre Server allows an...",
+    "desc": "An Incorrect Privilege Assignment (CWE-266) vulnerability in the Command Centre Server allows an authenticated operator with limited privileges to perform some operations that they would not normally be authorized to perform. Version of Command Centre affected: 9.50 prior to vEL9.50.1587(MR1), 9.40 prior to vEL9.40.3130(MR3), 9.30 prior to vEL9.30.3983(MR5), 9.20 prior to vEL9.20.4349(MR7), all versions of 9.10.",
+    "severity": "MEDIUM",
+    "cvss": 5.3,
+    "cwes": [
+      "CWE-266"
+    ],
+    "published": "2026-07-07",
+    "updated": "2026-07-07",
+    "type": "unreviewed",
+    "ecosystems": [],
+    "packages": [],
+    "url": "https://github.com/advisories/GHSA-j55v-w58w-8mxc",
+    "withdrawn": false
+  },
+  {
+    "ghsa": "GHSA-8jc9-q52q-8p76",
+    "cve": "CVE-2026-11328",
+    "title": "The Exclusive Addons for Elementor plugin for WordPress is vulnerable to Stored Cross-Site...",
+    "desc": "The Exclusive Addons for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the post title parameter in all versions up to, and including, 2.7.9.8 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+    "severity": "MEDIUM",
+    "cvss": 6.4,
+    "cwes": [
+      "CWE-79"
+    ],
+    "published": "2026-07-07",
+    "updated": "2026-07-07",
+    "type": "unreviewed",
+    "ecosystems": [],
+    "packages": [],
+    "url": "https://github.com/advisories/GHSA-8jc9-q52q-8p76",
+    "withdrawn": false
+  },
+  {
+    "ghsa": "GHSA-66fv-p34j-fwgr",
+    "cve": "CVE-2026-13356",
+    "title": "A malicious webpage could interrupt a pending navigation by enqueuing a synchronous JavaScript...",
+    "desc": "A malicious webpage could interrupt a pending navigation by enqueuing a synchronous JavaScript dialog, causing the browser UI to display the destination origin in the address bar while continuing to render attacker-controlled content. This vulnerability was fixed in Firefox for iOS 152.3.",
+    "severity": "UNKNOWN",
+    "cvss": 0,
+    "cwes": [],
+    "published": "2026-07-07",
+    "updated": "2026-07-07",
+    "type": "unreviewed",
+    "ecosystems": [],
+    "packages": [],
+    "url": "https://github.com/advisories/GHSA-66fv-p34j-fwgr",
+    "withdrawn": false
+  },
+  {
+    "ghsa": "GHSA-ff2c-rpvx-jp6m",
+    "cve": "CVE-2026-38976",
+    "title": "mrubyc through 3.4.1 was found to contain a NULL pointer dereference in src/vm.c in op_super() /...",
+    "desc": "mrubyc through 3.4.1 was found to contain a NULL pointer dereference in src/vm.c in op_super() / OP_SUPER due to a missing runtime guard for top-level super.",
+    "severity": "UNKNOWN",
+    "cvss": 0,
+    "cwes": [],
+    "published": "2026-07-07",
+    "updated": "2026-07-07",
+    "type": "unreviewed",
+    "ecosystems": [],
+    "packages": [],
+    "url": "https://github.com/advisories/GHSA-ff2c-rpvx-jp6m",
+    "withdrawn": false
+  },
+  {
+    "ghsa": "GHSA-677j-gfv9-ppcc",
+    "cve": "CVE-2026-38979",
+    "title": "ajenti through v2.2.13 has a clickjacking weakness in the browser-facing login and administrative...",
+    "desc": "ajenti through v2.2.13 has a clickjacking weakness in the browser-facing login and administrative UI. In ajenti-core/aj/http.py, the core HTTP response path initializes an empty header list, forwards handler-added headers verbatim, and finalizes responses through WSGI start_response() without adding anti-framing protections such as X-Frame-Options or a Content-Security-Policy frame-ancestors restriction.",
+    "severity": "UNKNOWN",
+    "cvss": 0,
+    "cwes": [],
+    "published": "2026-07-07",
+    "updated": "2026-07-07",
+    "type": "unreviewed",
+    "ecosystems": [],
+    "packages": [],
+    "url": "https://github.com/advisories/GHSA-677j-gfv9-ppcc",
+    "withdrawn": false
+  },
+  {
+    "ghsa": "GHSA-r4w3-7jp7-m9g5",
+    "cve": "CVE-2026-38973",
+    "title": "mrubyc through release3.4.1 was found to contain an out-of-bounds read in builtin missing-method...",
+    "desc": "mrubyc through release3.4.1 was found to contain an out-of-bounds read in builtin missing-method lookup inside mrbc_find_method().",
+    "severity": "UNKNOWN",
+    "cvss": 0,
+    "cwes": [],
+    "published": "2026-07-07",
+    "updated": "2026-07-07",
+    "type": "unreviewed",
+    "ecosystems": [],
+    "packages": [],
+    "url": "https://github.com/advisories/GHSA-r4w3-7jp7-m9g5",
+    "withdrawn": false
+  },
+  {
+    "ghsa": "GHSA-22g5-r2x5-97cx",
+    "cve": "CVE-2026-59710",
+    "title": "showdown contains a stored cross-site scripting vulnerability in the parseHeaders function of src...",
+    "desc": "showdown contains a stored cross-site scripting vulnerability in the parseHeaders function of src/subParsers/makehtml/tables.js that fails to properly escape table header ID attributes. Attackers can inject arbitrary HTML and script-executing SVG elements through double-quote characters in markdown table headers, achieving stored XSS when untrusted markdown is rendered with the default github flavor configuration.",
+    "severity": "MEDIUM",
+    "cvss": 6.1,
+    "cwes": [
+      "CWE-79"
+    ],
+    "published": "2026-07-07",
+    "updated": "2026-07-07",
+    "type": "unreviewed",
+    "ecosystems": [],
+    "packages": [],
+    "url": "https://github.com/advisories/GHSA-22g5-r2x5-97cx",
+    "withdrawn": false
+  },
+  {
     "ghsa": "GHSA-pmfc-4wjj-gmhx",
     "cve": "CVE-2026-35381",
     "title": "cut: -s ignored in -z -d '' newline-delimiter mode",
@@ -2420,7 +2764,7 @@
       "CWE-20"
     ],
     "published": "2026-07-06",
-    "updated": "2026-07-06",
+    "updated": "2026-07-07",
     "type": "unreviewed",
     "ecosystems": [],
     "packages": [],
@@ -2492,7 +2836,7 @@
       "CWE-20"
     ],
     "published": "2026-07-06",
-    "updated": "2026-07-06",
+    "updated": "2026-07-07",
     "type": "unreviewed",
     "ecosystems": [],
     "packages": [],
@@ -2510,7 +2854,7 @@
       "CWE-20"
     ],
     "published": "2026-07-06",
-    "updated": "2026-07-06",
+    "updated": "2026-07-07",
     "type": "unreviewed",
     "ecosystems": [],
     "packages": [],
@@ -2720,13 +3064,13 @@
     "cve": "CVE-2026-55994",
     "title": "Improper Input Validation, Exposure of Sensitive Information to an Unauthorized Actor, Server...",
     "desc": "Improper Input Validation, Exposure of Sensitive Information to an Unauthorized Actor, Server-Side Request Forgery (SSRF) vulnerability in Apache Camel in Iggy component.\n\nThe camel-iggy consumer mapped the user-headers of inbound Iggy messages into the Camel Exchange header map without applying any HeaderFilterStrategy (IggyFetchRecords copied the message user-headers straight into the Exchange). Because nothing blocked the Camel header namespace, an actor able to publish to the consumed Iggy stream/topic could set Camel-internal control headers - including CamelHttpUri (Exchange.HTTP_URI) - simply by supplying them as message user-headers. In a route where the Iggy consumer feeds a downstream HTTP producer, the injected CamelHttpUri redirects the server-side HTTP request to an attacker-chosen destination (server-side request forgery - for example to an internal service or a cloud metadata endpoint). In addition, the HTTP producer resolves Camel property placeholders on the resulting (attacker-controlled) URI, so placeholders embedded in the injected value - such as an environment-variable reference, an application property, or a vault reference - are resolved to their real values and sent to the attacker, disclosing environment variables, application properties and vault secrets.\nThis issue affects Apache Camel: from 4.17.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to version 4.21.0, which fixes the issue. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.3. The fix adds a dedicated IggyHeaderFilterStrategy (and a headerFilterStrategy endpoint option) that filters the Camel header namespace case-insensitively on inbound mapping, so externally-supplied Camel* / camel* headers are no longer copied into the Exchange. For deployments that cannot upgrade immediately, strip the Camel control headers from the inbound message before they reach any downstream producer (for example removeHeaders('Camel*') and removeHeaders('camel*') at the start of the route), restrict who can publish to the consumed Iggy stream/topic, and avoid bridging an untrusted consumer directly into an HTTP producer whose target URI can be driven from message headers.",
-    "severity": "UNKNOWN",
-    "cvss": 0,
+    "severity": "HIGH",
+    "cvss": 7.5,
     "cwes": [
       "CWE-20"
     ],
     "published": "2026-07-06",
-    "updated": "2026-07-06",
+    "updated": "2026-07-07",
     "type": "unreviewed",
     "ecosystems": [],
     "packages": [],
@@ -45208,366 +45552,6 @@
     "ecosystems": [],
     "packages": [],
     "url": "https://github.com/advisories/GHSA-5p8m-h8vr-j4rc",
-    "withdrawn": false
-  },
-  {
-    "ghsa": "GHSA-65vc-5v9h-jmcw",
-    "cve": "CVE-2026-57648",
-    "title": "Contributor Broken Access Control in Nelio Content <= 4.3.4 versions.",
-    "desc": "Contributor Broken Access Control in Nelio Content <= 4.3.4 versions.",
-    "severity": "MEDIUM",
-    "cvss": 4.3,
-    "cwes": [
-      "CWE-862"
-    ],
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "type": "unreviewed",
-    "ecosystems": [],
-    "packages": [],
-    "url": "https://github.com/advisories/GHSA-65vc-5v9h-jmcw",
-    "withdrawn": false
-  },
-  {
-    "ghsa": "GHSA-f9qq-cqgc-cmmx",
-    "cve": "CVE-2026-57652",
-    "title": "Unauthenticated Insecure Direct Object References (IDOR) in JS Help Desk <= 3.1.0 versions.",
-    "desc": "Unauthenticated Insecure Direct Object References (IDOR) in JS Help Desk <= 3.1.0 versions.",
-    "severity": "MEDIUM",
-    "cvss": 5.3,
-    "cwes": [
-      "CWE-639"
-    ],
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "type": "unreviewed",
-    "ecosystems": [],
-    "packages": [],
-    "url": "https://github.com/advisories/GHSA-f9qq-cqgc-cmmx",
-    "withdrawn": false
-  },
-  {
-    "ghsa": "GHSA-8ph7-m94w-6fwc",
-    "cve": "CVE-2026-57654",
-    "title": "Affiliate Broken Access Control in Affiliates Manager <= 2.9.49 versions.",
-    "desc": "Affiliate Broken Access Control in Affiliates Manager <= 2.9.49 versions.",
-    "severity": "MEDIUM",
-    "cvss": 6.5,
-    "cwes": [
-      "CWE-862"
-    ],
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "type": "unreviewed",
-    "ecosystems": [],
-    "packages": [],
-    "url": "https://github.com/advisories/GHSA-8ph7-m94w-6fwc",
-    "withdrawn": false
-  },
-  {
-    "ghsa": "GHSA-5qpv-3mxm-5v8r",
-    "cve": "CVE-2026-57646",
-    "title": "Subscriber Insecure Direct Object References (IDOR) in Majestic Support <= 1.1.7 versions.",
-    "desc": "Subscriber Insecure Direct Object References (IDOR) in Majestic Support <= 1.1.7 versions.",
-    "severity": "MEDIUM",
-    "cvss": 5.4,
-    "cwes": [
-      "CWE-639"
-    ],
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "type": "unreviewed",
-    "ecosystems": [],
-    "packages": [],
-    "url": "https://github.com/advisories/GHSA-5qpv-3mxm-5v8r",
-    "withdrawn": false
-  },
-  {
-    "ghsa": "GHSA-wr7m-w6xj-frxv",
-    "cve": "CVE-2026-57641",
-    "title": "Unauthenticated Cross Site Request Forgery (CSRF) in Real Estate 7 <= 3.5.9 versions.",
-    "desc": "Unauthenticated Cross Site Request Forgery (CSRF) in Real Estate 7 <= 3.5.9 versions.",
-    "severity": "MEDIUM",
-    "cvss": 6.5,
-    "cwes": [
-      "CWE-352"
-    ],
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "type": "unreviewed",
-    "ecosystems": [],
-    "packages": [],
-    "url": "https://github.com/advisories/GHSA-wr7m-w6xj-frxv",
-    "withdrawn": false
-  },
-  {
-    "ghsa": "GHSA-q2fm-j9qm-p92m",
-    "cve": "CVE-2026-57644",
-    "title": "Contributor SQL Injection in Restaurant Menu by MotoPress <= 2.4.10 versions.",
-    "desc": "Contributor SQL Injection in Restaurant Menu by MotoPress <= 2.4.10 versions.",
-    "severity": "HIGH",
-    "cvss": 8.5,
-    "cwes": [
-      "CWE-89"
-    ],
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "type": "unreviewed",
-    "ecosystems": [],
-    "packages": [],
-    "url": "https://github.com/advisories/GHSA-q2fm-j9qm-p92m",
-    "withdrawn": false
-  },
-  {
-    "ghsa": "GHSA-chrq-mj9q-326j",
-    "cve": "CVE-2026-57643",
-    "title": "Contributor SQL Injection in WP Post Author <= 3.9.1 versions.",
-    "desc": "Contributor SQL Injection in WP Post Author <= 3.9.1 versions.",
-    "severity": "HIGH",
-    "cvss": 8.5,
-    "cwes": [
-      "CWE-89"
-    ],
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "type": "unreviewed",
-    "ecosystems": [],
-    "packages": [],
-    "url": "https://github.com/advisories/GHSA-chrq-mj9q-326j",
-    "withdrawn": false
-  },
-  {
-    "ghsa": "GHSA-v2jx-863w-h6g6",
-    "cve": "CVE-2026-57645",
-    "title": "newsletters_subscribers Broken Access Control in Newsletters <= 4.13 versions.",
-    "desc": "newsletters_subscribers Broken Access Control in Newsletters <= 4.13 versions.",
-    "severity": "HIGH",
-    "cvss": 8.1,
-    "cwes": [
-      "CWE-862"
-    ],
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "type": "unreviewed",
-    "ecosystems": [],
-    "packages": [],
-    "url": "https://github.com/advisories/GHSA-v2jx-863w-h6g6",
-    "withdrawn": false
-  },
-  {
-    "ghsa": "GHSA-xqj2-5xg4-w8vj",
-    "cve": "CVE-2026-57638",
-    "title": "Contributor Cross Site Scripting (XSS) in Fluent Booking <= 2.1.0 versions.",
-    "desc": "Contributor Cross Site Scripting (XSS) in Fluent Booking <= 2.1.0 versions.",
-    "severity": "MEDIUM",
-    "cvss": 6.5,
-    "cwes": [
-      "CWE-79"
-    ],
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "type": "unreviewed",
-    "ecosystems": [],
-    "packages": [],
-    "url": "https://github.com/advisories/GHSA-xqj2-5xg4-w8vj",
-    "withdrawn": false
-  },
-  {
-    "ghsa": "GHSA-48jq-5gpf-vwj9",
-    "cve": "CVE-2026-57640",
-    "title": "Subscriber Broken Access Control in MasterStudy LMS <= 3.7.30 versions.",
-    "desc": "Subscriber Broken Access Control in MasterStudy LMS <= 3.7.30 versions.",
-    "severity": "MEDIUM",
-    "cvss": 4.3,
-    "cwes": [
-      "CWE-862"
-    ],
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "type": "unreviewed",
-    "ecosystems": [],
-    "packages": [],
-    "url": "https://github.com/advisories/GHSA-48jq-5gpf-vwj9",
-    "withdrawn": false
-  },
-  {
-    "ghsa": "GHSA-pj5w-v4fq-q95p",
-    "cve": "CVE-2026-57642",
-    "title": "Contributor SQL Injection in Gallery  <= 4.7.8 versions.",
-    "desc": "Contributor SQL Injection in Gallery  <= 4.7.8 versions.",
-    "severity": "HIGH",
-    "cvss": 8.5,
-    "cwes": [
-      "CWE-89"
-    ],
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "type": "unreviewed",
-    "ecosystems": [],
-    "packages": [],
-    "url": "https://github.com/advisories/GHSA-pj5w-v4fq-q95p",
-    "withdrawn": false
-  },
-  {
-    "ghsa": "GHSA-8598-4pxg-97c3",
-    "cve": "CVE-2026-57636",
-    "title": "Contributor SQL Injection in wpForo Forum <= 3.0.9 versions.",
-    "desc": "Contributor SQL Injection in wpForo Forum <= 3.0.9 versions.",
-    "severity": "HIGH",
-    "cvss": 8.5,
-    "cwes": [
-      "CWE-89"
-    ],
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "type": "unreviewed",
-    "ecosystems": [],
-    "packages": [],
-    "url": "https://github.com/advisories/GHSA-8598-4pxg-97c3",
-    "withdrawn": false
-  },
-  {
-    "ghsa": "GHSA-f6fv-fqq6-cjgw",
-    "cve": "CVE-2026-57637",
-    "title": "Unauthenticated Cross Site Request Forgery (CSRF) in Abandoned Cart Lite for WooCommerce <= 6.8.0...",
-    "desc": "Unauthenticated Cross Site Request Forgery (CSRF) in Abandoned Cart Lite for WooCommerce <= 6.8.0 versions.",
-    "severity": "MEDIUM",
-    "cvss": 4.3,
-    "cwes": [
-      "CWE-352"
-    ],
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "type": "unreviewed",
-    "ecosystems": [],
-    "packages": [],
-    "url": "https://github.com/advisories/GHSA-f6fv-fqq6-cjgw",
-    "withdrawn": false
-  },
-  {
-    "ghsa": "GHSA-49ff-frjv-g5x5",
-    "cve": "CVE-2026-57627",
-    "title": "Subscriber Server Side Request Forgery (SSRF) in Kirki <= 6.0.11 versions.",
-    "desc": "Subscriber Server Side Request Forgery (SSRF) in Kirki <= 6.0.11 versions.",
-    "severity": "MEDIUM",
-    "cvss": 4.9,
-    "cwes": [
-      "CWE-918"
-    ],
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "type": "unreviewed",
-    "ecosystems": [],
-    "packages": [],
-    "url": "https://github.com/advisories/GHSA-49ff-frjv-g5x5",
-    "withdrawn": false
-  },
-  {
-    "ghsa": "GHSA-mf27-wm76-5323",
-    "cve": "CVE-2026-57628",
-    "title": "Administrator SQL Injection in WP All Import <= 4.0.1 versions.",
-    "desc": "Administrator SQL Injection in WP All Import <= 4.0.1 versions.",
-    "severity": "HIGH",
-    "cvss": 7.6,
-    "cwes": [
-      "CWE-89"
-    ],
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "type": "unreviewed",
-    "ecosystems": [],
-    "packages": [],
-    "url": "https://github.com/advisories/GHSA-mf27-wm76-5323",
-    "withdrawn": false
-  },
-  {
-    "ghsa": "GHSA-9cp8-fxmh-4hc3",
-    "cve": "CVE-2026-57633",
-    "title": "Unauthenticated Sensitive Data Exposure in WCBoost &#8211; Products Compare <= 1.1.0 versions.",
-    "desc": "Unauthenticated Sensitive Data Exposure in WCBoost &#8211; Products Compare <= 1.1.0 versions.",
-    "severity": "MEDIUM",
-    "cvss": 5.3,
-    "cwes": [
-      "CWE-497"
-    ],
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "type": "unreviewed",
-    "ecosystems": [],
-    "packages": [],
-    "url": "https://github.com/advisories/GHSA-9cp8-fxmh-4hc3",
-    "withdrawn": false
-  },
-  {
-    "ghsa": "GHSA-xr34-4j63-xfh6",
-    "cve": "CVE-2026-57634",
-    "title": "Contributor Insecure Direct Object References (IDOR) in PPWP <= 1.9.19 versions.",
-    "desc": "Contributor Insecure Direct Object References (IDOR) in PPWP <= 1.9.19 versions.",
-    "severity": "MEDIUM",
-    "cvss": 4.3,
-    "cwes": [
-      "CWE-639"
-    ],
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "type": "unreviewed",
-    "ecosystems": [],
-    "packages": [],
-    "url": "https://github.com/advisories/GHSA-xr34-4j63-xfh6",
-    "withdrawn": false
-  },
-  {
-    "ghsa": "GHSA-xm6v-vxpj-38gq",
-    "cve": "CVE-2026-57629",
-    "title": "Contributor Cross Site Scripting (XSS) in StatCounter <= 2.1.1 versions.",
-    "desc": "Contributor Cross Site Scripting (XSS) in StatCounter <= 2.1.1 versions.",
-    "severity": "MEDIUM",
-    "cvss": 6.5,
-    "cwes": [
-      "CWE-79"
-    ],
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "type": "unreviewed",
-    "ecosystems": [],
-    "packages": [],
-    "url": "https://github.com/advisories/GHSA-xm6v-vxpj-38gq",
-    "withdrawn": false
-  },
-  {
-    "ghsa": "GHSA-744q-v2g8-3vv4",
-    "cve": "CVE-2026-57635",
-    "title": "Unauthenticated Cross Site Request Forgery (CSRF) in FunnelKit Payment Gateway for Stripe...",
-    "desc": "Unauthenticated Cross Site Request Forgery (CSRF) in FunnelKit Payment Gateway for Stripe WooCommerce <= 1.14.0.3 versions.",
-    "severity": "MEDIUM",
-    "cvss": 6.5,
-    "cwes": [
-      "CWE-352"
-    ],
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "type": "unreviewed",
-    "ecosystems": [],
-    "packages": [],
-    "url": "https://github.com/advisories/GHSA-744q-v2g8-3vv4",
-    "withdrawn": false
-  },
-  {
-    "ghsa": "GHSA-ffhf-8563-gffw",
-    "cve": "CVE-2026-57630",
-    "title": "Unauthenticated Insecure Direct Object References (IDOR) in Blocksy Companion Pro <= 2.1.46...",
-    "desc": "Unauthenticated Insecure Direct Object References (IDOR) in Blocksy Companion Pro <= 2.1.46 versions.",
-    "severity": "MEDIUM",
-    "cvss": 5.3,
-    "cwes": [
-      "CWE-639"
-    ],
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "type": "unreviewed",
-    "ecosystems": [],
-    "packages": [],
-    "url": "https://github.com/advisories/GHSA-ffhf-8563-gffw",
     "withdrawn": false
   },
   {
