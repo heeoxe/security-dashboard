@@ -44,11 +44,11 @@
   .stat-label { font-size: 11px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
   .stat-value { font-size: 24px; font-weight: 600; font-variant-numeric: tabular-nums; }
 
-  .layout { display: grid; grid-template-columns: 180px 1fr; min-height: calc(100vh - 57px - 65px); }
-  .sidebar { border-right: 1px solid var(--border); padding: 1.25rem 0; }
+  .layout { display: grid; grid-template-columns: 210px 1fr; min-height: calc(100vh - 57px - 65px); }
+  .sidebar { border-right: 1px solid var(--border); padding: 1.25rem 0; overflow: hidden; }
   .nav-section { padding: 0 1rem; margin-bottom: 1.5rem; }
   .nav-label { font-size: 10px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px; padding: 0 4px; }
-  .nav-item { display: flex; align-items: center; gap: 8px; padding: 7px 10px; border-radius: var(--radius); cursor: pointer; font-size: 13px; color: var(--text2); transition: all 0.15s; border: none; background: none; width: 100%; text-align: left; }
+  .nav-item { display: flex; align-items: center; gap: 8px; padding: 7px 10px; border-radius: var(--radius); cursor: pointer; font-size: 13px; color: var(--text2); transition: all 0.15s; border: none; background: none; width: 100%; text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .nav-item:hover { background: var(--bg3); color: var(--text); }
   .nav-item.active { background: var(--accent2); color: var(--accent); font-weight: 500; }
   .nav-item svg { flex-shrink: 0; }
@@ -228,7 +228,7 @@
       </button>
       <button class="nav-item" onclick="switchPanel('mitre', this)">
         <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
-        Advisory DB
+        Vulnrichment
         <span class="nav-badge hot" id="nb-mitre" style="display:none">NEW</span>
       </button>
       <button class="nav-item" onclick="switchPanel('news', this)">
@@ -318,13 +318,13 @@
       <div class="pager" id="nvd-pager"></div>
     </div>
 
-    <!-- GitHub Advisory DB -->
+    <!-- GitHub Vulnrichment -->
     <div id="panel-mitre" class="panel">
       <div style="font-size:12px;color:var(--text2);margin-bottom:1rem;padding:10px 12px;background:var(--bg3);border-radius:var(--radius);line-height:1.6">
-        <strong>GitHub Advisory Database</strong> — GHSA 검수 항목(주로 오픈소스 패키지)과 NVD 미러(Cisco·Microsoft·Palo Alto 등 벤더 전반 CVE 포함) 모두를 다룹니다. GitHub Actions가 매일 최근 30일치를 수집해 <code style="font-size:10px;background:var(--bg2);padding:1px 5px;border-radius:3px">advisory.json</code>으로 저장합니다.
+        <strong>CISA Vulnrichment</strong> — CISA가 직접 분석·보강한 CVE 데이터. Palo Alto, Cisco, Fortinet, Microsoft 등 <strong>상용 벤더 + 오픈소스 모두 포함</strong>. NVD 백로그 없이 빠르게 올라오며 SSVC, CVSS, CWE, CPE를 추가해 제공합니다. GitHub Actions가 매일 최근 30일치를 수집해 <code style="font-size:10px;background:var(--bg2);padding:1px 5px;border-radius:3px">vulnrichment.json</code>으로 저장합니다.
       </div>
       <div class="toolbar">
-        <input id="mitre-q" type="text" placeholder="키워드, 패키지명, 벤더명, CVE-YYYY-NNNNN..." />
+        <input id="mitre-q" type="text" placeholder="키워드, 벤더명, 제품명, CVE-YYYY-NNNNN..." />
         <button class="btn btn-primary" onclick="searchMitre()">
           <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
           검색
@@ -334,8 +334,8 @@
           새로고침
         </button>
       </div>
-      <div class="cards" id="mitre-list">
-        <div class="loading"><div class="spinner"></div><br>최근 30일 GitHub Advisory DB 불러오는 중...</div>
+      <div class="cards-single" id="mitre-list">
+        <div class="loading"><div class="spinner"></div><br>CISA Vulnrichment 불러오는 중...</div>
       </div>
       <div class="pager" id="mitre-pager"></div>
     </div>
@@ -1214,47 +1214,51 @@ function renderNvdPager() {
 }
 
 // ── MITRE CVE 패널 (GitHub Advisory Database 기반) ──
-// GitHub Actions(scripts/fetch-advisory.js)가 매일 GitHub Advisory DB REST API를
+// GitHub Actions(scripts/fetch-advisory.js)가 매일 GitHub Vulnrichment REST API를
 // 수집해 advisory.json으로 저장 → 이 패널은 그 정적 파일만 읽는다 (kev.json/news.json과 동일 패턴).
 let mitreAll = [], mitreFiltered = [], mitrePage = 0;
 const MITRE_PAGE = 15;
 
 function advisoryTypeBadge(item) {
-  // reviewed: GitHub 큐레이션(주로 오픈소스 패키지) / unreviewed: NVD 원본 미러(벤더 전반, Cisco/MS 등)
-  if (item.type === 'unreviewed') return `<span class="badge" style="font-size:10px;background:var(--bg3);color:var(--text2);border:1px solid var(--border)">NVD 미러</span>`;
-  return `<span class="badge" style="font-size:10px;background:#f3f0fb;color:#6d4fb5;border:1px solid #d0c4ee">GHSA 검수</span>`;
+  if (item.isKev) return `<span class="badge" style="font-size:10px;background:var(--critical-bg);color:var(--critical);border:1px solid #f0c4c0">KEV 포함</span>`;
+  if (item.exploitation === 'active') return `<span class="badge" style="font-size:10px;background:var(--high-bg);color:var(--high);border:1px solid #f0d9c0">악용 중</span>`;
+  return `<span class="badge" style="font-size:10px;background:#f3f0fb;color:#6d4fb5;border:1px solid #d0c4ee">Vulnrichment</span>`;
 }
 
 function mitreCard(item) {
-  const bm = { id: item.cve || item.ghsa, cve: item.cve, ghsa: item.ghsa, title: item.title, sev: item.severity, cvss: item.cvss, desc: item.desc || '', date: item.published, source: 'GHSA' };
-  const sv = isSaved(item.cve || item.ghsa);
-  const noteId = item.cve || item.ghsa;
+  const noteId = item.cve || item.ghsa || item.title;
+  const bm = { id: noteId, cve: item.cve, title: item.title, sev: item.severity, cvss: item.cvss, desc: item.desc || '', date: item.updated || item.published, source: 'Vulnrichment' };
+  const sv = isSaved(noteId);
   const note = loadNotes()[noteId] || {};
   const statusEl = note.status ? `<span class="badge" style="font-size:10px;background:${statusBg(note.status)};color:${statusColor(note.status)};border:1px solid ${statusColor(note.status)}40">${note.status}</span>` : '';
   const cvss = item.cvss || 0;
-  const ecoTags = (item.ecosystems || []).map(e => `<span class="tag">${escHtml(e)}</span>`).join('');
+  const affectedTags = (item.affected || []).slice(0, 3).map(a =>
+    `<span class="tag">${escHtml(a.vendor ? `${a.vendor} ${a.product}`.trim() : a.product)}</span>`
+  ).join('');
+  const exploitation = item.exploitation === 'active' ? `<span style="font-size:11px;color:var(--critical)">⚠ 악용 중</span>` :
+    item.exploitation === 'poc' ? `<span style="font-size:11px;color:var(--high)">PoC 공개</span>` : '';
 
-  return `<div class="card" style="cursor:pointer" onclick='openDetail(${jsonAttr({...item, id: noteId, sev: item.severity, source: "GHSA"})})'>
+  return `<div class="card" style="cursor:pointer" onclick='openDetail(${jsonAttr({...item, id: noteId, sev: item.severity, source: "Vulnrichment"})})'>
     <div class="card-top">
       ${item.severity ? `<span class="badge ${sevClass(item.severity)}">${sevLabel(item.severity)}</span>` : ''}
       ${advisoryTypeBadge(item)}
       ${statusEl}
-      <div class="card-title">${escHtml(item.title || item.cve || item.ghsa)}</div>
+      <div class="card-title">${escHtml(item.title || item.cve || '')}</div>
     </div>
     <div class="card-meta">
       ${item.cve ? `<span class="cve-id">${item.cve}</span>` : ''}
-      <span class="cve-id" style="color:var(--text3)">${item.ghsa}</span>
-      <span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${item.published}</span>
+      <span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${item.updated || item.published}</span>
+      ${exploitation}
       ${item.title_ko ? `<span style="font-size:11px;color:var(--text3)">${escHtml(item.title_ko)}</span>` : ''}
     </div>
     ${cvss ? `<div class="cvss-row"><span class="cvss-label">CVSS ${cvss.toFixed(1)}</span><div class="cvss-track"><div class="cvss-fill" style="width:${Math.round(cvss/10*100)}%;background:${cvssColor(cvss)}"></div></div></div>` : ''}
-    ${item.desc ? `<div class="card-desc" style="margin-top:6px">${escHtml(item.desc.slice(0, 220))}${item.desc.length > 220 ? '…' : ''}</div>` : ''}
-    ${ecoTags ? `<div style="margin-top:6px">${ecoTags}</div>` : ''}
+    ${affectedTags ? `<div style="margin-top:6px">${affectedTags}</div>` : ''}
+    ${item.desc ? `<div class="card-desc" style="margin-top:6px">${escHtml(item.desc.slice(0, 200))}${item.desc.length > 200 ? '…' : ''}</div>` : ''}
     <div class="card-footer" onclick="event.stopPropagation()">
       <button class="btn" onclick='toggleSave(${jsonAttr(bm)})'>${sv ? '★ 저장됨' : '☆ 저장'}</button>
-      <a class="btn" href="${item.url}" target="_blank" rel="noopener">
+      <a class="btn" href="${escHtml(item.url || `https://www.cve.org/CVERecord?id=${item.cve}`)}" target="_blank" rel="noopener">
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
-        GHSA 원문
+        원문 보기
       </a>
       ${item.cve ? `<a class="btn" href="https://nvd.nist.gov/vuln/detail/${item.cve}" target="_blank" rel="noopener">NVD 상세</a>` : ''}
     </div>
@@ -1281,15 +1285,14 @@ function renderMitrePager() {
 
 async function loadMitre(force) {
   const el = document.getElementById('mitre-list');
-  el.innerHTML = '<div class="loading"><div class="spinner"></div><br>GitHub Advisory DB 불러오는 중...</div>';
+  el.innerHTML = '<div class="loading"><div class="spinner"></div><br>CISA Vulnrichment 불러오는 중...</div>';
   mitrePage = 0;
 
   try {
-    // 💡 GitHub Actions가 매일 생성해 커밋해 두는 정적 파일만 읽는다 (kev.json과 동일한 방식)
-    const r = await fetch(`./advisory.json${force ? `?t=${Date.now()}` : ''}`);
+    const r = await fetch(`./vulnrichment.json${force ? `?t=${Date.now()}` : ''}`);
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     mitreAll = await r.json();
-    mitreAll.sort((a, b) => (b.published || '').localeCompare(a.published || ''));
+    mitreAll.sort((a, b) => (b.updated || b.published || '').localeCompare(a.updated || a.published || ''));
 
     const badge = document.getElementById('nb-mitre');
     if (mitreAll.length) { badge.textContent = mitreAll.length; badge.style.display = ''; }
@@ -1299,12 +1302,10 @@ async function loadMitre(force) {
     mitreFiltered = [...mitreAll];
     renderMitrePage();
   } catch(e) {
-    el.innerHTML = `<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>로딩 실패: ${e.message}<br><small style="font-size:11px;color:var(--text3)">advisory.json이 아직 생성되지 않았다면 GitHub Actions 워크플로우가 최소 1회 실행되어야 합니다</small></div>`;
+    el.innerHTML = `<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>로딩 실패: ${e.message}<br><small style="font-size:11px;color:var(--text3)">GitHub Actions에서 update-vulnrichment 워크플로우를 먼저 실행해주세요</small></div>`;
   }
 }
 
-// 로컬(최근 30일치 advisory.json)에서 우선 검색하고, CVE ID인데 로컬에 없으면
-// api.github.com/advisories?cve_id=... 로 실시간 단건 조회를 시도한다.
 async function searchMitre() {
   const q = document.getElementById('mitre-q').value.trim();
   if (!q) { loadMitre(); return; }
@@ -1313,42 +1314,21 @@ async function searchMitre() {
   mitrePage = 0;
   const kw = q.toLowerCase();
 
+  // vulnrichment.json 로컬 검색 — 벤더, 제품, CVE ID, 제목, 설명 모두 포함
   mitreFiltered = mitreAll.filter(it =>
     (it.cve || '').toLowerCase().includes(kw) ||
-    (it.ghsa || '').toLowerCase().includes(kw) ||
     (it.title || '').toLowerCase().includes(kw) ||
+    (it.title_ko || '').toLowerCase().includes(kw) ||
     (it.desc || '').toLowerCase().includes(kw) ||
-    (it.ecosystems || []).some(e => e.toLowerCase().includes(kw)) ||
-    (it.packages || []).some(p => p.toLowerCase().includes(kw))
+    (it.affected || []).some(a =>
+      (a.vendor || '').toLowerCase().includes(kw) ||
+      (a.product || '').toLowerCase().includes(kw)
+    )
   );
 
   if (mitreFiltered.length) { renderMitrePage(); return; }
 
-  // 로컬(최근 30일)에 없고 CVE ID 형식이면 GitHub Advisory API로 실시간 단건 조회
-  if (/^CVE-\d{4}-\d+$/i.test(q)) {
-    el.innerHTML = '<div class="loading"><div class="spinner"></div><br>GitHub Advisory API에서 조회 중...</div>';
-    try {
-      const r = await fetch(`https://api.github.com/advisories?cve_id=${encodeURIComponent(q.toUpperCase())}`, {
-        headers: { Accept: 'application/vnd.github+json' }
-      });
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
-      const data = await r.json();
-      mitreFiltered = data.map(a => ({
-        ghsa: a.ghsa_id, cve: a.cve_id, title: a.summary, desc: a.description || '',
-        severity: (a.severity || '').toUpperCase(), cvss: a.cvss?.score ?? a.cvss_severities?.cvss_v3?.score ?? null,
-        published: (a.published_at || '').slice(0, 10), updated: (a.updated_at || '').slice(0, 10),
-        type: a.type, url: a.html_url,
-        ecosystems: [...new Set((a.vulnerabilities || []).map(v => v.package?.ecosystem).filter(Boolean))],
-        packages: [...new Set((a.vulnerabilities || []).map(v => v.package?.name).filter(Boolean))],
-      }));
-      renderMitrePage();
-    } catch(e) {
-      el.innerHTML = `<div class="empty">조회 실패: ${e.message}</div>`;
-    }
-    return;
-  }
-
-  el.innerHTML = `<div class="empty">검색 결과가 없습니다<br><small style="font-size:11px;color:var(--text3)">키워드 검색은 최근 30일치 advisory.json 범위에서만 동작합니다. 특정 CVE는 CVE-YYYY-NNNNN 형식으로 검색하면 GitHub API에서 실시간으로도 찾아봅니다.</small></div>`;
+  el.innerHTML = `<div class="empty">검색 결과가 없습니다<br><small style="font-size:11px;color:var(--text3)">최근 30일치 vulnrichment.json 범위에서 검색됩니다. 더 오래된 CVE는 NVD 탭에서 검색해보세요.</small></div>`;
   renderMitrePager();
 }
 // ── /MITRE CVE ────────────────────────────────────
