@@ -5,8 +5,7 @@
 import { writeFile } from 'node:fs/promises';
 
 const TOKEN = process.env.GITHUB_TOKEN || '';
-const DEEPL_KEY = process.env.DEEPL_API_KEY || '';
-const DAYS = 30;
+// const DEEPL_KEY = process.env.DEEPL_API_KEY || '';
 const MAX = 1000;   // 수집할 최대 CVE 수
 const OWNER = 'cisagov';
 const REPO = 'vulnrichment';
