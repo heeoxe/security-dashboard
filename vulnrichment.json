@@ -1,1 +1,3063 @@
-[]
+[
+  {
+    "cve": "CVE-2026-60001",
+    "title": "sshd in OpenSSH before 10.4 does not always honor the minimum authentication delay.",
+    "desc": "sshd in OpenSSH before 10.4 does not always honor the minimum authentication delay.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-770"
+    ],
+    "affected": [
+      {
+        "vendor": "OpenBSD",
+        "product": "OpenSSH"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://www.openwall.com/lists/oss-security/2026/07/06/5",
+    "source": "CISA Vulnrichment",
+    "title_ko": "10.4 이전 버전의 OpenSSH에 포함된 sshd는 최소 인증 지연 시간을 항상 준수하지는 않습니다."
+  },
+  {
+    "cve": "CVE-2026-59998",
+    "title": "sshd in OpenSSH before 10.4 has an undocumented security-relevant behavior: GSSAPIStrictAcceptorCheck has no value if th",
+    "desc": "sshd in OpenSSH before 10.4 has an undocumented security-relevant behavior: GSSAPIStrictAcceptorCheck has no value if the server is in Windows Active Directory.",
+    "cvss": 4.8,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-573"
+    ],
+    "affected": [
+      {
+        "vendor": "OpenBSD",
+        "product": "OpenSSH"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://www.openwall.com/lists/oss-security/2026/07/06/5",
+    "source": "CISA Vulnrichment",
+    "title_ko": "10.4 이전 버전의 OpenSSH에 포함된 sshd에는 문서화되지 않은 보안 관련 동작이 있습니다. 즉, GSSAPIStrictAcceptorCheck는 th"
+  },
+  {
+    "cve": "CVE-2026-59997",
+    "title": "internal-sftp in sshd in OpenSSH before 10.4 recognizes only the first 9 command-line arguments, which can be important ",
+    "desc": "internal-sftp in sshd in OpenSSH before 10.4 recognizes only the first 9 command-line arguments, which can be important if a later command-line argument would have helped to ensure the intended security properties of an SFTP connection.",
+    "cvss": 4.2,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-1284"
+    ],
+    "affected": [
+      {
+        "vendor": "OpenBSD",
+        "product": "OpenSSH"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://www.openwall.com/lists/oss-security/2026/07/06/5",
+    "source": "CISA Vulnrichment",
+    "title_ko": "10.4 이전 버전의 OpenSSH에 포함된 sshd의 internal-sftp는 명령줄 인자 중 처음 9개만 인식하는데, 이는 중요한 문제가 될 수 있습니다. "
+  },
+  {
+    "cve": "CVE-2026-59996",
+    "title": "scp in OpenSSH before 10.4 may place a file in the parent directory of an intended directory when the copy occurs betwee",
+    "desc": "scp in OpenSSH before 10.4 may place a file in the parent directory of an intended directory when the copy occurs between two remote destinations.",
+    "cvss": 4.2,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-23"
+    ],
+    "affected": [
+      {
+        "vendor": "OpenBSD",
+        "product": "OpenSSH"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://www.openwall.com/lists/oss-security/2026/07/06/5",
+    "source": "CISA Vulnrichment",
+    "title_ko": "10.4 이전 버전의 OpenSSH에 포함된 scp는 복사가 대상 디렉터리 대신 상위 디렉터리로 이루어질 경우, 파일을 해당 상위 디렉터리에 저장할 수 있습니다."
+  },
+  {
+    "cve": "CVE-2026-59995",
+    "title": "sftp in OpenSSH before 10.4 does not properly constrain the location of downloaded files when \"sftp server:/path .\" is u",
+    "desc": "sftp in OpenSSH before 10.4 does not properly constrain the location of downloaded files when \"sftp server:/path .\" is used with an attacker-controlled server.",
+    "cvss": 4.2,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-23"
+    ],
+    "affected": [
+      {
+        "vendor": "OpenBSD",
+        "product": "OpenSSH"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://www.openwall.com/lists/oss-security/2026/07/06/5",
+    "source": "CISA Vulnrichment",
+    "title_ko": "10.4 이전 버전의 OpenSSH에서 sftp는 “sftp server:/path .”가 입력되었을 때 다운로드된 파일의 위치를 제대로 제한하지 못합니다."
+  },
+  {
+    "cve": "CVE-2026-59928",
+    "title": "Mistune block_parser: quadratic-time parsing on long lists of repeated reference-link definitions",
+    "desc": "Mistune is a Python Markdown parser with renderers and plugins. Prior to 3.3.0, a Markdown document containing many repeated or distinct reference-link definitions causes quadratic work in src/mistune/block_parser.py and the ref_links environment dictionary handling, allowing denial of service through CPU exhaustion. This issue is fixed in version 3.3.0.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-407",
+      "CWE-1333"
+    ],
+    "affected": [
+      {
+        "vendor": "lepture",
+        "product": "mistune"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://github.com/lepture/mistune/security/advisories/GHSA-ffq3-xpv3-j92q",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Mistune block_parser: 반복되는 참조 링크 정의가 포함된 긴 목록에 대한 2차 시간 분석"
+  },
+  {
+    "cve": "CVE-2026-59927",
+    "title": "Mistune directives/include: mutual `.. include::` recursion crashes the renderer with `RecursionError`, denial of service via two attacker-controlled markdown files",
+    "desc": "Mistune is a Python Markdown parser with renderers and plugins. Prior to 3.3.0, the Include directive in src/mistune/directives/include.py detects only direct self-includes and not indirect cycles, allowing two markdown files that include each other to trigger unbounded recursion, raise RecursionError, and crash the rendering request. This issue is fixed in version 3.3.0.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-674",
+      "CWE-755"
+    ],
+    "affected": [
+      {
+        "vendor": "lepture",
+        "product": "mistune"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://github.com/lepture/mistune/security/advisories/GHSA-8mpj-m6qm-5qr8",
+    "source": "CISA Vulnrichment",
+    "title_ko": "지시문/포함(directives/include)의 오류: 상호 `.. include::` 재귀로 인해 렌더러가 `RecursionError` 오류와 함께 중단되며, 공격자가 제어하는 두 개의 마크다운 파일을 통해 서비스 거부 공격이 발생합니다."
+  },
+  {
+    "cve": "CVE-2026-59926",
+    "title": "Mistune: XSS via unescaped class option in Admonition directive",
+    "desc": "Mistune is a Python Markdown parser with renderers and plugins. Prior to 3.2.1, render_admonition() in src/mistune/directives/admonition.py concatenates the Admonition directive :class: option into the HTML class attribute without escaping, allowing attribute injection and cross-site scripting even when HTMLRenderer escape mode is enabled. This issue is fixed in version 3.2.1.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "lepture",
+        "product": "mistune"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://github.com/lepture/mistune/security/advisories/GHSA-g97x-gvcm-x72h",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Mistune: Admonition 지시문의 이스케이프 처리되지 않은 class 옵션을 통한 XSS 취약점"
+  },
+  {
+    "cve": "CVE-2026-59892",
+    "title": "OpenTelemetry JavaScript: Denial of service in `JaegerPropagator` via unhandled exception on a malformed header",
+    "desc": "OpenTelemetry JavaScript is the OpenTelemetry JavaScript client. Prior to 2.9.0, @opentelemetry/propagator-jaeger decodes incoming uber-trace-id and uberctx-* HTTP header values with decodeURIComponent() without handling decode errors, allowing an unauthenticated remote attacker to send a malformed percent-encoded value that throws an uncaught URIError and terminates a Node.js process using Jaeger",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-248"
+    ],
+    "affected": [
+      {
+        "vendor": "open-telemetry",
+        "product": "opentelemetry-js"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://github.com/open-telemetry/opentelemetry-js/security/advisories/GHSA-45rx-2jwx-cxfr",
+    "source": "CISA Vulnrichment",
+    "title_ko": "OpenTelemetry JavaScript: 형식이 잘못된 헤더로 인한 처리되지 않은 예외를 통해 `JaegerPropagator`에서 발생하는 서비스 거부(DoS) 취약점"
+  },
+  {
+    "cve": "CVE-2026-59890",
+    "title": "setuptools: MANIFEST.in exclusion bypass in sdist via Unicode normalization collision (NFC/NFD) on macOS APFS/HFS+",
+    "desc": "setuptools is a package that allows users to download, build, install, upgrade, and uninstall Python packages. Prior to 83.0.0, FileList applied MANIFEST.in exclude, global-exclude, recursive-exclude, and prune directives by matching compiled glob patterns against on-disk file names without Unicode normalization, so on macOS APFS or HFS+ an NFD file name could bypass an NFC exclusion rule and be p",
+    "cvss": 6.1,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-176",
+      "CWE-697"
+    ],
+    "affected": [
+      {
+        "vendor": "pypa",
+        "product": "setuptools"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://github.com/pypa/setuptools/security/advisories/GHSA-h35f-9h28-mq5c",
+    "source": "CISA Vulnrichment",
+    "title_ko": "setuptools: macOS APFS/HFS+ 환경에서 유니코드 정규화 충돌(NFC/NFD)로 인한 sdist 내 MANIFEST.in 제외 항목 우회"
+  },
+  {
+    "cve": "CVE-2026-59882",
+    "title": "guzzlehttp/psr7: Host Confusion via Weak URI Host Validation",
+    "desc": "guzzlehttp/psr7 is a PSR-7 HTTP message library implementation in PHP. Prior to 2.12.3, Uri::assertValidHost() does not reject URI host components containing authority delimiters, embedded ports, or malformed IPv6 brackets, allowing Uri::getHost() to disagree with the URI authority used for security or routing decisions. This issue is fixed in version 2.12.3.",
+    "cvss": 4.2,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-436"
+    ],
+    "affected": [
+      {
+        "vendor": "guzzle",
+        "product": "psr7"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://github.com/guzzle/psr7/security/advisories/GHSA-c2w2-prh8-qm98",
+    "source": "CISA Vulnrichment",
+    "title_ko": "guzzlehttp/psr7: 취약한 URI 호스트 유효성 검사를 통한 호스트 혼동"
+  },
+  {
+    "cve": "CVE-2026-59880",
+    "title": "Immutable.js: Hash-collision algorithmic complexity denial of service in Immutable.Map/Set",
+    "desc": "Immutable.js provides many Persistent Immutable data structures. Prior to 4.3.9 and 5.1.8, Immutable.Map and Immutable.Set keep keys that share the same 32-bit hash in a HashCollisionNode collision bucket that is scanned linearly, allowing an attacker who controls keys inserted into a Map, such as through Immutable.Map(obj), Immutable.fromJS(obj), state.merge(userObject), or mergeDeep, to craft ma",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-407"
+    ],
+    "affected": [
+      {
+        "vendor": "immutable-js",
+        "product": "immutable-js"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://github.com/immutable-js/immutable-js/security/advisories/GHSA-xvcm-6775-5m9r",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Immutable.js: Immutable.Map/Set에서 발생하는 해시 충돌에 기인한 알고리즘적 복잡도로 인한 서비스 거부(DoS) 취약점"
+  },
+  {
+    "cve": "CVE-2026-59879",
+    "title": "Immutable.js `List` 32-bit trie overflow → unrecoverable DoS",
+    "desc": "Immutable.js provides many Persistent Immutable data structures. Prior to 4.3.9 and 5.1.8, List#set, List#setSize, List#setIn, List#updateIn, and the functional set, setIn, and updateIn mishandle an index or size in the range 2 ** 30 to 2 ** 31 in setListBounds in src/List.js, causing an empty List to enter an uncatchable infinite loop, a populated List to allocate without bound until process abor",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-190",
+      "CWE-400",
+      "CWE-835",
+      "CWE-1284"
+    ],
+    "affected": [
+      {
+        "vendor": "immutable-js",
+        "product": "immutable-js"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://github.com/immutable-js/immutable-js/security/advisories/GHSA-v56q-mh7h-f735",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Immutable.js `List` 32비트 트라이 오버플로우 → 복구 불가능한 DoS"
+  },
+  {
+    "cve": "CVE-2026-59877",
+    "title": "protobufjs: Denial of Service via infinite loop in .proto option parsing",
+    "desc": "protobufjs compiles protobuf definitions into JavaScript (JS) functions. Prior to 7.6.5 and 8.6.6, protobufjs parsed option names by advancing through schema tokens until reaching an = token without checking for end of input, so a crafted .proto schema that opens an option declaration and ends prematurely can cause parse, Root.load, or Root.loadSync to loop indefinitely. This issue is fixed in ver",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-835"
+    ],
+    "affected": [
+      {
+        "vendor": "protobufjs",
+        "product": "protobuf.js"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://github.com/protobufjs/protobuf.js/security/advisories/GHSA-j3f2-48v5-ccww",
+    "source": "CISA Vulnrichment",
+    "title_ko": "protobufjs: .proto 옵션 구문 분석 시 무한 루프로 인한 서비스 거부(DoS) 취약점"
+  },
+  {
+    "cve": "CVE-2026-59874",
+    "title": "node-tar: Negative tar entry size causes infinite loop in archive replace",
+    "desc": "node-tar is a tar archive manipulation library for Node.js. Prior to 7.5.18, tar.replace accepts a checksum-valid tar header with a negative base-256 encoded entry size, causing the archive scanner to make no progress while repeatedly parsing the same header. This issue is fixed in version 7.5.18.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-835"
+    ],
+    "affected": [
+      {
+        "vendor": "isaacs",
+        "product": "node-tar"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://github.com/isaacs/node-tar/security/advisories/GHSA-8x88-c5mf-7j5w",
+    "source": "CISA Vulnrichment",
+    "title_ko": "node-tar: tar 항목 크기가 음수일 경우 아카이브 교체 과정에서 무한 루프가 발생합니다"
+  },
+  {
+    "cve": "CVE-2026-59873",
+    "title": "node-tar: Decompression/parse DoS via unlimited input",
+    "desc": "node-tar is a tar archive manipulation library for Node.js. Prior to 7.5.19, node-tar does not enforce hard upper bounds on total decompressed data, entry counts, or decompression ratio in extraction and parsing paths such as src/extract.ts, allowing a small crafted gzip bomb to exhaust disk space and CPU. This issue is fixed in version 7.5.19.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-770"
+    ],
+    "affected": [
+      {
+        "vendor": "isaacs",
+        "product": "node-tar"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://github.com/isaacs/node-tar/security/advisories/GHSA-23hp-3jrh-7fpw",
+    "source": "CISA Vulnrichment",
+    "title_ko": "node-tar: 무제한 입력을 통한 압축 해제/구문 분석 DoS"
+  },
+  {
+    "cve": "CVE-2026-59871",
+    "title": "node-tar: Process crash via PAX numeric path type confusion",
+    "desc": "node-tar is a tar archive manipulation library for Node.js. Prior to 7.5.18, node-tar coerces all-digit PAX path and linkpath values in src/pax.ts to JavaScript numbers, causing downstream path handling such as normalizeWindowsPath(entry.path).split('/') to throw an uncaught TypeError. This issue is fixed in version 7.5.18.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-704"
+    ],
+    "affected": [
+      {
+        "vendor": "isaacs",
+        "product": "node-tar"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://github.com/isaacs/node-tar/security/advisories/GHSA-w8wr-v893-vjvp",
+    "source": "CISA Vulnrichment",
+    "title_ko": "node-tar: PAX 숫자 경로 유형 혼동으로 인한 프로세스 중단"
+  },
+  {
+    "cve": "CVE-2026-59870",
+    "title": "js-yaml quadratic-complexity denial of service via YAML11_SCHEMA !!omap parsing",
+    "desc": "js-yaml is a JavaScript YAML parser and dumper. From 5.0.0 before 5.2.1, YAML11_SCHEMA support for the !!omap tag in src/tag/sequence/omap.ts uses omapTag.addItem() to perform a linear duplicate-key scan on every insertion, causing O(n^2) CPU consumption when yaml.load() parses a crafted ordered-map document. This issue is fixed in version 5.2.1.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-407"
+    ],
+    "affected": [
+      {
+        "vendor": "nodeca",
+        "product": "js-yaml"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://github.com/nodeca/js-yaml/security/advisories/GHSA-724g-mxrg-4qvm",
+    "source": "CISA Vulnrichment",
+    "title_ko": "js-yaml에서 YAML11_SCHEMA !!omap 구문 분석 시 2차 시간 복잡도를 가진 서비스 거부(DoS) 공격"
+  },
+  {
+    "cve": "CVE-2026-59725",
+    "title": "Socket.IO: Engine.IO Polling Transport Connection Exhaustion",
+    "desc": "Socket.IO enables bidirectional and low-latency communication for every platform. From 4.1.0 before 6.6.7, Engine.IO protocol v4 polling transport does not properly close the HTTP response for invalid binary POST requests with Content-Type: application/octet-stream, allowing an unauthenticated attacker to exhaust server-side connections and sockets. This issue is fixed in version 6.6.7.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-404"
+    ],
+    "affected": [
+      {
+        "vendor": "socketio",
+        "product": "socket.io"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://github.com/socketio/socket.io/security/advisories/GHSA-r635-g3xr-vw7x",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Socket.IO: Engine.IO 폴링 전송 연결 소진"
+  },
+  {
+    "cve": "CVE-2026-59724",
+    "title": "Socket.IO: Engine.IO WebTransport SID DoS",
+    "desc": "Socket.IO enables bidirectional and low-latency communication for every platform. From 6.5.0 before 6.6.7, Engine.IO servers with WebTransport enabled can resolve a crafted session ID such as __proto__ through an inherited property of the clients object during WebTransport upgrade handling, causing a TypeError and denial of service. This issue is fixed in version 6.6.7.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-20"
+    ],
+    "affected": [
+      {
+        "vendor": "socketio",
+        "product": "socket.io"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://github.com/socketio/socket.io/security/advisories/GHSA-gr94-w7qr-f4j3",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Socket.IO: Engine.IO WebTransport SID DoS"
+  },
+  {
+    "cve": "CVE-2026-59709",
+    "title": "Ghostfolio - Unauthorized Portfolio Holding Tag Modification via Missing Permission Check",
+    "desc": "Ghostfolio's PUT /api/v1/portfolio/holding/:dataSource/:symbol/tags endpoint fails to verify Access.permissions field when processing the Impersonation-Id header, allowing read-only access grantees to modify portfolio holding tags. Attackers with valid read-only share tokens can assign or remove tags on victim holdings, corrupting portfolio categorization and reports.",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "Ghostfolio",
+        "product": "Ghostfolio"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-07",
+    "updated": "2026-07-08",
+    "url": "https://github.com/ghostfolio/ghostfolio/issues/7196",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Ghostfolio - 권한 확인 누락으로 인한 무단 포트폴리오 태그 수정"
+  },
+  {
+    "cve": "CVE-2026-59708",
+    "title": "Ghostfolio - Unauthorized Portfolio Data Exposure via Public Endpoint",
+    "desc": "The GET /api/v1/public/:accessId/portfolio endpoint in ghostfolio accepts private access IDs without validating granteeUserId filtering, allowing unauthenticated access to full portfolio data. Attackers with a private access ID can retrieve sensitive portfolio information including holdings, quantities, buy prices, and performance metrics without authentication.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "ghostfolio",
+        "product": "ghostfolio"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-07",
+    "updated": "2026-07-08",
+    "url": "https://github.com/ghostfolio/ghostfolio/issues/7197",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Ghostfolio - 공개 엔드포인트를 통한 포트폴리오 데이터 무단 유출"
+  },
+  {
+    "cve": "CVE-2026-59707",
+    "title": "LocalAI - Server-Side Request Forgery via POST /models/apply",
+    "desc": "LocalAI contains an unauthenticated server-side request forgery vulnerability in the POST /models/apply endpoint that allows attackers to fetch arbitrary internal URLs. The endpoint passes unsanitized gallery URL fields directly to gallery.GetGalleryConfigFromURLWithContext without proper validation, enabling attackers to force the server to issue HTTP GET requests to private and loopback ranges w",
+    "cvss": 8.6,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-918"
+    ],
+    "affected": [
+      {
+        "vendor": "LocalAI",
+        "product": "LocalAI"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-07",
+    "updated": "2026-07-08",
+    "url": "https://github.com/mudler/LocalAI/issues/10665",
+    "source": "CISA Vulnrichment",
+    "title_ko": "LocalAI - POST /models/apply를 통한 서버 측 요청 위조"
+  },
+  {
+    "cve": "CVE-2026-59706",
+    "title": "mem0 - Server-Side Request Forgery and Plaintext API Key Exposure via Unauthenticated Config Endpoints",
+    "desc": "mem0 contains unauthenticated config API endpoints that expose LLM API keys in plaintext and allow server-side request forgery via attacker-controlled ollama_base_url parameter. Unauthenticated attackers can retrieve stored secrets like OpenAI API keys via GET /api/v1/config/ or trigger SSRF attacks by setting ollama_base_url to internal addresses like cloud IMDS via PUT /api/v1/config/mem0/llm en",
+    "cvss": 9.3,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-306"
+    ],
+    "affected": [
+      {
+        "vendor": "mem0",
+        "product": "mem0"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-07",
+    "updated": "2026-07-08",
+    "url": "https://github.com/mem0ai/mem0/issues/6081",
+    "source": "CISA Vulnrichment",
+    "title_ko": "mem0 - 인증되지 않은 구성 엔드포인트를 통한 서버 측 요청 위조 및 API 키의 평문 노출"
+  },
+  {
+    "cve": "CVE-2026-59705",
+    "title": "mem0 - OpenMemory API Unauthenticated Access via Memory Endpoints",
+    "desc": "mem0's openmemory/api component contains an unauthenticated access vulnerability that allows unauthenticated attackers to read, write, and delete arbitrary user memories by accessing API routers registered without authentication middleware. Attackers can supply arbitrary user_id parameters or directly access memory retrieval endpoints to expose private memory content, or invoke pause endpoints wit",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-306"
+    ],
+    "affected": [
+      {
+        "vendor": "mem0",
+        "product": "mem0"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-07",
+    "updated": "2026-07-08",
+    "url": "https://github.com/mem0ai/mem0/issues/6080",
+    "source": "CISA Vulnrichment",
+    "title_ko": "mem0 - 메모리 엔드포인트를 통한 OpenMemory API의 인증되지 않은 액세스"
+  },
+  {
+    "cve": "CVE-2026-59704",
+    "title": "Cap - Missing Access Control in Video AI Metadata Endpoint",
+    "desc": "Cap's GET /api/video/ai endpoint fails to validate user ownership or membership before returning private video AI metadata including titles, summaries, and chapters. Authenticated attackers can supply arbitrary video IDs to read sensitive AI-generated content and trigger unauthorized AI generation that consumes the video owner's credits without consent.",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "Cap",
+        "product": "Cap"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-07",
+    "updated": "2026-07-08",
+    "url": "https://github.com/CapSoftware/Cap/issues/1981",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Cap - Video AI 메타데이터 엔드포인트의 접근 제어 누락"
+  },
+  {
+    "cve": "CVE-2026-59703",
+    "title": "repomix - Local File Inclusion via file:// URL Scheme in Git Clone Endpoint",
+    "desc": "repomix contains a local file inclusion vulnerability in the git clone endpoint that allows unauthenticated attackers to read arbitrary local git repositories. The isValidRemoteValue function in src/core/git/gitRemoteParse.ts fails to block file:// URLs, permitting attackers to supply file:// scheme URLs that bypass validation and are passed directly to git clone, enabling unauthorized access to a",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-552"
+    ],
+    "affected": [
+      {
+        "vendor": "repomix",
+        "product": "repomix"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://github.com/yamadashy/repomix/issues/1704",
+    "source": "CISA Vulnrichment",
+    "title_ko": "repomix - Git 클론 엔드포인트에서 file:// URL 스키마를 통한 로컬 파일 포함"
+  },
+  {
+    "cve": "CVE-2026-59702",
+    "title": "repomix - Server-Side Request Forgery via Unvalidated Repository URLs in POST /api/pack",
+    "desc": "repomix contains a server-side request forgery vulnerability in the POST /api/pack endpoint that allows unauthenticated attackers to make arbitrary outbound requests. The endpoint fails to properly validate http://, https://, and file:// URLs before passing them to git clone, enabling attackers to access private network addresses, GCP metadata services, or local filesystem paths.",
+    "cvss": 9.3,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-918"
+    ],
+    "affected": [
+      {
+        "vendor": "repomix",
+        "product": "repomix"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://github.com/yamadashy/repomix/issues/1703",
+    "source": "CISA Vulnrichment",
+    "title_ko": "repomix - POST /api/pack 요청 시 검증되지 않은 리포지토리 URL을 통한 서버 측 요청 위조"
+  },
+  {
+    "cve": "CVE-2026-59261",
+    "title": "OpenClaw < 2026.5.28 - Credential Override via Workspace Dotenv Files",
+    "desc": "OpenClaw before 2026.5.28 contains a credential exposure vulnerability where workspace dotenv files can override provider credentials. Attackers with lower-trust access to configured input paths can expose sensitive data and credentials that should remain within trusted boundaries.",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-184"
+    ],
+    "affected": [
+      {
+        "vendor": "OpenClaw",
+        "product": "OpenClaw"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://github.com/openclaw/openclaw/security/advisories/GHSA-4pqj-3c56-5fqq",
+    "source": "CISA Vulnrichment",
+    "title_ko": "OpenClaw < 2026.5.28 - 워크스페이스 .env 파일을 통한 자격 증명 재정의"
+  },
+  {
+    "cve": "CVE-2026-59253",
+    "title": "n8n - Improper Authorization in Workflow Assignment to Folders",
+    "desc": "n8n before 2.28.0 contains an improper authorization vulnerability allowing authenticated users to assign workflows to folders in other projects. Attackers can bypass project and folder authorization boundaries by supplying crafted request payloads during workflow creation, causing logical integrity violations in target project folder structures.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-639"
+    ],
+    "affected": [
+      {
+        "vendor": "n8n",
+        "product": "n8n"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-2xgm-wc4g-5jvg",
+    "source": "CISA Vulnrichment",
+    "title_ko": "n8n - 폴더에 대한 워크플로우 할당 시 부적절한 권한 부여"
+  },
+  {
+    "cve": "CVE-2026-59153",
+    "title": "Anki's local HTTP server does not sufficiently validate requests",
+    "desc": "Anki is a program for creating and reviewing flashcards. Prior to 25.09.3, Anki launches a local HTTP server to serve media files and web pages for parts of its interface, but requests from other origins were not sufficiently blocked. A malicious website could potentially trigger side-effecting requests to the local server, with severity varying by browser depending on Private Network Access prote",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-346"
+    ],
+    "affected": [
+      {
+        "vendor": "ankitects",
+        "product": "anki"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-07",
+    "updated": "2026-07-08",
+    "url": "https://github.com/ankitects/anki/security/advisories/GHSA-869j-r97x-hx2g",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Anki의 로컬 HTTP 서버는 요청을 충분히 검증하지 않습니다"
+  },
+  {
+    "cve": "CVE-2026-58657",
+    "title": "Grav - Stored CSS Injection via Markdown Image resize() Action",
+    "desc": "Grav before 2.0.0 (affected through 2.0.0-rc.9 and the 2.0 branch) contains a stored CSS injection vulnerability in the Markdown image resize() media action. Prior media hardening rejects direct ?style= payloads and unsafe attribute() fallbacks, but the resize() action in Excerpts::processMediaActions() writes caller-controlled values directly into the image's styleAttributes. A lower-privileged c",
+    "cvss": 4.8,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Grav",
+        "product": "Grav"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-08",
+    "url": "https://github.com/getgrav/grav/security/advisories/GHSA-ffmg-hfvg-jhg9",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Grav - 마크다운 이미지 resize() 액션을 통한 저장된 CSS 삽입"
+  },
+  {
+    "cve": "CVE-2026-58473",
+    "title": "Cognee < 1.2.0 Unauthorized LLM Configuration Overwrite via /api/v1/settings",
+    "desc": "Cognee before 1.2.0 contains an improper access control vulnerability that allows unauthenticated attackers to overwrite the global LLM provider configuration by self-registering an account and calling the settings endpoint, which performs no admin or superuser check. Attackers can redirect all LLM operations instance-wide to an attacker-controlled endpoint by exploiting the process-wide singleton",
+    "cvss": 9.1,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-862",
+      "CWE-306"
+    ],
+    "affected": [
+      {
+        "vendor": "topoteretes",
+        "product": "cognee"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-07",
+    "updated": "2026-07-08",
+    "url": "https://github.com/topoteretes/cognee/releases/tag/v1.2.0",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Cognee < 1.2.0: /api/v1/settings를 통한 무단 LLM 구성 덮어쓰기"
+  },
+  {
+    "cve": "CVE-2026-58468",
+    "title": "NocoBase 2.1.20 Server-Side Request Forgery via serverRequest wrapper",
+    "desc": "NocoBase through 2.1.20 contains a server-side request forgery vulnerability in the serverRequest wrapper that allows authenticated administrators to issue arbitrary outbound HTTP requests by supplying malicious URLs to workflow request nodes, custom request action buttons, or the AI plugin. Attackers can target loopback addresses, RFC-1918 private ranges, and cloud instance metadata endpoints to ",
+    "cvss": 5.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-918"
+    ],
+    "affected": [
+      {
+        "vendor": "nocobase",
+        "product": "nocobase"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-07",
+    "updated": "2026-07-08",
+    "url": "https://github.com/nocobase/nocobase/issues/9962",
+    "source": "CISA Vulnrichment",
+    "title_ko": "NocoBase 2.1.20 serverRequest 래퍼를 통한 서버 측 요청 위조(SSRF)"
+  },
+  {
+    "cve": "CVE-2026-58293",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-73"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-08",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58293",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Microsoft Edge(크로미움 기반) 원격 코드 실행 취약점"
+  },
+  {
+    "cve": "CVE-2026-58291",
+    "title": "Microsoft Edge (Chromium-based) Information Disclosure Vulnerability",
+    "desc": "",
+    "cvss": 6.1,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-672"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-08",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58291",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Microsoft Edge(크로미움 기반) 정보 유출 취약점"
+  },
+  {
+    "cve": "CVE-2026-58289",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 9,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-843"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-08",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58289",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Microsoft Edge(크로미움 기반) 원격 코드 실행 취약점"
+  },
+  {
+    "cve": "CVE-2026-58287",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 8.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-08",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58287",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Microsoft Edge(크로미움 기반) 원격 코드 실행 취약점"
+  },
+  {
+    "cve": "CVE-2026-58286",
+    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+    "desc": "",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-284"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-08",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58286",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Microsoft Edge(크로미움 기반) 스푸핑 취약점"
+  },
+  {
+    "cve": "CVE-2026-58284",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 8.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-285"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-08",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58284",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Microsoft Edge(크로미움 기반) 원격 코드 실행 취약점"
+  },
+  {
+    "cve": "CVE-2026-58278",
+    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+    "desc": "",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-918"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-08",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58278",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Microsoft Edge(크로미움 기반) 스푸핑 취약점"
+  },
+  {
+    "cve": "CVE-2026-58276",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-08",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58276",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Microsoft Edge(크로미움 기반) 원격 코드 실행 취약점"
+  },
+  {
+    "cve": "CVE-2026-58049",
+    "title": "FFmpeg - Out-of-Bounds Write in RASC Decoder decode_dlta()",
+    "desc": "FFmpeg's RASC video decoder (decode_dlta in libavcodec/rasc.c) performs 32-bit reads and writes at the row cursor before the NEXT_LINE row-boundary check and validates the DLTA region in pixel rather than byte units, so a DLTA run on a PAL8 frame can access several bytes past the row allocation. A crafted media stream using the RASC FourCC, decoded by libavcodec, triggers a bitstream-controlled ou",
+    "cvss": 8.6,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-787"
+    ],
+    "affected": [
+      {
+        "vendor": "FFmpeg",
+        "product": "FFmpeg"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-28",
+    "updated": "2026-07-08",
+    "url": "https://github.com/bikini/exploitarium/tree/main/ffmpeg-rasc-dlta-calc-poc",
+    "source": "CISA Vulnrichment",
+    "title_ko": "FFmpeg - RASC 디코더의 decode_dlta() 함수에서 발생하는 범위를 벗어난 쓰기 오류"
+  },
+  {
+    "cve": "CVE-2026-59800",
+    "title": "9Router < 0.4.44 - OS Command Injection via sudoPassword Parameter in Tailscale Install Endpoint",
+    "desc": "9Router before 0.4.44 contains an OS command injection vulnerability in the unauthenticated POST /api/tunnel/tailscale-install endpoint (this route is not covered by the dashboard middleware matcher, so no authorization check is applied). The sudoPassword field from the request body is written to the stdin of a 'sudo -S sh' child process. When sudo does not prompt for a password (the process runs ",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-78"
+    ],
+    "affected": [
+      {
+        "vendor": "decolua",
+        "product": "9router"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-07",
+    "updated": "2026-07-07",
+    "url": "https://github.com/decolua/9router/security/advisories/GHSA-g6g7-pvmx-m74p",
+    "source": "CISA Vulnrichment",
+    "title_ko": "9Router < 0.4.44 - Tailscale 설치 엔드포인트의 sudoPassword 매개변수를 통한 OS 명령어 주입"
+  },
+  {
+    "cve": "CVE-2026-59712",
+    "title": "Leantime - Credential Disclosure via Unauthenticated JSON-RPC users.getUser Method",
+    "desc": "Leantime's Users::getUser method in the JSON-RPC API lacks proper authorization checks, allowing authenticated users to retrieve full user credential rows including password hashes, TOTP secrets, and session tokens. Attackers can exploit this by calling users.getUser with arbitrary user IDs to enumerate all accounts and obtain credentials for offline password cracking, 2FA bypass, and session hija",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-639"
+    ],
+    "affected": [
+      {
+        "vendor": "Leantime",
+        "product": "Leantime"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-06",
+    "updated": "2026-07-07",
+    "url": "https://github.com/Leantime/leantime/issues/3556",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Leantime - 인증되지 않은 JSON-RPC users.getUser 메서드를 통한 자격 증명 유출"
+  },
+  {
+    "cve": "CVE-2026-59711",
+    "title": "showdown - Cross-Site Scripting via Unescaped Metadata Title in completeHTMLDocument",
+    "desc": "showdown contains a cross-site scripting vulnerability in metadata title handling that allows attackers to inject arbitrary HTML and JavaScript. When completeHTMLDocument option is enabled, unescaped less-than and greater-than characters in markdown frontmatter metadata are inserted directly into HTML title tags, enabling attackers to break out of the title context and execute malicious scripts in",
+    "cvss": 6.1,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "showdown",
+        "product": "showdown"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-06",
+    "updated": "2026-07-07",
+    "url": "https://github.com/showdownjs/showdown/issues/1047",
+    "source": "CISA Vulnrichment",
+    "title_ko": "showdown - completeHTMLDocument의 이스케이프 처리되지 않은 메타데이터 제목을 통한 크로스사이트 스크립팅"
+  },
+  {
+    "cve": "CVE-2026-59710",
+    "title": "showdown - Stored XSS via Unescaped Table Header ID Attribute Injection",
+    "desc": "showdown contains a stored cross-site scripting vulnerability in the parseHeaders function of src/subParsers/makehtml/tables.js that fails to properly escape table header ID attributes. Attackers can inject arbitrary HTML and script-executing SVG elements through double-quote characters in markdown table headers, achieving stored XSS when untrusted markdown is rendered with the default github flav",
+    "cvss": 6.1,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "showdown",
+        "product": "showdown"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-06",
+    "updated": "2026-07-07",
+    "url": "https://github.com/showdownjs/showdown/issues/1046",
+    "source": "CISA Vulnrichment",
+    "title_ko": "쇼다운 - 이스케이프 처리되지 않은 테이블 헤더 ID 속성 주입을 통한 저장형 XSS"
+  },
+  {
+    "cve": "CVE-2026-59152",
+    "title": "Arbitrary server-side file read in LangSmith SDK TracingMiddleware",
+    "desc": "LangSmith Client SDKs provide SDK's for interacting with the LangSmith platform. Prior to 0.8.18, an attacker who can send an HTTP request to a server running the LangSmith SDK's TracingMiddleware can cause that server to read an arbitrary file from its local filesystem and upload the contents to LangSmith as a trace attachment. Depending on how the distributed trace system is deployed, triggering",
+    "cvss": 5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-22",
+      "CWE-346",
+      "CWE-843"
+    ],
+    "affected": [
+      {
+        "vendor": "langchain-ai",
+        "product": "langsmith-sdk"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-06",
+    "updated": "2026-07-07",
+    "url": "https://github.com/langchain-ai/langsmith-sdk/security/advisories/GHSA-f4xh-w4cj-qxq8",
+    "source": "CISA Vulnrichment",
+    "title_ko": "LangSmith SDK의 TracingMiddleware에서 서버 측 파일 임의 읽기 취약점"
+  },
+  {
+    "cve": "CVE-2026-58593",
+    "title": "NodeBB - ActivityPub Author Spoofing via Unvalidated attributedTo Mapped to Local User",
+    "desc": "NodeBB does not bind the claimed author of an inbound ActivityPub object to the authenticated remote actor. The inbound middleware verifies the HTTP-signature actor and checks the origin of object.id, but never validates that attributedTo corresponds to the sender. In the object mock, attributedTo is used directly as a uid, and actors.assert silently ignores numeric identifiers (filtering them out",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-345",
+      "CWE-290"
+    ],
+    "affected": [
+      {
+        "vendor": "NodeBB",
+        "product": "NodeBB"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-07-07",
+    "url": "https://github.com/bikini/exploitarium/tree/main/nodebb-activitypub-attributedto-local-uid-spoof-poc",
+    "source": "CISA Vulnrichment",
+    "title_ko": "NodeBB - 검증되지 않은 attributedTo를 통해 로컬 사용자로 매핑되는 ActivityPub 작성자 사칭"
+  },
+  {
+    "cve": "CVE-2026-58578",
+    "title": "LobeChat < 2.2.10-canary.15 - Regular Expression Denial of Service in GitHub Skill Import",
+    "desc": "LobeChat before version 2.2.10-canary.15 contains a regular expression denial of service (ReDoS) vulnerability that allows authenticated attackers to block the Node.js event loop by supplying a catastrophic-backtracking pattern in a GitHub repository URL path during skill import. Attackers can craft a malicious basePath value containing unescaped regex metacharacters such as catastrophic-backtrack",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-1333"
+    ],
+    "affected": [
+      {
+        "vendor": "lobehub",
+        "product": "lobehub"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-02",
+    "updated": "2026-07-07",
+    "url": "https://github.com/lobehub/lobehub/releases/tag/v2.2.10-canary.15",
+    "source": "CISA Vulnrichment",
+    "title_ko": "LobeChat < 2.2.10-canary.15 - GitHub 스킬 가져오기 기능의 정규 표현식 기반 서비스 거부(DoS) 취약점"
+  },
+  {
+    "cve": "CVE-2026-58384",
+    "title": "Gimp: gimp: integer overflow in read_rle_channel()",
+    "desc": "A flaw was found in GIMP's PSD parser. An integer overflow in read_RLE_channel() can cause an undersized heap allocation for the RLE row-length table, after which subsequent per-row writes corrupt heap memory. This could lead to memory corruption, potentially resulting in denial of service or arbitrary code execution.",
+    "cvss": 7.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-190"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-07",
+    "updated": "2026-07-07",
+    "url": "https://access.redhat.com/security/cve/CVE-2026-58384",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Gimp: gimp: read_rle_channel() 함수에서 발생하는 정수 오버플로우"
+  },
+  {
+    "cve": "CVE-2026-58298",
+    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+    "desc": "",
+    "cvss": 7.2,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-07",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58298",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Microsoft Edge(크로미움 기반) 스푸핑 취약점"
+  },
+  {
+    "cve": "CVE-2026-58266",
+    "title": "Anki: User scripts in iframes have access to the internal Anki API",
+    "desc": "Anki is a program for creating and reviewing flashcards. Prior to 25.09.4, Anki's webview-based pages communicate with the Rust backend using an internal localhost API, and user scripts included via iframes in the editor can access this API despite protections intended to block reviewer and editor scripts. A malicious imported card package with an embedded iframe can use exposed API methods such a",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-346"
+    ],
+    "affected": [
+      {
+        "vendor": "ankitects",
+        "product": "anki"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-07",
+    "updated": "2026-07-07",
+    "url": "https://github.com/ankitects/anki/security/advisories/GHSA-cw6h-ffmh-x6vh",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Anki: iframe 내의 사용자 스크립트는 Anki 내부 API에 접근할 수 있습니다"
+  },
+  {
+    "cve": "CVE-2026-59713",
+    "title": "Leantime - OIDC Login CSRF via Unconditional State Verification Stub",
+    "desc": "Leantime contains an OIDC login CSRF vulnerability in the verifyState() method that unconditionally returns true without validating state parameters. Attackers can craft malicious callback URLs with attacker-controlled authorization codes to perform session fixation, logging victims in as the attacker.",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-352"
+    ],
+    "affected": [
+      {
+        "vendor": "Leantime",
+        "product": "Leantime"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-06",
+    "updated": "2026-07-06",
+    "url": "https://github.com/Leantime/leantime/issues/3535",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Leantime - 무조건적 상태 검증 스텁을 통한 OIDC 로그인 CSRF"
+  },
+  {
+    "cve": "CVE-2026-59520",
+    "title": "WordPress CrawlWP SEO plugin <= 3.0.16 - Cross Site Request Forgery (CSRF) vulnerability",
+    "desc": "Cross-Site Request Forgery (CSRF) vulnerability in properfraction CrawlWP SEO allows Cross Site Request Forgery.\n\nThis issue affects CrawlWP SEO: from n/a through 3.0.16.",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-352"
+    ],
+    "affected": [
+      {
+        "vendor": "properfraction",
+        "product": "CrawlWP SEO"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-05",
+    "updated": "2026-07-06",
+    "url": "https://patchstack.com/database/wordpress/plugin/mihdan-index-now/vulnerability/wordpress-index-now-plugin-3-0-16-cross-site-request-forgery-csrf-vulnerability?_s_id=cve",
+    "source": "CISA Vulnrichment",
+    "title_ko": "WordPress CrawlWP SEO 플러그인 <= 3.0.16 - 크로스 사이트 요청 위조(CSRF) 취약점"
+  },
+  {
+    "cve": "CVE-2026-59511",
+    "title": "WordPress Exclusive Addons Elementor plugin <= 2.7.9.9 - Sensitive Data Exposure vulnerability",
+    "desc": "Insertion of Sensitive Information Into Sent Data vulnerability in Tim Strifler Exclusive Addons Elementor allows Retrieve Embedded Sensitive Data.\n\nThis issue affects Exclusive Addons Elementor: from n/a through 2.7.9.9.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-201"
+    ],
+    "affected": [
+      {
+        "vendor": "Tim Strifler",
+        "product": "Exclusive Addons Elementor"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-05",
+    "updated": "2026-07-06",
+    "url": "https://patchstack.com/database/wordpress/plugin/exclusive-addons-for-elementor/vulnerability/wordpress-exclusive-addons-elementor-plugin-2-7-9-9-sensitive-data-exposure-vulnerability?_s_id=cve",
+    "source": "CISA Vulnrichment",
+    "title_ko": "워드프레스 전용 애드온 Elementor 플러그인 <= 2.7.9.9 - 민감한 데이터 유출 취약점"
+  },
+  {
+    "cve": "CVE-2026-59510",
+    "title": "Authenticated Path Traversal in AIL Framework PDF Object Handling Enables Potential Arbitrary File Read",
+    "desc": "AIL Framework contains a path traversal vulnerability in its PDF object handling. Prior to commit 14c618fce4d1df02358717c48ea903706abecdf2, the PDF.get_filepath() function constructed a file path by joining the configured PDF storage directory with a path derived from a PDF object identifier, without verifying that the resolved path remained within the intended PDF_FOLDER directory.\n\nAn authentica",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "ail-project",
+        "product": "ail-framework"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-05",
+    "updated": "2026-07-06",
+    "url": "https://github.com/ail-project/ail-framework/commit/14c618fce4d1df02358717c48ea903706abecdf2.patch",
+    "source": "CISA Vulnrichment",
+    "title_ko": "AIL 프레임워크의 PDF 객체 처리 과정에서 발생하는 인증된 경로 탐색(Authenticated Path Traversal) 취약점으로 인해 임의의 파일을 읽을 수 있는 가능성이 있습니다."
+  },
+  {
+    "cve": "CVE-2026-59509",
+    "title": "Unauthenticated arbitrary MongoDB collection read in cve-search",
+    "desc": "An unauthenticated improper input validation vulnerability in the POST /fetch_cve_data endpoint in cve-search. A remote attacker can manipulate request parameters controlling the MongoDB collection, projected fields, and regular-expression filters to read arbitrary application MongoDB collections. This can expose administrative usernames and password hashes from the mgmt_users collection, enabling",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-20"
+    ],
+    "affected": [
+      {
+        "vendor": "cve-search",
+        "product": "cve-search"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-05",
+    "updated": "2026-07-06",
+    "url": "https://github.com/cve-search/cve-search/pull/1218",
+    "source": "CISA Vulnrichment",
+    "title_ko": "cve-search에서 인증 없이 MongoDB 컬렉션의 임의 데이터 읽기 취약점"
+  },
+  {
+    "cve": "CVE-2026-59234",
+    "title": "Authorization Bypass Through User-Controlled Key in Prospero Flow CRM calendar event deletion",
+    "desc": "Authorization Bypass Through User-Controlled Key (CWE-639) in CalendarDeleteEventController (app/Http/Controllers/Calendar/CalendarDeleteEventController.php), exposed at GET /calendar/event/delete/{id}, in Prospero Flow CRM before 5.5.3 allows a remote, authenticated attacker to delete arbitrary calendar events belonging to other users by manipulating the {id} path parameter, because the delete ha",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-639"
+    ],
+    "affected": [
+      {
+        "vendor": "Roskus",
+        "product": "Prospero Flow CRM"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-06",
+    "url": "https://github.com/Roskus/prospero-flow-crm/commit/8c26eed4d80544c30e55448e12a8e999af6d2b70",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Prospero Flow CRM 캘린더 일정 삭제 시 사용자 제어 키를 통한 권한 우회"
+  },
+  {
+    "cve": "CVE-2026-59196",
+    "title": "pnpm: hoisted install imports lockfile alias outside node_modules",
+    "desc": "pnpm is a package manager. Prior to 10.34.4 and 11.7.0, a crafted lockfile alias could be joined directly under a hoisted node_modules directory. Traversal aliases could escape that directory, while reserved aliases such as .bin or .pnpm could overwrite pnpm-owned layout.  This vulnerability is fixed in 10.34.4 and 11.7.0.",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-22",
+      "CWE-73"
+    ],
+    "affected": [
+      {
+        "vendor": "pnpm",
+        "product": "pnpm"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-06",
+    "updated": "2026-07-06",
+    "url": "https://github.com/pnpm/pnpm/security/advisories/GHSA-fr4h-3cph-29xv",
+    "source": "CISA Vulnrichment",
+    "title_ko": "pnpm: node_modules 외부에서 import, lockfile, alias를 호이스팅하여 설치"
+  },
+  {
+    "cve": "CVE-2026-59195",
+    "title": "pnpm: Path traversal in configDependencies env lockfile allows symlink creation outside node_modules/.pnpm-config",
+    "desc": "pnpm is a package manager. Prior to 10.34.4 and 11.8.0, pnpm accepts package names from the env lockfile configDependencies section and uses those names directly when creating config dependency symlinks under node_modules/.pnpm-config. A malicious repository can commit a crafted pnpm-lock.yaml whose env-lockfile document contains a traversal-shaped config dependency name. During pnpm install, pnpm",
+    "cvss": 8.2,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "pnpm",
+        "product": "pnpm"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-06",
+    "updated": "2026-07-06",
+    "url": "https://github.com/pnpm/pnpm/security/advisories/GHSA-qrv3-253h-g69c",
+    "source": "CISA Vulnrichment",
+    "title_ko": "pnpm: configDependencies 환경 잠금 파일의 경로 탐색으로 인해 node_modules/.pnpm-config 외부에 심볼릭 링크가 생성될 수 있음"
+  },
+  {
+    "cve": "CVE-2026-59194",
+    "title": "pnpm: patch-remove could delete project-selected files outside the patches directory",
+    "desc": "pnpm is a package manager. Prior to 10.34.4 and 11.7.0, a crafted patch entry could resolve outside the configured patches directory and cause pnpm patch-remove to delete an arbitrary reachable file. This vulnerability is fixed in 10.34.4 and 11.7.0.",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-22",
+      "CWE-73"
+    ],
+    "affected": [
+      {
+        "vendor": "pnpm",
+        "product": "pnpm"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-06",
+    "updated": "2026-07-06",
+    "url": "https://github.com/pnpm/pnpm/security/advisories/GHSA-72r4-9c5j-mj57",
+    "source": "CISA Vulnrichment",
+    "title_ko": "pnpm: patch-remove 명령어가 patches 디렉터리 외부의 프로젝트에서 선택한 파일을 삭제할 수 있음"
+  },
+  {
+    "cve": "CVE-2026-59102",
+    "title": "Forgejo < 15.0.3 - Stored XSS via Actions Run Full Name Rendering",
+    "desc": "Forgejo before 15.0.3 contains a stored cross-site scripting vulnerability that allows authenticated attackers to execute arbitrary JavaScript in other users' browsers by setting a full name containing an HTML payload and triggering an Actions run. When the DEFAULT_SHOW_FULL_NAME option is enabled, the run description is assembled server-side with the user's display name interpolated into an HTML ",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "forgejo",
+        "product": "forgejo"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-02",
+    "updated": "2026-07-06",
+    "url": "https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/15.0.3.md",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Forgejo < 15.0.3 - 액션 실행 시 전체 이름 렌더링을 통한 저장형 XSS"
+  },
+  {
+    "cve": "CVE-2026-59100",
+    "title": "LobeChat 2.2.9 - Broken Object Level Authorization via Chat-Group Agent Operations",
+    "desc": "LobeChat through 2.2.9 contains a broken object level authorization vulnerability that allows authenticated attackers to access and modify other users' chat-group agent data by supplying arbitrary group identifiers. Attackers can invoke the getGroupAgents, updateAgentInGroup, and removeAgentsFromGroup operations without user-scoped predicates to read agent listings, modify agent roles and ordering",
+    "cvss": 5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-639"
+    ],
+    "affected": [
+      {
+        "vendor": "lobehub",
+        "product": "lobehub"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-02",
+    "updated": "2026-07-06",
+    "url": "https://github.com/lobehub/lobehub/issues/16537",
+    "source": "CISA Vulnrichment",
+    "title_ko": "LobeChat 2.2.9 - 채팅 그룹 에이전트 작업을 통한 객체 수준 권한 부여 오류"
+  },
+  {
+    "cve": "CVE-2026-59099",
+    "title": "Apereo CAS 7.3.0 < 8.0.0-RC6 - AES-GCM Nonce Reuse Information Disclosure",
+    "desc": "Apereo CAS 7.3.0 before 8.0.0-RC6 contains a cryptographic vulnerability that allows remote unauthenticated attackers to recover plaintext conversation state by exploiting AES-GCM initialization vector reuse across the server lifetime. Attackers can collect multiple client-side webflow execution tokens from the unauthenticated login page and perform known-plaintext analysis to decrypt the webflow ",
+    "cvss": 9.1,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-323"
+    ],
+    "affected": [
+      {
+        "vendor": "apereo",
+        "product": "cas"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-02",
+    "updated": "2026-07-06",
+    "url": "https://apereo.github.io/2026/06/18/vuln/",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Apereo CAS 7.3.0 < 8.0.0-RC6 - AES-GCM 논스 재사용으로 인한 정보 유출"
+  },
+  {
+    "cve": "CVE-2026-59093",
+    "title": "Weaviate < 1.38.0 - Privilege Escalation via Unchecked Permissions in RBAC Role Assignment",
+    "desc": "Weaviate before 1.38.0 does not verify that a principal performing an RBAC role assignment holds the permissions granted by the assigned role. The assignRoleToUser and assignRoleToGroup handlers (POST /authz/users/{id}/assign and /authz/groups/{id}/assign) authorize only that the caller may assign roles to the target user or group, not the permissions contained in the assigned roles, unlike role c",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-266"
+    ],
+    "affected": [
+      {
+        "vendor": "weaviate",
+        "product": "weaviate"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-02",
+    "updated": "2026-07-06",
+    "url": "https://github.com/weaviate/weaviate/releases/tag/v1.38.0",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Weaviate < 1.38.0 - RBAC 역할 할당 시 권한 점검 미비로 인한 권한 상승 취약점"
+  },
+  {
+    "cve": "CVE-2026-59092",
+    "title": "JuiceFS - Authentication Bypass via pprof and metrics Endpoints",
+    "desc": "JuiceFS through 1.3.1, fixed in commit a46979c, contains an authentication bypass vulnerability that allows unauthenticated remote attackers to access sensitive debug and metrics endpoints by exploiting improper handler registration on the shared http.DefaultServeMux. Attackers can request the /debug/pprof/cmdline endpoint to obtain the process command line containing metadata engine connection st",
+    "cvss": 7.7,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-489"
+    ],
+    "affected": [
+      {
+        "vendor": "juicedata",
+        "product": "juicefs"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-02",
+    "updated": "2026-07-06",
+    "url": "https://github.com/juicedata/juicefs/issues/7213",
+    "source": "CISA Vulnrichment",
+    "title_ko": "JuiceFS - pprof 및 metrics 엔드포인트를 통한 인증 우회"
+  },
+  {
+    "cve": "CVE-2026-59089",
+    "title": "Gimp: gimp: denial of service via integer overflow in playstation tim loader",
+    "desc": "A flaw was found in GIMP. The PlayStation TIM loader, responsible for handling PlayStation image files, incorrectly calculates the size of the Color Look-Up Table (CLUT) due to an integer overflow. This occurs when multiplying num_colors and num_cluts, both 16-bit unsigned short integers, resulting in a value exceeding the maximum integer limit. An attacker could exploit this by providing a specia",
+    "cvss": 5.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-190"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-06",
+    "updated": "2026-07-06",
+    "url": "https://access.redhat.com/security/cve/CVE-2026-59089",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Gimp: gimp: 플레이스테이션 TIM 로더의 정수 오버플로우를 통한 서비스 거부 공격"
+  },
+  {
+    "cve": "CVE-2026-58597",
+    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+    "desc": "",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-357"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-06",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58597",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Microsoft Edge(크로미움 기반) 스푸핑 취약점"
+  },
+  {
+    "cve": "CVE-2026-58579",
+    "title": "RAGFlow < 0.26.3 - Stored Cross-Site Scripting via Agent Pipeline Node Name",
+    "desc": "RAGFlow before 0.26.3 stores an agent pipeline (DSL) node name without sanitization: the agent update endpoint normalizes the submitted DSL via normalize_dsl, which only performs JSON serialization validation and preserves the node name verbatim. The dataflow-result web UI then renders that name into the \"Rerun from current step\" confirmation modal via dangerouslySetInnerHTML, and the i18next conf",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "infiniflow",
+        "product": "ragflow"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-02",
+    "updated": "2026-07-06",
+    "url": "https://github.com/infiniflow/ragflow/releases/tag/v0.26.3",
+    "source": "CISA Vulnrichment",
+    "title_ko": "RAGFlow < 0.26.3 - 에이전트 파이프라인 노드 이름을 통한 저장형 크로스사이트 스크립팅(XSS) 취약점"
+  },
+  {
+    "cve": "CVE-2026-58524",
+    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+    "desc": "",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-06",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58524",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Microsoft Edge(크로미움 기반) 스푸핑 취약점"
+  },
+  {
+    "cve": "CVE-2026-58467",
+    "title": "Cockpit CMS < 364 - Path Traversal Local File Inclusion via index.php",
+    "desc": "Cockpit CMS before release 364 contains a path traversal and local file inclusion vulnerability that allows unauthenticated attackers to read arbitrary files or execute PHP files by including unvalidated PATH_INFO derived from REQUEST_URI in filesystem path construction without containment checks. Attackers can inject dot-dot sequences into the URL to traverse outside the designated spaces directo",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "cockpit-project",
+        "product": "cockpit"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-02",
+    "updated": "2026-07-06",
+    "url": "https://github.com/cockpit-project/cockpit/releases/tag/364",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Cockpit CMS < 364 - index.php를 통한 경로 탐색 및 로컬 파일 포함 취약점"
+  },
+  {
+    "cve": "CVE-2026-58426",
+    "title": "Gitea Actions Artifacts V4 signed URL HMAC ambiguity allows cross-repository artifact read and cross-task upload-state write",
+    "desc": "Gitea Actions Artifacts V4 signed URL HMAC ambiguity allows cross-repository artifact read and cross-task upload-state write",
+    "cvss": 9.6,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-347"
+    ],
+    "affected": [
+      {
+        "vendor": "Gitea",
+        "product": "Gitea Open Source Git Server"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-06",
+    "url": "https://github.com/go-gitea/gitea/security/advisories/GHSA-hg5r-vq93-9fv6",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Gitea Actions Artifacts V4의 서명된 URL HMAC 모호성으로 인해 리포지토리 간 아티팩트 읽기 및 태스크 간 업로드 상태 쓰기가 가능해집니다."
+  },
+  {
+    "cve": "CVE-2026-58424",
+    "title": "Permanent Fork PR Workflow Approval Gate Bypass",
+    "desc": "Permanent Fork PR Workflow Approval Gate Bypass",
+    "cvss": 8.9,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-285",
+      "CWE-732",
+      "CWE-863"
+    ],
+    "affected": [
+      {
+        "vendor": "Gitea",
+        "product": "Gitea Open Source Git Server"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-06",
+    "url": "https://github.com/go-gitea/gitea/security/advisories/GHSA-777r-4v59-6486",
+    "source": "CISA Vulnrichment",
+    "title_ko": "영구 포크 PR 워크플로우 승인 단계 우회"
+  },
+  {
+    "cve": "CVE-2026-58422",
+    "title": "Improper authorization on OAuth sign-in callback silently re-enables administrator-disabled accounts",
+    "desc": "Improper authorization on OAuth sign-in callback silently re-enables administrator-disabled accounts",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-284"
+    ],
+    "affected": [
+      {
+        "vendor": "Gitea",
+        "product": "Gitea Open Source Git Server"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-06",
+    "url": "https://github.com/go-gitea/gitea/security/advisories/GHSA-g9g6-qhrc-p3qc",
+    "source": "CISA Vulnrichment",
+    "title_ko": "OAuth 로그인 콜백에서 권한 부여가 부적절하게 이루어지면, 관리자가 비활성화한 계정이 아무런 알림 없이 다시 활성화됩니다."
+  },
+  {
+    "cve": "CVE-2026-58421",
+    "title": "Unauthenticated ReDoS via CODEOWNERS pattern matching allows denial of service",
+    "desc": "Unauthenticated ReDoS via CODEOWNERS pattern matching allows denial of service",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-284"
+    ],
+    "affected": [
+      {
+        "vendor": "Gitea",
+        "product": "Gitea Open Source Git Server"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-06",
+    "url": "https://github.com/go-gitea/gitea/security/advisories/GHSA-v96j-25gv-g2w9",
+    "source": "CISA Vulnrichment",
+    "title_ko": "CODEOWNERS 패턴 매칭을 통한 인증되지 않은 ReDoS 공격으로 인해 서비스 거부 현상이 발생합니다."
+  },
+  {
+    "cve": "CVE-2026-58418",
+    "title": "SSRF via HTTP Redirect in Repository Migration",
+    "desc": "SSRF via HTTP Redirect in Repository Migration",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-918"
+    ],
+    "affected": [
+      {
+        "vendor": "Gitea",
+        "product": "Gitea Open Source Git Server"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-06",
+    "url": "https://github.com/go-gitea/gitea/security/advisories/GHSA-rqhx-647v-wx32",
+    "source": "CISA Vulnrichment",
+    "title_ko": "리포지토리 마이그레이션 시 HTTP 리디렉션을 통한 SSRF"
+  },
+  {
+    "cve": "CVE-2026-58380",
+    "title": "Gimp: gimp: stack buffer overflow in pnmscanner_gettoken()",
+    "desc": "A flaw was found in GIMP's PNM file format parser. When parsing a specially crafted PNM file, the pnmscanner_gettoken() function writes a null terminator one byte past the end of a stack-allocated buffer due to an off-by-one error in the loop boundary check. This could lead to memory corruption, potentially resulting in denial of service or arbitrary code execution.",
+    "cvss": 7.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-193"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-06",
+    "updated": "2026-07-06",
+    "url": "https://access.redhat.com/security/cve/CVE-2026-58380",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Gimp: gimp: pnmscanner_gettoken() 함수에서 스택 버퍼 오버플로우"
+  },
+  {
+    "cve": "CVE-2026-58299",
+    "title": "Microsoft Edge for Android Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-367"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-06",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58299",
+    "source": "CISA Vulnrichment",
+    "title_ko": "안드로이드용 Microsoft Edge 원격 코드 실행 취약점"
+  },
+  {
+    "cve": "CVE-2026-58296",
+    "title": "Microsoft Edge for Android Information Disclosure Vulnerability",
+    "desc": "",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-359"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-06",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58296",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Android용 Microsoft Edge 정보 유출 취약점"
+  },
+  {
+    "cve": "CVE-2026-58295",
+    "title": "Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability",
+    "desc": "",
+    "cvss": 8.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-843"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-06",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58295",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Microsoft Edge(크로미움 기반) 보안 기능 우회 취약점"
+  },
+  {
+    "cve": "CVE-2026-58226",
+    "title": "Unauthenticated denial-of-service via unbounded HPACK integer decoding in hpax",
+    "desc": "Inefficient Algorithmic Complexity vulnerability in elixir-mint hpax allows unauthenticated denial-of-service via unbounded HPACK integer decoding.\n\nhpax decodes HPACK variable-length integers with no upper bound on the decoded value or the number of continuation octets. 'Elixir.HPAX.Types':decode_remaining_integer/3 accumulates the integer as int + (value <<< m), shifting by 7 more bits for each ",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-407"
+    ],
+    "affected": [
+      {
+        "vendor": "elixir-mint",
+        "product": "hpax"
+      },
+      {
+        "vendor": "elixir-mint",
+        "product": "hpax"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-06",
+    "updated": "2026-07-06",
+    "url": "https://github.com/elixir-mint/hpax/security/advisories/GHSA-jj2p-32j7-whj2",
+    "source": "CISA Vulnrichment",
+    "title_ko": "hpax의 무제한 HPACK 정수 디코딩을 통한 인증되지 않은 서비스 거부 공격"
+  },
+  {
+    "cve": "CVE-2026-58203",
+    "title": "NestedSecretsSettingsSource follows symlinks outside secrets_dir, enabling local file read and bypassing secrets_dir_max_size",
+    "desc": "pydantic-settings provides settings management using Pydantic. From 2.12.0 until 2.14.2, NestedSecretsSettingsSource reads secret values from files in a configured secrets_dir. When secrets_nested_subdir=True, a directory entry inside secrets_dir that is a symbolic link pointing outside secrets_dir is followed, so files outside the configured directory are read into settings values. The same code ",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-22",
+      "CWE-59",
+      "CWE-400"
+    ],
+    "affected": [
+      {
+        "vendor": "pydantic",
+        "product": "pydantic-settings"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-06",
+    "updated": "2026-07-06",
+    "url": "https://github.com/pydantic/pydantic-settings/security/advisories/GHSA-4xgf-cpjx-pc3j",
+    "source": "CISA Vulnrichment",
+    "title_ko": "NestedSecretsSettingsSource는 secrets_dir 외부의 심볼릭 링크를 따라가며, 이를 통해 로컬 파일을 읽을 수 있게 하고 secrets_dir_max_size 제한을 우회합니다."
+  },
+  {
+    "cve": "CVE-2026-59519",
+    "title": "WordPress FormLayer plugin <= 1.0.6 - Sensitive Data Exposure vulnerability",
+    "desc": "Insertion of Sensitive Information Into Sent Data vulnerability in Softaculous FormLayer allows Retrieve Embedded Sensitive Data.\n\nThis issue affects FormLayer: from n/a through 1.0.6.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-201"
+    ],
+    "affected": [
+      {
+        "vendor": "Softaculous",
+        "product": "FormLayer"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-05",
+    "updated": "2026-07-05",
+    "url": "https://patchstack.com/database/wordpress/plugin/formlayer/vulnerability/wordpress-formlayer-plugin-1-0-6-sensitive-data-exposure-vulnerability?_s_id=cve",
+    "source": "CISA Vulnrichment",
+    "title_ko": "WordPress FormLayer 플러그인 <= 1.0.6 - 민감한 데이터 유출 취약점"
+  },
+  {
+    "cve": "CVE-2026-58592",
+    "title": "Ladybird - Web-Reachable Code Execution via Dangling FunctionType Reference in WebAssembly ESM Integration",
+    "desc": "Ladybird contains a dangling-reference memory-safety flaw in its WebAssembly ESM-integration module loader. When a JavaScript function is imported into a WebAssembly module via the ESM path, WebAssemblyModule.cpp passes a stack-local Wasm::FunctionType by reference to create_host_function, whose host callback captures and later reads that reference; once the ESM link-loop iteration ends the Functi",
+    "cvss": 8.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-825",
+      "CWE-843",
+      "CWE-787"
+    ],
+    "affected": [
+      {
+        "vendor": "LadybirdBrowser",
+        "product": "Ladybird"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-07-02",
+    "url": "https://github.com/bikini/exploitarium/tree/main/ladybird-wasm-esm-host-function-rce-poc",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Ladybird - WebAssembly ESM 통합 시 매달린 함수 유형 참조를 통한 웹 접근 가능 코드 실행"
+  },
+  {
+    "cve": "CVE-2026-58451",
+    "title": "Horde IMP < 7.0.1 Path Traversal via Compose.php img src",
+    "desc": "Horde IMP before 7.0.1 contains a path traversal vulnerability in lib/Compose.php that allows authenticated attackers to read arbitrary files from the server filesystem by embedding traversal sequences after a CKEditor path prefix in img src URLs. Attackers can bypass the stripos() prefix validation by appending sequences such as traversal segments after the matching prefix, causing file_get_conte",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "horde",
+        "product": "imp"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-07-02",
+    "url": "https://github.com/horde/imp/releases/tag/v7.0.1",
+    "source": "CISA Vulnrichment",
+    "title_ko": "호드 IMP < 7.0.1 Compose.php의 img src를 통한 경로 탐색"
+  },
+  {
+    "cve": "CVE-2026-58015",
+    "title": "Glib: path traversal in glib/gio/gdbusauthmechanismsha1.c via keyring_lookup_entry and mechanism_client_data_receive",
+    "desc": "A flaw was found in GLib. The D-Bus client-side implementation of the DBUS_COOKIE_SHA1 SASL authentication mechanism does not validate the cookie_context parameter received from the server. A malicious D-Bus server can supply a cookie_context containing path traversal sequences, causing the client to read an arbitrary file and exfiltrate sensitive data by verifying guessed file contents against a ",
+    "cvss": 5.9,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "GNOME",
+        "product": "GLib"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-30",
+    "updated": "2026-07-02",
+    "url": "https://access.redhat.com/security/cve/CVE-2026-58015",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Glib: glib/gio/gdbusauthmechanismsha1.c 파일에서 keyring_lookup_entry 및 mechanism_client_data_receive를 통한 경로 탐색"
+  },
+  {
+    "cve": "CVE-2026-58519",
+    "title": "Stored XSS through Cargo's map format",
+    "desc": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in The Wikimedia Foundation Mediawiki - Cargo Extension allows Stored XSS.\n\nThis issue affects Mediawiki - Cargo Extension: from * before 3.9.1.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "The Wikimedia Foundation",
+        "product": "Mediawiki - Cargo Extension"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-07-01",
+    "url": "https://phabricator.wikimedia.org/T424140",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Cargo의 map 형식을 통한 저장형 XSS"
+  },
+  {
+    "cve": "CVE-2026-58452",
+    "title": "JAIOTlink C492A-W6 4.8.30.57701411 OS Command Injection via SetMAC Endpoint",
+    "desc": "JAIOTlink C492A-W6 Wi-Fi IP cameras running firmware 4.8.30.57701411 contain an OS command injection vulnerability that allows authenticated attackers to achieve remote code execution by supplying a malicious Wireless parameter to the HTTP PUT NetSDK/Factory SetMAC endpoint. Attackers can craft a string beginning with a valid MAC-like prefix followed by a semicolon and a shell payload, which bypas",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-78"
+    ],
+    "affected": [
+      {
+        "vendor": "JAIOTlink",
+        "product": "C492A-W6 Wi-Fi IP Camera"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-07-01",
+    "url": "https://github.com/rwprimitives/jaiotlink-c492a-wifi-camera/blob/main/writeups/01-setmac-command-injection.md",
+    "source": "CISA Vulnrichment",
+    "title_ko": "JAIOTlink C492A-W6 4.8.30.57701411 SetMAC 엔드포인트를 통한 OS 명령어 주입"
+  },
+  {
+    "cve": "CVE-2026-58450",
+    "title": "Invoice Ninja 5.13.26 - Open Redirect in Client Portal Login via intended Parameter",
+    "desc": "Invoice Ninja through 5.13.26 contains an open redirect vulnerability in the client portal login that allows unauthenticated attackers to redirect authenticated victims to attacker-controlled external URLs by injecting a malicious value into the intended query parameter. Attackers can craft a client login link with an external URL in the intended parameter, which is stored in the session without h",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-601"
+    ],
+    "affected": [
+      {
+        "vendor": "invoiceninja",
+        "product": "invoiceninja"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-06-30",
+    "updated": "2026-07-01",
+    "url": "https://github.com/invoiceninja/invoiceninja/issues/12039",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Invoice Ninja 5.13.26 - 클라이언트 포털 로그인 시 의도된 매개변수를 통해 리디렉션 열기"
+  },
+  {
+    "cve": "CVE-2026-58446",
+    "title": "Presenton < 0.8.8-beta - Authentication Bypass of Session Auth via Unprotected MCP Endpoint",
+    "desc": "Presenton before 0.8.8-beta bundles an MCP server that, on server/Docker deployments configured with session authentication (AUTH_USERNAME/AUTH_PASSWORD), is reachable unauthenticated at /mcp because the nginx front-end does not apply the auth_request gate to that path and the MCP server auto-mints a valid internal session token for the configured user. A remote unauthenticated attacker can invoke",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-306"
+    ],
+    "affected": [
+      {
+        "vendor": "presenton",
+        "product": "presenton"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-06-30",
+    "updated": "2026-07-01",
+    "url": "https://github.com/presenton/presenton/releases/tag/electron-v0.8.8-beta",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Presenton < 0.8.8-beta - 보호되지 않은 MCP 엔드포인트를 통한 세션 인증 우회"
+  },
+  {
+    "cve": "CVE-2026-58375",
+    "title": "JimuReport 2.5.0 - Unauthenticated Report Export via /jmreport/auto/export",
+    "desc": "JimuReport through 2.5.0 exposes the POST /jmreport/auto/export endpoint without authentication: the handler is annotated @JimuNoLoginRequired, so JimuReportTokenInterceptor skips all authentication and authorization, and the export service streams the rendered report for any supplied report id without verifying the auto-export configuration flag. An unauthenticated remote attacker can enumerate S",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-306"
+    ],
+    "affected": [
+      {
+        "vendor": "jeecgboot",
+        "product": "jimureport"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-06-30",
+    "updated": "2026-07-01",
+    "url": "https://github.com/jeecgboot/jimureport/issues/4694",
+    "source": "CISA Vulnrichment",
+    "title_ko": "JimuReport 2.5.0 - /jmreport/auto/export를 통한 인증 없는 보고서 내보내기"
+  },
+  {
+    "cve": "CVE-2026-58176",
+    "title": "RuoYi-Vue-Plus - Missing Authorization on Workflow Task Management Endpoints",
+    "desc": "RuoYi-Vue-Plus through 5.6.2, fixed in commit 88d03d9, exposes workflow task management endpoints under /workflow/task (FlwTaskController) without any permission check: the controller declares no class-level or method-level authorization annotation, so the endpoints are gated only by global authentication. Any authenticated user, regardless of assigned role, can therefore reassign workflow approva",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "dromara",
+        "product": "RuoYi-Vue-Plus"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-06-30",
+    "updated": "2026-07-01",
+    "url": "https://github.com/dromara/RuoYi-Vue-Plus/issues/44",
+    "source": "CISA Vulnrichment",
+    "title_ko": "RuoYi-Vue-Plus - 워크플로 작업 관리 엔드포인트에서 권한이 누락됨"
+  },
+  {
+    "cve": "CVE-2026-58166",
+    "title": "OpenBMB ChatDev - Unauthenticated Path Traversal in Upload Handler Allows Arbitrary File Write and Delete",
+    "desc": "OpenBMB ChatDev through 2.2.0, fixed in commit 4fd4da6, contains a path traversal vulnerability that allows unauthenticated remote attackers to write or delete arbitrary files by supplying a malicious multipart filename in the file upload endpoint. Attackers can send a crafted filename containing path traversal sequences or an absolute path to the POST uploads session endpoint, which constructs th",
+    "cvss": 9.1,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "OpenBMB",
+        "product": "ChatDev"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-06-30",
+    "updated": "2026-07-01",
+    "url": "https://github.com/OpenBMB/ChatDev/issues/638",
+    "source": "CISA Vulnrichment",
+    "title_ko": "OpenBMB ChatDev - 업로드 핸들러의 인증되지 않은 경로 탐색(Path Traversal) 취약점으로 인해 임의의 파일 쓰기 및 삭제 가능"
+  },
+  {
+    "cve": "CVE-2026-58165",
+    "title": "OpenZiti - Privilege Escalation to Admin via Unauthorized Enrollment Creation",
+    "desc": "OpenZiti through 2.0.0, fixed in commit 3027fdf, contains a privilege escalation vulnerability that allows authenticated non-admin identities with fine-grained enrollment management permissions to create enrollments for any identity, including the default administrator, because the ApplyCreate function in controller/model/enrollment_manager.go verifies only that the target identity exists without ",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "openziti",
+        "product": "ziti"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-30",
+    "updated": "2026-07-01",
+    "url": "https://github.com/openziti/ziti/issues/4010",
+    "source": "CISA Vulnrichment",
+    "title_ko": "OpenZiti - 무단 등록 생성으로 인한 관리자 권한 상승"
+  },
+  {
+    "cve": "CVE-2026-58127",
+    "title": "PACSgear MediaWriter 5.2.1 Unauthenticated RCE via .NET Remoting TCP Service",
+    "desc": "PACSgear MediaWriter 5.2.1 exposes a .NET Remoting TCP service on port 9000 via PacsgearMediaServerEngine.dll, registered with ObjectURIs RemoteObj and UIRemoteObj, without any authentication requirement. By exploiting the MarshalByRefObject object unmarshalling technique and implementing .NET WebClient class methods, an unauthenticated remote attacker can read and write arbitrary files on the hos",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-306",
+      "CWE-502"
+    ],
+    "affected": [
+      {
+        "vendor": "Hyland",
+        "product": "PACSgear MediaWriter"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-07-01",
+    "url": "https://gist.github.com/VAMorales/dc679ecab30b7045fa07bf3249a034d8",
+    "source": "CISA Vulnrichment",
+    "title_ko": "PACSgear MediaWriter 5.2.1 .NET 리모팅 TCP 서비스를 통한 인증 없는 원격 코드 실행(RCE) 취약점"
+  },
+  {
+    "cve": "CVE-2026-58126",
+    "title": "PACSgear PACS Scan 5.2.1 Unauthenticated RCE via .NET Remoting TCP Service",
+    "desc": "PACSgear PACS Scan 5.2.1 contains an unauthenticated remote code execution vulnerability that allows remote attackers to read and write arbitrary files by exploiting an exposed .NET Remoting TCP service on port 22222 via PGImageExchQueue.exe without any authentication requirement. Attackers can chain the arbitrary file write primitive with DLL hijacking in PGImageExchangeQueueSvc.exe, which loads ",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-306",
+      "CWE-502"
+    ],
+    "affected": [
+      {
+        "vendor": "Hyland",
+        "product": "PACSgear PACS Scan"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-07-01",
+    "url": "https://gist.github.com/VAMorales/6dc232729cdd517fa30d581fbcd98d8f",
+    "source": "CISA Vulnrichment",
+    "title_ko": "PACSgear PACS Scan 5.2.1 .NET 리모팅 TCP 서비스를 통한 인증 없는 원격 코드 실행(RCE) 취약점"
+  },
+  {
+    "cve": "CVE-2026-58038",
+    "title": "Stored XSS through javascript URLs in SVGs generated by EasyTimeline",
+    "desc": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Wikimedia Foundation timeline.\n\n This vulnerability is associated with program files includes/Timeline.Php, scripts/EasyTimeline.Pl.\n\n\n\nThis issue affects timeline: from * before 1.46.0, 1.45.4, 1.44.6, 1.43.9.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Wikimedia Foundation",
+        "product": "timeline"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-07-01",
+    "url": "https://phabricator.wikimedia.org/T427611",
+    "source": "CISA Vulnrichment",
+    "title_ko": "EasyTimeline에서 생성된 SVG 파일 내 자바스크립트 URL을 통한 저장형 XSS"
+  },
+  {
+    "cve": "CVE-2026-58037",
+    "title": "Core log entries for exceptions and XSS issues in log entry formatting code that may be caused by user-controlled input",
+    "desc": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Wikimedia Foundation MediaWiki.\n\n This vulnerability is associated with program files includes/Language/Language.Php, includes/Logging/BlockLogFormatter.Php, includes/Logging/LogFormatter.Php, includes/Logging/PatrolLogFormatter.Php, includes/Logging/RenameuserLogFormatter.Php, includes/Log",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Wikimedia Foundation",
+        "product": "MediaWiki"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-07-01",
+    "url": "https://phabricator.wikimedia.org/T422995",
+    "source": "CISA Vulnrichment",
+    "title_ko": "사용자가 제어하는 입력으로 인해 발생할 수 있는 로그 항목 서식 지정 코드 내의 예외 및 XSS 문제에 대한 핵심 로그 항목"
+  },
+  {
+    "cve": "CVE-2026-58036",
+    "title": "Users API leaks whether privileged users have their user groups disabled for lack of 2FA",
+    "desc": "Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Wikimedia Foundation MediaWiki.\n\n This vulnerability is associated with program files includes/Api/ApiQueryAllUsers.Php, includes/Api/ApiQueryUsers.Php, includes/Permissions/PermissionManager.Php, includes/User/UserGroupManager.Php.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-200"
+    ],
+    "affected": [
+      {
+        "vendor": "Wikimedia Foundation",
+        "product": "MediaWiki"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-07-01",
+    "url": "https://phabricator.wikimedia.org/T425406",
+    "source": "CISA Vulnrichment",
+    "title_ko": "사용자 API는 2단계 인증(2FA) 미설정으로 인해 권한이 있는 사용자의 사용자 그룹이 비활성화되었는지 여부를 노출합니다."
+  },
+  {
+    "cve": "CVE-2026-58035",
+    "title": "Stored XSS through a system message in the codex version of Special:Block",
+    "desc": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Wikimedia Foundation MediaWiki.\n\n This vulnerability is associated with program files resources/src/mediawiki.Special.Block/SpecialBlock.Vue.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Wikimedia Foundation",
+        "product": "MediaWiki"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-07-01",
+    "url": "https://phabricator.wikimedia.org/T428809",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Special:Block의 코덱스 버전에서 시스템 메시지를 통한 저장형 XSS"
+  },
+  {
+    "cve": "CVE-2026-58034",
+    "title": "Stored XSS through a system message when blocking a temporary account that's related to other temporary accounts",
+    "desc": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Wikimedia Foundation CheckUser.\n\n This vulnerability is associated with program files modules/ext.CheckUser.TempAccounts/components/blockConnectedTempAccountsField.Vue.\n\n\n\nThis issue affects CheckUser: from 1.46.0-rc.0 before 1.46.0.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Wikimedia Foundation",
+        "product": "CheckUser"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-07-01",
+    "url": "https://phabricator.wikimedia.org/T428820",
+    "source": "CISA Vulnrichment",
+    "title_ko": "다른 임시 계정과 관련된 임시 계정을 차단할 때 시스템 메시지를 통해 발생하는 저장형 XSS"
+  },
+  {
+    "cve": "CVE-2026-58033",
+    "title": "\"Total number of distinct authors\" statistic at action=info does not exclude revisions where the author name was deleted",
+    "desc": "Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Wikimedia Foundation MediaWiki.\n\n This vulnerability is associated with program files includes/Actions/InfoAction.Php.\n\n\n\nThis issue affects MediaWiki: from * before 1.46.0, 1.45.4, 1.44.6, 1.43.9.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-200"
+    ],
+    "affected": [
+      {
+        "vendor": "Wikimedia Foundation",
+        "product": "MediaWiki"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-07-01",
+    "url": "https://phabricator.wikimedia.org/T427235",
+    "source": "CISA Vulnrichment",
+    "title_ko": "action=info의 “고유 저자 총 수” 통계에는 저자 이름이 삭제된 수정 내역이 제외되지 않습니다."
+  },
+  {
+    "cve": "CVE-2026-58032",
+    "title": "mw.Api.getErrorMessage() may return injected HTML if used without errorformat=html",
+    "desc": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Wikimedia Foundation MediaWiki.\n\n This vulnerability is associated with program files resources/src/mediawiki.Api/index.Js.\n\n\n\nThis issue affects MediaWiki: from * before 1.46.0, 1.45.4, 1.44.6, 1.43.9.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Wikimedia Foundation",
+        "product": "MediaWiki"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-07-01",
+    "url": "https://phabricator.wikimedia.org/T426867",
+    "source": "CISA Vulnrichment",
+    "title_ko": "mw.Api.getErrorMessage()는 errorformat=html을 지정하지 않고 사용할 경우 삽입된 HTML을 반환할 수 있습니다."
+  },
+  {
+    "cve": "CVE-2026-58031",
+    "title": "Stored i18n XSS in Special:ApiSandbox when a deprecated module is selected",
+    "desc": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Wikimedia Foundation MediaWiki.\n\n This vulnerability is associated with program files resources/src/mediawiki.Special.Apisandbox/ApiSandboxLayout.Js.\n\n\n\nThis issue affects MediaWiki: from 1.46.0-rc.0 before 1.46.0.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Wikimedia Foundation",
+        "product": "MediaWiki"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-07-01",
+    "url": "https://phabricator.wikimedia.org/T426889",
+    "source": "CISA Vulnrichment",
+    "title_ko": "사용 중단된 모듈을 선택했을 때 Special:ApiSandbox에서 발생하는 저장형 i18n XSS 취약점"
+  },
+  {
+    "cve": "CVE-2026-58030",
+    "title": "SyntaxHighlight stored XSS via unsanitized 'linelinks' attribute",
+    "desc": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Wikimedia Foundation SyntaxHighlight_GeSHi.\n\n This vulnerability is associated with program files includes/SyntaxHighlight.Php.\n\n\n\nThis issue affects SyntaxHighlight_GeSHi: from * before 1.46.0, 1.45.4, 1.44.6, 1.43.9.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Wikimedia Foundation",
+        "product": "SyntaxHighlight_GeSHi"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-07-01",
+    "url": "https://phabricator.wikimedia.org/T427167",
+    "source": "CISA Vulnrichment",
+    "title_ko": "SyntaxHighlight, 검증되지 않은 'linelinks' 속성을 통한 저장형 XSS 취약점"
+  },
+  {
+    "cve": "CVE-2026-58029",
+    "title": "Full Account Takeover from BotPasswords and OAuth via action=changeauthenticationdata",
+    "desc": "Vulnerability in Wikimedia Foundation MediaWiki.\n\n This vulnerability is associated with program files includes/Api/ApiChangeAuthenticationData.Php, includes/Api/ApiLinkAccount.Php, includes/Api/ApiRemoveAuthenticationData.Php, includes/Specials/SpecialLinkAccounts.Php, includes/Specials/SpecialUnlinkAccounts.Php.\n\n\n\nThis issue affects MediaWiki: from * before 1.46.0, 1.45.4, 1.44.6, 1.43.9.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Wikimedia Foundation",
+        "product": "MediaWiki"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-07-01",
+    "url": "https://phabricator.wikimedia.org/T422676",
+    "source": "CISA Vulnrichment",
+    "title_ko": "BotPasswords 및 OAuth를 통한 ‘action=changeauthenticationdata’ 명령을 이용한 전체 계정 탈취"
+  },
+  {
+    "cve": "CVE-2026-58028",
+    "title": "Pretty-printed API output combined with centralauthtoken allows XSS with certain gadgets",
+    "desc": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Wikimedia Foundation MediaWiki, Wikimedia Foundation CentralAuth.\n\n This vulnerability is associated with program files includes/Api/ApiFormatBase.Php, includes/Api/ApiHelp.Php, includes/ResourceLoader/Module.Php, includes/Hooks/Handlers/PageDisplayHookHandler.Php, includes/LogFormatter/Per",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Wikimedia Foundation",
+        "product": "MediaWiki"
+      },
+      {
+        "vendor": "Wikimedia Foundation",
+        "product": "CentralAuth"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-07-01",
+    "url": "https://phabricator.wikimedia.org/T422306",
+    "source": "CISA Vulnrichment",
+    "title_ko": "정리된 형식의 API 출력이 centralauthtoken과 결합되면 특정 가젯에서 XSS 공격이 가능해집니다"
+  },
+  {
+    "cve": "CVE-2026-58027",
+    "title": "QueryAbuseFilter API can be used to see the hit count of private filters, which is hidden in the UI",
+    "desc": "Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Wikimedia Foundation AbuseFilter.\n\n This vulnerability is associated with program files includes/Api/QueryAbuseFilters.Php.\n\n\n\nThis issue affects AbuseFilter: from * before 1.46.0, 1.45.4, 1.44.6, 1.43.9.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-200"
+    ],
+    "affected": [
+      {
+        "vendor": "Wikimedia Foundation",
+        "product": "AbuseFilter"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-07-01",
+    "url": "https://phabricator.wikimedia.org/T406954",
+    "source": "CISA Vulnrichment",
+    "title_ko": "QueryAbuseFilter API를 사용하면 UI에는 표시되지 않는 비공개 필터의 조회 횟수를 확인할 수 있습니다."
+  },
+  {
+    "cve": "CVE-2026-58026",
+    "title": "$wgNonincludableNamespaces can be bypassed by embedding redirect in other namespaces",
+    "desc": "Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Wikimedia Foundation MediaWiki.\n\n This vulnerability is associated with program files includes/Parser/Parser.Php.\n\n\n\nThis issue affects MediaWiki: from * before 1.46.0, 1.45.4, 1.44.6, 1.43.9.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-200"
+    ],
+    "affected": [
+      {
+        "vendor": "Wikimedia Foundation",
+        "product": "MediaWiki"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-07-01",
+    "url": "https://phabricator.wikimedia.org/T299359",
+    "source": "CISA Vulnrichment",
+    "title_ko": "$wgNonincludableNamespaces는 다른 네임스페이스에 리다이렉트를 삽입함으로써 우회할 수 있습니다."
+  },
+  {
+    "cve": "CVE-2026-58025",
+    "title": "Remote Code Execution via Unsafe Deserialization in LogItem Import",
+    "desc": "Deserialization of untrusted data vulnerability in Wikimedia Foundation MediaWiki.\n\n This vulnerability is associated with program files includes/Import/WikiImporter.Php, includes/Import/WikiRevision.Php, includes/Logging/LogEntryBase.Php.\n\n\n\nThis issue affects MediaWiki: from * before 1.46.0, 1.45.4, 1.44.6, 1.43.9.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-502",
+      "CWE-94"
+    ],
+    "affected": [
+      {
+        "vendor": "Wikimedia Foundation",
+        "product": "MediaWiki"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-07-01",
+    "url": "https://phabricator.wikimedia.org/T422244",
+    "source": "CISA Vulnrichment",
+    "title_ko": "LogItem 가져오기 시 안전하지 않은 역직렬화를 통한 원격 코드 실행"
+  },
+  {
+    "cve": "CVE-2026-58024",
+    "title": "API identification of users on private wikis",
+    "desc": "Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Wikimedia Foundation MediaWiki.\n\n This vulnerability is associated with program files includes/Api/ApiUserrights.Php.\n\n\n\nThis issue affects MediaWiki: from * before 1.46.0, 1.45.4, 1.44.6, 1.43.9.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-200"
+    ],
+    "affected": [
+      {
+        "vendor": "Wikimedia Foundation",
+        "product": "MediaWiki"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-07-01",
+    "url": "https://phabricator.wikimedia.org/T422085",
+    "source": "CISA Vulnrichment",
+    "title_ko": "비공개 위키에서 사용자의 API 식별"
+  },
+  {
+    "cve": "CVE-2026-58374",
+    "title": "In hostapd before 2.12, a missing bounds check in AP-mode Wi-Fi 7 (IEEE 802.11be) Multi-Link Operation (MLO) association",
+    "desc": "In hostapd before 2.12, a missing bounds check in AP-mode Wi-Fi 7 (IEEE 802.11be) Multi-Link Operation (MLO) association request processing allows an unauthenticated attacker within wireless range to send a crafted management frame containing a malformed Multi-Link Element or Per-STA Profile subelement. In hostapd_process_ml_assoc_req() in src/ap/ieee802_11_eht.c, the received link_id field can be",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-193"
+    ],
+    "affected": [
+      {
+        "vendor": "w1.fi",
+        "product": "hostapd"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-30",
+    "updated": "2026-06-30",
+    "url": "https://w1.fi/security/2026-1/missing-ml-parsing-validation.txt",
+    "source": "CISA Vulnrichment",
+    "title_ko": "2.12 이전 버전의 hostapd에서는 AP 모드 Wi-Fi 7(IEEE 802.11be) 멀티링크 작동(MLO) 연결 시 경계 검사가 누락되어 있었습니다."
+  },
+  {
+    "cve": "CVE-2026-58373",
+    "title": "CVAT < 2.69.0 - Missing Authorization on Quality Reports parent_id Filter Leaks Cross-Organization Report Existence",
+    "desc": "CVAT before 2.69.0 contains an improper authorization vulnerability in QualityReportViewSet.get_queryset that allows authenticated attackers to enumerate quality report identifiers belonging to other organizations by exploiting a missing check_object_permissions call on the parent_id query parameter of the quality reports API endpoint. Attackers can send requests with sequential integer parent_id ",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "cvat-ai",
+        "product": "cvat"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-30",
+    "updated": "2026-06-30",
+    "url": "https://github.com/cvat-ai/cvat/releases/tag/v2.69.0",
+    "source": "CISA Vulnrichment",
+    "title_ko": "CVAT < 2.69.0 - 품질 보고서에서 권한 누락: parent_id 필터로 인해 조직 간 보고서 존재 여부가 유출됨"
+  },
+  {
+    "cve": "CVE-2026-58372",
+    "title": "SeaweedFS < 4.34 - Cross-Bucket Object Deletion via DeleteObjects Request-Body Keys",
+    "desc": "SeaweedFS before 4.34 contains a path traversal vulnerability in the S3 gateway DeleteMultipleObjectsHandler that allows authenticated S3 principals with write access to a single bucket to delete arbitrary objects in other tenants' buckets by supplying object keys containing ../ sequences in the DeleteObjects XML request body. Attackers can bypass authorization controls through a confused deputy c",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "seaweedfs",
+        "product": "seaweedfs"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-06-30",
+    "updated": "2026-06-30",
+    "url": "https://github.com/seaweedfs/seaweedfs/releases/tag/4.34",
+    "source": "CISA Vulnrichment",
+    "title_ko": "SeaweedFS < 4.34 - DeleteObjects 요청 본문의 키를 통한 버킷 간 객체 삭제"
+  },
+  {
+    "cve": "CVE-2026-58170",
+    "title": "Vibe-Trading < 0.1.10 - Path Traversal in Proposal Identifier Allows Forging Live Trading Mandates",
+    "desc": "Vibe-Trading before 0.1.10 builds the proposal file path by joining a caller-supplied proposal identifier onto the broker proposals directory without sanitization (agent/src/live/mandate/commit.py). A proposal identifier containing path traversal sequences causes the application to load an attacker-controlled JSON file as an authoritative live trading mandate. Combined with the file upload endpoin",
+    "cvss": 8.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "HKUDS",
+        "product": "Vibe-Trading"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-06-30",
+    "updated": "2026-06-30",
+    "url": "https://github.com/HKUDS/Vibe-Trading/releases/tag/v0.1.10",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Vibe-Trading < 0.1.10 - 제안 식별자 내 경로 탐색으로 인해 활성 거래 위임장 위조가 가능해짐"
+  },
+  {
+    "cve": "CVE-2026-58168",
+    "title": "DeepTutor < 1.4.10 - Insecure Default Grants Unrestricted MCP Tool Access to Non-Admin Users",
+    "desc": "DeepTutor before version 1.4.10 contains an authorization bypass vulnerability that allows low-privilege users to invoke unrestricted MCP tools due to the allowed_mcp_tools function returning None instead of a denied result when mcp_tools is omitted from a user's grant in deeptutor/multi_user/tool_access.py. Attackers or prompt-injected content acting within a user session can enumerate and invoke",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "HKUDS",
+        "product": "DeepTutor"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-06-30",
+    "updated": "2026-06-30",
+    "url": "https://github.com/HKUDS/DeepTutor/releases/tag/v1.4.10",
+    "source": "CISA Vulnrichment",
+    "title_ko": "DeepTutor < 1.4.10 - 보안이 취약한 기본 설정으로 인해 관리자 권한이 없는 사용자도 MCP 도구에 제한 없이 접근할 수 있음"
+  },
+  {
+    "cve": "CVE-2026-58167",
+    "title": "Nightingale < 9.0.0-beta.2 - Datasource Credential Disclosure to Low-Privilege Users",
+    "desc": "Nightingale (n9e) before 9.0.0-beta.2 exposes full datasource configurations, including plaintext database passwords, HTTP bearer tokens, HTTP basic-auth passwords, and mTLS client keys, to any authenticated low-privilege (Standard role) user through POST /api/n9e/datasource/list. The route is registered without an admin authorization gate, unlike the sibling datasource mutation routes, and the op",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "ccfos",
+        "product": "nightingale"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-30",
+    "updated": "2026-06-30",
+    "url": "https://github.com/ccfos/nightingale/releases/tag/v9.0.0-beta.2",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Nightingale < 9.0.0-beta.2 - 권한이 낮은 사용자에게 데이터 소스 인증 정보 유출"
+  },
+  {
+    "cve": "CVE-2026-58116",
+    "title": "LLaMA-Factory 0.9.5 Remote Code Execution via WebUI Model Path",
+    "desc": "LLaMA-Factory through 0.9.5 contains a remote code execution vulnerability that allows attackers with WebUI access to execute arbitrary Python code by supplying a malicious model path in the Chat or Training interfaces. The application passes user-supplied model path input unvalidated into AutoTokenizer.from_pretrained() and AutoModel.from_pretrained() with a hardcoded trust_remote_code=True param",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-829",
+      "CWE-94"
+    ],
+    "affected": [
+      {
+        "vendor": "hiyouga",
+        "product": "LlamaFactory"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-06-30",
+    "updated": "2026-06-30",
+    "url": "https://gist.github.com/henrrrychau/08d76ec672f42136bbc1449c4f2973f8",
+    "source": "CISA Vulnrichment",
+    "title_ko": "LLaMA-Factory 0.9.5: 웹 UI 모델 경로를 통한 원격 코드 실행"
+  },
+  {
+    "cve": "CVE-2026-58053",
+    "title": "Gitea act_runner - Container Hardening Bypass via Workflow Container Options",
+    "desc": "Gitea act_runner with the Docker backend (through act 0.262.0) passes a workflow's container.options string to the Docker job container's HostConfig and, when configured with privileged: false, forces only the Privileged flag off while merging options such as --pid=host, --cap-add, and --security-opt unchanged. A user who can run a workflow on a Docker-backed runner can create a job container with",
+    "cvss": 9.9,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-269"
+    ],
+    "affected": [
+      {
+        "vendor": "Gitea",
+        "product": "act_runner"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-06-28",
+    "updated": "2026-06-30",
+    "url": "https://github.com/bikini/exploitarium/tree/main/gitea-act-runner-container-options-poc",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Gitea act_runner - 워크플로 컨테이너 옵션을 통한 컨테이너 보안 강화 우회"
+  },
+  {
+    "cve": "CVE-2026-58016",
+    "title": "Glib: integer underflow in gio/gdbusintrospection.c via \"g_dbus_node_info_new_for_xml\"",
+    "desc": "A flaw was found in GLib. A state confusion issue exists in g_dbus_node_info_new_for_xml() in the gio/gdbusintrospection.c file when processing malformed D-Bus introspection XML, specifically with a <node> element nested within other elements like <method>, <signal>, <property> or <arg>. This issue can cause an unsigned integer overflow and lead to an out-of-bounds read, resulting in a denial of s",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-191"
+    ],
+    "affected": [
+      {
+        "vendor": "GNOME",
+        "product": "GLib"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-30",
+    "updated": "2026-06-30",
+    "url": "https://access.redhat.com/security/cve/CVE-2026-58016",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Glib: “g_dbus_node_info_new_for_xml”을 통해 gio/gdbusintrospection.c에서 발생하는 정수 언더플로우"
+  },
+  {
+    "cve": "CVE-2026-58058",
+    "title": "Nmap - Integer Underflow in IPv6 Extension Header Parsing",
+    "desc": "Nmap through 7.99 does not keep the IPv6 extension-header walk within the captured packet in ipv6_get_data_primitive (libnetutil/netutil.cc), so the pointer advances past the buffer and the remaining-length computation underflows to a large value. A scanned target or on-path attacker returning a crafted IPv6 response with a truncated extension header can trigger out-of-bounds reads and a crash dur",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-191"
+    ],
+    "affected": [
+      {
+        "vendor": "Nmap",
+        "product": "Nmap"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-06-28",
+    "updated": "2026-06-29",
+    "url": "https://github.com/bikini/exploitarium/tree/main/nmap-ipv6-extlen-wrap-poc",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Nmap - IPv6 확장 헤더 구문 분석 시 정수 언더플로우 취약점"
+  },
+  {
+    "cve": "CVE-2026-58057",
+    "title": "Flowise - Custom MCP Environment Variable Denylist Bypass via Case Sensitivity",
+    "desc": "Flowise before 3.1.3 validates Custom MCP stdio environment variables against a denylist using a case-sensitive comparison, so on Windows, where environment names are case-insensitive, supplying 'node_options' bypasses the NODE_OPTIONS denylist entry. An authenticated user who can configure a Custom MCP node can thereby inject NODE_OPTIONS --require and execute arbitrary code in the Flowise server",
+    "cvss": 5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-178"
+    ],
+    "affected": [
+      {
+        "vendor": "Flowise",
+        "product": "Flowise"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-06-28",
+    "updated": "2026-06-29",
+    "url": "https://github.com/bikini/exploitarium/tree/main/flowise-mcp-env-case-bypass-poc",
+    "source": "CISA Vulnrichment",
+    "title_ko": "Flowise - 대소문자 구분을 이용한 사용자 정의 MCP 환경 변수 차단 목록 우회"
+  },
+  {
+    "cve": "CVE-2026-58056",
+    "title": "RustDesk - FileTransfer Session Authorization Scope Bypass",
+    "desc": "RustDesk gates incoming control messages on per-capability flags rather than on the session's authorized connection type, and a file-transfer session does not clear those flags. A peer holding only a valid FileTransfer authorization can inject keyboard and mouse input and reach the unguarded screenshot and display-capture handlers, acting outside its granted scope.",
+    "cvss": 7.6,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-863"
+    ],
+    "affected": [
+      {
+        "vendor": "RustDesk",
+        "product": "RustDesk"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-28",
+    "updated": "2026-06-29",
+    "url": "https://github.com/bikini/exploitarium/tree/main/rustdesk-session-permission-pocs",
+    "source": "CISA Vulnrichment",
+    "title_ko": "RustDesk - 파일 전송 세션 권한 범위 우회"
+  },
+  {
+    "cve": "CVE-2026-58055",
+    "title": "nghttp2 nghttpx - HTTP Request/Response Smuggling via Upgrade Request with Content-Length",
+    "desc": "nghttp2's nghttpx proxy through 1.69.0 forwards an HTTP/1.1 Upgrade request that also carries a Content-Length header and body onto reusable keep-alive backend connections, re-adding the Upgrade and Connection headers while passing Content-Length verbatim. A backend that resolves the resulting ambiguous message in the attacker's favor enables HTTP request/response smuggling and cross-client respon",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-444"
+    ],
+    "affected": [
+      {
+        "vendor": "nghttp2",
+        "product": "nghttp2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-28",
+    "updated": "2026-06-29",
+    "url": "https://github.com/bikini/exploitarium/tree/main/nghttp2-nghttpx-upgrade-queue-poison-poc",
+    "source": "CISA Vulnrichment",
+    "title_ko": "nghttp2 nghttpx - Content-Length가 포함된 Upgrade 요청을 통한 HTTP 요청/응답 스머겔링"
+  },
+  {
+    "cve": "CVE-2026-58054",
+    "title": "MyBB - Privilege Escalation from Limited ACP User Management to Administrator",
+    "desc": "MyBB 1.8.40 does not restrict which usergroup a limited Admin Control Panel user may assign when creating or editing users; the user module offers the Administrators group (gid 4) and its datahandler's verify_usergroup() unconditionally returns true. An admin holding only the delegated user-management permission can assign the Administrators group to an account and escalate to the full Administrat",
+    "cvss": 7.2,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-269"
+    ],
+    "affected": [
+      {
+        "vendor": "MyBB",
+        "product": "MyBB"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-28",
+    "updated": "2026-06-29",
+    "url": "https://github.com/bikini/exploitarium/tree/main/mybb-limited-acp-to-admin",
+    "source": "CISA Vulnrichment",
+    "title_ko": "MyBB - 제한된 ACP 사용자 관리 권한에서 관리자 권한으로의 권한 상승"
+  },
+  {
+    "cve": "CVE-2026-58052",
+    "title": "7-Zip - Mark-of-the-Web Bypass via RAR5 Alternate Data Stream Name Collision",
+    "desc": "7-Zip for Windows through 26.02 fails to preserve the Mark-of-the-Web when extracting a crafted RAR5 archive, because its guard that suppresses an archive-supplied Zone.Identifier stream matches the exact name 'Zone.Identifier' while a RAR5 STM record named ':Zone.Identifier:$DATA' is not matched and NTFS canonicalizes it to the same stream, overwriting the propagated Internet-zone marker with Zon",
+    "cvss": 3.3,
+    "severity": "LOW",
+    "cwes": [
+      "CWE-693"
+    ],
+    "affected": [
+      {
+        "vendor": "7-Zip",
+        "product": "7-Zip"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-06-28",
+    "updated": "2026-06-29",
+    "url": "https://github.com/bikini/exploitarium/tree/main/7zip-rar5-motw-chain-poc",
+    "source": "CISA Vulnrichment",
+    "title_ko": "7-Zip - RAR5 대체 데이터 스트림 이름 충돌을 통한 Mark-of-the-Web 우회"
+  },
+  {
+    "cve": "CVE-2026-58051",
+    "title": "libssh2 - Free of Uninitialized Pointer in publickey List Cleanup",
+    "desc": "libssh2 through 1.11.1 grows its publickey list with SSH2_REALLOC but does not zero-initialize new entries before parsing populates them, so a parse failure reaching the cleanup path leaves libssh2_publickey_list_free operating on an uninitialized entry. A malicious SSH server offering the publickey subsystem can use a malformed response to make cleanup free an uninitialized, attacker-influenceabl",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-908"
+    ],
+    "affected": [
+      {
+        "vendor": "libssh2",
+        "product": "libssh2"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-06-28",
+    "updated": "2026-06-29",
+    "url": "https://github.com/bikini/exploitarium/tree/main/libssh2-publickey-list-calc-poc",
+    "source": "CISA Vulnrichment",
+    "title_ko": "libssh2 - 공개 키 목록 정리 과정에서 초기화되지 않은 포인터 문제 해결"
+  },
+  {
+    "cve": "CVE-2026-58050",
+    "title": "libssh2 - Integer Overflow in publickey Subsystem Attribute Allocation",
+    "desc": "libssh2 through 1.11.1 reads an attacker-controlled 32-bit attribute count from a publickey-subsystem response and uses it in the allocation num_attrs * sizeof(libssh2_publickey_attribute) without bounds checking, so on 32-bit platforms the multiplication overflows to an undersized buffer. A malicious SSH server can then drive the attribute-parsing loop to write past the allocation, causing a heap",
+    "cvss": 7,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-190"
+    ],
+    "affected": [
+      {
+        "vendor": "libssh2",
+        "product": "libssh2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-28",
+    "updated": "2026-06-29",
+    "url": "https://github.com/bikini/exploitarium/tree/main/libssh2-publickey-list-calc-poc",
+    "source": "CISA Vulnrichment",
+    "title_ko": "libssh2 - 공개 키 하위 시스템의 속성 할당 시 정수 오버플로우"
+  }
+]
