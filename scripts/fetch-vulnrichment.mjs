@@ -1,95 +1,105 @@
 // scripts/fetch-vulnrichment.mjs
-// CISA Vulnrichment — GitHub Search API로 최근 N일치 CVE 수집
-// Palo Alto, Cisco, Microsoft, Fortinet 등 상용 벤더 + 오픈소스 모두 포함
+// CISA Vulnrichment — GitHub Tree API로 최근 수정된 CVE 파일 수집
 
 import { writeFile } from 'node:fs/promises';
 
-const TOKEN       = process.env.GITHUB_TOKEN || '';
-const DEEPL_KEY   = process.env.DEEPL_API_KEY || '';
-const DAYS        = 7;          // 최근 7일 (Vulnrichment는 매우 활발해서 30일은 너무 많음)
-const MAX_RESULTS = 200;        // 최대 수집 개수
-const OWNER       = 'cisagov';
-const REPO        = 'vulnrichment';
-const BRANCH      = 'develop';
+const TOKEN     = process.env.GITHUB_TOKEN || '';
+const DEEPL_KEY = process.env.DEEPL_API_KEY || '';
+const DAYS      = 7;
+const MAX       = 300;
+const OWNER     = 'cisagov';
+const REPO      = 'vulnrichment';
+const BRANCH    = 'develop';
 
-const since = new Date(Date.now() - DAYS * 86400000).toISOString().slice(0, 10);
+const sinceMs   = Date.now() - DAYS * 86400000;
+const sinceDate = new Date(sinceMs).toISOString().slice(0, 10);
 
 function ghHeaders() {
-  const h = {
-    Accept: 'application/vnd.github+json',
-    'X-GitHub-Api-Version': '2022-11-28',
-  };
+  const h = { Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28' };
   if (TOKEN) h.Authorization = `Bearer ${TOKEN}`;
   return h;
 }
 
-// GitHub Search API로 최근 수정된 CVE 파일 경로 수집
-async function getRecentCvePaths() {
-  const paths = new Set();
-  let page = 1;
+// 현재 연도 폴더 전체 tree를 가져와서 최근 N일치 파일만 필터
+async function getRecentPaths() {
+  const year = new Date().getFullYear();
+  const paths = [];
 
-  while (paths.size < MAX_RESULTS && page <= 4) {
-    // Search API: 레포 내 최근 N일 이후 수정된 JSON 파일 검색
-    const q = encodeURIComponent(`repo:${OWNER}/${REPO} path:/ extension:json CVE- pushed:>=${since}`);
-    const url = `https://api.github.com/search/code?q=${q}&per_page=100&page=${page}`;
-    const res = await fetch(url, {
-      headers: { ...ghHeaders(), Accept: 'application/vnd.github.text-match+json' }
-    });
-
-    if (res.status === 422 || res.status === 403) {
-      console.warn(`Search API 제한 (HTTP ${res.status}), commits 방식으로 전환...`);
-      return await getPathsByCommits();
-    }
-    if (!res.ok) throw new Error(`Search API: HTTP ${res.status}`);
-
-    const data = await res.json();
-    for (const item of data.items || []) {
-      if (item.path?.match(/^\d{4}\/\d+xxx\/CVE-.+\.json$/)) {
-        paths.add(item.path);
-        if (paths.size >= MAX_RESULTS) break;
-      }
-    }
-
-    const total = data.total_count || 0;
-    console.log(`  Search 페이지 ${page}: ${data.items?.length || 0}개 (총 ${total}개 중)`);
-    if (!data.items?.length || data.items.length < 100) break;
-    page++;
-
-    // Search API rate limit 방지
-    await new Promise(r => setTimeout(r, 2000));
-  }
-
-  return [...paths];
-}
-
-// fallback: commits API (최근 커밋 20개만)
-async function getPathsByCommits() {
-  const paths = new Set();
-  const url = `https://api.github.com/repos/${OWNER}/${REPO}/commits?sha=${BRANCH}&since=${since}T00:00:00Z&per_page=20`;
+  // tree API — 현재연도 폴더 재귀 조회
+  const url = `https://api.github.com/repos/${OWNER}/${REPO}/git/trees/${BRANCH}?recursive=0`;
   const res = await fetch(url, { headers: ghHeaders() });
-  if (!res.ok) throw new Error(`commits API: HTTP ${res.status}`);
-  const commits = await res.json();
+  if (!res.ok) throw new Error(`tree API: HTTP ${res.status}`);
+  const root = await res.json();
 
-  for (const c of commits.slice(0, 15)) {
-    if (paths.size >= MAX_RESULTS) break;
-    const detail = await fetch(
-      `https://api.github.com/repos/${OWNER}/${REPO}/commits/${c.sha}`,
+  // 연도 폴더 목록 (예: 2025, 2026)
+  const yearFolders = (root.tree || [])
+    .filter(t => t.type === 'tree' && /^\d{4}$/.test(t.path) && parseInt(t.path) >= year - 1)
+    .map(t => t.path);
+
+  console.log(`연도 폴더: ${yearFolders.join(', ')}`);
+
+  for (const folder of yearFolders) {
+    const r2 = await fetch(
+      `https://api.github.com/repos/${OWNER}/${REPO}/git/trees/${BRANCH}:${folder}?recursive=1`,
       { headers: ghHeaders() }
     );
-    if (!detail.ok) continue;
-    const data = await detail.json();
-    for (const f of (data.files || []).slice(0, 50)) {
-      if (f.filename?.match(/^\d{4}\/\d+xxx\/CVE-.+\.json$/)) {
-        paths.add(f.filename);
-        if (paths.size >= MAX_RESULTS) break;
+    if (!r2.ok) { console.warn(`  ${folder} tree 실패: HTTP ${r2.status}`); continue; }
+    const data = await r2.json();
+    for (const item of data.tree || []) {
+      if (item.type === 'blob' && item.path.endsWith('.json') && item.path.includes('CVE-')) {
+        paths.push(`${folder}/${item.path}`);
       }
     }
-    await new Promise(r => setTimeout(r, 300));
+    console.log(`  ${folder}: ${data.tree?.filter(t => t.path.includes('CVE-')).length || 0}개 CVE 파일`);
+    await new Promise(r => setTimeout(r, 500));
   }
-  return [...paths];
+
+  // 최근 커밋 기반으로 수정된 파일만 추리기
+  console.log(`전체 CVE 파일: ${paths.length}개 — 최근 ${DAYS}일치 필터링 중...`);
+  return await filterByRecentCommits(paths);
 }
 
-// 개별 CVE JSON fetch
+async function filterByRecentCommits(allPaths) {
+  const recentPaths = new Set();
+  // 최근 커밋 목록 (since 파라미터로 N일치만)
+  let page = 1;
+  while (recentPaths.size < MAX && page <= 5) {
+    const url = `https://api.github.com/repos/${OWNER}/${REPO}/commits?sha=${BRANCH}&since=${sinceDate}T00:00:00Z&per_page=100&page=${page}`;
+    const res = await fetch(url, { headers: ghHeaders() });
+    if (!res.ok) throw new Error(`commits API: HTTP ${res.status}`);
+    const commits = await res.json();
+    if (!commits.length) break;
+
+    // 커밋별 변경 파일 (병렬 5개씩)
+    for (let i = 0; i < commits.length; i += 5) {
+      const batch = commits.slice(i, i + 5);
+      await Promise.all(batch.map(async c => {
+        const r = await fetch(
+          `https://api.github.com/repos/${OWNER}/${REPO}/commits/${c.sha}`,
+          { headers: ghHeaders() }
+        );
+        if (!r.ok) return;
+        const d = await r.json();
+        for (const f of d.files || []) {
+          if (f.filename.endsWith('.json') && f.filename.includes('CVE-')) {
+            recentPaths.add(f.filename);
+          }
+        }
+      }));
+      if (recentPaths.size >= MAX) break;
+    }
+
+    console.log(`  커밋 페이지 ${page}: 현재까지 ${recentPaths.size}개 파일`);
+    if (commits.length < 100) break;
+    page++;
+    await new Promise(r => setTimeout(r, 1000));
+  }
+
+  // allPaths와 교집합 (실제 존재하는 파일만)
+  const allSet = new Set(allPaths);
+  return [...recentPaths].filter(p => allSet.has(p)).slice(0, MAX);
+}
+
 async function fetchCveJson(path) {
   const url = `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/${path}`;
   const res = await fetch(url, { headers: { 'User-Agent': 'security-dashboard' } });
@@ -120,9 +130,9 @@ function parseCve(raw, path) {
     }
   }
 
-  const cwes = (cna.problemTypes || []).flatMap(p =>
-    (p.descriptions || []).filter(d => d.type === 'CWE').map(d => d.cweId)
-  ).filter(Boolean);
+  const cwes = (cna.problemTypes || [])
+    .flatMap(p => (p.descriptions || []).filter(d => d.type === 'CWE').map(d => d.cweId))
+    .filter(Boolean);
 
   const affected = (cna.affected || []).map(a => ({
     vendor: a.vendor || '', product: a.product || '',
@@ -137,10 +147,7 @@ function parseCve(raw, path) {
     desc: desc.slice(0, 400),
     cvss,
     severity: severity || (cvss >= 9 ? 'CRITICAL' : cvss >= 7 ? 'HIGH' : cvss >= 4 ? 'MEDIUM' : cvss > 0 ? 'LOW' : ''),
-    cwes,
-    affected,
-    exploitation,
-    isKev,
+    cwes, affected, exploitation, isKev,
     published: (meta.datePublished || '').slice(0, 10),
     updated:   (meta.dateUpdated   || '').slice(0, 10),
     url: refUrl,
@@ -150,7 +157,6 @@ function parseCve(raw, path) {
 
 async function deepLTranslate(texts) {
   if (!DEEPL_KEY || !texts.length) return texts;
-  // DeepL은 한 번에 50개씩 배치 처리
   const results = [];
   for (let i = 0; i < texts.length; i += 50) {
     const batch = texts.slice(i, i + 50);
@@ -162,28 +168,24 @@ async function deepLTranslate(texts) {
       params.append('formality', 'prefer_less');
       const res = await fetch('https://api-free.deepl.com/v2/translate', {
         method: 'POST',
-        headers: {
-          'Authorization': `DeepL-Auth-Key ${DEEPL_KEY}`,
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
+        headers: { 'Authorization': `DeepL-Auth-Key ${DEEPL_KEY}`, 'Content-Type': 'application/x-www-form-urlencoded' },
         body: params.toString(),
       });
       if (!res.ok) throw new Error(`DeepL HTTP ${res.status}`);
       const data = await res.json();
       results.push(...data.translations.map(t => t.text));
     } catch (e) {
-      console.warn(`[WARN] DeepL 배치 ${i}~${i+50} 오류:`, e.message);
-      results.push(...batch); // 실패 시 원문
+      console.warn(`[WARN] DeepL 오류:`, e.message);
+      results.push(...batch);
     }
   }
   return results;
 }
 
 async function main() {
-  console.log(`최근 ${DAYS}일 Vulnrichment CVE 수집 중... (since: ${since}, 최대 ${MAX_RESULTS}개)`);
-
-  const paths = await getRecentCvePaths();
-  console.log(`수집 대상 파일: ${paths.length}개`);
+  console.log(`CISA Vulnrichment 수집 시작 (최근 ${DAYS}일, 최대 ${MAX}개)`);
+  const paths = await getRecentPaths();
+  console.log(`수집 대상: ${paths.length}개`);
 
   const results = [];
   for (let i = 0; i < paths.length; i += 5) {
@@ -195,14 +197,20 @@ async function main() {
         if (parsed.cve) results.push(parsed);
       }
     }
-    if ((i + 5) % 50 === 0) console.log(`  파싱 진행: ${i + 5}/${paths.length}`);
+    if ((i + 5) % 50 === 0) console.log(`  파싱: ${Math.min(i+5, paths.length)}/${paths.length}`);
   }
 
   results.sort((a, b) => (b.updated || b.published || '').localeCompare(a.updated || a.published || ''));
 
+  if (DEEPL_KEY && results.length) {
+    console.log(`DeepL 번역 (${results.length}개)...`);
+    const translated = await deepLTranslate(results.map(r => r.title));
+    results.forEach((r, i) => { r.title_ko = translated[i]; });
+    console.log('번역 완료!');
+  }
 
   await writeFile('vulnrichment.json', JSON.stringify(results, null, 2));
-  console.log(`✅ vulnrichment.json 저장 완료: ${results.length}개 (since ${since})`);
+  console.log(`✅ 완료: ${results.length}개 저장 (since ${sinceDate})`);
 }
 
 main().catch(e => { console.error(e); process.exit(1); });
