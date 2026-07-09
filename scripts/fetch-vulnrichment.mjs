@@ -200,12 +200,6 @@ async function main() {
 
   results.sort((a, b) => (b.updated || b.published || '').localeCompare(a.updated || a.published || ''));
 
-  if (DEEPL_KEY && results.length) {
-    console.log(`DeepL 번역 시작 (${results.length}개)...`);
-    const translated = await deepLTranslate(results.map(r => r.title));
-    results.forEach((r, i) => { r.title_ko = translated[i]; });
-    console.log('번역 완료!');
-  }
 
   await writeFile('vulnrichment.json', JSON.stringify(results, null, 2));
   console.log(`✅ vulnrichment.json 저장 완료: ${results.length}개 (since ${since})`);
