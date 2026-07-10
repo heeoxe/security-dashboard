@@ -1,6 +1,123 @@
 [
   {
     "source": "thn",
+    "title": "URGENT - Progress Tells ShareFile Customers to Shut Down Storage Zone Controllers Over Security Threat",
+    "desc": "Progress Software has told ShareFile customers to shut down the Windows servers running their Storage Zone Controllers, confirming to The Hacker News that it is responding to a \"credible external security threat.\"\n\nThe company has temporarily disabled access to the affected accounts, a step it says ",
+    "url": "https://thehackernews.com/2026/07/urgent-progress-tells-sharefile.html",
+    "date": "2026-07-10T22:00:00",
+    "title_ko": "긴급 - Progress, 보안 위협으로 인해 ShareFile 고객들에게 스토리지 존 컨트롤러를 중단할 것을 요청",
+    "desc_ko": "프로그레스 소프트웨어(Progress Software)는 ShareFile 고객들에게 스토리지 존 컨트롤러(Storage Zone Controller)가 실행 중인 Windows 서버를 중단할 것을 요청했으며, ‘신뢰할 만한 외부 보안 위협’에 대응하고 있음을 더 해커 뉴스(The Hacker News)에 확인했다.\n\n이 회사는 영향을 받은 계정에 대한 접근을 일시적으로 차단했으며, 이는 "
+  },
+  {
+    "source": "thn",
+    "title": "Injective Labs GitHub Compromise Pushes Wallet-Key-Stealing npm Packages",
+    "desc": "Unknown threat actors compromised the Injective Labs SDK project's GitHub repository and leveraged it to publish a malicious package on the npm registry to steal cryptocurrency wallet private keys and mnemonic seed phrases.\n\nThe compromised version, @injectivelabs/sdk-ts@1.20.21, came embedded with ",
+    "url": "https://thehackernews.com/2026/07/injective-labs-github-compromise-pushes.html",
+    "date": "2026-07-10T21:59:00",
+    "title_ko": "Injective Labs의 GitHub 계정이 해킹당해 지갑 키를 탈취하는 npm 패키지가 유포됨",
+    "desc_ko": "신원 미상의 공격자들이 Injective Labs SDK 프로젝트의 GitHub 저장소를 해킹한 뒤, 이를 악용해 npm 레지스트리에 악성 패키지를 게시함으로써 암호화폐 지갑의 개인 키와 니모닉 시드 문구를 탈취했습니다.\n\n해킹된 버전(@injectivelabs/sdk-ts@1.20.21)에는 다음이 포함되어 있었습니다. "
+  },
+  {
+    "source": "thn",
+    "title": "Six New U-Boot Flaws Could Let Malicious Images Crash Devices or Run Code at Boot",
+    "desc": "Researchers at firmware security firm&nbsp;Binarly&nbsp;have found six new flaws in U-Boot, the small program that starts up hardware as varied as home routers, smart cameras, and the management chips inside data-center servers.\n\nFour of the bugs can crash a device. The other two could let an attack",
+    "url": "https://thehackernews.com/2026/07/six-new-u-boot-flaws-could-let.html",
+    "date": "2026-07-10T21:27:14",
+    "title_ko": "U-Boot의 6가지 새로운 취약점으로 인해 악성 이미지가 기기를 다운시키거나 부팅 시 코드를 실행할 수 있음",
+    "desc_ko": "펌웨어 보안 기업인 Binarly의 연구원들은 가정용 라우터, 스마트 카메라, 데이터 센터 서버 내부의 관리 칩 등 다양한 하드웨어를 구동하는 소형 프로그램인 U-Boot에서 6개의 새로운 취약점을 발견했습니다.\n\n이 중 4개의 취약점은 기기를 다운시킬 수 있습니다. 나머지 2개는 공격자가"
+  },
+  {
+    "source": "thn",
+    "title": "Laser Attack Resets Tangem Wallet Passwords on Cards That Can't Be Patched",
+    "desc": "Researchers at Ledger's&nbsp;Donjon security team&nbsp;have shown that a precisely timed laser pulse, aimed at the chip inside a Tangem crypto wallet card, can reset the card's password to anything the attacker picks.\n\nNo old password. No backup card. Once it is reset, whoever did it controls the wa",
+    "url": "https://thehackernews.com/2026/07/laser-attack-resets-tangem-wallet.html",
+    "date": "2026-07-10T20:21:49",
+    "title_ko": "패치할 수 없는 카드의 경우, 레이저 공격으로 인해 Tangem 지갑 비밀번호가 초기화됩니다.",
+    "desc_ko": "Ledger의 Donjon 보안팀 연구진은 Tangem 암호화 지갑 카드 내부의 칩을 향해 정밀한 타이밍으로 발사된 레이저 펄스를 이용하면, 카드의 비밀번호를 공격자가 원하는 대로 재설정할 수 있음을 입증했습니다.\n\n기존 비밀번호도, 백업 카드도 소용없습니다. 일단 비밀번호가 재설정되면, 이를 수행한 사람이 지갑을 제어하게 됩니다."
+  },
+  {
+    "source": "thn",
+    "title": "Researcher Details WhatsApp-to-Host Attack Chain Using Three OpenClaw Flaws",
+    "desc": "Details have emerged about three now-patched security flaws in the OpenClaw personal artificial intelligence (AI) assistant that, if successfully exploited, could enable credential theft, privilege escalation, and arbitrary code execution on the host.\n\nA brief description of the high-severity vulner",
+    "url": "https://thehackernews.com/2026/07/researcher-details-whatsapp-to-host.html",
+    "date": "2026-07-10T19:49:50",
+    "title_ko": "연구원이 세 가지 OpenClaw 취약점을 이용한 WhatsApp-to-Host 공격 체인을 상세히 설명하다",
+    "desc_ko": "OpenClaw 개인용 인공지능(AI) 어시스턴트에서 발견되어 현재 패치된 세 가지 보안 결함에 대한 세부 정보가 공개되었는데, 이 결함들이 성공적으로 악용될 경우 호스트에서 인증 정보 도용, 권한 상승 및 임의 코드 실행이 가능해질 수 있습니다.\n\n이 고위험 취약점에 대한 간략한 설명은 다음과 같습니다."
+  },
+  {
+    "source": "thn",
+    "title": "New MODBEACON RAT Uses gRPC Streaming for Encrypted C2 Traffic",
+    "desc": "The China-linked cybercrime group known as Silver Fox has been attributed to a new Rust-based remote access trojan (RAR) called MODBEACON.\n\nChinese cybersecurity company QiAnXin said that while the threat cluster may appear like a low-sophistication, high-activity operation that propagates malware v",
+    "url": "https://thehackernews.com/2026/07/new-modbeacon-rat-uses-grpc-streaming.html",
+    "date": "2026-07-10T18:45:23",
+    "title_ko": "새로운 MODBEACON RAT, 암호화된 C2 트래픽에 gRPC 스트리밍 활용",
+    "desc_ko": "‘실버 폭스(Silver Fox)’로 알려진 중국계 사이버 범죄 조직이 ‘MODBEACON’이라는 새로운 Rust 기반 원격 접속 트로이목마(RAR)와 연관된 것으로 밝혀졌다.\n\n중국 사이버 보안 기업 치안신(QiAnXin)은 이 위협 클러스터가 악성코드를 유포하는, 정교함은 낮지만 활동성이 높은 작전처럼 보일 수 있지만"
+  },
+  {
+    "source": "thn",
+    "title": "Unpatched XRING Flaw in XQUIC Lets Remote Clients Crash HTTP/3 Servers",
+    "desc": "A single wrong variable on one line in XQUIC, Alibaba's QUIC and HTTP/3 library, lets any remote client crash the server with a short burst of completely legal traffic. There is no patch.\n\nFoxIO researcher Sébastien Féry&nbsp;disclosed the flaw on July 8&nbsp;and nicknamed it XRING. He says it needs",
+    "url": "https://thehackernews.com/2026/07/unpatched-xring-flaw-in-xquic-lets.html",
+    "date": "2026-07-10T17:17:43",
+    "title_ko": "XQUIC의 패치되지 않은 XRING 취약점으로 인해 원격 클라이언트가 HTTP/3 서버를 다운시킬 수 있음",
+    "desc_ko": "알리바바의 QUIC 및 HTTP/3 라이브러리인 XQUIC의 한 줄에 있는 단 하나의 잘못된 변수 때문에, 어떤 원격 클라이언트라도 완전히 정상적인 트래픽을 짧은 시간 동안 집중적으로 전송함으로써 서버를 다운시킬 수 있습니다. 현재 패치는 없습니다.\n\nFoxIO의 연구원 세바스티앙 페리(Sébastien Féry)는 7월 8일 이 결함을 공개하고 ‘XRING’이라는 별명을 붙였습니다. 그는 이 결함을 해결하기 위해서는"
+  },
+  {
+    "source": "thn",
+    "title": "From 17,000 to 1.1 Million Assets: How Lumen Technologies Rebuilt Exposure Management at Scale",
+    "desc": "Most enterprises assume their asset inventory is close enough to accurate. The evidence suggests otherwise. According to a survey of over 600 security leaders in the 2026 Axonius Actionability Report, only 45% of organizations consolidate their asset and exposure data into a single view, and every d",
+    "url": "https://thehackernews.com/2026/07/from-17000-to-11-million-assets-how.html",
+    "date": "2026-07-10T17:09:40",
+    "title_ko": "17,000개에서 110만 개로: 루멘 테크놀로지스가 대규모 노출 관리를 어떻게 재구축했는지",
+    "desc_ko": "대부분의 기업은 자사의 자산 목록이 상당히 정확하다고 가정합니다. 그러나 실제 상황은 그렇지 않은 것으로 나타납니다. 2026년 ‘Axonius Actionability Report’에서 600명 이상의 보안 책임자를 대상으로 실시한 설문조사에 따르면, 조직 중 단 45%만이 자산 및 노출 데이터를 단일 화면으로 통합하고 있으며, 모든 d"
+  },
+  {
+    "source": "thn",
+    "title": "Exposed Hacker Server Reveals WP-SHELLSTORM Backdooring Thousands of WordPress Sites",
+    "desc": "A cybercrime crew left one of its own servers wide open on the internet for three weeks, and it exposed the operation's inner workings: the hacking tools, the activity logs, and target lists naming more than 1.4 million websites.\n\nFar fewer were actually broken into, but the exposed files showed res",
+    "url": "https://thehackernews.com/2026/07/exposed-hacker-server-reveals-wp.html",
+    "date": "2026-07-10T17:00:02",
+    "title_ko": "노출된 해커 서버를 통해 수천 개의 워드프레스 사이트에 WP-SHELLSTORM 백도어가 심어진 사실이 드러났다",
+    "desc_ko": "한 사이버 범죄 조직이 자사 서버 중 하나를 3주 동안 인터넷에 무방비 상태로 방치해 두었으며, 이로 인해 해킹 도구, 활동 로그, 140만 개 이상의 웹사이트가 명시된 표적 목록 등 조직의 내부 운영 실태가 드러났다.\n\n실제로 해킹당한 사이트는 이보다 훨씬 적었지만, 유출된 파일에는 다음과 같은 내용이 담겨 있었다."
+  },
+  {
+    "source": "thn",
+    "title": "Study of 281 Free Android VPN Apps Finds Traffic Leaks, Unencrypted Data, and Tracking",
+    "desc": "Researchers ran 281 of the most popular free VPN apps on the Google Play Store through a new testing system and found that many fail at the basics people install a VPN for, i.e., keeping their traffic private and secure.\n\nThe apps flagged with at least one problem have been installed more than 2.4 b",
+    "url": "https://thehackernews.com/2026/07/study-of-281-free-android-vpn-apps.html",
+    "date": "2026-07-10T16:26:23",
+    "title_ko": "281개의 무료 안드로이드 VPN 앱을 조사한 결과, 트래픽 유출, 암호화되지 않은 데이터, 추적 문제가 발견되었다",
+    "desc_ko": "연구진은 구글 플레이 스토어에서 가장 인기 있는 무료 VPN 앱 281개를 새로운 테스트 시스템을 통해 검증한 결과, 많은 앱이 사용자들이 VPN을 설치하는 근본적인 목적인 트래픽의 비공개 및 보안 유지에 실패하는 것으로 나타났습니다.\n\n적어도 한 가지 문제가 발견된 앱들의 설치 건수는 2.4b를 넘었습니다."
+  },
+  {
+    "source": "thn",
+    "title": "Hackers Use Fake Microsoft Entra Passkey Enrollment to Gain Microsoft 365 Access",
+    "desc": "A threat actor has been targeting organizations spanning multiple sectors with voice-based fake security requests that prompt Microsoft 365 users to enroll a new Entra passkey with an aim to carry out data extortion attacks.\n\nThe threat actor, tracked by Okta under the moniker O-UNC-066, has deploye",
+    "url": "https://thehackernews.com/2026/07/hackers-use-fake-microsoft-entra.html",
+    "date": "2026-07-10T16:00:20",
+    "title_ko": "해커들이 가짜 Microsoft Entra 패스키 등록을 악용해 Microsoft 365에 접근하고 있다",
+    "desc_ko": "한 위협 행위자가 데이터 갈취 공격을 감행하기 위해, Microsoft 365 사용자에게 새로운 Entra 패스키를 등록하도록 유도하는 음성 기반 가짜 보안 요청을 통해 여러 분야에 걸친 조직들을 표적으로 삼고 있습니다.\n\nOkta가 ‘O-UNC-066’이라는 명칭으로 추적 중인 이 위협 행위자는"
+  },
+  {
+    "source": "thn",
+    "title": "Attackers Exploit 'Ill Bloom' Vulnerability to Drain Over $5 Million From Cryptocurrency Wallets",
+    "desc": "Security firm&nbsp;Coinspect&nbsp;has disclosed a crypto wallet flaw it calls&nbsp;Ill Bloom, and attackers are already using it. The flaw is in how some wallet software generated its recovery phrase, the words that control the money. When that phrase is made with weak randomness, an attacker can wo",
+    "url": "https://thehackernews.com/2026/07/attackers-exploit-ill-bloom.html",
+    "date": "2026-07-10T14:30:05",
+    "title_ko": "해커들이 ‘Ill Bloom’ 취약점을 악용해 암호화폐 지갑에서 500만 달러 이상을 탈취했다",
+    "desc_ko": "보안 업체 코인스펙트(Coinspect)는 ‘일 블룸(Ill Bloom)’이라 명명한 암호화폐 지갑의 취약점을 공개했으며, 공격자들은 이미 이를 악용하고 있는 것으로 나타났다. 이 취약점은 일부 지갑 소프트웨어가 자산을 관리하는 데 사용되는 ‘복구 문구’를 생성하는 방식에 있다. 이 문구가 무작위성이 취약한 방식으로 생성될 경우, 공격자는..."
+  },
+  {
+    "source": "thn",
+    "title": "Ransomware Negotiator Gets 70 Months in Prison for Aiding BlackCat Attacks",
+    "desc": "A 41-year-old former ransomware negotiator has been sentenced to nearly six years (i.e., 70 months) in prison in the U.S. for their role in conspiring with the now-defunct BlackCat ransomware operators to extort multiple victims and working with two other cybersecurity professionals to target additi",
+    "url": "https://thehackernews.com/2026/07/ransomware-negotiator-gets-70-months-in.html",
+    "date": "2026-07-10T13:40:12",
+    "title_ko": "랜섬웨어 협상가, BlackCat 공격 방조 혐의로 징역 70개월 선고",
+    "desc_ko": "41세의 전직 랜섬웨어 협상가가, 현재는 해체된 블랙캣(BlackCat) 랜섬웨어 운영자들과 공모해 다수의 피해자로부터 금품을 갈취하고, 다른 두 명의 사이버 보안 전문가와 협력해 추가적인 표적을 노린 혐의로 미국에서 6년 가까이(즉, 70개월)의 징역형을 선고받았다."
+  },
+  {
+    "source": "thn",
     "title": "Dormant GitHub Accounts Help Attackers Blend In While Mapping Corporate Orgs",
     "desc": "Datadog Security Labs is warning of \"several overlapping campaigns\" that are systematically enumerating corporate GitHub organizations, repositories, and user accounts through the GitHub&nbsp;API.\n\n\"Operators rely on automated scraping tooling with custom or legitimate-sounding user agents, leveragi",
     "url": "https://thehackernews.com/2026/07/dormant-github-accounts-help-attackers.html",
@@ -15,7 +132,7 @@
     "url": "https://thehackernews.com/2026/07/new-gigawiper-windows-backdoor-bundles.html",
     "date": "2026-07-09T23:38:07",
     "title_ko": "새로운 ‘GigaWiper’ 윈도우 백도어, 디스크 삭제 기능·가짜 랜섬웨어·스파이웨어 결합",
-    "desc_ko": "마이크로소프트는 ‘GigaWiper’라고 명명한 파괴적인 윈도우 백도어를 분석했다. 특히 눈에 띄는 점은 이 백도어의 구조인데, 단일 도구가 아니라 세 가지의 오래된 파괴적 프로그램을 하나로 묶어, 운영자가 선택할 수 있는 명령어 형태로 제공된다는 것이다.\n\n각 명령어는 시스템을 파괴하는 서로 다른 방식을 취한다: 디스크 전체를 지우거나, 덮어쓰기"
+    "desc_ko": "마이크로소프트는 ‘GigaWiper’라고 명명한 파괴적인 윈도우 백도어를 분석했다. 특히 눈에 띄는 점은 이 백도어의 구조인데, 단일 도구가 아니라 세 가지의 오래된 파괴적 프로그램을 하나로 묶어, 운영자가 선택할 수 있는 명령어 형태로 제공된다는 것이다.\n\n각 명령어는 시스템을 파괴하는 서로 다른 방식을 취한다. 디스크 전체를 포맷하거나, 덮어쓰기하거나,"
   },
   {
     "source": "thn",
@@ -33,7 +150,7 @@
     "url": "https://thehackernews.com/2026/07/threatsday-cloud-bucket-hijacking.html",
     "date": "2026-07-09T20:39:28",
     "title_ko": "ThreatsDay: 클라우드 버킷 탈취, Windows LPE 체인, 전 세계 사기 사건 적발 + 그 외 17건의 소식",
-    "desc_ko": "대부분의 보안 문제는 관리 업무에서 비롯됩니다. 링크를 클릭하거나, 도구를 무분별하게 신뢰하거나, 버킷 이름을 재사용하거나, 아무도 손대려 하지 않아 설정이 제대로 관리되지 않는 경우가 대표적입니다.\n\n이번 주는 그런 종류의 피해 사례로 가득합니다. 눈에 띄지도 않고, 교묘하지도 않습니다. 그저 사소한 허점이 큰 문제를 일으키는 것뿐입니다. 가장 심각한 점은 이런 일이 너무나도 흔하다는 사실입니다. "
+    "desc_ko": "대부분의 보안 문제는 관리 업무에서 비롯됩니다. 링크를 클릭하거나, 도구를 무분별하게 신뢰하거나, 버킷 이름을 재사용하거나, 아무도 손대려 하지 않아 설정이 제대로 관리되지 않는 경우가 대표적입니다.\n\n이번 주는 그런 종류의 피해 사례로 가득합니다. 눈에 띄지도 않고, 교묘하지도 않습니다. 그저 사소한 허점이 큰 문제를 일으킬 뿐입니다. 가장 심각한 점은 이런 일이 너무나도 흔하다는 사실입니다. "
   },
   {
     "source": "thn",
@@ -86,7 +203,7 @@
     "desc": "Ask an AI coding agent to scan open-source code for security holes, and it might run the attacker's code on your own machine instead.\n\nThat is the finding in a&nbsp;proof-of-concept published Wednesday&nbsp;by the AI Now Institute, an attack it calls \"Friendly Fire.\" It works against Anthropic's Cla",
     "url": "https://thehackernews.com/2026/07/friendly-fire-ai-agents-built-to-catch.html",
     "date": "2026-07-09T10:45:02",
-    "title_ko": "악성 코드를 탐지하도록 설계된 최고의 AI 에이전트들도 속아 그 코드를 실행할 수 있다",
+    "title_ko": "악성 코드를 탐지하도록 설계된 최고의 AI 에이전트들도 속아 해당 코드를 실행할 수 있다",
     "desc_ko": "AI 코딩 에이전트에게 오픈소스 코드의 보안 취약점을 검사해 달라고 요청하면, 오히려 사용자의 컴퓨터에서 공격자의 코드를 실행해 버릴 수도 있습니다.\n\n이는 AI Now Institute가 수요일에 발표한 개념 증명(PoC)에서 밝혀진 사실로, 이 기관은 이 공격을 “Friendly Fire”라고 명명했습니다. 이 공격은 Anthropic의 Cla"
   },
   {
@@ -141,7 +258,7 @@
     "url": "https://thehackernews.com/2026/07/new-ghost-phishing-wave-is-breaking.html",
     "date": "2026-07-08T18:30:00",
     "title_ko": "새로운 유령 피싱 물결이 기존의 이메일 보안 체계를 무너뜨리고 있다",
-    "desc_ko": "최근 미국과 유럽 전역의 기업을 표적으로 삼은 EvilTokens 캠페인이 이메일 보안의 새로운 사각지대를 드러내고 있습니다. 이 ‘고스트 피싱’ 기법은 악성 페이지가 피해자의 브라우저 내에서 암호가 해독되어 활성화될 때까지 숨겨진 상태를 유지합니다.\n\n보안 책임자들에게 있어 위험은 명백합니다. 바로 전통적인"
+    "desc_ko": "최근 미국과 유럽 전역의 기업을 표적으로 삼은 EvilTokens 캠페인이 이메일 보안의 새로운 사각지대를 드러내고 있습니다. 이 ‘고스트 피싱’ 기법은 악성 페이지가 피해자의 브라우저 내에서 암호가 해독되어 활성화될 때까지 숨겨져 있도록 합니다.\n\n보안 책임자들에게 있어 위험은 명백합니다. 바로 전통적인"
   },
   {
     "source": "thn",
@@ -150,7 +267,7 @@
     "url": "https://thehackernews.com/2026/07/scmbanker-malware-uses-clickfix-lures.html",
     "date": "2026-07-08T18:22:15",
     "title_ko": "SCMBANKER 악성코드, ClickFix를 미끼로 멕시코 은행 이용자 노려",
-    "desc_ko": "‘ClickFix’를 미끼로 삼아 멕시코 은행, 핀테크 기업, 결제 대행업체 및 암호화폐 거래소 고객들을 표적으로 삼는 새로운 은행 사기 수법이 등장했습니다.\n\nElastic Security Labs가 ‘REF6045’라는 명칭으로 추적 중인 이 사기 활동은 가짜 CAPTCHA 인증을 통해 피해자를 감염시키는 방식으로 이루어집니다. "
+    "desc_ko": "‘ClickFix’를 미끼로 삼아 멕시코 은행, 핀테크 기업, 결제 대행업체 및 암호화폐 거래소 고객들을 노리는 새로운 은행 사기 수법이 등장했습니다.\n\nElastic Security Labs가 ‘REF6045’라는 명칭으로 추적 중인 이 사기 활동은 가짜 CAPTCHA 인증을 통해 피해자를 감염시키는 방식으로 이루어집니다. "
   },
   {
     "source": "thn",
@@ -177,7 +294,7 @@
     "url": "https://thehackernews.com/2026/07/github-copilot-refuses-harmful-requests.html",
     "date": "2026-07-08T16:51:07",
     "title_ko": "GitHub Copilot은 채팅에서 유해한 요청을 거부한 뒤, 이를 코드로 작성합니다.",
-    "desc_ko": "채팅창에서 위험한 요청에 응답을 거부하는 AI 코딩 보조 도구는, 동일한 요청이 코드 편집기 내에서 작고 평범해 보이는 단계들로 나뉘어지면 어쨌든 응답할 수 있다. 이는 연구원 아비셰크 쿠마르(Abhishek Kumar)와 카스텐 메이플(Carsten Maple)이 GitHub Copilot을 대상으로 진행한 새로운 연구에서 밝혀진 사실이다."
+    "desc_ko": "채팅창에서 위험한 요청에 응답을 거부하는 AI 코딩 보조 도구는, 동일한 요청이 코드 편집기 내에서 작고 평범해 보이는 단계들로 나뉘어지면 어쨌든 그 요청에 응답할 수 있다. 이는 연구원 아비셰크 쿠마르(Abhishek Kumar)와 카스텐 메이플(Carsten Maple)이 GitHub Copilot을 대상으로 진행한 새로운 연구에서 밝혀진 사실이다."
   },
   {
     "source": "thn",
@@ -204,7 +321,7 @@
     "url": "https://thehackernews.com/2026/07/cisa-adds-4-actively-exploited-adobe.html",
     "date": "2026-07-08T11:03:12",
     "title_ko": "CISA, 현재 악용되고 있는 Adobe, Joomla, Langflow 취약점 4건을 KEV에 추가",
-    "desc_ko": "미국 사이버보안·인프라보안국(CISA)은 화요일, 현재 악용되고 있다는 증거를 근거로 4건의 보안 결함을 ‘악용 확인 취약점(KEV)’ 목록에 추가했다.\n\n해당 취약점은 다음과 같습니다.\n\n\n  CVE-2026-48282 (CVSS 점수: 10.0) - 경로 탐색 취약점"
+    "desc_ko": "미국 사이버보안·인프라보안국(CISA)은 화요일, 현재 악용되고 있다는 증거를 근거로 4건의 보안 결함을 ‘악용 확인된 취약점(KEV)’ 목록에 추가했다.\n\n해당 취약점은 다음과 같습니다.\n\n\n  CVE-2026-48282 (CVSS 점수: 10.0) - 경로 탐색 취약점"
   },
   {
     "source": "thn",
@@ -221,7 +338,7 @@
     "desc": "A critical flaw in Google's Dialogflow CX could have let an attacker with edit rights on one Code Block-enabled agent compromise other Code Block-enabled agents in the same Google Cloud project.\n\nFrom there, they could read live conversations, steal the data users shared, and make the bots send atta",
     "url": "https://thehackernews.com/2026/07/rogue-agent-flaw-could-have-let.html",
     "date": "2026-07-07T22:07:33",
-    "title_ko": "‘Rogue Agent’ 취약점으로 인해 공격자들이 구글 다이얼로그플로우 CX 챗봇을 장악할 수 있었을 가능성",
+    "title_ko": "‘Rogue Agent’ 취약점으로 인해 공격자가 Google Dialogflow CX 챗봇을 탈취할 수 있었을 가능성",
     "desc_ko": "구글의 Dialogflow CX에 존재하는 중대한 취약점으로 인해, ‘코드 블록(Code Block)’이 활성화된 특정 에이전트에 대한 편집 권한을 가진 공격자가 동일한 구글 클라우드 프로젝트 내의 다른 ‘코드 블록’이 활성화된 에이전트들을 해킹할 수 있었을 가능성이 있습니다.\n\n이를 통해 공격자는 진행 중인 대화를 열람하고, 사용자가 공유한 데이터를 탈취하며, 봇을 조종해 공격을 보내도록 할 수 있었습니다."
   },
   {
@@ -249,7 +366,7 @@
     "url": "https://thehackernews.com/2026/07/court-filing-reveals-windows-device-id.html",
     "date": "2026-07-07T18:57:20",
     "title_ko": "법원 제출 문서에 따르면, 윈도우 기기 ID가 FBI가 ‘스캐터드 스파이더’로 지목된 해커의 행방을 추적하는 데 도움이 된 것으로 드러났다",
-    "desc_ko": "최근 공개된 연방 고소장에 따르면, 미국 검찰은 ‘Scattered Spider’로 추정되는 해커를, 지속적 Windows 장치 ID를 이용해 한 고급 보석 소매업체에 침입한 사건과 연관 지었다.\n\n마이크로소프트 기록에 따르면, 해당 ID는 2025년 5월 발생한 침입 사건 당시 공격자들이 접근 권한을 유지하는 데 사용한 계정과 처음 연결된 것으로 나타났다."
+    "desc_ko": "최근 공개된 연방 고소장에 따르면, 미국 검찰은 ‘Scattered Spider’로 추정되는 해커를, 지속적 Windows 장치 ID를 이용해 한 명품 보석 소매업체에 침입한 사건과 연관 지었다.\n\n마이크로소프트 기록에 따르면, 해당 ID는 2025년 5월 발생한 침입 사건 당시 공격자들이 접근 권한을 유지하는 데 사용한 계정과 처음 연결된 것으로 나타났다."
   },
   {
     "source": "thn",
@@ -267,7 +384,7 @@
     "url": "https://thehackernews.com/2026/07/what-changes-when-your-software-supply.html",
     "date": "2026-07-07T17:00:00",
     "title_ko": "소프트웨어 공급망에 코드를 작성하는 AI가 포함되면 어떤 변화가 일어날까요?",
-    "desc_ko": "소프트웨어 공급망 보안은 그 자체만으로도 충분히 어려운 문제였습니다. 그런데 여기에 AI까지 빌드 파이프라인에 합류했습니다.\n\n지난 5년 동안 “소프트웨어 공급망 보안”이란 한 가지 질문을 의미했습니다. 바로 “코드에 무엇이 들어 있나요?”라는 질문이었습니다. 어떤 오픈소스 패키지, 어떤 버전, 그리고 아무도 의도적으로 선택하지 않은 3단계 깊이의 전이적 의존성이 무엇인지 말이죠. \n\n그래서"
+    "desc_ko": "소프트웨어 공급망 보안은 그 자체만으로도 충분히 어려운 문제였습니다. 그런데 여기에 AI까지 빌드 파이프라인에 합류했습니다.\n\n지난 5년 동안 “소프트웨어 공급망 보안”이란 한 가지 질문을 의미했습니다. 바로 “코드에 무엇이 들어 있나요?”라는 질문이었습니다. 어떤 오픈소스 패키지, 어떤 버전, 그리고 아무도 의도적으로 선택하지 않은 3단계 깊이의 전이적 의존성이 무엇인지 말이죠.\n\n그래서"
   },
   {
     "source": "thn",
@@ -312,7 +429,7 @@
     "url": "https://thehackernews.com/2026/07/16-year-old-linux-kvm-flaw-lets-guest.html",
     "date": "2026-07-06T23:07:01",
     "title_ko": "16년 된 리눅스 KVM 취약점으로 인해 인텔 및 AMD x86 시스템에서 게스트 VM이 호스트로 탈출할 수 있음",
-    "desc_ko": "리눅스의 KVM 하이퍼바이저에 존재하는 ‘use-after-free’ 취약점은 게스트 가상 머신에서 유발되어, 이를 실행하는 호스트 커널의 섀도 페이지 상태를 손상시킬 수 있습니다.\n\n'Januscape'라고 명명되고 CVE-2026-53359로 추적되는 이 결함은 KVM이 인텔과 AMD 양쪽에서 공유하는 섀도 MMU 코드에 존재합니다. 이 p"
+    "desc_ko": "리눅스의 KVM 하이퍼바이저에 존재하는 ‘use-after-free’ 취약점은 게스트 가상 머신에서 유발되어, 이를 실행하는 호스트 커널의 섀도우 페이지 상태를 손상시킬 수 있습니다.\n\n'Januscape'라고 명명되고 CVE-2026-53359로 추적되는 이 결함은 KVM이 인텔과 AMD 양쪽에서 공유하는 섀도우 MMU 코드에 존재합니다. 이 p"
   },
   {
     "source": "thn",
@@ -331,122 +448,5 @@
     "date": "2026-07-06T18:31:14",
     "title_ko": "⚡ 주간 요약: 프록시 봇넷, 브라우저 랜섬웨어, AI 에이전트의 속임수, 가짜 PoC 악성코드 등",
     "desc_ko": "스트리밍 박스에는 위협 모델이 필요하지 않아야 합니다. 사용자 이름 입력란, 데모 저장소, 재설정 절차, 브라우저 권한 요청 창도 마찬가지입니다. 이것이 바로 이번 주에 가장 짜증 났던 점입니다. 위험 요소가 된 부분들이 모두 평범한 것들이었기 때문입니다.\n\n가정용 기기들이 라우팅의 위장 수단이 되어버렸습니다. 깔끔한 코드가 의존성에서 문제를 끌어냈습니다. 신원 "
-  },
-  {
-    "source": "thn",
-    "title": "How to Evaluate an AI SOC Platform in 2026: 6 Capabilities That Separate Leaders from Bolt-On AI solutions",
-    "desc": "Building a shortlist for an AI SOC evaluation can be tough. SIEM, SOAR, and pureplay AI SOC vendors are all saying the same thing. But behind the identical label sit very different products, from chat assistants bolted onto a legacy SIEM to agent platforms that run detection, triage, investigation, ",
-    "url": "https://thehackernews.com/2026/07/how-to-evaluate-ai-soc-platform-in-2026.html",
-    "date": "2026-07-06T17:00:02",
-    "title_ko": "2026년 AI SOC 플랫폼을 평가하는 방법: 선도 기업과 단순한 부가형 AI 솔루션을 구분 짓는 6가지 역량",
-    "desc_ko": "AI SOC 평가를 위한 후보 목록을 작성하는 것은 쉽지 않을 수 있습니다. SIEM, SOAR, 그리고 순수 AI SOC 벤더들은 모두 똑같은 말을 하고 있습니다. 하지만 똑같은 명칭 뒤에는 레거시 SIEM에 덧씌워진 채팅 어시스턴트부터 탐지, 분류, 조사 기능을 수행하는 에이전트 플랫폼에 이르기까지 매우 다양한 제품들이 자리 잡고 있습니다. "
-  },
-  {
-    "source": "thn",
-    "title": "Suspected China-Nexus Hackers Use Fake Indian Tax Filing Utility to Deploy DcRAT",
-    "desc": "A suspected China-nexus threat activity cluster has been observed targeting Indian taxpayers, tax professionals, and corporate finance teams to deliver a remote access trojan designed to steal sensitive data from compromised hosts.\n\nThe multi-stage campaign, codenamed Operation DragonReturn by Seqri",
-    "url": "https://thehackernews.com/2026/07/suspected-china-nexus-hackers-use-fake.html",
-    "date": "2026-07-06T16:28:16",
-    "title_ko": "중국과 연계된 것으로 의심되는 해커들이 가짜 인도 세금 신고 도구를 이용해 DcRAT를 유포하고 있다",
-    "desc_ko": "중국과 연관된 것으로 의심되는 위협 활동 클러스터가 인도 납세자, 세무 전문가 및 기업 재무 팀을 표적으로 삼아, 감염된 호스트에서 민감한 데이터를 탈취하도록 설계된 원격 접속 트로이목마를 유포하는 것이 관측되었습니다.\n\nSeqri가 ‘Operation DragonReturn’이라는 코드명을 붙인 이 다단계 캠페인은"
-  },
-  {
-    "source": "thn",
-    "title": "New TrojPix Attack Leaks Data From Air-Gapped Systems via Video Cable Emissions",
-    "desc": "Researchers at&nbsp;Shandong University&nbsp;have shown a fast new way to pull data off computers that are cut off from every network. The technique, called&nbsp;TrojPix, tweaks on-screen pixels in ways the eye cannot see, so that the video cable carrying them radiates a faint radio signal a nearby ",
-    "url": "https://thehackernews.com/2026/07/new-trojpix-attack-leaks-data-from-air.html",
-    "date": "2026-07-06T14:20:54",
-    "title_ko": "새로운 TrojPix 공격, 비디오 케이블 방출을 통해 에어갭 시스템의 데이터를 유출",
-    "desc_ko": "산동대학교 연구진은 모든 네트워크에서 차단된 컴퓨터에서 데이터를 추출하는 새로운 고속 방법을 제시했다. ‘TrojPix’라고 명명된 이 기술은 육안으로는 식별할 수 없는 방식으로 화면의 픽셀을 미세하게 조작하여, 픽셀 신호를 전달하는 비디오 케이블을 통해 주변에 미약한 무선 신호를 방출하게 한다. "
-  },
-  {
-    "source": "thn",
-    "title": "New Java-Based QuimaRAT MaaS Built to Run on Windows, Linux, and macOS",
-    "desc": "Cybersecurity researchers have flagged a novel Java-based remote access trojan (RAT) called QuimaRAT that's capable of targeting Windows, Linux, and macOS environments.\n\nAccording to LevelBlue, the cross-platform malware is advertised under a malware-as-a-service (MaaS) model, costing anywhere betwe",
-    "url": "https://thehackernews.com/2026/07/new-java-based-quimarat-maas-built-to.html",
-    "date": "2026-07-06T13:43:33",
-    "title_ko": "Windows, Linux 및 macOS에서 실행되도록 구축된 새로운 Java 기반 QuimaRAT MaaS",
-    "desc_ko": "사이버보안 연구원들은 Windows, Linux, macOS 환경을 공격할 수 있는 ‘QuimaRAT’라는 새로운 자바 기반 원격 접속 트로이목마(RAT)를 발견했습니다.\n\nLevelBlue에 따르면, 이 크로스 플랫폼 악성코드는 MaaS(Malware-as-a-Service) 모델로 제공되며, 비용은"
-  },
-  {
-    "source": "thn",
-    "title": "Opera GX Flaw Let Malicious Sites Auto-Install Mods to Steal Data From Visited Pages",
-    "desc": "Researchers found a flaw in&nbsp;Opera GX, the gaming-focused version of the Opera browser, that let a malicious website silently install a browser add-on and use it to lift specific data from the pages a victim visits.\n\nIn a proof of concept, they reconstructed a signed-in user's full Gmail address",
-    "url": "https://thehackernews.com/2026/07/opera-gx-flaw-let-malicious-sites-auto.html",
-    "date": "2026-07-06T12:57:50",
-    "title_ko": "오페라 GX의 보안 결함으로 인해 악성 사이트가 모드를 자동으로 설치해 방문한 페이지의 데이터를 탈취할 수 있었다",
-    "desc_ko": "연구진은 오페라 브라우저의 게임 전용 버전인 ‘오페라 GX’에서, 악성 웹사이트가 사용자에게 알리지 않고 브라우저 애드온을 설치한 뒤 이를 이용해 피해자가 방문하는 페이지에서 특정 데이터를 빼낼 수 있는 취약점을 발견했다.\n\n개념 증명(PoC) 과정에서 연구진은 로그인한 사용자의 전체 Gmail 주소를 재구성해냈다."
-  },
-  {
-    "source": "thn",
-    "title": "SkillCloak Lets Malicious AI Agent Skills Evade Static Scanners with Self-Extracting Packing",
-    "desc": "Scanners meant to catch malicious add-on \"skills\" for AI coding agents can be fooled by a few simple changes that leave the malware working, according to a&nbsp;new study&nbsp;from researchers at the Hong Kong University of Science and Technology.\n\nTheir strongest trick slipped past every scanner te",
-    "url": "https://thehackernews.com/2026/07/new-skillcloak-technique-lets-malicious.html",
-    "date": "2026-07-06T12:03:56",
-    "title_ko": "SkillCloak은 자체 해제형 패킹 기술을 통해 악성 AI 에이전트의 스킬이 정적 스캐너를 회피할 수 있게 해줍니다",
-    "desc_ko": "홍콩과학기술대학교 연구진이 발표한 새로운 연구에 따르면, AI 코딩 에이전트의 악성 추가 기능인 ‘스킬’을 탐지하기 위한 스캐너는, 악성코드가 계속 작동하도록 하는 몇 가지 간단한 변경만으로도 속아 넘어갈 수 있는 것으로 나타났다.\n\n이들이 사용한 가장 효과적인 기법은 모든 스캐너를 우회해"
-  },
-  {
-    "source": "thn",
-    "title": "U.S. Government Entity Paid Kairos $1 Million in Data-Theft Extortion Case",
-    "desc": "A U.S. government entity paid about $1 million to keep stolen files from being leaked, according to a new&nbsp;case study by Rakesh Krishnan for Ransom-ISAC, built on a leaked negotiation chat and the blockchain trail the payment left.\n\nThe odd part: the group that took the money calls itself Kairos",
-    "url": "https://thehackernews.com/2026/07/us-government-entity-paid-kairos-group.html",
-    "date": "2026-07-04T18:17:53",
-    "title_ko": "데이터 유출 협박 사건에서 미국 정부 기관이 카이로스에 100만 달러를 지급했다",
-    "desc_ko": "Rakesh Krishnan이 Ransom-ISAC을 위해 작성한 새로운 사례 연구에 따르면, 한 미국 정부 기관이 유출된 협상 채팅 기록과 결제 내역이 남긴 블록체인 흔적을 바탕으로, 도난당한 파일의 유출을 막기 위해 약 100만 달러를 지불한 것으로 나타났다.\n\n이상한 점은, 이 돈을 받은 단체가 스스로를 ‘카이로스(Kairos)’라고 부른다는 사실이다."
-  },
-  {
-    "source": "thn",
-    "title": "North Korean Hackers Publish 108 Malicious Packages and Extensions in PolinRider Campaign",
-    "desc": "The North Korean threat actors linked to the Contagious Interview campaign have been observed publishing 108 unique packages and web browser extensions spanning npm, Packagist, Go, and Google Chrome as part of an ongoing activity referred to as PolinRider.\n\n\"The campaign remains active, and new mali",
-    "url": "https://thehackernews.com/2026/07/north-korean-hackers-publish-108.html",
-    "date": "2026-07-04T16:47:24",
-    "title_ko": "북한 해커들, ‘PolinRider’ 캠페인을 통해 108개의 악성 패키지 및 확장 프로그램 유포",
-    "desc_ko": "‘Contagious Interview’ 캠페인과 연계된 북한 해커 집단이 ‘PolinRider’로 불리는 지속적인 활동의 일환으로 npm, Packagist, Go, Google Chrome에 걸쳐 108개의 고유한 패키지와 웹 브라우저 확장 프로그램을 배포한 것으로 확인되었습니다.\n\n“이 캠페인은 여전히 진행 중이며, 새로운 악성코드가…”"
-  },
-  {
-    "source": "thn",
-    "title": "Unpatched Flaws Disclosed in Filesystem Bundled Into Millions of Embedded Devices",
-    "desc": "Security firm runZero has&nbsp;disclosed seven vulnerabilities&nbsp;in&nbsp;FatFs, a small filesystem library that lets a device read and write the FAT and exFAT formats used on USB drives and SD cards.\n\nThe flaws matter because FatFs is nearly everywhere. It ships inside the firmware that runs secu",
-    "url": "https://thehackernews.com/2026/07/unpatched-flaws-disclosed-in-filesystem.html",
-    "date": "2026-07-04T01:49:31",
-    "title_ko": "수백만 대의 임베디드 기기에 탑재된 파일 시스템에서 패치되지 않은 취약점이 드러났다",
-    "desc_ko": "보안 업체 runZero는 USB 드라이브와 SD 카드에서 사용되는 FAT 및 exFAT 형식을 기기가 읽고 쓸 수 있게 해주는 소형 파일 시스템 라이브러리인 FatFs에서 7가지 취약점을 공개했습니다.\n\nFatFs는 거의 모든 곳에 사용되고 있기 때문에 이러한 결함은 심각한 문제입니다. 이 라이브러리는 보안 기능을 실행하는 펌웨어에 포함되어 제공되며"
-  },
-  {
-    "source": "thn",
-    "title": "New \"Bad Epoll\" Linux Kernel Flaw Lets Unprivileged Users Gain Root, Hits Android",
-    "desc": "A newly disclosed Linux kernel flaw called Bad Epoll (CVE-2026-46242) lets an ordinary user with no special access take full control of a machine as root. It affects Linux desktops, servers, and Android, and a fix is out.\n\nBad Epoll sits in the same small stretch of kernel code where Anthropic's mos",
-    "url": "https://thehackernews.com/2026/07/new-bad-epoll-linux-kernel-flaw-lets.html",
-    "date": "2026-07-04T01:10:01",
-    "title_ko": "새로운 ‘Bad Epoll’ 리눅스 커널 취약점으로 권한이 없는 사용자가 루트 권한을 획득할 수 있게 되었으며, 안드로이드에도 영향을 미치고 있다",
-    "desc_ko": "‘Bad Epoll’(CVE-2026-46242)로 명명된 새로 공개된 리눅스 커널 취약점은 특별한 접근 권한이 없는 일반 사용자도 루트 권한으로 시스템을 완전히 제어할 수 있게 합니다. 이 취약점은 리눅스 데스크톱, 서버 및 안드로이드에 영향을 미치며, 이미 수정 패치가 배포되었습니다.\n\nBad Epoll은 Anthropic의 mos와 동일한 커널 코드의 작은 구간에 위치해 있습니다."
-  },
-  {
-    "source": "thn",
-    "title": "New Avalon Malware Framework Packs CrownX Ransomware Capabilities",
-    "desc": "Cybersecurity researchers have discovered a previously undocumented modular malware framework codenamed Avalon that's distributed by means of a multi-stage phishing chain capable of bypassing traditional security controls.\n\nAvalon combines credential collection, lateral movement, remote access, reco",
-    "url": "https://thehackernews.com/2026/07/new-avalon-malware-framework-packs.html",
-    "date": "2026-07-04T00:25:24",
-    "title_ko": "새로운 아발론(Avalon) 악성코드 프레임워크, 크라운엑스(CrownX) 랜섬웨어 기능 탑재",
-    "desc_ko": "사이버보안 연구진들은 기존에 보고된 바 없는 ‘아발론(Avalon)’이라는 코드명의 모듈형 악성코드 프레임워크를 발견했는데, 이 프레임워크는 기존의 보안 통제 체계를 우회할 수 있는 다단계 피싱 체인을 통해 유포됩니다.\n\n아발론은 자격 증명 수집, 측면 이동, 원격 액세스, 정찰"
-  },
-  {
-    "source": "thn",
-    "title": "North Korea-Linked npm Packages Mimic Rollup Polyfills to Steal Developer Secrets",
-    "desc": "Threat actors with ties to North Korea have been linked to a fresh set of malicious npm packages that masquerade as Rollup polyfill tooling to facilitate remote access and data theft.\n\nAccording to JFrog, the packages \"rollup-packages-polyfill-core\" and \"rollup-runtime-polyfill-core\" mimic the legit",
-    "url": "https://thehackernews.com/2026/07/north-korea-linked-npm-packages-mimic.html",
-    "date": "2026-07-03T21:37:15",
-    "title_ko": "북한과 연계된 npm 패키지들이 Rollup 폴리필을 모방해 개발자의 기밀 정보를 탈취하고 있다",
-    "desc_ko": "북한과 연계된 위협 행위자들이, 원격 접속 및 데이터 탈취를 용이하게 하기 위해 Rollup 폴리필 도구로 위장한 새로운 악성 npm 패키지 일련과 연관된 것으로 드러났다.\n\nJFrog에 따르면, “rollup-packages-polyfill-core” 및 “rollup-runtime-polyfill-core” 패키지는 정식"
-  },
-  {
-    "source": "thn",
-    "title": "Armored Likho Targets Government Agencies, Power Sector with BusySnake Stealer",
-    "desc": "A previously undocumented threat actor known as Armored Likho has been attributed to cyber attacks targeting government agencies and the electric power sector across Russia, Brazil, and Kazakhstan.\n\n\"Armored Likho blends financially motivated campaigns targeting private individuals with targeted cyb",
-    "url": "https://thehackernews.com/2026/07/armored-likho-targets-government.html",
-    "date": "2026-07-03T19:06:33",
-    "title_ko": "Armored Likho, BusySnake 스틸러를 이용해 정부 기관 및 전력 부문을 표적으로 삼아",
-    "desc_ko": "‘Armored Likho’로 알려진, 그동안 기록에 없던 위협 행위자가 러시아, 브라질, 카자흐스탄 전역의 정부 기관과 전력 부문을 겨냥한 사이버 공격의 배후로 지목되고 있다.\n\n“Armored Likho는 개인을 대상으로 한 금전적 동기의 캠페인과 표적형 사이버 공격을 결합하여…”"
   }
 ]
