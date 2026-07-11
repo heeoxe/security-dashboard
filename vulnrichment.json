@@ -1,5 +1,1417 @@
 [
   {
+    "cve": "CVE-2026-61492",
+    "title": "In JetBrains YouTrack before 2026.2.17394 stored XSS via article titles in digest emails was possible",
+    "desc": "In JetBrains YouTrack before 2026.2.17394 stored XSS via article titles in digest emails was possible",
+    "cvss": 3.5,
+    "severity": "LOW",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "JetBrains",
+        "product": "YouTrack"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://www.jetbrains.com/privacy-security/issues-fixed/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-61461",
+    "title": "Dify < 1.16.0-rc1 SQL Injection via MyScale Vector Store search_by_full_text",
+    "desc": "Dify before 1.16.0-rc1 contains a SQL injection vulnerability in the MyScale vector store backend that allows attackers to execute arbitrary SQL by supplying unsanitized search parameters to the search_by_full_text method without escaping or parameterization. Attackers can inject malicious SQL through the search parameters to read, modify, or delete data in the underlying ClickHouse database.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-89"
+    ],
+    "affected": [
+      {
+        "vendor": "langgenius",
+        "product": "dify"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/langgenius/dify/releases/tag/1.16.0-rc1",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-61460",
+    "title": "Krayin CRM Insecure Direct Object Reference via Controllers",
+    "desc": "Krayin CRM through 2.2.3 contains an insecure direct object reference vulnerability in LeadController, PersonController, OrganizationController, QuoteController, and ActivityController that allows authenticated users to edit, update, or delete records owned by other users. Attackers can modify CRM records and reassign ownership by exploiting missing record-level ownership validation in edit, updat",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-639"
+    ],
+    "affected": [
+      {
+        "vendor": "krayin",
+        "product": "laravel-crm"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/krayin/laravel-crm/issues/2559",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-61455",
+    "title": "Grav before 2.0.1 Decompression Bomb via ZipArchiver",
+    "desc": "Grav before 2.0.1 contains a decompression bomb vulnerability in ZipArchiver::extract() that lacks limits on uncompressed size, file count, and nesting depth. Attackers can supply a crafted ZIP archive that expands to fill available disk space, causing denial of service by exhausting storage resources.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-409"
+    ],
+    "affected": [
+      {
+        "vendor": "getgrav",
+        "product": "grav"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/getgrav/grav/security/advisories/GHSA-928x-9mpw-8h56",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-61444",
+    "title": "PraisonAI before 4.6.78 Code Injection via f-string",
+    "desc": "PraisonAI versions before 4.6.78 contain a code injection vulnerability in deploy/api.py where the agents_file parameter is directly interpolated into an f-string without sanitization. Attackers can inject arbitrary Python code that executes when the generated server code runs via subprocess.Popen().",
+    "cvss": 9.1,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-94"
+    ],
+    "affected": [
+      {
+        "vendor": "MervinPraison",
+        "product": "PraisonAI"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-g6j7-pffp-8whg",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-61441",
+    "title": "PraisonAI Platform before 0.1.9 Authorization Bypass via Dependencies",
+    "desc": "PraisonAI Platform (praisonai-platform) before 0.1.9 improperly authorizes deletion of issue dependencies. The DELETE dependency route accepts either endpoint of a dependency edge and checks delete permission only against the caller-selected URL issue. A workspace member who cannot delete a dependency through an owner-created issue endpoint (which returns 403) can delete the same dependency edge b",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "MervinPraison",
+        "product": "PraisonAI"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-mxmx-rh57-jx58",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-61431",
+    "title": "PraisonAI before 4.6.78 Path Traversal via ContextGatherer",
+    "desc": "PraisonAI before 4.6.78 contains a path traversal vulnerability in ContextGatherer that fails to validate include paths in .praisoncontext and .praisoninclude files. Attackers can supply absolute paths or parent directory traversal sequences to read arbitrary files outside the workspace and include their contents in the generated context bundle.",
+    "cvss": 5.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "MervinPraison",
+        "product": "PraisonAI"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-q7m5-3jmv-vm48",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-60091",
+    "title": "PraisonAI before 4.6.78 Unauthenticated SSRF via webhook_url",
+    "desc": "PraisonAI before 4.6.78 contains an unauthenticated server-side request forgery vulnerability in the Jobs API /api/v1/runs endpoint. The webhook_url parameter is validated at request time but re-resolved at connection time, allowing attackers to use DNS rebinding to reach internal services with a blind SSRF attack.",
+    "cvss": 7.2,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-918"
+    ],
+    "affected": [
+      {
+        "vendor": "MervinPraison",
+        "product": "PraisonAI"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-4w49-gwv8-fpjg",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-60089",
+    "title": "PraisonAI before 1.6.78 Path Traversal via config.toml",
+    "desc": "PraisonAI (pip package praisonaiagents) before 1.6.78 automatically loads defaults from a project-local .praisonai/config.toml when constructing an Agent, and does not validate the defaults.output.output_file path. A repository-controlled config file can set output_file to an absolute or '..' traversal path; when the developer subsequently calls agent.start() without explicitly passing an output p",
+    "cvss": 5.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "MervinPraison",
+        "product": "PraisonAI"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-qjw5-xwrp-xwpq",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59939",
+    "title": "httplib2: Decompression Bomb Denial of Service via Unbounded gzip/deflate Response Handling",
+    "desc": "httplib2 is a comprehensive HTTP client library for Python. Prior to 0.32.0, httplib2 performs unbounded decompression of HTTP response bodies encoded with Content-Encoding: gzip or deflate in _decompressContent in httplib2/init.py, allowing a malicious or compromised HTTP server to return a small compressed payload that expands to an arbitrarily large size in memory and causes MemoryError or OOM-",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-409"
+    ],
+    "affected": [
+      {
+        "vendor": "httplib2",
+        "product": "httplib2"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-10",
+    "url": "https://github.com/httplib2/httplib2/security/advisories/GHSA-j5g9-f88f-gfj3",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59858",
+    "title": "Vim: Arbitrary Code Execution via C Omni-Completion",
+    "desc": "Vim is an open source, command line text editor. Prior to 9.2.0735, the C omni-completion script in runtime/autoload/ccomplete.vim interpolates the typeref: or typename: extension field of a tags entry, without escaping, into a :vimgrep pattern that is run through :execute. Because :vimgrep honors the bar as a command separator, a crafted tag field can close the search pattern and append an arbitr",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-94"
+    ],
+    "affected": [
+      {
+        "vendor": "vim",
+        "product": "vim"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-10",
+    "url": "https://github.com/vim/vim/security/advisories/GHSA-mf92-v4xw-j45x",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59854",
+    "title": "SiYuan: Incomplete IsSensitivePath denylist: globalCopyFiles reads home-dir credential dotfiles into the workspace",
+    "desc": "SiYuan is an open-source personal knowledge management system. Prior to 3.7.1, POST /api/file/globalCopyFiles accepts attacker-supplied absolute source paths and relies on util.IsSensitivePath in kernel/util/path.go, whose denylist misses common home-directory credential files such as .git-credentials, .netrc, .pgpass, .kube/config, .docker/config.json, and .gnupg, allowing an authenticated admini",
+    "cvss": 4.9,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-693"
+    ],
+    "affected": [
+      {
+        "vendor": "siyuan-note",
+        "product": "siyuan"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-10",
+    "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-vmm8-3ccv-ppvw",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59834",
+    "title": "SiYuan: SQL Query in Block Search Exposes Hidden Published Document Content",
+    "desc": "SiYuan is an open-source personal knowledge management system. Prior to 3.7.1, the block search endpoint POST /api/search/fullTextSearchBlock concatenates attacker-controlled paths values into SQL predicates used by non-SQL search modes, allowing an unauthenticated publish visitor to inject a UNION SELECT and return rows from hidden documents by projecting an allowed visible box and path. This iss",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-89"
+    ],
+    "affected": [
+      {
+        "vendor": "siyuan-note",
+        "product": "siyuan"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-10",
+    "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-h89q-4j2h-7h88",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59833",
+    "title": "SiYuan: Stored XSS to RCE in SiYuan via a per-attribute URL-scheme sanitizer gap in Lute (form action / SVG xlink:href)",
+    "desc": "SiYuan is an open-source personal knowledge management system. Prior to 3.7.1, SiYuan renders note and package content to HTML through the Lute engine with sanitization enabled, but Lute's dangerous javascript scheme block does not check form action or SVG xlink:href attributes, allowing stored cross-site scripting in document export-preview and Bazaar package README render paths that can execute ",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-79",
+      "CWE-94",
+      "CWE-116"
+    ],
+    "affected": [
+      {
+        "vendor": "siyuan-note",
+        "product": "siyuan"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-10",
+    "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-97xv-3v84-h358",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59796",
+    "title": "In JetBrains TeamCity before 2026.1.2 pipeline modification was possible due to improper permission checks",
+    "desc": "In JetBrains TeamCity before 2026.1.2 pipeline modification was possible due to improper permission checks",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "JetBrains",
+        "product": "TeamCity"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://www.jetbrains.com/privacy-security/issues-fixed/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59795",
+    "title": "In JetBrains TeamCity before 2026.1.2 stored XSS via unauthenticated agent registration was possible",
+    "desc": "In JetBrains TeamCity before 2026.1.2 stored XSS via unauthenticated agent registration was possible",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "JetBrains",
+        "product": "TeamCity"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://www.jetbrains.com/privacy-security/issues-fixed/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59794",
+    "title": "In JetBrains TeamCity before 2026.1.2 stored XSS on the cloud profile page was possible via agent-reported data",
+    "desc": "In JetBrains TeamCity before 2026.1.2 stored XSS on the cloud profile page was possible via agent-reported data",
+    "cvss": 7.3,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "JetBrains",
+        "product": "TeamCity"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://www.jetbrains.com/privacy-security/issues-fixed/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59793",
+    "title": "In JetBrains TeamCity before 2026.1.2 arbitrary file access was possible via the Perforce VCS integration",
+    "desc": "In JetBrains TeamCity before 2026.1.2 arbitrary file access was possible via the Perforce VCS integration",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "JetBrains",
+        "product": "TeamCity"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://www.jetbrains.com/privacy-security/issues-fixed/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59792",
+    "title": "In JetBrains IntelliJ IDEA before 2026.1.4, \n2026.2 code execution via path traversal in project workspace ID handling w",
+    "desc": "In JetBrains IntelliJ IDEA before 2026.1.4, \n2026.2 code execution via path traversal in project workspace ID handling was possible",
+    "cvss": 9.6,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "JetBrains",
+        "product": "IntelliJ IDEA"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://www.jetbrains.com/privacy-security/issues-fixed/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59791",
+    "title": "In JetBrains YouTrack before 2026.2.17012 cSS injection via Mermaid diagram rendering was possible",
+    "desc": "In JetBrains YouTrack before 2026.2.17012 cSS injection via Mermaid diagram rendering was possible",
+    "cvss": 3.5,
+    "severity": "LOW",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "JetBrains",
+        "product": "YouTrack"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://www.jetbrains.com/privacy-security/issues-fixed/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59224",
+    "title": "Open WebUI: Terminal proxy forwards a spoofable, integrity-unbound user identity to the upstream (X-User-Id header and ws_terminal session_id query injection)",
+    "desc": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform. Prior to 0.10.0, backend/open_webui/routers/terminals.py built the ws_terminal upstream URL from an unencoded session_id and appended user_id as a query parameter, allowing query injection to make the terminal backend resolve another user identity; the HTTP proxy path also forwarded X-User-Id as an integrity-unbo",
+    "cvss": 8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-287",
+      "CWE-290"
+    ],
+    "affected": [
+      {
+        "vendor": "open-webui",
+        "product": "open-webui"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-10",
+    "url": "https://github.com/open-webui/open-webui/security/advisories/GHSA-j657-m4c4-24jq",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59216",
+    "title": "Open WebUI: Cross-user code-interpreter and tool execution via unvalidated Socket.IO event-caller session_id",
+    "desc": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform. Prior to 0.10.0, get_event_call delivered execute:python and execute:tool Socket.IO events to a client-supplied session_id after checking only that the session was connected, allowing authenticated users who learned another socket ID through ydoc:document:join to run code interpreter Python or tools in that user ",
+    "cvss": 7.7,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-94",
+      "CWE-200",
+      "CWE-639",
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "open-webui",
+        "product": "open-webui"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-10",
+    "url": "https://github.com/open-webui/open-webui/security/advisories/GHSA-74h3-cxq7-vc5q",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59193",
+    "title": "Grav CMS — Improper Handling of Highly Compressed Data in Installer::unZip()",
+    "desc": "Grav is a file-based Web platform. Prior to 2.0.0, an authenticated admin.super user can crash Grav or fill the disk by uploading a specially crafted ZIP archive through the Direct Install tool because Installer::unZip calls ZipArchive::extractTo without limits on uncompressed size, entry count, or directory depth. This issue is fixed in version 2.0.0.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-409"
+    ],
+    "affected": [
+      {
+        "vendor": "getgrav",
+        "product": "grav"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/getgrav/grav/security/advisories/GHSA-2vcx-h8p2-9pg9",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59190",
+    "title": "Grav Admin Plugin — IDOR Privilege Escalation via saveUser()",
+    "desc": "grav-plugin-admin is an HTML user interface that provides a way to configure Grav and create and modify pages. In 1.10.52 and earlier, an authenticated attacker with admin.users permission can change the password of any user account, including the super administrator, by sending a direct POST request to /admin/user/{username}?task=save with data[password] because saveUser authorizes the caller's u",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-639"
+    ],
+    "affected": [
+      {
+        "vendor": "getgrav",
+        "product": "grav"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/getgrav/grav/security/advisories/GHSA-p97c-g455-q447",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59180",
+    "title": "Apprise forwards configured auth headers across cross-origin HTTP redirects",
+    "desc": "Apprise is an open source library which allows you to send a notification to almost all of the most popular notification services available. Prior to 1.11.0, Apprise HTTP-based notification plugins and HTTP attachment and config loaders in apprise/attachment/http.py and apprise/config/http.py follow HTTP redirects by default and resend user-configured auth headers and query parameters on the redir",
+    "cvss": 3.1,
+    "severity": "LOW",
+    "cwes": [
+      "CWE-200",
+      "CWE-601"
+    ],
+    "affected": [
+      {
+        "vendor": "caronc",
+        "product": "apprise"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/caronc/apprise/security/advisories/GHSA-856c-92hv-3vxx",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59162",
+    "title": "Excelize: Negative shared-string index causes panic in GetCellValue and GetRows",
+    "desc": "Excelize is a Go language library for reading and writing Microsoft Excel spreadsheets. Prior to 2.11.0, Excelize parses shared-string cell values with strconv.Atoi and checks only the upper bound before indexing the shared string slice, allowing an XLSX file containing a shared-string cell with -1 to trigger sharedStrings[-1] and panic when read through GetCellValue or GetRows. This issue is fixe",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-248",
+      "CWE-755"
+    ],
+    "affected": [
+      {
+        "vendor": "qax-os",
+        "product": "excelize"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/qax-os/excelize/security/advisories/GHSA-fx5j-qcqg-grpf",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59154",
+    "title": "Wekan: Checklist direct DDP updates can write checklist data into private boards",
+    "desc": "Wekan is open source kanban built with Meteor. Prior to 9.64, Wekan has a cross-board authorization bypass in the direct Meteor collection allow rules for Checklists and ChecklistItems because updates are authorized only against the current source doc.cardId and do not inspect the destination cardId or boardId in the update modifier, allowing a low-privileged authenticated user with write access t",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-863"
+    ],
+    "affected": [
+      {
+        "vendor": "wekan",
+        "product": "wekan"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/wekan/wekan/security/advisories/GHSA-gv8h-5p3p-6hx7",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58661",
+    "title": "n8n - Disk Space Exhaustion via Data-Table File Upload Endpoint",
+    "desc": "n8n before 2.28.0 (and before 1.123.58 on the 1.x branch) contains a disk space exhaustion vulnerability in the data-table file upload endpoint. The per-request quota check does not account for files already written to the shared temporary directory, allowing an authenticated user to repeatedly upload files that accumulate on disk until the periodic cleanup runs, potentially exhausting available d",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-770"
+    ],
+    "affected": [
+      {
+        "vendor": "n8n",
+        "product": "n8n"
+      },
+      {
+        "vendor": "n8n",
+        "product": "n8n"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-w867-jm58-p9pv",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58492",
+    "title": "grav-plugin-database: SQL Injection in PDO::tableExists() due to Unsanitized Table Name Interpolation",
+    "desc": "grav-plugin-database is the database plugin for Grav CMS. Prior to 1.2.0, the PDO::tableExists method interpolates its table argument directly into a raw SQL query string without sanitization, escaping, quoting, or whitelisting, allowing attacker-controlled table names passed by consuming plugin or developer code to execute arbitrary SQL against the configured database. This issue is fixed in vers",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-89"
+    ],
+    "affected": [
+      {
+        "vendor": "getgrav",
+        "product": "grav"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/getgrav/grav/security/advisories/GHSA-8jxg-4pw9-xcwf",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58225",
+    "title": "SQL injection via unescaped dollar-quote in Postgrex.Notifications reconnect replay causes notification denial of service",
+    "desc": "SQL Injection vulnerability in elixir-ecto postgrex allows an attacker who can influence a LISTEN channel name to inject SQL into the reconnect replay query, causing a denial of service of the notification connection.\n\nPostgrex.Notifications sanitizes channel names with quote_channel/1, which doubles double quotes so the name is safe inside a double-quoted identifier. This protects the single-stat",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-89"
+    ],
+    "affected": [
+      {
+        "vendor": "elixir-ecto",
+        "product": "postgrex"
+      },
+      {
+        "vendor": "elixir-ecto",
+        "product": "postgrex"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/elixir-ecto/ecto/security/advisories/GHSA-4mw9-4qgj-m97w",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58123",
+    "title": "Hermes WebUI < 0.51.788 Unauthenticated RCE via Terminal API",
+    "desc": "Hermes WebUI before 0.51.788 contains an unauthenticated remote code execution vulnerability that allows remote attackers to execute arbitrary shell commands by accessing the embedded terminal API endpoints without credentials. Attackers can create a session, attach a PTY shell, and write arbitrary commands through the terminal input endpoint to achieve full command execution as the server process",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-306"
+    ],
+    "affected": [
+      {
+        "vendor": "nesquena",
+        "product": "hermes-webui"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-10",
+    "url": "https://github.com/nesquena/hermes-webui/releases/tag/v0.51.788",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57994",
+    "title": "phpMyFAQ - Information Disclosure of Inactive FAQ Content via Public API Endpoints",
+    "desc": "phpMyFAQ before 4.1.5 applies inconsistent active=yes and publication-date filtering across its public FAQ API endpoints, allowing unauthenticated attackers to retrieve inactive (draft or review-only) FAQ content. Specifically, GET /api/v3.1/faq/{categoryId}/{faqId} returns the inactive FAQ title and full answer, while GET /api/v3.1/faqs/tags/{tagId} and GET /api/v4.0/faqs/tags/{tagId} return the ",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-200"
+    ],
+    "affected": [
+      {
+        "vendor": "phpMyFAQ",
+        "product": "phpMyFAQ"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/thorsten/phpMyFAQ/security/advisories/GHSA-mf8r-wm2w-f8c5",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57961",
+    "title": "phpMyFAQ - Authenticated Path Traversal in PDF Export via concatenatePaths Function",
+    "desc": "phpMyFAQ before 4.1.5 contains a potential authenticated path traversal vulnerability in the concatenatePaths() function within src/phpMyFAQ/Export/Pdf/Wrapper.php. A user with FAQ editing privileges can store HTML containing crafted image paths that are processed during PDF generation. The path resolution logic locates the substring \"content\" within a user-controlled path using strpos(); when \"co",
+    "cvss": 2.7,
+    "severity": "LOW",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "phpMyFAQ",
+        "product": "phpMyFAQ"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/thorsten/phpMyFAQ/security/advisories/GHSA-88g4-74f3-63x9",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57501",
+    "title": "Zen: Context-menu \"Open link in glance\" / \"Split link in new tab\" loads a page-controlled link with the System principal, bypassing the web-content scheme restriction",
+    "desc": "Zen is a firefox-based browser. Prior to 1.21.5b, Zen's glance and split-view context-menu actions, Open link in glance and Split link in new tab, load a page-controlled link URL with the System principal instead of the originating page's principal, allowing a malicious web page to place a link to a file URL that can load with System privileges when opened through either context-menu item and bypa",
+    "cvss": 0,
+    "severity": "NONE",
+    "cwes": [
+      "CWE-266"
+    ],
+    "affected": [
+      {
+        "vendor": "zen-browser",
+        "product": "desktop"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-10",
+    "url": "https://github.com/zen-browser/desktop/security/advisories/GHSA-vpvg-hp3v-rm5q",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57481",
+    "title": "Parse Server: LiveQuery discloses object data to a subscriber across an ACL read-access change",
+    "desc": "Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to 9.9.1-alpha.13 and 8.6.83, a LiveQuery subscriber could receive object field values they were not authorized to read when a single save changed both an object field and the subscriber's ACL read access, because leave and enter events included the wrong object state. This issue is fixed ",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-200"
+    ],
+    "affected": [
+      {
+        "vendor": "parse-community",
+        "product": "parse-server"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-10",
+    "url": "https://github.com/parse-community/parse-server/security/advisories/GHSA-97pr-9hgg-3p8r",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57167",
+    "title": "PeerTube: Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS)",
+    "desc": "PeerTube is an ActivityPub-federated video streaming platform. Prior to 8.2.2, server-side-rendered video watch pages embed a schema.org JSON-LD block by JSON.stringify-ing video metadata without escaping less-than, greater-than, or slash characters, allowing a value containing the byte sequence that closes a script element to inject arbitrary HTML or JavaScript that executes in the instance origi",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-80"
+    ],
+    "affected": [
+      {
+        "vendor": "Chocobozzz",
+        "product": "PeerTube"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/Chocobozzz/PeerTube/security/advisories/GHSA-jxwq-h9xv-hr28",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57157",
+    "title": "Out-of-bounds read in the camera device enumerator server (rdpecam) via unterminated DeviceName / VirtualChannelName",
+    "desc": "FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to 3.28.0, FreeRDP server implementations with the MS-RDPECAM camera device enumerator channel enabled scan attacker-supplied DeviceName and VirtualChannelName fields for a NUL terminator in channels/rdpecam/server/camera_device_enumerator_main.c and then dereference once past the scan bound, allowing a malicious RDP client to ",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-125"
+    ],
+    "affected": [
+      {
+        "vendor": "FreeRDP",
+        "product": "FreeRDP"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/FreeRDP/FreeRDP/security/advisories/GHSA-47fr-jw86-c3fj",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57054",
+    "title": "Junos OS: MX Series: Web filtering doesn't block specifically formatted URLs",
+    "desc": "A Use of Incorrectly-Resolved Name or Reference vulnerability in the URL filtering plugin of Juniper Networks Junos OS on MX Series allows an unauthenticated, network-based attacker to bypass web filtering and access downstream resources that should be unreachable.\n\n\n\nIf an MX Series device is configured with web filtering, and an attacker sends a request with a specifically formatted URL, this re",
+    "cvss": 5.8,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-706"
+    ],
+    "affected": [
+      {
+        "vendor": "Juniper Networks",
+        "product": "Junos OS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-10",
+    "url": "https://supportportal.juniper.net/JSA110093",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57031",
+    "title": "Junos OS: MX Series: For subscribers configured on static interfaces, input filters are not in effect",
+    "desc": "An Improper Check for Unusual or Exceptional Conditions vulnerability in the packet forwarding engine (PFE) of Juniper Networks Junos OS on MX Series allows adjacent subscribers to bypass configured firewall filters.\n\nOn MX Series devices with MPC10/11, LC4800/9600, and MX304 with subscribers configured on static interfaces, ingress firewall filters are not enforced, so that neither protocol level",
+    "cvss": 4.7,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-754"
+    ],
+    "affected": [
+      {
+        "vendor": "Juniper Networks",
+        "product": "Junos OS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-10",
+    "url": "https://supportportal.juniper.net/JSA110091",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57027",
+    "title": "Junos OS: EX4100 Series, EX4400: With sFlow configured in a VC scenario multicast traffic leads to an FPC crash",
+    "desc": "A Missing Release of Memory after Effective Lifetime vulnerability in the packet forwarding engine (pfe) of Juniper Networks Junos OS on specific EX Series devices allows an unauthenticated adjacent attacker to cause a Denial-of-Service (DoS).When sFlow is configured in a Virtual Chassis (VC) scenario with EX4100 Series or EX4400 Series devices, multicast traffic which is received on one VC member",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-401"
+    ],
+    "affected": [
+      {
+        "vendor": "Juniper Networks",
+        "product": "Junos OS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-10",
+    "url": "https://supportportal.juniper.net/JSA110087",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57026",
+    "title": "Junos OS: MX Series with SPC3, SRX Series: Processing of a specifically malformed SIP invite causes a flowd crash",
+    "desc": "An Improper Validation of Syntactic Correctness of Input vulnerability in the SIP plugin of Juniper Networks Junos OS on MX Series with SPC3 and SRX Series allows an unauthenticated, network-based attacker to cause a Denial-of-Service (DoS).If the SIP ALG is enabled on an affected device, the processing of a malformed SIP invite packet will cause a flow processing daemon (flowd) crash and restart.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-1286"
+    ],
+    "affected": [
+      {
+        "vendor": "Juniper Networks",
+        "product": "Junos OS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-10",
+    "url": "https://supportportal.juniper.net/JSA110086",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57025",
+    "title": "Junos OS and Junos OS Evolved: EX Series, QFX Series, MX Series: A specific 'show l2-learning' command causes l2ald crash",
+    "desc": "A Return of Pointer Value Outside of Expected Range vulnerability in the fileio library of Juniper Networks Junos OS and Junos OS Evolved allows a local, low-privilged attacker to cause a Denial-of-Service (DoS).\n\nOn EX Series, QFX Series and MX Series a low-privileged attacker issuing a specific 'show l2-learning' command will cause an l2ald crash which will lead to a temporary service impact for",
+    "cvss": 5.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-466"
+    ],
+    "affected": [
+      {
+        "vendor": "Juniper Networks",
+        "product": "Junos OS"
+      },
+      {
+        "vendor": "Juniper Networks",
+        "product": "Junos OS Evolved"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-10",
+    "url": "https://supportportal.juniper.net/JSA110085",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57023",
+    "title": "Junos OS: MX with SPC3, SRX Series: A specifically malformed TCP packet causes a flowd crash",
+    "desc": "An Improper Validation of Specified Quantity in Input vulnerability in the TCP proxy plugin of Juniper Networks Junos OS on MX Series with SPC3, and SRX Series allows an unauthenticated, network-based attacker to cause a complete Denial of Service (DoS).\n\nWhen TCP proxy is engaged in a flow session, to support ALGs, Advanced Anti-Malware, ICAP or UTM, a TCP packet with specifically malformed TCP h",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-1284"
+    ],
+    "affected": [
+      {
+        "vendor": "Juniper Networks",
+        "product": "Junos OS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-10",
+    "url": "https://supportportal.juniper.net/JSA110083",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57020",
+    "title": "Junos OS: QFX10000 Series: IPv6 multicast traffic received on non-IRB interfaces causes a multicast flood",
+    "desc": "An Improper Check for Unusual or Exceptional Conditions vulnerability in the packet forwarding engine (pfe) of Juniper Networks Junos OS on QFX10000 Series allows an unauthenticated, adjacent attacker to cause a Denial-of-Service (DoS).\n\nOn all QFX10000 platforms in an EVPN-VxLAN scenario, if an attacker sends IPv6 multicast traffic and these packets reach the non-IRB interface of a spine switch i",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-754"
+    ],
+    "affected": [
+      {
+        "vendor": "Juniper Networks",
+        "product": "Junos OS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-10",
+    "url": "https://supportportal.juniper.net/JSA110080",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57019",
+    "title": "Junos OS: MX Series: Specific traffic causes an FPC to reset",
+    "desc": "An Improper Validation of Specified Quantity in Input vulnerability in the Packet Forwarding Engine (pfe) of Juniper Networks Junos OS on MX Series allows an unauthenticated, adjacent attacker to cause a Denial-of-Service (DoS).\n\n\nWhen a specific packet is received from device in the same broadcast domain, an affected system calculates the packet size incorrectly. This causes further packet proces",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-1284"
+    ],
+    "affected": [
+      {
+        "vendor": "Juniper Networks",
+        "product": "Junos OS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-10",
+    "url": "https://supportportal.juniper.net/JSA110079",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-56814",
+    "title": "Plug: multipart :length limit is not charged for part headers, enabling unbounded temp-file creation (denial of service)",
+    "desc": "Plug.Parsers.MULTIPART, the multipart request-body parser used to handle file uploads and multipart forms, does not enforce its :length budget against all consumed resources, allowing an unauthenticated remote attacker to cause denial of service. The parser charges the :length limit only for part body bytes; part header bytes are never counted, and a part with an empty body costs zero.\n\nBecause ev",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-770"
+    ],
+    "affected": [
+      {
+        "vendor": "elixir-plug",
+        "product": "plug"
+      },
+      {
+        "vendor": "elixir-plug",
+        "product": "plug"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/elixir-plug/plug/security/advisories/GHSA-95qv-c9g9-rm63",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-56765",
+    "title": "Vikunja - Unauthenticated Instance-Wide Data Breach via Link Share Hash Disclosure Chained with Cross-Project Attachment IDOR",
+    "desc": "Vikunja before 2.2.1 contains an authorization flaw where the LinkSharing.ReadAll endpoint exposes share hashes to users with read access, enabling permission escalation to admin-level shares. The GetTaskAttachment endpoint performs permission checks against user-supplied task IDs but fetches attachments by sequential ID without verifying ownership, allowing attackers to download and delete all fi",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-639"
+    ],
+    "affected": [
+      {
+        "vendor": "Vikunja",
+        "product": "Vikunja"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-2pv8-4c52-mf8j",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-56690",
+    "title": "Dell PowerFlex Manager, Version prior to 5.1.0.1, contain(s) an Improper Neutralization of Special Elements used in an S",
+    "desc": "Dell PowerFlex Manager, Version prior to 5.1.0.1, contain(s) an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to Information disclosure, Information exposure, and Unauthorized access.",
+    "cvss": 8.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-89"
+    ],
+    "affected": [
+      {
+        "vendor": "Dell",
+        "product": "PowerFlex Manager"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://www.dell.com/support/kbdoc/en-us/000477538/dsa-2026-066-security-update-for-powerflex-software-multiple-vulnerabilities",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-56689",
+    "title": "Dell PowerFlex Manager, Version prior to 5.1.0.1, contain(s) an Improper Neutralization of Special Elements used in an S",
+    "desc": "Dell PowerFlex Manager, Version prior to 5.1.0.1, contain(s) an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to Information exposure.",
+    "cvss": 7.7,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-89"
+    ],
+    "affected": [
+      {
+        "vendor": "Dell",
+        "product": "PowerFlex Manager"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://www.dell.com/support/kbdoc/en-us/000477538/dsa-2026-066-security-update-for-powerflex-software-multiple-vulnerabilities",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-56688",
+    "title": "Dell PowerFlex Manager, Version prior to 5.1.0.1, contain(s) an Improper Neutralization of Special Elements used in an O",
+    "desc": "Dell PowerFlex Manager, Version prior to 5.1.0.1, contain(s) an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability during OS Repository processing to achieve arbitrary command execution as root, potentially leading to full appliance compromise and latera",
+    "cvss": 9.1,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-78"
+    ],
+    "affected": [
+      {
+        "vendor": "Dell",
+        "product": "PowerFlex Manager"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://www.dell.com/support/kbdoc/en-us/000477538/dsa-2026-066-security-update-for-powerflex-software-multiple-vulnerabilities",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-56675",
+    "title": "9router: Reverse proxy locality collapse allows unauthenticated access to 9router /v1 APIs",
+    "desc": "9Router is an AI router & token saver. Prior to 0.5.2, 9router treats loopback requests as trusted and allows /v1/* access without an API key, so a same-host reverse proxy that forwards public traffic to the backend through 127.0.0.1 causes src/dashboardGuard.js to misclassify external requests as local. A remote unauthenticated attacker can access /v1 APIs such as /v1/models and may abuse configu",
+    "cvss": 8.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-287",
+      "CWE-290",
+      "CWE-306",
+      "CWE-441"
+    ],
+    "affected": [
+      {
+        "vendor": "decolua",
+        "product": "9router"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/decolua/9router/security/advisories/GHSA-x5c9-v98j-722r",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-56669",
+    "title": "Elysia: Inefficient Algorithmic Complexity and Interpretation Conflict",
+    "desc": "Elysia is a Typescript framework for request validation, type inference, OpenAPI documentation, and client-server communication. Prior to 1.4.29, Elysia uses getAll in form data normalization for multipart/form-data endpoints, causing the amount of work to grow quadratically with the number of unique key-value pairs and allowing CPU exhaustion. This issue is fixed in version 1.4.29.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-407",
+      "CWE-436"
+    ],
+    "affected": [
+      {
+        "vendor": "elysiajs",
+        "product": "elysia"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-10",
+    "url": "https://github.com/elysiajs/elysia/security/advisories/GHSA-9643-4qgh-g8mx",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-56667",
+    "title": "ZITADEL: Stored XSS via Default URI Redirect in Login V2",
+    "desc": "ZITADEL is an open source identity management platform. Prior to 4.15.3, ZITADEL Login V2 OIDC and SAML FailedPrecondition error paths return loginSettings.defaultRedirectUri to router.push without applying the isSafeRedirectUri check, allowing an organization or instance administrator to store a javascript or data URI that can execute in a user's browser when an affected login error path is reach",
+    "cvss": 7.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "zitadel",
+        "product": "zitadel"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/zitadel/zitadel/security/advisories/GHSA-5wcj-9wj4-j65h",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-56665",
+    "title": "ZITADEL: Missing Token Expiration (`exp`) Validation in JWT IdP Provider",
+    "desc": "ZITADEL is an open source identity management platform. Prior to 3.4.12 and 4.15.2, ZITADEL is an open source identity management platform. From 3.0.0-rc.1 through 3.4.11 and from 4.0.0-rc.1 through 4.15.1, ZITADEL's external JWT Identity Provider validation in internal/idp/providers/jwt/session.go skips expiration handling when an incoming token omits the exp claim, allowing a token from a truste",
+    "cvss": 4.2,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-613"
+    ],
+    "affected": [
+      {
+        "vendor": "zitadel",
+        "product": "zitadel"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/zitadel/zitadel/security/advisories/GHSA-v77h-2w3m-94hx",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-56664",
+    "title": "ZITADEL: Missing Token Lifecyle Validation (`exp` and `iat`) in JWT IdP Provider",
+    "desc": "ZITADEL is an open source identity management platform. Prior to 3.4.12 and 4.15.2, ZITADEL's external JWT Identity Provider validation in internal/idp/providers/jwt/session.go skips the maximum token age freshness check when an incoming token omits the iat claim, allowing arbitrarily old tokens from a trusted issuer to pass authentication. This issue is fixed in versions 3.4.12 and 4.15.2.",
+    "cvss": 4.2,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-613"
+    ],
+    "affected": [
+      {
+        "vendor": "zitadel",
+        "product": "zitadel"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/zitadel/zitadel/security/advisories/GHSA-wxg7-w2v3-w38g",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-56373",
+    "title": "ImageMagick - Use-After-Free Write in PDB Decoder",
+    "desc": "ImageMagick before 7.1.2-15 contains a use-after-free vulnerability in the PDB decoder that uses a stale pointer when memory allocation fails. Attackers can trigger this vulnerability by processing malicious PDB files to cause crashes or write a single zero byte to freed memory.",
+    "cvss": 3.7,
+    "severity": "LOW",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "ImageMagick",
+        "product": "ImageMagick"
+      },
+      {
+        "vendor": "ImageMagick",
+        "product": "ImageMagick"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-3j4x-rwrx-xxj9",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-56354",
+    "title": "n8n - Cross-Site Scripting and Open Redirect in Form Node",
+    "desc": "n8n before 1.123.24, 2.10.4, and 2.12.0 (across its 1.x and 2.x branches) contains cross-site scripting and open redirect vulnerabilities in the Form Node due to unsanitized HTML description fields and overly permissive iframe sandbox policies. Authenticated users with workflow creation permissions can inject malicious scripts or redirect parameters to perform stored XSS attacks or phishing redire",
+    "cvss": 4.1,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "n8n",
+        "product": "n8n"
+      },
+      {
+        "vendor": "n8n",
+        "product": "n8n"
+      },
+      {
+        "vendor": "n8n",
+        "product": "n8n"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-w673-8fjw-457c",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-56329",
+    "title": "Capgo - Cross-Tenant Preview Namespace Collision via Non-Bijective Underscore Decoding",
+    "desc": "Capgo before 12.128.2 contains a cross-tenant preview namespace collision vulnerability caused by non-bijective decoding of double underscores to dots in preview hostname parsing. Attackers can register app IDs with underscores that collide with other tenants' dotted app IDs, causing preview misrouting and denial of preview access for victim applications.",
+    "cvss": 6.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-436"
+    ],
+    "affected": [
+      {
+        "vendor": "Capgo",
+        "product": "Capgo"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/Cap-go/capgo/security/advisories/GHSA-76qq-gg2p-pwwj",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-56312",
+    "title": "Capgo - Account Creation Before CAPTCHA Validation in accept_invitation Endpoint",
+    "desc": "Capgo before 12.128.2 contains an improper validation vulnerability in the accept_invitation endpoint that creates user accounts before captcha validation is enforced. Attackers can bypass captcha protection by sending POST requests with invalid captcha tokens to create unwanted accounts and burn invite links.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-287"
+    ],
+    "affected": [
+      {
+        "vendor": "Capgo",
+        "product": "Capgo"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/Cap-go/capgo/security/advisories/GHSA-whc5-fvr7-g5v3",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-56309",
+    "title": "Capgo - Plan Bypass via Unrestricted Attachment Upload Endpoint",
+    "desc": "Capgo before 12.128.2 fails to enforce plan/quota restrictions on the /files/upload/attachments endpoint, allowing plan-blocked apps to create publicly readable R2 objects. Attackers can upload arbitrary attachments using upload-scoped API keys that bypass plan checks, persist outside normal bundle metadata, and survive app deletion, enabling storage and bandwidth abuse.",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-770"
+    ],
+    "affected": [
+      {
+        "vendor": "Capgo",
+        "product": "Capgo"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/Cap-go/capgo/security/advisories/GHSA-q52j-ggvx-cr4v",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-56291",
+    "title": "Joomla Extension - balbooa.com - Unauthenticated file upload in Balbooa Forms extension < 2.4.1",
+    "desc": "The Joomla extension Balbooa Forms is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-434"
+    ],
+    "affected": [
+      {
+        "vendor": "balbooa.com",
+        "product": "balbooa.com Balbooa Forms extension for Joomla"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2026-07-09",
+    "updated": "2026-07-10",
+    "url": "https://www.balbooa.com/joomla-forms",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-56261",
+    "title": "Crawl4AI - Server-Side Request Forgery via Webhook URLs",
+    "desc": "Crawl4AI before 0.8.7 contains a server-side request forgery (SSRF) vulnerability in the Docker API server's /crawl/job and /llm/job endpoints, which accept webhook URLs without destination validation. An attacker can supply webhook URLs pointing to private or internal IP ranges, Docker networks, or cloud metadata endpoints (e.g. 169.254.169.254), causing the server to make requests to internal se",
+    "cvss": 8.6,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-918"
+    ],
+    "affected": [
+      {
+        "vendor": "Crawl4AI",
+        "product": "Crawl4AI"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/unclecode/crawl4ai/security/advisories/GHSA-365w-hqf6-vxfg",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-56254",
+    "title": "capacitor-updater - End-to-End Encryption Bypass via Private Key Distribution",
+    "desc": "In @capgo/capacitor-updater (Cap-go/capgo) before 12.128.2, the end-to-end encryption scheme distributes the private key to each device that downloads the app. Because the public key can be derived from the private key, an attacker performing a man-in-the-middle attack or compromising the Capgo server can create a validly signed update bundle and cause devices to install an update not produced by ",
+    "cvss": 7,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-320"
+    ],
+    "affected": [
+      {
+        "vendor": "capacitor-updater",
+        "product": "capacitor-updater"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/Cap-go/capgo/security/advisories/GHSA-j2f4-4pfc-p8rx",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2026-61474",
     "title": "MISP: Improper sharing group authorization check when adding attributes",
     "desc": "An improper authorization check in MISP’s attribute creation endpoint allowed an authenticated user with permission to add attributes to submit a sharing_group_id without triggering the corresponding sharing group authorization check, as long as the attribute distribution value was not explicitly set to 4 — “sharing group”.\n\n\nAs a result, a user could reference or associate an attribute with a sha",
@@ -374,6 +1786,95 @@
     "published": "2026-07-08",
     "updated": "2026-07-09",
     "url": "https://github.com/nodeca/js-yaml/security/advisories/GHSA-g796-fgmg-93mv",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59857",
+    "title": "Vim: Out-of-bounds Write in SAL Soundfolding",
+    "desc": "Vim is an open source, command line text editor. Prior to 9.2.0725, the single-byte branch of spell_soundfold_sal() in src/spell.c translates a word through a spell file's SAL sound-folding rules into a caller-owned result buffer, but its result writes are guarded with reslen < MAXWLEN, allowing reslen to reach MAXWLEN before res[reslen] = NUL writes one byte past the end of the MAXWLEN-element st",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-787"
+    ],
+    "affected": [
+      {
+        "vendor": "vim",
+        "product": "vim"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-09",
+    "url": "https://github.com/vim/vim/security/advisories/GHSA-m3hf-xcm3-xhm2",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59853",
+    "title": "SiYuan: Publish-mode Reader can exfiltrate private saved-search Criteria via /api/storage/getCriteria (missing publish-access filter)",
+    "desc": "SiYuan is an open-source personal knowledge management system. Prior to 3.7.1, the /api/storage/getCriteria endpoint returns saved search criteria from data/storage/criteria.json without the publish-access filtering used by sibling storage endpoints, allowing a publish-mode Reader to read private document paths, notebook, document, and block IDs, and search and replace keywords for unpublished doc",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "siyuan-note",
+        "product": "siyuan"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-09",
+    "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-px3c-cf92-9g83",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59832",
+    "title": "SiYuan: Authenticated path traversal in /snippets/ static handler (serveSnippets) leaks conf/conf.json secrets and siyuan.db",
+    "desc": "SiYuan is an open-source personal knowledge management system. Prior to 3.7.1, the /snippets/*filepath route handler serveSnippets in kernel/server/serve.go joins a single-decoded request path with the snippets directory without subpath containment or sensitive-path checks, allowing an authenticated request such as /snippets/%2e%2e/%2e%2e/conf/conf.json to read workspace secrets and the document d",
+    "cvss": 7.7,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-22",
+      "CWE-23"
+    ],
+    "affected": [
+      {
+        "vendor": "siyuan-note",
+        "product": "siyuan"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-09",
+    "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-275h-v5h9-vr82",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59828",
+    "title": "Discourse: Hidden post revisions leak through adjacent visible diffs",
+    "desc": "Discourse is an open-source discussion platform. Prior to 2026.6.0, 2026.5.1, 2026.4.2, and 2026.1.5, post revisions that should be hidden from regular users could be leaked through visible diffs on adjacent revisions serialized by PostRevisionSerializer. This issue is fixed in versions 2026.6.0, 2026.5.1, 2026.4.2, and 2026.1.5.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-200"
+    ],
+    "affected": [
+      {
+        "vendor": "discourse",
+        "product": "discourse"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-09",
+    "url": "https://github.com/discourse/discourse/security/advisories/GHSA-q456-4f8q-42vx",
     "source": "CISA Vulnrichment"
   },
   {
@@ -1017,29 +2518,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-59224",
-    "title": "Open WebUI: Terminal proxy forwards a spoofable, integrity-unbound user identity to the upstream (X-User-Id header and ws_terminal session_id query injection)",
-    "desc": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform. Prior to 0.10.0, backend/open_webui/routers/terminals.py built the ws_terminal upstream URL from an unencoded session_id and appended user_id as a query parameter, allowing query injection to make the terminal backend resolve another user identity; the HTTP proxy path also forwarded X-User-Id as an integrity-unbo",
-    "cvss": 8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-287",
-      "CWE-290"
-    ],
-    "affected": [
-      {
-        "vendor": "open-webui",
-        "product": "open-webui"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-09",
-    "updated": "2026-07-09",
-    "url": "https://github.com/open-webui/open-webui/security/advisories/GHSA-j657-m4c4-24jq",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-59223",
     "title": "Open WebUI: `WEB_FETCH_FILTER_LIST` host allow/block filter bypassable via URL path and non-label-boundary matching",
     "desc": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform. Prior to 0.10.0, WEB_FETCH_FILTER_LIST matching compared configured host entries against URL strings and non-label-boundary suffixes, allowing path-based blocklist bypasses such as !internal.example.com in a URL path and sibling-domain matches that did not reflect the intended hostname policy. This issue is fixed",
@@ -1170,31 +2648,6 @@
     "published": "2026-07-09",
     "updated": "2026-07-09",
     "url": "https://github.com/open-webui/open-webui/security/advisories/GHSA-7rw5-9f7q-xj36",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-59216",
-    "title": "Open WebUI: Cross-user code-interpreter and tool execution via unvalidated Socket.IO event-caller session_id",
-    "desc": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform. Prior to 0.10.0, get_event_call delivered execute:python and execute:tool Socket.IO events to a client-supplied session_id after checking only that the session was connected, allowing authenticated users who learned another socket ID through ydoc:document:join to run code interpreter Python or tools in that user ",
-    "cvss": 7.7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-94",
-      "CWE-200",
-      "CWE-639",
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "open-webui",
-        "product": "open-webui"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-09",
-    "updated": "2026-07-09",
-    "url": "https://github.com/open-webui/open-webui/security/advisories/GHSA-74h3-cxq7-vc5q",
     "source": "CISA Vulnrichment"
   },
   {
@@ -1734,6 +3187,72 @@
     "source": "CISA Vulnrichment"
   },
   {
+    "cve": "CVE-2026-58144",
+    "title": "Cotonti Siena 0.9.26 Stored XSS via PFS Module ntitle Parameter",
+    "desc": "Cotonti Siena 0.9.26 and earlier contains a stored cross-site scripting vulnerability that allows authenticated users with PFS access to inject arbitrary script payloads by supplying malicious HTML in the ntitle parameter processed through the TXT filter in pfs.main.php. Attackers can create a folder with a crafted title containing script tags that are stored unescaped in the database and execute ",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Cotonti",
+        "product": "Cotonti"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-09",
+    "url": "https://gist.github.com/sermikr0/75686815e441c07462cfdea2fed5d305",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58143",
+    "title": "Cotonti Siena 0.9.26 CSRF via admin.php Config Update Endpoint",
+    "desc": "Cotonti Siena 0.9.26 and earlier contains a cross-site request forgery vulnerability that allows unauthenticated attackers to modify administrator configuration by tricking a logged-in administrator into submitting a forged POST request to the admin.php config update handler, which never invokes the application's CSRF validation function. Attackers can disable the PFS module's file extension white",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-352"
+    ],
+    "affected": [
+      {
+        "vendor": "Cotonti",
+        "product": "Cotonti"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-09",
+    "url": "https://gist.github.com/sermikr0/75686815e441c07462cfdea2fed5d305",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58122",
+    "title": "Hermes WebUI < 0.51.307 Authentication Bypass via X-Forwarded-For Header Spoofing",
+    "desc": "Hermes WebUI before 0.51.307 contains an authentication bypass vulnerability that allows unauthenticated remote attackers to circumvent local-origin IP restrictions on onboarding endpoints by supplying a spoofed X-Forwarded-For header with a loopback address. Attackers can exploit this bypass to perform server-side request forgery against internal services including cloud metadata endpoints, overw",
+    "cvss": 9.1,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-348"
+    ],
+    "affected": [
+      {
+        "vendor": "nesquena",
+        "product": "hermes-webui"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-09",
+    "url": "https://github.com/nesquena/hermes-webui/releases/tag/v0.51.307",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2026-57997",
     "title": "Strapi users-permissions - JWT Algorithm Confusion via Missing Algorithm Configuration",
     "desc": "Strapi users-permissions plugin fails to restrict JWT algorithms when plugin::users-permissions.jwt.algorithm is not explicitly configured, allowing acceptance of HS384 and HS512 tokens alongside HS256. Attackers possessing the jwtSecret can mint tokens with non-standard HMAC variants to bypass algorithm restrictions and weaken authentication controls.",
@@ -1854,6 +3373,138 @@
     "source": "CISA Vulnrichment"
   },
   {
+    "cve": "CVE-2026-57032",
+    "title": "Junos OS: EX Series: Subscribing to an unsupported telemetry sensor path causes fxpc process crash",
+    "desc": "An Improper Handling of Undefined Parameters vulnerability in the packet forwarding engine (pfe) of Juniper Networks Junos OS on EX Series devices allows an authenticated attacker with low privileges to cause a Denial-of-Service (DoS).\n\nIf an attempt is made to subscribe to an unsupported telemetry sensor path on EX2300, EX3400, EX4000, EX4100 and EX4400 via gRPC, this causes the FPC to crash. Thi",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-236"
+    ],
+    "affected": [
+      {
+        "vendor": "Juniper Networks",
+        "product": "Junos OS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-09",
+    "url": "https://supportportal.juniper.net/JSA110092",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57029",
+    "title": "Junos OS Evolved: QFX Series: When sFlow collector reachability changes evo-pfemand process can crash",
+    "desc": "A Missing Synchronization vulnerability in the flow collector handler of Juniper Networks Junos OS Evolved on QFX Series allows an adjacent, unauthenticated attacker to cause a Denial-of-Service (DoS).\n\n\nWhen the reachability of an sFlow collector changes, the corresponding next-hop entry is updated. If this update occurs simultaneously with the sFlow thread accessing the next-hop data (which is o",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-820"
+    ],
+    "affected": [
+      {
+        "vendor": "Juniper Networks",
+        "product": "Junos OS Evolved"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-09",
+    "url": "https://supportportal.juniper.net/JSA110089",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57028",
+    "title": "Junos OS Evolved: A port which has been inadvertently exposed can be reached by an attacker",
+    "desc": "An Improper Restriction of Communication Channel to Intended Endpoints vulnerability in Juniper Networks Junos OS Evolved allows an unauthenticated, network-based attacker to cause license exhaustion.\n\n\nDue to an incorrect initialization, a process which should only be able to communicate internally within the device, can be reached over the network via an open port. This leads to unauthorized acc",
+    "cvss": 7.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-923"
+    ],
+    "affected": [
+      {
+        "vendor": "Juniper Networks",
+        "product": "Junos OS Evolved"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-09",
+    "url": "https://supportportal.juniper.net/JSA110088",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57024",
+    "title": "Junos OS: MX with SPC3, SRX Series: Repeated VPN negotiation failures will eventually cause iked to crash continuously",
+    "desc": "A Use of Multiple Resources with Duplicate Identifier vulnerability in the IKE daemon (iked) of Juniper Networks Junos OS on MX with SPC3 and SRX Series allows an unauthenticated, network-based attacker to cause a Denial-of-Service (DoS).\n\n\n\nOn an MX with SPC3 and SRX devices configured for VPN service, when a large number of VPN negotiations fail a peer index rollover will eventually occur. As a ",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-694"
+    ],
+    "affected": [
+      {
+        "vendor": "Juniper Networks",
+        "product": "Junos OS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-09",
+    "url": "https://supportportal.juniper.net/JSA110084",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57022",
+    "title": "Junos OS: MX Series with SPC3, SRX Series: Specific packet in response to a TCP connection establishment by the affected device can crash the PFE",
+    "desc": "An Improper Check for Unusual or Exceptional Conditions vulnerability in the Packet Forwarding Engine (PFE) of Juniper Networks Junos OS on MX with SPC3 and SRX Series allows an unauthenticated, network-based attacker to cause a Denial-of-Service (DoS).\n\nWhen an affected device initiates a TCP connection to an attacker-controlled system that responds with a specific packet, this causes a PFE crash",
+    "cvss": 5.9,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-754"
+    ],
+    "affected": [
+      {
+        "vendor": "Juniper Networks",
+        "product": "Junos OS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-09",
+    "url": "https://supportportal.juniper.net/JSA110082",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57021",
+    "title": "Junos OS: SRX Series: If VPN compliance-check is configured an attacker can cause http-gk process crash",
+    "desc": "An Out-of-bounds Write vulnerability in the http-gatekeeper (http-gk) of Juniper Networks Junos OS on SRX Series allows an unauthenticated, network-based attacker to cause a Denial-of-Service (DoS).\n\nIf an SRX Series device is configured for remote-access VPN with pre-logon compliance check, a network-based attacker sending specifically formatted requests can trigger an out of bounds write leading",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-787"
+    ],
+    "affected": [
+      {
+        "vendor": "Juniper Networks",
+        "product": "Junos OS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-09",
+    "url": "https://supportportal.juniper.net/JSA110081",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2026-56809",
     "title": "Multiple laser printers and MFPs (multifunction printers) which implement Ricoh Web Image Monitor contain a reflected cr",
     "desc": "Multiple laser printers and MFPs (multifunction printers) which implement Ricoh Web Image Monitor contain a reflected cross-site scripting vulnerability. An arbitrary script may be executed on the web browser of the user who accesses a crafted URL.",
@@ -1947,164 +3598,6 @@
     "published": "2026-07-09",
     "updated": "2026-07-09",
     "url": "https://www.acymailing.com/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56291",
-    "title": "Joomla Extension - balbooa.com - Unauthenticated file upload in Balbooa Forms extension < 2.4.1",
-    "desc": "The Joomla extension Balbooa Forms is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-434"
-    ],
-    "affected": [
-      {
-        "vendor": "balbooa.com",
-        "product": "balbooa.com Balbooa Forms extension for Joomla"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-09",
-    "updated": "2026-07-09",
-    "url": "https://www.balbooa.com/joomla-forms",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56003",
-    "title": "libXfont2 computeProps Property Buffer Heap Buffer Overflow",
-    "desc": "A heap buffer overflow due to missing size checking in the property buffer when parsing PCF files in libXfont2 ComputeScaledProperties() before libXfont2 before 2.0.8 could be used by attackers using authenticated X clients to execute code within the X server.",
-    "cvss": 8.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "X.Org",
-        "product": "libXfont2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-08",
-    "updated": "2026-07-09",
-    "url": "https://www.openwall.com/lists/oss-security/2026/07/08/1",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56002",
-    "title": "libXfont2 PCF Font Parsing Heap Buffer Overflow",
-    "desc": "A heap bufferflow in pcfReadFont() due to missing glyph bounds checking in libXfont2 before 2.0.8  allows attackers authenticated as X client to execute code within the X server.",
-    "cvss": 8.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "X.Org",
-        "product": "libXfont2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-08",
-    "updated": "2026-07-09",
-    "url": "https://gitlab.freedesktop.org/xorg/lib/libxfont/-/commit/b4389e0b1d84a690b819bb27b1439968811a3674",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55999",
-    "title": "xorg-server / xwayland glamor font atlas Heap Buffer Overflow",
-    "desc": "Local attackers with a X connection able to provide PCX fonts to the X \nserver xorg-server before 21.2.24 and xwayland before 24.1.13 could \ncause a heap buffer overflow via SetFont due to missing glyph boundary checks.",
-    "cvss": 8.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "X.Org",
-        "product": "xorg-server"
-      },
-      {
-        "vendor": "X.Org",
-        "product": "xwayland"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-08",
-    "updated": "2026-07-09",
-    "url": "https://gitlab.freedesktop.org/xorg/xserver/-/commit/fbf7bac22e2c6bd627fb042742a23318263edae1",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55878",
-    "title": "Symfony: Path Traversal in symfony/ux-toolkit Allows Arbitrary File Write and Read via Crafted Recipe Manifest",
-    "desc": "Symfony UX is a JavaScript ecosystem for Symfony. From 2.32.0 before 2.36.1 and from 3.0.0 before 3.2.0, the ux:install console command installs files from a recipe kit by copying paths listed in a copy-files map, and because Path::isRelative() accepts paths like ../../../etc, a crafted or compromised kit can write attacker-controlled content to arbitrary locations or read local files outside the ",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-22"
-    ],
-    "affected": [
-      {
-        "vendor": "symfony",
-        "product": "ux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-08",
-    "updated": "2026-07-09",
-    "url": "https://github.com/symfony/ux/security/advisories/GHSA-p9xj-fpr2-jf2q",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55778",
-    "title": "Parse Server: Stored XSS via non-standard file extension bypassing file upload extension blocklist",
-    "desc": "Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to 9.9.1-alpha.11 and 8.6.81, the default fileUpload.fileExtensions blocklist could be bypassed by uploading a file with a non-standard or compound extension and dangerous content type, allowing storage adapters such as S3 and GCS to serve attacker-supplied active content and enable stored",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-434"
-    ],
-    "affected": [
-      {
-        "vendor": "parse-community",
-        "product": "parse-server"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-08",
-    "updated": "2026-07-09",
-    "url": "https://github.com/parse-community/parse-server/security/advisories/GHSA-v8x7-r927-cc93",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55760",
-    "title": "handlebars.java FileTemplateLoader Path Traversal",
-    "desc": "Handlebars.java provides logic-less and semantic Mustache templates with Java. Prior to 4.5.2, applications that pass user-controlled input to Handlebars.compile() using FileTemplateLoader or ClassPathTemplateLoader are vulnerable to path traversal, allowing arbitrary file read through template names derived from URL path parameters, request parameters, or other user-controlled sources. This issue",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-22"
-    ],
-    "affected": [
-      {
-        "vendor": "jknack",
-        "product": "handlebars.java"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-08",
-    "updated": "2026-07-09",
-    "url": "https://github.com/jknack/handlebars.java/security/advisories/GHSA-r4gv-qr8j-p3pg",
     "source": "CISA Vulnrichment"
   },
   {
@@ -5836,208 +7329,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-56001",
-    "title": "libXfont2 BitmapScaleBitmaps Integer Overflow Heap Buffer Overflow",
-    "desc": "A heap buffer overflow in BitmapScaleBitmaps in libXfont2 before 2.0.8 due to an overflowing 32bit size could be used by attackers able to access the X Server to execute code within the X server cont",
-    "cvss": 8.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "X.Org",
-        "product": "libXfont2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-08",
-    "updated": "2026-07-08",
-    "url": "https://www.openwall.com/lists/oss-security/2026/07/08/1",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56000",
-    "title": "xorg-x11-server / xwayland GLX contextTags Use-After-Free in CommonMakeCurrent()",
-    "desc": "Local attackers with a X connection able to provide GLX commit to the X server xorg-server before 21.2.24 and xwayland before 24.1.13 could cause a Heap Use After Free, due to CommonMakeCurrent() pointing into potentially reallocated memory.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "X.Org",
-        "product": "xorg-x11-server"
-      },
-      {
-        "vendor": "X.Org",
-        "product": "xwayland"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-08",
-    "updated": "2026-07-08",
-    "url": "https://gitlab.freedesktop.org/xorg/xserver/-/commit/2779affbdb4354e894f490e56f962527d6125043",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55945",
-    "title": "Microsoft Edge (Chromium-based) Information Disclosure Vulnerability",
-    "desc": "",
-    "cvss": 4.2,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-362"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55945",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55877",
-    "title": "Symfony UX: XSS in symfony/ux-icons via unsanitized SVG content in local files and Iconify on-demand responses",
-    "desc": "Symfony UX is a JavaScript ecosystem for Symfony. From 2.17.0 before 2.36.1 and from 3.0.0 before 3.2.0, the ux_icon() Twig function is marked is_safe=['html'] and Icon::toHtml() inlines SVG source verbatim, allowing unsanitized local SVG files or Iconify on-demand JSON body responses containing nested script elements, on* event handlers, or dangerous URL schemes to execute cross-site scripting. T",
-    "cvss": 6.1,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "symfony",
-        "product": "ux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-08",
-    "updated": "2026-07-08",
-    "url": "https://github.com/symfony/ux/security/advisories/GHSA-6v8j-33hc-mv84",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55874",
-    "title": "SeaweedFS: Path traversal in the S3 gateway X-Amz-Copy-Source header allows cross-bucket object read",
-    "desc": "SeaweedFS is a distributed storage system. Prior to 4.34, the S3 API gateway does not reject dot-dot path segments in the X-Amz-Copy-Source header used by CopyObject and UploadPartCopy, allowing an authenticated identity scoped to one bucket to read objects from other buckets through server-side copy. This issue is fixed in version 4.34.",
-    "cvss": 7.7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-22"
-    ],
-    "affected": [
-      {
-        "vendor": "seaweedfs",
-        "product": "seaweedfs"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-08",
-    "updated": "2026-07-08",
-    "url": "https://github.com/seaweedfs/seaweedfs/security/advisories/GHSA-56wq-x3wv-3ff4",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55873",
-    "title": "SeaweedFS: Improper authorization in the S3Tables / Iceberg REST management API lets a low-privileged S3 user enumerate administrator-owned table buckets",
-    "desc": "SeaweedFS is a distributed storage system. In versions 4.08 through 4.33, requests signed with SigV4 service s3tables are routed to the S3Tables management API where authorization collapses account-less S3 identities into the shared admin account and fails open, allowing an authenticated low-privileged S3 user to enumerate administrator-owned table bucket names and ARNs. This issue is fixed in ver",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-863"
-    ],
-    "affected": [
-      {
-        "vendor": "seaweedfs",
-        "product": "seaweedfs"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-08",
-    "updated": "2026-07-08",
-    "url": "https://github.com/seaweedfs/seaweedfs/security/advisories/GHSA-hgpf-8634-g44c",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55849",
-    "title": "@cyclonedx/cyclonedx-npm: Shell Injection via Unsanitized `--workspace` Argument",
-    "desc": "@cyclonedx/cyclonedx-npm creates CycloneDX Software Bill of Materials from npm projects. From 2.1.0 before 5.0.0, the CLI passes user-supplied --workspace values to a subshell without proper sanitization when npm_execpath is unset or empty, allowing arbitrary OS command execution with the privileges of the invoking user. This issue is fixed in version 5.0.0.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-78"
-    ],
-    "affected": [
-      {
-        "vendor": "CycloneDX",
-        "product": "cyclonedx-node-npm"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-08",
-    "updated": "2026-07-08",
-    "url": "https://github.com/CycloneDX/cyclonedx-node-npm/security/advisories/GHSA-v75r-vx73-82pj",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55830",
-    "title": "RestrictedPython guard hooks can be shadowed via positional-only arguments",
-    "desc": "RestrictedPython is a tool that helps to define a subset of the Python language which allows to provide a program input into a trusted environment. Prior to 8.3, check_function_argument_names() rejected protected guard hook names for regular, variadic, and keyword-only arguments but omitted positional-only arguments, allowing __getattr__, _getitem_, _write_, or _print_ to be shadowed by a local pa",
-    "cvss": 8.3,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-184"
-    ],
-    "affected": [
-      {
-        "vendor": "zopefoundation",
-        "product": "RestrictedPython"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-08",
-    "updated": "2026-07-08",
-    "url": "https://github.com/zopefoundation/RestrictedPython/security/advisories/GHSA-ffg3-p8fm-mjx2",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55761",
-    "title": "Portainer: Unauthenticated Restore Endpoint Allows Admin Takeover on Uninitialised Portainer Instances",
-    "desc": "Portainer Community Edition is a lightweight service delivery platform for containerized applications that can be used to manage Docker, Swarm, Kubernetes and ACI environments. In versions 2.39.0 through 2.39.3 and 2.40.0 until 2.43.0, unauthenticated restore and administrator initialization endpoints (/api/restore and /api/users/admin/init) remain accessible during the five-minute setup window fo",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-287"
-    ],
-    "affected": [
-      {
-        "vendor": "portainer",
-        "product": "portainer"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-08",
-    "updated": "2026-07-08",
-    "url": "https://github.com/portainer/portainer/security/advisories/GHSA-x626-fcwx-f5pc",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-59800",
     "title": "9Router < 0.4.44 - OS Command Injection via sudoPassword Parameter in Tailscale Install Endpoint",
     "desc": "9Router before 0.4.44 contains an OS command injection vulnerability in the unauthenticated POST /api/tunnel/tailscale-install endpoint (this route is not covered by the dashboard middleware matcher, so no authorization check is applied). The sudoPassword field from the request body is written to the stdin of a 'sudo -S sh' child process. When sudo does not prompt for a password (the process runs ",
@@ -6557,52 +7848,6 @@
     "published": "2026-06-19",
     "updated": "2026-07-07",
     "url": "https://access.redhat.com/errata/RHSA-2026:30814",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55993",
-    "title": "Apache Camel Atmosphere Websocket: The inbound consumer maps externally-supplied WebSocket query parameters into the Exchange without a HeaderFilterStrategy, allowing injection of Camel control header",
-    "desc": "Improper Input Validation, Exposure of Sensitive Information to an Unauthorized Actor, Server-Side Request Forgery (SSRF) vulnerability in Apache Camel in Atmosphere Websocket Component.\n\nThe camel-atmosphere-websocket consumer mapped inbound WebSocket query parameters into the Camel Exchange header map without applying any HeaderFilterStrategy (WebsocketConsumer.sendEventNotification() iterates t",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-20",
-      "CWE-200",
-      "CWE-918"
-    ],
-    "affected": [
-      {
-        "vendor": "Apache Software Foundation",
-        "product": "Apache Camel Atmosphere Websocket"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-06",
-    "updated": "2026-07-07",
-    "url": "https://camel.apache.org/security/CVE-2026-55993.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55798",
-    "title": "Pillow: WindowsViewer.get_command() OS command injection via unescaped shell path",
-    "desc": "Pillow is a Python imaging library. Prior to 12.3.0, WindowsViewer.get_command() constructed a cmd.exe shell command by directly embedding a file path into an f-string without escaping and passed the result to subprocess.Popen(..., shell=True), allowing shell metacharacters in the file path to inject arbitrary cmd.exe commands. This issue is fixed in version 12.3.0.",
-    "cvss": 4.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-78"
-    ],
-    "affected": [
-      {
-        "vendor": "python-pillow",
-        "product": "Pillow"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-06",
-    "updated": "2026-07-07",
-    "url": "https://github.com/python-pillow/Pillow/security/advisories/GHSA-4x4j-2g7c-83w6",
     "source": "CISA Vulnrichment"
   },
   {
@@ -7684,52 +8929,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-56015",
-    "title": "Net::IP::LPM versions through 1.10 for Perl allow a heap out-of-bounds read via an unbounded prefix length",
-    "desc": "Net::IP::LPM versions through 1.10 for Perl allow a heap out-of-bounds read via an unbounded prefix length.\n\nadd() passes the prefix string to the trie builder addPrefixToTrie() without checking it against the address width.\n\naddPrefixToTrie() then walks the prefix buffer by prefix_length bits, reading prefix[byte] for byte up to prefix_len/8, where prefix is the 4-byte (IPv4) or 16-byte (IPv6) pa",
-    "cvss": 9.1,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-125"
-    ],
-    "affected": [
-      {
-        "vendor": "TPODER",
-        "product": "Net::IP::LPM"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-06",
-    "url": "https://rt.cpan.org/Ticket/Display.html?id=179856",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55994",
-    "title": "Apache Camel Iggy: The inbound consumer maps externally-supplied Iggy message user-headers into the Exchange without a HeaderFilterStrategy, allowing injection of Camel control headers - enabling cont",
-    "desc": "Improper Input Validation, Exposure of Sensitive Information to an Unauthorized Actor, Server-Side Request Forgery (SSRF) vulnerability in Apache Camel in Iggy component.\n\nThe camel-iggy consumer mapped the user-headers of inbound Iggy messages into the Camel Exchange header map without applying any HeaderFilterStrategy (IggyFetchRecords copied the message user-headers straight into the Exchange).",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-20",
-      "CWE-200",
-      "CWE-918"
-    ],
-    "affected": [
-      {
-        "vendor": "Apache Software Foundation",
-        "product": "Apache Camel Iggy"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-06",
-    "updated": "2026-07-06",
-    "url": "https://camel.apache.org/security/CVE-2026-55994.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-59519",
     "title": "WordPress FormLayer plugin <= 1.0.6 - Sensitive Data Exposure vulnerability",
     "desc": "Insertion of Sensitive Information Into Sent Data vulnerability in Softaculous FormLayer allows Retrieve Embedded Sensitive Data.\n\nThis issue affects FormLayer: from n/a through 1.0.6.",
@@ -7749,58 +8948,6 @@
     "published": "2026-07-05",
     "updated": "2026-07-05",
     "url": "https://patchstack.com/database/wordpress/plugin/formlayer/vulnerability/wordpress-formlayer-plugin-1-0-6-sensitive-data-exposure-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55952",
-    "title": "TLS 1.3 server denial of service via malformed ClientHello pre-shared key extension",
-    "desc": "The Erlang/OTP ssl application does not validate that the PSK identity list and binder list carried in a TLS 1.3 ClientHello pre-shared key extension have equal length before passing them to the session ticket handler. In tls_handshake_1_3:handle_pre_shared_key/3, an OfferedPreSharedKeys record with a mismatched number of identities and binders is forwarded directly to tls_server_session_ticket:us",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-1284"
-    ],
-    "affected": [
-      {
-        "vendor": "Erlang",
-        "product": "OTP"
-      },
-      {
-        "vendor": "Erlang",
-        "product": "OTP"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-02",
-    "updated": "2026-07-03",
-    "url": "https://github.com/erlang/otp/security/advisories/GHSA-8c57-44c9-pc59",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55950",
-    "title": "DTLS listener crash via race condition in dtls_packet_demux causes denial of service for all sessions",
-    "desc": "Time-of-check Time-of-use (TOCTOU) race condition vulnerability in Erlang/OTP ssl (dtls_packet_demux module) allows an unauthenticated remote attacker to crash all active DTLS sessions on a listener.\n\nA DTLS server listener uses a single shared dtls_packet_demux gen_server process to route incoming UDP datagrams to the correct connection handler. When a DTLS client reconnects rapidly from the same",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-367"
-    ],
-    "affected": [
-      {
-        "vendor": "Erlang",
-        "product": "OTP"
-      },
-      {
-        "vendor": "Erlang",
-        "product": "OTP"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-02",
-    "updated": "2026-07-03",
-    "url": "https://github.com/erlang/otp/security/advisories/GHSA-hwfc-5hf4-gvr3",
     "source": "CISA Vulnrichment"
   },
   {
@@ -10011,119 +11158,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-56004",
-    "title": "obs-service-tar_scm: command injection via mercurial handler",
-    "desc": "A shellcode injection in the mercurial handler of the obs tar_scm source service before version 0.12.4 could be used by attackers able to provide a _service file to execute code as the source service or the local user checking out the malicious services",
-    "cvss": 10,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-78"
-    ],
-    "affected": [
-      {
-        "vendor": "openSUSE",
-        "product": "buildservice"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-02",
-    "updated": "2026-07-02",
-    "url": "https://github.com/openSUSE/obs-service-tar_scm/pull/552/changes/bcf29d318c671c45fe87dd9f995a4a0c78ecedd7",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55794",
-    "title": "Craft CMS: Potential authenticated Remote Code Execution via referrer redirect",
-    "desc": "Craft CMS is a content management system (CMS). In versions 5.9.0 and above prior to 5.10.0, control panel users with the ability to edit entries can execute unsandboxed Twig code via the HTTP Referrer header, potentially leading to authenticated RCE. The issue happens when a user is saving entries. Strings for a signed redirect URL are being compiled as a Twig template via renderObjectTemplate(),",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-1336",
-      "CWE-94"
-    ],
-    "affected": [
-      {
-        "vendor": "craftcms",
-        "product": "cms"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-01",
-    "updated": "2026-07-02",
-    "url": "https://github.com/craftcms/cms/security/advisories/GHSA-f74w-488g-8x5r",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55793",
-    "title": "Craft CMS: Stored XSS via Structure entry title in table view",
-    "desc": "Craft CMS is a content management system (CMS). In versions 5.0.0-RC1 through 5.9.22, an author-level control panel user can store a malicious JavaScript payload in an entry title. When an admin, or any control panel user with saveEntries for the same Structure section, drags another entry under the poisoned entry in table view, the payload executes in the victim’s session. The issue is exploitabl",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "craftcms",
-        "product": "cms"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-01",
-    "updated": "2026-07-02",
-    "url": "https://github.com/craftcms/cms/security/advisories/GHSA-xrqc-p465-2xvg",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55792",
-    "title": "Craft CMS: Sensitive File Disclosure / Server-Side File Read",
-    "desc": "Craft CMS is a content management system (CMS). In versions starting from 4.0.0-RC1 and prior to 4.18.0, and 5.0.0-RC1 and above, prior to 5.10.0, the dataUrl() Twig function is included in Craft’s Twig sandbox allowlist, allowing any control panel user granted the utility:system-messages permission to embed a file-reading payload into system email templates. When those emails are sent, the server",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-200"
-    ],
-    "affected": [
-      {
-        "vendor": "craftcms",
-        "product": "cms"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-01",
-    "updated": "2026-07-02",
-    "url": "https://github.com/craftcms/cms/security/advisories/GHSA-287w-mxq6-x2cp",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55791",
-    "title": "Craft CMS: Blind SSRF and Arbitrary JavaScript Injection via Host Header Poisoning in actionResourceJs",
-    "desc": "Craft CMS is a content management system (CMS). Versions 4.0.0-RC1 and above, prior to 4.18.0 and 5.0.0-RC1, and above, prior to 5.10.0, are vulnerable to Server-Side Request Forgery (SSRF) and Arbitrary JavaScript Injection through the /actions/app/resource-js endpoint. By exploiting the default permissive trustedHosts configuration, an attacker can poison the Host or X-Forwarded-Host header to m",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-918",
-      "CWE-644",
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "craftcms",
-        "product": "cms"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-01",
-    "updated": "2026-07-02",
-    "url": "https://github.com/craftcms/cms/security/advisories/GHSA-c55v-343g-5xff",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-58521",
     "title": "SQLi in Cargo extension via year range filter",
     "desc": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in The Wikimedia Foundation Mediawiki - Cargo Extension allows SQL Injection.\n\nThis issue affects Mediawiki - Cargo Extension: from * before 1.43.9,1.44.6,1.45.4.",
@@ -12124,73 +13158,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-56024",
-    "title": "WordPress WP EasyPay plugin <= 4.5.0 - Cross Site Request Forgery (CSRF) vulnerability",
-    "desc": "Cross-Site Request Forgery (CSRF) vulnerability in Saad Iqbal WP EasyPay allows Cross Site Request Forgery.\n\nThis issue affects WP EasyPay: from n/a through 4.5.0.",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-352"
-    ],
-    "affected": [
-      {
-        "vendor": "Saad Iqbal",
-        "product": "WP EasyPay"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-18",
-    "updated": "2026-07-01",
-    "url": "https://patchstack.com/database/wordpress/plugin/wp-easy-pay/vulnerability/wordpress-wp-easypay-plugin-4-4-0-cross-site-request-forgery-csrf-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56016",
-    "title": "CGI::Session::ID::md5 versions before 4.49 for Perl generate predictable session ids from low-entropy sources",
-    "desc": "CGI::Session::ID::md5 versions before 4.49 for Perl generate predictable session ids from low-entropy sources.\n\nThe generate_id method builds the session id from a MD5 digest of the process id, the epoch time, and the built-in rand() function. All three are predictable, low-entropy sources: the PID is drawn from a small range, the epoch time can be guessed or read from the HTTP Date header, and Pe",
-    "cvss": 5.9,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-340",
-      "CWE-338"
-    ],
-    "affected": [
-      {
-        "vendor": "MARKSTOS",
-        "product": "CGI::Session::ID::md5"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-01",
-    "updated": "2026-07-01",
-    "url": "https://metacpan.org/release/MARKSTOS/CGI-Session-4.49/changes",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55790",
-    "title": "Craft CMS: DOM XSS via GitHub issue title in CraftSupport widget",
-    "desc": "Craft CMS is a content management system (CMS). In versions 5.0.0-RC1 through 5.9.22 and 4.0.0-RC1 through 4.17.15, an attacker with only a GitHub account can plant a JavaScript payload in a craftcms/cms issue title. When a Craft admin uses the CraftSupport widget’s \"Give feedback\" screen and types a search term that returns the poisoned issue, the payload executes in the admin’s control panel ses",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "craftcms",
-        "product": "cms"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-01",
-    "updated": "2026-07-01",
-    "url": "https://github.com/craftcms/cms/security/advisories/GHSA-24x4-j6x9-rfw5",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-58377",
     "title": "JeecgBoot 3.9.2 - Missing Authorization on OpenAPI Credential Management Endpoints Exposes Access/Secret Keys",
     "desc": "JeecgBoot through 3.9.2 contains a broken access control vulnerability that allows authenticated low-privilege users to perform full create, read, update, and delete operations on OpenAPI credentials by accessing the OpenApiAuthController and OpenApiPermissionController endpoints which lack Shiro authorization annotations. Attackers can exploit the unenforced access controls to list, add, edit, an",
@@ -13215,28 +14182,6 @@
     "published": "2026-06-24",
     "updated": "2026-06-30",
     "url": "https://huntr.com/bounties/d64b8111-180b-46ba-afa3-c877fda2ede6",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55955",
-    "title": "Apache Tomcat: EncryptInterceptor not protected against replay attacks",
-    "desc": "Improper Authentication vulnerability in Apache Tomcat allowed a replay attack against the EncryptionInterceptor in the cluster component.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.22, from 10.1.0-M1 through 10.1.55, from 9.0.13 through 9.0.18, from 8.5.38 through 8.5.100, from 7.0.100 through 7.0.109.\n\nUsers are recommended to upgrade to version 11.0.23, 10.1.56, 9.0.119, whi",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-287"
-    ],
-    "affected": [
-      {
-        "vendor": "Apache Software Foundation",
-        "product": "Apache Tomcat"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-29",
-    "updated": "2026-06-30",
-    "url": "https://lists.apache.org/thread/g4p5sf45p3f9r011pwqs9r54yd64s106",
     "source": "CISA Vulnrichment"
   },
   {
@@ -14571,228 +15516,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-56034",
-    "title": "WordPress Library Management System plugin <= 3.5.7 - SQL Injection vulnerability",
-    "desc": "Unauthenticated SQL Injection in Library Management System <= 3.5.7 versions.",
-    "cvss": 9.3,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-89"
-    ],
-    "affected": [
-      {
-        "vendor": "Online Web Tutor",
-        "product": "Library Management System"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-26",
-    "updated": "2026-06-29",
-    "url": "https://patchstack.com/database/wordpress/plugin/library-management-system/vulnerability/wordpress-library-management-system-plugin-3-5-7-sql-injection-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56028",
-    "title": "WordPress Easy Elements for Elementor – Addons & Website Templates plugin <= 1.4.9 - Privilege Escalation vulnerability",
-    "desc": "Unauthenticated Privilege Escalation in Easy Elements for Elementor &#8211; Addons &amp; Website Templates <= 1.4.9 versions.",
-    "cvss": 9.8,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-266"
-    ],
-    "affected": [
-      {
-        "vendor": "themewant",
-        "product": "Easy Elements for Elementor &#8211; Addons &amp; Website Templates"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-26",
-    "updated": "2026-06-29",
-    "url": "https://patchstack.com/database/wordpress/plugin/easy-elements/vulnerability/wordpress-easy-elements-for-elementor-addons-website-templates-plugin-1-4-9-privilege-escalation-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56018",
-    "title": "JavaScript::Minifier::XS versions before 0.16 for Perl leak memory on every call to minify(), allowing unbounded memory growth",
-    "desc": "JavaScript::Minifier::XS versions before 0.16 for Perl leak memory on every call to minify(), allowing unbounded memory growth.\n\nIn JsMinify (XS.xs) the cleanup frees only the NodeSet structures and never the per-token contents buffers allocated in JsSetNodeContents; JsDiscardNode unlinks nodes without freeing their contents. Each token's contents buffer is therefore leaked on every call, and the ",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-401",
-      "CWE-400"
-    ],
-    "affected": [
-      {
-        "vendor": "GTERMARS",
-        "product": "JavaScript::Minifier::XS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-29",
-    "updated": "2026-06-29",
-    "url": "https://github.com/bleargh45/JavaScript-Minifier-XS/issues/10",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56017",
-    "title": "JavaScript::Minifier::XS versions before 0.16 for Perl crash with a NULL pointer dereference when the first meaningful token of the input is a slash",
-    "desc": "JavaScript::Minifier::XS versions before 0.16 for Perl crash with a NULL pointer dereference when the first meaningful token of the input is a slash.\n\nThe regexp versus division disambiguator in JsTokenizeString (XS.xs) inspects the previous token's last byte to choose between a regexp literal and a division operator. When a slash is the first meaningful token, with the start of input or only whit",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-476",
-      "CWE-125"
-    ],
-    "affected": [
-      {
-        "vendor": "GTERMARS",
-        "product": "JavaScript::Minifier::XS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-29",
-    "updated": "2026-06-29",
-    "url": "https://metacpan.org/release/GTERMARS/JavaScript-Minifier-XS-0.16/changes",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56013",
-    "title": "WordPress License Manager for WooCommerce plugin <= 3.0.15 - Insecure Direct Object References (IDOR) vulnerability",
-    "desc": "Unauthenticated Insecure Direct Object References (IDOR) in License Manager for WooCommerce <= 3.0.15 versions.",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-639"
-    ],
-    "affected": [
-      {
-        "vendor": "myCred",
-        "product": "License Manager for WooCommerce"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-25",
-    "updated": "2026-06-29",
-    "url": "https://patchstack.com/database/wordpress/plugin/license-manager-for-woocommerce/vulnerability/wordpress-license-manager-for-woocommerce-plugin-3-0-15-insecure-direct-object-references-idor-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56008",
-    "title": "WordPress Fusion Builder plugin <= 3.15.4 - Privilege Escalation vulnerability",
-    "desc": "Contributor Privilege Escalation in Fusion Builder <= 3.15.4 versions.",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-266"
-    ],
-    "affected": [
-      {
-        "vendor": "ThemeFusion",
-        "product": "Fusion Builder"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-26",
-    "updated": "2026-06-29",
-    "url": "https://patchstack.com/database/wordpress/plugin/fusion-builder/vulnerability/wordpress-fusion-builder-plugin-3-15-4-privilege-escalation-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55975",
-    "title": "H.VIEW HV-500S6 IP Camera OS Command Injection",
-    "desc": "A vulnerability exists in H.View IP cameras that could allow an authenticated user to supply unsanitized XML fields to the device's certificate generation interface, which are incorporated into a backend certificate creation command without proper input validation. This may allow for command execution with elevated privileges during certificate generation.",
-    "cvss": 7.2,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-78"
-    ],
-    "affected": [
-      {
-        "vendor": "H.VIEW",
-        "product": "HV-500S6 IP Camera"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-26",
-    "updated": "2026-06-29",
-    "url": "https://hviewsmart.com/pages/contact-us",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55957",
-    "title": "Apache Tomcat: Authentication bypass with JNDIRealm and GSSAPI authenticated bind",
-    "desc": "Missing Critical Step in Authentication vulnerability in Apache Tomcat when the JNDIRealm was configured to authenticate binds using GSSAPI allowed attackers to authenticate without provided the correct password.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.4, from 10.1.0-M1 through 10.1.36, from 9.0.0.M1 through 9.0.100, from 8.5.0 through 8.5.100, from 7.0.0 through 7.0.109.\n\nU",
-    "cvss": 7.3,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-304"
-    ],
-    "affected": [
-      {
-        "vendor": "Apache Software Foundation",
-        "product": "Apache Tomcat"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-29",
-    "updated": "2026-06-29",
-    "url": "https://lists.apache.org/thread/7fk339o5jvd4mcgsf0chbrn4o525ccjh",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55956",
-    "title": "Apache Tomcat: Security constraints for default servlet ignored method",
-    "desc": "Improper Authorization vulnerability in Apache Tomcat leads to security constraints specified for the default servlet ignoring any method or method omission configured as part of the constraint.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.22, from 10.1.0-M1 through 10.1.55, from 9.0.0.M1 through 9.0.118, from 8.5.0 through 8.5.100, from 7.0.0 through 7.0.109. Other versions that",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-285"
-    ],
-    "affected": [
-      {
-        "vendor": "Apache Software Foundation",
-        "product": "Apache Tomcat"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-29",
-    "updated": "2026-06-29",
-    "url": "https://lists.apache.org/thread/dcjdcnnnww9hhdm016hr0l7hpw1bzjfp",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55844",
-    "title": "Home Assistant: iOS Companion App ignores internal SSID allowlist for connections – possible leak of access token and sensor data",
-    "desc": "Home Assistant is open source home automation software that puts local control and privacy first. Prior to 2025.5.0, The iOS companion app ignores the SSID allowlist for internal networks. The app uses SSID to detect when to use the internal URL, but whenever the app cannot find any other URL to be used, it fallbacks to the internal URL as well, which can expose user's token when connected to a no",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-319"
-    ],
-    "affected": [
-      {
-        "vendor": "home-assistant",
-        "product": "core"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-06-29",
-    "updated": "2026-06-29",
-    "url": "https://github.com/home-assistant/core/security/advisories/GHSA-cm5v-547m-qh5h",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-57231",
     "title": "Podman: Malformed Image can trick podman run into leaking host environment variables into the container",
     "desc": "Podman is a tool for managing OCI containers and pods. From 1.8.1 until 5.8.4, a container image that contains a environment variable with just a key and no value can trick podman into passing that variable from the host into the container. This is made worse by the fact that using an asterisk (*) will cause podman to pass all host variables into the container. So essentially a malicious image can",
@@ -14857,28 +15580,6 @@
     "published": "2026-06-26",
     "updated": "2026-06-27",
     "url": "https://github.com/teableio/teable/releases/tag/release.2026-06-15T04-43-24Z.1912",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55838",
-    "title": "RustFS: Missing admin authorization on /rustfs/admin/v3/metrics allows any authenticated user to read server metrics",
-    "desc": "RustFS is a distributed object storage system built in Rust. In 1.0.0-beta.7 and earlier, the real-time metrics endpoint at /rustfs/admin/v3/metrics is accessible to any valid IAM user regardless of their assigned policy. Every other admin handler in the codebase calls validate_admin_request to enforce admin-action IAM checks; the MetricsHandler skips this call entirely. A restricted IAM user whos",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "rustfs",
-        "product": "rustfs"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-06-26",
-    "updated": "2026-06-27",
-    "url": "https://github.com/rustfs/rustfs/security/advisories/GHSA-f5cv-v44x-2xgf",
     "source": "CISA Vulnrichment"
   },
   {
@@ -17225,405 +17926,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-56035",
-    "title": "WordPress BitFire Security plugin <= 5.0.3 - Multiple Vulnerabilities vulnerability",
-    "desc": "Unauthenticated Multiple Vulnerabilities in BitFire Security <= 5.0.3 versions.",
-    "cvss": 8.6,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-1284"
-    ],
-    "affected": [
-      {
-        "vendor": "Cory Marsh",
-        "product": "BitFire Security"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "url": "https://patchstack.com/database/wordpress/plugin/bitfire/vulnerability/wordpress-bitfire-security-plugin-5-0-3-multiple-vulnerabilities-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56033",
-    "title": "WordPress Dokan Pro plugin <= 5.0.4 - Privilege Escalation vulnerability",
-    "desc": "Unauthenticated Privilege Escalation in Dokan Pro <= 5.0.4 versions.",
-    "cvss": 9.8,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-266"
-    ],
-    "affected": [
-      {
-        "vendor": "Dokan Multivendor Plugin",
-        "product": "Dokan Pro"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "url": "https://patchstack.com/database/wordpress/plugin/dokan-pro/vulnerability/wordpress-dokan-pro-plugin-5-0-4-privilege-escalation-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56032",
-    "title": "WordPress Buddyboss Platform plugin <= 3.0.4 - PHP Object Injection vulnerability",
-    "desc": "Subscriber PHP Object Injection in Buddyboss Platform <= 3.0.4 versions.",
-    "cvss": 9.8,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-502"
-    ],
-    "affected": [
-      {
-        "vendor": "BuddyBoss",
-        "product": "Buddyboss Platform"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "url": "https://patchstack.com/database/wordpress/plugin/buddyboss-platform/vulnerability/wordpress-buddyboss-platform-plugin-3-0-4-php-object-injection-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56031",
-    "title": "WordPress Uncanny Automator plugin <= 7.3.1.2 - PHP Object Injection vulnerability",
-    "desc": "Unauthenticated PHP Object Injection in Uncanny Automator <= 7.3.1.2 versions.",
-    "cvss": 8.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-502"
-    ],
-    "affected": [
-      {
-        "vendor": "Uncanny Owl",
-        "product": "Uncanny Automator"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "url": "https://patchstack.com/database/wordpress/plugin/uncanny-automator/vulnerability/wordpress-uncanny-automator-plugin-7-3-1-2-php-object-injection-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56030",
-    "title": "WordPress Paytium plugin <= 5.0.2 - Privilege Escalation vulnerability",
-    "desc": "Unauthenticated Privilege Escalation in Paytium <= 5.0.2 versions.",
-    "cvss": 9.8,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-266"
-    ],
-    "affected": [
-      {
-        "vendor": "paytiumsupport",
-        "product": "Paytium"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "url": "https://patchstack.com/database/wordpress/plugin/paytium/vulnerability/wordpress-paytium-plugin-5-0-2-privilege-escalation-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56029",
-    "title": "WordPress CorvusPay WooCommerce Payment Gateway plugin <= 2.7.4 - Broken Authentication vulnerability",
-    "desc": "Unauthenticated Broken Authentication in CorvusPay WooCommerce Payment Gateway <= 2.7.4 versions.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-288"
-    ],
-    "affected": [
-      {
-        "vendor": "corvuspay",
-        "product": "CorvusPay WooCommerce Payment Gateway"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "url": "https://patchstack.com/database/wordpress/plugin/corvuspay-woocommerce-integration/vulnerability/wordpress-corvuspay-woocommerce-payment-gateway-plugin-2-7-4-broken-authentication-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56027",
-    "title": "WordPress Booster for WooCommerce plugin <= 8.0.1 - Arbitrary File Upload vulnerability",
-    "desc": "Customer Arbitrary File Upload in Booster for WooCommerce <= 8.0.1 versions.",
-    "cvss": 9.9,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-434"
-    ],
-    "affected": [
-      {
-        "vendor": "Pluggabl",
-        "product": "Booster for WooCommerce"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "url": "https://patchstack.com/database/wordpress/plugin/woocommerce-jetpack/vulnerability/wordpress-booster-for-woocommerce-plugin-8-0-1-arbitrary-file-upload-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56026",
-    "title": "WordPress utm.codes plugin <= 1.9.0 - Server Side Request Forgery (SSRF) vulnerability",
-    "desc": "Subscriber Server Side Request Forgery (SSRF) in utm.codes <= 1.9.0 versions.",
-    "cvss": 6.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-918"
-    ],
-    "affected": [
-      {
-        "vendor": "Chris Carlevato",
-        "product": "utm.codes"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "url": "https://patchstack.com/database/wordpress/plugin/utm-dot-codes/vulnerability/wordpress-utm-codes-plugin-1-9-0-server-side-request-forgery-ssrf-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56025",
-    "title": "WordPress Paymob for WooCommerce plugin <= 4.1.2 - Broken Access Control vulnerability",
-    "desc": "Unauthenticated Broken Access Control in Paymob for WooCommerce <= 4.1.2 versions.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "Paymob",
-        "product": "Paymob for WooCommerce"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "url": "https://patchstack.com/database/wordpress/plugin/paymob-for-woocommerce/vulnerability/wordpress-paymob-for-woocommerce-plugin-4-1-2-broken-access-control-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56011",
-    "title": "WordPress MapPress Maps for WordPress plugin <= 2.97.3 - Cross Site Scripting (XSS) vulnerability",
-    "desc": "Unauthenticated Cross Site Scripting (XSS) in MapPress Maps for WordPress <= 2.97.3 versions.",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "chrisvrichardson",
-        "product": "MapPress Maps for WordPress"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "url": "https://patchstack.com/database/wordpress/plugin/mappress-google-maps-for-wordpress/vulnerability/wordpress-mappress-maps-for-wordpress-plugin-2-97-3-cross-site-scripting-xss-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56010",
-    "title": "WordPress Abandoned Cart Pro for WooCommerce plugin <= 10.4.0 - Privilege Escalation vulnerability",
-    "desc": "Subscriber Privilege Escalation in Abandoned Cart Pro for WooCommerce <= 10.4.0 versions.",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-266"
-    ],
-    "affected": [
-      {
-        "vendor": "Tyche Softwares.",
-        "product": "Abandoned Cart Pro for WooCommerce"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "url": "https://patchstack.com/database/wordpress/plugin/woocommerce-abandon-cart-pro/vulnerability/wordpress-abandoned-cart-pro-for-woocommerce-plugin-10-4-0-privilege-escalation-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55964",
-    "title": "Chain intermediate CA:TRUE without keyCertSign accepted as a signing CA (temporary CA exemption)",
-    "desc": "Chain intermediate CA:TRUE without keyCertSign accepted as a signing CA. Intermediate CA certificates are required to have the keyCertSign key usage when a Key Usage extension is present, but chain-supplied temporary CAs (WOLFSSL_TEMP_CA) added while building a certificate path were previously exempted from this check, so an intermediate asserting CA:TRUE but lacking keyCertSign was accepted as a ",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-295"
-    ],
-    "affected": [
-      {
-        "vendor": "wolfSSL",
-        "product": "wolfSSL"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-25",
-    "updated": "2026-06-26",
-    "url": "https://github.com/wolfSSL/wolfssl/pull/10702",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55962",
-    "title": "TLS 1.3 post-handshake authentication: server accepts Finished without client Certificate/CertificateVerify",
-    "desc": "TLS 1.3 post-handshake authentication (PHA) issue where a server could accept a client's Finished message without the client having sent a Certificate and CertificateVerify. The post-handshake-auth exemption that allows an empty/absent peer certificate was only intended for the initial handshake, but it was also being applied while a post-handshake CertificateRequest was still outstanding. The che",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-287"
-    ],
-    "affected": [
-      {
-        "vendor": "wolfSSL",
-        "product": "wolfSSL"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-25",
-    "updated": "2026-06-26",
-    "url": "https://github.com/wolfSSL/wolfssl/pull/10702",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55960",
-    "title": "Un-negotiated Raw Public Key (RFC 7250) accepted in place of X.509, bypassing chain validation",
-    "desc": "Un-negotiated Raw Public Key (RFC 7250) accepted in place of an X.509 certificate, bypassing chain validation. A raw public key has no chain, so ParseCertRelative() accepts it without performing any trust verification; it must therefore only be accepted when RPK was actually negotiated for that peer. The check now defaults the expected type to X.509 (per RFC 7250/8446) when no type was negotiated,",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-295"
-    ],
-    "affected": [
-      {
-        "vendor": "wolfSSL",
-        "product": "wolfSSL"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-25",
-    "updated": "2026-06-26",
-    "url": "https://github.com/wolfSSL/wolfssl/pull/10702",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55958",
-    "title": "Renesas TSIP TLS 1.3 transcript buffer out-of-bounds write in tsip_StoreMessage",
-    "desc": "Out-of-bounds write in the Renesas TSIP TLS 1.3 transcript buffer. In tsip_StoreMessage() the capacity check guarding the fixed message bag (MSGBAG_SIZE) sets an error code but fails to return, so execution falls through to an XMEMCPY that writes past the end of the buffer once the accumulated TLS 1.3 handshake transcript exceeds MSGBAG_SIZE (8 KB), corrupting adjacent heap state and potentially c",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-787",
-      "CWE-393"
-    ],
-    "affected": [
-      {
-        "vendor": "wolfSSL",
-        "product": "wolfSSL"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-25",
-    "updated": "2026-06-26",
-    "url": "https://github.com/wolfSSL/wolfssl/pull/10705",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55895",
-    "title": "Vim: Vimscript Code Injection in netrw NetrwLocalRmFile() via crafted filename",
-    "desc": "Vim is an open source, command line text editor. Prior to 9.2.0663, a Vimscript code injection vulnerability exists in s:NetrwLocalRmFile() in the netrw plugin (runtime/pack/dist/opt/netrw/autoload/netrw.vim) when deleting a local file from the browser. A filename derived from the buffer's directory listing is interpolated into an Ex command line passed to :execute with only the backslash characte",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-78",
-      "CWE-94"
-    ],
-    "affected": [
-      {
-        "vendor": "vim",
-        "product": "vim"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-25",
-    "updated": "2026-06-26",
-    "url": "https://github.com/vim/vim/security/advisories/GHSA-vhh8-v6wx-hjjh",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55892",
-    "title": "Vim: Out-of-bounds Write in Spell File Prefix Dump",
-    "desc": "Vim is an open source, command line text editor. Prior to 9.2.0662, the dump_prefixes() function in src/spell.c walks a spell-file prefix trie iteratively with a depth counter while dumping the prefixes that apply to a word. The counter is bounded only by the trie structure itself; it is never checked against the size of the fixed MAXWLEN-element stack arrays it indexes (prefix[], arridx[], curi[]",
-    "cvss": 5.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-787"
-    ],
-    "affected": [
-      {
-        "vendor": "vim",
-        "product": "vim"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-25",
-    "updated": "2026-06-26",
-    "url": "https://github.com/vim/vim/security/advisories/GHSA-qm9w-fmpj-879h",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55759",
-    "title": "Rocket.Chat: Apple Sign-In skips JWT claims validation, allowing expired and cross-audience token replay",
-    "desc": "Rocket.Chat is an open-source, secure, fully customizable communications platform. Prior to 8.5.1, 8.4.4, 8.3.6, 8.2.6, 8.1.6, 8.0.7, and 7.10.13, Rocket.Chat's Apple Sign-In handler verifies JWT signatures but skips claims validation. Any Apple-signed JWT with a non-empty iss is accepted regardless of aud, exp, nbf, or nonce. An attacker who obtains a target user's Apple identity token (from serv",
-    "cvss": 7.4,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-287",
-      "CWE-294"
-    ],
-    "affected": [
-      {
-        "vendor": "RocketChat",
-        "product": "Rocket.Chat"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-24",
-    "updated": "2026-06-26",
-    "url": "https://github.com/RocketChat/Rocket.Chat/security/advisories/GHSA-c75c-5hc7-j4vp",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-57619",
     "title": "WordPress Elementor Website Builder plugin <= 4.1.3 - Sensitive Data Exposure vulnerability",
     "desc": "Contributor Sensitive Data Exposure in Elementor Website Builder <= 4.1.3 versions.",
@@ -18536,116 +18838,6 @@
     "published": "2026-06-25",
     "updated": "2026-06-25",
     "url": "https://patchstack.com/database/wordpress/plugin/woo-order-export-lite/vulnerability/wordpress-advanced-order-export-for-woocommerce-plugin-4-0-9-cross-site-scripting-xss-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56023",
-    "title": "WordPress UPI QR Code Payment Gateway for WooCommerce plugin <= 1.6.2 - Broken Access Control vulnerability",
-    "desc": "Customer Broken Access Control in UPI QR Code Payment Gateway for WooCommerce <= 1.6.2 versions.",
-    "cvss": 5.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "Knit Pay",
-        "product": "UPI QR Code Payment Gateway for WooCommerce"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-25",
-    "updated": "2026-06-25",
-    "url": "https://patchstack.com/database/wordpress/plugin/upi-qr-code-payment-for-woocommerce/vulnerability/wordpress-upi-qr-code-payment-gateway-for-woocommerce-plugin-1-6-2-broken-access-control-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56014",
-    "title": "WordPress Master Slider plugin <= 3.11.2 - Cross Site Scripting (XSS) vulnerability",
-    "desc": "Unauthenticated Cross Site Scripting (XSS) in Master Slider <= 3.11.2 versions.",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Averta",
-        "product": "Master Slider"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-25",
-    "updated": "2026-06-25",
-    "url": "https://patchstack.com/database/wordpress/plugin/master-slider/vulnerability/wordpress-master-slider-plugin-3-11-2-cross-site-scripting-xss-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56005",
-    "title": "WordPress WP Activity Log plugin <= 5.6.3.1 - Cross Site Scripting (XSS) vulnerability",
-    "desc": "Subscriber Cross Site Scripting (XSS) in WP Activity Log <= 5.6.3.1 versions.",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Melapress",
-        "product": "WP Activity Log"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-25",
-    "updated": "2026-06-25",
-    "url": "https://patchstack.com/database/wordpress/plugin/wp-security-audit-log/vulnerability/wordpress-wp-activity-log-plugin-5-6-3-1-cross-site-scripting-xss-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55967",
-    "title": "AES-GCM streaming APIs do not reject >64 GiB cumulative single messages, enabling counter wrap and keystream reuse",
-    "desc": "AES-GCM encryption/decryption with extremely large cumulative single message sizes (>64 GiB) were not properly rejected by the streaming APIs, allowing counter wrap, keystream reuse, and consequent plaintext recovery.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-323"
-    ],
-    "affected": [
-      {
-        "vendor": "wolfSSL",
-        "product": "wolfSSL"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-25",
-    "updated": "2026-06-25",
-    "url": "https://github.com/wolfSSL/wolfssl/pull/10709",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55961",
-    "title": "wolfSSL_PKCS7_verify() reports success for degenerate (certs-only) PKCS#7 with no signer",
-    "desc": "wolfSSL_PKCS7_verify() returning success for a degenerate (certs-only) PKCS#7 object that contains no signer. Such an object has empty signerInfos, so the underlying signed-data verification succeeds without authenticating any content. The compatibility-layer verify path now rejects the object when no signer signature has actually been verified, so a PKCS#7 carrying no valid signature is no longer",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-347"
-    ],
-    "affected": [
-      {
-        "vendor": "wolfSSL",
-        "product": "wolfSSL"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-25",
-    "updated": "2026-06-25",
-    "url": "https://github.com/wolfSSL/wolfssl/pull/10702",
     "source": "CISA Vulnrichment"
   },
   {
@@ -20111,73 +20303,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-56022",
-    "title": "Webmin MFA bypass",
-    "desc": "Webmin accepts basic authentication without session cookies when an attacker provides the 'User-Agent: webmin' header, allowing bypass of additional MFA requirements. Fixed in 2.641.",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-308"
-    ],
-    "affected": [
-      {
-        "vendor": "Webmin",
-        "product": "Webmin"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-18",
-    "updated": "2026-06-24",
-    "url": "https://webmin.com/security/#webmin-prior-to-2641",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56021",
-    "title": "Webmin information disclosure via regex pattern",
-    "desc": "Webmin allows unauthenticated attackers to read the contents of any file ending in .conf within module directories, due to a bypassable regex pattern.",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-185",
-      "CWE-777"
-    ],
-    "affected": [
-      {
-        "vendor": "Webmin",
-        "product": "Webmin"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-18",
-    "updated": "2026-06-24",
-    "url": "https://webmin.com/security/#webmin-prior-to-2641",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55762",
-    "title": "Rocket.Chat: Any Authenticated User Can Permanently Deregister Workspace from Rocket.Chat Cloud via Unprotected `/api/v1/fingerprint` Endpoint",
-    "desc": "Rocket.Chat is an open-source, secure, fully customizable communications platform. Prior to 8.5.1, 8.4.4, 8.3.6, 8.2.6, 8.1.6, 8.0.7, and 7.10.13, the POST /api/v1/fingerprint REST endpoint enforces authentication (authRequired: true) but performs no authorization check. Any authenticated user — including a standard user role account — can call this endpoint with {\"setDeploymentAs\": \"new-workspace",
-    "cvss": 8.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "RocketChat",
-        "product": "Rocket.Chat"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-24",
-    "updated": "2026-06-24",
-    "url": "https://github.com/RocketChat/Rocket.Chat/security/advisories/GHSA-8hhc-j325-rxqp",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-57053",
     "title": "GNU libidn before 1.44 is prone to out-of-bounds reads of uninitialized memory in the ToUnicode APIs because of mishandl",
     "desc": "GNU libidn before 1.44 is prone to out-of-bounds reads of uninitialized memory in the ToUnicode APIs because of mishandling in idna_to_unicode_internal. The affected code is not present in libidn2.",
@@ -21145,52 +21270,6 @@
     "published": "2026-06-18",
     "updated": "2026-06-23",
     "url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-766v-q9x3-g744",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55767",
-    "title": "Guzzle: Dot-Only Cookie Domains Match All Hosts in guzzlehttp/guzzle",
-    "desc": "Guzzle is an extensible PHP HTTP client. Prior to 7.12.1, CookieJar incorrectly accepts cookies with a dot-only Domain attribute and whitespace-padded variants. SetCookie::matchesDomain() removes leading dots from the cookie domain, normalizing dot-only values to the empty string; SetCookie::validate() only rejected a strictly empty domain, so these cookies could be stored and the empty normalized",
-    "cvss": 5.8,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-346",
-      "CWE-1286"
-    ],
-    "affected": [
-      {
-        "vendor": "guzzle",
-        "product": "guzzle"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-23",
-    "updated": "2026-06-23",
-    "url": "https://github.com/guzzle/guzzle/security/advisories/GHSA-cwxw-98qj-8qjx",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-55766",
-    "title": "guzzlehttp/psr7: CRLF Injection in HTTP Start-Line Serialization",
-    "desc": "guzzlehttp/psr7 is a PSR-7 HTTP message library implementation in PHP. Prior to 2.12.1, guzzlehttp/psr7 did not reject CR/LF characters in certain first-party HTTP start-line fields: the request method, protocol version, and response reason phrase. If an application placed attacker-controlled data into one of those fields and later serialized the PSR-7 message as raw HTTP/1.x, for example with Mes",
-    "cvss": 4.8,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-93",
-      "CWE-113"
-    ],
-    "affected": [
-      {
-        "vendor": "guzzle",
-        "product": "psr7"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-23",
-    "updated": "2026-06-23",
-    "url": "https://github.com/guzzle/psr7/security/advisories/GHSA-vm85-hxw5-5432",
     "source": "CISA Vulnrichment"
   },
   {
@@ -22543,94 +22622,6 @@
     "published": "2026-06-19",
     "updated": "2026-06-19",
     "url": "https://github.com/Cap-go/capgo/security/advisories/GHSA-x2gq-85v8-j9v4",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56020",
-    "title": "Webmin HTTP header authentication bypass",
-    "desc": "The Webmin HTTP server (miniserv.pl) allows unauthenticated attackers to impersonate any user with a configured SSL client certificate by sending a forged HTTP header. A remote attacker can spoof certificate DNs and authenticate as any user. Fixed in 2.641.",
-    "cvss": 8.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-290"
-    ],
-    "affected": [
-      {
-        "vendor": "Webmin",
-        "product": "Webmin"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-18",
-    "updated": "2026-06-19",
-    "url": "https://github.com/webmin/webmin/releases/tag/2.641",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56012",
-    "title": "WordPress Media LIbrary Assistant plugin <= 3.35 - SQL Injection vulnerability",
-    "desc": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in David Lingren Media LIbrary Assistant allows Blind SQL Injection.\n\nThis issue affects Media LIbrary Assistant: from n/a through 3.35.",
-    "cvss": 8.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-89"
-    ],
-    "affected": [
-      {
-        "vendor": "David Lingren",
-        "product": "Media LIbrary Assistant"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-18",
-    "updated": "2026-06-18",
-    "url": "https://patchstack.com/database/wordpress/plugin/media-library-assistant/vulnerability/wordpress-media-library-assistant-plugin-3-35-sql-injection-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56009",
-    "title": "WordPress Bricksable for Bricks Builder plugin <= 1.6.83 - Cross Site Scripting (XSS) vulnerability",
-    "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Bricksable for Bricks Builder allows Stored XSS.\n\nThis issue affects Bricksable for Bricks Builder: from n/a through 1.6.83.",
-    "cvss": 5.9,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Bricksable",
-        "product": "Bricksable for Bricks Builder"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-18",
-    "updated": "2026-06-18",
-    "url": "https://patchstack.com/database/wordpress/plugin/bricksable/vulnerability/wordpress-bricksable-for-bricks-builder-plugin-1-6-83-cross-site-scripting-xss-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56007",
-    "title": "WordPress Ocean Product Sharing plugin <= 2.2.2 - Cross Site Scripting (XSS) vulnerability",
-    "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in OceanWP Ocean Product Sharing allows Stored XSS.\n\nThis issue affects Ocean Product Sharing: from n/a through 2.2.2.",
-    "cvss": 5.9,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "OceanWP",
-        "product": "Ocean Product Sharing"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-18",
-    "updated": "2026-06-18",
-    "url": "https://patchstack.com/database/wordpress/plugin/ocean-product-sharing/vulnerability/wordpress-ocean-product-sharing-plugin-2-2-2-cross-site-scripting-xss-vulnerability?_s_id=cve",
     "source": "CISA Vulnrichment"
   }
 ]
