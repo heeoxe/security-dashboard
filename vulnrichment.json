@@ -1,5 +1,929 @@
 [
   {
+    "cve": "CVE-2026-58597",
+    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+    "desc": "",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-357"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58597",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58525",
+    "title": "Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability",
+    "desc": "",
+    "cvss": 8.2,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-284"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-08",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58525",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58524",
+    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+    "desc": "",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58524",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58523",
+    "title": "Microsoft Edge for Android Security Feature Bypass Vulnerability",
+    "desc": "",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-284"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58523",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58522",
+    "title": "Microsoft Edge for Android Information Disclosure Vulnerability",
+    "desc": "",
+    "cvss": 6.8,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-23"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58522",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58300",
+    "title": "Microsoft Edge for Android Information Disclosure Vulnerability",
+    "desc": "",
+    "cvss": 6.2,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-36"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58300",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58299",
+    "title": "Microsoft Edge for Android Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-367"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58299",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58298",
+    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+    "desc": "",
+    "cvss": 7.2,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58298",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58297",
+    "title": "Microsoft Edge for Android Information Disclosure Vulnerability",
+    "desc": "",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-359"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58297",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58296",
+    "title": "Microsoft Edge for Android Information Disclosure Vulnerability",
+    "desc": "",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-359"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58296",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58295",
+    "title": "Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability",
+    "desc": "",
+    "cvss": 8.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-843"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58295",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58294",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58294",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58293",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-73"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58293",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58292",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-20"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58292",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58291",
+    "title": "Microsoft Edge (Chromium-based) Information Disclosure Vulnerability",
+    "desc": "",
+    "cvss": 6.1,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-672"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58291",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58290",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-843"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58290",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58289",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 9,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-843"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58289",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58288",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 8.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58288",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58287",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 8.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58287",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58286",
+    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+    "desc": "",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-284"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58286",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58285",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 8.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-843"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58285",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58284",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 8.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-285"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58284",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58283",
+    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+    "desc": "",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-843"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58283",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58282",
+    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+    "desc": "",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-284"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58282",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58278",
+    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+    "desc": "",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-918"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58278",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58276",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58276",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57993",
+    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+    "desc": "",
+    "cvss": 7.4,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-918"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57993",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57992",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57992",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57991",
+    "title": "Microsoft Edge (Chromium-based) Information Disclosure Vulnerability",
+    "desc": "",
+    "cvss": 7.4,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-59"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57991",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57988",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-23"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57988",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57987",
+    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+    "desc": "",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-918"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57987",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57986",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57986",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57985",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 7.6,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-20"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57985",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57984",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57984",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57983",
+    "title": "Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability",
+    "desc": "",
+    "cvss": 8.7,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-285"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57983",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57981",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57981",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57977",
+    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+    "desc": "",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57977",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57975",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-843"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57975",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57974",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-190"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57974",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57100",
+    "title": "Microsoft Entra Provisioning Service Elevation of Privilege Vulnerability",
+    "desc": "",
+    "cvss": 9.9,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-918"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Entra Provisioning Service"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-02",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57100",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-56646",
+    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+    "desc": "",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-200"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56646",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-56645",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-122"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-07-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56645",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2026-61492",
     "title": "In JetBrains YouTrack before 2026.2.17394 stored XSS via article titles in digest emails was possible",
     "desc": "In JetBrains YouTrack before 2026.2.17394 stored XSS via article titles in digest emails was possible",
@@ -130,6 +1054,28 @@
     "source": "CISA Vulnrichment"
   },
   {
+    "cve": "CVE-2026-61432",
+    "title": "PraisonAI FastContext before 1.6.78 Path Traversal",
+    "desc": "PraisonAI (praisonaiagents) before 1.6.78 contains a path traversal vulnerability in the FastContext feature (praisonaiagents.context.fast). FastContextAgent.execute_tool() prepends the configured workspace_path only for relative paths and neither rejects absolute paths nor canonicalizes joined paths before enforcing workspace containment. As a result, tool arguments or model-generated function ca",
+    "cvss": 5.7,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "MervinPraison",
+        "product": "PraisonAI"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-4xxv-6wmf-xf45",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2026-61431",
     "title": "PraisonAI before 4.6.78 Path Traversal via ContextGatherer",
     "desc": "PraisonAI before 4.6.78 contains a path traversal vulnerability in ContextGatherer that fails to validate include paths in .praisoncontext and .praisoninclude files. Attackers can supply absolute paths or parent directory traversal sequences to read arbitrary files outside the workspace and include their contents in the generated context bundle.",
@@ -240,6 +1186,28 @@
     "source": "CISA Vulnrichment"
   },
   {
+    "cve": "CVE-2026-59856",
+    "title": "Vim: Arbitrary Code Execution via PHP Omni-Completion",
+    "desc": "Vim is an open source, command line text editor. Prior to 9.2.0736, the PHP omni-completion script in runtime/autoload/phpcomplete.vim interpolates a class or trait name, taken from the contents of the edited buffer, into a search() pattern that is run via win_execute() without escaping. A name containing a single quote can terminate the search() string argument early, and because the bar is honor",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-94"
+    ],
+    "affected": [
+      {
+        "vendor": "vim",
+        "product": "vim"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-10",
+    "url": "https://github.com/vim/vim/security/advisories/GHSA-fh26-8f79-wj97",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2026-59854",
     "title": "SiYuan: Incomplete IsSensitivePath denylist: globalCopyFiles reads home-dir credential dotfiles into the workspace",
     "desc": "SiYuan is an open-source personal knowledge management system. Prior to 3.7.1, POST /api/file/globalCopyFiles accepts attacker-supplied absolute source paths and relies on util.IsSensitivePath in kernel/util/path.go, whose denylist misses common home-directory credential files such as .git-credentials, .netrc, .pgpass, .kube/config, .docker/config.json, and .gnupg, allowing an authenticated admini",
@@ -305,6 +1273,29 @@
     "published": "2026-07-09",
     "updated": "2026-07-10",
     "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-97xv-3v84-h358",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59832",
+    "title": "SiYuan: Authenticated path traversal in /snippets/ static handler (serveSnippets) leaks conf/conf.json secrets and siyuan.db",
+    "desc": "SiYuan is an open-source personal knowledge management system. Prior to 3.7.1, the /snippets/*filepath route handler serveSnippets in kernel/server/serve.go joins a single-decoded request path with the snippets directory without subpath containment or sensitive-path checks, allowing an authenticated request such as /snippets/%2e%2e/%2e%2e/conf/conf.json to read workspace secrets and the document d",
+    "cvss": 7.7,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-22",
+      "CWE-23"
+    ],
+    "affected": [
+      {
+        "vendor": "siyuan-note",
+        "product": "siyuan"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-10",
+    "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-275h-v5h9-vr82",
     "source": "CISA Vulnrichment"
   },
   {
@@ -860,6 +1851,28 @@
     "source": "CISA Vulnrichment"
   },
   {
+    "cve": "CVE-2026-57029",
+    "title": "Junos OS Evolved: QFX Series: When sFlow collector reachability changes evo-pfemand process can crash",
+    "desc": "A Missing Synchronization vulnerability in the flow collector handler of Juniper Networks Junos OS Evolved on QFX Series allows an adjacent, unauthenticated attacker to cause a Denial-of-Service (DoS).\n\n\nWhen the reachability of an sFlow collector changes, the corresponding next-hop entry is updated. If this update occurs simultaneously with the sFlow thread accessing the next-hop data (which is o",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-820"
+    ],
+    "affected": [
+      {
+        "vendor": "Juniper Networks",
+        "product": "Junos OS Evolved"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-10",
+    "url": "https://supportportal.juniper.net/JSA110089",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2026-57027",
     "title": "Junos OS: EX4100 Series, EX4400: With sFlow configured in a VC scenario multicast traffic leads to an FPC crash",
     "desc": "A Missing Release of Memory after Effective Lifetime vulnerability in the packet forwarding engine (pfe) of Juniper Networks Junos OS on specific EX Series devices allows an unauthenticated adjacent attacker to cause a Denial-of-Service (DoS).When sFlow is configured in a Virtual Chassis (VC) scenario with EX4100 Series or EX4400 Series devices, multicast traffic which is received on one VC member",
@@ -927,6 +1940,28 @@
     "published": "2026-07-09",
     "updated": "2026-07-10",
     "url": "https://supportportal.juniper.net/JSA110085",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57024",
+    "title": "Junos OS: MX with SPC3, SRX Series: Repeated VPN negotiation failures will eventually cause iked to crash continuously",
+    "desc": "A Use of Multiple Resources with Duplicate Identifier vulnerability in the IKE daemon (iked) of Juniper Networks Junos OS on MX with SPC3 and SRX Series allows an unauthenticated, network-based attacker to cause a Denial-of-Service (DoS).\n\n\n\nOn an MX with SPC3 and SRX devices configured for VPN service, when a large number of VPN negotiations fail a peer index rollover will eventually occur. As a ",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-694"
+    ],
+    "affected": [
+      {
+        "vendor": "Juniper Networks",
+        "product": "Junos OS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-09",
+    "updated": "2026-07-10",
+    "url": "https://supportportal.juniper.net/JSA110084",
     "source": "CISA Vulnrichment"
   },
   {
@@ -1365,6 +2400,28 @@
     "published": "2026-07-09",
     "updated": "2026-07-10",
     "url": "https://www.balbooa.com/joomla-forms",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-56279",
+    "title": "Capgo - Information Disclosure via get_orgs_v7 RPC Endpoint",
+    "desc": "Capgo before 12.128.2 contains an information disclosure vulnerability in the get_orgs_v7(userid) RPC function that remains publicly invokable despite intended private access controls. Unauthenticated attackers can supply arbitrary user UUIDs to retrieve foreign users' organization membership, roles, management emails, and billing metadata.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "Capgo",
+        "product": "Capgo"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "url": "https://github.com/Cap-go/capgo/security/advisories/GHSA-fch8-pp28-mw2x",
     "source": "CISA Vulnrichment"
   },
   {
@@ -1830,29 +2887,6 @@
     "published": "2026-07-09",
     "updated": "2026-07-09",
     "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-px3c-cf92-9g83",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-59832",
-    "title": "SiYuan: Authenticated path traversal in /snippets/ static handler (serveSnippets) leaks conf/conf.json secrets and siyuan.db",
-    "desc": "SiYuan is an open-source personal knowledge management system. Prior to 3.7.1, the /snippets/*filepath route handler serveSnippets in kernel/server/serve.go joins a single-decoded request path with the snippets directory without subpath containment or sensitive-path checks, allowing an authenticated request such as /snippets/%2e%2e/%2e%2e/conf/conf.json to read workspace secrets and the document d",
-    "cvss": 7.7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-22",
-      "CWE-23"
-    ],
-    "affected": [
-      {
-        "vendor": "siyuan-note",
-        "product": "siyuan"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-09",
-    "updated": "2026-07-09",
-    "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-275h-v5h9-vr82",
     "source": "CISA Vulnrichment"
   },
   {
@@ -2854,28 +3888,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-58525",
-    "title": "Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability",
-    "desc": "",
-    "cvss": 8.2,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-284"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-08",
-    "updated": "2026-07-09",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58525",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-58501",
     "title": "Zeep SSRF because Settings.forbid_external is not enforced",
     "desc": "Zeep is a Python SOAP client. From 4.0.0 before 4.3.3, Settings.forbid_external is defined but not enforced when parsing WSDL or XSD documents, allowing transitive xsd:import, xsd:include, wsdl:import, and lxml entity or DTD references to fetch attacker-chosen HTTP or HTTPS URLs. This issue is fixed in version 4.3.3.",
@@ -3395,28 +4407,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-57029",
-    "title": "Junos OS Evolved: QFX Series: When sFlow collector reachability changes evo-pfemand process can crash",
-    "desc": "A Missing Synchronization vulnerability in the flow collector handler of Juniper Networks Junos OS Evolved on QFX Series allows an adjacent, unauthenticated attacker to cause a Denial-of-Service (DoS).\n\n\nWhen the reachability of an sFlow collector changes, the corresponding next-hop entry is updated. If this update occurs simultaneously with the sFlow thread accessing the next-hop data (which is o",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-820"
-    ],
-    "affected": [
-      {
-        "vendor": "Juniper Networks",
-        "product": "Junos OS Evolved"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-09",
-    "updated": "2026-07-09",
-    "url": "https://supportportal.juniper.net/JSA110089",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-57028",
     "title": "Junos OS Evolved: A port which has been inadvertently exposed can be reached by an attacker",
     "desc": "An Improper Restriction of Communication Channel to Intended Endpoints vulnerability in Juniper Networks Junos OS Evolved allows an unauthenticated, network-based attacker to cause license exhaustion.\n\n\nDue to an incorrect initialization, a process which should only be able to communicate internally within the device, can be reached over the network via an open port. This leads to unauthorized acc",
@@ -3436,28 +4426,6 @@
     "published": "2026-07-09",
     "updated": "2026-07-09",
     "url": "https://supportportal.juniper.net/JSA110088",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-57024",
-    "title": "Junos OS: MX with SPC3, SRX Series: Repeated VPN negotiation failures will eventually cause iked to crash continuously",
-    "desc": "A Use of Multiple Resources with Duplicate Identifier vulnerability in the IKE daemon (iked) of Juniper Networks Junos OS on MX with SPC3 and SRX Series allows an unauthenticated, network-based attacker to cause a Denial-of-Service (DoS).\n\n\n\nOn an MX with SPC3 and SRX devices configured for VPN service, when a large number of VPN negotiations fail a peer index rollover will eventually occur. As a ",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-694"
-    ],
-    "affected": [
-      {
-        "vendor": "Juniper Networks",
-        "product": "Junos OS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-09",
-    "updated": "2026-07-09",
-    "url": "https://supportportal.juniper.net/JSA110084",
     "source": "CISA Vulnrichment"
   },
   {
@@ -4802,72 +5770,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-58597",
-    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
-    "desc": "",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-357"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58597",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58524",
-    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
-    "desc": "",
-    "cvss": 5.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58524",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58522",
-    "title": "Microsoft Edge for Android Information Disclosure Vulnerability",
-    "desc": "",
-    "cvss": 6.8,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-23"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58522",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-58494",
     "title": "Wasmtime: WASI hard links bypass wasmtime-wasi's FilePerms for destination",
     "desc": "Wasmtime is a runtime for WebAssembly. Prior to 24.0.11, 36.0.12, 45.0.3, and 46.0.1, wasmtime-wasi hard-link creation and renaming check directory permissions but not matching FilePerms on source and destination preopens, allowing a WASI guest with a read-only source file capability to overwrite host files exposed as FilePerms::READ through wasip1, wasip2, or wasip3 filesystem interfaces. This is",
@@ -5046,402 +5948,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-58300",
-    "title": "Microsoft Edge for Android Information Disclosure Vulnerability",
-    "desc": "",
-    "cvss": 6.2,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-36"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58300",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58298",
-    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
-    "desc": "",
-    "cvss": 7.2,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58298",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58295",
-    "title": "Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability",
-    "desc": "",
-    "cvss": 8.3,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-843"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58295",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58294",
-    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58294",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58293",
-    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 8.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-73"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58293",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58292",
-    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-20"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58292",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58291",
-    "title": "Microsoft Edge (Chromium-based) Information Disclosure Vulnerability",
-    "desc": "",
-    "cvss": 6.1,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-672"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58291",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58290",
-    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-843"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58290",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58289",
-    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 9,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-843"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58289",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58288",
-    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 8.3,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58288",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58287",
-    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 8.3,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58287",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58286",
-    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
-    "desc": "",
-    "cvss": 8.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-284"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58286",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58285",
-    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 8.3,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-843"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58285",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58284",
-    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 8.3,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-285"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58284",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58283",
-    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
-    "desc": "",
-    "cvss": 8.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-843"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58283",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58282",
-    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
-    "desc": "",
-    "cvss": 8.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-284"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58282",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58278",
-    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
-    "desc": "",
-    "cvss": 5.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-918"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58278",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58276",
-    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58276",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-58214",
     "title": "NATS Server: MQTT subscribe ACL bypass via $MQTT.deliver.pubrel prefix (incomplete fix for CVE-2026-33217)",
     "desc": "NATS Server is a high-performance server for NATS.io, the cloud and edge native messaging system. Prior to 2.14.3 and 2.12.12, an authenticated MQTT client could subscribe to the internal $MQTT.deliver.pubrel subject family, bypassing configured subscribe permissions and exposing MQTT QoS2 protocol metadata for sessions in the account. This issue is fixed in versions 2.14.3 and 2.12.12.",
@@ -5595,292 +6101,6 @@
     "published": "2026-06-28",
     "updated": "2026-07-08",
     "url": "https://github.com/bikini/exploitarium/tree/main/ffmpeg-rasc-dlta-calc-poc",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-57993",
-    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
-    "desc": "",
-    "cvss": 7.4,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-918"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57993",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-57992",
-    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57992",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-57991",
-    "title": "Microsoft Edge (Chromium-based) Information Disclosure Vulnerability",
-    "desc": "",
-    "cvss": 7.4,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-59"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57991",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-57988",
-    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-23"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57988",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-57987",
-    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
-    "desc": "",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-918"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57987",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-57986",
-    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57986",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-57985",
-    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 7.6,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-20"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57985",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-57984",
-    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57984",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-57983",
-    "title": "Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability",
-    "desc": "",
-    "cvss": 8.7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-285"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57983",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-57981",
-    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57981",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-57977",
-    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
-    "desc": "",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57977",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-57975",
-    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-843"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57975",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-57974",
-    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-190"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57974",
     "source": "CISA Vulnrichment"
   },
   {
@@ -6619,28 +6839,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-57100",
-    "title": "Microsoft Entra Provisioning Service Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 9.9,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-918"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Entra Provisioning Service"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-02",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57100",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-56843",
     "title": "Incorrect authorization in the XML-RPC API of WebPros Plesk before 18.0.78.4 allows a low-privileged authenticated custo",
     "desc": "Incorrect authorization in the XML-RPC API of WebPros Plesk before 18.0.78.4 allows a low-privileged authenticated customer to look up domains they do not own, because ownership is enforced only for certain lookup filters and schema validation is bypassed for legacy protocol versions. This results in cross-tenant disclosure of other tenants' FTP credentials stored in cleartext, which can be levera",
@@ -6716,50 +6914,6 @@
     "published": "2026-07-08",
     "updated": "2026-07-08",
     "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-664h-gpgq-h6xx",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56646",
-    "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
-    "desc": "",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-200"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56646",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56645",
-    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56645",
     "source": "CISA Vulnrichment"
   },
   {
@@ -7461,28 +7615,6 @@
     "published": "2026-07-02",
     "updated": "2026-07-07",
     "url": "https://github.com/lobehub/lobehub/releases/tag/v2.2.10-canary.15",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58523",
-    "title": "Microsoft Edge for Android Security Feature Bypass Vulnerability",
-    "desc": "",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-284"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-07",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58523",
     "source": "CISA Vulnrichment"
   },
   {
@@ -8681,72 +8813,6 @@
     "published": "2026-07-03",
     "updated": "2026-07-06",
     "url": "https://access.redhat.com/security/cve/CVE-2026-58379",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58299",
-    "title": "Microsoft Edge for Android Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-367"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-06",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58299",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58297",
-    "title": "Microsoft Edge for Android Information Disclosure Vulnerability",
-    "desc": "",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-359"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-06",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58297",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58296",
-    "title": "Microsoft Edge for Android Information Disclosure Vulnerability",
-    "desc": "",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-359"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-03",
-    "updated": "2026-07-06",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58296",
     "source": "CISA Vulnrichment"
   },
   {
@@ -11133,28 +11199,6 @@
     "published": "2026-06-23",
     "updated": "2026-07-02",
     "url": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-3q5f-gmjc-38r8",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56037",
-    "title": "WordPress Themify Popup plugin <= 1.4.3 - PHP Object Injection vulnerability",
-    "desc": "Deserialization of Untrusted Data vulnerability in Themify Themify Popup allows Object Injection.\n\nThis issue affects Themify Popup: from n/a through 1.4.3.",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-502"
-    ],
-    "affected": [
-      {
-        "vendor": "Themify",
-        "product": "Themify Popup"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-02",
-    "updated": "2026-07-02",
-    "url": "https://patchstack.com/database/wordpress/plugin/themify-popup/vulnerability/wordpress-themify-popup-plugin-1-4-3-php-object-injection-vulnerability?_s_id=cve",
     "source": "CISA Vulnrichment"
   },
   {
@@ -17879,50 +17923,6 @@
     "published": "2026-06-26",
     "updated": "2026-06-26",
     "url": "https://patchstack.com/database/wordpress/plugin/quick-interest-slider/vulnerability/wordpress-quick-interest-slider-plugin-3-1-6-reflected-cross-site-scripting-xss-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56038",
-    "title": "WordPress Frisbii Pay plugin <= 1.8.2 - Privilege Escalation vulnerability",
-    "desc": "Contributor Privilege Escalation in Frisbii Pay <= 1.8.2 versions.",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "Frisbii",
-        "product": "Frisbii Pay"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "url": "https://patchstack.com/database/wordpress/plugin/reepay-checkout-gateway/vulnerability/wordpress-frisbii-pay-plugin-1-8-2-privilege-escalation-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56036",
-    "title": "WordPress 워드프레스 결제 심플페이 plugin <= 5.5.6 - SQL Injection vulnerability",
-    "desc": "Unauthenticated SQL Injection in 워드프레스 결제 심플페이 <= 5.5.6 versions.",
-    "cvss": 9.3,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-89"
-    ],
-    "affected": [
-      {
-        "vendor": "codemstory",
-        "product": "워드프레스 결제 심플페이"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-26",
-    "updated": "2026-06-26",
-    "url": "https://patchstack.com/database/wordpress/plugin/pgall-for-woocommerce/vulnerability/wordpress-plugin-5-5-6-sql-injection-vulnerability?_s_id=cve",
     "source": "CISA Vulnrichment"
   },
   {
