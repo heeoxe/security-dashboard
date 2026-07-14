@@ -1106,7 +1106,9 @@ function closeDetail() {
 }
 
 function setStatus(s) {
-  document.querySelectorAll('.status-chip').forEach(c => c.classList.toggle('on', c.dataset.s === s));
+  const already = document.querySelector(`.status-chip.on[data-s="${s}"]`);
+  document.querySelectorAll('.status-chip').forEach(c => c.classList.remove('on'));
+  if (!already) document.querySelector(`.status-chip[data-s="${s}"]`).classList.add('on');
 }
 
 function renderDetailTags(tags) {
@@ -1231,6 +1233,8 @@ function saveDetail() {
     btn.innerHTML = orig;
     btn.style.background = '';
     btn.style.borderColor = '';
+    if (currentNoteStore === 'business') renderBusiness();
+    else renderMemos();
     closeDetail();
   }, 800);
 }
