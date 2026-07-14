@@ -837,7 +837,6 @@ function renderBusiness() {
     const statusItems = Object.entries(bizNotes)
       .filter(([id, n]) => n.status === bizActiveTab)
       .map(([id, n]) => {
-        // biz_ 접두사 제거해서 CVE ID 복원
         const cveOrTitle = id.replace(/^biz_/, '');
         const item = mitreAll.find(i => (i.cve || i.title) === cveOrTitle);
         return { noteId: id, note: n, item, cveOrTitle };
@@ -849,27 +848,42 @@ function renderBusiness() {
     }
 
     el.innerHTML = statusItems.map(({ noteId, note, item, cveOrTitle }) => {
-      const title = item?.title || cveOrTitle;
-      const title_ko = item?.title_ko || '';
       const cvss = item?.cvss || 0;
+      const kws = loadBizKeywords();
+      const matchedKws = item ? kws.filter(kw =>
+        [item.title, item.desc, ...(item.affected||[]).map(a=>`${a.vendor} ${a.product}`)].join(' ').toLowerCase().includes(kw.toLowerCase())
+      ) : [];
+      const kwTags = matchedKws.map(kw => `<span class="tag" style="background:var(--accent2);color:var(--accent)">${escHtml(kw)}</span>`).join('');
+      const affectedTags = (item?.affected || []).slice(0, 3).map(a =>
+        `<span class="tag">${escHtml(a.vendor ? `${a.vendor} ${a.product}`.trim() : a.product)}</span>`
+      ).join('');
+      const exploitation = item?.exploitation === 'active' ? `<span style="font-size:11px;color:var(--critical)">⚠ 악용 중</span>` :
+        item?.exploitation === 'poc' ? `<span style="font-size:11px;color:var(--high)">PoC 공개</span>` : '';
       const statusEl = `<span class="badge" style="font-size:10px;background:${statusBg(note.status)};color:${statusColor(note.status)};border:1px solid ${statusColor(note.status)}40">${note.status}</span>`;
       const memoCount = (note.memos || []).length;
-      return `<div class="card" style="cursor:pointer" onclick="openBizDetail('${escAttr(cveOrTitle)}')">
+
+      return `<div class="card" style="cursor:pointer" ondblclick="openBizDetail('${escAttr(cveOrTitle)}')">
         <div class="card-top">
           ${item?.severity ? `<span class="badge ${sevClass(item.severity)}">${sevLabel(item.severity)}</span>` : ''}
+          ${item?.isKev ? '<span class="badge bc" style="font-size:10px">KEV</span>' : ''}
           ${statusEl}
-          <div class="card-title">${escHtml(title)}</div>
+          <div class="card-title">${escHtml(item?.title || cveOrTitle)}</div>
         </div>
         <div class="card-meta">
           ${item?.cve ? `<span class="cve-id">${item.cve}</span>` : `<span class="cve-id">${escHtml(cveOrTitle)}</span>`}
           ${item?.updated || item?.published ? `<span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${item.updated || item.published}</span>` : ''}
-          ${title_ko ? `<span style="font-size:11px;color:var(--text3)">${escHtml(title_ko)}</span>` : ''}
+          ${exploitation}
+          ${item?.title_ko ? `<span style="font-size:11px;color:var(--text3)">${escHtml(item.title_ko)}</span>` : ''}
         </div>
         ${cvss ? `<div class="cvss-row"><span class="cvss-label">CVSS ${cvss.toFixed(1)}</span><div class="cvss-track"><div class="cvss-fill" style="width:${Math.round(cvss/10*100)}%;background:${cvssColor(cvss)}"></div></div></div>` : ''}
-        ${(note.tags||[]).length ? `<div style="margin-top:6px">${note.tags.map(t=>`<span class="tag">${escHtml(t)}</span>`).join('')}</div>` : ''}
+        <div style="margin-top:6px">${kwTags}${affectedTags}</div>
+        ${item?.desc ? `<div class="card-desc" style="margin-top:6px">${escHtml(item.desc.slice(0, 200))}${item.desc.length > 200 ? '…' : ''}</div>` : ''}
         ${memoCount ? `<div style="font-size:11px;color:var(--text3);margin-top:6px">📝 메모 ${memoCount}개</div>` : ''}
         <div class="card-footer" onclick="event.stopPropagation()">
-          ${item?.url || item?.cve ? `<a class="btn" href="${escHtml(item?.url || `https://www.cve.org/CVERecord?id=${item?.cve}`)}" target="_blank" rel="noopener">원문 보기</a>` : ''}
+          ${item?.url || item?.cve ? `<a class="btn" href="${escHtml(item?.url || `https://www.cve.org/CVERecord?id=${item?.cve}`)}" target="_blank" rel="noopener">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
+            원문 보기
+          </a>` : ''}
           ${item?.cve ? `<a class="btn" href="https://nvd.nist.gov/vuln/detail/${item.cve}" target="_blank" rel="noopener">NVD</a>` : ''}
         </div>
       </div>`;
