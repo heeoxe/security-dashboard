@@ -6,7 +6,7 @@ import { writeFile } from 'node:fs/promises';
 
 const TOKEN     = process.env.GITHUB_TOKEN || '';
 const DEEPL_KEY = process.env.DEEPL_API_KEY || '';
-const MAX       = 300;        // 최대 수집 CVE 수
+const MAX       = 600;        // 최대 수집 CVE 수
 const MAX_COMMITS = 30;       // 최근 커밋 몇 개까지 볼지
 const OWNER     = 'cisagov';
 const REPO      = 'vulnrichment';
