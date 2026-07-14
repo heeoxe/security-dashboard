@@ -1233,9 +1233,10 @@ function saveDetail() {
     btn.innerHTML = orig;
     btn.style.background = '';
     btn.style.borderColor = '';
-    if (currentNoteStore === 'business') renderBusiness();
-    else renderMemos();
+    const store = currentNoteStore;
     closeDetail();
+    if (store === 'business') renderBusiness();
+    else renderMemos();
   }, 800);
 }
 
