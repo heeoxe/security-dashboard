@@ -450,27 +450,30 @@
 
     <!-- Business -->
     <div id="panel-business" class="panel">
-      <div style="display:flex;gap:8px;margin-bottom:1rem;align-items:flex-start">
-        <div style="flex:1">
-          <div class="detail-section-label" style="margin-bottom:6px">모니터링 키워드</div>
-          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px" id="biz-keyword-list"></div>
-          <div style="display:flex;gap:6px">
-            <input id="biz-keyword-input" type="text" placeholder="키워드 입력 (예: Palo Alto, Spring, Apache...)"
-              style="flex:1;height:34px;padding:0 12px;font-size:13px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);color:var(--text);outline:none"
-              onkeydown="if(event.key==='Enter')addBizKeyword()" />
-            <button class="btn btn-primary" onclick="addBizKeyword()">추가</button>
-          </div>
+      <!-- 키워드 관리 -->
+      <div style="margin-bottom:1rem">
+        <div class="detail-section-label" style="margin-bottom:6px">모니터링 키워드</div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px" id="biz-keyword-list"></div>
+        <div style="display:flex;gap:6px">
+          <input id="biz-keyword-input" type="text" placeholder="키워드 입력 (예: Palo Alto, Spring, Apache...)"
+            style="flex:1;height:34px;padding:0 12px;font-size:13px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);color:var(--text);outline:none"
+            onkeydown="if(event.key==='Enter')addBizKeyword()" />
+          <button class="btn btn-primary" onclick="addBizKeyword()">추가</button>
         </div>
       </div>
-      <div style="font-size:11px;color:var(--text3);margin-bottom:1rem">
-        Vulnrichment에서 키워드에 매칭되는 취약점만 표시됩니다. 키워드는 제목·설명·벤더·제품명에서 검색해요.
+
+      <div class="chip-row" style="margin-bottom:1rem">
+        <button class="chip on" id="biz-tab-all" onclick="switchBizTab('all')">전체 매칭</button>
+        <button class="chip" id="biz-tab-검토필요" onclick="switchBizTab('검토필요')">검토필요 <span id="biz-cnt-검토필요" style="font-size:10px;color:var(--text3)"></span></button>
+        <button class="chip" id="biz-tab-검토완료" onclick="switchBizTab('검토완료')">검토완료 <span id="biz-cnt-검토완료" style="font-size:10px;color:var(--text3)"></span></button>
+        <button class="chip" id="biz-tab-N/A" onclick="switchBizTab('N/A')">N/A <span id="biz-cnt-N/A" style="font-size:10px;color:var(--text3)"></span></button>
+        <button class="chip" id="biz-tab-보류" onclick="switchBizTab('보류')">보류 <span id="biz-cnt-보류" style="font-size:10px;color:var(--text3)"></span></button>
       </div>
-      <div class="cards" id="biz-list">
-        <div class="empty">
-          <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
-          키워드를 추가하면 관련 취약점이 자동으로 표시됩니다
-        </div>
+
+      <div style="font-size:11px;color:var(--text3);margin-bottom:0.75rem" id="biz-tab-desc">
+        Vulnrichment에서 키워드에 매칭되는 취약점만 표시됩니다.
       </div>
+      <div class="cards" id="biz-list"></div>
     </div>
 
     <!-- 설정 -->
@@ -758,6 +761,20 @@ function saveBizNotes(notes) {
   localStorage.setItem('sid_biz_notes', JSON.stringify(notes));
 }
 
+let bizActiveTab = 'all';
+
+function switchBizTab(tab) {
+  bizActiveTab = tab;
+  document.querySelectorAll('[id^="biz-tab-"]').forEach(t => t.classList.remove('on'));
+  const tabEl = document.getElementById('biz-tab-' + tab);
+  if (tabEl) tabEl.classList.add('on');
+  const desc = document.getElementById('biz-tab-desc');
+  if (desc) desc.textContent = tab === 'all'
+    ? 'Vulnrichment에서 키워드에 매칭되는 취약점만 표시됩니다.'
+    : `상태가 "${tab}"로 등록된 항목만 표시됩니다.`;
+  renderBusiness();
+}
+
 function renderBizKeywords() {
   const kws = loadBizKeywords();
   const el = document.getElementById('biz-keyword-list');
@@ -805,12 +822,64 @@ function renderBusiness() {
   const kws = loadBizKeywords();
   const el = document.getElementById('biz-list');
   const badge = document.getElementById('nb-business');
+  const bizNotes = loadBizNotes();
 
+  // 탭 카운트 업데이트
+  const statuses = ['검토필요', '검토완료', 'N/A', '보류'];
+  statuses.forEach(s => {
+    const cnt = Object.values(bizNotes).filter(n => n.status === s).length;
+    const el = document.getElementById(`biz-cnt-${s}`);
+    if (el) el.textContent = cnt || '';
+  });
+
+  // 검토현황 탭
+  if (bizActiveTab !== 'all') {
+    const statusItems = Object.entries(bizNotes)
+      .filter(([id, n]) => n.status === bizActiveTab)
+      .map(([id, n]) => {
+        // biz_ 접두사 제거해서 CVE ID 복원
+        const cveOrTitle = id.replace(/^biz_/, '');
+        const item = mitreAll.find(i => (i.cve || i.title) === cveOrTitle);
+        return { noteId: id, note: n, item, cveOrTitle };
+      });
+
+    if (!statusItems.length) {
+      el.innerHTML = `<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>${bizActiveTab} 항목이 없습니다</div>`;
+      return;
+    }
+
+    el.innerHTML = statusItems.map(({ noteId, note, item, cveOrTitle }) => {
+      const title = item?.title || cveOrTitle;
+      const title_ko = item?.title_ko || '';
+      const cvss = item?.cvss || 0;
+      const statusEl = `<span class="badge" style="font-size:10px;background:${statusBg(note.status)};color:${statusColor(note.status)};border:1px solid ${statusColor(note.status)}40">${note.status}</span>`;
+      const memoCount = (note.memos || []).length;
+      return `<div class="card" style="cursor:pointer" onclick="openBizDetail('${escAttr(cveOrTitle)}')">
+        <div class="card-top">
+          ${item?.severity ? `<span class="badge ${sevClass(item.severity)}">${sevLabel(item.severity)}</span>` : ''}
+          ${statusEl}
+          <div class="card-title">${escHtml(title)}</div>
+        </div>
+        <div class="card-meta">
+          ${item?.cve ? `<span class="cve-id">${item.cve}</span>` : `<span class="cve-id">${escHtml(cveOrTitle)}</span>`}
+          ${item?.updated || item?.published ? `<span><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${item.updated || item.published}</span>` : ''}
+          ${title_ko ? `<span style="font-size:11px;color:var(--text3)">${escHtml(title_ko)}</span>` : ''}
+        </div>
+        ${cvss ? `<div class="cvss-row"><span class="cvss-label">CVSS ${cvss.toFixed(1)}</span><div class="cvss-track"><div class="cvss-fill" style="width:${Math.round(cvss/10*100)}%;background:${cvssColor(cvss)}"></div></div></div>` : ''}
+        ${(note.tags||[]).length ? `<div style="margin-top:6px">${note.tags.map(t=>`<span class="tag">${escHtml(t)}</span>`).join('')}</div>` : ''}
+        ${memoCount ? `<div style="font-size:11px;color:var(--text3);margin-top:6px">📝 메모 ${memoCount}개</div>` : ''}
+        <div class="card-footer" onclick="event.stopPropagation()">
+          ${item?.url || item?.cve ? `<a class="btn" href="${escHtml(item?.url || `https://www.cve.org/CVERecord?id=${item?.cve}`)}" target="_blank" rel="noopener">원문 보기</a>` : ''}
+          ${item?.cve ? `<a class="btn" href="https://nvd.nist.gov/vuln/detail/${item.cve}" target="_blank" rel="noopener">NVD</a>` : ''}
+        </div>
+      </div>`;
+    }).join('');
+    return;
+  }
+
+  // 전체 매칭 탭
   if (!kws.length) {
-    el.innerHTML = `<div class="empty">
-      <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
-      키워드를 추가하면 관련 취약점이 자동으로 표시됩니다
-    </div>`;
+    el.innerHTML = `<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>키워드를 추가하면 관련 취약점이 자동으로 표시됩니다</div>`;
     badge.style.display = 'none';
     return;
   }
@@ -831,7 +900,6 @@ function renderBusiness() {
 
   el.innerHTML = matched.map(item => {
     const noteId = 'biz_' + (item.cve || item.title);
-    const bizNotes = loadBizNotes();
     const note = bizNotes[noteId] || {};
     const statusEl = note.status ? `<span class="badge" style="font-size:10px;background:${statusBg(note.status)};color:${statusColor(note.status)};border:1px solid ${statusColor(note.status)}40">${note.status}</span>` : '';
     const cvss = item.cvss || 0;
