@@ -190,10 +190,15 @@
   .detail-footer .btn { flex: 1; justify-content: center; }
 
   @media (max-width: 768px) {
-    .layout { grid-template-columns: 1fr; }
-    .sidebar { display: none; }
-    .stat-bar { grid-template-columns: repeat(2, 1fr); }
-  }
+  .layout { grid-template-columns: 1fr; display: flex; flex-direction: column; }
+  .sidebar { border-right: none; border-bottom: 1px solid var(--border); padding: 0.75rem 0; overflow-x: auto; overflow-y: hidden; display: flex; flex-direction: row; flex-wrap: nowrap; }
+  .nav-section { display: flex; flex-direction: row; align-items: center; gap: 4px; padding: 0 0.75rem; margin-bottom: 0; white-space: nowrap; border-right: 1px solid var(--border); }
+  .nav-label { display: none; }
+  .nav-item { padding: 6px 10px; font-size: 12px; flex-shrink: 0; }
+  .nav-badge { font-size: 9px; }
+  .stat-bar { grid-template-columns: repeat(2, 1fr); }
+  .main { padding: 1rem; }
+}
 </style>
 </head>
 <body>
