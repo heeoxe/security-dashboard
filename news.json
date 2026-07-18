@@ -2,11 +2,11 @@
   {
     "source": "thn",
     "title": "New wp2shell WordPress Core Flaw Lets Unauthenticated Attackers Run Code",
-    "desc": "An anonymous HTTP request can run code on a WordPress site. The bug is in core, so a bare install with zero plugins is exploitable.\n\nEvery 6.9 and 7.0 site was in range until Friday, when WordPress shipped 6.9.5 and 7.0.2 and enabled what it calls forced updates through its auto-update system.\n\nAdam",
+    "desc": "Updated July 18, 2026: the two flaws now carry CVE IDs, the full mechanism has been published, a persistent-object-cache condition has surfaced, and a working proof-of-concept is public. The story below reflects all of it.\n\nAn anonymous HTTP request can run code on a WordPress site. The bug is in co",
     "url": "https://thehackernews.com/2026/07/new-wp2shell-wordpress-core-flaw-lets.html",
     "date": "2026-07-18T02:50:10",
     "title_ko": "새로운 wp2shell 워드프레스 코어 취약점으로 인증되지 않은 공격자가 코드를 실행할 수 있게 됨",
-    "desc_ko": "익명의 HTTP 요청을 통해 워드프레스 사이트에서 코드가 실행될 수 있습니다. 이 취약점은 코어에 존재하므로, 플러그인이 하나도 설치되지 않은 기본 설치 환경에서도 악용될 수 있습니다.\n\n지난 금요일까지는 모든 6.9 및 7.0 버전의 사이트가 취약한 상태였으나, 워드프레스가 6.9.5와 7.0.2를 배포하고 자동 업데이트 시스템을 통해 이른바 ‘강제 업데이트’ 기능을 활성화하면서 상황이 바뀌었습니다.\n\n아담"
+    "desc_ko": "2026년 7월 18일 업데이트: 두 가지 취약점에 CVE ID가 할당되었으며, 전체 공격 메커니즘이 공개되었고, 지속적 객체 캐시(persistent-object-cache) 관련 문제가 드러났으며, 작동하는 개념 증명(PoC)이 공개되었습니다. 아래 내용은 이러한 모든 사항을 반영하고 있습니다.\n\n익명의 HTTP 요청을 통해 워드프레스 사이트에서 코드를 실행할 수 있습니다. 이 버그는 co"
   },
   {
     "source": "thn",
@@ -24,7 +24,7 @@
     "url": "https://thehackernews.com/2026/07/seven-malicious-vite-npm-packages-use.html",
     "date": "2026-07-18T00:24:51",
     "title_ko": "7개의 악성 Vite npm 패키지가 블록체인 C2를 이용해 RAT를 유포하고 있다",
-    "desc_ko": "사이버보안 연구진들은 소프트웨어 공급망 공격의 일환으로 Vite 프론트엔드 툴링 생태계를 표적으로 삼은 7개의 악성 npm 패키지 집단을 발견했습니다.\n\nCheckmarx가 ‘ViteVenom’이라는 코드명을 붙인 이 악성 패키지 캠페인은, 이전에"
+    "desc_ko": "사이버보안 연구진들은 소프트웨어 공급망 공격의 일환으로 Vite 프론트엔드 툴링 생태계를 표적으로 삼은 7개의 악성 npm 패키지 군을 발견했습니다.\n\nCheckmarx가 ‘ViteVenom’이라는 코드명을 붙인 이 악성 패키지 캠페인은, 이전에"
   },
   {
     "source": "thn",
@@ -60,7 +60,7 @@
     "url": "https://thehackernews.com/2026/07/eu-orders-google-to-open-android-mic.html",
     "date": "2026-07-17T17:14:41",
     "title_ko": "EU, 구글에 안드로이드의 마이크·카메라·화면을 경쟁사 AI 어시스턴트에 개방하라고 명령",
-    "desc_ko": "유럽연합 집행위원회는 목요일, 구글에 경쟁사 AI 어시스턴트들에게도 ‘제미니’가 이미 보유하고 있는 것과 동일한 안드로이드 접근 권한을 부여하라고 명령했다. 여기에는 카메라, 마이크, 화면에 표시되는 모든 내용, 화면이 꺼진 상태에서도 작동하는 호출어, 그리고 탭 동작을 모방해 백그라운드에서 다른 앱을 제어하는 기능 등이 포함된다. "
+    "desc_ko": "유럽연합 집행위원회는 목요일, 구글에 경쟁사 AI 어시스턴트들에게도 ‘제미니’가 이미 보유하고 있는 것과 동일한 안드로이드 접근 권한을 부여하라고 명령했다. 여기에는 카메라, 마이크, 화면에 표시되는 모든 내용, 화면이 꺼진 상태에서도 작동하는 호출어, 그리고 탭 동작을 모방해 백그라운드에서 다른 앱을 제어할 수 있는 기능 등이 포함된다. "
   },
   {
     "source": "thn",
@@ -78,7 +78,7 @@
     "url": "https://thehackernews.com/2026/07/armenia-detains-russian-tourist-on-us.html",
     "date": "2026-07-17T16:23:31",
     "title_ko": "아르메니아, REvil 해커 관련 미국 체포영장에 따라 러시아인 관광객을 구금… 변호사들은 “잘못된 인물”이라고 주장",
-    "desc_ko": "아르메니아는 REvil 랜섬웨어 용의자인 알렉산드르 에르마코프에 대한 미국의 인도 요청에 따라, 6월 28일부터 알렉산드르 에르마코프라는 러시아인 관광객을 구치소에 구금하고 있다.\n\n그의 아내 마리아 유로바는 REN TV와의 인터뷰에서 국경 경비대원들이 예레반의 즈바르트노츠 공항 출국장에서 그를 끌어냈다고 말했다. "
+    "desc_ko": "아르메니아는 REvil 랜섬웨어 용의자인 알렉산드르 에르마코프에 대한 미국의 인도 요청에 따라, 6월 28일부터 알렉산드르 에르마코프라는 러시아인 관광객을 구치소에 구금해 왔다.\n\n그의 아내 마리아 유로바는 REN TV와의 인터뷰에서 국경 경비대원들이 예레반의 즈바르트노츠 공항 출국장에서 그를 끌어냈다고 말했다. "
   },
   {
     "source": "thn",
@@ -123,7 +123,7 @@
     "url": "https://thehackernews.com/2026/07/threatsday-game-cheat-spyware-24-hour.html",
     "date": "2026-07-16T21:11:15",
     "title_ko": "ThreatsDay: 게임 치트 스파이웨어, 24시간 랜섬웨어, 크롬 동기화 추적 + 그 외 12가지 소식",
-    "desc_ko": "이번 주에 발생한 많은 문제는 겉보기에는 별다른 문제가 없어 보이는 것에서 시작됩니다.\n\n익숙한 리포지토리. 유용한 설치 프로그램. 무해해 보이는 동기화 설정. 그러다 전달 과정이 잘못되어 기기가 다른 누군가와 통신을 시작하고, 피해는 설명할 틈도 없이 빠르게 확산됩니다.\n\n오래된 버그들이 다시 고개를 들고, 취약한 기본 설정들이 문제를 일으키고 있습니다."
+    "desc_ko": "이번 주에 발생한 많은 문제는 겉보기에는 별다른 문제가 없어 보이는 것에서 시작됩니다.\n\n익숙한 리포지토리. 유용한 설치 프로그램. 무해해 보이는 동기화 설정. 그러다 전달 과정이 잘못되어 기기가 다른 누군가와 통신을 시작하고, 피해는 설명할 틈도 없이 빠르게 확산됩니다.\n\n오래된 버그들이 다시 나타나고, 취약한 기본 설정들이 문제를 일으키고 있습니다."
   },
   {
     "source": "thn",
@@ -141,7 +141,7 @@
     "url": "https://thehackernews.com/2026/07/new-telepuz-malware-spreads-via.html",
     "date": "2026-07-16T18:20:13",
     "title_ko": "새로운 ‘TELEPUZ’ 악성코드가 ClickFix를 통해 확산되며 데이터를 탈취하고 명령을 실행하고 있다",
-    "desc_ko": "사이버보안 연구원들은 2026년 4월 말부터 ClickFix 미끼에 감염된 웹사이트를 통해 확산되고 있는 ‘TELEPUZ’라는 새로운 모듈형 악성코드에 주목하고 있다.\n\n엘라스틱 시큐리티 랩(Elastic Security Labs)의 연구원 시릴 프랑수아(Cyril François)는 테크니카(Technica)와의 인터뷰에서 “이 악성코드는 기능이 풍부하고, 용량이 작으며, 모듈식 구조를 갖추고 있다”고 말했다."
+    "desc_ko": "사이버보안 연구원들은 2026년 4월 말부터 ClickFix 미끼에 감염된 웹사이트를 통해 확산되고 있는 ‘TELEPUZ’라는 새로운 모듈형 악성코드에 주목하고 있다.\n\n엘라스틱 시큐리티 랩(Elastic Security Labs)의 연구원 시릴 프랑수아(Cyril François)는 테크니카(technica)와의 인터뷰에서 “이 악성코드는 기능이 풍부하고, 용량이 작으며, 모듈식 구조를 갖추고 있다”고 말했다."
   },
   {
     "source": "thn",
@@ -149,8 +149,8 @@
     "desc": "ClickLock Stealer, a new macOS infostealer, answers a victim's refusal by killing their apps on a loop until they hand over the login password. It arrives as a command pasted into Terminal, asks for the password behind a fake system dialog, and when the victim cancels, installs two LaunchAgents and ",
     "url": "https://thehackernews.com/2026/07/new-clicklock-macos-stealer-kills-apps.html",
     "date": "2026-07-16T18:03:42",
-    "title_ko": "새로운 ClickLock macOS 정보 탈취 악성코드는 피해자가 비밀번호를 입력할 때까지 210ms마다 앱을 강제 종료시킨다",
-    "desc_ko": "새로운 macOS 정보 탈취형 악성코드인 ‘ClickLock Stealer’는 피해자가 거부할 경우, 로그인 비밀번호를 알려줄 때까지 피해자의 앱을 반복적으로 강제 종료합니다. 이 악성코드는 터미널에 붙여넣은 명령어 형태로 유입되며, 가짜 시스템 대화상자를 통해 비밀번호를 요구하고, 피해자가 이를 취소하면 두 개의 LaunchAgent를 설치한 뒤 "
+    "title_ko": "새로운 ClickLock macOS 정보 탈취 악성코드는 피해자가 비밀번호를 입력할 때까지 210ms마다 앱을 강제 종료합니다",
+    "desc_ko": "새로운 macOS 정보 탈취형 악성코드인 ‘ClickLock Stealer’는 피해자가 거부할 경우, 로그인 비밀번호를 알려줄 때까지 피해자의 앱을 반복적으로 강제 종료합니다. 이 악성코드는 터미널에 붙여넣은 명령어 형태로 유입되며, 가짜 시스템 대화 상자를 통해 비밀번호를 요구하고, 피해자가 입력을 취소하면 두 개의 LaunchAgent를 설치한 뒤 "
   },
   {
     "source": "thn",
@@ -159,7 +159,7 @@
     "url": "https://thehackernews.com/2026/07/20-hijacked-government-websites.html",
     "date": "2026-07-16T17:28:00",
     "title_ko": "20개 이상의 해킹당한 정부 웹사이트가 공격 경로로 이용되었다",
-    "desc_ko": "상호작용형 악성코드 분석 및 위협 인텔리전스 솔루션 분야의 선도 기업인 ANY.RUN이 밝혀낸 ‘PhantomEnigma’ 캠페인의 활동 과정에서, 20개 이상의 브라질 정부 웹사이트가 해킹당해 악성코드 유포 경로로 악용된 것으로 드러났습니다.\n\n조사 결과, 이전에 보고된 바 없는 백도어가"
+    "desc_ko": "상호작용형 악성코드 분석 및 위협 인텔리전스 솔루션 분야의 선도 기업인 ANY.RUN이 밝혀낸 ‘PhantomEnigma’ 캠페인을 통해, 20개 이상의 브라질 정부 웹사이트가 해킹당해 악성코드 유포 경로로 악용되었습니다.\n\n조사 결과, 이전에 보고된 바 없는 백도어가"
   },
   {
     "source": "thn",
@@ -168,7 +168,7 @@
     "url": "https://thehackernews.com/2026/07/new-agent-data-injection-attack-can.html",
     "date": "2026-07-16T17:02:28",
     "title_ko": "새로운 에이전트 데이터 주입 공격으로 인해 AI 에이전트가 실수로 클릭하거나 공격자의 명령을 실행할 수 있다",
-    "desc_ko": "AI 에이전트에게 제품 페이지의 리뷰를 요약해 달라고 요청하면, 단 한 건의 조작된 리뷰만으로도 AI가 “지금 구매하기” 버튼을 클릭하게 만들 수 있습니다. 코딩 도우미에게 GitHub 스레드에 올라온 유지보수자의 수정 사항을 적용해 달라고 요청하면, 가짜 댓글 하나만으로도 AI가 낯선 사람의 명령을 사용자의 컴퓨터에서 실행하게 만들 수 있습니다.\n\n이 두 가지 수법 모두 AI를 탈취하지는 않습니다."
+    "desc_ko": "AI 에이전트에게 제품 페이지의 리뷰를 요약해 달라고 요청하면, 단 한 건의 조작된 리뷰만으로도 AI가 “지금 구매하기” 버튼을 클릭하게 만들 수 있습니다. 코딩 도우미에게 GitHub 스레드에 올라온 유지보수자의 수정 사항을 적용해 달라고 요청하면, 가짜 댓글 하나만으로도 AI가 낯선 사람의 명령을 사용자의 컴퓨터에서 실행하게 만들 수 있습니다.\n\n이 두 가지 수법 모두 AI를 탈취하는 것은 아닙니다."
   },
   {
     "source": "thn",
@@ -186,7 +186,7 @@
     "url": "https://thehackernews.com/2026/07/ai-can-find-bugs-but-human-knowledge.html",
     "date": "2026-07-16T15:40:00",
     "title_ko": "AI는 버그를 찾아낼 수 있지만, 이를 입증하는 데는 여전히 인간의 지식이 필요하다",
-    "desc_ko": "인공지능(AI)은 공격적 보안 분야를 변화시키고 있지만, 가장 중요한 기준은 여전히 변하지 않았습니다. 바로 발견된 취약점이 유용하게 활용되기 위해서는 먼저 그 타당성이 입증되어야 한다는 점입니다. AI 기반 도구는 코드를 신속하게 분석하고, 페이로드를 생성하며, 공격 표면을 요약하고, 익숙하지 않은 API를 설명하며, 반복적인 작업을 수행할 수 있습니다. "
+    "desc_ko": "인공지능(AI)은 공격적 보안 분야를 변화시키고 있지만, 가장 중요한 기준은 여전히 변하지 않았습니다. 바로 발견된 취약점이 유용하게 활용되기 위해서는 먼저 그 타당성이 입증되어야 한다는 점입니다. AI 기반 도구는 코드를 빠르게 분석하고, 페이로드를 생성하며, 공격 표면을 요약하고, 익숙하지 않은 API를 설명하며, 반복적인 작업을 수행할 수 있습니다. "
   },
   {
     "source": "thn",
@@ -195,7 +195,7 @@
     "url": "https://thehackernews.com/2026/07/unpatched-shark-vacuum-flaw-could-let.html",
     "date": "2026-07-16T14:53:19",
     "title_ko": "패치되지 않은 ‘샤크’ 청소기의 취약점으로 인해 공격자가 해당 지역 내 다른 청소기들을 제어할 수 있게 될 수 있다",
-    "desc_ko": "Shark RV2320EDUS 로봇 청소기의 플래시 메모리에서 인증서를 추출하면, 동일한 AWS 리전 내의 다른 사용자들이 사용하는 Shark 청소기에서 루트 권한 명령을 실행할 수 있습니다. 카메라 영상을 확인하고, 로봇을 조종하며, 집 내부 지도를 읽어들이고, Wi-Fi 비밀번호를 평문으로 가져올 수 있습니다.\n\n한 연구자가 "
+    "desc_ko": "Shark RV2320EDUS 로봇 청소기의 플래시 메모리에서 인증서를 추출하면, 동일한 AWS 리전 내의 다른 사용자들이 사용하는 Shark 청소기에서 루트 명령을 실행할 수 있습니다. 카메라 영상을 확인하고, 로봇을 조종하며, 집의 지도를 읽어들이고, Wi-Fi 비밀번호를 평문으로 가져올 수 있습니다.\n\n한 연구자가 "
   },
   {
     "source": "thn",
@@ -213,7 +213,7 @@
     "url": "https://thehackernews.com/2026/07/zoom-patches-critical-windows-flaw-that.html",
     "date": "2026-07-16T12:52:44",
     "title_ko": "Zoom, 계정 탈취를 초래할 수 있는 Windows의 중대한 취약점 패치",
-    "desc_ko": "Zoom은 계정 탈취를 유발할 수 있는 Windows용 Zoom Workplace의 심각한 보안 결함에 대한 보안 업데이트를 발표했습니다.\n\nCVE-2026-53412(CVSS 점수: 9.8)로 분류된 이 취약점은 버전 7.0.0 이전의 Windows용 Zoom Workplace 및 Windows용 Zoom Workplace VDI 클라이언트에 영향을 미칩니다."
+    "desc_ko": "Zoom은 계정 탈취를 유발할 수 있는 Windows용 Zoom Workplace의 중대한 보안 결함에 대한 보안 업데이트를 발표했습니다.\n\nCVE-2026-53412(CVSS 점수: 9.8)로 분류된 이 취약점은 버전 7.0.0 이전의 Windows용 Zoom Workplace 및 Windows용 Zoom Workplace VDI 클라이언트에 영향을 미칩니다."
   },
   {
     "source": "thn",
@@ -276,7 +276,7 @@
     "url": "https://thehackernews.com/2026/07/cursor-flaw-lets-malicious-cloned.html",
     "date": "2026-07-15T16:25:22",
     "title_ko": "커서 결함으로 인해 악의적으로 복제된 저장소가 Windows에서 코드 실행을 유발할 수 있음",
-    "desc_ko": "Windows에서 Cursor로 저장소를 열면, 프로젝트 루트 디렉터리에 git.exe라는 이름의 파일이 있는 경우 Cursor가 이를 실행합니다. 클릭도, 확인 대화상자도, 폴더 내의 어떤 파일이 실행될 것이라는 경고도 없습니다.\n\n그 바이너리가 무엇을 하든, 그것은 마치 사용자가 직접 하는 것처럼, 사용자의 소스 코드와 SSH 키를 사용하여"
+    "desc_ko": "Windows에서 Cursor로 저장소를 열면, 프로젝트 루트 디렉터리에 git.exe라는 이름의 파일이 있을 경우 Cursor가 이를 실행합니다. 클릭도, 확인 대화상자도, 폴더 내의 어떤 파일이 실행될 것이라는 경고도 없습니다.\n\n그 바이너리가 무엇을 하든, 그것은 마치 사용자가 직접 하는 것처럼, 사용자의 소스 코드와 SSH 키를 사용하여"
   },
   {
     "source": "thn",
@@ -320,8 +320,8 @@
     "desc": "Any other browser extension that can run a script on claude.ai can still trigger Claude for Chrome tasks aimed at your Gmail, your latest Google Doc and its comments, and your Calendar.\n\nBoth this and ClaudeBleed need a rogue extension that can already run a script on claude.ai; the difference is sc",
     "url": "https://thehackernews.com/2026/07/claude-for-chrome-flaw-lets-other.html",
     "date": "2026-07-14T22:57:23",
-    "title_ko": "연구진에 따르면, 크롬의 ‘Claude’ 취약점을 악용한 악성 확장 프로그램이 Gmail 열람 정보를 유출할 수 있다고 한다",
-    "desc_ko": "claude.ai에서 스크립트를 실행할 수 있는 다른 브라우저 확장 프로그램이라면, Gmail, 최신 Google 문서 및 해당 댓글, 캘린더를 대상으로 하는 ‘Claude for Chrome’ 작업을 여전히 실행할 수 있습니다.\n\n이 확장 프로그램과 ClaudeBleed 모두 claude.ai에서 이미 스크립트를 실행할 수 있는 비공식 확장 프로그램이 필요하며, 차이점은 sc"
+    "title_ko": "연구진에 따르면, 크롬의 ‘Claude’ 취약점을 악용한 악성 확장 프로그램이 Gmail 열람 정보를 유출시킬 수 있다고 한다",
+    "desc_ko": "claude.ai에서 스크립트를 실행할 수 있는 다른 브라우저 확장 프로그램이라면, Gmail, 최신 Google 문서 및 해당 댓글, 캘린더를 대상으로 하는 ‘Claude for Chrome’ 작업을 여전히 실행할 수 있습니다.\n\n이 확장 프로그램과 ClaudeBleed 모두 claude.ai에서 이미 스크립트를 실행할 수 있는 비공식 확장 프로그램이 필요하며, 차이점은 다음과 같습니다."
   },
   {
     "source": "thn",
@@ -330,7 +330,7 @@
     "url": "https://thehackernews.com/2026/07/labubarat-masquerades-as-nvidia.html",
     "date": "2026-07-14T22:22:37",
     "title_ko": "LabubaRAT, NVIDIA 소프트웨어로 위장해 Windows 호스트를 제어",
-    "desc_ko": "사이버보안 연구원들은 NVIDIA 소프트웨어로 위장해 대상 환경에 침투하는, 이전에 보고된 바 없는 Rust 기반 원격 접속 트로이목마(RAT)인 ‘LabubaRAT’를 발견했습니다.\n\n“LabubaRAT는 직접적인 공격을 수행하기 위한 재사용 가능한 교두보를 구축합니다,”라고 Blackpoint Cyber의 연구원 샘 데커(Sam Decker)는"
+    "desc_ko": "사이버보안 연구원들은 NVIDIA 소프트웨어로 위장해 대상 환경에 침투하는, 이전에 보고된 바 없는 Rust 기반 원격 접속 트로이목마(RAT)인 ‘LabubaRAT’를 발견했습니다.\n\n“LabubaRAT는 직접적인 공격을 수행하기 위한 재사용 가능한 교두보를 마련합니다.”라고 Blackpoint Cyber의 연구원 샘 데커(Sam Decker)는"
   },
   {
     "source": "thn",
@@ -402,7 +402,7 @@
     "url": "https://thehackernews.com/2026/07/148-npm-packages-disguised-as-student.html",
     "date": "2026-07-14T12:38:36",
     "title_ko": "학생 프록시로 위장한 148개의 npm 패키지가 브라우저를 DDoS 봇넷으로 변모시켰다",
-    "desc_ko": "JFrog의 새로운 연구에 따르면, 학생용 웹 프록시로 위장한 148개의 npm 패키지가 5월 약 2주 동안 방문자들의 브라우저를 분산 서비스 거부(DDoS) 봇넷으로 변모시켰습니다.\n\n이 패키지들은 이를 설치할 가능성이 있는 개발자들을 표적으로 삼지 않았습니다. 운영자들은 "
+    "desc_ko": "JFrog의 새로운 연구에 따르면, 학생용 웹 프록시로 위장한 148개의 npm 패키지가 5월 약 2주 동안 방문자의 브라우저를 분산 서비스 거부(DDoS) 봇넷으로 변모시켰습니다.\n\n이 패키지들은 이를 설치할 가능성이 있는 개발자들을 표적으로 삼지 않았습니다. 운영자들은 "
   },
   {
     "source": "thn",
@@ -438,7 +438,7 @@
     "url": "https://thehackernews.com/2026/07/weekly-recap-sharefile-threat-citrix.html",
     "date": "2026-07-13T20:35:57",
     "title_ko": "⚡ 주간 요약: ShareFile 보안 위협, Citrix Bleed 2 랜섬웨어, AI 코딩 공격 등",
-    "desc_ko": "지금 이 순간 어딘가에서는, 어떤 보안 도구가 사람이 수정할 수 있는 속도보다 훨씬 빠르게 버그를 조용히 찾아내고 있습니다. 이것이 바로 좋은 소식이어야 합니다. 하지만 문제는 공격자들도 똑같은 도구를 가지고 있으며, 그 도구를 반대 방향으로 겨누고 있다는 점입니다. 게다가 그들은 버그 보고서를 제출하지도 않습니다.\n\n이것이 바로 이번 주의 상황입니다. 신뢰받던 코드가 사람들을 배신하고 있습니다."
+    "desc_ko": "지금 이 순간 어딘가에서는, 어떤 보안 도구가 사람이 수정할 수 있는 속도보다 훨씬 빠르게 버그를 조용히 찾아내고 있습니다. 이것이 좋은 소식이어야 마땅합니다. 하지만 문제는 공격자들도 똑같은 도구를 가지고 있으며, 그 도구를 반대 방향으로 겨누고 있다는 점입니다. 게다가 그들은 버그 보고서를 제출하지도 않습니다.\n\n이것이 바로 이번 주의 상황입니다. 신뢰받던 코드가 사람들을 배신하고 있습니다."
   },
   {
     "source": "thn",
@@ -447,6 +447,6 @@
     "url": "https://thehackernews.com/2026/07/new-memghost-attack-plants-persistent.html",
     "date": "2026-07-13T19:19:48",
     "title_ko": "새로운 ‘MemGhost’ 공격, 이메일 한 통으로 AI 에이전트에 지속적인 허위 기억을 심는다",
-    "desc_ko": "AI 비서에게 기억 기능과 수신함 접근 권한을 부여하면, 공격자가 그 AI가 사용자에 대해 알고 있다고 생각하는 내용을 재작성할 수 있는 방법을 제공하게 되는 셈입니다. 단 한 통의 이메일만으로도 해당 AI를 속여 사용자에 대한 허위 ‘사실’을 저장하게 하고, 그 변경 사항을 숨긴 뒤, 이후 세션에서 답변 내용을 은밀하게 조작할 수 있습니다.\n\n이 방법이 성공하면, 해당..."
+    "desc_ko": "AI 비서에게 기억 기능과 수신함 접근 권한을 부여하면, 공격자가 AI가 사용자에 대해 알고 있다고 생각하는 내용을 재작성할 수 있는 방법을 제공하게 되는 셈입니다. 단 한 통의 이메일만으로도 해당 AI 비서를 속여 사용자에 대한 허위 ‘사실’을 저장하게 하고, 그 변경 사항을 숨긴 뒤, 이후 세션에서 AI의 답변을 은밀하게 조작할 수 있습니다.\n\n이 방법이 성공하면, 해당..."
   }
 ]
