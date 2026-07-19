@@ -190,14 +190,47 @@
   .detail-footer .btn { flex: 1; justify-content: center; }
 
   @media (max-width: 768px) {
-  .layout { grid-template-columns: 1fr; display: flex; flex-direction: column; }
-  .sidebar { border-right: none; border-bottom: 1px solid var(--border); padding: 0.75rem 0; overflow-x: auto; overflow-y: hidden; display: flex; flex-direction: row; flex-wrap: nowrap; }
-  .nav-section { display: flex; flex-direction: row; align-items: center; gap: 4px; padding: 0 0.75rem; margin-bottom: 0; white-space: nowrap; border-right: 1px solid var(--border); }
+  .layout { display: flex; flex-direction: column; }
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 0.5rem 0.75rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .sidebar::-webkit-scrollbar { display: none; }
+  .nav-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+    padding: 0 6px 0 0;
+    margin-bottom: 0;
+    border-right: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+  .nav-section:last-child { border-right: none; padding-right: 0; }
   .nav-label { display: none; }
-  .nav-item { padding: 6px 10px; font-size: 12px; flex-shrink: 0; }
-  .nav-badge { font-size: 9px; }
+  .nav-item {
+    padding: 5px 10px;
+    font-size: 12px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+  .nav-item svg { display: none; }
+  .nav-badge { font-size: 9px; padding: 1px 4px; }
   .stat-bar { grid-template-columns: repeat(2, 1fr); }
   .main { padding: 1rem; }
+  .cards { grid-template-columns: 1fr; }
+  .owasp-grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
