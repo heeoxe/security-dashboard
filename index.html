@@ -901,11 +901,11 @@ function renderBusiness() {
       const memoCount = (note.memos || []).length;
 
       return `<div class="card" style="cursor:pointer" ondblclick="openBizDetail('${escAttr(cveOrTitle)}')">
+        ${note.status ? `<div style="font-size:12px;font-weight:500;color:${statusColor(note.status)};margin-bottom:6px;padding-bottom:6px;border-bottom:1px solid var(--border)">${note.status}</div>` : ''}
         <div class="card-top">
-          ${statusEl}
-          ${item?.severity ? `<span class="badge ${sevClass(item.severity)}">${sevLabel(item.severity)}</span>` : ''}
-          ${item?.isKev ? '<span class="badge bc" style="font-size:10px">KEV</span>' : ''}
-          <div class="card-title">${escHtml(item?.title || cveOrTitle)}</div>
+        ${item.isKev ? '<span class="badge bc" style="font-size:10px">KEV</span>' : ''}
+        ${item.severity ? `<span class="badge ${sevClass(item.severity)}">${sevLabel(item.severity)}</span>` : ''}
+        <div class="card-title">...</div>
         </div>
         <div class="card-meta">
           ${item?.cve ? `<span class="cve-id">${item.cve}</span>` : `<span class="cve-id">${escHtml(cveOrTitle)}</span>`}
