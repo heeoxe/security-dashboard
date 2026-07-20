@@ -1583,8 +1583,8 @@ function mitreCard(item) {
 
   return `<div class="card" style="cursor:pointer" onclick='openDetail(${jsonAttr({...item, id: noteId, sev: item.severity, source: "Vulnrichment"})})'>
     <div class="card-top">
-      ${item.severity ? `<span class="badge ${sevClass(item.severity)}">${sevLabel(item.severity)}</span>` : ''}
       ${advisoryTypeBadge(item)}
+      ${item.severity ? `<span class="badge ${sevClass(item.severity)}">${sevLabel(item.severity)}</span>` : ''}
       ${statusEl}
       <div class="card-title">${escHtml(item.title || item.cve || '')}</div>
     </div>
