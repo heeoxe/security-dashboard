@@ -1,5 +1,271 @@
 [
   {
+    "cve": "CVE-2025-5914",
+    "title": "Libarchive: double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c",
+    "desc": "A vulnerability has been identified in the libarchive library, specifically within the archive_read_format_rar_seek_data() function. This flaw involves an integer overflow that can ultimately lead to a double-free condition. Exploiting a double-free vulnerability can result in memory corruption, enabling an attacker to execute arbitrary code or cause a denial-of-service condition.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-190"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.2 Advanced Update Support"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-06-09",
+    "updated": "2026-07-20",
+    "url": "https://access.redhat.com/errata/RHSA-2025:14130",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-6020",
+    "title": "Linux-pam: linux-pam directory traversal",
+    "desc": "A flaw was found in linux-pam. The module pam_namespace may use access user-controlled paths without proper protection, allowing local users to elevate their privileges to root via multiple symlink attacks and race conditions.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-06-17",
+    "updated": "2026-07-20",
+    "url": "https://access.redhat.com/errata/RHSA-2025:10024",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-7195",
+    "title": "Operator-sdk: privilege escalation due to incorrect permissions of /etc/passwd",
+    "desc": "Early versions of Operator-SDK provided an insecure method to allow operator containers to run in environments that used a random UID. Operator-SDK before 0.15.2 provided a script, user_setup, which modifies the permissions of the /etc/passwd file to 664 during build time. Developers who used Operator-SDK before 0.15.2 to scaffold their operator may still be impacted by this if the insecure user_s",
+    "cvss": 6.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-276"
+    ],
+    "affected": [
+      {
+        "vendor": "operator-framework",
+        "product": "operator-sdk"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "RHEL-9-CNV-4.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "RHEL-9-CNV-4.18"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "RHEL-9-CNV-4.20"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Compliance Operator 1"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-08-07",
+    "updated": "2026-07-20",
+    "url": "https://access.redhat.com/errata/RHEA-2025:23406",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-7425",
+    "title": "Libxslt: libxml2: heap use-after-free in libxslt caused by atype corruption in xmlattrptr",
+    "desc": "A flaw was found in libxslt where the attribute type, atype, flags are modified in a way that corrupts internal memory management. When XSLT functions, such as the key() process, result in tree fragments, this corruption prevents the proper cleanup of ID attributes. As a result, the system may access freed memory, causing crashes or enabling attackers to trigger heap corruption.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "GNOME",
+        "product": "libxml2"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-07-10",
+    "updated": "2026-07-20",
+    "url": "https://access.redhat.com/errata/RHBA-2025:12345",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-12912",
+    "title": "Libtiff: libtiff: heap-based buffer overflow via crafted pixarlog-compressed tiff image",
+    "desc": "A flaw was found in libtiff. A remote attacker could exploit this vulnerability by providing a specially crafted PixarLog-compressed TIFF image. This issue occurs when decoding Pixarlog codec images with the PIXARLOGDATAFMT_8BITABGR output format and a specific stride value, leading to a heap-based buffer overflow. This could potentially result in arbitrary code execution or a denial of service (D",
+    "cvss": 7.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-122"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Hardened Images"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-29",
+    "updated": "2026-07-20",
+    "url": "https://access.redhat.com/errata/RHSA-2026:34890",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-1784",
+    "title": "Ose-cluster-ingress-operator: remote code execution through haproxy configuration injection",
+    "desc": "The Route OpenShift resource allows to define routes to make pods reachable at a subdomain through HAProxy. It was found that the checks performed on the spec.path YAML stanza in a Route document was insufficient and could allow a controlled injection of the HAProxy configuration.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-15"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.13"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.15"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.16"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.18"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-02",
+    "updated": "2026-07-20",
+    "url": "https://access.redhat.com/errata/RHSA-2026:23241",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-46579",
+    "title": "Openshift/router: openshift/router: mtls client certificate spoofing via unstripped x-ssl-client headers on http frontend",
+    "desc": "A flaw was found in the OpenShift Router. When a Route has `insecureEdgeTerminationPolicy` set to Allow, the HTTP frontend does not remove `X-SSL-Client-*` headers from incoming requests. This allows an unauthenticated attacker to send plain HTTP requests with crafted `X-SSL-Client-*` headers. As a result, backends relying on these headers for mutual TLS (Transport Layer Security) authentication c",
+    "cvss": 7.4,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-287"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.19"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.2"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.21"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.22"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-29",
+    "updated": "2026-07-20",
+    "url": "https://access.redhat.com/errata/RHSA-2026:27009",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2023-0567",
     "title": "password_verify() always returns true for some invalid hashes",
     "desc": "In PHP 8.0.X before 8.0.28, 8.1.X before 8.1.16 and 8.2.X before 8.2.3, password_verify() function may accept some invalid Blowfish hashes as valid. If such invalid hash ever ends up in the password database, it may lead to an application allowing any password for this entry as valid.",
@@ -96,44 +362,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2025-7195",
-    "title": "Operator-sdk: privilege escalation due to incorrect permissions of /etc/passwd",
-    "desc": "Early versions of Operator-SDK provided an insecure method to allow operator containers to run in environments that used a random UID. Operator-SDK before 0.15.2 provided a script, user_setup, which modifies the permissions of the /etc/passwd file to 664 during build time. Developers who used Operator-SDK before 0.15.2 to scaffold their operator may still be impacted by this if the insecure user_s",
-    "cvss": 6.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-276"
-    ],
-    "affected": [
-      {
-        "vendor": "operator-framework",
-        "product": "operator-sdk"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "RHEL-9-CNV-4.17"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "RHEL-9-CNV-4.18"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "RHEL-9-CNV-4.20"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Compliance Operator 1"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-08-07",
-    "updated": "2026-07-19",
-    "url": "https://access.redhat.com/errata/RHEA-2025:23406",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-2100",
     "title": "P11-kit: null dereference via c_derivekey with specific null parameters",
     "desc": "A flaw was found in p11-kit. A remote attacker could exploit this vulnerability by calling the C_DeriveKey function on a remote token with specific IBM kyber or IBM btc derive mechanism parameters set to NULL. This could lead to the RPC-client attempting to return an uninitialized value, potentially resulting in a NULL dereference or undefined behavior. This issue may cause an application level de",
@@ -207,120 +435,6 @@
     "published": "2025-01-14",
     "updated": "2026-07-19",
     "url": "https://access.redhat.com/errata/RHBA-2025:6470",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-5914",
-    "title": "Libarchive: double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c",
-    "desc": "A vulnerability has been identified in the libarchive library, specifically within the archive_read_format_rar_seek_data() function. This flaw involves an integer overflow that can ultimately lead to a double-free condition. Exploiting a double-free vulnerability can result in memory corruption, enabling an attacker to execute arbitrary code or cause a denial-of-service condition.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-190"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8.2 Advanced Update Support"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2025-06-09",
-    "updated": "2026-07-19",
-    "url": "https://access.redhat.com/errata/RHSA-2025:14130",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-6020",
-    "title": "Linux-pam: linux-pam directory traversal",
-    "desc": "A flaw was found in linux-pam. The module pam_namespace may use access user-controlled paths without proper protection, allowing local users to elevate their privileges to root via multiple symlink attacks and race conditions.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-22"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-06-17",
-    "updated": "2026-07-19",
-    "url": "https://access.redhat.com/errata/RHSA-2025:10024",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-7425",
-    "title": "Libxslt: libxml2: heap use-after-free in libxslt caused by atype corruption in xmlattrptr",
-    "desc": "A flaw was found in libxslt where the attribute type, atype, flags are modified in a way that corrupts internal memory management. When XSLT functions, such as the key() process, result in tree fragments, this corruption prevents the proper cleanup of ID attributes. As a result, the system may access freed memory, causing crashes or enabling attackers to trigger heap corruption.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "GNOME",
-        "product": "libxml2"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2025-07-10",
-    "updated": "2026-07-19",
-    "url": "https://access.redhat.com/errata/RHBA-2025:12345",
     "source": "CISA Vulnrichment"
   },
   {
@@ -410,6 +524,26 @@
       {
         "vendor": "Broadcom",
         "product": "Symantec IT Management Suite"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-17",
+    "updated": "2026-07-19",
+    "url": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/37995",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-15380",
+    "title": "Local privilege escalation in Symantec ITMS",
+    "desc": "A non-administrator interactive user can obtain full SYSTEM code execution through a DCOM/task scheduler logic chain — no network access, no memory corruption required (ITMS 8.7.3)",
+    "cvss": null,
+    "severity": "",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Broadcom",
+        "product": "Symantec Management Suite"
       }
     ],
     "exploitation": "none",
@@ -573,82 +707,6 @@
     "published": "2026-06-10",
     "updated": "2026-07-19",
     "url": "https://github.com/sahlberg/libnfs/commit/55c18ea33a83d667f79f0ef209c96895795c729f",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-1784",
-    "title": "Ose-cluster-ingress-operator: remote code execution through haproxy configuration injection",
-    "desc": "The Route OpenShift resource allows to define routes to make pods reachable at a subdomain through HAProxy. It was found that the checks performed on the spec.path YAML stanza in a Route document was insufficient and could allow a controlled injection of the HAProxy configuration.",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-15"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.13"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.14"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.15"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.16"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.18"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-02",
-    "updated": "2026-07-19",
-    "url": "https://access.redhat.com/errata/RHSA-2026:23241",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-46579",
-    "title": "Openshift/router: openshift/router: mtls client certificate spoofing via unstripped x-ssl-client headers on http frontend",
-    "desc": "A flaw was found in the OpenShift Router. When a Route has `insecureEdgeTerminationPolicy` set to Allow, the HTTP frontend does not remove `X-SSL-Client-*` headers from incoming requests. This allows an unauthenticated attacker to send plain HTTP requests with crafted `X-SSL-Client-*` headers. As a result, backends relying on these headers for mutual TLS (Transport Layer Security) authentication c",
-    "cvss": 7.4,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-287"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.19"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.2"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.21"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.22"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-05-29",
-    "updated": "2026-07-19",
-    "url": "https://access.redhat.com/errata/RHSA-2026:27009",
     "source": "CISA Vulnrichment"
   },
   {
@@ -28662,28 +28720,6 @@
     "published": "2026-05-21",
     "updated": "2026-07-15",
     "url": "https://www.obsidiansecurity.com/blog/litellm-privilege-escalation-rce",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-47349",
-    "title": "TYPO3 CMS - Broken Access Control in Recycler",
-    "desc": "Backend users with access to the Recycler module were able to restore soft-deleted records on pages or for tables they were not authorized to modify. This issue affects TYPO3 CMS versions before 10.4.57, 11.0.0-11.5.50, 12.0.0-12.4.45, 13.0.0-13.4.30 and 14.0.0-14.3.2.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "TYPO3",
-        "product": "TYPO3 CMS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-09",
-    "updated": "2026-07-15",
-    "url": "https://typo3.org/security/advisory/typo3-core-sa-2026-011",
     "source": "CISA Vulnrichment"
   }
 ]
