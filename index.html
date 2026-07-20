@@ -902,9 +902,9 @@ function renderBusiness() {
 
       return `<div class="card" style="cursor:pointer" ondblclick="openBizDetail('${escAttr(cveOrTitle)}')">
         <div class="card-top">
+          ${statusEl}
           ${item?.severity ? `<span class="badge ${sevClass(item.severity)}">${sevLabel(item.severity)}</span>` : ''}
           ${item?.isKev ? '<span class="badge bc" style="font-size:10px">KEV</span>' : ''}
-          ${statusEl}
           <div class="card-title">${escHtml(item?.title || cveOrTitle)}</div>
         </div>
         <div class="card-meta">
