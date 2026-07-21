@@ -994,37 +994,40 @@ function renderBusiness() {
 
 function openBizDetail(cveOrTitle) {
   const item = mitreAll.find(i => (i.cve || i.title) === cveOrTitle);
-  if (!item) return;
   const noteId = 'biz_' + cveOrTitle;
   currentDetailId = noteId;
-  currentNoteStore = 'business'; // business 노트 구분용
+  currentNoteStore = 'business';
 
   document.getElementById('dp-source').textContent = 'Business · CISA Vulnrichment';
-  document.getElementById('dp-title').textContent = item.title || item.cve || '';
+  document.getElementById('dp-title').textContent = item?.title || cveOrTitle;
   const koEl = document.getElementById('dp-title-ko');
-  if (item.title_ko) { koEl.textContent = item.title_ko; koEl.style.display = ''; }
+  if (item?.title_ko) { koEl.textContent = item.title_ko; koEl.style.display = ''; }
   else koEl.style.display = 'none';
-  document.getElementById('dp-link').href = item.url || `https://www.cve.org/CVERecord?id=${item.cve}`;
+  document.getElementById('dp-link').href = item?.url || (cveOrTitle.startsWith('CVE-') ? `https://www.cve.org/CVERecord?id=${cveOrTitle}` : '#');
 
-  const affected = (item.affected || []).map(a =>
-    `<div class="detail-meta-item"><div class="detail-meta-label">벤더/제품</div><div class="detail-meta-value">${escHtml(`${a.vendor} ${a.product}`.trim())}</div></div>`
-  ).join('');
+  if (item) {
+    const affected = (item.affected || []).map(a =>
+      `<div class="detail-meta-item"><div class="detail-meta-label">벤더/제품</div><div class="detail-meta-value">${escHtml(`${a.vendor} ${a.product}`.trim())}</div></div>`
+    ).join('');
+    document.getElementById('dp-meta-section').innerHTML = `
+      <div class="detail-section-label">상세 정보</div>
+      <div class="detail-meta-grid">
+        ${item.cve ? `<div class="detail-meta-item"><div class="detail-meta-label">CVE ID</div><div class="detail-meta-value cve-id">${item.cve}</div></div>` : ''}
+        <div class="detail-meta-item"><div class="detail-meta-label">날짜</div><div class="detail-meta-value">${item.updated || item.published}</div></div>
+        ${item.cvss ? `<div class="detail-meta-item"><div class="detail-meta-label">CVSS</div><div class="detail-meta-value">${item.cvss.toFixed(1)}</div></div>` : ''}
+        ${item.exploitation ? `<div class="detail-meta-item"><div class="detail-meta-label">악용 여부</div><div class="detail-meta-value">${item.exploitation}</div></div>` : ''}
+        ${affected}
+      </div>`;
+    document.getElementById('dp-desc-section').innerHTML = item.desc ? `
+      <div class="detail-section-label">설명</div>
+      <div class="detail-desc">${escHtml(item.desc)}</div>` : '';
+  } else {
+    document.getElementById('dp-meta-section').innerHTML = `
+      <div class="detail-section-label">상세 정보</div>
+      <div style="font-size:12px;color:var(--text3);padding:8px 0">Vulnrichment에서 더 이상 제공되지 않는 항목입니다.<br>메모와 상태는 그대로 유지됩니다.</div>`;
+    document.getElementById('dp-desc-section').innerHTML = '';
+  }
 
-  document.getElementById('dp-meta-section').innerHTML = `
-    <div class="detail-section-label">상세 정보</div>
-    <div class="detail-meta-grid">
-      ${item.cve ? `<div class="detail-meta-item"><div class="detail-meta-label">CVE ID</div><div class="detail-meta-value cve-id">${item.cve}</div></div>` : ''}
-      <div class="detail-meta-item"><div class="detail-meta-label">날짜</div><div class="detail-meta-value">${item.updated || item.published}</div></div>
-      ${item.cvss ? `<div class="detail-meta-item"><div class="detail-meta-label">CVSS</div><div class="detail-meta-value">${item.cvss.toFixed(1)}</div></div>` : ''}
-      ${item.exploitation ? `<div class="detail-meta-item"><div class="detail-meta-label">악용 여부</div><div class="detail-meta-value">${item.exploitation}</div></div>` : ''}
-      ${affected}
-    </div>`;
-
-  document.getElementById('dp-desc-section').innerHTML = item.desc ? `
-    <div class="detail-section-label">설명</div>
-    <div class="detail-desc">${escHtml(item.desc)}</div>` : '';
-
-  // Business 전용 노트 로드
   const bizNotes = loadBizNotes();
   const note = bizNotes[noteId] || { status: '', tags: [], memos: [] };
   document.querySelectorAll('.status-chip').forEach(c => c.classList.toggle('on', c.dataset.s === note.status));
@@ -1264,7 +1267,8 @@ function removeTag(t) {
 function renderDetailMemos(memos) {
   const el = document.getElementById('dp-memo-list');
   if (!memos || !memos.length) { el.innerHTML = ''; return; }
-  const indexed = memos.map((m, i) => ({ m, i })).reverse();
+  // 원본 인덱스 유지하면서 최신순 정렬
+  const indexed = memos.map((m, i) => ({ m, i })).sort((a, b) => (b.m.createdAt || '').localeCompare(a.m.createdAt || ''));
   el.innerHTML = indexed.map(({ m, i }) => {
     const t = m.createdAt ? new Date(m.createdAt).toLocaleString('ko-KR', { month:'short', day:'numeric', hour:'2-digit', minute:'2-digit' }) : '';
     const editedMark = m.editedAt ? `<span style="font-size:10px;color:var(--text3);margin-left:4px">(수정됨)</span>` : '';
