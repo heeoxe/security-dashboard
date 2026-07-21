@@ -901,7 +901,7 @@ function renderBusiness() {
       const memoCount = (note.memos || []).length;
 
       return `<div class="card" style="cursor:pointer" ondblclick="openBizDetail('${escAttr(cveOrTitle)}')">
-        ${note.status ? `<div style="font-size:12px;font-weight:600;color:#fff;background:${statusColor(note.status)};padding:4px 10px;border-radius:var(--radius);margin-bottom:8px;display:inline-block">${note.status}</div>` : ''}
+        ${note.status ? `<div style="font-size:11px;font-weight:500;color:#fff;background:${statusColor(note.status)};padding:2px 8px;border-radius:20px;margin-bottom:6px;display:inline-block">${note.status}</div>` : ''}
         <div class="card-top">
           ${item?.isKev ? '<span class="badge bc" style="font-size:10px">KEV</span>' : ''}
           ${item?.severity ? `<span class="badge ${sevClass(item.severity)}">${sevLabel(item.severity)}</span>` : ''}
@@ -966,7 +966,7 @@ function renderBusiness() {
       item.exploitation === 'poc' ? `<span style="font-size:11px;color:var(--high)">PoC 공개</span>` : '';
 
     return `<div class="card" style="cursor:pointer" onclick="openBizDetail('${escAttr(item.cve || item.title)}')">
-      ${note.status ? `<div style="font-size:12px;font-weight:600;color:#fff;background:${statusColor(note.status)};padding:4px 10px;border-radius:var(--radius);margin-bottom:8px;display:inline-block">${note.status}</div>` : ''}
+      ${note.status ? `<div style="font-size:11px;font-weight:500;color:#fff;background:${statusColor(note.status)};padding:2px 8px;border-radius:20px;margin-bottom:6px;display:inline-block">${note.status}</div>` : ''}
       <div class="card-top">
         ${item.isKev ? '<span class="badge bc" style="font-size:10px">KEV</span>' : ''}
         ${item.severity ? `<span class="badge ${sevClass(item.severity)}">${sevLabel(item.severity)}</span>` : ''}
