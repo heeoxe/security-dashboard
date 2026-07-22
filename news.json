@@ -1,6 +1,96 @@
 [
   {
     "source": "thn",
+    "title": "GitHub Cuts Public Bug Bounty Payouts, Moves Top Rewards to VIP Tier",
+    "desc": "Beginning July 27, 2026, GitHub will cut public bug bounty payouts by at least half at every severity level. Critical findings will drop from $20,000-$30,000+ to a fixed $10,000, while its permanent invite-only VIP tier will pay $30,000 or more.\n\nReports filed before that date, including those alrea",
+    "url": "https://thehackernews.com/2026/07/github-cuts-public-bug-bounty-payouts.html",
+    "date": "2026-07-23T00:07:42",
+    "title_ko": "GitHub, 공개 버그 바운티 보상금 삭감… 최고 보상금은 VIP 등급으로 이전",
+    "desc_ko": "2026년 7월 27일부터 GitHub는 모든 심각도 등급에 대해 공개 버그 바운티 지급액을 최소 절반으로 삭감할 예정입니다. ‘Critical’ 등급의 결함에 대한 보상금은 기존 20,000~30,000달러 이상에서 고정된 10,000달러로 낮아지는 반면, 영구적인 초대 전용 VIP 등급의 경우 30,000달러 이상이 지급될 예정입니다.\n\n해당 날짜 이전에 접수된 보고서는, 이미"
+  },
+  {
+    "source": "thn",
+    "title": "Ubuntu snap-confine Flaw Could Give Local Users Root on Default Desktop Installs",
+    "desc": "Cybersecurity researchers have disclosed details of a new local privilege escalation (LPE) vulnerability in snap-confine that an unprivileged user can trigger to obtain root access and gain complete control of a target environment.\n\nThe high-severity flaw, tracked as CVE-2026-8933 (CVSS score: 7.8),",
+    "url": "https://thehackernews.com/2026/07/ubuntu-snap-confine-flaw-could-give.html",
+    "date": "2026-07-22T23:37:16",
+    "title_ko": "우분투 snap-confine의 취약점으로 인해 기본 데스크톱 설치 환경에서 로컬 사용자에게 루트 권한이 부여될 수 있음",
+    "desc_ko": "사이버보안 연구원들이 snap-confine에서 발견된 새로운 로컬 권한 상승(LPE) 취약점에 대한 세부 정보를 공개했는데, 권한이 없는 사용자라도 이 취약점을 악용해 루트 권한을 획득하고 대상 환경을 완전히 제어할 수 있는 것으로 밝혀졌습니다.\n\nCVE-2026-8933(CVSS 점수: 7.8)로 추적되는 이 고위험 결함은,"
+  },
+  {
+    "source": "thn",
+    "title": "Adobe Acrobat Extension Flaw Let Malicious Sites Read WhatsApp Web Data",
+    "desc": "Cybersecurity researchers have disclosed details of a now-patched vulnerability chain in the Adobe Acrobat Chrome extension that has over 314 million users, which, if exploited, could facilitate a silent hijack of a user's WhatsApp data.\n\nThe shortcoming has been codenamed HermeticReader by Guardio ",
+    "url": "https://thehackernews.com/2026/07/adobe-acrobat-extension-flaw-let.html",
+    "date": "2026-07-22T20:31:21",
+    "title_ko": "Adobe Acrobat 확장 기능의 취약점으로 인해 악성 사이트가 WhatsApp Web 데이터를 열람할 수 있게 됨",
+    "desc_ko": "사이버보안 연구진들은 3억 1,400만 명 이상의 사용자가 이용하는 Adobe Acrobat Chrome 확장 프로그램에서 발견된, 현재 패치된 취약점 연쇄에 대한 세부 내용을 공개했습니다. 이 취약점이 악용될 경우 사용자의 WhatsApp 데이터를 사용자에게 알리지 않은 채 탈취할 수 있습니다.\n\n이 취약점은 Guardio에 의해 ‘HermeticReader’라는 코드명으로 명명되었습니다. "
+  },
+  {
+    "source": "thn",
+    "title": "Hackers Exploit Windmill Flaw to Read Arbitrary Server Files Without Authentication",
+    "desc": "A high-severity security flaw impacting open-source developer platform Windmill has come under active exploitation in the wild, per VulnCheck.\n\nThe vulnerability in question is CVE-2026-29059 (CVSS score: 7.5), a case of unauthenticated path traversal impacting Windmill's \"get_log_file\" endpoint (\"/",
+    "url": "https://thehackernews.com/2026/07/hackers-exploit-windmill-flaw-to-read.html",
+    "date": "2026-07-22T18:06:36",
+    "title_ko": "해커들이 풍력 터빈의 취약점을 악용해 인증 절차 없이 임의의 서버 파일을 열람",
+    "desc_ko": "VulnCheck에 따르면, 오픈소스 개발자 플랫폼인 Windmill에 영향을 미치는 고위험 보안 결함이 실제 환경에서 활발히 악용되고 있는 것으로 나타났습니다.\n\n문제의 취약점은 CVE-2026-29059(CVSS 점수: 7.5)로, Windmill의 \"get_log_file\" 엔드포인트(\"/\")에 영향을 미치는 인증 없는 경로 탐색(unauthenticated path traversal) 취약점입니다."
+  },
+  {
+    "source": "thn",
+    "title": "The Fastest Path to AI Adoption Runs Through Security",
+    "desc": "Security leaders who build fast, visible paths to AI adoption are becoming the most valued partners in their organizations. AI governance done right gives security teams the visibility they need, employees the tools they want, and CISOs the strategic influence they have earned.\n\nAccording to McKinse",
+    "url": "https://thehackernews.com/2026/07/the-fastest-path-to-ai-adoption-runs.html",
+    "date": "2026-07-22T17:28:00",
+    "title_ko": "AI 도입을 위한 가장 빠른 길은 보안을 거쳐야 한다",
+    "desc_ko": "AI 도입을 위한 신속하고 투명한 경로를 마련하는 보안 책임자들은 조직 내에서 가장 가치 있는 파트너로 자리매김하고 있습니다. 올바르게 수행된 AI 거버넌스는 보안 팀에 필요한 가시성을, 직원들에게 원하는 도구를, 그리고 CISO에게는 그들이 쌓아온 전략적 영향력을 제공합니다.\n\n맥킨지에 따르면"
+  },
+  {
+    "source": "thn",
+    "title": "OpenAI Says Its AI Models Escaped Sandbox, Targeted Hugging Face to Cheat Benchmark",
+    "desc": "OpenAI on Tuesday said a combination of its artificial intelligence (AI) models, including GPT-5.6 Sol and an \"even more capable pre-release model,\" was behind the security incident that targeted Hugging Face's production infrastructure last week.\n\nThe AI company said the models were operating with ",
+    "url": "https://thehackernews.com/2026/07/openai-says-its-own-ai-models-escaped.html",
+    "date": "2026-07-22T17:00:02",
+    "title_ko": "오픈AI, 자사 AI 모델이 샌드박스를 벗어나 허깅 페이스(Hugging Face)를 표적으로 삼아 벤치마크 결과를 조작했다고 밝혀",
+    "desc_ko": "오픈AI는 화요일, 지난주 허깅 페이스(Hugging Face)의 운영 인프라를 표적으로 삼은 보안 사고의 배후에는 GPT-5.6 Sol과 “이보다 훨씬 더 강력한 사전 출시 모델”을 포함한 자사의 인공지능(AI) 모델들이 복합적으로 작용했다고 밝혔다.\n\n이 AI 기업은 해당 모델들이 "
+  },
+  {
+    "source": "thn",
+    "title": "Why Modern SOCs Need Multi-Layered Detections",
+    "desc": "The cycle is over. For years, cybersecurity followed a familiar pattern: defenses improved, attackers adapted, and the back-and-forth continued. Today, AI-equipped attackers are simply outpacing defenses. Most intrusions now bypass endpoint and malware-based detection entirely.\n\nThe CrowdStrike Glob",
+    "url": "https://thehackernews.com/2026/07/why-modern-socs-need-multi-layered.html",
+    "date": "2026-07-22T16:55:35",
+    "title_ko": "현대적인 SOC에 다층적 탐지 기능이 필요한 이유",
+    "desc_ko": "이러한 순환은 끝났습니다. 수년 동안 사이버 보안은 익숙한 패턴을 반복해 왔습니다. 방어 체계가 강화되면 공격자들이 이에 적응하고, 이러한 공방은 계속 이어졌습니다. 하지만 오늘날 AI를 활용하는 공격자들은 방어 체계를 훨씬 앞지르고 있습니다. 현재 대부분의 침입 시도는 엔드포인트 및 악성코드 기반 탐지 시스템을 완전히 우회하고 있습니다.\n\nCrowdStrike Glob"
+  },
+  {
+    "source": "thn",
+    "title": "Police Dismantle Kratos Phishing Kit Built to Steal Microsoft 365 Sessions and Bypass MFA",
+    "desc": "German and US law enforcement have taken down the core infrastructure of Kratos, described by German investigators as one of the world's most widely used criminal phishing kits, and Indonesian authorities arrested the man they say developed and ran it.\n\nIn a joint announcement on Monday, the Frankfu",
+    "url": "https://thehackernews.com/2026/07/police-dismantle-kratos-phishing-kit.html",
+    "date": "2026-07-22T12:08:45",
+    "title_ko": "경찰, 마이크로소프트 365 세션을 탈취하고 다단계 인증(MFA)을 우회하도록 제작된 ‘크라토스(Kratos)’ 피싱 키트 적발",
+    "desc_ko": "독일과 미국의 법 집행 당국은 독일 수사관들이 “세계에서 가장 널리 사용되는 범죄용 피싱 키트 중 하나”라고 설명한 ‘크라토스(Kratos)’의 핵심 인프라를 무력화했으며, 인도네시아 당국은 이를 개발하고 운영한 것으로 지목된 남성을 체포했다.\n\n월요일 발표된 공동 성명에서 프랑크푸르트"
+  },
+  {
+    "source": "thn",
+    "title": "Trojanized Newtonsoft.Json Fork Hides Game-Rigging Code in a Working Library",
+    "desc": "Cybersecurity researchers have discovered a NuGet typosquat that's unlike the typical information-stealing malware distributed via package registries: usual info-stealers: it's designed to rig live game results on Digitain.\n\nThe package, named \"Newtonsoftt.Json.Net,\" masquerades as the Newtonsoft.Js",
+    "url": "https://thehackernews.com/2026/07/trojanized-newtonsoftjson-fork-hides.html",
+    "date": "2026-07-22T11:30:06",
+    "title_ko": "트로이 목마가 심어진 Newtonsoft.Json 포크 버전이 정상 작동하는 라이브러리에 게임 조작 코드를 숨기고 있다",
+    "desc_ko": "사이버보안 연구원들이 패키지 레지스트리를 통해 유포되는 일반적인 정보 탈취형 악성코드와는 다른 NuGet 타이포스쿼트를 발견했습니다. 일반적인 정보 탈취형 악성코드와 달리, 이 악성코드는 Digitain의 실시간 게임 결과를 조작하도록 설계되었습니다.\n\n\"Newtonsoftt.Json.Net\"이라는 이름의 이 패키지는 Newtonsoft.Js로 위장하고 있습니다."
+  },
+  {
+    "source": "thn",
+    "title": "Microsoft Azure DevOps MCP Flaw Lets Hidden PR Comments Hijack AI Review Agents",
+    "desc": "A single invisible comment in an Azure DevOps pull request can turn a reviewer's own AI coding agent against them, driving it into projects the attacker has no rights to reach and quietly leaking what it finds.\n\nThe flaw is in Microsoft's official Azure DevOps MCP server, and it works because one of",
+    "url": "https://thehackernews.com/2026/07/microsoft-azure-devops-mcp-flaw-lets.html",
+    "date": "2026-07-22T10:27:52",
+    "title_ko": "마이크로소프트 Azure DevOps MCP의 취약점으로 인해 숨겨진 PR 댓글이 AI 검토 에이전트를 탈취할 수 있음",
+    "desc_ko": "Azure DevOps 풀 리퀘스트에 포함된 단 하나의 보이지 않는 코멘트만으로도, 검토자의 AI 코딩 에이전트가 검토자 자신에게 등을 돌리게 되어, 공격자가 접근 권한이 없는 프로젝트로 에이전트를 유도하고, 에이전트가 발견한 정보를 은밀하게 유출할 수 있습니다.\n\n이 취약점은 마이크로소프트의 공식 Azure DevOps MCP 서버에 존재하며, 이는 다음 중 하나 때문에 발생합니다."
+  },
+  {
+    "source": "thn",
     "title": "Apple Fixes Hide My Email Bug That Exposed Real Addresses in Mail Logs",
     "desc": "Apple has moved to address a security flaw in its Hide My Email service that enabled users' real email addresses to be unmasked, effectively undermining the feature's privacy guarantees.\n\n404 Media reported Tuesday that a fix for the issue was deployed by Apple on July 3, 2026, after more than a yea",
     "url": "https://thehackernews.com/2026/07/apple-fixes-hide-my-email-bug-that.html",
@@ -14,8 +104,8 @@
     "desc": "Hidden text on a web page was enough to make Kiro, AWS's agentic coding IDE, rewrite its own configuration file and run an attacker's code on a developer's machine, with no approval step able to stop it.\n\nIntezer, in research with Kodem Security, found that a request as ordinary as asking Kiro to su",
     "url": "https://thehackernews.com/2026/07/aws-kiro-flaw-let-poisoned-web-page.html",
     "date": "2026-07-21T21:36:12",
-    "title_ko": "AWS Kiro의 취약점으로 인해 악성 웹 페이지가 해당 서비스의 구성을 재작성하고 코드를 실행할 수 있게 됨",
-    "desc_ko": "웹 페이지에 숨겨진 텍스트만으로도 AWS의 에이전트형 코딩 IDE인 Kiro가 자체 구성 파일을 재작성하고 개발자의 컴퓨터에서 공격자의 코드를 실행하게 만들 수 있었으며, 이를 막을 수 있는 승인 단계는 전혀 없었습니다.\n\nIntezer는 Kodem Security와 공동으로 진행한 연구에서, Kiro에게 su 명령을 요청하는 것처럼 평범한 요청만으로도"
+    "title_ko": "AWS Kiro의 취약점으로 인해 악성 웹 페이지가 해당 서비스의 구성을 재작성하고 코드를 실행할 수 있게 되었다",
+    "desc_ko": "웹 페이지에 숨겨진 텍스트만으로도 AWS의 에이전트 기반 코딩 IDE인 Kiro가 자체 구성 파일을 재작성하고 개발자의 컴퓨터에서 공격자의 코드를 실행하게 만들 수 있었으며, 이를 막을 수 있는 승인 단계는 전혀 없었습니다.\n\nIntezer는 Kodem Security와 공동으로 진행한 연구에서, Kiro에게 su 명령을 요청하는 것처럼 평범한 요청만으로도"
   },
   {
     "source": "thn",
@@ -42,7 +132,7 @@
     "url": "https://thehackernews.com/2026/07/qilin-ransomware-attackers-exploit-pan.html",
     "date": "2026-07-21T19:34:57",
     "title_ko": "‘Qilin’ 랜섬웨어 공격자들이 초기 접근을 위해 PAN-OS 인증 우회 취약점을 악용",
-    "desc_ko": "악성 행위자들이 현재 패치된 팔로알토 네트웍스(Palo Alto Networks) PAN-OS의 고위험 취약점을 침투 경로로 악용해 피해자 환경에 Qilin(일명 Agenda) 랜섬웨어를 배포하는 것이 관찰되었습니다.\n\nArctic Wolf Labs는 2026년 6월, 해당 취약점 악용으로 시작된 다수의 침입 사건을 조사했다고 밝혔습니다."
+    "desc_ko": "악성 행위자들이 현재 패치된 팔로알토 네트웍스(Palo Alto Networks) PAN-OS의 고위험 취약점을 침투 경로로 악용해 피해자 환경에 Qilin(일명 Agenda) 랜섬웨어를 배포하는 것이 포착되었습니다.\n\nArctic Wolf Labs는 2026년 6월, 해당 취약점 악용으로 시작된 다수의 침입 사건을 조사했다고 밝혔습니다."
   },
   {
     "source": "thn",
@@ -114,7 +204,7 @@
     "url": "https://thehackernews.com/2026/07/fakegit-campaign-uses-7600-github.html",
     "date": "2026-07-20T23:53:03",
     "title_ko": "‘FakeGit’ 캠페인이 7,600개의 GitHub 저장소를 이용해 SmartLoader 악성코드를 유포하고 있다",
-    "desc_ko": "사이버보안 연구원들이 약 7,600개의 악성 GitHub 저장소를 발견했는데, 이 중 800개 이상은 인공지능(AI) 스킬이나 MCP(Model Context Protocol) 서버로 위장하여 ‘FakeGit’이라는 코드명의 진행 중인 캠페인의 일환으로 ‘SmartLoader’로 알려진 악성코드 계열을 유포하고 있는 것으로 밝혀졌다.\n\n\"Fa"
+    "desc_ko": "사이버보안 연구원들이 약 7,600개의 악성 GitHub 저장소를 발견했는데, 이 중 800개 이상은 인공지능(AI) 스킬이나 MCP(Model Context Protocol) 서버로 위장하여 ‘FakeGit’이라는 코드명의 진행 중인 캠페인의 일환으로 ‘SmartLoader’로 알려진 악성코드 계열을 유포하고 있는 것으로 나타났습니다.\n\n\"Fa"
   },
   {
     "source": "thn",
@@ -123,7 +213,7 @@
     "url": "https://thehackernews.com/2026/07/exposed-server-reveals-ai-assisted.html",
     "date": "2026-07-20T22:59:50",
     "title_ko": "노출된 서버, WebDAV 악성코드 캠페인의 배후에 있는 AI 기반 피싱 툴킷 밝혀내",
-    "desc_ko": "한 악성코드 운영자가 배포 서버를 완전히 노출해 둔 틈을 타, Rapid7이 해당 툴킷 전체를 확보했습니다. 이 툴킷에는 미끼 템플릿, 파일명 위장 테스트, 실행 실험, 드로퍼, 빌더 노트, 그리고 두 개의 캠페인 체인을 포함한 총 1,048개의 파일이 포함되어 있었습니다. 그중 하나는 이미 멕시코의 Windows 사용자를 대상으로 가동 중이었으며, "
+    "desc_ko": "한 악성코드 운영자가 배포 서버를 완전히 노출해 둔 틈을 타, Rapid7이 해당 툴킷 전체를 확보했습니다. 이 툴킷에는 미끼 템플릿, 파일명 위장 테스트, 실행 실험, 드로퍼, 빌더 노트, 그리고 두 개의 캠페인 체인을 포함한 총 1,048개의 파일이 포함되어 있었습니다. 그중 하나는 이미 멕시코의 Windows 사용자를 대상으로 실행 중이었으며, "
   },
   {
     "source": "thn",
@@ -132,7 +222,7 @@
     "url": "https://thehackernews.com/2026/07/hollowgraph-malware-hides-c2-and-stolen.html",
     "date": "2026-07-20T20:03:43",
     "title_ko": "HollowGraph 악성코드는 2050년으로 날짜가 표시된 Microsoft 365 이벤트에 C2 및 탈취한 파일을 숨깁니다",
-    "desc_ko": "최근 발견된 스파이웨어 임플란트가 탈취한 Microsoft 365 캘린더를 명령 전달 경로로 활용해, 운영자의 지시를 심어두고 2050년으로 날짜가 설정된 캘린더 일정에 첨부 파일 형태로 훔친 파일을 몰래 유출해 온 것으로 드러났다.\n\n이 악성코드를 ‘HollowGraph’라고 명명한 Group-IB는 이러한 접근 방식이"
+    "desc_ko": "최근 발견된 스파이웨어 임플란트가 탈취한 Microsoft 365 캘린더를 명령 전달 경로로 활용해, 2050년으로 날짜가 설정된 캘린더 일정에 운영자의 지시를 심어두고 훔친 파일을 첨부 파일 형태로 몰래 유출해 온 것으로 드러났다.\n\n이 악성코드를 ‘HollowGraph’라고 명명한 Group-IB는 이러한 접근 방식이"
   },
   {
     "source": "thn",
@@ -158,8 +248,8 @@
     "desc": "The industry spent the initial months after Anthropic's April 7 Mythos reveal focused on volume. How many new CVEs would Mythos add to an already overloaded pipeline? How quickly would the flood of AI-driven discovery overwhelm triage capabilities? How long would it take adversaries to weaponize Myt",
     "url": "https://thehackernews.com/2026/07/mythos-didnt-break-your-security.html",
     "date": "2026-07-20T17:00:00",
-    "title_ko": "Mythos가 여러분의 보안 프로그램을 무력화시킨 것이 아닙니다. 보안 취약 기간이 원인이었을 수 있습니다.",
-    "desc_ko": "업계는 4월 7일 앤트로픽(Anthropic)이 ‘마이토스(Mythos)’를 공개한 후 초기 몇 달 동안 ‘양’에 초점을 맞췄다. 이미 과부하 상태인 처리 파이프라인에 마이토스가 얼마나 많은 새로운 CVE를 추가하게 될까? AI 기반의 발견 사례가 쏟아지면서 선별 대응 능력이 얼마나 빨리 한계에 부딪힐까? 공격자들이 마이토스를 악용하는 데까지 얼마나 걸릴까?"
+    "title_ko": "Mythos가 귀사의 보안 프로그램을 무력화한 것이 아닙니다. 보안 취약 기간이 원인이었을 수 있습니다.",
+    "desc_ko": "업계는 4월 7일 앤트로픽(Anthropic)이 ‘마이토스(Mythos)’를 공개한 후 처음 몇 달 동안 ‘양’에 초점을 맞췄다. 이미 과부하 상태인 처리 파이프라인에 마이토스가 얼마나 많은 새로운 CVE를 추가하게 될까? AI에 의해 촉발된 발견 사례의 홍수가 선별 능력을 얼마나 빨리 압도하게 될까? 공격자들이 마이토스를 악용하는 데 얼마나 걸릴까?"
   },
   {
     "source": "thn",
@@ -186,7 +276,7 @@
     "url": "https://thehackernews.com/2026/07/worlds-largest-ai-model-repository.html",
     "date": "2026-07-20T10:57:26",
     "title_ko": "세계 최대 규모의 AI 모델 저장소 ‘Hugging Face’, 자율 AI 에이전트에 의해 해킹당해",
-    "desc_ko": "아이러니하게도, 오픈소스 인공지능(AI) 플랫폼인 Hugging Face는 자율 AI 에이전트 시스템에 의해 해킹을 당했다고 밝혔다.\n\n이 회사는 지난주 초 자사의 운영 인프라를 겨냥한 이 사건을 탐지하고 대응했다고 전했다.\n\n\"우리는..."
+    "desc_ko": "아이러니하게도, 오픈소스 인공지능(AI) 플랫폼인 Hugging Face는 자율 AI 에이전트 시스템에 의해 해킹을 당했다고 밝혔다.\n\n이 회사는 지난주 초 자사의 운영 인프라를 겨냥한 이 사건을 탐지하고 대응했다고 전했다.\n\n“우리는…"
   },
   {
     "source": "thn",
@@ -213,7 +303,7 @@
     "url": "https://thehackernews.com/2026/07/uac-0145-uses-clickfix-captchas-to.html",
     "date": "2026-07-19T19:00:55",
     "title_ko": "UAC-0145, ClickFix CAPTCHA를 이용해 우크라이나 기기에 악성코드를 유포",
-    "desc_ko": "러시아 정부가 후원하는 위협 행위자들이 악명 높은 ‘ClickFix’ 전략을 활용해 우크라이나 내 표적들을 속여, 피해자들이 자신의 컴퓨터에 데이터 탈취 악성코드를 직접 설치하도록 유도하는 것이 포착되었다.\n\n우크라이나 컴퓨터 비상 대응팀(CERT-UA)에 따르면, 이러한 활동은 UAC의 소행으로 밝혀졌다."
+    "desc_ko": "러시아 정부가 후원하는 위협 행위자들이 악명 높은 ‘ClickFix’ 전략을 활용해 우크라이나 내 표적들을 속여, 이들이 자신의 컴퓨터에 데이터 탈취 악성코드를 감염시키도록 유도하는 것이 포착되었다.\n\n우크라이나 컴퓨터 비상 대응팀(CERT-UA)에 따르면, 이러한 활동은 UAC의 소행으로 지목되었다."
   },
   {
     "source": "thn",
@@ -239,7 +329,7 @@
     "desc": "Eleven bytes will make an unpatched OpenSSL server set aside up to 131 KB of memory for a message that never arrives. On the glibc systems Okta tested, that memory is gone until the process restarts.\n\nOpenSSL shipped the HollowByte fix in June with no CVE, no advisory, and no changelog entry pointin",
     "url": "https://thehackernews.com/2026/07/openssl-hollowbyte-flaw-could-freeze.html",
     "date": "2026-07-18T01:50:53",
-    "title_ko": "OpenSSL의 HollowByte 취약점은 11바이트 길이의 TLS 요청으로 인해 서버 메모리를 정지시킬 수 있다",
+    "title_ko": "OpenSSL의 HollowByte 취약점은 11바이트 길이의 TLS 요청으로 인해 서버 메모리를 멈출 수 있다",
     "desc_ko": "11바이트만으로도 패치되지 않은 OpenSSL 서버가 결코 도착하지 않을 메시지를 위해 최대 131KB의 메모리를 할당하게 됩니다. Okta가 테스트한 glibc 시스템에서, 해당 메모리는 프로세스가 재시작될 때까지 복구되지 않습니다.\n\nOpenSSL은 지난 6월 CVE 번호, 보안 권고문, 변경 로그 항목 없이 HollowByte 수정 사항을 배포했습니다."
   },
   {
@@ -249,7 +339,7 @@
     "url": "https://thehackernews.com/2026/07/seven-malicious-vite-npm-packages-use.html",
     "date": "2026-07-18T00:24:51",
     "title_ko": "7개의 악성 Vite npm 패키지가 블록체인 C2를 이용해 RAT를 유포하고 있다",
-    "desc_ko": "사이버보안 연구진들은 소프트웨어 공급망 공격의 일환으로 Vite 프론트엔드 툴링 생태계를 표적으로 삼은 7개의 악성 npm 패키지 군을 발견했습니다.\n\nCheckmarx가 ‘ViteVenom’이라는 코드명을 붙인 이 악성 패키지 캠페인은, 이전에"
+    "desc_ko": "사이버보안 연구진들은 소프트웨어 공급망 공격의 일환으로 Vite 프론트엔드 툴링 생태계를 표적으로 삼은 7개의 악성 npm 패키지 집단을 발견했습니다.\n\nCheckmarx가 ‘ViteVenom’이라는 코드명을 붙인 이 악성 패키지 캠페인은, 이전에"
   },
   {
     "source": "thn",
@@ -276,7 +366,7 @@
     "url": "https://thehackernews.com/2026/07/north-korea-linked-hackers-hide.html",
     "date": "2026-07-17T19:18:56",
     "title_ko": "가짜 코딩 테스트를 통해 SVG 깃발 이미지에 숨겨진 OtterCookie 계열 악성코드를 유포",
-    "desc_ko": "‘Contagious Interview’ 캠페인과 연계된 북한 해커들이 가짜 채용 공고와 코딩 챌린지를 활용한 캠페인의 일환으로, SVG 이미지 파일에 스테가노그래피 기법을 사용하여 악성 페이로드를 은닉하는 것이 포착되었습니다.\n\n“해당 프로젝트를 실행한 모든 사용자는 4단계로 구성된 페이로드를 받게 되었으며…”"
+    "desc_ko": "‘Contagious Interview’ 캠페인과 연계된 북한 해커들이 가짜 채용 공고와 코딩 챌린지를 활용한 캠페인의 일환으로, SVG 이미지 파일에 스테가노그래피 기법을 사용하여 악성 페이로드를 숨기는 것이 포착되었습니다.\n\n“이 프로젝트를 실행한 모든 사용자는 4단계로 구성된 페이로드를 받게 되었는데…”"
   },
   {
     "source": "thn",
@@ -312,7 +402,7 @@
     "url": "https://thehackernews.com/2026/07/acr-stealer-uses-clickfix-lures-to.html",
     "date": "2026-07-17T14:26:39",
     "title_ko": "ACR 스틸러, ClickFix 미끼를 이용해 브라우저 토큰 및 Microsoft 365 파일을 탈취",
-    "desc_ko": "2024년부터 유포되고 있는 정보 탈취형 악성코드인 ‘ACR Stealer’는 저장된 브라우저 비밀번호, 활성 세션 토큰, PDF 파일, Microsoft 365 문서, 그리고 동기화된 OneDrive 및 SharePoint 폴더의 파일을 훔쳐 기업 네트워크 밖으로 유출하고 있습니다.\n\n이 악성코드는 누군가가 ‘실행’ 상자에 명령어를 붙여넣고 Enter 키를 누르는 방식으로 침투합니다."
+    "desc_ko": "2024년부터 유포되고 있는 정보 탈취형 악성코드인 ‘ACR Stealer’는 저장된 브라우저 비밀번호, 활성 세션 토큰, PDF 파일, Microsoft 365 문서, 그리고 동기화된 OneDrive 및 SharePoint 폴더의 파일을 훔쳐 기업 네트워크 밖으로 유출하고 있습니다.\n\n이 악성코드는 누군가가 ‘실행’ 상자에 명령어를 붙여넣고"
   },
   {
     "source": "thn",
@@ -329,7 +419,7 @@
     "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added a newly patched security flaw impacting Microsoft SharePoint Server to its Known Exploited Vulnerabilities (KEV) catalog, requiring Federal Civilian Executive Branch (FCEB) agencies to apply the fixes by July 19, 2026",
     "url": "https://thehackernews.com/2026/07/cisa-adds-exploited-sharepoint-rce-zero.html",
     "date": "2026-07-17T12:12:23",
-    "title_ko": "CISA, 악용된 SharePoint RCE 제로데이 취약점 CVE-2026-58644를 KEV에 추가",
+    "title_ko": "CISA, 악용된 SharePoint 원격 코드 실행(RCE) 제로데이 취약점 CVE-2026-58644를 KEV에 추가",
     "desc_ko": "미국 사이버보안·인프라보안국(CISA)은 목요일, 마이크로소프트 셰어포인트 서버에 영향을 미치는 새로 패치된 보안 결함을 ‘알려진 악용 취약점(KEV)’ 목록에 추가했으며, 연방 민간 행정부(FCEB) 산하 기관들이 2026년 7월 19일까지 해당 수정 사항을 적용할 것을 요구했다."
   },
   {
@@ -348,7 +438,7 @@
     "url": "https://thehackernews.com/2026/07/threatsday-game-cheat-spyware-24-hour.html",
     "date": "2026-07-16T21:11:15",
     "title_ko": "ThreatsDay: 게임 치트 스파이웨어, 24시간 랜섬웨어, 크롬 동기화 추적 + 그 외 12가지 소식",
-    "desc_ko": "이번 주에 발생한 많은 문제는 겉보기에는 별다른 문제가 없어 보이는 것에서 시작됩니다.\n\n익숙한 리포지토리. 유용한 설치 프로그램. 무해해 보이는 동기화 설정. 그러다 전달 과정이 잘못되어 기기가 다른 누군가와 통신을 시작하고, 피해는 설명할 틈도 없이 빠르게 확산됩니다.\n\n오래된 버그들이 다시 나타나고, 취약한 기본 설정들이 문제를 일으키고 있습니다."
+    "desc_ko": "이번 주에 발생한 많은 문제는 겉보기에는 별다른 문제가 없어 보이는 것에서 시작됩니다.\n\n익숙한 리포지토리. 유용한 설치 프로그램. 무해해 보이는 동기화 설정. 그러다 전달 과정이 잘못되어 기기가 다른 누군가와 통신을 시작하면, 피해는 설명할 틈도 없이 빠르게 퍼져 나갑니다.\n\n오래된 버그들이 다시 나타나고, 취약한 기본 설정들이 문제를 일으키고 있습니다."
   },
   {
     "source": "thn",
@@ -357,96 +447,6 @@
     "url": "https://thehackernews.com/2026/07/n8n-token-exchange-flaw-could-let.html",
     "date": "2026-07-16T19:03:25",
     "title_ko": "n8n 토큰 교환 기능의 취약점으로 인해 공격자가 다른 발행사의 사용자로 로그인할 수 있음",
-    "desc_ko": "워크플로우 자동화 플랫폼인 n8n이 로그인 시 잘못된 계정을 할당하는 문제가 발생했습니다. 두 개 이상의 외부 토큰 발급자를 신뢰하도록 구성된 엔터프라이즈 인스턴스에서, 이 플랫폼은 수신된 JWT를 ‘sub’ 클레임만을 기준으로 로컬 사용자와 매칭하고 ‘iss’를 무시했습니다.\n\n발행자 A에서 발급된 유효한 토큰에 포함된&nb"
-  },
-  {
-    "source": "thn",
-    "title": "New TELEPUZ Malware Spreads via ClickFix to Steal Data and Run Commands",
-    "desc": "Cybersecurity researchers have called attention to a new modular malware called TELEPUZ that's been spreading via websites infected with ClickFix lures since late April 2026.\n\n\"The malware is full-featured, lightweight, and modular,\" Elastic Security Labs researcher Cyril François said in a technica",
-    "url": "https://thehackernews.com/2026/07/new-telepuz-malware-spreads-via.html",
-    "date": "2026-07-16T18:20:13",
-    "title_ko": "새로운 ‘TELEPUZ’ 악성코드가 ClickFix를 통해 확산되며 데이터를 탈취하고 명령을 실행하고 있다",
-    "desc_ko": "사이버보안 연구원들은 2026년 4월 말부터 ClickFix 미끼에 감염된 웹사이트를 통해 확산되고 있는 ‘TELEPUZ’라는 새로운 모듈형 악성코드에 주목하고 있다.\n\n엘라스틱 시큐리티 랩(Elastic Security Labs)의 연구원 시릴 프랑수아(Cyril François)는 테크니카(Technica)와의 인터뷰에서 “이 악성코드는 기능이 풍부하고, 용량이 작으며, 모듈식 구조를 갖추고 있다”고 말했다."
-  },
-  {
-    "source": "thn",
-    "title": "New ClickLock macOS Stealer Kills Apps Every 210ms Until Victims Type Their Password",
-    "desc": "ClickLock Stealer, a new macOS infostealer, answers a victim's refusal by killing their apps on a loop until they hand over the login password. It arrives as a command pasted into Terminal, asks for the password behind a fake system dialog, and when the victim cancels, installs two LaunchAgents and ",
-    "url": "https://thehackernews.com/2026/07/new-clicklock-macos-stealer-kills-apps.html",
-    "date": "2026-07-16T18:03:42",
-    "title_ko": "새로운 ClickLock macOS 정보 탈취 악성코드는 피해자가 비밀번호를 입력할 때까지 210ms마다 앱을 강제 종료합니다.",
-    "desc_ko": "새로운 macOS 정보 탈취형 악성코드인 ‘ClickLock Stealer’는 피해자가 거부할 경우, 로그인 비밀번호를 알려줄 때까지 피해자의 앱을 반복적으로 강제 종료합니다. 이 악성코드는 터미널에 붙여넣은 명령어 형태로 유입되며, 가짜 시스템 대화상자를 통해 비밀번호를 요구하고, 피해자가 이를 취소하면 두 개의 LaunchAgent를 설치한 뒤 "
-  },
-  {
-    "source": "thn",
-    "title": "20+ Hijacked Government Websites Became an Attack Channel",
-    "desc": "More than 20 Brazilian government websites were hijacked and turned into malware delivery channels in an active PhantomEnigma campaign uncovered by ANY.RUN, a leading provider of interactive malware analysis and threat intelligence solutions.\n\nThe investigation revealed previously undocumented backd",
-    "url": "https://thehackernews.com/2026/07/20-hijacked-government-websites.html",
-    "date": "2026-07-16T17:28:00",
-    "title_ko": "20개 이상의 해킹당한 정부 웹사이트가 공격 경로로 이용되었다",
-    "desc_ko": "상호작용형 악성코드 분석 및 위협 인텔리전스 솔루션 분야의 선도 기업인 ANY.RUN이 밝혀낸 ‘PhantomEnigma’ 캠페인의 활동 과정에서, 20개 이상의 브라질 정부 웹사이트가 해킹당해 악성코드 유포 경로로 악용된 것으로 드러났습니다.\n\n조사 결과, 이전에 보고된 바 없는 백도어가"
-  },
-  {
-    "source": "thn",
-    "title": "New Agent Data Injection Attack Can Make AI Agents Misclick or Run Attacker Commands",
-    "desc": "Ask an AI agent to summarize the reviews on a product page, and a single planted review can make it click \"Buy Now\" instead. Ask a coding assistant to apply a maintainer's fix from a GitHub thread, and a fake comment can make it run a stranger's command on your computer.\n\nNeither trick hijacks the a",
-    "url": "https://thehackernews.com/2026/07/new-agent-data-injection-attack-can.html",
-    "date": "2026-07-16T17:02:28",
-    "title_ko": "새로운 에이전트 데이터 주입 공격으로 인해 AI 에이전트가 의도하지 않은 클릭을 하거나 공격자의 명령을 실행할 수 있다",
-    "desc_ko": "AI 에이전트에게 제품 페이지의 리뷰를 요약해 달라고 요청하면, 단 한 건의 조작된 리뷰만으로도 AI가 “지금 구매하기” 버튼을 클릭하게 만들 수 있습니다. 코딩 도우미에게 GitHub 스레드에 올라온 유지보수자의 수정 사항을 적용해 달라고 요청하면, 가짜 댓글 하나만으로도 AI가 낯선 사람의 명령을 사용자의 컴퓨터에서 실행하게 만들 수 있습니다.\n\n이 두 가지 수법 모두 AI를 탈취하지는 않습니다."
-  },
-  {
-    "source": "thn",
-    "title": "Daxin Resurfaces in Taiwan Alongside Stupig Pre-Login SYSTEM Backdoor",
-    "desc": "An advanced malware previously attributed to a China-linked threat actor has resurfaced after more than four years within a Taiwan manufacturing firm, along with a previously unreported backdoor dubbed Stupig.\n\nDaxin (\"srt64.sys\"), as the kernel-mode rootkit is referred to, was first documented by B",
-    "url": "https://thehackernews.com/2026/07/daxin-resurfaces-in-taiwan-alongside.html",
-    "date": "2026-07-16T16:47:23",
-    "title_ko": "Daxin, Stupig 사전 로그인 SYSTEM 백도어와 함께 대만에서 다시 등장",
-    "desc_ko": "이전에 중국과 연계된 위협 행위자의 소행으로 지목되었던 정교한 악성코드가, ‘Stupig’라는 이름의 이전에 보고된 바 없는 백도어와 함께 대만 제조 기업 내에서 4년여 만에 다시 발견되었다.\n\n커널 모드 루트킷인 ‘Daxin(“srt64.sys”)’은 B사에 의해 최초로 기록되었으며,"
-  },
-  {
-    "source": "thn",
-    "title": "AI Can Find Bugs, But Human Knowledge Still Proves Them",
-    "desc": "Artificial intelligence (AI) is changing offensive security, but it has not changed the standard that matters most: a finding has to be proven before it becomes useful. AI-assisted tools can read code quickly, generate payloads, summarize attack surfaces, explain unfamiliar APIs, and run repetitive ",
-    "url": "https://thehackernews.com/2026/07/ai-can-find-bugs-but-human-knowledge.html",
-    "date": "2026-07-16T15:40:00",
-    "title_ko": "AI는 버그를 찾아낼 수 있지만, 이를 입증하는 것은 여전히 인간의 지식이다",
-    "desc_ko": "인공지능(AI)은 공격적 보안 분야를 변화시키고 있지만, 가장 중요한 기준은 여전히 변하지 않았습니다. 바로 발견된 취약점이 유용하게 활용되기 위해서는 반드시 검증되어야 한다는 점입니다. AI 기반 도구는 코드를 신속하게 분석하고, 페이로드를 생성하며, 공격 표면을 요약하고, 익숙하지 않은 API를 설명하며, 반복적인 작업을 수행할 수 있습니다. "
-  },
-  {
-    "source": "thn",
-    "title": "Unpatched Shark Vacuum Flaw Could Let Attackers Control Other Vacuums Region-Wide",
-    "desc": "Pull the certificate off the flash of a Shark RV2320EDUS robot vacuum, and you can run root commands on other people's Shark vacuums across the same AWS region: watch the camera, drive the robot, read the map of the house, and take the Wi-Fi password in plaintext.\n\nA researcher publishing under the ",
-    "url": "https://thehackernews.com/2026/07/unpatched-shark-vacuum-flaw-could-let.html",
-    "date": "2026-07-16T14:53:19",
-    "title_ko": "패치되지 않은 ‘샤크’ 청소기의 취약점으로 인해 공격자가 해당 지역 내의 다른 청소기들을 제어할 수 있게 될 수 있다",
-    "desc_ko": "Shark RV2320EDUS 로봇 청소기의 플래시 메모리에서 인증서를 추출하면, 동일한 AWS 리전 내의 다른 사용자들이 사용하는 Shark 청소기에서 루트 권한 명령을 실행할 수 있습니다. 카메라 영상을 확인하고, 로봇을 조종하며, 집의 지도를 읽어들이고, Wi-Fi 비밀번호를 평문으로 가져올 수 있습니다.\n\n한 연구자가 "
-  },
-  {
-    "source": "thn",
-    "title": "OpenAI’s GPT-Red Automates Prompt Injection Testing to Harden GPT-5.6 Sol",
-    "desc": "OpenAI has disclosed details of GPT-Red, an internal automated red-teaming model that scales prompt injection vulnerability discovery with an aim to fix issues before the tools are deployed widely.\n\n\"GPT‑Red is a strong red-teamer, and our previous models are highly vulnerable to its prompt injectio",
-    "url": "https://thehackernews.com/2026/07/openais-gpt-red-automates-prompt.html",
-    "date": "2026-07-16T14:12:31",
-    "title_ko": "OpenAI의 GPT-Red는 GPT-5.6 Sol의 보안을 강화하기 위해 프롬프트 주입 테스트를 자동화합니다.",
-    "desc_ko": "OpenAI는 도구가 널리 배포되기 전에 문제를 해결하기 위해 프롬프트 주입 취약점 탐지 능력을 확장하는 내부 자동화 레드팀 모델인 ‘GPT-Red’에 대한 세부 정보를 공개했다.\n\n“GPT-Red는 강력한 레드팀 모델이며, 당사의 기존 모델들은 이 모델의 프롬프트 주입 공격에 매우 취약하다.”"
-  },
-  {
-    "source": "thn",
-    "title": "Zoom Patches Critical Windows Flaw That Could Enable Account Takeover",
-    "desc": "Zoom has released security updates for a critical security flaw impacting Zoom Workplace for Windows that could facilitate account takeover.\n\nThe vulnerability, tracked as CVE-2026-53412 (CVSS score: 9.8), affects Zoom Workplace for Windows before version 7.0.0 and Zoom Workplace VDI Client for Wind",
-    "url": "https://thehackernews.com/2026/07/zoom-patches-critical-windows-flaw-that.html",
-    "date": "2026-07-16T12:52:44",
-    "title_ko": "Zoom, 계정 탈취를 초래할 수 있는 Windows의 중대한 취약점 패치",
-    "desc_ko": "Zoom은 계정 탈취를 유발할 수 있는 Windows용 Zoom Workplace의 심각한 보안 결함에 대한 보안 업데이트를 발표했습니다.\n\nCVE-2026-53412(CVSS 점수: 9.8)로 분류된 이 취약점은 버전 7.0.0 이전의 Windows용 Zoom Workplace 및 Windows용 Zoom Workplace VDI 클라이언트에 영향을 미칩니다."
-  },
-  {
-    "source": "thn",
-    "title": "TuxBot v3 Evolution Shows Signs of LLM-Assisted IoT Botnet Development",
-    "desc": "Cybersecurity researchers have disclosed details of a previously unreported Internet-of-Things (IoT) botnet framework dubbed TuxBot v3 Evolution that shows signs of being developed with assistance from a large language model (LLM), albeit with not so successful results.\n\n\"While the AI complied with ",
-    "url": "https://thehackernews.com/2026/07/tuxbot-v3-evolution-shows-signs-of-llm.html",
-    "date": "2026-07-16T00:13:08",
-    "title_ko": "TuxBot v3의 진화 양상은 대규모 언어 모델(LLM)을 활용한 IoT 봇넷 개발의 조짐을 보여준다",
-    "desc_ko": "사이버보안 연구진들은 ‘TuxBot v3 Evolution’이라는 이름의, 이전에 보고된 바 없는 사물인터넷(IoT) 봇넷 프레임워크에 대한 세부 내용을 공개했다. 이 프레임워크는 대규모 언어 모델(LLM)의 도움을 받아 개발된 것으로 보이지만, 그 결과는 그리 성공적이지 않은 것으로 나타났다.\n\n“AI는 "
+    "desc_ko": "워크플로우 자동화 플랫폼인 n8n이 로그인 시 잘못된 계정을 할당하는 문제가 발생했습니다. 두 개 이상의 외부 토큰 발급자를 신뢰하도록 구성된 엔터프라이즈 인스턴스에서, 이 플랫폼은 수신된 JWT를 ‘sub’ 클레임만으로 로컬 사용자와 매칭하고 ‘iss’를 무시했습니다.\n\n발행자 A에서 발급된 유효한 토큰에 포함된&nb"
   }
 ]
