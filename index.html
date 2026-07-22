@@ -245,10 +245,10 @@
 </header>
 
 <div class="stat-bar">
-  <div class="stat"><div class="stat-label">오늘 Vulnrichment</div><div class="stat-value" id="s-vul-today">—</div></div>
-  <div class="stat"><div class="stat-label">Business 저장 항목</div><div class="stat-value" id="s-biz-total">0</div></div>
-  <div class="stat"><div class="stat-label">Business Critical/High</div><div class="stat-value" id="s-biz-crit" style="color:var(--critical)">0</div></div>
-  <div class="stat"><div class="stat-label">오늘 보안 뉴스</div><div class="stat-value" id="s-news-today">—</div></div>
+  <div class="stat"><div class="stat-label">CISA KEV 총계</div><div class="stat-value" id="s-kev">—</div></div>
+  <div class="stat"><div class="stat-label">최근 30일 추가</div><div class="stat-value" id="s-new" style="color:var(--high)">—</div></div>
+  <div class="stat"><div class="stat-label">저장된 항목</div><div class="stat-value" id="s-saved">0</div></div>
+  <div class="stat"><div class="stat-label">Critical / High</div><div class="stat-value" id="s-crit" style="color:var(--critical)">—</div></div>
 </div>
 
 <div class="layout">
@@ -1523,8 +1523,8 @@ async function loadKev(force) {
 
     const ago30 = new Date(); ago30.setDate(ago30.getDate() - 30);
     const newCnt = kevAll.filter(k => new Date(k.added) >= ago30).length;
-    
-    
+    document.getElementById('s-kev').textContent = kevAll.length.toLocaleString();
+    document.getElementById('s-new').textContent = newCnt;
     document.getElementById('nb-kev').textContent = newCnt;
     document.getElementById('last-update').textContent = '마지막 갱신 ' + new Date().toLocaleString('ko-KR', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
 
@@ -1954,38 +1954,12 @@ function updateBadges() {
   const newsBm = bookmarks.filter(b => b.type === 'news');
   const notes = loadNotes();
   const memoCnt = Object.values(notes).filter(n => n.memos && n.memos.length).length;
+  document.getElementById('s-saved').textContent = bookmarks.length;
   document.getElementById('nb-saved-vuln').textContent = vulnBm.length;
   document.getElementById('nb-saved-news').textContent = newsBm.length;
   document.getElementById('nb-memos').textContent = memoCnt;
-  updateStatBar();
-}
-
-function updateStatBar() {
-  if (typeof mitreAll === 'undefined') return;
-  const today = new Date().toISOString().slice(0, 10);
-
-  // 오늘 Vulnrichment 수
-  const vulToday = mitreAll.filter(v => (v.updated || v.published || '') >= today).length;
-  const s1 = document.getElementById('s-vul-today');
-  if (s1) s1.textContent = mitreAll.length ? vulToday : '—';
-
-  // Business 저장 항목 수 + Critical/High
-  const bizNotes = loadBizNotes();
-  const bizKeys = Object.keys(bizNotes).filter(k => bizNotes[k].status);
-  const bizCritHigh = bizKeys.filter(k => {
-    const cveOrTitle = k.replace(/^biz_/, '');
-    const item = mitreAll.find(i => (i.cve || i.title) === cveOrTitle);
-    return item && ['CRITICAL', 'HIGH'].includes(item.severity);
-  }).length;
-  const s2 = document.getElementById('s-biz-total');
-  const s3 = document.getElementById('s-biz-crit');
-  if (s2) s2.textContent = bizKeys.length;
-  if (s3) s3.textContent = bizCritHigh;
-
-  // 오늘 보안 뉴스 수
-  const newsToday = newsAll.filter(n => (n.date || '') >= today).length;
-  const s4 = document.getElementById('s-news-today');
-  if (s4) s4.textContent = newsAll.length ? newsToday : '—';
+  const crit = vulnBm.filter(b => ['CRITICAL','HIGH'].includes((b.sev||'').toUpperCase())).length;
+  document.getElementById('s-crit').textContent = crit;
 }
 
 function statusColor(s) {
