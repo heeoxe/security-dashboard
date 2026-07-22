@@ -245,10 +245,10 @@
 </header>
 
 <div class="stat-bar">
-  <div class="stat"><div class="stat-label">CISA KEV 총계</div><div class="stat-value" id="s-kev">—</div></div>
-  <div class="stat"><div class="stat-label">최근 30일 추가</div><div class="stat-value" id="s-new" style="color:var(--high)">—</div></div>
-  <div class="stat"><div class="stat-label">저장된 항목</div><div class="stat-value" id="s-saved">0</div></div>
-  <div class="stat"><div class="stat-label">Critical / High</div><div class="stat-value" id="s-crit" style="color:var(--critical)">—</div></div>
+  <div class="stat"><div class="stat-label">오늘 Vulnrichment</div><div class="stat-value" id="s-vul-today">—</div></div>
+  <div class="stat"><div class="stat-label">Business 저장 항목</div><div class="stat-value" id="s-biz-total">0</div></div>
+  <div class="stat"><div class="stat-label">Business Critical/High</div><div class="stat-value" id="s-biz-crit" style="color:var(--critical)">0</div></div>
+  <div class="stat"><div class="stat-label">오늘 보안 뉴스</div><div class="stat-value" id="s-news-today">—</div></div>
 </div>
 
 <div class="layout">
@@ -367,7 +367,7 @@
     <!-- GitHub Vulnrichment -->
     <div id="panel-mitre" class="panel">
       <div style="font-size:12px;color:var(--text2);margin-bottom:1rem;padding:10px 12px;background:var(--bg3);border-radius:var(--radius);line-height:1.6">
-        <strong>CISA Vulnrichment</strong> — CISA가 직접 분석·보강한 CVE 데이터. Palo Alto, Cisco, Fortinet, Microsoft 등 <strong>상용 벤더 + 오픈소스 모두 포함</strong>. NVD 백로그 없이 빠르게 올라오며 SSVC, CVSS, CWE, CPE를 추가해 제공합니다. GitHub Actions가 매일 최근 30일치를 수집해 <code style="font-size:10px;background:var(--bg2);padding:1px 5px;border-radius:3px">vulnrichment.json</code>으로 저장합니다.
+        <strong>CISA Vulnrichment</strong> — CISA 분석 CVE 데이터 (SSVC, CVSS, CWE, CPE 추가 제공)
       </div>
       <div class="toolbar">
         <input id="mitre-q" type="text" placeholder="키워드, 벤더명, 제품명, CVE-YYYY-NNNNN..." />
@@ -434,7 +434,7 @@
       </div>
       <div style="font-size:11px;color:var(--text3);margin-bottom:1rem;display:flex;align-items:center;gap:8px">
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
-        CISA Alerts는 실시간 fetch · RSS 뉴스는 GitHub Actions로 매일 자동 갱신 (<code style="font-size:10px;background:var(--bg3);padding:1px 5px;border-radius:3px">news.json</code>)
+        The Hacker News 매일 자동 갱신 (<code style="font-size:10px;background:var(--bg3);padding:1px 5px;border-radius:3px">news.json</code>)
       </div>
       <div class="cards" id="news-list">
         <div class="loading"><div class="spinner"></div><br>뉴스 불러오는 중...</div>
@@ -520,8 +520,8 @@
         <div class="section-title">Gist 동기화 설정</div>
         <div class="card" style="margin-bottom:1rem">
           <div style="font-size:12px;color:var(--text2);line-height:1.7;margin-bottom:1rem">
-            메모·태그·상태를 GitHub Gist에 저장하면 어느 기기에서든 동기화돼요.<br>
-            토큰과 Gist ID는 이 브라우저의 <code style="font-size:11px;background:var(--bg3);padding:1px 5px;border-radius:3px">localStorage</code>에만 저장되며 외부로 전송되지 않아요.
+            GitHub Gist를 통한 메모·태그·상태 동기화<br>
+            토큰과 Gist ID는 이 브라우저의 <code style="font-size:11px;background:var(--bg3);padding:1px 5px;border-radius:3px">localStorage</code>에만 저장됨
           </div>
           <div style="display:flex;flex-direction:column;gap:10px">
             <div>
@@ -531,7 +531,7 @@
                   style="flex:1;height:36px;padding:0 12px;font-size:13px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);color:var(--text);outline:none;font-family:var(--font-mono, monospace)" />
                 <button class="btn" onclick="toggleTokenVis()">보기</button>
               </div>
-              <div style="font-size:11px;color:var(--text3);margin-top:4px">gist 스코프만 체크하면 됩니다</div>
+              <div style="font-size:11px;color:var(--text3);margin-top:4px">gist 스코프만 체크</div>
             </div>
             <div>
               <div class="detail-section-label" style="margin-bottom:6px">Gist ID</div>
@@ -736,8 +736,7 @@ function filterNews() {
   
   newsFiltered = newsAll.filter(n => {
     const itemSource = (n.source || '').toLowerCase();
-    
-    // 💡 벤더사 필터 꼬임 방지를 위해 포함(includes) 조건으로 유연하게 매칭합니다.
+ 
     if (src !== 'all') {
       if (src === 'cisa' && !itemSource.includes('cisa')) return false;
       if (src === 'thn' && !itemSource.includes('thn') && !itemSource.includes('hacker')) return false;
@@ -756,8 +755,6 @@ async function loadNews(force) {
   el.innerHTML = '<div class="loading"><div class="spinner"></div><br>뉴스 불러오는 중...</div>';
   newsAll = [];
 
-  // 💡 CISA 직접 fetch는 브라우저 차단(CORS)이 나므로 걷어내고,
-  // GitHub Actions가 수집해 준 안전한 통합본(news.json) 파일만 가져옵니다[cite: 104].
   try {
     const r = await fetch('./news.json'); // [cite: 104]
     if (r.ok) { // [cite: 104]
@@ -779,8 +776,6 @@ async function loadNews(force) {
     return; // [cite: 108]
   }
 
-  // 💡 [중요] 사용자가 처음에 'CISA Alerts' 메뉴를 누른 상태에서 뉴스를 켰을 때도 
-  // 바로 필터링이 먹히도록 filterNews()를 실행합니다.
   filterNews();
 }
 // ── /News ─────────────────────────────────────────
@@ -808,8 +803,8 @@ function switchBizTab(tab) {
   if (tabEl) tabEl.classList.add('on');
   const desc = document.getElementById('biz-tab-desc');
   if (desc) desc.textContent = tab === 'all'
-    ? 'Vulnrichment에서 키워드에 매칭되는 취약점만 표시됩니다.'
-    : `상태가 "${tab}"로 등록된 항목만 표시됩니다.`;
+    ? 'Vulnrichment에서 키워드에 매칭되는 취약점만 표시'
+    : `상태가 "${tab}"로 등록된 항목만 표시`;
   renderBusiness();
 }
 
@@ -931,7 +926,7 @@ function renderBusiness() {
 
   // 전체 매칭 탭
   if (!kws.length) {
-    el.innerHTML = `<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>키워드를 추가하면 관련 취약점이 자동으로 표시됩니다</div>`;
+    el.innerHTML = `<div class="empty"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>키워드를 추가하면 관련 취약점 자동으로 표시</div>`;
     badge.style.display = 'none';
     return;
   }
@@ -1024,7 +1019,7 @@ function openBizDetail(cveOrTitle) {
   } else {
     document.getElementById('dp-meta-section').innerHTML = `
       <div class="detail-section-label">상세 정보</div>
-      <div style="font-size:12px;color:var(--text3);padding:8px 0">Vulnrichment에서 더 이상 제공되지 않는 항목입니다.<br>메모와 상태는 그대로 유지됩니다.</div>`;
+      <div style="font-size:12px;color:var(--text3);padding:8px 0">최근 Vulnrichment이 아닙니다.</div>`;
     document.getElementById('dp-desc-section').innerHTML = '';
   }
 
@@ -1267,7 +1262,6 @@ function removeTag(t) {
 function renderDetailMemos(memos) {
   const el = document.getElementById('dp-memo-list');
   if (!memos || !memos.length) { el.innerHTML = ''; return; }
-  // 원본 인덱스 유지하면서 최신순 정렬
   const indexed = memos.map((m, i) => ({ m, i })).sort((a, b) => (b.m.createdAt || '').localeCompare(a.m.createdAt || ''));
   el.innerHTML = indexed.map(({ m, i }) => {
     const t = m.createdAt ? new Date(m.createdAt).toLocaleString('ko-KR', { month:'short', day:'numeric', hour:'2-digit', minute:'2-digit' }) : '';
@@ -1425,7 +1419,7 @@ function nvdCard(item) {
   const sv = isSaved(item.id);
   const cvss = item.cvss || 0;
   
-  // 💡 모든 상세 데이터를 북마크 객체(bm)에 바인딩
+  // 모든 상세 데이터를 북마크 객체(bm)에 바인딩
   const bm = { 
     id: item.id, 
     cve: item.cve, 
@@ -1441,7 +1435,7 @@ function nvdCard(item) {
 
   const note = loadNotes()[item.id] || {};
 
-  // 설명 첫 문장을 제목처럼 추출 (보통 "A vulnerability was found in X..." 형태)
+  // 설명 첫 문장을 제목처럼 추출
   const firstSentence = (item.desc || '').split(/(?<=\.)\s+/)[0] || '';
   const titleSummary = firstSentence.length > 100 ? firstSentence.slice(0, 100) + '…' : firstSentence;
 
@@ -1513,7 +1507,6 @@ async function loadKev(force) {
   const el = document.getElementById('kev-list');
   el.innerHTML = '<div class="loading"><div class="spinner"></div><br>CISA KEV 불러오는 중...</div>';
   try {
-    // 💡 내 레포지토리에 저장될 백업 파일을 읽도록 주소 변경
     const r = await fetch('./kev.json'); 
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     const d = await r.json();
@@ -1560,9 +1553,6 @@ function renderNvdPager() {
     <button class="btn" onclick="nvdPage=Math.min(${total-1},nvdPage+1);renderNvdPage()" ${nvdPage>=total-1?'disabled':''}>다음 →</button>`;
 }
 
-// ── MITRE CVE 패널 (GitHub Advisory Database 기반) ──
-// GitHub Actions(scripts/fetch-advisory.js)가 매일 GitHub Vulnrichment REST API를
-// 수집해 advisory.json으로 저장 → 이 패널은 그 정적 파일만 읽는다 (kev.json/news.json과 동일 패턴).
 let mitreAll = [], mitreFiltered = [], mitrePage = 0;
 const MITRE_PAGE = 15;
 
@@ -1661,7 +1651,7 @@ async function searchMitre() {
   mitrePage = 0;
   const kw = q.toLowerCase();
 
-  // vulnrichment.json 로컬 검색 — 벤더, 제품, CVE ID, 제목, 설명 모두 포함
+  // vulnrichment.json 로컬 검색 
   mitreFiltered = mitreAll.filter(it =>
     (it.cve || '').toLowerCase().includes(kw) ||
     (it.title || '').toLowerCase().includes(kw) ||
@@ -1704,7 +1694,7 @@ async function searchNvd() {
       url += `&cvssV3Severity=${sev}`;
     }
     
-    // 3. 검색어도 없고 심각도 선택도 안 했을 때 (최근 게시된 CVE 기준, 안전한 파라미터 사용)
+    // 3. 검색어도 없고 심각도 선택도 안 했을 때
     if (!q && !sev) {
       const now = new Date();
       // 안전하게 딱 30일 전부터 현재까지 게시(publish)된 CVE만 조회 (KEV와 동일 기간)
@@ -1959,12 +1949,37 @@ function updateBadges() {
   const newsBm = bookmarks.filter(b => b.type === 'news');
   const notes = loadNotes();
   const memoCnt = Object.values(notes).filter(n => n.memos && n.memos.length).length;
-  document.getElementById('s-saved').textContent = bookmarks.length;
   document.getElementById('nb-saved-vuln').textContent = vulnBm.length;
   document.getElementById('nb-saved-news').textContent = newsBm.length;
   document.getElementById('nb-memos').textContent = memoCnt;
-  const crit = vulnBm.filter(b => ['CRITICAL','HIGH'].includes((b.sev||'').toUpperCase())).length;
-  document.getElementById('s-crit').textContent = crit;
+  updateStatBar();
+}
+
+function updateStatBar() {
+  const today = new Date().toISOString().slice(0, 10);
+
+  // 오늘 Vulnrichment 수
+  const vulToday = mitreAll.filter(v => (v.updated || v.published || '') >= today).length;
+  const s1 = document.getElementById('s-vul-today');
+  if (s1) s1.textContent = mitreAll.length ? vulToday : '—';
+
+  // Business 저장 항목 수 + Critical/High
+  const bizNotes = loadBizNotes();
+  const bizKeys = Object.keys(bizNotes).filter(k => bizNotes[k].status);
+  const bizCritHigh = bizKeys.filter(k => {
+    const cveOrTitle = k.replace(/^biz_/, '');
+    const item = mitreAll.find(i => (i.cve || i.title) === cveOrTitle);
+    return item && ['CRITICAL', 'HIGH'].includes(item.severity);
+  }).length;
+  const s2 = document.getElementById('s-biz-total');
+  const s3 = document.getElementById('s-biz-crit');
+  if (s2) s2.textContent = bizKeys.length;
+  if (s3) s3.textContent = bizCritHigh;
+
+  // 오늘 보안 뉴스 수
+  const newsToday = newsAll.filter(n => (n.date || '') >= today).length;
+  const s4 = document.getElementById('s-news-today');
+  if (s4) s4.textContent = newsAll.length ? newsToday : '—';
 }
 
 function statusColor(s) {
@@ -2063,7 +2078,6 @@ function renderMemos() {
 }
 
 function openDetailById(id) {
-  // 메모 모아보기에서 클릭 시 — 사이드 패널을 메모 편집 모드로 열기
   const notes = loadNotes();
   const note = notes[id] || { status: '', tags: [], memo: '' };
   currentDetailId = id;
@@ -2295,7 +2309,7 @@ function renderCompliance(cat) {
     const statusEl = note.status ? `<span class="badge" style="font-size:10px;background:${statusBg(note.status)};color:${statusColor(note.status)};border:1px solid ${statusColor(note.status)}40">${note.status}</span>` : '';
     const tags = item.tags.map(t => `<span class="tag">${escHtml(t)}</span>`).join('');
 
-    // 사용자 입력 이력 우선, 없으면 하드코딩 기본값
+    // 입력 이력 우선, 없으면 하드코딩 기본값
     const userUpdates = note.updates || [];
     const allUpdates = [...userUpdates, ...item.updates].sort((a, b) => b.date.localeCompare(a.date));
     const latestUpdate = allUpdates[0];
@@ -2421,7 +2435,6 @@ function saveUpdateEntry(id) {
   toggleUpdateForm(id);
   renderComplianceUpdates(id);
 
-  // 카드도 갱신
   const cat = document.querySelector('#compliance-chips .chip.on')?.dataset.cat || 'domestic';
   renderCompliance(cat);
 }
@@ -2446,9 +2459,6 @@ function deleteUpdateEntry(id, idx) {
 
 function escHtml(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 function escAttr(s) { return String(s||'').replace(/"/g,'&quot;'); }
-// onclick='...' 처럼 홑따옴표로 감싼 HTML 속성 안에 JSON.stringify(...) 결과를 넣을 때 쓰는 헬퍼.
-// 설명/제목 텍스트에 아포스트로피(')가 하나라도 있으면 속성이 거기서 끊겨 나머지 JSON이
-// 화면에 그대로 텍스트로 새는 문제가 있어서, & 와 ' 를 HTML 엔티티로 치환해 안전하게 만든다.
 function jsonAttr(obj) { return JSON.stringify(obj).replace(/&/g, '&amp;').replace(/'/g, '&#39;'); }
 
 document.getElementById('nvd-q').addEventListener('keydown', e => { if (e.key === 'Enter') searchNvd(); });
