@@ -1,5 +1,875 @@
 [
   {
+    "cve": "CVE-2025-41115",
+    "title": "Incorrect privilege assignment",
+    "desc": "SCIM provisioning was introduced in Grafana Enterprise and Grafana Cloud in April to improve how organizations manage users and teams in Grafana by introducing automated user lifecycle management.\n\nIn Grafana versions 12.x where SCIM provisioning is enabled and configured, a vulnerability in user identity handling allows a malicious or compromised SCIM client to provision a user with a numeric ext",
+    "cvss": 10,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana Enterprise"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-11-21",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2025-41115",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-41117",
+    "title": "XSS in Grafana Explore stack trace",
+    "desc": "Stack traces in Grafana's Explore Traces view can be rendered as raw HTML, and thus inject malicious JavaScript in the browser. This would require malicious JavaScript to be entered into the stack trace field.\n\nOnly datasources with the Jaeger HTTP API appear to be affected; Jaeger gRPC and Tempo do not appear affected whatsoever.",
+    "cvss": 6.8,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "grafana/grafana"
+      },
+      {
+        "vendor": "Grafana",
+        "product": "grafana/grafana-enterprise"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-02-12",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2025-41117",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-41118",
+    "title": "Sensitive COS `SecretKey` exposed in plaintext via configuration API due to missing type protection",
+    "desc": "Pyroscope is an open-source continuous profiling database. The database supports various storage backends, including Tencent Cloud Object Storage (COS).\n\nIf the database is configured to use Tencent COS as the storage backend, an attacker could extract the secret_key configuration value from the Pyroscope API.\n\nTo exploit this vulnerability, an attacker needs direct access to the Pyroscope API. We",
+    "cvss": 9.1,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Pyroscope"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-04-15",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2025-41118",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-10601",
+    "title": "Path traversal in the Tempo and Loki data source plugins",
+    "desc": "A user with Viewer permissions can use specially crafted requests to the Tempo and Loki data source plugins to reach unintended backend endpoints. Depending on the backend configuration this can expose data source credentials, leak internal responses, or trigger administrative actions on the configured backend.",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-22",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-10601",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-11769",
+    "title": "Operator - Namespaced User Path Traversal",
+    "desc": "We have released version 5.24.0 of the Grafana Operator. This patch includes a MEDIUM severity security fix for a path traversal/privilege escalation vulnerability in the Grafana Operator.\n\n\n### Summary\n\nThe Grafana Operator supports loading dashboards & library panels using the jsonnet data templating language. The jsonnet expression is evaluated in the context of the operator manager pod.\n\n\n### ",
+    "cvss": null,
+    "severity": "",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana Operator"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-13",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-11769",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-15583",
+    "title": "SSRF (confused deputy) in Grafana MCP Server via X-Grafana-URL header",
+    "desc": "A confused-deputy flaw in Grafana MCP Server allows an unauthenticated remote attacker to exfiltrate the server's environment-configured Grafana service-account token by supplying a crafted X-Grafana-URL request header. This also enables SSRF against arbitrary internal services, including cloud metadata endpoints.",
+    "cvss": 8.6,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana MCP Server"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-15",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-15583",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-21720",
+    "title": "Unauthenticated DoS: avatar cache leaks goroutines when /avatar/:hash requests time out",
+    "desc": "Every uncached /avatar/:hash request spawns a goroutine that refreshes the Gravatar image. If the refresh sits in the 10-slot worker queue longer than three seconds, the handler times out and stops listening for the result, so that goroutine blocks forever trying to send on an unbuffered channel. Sustained traffic with random hashes keeps tripping this timeout, so goroutine count grows linearly, e",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "grafana/grafana-enterprise"
+      },
+      {
+        "vendor": "Grafana",
+        "product": "grafana/grafana-enterprise"
+      },
+      {
+        "vendor": "Grafana",
+        "product": "grafana/grafana-enterprise"
+      },
+      {
+        "vendor": "Grafana",
+        "product": "grafana/grafana"
+      },
+      {
+        "vendor": "Grafana",
+        "product": "grafana/grafana"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-01-27",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-21720",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-21721",
+    "title": "Dashboard Permissions Scope Bypass Enables Cross‑Dashboard Privilege Escalation",
+    "desc": "The dashboard permissions API does not verify the target dashboard scope and only checks the dashboards.permissions:* action. As a result, a user who has permission management rights on one dashboard can read and modify permissions on other dashboards. This is an organization‑internal privilege escalation.",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "grafana/grafana"
+      },
+      {
+        "vendor": "Grafana",
+        "product": "grafana/grafana"
+      },
+      {
+        "vendor": "Grafana",
+        "product": "grafana/grafana"
+      },
+      {
+        "vendor": "Grafana",
+        "product": "grafana/grafana"
+      },
+      {
+        "vendor": "Grafana",
+        "product": "grafana/grafana"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-01-27",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-21721",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-21722",
+    "title": "Public Dashboards time range restriction on annotations can be bypassed",
+    "desc": "Public dashboards with annotations enabled did not limit their annotation timerange to the locked timerange of the public dashboard. This means one could read the entire history of annotations visible on the specific dashboard, even those outside the locked timerange.\n\nThis did not leak any annotations that would not otherwise be visible on the public dashboard.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "grafana/grafana"
+      },
+      {
+        "vendor": "Grafana",
+        "product": "grafana/grafana-enterprise"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-02-12",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-21722",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-21724",
+    "title": "Missing Protected-field Authorization in Provisioning Contact Points API",
+    "desc": "A vulnerability has been discovered in Grafana OSS where an authorization bypass in the provisioning contact points API allows users with Editor role to modify protected webhook URLs without the required alert.notifications.receivers.protected:write permission.",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-03-26",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-21724",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-21725",
+    "title": "Authorization Bypass via TOCTOU in Grafana Datasource Deletion by Name",
+    "desc": "A time-of-create-to-time-of-use (TOCTOU) vulnerability lets recently deleted-then-recreated data sources be re-deleted without permission to do so.\n\nThis requires several very stringent conditions to be met:\n\n- The attacker must have admin access to the specific datasource prior to its first deletion.\n- Upon deletion, all steps within the attack must happen within the next 30 seconds and on the sa",
+    "cvss": 2.6,
+    "severity": "LOW",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-02-25",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-21725",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-21726",
+    "title": "Loki Path Traversal - CVE-2021-36156 Bypass",
+    "desc": "The CVE-2021-36156 fix validates the namespace parameter for path traversal sequences after a single URL decode, by double encoding, an attacker can read files at the Ruler API endpoint /loki/api/v1/rules/{namespace}\n\nThanks to Prasanth Sundararajan for reporting this vulnerability.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Loki"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-04-15",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-21726",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-21727",
+    "title": "Grafana Correlations: Cross-Tenant Data Disclosure and Permanent Deletion via Legacy org_id=0 Record",
+    "desc": "---\ntitle: Cross-Tenant Legacy Correlation Disclosure and Deletion\ndraft: false\nhero:\n  image: /static/img/heros/hero-legal2.svg\n  content: \"# Cross-Tenant Legacy Correlation Disclosure and Deletion\"\ndate: 2026-01-29\nproduct: Grafana\nseverity: Low\ncve: CVE-2026-21727\ncvss_score: \"3.3\"\ncvss_vector: \"CVSS:3.3/AV:N/AC:H/PR:H/UI:N/S:U/C:L/I:L/A:N\"\nfixed_versions:\n  - \">=11.6.11 >=12.0.9 >=12.1.6 >=12.",
+    "cvss": 3.3,
+    "severity": "LOW",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana Correlations"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-04-15",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-21727",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-21728",
+    "title": "Tempo query limit results in unbounded memory allocation",
+    "desc": "Tempo queries with large limits can cause large memory allocations which can impact the availability of the service, depending on its deployment strategy.\n\nMitigation can be done by setting max_result_limit in the search config, e.g. to 262144 (2^18). Alternatively, automatically restart the service.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Tempo"
+      },
+      {
+        "vendor": "Grafana",
+        "product": "Enterprise Traces (GET)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-04-24",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-21728",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-21729",
+    "title": "Loki detected_fields query limits results in unbounded memory allocation",
+    "desc": "Loki queries with large limits can cause large memory allocations which can impact the availability of the service, depending on its deployment strategy.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Loki"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-16",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-21729",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-27876",
+    "title": "RCE on Grafana via sqlExpressions",
+    "desc": "A chained attack via SQL Expressions and a Grafana Enterprise plugin can lead to a remote arbitrary code execution impact (RCE). This is enabled by a feature in Grafana (OSS), so all users are always recommended to update to avoid future attack vectors going this path.\n\nOnly instances with the sqlExpressions feature toggle enabled are vulnerable.\n\nOnly instances in the following version ranges are",
+    "cvss": 9.1,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-03-27",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-27876",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-27877",
+    "title": "Public dashboards discloses all direct mode datasources",
+    "desc": "When using public dashboards and direct data-sources, all direct data-sources' passwords are exposed despite not being used in dashboards.\n\nNo passwords of proxied data-sources are exposed. We encourage all direct data-sources to be converted to proxied data-sources as far as possible to improve your deployments' security.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-03-27",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-27877",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-27878",
+    "title": "Tempo TraceQL query with exemplar hint could result in unbounded memory usage",
+    "desc": "A TraceQL query in Grafana Tempo with a large exemplars hint value can cause the Tempo instance to allocate an excessive amount of memory, resulting in an out-of-memory crash. This could allow an authenticated user to trigger a denial of service against the Tempo service.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Enterprise Traces (GET)"
+      },
+      {
+        "vendor": "Grafana",
+        "product": "Tempo"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-19",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-27878",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-27879",
+    "title": "Query resampling can cause unbounded memory allocations",
+    "desc": "A resample query can be used to trigger out-of-memory crashes in Grafana.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-03-27",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-27879",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-27880",
+    "title": "OpenFeature evaluation API reads input data with no bounds",
+    "desc": "The OpenFeature feature toggle evaluation endpoint reads unbounded values into memory, which can cause out-of-memory crashes.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-03-27",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-27880",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-28374",
+    "title": "IDOR in Annotations API allows unprivileged users to DELETE annotation",
+    "desc": "Editors could delete any annotation, even those they do not have read access to. The editor user cannot create or read the annotations.",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-13",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-28374",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-28375",
+    "title": "Grafana Testdata datasource can issue unbounded memory allocations",
+    "desc": "A testdata data-source can be used to trigger out-of-memory crashes in Grafana.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-03-27",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-28375",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-28376",
+    "title": "Grafana Live push endpoint allows unbounded memory allocation leading to OOM",
+    "desc": "The Grafana Live push endpoint can be exploited to cause unbounded memory allocation by sending a large or streaming request body, potentially leading to out-of-memory conditions. An authenticated user with access to the Grafana Live API can trigger this issue.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-13",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-28376",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-28377",
+    "title": "S3 SSE-C Encryption Key Exposed in Plaintext via Config Endpoint (CVE-2025-41118 Pattern)",
+    "desc": "A vulnerability in Grafana Tempo exposes the S3 SSE-C encryption key in plaintext through the /status/config endpoint, potentially allowing unauthorized users to obtain the key used to encrypt trace data stored in S3.\n\nThanks to william_goodfellow for reporting this vulnerability.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Tempo"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-03-26",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-28377",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-28378",
+    "title": "Cross-Organization Public Dashboard Deletion via Missing Org Isolation",
+    "desc": "The public dashboard deletion endpoint does not enforce organization isolation, allowing an Org Admin in one organization to delete public dashboards belonging to a different organization by supplying the target dashboard's identifiers.",
+    "cvss": 3.1,
+    "severity": "LOW",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana Enterprise"
+      },
+      {
+        "vendor": "Grafana",
+        "product": "Grafana OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-07",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-28378",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-28379",
+    "title": "Viewer-triggered race condition in Grafana Live leads to complete server crash",
+    "desc": "A race condition in Grafana Live allows authenticated users with Viewer role to trigger a server crash by sending concurrent requests that cause a fatal map access error. This results in complete service unavailability requiring restart of the Grafana server.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-13",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-28379",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-28380",
+    "title": "BAC in Snapshot API allows deletion of unauthorized dashboard snapshots",
+    "desc": "Any Editor could delete any snapshot, even if they have no access to read or write them.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-13",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-28380",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-28383",
+    "title": "Grafana plugin resources can lead to unbounded memory allocation",
+    "desc": "A request to the Grafana plugin resources endpoint can cause unbounded memory allocation by reading the entire request body into memory. An authenticated user can exploit this to trigger an out-of-memory condition, potentially causing a denial of service.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-13",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-28383",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-33375",
+    "title": "Grafana MSSQL Data Source Plugin: Restriction Bypass Leading to OOM DoS",
+    "desc": "The Grafana MSSQL data source plugin contains a logic flaw that allows a low-privileged user (Viewer) to bypass API restrictions and trigger a catastrophic Out-Of-Memory (OOM) memory exhaustion, crashing the host container.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-03-26",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-33375",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-33376",
+    "title": "Auth Proxy IPv6 whitelist bypass",
+    "desc": "When using an IPv6 allow-list for the Auth Proxy feature, it defaults to /32 addresses. Addresses specifying a mask explicitly are not affected; to mitigate easily, add the desired mask (usually /128) to the addresses. Only auth proxy is affected; Okta, SAML, LDAP, etc are unaffected here.",
+    "cvss": 7.4,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-13",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-33376",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-33377",
+    "title": "Dashboard Import Overwrites ACL — Editor Privilege Escalation to Dashboard Admin",
+    "desc": "An Editor can overwrite a dashboard not owned by them to acquire admin on that specific dashboard. The user must have write access to the dashboard to escalate privilege.",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-13",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-33377",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-33378",
+    "title": "Grafana Data Source Plugin: DoS (OOM) via Negative Interval Injection in $__timeGroup Macro",
+    "desc": "Using the $__timeGroup macro, one can achieve an OOM by overloading the server. This requires a SQL datasource. If the server is set up to auto-restart, the impact is minimal or non-existent, as the attack can take upwards of half an hour to crash the server.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-13",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-33378",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-33380",
+    "title": "SQL Expressions Read File From Disk",
+    "desc": "A vulnerability in SQL Expressions allows an authenticated attacker to read arbitrary files from the Grafana server's filesystem. Only instances with the sqlExpressions feature toggle enabled are vulnerable.",
+    "cvss": 6.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-13",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-33380",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-33381",
+    "title": "Users can generate Service Account tokens after permissions removal",
+    "desc": "When a user's access to mint tokens for a service account is revoked, it is sometimes still possible to do so for a few seconds after the event. The user will eventually lose access to do this.",
+    "cvss": 5.9,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-13",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-33381",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-33382",
+    "title": "Denial of service via unbounded request body size",
+    "desc": "Several Grafana API endpoints, some of them unauthenticated, do not limit the size of the request body before processing it. An attacker can send very large payloads that force excessive memory allocation, potentially exhausting memory and causing a denial of service.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-400"
+    ],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-33382",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-42127",
+    "title": "Pre-authentication denial of service in the public dashboard query endpoint",
+    "desc": "The public dashboard query endpoint does not limit request body size before processing, allowing unauthenticated attackers to trigger excessive memory allocation by sending arbitrarily large JSON payloads. This can lead to denial of service through memory exhaustion. No valid dashboard access token or authentication is required to exploit this vulnerability.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-400"
+    ],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana Enterprise"
+      },
+      {
+        "vendor": "Grafana",
+        "product": "Grafana OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-22",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-42127",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-42129",
+    "title": "Path traversal in the Loki data source plugin",
+    "desc": "A user with Viewer permissions can use a path traversal in the Loki data source plugin to reach administrative Loki endpoints and read sensitive backend configuration and internal service information.",
+    "cvss": 7.7,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-22",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-42129",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-8595",
+    "title": "Stored XSS in the table panel (TableNG)",
+    "desc": "A user with Editor permissions can craft a dashboard whose table (TableNG) panel contains a malicious field name that executes as a script in the browser of any user who views the dashboard (stored cross-site scripting).",
+    "cvss": 6.8,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-8595",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-8609",
+    "title": "Pre-authentication denial of service via the OAuth login route",
+    "desc": "An unauthenticated attacker can repeatedly call Grafana's OAuth login route with unique values, causing unbounded memory growth that can eventually exhaust memory and crash the Grafana instance (denial of service).",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-400"
+    ],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-8609",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-9029",
+    "title": "Stored XSS in the Geomap panel tile-layer attribution",
+    "desc": "A user with Editor permissions can place a malicious script in the attribution field of a Geomap panel's XYZ tile layer via a template variable. The script then executes in the browser of any user who views the affected dashboard (stored cross-site scripting).",
+    "cvss": 7.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Grafana",
+        "product": "Grafana OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-22",
+    "updated": "2026-07-23",
+    "url": "https://grafana.com/security/security-advisories/cve-2026-9029",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2026-50670",
     "title": "Windows Win32k Elevation of Privilege Vulnerability",
     "desc": "",
@@ -26982,985 +27852,6 @@
     "published": "2026-07-21",
     "updated": "2026-07-22",
     "url": "https://www.oracle.com/security-alerts/cpujul2026.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-64821",
-    "title": "djangoSIGE 1.10 CSRF via GET-based Order Cancellation Views",
-    "desc": "djangoSIGE through 1.10 (commit a6fe7e8) contains a cross-site request forgery vulnerability that allows unauthenticated attackers to cancel sales or purchase orders on behalf of authenticated users by exploiting order-cancellation logic implemented inside HTTP GET method handlers in CancelarOrcamentoVendaView, CancelarPedidoVendaView, CancelarOrcamentoCompraView, and CancelarPedidoCompraView. Att",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-352"
-    ],
-    "affected": [
-      {
-        "vendor": "thiagopena",
-        "product": "djangoSIGE"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-21",
-    "updated": "2026-07-22",
-    "url": "https://github.com/americooo/pentest-writeups/tree/main/djangoSIGE-CVE-2026-64821-64822",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-65048",
-    "title": "Ninja Forms Unauthenticated Stored Cross-Site Scripting via Repeatable Fieldset Submission Index",
-    "desc": "Ninja Forms plugin for WordPress versions 3.10.4 through 3.14.9 contains an unauthenticated stored cross-site scripting vulnerability in the Repeatable Fieldset feature where parseSubmissionIndex() accepts arbitrary strings as submission indexes without numeric validation, and admin_form_element() interpolates the index directly into HTML without escaping. An unauthenticated attacker can submit a ",
-    "cvss": 9.3,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Saturday Drive",
-        "product": "Ninja Forms"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-21",
-    "updated": "2026-07-22",
-    "url": "https://wordpress.org/plugins/ninja-forms/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-65049",
-    "title": "Ninja Forms Cross-Site Network-Wide Data Deletion on WordPress Multisite via nf_delete_all_data AJAX Action",
-    "desc": "Ninja Forms plugin version 3.14.8 and prior for WordPress Multisite contains an incorrect authorization vulnerability that allows a subsite Administrator to trigger network-wide deletion of all Ninja Forms data by exploiting a site-scoped capability check combined with unsafe multisite migration defaults. Attackers can send a crafted POST request to the admin-ajax.php endpoint with the nf_delete_a",
-    "cvss": 9.3,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-863"
-    ],
-    "affected": [
-      {
-        "vendor": "Saturday Drive",
-        "product": "Ninja Forms"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-21",
-    "updated": "2026-07-22",
-    "url": "https://wordpress.org/plugins/ninja-forms/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-65052",
-    "title": "Ninja Forms Calculation and Payment Total Tampering via Fail-Open get_calc_value in ListSelect and ListRadio Fields",
-    "desc": "Ninja Forms WordPress plugin version 3.14.8 and prior contains an improper input validation vulnerability that allows unauthenticated attackers to inject arbitrary numeric values into form calculations and payment totals by submitting values that do not match any configured option in ListSelect or ListRadio fields. Attackers can tamper with form submission payloads to the ajax submit endpoint, cau",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-472"
-    ],
-    "affected": [
-      {
-        "vendor": "Saturday Drive",
-        "product": "Ninja Forms"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-21",
-    "updated": "2026-07-22",
-    "url": "https://wordpress.org/plugins/ninja-forms/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-65054",
-    "title": "MediaCMS Private Media Metadata Disclosure via Playlist Ownership Loophole",
-    "desc": "MediaCMS 8.2.0 contains an information disclosure vulnerability that allows authenticated users to expose private media metadata belonging to other users by adding arbitrary media tokens to their own playlist without access control checks. Attackers can issue a PUT request to the playlist API endpoint with a known media token to bypass state and ownership validation, then retrieve the playlist to ",
-    "cvss": 3.1,
-    "severity": "LOW",
-    "cwes": [
-      "CWE-863"
-    ],
-    "affected": [
-      {
-        "vendor": "MediaCMS",
-        "product": "MediaCMS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-21",
-    "updated": "2026-07-22",
-    "url": "https://github.com/mediacms-io/mediacms/issues/1548",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-65056",
-    "title": "mcp-webresearch Server-Side Request Forgery in visit_page Due to Missing Internal-IP Filtering",
-    "desc": "mcp-webresearch 0.1.7 contains a server-side request forgery vulnerability that allows attackers to access internal network services by supplying loopback, link-local, or cloud metadata addresses to the visit_page tool, which only validates the URL protocol without filtering private or reserved IP ranges. Attackers can steer the LLM-controlled URL argument through prompt injection to navigate the ",
-    "cvss": 8.2,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-918"
-    ],
-    "affected": [
-      {
-        "vendor": "mzxrai",
-        "product": "mcp-webresearch"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-21",
-    "updated": "2026-07-22",
-    "url": "https://github.com/geo-chen/oss/blob/main/mcp-webresearch.md",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-65057",
-    "title": "Keep Unauthenticated Server-Side Request Forgery via POST /providers/healthcheck",
-    "desc": "Keep (commit 91c75e0) contains a server-side request forgery vulnerability that allows unauthenticated attackers to make the backend issue arbitrary HTTP requests by supplying attacker-controlled host values to the unprotected healthcheck endpoint. Attackers can send a crafted JSON payload with a malicious host parameter to cause the backend to issue outbound requests to internal services or cloud",
-    "cvss": 9.3,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-918"
-    ],
-    "affected": [
-      {
-        "vendor": "keephq",
-        "product": "keep"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-21",
-    "updated": "2026-07-22",
-    "url": "https://github.com/keephq/keep/issues/6630",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-65314",
-    "title": "Electric Postgres Sync Excluded-Column Value Inference via Subset Where Clauses",
-    "desc": "Electric Postgres Sync versions below 1.6.10 contains an information disclosure vulnerability that allows attackers to infer the values of excluded columns by crafting subset where clause conditions against shape responses. Attackers can observe whether subset where conditions match rows to deduce sensitive field data even though those columns are not returned in shape responses, bypassing column-",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-203"
-    ],
-    "affected": [
-      {
-        "vendor": "ElectricSQL",
-        "product": "Electric Postgres Sync"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-21",
-    "updated": "2026-07-22",
-    "url": "https://github.com/electric-sql/electric/security/advisories/GHSA-c82q-v86f-c87f",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-65319",
-    "title": "Feedbin Unauthenticated Entry Content Disclosure via GET /api/v2/entries/:id/text",
-    "desc": "Feedbin (commit 739884a) contains an unauthenticated information disclosure vulnerability that allows unauthenticated attackers to retrieve private article content by sending requests to the entries text API endpoint, which skips the authorization before-action filter entirely. Attackers can iterate sequential integer entry IDs through the GET /api/v2/entries/:id/text endpoint to enumerate and ext",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-306"
-    ],
-    "affected": [
-      {
-        "vendor": "Feedbin",
-        "product": "Feedbin"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-21",
-    "updated": "2026-07-22",
-    "url": "https://github.com/geo-chen/oss/blob/main/feedbin.md",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-65591",
-    "title": "n8n before 1.123.64 Sanitizer Bypass Remote Code Execution",
-    "desc": "n8n contains a sanitizer bypass vulnerability in the legacy expression evaluator's computed-member handler. An authenticated user with workflow create or modify permissions can craft a malicious expression to bypass the sanitizer and achieve host-level code execution as the n8n process. The legacy expression engine is the default in affected versions. Fixed in n8n 1.123.64, 2.29.8, and 2.30.1.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-917"
-    ],
-    "affected": [
-      {
-        "vendor": "n8n-io",
-        "product": "n8n"
-      },
-      {
-        "vendor": "n8n-io",
-        "product": "n8n"
-      },
-      {
-        "vendor": "n8n-io",
-        "product": "n8n"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-22",
-    "updated": "2026-07-22",
-    "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-pm35-fqvh-cq5g",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-65597",
-    "title": "n8n before 1.123.64 DOM-Based XSS via Unsandboxed iframe",
-    "desc": "n8n before 1.123.64, 2.x before 2.29.8, and before 2.30.1 contains a DOM-based cross-site scripting vulnerability in the HTML preview, which renders execution output into an iframe srcdoc without the sandbox attribute. A sanitizer bypass allows injected script to execute same-origin as the editor. When a victim opens the preview, the script can call authenticated APIs using the victim's session. A",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "n8n-io",
-        "product": "n8n"
-      },
-      {
-        "vendor": "n8n-io",
-        "product": "n8n"
-      },
-      {
-        "vendor": "n8n-io",
-        "product": "n8n"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-22",
-    "updated": "2026-07-22",
-    "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-p3rg-hrf9-w9gj",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-6858",
-    "title": "Transbank Webpay < 1.14.0 - Unauthenticated Stored XSS",
-    "desc": "The Transbank Webpay WordPress plugin before 1.14.0 does not sanitize and escape logs to be displayed, allowing unauthenticated users to perform Stored XSS attacks against logged in administrator",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Unknown",
-        "product": "Transbank Webpay"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-22",
-    "updated": "2026-07-22",
-    "url": "https://wpscan.com/vulnerability/81035d75-81a5-486a-a9fb-b0d1e0befe3c/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2022-2712",
-    "title": "In Eclipse GlassFish versions 5.1.0 to 6.2.5, there is a vulnerability in relative path traversal because it does not fi",
-    "desc": "In Eclipse GlassFish versions 5.1.0 to 6.2.5, there is a vulnerability in relative path traversal because it does not filter request path starting with './'. Successful exploitation could allow an remote unauthenticated attacker to access critical data, such as configuration files and deployed application source code. This is fixed in GlassFish 7.0.0.",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-22"
-    ],
-    "affected": [
-      {
-        "vendor": "The Eclipse Foundation",
-        "product": "Eclipse GlassFish"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2023-01-27",
-    "updated": "2026-07-22",
-    "url": "https://bugs.eclipse.org/580502",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-14586",
-    "title": "Assertion in libngtcp2 when under pressure in high concurrency DNS-over-QUIC environments",
-    "desc": "In NLnet Labs Unbound 1.22.0 up to and including 1.25.1, in DNS-over-QUIC environments, with high concurrency and under pressure, an assertion in libngtcp2 about monotonic timestamps could trigger and result in server termination and thus denial of service. When interfacing with libngtcp2, for DNS-over-QUIC support in Unbound, it is expected to use monotonic time. Unbound was using realtime instea",
-    "cvss": 5.9,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-617"
-    ],
-    "affected": [
-      {
-        "vendor": "NLnet Labs",
-        "product": "Unbound"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-22",
-    "updated": "2026-07-22",
-    "url": "https://www.nlnetlabs.nl/downloads/unbound/CVE-2026-14586.txt",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-15156",
-    "title": "Essential Addons for Elementor <= 6.6.11 - Authenticated (Contributor+) Stored Cross-Site Scripting via Reading Progress Global Color Settings",
-    "desc": "The Essential Addons for Elementor – Popular Elementor Templates & Widgets plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Reading Progress Global Color Settings in all versions up to, and including, 6.6.11 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrar",
-    "cvss": 6.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "wpdevteam",
-        "product": "Essential Addons for Elementor – Popular Elementor Templates & Widgets"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-21",
-    "updated": "2026-07-22",
-    "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/dde0cf3a-778b-4b5f-ac0e-600505d918ae?source=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-15812",
-    "title": "Kronosnet: kronosnet: access control list bypass via link id spoofing on unencrypted dynamic links",
-    "desc": "A vulnerability was found in the internal Access Control List (ACL) subsystem of kronosnet (Version affected: <= 1.34). When the framework is explicitly configured to manage dynamic links (accepting network traffic from any IP address) without network payload encryption, the validation architecture implicitly trusts the link ID provided within incoming data packets. A remote, unauthenticated attac",
-    "cvss": 4.8,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-290"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-21",
-    "updated": "2026-07-22",
-    "url": "https://access.redhat.com/security/cve/CVE-2026-15812",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-16220",
-    "title": "code-projects Online Examination System account.php cross site scripting",
-    "desc": "A vulnerability has been found in code-projects Online Examination System 1.0. This vulnerability affects unknown code of the file /account.php?q=quiz. Such manipulation of the argument eid/n/t leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-79",
-      "CWE-94"
-    ],
-    "affected": [
-      {
-        "vendor": "code-projects",
-        "product": "Online Examination System"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-19",
-    "updated": "2026-07-22",
-    "url": "https://vuldb.com/vuln/380043",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-16227",
-    "title": "SourceCodester Class and Exam Timetabling System edit_subject.php sql injection",
-    "desc": "A security vulnerability has been detected in SourceCodester Class and Exam Timetabling System 1.0. This impacts an unknown function of the file /edit_subject.php. Such manipulation of the argument ID leads to sql injection. The attack may be performed from remote. The exploit has been disclosed publicly and may be used.",
-    "cvss": 7.3,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-89",
-      "CWE-74"
-    ],
-    "affected": [
-      {
-        "vendor": "SourceCodester",
-        "product": "Class and Exam Timetabling System"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-19",
-    "updated": "2026-07-22",
-    "url": "https://vuldb.com/vuln/380049",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-16324",
-    "title": "Metasoft 美特软件 MetaCRM upload.jsp unrestricted upload",
-    "desc": "A vulnerability was identified in Metasoft 美特软件 MetaCRM up to 6.4.0 Beta06. The impacted element is an unknown function of the file /business/qnaire/upload.jsp. Such manipulation of the argument File leads to unrestricted upload. The attack may be launched remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any ",
-    "cvss": 7.3,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-434",
-      "CWE-284"
-    ],
-    "affected": [
-      {
-        "vendor": "Metasoft 美特软件",
-        "product": "MetaCRM"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-20",
-    "updated": "2026-07-22",
-    "url": "https://vuldb.com/vuln/380685",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-16331",
-    "title": "D-Link DNS-320 save_ajax.php unrestricted upload",
-    "desc": "A security vulnerability has been detected in D-Link DNS-320 1.0.2. This affects an unknown function of the file /web/function/save_ajax.php. Such manipulation of the argument Malicious Handler leads to unrestricted upload. The attack can be executed remotely. The exploit has been disclosed publicly and may be used.",
-    "cvss": 7.3,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-434",
-      "CWE-284"
-    ],
-    "affected": [
-      {
-        "vendor": "D-Link",
-        "product": "DNS-320"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-21",
-    "updated": "2026-07-22",
-    "url": "https://vuldb.com/vuln/380697",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-16449",
-    "title": "zsadmin2025 ZS-Admin com.zs.sys.dept.controller.SysDeptController page OrderItem.desc sql injection",
-    "desc": "A vulnerability was determined in zsadmin2025 ZS-Admin up to b52e14536d59fda11e56e2536a1c32e82a38cead. The impacted element is the function OrderItem.asc/OrderItem.desc of the file /api/system/sys/dept/page of the component com.zs.sys.dept.controller.SysDeptController. This manipulation of the argument orderField causes sql injection. The attack is possible to be carried out remotely. The exploit ",
-    "cvss": 6.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-89",
-      "CWE-74"
-    ],
-    "affected": [
-      {
-        "vendor": "zsadmin2025",
-        "product": "ZS-Admin"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-21",
-    "updated": "2026-07-22",
-    "url": "https://vuldb.com/vuln/380828",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-16451",
-    "title": "zsadmin2025 ZS-Admin com.zs.file.controller.SysFileController upload unrestricted upload",
-    "desc": "A security flaw has been discovered in zsadmin2025 ZS-Admin up to b52e14536d59fda11e56e2536a1c32e82a38cead. This impacts an unknown function of the file /api/system/file/upload of the component com.zs.file.controller.SysFileController. Performing a manipulation of the argument File results in unrestricted upload. It is possible to initiate the attack remotely. The exploit has been released to the ",
-    "cvss": 6.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-434",
-      "CWE-284"
-    ],
-    "affected": [
-      {
-        "vendor": "zsadmin2025",
-        "product": "ZS-Admin"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-21",
-    "updated": "2026-07-22",
-    "url": "https://vuldb.com/vuln/380830",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-16461",
-    "title": "Rpcbind: rpcbind: stack buffer overflow in rpcinfo rpcbdump() short-mode version-list formatting",
-    "desc": "A stack-based buffer overflow was found in rpcbind's rpcinfo utility. In rpcbdump() short mode (used by `rpcinfo -s`), version numbers from a remote RPCBPROC_DUMP reply are written into a fixed-size stack buffer without bounds checking. A user or administrator who runs `rpcinfo -s` against a malicious or compromised rpcbind endpoint could experience a crash or denial of service of the rpcinfo clie",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-121"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-21",
-    "updated": "2026-07-22",
-    "url": "https://access.redhat.com/security/cve/CVE-2026-16461",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-16490",
-    "title": "itsourcecode Hospital Management System prescription.php sql injection",
-    "desc": "A security flaw has been discovered in itsourcecode Hospital Management System 1.0. Impacted is an unknown function of the file /prescription.php. The manipulation of the argument editid results in sql injection. The attack can be executed remotely. The exploit has been released to the public and may be used for attacks.",
-    "cvss": 6.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-89",
-      "CWE-74"
-    ],
-    "affected": [
-      {
-        "vendor": "itsourcecode",
-        "product": "Hospital Management System"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-22",
-    "updated": "2026-07-22",
-    "url": "https://vuldb.com/vuln/380947",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-16493",
-    "title": "Ansible-core: argument injection in ansible-galaxy collection install via git clone (incomplete fix for cve-2026-11332)",
-    "desc": "A flaw was found in ansible-core. The _extract_collection_from_git() function in ansible-core's concrete_artifact_manager.py constructs git clone commands without a '--' (end-of-options) separator before user-supplied URLs when installing collections from git sources. An attacker who provides a crafted collection source URI containing git argument injection payloads can achieve arbitrary command e",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-88"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Satellite 6"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-21",
-    "updated": "2026-07-22",
-    "url": "https://access.redhat.com/security/cve/CVE-2026-16493",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-1771",
-    "title": "MapSVG <= 8.14.0 - Authenticated (Administrator+) Arbitrary File Upload via '/mapsvg/v1/svgfile' Endpoint",
-    "desc": "The MapSVG plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the SVGFile constructor in all versions up to, and including, 8.14.0 This is due to an incorrect conditional check that prevents file validation from taking place. This makes it possible for authenticated attackers, with Administrator-level access and above, to upload arbitrary files on t",
-    "cvss": 7.2,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-20"
-    ],
-    "affected": [
-      {
-        "vendor": "oyatek",
-        "product": "MapSVG – Vector maps, Image maps, Google Maps"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-21",
-    "updated": "2026-07-22",
-    "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/c7f098b9-eca3-41c7-9c74-0f4b3f75c915?source=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-32665",
-    "title": "Remote DNS-over-QUIC denial of service due to `quic-size` budget bypass",
-    "desc": "In NLnet Labs Unbound 1.22.0 up to and including 1.25.1, when downstream DNS-over-QUIC (DoQ) is enabled, the first two bidirectional streams on a new QUIC connection (stream_id 0 and 4) bypass the per-stream 'quic-size' gate entirely, and large input buffers are allocated later, after only the 2-byte length prefix has been received from the initial streams. As a result, a remote client can make Un",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-1284"
-    ],
-    "affected": [
-      {
-        "vendor": "NLnet Labs",
-        "product": "Unbound"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-22",
-    "updated": "2026-07-22",
-    "url": "https://www.nlnetlabs.nl/downloads/unbound/CVE-2026-32665.txt",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-38754",
-    "title": "A heap overflow in the ifsbreakup() function (shell/ash.c) of Busybox v1.38.0 allows attackers to cause a Denial of Serv",
-    "desc": "A heap overflow in the ifsbreakup() function (shell/ash.c) of Busybox v1.38.0 allows attackers to cause a Denial of Service (DoS) via supplying a crafted input.",
-    "cvss": 5.1,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-125"
-    ],
-    "affected": [
-      {
-        "vendor": "BusyBox",
-        "product": "BusyBox"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-15",
-    "updated": "2026-07-22",
-    "url": "https://busybox.net",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-40691",
-    "title": "Packet of death for DNSCrypt over TCP",
-    "desc": "In Unbound 1.9.0 up to and including 1.25.1, when a DNSCrypt query is received over TCP, the routine that encrypts the reply in place fails to bound the reply length against the destination buffer size. The size clamp that protects the UDP path is not applied on the TCP path, so a reply larger than 65504 bytes is shifted forward by 48 bytes inside a buffer of capacity equal to 'msg-buffer-size', w",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122",
-      "CWE-787"
-    ],
-    "affected": [
-      {
-        "vendor": "NLnet Labs",
-        "product": "Unbound"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-22",
-    "updated": "2026-07-22",
-    "url": "https://www.nlnetlabs.nl/downloads/unbound/CVE-2026-40691.txt",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-41637",
-    "title": "Degradation of resolution service from improperly accounted client-terminated DNS-over-QUIC queries",
-    "desc": "In NLnet Labs Unbound 1.22.0 up to and including 1.25.1, client terminated DNS-over-QUIC (DoQ) queries are not accounted properly by Unbound resulting in low-cost inflation of the waiting number of replies for already in-flight resolution queries. This results in degradation of resolution service for new clients for already in-flight queries. A malicious actor can exploit the vulnerability by issu",
-    "cvss": 3.7,
-    "severity": "LOW",
-    "cwes": [
-      "CWE-772"
-    ],
-    "affected": [
-      {
-        "vendor": "NLnet Labs",
-        "product": "Unbound"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-22",
-    "updated": "2026-07-22",
-    "url": "https://www.nlnetlabs.nl/downloads/unbound/CVE-2026-41637.txt",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-42009",
-    "title": "Gnutls: gnutls: denial of service via dtls packet reordering vulnerability",
-    "desc": "A flaw was found in gnutls. A remote attacker could exploit an issue in the Datagram Transport Layer Security (DTLS) packet reordering logic. The comparator function, responsible for ordering DTLS packets by sequence numbers, did not correctly handle packets with duplicate sequence numbers. This could lead to unstable packet ordering or undefined behavior, resulting in a denial of service.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-475"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-05-18",
-    "updated": "2026-07-22",
-    "url": "https://access.redhat.com/errata/RHSA-2026:13274",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-42010",
-    "title": "Gnutls: gnutls: authentication bypass via nul character in username",
-    "desc": "A flaw was found in gnutls. Servers configured with RSA-PSK (Rivest–Shamir–Adleman – Pre-Shared Key) wrongfully matched usernames containing a NUL character with truncated usernames. A remote attacker could exploit this by sending a specially crafted username, leading to an authentication bypass. This vulnerability allows an attacker to gain unauthorized access by circumventing the authentication ",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-170"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-05-07",
-    "updated": "2026-07-22",
-    "url": "https://access.redhat.com/errata/RHSA-2026:13274",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-42955",
-    "title": "Extra fix for CVE-2026-40622 to also clamp the TTL of A/AAAA records disallowing a one-time 'ghost domain' delegation renewal via glue records",
-    "desc": "In NLnet Labs Unbound 1.16.2 up to and including 1.25.1, a similar vulnerability as with CVE-2026-40622 in the 'ghost domain names' family of attacks was found in Unbound that could extend the ghost domain window by up to one cached TTL configured value for A/AAAA glue records. Similar to other 'ghost domain names' attacks, an adversary needs to control a (ghost) zone and be able to query a vulner",
-    "cvss": 3.7,
-    "severity": "LOW",
-    "cwes": [
-      "CWE-672"
-    ],
-    "affected": [
-      {
-        "vendor": "NLnet Labs",
-        "product": "Unbound"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-22",
-    "updated": "2026-07-22",
-    "url": "https://www.nlnetlabs.nl/downloads/unbound/CVE-2026-42955.txt",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-44621",
-    "title": "Libunbound applications configured with 'unwanted-reply-threshold' could eventually be abruptly terminated",
-    "desc": "With NLnet Labs Unbound up to and including version 1.25.1, applications using libunbound and configured with 'unwanted-reply-threshold', could eventually be abruptly terminated if the threshold is reached and libunbound needs to call 'libworker_alloc_cleanup' since the function is absent from the function call allow list. When an application using libunbound sets 'unwanted-reply-threshold' to any",
-    "cvss": 5.9,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-754"
-    ],
-    "affected": [
-      {
-        "vendor": "NLnet Labs",
-        "product": "Unbound"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-22",
-    "updated": "2026-07-22",
-    "url": "https://www.nlnetlabs.nl/downloads/unbound/CVE-2026-44621.txt",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-44687",
-    "title": "Off-by-one error in 'harden-below-nxdomain' logic can shadow a stub/forward zone by a legitimate parent's NXDOMAIN",
-    "desc": "In NLnet Labs Unbound 1.13.2 up to and including 1.25.1, stub or forward zones where the name is below an intermediate labed below a DNSSEC signed zone could be shadowed by the intermediate label's secure NXDOMAIN answer from the parent. This is caused by an off-by-one error in 'harden-below-nxdomain' logic; enabled by default. It effectively bypasses the configuration and the configured stub/forw",
-    "cvss": 3.7,
-    "severity": "LOW",
-    "cwes": [
-      "CWE-193"
-    ],
-    "affected": [
-      {
-        "vendor": "NLnet Labs",
-        "product": "Unbound"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-22",
-    "updated": "2026-07-22",
-    "url": "https://www.nlnetlabs.nl/downloads/unbound/CVE-2026-44687.txt",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-46403",
-    "title": "Klever-Go KVM read-only execution can commit contract delete and upgrade side effects",
-    "desc": "Klever-Go is the Go implementation of the Klever blockchain protocol. Prior to 1.7.17, KVM exposes `ExecuteReadOnlyWithTypedArguments` as a read-only execution mechanism. The hook saves the previous read-only state, sets `runtime.SetReadOnly(true)`, executes the destination context, and then restores the previous read-only state. However, the indirect contract delete and upgrade paths do not rejec",
-    "cvss": 6.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-693"
-    ],
-    "affected": [
-      {
-        "vendor": "klever-io",
-        "product": "klever-go"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-21",
-    "updated": "2026-07-22",
-    "url": "https://github.com/klever-io/klever-go/security/advisories/GHSA-jc6w-wmfc-fh33",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-47121",
-    "title": "Sparkle: Binary delta apply intermediate-symlink traversal in malicious .delta",
-    "desc": "Sparkle is a software update framework for macOS. Prior to version 2.9.2, `Autoupdate/SUBinaryDeltaApply.m` enforces `relativePath.pathComponents containsObject:@\"..\"` and rejects writes whose immediate parent directory IS itself a symbolic link, but does not detect symlinks deeper in the relative path. `Autoupdate/SPUSparkleDeltaArchive.m`'s `extractItem:` will create symlinks in the destination ",
-    "cvss": 6.1,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-22",
-      "CWE-59"
-    ],
-    "affected": [
-      {
-        "vendor": "sparkle-project",
-        "product": "Sparkle"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-21",
-    "updated": "2026-07-22",
-    "url": "https://github.com/sparkle-project/Sparkle/security/advisories/GHSA-hg88-v3cw-3qrh",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-47144",
-    "title": "Shamefile has an arbitrary file read via shamefile.yaml in shame next",
-    "desc": "Shamefile is a linter for undocumented linter warnings. Prior to version 0.1.7, a path traversal vulnerability in `shame next` allows an attacker-controlled `shamefile.yaml` to disclose contents of files outside the repository, one line at a time, to the terminal of a user who runs the command. See patch commit for technical details. The issue is fixed in 0.1.7. Upgrade to either 0.1.7 or later ve",
-    "cvss": 5.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-22"
-    ],
-    "affected": [
-      {
-        "vendor": "BKDDFS",
-        "product": "shamefile"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-20",
-    "updated": "2026-07-22",
-    "url": "https://github.com/BKDDFS/shamefile/security/advisories/GHSA-x6p3-76f2-xxvh",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-47198",
-    "title": "Paymenter: URL parameter injection bypasses paid plan limits at checkout",
-    "desc": "Paymenter is a free and open-source webshop solution for management of hosting services. In versions prior to 1.5.1, the checkout component improperly filters URL-writable properties, allowing authenticated users to inject arbitrary key-value pairs into server provisioning parameters. Because bundled server extensions prioritize these user-supplied properties over administrator-defined configurati",
-    "cvss": 8.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-20",
-      "CWE-639"
-    ],
-    "affected": [
-      {
-        "vendor": "Paymenter",
-        "product": "Paymenter"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-20",
-    "updated": "2026-07-22",
-    "url": "https://github.com/Paymenter/Paymenter/security/advisories/GHSA-5q4q-834j-g8g4",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-47247",
-    "title": "libheif Vulnerable to Heap Information Disclosure via Grid Image Gap + Uninitialized Pixel Plane Allocation",
-    "desc": "libheif is a HEIF and AVIF file format decoder and encoder. Prior to version 1.22.0, two bugs in libheif chain to leak process heap memory as visible pixel values in decoded grid images. An attacker who uploads a crafted AVIF/HEIC file to any server-side image processor (WordPress, Sharp/libvips, ImageMagick, etc.) can recover heap data - including library function pointers sufficient to defeat AS",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-200",
-      "CWE-226",
-      "CWE-682",
-      "CWE-908"
-    ],
-    "affected": [
-      {
-        "vendor": "strukturag",
-        "product": "libheif"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-21",
-    "updated": "2026-07-22",
-    "url": "https://github.com/strukturag/libheif/security/advisories/GHSA-2vh6-whr3-cmq3",
     "source": "CISA Vulnrichment"
   },
   {
