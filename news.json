@@ -1,6 +1,105 @@
 [
   {
     "source": "thn",
+    "title": "DPRK-Linked macOS Malvertising Uses Fake Updates to Deliver Crypto-Stealing Malware",
+    "desc": "Threat actors with ties to North Korea have been attributed to a sophisticated macOS malvertising campaign that involves redirecting users to fake web pages displaying a full-screen non-existent update sequence to deliver malware as part of a new iteration of the long-running Contagious Interview ca",
+    "url": "https://thehackernews.com/2026/07/dprk-linked-macos-malvertising-uses.html",
+    "date": "2026-07-30T23:48:24",
+    "title_ko": "북한과 연계된 macOS 악성 광고, 가짜 업데이트를 통해 암호화폐 탈취 악성코드를 유포",
+    "desc_ko": "북한과 연계된 위협 행위자들이, 사용자를 가짜 웹 페이지로 리디렉션하여 존재하지 않는 업데이트 과정을 전체 화면으로 표시함으로써 악성코드를 유포하는 정교한 macOS 악성 광고 캠페인의 배후로 지목되고 있다. 이는 오랫동안 지속되어 온 ‘Contagious Interview’ 캠페인의 새로운 변종에 해당한다."
+  },
+  {
+    "source": "thn",
+    "title": "ThreatsDay: AI-Powered Hacking, 370 Chrome Flaws, SonicWall Attacks, DNS Hijacking + 22 More Stories",
+    "desc": "A lot of security still comes down to trusting the wrong screen.\n\nThis week, that screen might be a login page, an install guide, a recruiter call, or a familiar service behaving slightly wrong. Behind it: reused credentials, exposed systems, quiet loaders, abused trust, and exploit paths that shoul",
+    "url": "https://thehackernews.com/2026/07/threatsday-ai-powered-hacking-370.html",
+    "date": "2026-07-30T20:55:57",
+    "title_ko": "ThreatsDay: AI 기반 해킹, 크롬 취약점 370건, 소닉월(SonicWall) 공격, DNS 하이재킹 + 그 외 22건의 소식",
+    "desc_ko": "보안 문제의 상당 부분은 여전히 잘못된 화면을 신뢰하는 데서 비롯됩니다.\n\n이번 주에는 그 화면이 로그인 페이지, 설치 안내서, 채용 담당자의 전화, 혹은 평소와 약간 다른 모습을 보이는 익숙한 서비스일 수 있습니다. 그 이면에는 재사용된 인증 정보, 노출된 시스템, 은밀한 로더, 악용된 신뢰, 그리고 본래는 막아야 할 악용 경로들이 숨어 있습니다."
+  },
+  {
+    "source": "thn",
+    "title": "Azure Cosmos DB Flaw Exposed Platform-Wide Key That Could Access Any Database",
+    "desc": "A now-patched vulnerability in Azure Cosmos DB could have let an attacker escape the service's Gremlin query sandbox and obtain full read and write access to databases across customer tenants, according to Wiz.\n\nWiz, which codenamed the chain CosmosEscape, said the exploit chain began with a crafted",
+    "url": "https://thehackernews.com/2026/07/azure-cosmos-db-flaw-exposed-platform.html",
+    "date": "2026-07-30T19:04:09",
+    "title_ko": "Azure Cosmos DB의 취약점으로 인해 모든 데이터베이스에 접근할 수 있는 플랫폼 전체의 키가 노출됨",
+    "desc_ko": "Wiz에 따르면, Azure Cosmos DB에서 현재 패치된 취약점을 악용할 경우 공격자가 서비스의 Gremlin 쿼리 샌드박스를 탈출하여 고객 테넌트 전반에 걸친 데이터베이스에 대한 완전한 읽기 및 쓰기 권한을 획득할 수 있었을 것으로 보인다.\n\n이 공격 체인을 ‘CosmosEscape’라는 코드명으로 명명한 Wiz는, 이 공격 체인이 특수하게 조작된"
+  },
+  {
+    "source": "thn",
+    "title": "Microsoft Copilot for Word Can Copy Hidden Prompts Into New Documents",
+    "desc": "Hidden instructions in a Word document can make Microsoft 365 Copilot rewrite figures in a report, then copy the same instructions into the finished file. Håkon Måløy disclosed the technique on July 28, 144 days after reporting it to Microsoft.\n\nIn his proof of concept, the internally generated file",
+    "url": "https://thehackernews.com/2026/07/microsoft-copilot-for-word-can-copy.html",
+    "date": "2026-07-30T17:24:49",
+    "title_ko": "Word용 Microsoft Copilot은 숨겨진 프롬프트를 새 문서로 복사할 수 있습니다",
+    "desc_ko": "워드 문서에 숨겨진 지시 사항을 이용하면 Microsoft 365 Copilot이 보고서의 수치를 다시 작성하게 한 뒤, 동일한 지시 사항을 완성된 파일에 복사하도록 만들 수 있습니다. 하콘 말뢰이(Håkon Måløy)는 이 기술을 마이크로소프트에 보고한 지 144일 만인 7월 28일에 이를 공개했습니다.\n\n그의 개념 증명(PoC)에서, 내부적으로 생성된 파일은"
+  },
+  {
+    "source": "thn",
+    "title": "The Network Has Become the Control Plane for AI Security",
+    "desc": "Network firewalls are the workhorses of modern cybersecurity. They are trusted to protect the network, blocking malicious traffic and preventing intrusions and breaches. And for decades, network security teams have built controls around a relatively stable model: users connect to applications, appli",
+    "url": "https://thehackernews.com/2026/07/the-network-has-become-control-plane.html",
+    "date": "2026-07-30T17:02:46",
+    "title_ko": "네트워크는 AI 보안을 위한 제어 계층으로 자리 잡았다",
+    "desc_ko": "네트워크 방화벽은 현대 사이버 보안의 중추적인 역할을 담당합니다. 네트워크를 보호하고, 악성 트래픽을 차단하며, 침입과 보안 침해를 방지하는 데 있어 신뢰받는 존재입니다. 그리고 수십 년 동안 네트워크 보안 팀들은 비교적 안정적인 모델을 기반으로 통제 체계를 구축해 왔습니다. 즉, 사용자가 애플리케이션에 연결하고, 애플리케이션은..."
+  },
+  {
+    "source": "thn",
+    "title": "Hackers Exploit AnySign4PC via Hacked Korean Sites to Install Backdoors Without Prompts",
+    "desc": "South Korean authorities and four security firms have disclosed a state-sponsored campaign that compromised trusted domestic websites. The attackers used those sites to exploit locally installed financial-security software and infect targeted visitors with SIGNBT or COPPERHEDGE backdoors.\n\nA comprom",
+    "url": "https://thehackernews.com/2026/07/hackers-exploit-anysign4pc-via-hacked.html",
+    "date": "2026-07-30T16:03:15",
+    "title_ko": "해커들이 해킹당한 한국 웹사이트를 통해 AnySign4PC를 악용해 사용자의 확인 없이 백도어를 설치하고 있다",
+    "desc_ko": "한국 당국과 4개 보안 업체는 신뢰받는 국내 웹사이트들을 해킹한 국가 주도의 공격 캠페인을 공개했다. 공격자들은 해당 사이트들을 이용해 로컬에 설치된 금융 보안 소프트웨어를 악용하고, 표적이 된 방문자들에게 SIGNBT 또는 COPPERHEDGE 백도어를 심었다.\n\n해킹"
+  },
+  {
+    "source": "thn",
+    "title": "SilverFox Targets Japanese Manufacturer with 3-Driver BYOVD Chain and ValleyRAT",
+    "desc": "The Chinese cybercrime group known as Silver Fox has been observed using new drivers as part of bring your own vulnerable driver (BYOVD) attacks targeting a Japanese organization in the industrial manufacturing sector to ultimately deliver ValleyRAT (aka Winos 4.0) for persistent remote access.\n\n\"In",
+    "url": "https://thehackernews.com/2026/07/silverfox-targets-japanese-manufacturer.html",
+    "date": "2026-07-30T16:02:59",
+    "title_ko": "SilverFox, 3-Driver BYOVD 체인과 ValleyRAT를 앞세워 일본 제조사를 겨냥하다",
+    "desc_ko": "‘실버 폭스(Silver Fox)’로 알려진 중국 사이버 범죄 조직이, 산업 제조 분야의 한 일본 기업을 표적으로 삼은 ‘취약한 드라이버 직접 제공(BYOVD)’ 공격의 일환으로 새로운 드라이버를 사용하는 것이 포착되었으며, 이를 통해 궁극적으로 지속적인 원격 접속을 위한 ‘밸리랏(ValleyRAT, 일명 Winos 4.0)’을 유포한 것으로 확인되었습니다.\n\n\"In"
+  },
+  {
+    "source": "thn",
+    "title": "Russian Hackers Exploit Microsoft OWA Flaw to Keep Mailbox Access After Credential Rotation",
+    "desc": "The Russian threat actors recently linked to the exploitation of a now-patched vulnerability in Zimbra have been observed exploiting another vulnerability, this time in Microsoft Outlook Web Access (OWA), to target U.S. and European government entities, as well as the telecommunications, financial, ",
+    "url": "https://thehackernews.com/2026/07/russian-hackers-exploit-microsoft-owa.html",
+    "date": "2026-07-30T13:10:48",
+    "title_ko": "러시아 해커들, 마이크로소프트 OWA 취약점을 악용해 인증 정보 교체 후에도 메일함 접근 권한 유지",
+    "desc_ko": "최근 Zimbra의 취약점(현재는 패치됨)을 악용한 것으로 밝혀진 러시아계 위협 행위자들이, 이번에는 Microsoft Outlook Web Access(OWA)의 또 다른 취약점을 악용해 미국 및 유럽의 정부 기관은 물론 통신, 금융, "
+  },
+  {
+    "source": "thn",
+    "title": "FCC Blocks New Foreign-Produced Robots and Power Inverters Over Cyber Risks",
+    "desc": "The Federal Communications Commission (FCC) added foreign-produced mobile robots and networked power inverters to its Covered List on July 28. The move generally prevents new models from receiving the equipment authorization required for import, marketing, or sale in the US.\n\nPreviously authorized m",
+    "url": "https://thehackernews.com/2026/07/fcc-blocks-new-foreign-produced-robots.html",
+    "date": "2026-07-30T12:58:43",
+    "title_ko": "FCC, 사이버 보안 위험을 이유로 해외에서 생산된 신규 로봇 및 전력 인버터 수입을 차단",
+    "desc_ko": "연방통신위원회(FCC)는 7월 28일, 해외에서 생산된 이동형 로봇과 네트워크 연결형 전력 인버터를 ‘규제 대상 목록’에 추가했다. 이번 조치로 인해 일반적으로 신형 모델들은 미국 내 수입, 마케팅 또는 판매에 필요한 장비 승인을 받을 수 없게 된다.\n\n이전에 승인을 받은 m"
+  },
+  {
+    "source": "thn",
+    "title": "Amazon Links Debug and Chalk npm Hijack to North Korea’s Sapphire Sleet",
+    "desc": "Amazon has tied the September 2025 hijack of the npm packages debug and chalk to North Korea. For ten months, the incident sat in the public record as crypto theft: a maintainer phished through a lookalike npm domain and a wallet-draining script pushed into at least 18 packages carrying more than 2 ",
+    "url": "https://thehackernews.com/2026/07/amazon-links-debug-and-chalk-npm-hijack.html",
+    "date": "2026-07-30T11:35:17",
+    "title_ko": "아마존, ‘디버그’와 ‘초크’ npm 하이재킹 사건을 북한의 ‘사파이어 슬리트’와 연관 지어",
+    "desc_ko": "아마존은 2025년 9월 발생한 npm 패키지 ‘debug’와 ‘chalk’의 해킹 사건을 북한과 연관 지었다. 이 사건은 10개월 동안 암호화폐 도난 사건으로 공개 기록에 남아 있었다. 한 유지보수자가 유사 npm 도메인을 통해 피싱 공격을 가했고, 지갑 자금을 탈취하는 스크립트가 2개 이상의 패키지를 포함하는 최소 18개의 패키지에 삽입된 사건이었다. "
+  },
+  {
+    "source": "thn",
+    "title": "Cisco FMC Zero-Day Actively Exploited, Static Credentials Could Expose Sensitive Data",
+    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a newly disclosed security flaw impacting Cisco Secure Firewall Management Center (FMC) Software to its Known Exploited Vulnerabilities (KEV) catalog, following reports of zero-day exploitation.\n\nThe vulnerability, a",
+    "url": "https://thehackernews.com/2026/07/cisco-fmc-zero-day-actively-exploited.html",
+    "date": "2026-07-30T10:38:39",
+    "title_ko": "시스코 FMC 제로데이 취약점이 활발히 악용되고 있으며, 고정된 인증 정보로 인해 민감한 데이터가 유출될 수 있음",
+    "desc_ko": "미국 사이버보안·인프라보안국(CISA)은 수요일, 제로데이 악용 사례가 보고됨에 따라 시스코 시큐어 방화벽 관리 센터(FMC) 소프트웨어에 영향을 미치는 새로 공개된 보안 결함을 ‘악용된 것으로 확인된 취약점(KEV)’ 목록에 추가했다.\n\n이 취약점은,"
+  },
+  {
+    "source": "thn",
     "title": "Critical Rails Flaw Could Let Unauthenticated Attackers Read Server Files via Image Uploads",
     "desc": "Ruby on Rails has released fixes for a critical Active Storage vulnerability that could let unauthenticated attackers read arbitrary files from application servers through crafted image uploads.\n\nTracked as CVE-2026-66066 (CVSS score: 9.5), the flaw can expose the Rails process environment and secre",
     "url": "https://thehackernews.com/2026/07/critical-rails-flaw-could-let.html",
@@ -23,7 +122,7 @@
     "desc": "Broadcom has released security updates to address multiple security flaws impacting VMware ESX, vCenter, Workstation, and Fusion, three of which have been designated as critical in severity.\n\nThe first of the three critical-rated flaws is CVE-2026-59309 (CVSS score: 9.8), which has been described as",
     "url": "https://thehackernews.com/2026/07/three-critical-vmware-flaws-allow-auth.html",
     "date": "2026-07-29T21:01:15",
-    "title_ko": "VMware의 세 가지 중대한 취약점으로 인해 인증 우회, 코드 실행 및 VM 탈출이 가능해집니다",
+    "title_ko": "VMware의 세 가지 중대한 취약점으로 인해 인증 우회, 코드 실행 및 가상 머신 탈출이 가능해집니다",
     "desc_ko": "브로드컴은 VMware ESX, vCenter, Workstation 및 Fusion에 영향을 미치는 여러 보안 결함을 해결하기 위한 보안 업데이트를 발표했으며, 이 중 세 건은 심각도가 ‘매우 높음(Critical)’으로 분류되었습니다.\n\n이 세 가지 '매우 심각' 등급의 취약점 중 첫 번째는 CVE-2026-59309(CVSS 점수: 9.8)로, 이는 다음과 같이 설명되고 있습니다."
   },
   {
@@ -33,7 +132,7 @@
     "url": "https://thehackernews.com/2026/07/coordinated-cyberattack-targets-30.html",
     "date": "2026-07-29T19:18:36",
     "title_ko": "한 정수장이 가동을 중단한 가운데, 미네소타주 30여 곳의 상수도 시스템을 겨냥한 조직적인 사이버 공격이 발생했다",
-    "desc_ko": "7월 26일과 27일, 미네소타주 내 30곳 이상의 지역 상수도 시스템 운영 기술을 겨냥한 조직적인 사이버 공격이 발생하여 주 전역에 걸쳐 사이버 보안 대응 조치가 취해졌다.\n\n브라함, 플리머스, 사우스 세인트폴, 메이플 플레인 등은 정수장 가동 중단, 통신 장애 또는 피해 발생 사실을 공개적으로 밝혔다. "
+    "desc_ko": "7월 26일과 27일, 미네소타주 내 30곳 이상의 지역 상수도 시스템의 운영 기술을 겨냥한 조직적인 사이버 공격이 발생하여 주 전역에 걸쳐 사이버 보안 대응 조치가 취해졌다.\n\n브라햄, 플리머스, 사우스 세인트폴, 메이플 플레인 등은 정수장 가동 중단, 통신 장애 또는 피해 사실을 공개적으로 밝혔다. "
   },
   {
     "source": "thn",
@@ -41,7 +140,7 @@
     "desc": "Cybersecurity researchers have disclosed details of a large-scale fraud campaign that involves creating lookalike websites of major Russian companies with an aim to siphon funds from international firms for more than nine years.\n\nAccording to Russian cybersecurity vendor F6, the threat actors have s",
     "url": "https://thehackernews.com/2026/07/nine-year-fraud-campaign.html",
     "date": "2026-07-29T19:12:57",
-    "title_ko": "9년간 이어진 사기 행각, 러시아 기업 웹사이트를 위조해 선급금을 가로채다",
+    "title_ko": "9년간 이어진 사기 행각, 러시아 기업 웹사이트를 모방해 선급금을 가로채다",
     "desc_ko": "사이버보안 연구원들이 9년 넘게 국제 기업들로부터 자금을 빼돌리기 위해 러시아 주요 기업들의 모방 웹사이트를 제작한 대규모 사기 캠페인의 세부 내용을 공개했다.\n\n러시아 사이버보안 업체 F6에 따르면, 위협 행위자들은 s"
   },
   {
@@ -51,7 +150,7 @@
     "url": "https://thehackernews.com/2026/07/mythos-asks-right-question-it-doesnt.html",
     "date": "2026-07-29T17:45:00",
     "title_ko": "미토스는 올바른 질문을 던지지만, 그 질문에 대한 답은 내놓지 않는다.",
-    "desc_ko": "AI로 인해 악용까지 걸리는 시간이 단축되고 있습니다. 진짜 문제는 취약점 관리 매뉴얼을 변경해야 하는지 여부가 아니라, 그동안 어떤 부분을 잘못 파악해 왔는지에 있습니다.\n\n현재 보안계에서 오가는 논의는 대략 다음과 같습니다. ‘미토스(Mythos)’가 등장했습니다. 악용까지 걸리는 시간"
+    "desc_ko": "AI로 인해 악용까지 걸리는 시간이 단축되고 있습니다. 진짜 문제는 취약점 관리 지침을 변경해야 하는지 여부가 아니라, 그동안 어떤 부분을 잘못 파악해 왔는지입니다.\n\n현재 보안계에서 오가는 논의는 대략 다음과 같습니다. ‘미토스(Mythos)’가 등장했습니다. 악용까지 걸리는 시간"
   },
   {
     "source": "thn",
@@ -104,7 +203,7 @@
     "desc": "Gitea, the self-hosted Git platform, has patched a critical remote code execution vulnerability. A user with ordinary repository write access can turn attacker-controlled patch content into a live Git hook and run shell commands as the Gitea service account.\n\nTracked as CVE-2026-60004 (CVSS score: 9",
     "url": "https://thehackernews.com/2026/07/new-gitea-rce-lets-repository-writers.html",
     "date": "2026-07-29T13:17:19",
-    "title_ko": "새로운 Gitea RCE를 통해 리포지토리 작성자가 쉘 명령을 실행하기 위한 Git 후크를 설정할 수 있게 되었습니다",
+    "title_ko": "새로운 Gitea RCE로 인해 리포지토리 작성자가 쉘 명령을 실행하기 위해 Git 훅을 심을 수 있게 되었습니다",
     "desc_ko": "자체 호스팅형 Git 플랫폼인 Gitea가 심각한 원격 코드 실행 취약점에 대한 패치를 적용했습니다. 리포지토리에 대한 일반 쓰기 권한을 가진 사용자는 공격자가 제어하는 패치 내용을 활성 Git 후크로 변환하여 Gitea 서비스 계정으로 쉘 명령을 실행할 수 있습니다.\n\n이 취약점은 CVE-2026-60004(CVSS 점수: 9)로 등록되었습니다."
   },
   {
@@ -122,7 +221,7 @@
     "desc": "Beta release versions of two npm packages in the @joyfill namespace have been compromised to deliver a remote access trojan (RAT) associated with the DEV#POPPER malware family.\n\nThe list of affected packages is as follows -\n\n\n  @joyfill/layouts@0.1.2-2773.beta.0\n  @joyfill/components@4.0.0-rc24-2773",
     "url": "https://thehackernews.com/2026/07/two-compromised-joyfill-npm-packages.html",
     "date": "2026-07-29T09:50:57",
-    "title_ko": "Node.js에 임포트될 경우 RAT를 실행하는 두 개의 취약한 joyfill npm 패키지",
+    "title_ko": "Node.js에 임포트될 경우 RAT를 실행하는 두 개의 해킹된 joyfill npm 패키지",
     "desc_ko": "@joyfill 네임스페이스에 속한 두 개의 npm 패키지 베타 버전이, DEV#POPPER 악성코드 계열과 관련된 원격 액세스 트로이목마(RAT)를 유포하기 위해 악용되었습니다.\n\n영향을 받은 패키지 목록은 다음과 같습니다.\n\n\n  @joyfill/layouts@0.1.2-2773.beta.0\n  @joyfill/components@4.0.0-rc24-2773"
   },
   {
@@ -131,8 +230,8 @@
     "desc": "Anthropic says Claude Mythos Preview helped derive an end-to-end key-recovery attack against HAWK-256 and a 200- to 800-fold speedup for an attack on seven-round AES-128.\n\nThe HAWK attack exploits a previously unused symmetry in the lattice behind the signature scheme. Anthropic's released implement",
     "url": "https://thehackernews.com/2026/07/claude-ai-just-cracked-post-quantum.html",
     "date": "2026-07-29T00:29:07",
-    "title_ko": "Claude AI가 방금 포스트 양자 테스트 체계를 해독하고, 더 빠른 7라운드 AES 공격 방식을 발견했습니다.",
-    "desc_ko": "Anthropic은 ‘Claude Mythos Preview’를 통해 HAWK-256에 대한 종단간 키 복구 공격을 도출하고, 7라운드 AES-128 공격 속도를 200~800배 향상시키는 데 기여했다고 밝혔다.\n\nHAWK 공격은 서명 방식의 기반이 되는 격자 구조에서 이전에 활용되지 않았던 대칭성을 악용합니다. Anthropic이 공개한 구현체는"
+    "title_ko": "Claude AI가 방금 포스트 양자 테스트 방식을 해독하고, 더 빠른 7라운드 AES 공격 방법을 발견했습니다.",
+    "desc_ko": "Anthropic은 ‘Claude Mythos Preview’를 통해 HAWK-256에 대한 종단 간 키 복구 공격을 도출하고, 7라운드 AES-128 공격 속도를 200~800배 향상시키는 데 기여했다고 밝혔다.\n\nHAWK 공격은 서명 방식의 기반이 되는 격자 구조에서 이전에 활용되지 않았던 대칭성을 악용합니다. Anthropic이 공개한 구현체는"
   },
   {
     "source": "thn",
@@ -159,7 +258,7 @@
     "url": "https://thehackernews.com/2026/07/jfrog-confirms-openai-models-exploited.html",
     "date": "2026-07-28T19:03:47",
     "title_ko": "JFrog, Hugging Face 침해 사건 이전에 OpenAI 모델들이 Artifactory 제로데이 취약점을 악용했음을 확인",
-    "desc_ko": "JFrog은 OpenAI 모델들이 격리된 평가 환경에서 공개 인터넷에 접속하려 시도하던 중, 자체 호스팅형 Artifactory의 제로데이 취약점을 악용했음을 확인했습니다.\n\nArtifactory는 JFrog의 소프트웨어 리포지토리 관리 도구입니다. OpenAI에 따르면, 해당 모델들은 이후 권한을 상승시키고 횡방향 이동을 반복한 끝에..."
+    "desc_ko": "JFrog은 OpenAI 모델들이 격리된 평가 환경에서 공개 인터넷에 접속하려 시도하던 중, 자체 호스팅형 Artifactory의 제로데이 취약점을 악용했음을 확인했습니다.\n\nArtifactory는 JFrog의 소프트웨어 리포지토리 관리 도구입니다. OpenAI에 따르면, 해당 모델들은 이후 권한을 상승시키고 횡방향 이동을 반복하다가 결국..."
   },
   {
     "source": "thn",
@@ -177,7 +276,7 @@
     "url": "https://thehackernews.com/2026/07/nimbus-manticore-deploys-nightledger.html",
     "date": "2026-07-28T17:25:20",
     "title_ko": "Nimbus Manticore, NightLedger를 배포하여 피해자 시스템을 은밀한 중계 서버로 전환",
-    "desc_ko": "‘Nimbus Manticore’(일명 GalaxyGato, Mirage Kitten, Smoke Sandstorm, Subtle Snail, UNC1549)로 추적되는 이란 정부 후원 해킹 그룹이 중동, 아프리카, 남아시아 전역의 기관들을 표적으로 한 일련의 새로운 공격을 자행한 것으로 밝혀졌다.\n\n이번 침입 사건에서는 이전에 사용된"
+    "desc_ko": "‘Nimbus Manticore’(일명 GalaxyGato, Mirage Kitten, Smoke Sandstorm, Subtle Snail, UNC1549)로 추적되는 이란 정부 후원 해킹 그룹이 중동, 아프리카, 남아시아 전역의 기관들을 대상으로 한 일련의 새로운 공격의 배후로 지목되고 있다.\n\n이번 침입 사건에서는 이전에 사용된"
   },
   {
     "source": "thn",
@@ -195,7 +294,7 @@
     "url": "https://thehackernews.com/2026/07/researcher-says-ai-helped-develop-linux.html",
     "date": "2026-07-28T13:34:44",
     "title_ko": "한 연구원은 AI가 리눅스 트래픽 제어 취약점을 루트 권한 획득 취약점으로 발전시키는 데 기여했다고 밝혔다",
-    "desc_ko": "STAR Labs는 대상인 CentOS Stream 9 빌드에서 일반 로컬 사용자를 루트 권한으로 승격시키는 리눅스 커널 익스플로잇을 공개했습니다. CVE-2026-53264(CVSS 점수: 7.8)로 추적되는 이 취약점은 커널의 네트워크 트래픽 제어 하위 시스템에서 발생하는 'use-after-free' 경합(race) 문제입니다. 연구원 리 자지에(Lee Jia Jie)는 인공적으로"
+    "desc_ko": "STAR Labs는 대상인 CentOS Stream 9 빌드에서 일반 로컬 사용자를 루트 권한으로 승격시키는 리눅스 커널 익스플로잇을 공개했습니다. CVE-2026-53264(CVSS 점수: 7.8)로 추적되는 이 취약점은 커널의 네트워크 트래픽 제어 하위 시스템에서 발생하는 ‘use-after-free’ 경합(race) 문제입니다. 연구원 리 지아지에(Lee Jia Jie)는 인공적으로"
   },
   {
     "source": "thn",
@@ -231,7 +330,7 @@
     "url": "https://thehackernews.com/2026/07/dysphoria-iot-botnet-adds-blockchain-c2.html",
     "date": "2026-07-27T22:46:28",
     "title_ko": "잭스키드(JackSkid)의 활동 중단 이후, 디스포리아(Dysphoria) IoT 봇넷이 블록체인 기반 C2 및 피해자 중계 서버를 추가했다",
-    "desc_ko": "CNCERT와 XLab이 추적 중인 사물인터넷(IoT) 봇넷 네트워크인 ‘디스포리아(Dysphoria)’는 지난 3월 잭스키드(JackSkid) 인프라를 대상으로 한 법 집행 기관의 단속 작전 이후, 블록체인 기반 네임 서비스와 감염된 기기를 중계 서버로 활용하는 방식을 도입했다. 연구진들은 이러한 설계 방식이 봇넷을 무력화하기 더 어렵게 만든다고 밝혔다.\n\nCNCERT, Ch"
+    "desc_ko": "CNCERT와 XLab이 추적 중인 사물인터넷(IoT) 봇넷 네트워크인 ‘디스포리아(Dysphoria)’는 지난 3월 잭스키드(JackSkid) 인프라를 대상으로 한 법 집행 기관의 단속 작전 이후, 블록체인 기반 네임 서비스와 감염된 기기를 중계 서버로 활용하는 방식을 도입했다. 연구진들은 이러한 설계로 인해 봇넷을 무력화하기가 더 어려워졌다고 밝혔다.\n\nCNCERT, Ch"
   },
   {
     "source": "thn",
@@ -240,7 +339,7 @@
     "url": "https://thehackernews.com/2026/07/public-exploit-released-for-patched.html",
     "date": "2026-07-27T20:10:00",
     "title_ko": "패치된 vBulletin의 인증 전 코드 실행 취약점에 대한 공개 익스플로잇 공개",
-    "desc_ko": "7월 27일에 공개된 취약점 상세 정보에 따르면, 인증되지 않은 요청이 vBulletin 내부의 PHP eval() 함수에 도달하여 패치가 적용되지 않은 포럼 서버에서 코드를 실행할 수 있는 것으로 나타났습니다. 이 공격은 계정, 관리자 권한 또는 다른 사용자의 개입 없이도 가능합니다.\n\nSSD Secure Disclosure는 vBullet을 목록에 올렸습니다."
+    "desc_ko": "7월 27일에 공개된 취약점 세부 정보에 따르면, 인증되지 않은 요청이 vBulletin 내부의 PHP eval() 함수에 도달하여 패치가 적용되지 않은 포럼 서버에서 코드를 실행할 수 있는 것으로 나타났습니다. 이 공격에는 계정, 관리자 권한 또는 다른 사용자의 개입이 전혀 필요하지 않습니다.\n\nSSD Secure Disclosure는 vBullet을 목록에 올렸습니다."
   },
   {
     "source": "thn",
@@ -249,7 +348,7 @@
     "url": "https://thehackernews.com/2026/07/weekly-recap-rogue-ai-agents-check.html",
     "date": "2026-07-27T19:40:54",
     "title_ko": "⚡ 주간 요약: 악성 AI 에이전트, 체크포인트(Check Point) 취약점 악용, 슬롭스쿼팅, 클릭픽스(ClickFix) 미끼 공격 등",
-    "desc_ko": "월요일은 늘 그렇듯 모든 것이 통제되고 있다는 확신으로 시작됩니다. 그러다 로그가 깨어납니다.\n\n이번 주에는 신뢰받던 도구들이 선을 넘었고, 오래된 취약점이 새로운 공격 수단이 되었으며, 노출된 시스템은 여전히 노출된 채로 남아 있었고, 공격자들은 겉보기에는 평범해 보이는 서비스 속에 계속 숨어 있었습니다. 처음에는 아무것도 이상해 보이지 않았습니다. 그게 도움이 되었습니다.\n\n그"
+    "desc_ko": "월요일은 늘 그렇듯 모든 것이 통제되고 있다는 확신으로 시작됩니다. 그러다 로그들이 깨어납니다.\n\n이번 주에는 신뢰받던 도구들이 선을 넘었고, 오래된 취약점이 새로운 공격 수단이 되었으며, 노출된 시스템은 여전히 노출된 채로 남아 있었고, 공격자들은 겉보기에는 평범해 보이는 서비스 속에 계속 숨어 있었습니다. 처음에는 아무것도 이상해 보이지 않았습니다. 그게 도움이 되었습니다.\n\n그"
   },
   {
     "source": "thn",
@@ -257,7 +356,7 @@
     "desc": "n8n has patched a high-severity expression-sandbox escape that could let an authenticated workflow editor execute operating-system commands on the server running the automation platform. Security Joes found the flaw while probing n8n's February fix for CVE-2026-27577 for another bypass.\n\nThe affecte",
     "url": "https://thehackernews.com/2026/07/n8n-sandbox-escape-lets-workflow.html",
     "date": "2026-07-27T18:35:15",
-    "title_ko": "n8n 샌드박스 이스케이프를 사용하면 워크플로 편집자가 n8n 프로세스로서 OS 명령을 실행할 수 있습니다.",
+    "title_ko": "n8n 샌드박스 이스케이프를 사용하면 워크플로 편집자가 n8n 프로세스로 OS 명령을 실행할 수 있습니다.",
     "desc_ko": "n8n은 인증된 워크플로 편집자가 자동화 플랫폼이 실행 중인 서버에서 운영 체제 명령을 실행할 수 있게 하는 고위험 표현식 샌드박스 탈출 취약점을 패치했습니다. Security Joes는 CVE-2026-27577에 대한 n8n의 2월 수정 사항을 조사하던 중 이 결함을 발견했습니다.\n\n이 취약점의 영향은"
   },
   {
@@ -275,7 +374,7 @@
     "desc": "The China-linked cybercrime group behind the use of income tax-related phishing lures targeting Indian taxpayers, tax professionals, and corporate finance teams has been observed using a sophisticated crypter service called Cruciferra.\n\nAccording to a new analysis by Proofpoint, Cruciferra has been ",
     "url": "https://thehackernews.com/2026/07/cruciferra-crypter-uses-byovd-and.html",
     "date": "2026-07-27T16:21:45",
-    "title_ko": "Cruciferra Crypter는 BYOVD 및 프로세스 고스팅 기법을 활용해 Windows 악성코드를 은폐합니다",
+    "title_ko": "Cruciferra Crypter는 BYOVD 및 프로세스 고스팅 기법을 활용해 Windows 악성코드를 은폐한다",
     "desc_ko": "인도 납세자, 세무 전문가, 기업 재무팀을 대상으로 소득세 관련 피싱 유인 수법을 사용한 중국과 연계된 사이버 범죄 조직이 ‘Cruciferra’라는 정교한 암호화 서비스를 사용하는 것으로 확인되었습니다.\n\nProofpoint의 새로운 분석에 따르면, Cruciferra는 "
   },
   {
@@ -285,7 +384,7 @@
     "url": "https://thehackernews.com/2026/07/teleshim-abuses-telegram-for-c2-in.html",
     "date": "2026-07-27T14:18:47",
     "title_ko": "TELESHIM, 중동 정부를 겨냥한 공격에서 텔레그램을 C2 통신 수단으로 악용",
-    "desc_ko": "사이버 보안 연구원들은 동아시아와 연관이 있는 한 위협 행위자가 중동의 정부 기관을 표적으로 삼아 새로운 악성 사이버 활동을 벌이고 있다고 경고했다.\n\n이 침입 사건으로 인해 TELESHIM, MIXEDKEY, BINDCLOAK로 명명된, 이전에 보고된 바 없는 악성코드 계열이 배포된 것으로 밝혀졌는데, 이에 따르면"
+    "desc_ko": "사이버 보안 연구원들은 동아시아와 연관이 있는 한 위협 행위자가 중동의 정부 기관을 표적으로 삼아 새로운 악성 사이버 활동을 벌이고 있다고 경고했다.\n\n이 침입 사건으로 인해 TELESHIM, MIXEDKEY, BINDCLOAK로 명명된, 이전에 보고된 바 없는 악성코드 계열이 배포된 것으로 밝혀졌다."
   },
   {
     "source": "thn",
@@ -303,7 +402,7 @@
     "url": "https://thehackernews.com/2026/07/malvertising-sends-malware-in-pieces.html",
     "date": "2026-07-26T00:18:44",
     "title_ko": "악성 광고는 악성코드를 조각조각으로 전송한 뒤, 브라우저가 실행 파일을 조립하도록 만듭니다.",
-    "desc_ko": "‘SourTrade’로 명명된 악성 광고 공격은 고정된 URL을 통해 하나의 완전한 악성 파일을 제공하는 대신, 합법적인 Bun 런타임을 기반으로 피해자의 브라우저가 최종 Windows 실행 파일을 직접 생성하도록 유도하고 있다.\n\n2026년 7월 23일 이 캠페인을 상세히 공개한 Confiant는 이 공격을 운영해 왔다고 밝혔다."
+    "desc_ko": "‘SourTrade’로 명명된 악성 광고 공격은 고정된 URL을 통해 하나의 완전한 악성 파일을 제공하는 대신, 합법적인 Bun 런타임을 기반으로 피해자의 브라우저가 최종 Windows 실행 파일을 직접 생성하도록 유도하고 있습니다.\n\n2026년 7월 23일 이 캠페인을 상세히 공개한 Confiant는 이 캠페인을 운영해 왔다고 밝혔습니다."
   },
   {
     "source": "thn",
@@ -312,7 +411,7 @@
     "url": "https://thehackernews.com/2026/07/fastjson-1x-rce-vulnerability-targeted.html",
     "date": "2026-07-25T18:22:43",
     "title_ko": "패치가 제공되지 않은 상태에서 Fastjson 1.x 원격 코드 실행(RCE) 취약점을 노린 공격 발생",
-    "desc_ko": "보안 업체인 ThreatBook과 Imperva는 공격자들이 알리바바의 자바용 JSON 라이브러리인 Fastjson의 중대한 취약점을 노리고 있다고 밝혔습니다. 이 취약점의 영향을 받는 Spring Boot 애플리케이션에서는 악의적인 JSON 요청을 통해 인증 절차 없이 자바 프로세스의 권한으로 코드를 실행할 수 있습니다.\n\n이 취약점은 CVE-2026-16723으로 등록되었으며,"
+    "desc_ko": "보안 업체인 ThreatBook과 Imperva에 따르면, 공격자들이 알리바바의 자바용 JSON 라이브러리인 Fastjson의 중대한 취약점을 노리고 있다고 합니다. 이 취약점의 영향을 받는 Spring Boot 애플리케이션에서는 악의적인 JSON 요청을 통해 인증 절차 없이 자바 프로세스의 권한으로 코드를 실행할 수 있습니다.\n\n이 취약점은 CVE-2026-16723으로 등록되었으며,"
   },
   {
     "source": "thn",
@@ -321,7 +420,7 @@
     "url": "https://thehackernews.com/2026/07/researcher-publishes-gitlab-rce-poc.html",
     "date": "2026-07-25T15:44:26",
     "title_ko": "한 연구원이 인증된 사용자가 Git 권한으로 명령을 실행할 수 있게 하는 GitLab RCE PoC를 발표했다",
-    "desc_ko": "보안 연구 기관인 depthfirst는 7월 24일, GitLab이 6주 전인 6월 10일에 패치를 적용한 GitLab 취약점에 대한 작동 가능한 익스플로잇 코드를 최초로 공개했다. 이 코드는 해당 업데이트를 적용하지 않은 모든 자체 관리형 18.11.3 서버에서 ‘git’ 권한으로 명령을 실행할 수 있다.\n\n프로젝트에 푸시할 수 있는 인증된 사용자라면 누구나 i를 실행할 수 있습니다."
+    "desc_ko": "보안 연구 기관인 depthfirst는 7월 24일, GitLab이 6주 전인 6월 10일에 패치를 적용했던 GitLab 취약점에 대한 작동 가능한 익스플로잇 코드를 최초로 공개했다. 이 코드는 해당 업데이트를 적용하지 않은 모든 자체 관리형 18.11.3 서버에서 ‘git’ 권한으로 명령을 실행할 수 있다.\n\n프로젝트에 푸시할 수 있는 인증된 사용자라면 누구나 i를 실행할 수 있습니다."
   },
   {
     "source": "thn",
@@ -330,7 +429,7 @@
     "url": "https://thehackernews.com/2026/07/ctm360-research-reveals-how-insurance.html",
     "date": "2026-07-25T15:44:21",
     "title_ko": "CTM360 연구 결과, 보험 관련 피싱이 어떻게 실시간 계정 탈취로 진화했는지 밝혀내다",
-    "desc_ko": "수년 동안 금융 기관을 노린 피싱 공격은 모두 똑같은 수법을 따랐습니다. 피해자들은 속아 사용자 이름과 비밀번호를 입력하게 되었고, 공격자들은 이러한 인증 정보를 수집한 뒤, 기회가 닿는 대로 계정을 탈취했습니다.\n\n이러한 패턴이 변화하고 있습니다.\n\n최근 조사 결과에 따르면"
+    "desc_ko": "수년 동안 금융 기관을 노린 피싱 공격은 모두 똑같은 수법을 따랐습니다. 피해자들은 속아 사용자 이름과 비밀번호를 입력하게 되었고, 공격자들은 이러한 인증 정보를 수집한 뒤, 기회가 생기면 계정을 탈취했습니다.\n\n이러한 패턴이 변화하고 있습니다.\n\n최근 조사 결과에 따르면..."
   },
   {
     "source": "thn",
@@ -349,104 +448,5 @@
     "date": "2026-07-25T15:23:41",
     "title_ko": "DevMan RaaS 포털은 페이로드 빌드, 피해자 관리 및 제휴사 지급을 중앙 집중화합니다.",
     "desc_ko": "DevMan 랜섬웨어-어-서비스(RaaS) 조직의 운영자들은 제휴사들이 페이로드를 생성하고, 수익을 확인하며, 피해자와 관련된 다양한 사항을 관리할 수 있도록 지원하는 전용 웹 플랫폼을 운영하고 있다.\n\n스위스의 사이버보안 기업 PRODAFT는 중앙에서 관리되는 이 플랫폼을 추적하고 있다."
-  },
-  {
-    "source": "thn",
-    "title": "BlueNoroff Zoom Phishing Kit Profiles Crypto Wallets Before Malware Delivery",
-    "desc": "The North Korean threat actors behind the ClickFix-style campaigns that employ typosquatted Zoom and Microsoft Teams domains have been found to operate an active phishing kit to impersonate the videoconferencing platforms in social engineering campaigns designed to deliver malware.\n\n\"BlueNoroff has ",
-    "url": "https://thehackernews.com/2026/07/bluenoroff-zoom-phishing-kit-profiles.html",
-    "date": "2026-07-24T20:42:35",
-    "title_ko": "BlueNoroff Zoom 피싱 키트, 악성코드 유포 전 암호화폐 지갑 정보를 수집",
-    "desc_ko": "Zoom 및 Microsoft Teams 도메인의 타이포스쿼팅을 악용한 ‘ClickFix’ 방식 캠페인의 배후에 있는 북한 출신 위협 행위자들이, 악성코드를 유포하기 위해 설계된 사회공학 공격에서 화상회의 플랫폼을 사칭하기 위해 활성 피싱 키트를 운영하고 있는 것으로 밝혀졌다.\n\n“BlueNoroff는 "
-  },
-  {
-    "source": "thn",
-    "title": "Certighost Exploit Lets Low-Privileged Active Directory Users Impersonate a Domain Controller",
-    "desc": "Researchers H0j3n and Aniq Fakhrul published a working exploit on July 24 that lets a low-privileged Active Directory user obtain a certificate for a Domain Controller and authenticate as that machine.\n\nThey codenamed the flaw Certighost. Because Domain Controller accounts carry directory replicatio",
-    "url": "https://thehackernews.com/2026/07/certighost-exploit-lets-low-privileged.html",
-    "date": "2026-07-24T19:45:21",
-    "title_ko": "Certighost 취약점을 악용하면 권한이 낮은 Active Directory 사용자가 도메인 컨트롤러를 사칭할 수 있습니다",
-    "desc_ko": "연구자 H0j3n과 Aniq Fakhrul은 7월 24일, 권한이 낮은 Active Directory 사용자가 도메인 컨트롤러의 인증서를 획득하고 해당 시스템으로 인증할 수 있게 해주는 작동 가능한 익스플로잇을 공개했다.\n\n그들은 이 취약점에 ‘Certighost’라는 코드명을 붙였다. 도메인 컨트롤러 계정은 디렉터리 복제를 담당하기 때문에"
-  },
-  {
-    "source": "thn",
-    "title": "ChatGPT AgentForger Flaw Could Deploy Rogue Workspace Agents via a Phishing Link",
-    "desc": "Cybersecurity researchers have disclosed a critical vulnerability in OpenAI's ChatGPT Workspace Agents that could have allowed a single phishing link to stealthily build, authorize, and deploy an autonomous artificial intelligence (AI) agent inside a victim's organization.\n\nThe vulnerability has bee",
-    "url": "https://thehackernews.com/2026/07/chatgpt-agentforger-flaw-could-deploy.html",
-    "date": "2026-07-24T17:23:55",
-    "title_ko": "ChatGPT AgentForger의 취약점으로 인해 피싱 링크를 통해 악성 워크스페이스 에이전트가 배포될 수 있음",
-    "desc_ko": "사이버보안 연구원들이 OpenAI의 ChatGPT Workspace Agents에 존재하는 심각한 취약점을 공개했는데, 이 취약점을 악용하면 단 하나의 피싱 링크만으로도 피해자 조직 내부에 자율적인 인공지능(AI) 에이전트를 은밀하게 구축, 승인 및 배포할 수 있었을 것으로 보인다.\n\n이 취약점은"
-  },
-  {
-    "source": "thn",
-    "title": "Bing Images Flaws Let Crafted SVGs Run Commands as SYSTEM on Microsoft's Servers",
-    "desc": "A crafted SVG submitted to Bing's image search ran commands as NT AUTHORITY\\SYSTEM on Microsoft's production image-processing workers, and as root on the Linux machines in the same fleet.\n\nXBOW's testing got the same result on workers across different hosts and network ranges, so the problem sat in ",
-    "url": "https://thehackernews.com/2026/07/bing-images-flaws-let-crafted-svgs-run.html",
-    "date": "2026-07-24T17:15:17",
-    "title_ko": "빙 이미지(Bing Images)의 취약점으로 인해 조작된 SVG 파일이 마이크로소프트 서버에서 ‘SYSTEM’ 권한으로 명령을 실행할 수 있게 됨",
-    "desc_ko": "Bing 이미지 검색에 제출된 특수하게 조작된 SVG 파일은 Microsoft의 실제 이미지 처리 워커에서는 NT AUTHORITY\\SYSTEM 권한으로, 동일한 클러스터 내의 Linux 시스템에서는 root 권한으로 명령을 실행했습니다.\n\nXBOW의 테스트 결과, 서로 다른 호스트와 네트워크 범위에 속한 워커에서도 동일한 결과가 나타났으므로, 문제는 "
-  },
-  {
-    "source": "thn",
-    "title": "Seeing AI Agents Is Not Enough. Security Teams Must Enforce What They Can Do",
-    "desc": "AI agent security is moving through a familiar maturity curve: adoption, then visibility, and finally, control. But what we've collectively discovered is that enforcing least privilege for AI agents is harder than we ever imagined. This is why there are so many approaches, from prompt filtering to i",
-    "url": "https://thehackernews.com/2026/07/seeing-ai-agents-is-not-enough-security.html",
-    "date": "2026-07-24T17:00:00",
-    "title_ko": "AI 에이전트를 파악하는 것만으로는 충분하지 않습니다. 보안 팀은 AI 에이전트가 수행할 수 있는 작업을 엄격히 통제해야 합니다.",
-    "desc_ko": "AI 에이전트의 보안은 ‘도입’, ‘가시성 확보’, 그리고 마지막으로 ‘통제’라는 익숙한 성숙도 곡선을 따라 발전하고 있습니다. 하지만 우리가 공동으로 깨달은 점은, AI 에이전트에 대해 최소 권한 원칙을 적용하는 것이 우리가 상상했던 것보다 훨씬 어렵다는 사실입니다. 이것이 바로 프롬프트 필터링부터 i"
-  },
-  {
-    "source": "thn",
-    "title": "Hacker Runs Hermes AI Agent Unattended for Post-Exploitation at Thai Finance Ministry",
-    "desc": "Someone installed a popular AI assistant on a rented server, switched off the setting that makes it ask permission before running risky commands, and pointed it at Thailand's Ministry of Finance, which runs the country's treasury and tax collection.\n\nThe agent then worked through the ministry's netw",
-    "url": "https://thehackernews.com/2026/07/hacker-runs-hermes-ai-agent-unattended.html",
-    "date": "2026-07-24T15:45:29",
-    "title_ko": "해커, 태국 재무부에서 공격 후 활동을 위해 헤르메스 AI 에이전트를 무인 상태로 가동",
-    "desc_ko": "누군가가 임대 서버에 널리 쓰이는 AI 비서를 설치하고, 위험한 명령을 실행하기 전에 허가를 요청하도록 하는 설정을 해제한 뒤, 태국의 국고 및 세금 징수를 담당하는 재무부를 대상으로 설정했습니다.\n\n그 후 이 AI 비서는 재무부의 네트워크를 통해..."
-  },
-  {
-    "source": "thn",
-    "title": "Golden Chickens Resurfaces With Four New Malware Families and Modular Implants",
-    "desc": "The threat actors behind the Golden Chickens malware-as-a-service (MaaS) ecosystem have resurfaced with four new malware families, indicating that the operators are showing no signs of stopping despite extensive public disclosures into their inner workings.\n\nThe malware families in question are: Tin",
-    "url": "https://thehackernews.com/2026/07/golden-chickens-resurfaces-with-four.html",
-    "date": "2026-07-24T15:39:24",
-    "title_ko": "‘골든 치킨스’가 4가지 새로운 악성코드 계열과 모듈형 임플란트를 들고 다시 등장했다",
-    "desc_ko": "‘골든 치킨스(Golden Chickens)’ 악성코드 서비스(MaaS) 생태계의 배후에 있는 위협 행위자들이 4개의 새로운 악성코드 계열을 들고 다시 모습을 드러냈는데, 이는 해당 운영자들이 그들의 내부 작동 방식에 대한 광범위한 공개에도 불구하고 활동을 멈출 기미를 전혀 보이지 않고 있음을 시사한다.\n\n문제의 악성코드 계열은 다음과 같다: Tin"
-  },
-  {
-    "source": "thn",
-    "title": "NodeBB Patches Eight AI-Found Flaws Exposing Admin Access and Private Chats",
-    "desc": "Eight security flaws in NodeBB went public on Wednesday, along with the code to exploit them. Aikido Security rates all eight as high severity and says its AI pentest agents found them in a six-hour review of the forum software's source code.\n\nEvery version before 4.14.0 is affected. NodeBB has fixe",
-    "url": "https://thehackernews.com/2026/07/nodebb-patches-eight-ai-found-flaws.html",
-    "date": "2026-07-24T13:11:06",
-    "title_ko": "NodeBB, 관리자 접근 권한 및 비공개 채팅 노출을 초래하는 AI로 발견된 8가지 취약점 패치",
-    "desc_ko": "수요일, NodeBB의 보안 취약점 8건과 이를 악용하는 코드가 공개되었습니다. Aikido Security는 이 8건의 취약점 모두를 ‘고위험’ 등급으로 평가했으며, 자사의 AI 침투 테스트 에이전트가 해당 포럼 소프트웨어의 소스 코드를 6시간 동안 검토한 결과 이를 발견했다고 밝혔습니다.\n\n4.14.0 이전의 모든 버전이 이 취약점의 영향을 받습니다. NodeBB는 이를 수정했습니다."
-  },
-  {
-    "source": "thn",
-    "title": "Kimi K3 Agents Found Redis Zero-Days and Built RCE Exploit, Researchers Say",
-    "desc": "Redis shipped seven security releases on July 23 after researchers published authenticated RCE PoCs for stock Redis 6.2.22, 7.4.9, 8.6.4, and 8.8.0.\n\nAll four chains require RESTORE. The Streams chains also need EVAL and XGROUP; the 8.8.0 chain needs EVAL and the bundled RedisBloom module. Redis say",
-    "url": "https://thehackernews.com/2026/07/kimi-k3-agents-found-redis-zero-days.html",
-    "date": "2026-07-24T12:28:27",
-    "title_ko": "연구진에 따르면, Kimi K3 요원들이 Redis 제로데이 취약점을 발견하고 RCE 익스플로잇을 개발했다고 한다",
-    "desc_ko": "연구진이 기본 제공되는 Redis 6.2.22, 7.4.9, 8.6.4 및 8.8.0 버전에 대한 인증된 RCE PoC를 공개한 후, Redis는 7월 23일에 7개의 보안 업데이트를 배포했습니다.\n\n이 네 가지 체인 모두 RESTORE 명령어가 필요합니다. Streams 체인의 경우 EVAL 및 XGROUP 명령어도 필요하며, 8.8.0 체인의 경우 EVAL 명령어와 번들로 제공되는 RedisBloom 모듈이 필요합니다. Redis 측은 다음과 같이 밝혔습니다."
-  },
-  {
-    "source": "thn",
-    "title": "Fake Notepad++ Plugin Delivers MATCHBOIL.V2 in UAC-0099 Attacks",
-    "desc": "The Computer Emergency Response Team of Ukraine (CERT-UA) has warned of a new campaign that involves the use of a malicious program that's dressed up as a Notepad++ plugin to compromise Windows systems.\n\nThe activity has been attributed by the agency to a threat cluster it tracks as UAC-0099, a Russ",
-    "url": "https://thehackernews.com/2026/07/fake-notepad-plugin-delivers.html",
-    "date": "2026-07-24T12:20:57",
-    "title_ko": "UAC-0099 공격에서 가짜 Notepad++ 플러그인이 MATCHBOIL.V2를 유포",
-    "desc_ko": "우크라이나 컴퓨터 비상 대응팀(CERT-UA)은 Notepad++ 플러그인으로 위장한 악성 프로그램을 이용해 Windows 시스템을 침해하는 새로운 공격 캠페인이 진행 중이라고 경고했다.\n\n이 기관은 이번 활동을 자사가 UAC-0099로 추적 중인 위협 클러스터의 소행으로 지목했으며, 이는 러시아"
-  },
-  {
-    "source": "thn",
-    "title": "Russian Espionage Group Exploited Zimbra Zero-Day to Steal Mail and 2FA Codes",
-    "desc": "A Russian state-supported espionage group spent months reading Western mailboxes through a then-unknown flaw in Zimbra's webmail client.\n\nThe payload goes after the last 90 days of email, the organization's entire email directory, the password saved in the browser and the codes kept for two-factor r",
-    "url": "https://thehackernews.com/2026/07/russian-espionage-group-exploited.html",
-    "date": "2026-07-24T00:06:08",
-    "title_ko": "러시아 스파이 조직, 짐브라(Zimbra) 제로데이 취약점을 악용해 이메일 및 2단계 인증 코드 탈취",
-    "desc_ko": "러시아 정부의 지원을 받는 한 첩보 단체가 짐브라(Zimbra) 웹메일 클라이언트의 당시 알려지지 않았던 취약점을 악용해 수개월 동안 서방 국가 사용자들의 메일함을 감시했다.\n\n이 악성 코드는 최근 90일간의 이메일, 해당 조직의 전체 이메일 디렉토리, 브라우저에 저장된 비밀번호, 그리고 2단계 인증에 사용되는 코드를 노린다."
   }
 ]
