@@ -1,5 +1,699 @@
 [
   {
+    "cve": "CVE-2025-49794",
+    "title": "Libxml: heap use after free (uaf) leads to denial of service (dos)",
+    "desc": "A use-after-free vulnerability was found in libxml2. This issue occurs when parsing XPath elements under certain circumstances when the XML schematron has the <sch:name path=\"...\"/> schema elements. This flaw allows a malicious actor to craft a malicious XML document used as input for libxml, resulting in the program's crash using libxml or other possible undefined behaviors.",
+    "cvss": 9.1,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-825"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-06-16",
+    "updated": "2026-08-02",
+    "url": "https://access.redhat.com/errata/RHSA-2025:10630",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-49796",
+    "title": "Libxml: type confusion leads to denial of service (dos)",
+    "desc": "A vulnerability was found in libxml2. Processing certain sch:name elements from the input XML file can trigger a memory corruption issue. This flaw allows an attacker to craft a malicious XML input file that can lead libxml to crash, resulting in a denial of service or other possible undefined behavior due to sensitive data being corrupted in memory.",
+    "cvss": 9.1,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-125"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-06-16",
+    "updated": "2026-08-02",
+    "url": "https://access.redhat.com/errata/RHSA-2025:10630",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-5914",
+    "title": "Libarchive: double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c",
+    "desc": "A vulnerability has been identified in the libarchive library, specifically within the archive_read_format_rar_seek_data() function. This flaw involves an integer overflow that can ultimately lead to a double-free condition. Exploiting a double-free vulnerability can result in memory corruption, enabling an attacker to execute arbitrary code or cause a denial-of-service condition.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-190"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.2 Advanced Update Support"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-06-09",
+    "updated": "2026-08-02",
+    "url": "https://access.redhat.com/errata/RHSA-2025:14130",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-7425",
+    "title": "Libxslt: libxml2: heap use-after-free in libxslt caused by atype corruption in xmlattrptr",
+    "desc": "A flaw was found in libxslt where the attribute type, atype, flags are modified in a way that corrupts internal memory management. When XSLT functions, such as the key() process, result in tree fragments, this corruption prevents the proper cleanup of ID attributes. As a result, the system may access freed memory, causing crashes or enabling attackers to trigger heap corruption.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "GNOME",
+        "product": "libxml2"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-07-10",
+    "updated": "2026-08-02",
+    "url": "https://access.redhat.com/errata/RHBA-2025:12345",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-5278",
+    "title": "Coreutils: heap buffer under-read in gnu coreutils sort via key specification",
+    "desc": "A flaw was found in GNU Coreutils. The sort utility's begfield() function is vulnerable to a heap buffer under-read. The program may access memory outside the allocated buffer if a user runs a crafted command using the traditional key format. A malicious input could lead to a crash or leak sensitive data.",
+    "cvss": 4.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-121"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Cost Management Metrics Operator 4"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Discovery 2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-05-27",
+    "updated": "2026-08-02",
+    "url": "https://access.redhat.com/errata/RHSA-2026:28911",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-2100",
+    "title": "P11-kit: null dereference via c_derivekey with specific null parameters",
+    "desc": "A flaw was found in p11-kit. A remote attacker could exploit this vulnerability by calling the C_DeriveKey function on a remote token with specific IBM kyber or IBM btc derive mechanism parameters set to NULL. This could lead to the RPC-client attempting to return an uninitialized value, potentially resulting in a NULL dereference or undefined behavior. This issue may cause an application level de",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-824"
+    ],
+    "affected": [
+      {
+        "vendor": "p11-glue",
+        "product": "p11-kit"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Cost Management Metrics Operator 4"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-03-26",
+    "updated": "2026-08-02",
+    "url": "https://access.redhat.com/errata/RHSA-2026:18143",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-1244",
+    "title": "Emacs: shell injection vulnerability in gnu emacs via custom \"man\" uri scheme",
+    "desc": "A command injection flaw was found in the text editor Emacs. It could allow a remote, unauthenticated attacker to execute arbitrary shell commands on a vulnerable system. Exploitation is possible by tricking users into visiting a specially crafted website or an HTTP URL with a redirect.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-78"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.2 Advanced Update Support"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-02-12",
+    "updated": "2026-08-02",
+    "url": "https://access.redhat.com/errata/RHSA-2025:1915",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-4878",
+    "title": "Libcap: libcap: privilege escalation via toctou race condition in cap_set_file()",
+    "desc": "A flaw was found in libcap. A local unprivileged user can exploit a Time-of-check-to-time-of-use (TOCTOU) race condition in the `cap_set_file()` function. This allows an attacker with write access to a parent directory to redirect file capability updates to an attacker-controlled file. By doing so, capabilities can be injected into or stripped from unintended executables, leading to privilege esca",
+    "cvss": 6.7,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-367"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-04-09",
+    "updated": "2026-08-02",
+    "url": "https://access.redhat.com/errata/RHSA-2026:12423",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-1615",
+    "title": "Versions of the package jsonpath before 1.3.0 are vulnerable to Arbitrary Code Injection via unsafe evaluation of user-s",
+    "desc": "Versions of the package jsonpath before 1.3.0 are vulnerable to Arbitrary Code Injection via unsafe evaluation of user-supplied JSON Path expressions. The library relies on the static-eval module to process JSON Path input, which is not designed to handle untrusted data safely. An attacker can exploit this vulnerability by supplying a malicious JSON Path expression that, when evaluated, executes a",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "jsonpath"
+      },
+      {
+        "vendor": "n/a",
+        "product": "org.webjars.npm:jsonpath"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-02-09",
+    "updated": "2026-08-02",
+    "url": "https://security.snyk.io/vuln/SNYK-JS-JSONPATH-13645034",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-4598",
+    "title": "Versions of the package jsrsasign before 11.1.1 are vulnerable to Infinite loop via the bnModInverse function in ext/jsb",
+    "desc": "Versions of the package jsrsasign before 11.1.1 are vulnerable to Infinite loop via the bnModInverse function in ext/jsbn2.js when the BigInteger.modInverse implementation receives zero or negative inputs, allowing an attacker to hang the process permanently by supplying such crafted values (e.g., modInverse(0, m) or modInverse(-1, m)).",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "jsrsasign"
+      },
+      {
+        "vendor": "n/a",
+        "product": "org.webjars.npm:jsrsasign"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-03-23",
+    "updated": "2026-08-02",
+    "url": "https://security.snyk.io/vuln/SNYK-JS-JSRSASIGN-15370938",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-2786",
+    "title": "Tempo-operator: serviceaccount token exposure leading to token and subject access reviews in openshift tempo operator",
+    "desc": "A flaw was found in Tempo Operator, where it creates a ServiceAccount, ClusterRole, and ClusterRoleBinding when a user deploys a TempoStack or TempoMonolithic instance. This flaw allows a user with full access to their namespace to extract the ServiceAccount token and use it to submit TokenReview and SubjectAccessReview requests, potentially revealing information about other users' permissions. Wh",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-200"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3.5.3"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3.5.3"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-04-02",
+    "updated": "2026-08-02",
+    "url": "https://access.redhat.com/errata/RHSA-2025:3607",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-2842",
+    "title": "Tempo-operator: tempo operator token exposition lead to read sensitive data",
+    "desc": "A flaw was found in the Tempo Operator. When the Jaeger UI Monitor Tab functionality is enabled in a Tempo instance managed by the Tempo Operator, the Operator creates a ClusterRoleBinding for the Service Account of the Tempo instance to grant the cluster-monitoring-view ClusterRole.\nThis can be exploited if a user has 'create' permissions on TempoStack and 'get' permissions on Secret in a namespa",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-200"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3.5.3"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3.5.3"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-04-02",
+    "updated": "2026-08-02",
+    "url": "https://access.redhat.com/errata/RHSA-2025:3607",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-4373",
+    "title": "Glib: buffer underflow on glib through glib/gstring.c via function g_string_insert_unichar",
+    "desc": "A flaw was found in GLib, which is vulnerable to an integer overflow in the g_string_insert_unichar() function. When the position at which to insert the character is large, the position will overflow, leading to a buffer underwrite.",
+    "cvss": 4.8,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-124"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.2 Advanced Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-05-06",
+    "updated": "2026-08-02",
+    "url": "https://access.redhat.com/errata/RHSA-2025:10855",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-5318",
+    "title": "Libssh: out-of-bounds read in sftp_handle()",
+    "desc": "A flaw was found in the libssh library in versions less than 0.11.2. An out-of-bounds read can be triggered in the sftp_handle function due to an incorrect comparison check that permits the function to access memory beyond the valid handle list and to return an invalid pointer, which is used in further processing. This vulnerability allows an authenticated remote attacker to potentially read unint",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-125"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-06-24",
+    "updated": "2026-08-02",
+    "url": "https://access.redhat.com/errata/RHSA-2025:18231",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-7374",
+    "title": "Kubevirt: kubevirt virt-handler: privilege escalation and node compromise via symlink following vulnerability",
+    "desc": "A flaw was found in KubeVirt's virt-handler component. This vulnerability allows an authenticated OpenShift user with edit permissions in a single namespace to exploit improper symlink validation when connecting to virtual machine console sockets. By replacing the console socket with a symlink to the host's container runtime (CRI-O) socket, an attacker can hijack virt-handler's privileged connecti",
+    "cvss": 9.9,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-59"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.12"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.13"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.15"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.16"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-26",
+    "updated": "2026-08-02",
+    "url": "https://access.redhat.com/errata/RHSA-2026:20720",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-9804",
+    "title": "Kubevirt: kubevirt: vmexport directory symlink escape enables exporter pod file read",
+    "desc": "A flaw was found in KubeVirt's virt-exportserver component. An attacker with specific namespace-level access can exploit a path traversal vulnerability in the VMExport directory endpoint. By placing a symbolic link (symlink) within an exported filesystem Persistent Volume Claim (PVC) that points outside its designated mount root, the attacker can read arbitrary files from the exporter pod's filesy",
+    "cvss": 7.7,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-59"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.18"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.19"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.2"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.21"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-28",
+    "updated": "2026-08-02",
+    "url": "https://access.redhat.com/errata/RHSA-2026:27903",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-6020",
+    "title": "Linux-pam: linux-pam directory traversal",
+    "desc": "A flaw was found in linux-pam. The module pam_namespace may use access user-controlled paths without proper protection, allowing local users to elevate their privileges to root via multiple symlink attacks and race conditions.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-06-17",
+    "updated": "2026-08-02",
+    "url": "https://access.redhat.com/errata/RHSA-2025:10024",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-16242",
+    "title": "Hypershift: konnectivity proxy-server accepts agent connections without validating client certificates",
+    "desc": "A flaw was found in the Konnectivity proxy-server configuration for hosted control planes. The agent-facing listener was started without --cluster-ca-cert (and without token-based agent authentication), so client certificates were not validated. A remote attacker who can reach the Konnectivity cluster endpoint could connect as an unauthenticated agent, join the routing pool, and potentially proxy,",
+    "cvss": 9.4,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-306"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.11"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.6"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-20",
+    "updated": "2026-08-02",
+    "url": "https://access.redhat.com/errata/RHSA-2026:46885",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-17107",
+    "title": "Cluster-proxy: cluster-proxy: impersonation header injection in service-proxy grants cluster-admin on every managed cluster",
+    "desc": "A flaw was found in the cluster-proxy service-proxy component used in Red Hat Advanced Cluster Management for Kubernetes (RHACM) and multicluster-engine (MCE). The service-proxy appends impersonation group headers to proxied requests without first removing caller-supplied values, and the spoke ServiceAccount holds unrestricted impersonation permissions. An authenticated hub principal can inject an",
+    "cvss": 8.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-441"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.11"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.6"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-24",
+    "updated": "2026-08-02",
+    "url": "https://access.redhat.com/errata/RHSA-2026:46885",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2026-1784",
     "title": "Ose-cluster-ingress-operator: remote code execution through haproxy configuration injection",
     "desc": "The Route OpenShift resource allows to define routes to make pods reachable at a subdomain through HAProxy. It was found that the checks performed on the spec.path YAML stanza in a Route document was insufficient and could allow a controlled injection of the HAProxy configuration.",
@@ -186,41 +880,111 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2025-5914",
-    "title": "Libarchive: double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c",
-    "desc": "A vulnerability has been identified in the libarchive library, specifically within the archive_read_format_rar_seek_data() function. This flaw involves an integer overflow that can ultimately lead to a double-free condition. Exploiting a double-free vulnerability can result in memory corruption, enabling an attacker to execute arbitrary code or cause a denial-of-service condition.",
-    "cvss": 7.8,
+    "cve": "CVE-2024-21536",
+    "title": "Versions of the package http-proxy-middleware before 2.0.7, from 3.0.0 and before 3.0.3 are vulnerable to Denial of Serv",
+    "desc": "Versions of the package http-proxy-middleware before 2.0.7, from 3.0.0 and before 3.0.3 are vulnerable to Denial of Service (DoS) due to an UnhandledPromiseRejection error thrown by micromatch. An attacker could kill the Node.js process and crash the server by making requests to certain paths.",
+    "cvss": 7.5,
     "severity": "HIGH",
-    "cwes": [
-      "CWE-190"
-    ],
+    "cwes": [],
     "affected": [
       {
-        "vendor": "",
-        "product": ""
+        "vendor": "n/a",
+        "product": "http-proxy-middleware"
       },
       {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8.2 Advanced Update Support"
+        "vendor": "n/a",
+        "product": "org.webjars.npm:http-proxy-middleware"
       }
     ],
     "exploitation": "poc",
     "isKev": false,
-    "published": "2025-06-09",
-    "updated": "2026-08-02",
-    "url": "https://access.redhat.com/errata/RHSA-2025:14130",
+    "published": "2024-10-19",
+    "updated": "2026-08-01",
+    "url": "https://security.snyk.io/vuln/SNYK-JS-HTTPPROXYMIDDLEWARE-8229906",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-2843",
+    "title": "Observability-operator: observability operator privilege escalation",
+    "desc": "A flaw was found in the Observability Operator. The Operator creates a ServiceAccount with *ClusterRole* upon deployment of the *Namespace-Scoped* Custom Resource MonitorStack. This issue allows an adversarial Kubernetes Account with only namespaced-level roles, for example, a tenant controlling a namespace, to create a MonitorStack in the authorized namespace and then elevate permission to the cl",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-266"
+    ],
+    "affected": [
+      {
+        "vendor": "rhobs",
+        "product": "observability-operator"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Cluster Observability Operator 1.3.0"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-11-12",
+    "updated": "2026-08-01",
+    "url": "https://access.redhat.com/errata/RHSA-2025:21146",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-3192",
+    "title": "Versions of the package spatie/browsershot from 0.0.0 are vulnerable to Server-side Request Forgery (SSRF) in the setUrl",
+    "desc": "Versions of the package spatie/browsershot from 0.0.0 are vulnerable to Server-side Request Forgery (SSRF) in the setUrl() function due to a missing restriction on user input, enabling attackers to access localhost and list all of its directories.",
+    "cvss": 8.2,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "spatie/browsershot"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-04-04",
+    "updated": "2026-08-01",
+    "url": "https://security.snyk.io/vuln/SNYK-PHP-SPATIEBROWSERSHOT-8548015",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-7195",
+    "title": "Operator-sdk: privilege escalation due to incorrect permissions of /etc/passwd",
+    "desc": "Early versions of Operator-SDK provided an insecure method to allow operator containers to run in environments that used a random UID. Operator-SDK before 0.15.2 provided a script, user_setup, which modifies the permissions of the /etc/passwd file to 664 during build time. Developers who used Operator-SDK before 0.15.2 to scaffold their operator may still be impacted by this if the insecure user_s",
+    "cvss": 6.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-276"
+    ],
+    "affected": [
+      {
+        "vendor": "operator-framework",
+        "product": "operator-sdk"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "RHEL-9-CNV-4.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "RHEL-9-CNV-4.18"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "RHEL-9-CNV-4.20"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Compliance Operator 1"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-08-07",
+    "updated": "2026-08-01",
+    "url": "https://access.redhat.com/errata/RHEA-2025:23406",
     "source": "CISA Vulnrichment"
   },
   {
@@ -262,41 +1026,229 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2025-7195",
-    "title": "Operator-sdk: privilege escalation due to incorrect permissions of /etc/passwd",
-    "desc": "Early versions of Operator-SDK provided an insecure method to allow operator containers to run in environments that used a random UID. Operator-SDK before 0.15.2 provided a script, user_setup, which modifies the permissions of the /etc/passwd file to 664 during build time. Developers who used Operator-SDK before 0.15.2 to scaffold their operator may still be impacted by this if the insecure user_s",
-    "cvss": 6.4,
-    "severity": "MEDIUM",
+    "cve": "CVE-2026-17346",
+    "title": "pgAdmin 4: SQL injection via unescaped object names in index Statistics and publication/subscription dependency views (incomplete fix for CVE-2026-12044)",
+    "desc": "The fix for CVE-2026-12044 in pgAdmin 4 9.16 hardened qtLiteral and switched sixteen COMMENT ON / pgstattuple / pgstatindex templates to it, but missed several sinks that had been placed in test_sql_string_literal_lint.py's ALLOWLIST on the incorrect assumption that schema, table, publication, and subscription names sourced from pg_catalog via the browser tree could never contain an apostrophe. Po",
+    "cvss": 8.8,
+    "severity": "HIGH",
     "cwes": [
-      "CWE-276"
+      "CWE-89"
     ],
     "affected": [
       {
-        "vendor": "operator-framework",
-        "product": "operator-sdk"
+        "vendor": "pgadmin.org",
+        "product": "pgAdmin 4"
       },
       {
-        "vendor": "Red Hat",
-        "product": "RHEL-9-CNV-4.17"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "RHEL-9-CNV-4.18"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "RHEL-9-CNV-4.20"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Compliance Operator 1"
+        "vendor": "pgadmin.org",
+        "product": "pgAdmin 4"
       }
     ],
     "exploitation": "none",
     "isKev": false,
-    "published": "2025-08-07",
+    "published": "2026-07-31",
     "updated": "2026-08-01",
-    "url": "https://access.redhat.com/errata/RHEA-2025:23406",
+    "url": "https://github.com/pgadmin-org/pgadmin4/issues/10193",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-47858",
+    "title": "live information startup mode is vulnerable for remote code execution",
+    "desc": "Starting Spring Boot applications in the Spring Tools with the live information mode enabled makes the running application vulnerable against JMX-based remote code execution.\nAffected Spring Products and Versions:\nSpring Tools for Eclipse: 5.2.0 and earlier\nSpring Tools for VSCode / Cursor / Theia: 2.2.0 and earlier",
+    "cvss": 8,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Spring",
+        "product": "Spring Tools for Eclipse"
+      },
+      {
+        "vendor": "Spring",
+        "product": "Spring Tools for VSCode / Cursor / Theia"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-30",
+    "updated": "2026-08-01",
+    "url": "https://spring.io/security/cve-2026-47858",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-47873",
+    "title": "Spring Tools Docker integration publishes unauthenticated debug (JDWP) and JMX ports on all network interfaces",
+    "desc": "The Boot Dashboard Docker integration in Spring Tools publishes container control ports on all of the host's network interfaces (0.0.0.0) rather than restricting them to loopback.\nAffected Spring Products and Versions:\nSpring Tools for Eclipse: 5.2.0 and earlier",
+    "cvss": 8,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Spring",
+        "product": "Spring Tools for Eclipse"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-30",
+    "updated": "2026-08-01",
+    "url": "https://spring.io/security/cve-2026-47873",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58048",
+    "title": "Improper preservation of SQL mode when renaming databases in  cPanel allows execution of SQL in root context.",
+    "desc": "Improper preservation of SQL mode when renaming databases in  cPanel allows execution of SQL in root context.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-89"
+    ],
+    "affected": [
+      {
+        "vendor": "WebPros",
+        "product": "cPanel"
+      },
+      {
+        "vendor": "WebPros",
+        "product": "WP Squared"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-31",
+    "updated": "2026-08-01",
+    "url": "https://support.cpanel.net/hc/en-us/articles/42285745783703-CVE-2026-58048-Database-Privilege-Escalation",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-65636",
+    "title": "YAML injection via unescaped newlines in ymlr document comments",
+    "desc": "Improper Neutralization of CRLF Sequences vulnerability in ufirstgroup ymlr (Elixir.Ymlr module) allows attackers to inject arbitrary content into generated YAML documents through document comments. Ymlr.document!/2 interpolates each caller-supplied comment string into the output behind a single # prefix without validating it or escaping line breaks. Because a YAML comment is terminated by a line ",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-93"
+    ],
+    "affected": [
+      {
+        "vendor": "ufirstgroup",
+        "product": "ymlr"
+      },
+      {
+        "vendor": "ufirstgroup",
+        "product": "ymlr"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-31",
+    "updated": "2026-08-01",
+    "url": "https://github.com/ufirstgroup/ymlr/security/advisories/GHSA-p8qx-7cp9-v6c9",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-65887",
+    "title": "Joomla Extension - balbooa.com - Unauthenticated arbitrary password reset in  Gridbox < 2.20.2",
+    "desc": "Joomla Extension - balbooa.com - Unauthenticated arbitrary password reset in Gridbox < 2.20.2 - The resetPassword method allows actors to reset any user password, allowing to login and act as these users - excluding super admins.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-284"
+    ],
+    "affected": [
+      {
+        "vendor": "balbooa.com",
+        "product": "Gridbox extension for Joomla"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-29",
+    "updated": "2026-08-01",
+    "url": "https://www.balbooa.com/gridbox",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-65888",
+    "title": "Joomla Extension - balbooa.com - Account takeover vulnerability in Gridbox < 2.20.2",
+    "desc": "Joomla Extension - balbooa.com - Account takeover vulnerability in Gridbox < 2.20.2 - The socialLogin method allows actors to login as any given user on the target site.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-284"
+    ],
+    "affected": [
+      {
+        "vendor": "balbooa.com",
+        "product": "Gridbox extension for Joomla"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-29",
+    "updated": "2026-08-01",
+    "url": "https://www.balbooa.com/gridbox",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-66066",
+    "title": "Action Pack: Possible arbitrary file read and remote code execution in Active Storage variant processing",
+    "desc": "Action Pack is a framework for handling and responding to web requests. In versions prior to 7.2.3.2, 8.0.5.1 and 8.1.3.1, Active Storage does not disable libvips operations marked unsafe for untrusted content, allowing a crafted upload to invoke such an operation. Consuming applications are affected when configured to use libvips and accept image uploads from untrusted users. An unauthenticated a",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-1188"
+    ],
+    "affected": [
+      {
+        "vendor": "rails",
+        "product": "rails"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-30",
+    "updated": "2026-08-01",
+    "url": "https://github.com/rails/rails/security/advisories/GHSA-xr9x-r78c-5hrm",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-7163",
+    "title": "Assisted-service: assisted-service: authenticated users can gain administrative access to openshift clusters via credential disclosure",
+    "desc": "A vulnerability in the assisted-service REST API, an optional Assisted Installer (assisted-service) component in the Multicluster Engine (MCE), allows an authenticated user with minimal namespace-scoped privileges to obtain administrative credentials for arbitrary clusters provisioned through the hub. \n\nThe credentials download endpoint (GET /v2/clusters/{cluster_id}/credentials, which returns the",
+    "cvss": 6.1,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-312"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.11"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.9"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-04-30",
+    "updated": "2026-08-01",
+    "url": "https://access.redhat.com/errata/RHSA-2026:11511",
     "source": "CISA Vulnrichment"
   },
   {
@@ -367,50 +1319,6 @@
     "published": "2025-06-23",
     "updated": "2026-08-01",
     "url": "https://github.com/yrutschle/sslh/pull/494",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-21536",
-    "title": "Versions of the package http-proxy-middleware before 2.0.7, from 3.0.0 and before 3.0.3 are vulnerable to Denial of Serv",
-    "desc": "Versions of the package http-proxy-middleware before 2.0.7, from 3.0.0 and before 3.0.3 are vulnerable to Denial of Service (DoS) due to an UnhandledPromiseRejection error thrown by micromatch. An attacker could kill the Node.js process and crash the server by making requests to certain paths.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "http-proxy-middleware"
-      },
-      {
-        "vendor": "n/a",
-        "product": "org.webjars.npm:http-proxy-middleware"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2024-10-19",
-    "updated": "2026-08-01",
-    "url": "https://security.snyk.io/vuln/SNYK-JS-HTTPPROXYMIDDLEWARE-8229906",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-3192",
-    "title": "Versions of the package spatie/browsershot from 0.0.0 are vulnerable to Server-side Request Forgery (SSRF) in the setUrl",
-    "desc": "Versions of the package spatie/browsershot from 0.0.0 are vulnerable to Server-side Request Forgery (SSRF) in the setUrl() function due to a missing restriction on user input, enabling attackers to access localhost and list all of its directories.",
-    "cvss": 8.2,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "spatie/browsershot"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2025-04-04",
-    "updated": "2026-08-01",
-    "url": "https://security.snyk.io/vuln/SNYK-PHP-SPATIEBROWSERSHOT-8548015",
     "source": "CISA Vulnrichment"
   },
   {
@@ -1938,32 +2846,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-17346",
-    "title": "pgAdmin 4: SQL injection via unescaped object names in index Statistics and publication/subscription dependency views (incomplete fix for CVE-2026-12044)",
-    "desc": "The fix for CVE-2026-12044 in pgAdmin 4 9.16 hardened qtLiteral and switched sixteen COMMENT ON / pgstattuple / pgstatindex templates to it, but missed several sinks that had been placed in test_sql_string_literal_lint.py's ALLOWLIST on the incorrect assumption that schema, table, publication, and subscription names sourced from pg_catalog via the browser tree could never contain an apostrophe. Po",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-89"
-    ],
-    "affected": [
-      {
-        "vendor": "pgadmin.org",
-        "product": "pgAdmin 4"
-      },
-      {
-        "vendor": "pgadmin.org",
-        "product": "pgAdmin 4"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-31",
-    "updated": "2026-07-31",
-    "url": "https://github.com/pgadmin-org/pgadmin4/issues/10193",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-17348",
     "title": "pgAdmin 4: Missing authentication decorator on Constraints, preferences, Debugger and Schema Diff routes allows unauthenticated access in SERVER mode (incomplete fix for CVE-2026-12046)",
     "desc": "In SERVER mode, pgAdmin 4 enforces authentication per route via the @pga_login_required decorator; the application's before_request hook only handles desktop-mode auto-login and the Kerberos/Webserver-auth redirect, so any route shipped without the decorator is reachable without authentication (CWE-306). This is the same defect class previously fixed as CVE-2026-12046 (the sqleditor close/update_c",
@@ -2177,32 +3059,6 @@
     "published": "2026-07-24",
     "updated": "2026-07-31",
     "url": "https://metacpan.org/release/ZAPAD/Image-WebP-0.2/source/webp-src/NEWS",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-65636",
-    "title": "YAML injection via unescaped newlines in ymlr document comments",
-    "desc": "Improper Neutralization of CRLF Sequences vulnerability in ufirstgroup ymlr (Elixir.Ymlr module) allows attackers to inject arbitrary content into generated YAML documents through document comments. Ymlr.document!/2 interpolates each caller-supplied comment string into the output behind a single # prefix without validating it or escaping line breaks. Because a YAML comment is terminated by a line ",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-93"
-    ],
-    "affected": [
-      {
-        "vendor": "ufirstgroup",
-        "product": "ymlr"
-      },
-      {
-        "vendor": "ufirstgroup",
-        "product": "ymlr"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-31",
-    "updated": "2026-07-31",
-    "url": "https://github.com/ufirstgroup/ymlr/security/advisories/GHSA-p8qx-7cp9-v6c9",
     "source": "CISA Vulnrichment"
   },
   {
@@ -3459,32 +4315,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-58048",
-    "title": "Improper preservation of SQL mode when renaming databases in  cPanel allows execution of SQL in root context.",
-    "desc": "Improper preservation of SQL mode when renaming databases in  cPanel allows execution of SQL in root context.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-89"
-    ],
-    "affected": [
-      {
-        "vendor": "WebPros",
-        "product": "cPanel"
-      },
-      {
-        "vendor": "WebPros",
-        "product": "WP Squared"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-31",
-    "updated": "2026-07-31",
-    "url": "https://support.cpanel.net/hc/en-us/articles/42285745783703-CVE-2026-58048-Database-Privilege-Escalation",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-5490",
     "title": "DriveLock SQL Injection Privilege Escalation Vulnerability",
     "desc": "DriveLock SQL Injection Privilege Escalation Vulnerability. This vulnerability allows remote attackers to escalate privileges on affected installations of DriveLock. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the web service, which listens on TCP port 4568 by default. The issue results from the lack of proper validation of a user-supplied string befo",
@@ -3663,72 +4493,6 @@
     "published": "2026-07-30",
     "updated": "2026-07-31",
     "url": "https://github.com/projectcapsule/capsule/security/advisories/GHSA-68cj-mvg9-rgm2",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-65887",
-    "title": "Joomla Extension - balbooa.com - Unauthenticated arbitrary password reset in  Gridbox < 2.20.2",
-    "desc": "Joomla Extension - balbooa.com - Unauthenticated arbitrary password reset in Gridbox < 2.20.2 - The resetPassword method allows actors to reset any user password, allowing to login and act as these users - excluding super admins.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-284"
-    ],
-    "affected": [
-      {
-        "vendor": "balbooa.com",
-        "product": "Gridbox extension for Joomla"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-29",
-    "updated": "2026-07-31",
-    "url": "https://www.balbooa.com/gridbox",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-65888",
-    "title": "Joomla Extension - balbooa.com - Account takeover vulnerability in Gridbox < 2.20.2",
-    "desc": "Joomla Extension - balbooa.com - Account takeover vulnerability in Gridbox < 2.20.2 - The socialLogin method allows actors to login as any given user on the target site.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-284"
-    ],
-    "affected": [
-      {
-        "vendor": "balbooa.com",
-        "product": "Gridbox extension for Joomla"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-29",
-    "updated": "2026-07-31",
-    "url": "https://www.balbooa.com/gridbox",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-66066",
-    "title": "Action Pack: Possible arbitrary file read and remote code execution in Active Storage variant processing",
-    "desc": "Action Pack is a framework for handling and responding to web requests. In versions prior to 7.2.3.2, 8.0.5.1 and 8.1.3.1, Active Storage does not disable libvips operations marked unsafe for untrusted content, allowing a crafted upload to invoke such an operation. Consuming applications are affected when configured to use libvips and accept image uploads from untrusted users. An unauthenticated a",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-1188"
-    ],
-    "affected": [
-      {
-        "vendor": "rails",
-        "product": "rails"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-31",
-    "url": "https://github.com/rails/rails/security/advisories/GHSA-xr9x-r78c-5hrm",
     "source": "CISA Vulnrichment"
   },
   {
@@ -16048,50 +16812,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-47858",
-    "title": "live information startup mode is vulnerable for remote code execution",
-    "desc": "Starting Spring Boot applications in the Spring Tools with the live information mode enabled makes the running application vulnerable against JMX-based remote code execution.\nAffected Spring Products and Versions:\nSpring Tools for Eclipse: 5.2.0 and earlier\nSpring Tools for VSCode / Cursor / Theia: 2.2.0 and earlier",
-    "cvss": 8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Spring",
-        "product": "Spring Tools for Eclipse"
-      },
-      {
-        "vendor": "Spring",
-        "product": "Spring Tools for VSCode / Cursor / Theia"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://spring.io/security/cve-2026-47858",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-47873",
-    "title": "Spring Tools Docker integration publishes unauthenticated debug (JDWP) and JMX ports on all network interfaces",
-    "desc": "The Boot Dashboard Docker integration in Spring Tools publishes container control ports on all of the host's network interfaces (0.0.0.0) rather than restricting them to loopback.\nAffected Spring Products and Versions:\nSpring Tools for Eclipse: 5.2.0 and earlier",
-    "cvss": 8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Spring",
-        "product": "Spring Tools for Eclipse"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://spring.io/security/cve-2026-47873",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-47876",
     "title": "VMXNET3 out-of-bounds write vulnerability",
     "desc": "VMware ESX contains an out-of-bounds write vulnerability in the VMXNET3 virtual network adapter. A malicious actor with local administrative privileges on a virtual machine with VMXNET3 virtual network adapter may exploit this issue to execute code on the host. Non VMXNET3 virtual adapters are not affected by this issue.",
@@ -23735,306 +24455,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-17717",
-    "title": "Integer overflow in ANGLE in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to potentially perform a san",
-    "desc": "Integer overflow in ANGLE in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
-    "cvss": 9.6,
-    "severity": "CRITICAL",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17718",
-    "title": "Use after free in ANGLE in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to potentially perform a sandb",
-    "desc": "Use after free in ANGLE in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
-    "cvss": 9.6,
-    "severity": "CRITICAL",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17747",
-    "title": "Insufficient validation of untrusted input in Payments in Google Chrome on Android prior to 151.0.7922.72 allowed a remo",
-    "desc": "Insufficient validation of untrusted input in Payments in Google Chrome on Android prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to perform UI spoofing via a crafted HTML page. (Chromium security severity: Medium)",
-    "cvss": 4.2,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17750",
-    "title": "Use after free in ANGLE in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to potentially perform a sandb",
-    "desc": "Use after free in ANGLE in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17866",
-    "title": "Type Confusion in Tab in Google Chrome on Android prior to 151.0.7922.72 allowed a remote attacker who had compromised t",
-    "desc": "Type Confusion in Tab in Google Chrome on Android prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)",
-    "cvss": 5.8,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17867",
-    "title": "Insufficient validation of untrusted input in Dawn in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to ",
-    "desc": "Insufficient validation of untrusted input in Dawn in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17872",
-    "title": "Cryptographic Flaw in WebAppInstalls in Google Chrome on Android prior to 151.0.7922.72 allowed a local attacker to pote",
-    "desc": "Cryptographic Flaw in WebAppInstalls in Google Chrome on Android prior to 151.0.7922.72 allowed a local attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)",
-    "cvss": 6.1,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17874",
-    "title": "Inappropriate implementation in Chrome for iOS in Google Chrome on iOS prior to 151.0.7922.72 allowed a remote attacker ",
-    "desc": "Inappropriate implementation in Chrome for iOS in Google Chrome on iOS prior to 151.0.7922.72 allowed a remote attacker to perform UI spoofing via a crafted HTML page. (Chromium security severity: Medium)",
-    "cvss": 5.4,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17888",
-    "title": "Insufficient validation of untrusted input in WebUI in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to",
-    "desc": "Insufficient validation of untrusted input in WebUI in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to potentially perform a sandbox escape via malicious network traffic. (Chromium security severity: Medium)",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17890",
-    "title": "Insufficient validation of untrusted input in DevTools in Google Chrome prior to 151.0.7922.72 allowed a remote attacker",
-    "desc": "Insufficient validation of untrusted input in DevTools in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)",
-    "cvss": 5.8,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17891",
-    "title": "Use after free in ANGLE in Google Chrome on Android prior to 151.0.7922.72 allowed a remote attacker who had compromised",
-    "desc": "Use after free in ANGLE in Google Chrome on Android prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)",
-    "cvss": 5.8,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17917",
-    "title": "Insufficient policy enforcement in Chrome for iOS in Google Chrome on iOS prior to 151.0.7922.72 allowed a remote attack",
-    "desc": "Insufficient policy enforcement in Chrome for iOS in Google Chrome on iOS prior to 151.0.7922.72 allowed a remote attacker to bypass discretionary access control via a crafted HTML page. (Chromium security severity: Low)",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17921",
-    "title": "Insufficient validation of untrusted input in Navigation in Google Chrome prior to 151.0.7922.72 allowed a remote attack",
-    "desc": "Insufficient validation of untrusted input in Navigation in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to bypass navigation restrictions via a crafted HTML page. (Chromium security severity: Low)",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17923",
-    "title": "Policy bypass in Enterprise in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to bypass navigation restr",
-    "desc": "Policy bypass in Enterprise in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to bypass navigation restrictions via a crafted domain name. (Chromium security severity: Low)",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17924",
-    "title": "Use after free in DNS in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer",
-    "desc": "Use after free in DNS in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Low)",
-    "cvss": 9.6,
-    "severity": "CRITICAL",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-49165",
     "title": "Microsoft Windows App Store Information Disclosure Vulnerability",
     "desc": "",
@@ -24846,44 +25266,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-16242",
-    "title": "Hypershift: konnectivity proxy-server accepts agent connections without validating client certificates",
-    "desc": "A flaw was found in the Konnectivity proxy-server configuration for hosted control planes. The agent-facing listener was started without --cluster-ca-cert (and without token-based agent authentication), so client certificates were not validated. A remote attacker who can reach the Konnectivity cluster endpoint could connect as an unauthenticated agent, join the routing pool, and potentially proxy,",
-    "cvss": 9.4,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-306"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.11"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.6"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.8"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-20",
-    "updated": "2026-07-29",
-    "url": "https://access.redhat.com/errata/RHSA-2026:46885",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-16326",
     "title": "consul-mcp-server vulnerable to cross-tenant credential reuse in streamable-HTTP stateless mode",
     "desc": "In consul-mcp-server, versions 0.1.0 up to 0.1.3 did not properly isolate session state in stateless mode, which may allow one client's Consul authentication token to be used for subsequent requests from other clients. This vulnerability (CVE-2026-16326) is fixed in consul-mcp-server 0.1.4.",
@@ -24925,119 +25307,6 @@
     "published": "2026-07-29",
     "updated": "2026-07-29",
     "url": "https://discuss.hashicorp.com/t/hcsec-2026-24-multiple-vulnerabilities-impacting-hashicorp-consul-mcp-server/77612",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-16463",
-    "title": "DXF File Parsing Heap-Based Overflow in Autodesk AutoCAD",
-    "desc": "A maliciously crafted DXF file, when parsed through Autodesk AutoCAD, can force a Heap-Based Overflow vulnerability. A malicious actor can leverage this vulnerability to cause a crash, read sensitive data, or execute arbitrary code in the context of the current process.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Autodesk",
-        "product": "AutoCAD"
-      },
-      {
-        "vendor": "Autodesk",
-        "product": "AutoCAD LT"
-      },
-      {
-        "vendor": "Autodesk",
-        "product": "DWG TrueView"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-29",
-    "updated": "2026-07-29",
-    "url": "https://www.autodesk.com/trust/security-advisories/adsk-sa-2026-0009",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-16728",
-    "title": "undici vulnerable to downstream response desynchronization via retry interceptor",
-    "desc": "undici's retry interceptor can deliver a response whose body length does not match the Content-Length header exposed to the application after a retry or resume of a partial response. In undici before 6.28.0, from 7.0.0 up to before 7.29.0, and from 8.0.0 up to before 8.9.0, a malicious or faulty upstream can return a partial response with a mismatched framing header, close the socket early, and ha",
-    "cvss": 4.8,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-444"
-    ],
-    "affected": [
-      {
-        "vendor": "undici",
-        "product": "undici"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-29",
-    "updated": "2026-07-29",
-    "url": "https://github.com/nodejs/undici/security/advisories/GHSA-8xcm-r25x-g524",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17107",
-    "title": "Cluster-proxy: cluster-proxy: impersonation header injection in service-proxy grants cluster-admin on every managed cluster",
-    "desc": "A flaw was found in the cluster-proxy service-proxy component used in Red Hat Advanced Cluster Management for Kubernetes (RHACM) and multicluster-engine (MCE). The service-proxy appends impersonation group headers to proxied requests without first removing caller-supplied values, and the spoke ServiceAccount holds unrestricted impersonation permissions. An authenticated hub principal can inject an",
-    "cvss": 8.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-441"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.11"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.6"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.8"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-24",
-    "updated": "2026-07-29",
-    "url": "https://access.redhat.com/errata/RHSA-2026:46885",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17501",
-    "title": "ggml-org llama.cpp JSON-Schema-to-GBNF Conversion json-schema-to-grammar.cpp transform recursion",
-    "desc": "A flaw has been found in ggml-org llama.cpp e15efe0. This vulnerability affects the function transform of the file common/json-schema-to-grammar.cpp of the component JSON-Schema-to-GBNF Conversion. This manipulation causes uncontrolled recursion. The attack may be initiated remotely. The pull request to fix this issue awaits acceptance.",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-674",
-      "CWE-404"
-    ],
-    "affected": [
-      {
-        "vendor": "ggml-org",
-        "product": "llama.cpp"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-27",
-    "updated": "2026-07-29",
-    "url": "https://vuldb.com/vuln/383354",
     "source": "CISA Vulnrichment"
   }
 ]
