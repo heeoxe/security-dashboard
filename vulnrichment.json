@@ -1,5 +1,267 @@
 [
   {
+    "cve": "CVE-2026-1784",
+    "title": "Ose-cluster-ingress-operator: remote code execution through haproxy configuration injection",
+    "desc": "The Route OpenShift resource allows to define routes to make pods reachable at a subdomain through HAProxy. It was found that the checks performed on the spec.path YAML stanza in a Route document was insufficient and could allow a controlled injection of the HAProxy configuration.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-15"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.13"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.15"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.16"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.18"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-02",
+    "updated": "2026-08-02",
+    "url": "https://access.redhat.com/errata/RHSA-2026:23241",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-46579",
+    "title": "Openshift/router: openshift/router: mtls client certificate spoofing via unstripped x-ssl-client headers on http frontend",
+    "desc": "A flaw was found in the OpenShift Router. When a Route has `insecureEdgeTerminationPolicy` set to Allow, the HTTP frontend does not remove `X-SSL-Client-*` headers from incoming requests. This allows an unauthenticated attacker to send plain HTTP requests with crafted `X-SSL-Client-*` headers. As a result, backends relying on these headers for mutual TLS (Transport Layer Security) authentication c",
+    "cvss": 7.4,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-287"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.13"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.15"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.16"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.18"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-29",
+    "updated": "2026-08-02",
+    "url": "https://access.redhat.com/errata/RHSA-2026:27009",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-5084",
+    "title": "WebDyne::Session versions before 3.003_704 for Perl generate the session id insecurely",
+    "desc": "WebDyne::Session versions before 3.003_704 for Perl generate the session id insecurely.\n\nThe session handler generates the session id from an MD5 hash seeded with a call to the built-in rand() function. The rand function is passed a maximum value based on the process id, the epoch time and the reference address of the object, but this information will have no effect on the overall quality of the s",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-340",
+      "CWE-338"
+    ],
+    "affected": [
+      {
+        "vendor": "ASPEER",
+        "product": "WebDyne::Session"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-11",
+    "updated": "2026-08-02",
+    "url": "https://metacpan.org/release/ASPEER/WebDyne-2.075/source/lib/WebDyne/Session.pm#L120",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-6492",
+    "title": "arnobt78 Hotel Booking Management System Health Check Endpoint detailed information disclosure",
+    "desc": "A vulnerability was detected in arnobt78 Hotel Booking Management System up to f8922d0e0f6ac1cc761974c7616f44c2bbc04bea. The impacted element is an unknown function of the file /api/health/detailed of the component Health Check Endpoint. Performing a manipulation results in information disclosure. Remote exploitation of the attack is possible. The exploit is now public and may be used. This produc",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-200",
+      "CWE-284"
+    ],
+    "affected": [
+      {
+        "vendor": "arnobt78",
+        "product": "Hotel Booking Management System"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-04-17",
+    "updated": "2026-08-02",
+    "url": "https://vuldb.com/vuln/358036",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-16232",
+    "title": "Authentication Bypass in the SmartConsole Login Process Using an Application Token",
+    "desc": "An authentication bypass vulnerability in the Check Point SmartConsole login process allows an unauthenticated remote attacker to obtain an application login token and use it to authenticate with full administrative privileges. Successful exploitation allows the attacker to modify security policies and security configurations. Remote exploitation requires internet access to the Management Server I",
+    "cvss": 9.1,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-287"
+    ],
+    "affected": [
+      {
+        "vendor": "checkpoint",
+        "product": "Quantum Security Management"
+      },
+      {
+        "vendor": "checkpoint",
+        "product": "Multi-Domain Security Management"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2026-07-22",
+    "updated": "2026-08-02",
+    "url": "https://support.checkpoint.com/results/sk/sk185169",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-11831",
+    "title": "Npm-serialize-javascript: cross-site scripting (xss) in serialize-javascript",
+    "desc": "A flaw was found in npm-serialize-javascript. The vulnerability occurs because the serialize-javascript module does not properly sanitize certain inputs, such as regex or other JavaScript object types, allowing an attacker to inject malicious code. This code could be executed when deserialized by a web browser, causing Cross-site scripting (XSS) attacks. This issue is critical in environments wher",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Advanced Cluster Security 4.4"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Advanced Cluster Security 4.5"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ceph Storage 7.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ceph Storage 8.1"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-02-10",
+    "updated": "2026-08-02",
+    "url": "https://access.redhat.com/errata/RHBA-2025:0304",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-5914",
+    "title": "Libarchive: double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c",
+    "desc": "A vulnerability has been identified in the libarchive library, specifically within the archive_read_format_rar_seek_data() function. This flaw involves an integer overflow that can ultimately lead to a double-free condition. Exploiting a double-free vulnerability can result in memory corruption, enabling an attacker to execute arbitrary code or cause a denial-of-service condition.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-190"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.2 Advanced Update Support"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-06-09",
+    "updated": "2026-08-02",
+    "url": "https://access.redhat.com/errata/RHSA-2025:14130",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-10840",
+    "title": "Openshift-pipelines-operator-rh: openshift-pipelines-operator: tekton-scheduler-rolebinding grants system:authenticated write access to kueue and cert-manager resources",
+    "desc": "A flaw was found in the OpenShift Pipelines operator. The tekton-scheduler-rolebinding ClusterRoleBinding grants the system:authenticated group write access to Kueue and cert-manager custom resources via the tekton-scheduler-role ClusterRole. When Kueue or cert-manager CRDs are present on the cluster, any authenticated user can disrupt workload scheduling, tamper with scheduling priorities, delete",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-732"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Builds 1.7.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Builds 1.8.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "OpenShift Pipelines"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "OpenShift Pipelines"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "OpenShift Pipelines"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-04",
+    "updated": "2026-08-01",
+    "url": "https://access.redhat.com/errata/RHSA-2026:36648",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2025-7195",
     "title": "Operator-sdk: privilege escalation due to incorrect permissions of /etc/passwd",
     "desc": "Early versions of Operator-SDK provided an insecure method to allow operator containers to run in environments that used a random UID. Operator-SDK before 0.15.2 provided a script, user_setup, which modifies the permissions of the /etc/passwd file to 664 during build time. Developers who used Operator-SDK before 0.15.2 to scaffold their operator may still be impacted by this if the insecure user_s",
@@ -281,32 +543,6 @@
     "published": "2026-06-18",
     "updated": "2026-08-01",
     "url": "https://www.ptc.com/en/support/article/CS473270",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17346",
-    "title": "pgAdmin 4: SQL injection via unescaped object names in index Statistics and publication/subscription dependency views (incomplete fix for CVE-2026-12044)",
-    "desc": "The fix for CVE-2026-12044 in pgAdmin 4 9.16 hardened qtLiteral and switched sixteen COMMENT ON / pgstattuple / pgstatindex templates to it, but missed several sinks that had been placed in test_sql_string_literal_lint.py's ALLOWLIST on the incorrect assumption that schema, table, publication, and subscription names sourced from pg_catalog via the browser tree could never contain an apostrophe. Po",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-89"
-    ],
-    "affected": [
-      {
-        "vendor": "pgadmin.org",
-        "product": "pgAdmin 4"
-      },
-      {
-        "vendor": "pgadmin.org",
-        "product": "pgAdmin 4"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-31",
-    "updated": "2026-08-01",
-    "url": "https://github.com/pgadmin-org/pgadmin4/issues/10193",
     "source": "CISA Vulnrichment"
   },
   {
@@ -1538,6 +1774,412 @@
     "source": "CISA Vulnrichment"
   },
   {
+    "cve": "CVE-2025-51684",
+    "title": "CleverTap Web SDK v1.15.1 is vulnerable to Cross Site Scripting (XSS). The application does not sanitize untrusted data ",
+    "desc": "CleverTap Web SDK v1.15.1 is vulnerable to Cross Site Scripting (XSS). The application does not sanitize untrusted data received via window.postMessage before injecting it into the page DOM. An attacker can craft a malicious message that, when processed by renderCustomHtml, results in execution of arbitrary JavaScript in the context of the hosting site.",
+    "cvss": 6.1,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "n/a"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-30",
+    "updated": "2026-07-31",
+    "url": "https://github.com/CleverTap/clevertap-web-sdk/issues/416",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-65341",
+    "title": "Ecommerce Fruits Bazar 1.0 is vulnerable to Cross Site Scripting (XSS) in admin/edit_product.php.",
+    "desc": "Ecommerce Fruits Bazar 1.0 is vulnerable to Cross Site Scripting (XSS) in admin/edit_product.php.",
+    "cvss": 6.1,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "n/a"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-30",
+    "updated": "2026-07-31",
+    "url": "https://github.com/um-dsp/TaintRadar/blob/main/XSS_cve/ecommercefruitsbazar/XSS.md",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-69947",
+    "title": "SourceCodester Tailor Management System 1.0 is vulnerable to SQL Injection in customeredit.php?id=1.",
+    "desc": "SourceCodester Tailor Management System 1.0 is vulnerable to SQL Injection in customeredit.php?id=1.",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "n/a"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-30",
+    "updated": "2026-07-31",
+    "url": "https://github.com/um-dsp/TaintRadar/blob/main/sql_injection_cves/tailor/20250811-tailor-ms-customeredit.php-id-sqli/20250811-tailor-ms-customeredit.php-id-sqli.md",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-11980",
+    "title": "Code execution in IBM Desktop App",
+    "desc": "IBM Aspera Desktop App 1.0.5 through 1.0.19 can allow arbitrary code execution by loading DLL files at start-up.",
+    "cvss": 7.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-242"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Aspera Desktop App"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-30",
+    "updated": "2026-07-31",
+    "url": "https://www.ibm.com/support/pages/node/7280939",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-15658",
+    "title": "foreUP customer REST API allows unauthenticated endpoint access",
+    "desc": "A vulnerability in the foreUP customer REST API allows any authenticated, low-privilege customer to access an endpoint that\r\nreturns the records of other users without checking that the caller owns the data associated with that record.",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "foreUP",
+        "product": "foreUP"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-30",
+    "updated": "2026-07-31",
+    "url": "https://kb.cert.org/vuls/id/790363",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-15969",
+    "title": "CVE-2026-15969",
+    "desc": "SGLang contains an unauthenticated RCE in /load_lora_adapter_from_tensors via bypass of SafeUnpickler’s incomplete denylist, allowing arbitrary command execution through crafted base64-encoded pickle payloads.",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "SGLang",
+        "product": "SGLang"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-30",
+    "updated": "2026-07-31",
+    "url": "https://github.com/sgl-project/sglang/security/advisories/GHSA-2wvm-gjg7-5jfm",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-15974",
+    "title": "CVE-2026-15974",
+    "desc": "SGLang contains an SSRF and local file read in the multimodal generation endpoint /v1/chat/completions due to unsanitized image_url, allowing access to internal metadata, secrets, and services.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "SGLang",
+        "product": "SGLang"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-30",
+    "updated": "2026-07-31",
+    "url": "https://github.com/sgl-project/sglang/security/advisories/GHSA-x7w5-h7rp-gfp9",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-16727",
+    "title": "Concurrent Execution using Shared Resource with Improper Synchronization (“Race Condition”) in ASUS Armoury Crate allows",
+    "desc": "Concurrent Execution using Shared Resource with Improper Synchronization (“Race Condition”) in ASUS Armoury Crate allows a local user to execute arbitrary code with elevated privileges via a crafted file replacement.\nRefer to the ' Security Update for ASUS Armoury Crate ' section on the ASUS Security Advisory for more information.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-362"
+    ],
+    "affected": [
+      {
+        "vendor": "ASUS",
+        "product": "Armoury Crate"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-30",
+    "updated": "2026-07-31",
+    "url": "https://www.asus.com/security-advisory",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-17346",
+    "title": "pgAdmin 4: SQL injection via unescaped object names in index Statistics and publication/subscription dependency views (incomplete fix for CVE-2026-12044)",
+    "desc": "The fix for CVE-2026-12044 in pgAdmin 4 9.16 hardened qtLiteral and switched sixteen COMMENT ON / pgstattuple / pgstatindex templates to it, but missed several sinks that had been placed in test_sql_string_literal_lint.py's ALLOWLIST on the incorrect assumption that schema, table, publication, and subscription names sourced from pg_catalog via the browser tree could never contain an apostrophe. Po",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-89"
+    ],
+    "affected": [
+      {
+        "vendor": "pgadmin.org",
+        "product": "pgAdmin 4"
+      },
+      {
+        "vendor": "pgadmin.org",
+        "product": "pgAdmin 4"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-31",
+    "updated": "2026-07-31",
+    "url": "https://github.com/pgadmin-org/pgadmin4/issues/10193",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-17348",
+    "title": "pgAdmin 4: Missing authentication decorator on Constraints, preferences, Debugger and Schema Diff routes allows unauthenticated access in SERVER mode (incomplete fix for CVE-2026-12046)",
+    "desc": "In SERVER mode, pgAdmin 4 enforces authentication per route via the @pga_login_required decorator; the application's before_request hook only handles desktop-mode auto-login and the Kerberos/Webserver-auth redirect, so any route shipped without the decorator is reachable without authentication (CWE-306). This is the same defect class previously fixed as CVE-2026-12046 (the sqleditor close/update_c",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-306"
+    ],
+    "affected": [
+      {
+        "vendor": "pgadmin.org",
+        "product": "pgAdmin 4"
+      },
+      {
+        "vendor": "pgadmin.org",
+        "product": "pgAdmin 4"
+      },
+      {
+        "vendor": "pgadmin.org",
+        "product": "pgAdmin 4"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-31",
+    "updated": "2026-07-31",
+    "url": "https://github.com/pgadmin-org/pgadmin4/issues/10194",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-17727",
+    "title": "Out of bounds write in WebGL in Google Chrome on Android prior to 151.0.7922.72 allowed a remote attacker to potentially",
+    "desc": "Out of bounds write in WebGL in Google Chrome on Android prior to 151.0.7922.72 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
+    "cvss": 9.6,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Google",
+        "product": "Chrome"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-30",
+    "updated": "2026-07-31",
+    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-17774",
+    "title": "Insufficient validation of untrusted input in Variations in Google Chrome prior to 151.0.7922.72 allowed an attacker in ",
+    "desc": "Insufficient validation of untrusted input in Variations in Google Chrome prior to 151.0.7922.72 allowed an attacker in a privileged network position to potentially exploit heap corruption via malicious network traffic. (Chromium security severity: Medium)",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Google",
+        "product": "Chrome"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-30",
+    "updated": "2026-07-31",
+    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-18217",
+    "title": "Keycloak-services: keycloak-services: saml http-redirect binding response preserves query string leading to parameter pollution",
+    "desc": "A flaw was found in the SAML protocol implementation of Keycloak, an open-source identity and access management solution. The issue occurs when Keycloak handles SAML authentication requests using the HTTP-Redirect binding. If a client is configured with a wildcard redirect URL, an attacker can craft a request that includes malicious parameters. When a user authenticates, Keycloak appends its legit",
+    "cvss": 3.4,
+    "severity": "LOW",
+    "cwes": [
+      "CWE-20"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Build of Keycloak"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Build of Keycloak"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Build of Keycloak"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Data Grid 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat JBoss Enterprise Application Platform Expansion Pack"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-31",
+    "updated": "2026-07-31",
+    "url": "https://access.redhat.com/security/cve/CVE-2026-18217",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-33811",
+    "title": "Crash when handling long CNAME response in net",
+    "desc": "When using LookupCNAME with the cgo DNS resolver, a very long CNAME response can trigger a double-free of C memory and a crash.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Go standard library",
+        "product": "net"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-07",
+    "updated": "2026-07-31",
+    "url": "https://go.dev/issue/78803",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-40895",
+    "title": "follow-redirects: Custom Authentication Headers Leaked to Cross-Domain Redirect Targets",
+    "desc": "follow-redirects is an open source, drop-in replacement for Node's `http` and `https` modules that automatically follows redirects. Prior to 1.16.0, when an HTTP request follows a cross-domain redirect (301/302/307/308), follow-redirects only strips authorization, proxy-authorization, and cookie headers (matched by regex at index.js). Any custom authentication header (e.g., X-API-Key, X-Auth-Token",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-200"
+    ],
+    "affected": [
+      {
+        "vendor": "follow-redirects",
+        "product": "follow-redirects"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-04-21",
+    "updated": "2026-07-31",
+    "url": "https://github.com/follow-redirects/follow-redirects/security/advisories/GHSA-r4q5-vmmm-2653",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-53502",
+    "title": "Thumbor has path traversal via post-validation URL decoding bypass in file_loader",
+    "desc": "Thumbor is an open-source photo thumbnail service by globo.com. Prior to 7.8.0, file_loader decodes percent-encoded path segments after its root-boundary validation, allowing traversal outside FILE_LOADER_ROOT_PATH through watermark or frame filter input. This issue is fixed in 7.8.0.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "thumbor",
+        "product": "thumbor"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-31",
+    "updated": "2026-07-31",
+    "url": "https://github.com/thumbor/thumbor/security/advisories/GHSA-cj54-hpcc-gj6h",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-55495",
+    "title": "Cloudreve: Path Traversal in WOPI PUT_RELATIVE Allows Arbitrary File Creation in Owner Account",
+    "desc": "Cloudreve is a self-hosted file management and sharing system. Prior to 4.17.0, the WOPI PUT_RELATIVE handler passes X-WOPI-SuggestedTarget to URI.JoinRaw as a path rather than a filename, allowing slash and dot-dot segments to escape the source file directory and create or conditionally overwrite files elsewhere in the same owner account. This issue is fixed in version 4.17.0.",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "cloudreve",
+        "product": "cloudreve"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-31",
+    "updated": "2026-07-31",
+    "url": "https://github.com/cloudreve/cloudreve/security/advisories/GHSA-49h3-cwhj-4737",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58586",
+    "title": "Image::WebP versions before 0.3.0 for Perl bundle a vulnerable version of libwebp",
+    "desc": "Image::WebP versions before 0.3.0 for Perl bundle a vulnerable version of libwebp.\n\nImage::WebP does not link to the system libwebp. Instead, it uses a bundled copy of libwebp 0.3.0 (released 2013-03-20). That version has multiple known vulnerabilities, including CVE-2023-4863.\n\nAny caller that decodes an untrusted WebP image reaches the bundled decoder. Because the library is compiled into the mo",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-1395"
+    ],
+    "affected": [
+      {
+        "vendor": "ZAPAD",
+        "product": "Image::WebP"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-24",
+    "updated": "2026-07-31",
+    "url": "https://metacpan.org/release/ZAPAD/Image-WebP-0.2/source/webp-src/NEWS",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2026-65636",
     "title": "YAML injection via unescaped newlines in ymlr document comments",
     "desc": "Improper Neutralization of CRLF Sequences vulnerability in ufirstgroup ymlr (Elixir.Ymlr module) allows attackers to inject arbitrary content into generated YAML documents through document comments. Ymlr.document!/2 interpolates each caller-supplied comment string into the output behind a single # prefix without validating it or escaping line breaks. Because a YAML comment is terminated by a line ",
@@ -1559,8 +2201,51 @@
     "exploitation": "poc",
     "isKev": false,
     "published": "2026-07-31",
-    "updated": "2026-08-01",
+    "updated": "2026-07-31",
     "url": "https://github.com/ufirstgroup/ymlr/security/advisories/GHSA-p8qx-7cp9-v6c9",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-65835",
+    "title": "Capsule: Incomplete fix of CVE-2026-22872: TenantResource RawItems and Generators still allow cluster-scoped resource creation (cross-tenant privilege escalation)",
+    "desc": "Capsule is a multi-tenancy and policy-based framework for Kubernetes. From 0.13.0 until 0.13.8, after the incomplete CVE-2026-22872 fix, TenantResource RawItems and Generators in internal/controllers/resources/collect.go, including handleRawItem and handleGeneratorItem, did not apply the ResourceReference.LoadResources and IsNamespacedGVK cluster-scoped resource rejection guard used by NamespacedI",
+    "cvss": 6.6,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-269",
+      "CWE-863"
+    ],
+    "affected": [
+      {
+        "vendor": "projectcapsule",
+        "product": "capsule"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-30",
+    "updated": "2026-07-31",
+    "url": "https://github.com/projectcapsule/capsule/security/advisories/GHSA-jr6p-8pjj-mfx6",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-66488",
+    "title": "Joomla Extension - balbooa.com - Payment bypass in Gridbox < 2.20.2",
+    "desc": "Joomla Extension - balbooa.com - Payment bypass in Gridbox < 2.20.2",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "balbooa.com",
+        "product": "Gridbox extension for Joomla"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-29",
+    "updated": "2026-07-31",
+    "url": "https://www.balbooa.com/gridbox",
     "source": "CISA Vulnrichment"
   },
   {
@@ -2626,44 +3311,6 @@
     "published": "2026-07-30",
     "updated": "2026-07-31",
     "url": "https://github.com/apache/zeppelin/pull/5226",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-46579",
-    "title": "Openshift/router: openshift/router: mtls client certificate spoofing via unstripped x-ssl-client headers on http frontend",
-    "desc": "A flaw was found in the OpenShift Router. When a Route has `insecureEdgeTerminationPolicy` set to Allow, the HTTP frontend does not remove `X-SSL-Client-*` headers from incoming requests. This allows an unauthenticated attacker to send plain HTTP requests with crafted `X-SSL-Client-*` headers. As a result, backends relying on these headers for mutual TLS (Transport Layer Security) authentication c",
-    "cvss": 7.4,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-287"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.13"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.14"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.15"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.16"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.18"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-05-29",
-    "updated": "2026-07-31",
-    "url": "https://access.redhat.com/errata/RHSA-2026:27009",
     "source": "CISA Vulnrichment"
   },
   {
@@ -5213,26 +5860,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-15658",
-    "title": "foreUP customer REST API allows unauthenticated endpoint access",
-    "desc": "A vulnerability in the foreUP customer REST API allows any authenticated, low-privilege customer to access an endpoint that\r\nreturns the records of other users without checking that the caller owns the data associated with that record.",
-    "cvss": 8.1,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "foreUP",
-        "product": "foreUP"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-31",
-    "url": "https://kb.cert.org/vuls/id/790363",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-15971",
     "title": "CVE-2026-15971",
     "desc": "SGLang contains an RCE vulnerability when the optional dumper subsystem is enabled, allowing for a sandbox escape when DUMPER_SERVER_PORT is set, enabling code execution on inference requests.",
@@ -5250,26 +5877,6 @@
     "published": "2026-07-30",
     "updated": "2026-07-31",
     "url": "https://github.com/sgl-project/sglang/security/advisories/GHSA-h6rf-77vv-9mvj",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-15974",
-    "title": "CVE-2026-15974",
-    "desc": "SGLang contains an SSRF and local file read in the multimodal generation endpoint /v1/chat/completions due to unsanitized image_url, allowing access to internal metadata, secrets, and services.",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "SGLang",
-        "product": "SGLang"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-31",
-    "url": "https://github.com/sgl-project/sglang/security/advisories/GHSA-x7w5-h7rp-gfp9",
     "source": "CISA Vulnrichment"
   },
   {
@@ -5405,44 +6012,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-18217",
-    "title": "Keycloak-services: keycloak-services: saml http-redirect binding response preserves query string leading to parameter pollution",
-    "desc": "A flaw was found in the SAML protocol implementation of Keycloak, an open-source identity and access management solution. The issue occurs when Keycloak handles SAML authentication requests using the HTTP-Redirect binding. If a client is configured with a wildcard redirect URL, an attacker can craft a request that includes malicious parameters. When a user authenticates, Keycloak appends its legit",
-    "cvss": 3.4,
-    "severity": "LOW",
-    "cwes": [
-      "CWE-20"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Build of Keycloak"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Build of Keycloak"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Build of Keycloak"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Data Grid 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat JBoss Enterprise Application Platform Expansion Pack"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-31",
-    "updated": "2026-07-31",
-    "url": "https://access.redhat.com/security/cve/CVE-2026-18217",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-18321",
     "title": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow') in ntpsec",
     "desc": "Buffer overflow in NTPsec's Zyfer refclock allows local attacker to crash ntpd",
@@ -5534,28 +6103,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-53502",
-    "title": "Thumbor has path traversal via post-validation URL decoding bypass in file_loader",
-    "desc": "Thumbor is an open-source photo thumbnail service by globo.com. Prior to 7.8.0, file_loader decodes percent-encoded path segments after its root-boundary validation, allowing traversal outside FILE_LOADER_ROOT_PATH through watermark or frame filter input. This issue is fixed in 7.8.0.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-22"
-    ],
-    "affected": [
-      {
-        "vendor": "thumbor",
-        "product": "thumbor"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-31",
-    "updated": "2026-07-31",
-    "url": "https://github.com/thumbor/thumbor/security/advisories/GHSA-cj54-hpcc-gj6h",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-54706",
     "title": "OnionShare follows symlinks in shared directories, allowing unintended disclosure of local files",
     "desc": "OnionShare is an open source tool that lets you securely and anonymously share files, host websites, and chat with friends using the Tor network. Prior to 2.6.4, OnionShare CLI/Desktop follows symbolic links in cli/onionshare_cli/web/send_base_mode.py through SendBaseModeWeb.set_file_info() and stream_individual_file(), allowing remote recipients of Share or Website mode to read local files outsid",
@@ -5622,28 +6169,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-55495",
-    "title": "Cloudreve: Path Traversal in WOPI PUT_RELATIVE Allows Arbitrary File Creation in Owner Account",
-    "desc": "Cloudreve is a self-hosted file management and sharing system. Prior to 4.17.0, the WOPI PUT_RELATIVE handler passes X-WOPI-SuggestedTarget to URI.JoinRaw as a path rather than a filename, allowing slash and dot-dot segments to escape the source file directory and create or conditionally overwrite files elsewhere in the same owner account. This issue is fixed in version 4.17.0.",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-22"
-    ],
-    "affected": [
-      {
-        "vendor": "cloudreve",
-        "product": "cloudreve"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-31",
-    "updated": "2026-07-31",
-    "url": "https://github.com/cloudreve/cloudreve/security/advisories/GHSA-49h3-cwhj-4737",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-56670",
     "title": "ComfyUI: Stored XSS via SVG file upload on the /view endpoint",
     "desc": "ComfyUI is a modular diffusion model GUI, api and backend with a graph/nodes interface. Prior to 0.28.0, the /view endpoint served uploaded SVG files inline because image/svg+xml and related XML content types were absent from the dangerous-content-type handling, allowing stored cross-site scripting in the ComfyUI origin. This issue is fixed in version 0.28.0.",
@@ -5705,26 +6230,6 @@
     "published": "2026-07-30",
     "updated": "2026-07-31",
     "url": "https://github.com/um-dsp/TaintRadar/blob/main/sql_injection_cves/ecommercefruitsbazarmaster/20250811-ecommerce-project-with-php-and-mysqli-fruits-bazar-show_price_by_pdtid.php-pid-sqli/20250811-ecommerce-project-with-php-and-mysqli-fruits-bazar-show_price_by_pdtid.php-pid-sqli.md",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-65341",
-    "title": "Ecommerce Fruits Bazar 1.0 is vulnerable to Cross Site Scripting (XSS) in admin/edit_product.php.",
-    "desc": "Ecommerce Fruits Bazar 1.0 is vulnerable to Cross Site Scripting (XSS) in admin/edit_product.php.",
-    "cvss": 6.1,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-31",
-    "url": "https://github.com/um-dsp/TaintRadar/blob/main/XSS_cve/ecommercefruitsbazar/XSS.md",
     "source": "CISA Vulnrichment"
   },
   {
@@ -6959,36 +7464,6 @@
     "published": "2026-05-20",
     "updated": "2026-07-31",
     "url": "https://access.redhat.com/errata/RHSA-2026:21333",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17348",
-    "title": "pgAdmin 4: Missing authentication decorator on Constraints, preferences, Debugger and Schema Diff routes allows unauthenticated access in SERVER mode (incomplete fix for CVE-2026-12046)",
-    "desc": "In SERVER mode, pgAdmin 4 enforces authentication per route via the @pga_login_required decorator; the application's before_request hook only handles desktop-mode auto-login and the Kerberos/Webserver-auth redirect, so any route shipped without the decorator is reachable without authentication (CWE-306). This is the same defect class previously fixed as CVE-2026-12046 (the sqleditor close/update_c",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-306"
-    ],
-    "affected": [
-      {
-        "vendor": "pgadmin.org",
-        "product": "pgAdmin 4"
-      },
-      {
-        "vendor": "pgadmin.org",
-        "product": "pgAdmin 4"
-      },
-      {
-        "vendor": "pgadmin.org",
-        "product": "pgAdmin 4"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-31",
-    "updated": "2026-07-31",
-    "url": "https://github.com/pgadmin-org/pgadmin4/issues/10194",
     "source": "CISA Vulnrichment"
   },
   {
@@ -10488,44 +10963,6 @@
     "published": "2026-06-12",
     "updated": "2026-07-31",
     "url": "https://github.com/form-data/form-data/security/advisories/GHSA-hmw2-7cc7-3qxx",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-1784",
-    "title": "Ose-cluster-ingress-operator: remote code execution through haproxy configuration injection",
-    "desc": "The Route OpenShift resource allows to define routes to make pods reachable at a subdomain through HAProxy. It was found that the checks performed on the spec.path YAML stanza in a Route document was insufficient and could allow a controlled injection of the HAProxy configuration.",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-15"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.13"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.14"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.15"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.16"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.18"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-02",
-    "updated": "2026-07-31",
-    "url": "https://access.redhat.com/errata/RHSA-2026:23241",
     "source": "CISA Vulnrichment"
   },
   {
@@ -19794,46 +20231,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2025-51684",
-    "title": "CleverTap Web SDK v1.15.1 is vulnerable to Cross Site Scripting (XSS). The application does not sanitize untrusted data ",
-    "desc": "CleverTap Web SDK v1.15.1 is vulnerable to Cross Site Scripting (XSS). The application does not sanitize untrusted data received via window.postMessage before injecting it into the page DOM. An attacker can craft a malicious message that, when processed by renderCustomHtml, results in execution of arbitrary JavaScript in the context of the hosting site.",
-    "cvss": 6.1,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://github.com/CleverTap/clevertap-web-sdk/issues/416",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-69947",
-    "title": "SourceCodester Tailor Management System 1.0 is vulnerable to SQL Injection in customeredit.php?id=1.",
-    "desc": "SourceCodester Tailor Management System 1.0 is vulnerable to SQL Injection in customeredit.php?id=1.",
-    "cvss": 9.8,
-    "severity": "CRITICAL",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://github.com/um-dsp/TaintRadar/blob/main/sql_injection_cves/tailor/20250811-tailor-ms-customeredit.php-id-sqli/20250811-tailor-ms-customeredit.php-id-sqli.md",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2025-71132",
     "title": "smc91x: fix broken irq-context in PREEMPT_RT",
     "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmc91x: fix broken irq-context in PREEMPT_RT\n\nWhen smc91x.c is built with PREEMPT_RT, the following splat occurs\nin FVP_RevC:\n\n[   13.055000] smc91x LNRO0003:00 eth0: link up, 10Mbps, half-duplex, lpa 0x0000\n[   13.062137] BUG: workqueue leaked atomic, lock or RCU: kworker/2:1[106]\n[   13.062137]      preempt=0x00000000 lock=0->0",
@@ -19855,28 +20252,6 @@
     "published": "2026-01-14",
     "updated": "2026-07-30",
     "url": "https://git.kernel.org/stable/c/1c4cb705e733250d13243f6a69b8b5a92e39b9f6",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-11980",
-    "title": "Code execution in IBM Desktop App",
-    "desc": "IBM Aspera Desktop App 1.0.5 through 1.0.19 can allow arbitrary code execution by loading DLL files at start-up.",
-    "cvss": 7.3,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-242"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "Aspera Desktop App"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://www.ibm.com/support/pages/node/7280939",
     "source": "CISA Vulnrichment"
   },
   {
@@ -19947,26 +20322,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-15969",
-    "title": "CVE-2026-15969",
-    "desc": "SGLang contains an unauthenticated RCE in /load_lora_adapter_from_tensors via bypass of SafeUnpickler’s incomplete denylist, allowing arbitrary command execution through crafted base64-encoded pickle payloads.",
-    "cvss": 9.8,
-    "severity": "CRITICAL",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "SGLang",
-        "product": "SGLang"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://github.com/sgl-project/sglang/security/advisories/GHSA-2wvm-gjg7-5jfm",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-16414",
     "title": "Insufficient validation of untrusted input in Chromecast in Google Chrome prior to 150.0.7871.182 allowed a local attack",
     "desc": "Insufficient validation of untrusted input in Chromecast in Google Chrome prior to 150.0.7871.182 allowed a local attacker to potentially perform a sandbox escape via malicious network traffic. (Chromium security severity: High)",
@@ -20025,28 +20380,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-16727",
-    "title": "Concurrent Execution using Shared Resource with Improper Synchronization (“Race Condition”) in ASUS Armoury Crate allows",
-    "desc": "Concurrent Execution using Shared Resource with Improper Synchronization (“Race Condition”) in ASUS Armoury Crate allows a local user to execute arbitrary code with elevated privileges via a crafted file replacement.\nRefer to the ' Security Update for ASUS Armoury Crate ' section on the ASUS Security Advisory for more information.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-362"
-    ],
-    "affected": [
-      {
-        "vendor": "ASUS",
-        "product": "Armoury Crate"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://www.asus.com/security-advisory",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-16751",
     "title": "Ente Museum Server Authorization Bypass Vulnerability",
     "desc": "Authorization Bypass in the emergency recovery approval component in Ente Technologies Ente Museum Server allows an authenticated attacker configured as a victim's emergency contact to bypass the configured recovery waiting period and take over the victim's account via a crafted `approve-recovery` API request.",
@@ -20072,46 +20405,6 @@
     "desc": "Insufficient policy enforcement in Prefetch in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: High)",
     "cvss": 4.3,
     "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17727",
-    "title": "Out of bounds write in WebGL in Google Chrome on Android prior to 151.0.7922.72 allowed a remote attacker to potentially",
-    "desc": "Out of bounds write in WebGL in Google Chrome on Android prior to 151.0.7922.72 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
-    "cvss": 9.6,
-    "severity": "CRITICAL",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17774",
-    "title": "Insufficient validation of untrusted input in Variations in Google Chrome prior to 151.0.7922.72 allowed an attacker in ",
-    "desc": "Insufficient validation of untrusted input in Variations in Google Chrome prior to 151.0.7922.72 allowed an attacker in a privileged network position to potentially exploit heap corruption via malicious network traffic. (Chromium security severity: Medium)",
-    "cvss": 7.5,
-    "severity": "HIGH",
     "cwes": [],
     "affected": [
       {
@@ -20664,26 +20957,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-33811",
-    "title": "Crash when handling long CNAME response in net",
-    "desc": "When using LookupCNAME with the cgo DNS resolver, a very long CNAME response can trigger a double-free of C memory and a crash.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Go standard library",
-        "product": "net"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-05-07",
-    "updated": "2026-07-30",
-    "url": "https://go.dev/issue/78803",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-34346",
     "title": "Windows Ancillary Function Driver for WinSock Information Disclosure Vulnerability",
     "desc": "",
@@ -20795,28 +21068,6 @@
     "published": "2026-07-14",
     "updated": "2026-07-30",
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40378",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-40895",
-    "title": "follow-redirects: Custom Authentication Headers Leaked to Cross-Domain Redirect Targets",
-    "desc": "follow-redirects is an open source, drop-in replacement for Node's `http` and `https` modules that automatically follows redirects. Prior to 1.16.0, when an HTTP request follows a cross-domain redirect (301/302/307/308), follow-redirects only strips authorization, proxy-authorization, and cookie headers (matched by regex at index.js). Any custom authentication header (e.g., X-API-Key, X-Auth-Token",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-200"
-    ],
-    "affected": [
-      {
-        "vendor": "follow-redirects",
-        "product": "follow-redirects"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-04-21",
-    "updated": "2026-07-30",
-    "url": "https://github.com/follow-redirects/follow-redirects/security/advisories/GHSA-r4q5-vmmm-2653",
     "source": "CISA Vulnrichment"
   },
   {
@@ -23784,166 +24035,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-17936",
-    "title": "Inappropriate implementation in DevTools in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who convinced",
-    "desc": "Inappropriate implementation in DevTools in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to bypass navigation restrictions via a crafted HTML page. (Chromium security severity: Low)",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17937",
-    "title": "Insufficient validation of untrusted input in DevTools in Google Chrome prior to 151.0.7922.72 allowed a remote attacker",
-    "desc": "Insufficient validation of untrusted input in DevTools in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page. (Chromium security severity: Low)",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17940",
-    "title": "Insufficient validation of untrusted input in Picture-in-Picture in Google Chrome on Android prior to 151.0.7922.72 allo",
-    "desc": "Insufficient validation of untrusted input in Picture-in-Picture in Google Chrome on Android prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Low)",
-    "cvss": 9.6,
-    "severity": "CRITICAL",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17941",
-    "title": "Inappropriate implementation in Chrome for iOS in Google Chrome on iOS prior to 151.0.7922.72 allowed a remote attacker ",
-    "desc": "Inappropriate implementation in Chrome for iOS in Google Chrome on iOS prior to 151.0.7922.72 allowed a remote attacker to spoof the contents of the Omnibox (URL bar) via a crafted HTML page. (Chromium security severity: Low)",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17943",
-    "title": "Inappropriate implementation in Parser in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to bypass conte",
-    "desc": "Inappropriate implementation in Parser in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to bypass content security policy via a crafted HTML page. (Chromium security severity: Low)",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17944",
-    "title": "Inappropriate implementation in Chrome for iOS in Google Chrome on iOS prior to 151.0.7922.72 allowed a remote attacker ",
-    "desc": "Inappropriate implementation in Chrome for iOS in Google Chrome on iOS prior to 151.0.7922.72 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page. (Chromium security severity: Low)",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17945",
-    "title": "Insufficient validation of untrusted input in Navigation in Google Chrome prior to 151.0.7922.72 allowed a remote attack",
-    "desc": "Insufficient validation of untrusted input in Navigation in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to perform UI spoofing via a crafted HTML page. (Chromium security severity: Low)",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17958",
-    "title": "Inappropriate implementation in Views in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to perform UI sp",
-    "desc": "Inappropriate implementation in Views in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to perform UI spoofing via a crafted HTML page. (Chromium security severity: Low)",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-30",
-    "updated": "2026-07-30",
-    "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-49165",
     "title": "Microsoft Windows App Store Information Disclosure Vulnerability",
     "desc": "",
@@ -23979,26 +24070,6 @@
     "published": "2026-07-14",
     "updated": "2026-07-29",
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49165",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-66488",
-    "title": "Joomla Extension - balbooa.com - Payment bypass in Gridbox < 2.20.2",
-    "desc": "Joomla Extension - balbooa.com - Payment bypass in Gridbox < 2.20.2",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "balbooa.com",
-        "product": "Gridbox extension for Joomla"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-29",
-    "updated": "2026-07-29",
-    "url": "https://www.balbooa.com/gridbox",
     "source": "CISA Vulnrichment"
   },
   {
