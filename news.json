@@ -1,6 +1,60 @@
 [
   {
     "source": "thn",
+    "title": "FOMO in the SOC: Where AI Platforms like Claude Actually Fit",
+    "desc": "AI is moving incredibly fast, and every security leader is feeling the pressure to keep up.\n\nAI platforms like Claude, Codex and Cursor are already helping security teams write detections, investigate alerts, summarize incidents, and automate repetitive work. The conversation has evolved from whethe",
+    "url": "https://thehackernews.com/2026/08/fomo-in-soc-where-ai-platforms-like.html",
+    "date": "2026-08-03T17:00:00",
+    "title_ko": "FOMO in the SOC: Where AI Platforms like Claude Actually Fit",
+    "desc_ko": "AI is moving incredibly fast, and every security leader is feeling the pressure to keep up.\n\nAI platforms like Claude, Codex and Cursor are already helping security teams write detections, investigate alerts, summarize incidents, and automate repetitive work. The conversation has evolved from whethe"
+  },
+  {
+    "source": "thn",
+    "title": "Chinese Threat Actor Uses Leaked DarkSword Kit to Deploy GHOSTBLADE on iOS",
+    "desc": "An unknown Chinese-threat actor has been observed running a campaign targeting Apple iOS devices by leveraging a publicly leaked version of the DarkSword exploit kit.\n\nAttack surface management platform Censys said it identified the threat actor running more than 100 web properties, most of which ar",
+    "url": "https://thehackernews.com/2026/08/chinese-threat-actor-uses-leaked.html",
+    "date": "2026-08-03T16:19:06",
+    "title_ko": "Chinese Threat Actor Uses Leaked DarkSword Kit to Deploy GHOSTBLADE on iOS",
+    "desc_ko": "An unknown Chinese-threat actor has been observed running a campaign targeting Apple iOS devices by leveraging a publicly leaked version of the DarkSword exploit kit.\n\nAttack surface management platform Censys said it identified the threat actor running more than 100 web properties, most of which ar"
+  },
+  {
+    "source": "thn",
+    "title": "PNLD Breach Exposes U.K. Police and Government Contact Details on Dark Web",
+    "desc": "The Police National Legal Database (PNLD) has confirmed that police, government and customer contact information was compromised and published on the dark web.\n\nThe data included names, organisations and work email addresses belonging to police officers, police staff, criminal justice professionals,",
+    "url": "https://thehackernews.com/2026/08/pnld-breach-exposes-uk-police-and.html",
+    "date": "2026-08-03T14:43:56",
+    "title_ko": "PNLD Breach Exposes U.K. Police and Government Contact Details on Dark Web",
+    "desc_ko": "The Police National Legal Database (PNLD) has confirmed that police, government and customer contact information was compromised and published on the dark web.\n\nThe data included names, organisations and work email addresses belonging to police officers, police staff, criminal justice professionals,"
+  },
+  {
+    "source": "thn",
+    "title": "Thermo Fisher Patches Flaw That Could Make DNA File Tampering Nearly Undetectable",
+    "desc": "Thermo Fisher Scientific has patched a flaw in select Applied Biosystems human identification software that could allow data files to be altered before analysis software loads them.\n\nThe vendor's July 31 security bulletin says nearly undetectable changes to .fsa and .hid outputs could occur if labor",
+    "url": "https://thehackernews.com/2026/08/thermo-fisher-patches-flaw-that-could.html",
+    "date": "2026-08-03T13:35:30",
+    "title_ko": "Thermo Fisher Patches Flaw That Could Make DNA File Tampering Nearly Undetectable",
+    "desc_ko": "Thermo Fisher Scientific has patched a flaw in select Applied Biosystems human identification software that could allow data files to be altered before analysis software loads them.\n\nThe vendor's July 31 security bulletin says nearly undetectable changes to .fsa and .hid outputs could occur if labor"
+  },
+  {
+    "source": "thn",
+    "title": "N-able Says Attackers Take Over N-central Servers After Initial Fix Proves Incomplete",
+    "desc": "N-able said attackers exploited an authentication bypass in N-central to gain remote administrative access and reach the customer systems managed through those servers.\n\nIts first fix was incomplete. CVE-2026-18577 affects N-central builds prior to 2026.3.1.7. N-able shipped build 2026.3.1.7 on Augu",
+    "url": "https://thehackernews.com/2026/08/n-able-says-attackers-take-over-n.html",
+    "date": "2026-08-03T12:11:46",
+    "title_ko": "N-able Says Attackers Take Over N-central Servers After Initial Fix Proves Incomplete",
+    "desc_ko": "N-able said attackers exploited an authentication bypass in N-central to gain remote administrative access and reach the customer systems managed through those servers.\n\nIts first fix was incomplete. CVE-2026-18577 affects N-central builds prior to 2026.3.1.7. N-able shipped build 2026.3.1.7 on Augu"
+  },
+  {
+    "source": "thn",
+    "title": "Hugging Face Diffusers Flaws Could Let Model Repositories Execute Arbitrary Code",
+    "desc": "Three high-severity security flaws have been disclosed in Hugging Face's Diffusers library that could allow crafted model repositories to stealthily execute arbitrary code on machines that load it, opening the artificial intelligence (AI) supply chain to security risk.\n\n\"These vulnerabilities are by",
+    "url": "https://thehackernews.com/2026/08/hugging-face-diffusers-flaws-could-let.html",
+    "date": "2026-08-03T12:10:31",
+    "title_ko": "Hugging Face Diffusers Flaws Could Let Model Repositories Execute Arbitrary Code",
+    "desc_ko": "Three high-severity security flaws have been disclosed in Hugging Face's Diffusers library that could allow crafted model repositories to stealthily execute arbitrary code on machines that load it, opening the artificial intelligence (AI) supply chain to security risk.\n\n\"These vulnerabilities are by"
+  },
+  {
+    "source": "thn",
     "title": "Coldcard Hardware Wallet Flaw Linked to $70 Million Bitcoin Theft in 41 Minutes",
     "desc": "An attacker drained 1,196 Bitcoin addresses in 41 minutes on July 30, taking 1,082.65 BTC worth about $70.2 million at the time. Galaxy Research mapped the sweep and tied it to a firmware flaw in Coldcard, the Bitcoin-only hardware wallet made by Canadian firm Coinkite.\n\nA March 2021 firmware integr",
     "url": "https://thehackernews.com/2026/08/coldcard-hardware-wallet-flaw-linked-to.html",
@@ -394,59 +448,5 @@
     "date": "2026-07-28T13:41:22",
     "title_ko": "Critical TeamCity Flaw Could Let Attackers Run OS Commands Without Logging In",
     "desc_ko": "JetBrains is urging customers of on-premise versions of TeamCity to update to the latest version following the discovery of a critical security issue that could result in arbitrary code execution.\n\nThe vulnerability, assigned CVE-2026-63077 (CVSS score: 9.8), affects all TeamCity On-Premises version"
-  },
-  {
-    "source": "thn",
-    "title": "Researcher Says AI Helped Develop Linux Traffic-Control Race Into Root Exploit",
-    "desc": "STAR Labs has published a Linux kernel exploit that turns an ordinary local user into root on the CentOS Stream 9 build it targeted. The flaw, tracked as CVE-2026-53264 (CVSS score: 7.8), is a use-after-free race in the kernel's network traffic-control subsystem.Researcher Lee Jia Jie said artificia",
-    "url": "https://thehackernews.com/2026/07/researcher-says-ai-helped-develop-linux.html",
-    "date": "2026-07-28T13:34:44",
-    "title_ko": "Researcher Says AI Helped Develop Linux Traffic-Control Race Into Root Exploit",
-    "desc_ko": "STAR Labs has published a Linux kernel exploit that turns an ordinary local user into root on the CentOS Stream 9 build it targeted. The flaw, tracked as CVE-2026-53264 (CVSS score: 7.8), is a use-after-free race in the kernel's network traffic-control subsystem.Researcher Lee Jia Jie said artificia"
-  },
-  {
-    "source": "thn",
-    "title": "Microsoft Says New Cybersecurity AI Model Helps MDASH Score 95.95% at Half the Cost",
-    "desc": "Microsoft has launched its first cybersecurity-specific model inside MDASH, its multi-model vulnerability identification and remediation harness.\n\nThe company says MDASH, using MAI-Cyber-1-Flash and GPT-5.4, scored 95.95% on CyberGym. It also claims the configuration costs 50% less than its current ",
-    "url": "https://thehackernews.com/2026/07/microsoft-says-new-cybersecurity-ai.html",
-    "date": "2026-07-28T11:37:22",
-    "title_ko": "Microsoft Says New Cybersecurity AI Model Helps MDASH Score 95.95% at Half the Cost",
-    "desc_ko": "Microsoft has launched its first cybersecurity-specific model inside MDASH, its multi-model vulnerability identification and remediation harness.\n\nThe company says MDASH, using MAI-Cyber-1-Flash and GPT-5.4, scored 95.95% on CyberGym. It also claims the configuration costs 50% less than its current "
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Exploit Arista VeloCloud Orchestrator Command Injection Flaw",
-    "desc": "A maximum-severity security flaw impacting on-premises versions of Arista VeloCloud Orchestrator (VCO) has come under active exploitation in the wild.\n\nThe vulnerability, tracked as CVE-2026-16812 (CVSS score: 10.0), is a case of operating system command injection that could pave the way for arbitra",
-    "url": "https://thehackernews.com/2026/07/attackers-exploit-arista-velocloud.html",
-    "date": "2026-07-28T10:13:53",
-    "title_ko": "Attackers Exploit Arista VeloCloud Orchestrator Command Injection Flaw",
-    "desc_ko": "A maximum-severity security flaw impacting on-premises versions of Arista VeloCloud Orchestrator (VCO) has come under active exploitation in the wild.\n\nThe vulnerability, tracked as CVE-2026-16812 (CVSS score: 10.0), is a case of operating system command injection that could pave the way for arbitra"
-  },
-  {
-    "source": "thn",
-    "title": "NVIDIA Forms 37-Member Open Secure AI Alliance and Open-Sources NOOA Framework",
-    "desc": "NVIDIA and 36 other organizations have formed the Open Secure AI Alliance to develop and share open technologies, techniques, and tools for securing software and artificial intelligence (AI) agents.\n\nThe 37-member group spans cloud, security, enterprise software, and AI companies, including Microsof",
-    "url": "https://thehackernews.com/2026/07/nvidia-forms-37-member-open-secure-ai.html",
-    "date": "2026-07-27T23:40:05",
-    "title_ko": "NVIDIA Forms 37-Member Open Secure AI Alliance and Open-Sources NOOA Framework",
-    "desc_ko": "NVIDIA and 36 other organizations have formed the Open Secure AI Alliance to develop and share open technologies, techniques, and tools for securing software and artificial intelligence (AI) agents.\n\nThe 37-member group spans cloud, security, enterprise software, and AI companies, including Microsof"
-  },
-  {
-    "source": "thn",
-    "title": "Dysphoria IoT Botnet Adds Blockchain C2 and Victim Relays After JackSkid Disruption",
-    "desc": "Dysphoria, an Internet of Things (IoT) botnet line tracked by CNCERT and XLab, has adopted blockchain-based name services and infected-device relays after a March law-enforcement operation against JackSkid infrastructure. The researchers say the design makes the botnet harder to disrupt.\n\nCNCERT, Ch",
-    "url": "https://thehackernews.com/2026/07/dysphoria-iot-botnet-adds-blockchain-c2.html",
-    "date": "2026-07-27T22:46:28",
-    "title_ko": "Dysphoria IoT Botnet Adds Blockchain C2 and Victim Relays After JackSkid Disruption",
-    "desc_ko": "Dysphoria, an Internet of Things (IoT) botnet line tracked by CNCERT and XLab, has adopted blockchain-based name services and infected-device relays after a March law-enforcement operation against JackSkid infrastructure. The researchers say the design makes the botnet harder to disrupt.\n\nCNCERT, Ch"
-  },
-  {
-    "source": "thn",
-    "title": "Public Exploit Released for Patched vBulletin Pre-Auth Code Execution Flaw",
-    "desc": "Public exploit details released on July 27 show how an unauthenticated request can reach PHP's eval() function inside vBulletin and execute code on an unpatched forum server. The attack requires no account, administrative access, or interaction from another user.\n\nSSD Secure Disclosure lists vBullet",
-    "url": "https://thehackernews.com/2026/07/public-exploit-released-for-patched.html",
-    "date": "2026-07-27T20:10:00",
-    "title_ko": "Public Exploit Released for Patched vBulletin Pre-Auth Code Execution Flaw",
-    "desc_ko": "Public exploit details released on July 27 show how an unauthenticated request can reach PHP's eval() function inside vBulletin and execute code on an unpatched forum server. The attack requires no account, administrative access, or interaction from another user.\n\nSSD Secure Disclosure lists vBullet"
   }
 ]
