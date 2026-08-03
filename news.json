@@ -1,6 +1,42 @@
 [
   {
     "source": "thn",
+    "title": "18 Malicious npm Packages Deliver Cross-Platform RAT to Alibaba Tool Users",
+    "desc": "Cybersecurity researchers have discovered a new set of malicious npm packages that target users of Alibaba developer tools with a cross-platform remote access trojan (RAT) as part of a sophisticated, targeted software supply chain attack targeting Chinese-speaking environments.\n\nOne of the packages ",
+    "url": "https://thehackernews.com/2026/08/18-malicious-npm-packages-deliver-cross.html",
+    "date": "2026-08-04T00:13:53",
+    "title_ko": "18 Malicious npm Packages Deliver Cross-Platform RAT to Alibaba Tool Users",
+    "desc_ko": "Cybersecurity researchers have discovered a new set of malicious npm packages that target users of Alibaba developer tools with a cross-platform remote access trojan (RAT) as part of a sophisticated, targeted software supply chain attack targeting Chinese-speaking environments.\n\nOne of the packages "
+  },
+  {
+    "source": "thn",
+    "title": "Google Password Manager Attacks Could Let Malware Hijack Passkey-Protected Accounts",
+    "desc": "Malware running as an ordinary user on a Windows machine can sign into a victim's passkey-protected accounts without a fingerprint, a PIN, or anything at all appearing on the victim's screen.\n\nUnit 42 detailed three attack paths against Chrome's Google Password Manager cloud authenticator, which it ",
+    "url": "https://thehackernews.com/2026/08/google-password-manager-attacks-could.html",
+    "date": "2026-08-03T21:54:47",
+    "title_ko": "Google Password Manager Attacks Could Let Malware Hijack Passkey-Protected Accounts",
+    "desc_ko": "Malware running as an ordinary user on a Windows machine can sign into a victim's passkey-protected accounts without a fingerprint, a PIN, or anything at all appearing on the victim's screen.\n\nUnit 42 detailed three attack paths against Chrome's Google Password Manager cloud authenticator, which it "
+  },
+  {
+    "source": "thn",
+    "title": "INC Ransomware Emerges as Dominant Actor Exploiting SonicWall SMA 1000 Flaws",
+    "desc": "The INC Ransomware operation has emerged as the \"dominant threat actor\" exploiting the recently disclosed security flaws in SonicWall Secure Mobile Access (SMA) 1000 series VPN appliances.\n\nIn a report published over the weekend, Resecurity said it observed the INC Ransomware accelerating its activi",
+    "url": "https://thehackernews.com/2026/08/inc-ransomware-emerges-as-dominant.html",
+    "date": "2026-08-03T21:45:13",
+    "title_ko": "INC Ransomware Emerges as Dominant Actor Exploiting SonicWall SMA 1000 Flaws",
+    "desc_ko": "The INC Ransomware operation has emerged as the \"dominant threat actor\" exploiting the recently disclosed security flaws in SonicWall Secure Mobile Access (SMA) 1000 series VPN appliances.\n\nIn a report published over the weekend, Resecurity said it observed the INC Ransomware accelerating its activi"
+  },
+  {
+    "source": "thn",
+    "title": "⚡ Weekly Recap: Rogue AI Models, $88M Bitcoin Theft, Water-System Attacks and Dangling DNS Hijacks",
+    "desc": "This week kept coming back to permission. A model crossed a boundary. A wallet trusted bad randomness. Webmail kept an intruder around. Public systems, package feeds, hotel networks, and login flows all gave away more than intended.\n\nSome of it was clever. Most of it was just access left lying aroun",
+    "url": "https://thehackernews.com/2026/08/weekly-recap-rogue-ai-models-88m.html",
+    "date": "2026-08-03T19:33:11",
+    "title_ko": "⚡ Weekly Recap: Rogue AI Models, $88M Bitcoin Theft, Water-System Attacks and Dangling DNS Hijacks",
+    "desc_ko": "This week kept coming back to permission. A model crossed a boundary. A wallet trusted bad randomness. Webmail kept an intruder around. Public systems, package feeds, hotel networks, and login flows all gave away more than intended.\n\nSome of it was clever. Most of it was just access left lying aroun"
+  },
+  {
+    "source": "thn",
     "title": "FOMO in the SOC: Where AI Platforms like Claude Actually Fit",
     "desc": "AI is moving incredibly fast, and every security leader is feeling the pressure to keep up.\n\nAI platforms like Claude, Codex and Cursor are already helping security teams write detections, investigate alerts, summarize incidents, and automate repetitive work. The conversation has evolved from whethe",
     "url": "https://thehackernews.com/2026/08/fomo-in-soc-where-ai-platforms-like.html",
@@ -11,11 +47,11 @@
   {
     "source": "thn",
     "title": "Chinese Threat Actor Uses Leaked DarkSword Kit to Deploy GHOSTBLADE on iOS",
-    "desc": "An unknown Chinese-threat actor has been observed running a campaign targeting Apple iOS devices by leveraging a publicly leaked version of the DarkSword exploit kit.\n\nAttack surface management platform Censys said it identified the threat actor running more than 100 web properties, most of which ar",
+    "desc": "An unknown Chinese-speaking threat actor has been observed running a campaign targeting Apple iOS devices by leveraging a publicly leaked version of the DarkSword exploit kit.\n\nAttack surface management platform Censys said it identified the threat actor running more than 100 web properties, most of",
     "url": "https://thehackernews.com/2026/08/chinese-threat-actor-uses-leaked.html",
     "date": "2026-08-03T16:19:06",
     "title_ko": "Chinese Threat Actor Uses Leaked DarkSword Kit to Deploy GHOSTBLADE on iOS",
-    "desc_ko": "An unknown Chinese-threat actor has been observed running a campaign targeting Apple iOS devices by leveraging a publicly leaked version of the DarkSword exploit kit.\n\nAttack surface management platform Censys said it identified the threat actor running more than 100 web properties, most of which ar"
+    "desc_ko": "An unknown Chinese-speaking threat actor has been observed running a campaign targeting Apple iOS devices by leveraging a publicly leaked version of the DarkSword exploit kit.\n\nAttack surface management platform Censys said it identified the threat actor running more than 100 web properties, most of"
   },
   {
     "source": "thn",
@@ -412,41 +448,5 @@
     "date": "2026-07-28T20:11:36",
     "title_ko": "24,650 Internet-Exposed BMCs Disclose IPMI Password Hashes Before Login",
     "desc_ko": "Cybersecurity researchers have sounded an alert after finding more than 36,000 Baseboard Management Controller (BMC) management interfaces exposing Intelligent Platform Management Interface (IPMI) protocol to the public internet.\n\nOf the 36,872 internet-exposed server-management interfaces running I"
-  },
-  {
-    "source": "thn",
-    "title": "JFrog Confirms OpenAI Models Exploited Artifactory Zero-Day Before Hugging Face Breach",
-    "desc": "JFrog has confirmed that OpenAI models exploited a zero-day in self-hosted Artifactory while trying to reach the open internet from a sealed evaluation environment.\n\nArtifactory is JFrog's software repository manager. OpenAI says the models then escalated privileges and moved laterally until they re",
-    "url": "https://thehackernews.com/2026/07/jfrog-confirms-openai-models-exploited.html",
-    "date": "2026-07-28T19:03:47",
-    "title_ko": "JFrog Confirms OpenAI Models Exploited Artifactory Zero-Day Before Hugging Face Breach",
-    "desc_ko": "JFrog has confirmed that OpenAI models exploited a zero-day in self-hosted Artifactory while trying to reach the open internet from a sealed evaluation environment.\n\nArtifactory is JFrog's software repository manager. OpenAI says the models then escalated privileges and moved laterally until they re"
-  },
-  {
-    "source": "thn",
-    "title": "Critical OpenWrt DHCPv6 Flaw Could Let Unauthenticated Attackers Run Code as Root",
-    "desc": "OpenWrt has shipped version 24.10.8 to close a critical DHCPv6 stack overflow and a wider set of remotely triggerable flaws in network services enabled by default.\n\nThe critical issue, tracked as CVE-2026-53921 and rated 9.8 on CVSS 3.1 in OpenWrt's GitHub advisory, lets an unauthenticated attacker ",
-    "url": "https://thehackernews.com/2026/07/critical-openwrt-dhcpv6-flaw-could-let.html",
-    "date": "2026-07-28T18:26:14",
-    "title_ko": "Critical OpenWrt DHCPv6 Flaw Could Let Unauthenticated Attackers Run Code as Root",
-    "desc_ko": "OpenWrt has shipped version 24.10.8 to close a critical DHCPv6 stack overflow and a wider set of remotely triggerable flaws in network services enabled by default.\n\nThe critical issue, tracked as CVE-2026-53921 and rated 9.8 on CVSS 3.1 in OpenWrt's GitHub advisory, lets an unauthenticated attacker "
-  },
-  {
-    "source": "thn",
-    "title": "Nimbus Manticore Deploys NightLedger and Turns Victim Systems Into Covert Relays",
-    "desc": "The Iranian state-backed hacking group tracked as Nimbus Manticore (aka GalaxyGato, Mirage Kitten, Smoke Sandstorm, Subtle Snail, and UNC1549) has been attributed to a fresh set of attacks targeting entities across the Middle East, Africa, and South Asia.\n\nThe intrusions involve the use of a previou",
-    "url": "https://thehackernews.com/2026/07/nimbus-manticore-deploys-nightledger.html",
-    "date": "2026-07-28T17:25:20",
-    "title_ko": "Nimbus Manticore Deploys NightLedger and Turns Victim Systems Into Covert Relays",
-    "desc_ko": "The Iranian state-backed hacking group tracked as Nimbus Manticore (aka GalaxyGato, Mirage Kitten, Smoke Sandstorm, Subtle Snail, and UNC1549) has been attributed to a fresh set of attacks targeting entities across the Middle East, Africa, and South Asia.\n\nThe intrusions involve the use of a previou"
-  },
-  {
-    "source": "thn",
-    "title": "Critical TeamCity Flaw Could Let Attackers Run OS Commands Without Logging In",
-    "desc": "JetBrains is urging customers of on-premise versions of TeamCity to update to the latest version following the discovery of a critical security issue that could result in arbitrary code execution.\n\nThe vulnerability, assigned CVE-2026-63077 (CVSS score: 9.8), affects all TeamCity On-Premises version",
-    "url": "https://thehackernews.com/2026/07/critical-teamcity-flaw-could-let.html",
-    "date": "2026-07-28T13:41:22",
-    "title_ko": "Critical TeamCity Flaw Could Let Attackers Run OS Commands Without Logging In",
-    "desc_ko": "JetBrains is urging customers of on-premise versions of TeamCity to update to the latest version following the discovery of a critical security issue that could result in arbitrary code execution.\n\nThe vulnerability, assigned CVE-2026-63077 (CVSS score: 9.8), affects all TeamCity On-Premises version"
   }
 ]
