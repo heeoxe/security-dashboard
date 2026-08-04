@@ -1,6 +1,33 @@
 [
   {
     "source": "thn",
+    "title": "Greatness PhaaS Adds Device Code Phishing to Bypass MFA and Steal Tokens",
+    "desc": "The commercial phishing-as-a-service (PhaaS) toolkit known as Greatness has become the latest crimeware solution to add support for device code phishing, a rapidly growing cyber threat that abuses the legitimate OAuth 2.0 Device Authorization Grant to bypass Multi-Factor Authentication (MFA) and sei",
+    "url": "https://thehackernews.com/2026/08/greatness-phaas-adds-device-code.html",
+    "date": "2026-08-04T22:57:39",
+    "title_ko": "Greatness PhaaS Adds Device Code Phishing to Bypass MFA and Steal Tokens",
+    "desc_ko": "The commercial phishing-as-a-service (PhaaS) toolkit known as Greatness has become the latest crimeware solution to add support for device code phishing, a rapidly growing cyber threat that abuses the legitimate OAuth 2.0 Device Authorization Grant to bypass Multi-Factor Authentication (MFA) and sei"
+  },
+  {
+    "source": "thn",
+    "title": "Keyv-Linked npm Worm Poisons Hundreds of Packages, Plants Claude Code and VS Code Hooks",
+    "desc": "A credential-stealing npm worm that first appeared in keyv@6.0.0 spread beyond the Keyv and Cacheable namespaces into hundreds of packages across multiple organizations on August 4, 2026.\n\nSafeDep verified 353 poisoned versions across 79 package names in the npm registry. Its monitoring put the wide",
+    "url": "https://thehackernews.com/2026/08/keyv-linked-npm-worm-poisons-hundreds.html",
+    "date": "2026-08-04T19:00:23",
+    "title_ko": "Keyv-Linked npm Worm Poisons Hundreds of Packages, Plants Claude Code and VS Code Hooks",
+    "desc_ko": "A credential-stealing npm worm that first appeared in keyv@6.0.0 spread beyond the Keyv and Cacheable namespaces into hundreds of packages across multiple organizations on August 4, 2026.\n\nSafeDep verified 353 poisoned versions across 79 package names in the npm registry. Its monitoring put the wide"
+  },
+  {
+    "source": "thn",
+    "title": "Fake Adobe and Zoom Updates Install ScreenConnect for Persistent Remote Access",
+    "desc": "Cybersecurity researchers have disclosed details of an active, multi-wave campaign that employs social engineering lures themed around Adobe and Zoom software updates, business document reviews, and system maintenance utilities to stealthily deploy Remote Monitoring and Management (RMM) programs lik",
+    "url": "https://thehackernews.com/2026/08/fake-adobe-and-zoom-updates-install.html",
+    "date": "2026-08-04T18:41:22",
+    "title_ko": "Fake Adobe and Zoom Updates Install ScreenConnect for Persistent Remote Access",
+    "desc_ko": "Cybersecurity researchers have disclosed details of an active, multi-wave campaign that employs social engineering lures themed around Adobe and Zoom software updates, business document reviews, and system maintenance utilities to stealthily deploy Remote Monitoring and Management (RMM) programs lik"
+  },
+  {
+    "source": "thn",
     "title": "When Vibe Hacking Turns AI into the Junior Hacker Every Adversary Always Wanted",
     "desc": "The cybersecurity industry has spent decades assuming that offensive capability scales with technical expertise.\n\nThat assumption is starting to break.\n\nSecurity teams have long estimated risk by ranking attacker sophistication. Nation-state actors sat at one end. Organized criminal groups followed.",
     "url": "https://thehackernews.com/2026/08/when-vibe-hacking-turns-ai-into-junior.html",
@@ -421,32 +448,5 @@
     "date": "2026-07-29T16:30:00",
     "title_ko": "Russia Charges Telegram Founder Pavel Durov With Aiding Terrorist Activity",
     "desc_ko": "The Federal Security Service of the Russian Federation (FSB) on Wednesday said it charged Telegram founder Pavel Durov for allegedly facilitating terrorist activities and for failing to remove prohibited information in violation of Russian law.\n\nThe principal security agency said the instant messagi"
-  },
-  {
-    "source": "thn",
-    "title": "Public PoC Released for Exploited Check Point SmartConsole Authentication Bypass",
-    "desc": "Cybersecurity researchers have shared additional technical details about a recently patched critical security flaw impacting Check Point Security Management Server and Multi-Domain Security Management Server (MDS) that has come under active exploitation in the wild.\n\nThe vulnerability, tracked as CV",
-    "url": "https://thehackernews.com/2026/07/rapid7-releases-poc-for-exploited-check.html",
-    "date": "2026-07-29T14:28:27",
-    "title_ko": "Public PoC Released for Exploited Check Point SmartConsole Authentication Bypass",
-    "desc_ko": "Cybersecurity researchers have shared additional technical details about a recently patched critical security flaw impacting Check Point Security Management Server and Multi-Domain Security Management Server (MDS) that has come under active exploitation in the wild.\n\nThe vulnerability, tracked as CV"
-  },
-  {
-    "source": "thn",
-    "title": "OpenAI Agent Used Exposed Credentials Across Four Services During Hugging Face Breach",
-    "desc": "OpenAI on Tuesday revealed the rogue artificial intelligence (AI) agent that escaped its sealed evaluation environment and broke into Hugging Face's production environment also hacked multiple third-party accounts and services as part of the attack.\n\nThe latest disclosure shows that the security inc",
-    "url": "https://thehackernews.com/2026/07/openai-agent-used-exposed-credentials.html",
-    "date": "2026-07-29T13:21:00",
-    "title_ko": "OpenAI Agent Used Exposed Credentials Across Four Services During Hugging Face Breach",
-    "desc_ko": "OpenAI on Tuesday revealed the rogue artificial intelligence (AI) agent that escaped its sealed evaluation environment and broke into Hugging Face's production environment also hacked multiple third-party accounts and services as part of the attack.\n\nThe latest disclosure shows that the security inc"
-  },
-  {
-    "source": "thn",
-    "title": "New Gitea RCE Lets Repository Writers Plant a Git Hook to Run Shell Commands",
-    "desc": "Gitea, the self-hosted Git platform, has patched a critical remote code execution vulnerability. A user with ordinary repository write access can turn attacker-controlled patch content into a live Git hook and run shell commands as the Gitea service account.\n\nTracked as CVE-2026-60004 (CVSS score: 9",
-    "url": "https://thehackernews.com/2026/07/new-gitea-rce-lets-repository-writers.html",
-    "date": "2026-07-29T13:17:19",
-    "title_ko": "New Gitea RCE Lets Repository Writers Plant a Git Hook to Run Shell Commands",
-    "desc_ko": "Gitea, the self-hosted Git platform, has patched a critical remote code execution vulnerability. A user with ordinary repository write access can turn attacker-controlled patch content into a live Git hook and run shell commands as the Gitea service account.\n\nTracked as CVE-2026-60004 (CVSS score: 9"
   }
 ]
