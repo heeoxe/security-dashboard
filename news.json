@@ -1,6 +1,60 @@
 [
   {
     "source": "thn",
+    "title": "Over 250 ClickFix Domains Use Browser Fingerprinting to Hide macOS Malware Lures",
+    "desc": "A macOS ClickFix operation spanning more than 250 front-end domains now fingerprints visitors before deciding whether to show them a malware lure, a change Microsoft Threat Intelligence tracked on infrastructure it had been watching for weeks.\n\nThe server-side gate hides the malicious page from craw",
+    "url": "https://thehackernews.com/2026/08/over-250-clickfix-domains-use-browser.html",
+    "date": "2026-08-06T00:14:31",
+    "title_ko": "Over 250 ClickFix Domains Use Browser Fingerprinting to Hide macOS Malware Lures",
+    "desc_ko": "A macOS ClickFix operation spanning more than 250 front-end domains now fingerprints visitors before deciding whether to show them a malware lure, a change Microsoft Threat Intelligence tracked on infrastructure it had been watching for weeks.\n\nThe server-side gate hides the malicious page from craw"
+  },
+  {
+    "source": "thn",
+    "title": "OpenAI Disrupts Poipet Scam Network Using ChatGPT Across Multiple Fraud Schemes",
+    "desc": "OpenAI said it disrupted a Cambodia-based scam operation that used its generative artificial intelligence (AI) chatbot ChatGPT to facilitate a wide range of investment, romance, gambling, and law enforcement impersonation schemes.\n\nTo that end, it banned a coordinated network of ChatGPT accounts lik",
+    "url": "https://thehackernews.com/2026/08/openai-disrupts-poipet-scam-network.html",
+    "date": "2026-08-06T00:03:47",
+    "title_ko": "OpenAI Disrupts Poipet Scam Network Using ChatGPT Across Multiple Fraud Schemes",
+    "desc_ko": "OpenAI said it disrupted a Cambodia-based scam operation that used its generative artificial intelligence (AI) chatbot ChatGPT to facilitate a wide range of investment, romance, gambling, and law enforcement impersonation schemes.\n\nTo that end, it banned a coordinated network of ChatGPT accounts lik"
+  },
+  {
+    "source": "thn",
+    "title": "Poison Claude Sells Discounted Claude Access While Its Operator Sees Every Customer Prompt",
+    "desc": "Cybersecurity researchers have discovered more than half-a-dozen services advertisements for illegal access to artificial intelligence (AI) models on underground cybercrime forums and messaging platforms.\n\nOne such service, Poison Claude, claims to offer access to Anthropic's large language models (",
+    "url": "https://thehackernews.com/2026/08/poison-claude-sells-discounted-claude.html",
+    "date": "2026-08-05T21:06:03",
+    "title_ko": "Poison Claude Sells Discounted Claude Access While Its Operator Sees Every Customer Prompt",
+    "desc_ko": "Cybersecurity researchers have discovered more than half-a-dozen services advertisements for illegal access to artificial intelligence (AI) models on underground cybercrime forums and messaging platforms.\n\nOne such service, Poison Claude, claims to offer access to Anthropic's large language models ("
+  },
+  {
+    "source": "thn",
+    "title": "Paperclip AI Flaws Let Attackers Run Host Commands via Malicious Agent Imports",
+    "desc": "Two security flaws in Paperclip could let attackers execute commands on a network server or a developer's computer. Paperclip is an open-source control plane for teams of artificial intelligence (AI) agents, and both paths rely on importing a malicious agent and starting it.\n\nA third flaw could expo",
+    "url": "https://thehackernews.com/2026/08/paperclip-ai-flaws-let-attackers-run.html",
+    "date": "2026-08-05T20:44:05",
+    "title_ko": "Paperclip AI Flaws Let Attackers Run Host Commands via Malicious Agent Imports",
+    "desc_ko": "Two security flaws in Paperclip could let attackers execute commands on a network server or a developer's computer. Paperclip is an open-source control plane for teams of artificial intelligence (AI) agents, and both paths rely on importing a malicious agent and starting it.\n\nA third flaw could expo"
+  },
+  {
+    "source": "thn",
+    "title": "Veeam, Terraform MCP, Django Patch Critical Flaws, Led by CVSS 10.0 Cross-Tenant Bug",
+    "desc": "HashiCorp, Veeam, and the Django Software Foundation have patched 11 vulnerabilities across Terraform MCP Server, Veeam Service Provider Console, and Django.\n\nThe three most serious:\n\n\n  An unauthenticated flaw in Veeam's console that hands over a managed agent's credentials, rated 9.5\n  A cross-ten",
+    "url": "https://thehackernews.com/2026/08/veeam-terraform-mcp-django-patch.html",
+    "date": "2026-08-05T19:57:30",
+    "title_ko": "Veeam, Terraform MCP, Django Patch Critical Flaws, Led by CVSS 10.0 Cross-Tenant Bug",
+    "desc_ko": "HashiCorp, Veeam, and the Django Software Foundation have patched 11 vulnerabilities across Terraform MCP Server, Veeam Service Provider Console, and Django.\n\nThe three most serious:\n\n\n  An unauthenticated flaw in Veeam's console that hands over a managed agent's credentials, rated 9.5\n  A cross-ten"
+  },
+  {
+    "source": "thn",
+    "title": "Trojanized npm Packages Employ NullReceiver Tactic to Decode C2 IP from Blockchain",
+    "desc": "Cybersecurity researchers have flagged an evolution of the EtherHiding blockchain-based command-and-control (C2) technique that conceals the C2 server IP address inside a made-up destination address of a completely empty Ethereum transfer.\n\nThe new dead drop resolver approach, observed in two trojan",
+    "url": "https://thehackernews.com/2026/08/trojanized-npm-packages-decode-c2-ip.html",
+    "date": "2026-08-05T19:11:27",
+    "title_ko": "Trojanized npm Packages Employ NullReceiver Tactic to Decode C2 IP from Blockchain",
+    "desc_ko": "Cybersecurity researchers have flagged an evolution of the EtherHiding blockchain-based command-and-control (C2) technique that conceals the C2 server IP address inside a made-up destination address of a completely empty Ethereum transfer.\n\nThe new dead drop resolver approach, observed in two trojan"
+  },
+  {
+    "source": "thn",
     "title": "New OVSwrap Linux Kernel Flaw Lets Local Users Gain Root via Open vSwitch",
     "desc": "A memory corruption flaw in the Linux kernel's Open vSwitch datapath gives ordinary local users a path to root on a broad set of default-configured distributions, and a public exploit ships with pre-built records for roughly 800 kernel builds.\n\nThe vulnerability, tracked as CVE-2026-64531 (CVSS scor",
     "url": "https://thehackernews.com/2026/08/new-ovswrap-linux-kernel-flaw-lets.html",
@@ -394,59 +448,5 @@
     "date": "2026-07-30T16:03:15",
     "title_ko": "Hackers Exploit AnySign4PC via Hacked Korean Sites to Install Backdoors Without Prompts",
     "desc_ko": "South Korean authorities and four security firms have disclosed a state-sponsored campaign that compromised trusted domestic websites. The attackers used those sites to exploit locally installed financial-security software and infect targeted visitors with SIGNBT or COPPERHEDGE backdoors.\n\nA comprom"
-  },
-  {
-    "source": "thn",
-    "title": "SilverFox Targets Japanese Manufacturer with 3-Driver BYOVD Chain and ValleyRAT",
-    "desc": "The Chinese cybercrime group known as Silver Fox has been observed using new drivers as part of bring your own vulnerable driver (BYOVD) attacks targeting a Japanese organization in the industrial manufacturing sector to ultimately deliver ValleyRAT (aka Winos 4.0) for persistent remote access.\n\n\"In",
-    "url": "https://thehackernews.com/2026/07/silverfox-targets-japanese-manufacturer.html",
-    "date": "2026-07-30T16:02:59",
-    "title_ko": "SilverFox Targets Japanese Manufacturer with 3-Driver BYOVD Chain and ValleyRAT",
-    "desc_ko": "The Chinese cybercrime group known as Silver Fox has been observed using new drivers as part of bring your own vulnerable driver (BYOVD) attacks targeting a Japanese organization in the industrial manufacturing sector to ultimately deliver ValleyRAT (aka Winos 4.0) for persistent remote access.\n\n\"In"
-  },
-  {
-    "source": "thn",
-    "title": "Russian Hackers Exploit Microsoft OWA Flaw to Keep Mailbox Access After Credential Rotation",
-    "desc": "The Russian threat actors recently linked to the exploitation of a now-patched vulnerability in Zimbra have been observed exploiting another vulnerability, this time in Microsoft Outlook Web Access (OWA), to target U.S. and European government entities, as well as the telecommunications, financial, ",
-    "url": "https://thehackernews.com/2026/07/russian-hackers-exploit-microsoft-owa.html",
-    "date": "2026-07-30T13:10:48",
-    "title_ko": "Russian Hackers Exploit Microsoft OWA Flaw to Keep Mailbox Access After Credential Rotation",
-    "desc_ko": "The Russian threat actors recently linked to the exploitation of a now-patched vulnerability in Zimbra have been observed exploiting another vulnerability, this time in Microsoft Outlook Web Access (OWA), to target U.S. and European government entities, as well as the telecommunications, financial, "
-  },
-  {
-    "source": "thn",
-    "title": "FCC Blocks New Foreign-Produced Robots and Power Inverters Over Cyber Risks",
-    "desc": "The Federal Communications Commission (FCC) added foreign-produced mobile robots and networked power inverters to its Covered List on July 28. The move generally prevents new models from receiving the equipment authorization required for import, marketing, or sale in the US.\n\nPreviously authorized m",
-    "url": "https://thehackernews.com/2026/07/fcc-blocks-new-foreign-produced-robots.html",
-    "date": "2026-07-30T12:58:43",
-    "title_ko": "FCC Blocks New Foreign-Produced Robots and Power Inverters Over Cyber Risks",
-    "desc_ko": "The Federal Communications Commission (FCC) added foreign-produced mobile robots and networked power inverters to its Covered List on July 28. The move generally prevents new models from receiving the equipment authorization required for import, marketing, or sale in the US.\n\nPreviously authorized m"
-  },
-  {
-    "source": "thn",
-    "title": "Amazon Links Debug and Chalk npm Hijack to North Korea’s Sapphire Sleet",
-    "desc": "Amazon has tied the September 2025 hijack of the npm packages debug and chalk to North Korea. For ten months, the incident sat in the public record as crypto theft: a maintainer phished through a lookalike npm domain and a wallet-draining script pushed into at least 18 packages carrying more than 2 ",
-    "url": "https://thehackernews.com/2026/07/amazon-links-debug-and-chalk-npm-hijack.html",
-    "date": "2026-07-30T11:35:17",
-    "title_ko": "Amazon Links Debug and Chalk npm Hijack to North Korea’s Sapphire Sleet",
-    "desc_ko": "Amazon has tied the September 2025 hijack of the npm packages debug and chalk to North Korea. For ten months, the incident sat in the public record as crypto theft: a maintainer phished through a lookalike npm domain and a wallet-draining script pushed into at least 18 packages carrying more than 2 "
-  },
-  {
-    "source": "thn",
-    "title": "Cisco FMC Zero-Day Actively Exploited, Static Credentials Could Expose Sensitive Data",
-    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a newly disclosed security flaw impacting Cisco Secure Firewall Management Center (FMC) Software to its Known Exploited Vulnerabilities (KEV) catalog, following reports of zero-day exploitation.\n\nThe vulnerability, a",
-    "url": "https://thehackernews.com/2026/07/cisco-fmc-zero-day-actively-exploited.html",
-    "date": "2026-07-30T10:38:39",
-    "title_ko": "Cisco FMC Zero-Day Actively Exploited, Static Credentials Could Expose Sensitive Data",
-    "desc_ko": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a newly disclosed security flaw impacting Cisco Secure Firewall Management Center (FMC) Software to its Known Exploited Vulnerabilities (KEV) catalog, following reports of zero-day exploitation.\n\nThe vulnerability, a"
-  },
-  {
-    "source": "thn",
-    "title": "Critical Rails Flaw Could Let Unauthenticated Attackers Read Server Files via Image Uploads",
-    "desc": "Ruby on Rails has released fixes for a critical Active Storage vulnerability that could let unauthenticated attackers read arbitrary files from application servers through crafted image uploads.\n\nTracked as CVE-2026-66066 (CVSS score: 9.5), the flaw can expose the Rails process environment and secre",
-    "url": "https://thehackernews.com/2026/07/critical-rails-flaw-could-let.html",
-    "date": "2026-07-29T23:40:00",
-    "title_ko": "Critical Rails Flaw Could Let Unauthenticated Attackers Read Server Files via Image Uploads",
-    "desc_ko": "Ruby on Rails has released fixes for a critical Active Storage vulnerability that could let unauthenticated attackers read arbitrary files from application servers through crafted image uploads.\n\nTracked as CVE-2026-66066 (CVSS score: 9.5), the flaw can expose the Rails process environment and secre"
   }
 ]
