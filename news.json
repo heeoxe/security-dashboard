@@ -1,6 +1,78 @@
 [
   {
     "source": "thn",
+    "title": "New OVSwrap Linux Kernel Flaw Lets Local Users Gain Root via Open vSwitch",
+    "desc": "A memory corruption flaw in the Linux kernel's Open vSwitch datapath gives ordinary local users a path to root on a broad set of default-configured distributions, and a public exploit ships with pre-built records for roughly 800 kernel builds.\n\nThe vulnerability, tracked as CVE-2026-64531 (CVSS scor",
+    "url": "https://thehackernews.com/2026/08/new-ovswrap-linux-kernel-flaw-lets.html",
+    "date": "2026-08-05T17:13:27",
+    "title_ko": "New OVSwrap Linux Kernel Flaw Lets Local Users Gain Root via Open vSwitch",
+    "desc_ko": "A memory corruption flaw in the Linux kernel's Open vSwitch datapath gives ordinary local users a path to root on a broad set of default-configured distributions, and a public exploit ships with pre-built records for roughly 800 kernel builds.\n\nThe vulnerability, tracked as CVE-2026-64531 (CVSS scor"
+  },
+  {
+    "source": "thn",
+    "title": "Kali365 Weaponizes Microsoft Authentication Against US Companies: New Enterprise Risk",
+    "desc": "Kali365 is turning a legitimate Microsoft login into a gateway to corporate data.\n\nThe phishing kit targets US organizations with attacker-controlled device codes that victims approve on Microsoft's real authentication page. Once access and refresh tokens are issued, attackers may retain access to e",
+    "url": "https://thehackernews.com/2026/08/kali365-weaponizes-microsoft.html",
+    "date": "2026-08-05T17:13:19",
+    "title_ko": "Kali365 Weaponizes Microsoft Authentication Against US Companies: New Enterprise Risk",
+    "desc_ko": "Kali365 is turning a legitimate Microsoft login into a gateway to corporate data.\n\nThe phishing kit targets US organizations with attacker-controlled device codes that victims approve on Microsoft's real authentication page. Once access and refresh tokens are issued, attackers may retain access to e"
+  },
+  {
+    "source": "thn",
+    "title": "Critical Gitea Flaw Let Unauthenticated Attackers Read Server Files via Org-Mode Markup",
+    "desc": "An unauthenticated attacker can read any file the service account can access on Gitea, the self-hosted Git platform, in versions 1.22.1 through 1.27.0. No login, no repository write access. A public repository and crafted Org-mode markup are enough. The flaw is fixed in Gitea 1.27.1.\n\nThe file-read ",
+    "url": "https://thehackernews.com/2026/08/critical-gitea-flaw-let-unauthenticated.html",
+    "date": "2026-08-05T16:34:23",
+    "title_ko": "Critical Gitea Flaw Let Unauthenticated Attackers Read Server Files via Org-Mode Markup",
+    "desc_ko": "An unauthenticated attacker can read any file the service account can access on Gitea, the self-hosted Git platform, in versions 1.22.1 through 1.27.0. No login, no repository write access. A public repository and crafted Org-mode markup are enough. The flaw is fixed in Gitea 1.27.1.\n\nThe file-read "
+  },
+  {
+    "source": "thn",
+    "title": "Leaked n8n API Tokens Exposed Live Instances to Credential Theft",
+    "desc": "GitGuardian researchers found 321 n8n instances accepting API tokens exposed in public GitHub commits and demonstrated four ways attackers could use them to access sensitive data and downstream credentials without exploiting a software vulnerability.\n\nWe scanned public GitHub commits for exposed n8n",
+    "url": "https://thehackernews.com/2026/08/leaked-n8n-api-tokens-exposed-live.html",
+    "date": "2026-08-05T16:05:29",
+    "title_ko": "Leaked n8n API Tokens Exposed Live Instances to Credential Theft",
+    "desc_ko": "GitGuardian researchers found 321 n8n instances accepting API tokens exposed in public GitHub commits and demonstrated four ways attackers could use them to access sensitive data and downstream credentials without exploiting a software vulnerability.\n\nWe scanned public GitHub commits for exposed n8n"
+  },
+  {
+    "source": "thn",
+    "title": "Open VSX Removes 77 Malicious Evil Twin Extensions Exfiltrating Developer Data",
+    "desc": "A cluster of 77 extensions on the Open VSX marketplace has been found to impersonate legitimate developer tools while transmitting information about the systems and development environments on which they were installed.\n\nThe \"evil twin\" extensions were uploaded to the repository between July 26 and ",
+    "url": "https://thehackernews.com/2026/08/open-vsx-removes-77-malicious-evil-twin.html",
+    "date": "2026-08-05T14:53:03",
+    "title_ko": "Open VSX Removes 77 Malicious Evil Twin Extensions Exfiltrating Developer Data",
+    "desc_ko": "A cluster of 77 extensions on the Open VSX marketplace has been found to impersonate legitimate developer tools while transmitting information about the systems and development environments on which they were installed.\n\nThe \"evil twin\" extensions were uploaded to the repository between July 26 and "
+  },
+  {
+    "source": "thn",
+    "title": "Claude Mythos 5 Tried to Backdoor a Real Open-Source Project in Testing, Then Vouched for Itself",
+    "desc": "An agent running Anthropic's Claude Mythos 5 spent 34 hours trying to get a malware dropper merged into a real open-source project during a cyber evaluation by the UK's AI Security Institute.\n\nWhen a bystander publicly warned that the code was malicious, the agent denied it, force-pushed a rewritten",
+    "url": "https://thehackernews.com/2026/08/claude-mythos-5-tried-to-backdoor-real.html",
+    "date": "2026-08-05T13:23:50",
+    "title_ko": "Claude Mythos 5 Tried to Backdoor a Real Open-Source Project in Testing, Then Vouched for Itself",
+    "desc_ko": "An agent running Anthropic's Claude Mythos 5 spent 34 hours trying to get a malware dropper merged into a real open-source project during a cyber evaluation by the UK's AI Security Institute.\n\nWhen a bystander publicly warned that the code was malicious, the agent denied it, force-pushed a rewritten"
+  },
+  {
+    "source": "thn",
+    "title": "CISA Flags Langflow RCE, Tomcat, and N-central Flaws as Actively Exploited",
+    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA), on August 5, 2026, added three flaws to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation in the wild.\n\nThe list of vulnerabilities is as follows -\n\n\n  CVE-2026-9198 (CVSS score: 9.8) - A code i",
+    "url": "https://thehackernews.com/2026/08/cisa-flags-langflow-rce-tomcat-and-n.html",
+    "date": "2026-08-05T13:10:39",
+    "title_ko": "CISA Flags Langflow RCE, Tomcat, and N-central Flaws as Actively Exploited",
+    "desc_ko": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA), on August 5, 2026, added three flaws to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation in the wild.\n\nThe list of vulnerabilities is as follows -\n\n\n  CVE-2026-9198 (CVSS score: 9.8) - A code i"
+  },
+  {
+    "source": "thn",
+    "title": "QuickFox Supply Chain Attack Delivers FDMTP Backdoor via Trojanized Windows Installer",
+    "desc": "Cybersecurity researchers have disclosed what has been described as a \"long-standing supply chain attack\" on QuickFox, a virtual private network (VPN) and network acceleration tool designed for overseas Chinese users.\n\nAccording to Fortinet FortiGuard Labs, the supply chain attack has been ongoing s",
+    "url": "https://thehackernews.com/2026/08/quickfox-supply-chain-attack-delivers.html",
+    "date": "2026-08-05T11:17:19",
+    "title_ko": "QuickFox Supply Chain Attack Delivers FDMTP Backdoor via Trojanized Windows Installer",
+    "desc_ko": "Cybersecurity researchers have disclosed what has been described as a \"long-standing supply chain attack\" on QuickFox, a virtual private network (VPN) and network acceleration tool designed for overseas Chinese users.\n\nAccording to Fortinet FortiGuard Labs, the supply chain attack has been ongoing s"
+  },
+  {
+    "source": "thn",
     "title": "Greatness PhaaS Adds Device Code Phishing to Bypass MFA and Steal Tokens",
     "desc": "The commercial phishing-as-a-service (PhaaS) toolkit known as Greatness has become the latest crimeware solution to add support for device code phishing, a rapidly growing cyber threat that abuses the legitimate OAuth 2.0 Device Authorization Grant to bypass Multi-Factor Authentication (MFA) and sei",
     "url": "https://thehackernews.com/2026/08/greatness-phaas-adds-device-code.html",
@@ -376,77 +448,5 @@
     "date": "2026-07-29T23:40:00",
     "title_ko": "Critical Rails Flaw Could Let Unauthenticated Attackers Read Server Files via Image Uploads",
     "desc_ko": "Ruby on Rails has released fixes for a critical Active Storage vulnerability that could let unauthenticated attackers read arbitrary files from application servers through crafted image uploads.\n\nTracked as CVE-2026-66066 (CVSS score: 9.5), the flaw can expose the Rails process environment and secre"
-  },
-  {
-    "source": "thn",
-    "title": "Ruflo MCP Flaw Lets Unauthenticated Attackers Run Commands and Poison AI Memory",
-    "desc": "Cybersecurity researchers have flagged a maximum-severity security flaw in Ruflo, an open-source agent meta-harness for Anthropic Claude Code and OpenAI Codex, that could result in unauthenticated remote code execution.\n\nThe vulnerability, tracked as CVE-2026-59726 (CVSS score: 10.0), impacts all ve",
-    "url": "https://thehackernews.com/2026/07/ruflo-mcp-flaw-lets-unauthenticated.html",
-    "date": "2026-07-29T21:09:30",
-    "title_ko": "Ruflo MCP Flaw Lets Unauthenticated Attackers Run Commands and Poison AI Memory",
-    "desc_ko": "Cybersecurity researchers have flagged a maximum-severity security flaw in Ruflo, an open-source agent meta-harness for Anthropic Claude Code and OpenAI Codex, that could result in unauthenticated remote code execution.\n\nThe vulnerability, tracked as CVE-2026-59726 (CVSS score: 10.0), impacts all ve"
-  },
-  {
-    "source": "thn",
-    "title": "Three Critical VMware Flaws Allow Auth Bypass, Code Execution, and VM Escape",
-    "desc": "Broadcom has released security updates to address multiple security flaws impacting VMware ESX, vCenter, Workstation, and Fusion, three of which have been designated as critical in severity.\n\nThe first of the three critical-rated flaws is CVE-2026-59309 (CVSS score: 9.8), which has been described as",
-    "url": "https://thehackernews.com/2026/07/three-critical-vmware-flaws-allow-auth.html",
-    "date": "2026-07-29T21:01:15",
-    "title_ko": "Three Critical VMware Flaws Allow Auth Bypass, Code Execution, and VM Escape",
-    "desc_ko": "Broadcom has released security updates to address multiple security flaws impacting VMware ESX, vCenter, Workstation, and Fusion, three of which have been designated as critical in severity.\n\nThe first of the three critical-rated flaws is CVE-2026-59309 (CVSS score: 9.8), which has been described as"
-  },
-  {
-    "source": "thn",
-    "title": "Coordinated Cyberattack Targets 30+ Minnesota Water Systems as One Plant Goes Offline",
-    "desc": "A coordinated cyberattack targeted operational technology at more than 30 Minnesota community water systems on July 26 and 27, triggering a statewide cybersecurity response.\n\nBraham, Plymouth, South St. Paul and Maple Plain have publicly described a plant outage, communications failures or affected ",
-    "url": "https://thehackernews.com/2026/07/coordinated-cyberattack-targets-30.html",
-    "date": "2026-07-29T19:18:36",
-    "title_ko": "Coordinated Cyberattack Targets 30+ Minnesota Water Systems as One Plant Goes Offline",
-    "desc_ko": "A coordinated cyberattack targeted operational technology at more than 30 Minnesota community water systems on July 26 and 27, triggering a statewide cybersecurity response.\n\nBraham, Plymouth, South St. Paul and Maple Plain have publicly described a plant outage, communications failures or affected "
-  },
-  {
-    "source": "thn",
-    "title": "Nine-Year Fraud Campaign Clones Russian Company Sites to Steal Advance Payments",
-    "desc": "Cybersecurity researchers have disclosed details of a large-scale fraud campaign that involves creating lookalike websites of major Russian companies with an aim to siphon funds from international firms for more than nine years.\n\nAccording to Russian cybersecurity vendor F6, the threat actors have s",
-    "url": "https://thehackernews.com/2026/07/nine-year-fraud-campaign.html",
-    "date": "2026-07-29T19:12:57",
-    "title_ko": "Nine-Year Fraud Campaign Clones Russian Company Sites to Steal Advance Payments",
-    "desc_ko": "Cybersecurity researchers have disclosed details of a large-scale fraud campaign that involves creating lookalike websites of major Russian companies with an aim to siphon funds from international firms for more than nine years.\n\nAccording to Russian cybersecurity vendor F6, the threat actors have s"
-  },
-  {
-    "source": "thn",
-    "title": "Mythos Asks the Right Question. It Doesn't Answer It.",
-    "desc": "AI is compressing exploit timelines. The real question isn't whether your vulnerability management playbook needs to change, it's which part of it you've been getting wrong all along.\n\nThe conversation happening in security circles right now goes something like this: Mythos is here. Exploit timeline",
-    "url": "https://thehackernews.com/2026/07/mythos-asks-right-question-it-doesnt.html",
-    "date": "2026-07-29T17:45:00",
-    "title_ko": "Mythos Asks the Right Question. It Doesn't Answer It.",
-    "desc_ko": "AI is compressing exploit timelines. The real question isn't whether your vulnerability management playbook needs to change, it's which part of it you've been getting wrong all along.\n\nThe conversation happening in security circles right now goes something like this: Mythos is here. Exploit timeline"
-  },
-  {
-    "source": "thn",
-    "title": "Researchers Show a Single Malicious Webpage Visit Can Compromise Tor Browser",
-    "desc": "Nebula Security says a patched Firefox JIT flaw could be triggered by simply visiting a malicious webpage and was also used to compromise Tor Browser.\n\nTracked as CVE-2026-10702, the bug provides arbitrary code execution inside the browser's renderer process. Mozilla rated it High and fixed it in th",
-    "url": "https://thehackernews.com/2026/07/researchers-show-single-malicious.html",
-    "date": "2026-07-29T17:27:00",
-    "title_ko": "Researchers Show a Single Malicious Webpage Visit Can Compromise Tor Browser",
-    "desc_ko": "Nebula Security says a patched Firefox JIT flaw could be triggered by simply visiting a malicious webpage and was also used to compromise Tor Browser.\n\nTracked as CVE-2026-10702, the bug provides arbitrary code execution inside the browser's renderer process. Mozilla rated it High and fixed it in th"
-  },
-  {
-    "source": "thn",
-    "title": "73% of Organizations Say They Are Not Fully Ready for a Major Cyberattack",
-    "desc": "Most organizations have incident response plans, security tools, and technical teams in place. Yet new research suggests that many still lack the coordination, visibility, and executive alignment needed to withstand a serious cyberattack.\n\nAccording to The State of Incident Response Readiness 2026, ",
-    "url": "https://thehackernews.com/2026/07/73-of-organizations-say-they-are-not.html",
-    "date": "2026-07-29T16:43:10",
-    "title_ko": "73% of Organizations Say They Are Not Fully Ready for a Major Cyberattack",
-    "desc_ko": "Most organizations have incident response plans, security tools, and technical teams in place. Yet new research suggests that many still lack the coordination, visibility, and executive alignment needed to withstand a serious cyberattack.\n\nAccording to The State of Incident Response Readiness 2026, "
-  },
-  {
-    "source": "thn",
-    "title": "Russia Charges Telegram Founder Pavel Durov With Aiding Terrorist Activity",
-    "desc": "The Federal Security Service of the Russian Federation (FSB) on Wednesday said it charged Telegram founder Pavel Durov for allegedly facilitating terrorist activities and for failing to remove prohibited information in violation of Russian law.\n\nThe principal security agency said the instant messagi",
-    "url": "https://thehackernews.com/2026/07/russia-charges-telegram-founder-pavel.html",
-    "date": "2026-07-29T16:30:00",
-    "title_ko": "Russia Charges Telegram Founder Pavel Durov With Aiding Terrorist Activity",
-    "desc_ko": "The Federal Security Service of the Russian Federation (FSB) on Wednesday said it charged Telegram founder Pavel Durov for allegedly facilitating terrorist activities and for failing to remove prohibited information in violation of Russian law.\n\nThe principal security agency said the instant messagi"
   }
 ]
