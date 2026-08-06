@@ -1,6 +1,87 @@
 [
   {
     "source": "thn",
+    "title": "CryptoJS Weak RNG Behind $5.7 Million in Drains Affects Five Crypto Wallet Apps",
+    "desc": "Coinspect has identified CryptoJS.lib.WordArray.random() as the weak random number generator behind the Ill Bloom wallet drains.\n\nIntroduced in the JavaScript cryptography library 12 years ago, the function supplied weak entropy that affected wallet apps used to generate recovery phrases. Coinspect'",
+    "url": "https://thehackernews.com/2026/08/cryptojs-weak-rng-behind-57-million-in.html",
+    "date": "2026-08-06T17:19:48",
+    "title_ko": "CryptoJS Weak RNG Behind $5.7 Million in Drains Affects Five Crypto Wallet Apps",
+    "desc_ko": "Coinspect has identified CryptoJS.lib.WordArray.random() as the weak random number generator behind the Ill Bloom wallet drains.\n\nIntroduced in the JavaScript cryptography library 12 years ago, the function supplied weak entropy that affected wallet apps used to generate recovery phrases. Coinspect'"
+  },
+  {
+    "source": "thn",
+    "title": "Apple iCloud Private Relay Can Expose Real IPs Through WebKit Proxy Bypasses",
+    "desc": "Cybersecurity researchers have disclosed a security issue with Apple's iCloud Private Relay tool that can expose a user's real IP address.\n\nIntroduced with iOS 15, iCloud Private Relay employs a dual-hop architecture to ensure users' privacy by routing their Safari web traffic through two relays so ",
+    "url": "https://thehackernews.com/2026/08/webkit-proxy-bypasses-can-expose-real.html",
+    "date": "2026-08-06T17:03:08",
+    "title_ko": "Apple iCloud Private Relay Can Expose Real IPs Through WebKit Proxy Bypasses",
+    "desc_ko": "Cybersecurity researchers have disclosed a security issue with Apple's iCloud Private Relay tool that can expose a user's real IP address.\n\nIntroduced with iOS 15, iCloud Private Relay employs a dual-hop architecture to ensure users' privacy by routing their Safari web traffic through two relays so "
+  },
+  {
+    "source": "thn",
+    "title": "AI Recommendation Poisoning: How \"Ask AI\" Buttons Silently Alter LLM Memory",
+    "desc": "A new class of prompt injection is spreading across commercial websites. It requires no malware, no stolen credentials, and no zero-day exploit. It abuses a standard feature built into almost every major AI assistant: pre-filled deep links.\n\nWe observed production websites embedding hidden prompt in",
+    "url": "https://thehackernews.com/2026/08/ai-recommendation-poisoning-how-ask-ai.html",
+    "date": "2026-08-06T17:00:00",
+    "title_ko": "AI Recommendation Poisoning: How \"Ask AI\" Buttons Silently Alter LLM Memory",
+    "desc_ko": "A new class of prompt injection is spreading across commercial websites. It requires no malware, no stolen credentials, and no zero-day exploit. It abuses a standard feature built into almost every major AI assistant: pre-filled deep links.\n\nWe observed production websites embedding hidden prompt in"
+  },
+  {
+    "source": "thn",
+    "title": "Attackers Compile khunt Inside Oracle to Turn SQL Injection Into Windows SYSTEM Access",
+    "desc": "Attackers broke into an organization's Oracle database through a SQL injection flaw in a public-facing web application, then installed a post-exploitation toolkit without writing an executable to disk. They fed Java source code to the database, let Oracle compile it into stored schema objects, and r",
+    "url": "https://thehackernews.com/2026/08/attackers-compile-khunt-inside-oracle.html",
+    "date": "2026-08-06T14:49:23",
+    "title_ko": "Attackers Compile khunt Inside Oracle to Turn SQL Injection Into Windows SYSTEM Access",
+    "desc_ko": "Attackers broke into an organization's Oracle database through a SQL injection flaw in a public-facing web application, then installed a post-exploitation toolkit without writing an executable to disk. They fed Java source code to the database, let Oracle compile it into stored schema objects, and r"
+  },
+  {
+    "source": "thn",
+    "title": "AWS, Google, and Vercel Agent Flaws Let Attackers Trigger Tools Without Running the Model",
+    "desc": "Security flaws in agent infrastructure from Amazon Web Services (AWS), Google, and Vercel let untrusted or forged instructions reach an agent's tools with no check that a model turn had authorized them.\n\nIn several of the attack paths, the model never ran at all, so system prompts, content filters, ",
+    "url": "https://thehackernews.com/2026/08/aws-google-and-vercel-patch-agent-flaws.html",
+    "date": "2026-08-06T14:27:30",
+    "title_ko": "AWS, Google, and Vercel Agent Flaws Let Attackers Trigger Tools Without Running the Model",
+    "desc_ko": "Security flaws in agent infrastructure from Amazon Web Services (AWS), Google, and Vercel let untrusted or forged instructions reach an agent's tools with no check that a model turn had authorized them.\n\nIn several of the attack paths, the model never ran at all, so system prompts, content filters, "
+  },
+  {
+    "source": "thn",
+    "title": "Chinese-Made Zbtlink Routers Ship With Backdoor That Opens Unauthenticated Root Shells",
+    "desc": "Cybersecurity researchers have disclosed details of a \"factory-shipped backdoor\" implanted in at least 20 Chinese router models from Zbtlink.\n\nAccording to a new report from VulnCheck, the implant appears in all 21 firmware images currently available from Zbtlink that span more than 2 years. The bac",
+    "url": "https://thehackernews.com/2026/08/chinese-made-zbtlink-routers-ship-with.html",
+    "date": "2026-08-06T13:35:22",
+    "title_ko": "Chinese-Made Zbtlink Routers Ship With Backdoor That Opens Unauthenticated Root Shells",
+    "desc_ko": "Cybersecurity researchers have disclosed details of a \"factory-shipped backdoor\" implanted in at least 20 Chinese router models from Zbtlink.\n\nAccording to a new report from VulnCheck, the implant appears in all 21 firmware images currently available from Zbtlink that span more than 2 years. The bac"
+  },
+  {
+    "source": "thn",
+    "title": "Ransom Cartel Creator Gets 16 Years in Prison for Operating Ransomware-as-a-Service",
+    "desc": "A federal judge in Alexandria, Virginia, sentenced Maksim Silnikau to 16 years in prison on August 5 for creating and running Ransom Cartel, the ransomware-as-a-service operation he stood up in 2021.\n\nBetween 2021 and 2023, Ransom Cartel conspirators attacked at least 18 companies, including firms i",
+    "url": "https://thehackernews.com/2026/08/ransom-cartel-creator-gets-16-years-in.html",
+    "date": "2026-08-06T12:49:54",
+    "title_ko": "Ransom Cartel Creator Gets 16 Years in Prison for Operating Ransomware-as-a-Service",
+    "desc_ko": "A federal judge in Alexandria, Virginia, sentenced Maksim Silnikau to 16 years in prison on August 5 for creating and running Ransom Cartel, the ransomware-as-a-service operation he stood up in 2021.\n\nBetween 2021 and 2023, Ransom Cartel conspirators attacked at least 18 companies, including firms i"
+  },
+  {
+    "source": "thn",
+    "title": "CISA Flags TeamCity CVE-2026-63077 RCE Flaw Under Active Exploitation in the Wild",
+    "desc": "A newly patched security flaw impacting on-premise versions of JetBrains TeamCity has come under active exploitation in the wild, according to the U.S. Cybersecurity and Infrastructure Security Agency (CISA).\n\nThe vulnerability in question is CVE-2026-63077 (CVSS score: 9.8), a case of deserializati",
+    "url": "https://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html",
+    "date": "2026-08-06T12:21:43",
+    "title_ko": "CISA Flags TeamCity CVE-2026-63077 RCE Flaw Under Active Exploitation in the Wild",
+    "desc_ko": "A newly patched security flaw impacting on-premise versions of JetBrains TeamCity has come under active exploitation in the wild, according to the U.S. Cybersecurity and Infrastructure Security Agency (CISA).\n\nThe vulnerability in question is CVE-2026-63077 (CVSS score: 9.8), a case of deserializati"
+  },
+  {
+    "source": "thn",
+    "title": "Snowflake Hacker Pleads Guilty Over Breaches Affecting at Least 100 Million People",
+    "desc": "Connor Riley Moucka pleaded guilty in Seattle federal court on Wednesday to computer fraud, wire fraud, aggravated identity theft and a related conspiracy over the 2024 breaches of Snowflake customer accounts.\n\nThe intrusions reached at least 165 organizations and exposed records belonging to at lea",
+    "url": "https://thehackernews.com/2026/08/snowflake-hacker-pleads-guilty-over.html",
+    "date": "2026-08-06T11:34:30",
+    "title_ko": "Snowflake Hacker Pleads Guilty Over Breaches Affecting at Least 100 Million People",
+    "desc_ko": "Connor Riley Moucka pleaded guilty in Seattle federal court on Wednesday to computer fraud, wire fraud, aggravated identity theft and a related conspiracy over the 2024 breaches of Snowflake customer accounts.\n\nThe intrusions reached at least 165 organizations and exposed records belonging to at lea"
+  },
+  {
+    "source": "thn",
     "title": "Over 250 ClickFix Domains Use Browser Fingerprinting to Hide macOS Malware Lures",
     "desc": "A macOS ClickFix operation spanning more than 250 front-end domains now fingerprints visitors before deciding whether to show them a malware lure, a change Microsoft Threat Intelligence tracked on infrastructure it had been watching for weeks.\n\nThe server-side gate hides the malicious page from craw",
     "url": "https://thehackernews.com/2026/08/over-250-clickfix-domains-use-browser.html",
@@ -367,86 +448,5 @@
     "date": "2026-07-31T17:25:00",
     "title_ko": "Researchers Report 84 Flaws in 4G and 5G Cores, Including a Session Hijacking Flaw",
     "desc_ko": "An academic study has disclosed a \"widespread class\" of security vulnerabilities impacting 4G and 5G core networks that, if successfully exploited, could trigger denial-of-service (DoS) attacks and even session hijacking, allowing an attacker to seize control of a user's network session.\n\nThe findin"
-  },
-  {
-    "source": "thn",
-    "title": "6 Reasons Why Device Code Phishing is the Fastest-Growing Threat of 2026",
-    "desc": "Device code phishing - the abuse of the OAuth 2.0 device authorization grant to steal access tokens - has evolved from a niche red-team technique to an industrial-scale threat in under six months.\n\nDesigned for input-constrained devices like smart TVs, printers, and so on, the device authorization l",
-    "url": "https://thehackernews.com/2026/07/6-reasons-why-device-code-phishing-is.html",
-    "date": "2026-07-31T16:54:59",
-    "title_ko": "6 Reasons Why Device Code Phishing is the Fastest-Growing Threat of 2026",
-    "desc_ko": "Device code phishing - the abuse of the OAuth 2.0 device authorization grant to steal access tokens - has evolved from a niche red-team technique to an industrial-scale threat in under six months.\n\nDesigned for input-constrained devices like smart TVs, printers, and so on, the device authorization l"
-  },
-  {
-    "source": "thn",
-    "title": "Chinese Hacker Commands DeepSeek via Telegram to Launch Autonomous Attacks",
-    "desc": "Palo Alto Networks' Unit 42 says a Chinese-speaking threat actor used DeepSeek through the open-source Hermes Agent framework to launch attacks autonomously.\n\nAfter an initial Telegram instruction, the agent found internet-facing systems and selected public exploits. The researchers recovered no fur",
-    "url": "https://thehackernews.com/2026/07/chinese-hacker-commands-deepseek-via.html",
-    "date": "2026-07-31T16:51:27",
-    "title_ko": "Chinese Hacker Commands DeepSeek via Telegram to Launch Autonomous Attacks",
-    "desc_ko": "Palo Alto Networks' Unit 42 says a Chinese-speaking threat actor used DeepSeek through the open-source Hermes Agent framework to launch attacks autonomously.\n\nAfter an initial Telegram instruction, the agent found internet-facing systems and selected public exploits. The researchers recovered no fur"
-  },
-  {
-    "source": "thn",
-    "title": "Anthropic Says Claude Mistook the Open Internet for a CTF and Breached Three Organizations",
-    "desc": "Anthropic on Thursday became the latest artificial intelligence (AI) company to reveal that three of its models, including Claude Opus 4.7, Mythos 5, and an unnamed research model, had breached three unnamed organizations during cybersecurity testing without its knowledge.\n\nThe AI firm said the earl",
-    "url": "https://thehackernews.com/2026/07/anthropic-says-claude-mistook-open.html",
-    "date": "2026-07-31T12:11:44",
-    "title_ko": "Anthropic Says Claude Mistook the Open Internet for a CTF and Breached Three Organizations",
-    "desc_ko": "Anthropic on Thursday became the latest artificial intelligence (AI) company to reveal that three of its models, including Claude Opus 4.7, Mythos 5, and an unnamed research model, had breached three unnamed organizations during cybersecurity testing without its knowledge.\n\nThe AI firm said the earl"
-  },
-  {
-    "source": "thn",
-    "title": "DPRK-Linked macOS Malvertising Uses Fake Updates to Deliver Crypto-Stealing Malware",
-    "desc": "Threat actors with ties to North Korea have been attributed to a sophisticated macOS malvertising campaign that involves redirecting users to fake web pages displaying a full-screen non-existent update sequence to deliver malware as part of a new iteration of the long-running Contagious Interview ca",
-    "url": "https://thehackernews.com/2026/07/dprk-linked-macos-malvertising-uses.html",
-    "date": "2026-07-30T23:48:24",
-    "title_ko": "DPRK-Linked macOS Malvertising Uses Fake Updates to Deliver Crypto-Stealing Malware",
-    "desc_ko": "Threat actors with ties to North Korea have been attributed to a sophisticated macOS malvertising campaign that involves redirecting users to fake web pages displaying a full-screen non-existent update sequence to deliver malware as part of a new iteration of the long-running Contagious Interview ca"
-  },
-  {
-    "source": "thn",
-    "title": "ThreatsDay: AI-Powered Hacking, 370 Chrome Flaws, SonicWall Attacks, DNS Hijacking + 22 More Stories",
-    "desc": "A lot of security still comes down to trusting the wrong screen.\n\nThis week, that screen might be a login page, an install guide, a recruiter call, or a familiar service behaving slightly wrong. Behind it: reused credentials, exposed systems, quiet loaders, abused trust, and exploit paths that shoul",
-    "url": "https://thehackernews.com/2026/07/threatsday-ai-powered-hacking-370.html",
-    "date": "2026-07-30T20:55:57",
-    "title_ko": "ThreatsDay: AI-Powered Hacking, 370 Chrome Flaws, SonicWall Attacks, DNS Hijacking + 22 More Stories",
-    "desc_ko": "A lot of security still comes down to trusting the wrong screen.\n\nThis week, that screen might be a login page, an install guide, a recruiter call, or a familiar service behaving slightly wrong. Behind it: reused credentials, exposed systems, quiet loaders, abused trust, and exploit paths that shoul"
-  },
-  {
-    "source": "thn",
-    "title": "Azure Cosmos DB Flaw Exposed Platform-Wide Key That Could Access Any Database",
-    "desc": "A now-patched vulnerability in Azure Cosmos DB could have let an attacker escape the service's Gremlin query sandbox and obtain full read and write access to databases across customer tenants, according to Wiz.\n\nWiz, which codenamed the chain CosmosEscape, said the exploit chain began with a crafted",
-    "url": "https://thehackernews.com/2026/07/azure-cosmos-db-flaw-exposed-platform.html",
-    "date": "2026-07-30T19:04:09",
-    "title_ko": "Azure Cosmos DB Flaw Exposed Platform-Wide Key That Could Access Any Database",
-    "desc_ko": "A now-patched vulnerability in Azure Cosmos DB could have let an attacker escape the service's Gremlin query sandbox and obtain full read and write access to databases across customer tenants, according to Wiz.\n\nWiz, which codenamed the chain CosmosEscape, said the exploit chain began with a crafted"
-  },
-  {
-    "source": "thn",
-    "title": "Microsoft Copilot for Word Can Copy Hidden Prompts Into New Documents",
-    "desc": "Hidden instructions in a Word document can make Microsoft 365 Copilot rewrite figures in a report, then copy the same instructions into the finished file. Håkon Måløy disclosed the technique on July 28, 144 days after reporting it to Microsoft.\n\nIn his proof of concept, the internally generated file",
-    "url": "https://thehackernews.com/2026/07/microsoft-copilot-for-word-can-copy.html",
-    "date": "2026-07-30T17:24:49",
-    "title_ko": "Microsoft Copilot for Word Can Copy Hidden Prompts Into New Documents",
-    "desc_ko": "Hidden instructions in a Word document can make Microsoft 365 Copilot rewrite figures in a report, then copy the same instructions into the finished file. Håkon Måløy disclosed the technique on July 28, 144 days after reporting it to Microsoft.\n\nIn his proof of concept, the internally generated file"
-  },
-  {
-    "source": "thn",
-    "title": "The Network Has Become the Control Plane for AI Security",
-    "desc": "Network firewalls are the workhorses of modern cybersecurity. They are trusted to protect the network, blocking malicious traffic and preventing intrusions and breaches. And for decades, network security teams have built controls around a relatively stable model: users connect to applications, appli",
-    "url": "https://thehackernews.com/2026/07/the-network-has-become-control-plane.html",
-    "date": "2026-07-30T17:02:46",
-    "title_ko": "The Network Has Become the Control Plane for AI Security",
-    "desc_ko": "Network firewalls are the workhorses of modern cybersecurity. They are trusted to protect the network, blocking malicious traffic and preventing intrusions and breaches. And for decades, network security teams have built controls around a relatively stable model: users connect to applications, appli"
-  },
-  {
-    "source": "thn",
-    "title": "Hackers Exploit AnySign4PC via Hacked Korean Sites to Install Backdoors Without Prompts",
-    "desc": "South Korean authorities and four security firms have disclosed a state-sponsored campaign that compromised trusted domestic websites. The attackers used those sites to exploit locally installed financial-security software and infect targeted visitors with SIGNBT or COPPERHEDGE backdoors.\n\nA comprom",
-    "url": "https://thehackernews.com/2026/07/hackers-exploit-anysign4pc-via-hacked.html",
-    "date": "2026-07-30T16:03:15",
-    "title_ko": "Hackers Exploit AnySign4PC via Hacked Korean Sites to Install Backdoors Without Prompts",
-    "desc_ko": "South Korean authorities and four security firms have disclosed a state-sponsored campaign that compromised trusted domestic websites. The attackers used those sites to exploit locally installed financial-security software and infect targeted visitors with SIGNBT or COPPERHEDGE backdoors.\n\nA comprom"
   }
 ]
