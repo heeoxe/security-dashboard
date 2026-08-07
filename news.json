@@ -1,6 +1,69 @@
 [
   {
     "source": "thn",
+    "title": "Nearly 800 Malicious npm Packages Deliver Cross-Platform RAT and Infostealer",
+    "desc": "A cluster of nearly 800 malicious packages has been published to the npm registry as part of a new campaign designed to deliver cross-platform malware targeting Windows, Mac, and Linux systems.\n\n\"These packages appear to use AI slop squatted, or randomly generated typo-squatting package names, but a",
+    "url": "https://thehackernews.com/2026/08/nearly-800-malicious-npm-packages.html",
+    "date": "2026-08-08T00:18:17",
+    "title_ko": "Nearly 800 Malicious npm Packages Deliver Cross-Platform RAT and Infostealer",
+    "desc_ko": "A cluster of nearly 800 malicious packages has been published to the npm registry as part of a new campaign designed to deliver cross-platform malware targeting Windows, Mac, and Linux systems.\n\n\"These packages appear to use AI slop squatted, or randomly generated typo-squatting package names, but a"
+  },
+  {
+    "source": "thn",
+    "title": "ClickFix Attacks Deliver macOS Stealer That Can Drain Crypto Wallets",
+    "desc": "ClickFix-style attacks are being used to deliver a Go-based malware capable of stealing cryptocurrency assets, as well as browser-stored passwords, Apple iCloud Keychain data, and cached credentials.\n\nThe macOS-focused infection chain is designed to deliver a shell script that profiles the host and ",
+    "url": "https://thehackernews.com/2026/08/clickfix-attacks-deliver-macos-stealer.html",
+    "date": "2026-08-07T23:59:08",
+    "title_ko": "ClickFix Attacks Deliver macOS Stealer That Can Drain Crypto Wallets",
+    "desc_ko": "ClickFix-style attacks are being used to deliver a Go-based malware capable of stealing cryptocurrency assets, as well as browser-stored passwords, Apple iCloud Keychain data, and cached credentials.\n\nThe macOS-focused infection chain is designed to deliver a shell script that profiles the host and "
+  },
+  {
+    "source": "thn",
+    "title": "UNC6671 Vishing Attacks Target Personal Phones to Steal SaaS Data",
+    "desc": "A recent wave of cyber attacks targeting financial services, private equity, and professional services is attributed to a data extortion group known as UNC6671.\n\n\"UNC6671 continues to rely on voice phishing (vishing) to target enterprise employees, posing as IT help desk staff facilitating mandatory",
+    "url": "https://thehackernews.com/2026/08/unc6671-vishing-attacks-target-personal.html",
+    "date": "2026-08-07T23:46:13",
+    "title_ko": "UNC6671 Vishing Attacks Target Personal Phones to Steal SaaS Data",
+    "desc_ko": "A recent wave of cyber attacks targeting financial services, private equity, and professional services is attributed to a data extortion group known as UNC6671.\n\n\"UNC6671 continues to rely on voice phishing (vishing) to target enterprise employees, posing as IT help desk staff facilitating mandatory"
+  },
+  {
+    "source": "thn",
+    "title": "New WordPress Pre-Auth XSS Could Lead to PHP Code Execution - Patch ASAP",
+    "desc": "WordPress has fixed a pre-authentication reflected cross-site scripting (XSS) flaw in its login screen that affects every version of the content management system. pwn.ai demonstrated how the flaw can be chained into PHP code execution on the server when a logged-in administrator interacts with an a",
+    "url": "https://thehackernews.com/2026/08/new-wordpress-pre-auth-xss-could-lead.html",
+    "date": "2026-08-07T18:26:23",
+    "title_ko": "New WordPress Pre-Auth XSS Could Lead to PHP Code Execution - Patch ASAP",
+    "desc_ko": "WordPress has fixed a pre-authentication reflected cross-site scripting (XSS) flaw in its login screen that affects every version of the content management system. pwn.ai demonstrated how the flaw can be chained into PHP code execution on the server when a logged-in administrator interacts with an a"
+  },
+  {
+    "source": "thn",
+    "title": "Growing Up The Hard Way",
+    "desc": "Open Source had a great childhood.\n\nFor two decades it got to be a kid. It ran around barefoot, gave everything away, trusted strangers, and never once thought about who was watching. It ran the kind of lemonade stand that took IOUs from anyone who wandered up — take what you need, pay me back whene",
+    "url": "https://thehackernews.com/2026/08/growing-up-hard-way.html",
+    "date": "2026-08-07T17:25:26",
+    "title_ko": "Growing Up The Hard Way",
+    "desc_ko": "Open Source had a great childhood.\n\nFor two decades it got to be a kid. It ran around barefoot, gave everything away, trusted strangers, and never once thought about who was watching. It ran the kind of lemonade stand that took IOUs from anyone who wandered up — take what you need, pay me back whene"
+  },
+  {
+    "source": "thn",
+    "title": "18-Year-Old Linux SCTP Flaw Could Let Local Users Gain Root and Escape Containers",
+    "desc": "A use-after-free bug in Linux's SCTP networking code can be turned into full root on a host, and Tencent researchers say they used it to escape a container and reach the machine underneath.\n\nThe flaw has existed since 2008. The fix already shipped: stable kernels 7.1.6, 6.18.42, 6.12.101 and 6.6.148",
+    "url": "https://thehackernews.com/2026/08/18-year-old-linux-sctp-flaw-could-let.html",
+    "date": "2026-08-07T16:40:33",
+    "title_ko": "18-Year-Old Linux SCTP Flaw Could Let Local Users Gain Root and Escape Containers",
+    "desc_ko": "A use-after-free bug in Linux's SCTP networking code can be turned into full root on a host, and Tencent researchers say they used it to escape a container and reach the machine underneath.\n\nThe flaw has existed since 2008. The fix already shipped: stable kernels 7.1.6, 6.18.42, 6.12.101 and 6.6.148"
+  },
+  {
+    "source": "thn",
+    "title": "New NatJack Attacks Hijack TCP Sessions and Spoof DNS by Manipulating NAT Tables",
+    "desc": "Security researcher Malcolm Stagg has disclosed a new attack class called&nbsp;NatJack&nbsp;that manipulates network address translation (NAT) connection state to hijack active TCP sessions, spoof DNS responses, expose mapped ports, and exhaust NAT tables.\n\nPresented at Black Hat USA 2026, the resea",
+    "url": "https://thehackernews.com/2026/08/new-natjack-attacks-hijack-tcp-sessions.html",
+    "date": "2026-08-07T16:28:38",
+    "title_ko": "New NatJack Attacks Hijack TCP Sessions and Spoof DNS by Manipulating NAT Tables",
+    "desc_ko": "Security researcher Malcolm Stagg has disclosed a new attack class called&nbsp;NatJack&nbsp;that manipulates network address translation (NAT) connection state to hijack active TCP sessions, spoof DNS responses, expose mapped ports, and exhaust NAT tables.\n\nPresented at Black Hat USA 2026, the resea"
+  },
+  {
+    "source": "thn",
     "title": "Microsoft 365 AitM Phishing Hijacks Accounts to Collect Payroll and Finance Emails",
     "desc": "Cybersecurity researchers have called attention to an active \"widespread email-driven phishing campaign\" that employs adversary-in-the-middle (AitM) techniques to take control of Microsoft 365 accounts with an aim to identify key personnel involved in financial workflows and gather related email.\n\n\"",
     "url": "https://thehackernews.com/2026/08/microsoft-365-aitm-phishing-hijacks.html",
@@ -11,20 +74,11 @@
   {
     "source": "thn",
     "title": "AI-Assisted HTTP Terminator Finds Novel HTTP Desync Techniques and Apache Zero-Day",
-    "desc": "PortSwigger says HTTP Terminator, an artificial intelligence (AI)-assisted research system built by James Kettle, generated and proved new HTTP desynchronization techniques after exploring 30,000 candidate attack vectors.\n\nPortSwigger said a separate human-guided discovery cascade also exposed a zer",
+    "desc": "PortSwigger says HTTP Terminator, an artificial intelligence (AI)-assisted research system built by James Kettle, generated and proved new HTTP desynchronization techniques after exploring 30,000 candidate desync vectors.\n\nPortSwigger said a separate human-guided discovery cascade also exposed a zer",
     "url": "https://thehackernews.com/2026/08/ai-assisted-http-terminator-finds-novel.html",
     "date": "2026-08-07T15:39:54",
     "title_ko": "AI-Assisted HTTP Terminator Finds Novel HTTP Desync Techniques and Apache Zero-Day",
-    "desc_ko": "PortSwigger says HTTP Terminator, an artificial intelligence (AI)-assisted research system built by James Kettle, generated and proved new HTTP desynchronization techniques after exploring 30,000 candidate attack vectors.\n\nPortSwigger said a separate human-guided discovery cascade also exposed a zer"
-  },
-  {
-    "source": "thn",
-    "title": "New NatJack Attacks Hijack TCP Sessions and Spoof DNS by Manipulating NAT Tables",
-    "desc": "Security researcher Malcolm Stagg has disclosed a new attack class called&nbsp;NatJack&nbsp;that manipulates network address translation (NAT) connection state to hijack active TCP sessions, spoof DNS responses, expose mapped ports, and exhaust NAT tables.\n\nPresented at Black Hat USA 2026, the resea",
-    "url": "https://thehackernews.com/2026/08/new-natjack-attacks-hijack-tcp-sessions.html",
-    "date": "2026-08-07T15:02:57",
-    "title_ko": "New NatJack Attacks Hijack TCP Sessions and Spoof DNS by Manipulating NAT Tables",
-    "desc_ko": "Security researcher Malcolm Stagg has disclosed a new attack class called&nbsp;NatJack&nbsp;that manipulates network address translation (NAT) connection state to hijack active TCP sessions, spoof DNS responses, expose mapped ports, and exhaust NAT tables.\n\nPresented at Black Hat USA 2026, the resea"
+    "desc_ko": "PortSwigger says HTTP Terminator, an artificial intelligence (AI)-assisted research system built by James Kettle, generated and proved new HTTP desynchronization techniques after exploring 30,000 candidate desync vectors.\n\nPortSwigger said a separate human-guided discovery cascade also exposed a zer"
   },
   {
     "source": "thn",
@@ -394,59 +448,5 @@
     "date": "2026-08-03T21:54:47",
     "title_ko": "Google Password Manager Attacks Could Let Malware Hijack Passkey-Protected Accounts",
     "desc_ko": "Malware running as an ordinary user on a Windows machine can sign into a victim's passkey-protected accounts without a fingerprint, a PIN, or anything at all appearing on the victim's screen.\n\nUnit 42 detailed three attack paths against Chrome's Google Password Manager cloud authenticator, which it "
-  },
-  {
-    "source": "thn",
-    "title": "INC Ransomware Emerges as Dominant Actor Exploiting SonicWall SMA 1000 Flaws",
-    "desc": "The INC Ransomware operation has emerged as the \"dominant threat actor\" exploiting the recently disclosed security flaws in SonicWall Secure Mobile Access (SMA) 1000 series VPN appliances.\n\nIn a report published over the weekend, Resecurity said it observed the INC Ransomware accelerating its activi",
-    "url": "https://thehackernews.com/2026/08/inc-ransomware-emerges-as-dominant.html",
-    "date": "2026-08-03T21:45:13",
-    "title_ko": "INC Ransomware Emerges as Dominant Actor Exploiting SonicWall SMA 1000 Flaws",
-    "desc_ko": "The INC Ransomware operation has emerged as the \"dominant threat actor\" exploiting the recently disclosed security flaws in SonicWall Secure Mobile Access (SMA) 1000 series VPN appliances.\n\nIn a report published over the weekend, Resecurity said it observed the INC Ransomware accelerating its activi"
-  },
-  {
-    "source": "thn",
-    "title": "⚡ Weekly Recap: Rogue AI Models, $88M Bitcoin Theft, Water-System Attacks and Dangling DNS Hijacks",
-    "desc": "This week kept coming back to permission. A model crossed a boundary. A wallet trusted bad randomness. Webmail kept an intruder around. Public systems, package feeds, hotel networks, and login flows all gave away more than intended.\n\nSome of it was clever. Most of it was just access left lying aroun",
-    "url": "https://thehackernews.com/2026/08/weekly-recap-rogue-ai-models-88m.html",
-    "date": "2026-08-03T19:33:11",
-    "title_ko": "⚡ Weekly Recap: Rogue AI Models, $88M Bitcoin Theft, Water-System Attacks and Dangling DNS Hijacks",
-    "desc_ko": "This week kept coming back to permission. A model crossed a boundary. A wallet trusted bad randomness. Webmail kept an intruder around. Public systems, package feeds, hotel networks, and login flows all gave away more than intended.\n\nSome of it was clever. Most of it was just access left lying aroun"
-  },
-  {
-    "source": "thn",
-    "title": "FOMO in the SOC: Where AI Platforms like Claude Actually Fit",
-    "desc": "AI is moving incredibly fast, and every security leader is feeling the pressure to keep up.\n\nAI platforms like Claude, Codex and Cursor are already helping security teams write detections, investigate alerts, summarize incidents, and automate repetitive work. The conversation has evolved from whethe",
-    "url": "https://thehackernews.com/2026/08/fomo-in-soc-where-ai-platforms-like.html",
-    "date": "2026-08-03T17:00:00",
-    "title_ko": "FOMO in the SOC: Where AI Platforms like Claude Actually Fit",
-    "desc_ko": "AI is moving incredibly fast, and every security leader is feeling the pressure to keep up.\n\nAI platforms like Claude, Codex and Cursor are already helping security teams write detections, investigate alerts, summarize incidents, and automate repetitive work. The conversation has evolved from whethe"
-  },
-  {
-    "source": "thn",
-    "title": "Chinese Threat Actor Uses Leaked DarkSword Kit to Deploy GHOSTBLADE on iOS",
-    "desc": "An unknown Chinese-speaking threat actor has been observed running a campaign targeting Apple iOS devices by leveraging a publicly leaked version of the DarkSword exploit kit.\n\nAttack surface management platform Censys said it identified the threat actor running more than 100 web properties, most of",
-    "url": "https://thehackernews.com/2026/08/chinese-threat-actor-uses-leaked.html",
-    "date": "2026-08-03T16:19:06",
-    "title_ko": "Chinese Threat Actor Uses Leaked DarkSword Kit to Deploy GHOSTBLADE on iOS",
-    "desc_ko": "An unknown Chinese-speaking threat actor has been observed running a campaign targeting Apple iOS devices by leveraging a publicly leaked version of the DarkSword exploit kit.\n\nAttack surface management platform Censys said it identified the threat actor running more than 100 web properties, most of"
-  },
-  {
-    "source": "thn",
-    "title": "PNLD Breach Exposes U.K. Police and Government Contact Details on Dark Web",
-    "desc": "The Police National Legal Database (PNLD) has confirmed that police, government and customer contact information was compromised and published on the dark web.\n\nThe data included names, organisations and work email addresses belonging to police officers, police staff, criminal justice professionals,",
-    "url": "https://thehackernews.com/2026/08/pnld-breach-exposes-uk-police-and.html",
-    "date": "2026-08-03T14:43:56",
-    "title_ko": "PNLD Breach Exposes U.K. Police and Government Contact Details on Dark Web",
-    "desc_ko": "The Police National Legal Database (PNLD) has confirmed that police, government and customer contact information was compromised and published on the dark web.\n\nThe data included names, organisations and work email addresses belonging to police officers, police staff, criminal justice professionals,"
-  },
-  {
-    "source": "thn",
-    "title": "Thermo Fisher Patches Flaw That Could Make DNA File Tampering Nearly Undetectable",
-    "desc": "Thermo Fisher Scientific has patched a flaw in select Applied Biosystems human identification software that could allow data files to be altered before analysis software loads them.\n\nThe vendor's July 31 security bulletin says nearly undetectable changes to .fsa and .hid outputs could occur if labor",
-    "url": "https://thehackernews.com/2026/08/thermo-fisher-patches-flaw-that-could.html",
-    "date": "2026-08-03T13:35:30",
-    "title_ko": "Thermo Fisher Patches Flaw That Could Make DNA File Tampering Nearly Undetectable",
-    "desc_ko": "Thermo Fisher Scientific has patched a flaw in select Applied Biosystems human identification software that could allow data files to be altered before analysis software loads them.\n\nThe vendor's July 31 security bulletin says nearly undetectable changes to .fsa and .hid outputs could occur if labor"
   }
 ]
