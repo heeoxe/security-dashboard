@@ -1,5 +1,714 @@
 [
   {
+    "cve": "CVE-2026-16242",
+    "title": "Hypershift: konnectivity proxy-server accepts agent connections without validating client certificates",
+    "desc": "A flaw was found in the Konnectivity proxy-server configuration for hosted control planes. The agent-facing listener was started without --cluster-ca-cert (and without token-based agent authentication), so client certificates were not validated. A remote attacker who can reach the Konnectivity cluster endpoint could connect as an unauthenticated agent, join the routing pool, and potentially proxy,",
+    "cvss": 9.4,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-306"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.11"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.6"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-20",
+    "updated": "2026-08-08",
+    "url": "https://access.redhat.com/errata/RHSA-2026:46885",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-71502",
+    "title": "Unauthenticated Stored Vue Template Injection Leads to Cross-Site Scripting in CTI-Transmute",
+    "desc": "CTI-Transmute contains a stored cross-site scripting vulnerability caused by insufficient neutralization of Vue template expression delimiters in server-rendered user-controlled data.\n\nAn unauthenticated attacker can create a public conversion whose name or description contains a malicious Vue expression using the application's configured [[ ... ]] delimiters. User profile names may provide an add",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-79",
+      "CWE-1336"
+    ],
+    "affected": [
+      {
+        "vendor": "misp",
+        "product": "cti-transmute"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-06",
+    "updated": "2026-08-08",
+    "url": "https://github.com/MISP/cti-transmute/commit/ecfdaef63860a071c6f07afd30156ca77a77ad2b",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-10973",
+    "title": "Keycloak: cli option for encrypted jgroups ignored",
+    "desc": "A vulnerability was found in Keycloak. The environment option `KC_CACHE_EMBEDDED_MTLS_ENABLED` does not work and the JGroups replication configuration is always used in plain text which can allow an attacker that has access to adjacent networks related to JGroups to read sensitive information.",
+    "cvss": 5.7,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-319"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Build of Keycloak"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat JBoss Enterprise Application Platform 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat JBoss Enterprise Application Platform Expansion Pack"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2024-12-17",
+    "updated": "2026-08-08",
+    "url": "https://access.redhat.com/security/cve/CVE-2024-10973",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-9621",
+    "title": "Io.quarkiverse.cxf:quarkus-cxf: quarkus cxf may log user password and secret to application log",
+    "desc": "A vulnerability was found in Quarkus CXF. Passwords and other secrets may appear in the  application log in spite of the user configuring them to be hidden. This issue requires some special configuration to be vulnerable, such as SOAP logging enabled, application set client, and endpoint logging properties, and the attacker must have access to the application log.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-532"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Build of Apache Camel 4.4 for Quarkus 3.8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2024-10-08",
+    "updated": "2026-08-08",
+    "url": "https://access.redhat.com/errata/RHSA-2024:10035",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-5278",
+    "title": "Coreutils: heap buffer under-read in gnu coreutils sort via key specification",
+    "desc": "A flaw was found in GNU Coreutils. The sort utility's begfield() function is vulnerable to a heap buffer under-read. The program may access memory outside the allocated buffer if a user runs a crafted command using the traditional key format. A malicious input could lead to a crash or leak sensitive data.",
+    "cvss": 4.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-121"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Cost Management 4"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Discovery 2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-05-27",
+    "updated": "2026-08-08",
+    "url": "https://access.redhat.com/errata/RHSA-2026:28911",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-7195",
+    "title": "Operator-sdk: privilege escalation due to incorrect permissions of /etc/passwd",
+    "desc": "Early versions of Operator-SDK provided an insecure method to allow operator containers to run in environments that used a random UID. Operator-SDK before 0.15.2 provided a script, user_setup, which modifies the permissions of the /etc/passwd file to 664 during build time. Developers who used Operator-SDK before 0.15.2 to scaffold their operator may still be impacted by this if the insecure user_s",
+    "cvss": 6.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-276"
+    ],
+    "affected": [
+      {
+        "vendor": "operator-framework",
+        "product": "operator-sdk"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "RHEL-9-CNV-4.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "RHEL-9-CNV-4.18"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "RHEL-9-CNV-4.20"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Compliance Operator 1"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-08-07",
+    "updated": "2026-08-08",
+    "url": "https://access.redhat.com/errata/RHEA-2025:23406",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-7365",
+    "title": "Keycloak: phishing attack via email verification step in first login flow",
+    "desc": "A flaw was found in Keycloak. When an authenticated attacker attempts to merge accounts with another existing account during an identity provider (IdP) login, the attacker will subsequently be prompted to \"review profile\" information. This vulnerability allows the attacker to modify their email address to match that of a victim's account, triggering a verification email sent to the victim's email ",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-346"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat build of Keycloak 26"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat build of Keycloak 26"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat build of Keycloak 26.0"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat build of Keycloak 26.0"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-07-10",
+    "updated": "2026-08-08",
+    "url": "https://access.redhat.com/errata/RHSA-2025:11986",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-8419",
+    "title": "Org.keycloak/keycloak-services: keycloak smtp inject vulnerability",
+    "desc": "A vulnerability was found in Keycloak-services. Special characters used during e-mail registration may perform SMTP Injection and unexpectedly send short unwanted e-mails. The email is limited to 64 characters (limited local part of the email), so the attack is limited to very shorts emails (subject and little data, the example is 60 chars). This flaw's only direct consequence is an unsolicited em",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-93"
+    ],
+    "affected": [
+      {
+        "vendor": "Keycloak",
+        "product": "keycloak"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat build of Keycloak 26.0"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat build of Keycloak 26.0"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat build of Keycloak 26.0"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat build of Keycloak 26.0"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-08-06",
+    "updated": "2026-08-08",
+    "url": "https://access.redhat.com/errata/RHSA-2025:15336",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-5971",
+    "title": "Undertow: response write hangs in case of java 17 tlsv1.3 newsessionticket",
+    "desc": "A vulnerability was found in Undertow, where the chunked response hangs after the body was flushed. The response headers and body were sent but the client would continue waiting as Undertow does not send the expected 0\\r\\n termination of the chunked response. This results in uncontrolled resource consumption, leaving the server side to a denial of service attack. This happens only with Java 17 TLS",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-674"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat build of Apache Camel 3.20.7 for Spring Boot"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat build of Apache Camel 4.4.1 for Spring Boot 3.2"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat build of Apache Camel 4.4.2 for Spring Boot"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat JBoss Enterprise Application Platform 7"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2024-07-08",
+    "updated": "2026-08-08",
+    "url": "https://access.redhat.com/errata/RHSA-2024:4392",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-49794",
+    "title": "Libxml: heap use after free (uaf) leads to denial of service (dos)",
+    "desc": "A use-after-free vulnerability was found in libxml2. This issue occurs when parsing XPath elements under certain circumstances when the XML schematron has the <sch:name path=\"...\"/> schema elements. This flaw allows a malicious actor to craft a malicious XML document used as input for libxml, resulting in the program's crash using libxml or other possible undefined behaviors.",
+    "cvss": 9.1,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-825"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-06-16",
+    "updated": "2026-08-08",
+    "url": "https://access.redhat.com/errata/RHSA-2025:10630",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-49796",
+    "title": "Libxml: type confusion leads to denial of service (dos)",
+    "desc": "A vulnerability was found in libxml2. Processing certain sch:name elements from the input XML file can trigger a memory corruption issue. This flaw allows an attacker to craft a malicious XML input file that can lead libxml to crash, resulting in a denial of service or other possible undefined behavior due to sensitive data being corrupted in memory.",
+    "cvss": 9.1,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-125"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-06-16",
+    "updated": "2026-08-08",
+    "url": "https://access.redhat.com/errata/RHSA-2025:10630",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-5914",
+    "title": "Libarchive: double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c",
+    "desc": "A vulnerability has been identified in the libarchive library, specifically within the archive_read_format_rar_seek_data() function. This flaw involves an integer overflow that can ultimately lead to a double-free condition. Exploiting a double-free vulnerability can result in memory corruption, enabling an attacker to execute arbitrary code or cause a denial-of-service condition.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-190"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.2 Advanced Update Support"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-06-09",
+    "updated": "2026-08-08",
+    "url": "https://access.redhat.com/errata/RHSA-2025:14130",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-7425",
+    "title": "Libxslt: libxml2: heap use-after-free in libxslt caused by atype corruption in xmlattrptr",
+    "desc": "A flaw was found in libxslt where the attribute type, atype, flags are modified in a way that corrupts internal memory management. When XSLT functions, such as the key() process, result in tree fragments, this corruption prevents the proper cleanup of ID attributes. As a result, the system may access freed memory, causing crashes or enabling attackers to trigger heap corruption.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "GNOME",
+        "product": "libxml2"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-07-10",
+    "updated": "2026-08-08",
+    "url": "https://access.redhat.com/errata/RHBA-2025:12345",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-12758",
+    "title": "Versions of the package validator before 13.15.22 are vulnerable to Incomplete Filtering of One or More Instances of Spe",
+    "desc": "Versions of the package validator before 13.15.22 are vulnerable to Incomplete Filtering of One or More Instances of Special Elements in the isLength() function that does not take into account Unicode variation selectors (\\uFE0F, \\uFE0E) appearing in a sequence which lead to improper string length calculation. This can lead to an application using isLength for input validation accepting strings si",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "validator"
+      },
+      {
+        "vendor": "n/a",
+        "product": "org.webjars.npm:validator"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-11-27",
+    "updated": "2026-08-08",
+    "url": "https://security.snyk.io/vuln/SNYK-JS-VALIDATOR-13653476",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-3193",
+    "title": "Versions of the package algoliasearch-helper from 2.0.0-rc1 and before 3.11.2 are vulnerable to Prototype Pollution in t",
+    "desc": "Versions of the package algoliasearch-helper from 2.0.0-rc1 and before 3.11.2 are vulnerable to Prototype Pollution in the _merge() function in merge.js, which allows constructor.prototype to be written even though doing so throws an error. In the \"extreme edge-case\" that the resulting error is caught, code injected into the user-supplied search parameter may be exeucted.\r\rThis is related to but d",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "algoliasearch-helper"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-09-27",
+    "updated": "2026-08-08",
+    "url": "https://security.snyk.io/vuln/SNYK-JS-ALGOLIASEARCHHELPER-3318396",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-17107",
+    "title": "Cluster-proxy: cluster-proxy: impersonation header injection in service-proxy grants cluster-admin on every managed cluster",
+    "desc": "A flaw was found in the cluster-proxy service-proxy component used in Red Hat Advanced Cluster Management for Kubernetes (RHACM) and multicluster-engine (MCE). The service-proxy appends impersonation group headers to proxied requests without first removing caller-supplied values, and the spoke ServiceAccount holds unrestricted impersonation permissions. An authenticated hub principal can inject an",
+    "cvss": 8.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-441"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.11"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.6"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-24",
+    "updated": "2026-08-08",
+    "url": "https://access.redhat.com/errata/RHSA-2026:46885",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-2100",
+    "title": "P11-kit: null dereference via c_derivekey with specific null parameters",
+    "desc": "A flaw was found in p11-kit. A remote attacker could exploit this vulnerability by calling the C_DeriveKey function on a remote token with specific IBM kyber or IBM btc derive mechanism parameters set to NULL. This could lead to the RPC-client attempting to return an uninitialized value, potentially resulting in a NULL dereference or undefined behavior. This issue may cause an application level de",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-824"
+    ],
+    "affected": [
+      {
+        "vendor": "p11-glue",
+        "product": "p11-kit"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Cost Management 4"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-03-26",
+    "updated": "2026-08-08",
+    "url": "https://access.redhat.com/errata/RHSA-2026:18143",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-4602",
+    "title": "Versions of the package jsrsasign before 11.1.1 are vulnerable to Incorrect Conversion between Numeric Types due to hand",
+    "desc": "Versions of the package jsrsasign before 11.1.1 are vulnerable to Incorrect Conversion between Numeric Types due to handling negative exponents in ext/jsbn2.js. An attacker can force the computation of incorrect modular inverses and break signature verification by calling modPow with a negative exponent.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "jsrsasign"
+      },
+      {
+        "vendor": "n/a",
+        "product": "org.webjars.npm:jsrsasign"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-03-23",
+    "updated": "2026-08-08",
+    "url": "https://security.snyk.io/vuln/SNYK-JS-JSRSASIGN-15371175",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-4878",
+    "title": "Libcap: libcap: privilege escalation via toctou race condition in cap_set_file()",
+    "desc": "A flaw was found in libcap. A local unprivileged user can exploit a Time-of-check-to-time-of-use (TOCTOU) race condition in the `cap_set_file()` function. This allows an attacker with write access to a parent directory to redirect file capability updates to an attacker-controlled file. By doing so, capabilities can be injected into or stripped from unintended executables, leading to privilege esca",
+    "cvss": 6.7,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-367"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-04-09",
+    "updated": "2026-08-08",
+    "url": "https://access.redhat.com/errata/RHSA-2026:12423",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-7163",
+    "title": "Assisted-service: assisted-service: authenticated users can gain administrative access to openshift clusters via credential disclosure",
+    "desc": "A vulnerability in the assisted-service REST API, an optional Assisted Installer (assisted-service) component in the Multicluster Engine (MCE), allows an authenticated user with minimal namespace-scoped privileges to obtain administrative credentials for arbitrary clusters provisioned through the hub. \n\nThe credentials download endpoint (GET /v2/clusters/{cluster_id}/credentials, which returns the",
+    "cvss": 6.1,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-312"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.11"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.9"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-04-30",
+    "updated": "2026-08-08",
+    "url": "https://access.redhat.com/errata/RHSA-2026:11511",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-11393",
+    "title": "Insights-runtimes-tech-preview/runtimes-inventory-rhel8-operator: improper proxy configuration allows unauthorized administrative commands",
+    "desc": "A flaw was found in runtimes-inventory-rhel8-operator. An internal proxy component is incorrectly configured. Because of this flaw, the proxy attaches the cluster's main administrative credentials to any command it receives, instead of only the specific reports it is supposed to handle.\n\nThis allows a standard user within the cluster to send unauthorized commands to the management platform, effect",
+    "cvss": 8.7,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-441"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Lightspeed (formerly Insights) for Runtimes 1.0"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Runtimes Inventory Operator"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-12-15",
+    "updated": "2026-08-08",
+    "url": "https://access.redhat.com/errata/RHSA-2025:23236",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2026-15194",
     "title": "Open5GS AMF context.c amf_context_final use after free",
     "desc": "A security flaw has been discovered in Open5GS 2.7.7. This affects the function amf_context_final of the file src/amf/context.c of the component AMF. Performing a manipulation results in use after free. The attack is only possible with local access. The exploit has been released to the public and may be used for attacks.",
@@ -133,26 +842,6 @@
     "title": "Insufficient validation of untrusted input in WebAPKs in Google Chrome on Android prior to 151.0.7922.109 allowed a loca",
     "desc": "Insufficient validation of untrusted input in WebAPKs in Google Chrome on Android prior to 151.0.7922.109 allowed a local attacker to potentially perform a sandbox escape via a malicious file. (Chromium security severity: High)",
     "cvss": 8.6,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-06",
-    "updated": "2026-08-08",
-    "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_01193673229.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-19144",
-    "title": "Use after free in HTML in Google Chrome prior to 151.0.7922.109 allowed a remote attacker to potentially exploit heap co",
-    "desc": "Use after free in HTML in Google Chrome prior to 151.0.7922.109 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
-    "cvss": 8.8,
     "severity": "HIGH",
     "cwes": [],
     "affected": [
@@ -978,29 +1667,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-43632",
-    "title": "llama.cpp b7492–b9060 Use-After-Free in Tokenization Endpoints",
-    "desc": "llama.cpp builds b7492 through the latest b9060 contains a use-after-free vulnerability in llama-server affecting six tokenization endpoints (/tokenize, /detokenize, /infill, /apply-template, /rerank, and /anthropic/count_tokens) that bypass the task queue and access ctx_server.vocab directly on HTTP worker threads. Attackers can exploit a time-of-check-time-of-use race condition where the main th",
-    "cvss": 8.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416",
-      "CWE-367"
-    ],
-    "affected": [
-      {
-        "vendor": "ggml-org",
-        "product": "llama.cpp"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-06",
-    "updated": "2026-08-08",
-    "url": "https://github.com/Vladimir-tokarev-cyera/llama-cpp-security-patches",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-45573",
     "title": "Decidim: Push subscriptions can be abused for server-side requests",
     "desc": "Decidim is a participatory democracy framework. Prior to 0.30.9, from 0.31.0 before 0.31.5, and in 0.32.0.rc1 before 0.32.0.rc2, when VAPID delivery is enabled, the notification subscription flow stores a client-supplied push endpoint without validating that it belongs to an approved push service, and SendPushNotification later passes that endpoint to WebPush.payload_send, allowing an authenticate",
@@ -1709,6 +2375,446 @@
     "published": "2026-08-07",
     "updated": "2026-08-08",
     "url": "https://cwe.mitre.org/data/definitions/200.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-14831",
+    "title": "Easy Booking < 3.5.0 - Unauthenticated Minimum Booking Duration Bypass",
+    "desc": "The Easy Booking WordPress plugin before 3.5.0 does not re-enforce a bookable product's configured minimum booking duration on the server side when adding to cart and calculating the booking price, allowing unauthenticated users to place below-minimum bookings and complete underpriced orders.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Easy Booking"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-08-06",
+    "updated": "2026-08-07",
+    "url": "https://wpscan.com/vulnerability/1a64d797-7807-42e3-aca7-d93ecb723008/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-16463",
+    "title": "DXF File Parsing Heap-Based Overflow in Autodesk AutoCAD",
+    "desc": "A maliciously crafted DXF file, when parsed through Autodesk AutoCAD, can force a Heap-Based Overflow vulnerability. A malicious actor can leverage this vulnerability to cause a crash, read sensitive data, or execute arbitrary code in the context of the current process.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-122"
+    ],
+    "affected": [
+      {
+        "vendor": "Autodesk",
+        "product": "AutoCAD"
+      },
+      {
+        "vendor": "Autodesk",
+        "product": "AutoCAD LT"
+      },
+      {
+        "vendor": "Autodesk",
+        "product": "DWG TrueView"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-29",
+    "updated": "2026-08-07",
+    "url": "https://www.autodesk.com/trust/security-advisories/adsk-sa-2026-0009",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-19144",
+    "title": "Use after free in HTML in Google Chrome prior to 151.0.7922.109 allowed a remote attacker to potentially exploit heap co",
+    "desc": "Use after free in HTML in Google Chrome prior to 151.0.7922.109 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Google",
+        "product": "Chrome"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-06",
+    "updated": "2026-08-07",
+    "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_01193673229.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-43632",
+    "title": "llama.cpp b7492–b9060 Use-After-Free in Tokenization Endpoints",
+    "desc": "llama.cpp builds b7492 through the latest b9060 contains a use-after-free vulnerability in llama-server affecting six tokenization endpoints (/tokenize, /detokenize, /infill, /apply-template, /rerank, and /anthropic/count_tokens) that bypass the task queue and access ctx_server.vocab directly on HTTP worker threads. Attackers can exploit a time-of-check-time-of-use race condition where the main th",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416",
+      "CWE-367"
+    ],
+    "affected": [
+      {
+        "vendor": "ggml-org",
+        "product": "llama.cpp"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-06",
+    "updated": "2026-08-07",
+    "url": "https://github.com/Vladimir-tokarev-cyera/llama-cpp-security-patches",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-50687",
+    "title": "Windows Win32k Elevation of Privilege Vulnerability",
+    "desc": "",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 11 Version 24H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 11 Version 25H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 11 version 26H1"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows Server 2025"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows Server 2025 (Server Core installation)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-14",
+    "updated": "2026-08-07",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50687",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-50689",
+    "title": "Windows Clipboard Server Elevation of Privilege Vulnerability",
+    "desc": "",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416",
+      "CWE-362"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1809"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 21H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 22H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 11 Version 24H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 11 Version 25H2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-14",
+    "updated": "2026-08-07",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50689",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-55001",
+    "title": "Active Directory Domain Services Elevation of Privilege Vulnerability",
+    "desc": "",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-295"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1607"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1809"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows Server 2016"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows Server 2016 (Server Core installation)"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows Server 2019"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-14",
+    "updated": "2026-08-07",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55001",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-55010",
+    "title": "Minecraft Bedrock Dedicated Server Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-122"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Minecraft Bedrock Dedicated Server"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-14",
+    "updated": "2026-08-07",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55010",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-55056",
+    "title": "Microsoft Office Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-122"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft 365 Apps for Enterprise"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Office 2016"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Office 2019"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Office 365 for Mac"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Office LTSC 2021"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-14",
+    "updated": "2026-08-07",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55056",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-55944",
+    "title": "Microsoft Dynamics NAV and Microsoft Dynamics 365 Business Central (On Premises) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-502"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Dynamics NAV 2018"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-14",
+    "updated": "2026-08-07",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55944",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57968",
+    "title": "Windows Subsystem for Linux (WSL2) Kernel Elevation of Privilege Vulnerability",
+    "desc": "",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-126"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Windows Subsystem for Linux (WSL2)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-14",
+    "updated": "2026-08-07",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57968",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-57974",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-190"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-08-07",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57974",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58522",
+    "title": "Microsoft Edge for Android Information Disclosure Vulnerability",
+    "desc": "",
+    "cvss": 6.8,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-23"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-03",
+    "updated": "2026-08-07",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58522",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58601",
+    "title": "Virtual Hard Disk (VHD) Miniport Driver Elevation of Privilege Vulernability",
+    "desc": "",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-122"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1607"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1809"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 21H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 22H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 11 version 23H2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-14",
+    "updated": "2026-08-07",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58601",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-66326",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-03",
+    "updated": "2026-08-07",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66326",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-9673",
+    "title": "Versions of the package json-2-csv from 3.15.0 and before 5.5.11 are vulnerable to CSV Injection via the preventCsvInjec",
+    "desc": "Versions of the package json-2-csv from 3.15.0 and before 5.5.11 are vulnerable to CSV Injection via the preventCsvInjection option which can be bypassed. An attacker can inject formulas into CSV files, which execute when the files are opened in spreadsheet applications.",
+    "cvss": 6.8,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "json-2-csv"
+      },
+      {
+        "vendor": "n/a",
+        "product": "org.webjars.npm:json-2-csv"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-28",
+    "updated": "2026-08-07",
+    "url": "https://security.snyk.io/vuln/SNYK-JS-JSON2CSV-14221326",
     "source": "CISA Vulnrichment"
   },
   {
@@ -20639,30 +21745,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-9673",
-    "title": "Versions of the package json-2-csv from 3.15.0 and before 5.5.11 are vulnerable to CSV Injection via the preventCsvInjec",
-    "desc": "Versions of the package json-2-csv from 3.15.0 and before 5.5.11 are vulnerable to CSV Injection via the preventCsvInjection option which can be bypassed. An attacker can inject formulas into CSV files, which execute when the files are opened in spreadsheet applications.",
-    "cvss": 6.8,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "json-2-csv"
-      },
-      {
-        "vendor": "n/a",
-        "product": "org.webjars.npm:json-2-csv"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-05-28",
-    "updated": "2026-08-07",
-    "url": "https://security.snyk.io/vuln/SNYK-JS-JSON2CSV-14221326",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2025-15674",
     "title": "Content Protector (Passster) < 4.3.7 - Contributor+ Protected Content Disclosure via Core REST API",
     "desc": "The Passster WordPress plugin before 4.3.7 does not restrict low-privilege users holding the edit_posts capability from reading globally password-protected content through the WordPress core REST API when global protection is enabled, allowing any Contributor or higher to read the content of protected pages and posts without knowing the password.",
@@ -21749,26 +22831,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-14831",
-    "title": "Easy Booking < 3.5.0 - Unauthenticated Minimum Booking Duration Bypass",
-    "desc": "The Easy Booking WordPress plugin before 3.5.0 does not re-enforce a bookable product's configured minimum booking duration on the server side when adding to cart and calculating the booking price, allowing unauthenticated users to place below-minimum bookings and complete underpriced orders.",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Unknown",
-        "product": "Easy Booking"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-08-06",
-    "updated": "2026-08-07",
-    "url": "https://wpscan.com/vulnerability/1a64d797-7807-42e3-aca7-d93ecb723008/",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-17032",
     "title": "Supsystic Multiple Pro Plugins - Backdoor via Compromised Vendor Update Server",
     "desc": "Multiple Supsystic Pro plugins were distributed with malicious code through the vendor's compromised update server, allowing unauthenticated attackers to deploy a second-stage payload that exfiltrates credentials and other sensitive data and grants full control of affected sites.",
@@ -22071,29 +23133,6 @@
     "published": "2026-08-06",
     "updated": "2026-08-07",
     "url": "https://github.com/ail-project/ail-framework/commit/4faf5117b15b4a6208d56f8c54f51c58b87eb007",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-71502",
-    "title": "Unauthenticated Stored Vue Template Injection Leads to Cross-Site Scripting in CTI-Transmute",
-    "desc": "CTI-Transmute contains a stored cross-site scripting vulnerability caused by insufficient neutralization of Vue template expression delimiters in server-rendered user-controlled data.\n\nAn unauthenticated attacker can create a public conversion whose name or description contains a malicious Vue expression using the application's configured [[ ... ]] delimiters. User profile names may provide an add",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-79",
-      "CWE-1336"
-    ],
-    "affected": [
-      {
-        "vendor": "misp",
-        "product": "cti-transmute"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-06",
-    "updated": "2026-08-07",
-    "url": "https://",
     "source": "CISA Vulnrichment"
   },
   {
@@ -23910,44 +24949,6 @@
     "published": "2026-06-16",
     "updated": "2026-08-06",
     "url": "https://github.com/python/cpython/pull/151545",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-16242",
-    "title": "Hypershift: konnectivity proxy-server accepts agent connections without validating client certificates",
-    "desc": "A flaw was found in the Konnectivity proxy-server configuration for hosted control planes. The agent-facing listener was started without --cluster-ca-cert (and without token-based agent authentication), so client certificates were not validated. A remote attacker who can reach the Konnectivity cluster endpoint could connect as an unauthenticated agent, join the routing pool, and potentially proxy,",
-    "cvss": 9.4,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-306"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.1"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.1"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.11.0"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.17"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.6"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-20",
-    "updated": "2026-08-06",
-    "url": "https://access.redhat.com/errata/RHSA-2026:46885",
     "source": "CISA Vulnrichment"
   },
   {
@@ -27183,750 +28184,6 @@
     "published": "2024-04-04",
     "updated": "2026-08-05",
     "url": "https://git.kernel.org/stable/c/f81e94d2dcd2397137edcb8b85f4c5bed5d22383",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-26939",
-    "title": "drm/i915/vma: Fix UAF on destroy against retire race",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/i915/vma: Fix UAF on destroy against retire race\n\nObject debugging tools were sporadically reporting illegal attempts to\nfree a still active i915 VMA object when parking a GT believed to be idle.\n\n[161.359441] ODEBUG: free active (active state 0) object: ffff88811643b958 object type: i915_active hint: __i915_vma_active+0x0/0x",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-05-01",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/704edc9252f4988ae1ad7dafa23d0db8d90d7190",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-26951",
-    "title": "wireguard: netlink: check for dangling peer via is_dead instead of empty list",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nwireguard: netlink: check for dangling peer via is_dead instead of empty list\n\nIf all peers are removed via wg_peer_remove_all(), rather than setting\npeer_list to empty, the peer is added to a temporary list with a head on\nthe stack of wg_peer_remove_all(). If a netlink dump is resumed and the\ncursored peer is one that has been r",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-05-01",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/f52be46e3e6ecefc2539119784324f0cbc09620a",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-27012",
-    "title": "netfilter: nf_tables: restore set elements when delete set fails",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nf_tables: restore set elements when delete set fails\n\nFrom abort path, nft_mapelem_activate() needs to restore refcounters to\nthe original state. Currently, it uses the set->ops->walk() to iterate\nover these set elements. The existing set iterator skips inactive\nelements in the next generation, this does not work from",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-05-01",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/2cf64b16ac55c42c8989d8c819e42a77549cd680",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-27016",
-    "title": "netfilter: flowtable: validate pppoe header",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: flowtable: validate pppoe header\n\nEnsure there is sufficient room to access the protocol field of the\nPPPoe header. Validate it once before the flowtable lookup, then use a\nhelper function to access protocol field.",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-05-01",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/d06977b9a4109f8738bb276125eb6a0b772bc433",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-27043",
-    "title": "media: edia: dvbdev: fix a use-after-free",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: edia: dvbdev: fix a use-after-free\n\nIn dvb_register_device, *pdvbdev is set equal to dvbdev, which is freed\nin several error-handling paths. However, *pdvbdev is not set to NULL\nafter dvbdev's deallocation, causing use-after-frees in many places,\nfor example, in the following call chain:\n\nbudget_register\n  |-> dvb_dmxdev_i",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-05-01",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/d0f5c28333822f9baa5280d813124920720fd856",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-27070",
-    "title": "f2fs: fix to avoid use-after-free issue in f2fs_filemap_fault",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nf2fs: fix to avoid use-after-free issue in f2fs_filemap_fault\n\nsyzbot reports a f2fs bug as below:\n\nBUG: KASAN: slab-use-after-free in f2fs_filemap_fault+0xd1/0x2c0 fs/f2fs/file.c:49\nRead of size 8 at addr ffff88807bb22680 by task syz-executor184/5058\n\nCPU: 0 PID: 5058 Comm: syz-executor184 Not tainted 6.7.0-syzkaller-09928-g052d",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-05-01",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/897761d16564e899faecb9381b4818858705081f",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-27409",
-    "title": "dmaengine: dw-edma: HDMA: Add sync read before starting the DMA transfer in remote setup",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\ndmaengine: dw-edma: HDMA: Add sync read before starting the DMA transfer in remote setup\n\nThe Linked list element and pointer are not stored in the same memory as\nthe HDMA controller register. If the doorbell register is toggled before\nthe full write of the linked list a race condition error will occur.\nIn remote setup we can onl",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-05-17",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/227ef58a9b0c372efba422e8886a8015a1509eba",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-35793",
-    "title": "debugfs: fix wait/cancellation handling during remove",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\ndebugfs: fix wait/cancellation handling during remove\n\nBen Greear further reports deadlocks during concurrent debugfs\nremove while files are being accessed, even though the code in\nquestion now uses debugfs cancellations. Turns out that despite\nall the review on the locking, we missed completely that the\nlogic is wrong: if the re",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-05-17",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/e88b5ae01901c4a655a53158397746334778a57b",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-35861",
-    "title": "smb: client: fix potential UAF in cifs_signal_cifsd_for_reconnect()",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: fix potential UAF in cifs_signal_cifsd_for_reconnect()\n\nSkip sessions that are being teared down (status == SES_EXITING) to\navoid UAF.",
-    "cvss": 9.8,
-    "severity": "CRITICAL",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-05-19",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/7e8360ac8774e19b0b25f44fff84a105bb2417e4",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-35874",
-    "title": "aio: Fix null ptr deref in aio_complete() wakeup",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\naio: Fix null ptr deref in aio_complete() wakeup\n\nlist_del_init_careful() needs to be the last access to the wait queue\nentry - it effectively unlocks access.\n\nPreviously, finish_wait() would see the empty list head and skip taking\nthe lock, and then we'd return - but the completion path would still\nattempt to do the wakeup after",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-05-19",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/9678bcc6234d83759fe091c197f5017a32b468da",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-35882",
-    "title": "SUNRPC: Fix a slow server-side memory leak with RPC-over-TCP",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nSUNRPC: Fix a slow server-side memory leak with RPC-over-TCP\n\nJan Schunk reports that his small NFS servers suffer from memory\nexhaustion after just a few days. A bisect shows that commit\ne18e157bb5c8 (\"SUNRPC: Send RPC message on TCP with a single\nsock_sendmsg() call\") is the first bad commit.\n\nThat commit assumed that sock_send",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-05-19",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/1ba1291172f935e6b6fe703161a948f3347400b8",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-35905",
-    "title": "bpf: Protect against int overflow for stack access size",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nbpf: Protect against int overflow for stack access size\n\nThis patch re-introduces protection against the size of access to stack\nmemory being negative; the access size can appear negative as a result\nof overflowing its signed int representation. This should not actually\nhappen, as there are other protections along the way, but we",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-05-19",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/9970e059af471478455f9534e8c3db82f8c5496d",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-35939",
-    "title": "dma-direct: Leak pages on dma_set_decrypted() failure",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\ndma-direct: Leak pages on dma_set_decrypted() failure\n\nOn TDX it is possible for the untrusted host to cause\nset_memory_encrypted() or set_memory_decrypted() to fail such that an\nerror is returned and the resulting memory is shared. Callers need to\ntake care to handle these errors to avoid returning decrypted (shared)\nmemory to t",
-    "cvss": 9.3,
-    "severity": "CRITICAL",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-05-19",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/4e0cfb25d49da2e6261ad582f58ffa5b5dd8c8e9",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-36890",
-    "title": "mm/slab: make __free(kfree) accept error pointers",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nmm/slab: make __free(kfree) accept error pointers\n\nCurrently, if an automatically freed allocation is an error pointer that\nwill lead to a crash.  An example of this is in wm831x_gpio_dbg_show().\n\n   171\tchar *label __free(kfree) = gpiochip_dup_line_label(chip, i);\n   172\tif (IS_ERR(label)) {\n   173\t\tdev_err(wm831x->dev, \"Failed ",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-05-30",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/edca32f87329d6e341d2143a3b58ec254e8f6b88",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-36933",
-    "title": "nsh: Restore skb->{protocol,data,mac_header} for outer header in nsh_gso_segment().",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nnsh: Restore skb->{protocol,data,mac_header} for outer header in nsh_gso_segment().\n\nsyzbot triggered various splats (see [0] and links) by a crafted GSO\npacket of VIRTIO_NET_HDR_GSO_UDP layering the following protocols:\n\n  ETH_P_8021AD + ETH_P_NSH + ETH_P_IPV6 + IPPROTO_UDP\n\nNSH can encapsulate IPv4, IPv6, Ethernet, NSH, and MPL",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-05-30",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/a7c2c3c1caabcb4a3d6c47284c397507aaf54fe9",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-36961",
-    "title": "thermal/debugfs: Fix two locking issues with thermal zone debug",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nthermal/debugfs: Fix two locking issues with thermal zone debug\n\nWith the current thermal zone locking arrangement in the debugfs code,\nuser space can open the \"mitigations\" file for a thermal zone before\nthe zone's debugfs pointer is set which will result in a NULL pointer\ndereference in tze_seq_start().\n\nMoreover, thermal_debug",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-06-03",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/6c57bdd0505422d5ccd2df541d993aec978c842e",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-38620",
-    "title": "Bluetooth: HCI: Remove HCI_AMP support",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: HCI: Remove HCI_AMP support\n\nSince BT_HS has been remove HCI_AMP controllers no longer has any use so\nremove it along with the capability of creating AMP controllers.\n\nSince we no longer need to differentiate between AMP and Primary\ncontrollers, as only HCI_PRIMARY is left, this also remove\nhdev->dev_type altogether.",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-06-20",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/5af2e235b0d5b797e9531a00c50058319130e156",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-39293",
-    "title": "Revert \"xsk: Support redirect to any socket bound to the same umem\"",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nRevert \"xsk: Support redirect to any socket bound to the same umem\"\n\nThis reverts commit 2863d665ea41282379f108e4da6c8a2366ba66db.\n\nThis patch introduced a potential kernel crash when multiple napi instances\nredirect to the same AF_XDP socket. By removing the queue_index check, it is\npossible for multiple napi instances to access",
-    "cvss": 9.8,
-    "severity": "CRITICAL",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-06-25",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/19cb40b1064566ea09538289bfcf5bc7ecb9b6f5",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-40910",
-    "title": "ax25: Fix refcount imbalance on inbound connections",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nax25: Fix refcount imbalance on inbound connections\n\nWhen releasing a socket in ax25_release(), we call netdev_put() to\ndecrease the refcount on the associated ax.25 device. However, the\nexecution path for accepting an incoming connection never calls\nnetdev_hold(). This imbalance leads to refcount errors, and ultimately\nto kernel",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-07-12",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/f4df9d6c8d4e4c818252b0419c2165d66eabd4eb",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-40943",
-    "title": "ocfs2: fix races between hole punching and AIO+DIO",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nocfs2: fix races between hole punching and AIO+DIO\n\nAfter commit \"ocfs2: return real error code in ocfs2_dio_wr_get_block\",\nfstests/generic/300 become from always failed to sometimes failed:\n\n========================================================================\n[  473.293420 ] run fstests generic/300\n\n[  475.296983 ] JBD2: Ign",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-07-12",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/3c26b5d21b1239e9c7fd31ba7d9b2d7bdbaa68d9",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-40957",
-    "title": "seg6: fix parameter passing when calling NF_HOOK() in End.DX4 and End.DX6 behaviors",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nseg6: fix parameter passing when calling NF_HOOK() in End.DX4 and End.DX6 behaviors\n\ninput_action_end_dx4() and input_action_end_dx6() are called NF_HOOK() for\nPREROUTING hook, in PREROUTING hook, we should passing a valid indev,\nand a NULL outdev to NF_HOOK(), otherwise may trigger a NULL pointer\ndereference, as below:\n\n    [748",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-07-12",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/af90e3d73dc45778767b2fb6e7edd57ebe34380d",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-41016",
-    "title": "ocfs2: strict bound check before memcmp in ocfs2_xattr_find_entry()",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nocfs2: strict bound check before memcmp in ocfs2_xattr_find_entry()\n\nxattr in ocfs2 maybe 'non-indexed', which saved with additional space\nrequested.  It's better to check if the memory is out of bound before\nmemcmp, although this possibility mainly comes from crafted poisonous\nimages.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-07-29",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/e2b3d7a9d019d4d1a0da6c3ea64a1ff79c99c090",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-41019",
-    "title": "fs/ntfs3: Validate ff offset",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nfs/ntfs3: Validate ff offset\n\nThis adds sanity checks for ff offset. There is a check\non rt->first_free at first, but walking through by ff\nwithout any check. If the second ff is a large offset.\nWe may encounter an out-of-bound read.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-07-29",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/35652dfa8cc9a8a900ec0f1e0395781f94ffc5f0",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-41026",
-    "title": "mmc: davinci_mmc: Prevent transmitted data size from exceeding sgm's length",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nmmc: davinci_mmc: Prevent transmitted data size from exceeding sgm's length\n\nNo check is done on the size of the data to be transmiited. This causes\na kernel panic when this size exceeds the sg_miter's length.\n\nLimit the number of transmitted bytes to sgm->length.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-07-29",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/c561c4ecce712f94b442db5960e281f13b28df2e",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-41040",
-    "title": "net/sched: Fix UAF when resolving a clash",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/sched: Fix UAF when resolving a clash\n\nKASAN reports the following UAF:\n\n BUG: KASAN: slab-use-after-free in tcf_ct_flow_table_process_conn+0x12b/0x380 [act_ct]\n Read of size 1 at addr ffff888c07603600 by task handler130/6469\n\n Call Trace:\n  <IRQ>\n  dump_stack_lvl+0x48/0x70\n  print_address_description.constprop.0+0x33/0x3d0\n ",
-    "cvss": 9.8,
-    "severity": "CRITICAL",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-07-29",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/b81a523d54ea689414f67c9fb81a5b917a41ed55",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-41049",
-    "title": "filelock: fix potential use-after-free in posix_lock_inode",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nfilelock: fix potential use-after-free in posix_lock_inode\n\nLight Hsieh reported a KASAN UAF warning in trace_posix_lock_inode().\nThe request pointer had been changed earlier to point to a lock entry\nthat was added to the inode's list. However, before the tracepoint could\nfire, another task raced in and freed that lock.\n\nFix this",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-07-29",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/1cbbb3d9475c403ebedc327490c7c2b991398197",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-41090",
-    "title": "tap: add missing verification for short frame",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\ntap: add missing verification for short frame\n\nThe cited commit missed to check against the validity of the frame length\nin the tap_get_user_xdp() path, which could cause a corrupted skb to be\nsent downstack. Even before the skb is transmitted, the\ntap_get_user_xdp()-->skb_set_network_header() may assume the size is more\nthan ETH",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-07-29",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/8be915fc5ff9a5e296f6538be12ea75a1a93bdea",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-42068",
-    "title": "bpf: Take return from set_memory_ro() into account with bpf_prog_lock_ro()",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nbpf: Take return from set_memory_ro() into account with bpf_prog_lock_ro()\n\nset_memory_ro() can fail, leaving memory unprotected.\n\nCheck its return and take it into account as an error.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-07-29",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/a359696856ca9409fb97655c5a8ef0f549cb6e03",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-42071",
-    "title": "ionic: use dev_consume_skb_any outside of napi",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nionic: use dev_consume_skb_any outside of napi\n\nIf we're not in a NAPI softirq context, we need to be careful\nabout how we call napi_consume_skb(), specifically we need to\ncall it with budget==0 to signal to it that we're not in a\nsafe context.\n\nThis was found while running some configuration stress testing\nof traffic and a chang",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-07-29",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/ef7646ed49fff962e97b276f4ab91327a67eeb5a",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-42111",
-    "title": "btrfs: always do the basic checks for btrfs_qgroup_inherit structure",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nbtrfs: always do the basic checks for btrfs_qgroup_inherit structure\n\n[BUG]\nSyzbot reports the following regression detected by KASAN:\n\n  BUG: KASAN: slab-out-of-bounds in btrfs_qgroup_inherit+0x42e/0x2e20 fs/btrfs/qgroup.c:3277\n  Read of size 8 at addr ffff88814628ca50 by task syz-executor318/5171\n\n  CPU: 0 PID: 5171 Comm: syz-e",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-07-30",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/ebe5ea02577b2c527958af1b76ac472c7ab53a56",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-42132",
-    "title": "bluetooth/hci: disallow setting handle bigger than HCI_CONN_HANDLE_MAX",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nbluetooth/hci: disallow setting handle bigger than HCI_CONN_HANDLE_MAX\n\nSyzbot hit warning in hci_conn_del() caused by freeing handle that was\nnot allocated using ida allocator.\n\nThis is caused by handle bigger than HCI_CONN_HANDLE_MAX passed by\nhci_le_big_sync_established_evt(), which makes code think it's unset\nconnection.\n\nAdd",
-    "cvss": 7.6,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-07-30",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/2ae8d7742a09c275872e670c53337b3dcedaa11c",
     "source": "CISA Vulnrichment"
   }
 ]
