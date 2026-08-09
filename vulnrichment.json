@@ -1,5 +1,589 @@
 [
   {
+    "cve": "CVE-2025-2786",
+    "title": "Tempo-operator: serviceaccount token exposure leading to token and subject access reviews in openshift tempo operator",
+    "desc": "A flaw was found in Tempo Operator, where it creates a ServiceAccount, ClusterRole, and ClusterRoleBinding when a user deploys a TempoStack or TempoMonolithic instance. This flaw allows a user with full access to their namespace to extract the ServiceAccount token and use it to submit TokenReview and SubjectAccessReview requests, potentially revealing information about other users' permissions. Wh",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-200"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3.5.2"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3.5.2"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-04-02",
+    "updated": "2026-08-09",
+    "url": "https://access.redhat.com/errata/RHSA-2025:3607",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-2842",
+    "title": "Tempo-operator: tempo operator token exposition lead to read sensitive data",
+    "desc": "A flaw was found in the Tempo Operator. When the Jaeger UI Monitor Tab functionality is enabled in a Tempo instance managed by the Tempo Operator, the Operator creates a ClusterRoleBinding for the Service Account of the Tempo instance to grant the cluster-monitoring-view ClusterRole.\nThis can be exploited if a user has 'create' permissions on TempoStack and 'get' permissions on Secret in a namespa",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-200"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3.5.2"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3.5.2"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-04-02",
+    "updated": "2026-08-09",
+    "url": "https://access.redhat.com/errata/RHSA-2025:3607",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-4373",
+    "title": "Glib: buffer underflow on glib through glib/gstring.c via function g_string_insert_unichar",
+    "desc": "A flaw was found in GLib, which is vulnerable to an integer overflow in the g_string_insert_unichar() function. When the position at which to insert the character is large, the position will overflow, leading to a buffer underwrite.",
+    "cvss": 4.8,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-124"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.2 Advanced Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-05-06",
+    "updated": "2026-08-09",
+    "url": "https://access.redhat.com/errata/RHSA-2025:10855",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-19193",
+    "title": "Jiangmin Antivirus Minifilter Port kvcore.sys MessageNotifyCallback access control",
+    "desc": "A flaw has been found in Jiangmin Antivirus 21. Impacted is the function MessageNotifyCallback in the library kvcore.sys of the component Minifilter Port. Executing a manipulation can lead to improper access controls. The attack needs to be launched locally. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-284",
+      "CWE-266"
+    ],
+    "affected": [
+      {
+        "vendor": "Jiangmin",
+        "product": "Antivirus"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-08-07",
+    "updated": "2026-08-09",
+    "url": "https://vuldb.com/vuln/386711",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-19195",
+    "title": "V-Secure Jingyun Antivirus Kernel Driver ZyArk.sys access control",
+    "desc": "A vulnerability has been found in V-Secure Jingyun Antivirus 2.4.2.39. The affected element is an unknown function in the library ZyArk.sys of the component Kernel Driver. The manipulation leads to improper access controls. The attack needs to be performed locally. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-284",
+      "CWE-266"
+    ],
+    "affected": [
+      {
+        "vendor": "V-Secure",
+        "product": "Jingyun Antivirus"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-08-07",
+    "updated": "2026-08-09",
+    "url": "https://vuldb.com/vuln/386712",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-11831",
+    "title": "Npm-serialize-javascript: cross-site scripting (xss) in serialize-javascript",
+    "desc": "A flaw was found in npm-serialize-javascript. The vulnerability occurs because the serialize-javascript module does not properly sanitize certain inputs, such as regex or other JavaScript object types, allowing an attacker to inject malicious code. This code could be executed when deserialized by a web browser, causing Cross-site scripting (XSS) attacks. This issue is critical in environments wher",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Advanced Cluster Security 4.4"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Advanced Cluster Security 4.5"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ceph Storage 7.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ceph Storage 8.1"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-02-10",
+    "updated": "2026-08-09",
+    "url": "https://access.redhat.com/errata/RHBA-2025:0304",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-45497",
+    "title": "Openshift-api: openshift-controller-manager/build: build process in openshift allows overwriting of node pull credentials",
+    "desc": "A flaw was found in the OpenShift build process, where the docker-build container is configured with a hostPath volume mount that maps the node's /var/lib/kubelet/config.json file into the build pod. This file contains sensitive credentials necessary for pulling images from private repositories. The mount is not read-only, which allows the attacker to overwrite it. By modifying the config.json fil",
+    "cvss": 7.6,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-732"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.12"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.13"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.16"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2024-12-31",
+    "updated": "2026-08-09",
+    "url": "https://access.redhat.com/errata/RHSA-2025:10270",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-5318",
+    "title": "Libssh: out-of-bounds read in sftp_handle()",
+    "desc": "A flaw was found in the libssh library in versions less than 0.11.2. An out-of-bounds read can be triggered in the sftp_handle function due to an incorrect comparison check that permits the function to access memory beyond the valid handle list and to return an invalid pointer, which is used in further processing. This vulnerability allows an authenticated remote attacker to potentially read unint",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-125"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-06-24",
+    "updated": "2026-08-09",
+    "url": "https://access.redhat.com/errata/RHSA-2025:18231",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-4878",
+    "title": "Libcap: libcap: privilege escalation via toctou race condition in cap_set_file()",
+    "desc": "A flaw was found in libcap. A local unprivileged user can exploit a Time-of-check-to-time-of-use (TOCTOU) race condition in the `cap_set_file()` function. This allows an attacker with write access to a parent directory to redirect file capability updates to an attacker-controlled file. By doing so, capabilities can be injected into or stripped from unintended executables, leading to privilege esca",
+    "cvss": 6.7,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-367"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-04-09",
+    "updated": "2026-08-09",
+    "url": "https://access.redhat.com/errata/RHSA-2026:12423",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-17107",
+    "title": "Cluster-proxy: cluster-proxy: impersonation header injection in service-proxy grants cluster-admin on every managed cluster",
+    "desc": "A flaw was found in the cluster-proxy service-proxy component used in Red Hat Advanced Cluster Management for Kubernetes (RHACM) and multicluster-engine (MCE). The service-proxy appends impersonation group headers to proxied requests without first removing caller-supplied values, and the spoke ServiceAccount holds unrestricted impersonation permissions. An authenticated hub principal can inject an",
+    "cvss": 8.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-441"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.11"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.6"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-24",
+    "updated": "2026-08-09",
+    "url": "https://access.redhat.com/errata/RHSA-2026:46885",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-1784",
+    "title": "Ose-cluster-ingress-operator: remote code execution through haproxy configuration injection",
+    "desc": "The Route OpenShift resource allows to define routes to make pods reachable at a subdomain through HAProxy. It was found that the checks performed on the spec.path YAML stanza in a Route document was insufficient and could allow a controlled injection of the HAProxy configuration.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-15"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.13"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.15"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.16"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.18"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-02",
+    "updated": "2026-08-09",
+    "url": "https://access.redhat.com/errata/RHSA-2026:23241",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-46579",
+    "title": "Openshift/router: openshift/router: mtls client certificate spoofing via unstripped x-ssl-client headers on http frontend",
+    "desc": "A flaw was found in the OpenShift Router. When a Route has `insecureEdgeTerminationPolicy` set to Allow, the HTTP frontend does not remove `X-SSL-Client-*` headers from incoming requests. This allows an unauthenticated attacker to send plain HTTP requests with crafted `X-SSL-Client-*` headers. As a result, backends relying on these headers for mutual TLS (Transport Layer Security) authentication c",
+    "cvss": 7.4,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-287"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.12"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.13"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.15"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.16"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-29",
+    "updated": "2026-08-09",
+    "url": "https://access.redhat.com/errata/RHSA-2026:27009",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-5278",
+    "title": "Coreutils: heap buffer under-read in gnu coreutils sort via key specification",
+    "desc": "A flaw was found in GNU Coreutils. The sort utility's begfield() function is vulnerable to a heap buffer under-read. The program may access memory outside the allocated buffer if a user runs a crafted command using the traditional key format. A malicious input could lead to a crash or leak sensitive data.",
+    "cvss": 4.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-121"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Cost Management 4"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Discovery 2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-05-27",
+    "updated": "2026-08-08",
+    "url": "https://access.redhat.com/errata/RHSA-2026:28911",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-5914",
+    "title": "Libarchive: double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c",
+    "desc": "A vulnerability has been identified in the libarchive library, specifically within the archive_read_format_rar_seek_data() function. This flaw involves an integer overflow that can ultimately lead to a double-free condition. Exploiting a double-free vulnerability can result in memory corruption, enabling an attacker to execute arbitrary code or cause a denial-of-service condition.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-190"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.2 Advanced Update Support"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-06-09",
+    "updated": "2026-08-08",
+    "url": "https://access.redhat.com/errata/RHSA-2025:14130",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-7425",
+    "title": "Libxslt: libxml2: heap use-after-free in libxslt caused by atype corruption in xmlattrptr",
+    "desc": "A flaw was found in libxslt where the attribute type, atype, flags are modified in a way that corrupts internal memory management. When XSLT functions, such as the key() process, result in tree fragments, this corruption prevents the proper cleanup of ID attributes. As a result, the system may access freed memory, causing crashes or enabling attackers to trigger heap corruption.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "GNOME",
+        "product": "libxml2"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-07-10",
+    "updated": "2026-08-08",
+    "url": "https://access.redhat.com/errata/RHBA-2025:12345",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-11803",
+    "title": "PDF File Parsing Out-of-Bounds Read Vulnerability in Autodesk Revit",
+    "desc": "A maliciously crafted PDF file, when parsed through Autodesk Revit, can force an Out-of-Bounds Read vulnerability. A malicious actor can leverage this vulnerability to cause a crash, read sensitive data, or execute arbitrary code in the context of the current process.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-125"
+    ],
+    "affected": [
+      {
+        "vendor": "Autodesk",
+        "product": "Revit"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-06",
+    "updated": "2026-08-08",
+    "url": "https://www.autodesk.com/trust/security-advisories/adsk-sa-2026-0011",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-11907",
+    "title": "Stream <= 4.2.0 - Missing Authorization to Authenticated (Subscriber+) Sensitive Information Disclosure via Heartbeat API",
+    "desc": "The Stream plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 4.2.0. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for authenticated attackers, with subscriber-level access and above, to access all Stream activity records via the Heartbeat API.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "xwp",
+        "product": "Stream – Activity Log & Audit Trail"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-07",
+    "updated": "2026-08-08",
+    "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/b7c7e45a-581e-4cf0-83ac-cbca816701f1?source=cve",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2026-16242",
     "title": "Hypershift: konnectivity proxy-server accepts agent connections without validating client certificates",
     "desc": "A flaw was found in the Konnectivity proxy-server configuration for hosted control planes. The agent-facing listener was started without --cluster-ca-cert (and without token-based agent authentication), so client certificates were not validated. A remote attacker who can reach the Konnectivity cluster endpoint could connect as an unauthenticated agent, join the routing pool, and potentially proxy,",
@@ -35,6 +619,221 @@
     "published": "2026-07-20",
     "updated": "2026-08-08",
     "url": "https://access.redhat.com/errata/RHSA-2026:46885",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-19144",
+    "title": "Use after free in HTML in Google Chrome prior to 151.0.7922.109 allowed a remote attacker to potentially exploit heap co",
+    "desc": "Use after free in HTML in Google Chrome prior to 151.0.7922.109 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Google",
+        "product": "Chrome"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-06",
+    "updated": "2026-08-08",
+    "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_01193673229.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-19147",
+    "title": "Use after free in Aura in Google Chrome on Linux prior to 151.0.7922.109 allowed a remote attacker who had compromised t",
+    "desc": "Use after free in Aura in Google Chrome on Linux prior to 151.0.7922.109 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
+    "cvss": 8.3,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Google",
+        "product": "Chrome"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-06",
+    "updated": "2026-08-08",
+    "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_01193673229.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-19173",
+    "title": "Out of bounds write in Skia in Google Chrome prior to 151.0.7922.109 allowed a remote attacker who had compromised the r",
+    "desc": "Out of bounds write in Skia in Google Chrome prior to 151.0.7922.109 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
+    "cvss": 8.3,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Google",
+        "product": "Chrome"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-06",
+    "updated": "2026-08-08",
+    "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_01193673229.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-19175",
+    "title": "Use after free in Payments in Google Chrome prior to 151.0.7922.109 allowed a remote attacker to potentially perform a s",
+    "desc": "Use after free in Payments in Google Chrome prior to 151.0.7922.109 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
+    "cvss": 9.6,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Google",
+        "product": "Chrome"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-06",
+    "updated": "2026-08-08",
+    "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_01193673229.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-1289",
+    "title": "PDF File Parsing Use-After-Free Vulnerability in Autodesk Revit",
+    "desc": "A maliciously crafted PDF file, when parsed through Autodesk Revit, can force a Use-After-Free vulnerability. A malicious actor can leverage this vulnerability to cause a crash, disclose sensitive data, or execute arbitrary code in the context of the current process.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "Autodesk",
+        "product": "Revit"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-06",
+    "updated": "2026-08-08",
+    "url": "https://www.autodesk.com/trust/security-advisories/adsk-sa-2026-0011",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-43632",
+    "title": "llama.cpp b7492–b9060 Use-After-Free in Tokenization Endpoints",
+    "desc": "llama.cpp builds b7492 through the latest b9060 contains a use-after-free vulnerability in llama-server affecting six tokenization endpoints (/tokenize, /detokenize, /infill, /apply-template, /rerank, and /anthropic/count_tokens) that bypass the task queue and access ctx_server.vocab directly on HTTP worker threads. Attackers can exploit a time-of-check-time-of-use race condition where the main th",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416",
+      "CWE-367"
+    ],
+    "affected": [
+      {
+        "vendor": "ggml-org",
+        "product": "llama.cpp"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-06",
+    "updated": "2026-08-08",
+    "url": "https://github.com/Vladimir-tokarev-cyera/llama-cpp-security-patches",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-56162",
+    "title": "Azure SQL Database Elevation of Privilege Vulnerability",
+    "desc": "",
+    "cvss": 10,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-287"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Azure SQL Database"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-06",
+    "updated": "2026-08-08",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56162",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-68772",
+    "title": "ZenML 0.94.6 Remote Code Execution via CloudpickleMaterializer",
+    "desc": "ZenML 0.94.6 contains a remote code execution vulnerability in the CloudpickleMaterializer component that allows attackers with write access to a shared artifact store to execute arbitrary code by planting a malicious pickle file. Attackers can replace a stored artifact.pkl file with a crafted cloudpickle payload containing a malicious __reduce__ method, which executes arbitrary system commands wh",
+    "cvss": 8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-502"
+    ],
+    "affected": [
+      {
+        "vendor": "ZenML",
+        "product": "ZenML"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-07",
+    "updated": "2026-08-08",
+    "url": "https://github.com/zenml-io/zenml/pull/5103",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-70631",
+    "title": "FFmpeg 0.5 < 9.0 Uninitialized Heap Memory Read in TIFF Decoder",
+    "desc": "FFmpeg versions from 0.5 up to, but not including, 9.0 contain an uninitialized heap memory disclosure vulnerability in the native TIFF decoder in libavcodec/tiff.c. An attacker who can cause FFmpeg to decode a crafted TIFF file can supply a valid Deflate-compressed strip that terminates successfully after producing fewer bytes than the declared strip requires. The tiff_unpack_zlib() function allo",
+    "cvss": 5.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-908"
+    ],
+    "affected": [
+      {
+        "vendor": "FFmpeg",
+        "product": "FFmpeg"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-06",
+    "updated": "2026-08-08",
+    "url": "https://code.ffmpeg.org/FFmpeg/FFmpeg/pulls/23899",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-9673",
+    "title": "Versions of the package json-2-csv from 3.15.0 and before 5.5.11 are vulnerable to CSV Injection via the preventCsvInjec",
+    "desc": "Versions of the package json-2-csv from 3.15.0 and before 5.5.11 are vulnerable to CSV Injection via the preventCsvInjection option which can be bypassed. An attacker can inject formulas into CSV files, which execute when the files are opened in spreadsheet applications.",
+    "cvss": 6.8,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "json-2-csv"
+      },
+      {
+        "vendor": "n/a",
+        "product": "org.webjars.npm:json-2-csv"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-28",
+    "updated": "2026-08-08",
+    "url": "https://security.snyk.io/vuln/SNYK-JS-JSON2CSV-14221326",
     "source": "CISA Vulnrichment"
   },
   {
@@ -118,44 +917,6 @@
     "published": "2024-10-08",
     "updated": "2026-08-08",
     "url": "https://access.redhat.com/errata/RHSA-2024:10035",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-5278",
-    "title": "Coreutils: heap buffer under-read in gnu coreutils sort via key specification",
-    "desc": "A flaw was found in GNU Coreutils. The sort utility's begfield() function is vulnerable to a heap buffer under-read. The program may access memory outside the allocated buffer if a user runs a crafted command using the traditional key format. A malicious input could lead to a crash or leak sensitive data.",
-    "cvss": 4.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-121"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Cost Management 4"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Discovery 2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-05-27",
-    "updated": "2026-08-08",
-    "url": "https://access.redhat.com/errata/RHSA-2026:28911",
     "source": "CISA Vulnrichment"
   },
   {
@@ -387,82 +1148,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2025-5914",
-    "title": "Libarchive: double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c",
-    "desc": "A vulnerability has been identified in the libarchive library, specifically within the archive_read_format_rar_seek_data() function. This flaw involves an integer overflow that can ultimately lead to a double-free condition. Exploiting a double-free vulnerability can result in memory corruption, enabling an attacker to execute arbitrary code or cause a denial-of-service condition.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-190"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8.2 Advanced Update Support"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2025-06-09",
-    "updated": "2026-08-08",
-    "url": "https://access.redhat.com/errata/RHSA-2025:14130",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-7425",
-    "title": "Libxslt: libxml2: heap use-after-free in libxslt caused by atype corruption in xmlattrptr",
-    "desc": "A flaw was found in libxslt where the attribute type, atype, flags are modified in a way that corrupts internal memory management. When XSLT functions, such as the key() process, result in tree fragments, this corruption prevents the proper cleanup of ID attributes. As a result, the system may access freed memory, causing crashes or enabling attackers to trigger heap corruption.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "GNOME",
-        "product": "libxml2"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2025-07-10",
-    "updated": "2026-08-08",
-    "url": "https://access.redhat.com/errata/RHBA-2025:12345",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2025-12758",
     "title": "Versions of the package validator before 13.15.22 are vulnerable to Incomplete Filtering of One or More Instances of Spe",
     "desc": "Versions of the package validator before 13.15.22 are vulnerable to Incomplete Filtering of One or More Instances of Special Elements in the isLength() function that does not take into account Unicode variation selectors (\\uFE0F, \\uFE0E) appearing in a sequence which lead to improper string length calculation. This can lead to an application using isLength for input validation accepting strings si",
@@ -504,44 +1189,6 @@
     "published": "2025-09-27",
     "updated": "2026-08-08",
     "url": "https://security.snyk.io/vuln/SNYK-JS-ALGOLIASEARCHHELPER-3318396",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17107",
-    "title": "Cluster-proxy: cluster-proxy: impersonation header injection in service-proxy grants cluster-admin on every managed cluster",
-    "desc": "A flaw was found in the cluster-proxy service-proxy component used in Red Hat Advanced Cluster Management for Kubernetes (RHACM) and multicluster-engine (MCE). The service-proxy appends impersonation group headers to proxied requests without first removing caller-supplied values, and the spoke ServiceAccount holds unrestricted impersonation permissions. An authenticated hub principal can inject an",
-    "cvss": 8.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-441"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.1"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.1"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.11"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.17"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.6"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-24",
-    "updated": "2026-08-08",
-    "url": "https://access.redhat.com/errata/RHSA-2026:46885",
     "source": "CISA Vulnrichment"
   },
   {
@@ -604,44 +1251,6 @@
     "published": "2026-03-23",
     "updated": "2026-08-08",
     "url": "https://security.snyk.io/vuln/SNYK-JS-JSRSASIGN-15371175",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-4878",
-    "title": "Libcap: libcap: privilege escalation via toctou race condition in cap_set_file()",
-    "desc": "A flaw was found in libcap. A local unprivileged user can exploit a Time-of-check-to-time-of-use (TOCTOU) race condition in the `cap_set_file()` function. This allows an attacker with write access to a parent directory to redirect file capability updates to an attacker-controlled file. By doing so, capabilities can be injected into or stripped from unintended executables, leading to privilege esca",
-    "cvss": 6.7,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-367"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-04-09",
-    "updated": "2026-08-08",
-    "url": "https://access.redhat.com/errata/RHSA-2026:12423",
     "source": "CISA Vulnrichment"
   },
   {
@@ -2428,49 +3037,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-19144",
-    "title": "Use after free in HTML in Google Chrome prior to 151.0.7922.109 allowed a remote attacker to potentially exploit heap co",
-    "desc": "Use after free in HTML in Google Chrome prior to 151.0.7922.109 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-06",
-    "updated": "2026-08-07",
-    "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_01193673229.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-43632",
-    "title": "llama.cpp b7492–b9060 Use-After-Free in Tokenization Endpoints",
-    "desc": "llama.cpp builds b7492 through the latest b9060 contains a use-after-free vulnerability in llama-server affecting six tokenization endpoints (/tokenize, /detokenize, /infill, /apply-template, /rerank, and /anthropic/count_tokens) that bypass the task queue and access ctx_server.vocab directly on HTTP worker threads. Attackers can exploit a time-of-check-time-of-use race condition where the main th",
-    "cvss": 8.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416",
-      "CWE-367"
-    ],
-    "affected": [
-      {
-        "vendor": "ggml-org",
-        "product": "llama.cpp"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-06",
-    "updated": "2026-08-07",
-    "url": "https://github.com/Vladimir-tokarev-cyera/llama-cpp-security-patches",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-50687",
     "title": "Windows Win32k Elevation of Privilege Vulnerability",
     "desc": "",
@@ -2794,30 +3360,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-9673",
-    "title": "Versions of the package json-2-csv from 3.15.0 and before 5.5.11 are vulnerable to CSV Injection via the preventCsvInjec",
-    "desc": "Versions of the package json-2-csv from 3.15.0 and before 5.5.11 are vulnerable to CSV Injection via the preventCsvInjection option which can be bypassed. An attacker can inject formulas into CSV files, which execute when the files are opened in spreadsheet applications.",
-    "cvss": 6.8,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "json-2-csv"
-      },
-      {
-        "vendor": "n/a",
-        "product": "org.webjars.npm:json-2-csv"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-05-28",
-    "updated": "2026-08-07",
-    "url": "https://security.snyk.io/vuln/SNYK-JS-JSON2CSV-14221326",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2022-2196",
     "title": "Speculative execution attacks in KVM VMX",
     "desc": "A regression exists in the Linux Kernel within KVM: nVMX that allowed for speculative execution attacks. L2 can carry out Spectre v2 attacks on L1 due to L1 thinking it doesn't need retpolines or IBPB after running L2 due to KVM (L0) advertising eIBRS support to L1. An attacker at L2 with code execution can execute code on an indirect branch on the host machine. We recommend upgrading to Kernel 6.",
@@ -2897,50 +3439,6 @@
     "published": "2026-08-05",
     "updated": "2026-08-07",
     "url": "https://empower.m-files.com/security-advisories/CVE-2026-0931",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-11803",
-    "title": "PDF File Parsing Out-of-Bounds Read Vulnerability in Autodesk Revit",
-    "desc": "A maliciously crafted PDF file, when parsed through Autodesk Revit, can force an Out-of-Bounds Read vulnerability. A malicious actor can leverage this vulnerability to cause a crash, read sensitive data, or execute arbitrary code in the context of the current process.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-125"
-    ],
-    "affected": [
-      {
-        "vendor": "Autodesk",
-        "product": "Revit"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-06",
-    "updated": "2026-08-07",
-    "url": "https://www.autodesk.com/trust/security-advisories/adsk-sa-2026-0011",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-11907",
-    "title": "Stream <= 4.2.0 - Missing Authorization to Authenticated (Subscriber+) Sensitive Information Disclosure via Heartbeat API",
-    "desc": "The Stream plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 4.2.0. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for authenticated attackers, with subscriber-level access and above, to access all Stream activity records via the Heartbeat API.",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "xwp",
-        "product": "Stream – Activity Log & Audit Trail"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-07",
-    "updated": "2026-08-07",
-    "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/b7c7e45a-581e-4cf0-83ac-cbca816701f1?source=cve",
     "source": "CISA Vulnrichment"
   },
   {
@@ -3229,26 +3727,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-19147",
-    "title": "Use after free in Aura in Google Chrome on Linux prior to 151.0.7922.109 allowed a remote attacker who had compromised t",
-    "desc": "Use after free in Aura in Google Chrome on Linux prior to 151.0.7922.109 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
-    "cvss": 8.3,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-06",
-    "updated": "2026-08-07",
-    "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_01193673229.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-19162",
     "title": "Out of bounds write in V8 in Google Chrome prior to 151.0.7922.109 allowed a remote attacker to execute arbitrary code i",
     "desc": "Out of bounds write in V8 in Google Chrome prior to 151.0.7922.109 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
@@ -3266,69 +3744,6 @@
     "published": "2026-08-06",
     "updated": "2026-08-07",
     "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_01193673229.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-19173",
-    "title": "Out of bounds write in Skia in Google Chrome prior to 151.0.7922.109 allowed a remote attacker who had compromised the r",
-    "desc": "Out of bounds write in Skia in Google Chrome prior to 151.0.7922.109 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
-    "cvss": 8.3,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-06",
-    "updated": "2026-08-07",
-    "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_01193673229.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-19175",
-    "title": "Use after free in Payments in Google Chrome prior to 151.0.7922.109 allowed a remote attacker to potentially perform a s",
-    "desc": "Use after free in Payments in Google Chrome prior to 151.0.7922.109 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
-    "cvss": 9.6,
-    "severity": "CRITICAL",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-06",
-    "updated": "2026-08-07",
-    "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_01193673229.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-19193",
-    "title": "Jiangmin Antivirus Minifilter Port kvcore.sys MessageNotifyCallback access control",
-    "desc": "A flaw has been found in Jiangmin Antivirus 21. Impacted is the function MessageNotifyCallback in the library kvcore.sys of the component Minifilter Port. Executing a manipulation can lead to improper access controls. The attack needs to be launched locally. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-284",
-      "CWE-266"
-    ],
-    "affected": [
-      {
-        "vendor": "Jiangmin",
-        "product": "Antivirus"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-08-07",
-    "updated": "2026-08-07",
-    "url": "https://vuldb.com/vuln/386711",
     "source": "CISA Vulnrichment"
   },
   {
@@ -3375,28 +3790,6 @@
     "published": "2026-08-07",
     "updated": "2026-08-07",
     "url": "https://vuldb.com/vuln/386954",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-1289",
-    "title": "PDF File Parsing Use-After-Free Vulnerability in Autodesk Revit",
-    "desc": "A maliciously crafted PDF file, when parsed through Autodesk Revit, can force a Use-After-Free vulnerability. A malicious actor can leverage this vulnerability to cause a crash, disclose sensitive data, or execute arbitrary code in the context of the current process.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Autodesk",
-        "product": "Revit"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-06",
-    "updated": "2026-08-07",
-    "url": "https://www.autodesk.com/trust/security-advisories/adsk-sa-2026-0011",
     "source": "CISA Vulnrichment"
   },
   {
@@ -7407,28 +7800,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-56162",
-    "title": "Azure SQL Database Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 10,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-287"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Azure SQL Database"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-06",
-    "updated": "2026-08-07",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56162",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-56164",
     "title": "Microsoft SharePoint Server Elevation of Privilege Vulnerability",
     "desc": "",
@@ -9555,50 +9926,6 @@
     "published": "2026-08-06",
     "updated": "2026-08-07",
     "url": "https://github.com/Caycon/cve-advisories/blob/main/2026/Flowise/CVE-2026-67622.md",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-68772",
-    "title": "ZenML 0.94.6 Remote Code Execution via CloudpickleMaterializer",
-    "desc": "ZenML 0.94.6 contains a remote code execution vulnerability in the CloudpickleMaterializer component that allows attackers with write access to a shared artifact store to execute arbitrary code by planting a malicious pickle file. Attackers can replace a stored artifact.pkl file with a crafted cloudpickle payload containing a malicious __reduce__ method, which executes arbitrary system commands wh",
-    "cvss": 8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-502"
-    ],
-    "affected": [
-      {
-        "vendor": "ZenML",
-        "product": "ZenML"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-07",
-    "updated": "2026-08-07",
-    "url": "https://github.com/zenml-io/zenml/pull/5103",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-70631",
-    "title": "FFmpeg 0.5 < 9.0 Uninitialized Heap Memory Read in TIFF Decoder",
-    "desc": "FFmpeg versions from 0.5 up to, but not including, 9.0 contain an uninitialized heap memory disclosure vulnerability in the native TIFF decoder in libavcodec/tiff.c. An attacker who can cause FFmpeg to decode a crafted TIFF file can supply a valid Deflate-compressed strip that terminates successfully after producing fewer bytes than the declared strip requires. The tiff_unpack_zlib() function allo",
-    "cvss": 5.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-908"
-    ],
-    "affected": [
-      {
-        "vendor": "FFmpeg",
-        "product": "FFmpeg"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-06",
-    "updated": "2026-08-07",
-    "url": "https://code.ffmpeg.org/FFmpeg/FFmpeg/pulls/23899",
     "source": "CISA Vulnrichment"
   },
   {
@@ -21182,29 +21509,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-19195",
-    "title": "V-Secure Jingyun Antivirus Kernel Driver ZyArk.sys access control",
-    "desc": "A vulnerability has been found in V-Secure Jingyun Antivirus 2.4.2.39. The affected element is an unknown function in the library ZyArk.sys of the component Kernel Driver. The manipulation leads to improper access controls. The attack needs to be performed locally. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-284",
-      "CWE-266"
-    ],
-    "affected": [
-      {
-        "vendor": "V-Secure",
-        "product": "Jingyun Antivirus"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-08-07",
-    "updated": "2026-08-07",
-    "url": "https://vuldb.com/vuln/386712",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-45415",
     "title": "Decidim: CSV census record endpoints improper authorization",
     "desc": "Decidim is a participatory democracy framework. Prior to 0.30.9, from 0.31.0 before 0.31.5, and in 0.32.0.rc1 before 0.32.0.rc2, the /admin/csv_census/census_logs record-management endpoints do not enforce full administrator authorization before rendering or mutating Decidim::Verifications::CsvDatum, allowing a participant manager to create, alter, or remove census records. This issue is fixed in ",
@@ -24090,44 +24394,6 @@
     "published": "2026-06-01",
     "updated": "2026-08-07",
     "url": "https://git.kernel.org/stable/c/7713bd320ed4fc3d08a227cd8e41242219a16981",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-46579",
-    "title": "Openshift/router: openshift/router: mtls client certificate spoofing via unstripped x-ssl-client headers on http frontend",
-    "desc": "A flaw was found in the OpenShift Router. When a Route has `insecureEdgeTerminationPolicy` set to Allow, the HTTP frontend does not remove `X-SSL-Client-*` headers from incoming requests. This allows an unauthenticated attacker to send plain HTTP requests with crafted `X-SSL-Client-*` headers. As a result, backends relying on these headers for mutual TLS (Transport Layer Security) authentication c",
-    "cvss": 7.4,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-287"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.12"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.13"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.14"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.15"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.16"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-05-29",
-    "updated": "2026-08-07",
-    "url": "https://access.redhat.com/errata/RHSA-2026:27009",
     "source": "CISA Vulnrichment"
   },
   {
@@ -28016,174 +28282,6 @@
     "published": "2025-09-16",
     "updated": "2026-08-05",
     "url": "https://git.kernel.org/stable/c/ffdf2b020db717853167391a3a8d912e13428fa6",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2023-53372",
-    "title": "sctp: fix a potential overflow in sctp_ifwdtsn_skip",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nsctp: fix a potential overflow in sctp_ifwdtsn_skip\n\nCurrently, when traversing ifwdtsn skips with _sctp_walk_ifwdtsn, it only\nchecks the pos against the end of the chunk. However, the data left for\nthe last pos may be < sizeof(struct sctp_ifwdtsn_skip), and dereference\nit as struct sctp_ifwdtsn_skip may cause coverflow.\n\nThis pa",
-    "cvss": 8.2,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-09-18",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/4fbd094d4131a10d06a45d64158567052a35b3f4",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2023-53376",
-    "title": "scsi: mpi3mr: Use number of bits to manage bitmap sizes",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nscsi: mpi3mr: Use number of bits to manage bitmap sizes\n\nTo allocate bitmaps, the mpi3mr driver calculates sizes of bitmaps using\nbyte as unit. However, bitmap helper functions assume that bitmaps are\nallocated using unsigned long as unit. This gap causes memory access beyond\nthe bitmap sizes and results in \"BUG: KASAN: slab-out-",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-09-18",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/6a675a6d57d31da43d8da576465c1cd5d5b0bd3d",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2023-53429",
-    "title": "btrfs: don't check PageError in __extent_writepage",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nbtrfs: don't check PageError in __extent_writepage\n\n__extent_writepage currenly sets PageError whenever any error happens,\nand the also checks for PageError to decide if to call error handling.\nThis leads to very unclear responsibility for cleaning up on errors.\nIn the VM and generic writeback helpers the basic idea is that once\n",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-09-18",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/d40be032ecd8ee1ca033bee43c7755d21fb4d72a",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-26660",
-    "title": "drm/amd/display: Implement bounds check for stream encoder creation in DCN301",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amd/display: Implement bounds check for stream encoder creation in DCN301\n\n'stream_enc_regs' array is an array of dcn10_stream_enc_registers\nstructures. The array is initialized with four elements, corresponding\nto the four calls to stream_enc_regs() in the array initializer. This\nmeans that valid indices for this array are 0",
-    "cvss": 7,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-04-02",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/42442f74314d41ddc68227047036fa3e78940054",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-26748",
-    "title": "usb: cdns3: fix memory double free when handle zero packet",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nusb: cdns3: fix memory double free when handle zero packet\n\n829  if (request->complete) {\n830          spin_unlock(&priv_dev->lock);\n831          usb_gadget_giveback_request(&priv_ep->endpoint,\n832                                    request);\n833          spin_lock(&priv_dev->lock);\n834  }\n835\n836  if (request->buf == priv_dev->z",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-04-03",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/aad6132ae6e4809e375431f8defd1521985e44e7",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-26759",
-    "title": "mm/swap: fix race when skipping swapcache",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nmm/swap: fix race when skipping swapcache\n\nWhen skipping swapcache for SWP_SYNCHRONOUS_IO, if two or more threads\nswapin the same entry at the same time, they get different pages (A, B). \nBefore one thread (T0) finishes the swapin and installs page (A) to the\nPTE, another thread (T1) could finish swapin of page (B), swap_free the",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-04-03",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/2dedda77d4493f3e92e414b272bfa60f1f51ed95",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-26804",
-    "title": "net: ip_tunnel: prevent perpetual headroom growth",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: ip_tunnel: prevent perpetual headroom growth\n\nsyzkaller triggered following kasan splat:\nBUG: KASAN: use-after-free in __skb_flow_dissect+0x19d1/0x7a50 net/core/flow_dissector.c:1170\nRead of size 1 at addr ffff88812fb4000e by task syz-executor183/5191\n[..]\n kasan_report+0xda/0x110 mm/kasan/report.c:588\n __skb_flow_dissect+0x",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-04-04",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/f81e94d2dcd2397137edcb8b85f4c5bed5d22383",
     "source": "CISA Vulnrichment"
   }
 ]
