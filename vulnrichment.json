@@ -1,24 +1,443 @@
 [
   {
-    "cve": "CVE-2024-14041",
-    "title": "ML-KEM (Kyber) decapsulation leaks private key information through non-constant-time division in message decoding and ciphertext compression (KyberSlash)",
-    "desc": "In Bouncy Castle for Java from 1.73 to before 1.78, three ML-KEM (CRYSTALS-Kyber) routines divided secret-derived polynomial coefficients by the modulus q: Poly.toMsg, which decodes the decrypted message, and the ciphertext compression routines Poly.compressPoly and PolyVec.compressPolyVec. An attacker able to measure the timing of a large number of decapsulations performed with the same long-term",
-    "cvss": null,
-    "severity": "",
+    "cve": "CVE-2026-66411",
+    "title": "DEEBOT PRO M1 and DEEBOT PRO K1VAC incorrectly implement authentication algorithm in Websocket communications.\r\nAn unaut",
+    "desc": "DEEBOT PRO M1 and DEEBOT PRO K1VAC incorrectly implement authentication algorithm in Websocket communications.\r\nAn unauthenticated attacker may connect and operate the affected robot.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
     "cwes": [
-      "CWE-208"
+      "CWE-303"
     ],
     "affected": [
       {
-        "vendor": "Legion of the Bouncy Castle Inc.",
-        "product": "BC-JAVA"
+        "vendor": "ECOVACS ROBOTICS",
+        "product": "DEEBOT PRO M1"
+      },
+      {
+        "vendor": "ECOVACS ROBOTICS",
+        "product": "DEEBOT PRO K1VAC"
       }
     ],
     "exploitation": "none",
     "isKev": false,
-    "published": "2026-07-28",
-    "updated": "2026-08-09",
-    "url": "https://github.com/bcgit/bc-java/wiki/CVE-2024-14041",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "url": "https://robot.hellohas.co.jp/news/update_20260331/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-66484",
+    "title": "Path Traversal in GNU cpio",
+    "desc": "GNU cpio contains a Path Traversal vulnerability in its tar archive extraction functionality. When extracting a tar archive in copy-in mode with the --no-absolute-filenames option, the extracted file name is normalized but the tar hard-link target is passed to the link_to_name function without equivalent sanitization before calling link function. A tar archive provided by an attacker, containing a",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "GNU",
+        "product": "cpio"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "url": "https://cert.pl/en/posts/2026/08/CVE-2026-66484",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-66485",
+    "title": "Uncontrolled Memory Allocation in GNU cpio",
+    "desc": "GNU cpio is vulnerable to an uncontrolled memory allocation in the make_path function at src/makepath.c. The function uses alloca to allocate stack memory based on the length of argpath, which is derived from an archive-controlled pathname during extraction. A malicious cpio archive containing a sufficiently long nested pathname causes an unbounded stack allocation, resulting in a stack overflow a",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-789"
+    ],
+    "affected": [
+      {
+        "vendor": "GNU",
+        "product": "cpio"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "url": "https://cert.pl/en/posts/2026/08/CVE-2026-66484",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-66486",
+    "title": "Improper Output Encoding in GNU cpio",
+    "desc": "GNU cpio is vulnerable to improper encoding or escaping of output in its archive member listing functionality. When listing archive members via cpio -it, member names are printed directly to output without quoting or escaping. An attacker can craft a cpio archive containing member names with embedded newline characters or ANSI escape sequences, causing forged listing entries or terminal control se",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-116"
+    ],
+    "affected": [
+      {
+        "vendor": "GNU",
+        "product": "cpio"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "url": "https://cert.pl/en/posts/2026/08/CVE-2026-66484",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-66642",
+    "title": "WordPress WP Umbrella plugin <= 2.26.2 - Cross Site Request Forgery (CSRF) vulnerability",
+    "desc": "Cross-Site Request Forgery (CSRF) vulnerability in WP Umbrella allows Cross Site Request Forgery.\n\nThis issue affects WP Umbrella: from n/a through 2.26.2.",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-352"
+    ],
+    "affected": [
+      {
+        "vendor": "WP Umbrella",
+        "product": "WP Umbrella"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "url": "https://patchstack.com/database/wordpress/plugin/wp-health/vulnerability/wordpress-wp-umbrella-plugin-2-26-2-cross-site-request-forgery-csrf-vulnerability?_s_id=cve",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-66915",
+    "title": "Joomla Extension - fabrikar.com - Unauthenticated remote code execution in Fabrik < 4.6.7",
+    "desc": "Joomla Extension - fabrikar.com - Remote code execution in Fabrik < 4.6.7 - An unauthenticated attacker could execute arbitrary code by using the ajax_calc feature of the calc plugin.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-94"
+    ],
+    "affected": [
+      {
+        "vendor": "fabrikar.com",
+        "product": "Fabrik extension for Joomla"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "url": "https://www.fabrikar.com/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-14164",
+    "title": "Libarchive: double-free vulnerability in rar5 decompression logic via dangling filtered_buf pointer in init_unpack()",
+    "desc": "A double free issue has been identified in libarchive's RAR5 reader. During parsing of a specially crafted RAR5 archive, the filtered_buf pointer may remain stale after being freed during unpacking state reinitialization. Subsequent processing of another archive entry can trigger a second free of the same memory region, resulting in a double-free condition. Successful exploitation may cause applic",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-415"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Hardened Images"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-06-30",
+    "updated": "2026-08-10",
+    "url": "https://access.redhat.com/errata/RHSA-2026:30333",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-65876",
+    "title": "Joomla Extension - joomshaper.com - Unauthenticated SQL injection  in SP Page Builder < 6.7.1",
+    "desc": "Joomla Extension - joomshaper.com - Unauthenticated SQL injection  in SP Page Builder < 6.7.1 - Improper validation of catid parameters in the loadMoreArticles endpoint leads to an SQL injection vector.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-89"
+    ],
+    "affected": [
+      {
+        "vendor": "joomshaper.com",
+        "product": "SP Page Builder extension for Joomla"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-27",
+    "updated": "2026-08-10",
+    "url": "https://www.joomshaper.com/page-builder",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-66491",
+    "title": "Joomla Extension - phoca.cz - Arbitrary File Read in Phoca Commander 1.0.0-6.1.3",
+    "desc": "Joomla Extension - phoca.cz - Arbitrary File Read in Phoca Commander 1.0.0-6.1.3 - Improper limitation of paths in the getSource function lead to an arbitrary file read vulnerability.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "phoca.cz",
+        "product": "Phoca Commander extension for Joomla"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-07",
+    "updated": "2026-08-10",
+    "url": "https://www.phoca.cz/phocacommander",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-66492",
+    "title": "Joomla Extension - phoca.cz - Path Traversal vulnerability in Phoca Commander 1.0.0-6.1.3",
+    "desc": "Joomla Extension - phoca.cz - Path Traversal vulnerability in Phoca Commander 1.0.0-6.1.3 - Improper limitation of paths in the file upload action lead to path a traversal vulnerability.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "phoca.cz",
+        "product": "Phoca Commander extension for Joomla"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-07",
+    "updated": "2026-08-10",
+    "url": "https://www.phoca.cz/phocacommander",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-66493",
+    "title": "Joomla Extension - phoca.cz - Path traversal vulnerability in Phoca Commander 1.0.0-6.1.3",
+    "desc": "Joomla Extension - phoca.cz - Path Traversal vulnerability in Phoca Commander 1.0.0-6.1.3 - Improper limitation of paths for delete, copy and move actions lead to path traversal vulnerabilities.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "phoca.cz",
+        "product": "Phoca Commander extension for Joomla"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-07",
+    "updated": "2026-08-10",
+    "url": "https://www.phoca.cz/phocacommander",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-66494",
+    "title": "Joomla Extension - joomshaper.com - Unauthenticated stored XSS in Shapes API endpoint SP Page Builder < 6.7.0",
+    "desc": "Joomla Extension - joomshaper.com - Unauthenticated stored XSS in Shapes API endpoint SP Page Builder < 6.7.0 - An unauthenticated attacker can store malicious JavaScript in a Joomla site's database via a single HTTP request. When an administrator opens the SP Page Builder editor, the JavaScript executes in their browser automatically..",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-284",
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "joomshaper.com",
+        "product": "SP Page Builder extension for Joomla"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-07",
+    "updated": "2026-08-10",
+    "url": "https://www.joomshaper.com/page-builder",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-66914",
+    "title": "Joomla Extension - seblod.com - Unauthenticated path traversal in SEBLOD < 3.30.0, < 4.7.0, < 6.0.1",
+    "desc": "Joomla Extension - seblod.com - Unauthenticated path traversal in SEBLOD < 3.30.0, < 4.7.0, < 6.0.1 - An unauthenticated attacker could download files from both inside and outside the webroot.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "seblod.com",
+        "product": "SEBLOD extension for Joomla"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-07",
+    "updated": "2026-08-10",
+    "url": "https://www.seblod.com/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-71227",
+    "title": "Libkcapi: infinite loop denial of service in libkcapi _kcapi_aio_read_all() due to unhandled io_getevents() timeout return",
+    "desc": "A flaw was found in libkcapi. A local attacker can influence an application that uses the Asynchronous Input/Output (AIO) interface. By reusing an AIO-enabled handle after a prior completion error, the _kcapi_aio_read_all() function can enter a non-terminating wait loop. This can lead to a persistent denial of service, making the affected application or thread unresponsive.",
+    "cvss": 5.1,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-835"
+    ],
+    "affected": [
+      {
+        "vendor": "Stephan Muelle",
+        "product": "libkcapi"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Hardened Images"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-05",
+    "updated": "2026-08-10",
+    "url": "https://access.redhat.com/security/cve/CVE-2026-71227",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-14226",
+    "title": "Easy Appointments < 3.12.28 - Subscriber+ Sensitive Information Disclosure via REST Appointments Listing",
+    "desc": "The Easy Appointments WordPress plugin before 3.12.28 does not require a sufficient capability on one of its appointment-listing REST endpoints, restricting it only to a capability that every authenticated user holds, allowing users with subscriber-level access to read all bookings on the site, including customer names, schedules, and statuses.",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Easy Appointments"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-30",
+    "updated": "2026-08-10",
+    "url": "https://wpscan.com/vulnerability/fa201b6f-af45-4ce9-aa3b-3688ae556965/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-71225",
+    "title": "Libkcapi: iv reuse in libkcapi one-shot symmetric cipher chunking causes cipher state reset across chunk boundaries",
+    "desc": "A flaw was found in libkcapi. When performing one-shot symmetric cipher operations on large inputs (over 64 KiB) in stateful modes such as Counter (CTR) or Cipher Block Chaining (CBC), the library improperly reuses the Initialization Vector (IV) for each internal data chunk. A remote attacker could potentially exploit this by making an application that uses libkcapi process specially crafted large",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-330"
+    ],
+    "affected": [
+      {
+        "vendor": "Stephan Muelle",
+        "product": "libkcapi"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Hardened Images"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-05",
+    "updated": "2026-08-10",
+    "url": "https://access.redhat.com/security/cve/CVE-2026-71225",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-71226",
+    "title": "Libkcapi: memory corruption via uncanceled aio requests on error in libkcapi's one-shot aio path",
+    "desc": "Memory Corruption via Uncanceled AIO Requests on Error: libkcapi's one-shot AIO path can return an error before all submitted IOCBs are drained, allowing later kernel writes into caller-owned output buffers.",
+    "cvss": 7.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "Stephan Muelle",
+        "product": "libkcapi"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Hardened Images"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-05",
+    "updated": "2026-08-10",
+    "url": "https://access.redhat.com/security/cve/CVE-2026-71226",
     "source": "CISA Vulnrichment"
   },
   {
@@ -55,8 +474,302 @@
     "exploitation": "none",
     "isKev": false,
     "published": "2026-02-27",
-    "updated": "2026-08-09",
+    "updated": "2026-08-10",
     "url": "https://access.redhat.com/errata/RHSA-2025:21370",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-3087",
+    "title": "shutil.unpack_archive() doesn't check for Windows absolute paths in ZIPs",
+    "desc": "If `shutil.unpack_archive()` is given a ZIP archive with an absolute Windows path containing a drive (`C:\\\\...`) then the archive will be extracted outside the target directory which is different than other operating systems. Only Windows is affected by this vulnerability.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "Python Software Foundation",
+        "product": "CPython"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-04-27",
+    "updated": "2026-08-10",
+    "url": "https://github.com/python/cpython/pull/146591",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-3298",
+    "title": "Out-of-bounds write in Windows asyncio.ProacterEventLoop.sock_recvfrom_into() when using nbytes",
+    "desc": "The method \"sock_recvfrom_into()\" of \"asyncio.ProacterEventLoop\" (Windows only) was missing a boundary check for the data buffer when using nbytes parameter. This allowed for an out-of-bounds buffer write if data was larger than the buffer size. Non-Windows platforms are not affected.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-787"
+    ],
+    "affected": [
+      {
+        "vendor": "Python Software Foundation",
+        "product": "CPython"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-04-21",
+    "updated": "2026-08-10",
+    "url": "https://github.com/python/cpython/pull/148809",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-5278",
+    "title": "Coreutils: heap buffer under-read in gnu coreutils sort via key specification",
+    "desc": "A flaw was found in GNU Coreutils. The sort utility's begfield() function is vulnerable to a heap buffer under-read. The program may access memory outside the allocated buffer if a user runs a crafted command using the traditional key format. A malicious input could lead to a crash or leak sensitive data.",
+    "cvss": 4.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-121"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Cost Management 4"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Discovery 2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-05-27",
+    "updated": "2026-08-09",
+    "url": "https://access.redhat.com/errata/RHSA-2026:28911",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-5914",
+    "title": "Libarchive: double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c",
+    "desc": "A vulnerability has been identified in the libarchive library, specifically within the archive_read_format_rar_seek_data() function. This flaw involves an integer overflow that can ultimately lead to a double-free condition. Exploiting a double-free vulnerability can result in memory corruption, enabling an attacker to execute arbitrary code or cause a denial-of-service condition.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-190"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.2 Advanced Update Support"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-06-09",
+    "updated": "2026-08-09",
+    "url": "https://access.redhat.com/errata/RHSA-2025:14130",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-7195",
+    "title": "Operator-sdk: privilege escalation due to incorrect permissions of /etc/passwd",
+    "desc": "Early versions of Operator-SDK provided an insecure method to allow operator containers to run in environments that used a random UID. Operator-SDK before 0.15.2 provided a script, user_setup, which modifies the permissions of the /etc/passwd file to 664 during build time. Developers who used Operator-SDK before 0.15.2 to scaffold their operator may still be impacted by this if the insecure user_s",
+    "cvss": 6.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-276"
+    ],
+    "affected": [
+      {
+        "vendor": "operator-framework",
+        "product": "operator-sdk"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "RHEL-9-CNV-4.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "RHEL-9-CNV-4.18"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "RHEL-9-CNV-4.20"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Compliance Operator 1"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-08-07",
+    "updated": "2026-08-09",
+    "url": "https://access.redhat.com/errata/RHEA-2025:23406",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-7425",
+    "title": "Libxslt: libxml2: heap use-after-free in libxslt caused by atype corruption in xmlattrptr",
+    "desc": "A flaw was found in libxslt where the attribute type, atype, flags are modified in a way that corrupts internal memory management. When XSLT functions, such as the key() process, result in tree fragments, this corruption prevents the proper cleanup of ID attributes. As a result, the system may access freed memory, causing crashes or enabling attackers to trigger heap corruption.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "GNOME",
+        "product": "libxml2"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-07-10",
+    "updated": "2026-08-09",
+    "url": "https://access.redhat.com/errata/RHBA-2025:12345",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-16242",
+    "title": "Hypershift: konnectivity proxy-server accepts agent connections without validating client certificates",
+    "desc": "A flaw was found in the Konnectivity proxy-server configuration for hosted control planes. The agent-facing listener was started without --cluster-ca-cert (and without token-based agent authentication), so client certificates were not validated. A remote attacker who can reach the Konnectivity cluster endpoint could connect as an unauthenticated agent, join the routing pool, and potentially proxy,",
+    "cvss": 9.4,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-306"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.11.0"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.6"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-20",
+    "updated": "2026-08-09",
+    "url": "https://access.redhat.com/errata/RHSA-2026:46885",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-4878",
+    "title": "Libcap: libcap: privilege escalation via toctou race condition in cap_set_file()",
+    "desc": "A flaw was found in libcap. A local unprivileged user can exploit a Time-of-check-to-time-of-use (TOCTOU) race condition in the `cap_set_file()` function. This allows an attacker with write access to a parent directory to redirect file capability updates to an attacker-controlled file. By doing so, capabilities can be injected into or stripped from unintended executables, leading to privilege esca",
+    "cvss": 6.7,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-367"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-04-09",
+    "updated": "2026-08-09",
+    "url": "https://access.redhat.com/errata/RHSA-2026:12423",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-14041",
+    "title": "ML-KEM (Kyber) decapsulation leaks private key information through non-constant-time division in message decoding and ciphertext compression (KyberSlash)",
+    "desc": "In Bouncy Castle for Java from 1.73 to before 1.78, three ML-KEM (CRYSTALS-Kyber) routines divided secret-derived polynomial coefficients by the modulus q: Poly.toMsg, which decodes the decrypted message, and the ciphertext compression routines Poly.compressPoly and PolyVec.compressPolyVec. An attacker able to measure the timing of a large number of decapsulations performed with the same long-term",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-208"
+    ],
+    "affected": [
+      {
+        "vendor": "Legion of the Bouncy Castle Inc.",
+        "product": "BC-JAVA"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-28",
+    "updated": "2026-08-09",
+    "url": "https://github.com/bcgit/bc-java/wiki/CVE-2024-14041",
     "source": "CISA Vulnrichment"
   },
   {
@@ -630,158 +1343,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2025-5278",
-    "title": "Coreutils: heap buffer under-read in gnu coreutils sort via key specification",
-    "desc": "A flaw was found in GNU Coreutils. The sort utility's begfield() function is vulnerable to a heap buffer under-read. The program may access memory outside the allocated buffer if a user runs a crafted command using the traditional key format. A malicious input could lead to a crash or leak sensitive data.",
-    "cvss": 4.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-121"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Cost Management 4"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Discovery 2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-05-27",
-    "updated": "2026-08-08",
-    "url": "https://access.redhat.com/errata/RHSA-2026:28911",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-5914",
-    "title": "Libarchive: double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c",
-    "desc": "A vulnerability has been identified in the libarchive library, specifically within the archive_read_format_rar_seek_data() function. This flaw involves an integer overflow that can ultimately lead to a double-free condition. Exploiting a double-free vulnerability can result in memory corruption, enabling an attacker to execute arbitrary code or cause a denial-of-service condition.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-190"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8.2 Advanced Update Support"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2025-06-09",
-    "updated": "2026-08-08",
-    "url": "https://access.redhat.com/errata/RHSA-2025:14130",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-7195",
-    "title": "Operator-sdk: privilege escalation due to incorrect permissions of /etc/passwd",
-    "desc": "Early versions of Operator-SDK provided an insecure method to allow operator containers to run in environments that used a random UID. Operator-SDK before 0.15.2 provided a script, user_setup, which modifies the permissions of the /etc/passwd file to 664 during build time. Developers who used Operator-SDK before 0.15.2 to scaffold their operator may still be impacted by this if the insecure user_s",
-    "cvss": 6.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-276"
-    ],
-    "affected": [
-      {
-        "vendor": "operator-framework",
-        "product": "operator-sdk"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "RHEL-9-CNV-4.17"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "RHEL-9-CNV-4.18"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "RHEL-9-CNV-4.20"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Compliance Operator 1"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-08-07",
-    "updated": "2026-08-08",
-    "url": "https://access.redhat.com/errata/RHEA-2025:23406",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-16242",
-    "title": "Hypershift: konnectivity proxy-server accepts agent connections without validating client certificates",
-    "desc": "A flaw was found in the Konnectivity proxy-server configuration for hosted control planes. The agent-facing listener was started without --cluster-ca-cert (and without token-based agent authentication), so client certificates were not validated. A remote attacker who can reach the Konnectivity cluster endpoint could connect as an unauthenticated agent, join the routing pool, and potentially proxy,",
-    "cvss": 9.4,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-306"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.1"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.1"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.11"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.17"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.6"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-20",
-    "updated": "2026-08-08",
-    "url": "https://access.redhat.com/errata/RHSA-2026:46885",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-17107",
     "title": "Cluster-proxy: cluster-proxy: impersonation header injection in service-proxy grants cluster-admin on every managed cluster",
     "desc": "A flaw was found in the cluster-proxy service-proxy component used in Red Hat Advanced Cluster Management for Kubernetes (RHACM) and multicluster-engine (MCE). The service-proxy appends impersonation group headers to proxied requests without first removing caller-supplied values, and the spoke ServiceAccount holds unrestricted impersonation permissions. An authenticated hub principal can inject an",
@@ -841,82 +1402,6 @@
     "published": "2026-03-23",
     "updated": "2026-08-08",
     "url": "https://security.snyk.io/vuln/SNYK-JS-JSRSASIGN-15371175",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-4878",
-    "title": "Libcap: libcap: privilege escalation via toctou race condition in cap_set_file()",
-    "desc": "A flaw was found in libcap. A local unprivileged user can exploit a Time-of-check-to-time-of-use (TOCTOU) race condition in the `cap_set_file()` function. This allows an attacker with write access to a parent directory to redirect file capability updates to an attacker-controlled file. By doing so, capabilities can be injected into or stripped from unintended executables, leading to privilege esca",
-    "cvss": 6.7,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-367"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-04-09",
-    "updated": "2026-08-08",
-    "url": "https://access.redhat.com/errata/RHSA-2026:12423",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-7425",
-    "title": "Libxslt: libxml2: heap use-after-free in libxslt caused by atype corruption in xmlattrptr",
-    "desc": "A flaw was found in libxslt where the attribute type, atype, flags are modified in a way that corrupts internal memory management. When XSLT functions, such as the key() process, result in tree fragments, this corruption prevents the proper cleanup of ID attributes. As a result, the system may access freed memory, causing crashes or enabling attackers to trigger heap corruption.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "GNOME",
-        "product": "libxml2"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2025-07-10",
-    "updated": "2026-08-08",
-    "url": "https://access.redhat.com/errata/RHBA-2025:12345",
     "source": "CISA Vulnrichment"
   },
   {
@@ -1982,29 +2467,6 @@
     "published": "2026-08-06",
     "updated": "2026-08-08",
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62873",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-66494",
-    "title": "Joomla Extension - joomshaper.com - Unauthenticated stored XSS in Shapes API endpoint SP Page Builder < 6.7.0",
-    "desc": "Joomla Extension - joomshaper.com - Unauthenticated stored XSS in Shapes API endpoint SP Page Builder < 6.7.0 - An unauthenticated attacker can store malicious JavaScript in a Joomla site's database via a single HTTP request. When an administrator opens the SP Page Builder editor, the JavaScript executes in their browser automatically..",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-284",
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "joomshaper.com",
-        "product": "SP Page Builder extension for Joomla"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-07",
-    "updated": "2026-08-08",
-    "url": "https://www.joomshaper.com/page-builder",
     "source": "CISA Vulnrichment"
   },
   {
@@ -20740,28 +21202,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-66492",
-    "title": "Joomla Extension - phoca.cz - Path Traversal vulnerability in Phoca Commander 1.0.0-6.1.3",
-    "desc": "Joomla Extension - phoca.cz - Path Traversal vulnerability in Phoca Commander 1.0.0-6.1.3 - Improper limitation of paths in the file upload action lead to path a traversal vulnerability.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-22"
-    ],
-    "affected": [
-      {
-        "vendor": "phoca.cz",
-        "product": "Phoca Commander extension for Joomla"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-07",
-    "updated": "2026-08-07",
-    "url": "https://www.phoca.cz/phocacommander",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-67621",
     "title": "Flowise 3.1.4 Missing Authorization on Document Store Mutation Endpoints",
     "desc": "Flowise through 3.1.4 contains a missing authorization vulnerability that allows authenticated workspace members to perform unauthorized document store operations by accessing unprotected mutation endpoints. Attackers holding only view-level permissions can send direct HTTP requests to the upsert and refresh document store routes to trigger document ingestion, refresh vector database contents, con",
@@ -22079,50 +22519,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-66491",
-    "title": "Joomla Extension - phoca.cz - Arbitrary File Read in Phoca Commander 1.0.0-6.1.3",
-    "desc": "Joomla Extension - phoca.cz - Arbitrary File Read in Phoca Commander 1.0.0-6.1.3 - Improper limitation of paths in the getSource function lead to an arbitrary file read vulnerability.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-22"
-    ],
-    "affected": [
-      {
-        "vendor": "phoca.cz",
-        "product": "Phoca Commander extension for Joomla"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-07",
-    "updated": "2026-08-07",
-    "url": "https://www.phoca.cz/phocacommander",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-66493",
-    "title": "Joomla Extension - phoca.cz - Path traversal vulnerability in Phoca Commander 1.0.0-6.1.3",
-    "desc": "Joomla Extension - phoca.cz - Path Traversal vulnerability in Phoca Commander 1.0.0-6.1.3 - Improper limitation of paths for delete, copy and move actions lead to path traversal vulnerabilities.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-22"
-    ],
-    "affected": [
-      {
-        "vendor": "phoca.cz",
-        "product": "Phoca Commander extension for Joomla"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-07",
-    "updated": "2026-08-07",
-    "url": "https://www.phoca.cz/phocacommander",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-66838",
     "title": "SQL injection via the :comment option in Postgrex.stream/4",
     "desc": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in elixir-ecto postgrex allows SQL Injection via the :comment option of Postgrex.stream/4. An attacker who can influence that value can close the comment delimiter with */ and extend the streamed statement with their own clauses, which execute under the connection's role. Ecto exposes the same option",
@@ -23063,28 +23459,6 @@
     "published": "2026-08-06",
     "updated": "2026-08-07",
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65668",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-66914",
-    "title": "Joomla Extension - seblod.com - Unauthenticated path traversal in SEBLOD < 3.30.0, < 4.7.0, < 6.0.1",
-    "desc": "Joomla Extension - seblod.com - Unauthenticated path traversal in SEBLOD < 3.30.0, < 4.7.0, < 6.0.1 - An unauthenticated attacker could download files from both inside and outside the webroot.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-22"
-    ],
-    "affected": [
-      {
-        "vendor": "seblod.com",
-        "product": "SEBLOD extension for Joomla"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-07",
-    "updated": "2026-08-07",
-    "url": "https://www.seblod.com/",
     "source": "CISA Vulnrichment"
   },
   {
@@ -28010,342 +28384,6 @@
     "published": "2025-02-26",
     "updated": "2026-08-05",
     "url": "https://git.kernel.org/stable/c/f990f0985eda59d4f29fc83fcf300c92b1225d39",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2022-21546",
-    "title": "scsi: target: Fix WRITE_SAME No Data Buffer crash",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nscsi: target: Fix WRITE_SAME No Data Buffer crash\n\nIn newer version of the SBC specs, we have a NDOB bit that indicates there\nis no data buffer that gets written out. If this bit is set using commands\nlike \"sg_write_same --ndob\" we will crash in target_core_iblock/file's\nexecute_write_same handlers when we go to access the se_cmd",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-05-02",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/54e57be2573cf0b8bf650375fd8752987b6c3d3b",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2022-48702",
-    "title": "ALSA: emu10k1: Fix out of bounds access in snd_emu10k1_pcm_channel_alloc()",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nALSA: emu10k1: Fix out of bounds access in snd_emu10k1_pcm_channel_alloc()\n\nThe voice allocator sometimes begins allocating from near the end of the\narray and then wraps around, however snd_emu10k1_pcm_channel_alloc()\naccesses the newly allocated voices as if it never wrapped around.\n\nThis results in out of bounds access if the f",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-05-03",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/637c5310acb48fffcc5657568db3f3e9bc719bfa",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2022-48754",
-    "title": "phylib: fix potential use-after-free",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nphylib: fix potential use-after-free\n\nCommit bafbdd527d56 (\"phylib: Add device reset GPIO support\") added call\nto phy_device_reset(phydev) after the put_device() call in phy_detach().\n\nThe comment before the put_device() call says that the phydev might go\naway with put_device().\n\nFix potential use-after-free by calling phy_device",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-06-20",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/67d271760b037ce0806d687ee6057edc8afd4205",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2022-48797",
-    "title": "mm: don't try to NUMA-migrate COW pages that have other uses",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nmm: don't try to NUMA-migrate COW pages that have other uses\n\nOded Gabbay reports that enabling NUMA balancing causes corruption with\nhis Gaudi accelerator test load:\n\n \"All the details are in the bug, but the bottom line is that somehow,\n  this patch causes corruption when the numa balancing feature is\n  enabled AND we don't use",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-07-16",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/254090925e16abd914c87b4ad1b489440d89c4c3",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2022-48913",
-    "title": "blktrace: fix use after free for struct blk_trace",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nblktrace: fix use after free for struct blk_trace\n\nWhen tracing the whole disk, 'dropped' and 'msg' will be created\nunder 'q->debugfs_dir' and 'bt->dir' is NULL, thus blk_trace_free()\nwon't remove those files. What's worse, the following UAF can be\ntriggered because of accessing stale 'dropped' and 'msg':\n\n=======================",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-08-22",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/78acc7dbd84a8c173a08584750845c31611160f2",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2022-49025",
-    "title": "net/mlx5e: Fix use-after-free when reverting termination table",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/mlx5e: Fix use-after-free when reverting termination table\n\nWhen having multiple dests with termination tables and second one\nor afterwards fails the driver reverts usage of term tables but\ndoesn't reset the assignment in attr->dests[num_vport_dests].termtbl\nwhich case a use-after-free when releasing the rule.\nFix by resettin",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-10-21",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/0a2d73a77060c3cbdc6e801cd5d979d674cd404b",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2022-49426",
-    "title": "iommu/arm-smmu-v3-sva: Fix mm use-after-free",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\niommu/arm-smmu-v3-sva: Fix mm use-after-free\n\nWe currently call arm64_mm_context_put() without holding a reference to\nthe mm, which can result in use-after-free. Call mmgrab()/mmdrop() to\nensure the mm only gets freed after we unpinned the ASID.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-02-26",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/fc90f13ea0dcd960e5002d204fa55cec4e0db2fa",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2022-49464",
-    "title": "erofs: fix buffer copy overflow of ztailpacking feature",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nerofs: fix buffer copy overflow of ztailpacking feature\n\nI got some KASAN report as below:\n\n[   46.959738] ==================================================================\n[   46.960430] BUG: KASAN: use-after-free in z_erofs_shifted_transform+0x2bd/0x370\n[   46.960430] Read of size 4074 at addr ffff8880300c2f8e by task fssum/18",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-02-26",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/4d53a625f29074e7b8236c2c0e0922edb7608df9",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2022-49465",
-    "title": "blk-throttle: Set BIO_THROTTLED when bio has been throttled",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nblk-throttle: Set BIO_THROTTLED when bio has been throttled\n\n1.In current process, all bio will set the BIO_THROTTLED flag\nafter __blk_throtl_bio().\n\n2.If bio needs to be throttled, it will start the timer and\nstop submit bio directly. Bio will submit in\nblk_throtl_dispatch_work_fn() when the timer expires.But in\nthe current proc",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-02-26",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/24ba80efaf6e772f6132465fad08e20fb4767da7",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2022-49563",
-    "title": "crypto: qat - add param check for RSA",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: qat - add param check for RSA\n\nReject requests with a source buffer that is bigger than the size of the\nkey. This is to prevent a possible integer underflow that might happen\nwhen copying the source scatterlist into a linear buffer.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-02-26",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/4d6d2adce08788b7667a6e58002682ea1bbf6a79",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2022-49696",
-    "title": "tipc: fix use-after-free Read in tipc_named_reinit",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\ntipc: fix use-after-free Read in tipc_named_reinit\n\nsyzbot found the following issue on:\n==================================================================\nBUG: KASAN: use-after-free in tipc_named_reinit+0x94f/0x9b0\nnet/tipc/name_distr.c:413\nRead of size 8 at addr ffff88805299a000 by task kworker/1:9/23764\n\nCPU: 1 PID: 23764 Comm",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-02-26",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/361c5521c1e49843b710f455cae3c0a50b714323",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2022-50341",
-    "title": "cifs: fix oops during encryption",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\ncifs: fix oops during encryption\n\nWhen running xfstests against Azure the following oops occurred on an\narm64 system\n\n  Unable to handle kernel write to read-only memory at virtual address\n  ffff0001221cf000\n  Mem abort info:\n    ESR = 0x9600004f\n    EC = 0x25: DABT (current EL), IL = 32 bits\n    SET = 0, FnV = 0\n    EA = 0, S1PT",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-09-16",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/e8e2861cc3258dbe407d01ea8c59bb5a53132301",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2022-50399",
-    "title": "media: atomisp: prevent integer overflow in sh_css_set_black_frame()",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: atomisp: prevent integer overflow in sh_css_set_black_frame()\n\nThe \"height\" and \"width\" values come from the user so the \"height * width\"\nmultiplication can overflow.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-09-18",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/51b8dc5163d2ff2bf04019f8bf7e3bd0e75bb654",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2022-50421",
-    "title": "rpmsg: char: Avoid double destroy of default endpoint",
-    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nrpmsg: char: Avoid double destroy of default endpoint\n\nThe rpmsg_dev_remove() in rpmsg_core is the place for releasing\nthis default endpoint.\n\nSo need to avoid destroying the default endpoint in\nrpmsg_chrdev_eptdev_destroy(), this should be the same as\nrpmsg_eptdev_release(). Otherwise there will be double destroy\nissue that ept-",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      },
-      {
-        "vendor": "Linux",
-        "product": "Linux"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-10-01",
-    "updated": "2026-08-05",
-    "url": "https://git.kernel.org/stable/c/ef828a39d6a7028836eaf37df3ad568c8c2dd6f9",
     "source": "CISA Vulnrichment"
   }
 ]
