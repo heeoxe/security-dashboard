@@ -1,6 +1,51 @@
 [
   {
     "source": "thn",
+    "title": "Researchers Turn USB Auto-Install Into a Full SYSTEM Takeover on Windows 11",
+    "desc": "Windows Plug and Play can be abused to fetch signed vendor software for an emulated USB device and execute privileged installation components that researchers chained to SYSTEM access on a fully updated Windows 11 machine.\n\nThe same PnP path can be triggered over Remote Desktop without physical hard",
+    "url": "https://thehackernews.com/2026/08/researchers-turn-usb-auto-install-into.html",
+    "date": "2026-08-11T16:18:26",
+    "title_ko": "Researchers Turn USB Auto-Install Into a Full SYSTEM Takeover on Windows 11",
+    "desc_ko": "Windows Plug and Play can be abused to fetch signed vendor software for an emulated USB device and execute privileged installation components that researchers chained to SYSTEM access on a fully updated Windows 11 machine.\n\nThe same PnP path can be triggered over Remote Desktop without physical hard"
+  },
+  {
+    "source": "thn",
+    "title": "Malicious MCP Servers Can Split Instructions to Make AI Coding Agents Exfiltrate Secrets",
+    "desc": "A malicious tool server connected to an AI coding assistant can quietly walk off with SSH keys, environment secrets, source code, and customer data without ever sending one obviously harmful instruction.\n\nThe trick can work even after a blunt version of the same theft is refused: split the request i",
+    "url": "https://thehackernews.com/2026/08/malicious-mcp-servers-can-split.html",
+    "date": "2026-08-11T15:54:00",
+    "title_ko": "Malicious MCP Servers Can Split Instructions to Make AI Coding Agents Exfiltrate Secrets",
+    "desc_ko": "A malicious tool server connected to an AI coding assistant can quietly walk off with SSH keys, environment secrets, source code, and customer data without ever sending one obviously harmful instruction.\n\nThe trick can work even after a blunt version of the same theft is refused: split the request i"
+  },
+  {
+    "source": "thn",
+    "title": "Gunra Ransomware Exploits Fortinet and Schneider Electric Flaws to Breach Networks",
+    "desc": "Cybersecurity and intelligence agencies from South Korea and the U.S. warned of Gunra ransomware attacks targeting critical infrastructure sectors and organizations across the world.\n\nTargets of these attacks include healthcare and public health, financial services, government services and facilitie",
+    "url": "https://thehackernews.com/2026/08/gunra-ransomware-exploits-fortinet-and.html",
+    "date": "2026-08-11T14:46:24",
+    "title_ko": "Gunra Ransomware Exploits Fortinet and Schneider Electric Flaws to Breach Networks",
+    "desc_ko": "Cybersecurity and intelligence agencies from South Korea and the U.S. warned of Gunra ransomware attacks targeting critical infrastructure sectors and organizations across the world.\n\nTargets of these attacks include healthcare and public health, financial services, government services and facilitie"
+  },
+  {
+    "source": "thn",
+    "title": "Hackers Breach Polish Power Plant Controls via Private Cellular Network and Shut Turbine",
+    "desc": "Attackers shut down a steam turbine and the process-water treatment system at a Polish combined heat and power plant by coming in over the private cellular network the local grid operator uses to reach remote equipment.\n\nThe plant supplies heat to roughly 50,000 residents. Recovery began at about 7:",
+    "url": "https://thehackernews.com/2026/08/hackers-breach-polish-power-plant.html",
+    "date": "2026-08-11T12:25:45",
+    "title_ko": "Hackers Breach Polish Power Plant Controls via Private Cellular Network and Shut Turbine",
+    "desc_ko": "Attackers shut down a steam turbine and the process-water treatment system at a Polish combined heat and power plant by coming in over the private cellular network the local grid operator uses to reach remote equipment.\n\nThe plant supplies heat to roughly 50,000 residents. Recovery began at about 7:"
+  },
+  {
+    "source": "thn",
+    "title": "BdThemes Supply Chain Attack Poisons JSON to Create Rogue WordPress Admins",
+    "desc": "Cybersecurity researchers have warned of a supply chain compromise impacting WordPress plugin vendor BdThemes, prompting the content management systems (CMS) platform's plugins team to temporarily disable their downloads.\n\n\"Unlike traditional software supply chain attacks, zero source code files wer",
+    "url": "https://thehackernews.com/2026/08/bdthemes-supply-chain-attack-poisons.html",
+    "date": "2026-08-11T11:18:44",
+    "title_ko": "BdThemes Supply Chain Attack Poisons JSON to Create Rogue WordPress Admins",
+    "desc_ko": "Cybersecurity researchers have warned of a supply chain compromise impacting WordPress plugin vendor BdThemes, prompting the content management systems (CMS) platform's plugins team to temporarily disable their downloads.\n\n\"Unlike traditional software supply chain attacks, zero source code files wer"
+  },
+  {
+    "source": "thn",
     "title": "Shipping 10–50× More Code? Watch This Webinar on Securing AI-Speed Development",
     "desc": "AI is helping development teams produce far more code, far faster. But security teams still have to review vulnerabilities, manage dependencies, prioritize fixes, and control risk at human speed.\n\nWhen software output jumps 10 to 50 times, the problem is no longer just finding vulnerabilities. It is",
     "url": "https://thehackernews.com/2026/08/shipping-1050-more-code-watch-this.html",
@@ -403,50 +448,5 @@
     "date": "2026-08-05T19:11:27",
     "title_ko": "Trojanized npm Packages Employ NullReceiver Tactic to Decode C2 IP from Blockchain",
     "desc_ko": "Cybersecurity researchers have flagged an evolution of the EtherHiding blockchain-based command-and-control (C2) technique that conceals the C2 server IP address inside a made-up destination address of a completely empty Ethereum transfer.\n\nThe new dead drop resolver approach, observed in two trojan"
-  },
-  {
-    "source": "thn",
-    "title": "New OVSwrap Linux Kernel Flaw Lets Local Users Gain Root via Open vSwitch",
-    "desc": "A memory corruption flaw in the Linux kernel's Open vSwitch datapath gives ordinary local users a path to root on a broad set of default-configured distributions, and a public exploit ships with pre-built records for roughly 800 kernel builds.\n\nThe vulnerability, tracked as CVE-2026-64531 (CVSS scor",
-    "url": "https://thehackernews.com/2026/08/new-ovswrap-linux-kernel-flaw-lets.html",
-    "date": "2026-08-05T17:13:27",
-    "title_ko": "New OVSwrap Linux Kernel Flaw Lets Local Users Gain Root via Open vSwitch",
-    "desc_ko": "A memory corruption flaw in the Linux kernel's Open vSwitch datapath gives ordinary local users a path to root on a broad set of default-configured distributions, and a public exploit ships with pre-built records for roughly 800 kernel builds.\n\nThe vulnerability, tracked as CVE-2026-64531 (CVSS scor"
-  },
-  {
-    "source": "thn",
-    "title": "Kali365 Weaponizes Microsoft Authentication Against US Companies: New Enterprise Risk",
-    "desc": "Kali365 is turning a legitimate Microsoft login into a gateway to corporate data.\n\nThe phishing kit targets US organizations with attacker-controlled device codes that victims approve on Microsoft's real authentication page. Once access and refresh tokens are issued, attackers may retain access to e",
-    "url": "https://thehackernews.com/2026/08/kali365-weaponizes-microsoft.html",
-    "date": "2026-08-05T17:13:19",
-    "title_ko": "Kali365 Weaponizes Microsoft Authentication Against US Companies: New Enterprise Risk",
-    "desc_ko": "Kali365 is turning a legitimate Microsoft login into a gateway to corporate data.\n\nThe phishing kit targets US organizations with attacker-controlled device codes that victims approve on Microsoft's real authentication page. Once access and refresh tokens are issued, attackers may retain access to e"
-  },
-  {
-    "source": "thn",
-    "title": "Critical Gitea Flaw Let Unauthenticated Attackers Read Server Files via Org-Mode Markup",
-    "desc": "An unauthenticated attacker can read any file the service account can access on Gitea, the self-hosted Git platform, in versions 1.22.1 through 1.27.0. No login, no repository write access. A public repository and crafted Org-mode markup are enough. The flaw is fixed in Gitea 1.27.1.\n\nThe file-read ",
-    "url": "https://thehackernews.com/2026/08/critical-gitea-flaw-let-unauthenticated.html",
-    "date": "2026-08-05T16:34:23",
-    "title_ko": "Critical Gitea Flaw Let Unauthenticated Attackers Read Server Files via Org-Mode Markup",
-    "desc_ko": "An unauthenticated attacker can read any file the service account can access on Gitea, the self-hosted Git platform, in versions 1.22.1 through 1.27.0. No login, no repository write access. A public repository and crafted Org-mode markup are enough. The flaw is fixed in Gitea 1.27.1.\n\nThe file-read "
-  },
-  {
-    "source": "thn",
-    "title": "Leaked n8n API Tokens Exposed Live Instances to Credential Theft",
-    "desc": "GitGuardian researchers found 321 n8n instances accepting API tokens exposed in public GitHub commits and demonstrated four ways attackers could use them to access sensitive data and downstream credentials without exploiting a software vulnerability.\n\nWe scanned public GitHub commits for exposed n8n",
-    "url": "https://thehackernews.com/2026/08/leaked-n8n-api-tokens-exposed-live.html",
-    "date": "2026-08-05T16:05:29",
-    "title_ko": "Leaked n8n API Tokens Exposed Live Instances to Credential Theft",
-    "desc_ko": "GitGuardian researchers found 321 n8n instances accepting API tokens exposed in public GitHub commits and demonstrated four ways attackers could use them to access sensitive data and downstream credentials without exploiting a software vulnerability.\n\nWe scanned public GitHub commits for exposed n8n"
-  },
-  {
-    "source": "thn",
-    "title": "Open VSX Removes 77 Malicious Evil Twin Extensions Exfiltrating Developer Data",
-    "desc": "A cluster of 77 extensions on the Open VSX marketplace has been found to impersonate legitimate developer tools while transmitting information about the systems and development environments on which they were installed.\n\nThe \"evil twin\" extensions were uploaded to the repository between July 26 and ",
-    "url": "https://thehackernews.com/2026/08/open-vsx-removes-77-malicious-evil-twin.html",
-    "date": "2026-08-05T14:53:03",
-    "title_ko": "Open VSX Removes 77 Malicious Evil Twin Extensions Exfiltrating Developer Data",
-    "desc_ko": "A cluster of 77 extensions on the Open VSX marketplace has been found to impersonate legitimate developer tools while transmitting information about the systems and development environments on which they were installed.\n\nThe \"evil twin\" extensions were uploaded to the repository between July 26 and "
   }
 ]
