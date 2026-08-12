@@ -1109,11 +1109,17 @@ async function pushGist() {
   const cfg = getCfg();
   if (!cfg.token || !cfg.gistId) return;
   const notes = loadNotes();
+  const bizNotes = loadBizNotes();
+  const bizKeywords = loadBizKeywords();
   try {
     await fetch(`https://api.github.com/gists/${cfg.gistId}`, {
       method: 'PATCH',
       headers: { Authorization: `token ${cfg.token}`, Accept: 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
-      body: JSON.stringify({ files: { 'notes.json': { content: JSON.stringify(notes, null, 2) } } })
+      body: JSON.stringify({ files: {
+        'notes.json': { content: JSON.stringify(notes, null, 2) },
+        'biz_notes.json': { content: JSON.stringify(bizNotes, null, 2) },
+        'biz_keywords.json': { content: JSON.stringify(bizKeywords, null, 2) },
+      }})
     });
     const now = new Date().toISOString();
     localStorage.setItem('sid_last_sync', now);
@@ -1129,13 +1135,34 @@ async function pullGist(manual) {
     });
     if (!r.ok) { if (manual) showCfgStatus(`불러오기 실패 (HTTP ${r.status})`, 'error'); return; }
     const data = await r.json();
+
+    // 기존 notes
     const content = data.files?.['notes.json']?.content;
     if (content) {
       const parsed = JSON.parse(content);
       saveNotes(parsed);
-      const now = new Date().toISOString();
-      localStorage.setItem('sid_last_sync', now);
-      if (manual) { showCfgStatus(`✓ ${Object.keys(parsed).length}개 메모를 불러왔어요`, 'ok'); renderCfgStatus(); }
+    }
+
+    // Business notes
+    const bizContent = data.files?.['biz_notes.json']?.content;
+    if (bizContent) {
+      saveBizNotes(JSON.parse(bizContent));
+    }
+
+    // Business keywords
+    const kwContent = data.files?.['biz_keywords.json']?.content;
+    if (kwContent) {
+      saveBizKeywords(JSON.parse(kwContent));
+    }
+
+    const now = new Date().toISOString();
+    localStorage.setItem('sid_last_sync', now);
+    if (manual) {
+      const noteCnt = content ? Object.keys(JSON.parse(content)).length : 0;
+      const bizCnt = bizContent ? Object.keys(JSON.parse(bizContent)).length : 0;
+      showCfgStatus(`✓ 메모 ${noteCnt}개, Business ${bizCnt}개 불러왔어요`, 'ok');
+      renderCfgStatus();
+      renderBizKeywords();
     }
   } catch(e) { if (manual) showCfgStatus('불러오기 실패: ' + e.message, 'error'); }
 }
@@ -2440,9 +2467,6 @@ function deleteUpdateEntry(id, idx) {
 
 function escHtml(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 function escAttr(s) { return String(s||'').replace(/"/g,'&quot;'); }
-// onclick='...' 처럼 홑따옴표로 감싼 HTML 속성 안에 JSON.stringify(...) 결과를 넣을 때 쓰는 헬퍼.
-// 설명/제목 텍스트에 아포스트로피(')가 하나라도 있으면 속성이 거기서 끊겨 나머지 JSON이
-// 화면에 그대로 텍스트로 새는 문제가 있어서, & 와 ' 를 HTML 엔티티로 치환해 안전하게 만든다.
 function jsonAttr(obj) { return JSON.stringify(obj).replace(/&/g, '&amp;').replace(/'/g, '&#39;'); }
 
 document.getElementById('nvd-q').addEventListener('keydown', e => { if (e.key === 'Enter') searchNvd(); });
