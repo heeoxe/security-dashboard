@@ -1108,12 +1108,26 @@ async function testGist() {
 async function pushGist() {
   const cfg = getCfg();
   if (!cfg.token || !cfg.gistId) return;
+  
   const notes = loadNotes();
+  const bizNotes = loadBizNotes();       // Business 메모/상태 데이터
+  const bizKeywords = loadBizKeywords(); // Business 키워드 데이터
+
   try {
     await fetch(`https://api.github.com/gists/${cfg.gistId}`, {
       method: 'PATCH',
-      headers: { Authorization: `token ${cfg.token}`, Accept: 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
-      body: JSON.stringify({ files: { 'notes.json': { content: JSON.stringify(notes, null, 2) } } })
+      headers: { 
+        Authorization: `token ${cfg.token}`, 
+        Accept: 'application/vnd.github.v3+json', 
+        'Content-Type': 'application/json' 
+      },
+      body: JSON.stringify({ 
+        files: { 
+          'notes.json': { content: JSON.stringify(notes, null, 2) },
+          'biz_notes.json': { content: JSON.stringify(bizNotes, null, 2) },
+          'biz_keywords.json': { content: JSON.stringify(bizKeywords, null, 2) }
+        } 
+      })
     });
     const now = new Date().toISOString();
     localStorage.setItem('sid_last_sync', now);
@@ -1123,19 +1137,47 @@ async function pushGist() {
 async function pullGist(manual) {
   const cfg = getCfg();
   if (!cfg.token || !cfg.gistId) { if (manual) showCfgStatus('토큰과 Gist ID를 먼저 저장해주세요', 'error'); return; }
+  
   try {
     const r = await fetch(`https://api.github.com/gists/${cfg.gistId}`, {
       headers: { Authorization: `token ${cfg.token}`, Accept: 'application/vnd.github.v3+json' }
     });
     if (!r.ok) { if (manual) showCfgStatus(`불러오기 실패 (HTTP ${r.status})`, 'error'); return; }
+    
     const data = await r.json();
-    const content = data.files?.['notes.json']?.content;
-    if (content) {
-      const parsed = JSON.parse(content);
-      saveNotes(parsed);
-      const now = new Date().toISOString();
-      localStorage.setItem('sid_last_sync', now);
-      if (manual) { showCfgStatus(`✓ ${Object.keys(parsed).length}개 메모를 불러왔어요`, 'ok'); renderCfgStatus(); }
+    const files = data.files || {};
+    let loadedCount = 0;
+
+    // 1. 기본 취약점/뉴스 메모 불러오기
+    if (files['notes.json']?.content) {
+      const parsedNotes = JSON.parse(files['notes.json'].content);
+      saveNotes(parsedNotes);
+      loadedCount += Object.keys(parsedNotes).length;
+    }
+
+    // 2. Business 상태/메모 불러오기
+    if (files['biz_notes.json']?.content) {
+      const parsedBizNotes = JSON.parse(files['biz_notes.json'].content);
+      saveBizNotes(parsedBizNotes);
+    }
+
+    // 3. Business 키워드 불러오기
+    if (files['biz_keywords.json']?.content) {
+      const parsedBizKeywords = JSON.parse(files['biz_keywords.json'].content);
+      saveBizKeywords(parsedBizKeywords);
+    }
+
+    const now = new Date().toISOString();
+    localStorage.setItem('sid_last_sync', now);
+
+    // 불러온 데이터 화면 반영
+    if (document.getElementById('panel-business')?.classList.contains('active')) {
+      renderBusiness();
+    }
+
+    if (manual) { 
+      showCfgStatus(`✓ Gist 동기화가 완료되었습니다`, 'ok'); 
+      renderCfgStatus(); 
     }
   } catch(e) { if (manual) showCfgStatus('불러오기 실패: ' + e.message, 'error'); }
 }
