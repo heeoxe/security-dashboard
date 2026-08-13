@@ -1,5 +1,1416 @@
 [
   {
+    "cve": "CVE-2025-31098",
+    "title": "WordPress DeBounce Email Validator plugin <= 5.7 - Local File Inclusion Vulnerability",
+    "desc": "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in debounce DeBounce Email Validator debounce-io-email-validator allows PHP Local File Inclusion.\n\nThis issue affects DeBounce Email Validator: from n/a through <= 5.7.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-98"
+    ],
+    "affected": [
+      {
+        "vendor": "debounce",
+        "product": "DeBounce Email Validator"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-04-03",
+    "updated": "2026-08-13",
+    "url": "https://patchstack.com/database/wordpress/plugin/debounce-io-email-validator/vulnerability/wordpress-debounce-email-validator-5-7-local-file-inclusion-vulnerability?_s_id=cve",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-34184",
+    "title": "Missing Authorization inAlanWeb SCADA",
+    "desc": "AlanWeb SCADA does not enforce authorization for some directories. This allows an unauthorized attacker to read all files in these directories and even execute some of them. Critically the attacker could run PHP scripts directly on the connected database.\n\nThis issue was fixed in AlanWeb SCADA version 9.8.5",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "Control System",
+        "product": "AlanWeb SCADA"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-04-09",
+    "updated": "2026-08-13",
+    "url": "https://cert.pl/posts/2026/04/CVE-2026-4901/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-34185",
+    "title": "SQL Injection in AlanWeb SCADA",
+    "desc": "AlanWeb SCADA is vulnerable to SQL Injection across most scripts and input parameters. Because no protections are in place, an authenticated attacker can inject arbitrary SQL commands, potentially gaining full control over the database.\n\nThis issue was fixed in AlanWeb SCADA version 9.8.5",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-89"
+    ],
+    "affected": [
+      {
+        "vendor": "Control System",
+        "product": "AlanWeb SCADA"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-04-09",
+    "updated": "2026-08-13",
+    "url": "https://cert.pl/posts/2026/04/CVE-2026-4901/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-4901",
+    "title": "Insertion of Sesitive Information into Log File in AlanWeb SCADA",
+    "desc": "AlanWeb SCADA saves sensitive information into a log file. Critically, user credentials are logged allowing the attacker to obtain further authorized access into the system. Combined with vulnerability CVE-2026-34184, these sensitive information could be accessed by an unauthorized user.\n\nThis issue was fixed in AlanWeb SCADA version 9.8.5",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-532"
+    ],
+    "affected": [
+      {
+        "vendor": "Control System",
+        "product": "AlanWeb SCADA"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-04-09",
+    "updated": "2026-08-13",
+    "url": "https://cert.pl/posts/2026/04/CVE-2026-4901/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59086",
+    "title": "A vulnerability has been identified in Simcenter Femap (All versions < V2606), Simcenter Nastran (All versions < V2606).",
+    "desc": "A vulnerability has been identified in Simcenter Femap (All versions < V2606), Simcenter Nastran (All versions < V2606). The affected applications contain a stack overflow vulnerability while parsing specially strings as argument for one of the application binaries. This could allow an attacker to execute code in the context of the current process.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-121"
+    ],
+    "affected": [
+      {
+        "vendor": "Siemens",
+        "product": "Simcenter Femap"
+      },
+      {
+        "vendor": "Siemens",
+        "product": "Simcenter Nastran"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-11",
+    "updated": "2026-08-13",
+    "url": "https://cert-portal.siemens.com/productcert/html/ssa-069220.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-64607",
+    "title": "Apache HttpComponents Client: Connection Leak on Content-Encoding Decode Error Leads to Pool Exhaustion DoS",
+    "desc": "HttpClient based on the classic i/o model fails to correctly release the underlying connection back to the connection manager if it encounters an invalid or unsupported `Content-Encoding` header value in the response message. Please note this defect does not affect HttpClient based on the async i/o model.\n\nThis issue affects Apache HttpComponents Client: from 5.0-alpha1 through 5.6.2.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-772"
+    ],
+    "affected": [
+      {
+        "vendor": "Apache Software Foundation",
+        "product": "Apache HttpComponents Client"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-31",
+    "updated": "2026-08-13",
+    "url": "https://lists.apache.org/thread/qqfzo3fqcdk4l5496vz95ppvl4ty511q",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-71290",
+    "title": "Apache HttpComponents Client: TLS hostname verification silently disabled on the async transport (default config, MITM)",
+    "desc": "Improper TLS hostname verification vulnerability in Apache HttpComponents Client 5.4 or newer. HostnameVerificationPolicy#BUILTIN setting has no effect when used with the async version of HttpClient. An attacker that can intercept and modify traffic between the client and the server can impersonate the server by presenting a valid certificate for a different domain. \n\n\nPlease note the classic vers",
+    "cvss": 9.1,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-295"
+    ],
+    "affected": [
+      {
+        "vendor": "Apache Software Foundation",
+        "product": "Apache HttpComponents Client"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-11",
+    "updated": "2026-08-13",
+    "url": "https://lists.apache.org/thread/bhf7g2zwpom2ohvwjjjlonc93br2s8vq",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-6020",
+    "title": "Linux-pam: linux-pam directory traversal",
+    "desc": "A flaw was found in linux-pam. The module pam_namespace may use access user-controlled paths without proper protection, allowing local users to elevate their privileges to root via multiple symlink attacks and race conditions.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-06-17",
+    "updated": "2026-08-13",
+    "url": "https://access.redhat.com/errata/RHSA-2025:10024",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-19429",
+    "title": "Jenkins - FilePath.untarFrom() Symlink Target Validation Bypass and Blank-Name Check Bypass (Arbitrary File Read)",
+    "desc": "Jenkins FilePath.untarFrom() does not validate symlink targets when extracting TAR archives, allowing an attacker with Item/Configure permission to create symlinks from a workspace to arbitrary files on the Jenkins controller. This issue remains exploitable in versions patched for CVE-2026-33001 and CVE-2026-70427. An attacker can use this to read sensitive files from $JENKINS_HOME, including Jenk",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-59",
+      "CWE-184"
+    ],
+    "affected": [
+      {
+        "vendor": "Jenkins Project",
+        "product": "Jenkins"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-10",
+    "updated": "2026-08-13",
+    "url": "https://www.jenkins.io/security/advisory/2026-03-18/#SECURITY-3657",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-7195",
+    "title": "Operator-sdk: privilege escalation due to incorrect permissions of /etc/passwd",
+    "desc": "Early versions of Operator-SDK provided an insecure method to allow operator containers to run in environments that used a random UID. Operator-SDK before 0.15.2 provided a script, user_setup, which modifies the permissions of the /etc/passwd file to 664 during build time. Developers who used Operator-SDK before 0.15.2 to scaffold their operator may still be impacted by this if the insecure user_s",
+    "cvss": 6.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-276"
+    ],
+    "affected": [
+      {
+        "vendor": "operator-framework",
+        "product": "operator-sdk"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "RHEL-9-CNV-4.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "RHEL-9-CNV-4.18"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "RHEL-9-CNV-4.20"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Compliance Operator 1"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-08-07",
+    "updated": "2026-08-13",
+    "url": "https://access.redhat.com/errata/RHEA-2025:23406",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-67285",
+    "title": "Joomla Extension - joomshaper.com - Unauthenticated arbitrary local PHP file inclusion in SP Page Builder < 6.8.0",
+    "desc": "Joomla Extension - joomshaper.com - Unauthenticated arbitrary local PHP file inclusion in SP Page Builder < 6.8.0 - An unauthenticated attacker can perform includes to arbitrary PHP files that are accessible by the system.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "joomshaper.com",
+        "product": "SP Page Builder extension for Joomla"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-12",
+    "updated": "2026-08-13",
+    "url": "https://www.joomshaper.com/page-builder",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-67286",
+    "title": "Joomla Extension - joomshaper.com - Unauthenticated arbitrary directory creation and file write in SP Page Builder < 6.8.0",
+    "desc": "Joomla Extension - joomshaper.com - Unauthenticated arbitrary directory creation and file write in SP Page Builder < 6.8.0 - An unauthenticated attacker can create arbitrary directories and files with a predefined name.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "joomshaper.com",
+        "product": "SP Page Builder extension for Joomla"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-12",
+    "updated": "2026-08-13",
+    "url": "https://www.joomshaper.com/page-builder",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2017-10271",
+    "title": "Vulnerability in the Oracle WebLogic Server component of Oracle Fusion Middleware (subcomponent: WLS Security). Supporte",
+    "desc": "Vulnerability in the Oracle WebLogic Server component of Oracle Fusion Middleware (subcomponent: WLS Security). Supported versions that are affected are 10.3.6.0.0, 12.1.3.0.0, 12.2.1.1.0 and 12.2.1.2.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via T3 to compromise Oracle WebLogic Server. Successful attacks of this vulnerability can result in takeover of",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Oracle Corporation",
+        "product": "WebLogic Server"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2017-10-19",
+    "updated": "2026-08-13",
+    "url": "https://www.exploit-db.com/exploits/43458/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2017-12149",
+    "title": "In Jboss Application Server as shipped with Red Hat Enterprise Application Platform 5.2, it was found that the doFilter ",
+    "desc": "In Jboss Application Server as shipped with Red Hat Enterprise Application Platform 5.2, it was found that the doFilter method in the ReadOnlyAccessFilter of the HTTP Invoker does not restrict classes for which it performs deserialization and thus allowing an attacker to execute arbitrary code via crafted serialized data.",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-502"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat, Inc.",
+        "product": "jbossas"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2017-10-04",
+    "updated": "2026-08-13",
+    "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1486220",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2017-18362",
+    "title": "ConnectWise ManagedITSync integration through 2017 for Kaseya VSA is vulnerable to unauthenticated remote commands that ",
+    "desc": "ConnectWise ManagedITSync integration through 2017 for Kaseya VSA is vulnerable to unauthenticated remote commands that allow full direct access to the Kaseya VSA database. In February 2019, attackers have actively exploited this in the wild to download and execute ransomware payloads on all endpoints managed by the VSA server. If the ManagedIT.asmx page is available via the Kaseya VSA web interfa",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "n/a"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2019-02-05",
+    "updated": "2026-08-13",
+    "url": "http://archive.today/rdkeQ",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2018-11138",
+    "title": "The '/common/download_agent_installer.php' script in the Quest KACE System Management Appliance 8.0.318 is accessible by",
+    "desc": "The '/common/download_agent_installer.php' script in the Quest KACE System Management Appliance 8.0.318 is accessible by anonymous users and can be abused to execute arbitrary commands on the system.",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "n/a"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2018-05-31",
+    "updated": "2026-08-13",
+    "url": "https://www.exploit-db.com/exploits/44950/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2018-13374",
+    "title": "A Improper Access Control in Fortinet FortiOS 6.0.2, 5.6.7 and before, FortiADC 6.1.0, 6.0.0 to 6.0.1, 5.4.0 to 5.4.4 al",
+    "desc": "A Improper Access Control in Fortinet FortiOS 6.0.2, 5.6.7 and before, FortiADC 6.1.0, 6.0.0 to 6.0.1, 5.4.0 to 5.4.4 allows attacker to obtain the LDAP server login credentials configured in FortiGate via pointing a LDAP server connectivity test request to a rogue LDAP server instead of the configured one.",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Fortinet",
+        "product": "Fortinet FortiOS, fortiADC"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2019-01-22",
+    "updated": "2026-08-13",
+    "url": "https://fortiguard.com/advisory/FG-IR-18-157",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2018-15982",
+    "title": "Flash Player versions 31.0.0.153 and earlier, and 31.0.0.108 and earlier have a use after free vulnerability. Successful",
+    "desc": "Flash Player versions 31.0.0.153 and earlier, and 31.0.0.108 and earlier have a use after free vulnerability. Successful exploitation could lead to arbitrary code execution.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "n/a"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2019-01-18",
+    "updated": "2026-08-13",
+    "url": "https://access.redhat.com/errata/RHSA-2018:3795",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2018-19320",
+    "title": "The GDrv low-level driver in GIGABYTE APP Center v1.05.21 and earlier, AORUS GRAPHICS ENGINE before 1.57, XTREME GAMING ",
+    "desc": "The GDrv low-level driver in GIGABYTE APP Center v1.05.21 and earlier, AORUS GRAPHICS ENGINE before 1.57, XTREME GAMING ENGINE before 1.26, and OC GURU II v2.08 exposes ring0 memcpy-like functionality that could allow a local attacker to take complete control of the affected system.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "n/a"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2018-12-21",
+    "updated": "2026-08-13",
+    "url": "http://seclists.org/fulldisclosure/2018/Dec/39",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2018-19321",
+    "title": "The GPCIDrv and GDrv low-level drivers in GIGABYTE APP Center v1.05.21 and earlier, AORUS GRAPHICS ENGINE before 1.57, X",
+    "desc": "The GPCIDrv and GDrv low-level drivers in GIGABYTE APP Center v1.05.21 and earlier, AORUS GRAPHICS ENGINE before 1.57, XTREME GAMING ENGINE before 1.26, and OC GURU II v2.08 expose functionality to read and write arbitrary physical memory. This could be leveraged by a local attacker to elevate privileges.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "n/a"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2018-12-21",
+    "updated": "2026-08-13",
+    "url": "http://seclists.org/fulldisclosure/2018/Dec/39",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2018-19322",
+    "title": "The GPCIDrv and GDrv low-level drivers in GIGABYTE APP Center v1.05.21 and earlier, AORUS GRAPHICS ENGINE before 1.57, X",
+    "desc": "The GPCIDrv and GDrv low-level drivers in GIGABYTE APP Center v1.05.21 and earlier, AORUS GRAPHICS ENGINE before 1.57, XTREME GAMING ENGINE before 1.26, and OC GURU II v2.08 expose functionality to read/write data from/to IO ports. This could be leveraged in a number of ways to ultimately run code with elevated privileges.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "n/a"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2018-12-21",
+    "updated": "2026-08-13",
+    "url": "http://seclists.org/fulldisclosure/2018/Dec/39",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2018-19323",
+    "title": "The GDrv low-level driver in GIGABYTE APP Center v1.05.21 and earlier, AORUS GRAPHICS ENGINE before 1.57, XTREME GAMING ",
+    "desc": "The GDrv low-level driver in GIGABYTE APP Center v1.05.21 and earlier, AORUS GRAPHICS ENGINE before 1.57, XTREME GAMING ENGINE before 1.26, and OC GURU II v2.08 exposes functionality to read and write Machine Specific Registers (MSRs).",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "n/a"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2018-12-21",
+    "updated": "2026-08-13",
+    "url": "http://seclists.org/fulldisclosure/2018/Dec/39",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2018-19943",
+    "title": "If exploited, this cross-site scripting vulnerability could allow remote attackers to inject malicious code. QNAP has al",
+    "desc": "If exploited, this cross-site scripting vulnerability could allow remote attackers to inject malicious code. QNAP has already fixed these issues in the following QTS versions. QTS 4.4.2.1270 build 20200410 and later QTS 4.4.1.1261 build 20200330 and later QTS 4.3.6.1263 build 20200330 and later QTS 4.3.4.1282 build 20200408 and later QTS 4.3.3.1252 build 20200409 and later QTS 4.2.6 build 20200421",
+    "cvss": 8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-79",
+      "CWE-80"
+    ],
+    "affected": [
+      {
+        "vendor": "QNAP Systems Inc.",
+        "product": "QTS"
+      },
+      {
+        "vendor": "QNAP Systems Inc.",
+        "product": "QTS"
+      },
+      {
+        "vendor": "QNAP Systems Inc.",
+        "product": "QTS"
+      },
+      {
+        "vendor": "QNAP Systems Inc.",
+        "product": "QTS"
+      },
+      {
+        "vendor": "QNAP Systems Inc.",
+        "product": "QTS"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2020-10-28",
+    "updated": "2026-08-13",
+    "url": "https://www.qnap.com/zh-tw/security-advisory/qsa-20-01",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2018-19949",
+    "title": "If exploited, this command injection vulnerability could allow remote attackers to run arbitrary commands. QNAP has alre",
+    "desc": "If exploited, this command injection vulnerability could allow remote attackers to run arbitrary commands. QNAP has already fixed the issue in the following QTS versions. QTS 4.4.2.1231 on build 20200302; QTS 4.4.1.1201 on build 20200130; QTS 4.3.6.1218 on build 20200214; QTS 4.3.4.1190 on build 20200107; QTS 4.3.3.1161 on build 20200109; QTS 4.2.6 on build 20200109.",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-20",
+      "CWE-77",
+      "CWE-78"
+    ],
+    "affected": [
+      {
+        "vendor": "QNAP Systems Inc.",
+        "product": "QTS"
+      },
+      {
+        "vendor": "QNAP Systems Inc.",
+        "product": "QTS"
+      },
+      {
+        "vendor": "QNAP Systems Inc.",
+        "product": "QTS"
+      },
+      {
+        "vendor": "QNAP Systems Inc.",
+        "product": "QTS"
+      },
+      {
+        "vendor": "QNAP Systems Inc.",
+        "product": "QTS"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2020-10-28",
+    "updated": "2026-08-13",
+    "url": "https://www.qnap.com/zh-tw/security-advisory/qsa-20-01",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2018-19953",
+    "title": "If exploited, this cross-site scripting vulnerability could allow remote attackers to inject malicious code. QNAP has al",
+    "desc": "If exploited, this cross-site scripting vulnerability could allow remote attackers to inject malicious code. QNAP has already fixed the issue in the following QTS versions. QTS 4.4.2.1231 on build 20200302; QTS 4.4.1.1201 on build 20200130; QTS 4.3.6.1218 on build 20200214; QTS 4.3.4.1190 on build 20200107; QTS 4.3.3.1161 on build 20200109; QTS 4.2.6 on build 20200109.",
+    "cvss": 6.1,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79",
+      "CWE-80"
+    ],
+    "affected": [
+      {
+        "vendor": "QNAP Systems Inc.",
+        "product": "QTS"
+      },
+      {
+        "vendor": "QNAP Systems Inc.",
+        "product": "QTS"
+      },
+      {
+        "vendor": "QNAP Systems Inc.",
+        "product": "QTS"
+      },
+      {
+        "vendor": "QNAP Systems Inc.",
+        "product": "QTS"
+      },
+      {
+        "vendor": "QNAP Systems Inc.",
+        "product": "QTS"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2020-10-28",
+    "updated": "2026-08-13",
+    "url": "https://www.qnap.com/zh-tw/security-advisory/qsa-20-01",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2018-20250",
+    "title": "In WinRAR versions prior to and including 5.61, There is path traversal vulnerability when crafting the filename field o",
+    "desc": "In WinRAR versions prior to and including 5.61, There is path traversal vulnerability when crafting the filename field of the ACE format (in UNACEV2.dll). When the filename field is manipulated with specific patterns, the destination (extraction) folder is ignored, thus treating the filename as an absolute path.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-36"
+    ],
+    "affected": [
+      {
+        "vendor": "Check Point Software Technologies Ltd.",
+        "product": "WinRAR"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2019-02-05",
+    "updated": "2026-08-13",
+    "url": "https://github.com/blau72/CVE-2018-20250-WinRAR-ACE",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2018-20753",
+    "title": "Kaseya VSA RMM before R9.3 9.3.0.35, R9.4 before 9.4.0.36, and R9.5 before 9.5.0.5 allows unprivileged remote attackers ",
+    "desc": "Kaseya VSA RMM before R9.3 9.3.0.35, R9.4 before 9.4.0.36, and R9.5 before 9.5.0.5 allows unprivileged remote attackers to execute PowerShell payloads on all managed devices. In January 2018, attackers actively exploited this vulnerability in the wild.",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "n/a"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2019-02-05",
+    "updated": "2026-08-13",
+    "url": "https://blog.huntresslabs.com/deep-dive-kaseya-vsa-mining-payload-c0ac839a0e88",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2018-6882",
+    "title": "Cross-site scripting (XSS) vulnerability in the ZmMailMsgView.getAttachmentLinkHtml function in Zimbra Collaboration Sui",
+    "desc": "Cross-site scripting (XSS) vulnerability in the ZmMailMsgView.getAttachmentLinkHtml function in Zimbra Collaboration Suite (ZCS) before 8.7 Patch 1 and 8.8.x before 8.8.7 might allow remote attackers to inject arbitrary web script or HTML via a Content-Location header in an email attachment.",
+    "cvss": 6.1,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "n/a"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2018-03-27",
+    "updated": "2026-08-13",
+    "url": "http://seclists.org/fulldisclosure/2018/Mar/52",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2018-7602",
+    "title": "Drupal core - Highly critical - Remote Code Execution - SA-CORE-2018-004",
+    "desc": "A remote code execution vulnerability exists within multiple subsystems of Drupal 7.x and 8.x. This potentially allows attackers to exploit multiple attack vectors on a Drupal site, which could result in the site being compromised. This vulnerability is related to Drupal core - Highly critical - Remote Code Execution - SA-CORE-2018-002. Both SA-CORE-2018-002 and this vulnerability are being exploi",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Drupal",
+        "product": "core"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2018-07-19",
+    "updated": "2026-08-13",
+    "url": "https://www.exploit-db.com/exploits/44557/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2018-8120",
+    "title": "An elevation of privilege vulnerability exists in Windows when the Win32k component fails to properly handle objects in ",
+    "desc": "An elevation of privilege vulnerability exists in Windows when the Win32k component fails to properly handle objects in memory, aka \"Win32k Elevation of Privilege Vulnerability.\" This affects Windows Server 2008, Windows 7, Windows Server 2008 R2. This CVE ID is unique from CVE-2018-8124, CVE-2018-8164, CVE-2018-8166.",
+    "cvss": 7,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Windows Server 2008"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 7"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows Server 2008 R2"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2018-05-09",
+    "updated": "2026-08-13",
+    "url": "https://www.exploit-db.com/exploits/45653/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2018-8174",
+    "title": "A remote code execution vulnerability exists in the way that the VBScript engine handles objects in memory, aka \"Windows",
+    "desc": "A remote code execution vulnerability exists in the way that the VBScript engine handles objects in memory, aka \"Windows VBScript Engine Remote Code Execution Vulnerability.\" This affects Windows 7, Windows Server 2012 R2, Windows RT 8.1, Windows Server 2008, Windows Server 2012, Windows 8.1, Windows Server 2016, Windows Server 2008 R2, Windows 10, Windows 10 Servers.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 7"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows Server 2012 R2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows RT 8.1"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows Server 2008"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows Server 2012"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2018-05-09",
+    "updated": "2026-08-13",
+    "url": "https://www.exploit-db.com/exploits/44741/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2018-8453",
+    "title": "An elevation of privilege vulnerability exists in Windows when the Win32k component fails to properly handle objects in ",
+    "desc": "An elevation of privilege vulnerability exists in Windows when the Win32k component fails to properly handle objects in memory, aka \"Win32k Elevation of Privilege Vulnerability.\" This affects Windows 7, Windows Server 2012 R2, Windows RT 8.1, Windows Server 2008, Windows Server 2019, Windows Server 2012, Windows 8.1, Windows Server 2016, Windows Server 2008 R2, Windows 10, Windows 10 Servers.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 7"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows Server 2012 R2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows RT 8.1"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows Server 2008"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows Server 2019"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2018-10-10",
+    "updated": "2026-08-13",
+    "url": "http://www.securitytracker.com/id/1041828",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-12618",
+    "title": "Security vulnerabilities have been found in IBM Verify Identity Access and IBM Security Verify Access",
+    "desc": "IBM Security Verify Access 10.0 through 10.0.9.2 and IBM Verify Identity Access 11.0 through 11.0.3 and IBM Verify Identity Access Container 11.0 through 11.0.3 could allow an administrator to execute additional commands they are not entitled to due to improper validation of user supplied input.",
+    "cvss": 7.2,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-74"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Security Verify Access"
+      },
+      {
+        "vendor": "IBM",
+        "product": "Verify Identity Access"
+      },
+      {
+        "vendor": "IBM",
+        "product": "Verify Identity Access Container"
+      },
+      {
+        "vendor": "IBM",
+        "product": "Security Verify Access Container"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-12",
+    "updated": "2026-08-13",
+    "url": "https://www.ibm.com/support/pages/node/7283079",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-14478",
+    "title": "Incorrect Permission Assignment in Autodesk Installer Named Pipes",
+    "desc": "A maliciously created executable, when executed on the victim's machine, may allow a local low-privileged attacker to inject unauthenticated IPC messages into named pipes, modify pipe permissions or ownership, and potentially impact confidentiality, integrity, and availability.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-732"
+    ],
+    "affected": [
+      {
+        "vendor": "Autodesk",
+        "product": "Installer"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-12",
+    "updated": "2026-08-13",
+    "url": "https://www.autodesk.com/trust/security-advisories/adsk-sa-2026-0013",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-15028",
+    "title": "Libarchive: heap overflow oob read while parsing a tar archive contains a pax extended header",
+    "desc": "A flaw was found in libarchive. This vulnerability allows a remote attacker to trigger a heap overflow by providing a specially crafted tar archive. The issue occurs during the parsing of a PAX extended header containing a malformed SUN.holesdata sparse-file attribute. Successful exploitation could lead to a denial of service, making the system unavailable, or potentially allow for arbitrary code ",
+    "cvss": 3.9,
+    "severity": "LOW",
+    "cwes": [
+      "CWE-805"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Hardened Images"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-10",
+    "updated": "2026-08-13",
+    "url": "https://access.redhat.com/errata/RHSA-2026:38279",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-16627",
+    "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') in GitLab",
+    "desc": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 19.2 before 19.2.2 that under certain conditions could have allowed an authenticated user with developer-role permissions to escalate privileges due to improper sanitization of HTML content rendered in a CI job modal.",
+    "cvss": 7.7,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "GitLab",
+        "product": "GitLab"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-12",
+    "updated": "2026-08-13",
+    "url": "https://gitlab.com/gitlab-org/gitlab/-/work_items/606678",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-18499",
+    "title": "IBM WebSphere Application Server Liberty is affected by a privilege escalation",
+    "desc": "IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.8 is vulnerable to a privilege escalation when using Liberty collectives.",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-285"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "WebSphere Application Server - Liberty"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-12",
+    "updated": "2026-08-13",
+    "url": "https://www.ibm.com/support/pages/node/7283489",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-19556",
+    "title": "Use after free in V8 in Google Chrome prior to 151.0.7922.137 allowed a remote attacker to execute arbitrary code inside",
+    "desc": "Use after free in V8 in Google Chrome prior to 151.0.7922.137 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Google",
+        "product": "Chrome"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-11",
+    "updated": "2026-08-13",
+    "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_01815628406.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-19557",
+    "title": "Use after free in TabStrip in Google Chrome on Mac prior to 151.0.7922.137 allowed a remote attacker who had compromised",
+    "desc": "Use after free in TabStrip in Google Chrome on Mac prior to 151.0.7922.137 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
+    "cvss": 8.3,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Google",
+        "product": "Chrome"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-11",
+    "updated": "2026-08-13",
+    "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_01815628406.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-19558",
+    "title": "Use after free in Extensions in Google Chrome prior to 151.0.7922.137 allowed an attacker who convinced a user to instal",
+    "desc": "Use after free in Extensions in Google Chrome prior to 151.0.7922.137 allowed an attacker who convinced a user to install a malicious extension to execute arbitrary code inside a sandbox via a crafted Chrome Extension. (Chromium security severity: High)",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Google",
+        "product": "Chrome"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-11",
+    "updated": "2026-08-13",
+    "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_01815628406.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-19559",
+    "title": "Use after free in HTML in Google Chrome prior to 151.0.7922.137 allowed a remote attacker to execute arbitrary code insi",
+    "desc": "Use after free in HTML in Google Chrome prior to 151.0.7922.137 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Google",
+        "product": "Chrome"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-11",
+    "updated": "2026-08-13",
+    "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_01815628406.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-19560",
+    "title": "Use after free in Blink in Google Chrome prior to 151.0.7922.137 allowed a remote attacker to execute arbitrary code ins",
+    "desc": "Use after free in Blink in Google Chrome prior to 151.0.7922.137 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Google",
+        "product": "Chrome"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-11",
+    "updated": "2026-08-13",
+    "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_01815628406.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-26035",
+    "title": "An Improper Authentication vulnerability [CWE-287] vulnerability in Fortinet FortiWeb 8.0.0 through 8.0.2, FortiWeb 7.6.",
+    "desc": "An Improper Authentication vulnerability [CWE-287] vulnerability in Fortinet FortiWeb 8.0.0 through 8.0.2, FortiWeb 7.6.0 through 7.6.6, FortiWeb 7.4.0 through 7.4.11, FortiWeb 7.2.0 through 7.2.12, FortiWeb 7.0.0 through 7.0.12 may allow a remote unauthenticated attacker to login into the Fortiweb GUI/CLI with a random username and password",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-287"
+    ],
+    "affected": [
+      {
+        "vendor": "Fortinet",
+        "product": "FortiWeb"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-12",
+    "updated": "2026-08-13",
+    "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-158",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-46731",
+    "title": "Dell Display and Peripheral Manager (DDPM Windows), versions prior to 2.3.0.17, contain an Authentication Bypass by Spoo",
+    "desc": "Dell Display and Peripheral Manager (DDPM Windows), versions prior to 2.3.0.17, contain an Authentication Bypass by Spoofing vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of Privileges and arbitrary code execution.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-290"
+    ],
+    "affected": [
+      {
+        "vendor": "Dell",
+        "product": "Display and Peripheral Manager (DDPM Windows)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-12",
+    "updated": "2026-08-13",
+    "url": "https://www.dell.com/support/kbdoc/en-us/000490038/dsa-2026-320-security-updates-for-dell-display-and-peripheral-manager-ddpm-windows-for-multiple-vulnerabilities",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-50236",
+    "title": "Openshift/console: authenticated ssrf with full response reflection and path neutralization via dev console webhook helpers in openshift console",
+    "desc": "An authenticated SSRF flaw was found in the OpenShift Console Dev Console webhook helpers. User-supplied target URLs are fetched server-side without validation, with path neutralization enabling arbitrary endpoint targeting and full response reflection from the console pod's privileged network position.",
+    "cvss": 7.4,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-918"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-11",
+    "updated": "2026-08-13",
+    "url": "https://access.redhat.com/security/cve/CVE-2026-50236",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-53415",
+    "title": "Zoom Clients - Use After Free",
+    "desc": "Use after Free in the annotator function of Zoom Clients may allow a meeting participant to achieve remote code execution of another participant via network access.",
+    "cvss": 8.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "Zoom Communications",
+        "product": "Zoom Clients"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-11",
+    "updated": "2026-08-13",
+    "url": "https://www.zoom.com/en/trust/security-bulletin/zsb-26017",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-55040",
+    "title": "Microsoft SharePoint Server Security Feature Bypass Vulnerability",
+    "desc": "",
+    "cvss": 9.1,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-1390"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft SharePoint Enterprise Server 2016"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft SharePoint Server 2019"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft SharePoint Server Subscription Edition"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-14",
+    "updated": "2026-08-13",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55040",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-59310",
+    "title": "vCenter directory-traversal vulnerability",
+    "desc": "VMware vCenter contains a directory traversal vulnerability in the Syslog server. A malicious actor with network access to vCenter may exploit this issue to execute arbitrary code.",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "VMware",
+        "product": "Cloud Foundation"
+      },
+      {
+        "vendor": "VMware",
+        "product": "vSphere Foundation"
+      },
+      {
+        "vendor": "VMware",
+        "product": "vCenter"
+      },
+      {
+        "vendor": "VMware",
+        "product": "Telco Cloud Infrastructure"
+      },
+      {
+        "vendor": "VMware",
+        "product": "Telco Cloud Platform"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-30",
+    "updated": "2026-08-13",
+    "url": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/38017",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-65937",
+    "title": "WhatsUp Gold versions prior to 26.0.2 contain multiple stored cross-site scripting (XSS) vulnerabilities across the web UI",
+    "desc": "In WhatsUp Gold versions released before 2026.0.2, an authenticated attacker can bypass frontend controls and inject persistent script content.",
+    "cvss": 8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Progress Software Corporation",
+        "product": "WhatsUp Gold"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-12",
+    "updated": "2026-08-13",
+    "url": "https://www.progress.com/network-monitoring",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-65939",
+    "title": "WhatsUp Gold versions prior to 26.0.2 contain an arbitrary file write vulnerability in the LogToFile action handler.",
+    "desc": "In WhatsUp Gold versions released before 2026.0.2, a privileged attacker can create a LogToFile action specifying an arbitrary file extension within the IIS web root.",
+    "cvss": 6.8,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-434",
+      "CWE-73",
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "Progress Software Corporation",
+        "product": "WhatsUp Gold"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-12",
+    "updated": "2026-08-13",
+    "url": "https://www.progress.com/network-monitoring",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-68756",
+    "title": "Potential insecure deserialization in JFrog Artifactory",
+    "desc": "A party with write access to stored session data may affect JFrog Artifactory under specific conditions.",
+    "cvss": 6.6,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-502"
+    ],
+    "affected": [
+      {
+        "vendor": "jfrog",
+        "product": "artifactory"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-12",
+    "updated": "2026-08-13",
+    "url": "https://docs.jfrog.com/releases/docs/jfrog-security-advisories",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-70330",
+    "title": "Windows DNS Elevation of Privilege Vulnerability",
+    "desc": "",
+    "cvss": 6.7,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-122"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1607"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1809"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 21H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 22H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 11 version 23H2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-11",
+    "updated": "2026-08-13",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70330",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-70465",
+    "title": "A buffer copy without checking size of input ('classic buffer overflow') vulnerability in Fortinet FortiClientWindows 7.",
+    "desc": "A buffer copy without checking size of input ('classic buffer overflow') vulnerability in Fortinet FortiClientWindows 7.4.0 through 7.4.3, FortiClientWindows 7.2.0 through 7.2.11 may allow an unauthenticated attacker in a position to alter or craft DNS responses to the targeted host to execute arbitrary code via malicious packets.",
+    "cvss": 7.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-120"
+    ],
+    "affected": [
+      {
+        "vendor": "Fortinet",
+        "product": "FortiClientWindows"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-12",
+    "updated": "2026-08-13",
+    "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-156",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-70466",
+    "title": "A incomplete list of disallowed inputs vulnerability in Fortinet FortiWeb 8.0.0 through 8.0.2, FortiWeb 7.6.0 through 7.",
+    "desc": "A incomplete list of disallowed inputs vulnerability in Fortinet FortiWeb 8.0.0 through 8.0.2, FortiWeb 7.6.0 through 7.6.5, FortiWeb 7.4 all versions, FortiWeb 7.2 all versions, FortiWeb 7.0 all versions may allow attacker to improper access control via <insert attack vector here>",
+    "cvss": 4.8,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-184"
+    ],
+    "affected": [
+      {
+        "vendor": "Fortinet",
+        "product": "FortiWeb"
+      },
+      {
+        "vendor": "Fortinet",
+        "product": "FortiOS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-12",
+    "updated": "2026-08-13",
+    "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-157",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-70468",
+    "title": "A authentication bypass using an alternate path or channel vulnerability in Fortinet FortiManager 7.6.1, FortiManager 7.",
+    "desc": "A authentication bypass using an alternate path or channel vulnerability in Fortinet FortiManager 7.6.1, FortiManager 7.4.3 through 7.4.5, FortiManager 7.2.5 through 7.2.9, FortiManager Cloud 7.6.1, FortiManager Cloud 7.4.3 through 7.4.5, FortiManager Cloud 7.2.5 through 7.2.9 may allow attacker to improper access control via <insert attack vector here>",
+    "cvss": 7.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-288"
+    ],
+    "affected": [
+      {
+        "vendor": "Fortinet",
+        "product": "FortiManager"
+      },
+      {
+        "vendor": "Fortinet",
+        "product": "FortiManager Cloud"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-12",
+    "updated": "2026-08-13",
+    "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-160",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-71407",
+    "title": "A Stack-based Buffer Overflow vulnerability [CWE-121] vulnerability in Fortinet FortiOS 7.6.1 through 7.6.6 may allow an",
+    "desc": "A Stack-based Buffer Overflow vulnerability [CWE-121] vulnerability in Fortinet FortiOS 7.6.1 through 7.6.6 may allow an unauthenticated attacker who can bypass stack protection and ASLR to execute arbitrary code or commands in the context of the WAD daemon via crafted sockets, only if the explicit proxy is configured with Kerberos authentication and SOCKS enabled.",
+    "cvss": 5.1,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-121"
+    ],
+    "affected": [
+      {
+        "vendor": "Fortinet",
+        "product": "FortiOS"
+      },
+      {
+        "vendor": "Fortinet",
+        "product": "FortiPAM"
+      },
+      {
+        "vendor": "Fortinet",
+        "product": "FortiProxy"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-12",
+    "updated": "2026-08-13",
+    "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-161",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2026-19519",
     "title": "Claircore: claircore: denial of service via unchecked type assertion in rpm header parser",
     "desc": "A flaw was found in claircore's RPM package scanner. Crafted RPM header data in a container layer can cause an unchecked type assertion to panic the scanner. The panic is not recovered, causing the Clair indexer process to crash, leading to a denial of service.",
@@ -2759,40 +4170,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-12618",
-    "title": "Security vulnerabilities have been found in IBM Verify Identity Access and IBM Security Verify Access",
-    "desc": "IBM Security Verify Access 10.0 through 10.0.9.2 and IBM Verify Identity Access 11.0 through 11.0.3 and IBM Verify Identity Access Container 11.0 through 11.0.3 could allow an administrator to execute additional commands they are not entitled to due to improper validation of user supplied input.",
-    "cvss": 7.2,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-74"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "Security Verify Access"
-      },
-      {
-        "vendor": "IBM",
-        "product": "Verify Identity Access"
-      },
-      {
-        "vendor": "IBM",
-        "product": "Verify Identity Access Container"
-      },
-      {
-        "vendor": "IBM",
-        "product": "Security Verify Access Container"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://www.ibm.com/support/pages/node/7283079",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-16737",
     "title": "WP Travel Engine < 6.8.5 - Unauthenticated Booking Details Disclosure and Modification via wte_add_trip_to_cart",
     "desc": "The WP Travel Engine  WordPress plugin before 6.8.5 does not perform authorization or ownership checks when loading a caller-supplied booking identifier in one of its unauthenticated cart actions, allowing unauthenticated attackers to disclose any customer's booking order details and their stored billing information, and to overwrite that customer's booking record with their own data.",
@@ -3005,28 +4382,6 @@
     "published": "2026-01-30",
     "updated": "2026-08-12",
     "url": "https://psirt.watchguard.com/CVE-2026-1498",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-46731",
-    "title": "Dell Display and Peripheral Manager (DDPM Windows), versions prior to 2.3.0.17, contain an Authentication Bypass by Spoo",
-    "desc": "Dell Display and Peripheral Manager (DDPM Windows), versions prior to 2.3.0.17, contain an Authentication Bypass by Spoofing vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of Privileges and arbitrary code execution.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-290"
-    ],
-    "affected": [
-      {
-        "vendor": "Dell",
-        "product": "Display and Peripheral Manager (DDPM Windows)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://www.dell.com/support/kbdoc/en-us/000490038/dsa-2026-320-security-updates-for-dell-display-and-peripheral-manager-ddpm-windows-for-multiple-vulnerabilities",
     "source": "CISA Vulnrichment"
   },
   {
@@ -4125,26 +5480,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-19559",
-    "title": "Use after free in HTML in Google Chrome prior to 151.0.7922.137 allowed a remote attacker to execute arbitrary code insi",
-    "desc": "Use after free in HTML in Google Chrome prior to 151.0.7922.137 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-11",
-    "updated": "2026-08-12",
-    "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_01815628406.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-19657",
     "title": "ScadaLTS Unauthenticated Reflected XSS",
     "desc": "ScadaLTS 2.7.8.1 reflects user-supplied input into an HTML response without sanitization. An unauthenticated attacker who lures a victim into visiting a crafted URL can execute arbitrary JavaScript in the context of the victim's browser session.",
@@ -4789,28 +6124,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-71290",
-    "title": "Apache HttpComponents Client: TLS hostname verification silently disabled on the async transport (default config, MITM)",
-    "desc": "Improper TLS hostname verification vulnerability in Apache HttpComponents Client 5.4 or newer. HostnameVerificationPolicy#BUILTIN setting has no effect when used with the async version of HttpClient. An attacker that can intercept and modify traffic between the client and\n the server can impersonate the server by presenting a valid certificate\n for a different domain. \n\n\nPlease note the classic ve",
-    "cvss": 9.1,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-295"
-    ],
-    "affected": [
-      {
-        "vendor": "Apache Software Foundation",
-        "product": "Apache HttpComponents Client"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-11",
-    "updated": "2026-08-12",
-    "url": "https://lists.apache.org/thread/bhf7g2zwpom2ohvwjjjlonc93br2s8vq",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-72790",
     "title": "SiYuan before v3.7.4 Information Disclosure via getNotebookInfo",
     "desc": "SiYuan before v3.7.4 contains an information disclosure vulnerability in the /api/notebook/getNotebookInfo endpoint that returns notebook metadata without authorization checks. Attackers can read notebook names, document counts, sizes, and timestamps for closed or non-published notebooks that should be hidden from readers.",
@@ -5443,28 +6756,6 @@
     "published": "2026-08-12",
     "updated": "2026-08-12",
     "url": "https://rdf4j.org/release-notes/5.3.2/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-16627",
-    "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') in GitLab",
-    "desc": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 19.2 before 19.2.2 that under certain conditions could have allowed an authenticated user with developer-role permissions to escalate privileges due to improper sanitization of HTML content rendered in a CI job modal.",
-    "cvss": 7.7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "GitLab",
-        "product": "GitLab"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://gitlab.com/gitlab-org/gitlab/-/work_items/606678",
     "source": "CISA Vulnrichment"
   },
   {
@@ -7377,28 +8668,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-67286",
-    "title": "Joomla Extension - joomshaper.com - Unauthenticated arbitrary directory creation and file write in SP Page Builder < 6.8.0",
-    "desc": "Joomla Extension - joomshaper.com - Unauthenticated arbitrary directory creation and file write in SP Page Builder < 6.8.0 - An unauthenticated attacker can create arbitrary directories and files with a predefined name.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-22"
-    ],
-    "affected": [
-      {
-        "vendor": "joomshaper.com",
-        "product": "SP Page Builder extension for Joomla"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://www.joomshaper.com/page-builder",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-68758",
     "title": "Authenticated users may access restricted Artifactory support information",
     "desc": "A low-privileged authenticated user may access restricted support information under specific conditions.",
@@ -8911,44 +10180,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-70330",
-    "title": "Windows DNS Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 6.7,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-11",
-    "updated": "2026-08-12",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70330",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-70332",
     "title": "Microsoft Office SharePoint Spoofing Vulnerability",
     "desc": "",
@@ -9751,28 +10982,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-18499",
-    "title": "IBM WebSphere Application Server Liberty is affected by a privilege escalation",
-    "desc": "IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.8 is vulnerable to a privilege escalation when using Liberty collectives.",
-    "cvss": 8.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-285"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "WebSphere Application Server - Liberty"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://www.ibm.com/support/pages/node/7283489",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-18634",
     "title": "An insecure handling of serialized objects vulnerability was found in the one of the service of GMS application 9.5.1 (B",
     "desc": "An insecure handling of serialized objects vulnerability was found in the one of the service of GMS application 9.5.1 (Build 9510.1044) and earlier versions. A local attacker with the ability to interact with the service could exploit this behavior to perform unauthorized actions through the affected component.",
@@ -10171,28 +11380,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-65937",
-    "title": "WhatsUp Gold versions prior to 26.0.2 contain multiple stored cross-site scripting (XSS) vulnerabilities across the web UI",
-    "desc": "In WhatsUp Gold versions released before 2026.0.2, an authenticated attacker can bypass frontend controls and inject persistent script content.",
-    "cvss": 8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Progress Software Corporation",
-        "product": "WhatsUp Gold"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://www.progress.com/network-monitoring",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-65938",
     "title": "WhatsUp Gold versions prior to 26.0.2 contain an improper authorization vulnerability in the Scheduled Reports API.",
     "desc": "In WhatsUp Gold versions released before 2026.0.2, an improper authorization vulnerability in the Scheduled Reports API allows any authenticated user to invoke restricted actions.",
@@ -10201,30 +11388,6 @@
     "cwes": [
       "CWE-862",
       "CWE-602"
-    ],
-    "affected": [
-      {
-        "vendor": "Progress Software Corporation",
-        "product": "WhatsUp Gold"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://www.progress.com/network-monitoring",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-65939",
-    "title": "WhatsUp Gold versions prior to 26.0.2 contain an arbitrary file write vulnerability in the LogToFile action handler.",
-    "desc": "In WhatsUp Gold versions released before 2026.0.2, a privileged attacker can create a LogToFile action specifying an arbitrary file extension within the IIS web root.",
-    "cvss": 6.8,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-434",
-      "CWE-73",
-      "CWE-22"
     ],
     "affected": [
       {
@@ -11191,28 +12354,6 @@
     "published": "2026-07-01",
     "updated": "2026-08-12",
     "url": "https://access.redhat.com/errata/RHSA-2026:54210",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-14478",
-    "title": "Incorrect Permission Assignment in Autodesk Installer Named Pipes",
-    "desc": "A maliciously created executable, when executed on the victim's machine, may allow a local low-privileged attacker to inject unauthenticated IPC messages into named pipes, modify pipe permissions or ownership, and potentially impact confidentiality, integrity, and availability.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-732"
-    ],
-    "affected": [
-      {
-        "vendor": "Autodesk",
-        "product": "Installer"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://www.autodesk.com/trust/security-advisories/adsk-sa-2026-0013",
     "source": "CISA Vulnrichment"
   },
   {
@@ -16295,28 +17436,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-68756",
-    "title": "Potential insecure deserialization in JFrog Artifactory",
-    "desc": "A party with write access to stored session data may affect JFrog Artifactory under specific conditions.",
-    "cvss": 6.6,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-502"
-    ],
-    "affected": [
-      {
-        "vendor": "jfrog",
-        "product": "artifactory"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://docs.jfrog.com/releases/docs/jfrog-security-advisories",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-68870",
     "title": "Apache Airflow Microsoft Azure provider: microsoft.azure Key Vault backend: team-scope guard bypass resolves another team's Connection or Variable",
     "desc": "The Azure Key Vault secrets backend in Apache Airflow's Microsoft Azure provider resolved a team-scoped Connection or Variable id through the team-agnostic lookup when the team-scoped lookup missed. In a deployment running multi-team mode with this backend, a caller in one team could resolve a secret belonging to another team by supplying an id that spells out that team's namespace, obtaining its ",
@@ -16747,86 +17866,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-19556",
-    "title": "Use after free in V8 in Google Chrome prior to 151.0.7922.137 allowed a remote attacker to execute arbitrary code inside",
-    "desc": "Use after free in V8 in Google Chrome prior to 151.0.7922.137 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-11",
-    "updated": "2026-08-12",
-    "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_01815628406.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-19557",
-    "title": "Use after free in TabStrip in Google Chrome on Mac prior to 151.0.7922.137 allowed a remote attacker who had compromised",
-    "desc": "Use after free in TabStrip in Google Chrome on Mac prior to 151.0.7922.137 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
-    "cvss": 8.3,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-11",
-    "updated": "2026-08-12",
-    "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_01815628406.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-19558",
-    "title": "Use after free in Extensions in Google Chrome prior to 151.0.7922.137 allowed an attacker who convinced a user to instal",
-    "desc": "Use after free in Extensions in Google Chrome prior to 151.0.7922.137 allowed an attacker who convinced a user to install a malicious extension to execute arbitrary code inside a sandbox via a crafted Chrome Extension. (Chromium security severity: High)",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-11",
-    "updated": "2026-08-12",
-    "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_01815628406.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-19560",
-    "title": "Use after free in Blink in Google Chrome prior to 151.0.7922.137 allowed a remote attacker to execute arbitrary code ins",
-    "desc": "Use after free in Blink in Google Chrome prior to 151.0.7922.137 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-11",
-    "updated": "2026-08-12",
-    "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_01815628406.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-19588",
     "title": "Integer Overflow to Buffer Overflow vulnerability in Samsung Open Source rlottie allows Overflow Buffers.",
     "desc": "Integer Overflow to Buffer Overflow vulnerability in Samsung Open Source rlottie allows Overflow Buffers.",
@@ -16958,28 +17997,6 @@
     "published": "2026-08-11",
     "updated": "2026-08-12",
     "url": "https://helpx.adobe.com/security/products/coldfusion/apsb26-90.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-26035",
-    "title": "An Improper Authentication vulnerability [CWE-287] vulnerability in Fortinet FortiWeb 8.0.0 through 8.0.2, FortiWeb 7.6.",
-    "desc": "An Improper Authentication vulnerability [CWE-287] vulnerability in Fortinet FortiWeb 8.0.0 through 8.0.2, FortiWeb 7.6.0 through 7.6.6, FortiWeb 7.4.0 through 7.4.11, FortiWeb 7.2.0 through 7.2.12, FortiWeb 7.0.0 through 7.0.12 may allow a remote unauthenticated attacker to login into the Fortiweb GUI/CLI with a random username and password",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-287"
-    ],
-    "affected": [
-      {
-        "vendor": "Fortinet",
-        "product": "FortiWeb"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-158",
     "source": "CISA Vulnrichment"
   },
   {
@@ -20419,54 +21436,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-67285",
-    "title": "Joomla Extension - joomshaper.com - Unauthenticated arbitrary local PHP file inclusion in SP Page Builder < 6.8.0",
-    "desc": "Joomla Extension - joomshaper.com - Unauthenticated arbitrary local PHP file inclusion in SP Page Builder < 6.8.0 - An unauthenticated attacker can perform includes to arbitrary PHP files that are accessible by the system.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-22"
-    ],
-    "affected": [
-      {
-        "vendor": "joomshaper.com",
-        "product": "SP Page Builder extension for Joomla"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://www.joomshaper.com/page-builder",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-70466",
-    "title": "A incomplete list of disallowed inputs vulnerability in Fortinet FortiWeb 8.0.0 through 8.0.2, FortiWeb 7.6.0 through 7.",
-    "desc": "A incomplete list of disallowed inputs vulnerability in Fortinet FortiWeb 8.0.0 through 8.0.2, FortiWeb 7.6.0 through 7.6.5, FortiWeb 7.4 all versions, FortiWeb 7.2 all versions, FortiWeb 7.0 all versions may allow attacker to improper access control via <insert attack vector here>",
-    "cvss": 4.8,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-184"
-    ],
-    "affected": [
-      {
-        "vendor": "Fortinet",
-        "product": "FortiWeb"
-      },
-      {
-        "vendor": "Fortinet",
-        "product": "FortiOS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-157",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-71362",
     "title": "Adobe Commerce | Incorrect Authorization (CWE-863)",
     "desc": "Adobe Commerce is affected by an Incorrect Authorization vulnerability that could result in privilege escalation. An attacker could leverage this vulnerability to gain elevated access to sensitive resources. Exploitation of this issue does not require user interaction.",
@@ -20520,36 +21489,6 @@
     "published": "2026-08-11",
     "updated": "2026-08-12",
     "url": "https://helpx.adobe.com/security/products/coldfusion/apsb26-90.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-71407",
-    "title": "A Stack-based Buffer Overflow vulnerability [CWE-121] vulnerability in Fortinet FortiOS 7.6.1 through 7.6.6 may allow an",
-    "desc": "A Stack-based Buffer Overflow vulnerability [CWE-121] vulnerability in Fortinet FortiOS 7.6.1 through 7.6.6 may allow an unauthenticated attacker who can bypass stack protection and ASLR to execute arbitrary code or commands in the context of the WAD daemon via crafted sockets, only if the explicit proxy is configured with Kerberos authentication and SOCKS enabled.",
-    "cvss": 5.1,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-121"
-    ],
-    "affected": [
-      {
-        "vendor": "Fortinet",
-        "product": "FortiOS"
-      },
-      {
-        "vendor": "Fortinet",
-        "product": "FortiPAM"
-      },
-      {
-        "vendor": "Fortinet",
-        "product": "FortiProxy"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-161",
     "source": "CISA Vulnrichment"
   },
   {
@@ -21653,32 +22592,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-70468",
-    "title": "A authentication bypass using an alternate path or channel vulnerability in Fortinet FortiManager 7.6.1, FortiManager 7.",
-    "desc": "A authentication bypass using an alternate path or channel vulnerability in Fortinet FortiManager 7.6.1, FortiManager 7.4.3 through 7.4.5, FortiManager 7.2.5 through 7.2.9, FortiManager Cloud 7.6.1, FortiManager Cloud 7.4.3 through 7.4.5, FortiManager Cloud 7.2.5 through 7.2.9 may allow attacker to improper access control via <insert attack vector here>",
-    "cvss": 7.3,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-288"
-    ],
-    "affected": [
-      {
-        "vendor": "Fortinet",
-        "product": "FortiManager"
-      },
-      {
-        "vendor": "Fortinet",
-        "product": "FortiManager Cloud"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-160",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-71408",
     "title": "A allocation of resources without limits or throttling vulnerability in Fortinet FortiOS 7.6.0 through 7.6.6, FortiOS 7.",
     "desc": "A allocation of resources without limits or throttling vulnerability in Fortinet FortiOS 7.6.0 through 7.6.6, FortiOS 7.4 all versions, FortiOS 7.2 all versions may allow attacker to denial of service via <insert attack vector here>",
@@ -21698,796 +22611,6 @@
     "published": "2026-08-12",
     "updated": "2026-08-12",
     "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-162",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-73232",
-    "title": "ffuf denial of service (OOM) via HTTP response decompression bomb",
-    "desc": "ffuf is a fast web fuzzer written in Go. Prior to 2.2.0, ffuf allows a malicious target server to cause an out-of-memory denial of service because the response size guard in pkg/runner/simple.go checks only the compressed Content-Length while io.ReadAll reads gzip, brotli, deflate, transparently decompressed, or chunked response bodies without a decompressed-size bound. This issue is fixed in vers",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-409"
-    ],
-    "affected": [
-      {
-        "vendor": "ffuf",
-        "product": "ffuf"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-11",
-    "updated": "2026-08-12",
-    "url": "https://github.com/ffuf/ffuf/security/advisories/GHSA-jcvh-xf52-2cwm",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-73242",
-    "title": "FreeRDP: Kerberos GSS Wrap-token `EC` field is unbounded, causing an out-of-bounds decrypt in `kerberos_DecryptMessage`",
-    "desc": "FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to 3.30.0, FreeRDP's winpr/libwinpr/sspi/Kerberos/kerberos.c kerberos_DecryptMessage function fails to bound the peer-controlled GSS Wrap-token EC field before using it with RRC in IOV pointer offsets, allowing a malicious RDP peer to trigger out-of-bounds reads and in-place writes during CredSSP/NLA Kerberos decryption. This i",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "FreeRDP",
-        "product": "FreeRDP"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-08-11",
-    "updated": "2026-08-12",
-    "url": "https://github.com/FreeRDP/FreeRDP/security/advisories/GHSA-vv64-95pc-vj9v",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-8609",
-    "title": "Pre-authentication denial of service via the OAuth login route",
-    "desc": "An unauthenticated attacker can repeatedly call Grafana's OAuth login route with unique values, causing unbounded memory growth that can eventually exhaust memory and crash the Grafana instance (denial of service).",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-400"
-    ],
-    "affected": [
-      {
-        "vendor": "Grafana",
-        "product": "Grafana OSS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-10",
-    "updated": "2026-08-12",
-    "url": "https://grafana.com/security/security-advisories/cve-2026-8609",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-14043",
-    "title": "Open5GS Diameter S6a mme-fd-path.c mme_s6a_subscription_data_from_avp heap-based overflow",
-    "desc": "A vulnerability was determined in Open5GS up to 2.7.1. This vulnerability affects the function mme_s6a_subscription_data_from_avp of the file src/mme/mme-fd-path.c of the component Diameter S6a Interface. Executing a manipulation of the argument msisdn_len can lead to heap-based buffer overflow. It is possible to launch the attack remotely. The exploit has been publicly disclosed and may be utiliz",
-    "cvss": 6.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-122",
-      "CWE-119"
-    ],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "Open5GS"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-08-11",
-    "updated": "2026-08-12",
-    "url": "https://vuldb.com/vuln/387281",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-14044",
-    "title": "Open5GS Diameter Rx pcrf-rx-path.c pcrf_rx_aar_cb buffer overflow",
-    "desc": "A vulnerability was identified in Open5GS up to 2.7.1. This issue affects the function pcrf_rx_aar_cb of the file src/pcrf/pcrf-rx-path.c of the component Diameter Rx Handler. The manipulation of the argument num_of_media_component/num_of_sub leads to buffer overflow. The attack can be initiated remotely. The exploit is publicly available and might be used. Upgrading to version 2.7.2 is capable of",
-    "cvss": 6.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-120",
-      "CWE-119"
-    ],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "Open5GS"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://vuldb.com/vuln/387282",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-13465",
-    "title": "Prototype Pollution Vulnerability in Lodash _.unset and _.omit functions",
-    "desc": "Lodash versions 4.0.0 through 4.17.22 are vulnerable to prototype pollution in the _.unset and _.omit functions. An attacker can pass crafted paths which cause Lodash to delete methods from global prototypes.\n\nThe issue permits deletion of properties but does not allow overwriting their original behavior.\n\nThis issue is patched on 4.17.23",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-1321"
-    ],
-    "affected": [
-      {
-        "vendor": "Lodash",
-        "product": "Lodash"
-      },
-      {
-        "vendor": "Lodash-amd",
-        "product": "Lodash-amd"
-      },
-      {
-        "vendor": "lodash-es",
-        "product": "lodash-es"
-      },
-      {
-        "vendor": "lodash.unset",
-        "product": "lodash.unset"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-01-21",
-    "updated": "2026-08-12",
-    "url": "https://github.com/lodash/lodash/security/advisories/GHSA-xxjr-mmjv-4gpg",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-14813",
-    "title": "GOSTCTR implementation unable to process more than 255 blocks correctly",
-    "desc": ": Use of a Broken or Risky Cryptographic Algorithm vulnerability in Legion of the Bouncy Castle Inc. BC-JAVA bcprov on all (core modules).\n\n This vulnerability is associated with program files G3413CTRBlockCipher.\n\n\n\nThis issue affects BC-JAVA: from 1.59 before 1.80.2, from 1.81 before 1.81.1, from 1.82 before 1.84.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-327"
-    ],
-    "affected": [
-      {
-        "vendor": "Legion of the Bouncy Castle Inc.",
-        "product": "BC-JAVA"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-04-15",
-    "updated": "2026-08-12",
-    "url": "https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902025%E2%80%9014813",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-15685",
-    "title": "Open5GS freeDiameter memory corruption",
-    "desc": "A flaw has been found in Open5GS up to 2.7.1. Affected by this vulnerability is an unknown functionality of the component freeDiameter. This manipulation causes memory corruption. The attack is possible to be carried out remotely.",
-    "cvss": 6.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-119"
-    ],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "Open5GS"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://vuldb.com/vuln/387278",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-15687",
-    "title": "Open5GS SMF Diameter Gx Credit-Control-Answer smf_gx_cca_cb denial of service",
-    "desc": "A security flaw has been discovered in Open5GS up to 2.7.6. Impacted is the function smf_gx_cca_cb of the component SMF Diameter Gx Credit-Control-Answer Handler. The manipulation results in denial of service. The attack can be launched remotely. The exploit has been released to the public and may be used for attacks. Upgrading to version 2.7.7 is recommended to address this issue. The patch is id",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-404"
-    ],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "Open5GS"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://vuldb.com/vuln/387283",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-41771",
-    "title": "SQL injection",
-    "desc": "An authenticated attacker with low privileges can access an endpoint in the controller’s web interface that is vulnerable to SQL injection. The vulnerability affects a SQLite database used only for storing notification messages. Therefore, the impact is limited to the system’s notification functionality.",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-89"
-    ],
-    "affected": [
-      {
-        "vendor": "Phoenix Contact",
-        "product": "AXC F 1152"
-      },
-      {
-        "vendor": "Phoenix Contact",
-        "product": "AXC F 1252"
-      },
-      {
-        "vendor": "Phoenix Contact",
-        "product": "AXC F 2000 EA"
-      },
-      {
-        "vendor": "Phoenix Contact",
-        "product": "AXC F 2152"
-      },
-      {
-        "vendor": "Phoenix Contact",
-        "product": "AXC F 3152"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://phoenixcontact.csaf-tp.certvde.com/.well-known/csaf/white/2026/vde-2025-056.json",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-61726",
-    "title": "Memory exhaustion in query parameter parsing in net/url",
-    "desc": "The net/url package does not set a limit on the number of query parameters in a query. While the maximum size of query parameters in URLs is generally limited by the maximum request header size, the net/http.Request.ParseForm method can parse large URL-encoded forms. Parsing a large form containing many unique query parameters can cause excessive memory consumption.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Go standard library",
-        "product": "net/url"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-01-28",
-    "updated": "2026-08-12",
-    "url": "https://go.dev/cl/736712",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-61848",
-    "title": "An improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiA",
-    "desc": "An improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6.4, FortiAnalyzer 7.4.0 through 7.4.8, FortiAnalyzer 7.2 all versions, FortiAnalyzer 7.0 all versions, FortiAnalyzer Cloud 7.6.2 through 7.6.3, FortiAnalyzer-BigData 7.6.0 through 7.6.1, FortiAnalyzer-BigData 7.4.0 through 7.4.5, FortiManager 7.6.0 throug",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-89"
-    ],
-    "affected": [
-      {
-        "vendor": "Fortinet",
-        "product": "FortiManager"
-      },
-      {
-        "vendor": "Fortinet",
-        "product": "FortiAnalyzer"
-      },
-      {
-        "vendor": "Fortinet",
-        "product": "FortiAnalyzer-BigData"
-      },
-      {
-        "vendor": "Fortinet",
-        "product": "FortiManager Cloud"
-      },
-      {
-        "vendor": "Fortinet",
-        "product": "FortiAnalyzer Cloud"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-04-14",
-    "updated": "2026-08-12",
-    "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-111",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-62718",
-    "title": "Axios has a NO_PROXY Hostname Normalization Bypass that Leads to SSRF",
-    "desc": "Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15.0 and 0.31.0, Axios does not correctly handle hostname normalization when checking NO_PROXY rules. Requests to loopback addresses like localhost. (with a trailing dot) or [::1] (IPv6 literal) skip NO_PROXY matching and go through the configured proxy. This goes against what developers expect and lets attackers force re",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-441",
-      "CWE-918"
-    ],
-    "affected": [
-      {
-        "vendor": "axios",
-        "product": "axios"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-04-09",
-    "updated": "2026-08-12",
-    "url": "https://github.com/axios/axios/security/advisories/GHSA-3p68-rc4w-qgx5",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-67030",
-    "title": "Directory Traversal vulnerability in the extractFile method of org.codehaus.plexus.util.Expand in plexus-utils before 6d",
-    "desc": "Directory Traversal vulnerability in the extractFile method of org.codehaus.plexus.util.Expand in plexus-utils before 6d780b3378829318ba5c2d29547e0012d5b29642. This allows an attacker to execute arbitrary code",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-03-25",
-    "updated": "2026-08-12",
-    "url": "https://github.com/codehaus-plexus/plexus-utils/pull/295",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-69873",
-    "title": "ajv (Another JSON Schema Validator) before 8.18.0 is vulnerable to Regular Expression Denial of Service (ReDoS) when the",
-    "desc": "ajv (Another JSON Schema Validator) before 8.18.0 is vulnerable to Regular Expression Denial of Service (ReDoS) when the $data option is enabled. The pattern keyword accepts runtime data via JSON Pointer syntax ($data reference), which is passed directly to the JavaScript RegExp() constructor without validation. An attacker can inject a malicious regex pattern (e.g., \"^(a|a)*$\") combined with craf",
-    "cvss": 2.9,
-    "severity": "LOW",
-    "cwes": [
-      "CWE-1333"
-    ],
-    "affected": [
-      {
-        "vendor": "ajv.js",
-        "product": "ajv"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-02-11",
-    "updated": "2026-08-12",
-    "url": "https://github.com/advisories/GHSA-2g4f-4pwh-qvx6",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-0636",
-    "title": "LDAP Injection Vulnerability in LDAPStoreHelper.java",
-    "desc": "Improper neutralization of special elements used in an LDAP query ('LDAP injection') vulnerability in Legion of the Bouncy Castle Inc. BC-JAVA bcprov on all (prov modules).\n\n This vulnerability is associated with program files LDAPStoreHelper.\n\n\n\nThis issue affects BC-JAVA: from 1.74 before 1.80.2, from 1.81 before 1.81.1, from 1.82 before 1.84.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-90"
-    ],
-    "affected": [
-      {
-        "vendor": "Legion of the Bouncy Castle Inc.",
-        "product": "BC-JAVA"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-04-15",
-    "updated": "2026-08-12",
-    "url": "https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%900636",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-10143",
-    "title": "kafka-python prior to 2.3.2 DoS via SCRAM Iteration Count in scram.py",
-    "desc": "kafka-python prior to 2.3.2 contains a denial-of-service vulnerability in SCRAM authentication handling that allows a malicious or machine-in-the-middle broker to freeze the client event loop by supplying an excessively large iteration count. In scram.py, ScramClient.process_server_first_message() passes the broker-controlled SCRAM iteration count directly to hashlib.pbkdf2_hmac() without validati",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-400"
-    ],
-    "affected": [
-      {
-        "vendor": "Dana Powers",
-        "product": "kafka-python"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-10",
-    "updated": "2026-08-12",
-    "url": "https://github.com/dpkp/kafka-python/pull/3019",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-11325",
-    "title": "cloudflare/pages-action is deprecated — migration required by September 18th, 2026",
-    "desc": "Description\n\n\n\nCloudflare was recently notified by external researchers of vulnerabilities in this archived repository, including a remote code execution issue in `src/index.ts` reachable from certain GitHub Actions workflow configurations. Successful exploitation may expose workflow secrets such as CLOUDFLARE_API_TOKEN and GITHUB_TOKEN to an attacker. Because this repository has been deprecated s",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-78",
-      "CWE-1104"
-    ],
-    "affected": [
-      {
-        "vendor": "Cloudflare",
-        "product": "https://github.com/cloudflare/pages-action"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://github.com/cloudflare/wrangler-action",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-12143",
-    "title": "form-data does not escape CR/LF/quote in multipart field names and filenames (CRLF injection)",
-    "desc": "form-data is a library for creating readable multipart/form-data streams. In versions through 4.0.5, the `field` argument to `FormData#append` and the `filename` option are concatenated verbatim into the `Content-Disposition` header without escaping carriage return (CR), line feed (LF), or double-quote (\") characters. An application that passes attacker-controlled data as a field name or filename ",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-93"
-    ],
-    "affected": [
-      {
-        "vendor": "form-data",
-        "product": "form-data"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-06-12",
-    "updated": "2026-08-12",
-    "url": "https://github.com/form-data/form-data/security/advisories/GHSA-hmw2-7cc7-3qxx",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-12234",
-    "title": "TOCTOU double-fetch in `zsock_sendmsg`/`recvmsg` userspace verifiers allows kernel-heap out-of-bounds write",
-    "desc": "The userspace syscall verifiers z_vrfy_zsock_sendmsg() and z_vrfy_zsock_recvmsg() in subsys/net/lib/sockets/sockets.c snapshot the caller-supplied struct net_msghdr into a kernel-side copy with k_usermode_from_copy(), but then re-read the still-live user struct for subsequent decisions. The kernel iovec shadow buffer is sized from one read of msg->msg_iovlen, while the population loop is bounded b",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-367"
-    ],
-    "affected": [
-      {
-        "vendor": "zephyrproject",
-        "product": "zephyr"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://github.com/zephyrproject-rtos/zephyr/commit/2e0f9cf05be61056ed1a94dab51b832fbad27e2c",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-12235",
-    "title": "Out-of-bounds write in Xtensa llext PLT relocation from malformed ELF (CWE-787)",
-    "desc": "The Linkable Loadable Extensions (llext) subsystem mis-handles PLT/RELA relocation entries when linking a relocatable (partially-linked) ELF extension. In llext_link_plt() (subsys/llext/llext_link.c), the relocatable branch (tgt != NULL, the path used for Xtensa relocatable objects) computed the patch address as ext->mem[LLEXT_MEM_TEXT] - text.sh_offset + rela.r_offset + tgt->sh_offset and then pe",
-    "cvss": 6.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-787"
-    ],
-    "affected": [
-      {
-        "vendor": "zephyrproject",
-        "product": "zephyr"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://github.com/zephyrproject-rtos/zephyr/commit/106540afbd22087ad40b90f53fb22657754a719e",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-15045",
-    "title": "Wallet System for WooCommerce < 2.7.10 - Customer+ Checkout Price Manipulation via Unvalidated Wallet Amount",
-    "desc": "The Wallet System for WooCommerce WordPress plugin before 2.7.10 does not validate a user-supplied wallet amount against the customer's actual stored balance during checkout, allowing authenticated customers to arbitrarily reduce their own order total, including down to zero, and complete checkout without paying the merchant.",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Unknown",
-        "product": "Wallet System for WooCommerce"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://wpscan.com/vulnerability/fc818fa4-5daa-430f-82da-0c96ec531ca3/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-15213",
-    "title": "Welcart e-Commerce < 2.11.33 - Unauthenticated Payment Bypass via Forged Settlement Callback",
-    "desc": "The Welcart e-Commerce WordPress plugin before 2.11.33 does not verify the authenticity of its convenience-store / bank-transfer settlement callback: an unauthenticated request can flip an order from unpaid to settled purely from an order number and a status flag, with no signature, amount, or origin check. Because these are pay-later methods, an attacker can mark their own unpaid order as settled",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Unknown",
-        "product": "Welcart e-Commerce"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://wpscan.com/vulnerability/4ca89701-8abc-4ecb-9834-a648ab1c4da1/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-16621",
-    "title": "Payment Gateway for PayPal on WooCommerce < 9.2.1 - Unauthenticated Payment Bypass via PayPal Advanced Return Handler",
-    "desc": "The Payment Gateway for PayPal on WooCommerce WordPress plugin before 9.2.1 does not verify that payment actually succeeded before completing an order in its PayPal return handler: it reads attacker-controlled parameters, performs no amount comparison and no order-ownership check, and completes the order even when the server-side gateway verification fails, allowing an unauthenticated attacker to ",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Unknown",
-        "product": "Payment Gateway for PayPal on WooCommerce"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://wpscan.com/vulnerability/76c4cff2-1166-45fe-9517-5eda2d24c35d/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-16747",
-    "title": "Kirki < 6.2.1 - Unauthenticated Arbitrary Shortcode Execution via Form Email Actions",
-    "desc": "The Kirki WordPress plugin before 6.2.1 does not properly authorise its front-end form submission REST routes and passes attacker-controlled input through shortcode execution, allowing unauthenticated users to run any shortcode registered on the site, which on a default install leads to disclosure of the site administrator's email address and an arbitrary-recipient mail relay from the victim's dom",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Unknown",
-        "product": "Kirki"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://wpscan.com/vulnerability/4330c6e0-071e-49d6-b1ec-5c8633171bc4/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-16990",
-    "title": "Payment Button for PayPal <= 1.2.3.44 - Unauthenticated Payment Price Manipulation",
-    "desc": "The Payment Button for PayPal WordPress plugin through 1.2.3.44 does not enforce the merchant-configured price server-side and trusts a client-supplied payment amount, allowing unauthenticated attackers to create a real PayPal order against the merchant for an arbitrary lower amount.",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Unknown",
-        "product": "Payment Button for PayPal"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://wpscan.com/vulnerability/97c08603-c407-43b2-ab2c-e39f85e89ebe/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17008",
-    "title": "Quick PayPal Payments <= 5.7.50 - Unauthenticated Payment Bypass via PayPal IPN",
-    "desc": "The Quick Paypal Payments WordPress plugin through 5.7.50 does not verify the paid amount, receiver, or payment status in its PayPal IPN handler and marks an order paid on an order-token match alone, so a buyer who pays an arbitrary small amount can have a full-price order marked paid.",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Unknown",
-        "product": "Quick Paypal Payments"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://wpscan.com/vulnerability/605c0c65-6258-411a-a028-f3de25613bdf/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-18044",
-    "title": "Estatik Real Estate Plugin < 4.3.4 - Unauthenticated Arbitrary-Recipient Mail Relay via Signed-Value Mismatch",
-    "desc": "The Estatik Real Estate Plugin WordPress plugin before 4.3.4 does not validate the same recipient list that it later uses to address the message sent by its property request form, allowing unauthenticated users to send emails to arbitrary recipients with arbitrary subject, body and Reply-To on sites where the form is configured to route to a custom address.",
-    "cvss": 3.7,
-    "severity": "LOW",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Unknown",
-        "product": "Estatik Real Estate Plugin"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://wpscan.com/vulnerability/87623f1e-c0fa-4563-af13-68e51ba2d7a9/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-18474",
-    "title": "WP Directory Kit < 1.5.6 - Unauthenticated SQL Injection via search_location and search_category",
-    "desc": "The WP Directory Kit WordPress plugin before 1.5.6 does not sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by unauthenticated users when a non-default search field type is configured.",
-    "cvss": 8.6,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Unknown",
-        "product": "WP Directory Kit"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://wpscan.com/vulnerability/cadb99e3-bb6a-4d44-8ef0-eff524d31b29/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-18652",
-    "title": "Velociraptor STACK Type Download Path Bypasses Denied Prefix Check",
-    "desc": "Velociraptor allows reading Stacked result sets from the GUI.  Velociraptor's multi-tenant design stores sub orgs within the datastore directory. The path requested by the GUI is not correctly checked against the prefix deny list, allowing result sets to read from denied prefixes.\n\nIn particular, a user with read access to the root org can access result sets from child orgs.",
-    "cvss": 4.9,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "Rapid7",
-        "product": "Velociraptor"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "http://docs.velociraptor.app/announcements/advisories/cve-2026-18652/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-18710",
-    "title": "Cleartext Storage of Sensitive Information in MongoDB Driver Logging During Client Initialization",
-    "desc": "A MongoDB driver component could write sensitive configuration information, including a credential used for outbound network connectivity, to application log output in cleartext during routine client initialization. This occurs automatically as part of normal operation and requires no special privileges to trigger. A party able to read the affected application's logs or downstream log-aggregation ",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-532"
-    ],
-    "affected": [
-      {
-        "vendor": "MongoDB",
-        "product": "MongoDB Driver"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-11",
-    "updated": "2026-08-12",
-    "url": "https://jira.mongodb.org/browse/JAVA-6266",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-18789",
-    "title": "Ezoic < 2.23.1 - Unauthenticated Database Export via Content Export REST Routes",
-    "desc": "The Ezoic WordPress plugin before 2.23.1 does not properly restrict access to some of its content export functionality, allowing unauthenticated attackers to trigger a server-side export of the site's database, including user password hashes and password reset tokens, as well as to persistently change some of its settings.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Unknown",
-        "product": "Ezoic"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://wpscan.com/vulnerability/1e2ce237-dc91-4144-875a-339b5ea05f3a/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-18943",
-    "title": "WPC Admin Columns < 2.3.4 - Subscriber+ Arbitrary User/Post/Term Meta Disclosure",
-    "desc": "The WPC Admin Columns WordPress plugin before 2.3.4 does not have authorisation checks in one of its AJAX actions, allowing users with a role as low as subscriber to read arbitrary user, post and term metadata, including data belonging to administrators.",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Unknown",
-        "product": "WPC Admin Columns"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://wpscan.com/vulnerability/9f2f3db0-1031-4e16-96f2-12a02b97ad06/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-18962",
-    "title": "WP Photo Album Plus < 9.2.09.002 - Subscriber+ Cross-Album File Upload via Missing Authorization",
-    "desc": "The WP Photo Album Plus WordPress plugin before 9.2.09.002 does not check that the current user is allowed to upload into the album they target when it processes a front-end upload, allowing any authenticated user, such as a Subscriber, to upload files into albums owned by other users or by the administrator. Exploitation requires the WP Photo Album Plus WordPress plugin before 9.2.09.002's front-",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Unknown",
-        "product": "WP Photo Album Plus"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://wpscan.com/vulnerability/146079f7-d4e5-4f1e-a715-f681fc33ed6a/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-19050",
-    "title": "ProSolution WP Client < 2.0.9 - Subscriber+ SSRF via proSol_url_validate",
-    "desc": "The ProSolution WP Client WordPress plugin before 2.0.9 does not validate a user-supplied URL, and does not check the capability or nonce of the requester, before performing a server-side HTTP request with it, allowing any authenticated user, such as a subscriber, to make the site issue arbitrary requests to internal hosts and services, including requests with an attacker-chosen method, headers an",
-    "cvss": 6.4,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Unknown",
-        "product": "ProSolution WP Client"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "url": "https://wpscan.com/vulnerability/76d9ef00-5335-4373-903c-4ff368417f94/",
     "source": "CISA Vulnrichment"
   },
   {
