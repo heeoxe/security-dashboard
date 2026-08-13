@@ -1,6 +1,15 @@
 [
   {
     "source": "thn",
+    "title": "Attackers Exploit SharePoint Authentication Bypass After Public PoC Release",
+    "desc": "Threat actors have begun to exploit a newly disclosed Microsoft SharePoint vulnerability following the release of a proof-of-concept (PoC) code.\n\nThe vulnerability in question is CVE-2026-55040 (CVSS score: 9.1), which refers to a critical security feature bypass that stems from weak authentication.",
+    "url": "https://thehackernews.com/2026/08/attackers-exploit-sharepoint.html",
+    "date": "2026-08-13T11:39:48",
+    "title_ko": "Attackers Exploit SharePoint Authentication Bypass After Public PoC Release",
+    "desc_ko": "Threat actors have begun to exploit a newly disclosed Microsoft SharePoint vulnerability following the release of a proof-of-concept (PoC) code.\n\nThe vulnerability in question is CVE-2026-55040 (CVSS score: 9.1), which refers to a critical security feature bypass that stems from weak authentication."
+  },
+  {
+    "source": "thn",
     "title": "Lazarus Exploits Windows Zero-Day to Gain SYSTEM Access and Deploy Backdoor",
     "desc": "The North Korean threat actor known as Lazarus Group has been attributed to the zero-day exploitation of a newly patched security flaw impacting Microsoft Windows to deliver a never-before-seen backdoor targeting defense and aerospace companies across France, Germany, Brazil, and India.\n\nThe activit",
     "url": "https://thehackernews.com/2026/08/lazarus-exploits-windows-zero-day-to.html",
@@ -439,14 +448,5 @@
     "date": "2026-08-07T13:48:35",
     "title_ko": "Claude Code and Gemini CLI Flaws Let a GitHub Issue Reach CI Workflow Secrets",
     "desc_ko": "A GitHub issue opened by an account with no repository privileges was enough to execute code on the CI runners behind Anthropic's and Google's own coding-agent repositories. On OpenAI's, it was enough to hijack the next agent run.\n\nNovee Security ran the attack against each vendor's agent in the con"
-  },
-  {
-    "source": "thn",
-    "title": "TeamPCP Linked To Redis Attacks Dating Back To 2020 And Later Supply Chain Campaign",
-    "desc": "A new analysis has uncovered that the threat actor tracked as TeamPCP has been active on the cybercrime scene as far back as 2020, indicating the group has been compromising internet-facing infrastructure for years before training their sights on the software supply chain.\n\n\"The connection is suppor",
-    "url": "https://thehackernews.com/2026/08/teampcp-linked-to-redis-attacks-dating.html",
-    "date": "2026-08-07T12:20:05",
-    "title_ko": "TeamPCP Linked To Redis Attacks Dating Back To 2020 And Later Supply Chain Campaign",
-    "desc_ko": "A new analysis has uncovered that the threat actor tracked as TeamPCP has been active on the cybercrime scene as far back as 2020, indicating the group has been compromising internet-facing infrastructure for years before training their sights on the software supply chain.\n\n\"The connection is suppor"
   }
 ]
