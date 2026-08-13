@@ -1115,7 +1115,10 @@ async function pushGist() {
   try {
     await fetch(`https://api.github.com/gists/${cfg.gistId}`, {
       method: 'PATCH',
-      headers: { Authorization: `token ${safeToken}`, Accept: 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
+      headers: { 
+        Authorization: `token ${safeToken}`, 
+        Accept: 'application/vnd.github.v3+json', 
+        'Content-Type': 'application/json' },
       body: JSON.stringify({ files: {
         'notes.json': { content: JSON.stringify(notes, null, 2) },
         'biz_notes.json': { content: JSON.stringify(bizNotes, null, 2) },
@@ -1130,9 +1133,10 @@ async function pushGist() {
 async function pullGist(manual) {
   const cfg = getCfg();
   if (!cfg.token || !cfg.gistId) { if (manual) showCfgStatus('토큰과 Gist ID를 먼저 저장해주세요', 'error'); return; }
+  const safeToken = (cfg.token || '').replace(/[^\x00-\x7F]/g, '').trim();
   try {
     const r = await fetch(`https://api.github.com/gists/${cfg.gistId}`, {
-      headers: { Authorization: `token ${cfg.token}`, Accept: 'application/vnd.github.v3+json' }
+      headers: { Authorization: `token ${safeToken}`, Accept: 'application/vnd.github.v3+json' }
     });
     if (!r.ok) { if (manual) showCfgStatus(`불러오기 실패 (HTTP ${r.status})`, 'error'); return; }
     const data = await r.json();
