@@ -1107,59 +1107,63 @@ async function testGist() {
 
 async function pushGist() {
   const cfg = getCfg();
-  // 토큰에서 한글 및 특수 유니코드 제거
-  const safeToken = (cfg.token || '').replace(/[^\x20-\x7E]/g, '').trim();
-  if (!safeToken || !cfg.gistId) return;
-  
+  if (!cfg.token || !cfg.gistId) return;
   const notes = loadNotes();
   const bizNotes = loadBizNotes();
   const bizKeywords = loadBizKeywords();
-
   try {
     await fetch(`https://api.github.com/gists/${cfg.gistId}`, {
       method: 'PATCH',
-      headers: { 
-        'Authorization': `token ${safeToken}`, 
-        'Accept': 'application/vnd.github.v3+json', 
-        'Content-Type': 'application/json' 
-      },
-      body: JSON.stringify({ 
-        files: { 
-          'notes.json': { content: JSON.stringify(notes, null, 2) },
-          'biz_notes.json': { content: JSON.stringify(bizNotes, null, 2) },
-          'biz_keywords.json': { content: JSON.stringify(bizKeywords, null, 2) }
-        } 
-      })
+      headers: { Authorization: `token ${cfg.token}`, Accept: 'application/vnd.github.v3+json', 'Content-Type': 'application/json; charset=utf-8' },
+      body: JSON.stringify({ files: {
+        'notes.json': { content: JSON.stringify(notes, null, 2) },
+        'biz_notes.json': { content: JSON.stringify(bizNotes, null, 2) },
+        'biz_keywords.json': { content: JSON.stringify(bizKeywords, null, 2) },
+      }})
     });
-    localStorage.setItem('sid_last_sync', new Date().toISOString());
+    const now = new Date().toISOString();
+    localStorage.setItem('sid_last_sync', now);
   } catch(e) { console.warn('Gist push 실패:', e.message); }
 }
 
 async function pullGist(manual) {
   const cfg = getCfg();
-  const safeToken = (cfg.token || '').replace(/[^\x20-\x7E]/g, '').trim();
-  if (!safeToken || !cfg.gistId) { if (manual) showCfgStatus('토큰과 Gist ID를 먼저 저장해주세요', 'error'); return; }
-  
+  if (!cfg.token || !cfg.gistId) { if (manual) showCfgStatus('토큰과 Gist ID를 먼저 저장해주세요', 'error'); return; }
   try {
     const r = await fetch(`https://api.github.com/gists/${cfg.gistId}`, {
-      headers: { 
-        'Authorization': `token ${safeToken}`, 
-        'Accept': 'application/vnd.github.v3+json' 
-      }
+      headers: { Authorization: `token ${cfg.token}`, Accept: 'application/vnd.github.v3+json' }
     });
     if (!r.ok) { if (manual) showCfgStatus(`불러오기 실패 (HTTP ${r.status})`, 'error'); return; }
-    
     const data = await r.json();
-    const files = data.files || {};
 
-    if (files['notes.json']?.content) saveNotes(JSON.parse(files['notes.json'].content));
-    if (files['biz_notes.json']?.content) saveBizNotes(JSON.parse(files['biz_notes.json'].content));
-    if (files['biz_keywords.json']?.content) saveBizKeywords(JSON.parse(files['biz_keywords.json'].content));
+    // 기존 notes
+    const content = data.files?.['notes.json']?.content;
+    if (content) {
+      const parsed = JSON.parse(content);
+      saveNotes(parsed);
+    }
 
-    localStorage.setItem('sid_last_sync', new Date().toISOString());
+    // Business notes
+    const bizContent = data.files?.['biz_notes.json']?.content;
+    if (bizContent) {
+      saveBizNotes(JSON.parse(bizContent));
+    }
 
-    if (document.getElementById('panel-business')?.classList.contains('active')) renderBusiness();
-    if (manual) { showCfgStatus('✓ Gist 동기화 완료', 'ok'); renderCfgStatus(); }
+    // Business keywords
+    const kwContent = data.files?.['biz_keywords.json']?.content;
+    if (kwContent) {
+      saveBizKeywords(JSON.parse(kwContent));
+    }
+
+    const now = new Date().toISOString();
+    localStorage.setItem('sid_last_sync', now);
+    if (manual) {
+      const noteCnt = content ? Object.keys(JSON.parse(content)).length : 0;
+      const bizCnt = bizContent ? Object.keys(JSON.parse(bizContent)).length : 0;
+      showCfgStatus(`✓ 메모 ${noteCnt}개, Business ${bizCnt}개 불러왔어요`, 'ok');
+      renderCfgStatus();
+      renderBizKeywords();
+    }
   } catch(e) { if (manual) showCfgStatus('불러오기 실패: ' + e.message, 'error'); }
 }
 // ── /Gist Sync ────────────────────────────────────
