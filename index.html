@@ -787,12 +787,14 @@ function loadBizKeywords() {
 }
 function saveBizKeywords(kws) {
   localStorage.setItem('sid_biz_keywords', JSON.stringify(kws));
+  pushGist();
 }
 function loadBizNotes() {
   try { return JSON.parse(localStorage.getItem('sid_biz_notes') || '{}'); } catch { return {}; }
 }
 function saveBizNotes(notes) {
   localStorage.setItem('sid_biz_notes', JSON.stringify(notes));
+  pushGist();
 }
 
 let bizActiveTab = 'all';
@@ -830,6 +832,7 @@ function addBizKeyword() {
     saveBizKeywords(kws);
     renderBizKeywords();
     renderBusiness();
+    pushGist();
   }
   input.value = '';
 }
@@ -840,6 +843,7 @@ function removeBizKeyword(idx) {
   saveBizKeywords(kws);
   renderBizKeywords();
   renderBusiness();
+  pushGist();
 }
 
 function bizMatches(item, kws) {
