@@ -1,5 +1,628 @@
 [
   {
+    "cve": "CVE-2025-5914",
+    "title": "Libarchive: double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c",
+    "desc": "A vulnerability has been identified in the libarchive library, specifically within the archive_read_format_rar_seek_data() function. This flaw involves an integer overflow that can ultimately lead to a double-free condition. Exploiting a double-free vulnerability can result in memory corruption, enabling an attacker to execute arbitrary code or cause a denial-of-service condition.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-190"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.2 Advanced Update Support"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-06-09",
+    "updated": "2026-08-16",
+    "url": "https://access.redhat.com/errata/RHSA-2025:14130",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-6020",
+    "title": "Linux-pam: linux-pam directory traversal",
+    "desc": "A flaw was found in linux-pam. The module pam_namespace may use access user-controlled paths without proper protection, allowing local users to elevate their privileges to root via multiple symlink attacks and race conditions.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-06-17",
+    "updated": "2026-08-16",
+    "url": "https://access.redhat.com/errata/RHSA-2025:10024",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-7425",
+    "title": "Libxslt: libxml2: heap use-after-free in libxslt caused by atype corruption in xmlattrptr",
+    "desc": "A flaw was found in libxslt where the attribute type, atype, flags are modified in a way that corrupts internal memory management. When XSLT functions, such as the key() process, result in tree fragments, this corruption prevents the proper cleanup of ID attributes. As a result, the system may access freed memory, causing crashes or enabling attackers to trigger heap corruption.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "GNOME",
+        "product": "libxml2"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-07-10",
+    "updated": "2026-08-16",
+    "url": "https://access.redhat.com/errata/RHBA-2025:12345",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-16242",
+    "title": "Hypershift: konnectivity proxy-server accepts agent connections without validating client certificates",
+    "desc": "A flaw was found in the Konnectivity proxy-server configuration for hosted control planes. The agent-facing listener was started without --cluster-ca-cert (and without token-based agent authentication), so client certificates were not validated. A remote attacker who can reach the Konnectivity cluster endpoint could connect as an unauthenticated agent, join the routing pool, and potentially proxy,",
+    "cvss": 9.4,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-306"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.11.0"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.6"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-20",
+    "updated": "2026-08-16",
+    "url": "https://access.redhat.com/errata/RHSA-2026:46885",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-17107",
+    "title": "Cluster-proxy: cluster-proxy: impersonation header injection in service-proxy grants cluster-admin on every managed cluster",
+    "desc": "A flaw was found in the cluster-proxy service-proxy component used in Red Hat Advanced Cluster Management for Kubernetes (RHACM) and multicluster-engine (MCE). The service-proxy appends impersonation group headers to proxied requests without first removing caller-supplied values, and the spoke ServiceAccount holds unrestricted impersonation permissions. An authenticated hub principal can inject an",
+    "cvss": 8.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-441"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.11.0"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.6"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-24",
+    "updated": "2026-08-16",
+    "url": "https://access.redhat.com/errata/RHSA-2026:46885",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-4740",
+    "title": "Rhacm: open cluster management (ocm): cross-cluster privilege escalation via improper kubernetes client certificate renewal validation",
+    "desc": "A flaw was found in Open Cluster Management (OCM), the technology underlying Red Hat Advanced Cluster Management (ACM). Improper validation of Kubernetes client certificate renewal allows a managed cluster administrator to forge a client certificate that can be approved by the OCM controller. This enables cross-cluster privilege escalation and may allow an attacker to gain control over other manag",
+    "cvss": 8.2,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-295"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.11.0"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.9"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-04-07",
+    "updated": "2026-08-16",
+    "url": "https://access.redhat.com/errata/RHSA-2026:11414",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-1784",
+    "title": "Ose-cluster-ingress-operator: remote code execution through haproxy configuration injection",
+    "desc": "The Route OpenShift resource allows to define routes to make pods reachable at a subdomain through HAProxy. It was found that the checks performed on the spec.path YAML stanza in a Route document was insufficient and could allow a controlled injection of the HAProxy configuration.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-15"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.13"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.15"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.16"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.18"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-02",
+    "updated": "2026-08-16",
+    "url": "https://access.redhat.com/errata/RHSA-2026:23241",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-46579",
+    "title": "Openshift/router: openshift/router: mtls client certificate spoofing via unstripped x-ssl-client headers on http frontend",
+    "desc": "A flaw was found in the OpenShift Router. When a Route has `insecureEdgeTerminationPolicy` set to Allow, the HTTP frontend does not remove `X-SSL-Client-*` headers from incoming requests. This allows an unauthenticated attacker to send plain HTTP requests with crafted `X-SSL-Client-*` headers. As a result, backends relying on these headers for mutual TLS (Transport Layer Security) authentication c",
+    "cvss": 7.4,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-287"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.12"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.13"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.15"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.16"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-29",
+    "updated": "2026-08-16",
+    "url": "https://access.redhat.com/errata/RHSA-2026:27009",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-49332",
+    "title": "Openshift/oauth-proxy: openshift/oauth-proxy: underscore header smuggling enables identity impersonation on wsgi/php upstreams",
+    "desc": "A flaw was found in openshift/oauth-proxy. The proxy sets authenticated identity headers using only dash-variant keys (X-Forwarded-User) but does not strip underscore-variant keys (X_Forwarded_User) from incoming requests. WSGI and PHP frameworks normalize both variants to the same variable, allowing an authenticated low-privilege user to smuggle a forged identity that may override the legitimate ",
+    "cvss": 8.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-436"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.16"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.18"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.19"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-28",
+    "updated": "2026-08-16",
+    "url": "https://access.redhat.com/errata/RHSA-2026:50681",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-2671",
+    "title": "Mendi Neurofeedback Headset Bluetooth Low Energy cleartext transmission",
+    "desc": "A vulnerability was detected in Mendi Neurofeedback Headset V4. Affected by this vulnerability is an unknown functionality of the component Bluetooth Low Energy Handler. Performing a manipulation results in cleartext transmission of sensitive information. The attack can only be performed from the local network. The attack's complexity is rated as high. The exploitation appears to be difficult. The",
+    "cvss": 3.1,
+    "severity": "LOW",
+    "cwes": [
+      "CWE-319",
+      "CWE-310"
+    ],
+    "affected": [
+      {
+        "vendor": "Mendi",
+        "product": "Neurofeedback Headset"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-03-07",
+    "updated": "2026-08-16",
+    "url": "https://vuldb.com/vuln/349702",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-49794",
+    "title": "Libxml: heap use after free (uaf) leads to denial of service (dos)",
+    "desc": "A use-after-free vulnerability was found in libxml2. This issue occurs when parsing XPath elements under certain circumstances when the XML schematron has the <sch:name path=\"...\"/> schema elements. This flaw allows a malicious actor to craft a malicious XML document used as input for libxml, resulting in the program's crash using libxml or other possible undefined behaviors.",
+    "cvss": 9.1,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-825"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-06-16",
+    "updated": "2026-08-15",
+    "url": "https://access.redhat.com/errata/RHSA-2025:10630",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-49796",
+    "title": "Libxml: type confusion leads to denial of service (dos)",
+    "desc": "A vulnerability was found in libxml2. Processing certain sch:name elements from the input XML file can trigger a memory corruption issue. This flaw allows an attacker to craft a malicious XML input file that can lead libxml to crash, resulting in a denial of service or other possible undefined behavior due to sensitive data being corrupted in memory.",
+    "cvss": 9.1,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-125"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-06-16",
+    "updated": "2026-08-15",
+    "url": "https://access.redhat.com/errata/RHSA-2025:10630",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-9165",
+    "title": "Stackrox: stackrox: unbounded graphql query depth allows authenticated denial of service",
+    "desc": "A flaw was found in Red Hat Advanced Cluster Security for Kubernetes (RHACS). Central does not limit the depth of GraphQL queries served on the authenticated GraphQL API. An authenticated user with a valid API token can send deeply nested queries that cause excessive resource consumption in Central, resulting in a denial of service for the management plane.",
+    "cvss": 7.7,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-400"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Advanced Cluster Security 4.9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Advanced Cluster Security for Kubernetes 4.10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Advanced Cluster Security for Kubernetes 4.11"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-06",
+    "updated": "2026-08-15",
+    "url": "https://access.redhat.com/errata/RHSA-2026:36207",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-5042",
+    "title": "Submariner-operator: rbac permissions can allow for the spread of node compromises",
+    "desc": "A flaw was found in the Submariner project. Due to unnecessary role-based access control permissions, a privileged attacker can run a malicious container on a node that may allow them to steal service account tokens and further compromise other nodes and potentially the entire cluster.",
+    "cvss": 6.6,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-250"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "RHODF-4.16-RHEL-9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Openshift Data Foundation 4.2"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Openshift Data Foundation 4.2"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Openshift Data Foundation 4.2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2024-05-17",
+    "updated": "2026-08-15",
+    "url": "https://access.redhat.com/errata/RHSA-2024:4591",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-5278",
+    "title": "Coreutils: heap buffer under-read in gnu coreutils sort via key specification",
+    "desc": "A flaw was found in GNU Coreutils. The sort utility's begfield() function is vulnerable to a heap buffer under-read. The program may access memory outside the allocated buffer if a user runs a crafted command using the traditional key format. A malicious input could lead to a crash or leak sensitive data.",
+    "cvss": 4.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-121"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Cost Management Metrics Operator 4"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Discovery 2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-05-27",
+    "updated": "2026-08-15",
+    "url": "https://access.redhat.com/errata/RHSA-2026:28911",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-2100",
+    "title": "P11-kit: null dereference via c_derivekey with specific null parameters",
+    "desc": "A flaw was found in p11-kit. A remote attacker could exploit this vulnerability by calling the C_DeriveKey function on a remote token with specific IBM kyber or IBM btc derive mechanism parameters set to NULL. This could lead to the RPC-client attempting to return an uninitialized value, potentially resulting in a NULL dereference or undefined behavior. This issue may cause an application level de",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-824"
+    ],
+    "affected": [
+      {
+        "vendor": "p11-glue",
+        "product": "p11-kit"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Cost Management Metrics Operator 4"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-03-26",
+    "updated": "2026-08-15",
+    "url": "https://access.redhat.com/errata/RHSA-2026:18143",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-32590",
+    "title": "Mirror-registry: remote code execution using pickle deserialization",
+    "desc": "A flaw was found in Red Hat Quay's handling of resumable container image layer uploads. The upload process stores intermediate data in the database using a format that, if tampered with, could allow an attacker to execute arbitrary code on the Quay server.",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-502"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "mirror registry for Red Hat OpenShift 2.0"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Quay 3.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Quay 3.12"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Quay 3.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Quay 3.15"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-04-08",
+    "updated": "2026-08-15",
+    "url": "https://access.redhat.com/errata/RHSA-2026:19375",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2025-1244",
     "title": "Emacs: shell injection vulnerability in gnu emacs via custom \"man\" uri scheme",
     "desc": "A command injection flaw was found in the text editor Emacs. It could allow a remote, unauthenticated attacker to execute arbitrary shell commands on a vulnerable system. Exploitation is possible by tricking users into visiting a specially crafted website or an HTTP URL with a redirect.",
@@ -23962,532 +24585,6 @@
     "published": "2026-07-14",
     "updated": "2026-08-14",
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47282",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-47290",
-    "title": "Microsoft Office Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft 365 Apps for Enterprise"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Office 2016"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Office 2019"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Office LTSC 2021"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Office LTSC 2024"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-14",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47290",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-47296",
-    "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-89"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft SQL Server 2016 Service Pack 3 (GDR)"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft SQL Server 2016 Service Pack 3 Azure Connect Feature Pack"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft SQL Server 2017 (CU 31)"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft SQL Server 2017 (GDR)"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft SQL Server 2019 (CU 32)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-14",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47296",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-47300",
-    "title": "ASP.NET Core Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-303"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": ".NET 10.0"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": ".NET 8.0"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": ".NET 9.0"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Visual Studio 2022 version 17.12"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Visual Studio 2022 version 17.14"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-14",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47300",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-47301",
-    "title": "Configuration Manager Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-284"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Configuration Manager"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Configuration Manager 2509"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Configuration Manager 2603"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-14",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47301",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-47302",
-    "title": ".NET Denial of Service Vulnerability",
-    "desc": "",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-770"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": ".NET 10.0"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": ".NET 8.0"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": ".NET 9.0"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft .NET Framework 3.5"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft .NET Framework 3.5 AND 4.7.2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-14",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47302",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-47305",
-    "title": "Visual Studio Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-693"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Visual Studio 2022 version 17.12"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Visual Studio 2022 version 17.14"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Visual Studio 2026 version 18.7"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-14",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47305",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-47632",
-    "title": "Azure Monitor Agent Metrics Extension Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-295"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Azure Monitor Agent Metrics Extension"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-14",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47632",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-48544",
-    "title": "Taipy 4.1.1 Path Traversal via ElementLibrary.get_resource()",
-    "desc": "Taipy 4.1.1, fixed in commit 129fd40, contains a path traversal vulnerability in the ElementLibrary.get_resource() method in taipy/gui/extension/library.py that allows unauthenticated attackers to escape the intended module directory by exploiting an incomplete path containment check using str.startswith() without a trailing path separator. Attackers can send crafted GET requests with path travers",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-22"
-    ],
-    "affected": [
-      {
-        "vendor": "Avaiga",
-        "product": "taipy"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-05-27",
-    "updated": "2026-08-14",
-    "url": "https://github.com/Avaiga/taipy/issues/2868",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-48550",
-    "title": "Nagios Core / XI cmd.cgi Reflected XSS via NagFormId Parameter",
-    "desc": "Nagios Core before 4.5.14 and Nagios XI before 2026R1.7 are vulnerable to reflected cross-site scripting in cmd.cgi via the NagFormId parameter. An unauthenticated remote attacker can craft a malicious link that, when followed by an authenticated user, executes arbitrary JavaScript in the victim's browser.",
-    "cvss": 6.1,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Nagios Enterprises, LLC.",
-        "product": "Nagios Core"
-      },
-      {
-        "vendor": "Nagios Enterprises, LLC.",
-        "product": "Nagios XI"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-14",
-    "url": "https://www.nagios.com/security-disclosures/nagios-core/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-48551",
-    "title": "Nagios Core / XI CSRF Protection Bypass via Double-Submit Cookie",
-    "desc": "Nagios Core before 4.5.14 and Nagios XI before 2026R1.7 contain a cross-site request forgery protection bypass via a self-supplied double-submit cookie. An attacker can supply matching cookie and request parameter values to bypass CSRF protection, enabling unauthenticated attackers to run commands as authorized users via malicious links.",
-    "cvss": 7.4,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-352"
-    ],
-    "affected": [
-      {
-        "vendor": "Nagios Enterprises, LLC.",
-        "product": "Nagios Core"
-      },
-      {
-        "vendor": "Nagios Enterprises, LLC.",
-        "product": "Nagios XI"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-14",
-    "url": "https://www.nagios.com/security-disclosures/nagios-core/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-48552",
-    "title": "Nagios Core / XI DOM-based XSS via jsonquery.js",
-    "desc": "Nagios Core before 4.5.14 and Nagios XI before 2026R1.7 are vulnerable to DOM-based cross-site scripting in jsonquery.js. Unencoded JSON string values reflected from stored fields are inserted into the DOM without sanitization, allowing attackers to run arbitrary JavaScript in the victim's browser.",
-    "cvss": 5.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Nagios Enterprises, LLC.",
-        "product": "Nagios Core"
-      },
-      {
-        "vendor": "Nagios Enterprises, LLC.",
-        "product": "Nagios XI"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-14",
-    "url": "https://www.nagios.com/security-disclosures/nagios-core/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-48553",
-    "title": "Nagios Core / XI Authenticated RCE via Custom-Variable Macro Injection",
-    "desc": "Nagios Core before 4.5.13 and Nagios XI before 2026R1.5 are vulnerable to authenticated remote code execution via custom-variable macro injection through the Nagios Remote Data Processor (NRDP). When a custom variable defined on a host, service, or contact is referenced in a shell-executed command line, an authenticated attacker with NRDP access can inject OS commands through the macro value. Expl",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-78"
-    ],
-    "affected": [
-      {
-        "vendor": "Nagios Enterprises, LLC.",
-        "product": "Nagios Core"
-      },
-      {
-        "vendor": "Nagios Enterprises, LLC.",
-        "product": "Nagios XI"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-14",
-    "url": "https://www.nagios.com/security-disclosures/nagios-core/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-48554",
-    "title": "Nagios Core / XI Authenticated RCE via Unfiltered NOTIFICATION-Family Macro Substitution",
-    "desc": "Nagios Core before 4.5.14 and Nagios XI before 2026R1.7 are vulnerable to authenticated remote code execution via unfiltered NOTIFICATION-family macro substitution through the com_data parameter. When a notification command references $NOTIFICATIONCOMMENT$ or $NOTIFICATIONAUTHOR$ in a shell-reachable position, authenticated UI users can run arbitrary commands as the nagios user. Exploitation requi",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-78"
-    ],
-    "affected": [
-      {
-        "vendor": "Nagios Enterprises, LLC.",
-        "product": "Nagios Core"
-      },
-      {
-        "vendor": "Nagios Enterprises, LLC.",
-        "product": "Nagios XI"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-14",
-    "url": "https://www.nagios.com/security-disclosures/nagios-core/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-48561",
-    "title": "Microsoft Edge Copilot Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 9.6,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-77"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge Copilot for Android"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge Copilot for IOS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-14",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48561",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-48564",
-    "title": "DHCP Server Service Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2012"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2012 (Server Core installation)"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2012 R2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-14",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48564",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-48571",
-    "title": "Windows App Package Installer Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 23H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 26H1"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-14",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48571",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-48580",
-    "title": "Microsoft Excel Information Disclosure Vulnerability",
-    "desc": "",
-    "cvss": 5.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-822"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft 365 Apps for Enterprise"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Excel 2016"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Office 2019"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Office 365 for Mac"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Office LTSC 2021"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-14",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48580",
     "source": "CISA Vulnrichment"
   },
   {
