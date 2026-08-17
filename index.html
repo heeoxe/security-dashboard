@@ -1118,7 +1118,7 @@ async function pushGist() {
   try {
     await fetch(`https://api.github.com/gists/${cfg.gistId}`, {
       method: 'PATCH',
-      headers: { Authorization: `token ${cfg.token}`, Accept: 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
+      headers: { Authorization: `token ${cfg.token}`, Accept: 'application/vnd.github.v3+json', 'Content-Type': 'application/json; charset=utf-8' },
       body: JSON.stringify({ files: {
         'notes.json': { content: JSON.stringify(notes, null, 2) },
         'biz_notes.json': { content: JSON.stringify(bizNotes, null, 2) },
