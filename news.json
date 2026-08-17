@@ -1,6 +1,69 @@
 [
   {
     "source": "thn",
+    "title": "Critical GitLab GraphQL Flaw Could Let Unauthenticated Attackers Delete Public Projects",
+    "desc": "GitLab has released security updates to address a critical vulnerability impacting its Community Edition (CE) and Enterprise Edition (EE) software that, under certain conditions, could allow an unauthenticated attacker to remotely modify or delete public projects and user data.\n\nThe flaw, tracked as",
+    "url": "https://thehackernews.com/2026/08/critical-gitlab-graphql-flaw-could-let.html",
+    "date": "2026-08-18T02:33:04",
+    "title_ko": "Critical GitLab GraphQL Flaw Could Let Unauthenticated Attackers Delete Public Projects",
+    "desc_ko": "GitLab has released security updates to address a critical vulnerability impacting its Community Edition (CE) and Enterprise Edition (EE) software that, under certain conditions, could allow an unauthenticated attacker to remotely modify or delete public projects and user data.\n\nThe flaw, tracked as"
+  },
+  {
+    "source": "thn",
+    "title": "Snowflake GitHub Actions Flaw Lets Crafted Issues Trigger Command Injection",
+    "desc": "Cybersecurity researchers at Wiz&nbsp;have disclosed a new GitHub Actions workflow injection vulnerability in Snowflake's public&nbsp;snowflakedb/snowflake-connector-net repository that it said could be exploited through a crafted GitHub issue to execute commands in a workflow containing internal Ji",
+    "url": "https://thehackernews.com/2026/08/snowflake-github-actions-flaw-lets_0330881554.html",
+    "date": "2026-08-18T00:14:17",
+    "title_ko": "Snowflake GitHub Actions Flaw Lets Crafted Issues Trigger Command Injection",
+    "desc_ko": "Cybersecurity researchers at Wiz&nbsp;have disclosed a new GitHub Actions workflow injection vulnerability in Snowflake's public&nbsp;snowflakedb/snowflake-connector-net repository that it said could be exploited through a crafted GitHub issue to execute commands in a workflow containing internal Ji"
+  },
+  {
+    "source": "thn",
+    "title": "Forminator WordPress Flaw Can Enable Unauthenticated RCE via Malicious PHP Uploads",
+    "desc": "A critical security flaw has been disclosed in Forminator Forms, a WordPress plugin with more than 600,000 active installations, that could be exploited to achieve arbitrary code execution on susceptible sites.\n\nThe vulnerability, tracked as CVE-2026-15748, is rated 9.8 out of 10.0 on the CVSS scori",
+    "url": "https://thehackernews.com/2026/08/forminator-wordpress-flaw-can-enable.html",
+    "date": "2026-08-17T23:52:09",
+    "title_ko": "Forminator WordPress Flaw Can Enable Unauthenticated RCE via Malicious PHP Uploads",
+    "desc_ko": "A critical security flaw has been disclosed in Forminator Forms, a WordPress plugin with more than 600,000 active installations, that could be exploited to achieve arbitrary code execution on susceptible sites.\n\nThe vulnerability, tracked as CVE-2026-15748, is rated 9.8 out of 10.0 on the CVSS scori"
+  },
+  {
+    "source": "thn",
+    "title": "Cavern C2 Uses DNS and Google Apps Script to Blend Into Legitimate Traffic",
+    "desc": "Cybersecurity researchers have traced the continued evolution of the Cavern (aka Cav3rn) command-and-control (C2) framework used by Iranian nation-state hackers in attacks targeting entities in Israel.\n\nRussian cybersecurity company Kaspersky said its ongoing monitoring of the threat activity cluste",
+    "url": "https://thehackernews.com/2026/08/cavern-c2-uses-dns-and-google-apps.html",
+    "date": "2026-08-17T23:11:06",
+    "title_ko": "Cavern C2 Uses DNS and Google Apps Script to Blend Into Legitimate Traffic",
+    "desc_ko": "Cybersecurity researchers have traced the continued evolution of the Cavern (aka Cav3rn) command-and-control (C2) framework used by Iranian nation-state hackers in attacks targeting entities in Israel.\n\nRussian cybersecurity company Kaspersky said its ongoing monitoring of the threat activity cluste"
+  },
+  {
+    "source": "thn",
+    "title": "⚡ Weekly Recap: VMware Exploits, Windows 0-Day, MCP Attacks, Browser Hijacks and More",
+    "desc": "The expensive attacks are not always the clever ones.\n\nThis week had plenty of proof. Exposed services got hit, old bugs found fresh use, browser sessions became attack paths, and supply-chain problems kept spreading farther than the original compromise. A lot of it came down to access that was alre",
+    "url": "https://thehackernews.com/2026/08/weekly-recap-vmware-exploits-windows-0.html",
+    "date": "2026-08-17T18:53:51",
+    "title_ko": "⚡ Weekly Recap: VMware Exploits, Windows 0-Day, MCP Attacks, Browser Hijacks and More",
+    "desc_ko": "The expensive attacks are not always the clever ones.\n\nThis week had plenty of proof. Exposed services got hit, old bugs found fresh use, browser sessions became attack paths, and supply-chain problems kept spreading farther than the original compromise. A lot of it came down to access that was alre"
+  },
+  {
+    "source": "thn",
+    "title": "How MCP Servers Can Expose Enterprise Secrets",
+    "desc": "MCP servers can expose enterprise secrets through plaintext configuration files, over-permissioned access and prompt injection, often before security teams even know the server is running. As more organizations adopt AI agents into their systems, that exposure can silently become a major gap in MCP ",
+    "url": "https://thehackernews.com/2026/08/how-mcp-servers-can-expose-enterprise.html",
+    "date": "2026-08-17T17:28:00",
+    "title_ko": "How MCP Servers Can Expose Enterprise Secrets",
+    "desc_ko": "MCP servers can expose enterprise secrets through plaintext configuration files, over-permissioned access and prompt injection, often before security teams even know the server is running. As more organizations adopt AI agents into their systems, that exposure can silently become a major gap in MCP "
+  },
+  {
+    "source": "thn",
+    "title": "Unisoc VoLTE Video Call Exploit Chain Can Give Attackers Full Android Kernel Access",
+    "desc": "Security researchers at SSD Secure Disclosure have published a two-stage exploit chain that achieves full Android kernel access on devices running Unisoc modem firmware through a VoLTE video call, with no fix from the chipset maker.\n\nThe&nbsp;advisory, published August 17, 2026, is the second stage ",
+    "url": "https://thehackernews.com/2026/08/unisoc-volte-video-call-exploit-chain.html",
+    "date": "2026-08-17T16:22:34",
+    "title_ko": "Unisoc VoLTE Video Call Exploit Chain Can Give Attackers Full Android Kernel Access",
+    "desc_ko": "Security researchers at SSD Secure Disclosure have published a two-stage exploit chain that achieves full Android kernel access on devices running Unisoc modem firmware through a VoLTE video call, with no fix from the chipset maker.\n\nThe&nbsp;advisory, published August 17, 2026, is the second stage "
+  },
+  {
+    "source": "thn",
     "title": "Evooo1Bot Linux Botnet Exploits Known Flaws to Turn Edge Devices Into SOCKS5 Proxies",
     "desc": "Cybersecurity researchers have flagged a previously undocumented Linux botnet family dubbed Evooo1Bot that derives its core functionality from the Mirai botnet source code and is equipped to turn internet-facing devices into SOCKS proxies.\n\n\"While the malware reuses the DDoS engine from the publicly",
     "url": "https://thehackernews.com/2026/08/evooo1bot-linux-botnet-exploits-known.html",
@@ -29,11 +92,11 @@
   {
     "source": "thn",
     "title": "Apple macOS Screen Sharing Flaw Exploited on Internet-Exposed Macs to Install Monero Miner",
-    "desc": "A recently patched security flaw in Apple macOS has come under active exploitation in the wild to deploy a cryptocurrency miner, the Netherlands National Cyber Security Centre (NCSC) has warned.\n\nThe vulnerability in question is CVE-2026-65400 (CVSS score: 9.8), a critical authentication issue impac",
+    "desc": "A recently patched security flaw in Apple macOS has come under active exploitation in the wild to deploy a cryptocurrency miner, the Netherlands National Cyber Security Centre (NCSC-NL) has warned.\n\nThe vulnerability in question is CVE-2026-65400 (CVSS score: 9.8), a critical authentication issue im",
     "url": "https://thehackernews.com/2026/08/apple-macos-screen-sharing-flaw.html",
     "date": "2026-08-15T12:54:04",
     "title_ko": "Apple macOS Screen Sharing Flaw Exploited on Internet-Exposed Macs to Install Monero Miner",
-    "desc_ko": "A recently patched security flaw in Apple macOS has come under active exploitation in the wild to deploy a cryptocurrency miner, the Netherlands National Cyber Security Centre (NCSC) has warned.\n\nThe vulnerability in question is CVE-2026-65400 (CVSS score: 9.8), a critical authentication issue impac"
+    "desc_ko": "A recently patched security flaw in Apple macOS has come under active exploitation in the wild to deploy a cryptocurrency miner, the Netherlands National Cyber Security Centre (NCSC-NL) has warned.\n\nThe vulnerability in question is CVE-2026-65400 (CVSS score: 9.8), a critical authentication issue im"
   },
   {
     "source": "thn",
@@ -385,68 +448,5 @@
     "date": "2026-08-11T12:25:45",
     "title_ko": "Hackers Breach Polish Power Plant Controls via Private Cellular Network and Shut Turbine",
     "desc_ko": "Attackers shut down a steam turbine and the process-water treatment system at a Polish combined heat and power plant by coming in over the private cellular network the local grid operator uses to reach remote equipment.\n\nThe plant supplies heat to roughly 50,000 residents. Recovery began at about 7:"
-  },
-  {
-    "source": "thn",
-    "title": "BdThemes Supply Chain Attack Poisons JSON to Create Rogue WordPress Admins",
-    "desc": "Cybersecurity researchers have warned of a supply chain compromise impacting WordPress plugin vendor BdThemes, prompting the content management systems (CMS) platform's plugins team to temporarily disable their downloads.\n\n\"Unlike traditional software supply chain attacks, zero source code files wer",
-    "url": "https://thehackernews.com/2026/08/bdthemes-supply-chain-attack-poisons.html",
-    "date": "2026-08-11T11:18:44",
-    "title_ko": "BdThemes Supply Chain Attack Poisons JSON to Create Rogue WordPress Admins",
-    "desc_ko": "Cybersecurity researchers have warned of a supply chain compromise impacting WordPress plugin vendor BdThemes, prompting the content management systems (CMS) platform's plugins team to temporarily disable their downloads.\n\n\"Unlike traditional software supply chain attacks, zero source code files wer"
-  },
-  {
-    "source": "thn",
-    "title": "Shipping 10–50× More Code? Watch This Webinar on Securing AI-Speed Development",
-    "desc": "AI is helping development teams produce far more code, far faster. But security teams still have to review vulnerabilities, manage dependencies, prioritize fixes, and control risk at human speed.\n\nWhen software output jumps 10 to 50 times, the problem is no longer just finding vulnerabilities. It is",
-    "url": "https://thehackernews.com/2026/08/shipping-1050-more-code-watch-this.html",
-    "date": "2026-08-10T22:59:17",
-    "title_ko": "Shipping 10–50× More Code? Watch This Webinar on Securing AI-Speed Development",
-    "desc_ko": "AI is helping development teams produce far more code, far faster. But security teams still have to review vulnerabilities, manage dependencies, prioritize fixes, and control risk at human speed.\n\nWhen software output jumps 10 to 50 times, the problem is no longer just finding vulnerabilities. It is"
-  },
-  {
-    "source": "thn",
-    "title": "China-Linked Hackers Deploy New StormEncryptor Ransomware, Likely via N-central Flaw",
-    "desc": "Microsoft has disclosed that Storm-1175, a financially motivated threat actor linked to China, has deployed a previously undocumented ransomware strain called StormEncryptor.\n\nThe use of StormEncryptor marks a shift from the adversary's previous use of Medusa ransomware, the Microsoft Threat Intelli",
-    "url": "https://thehackernews.com/2026/08/china-linked-hackers-deploy-new.html",
-    "date": "2026-08-10T22:08:37",
-    "title_ko": "China-Linked Hackers Deploy New StormEncryptor Ransomware, Likely via N-central Flaw",
-    "desc_ko": "Microsoft has disclosed that Storm-1175, a financially motivated threat actor linked to China, has deployed a previously undocumented ransomware strain called StormEncryptor.\n\nThe use of StormEncryptor marks a shift from the adversary's previous use of Medusa ransomware, the Microsoft Threat Intelli"
-  },
-  {
-    "source": "thn",
-    "title": "⚡ Weekly Recap: AI Goes Rogue, Metabase 0-Day, MCP Supply-Chain Attacks, and Router Backdoors",
-    "desc": "A lot of security problems still begin with someone doing a completely normal thing. Cloning a repo. Answering a call. Leaving a box exposed. Trusting the default.\n\nThat pretty much covers the mood this week. Old bugs are back, supply chains are getting stranger, and some exploit paths are so short ",
-    "url": "https://thehackernews.com/2026/08/weekly-recap-ai-goes-rogue-metabase-0.html",
-    "date": "2026-08-10T20:30:29",
-    "title_ko": "⚡ Weekly Recap: AI Goes Rogue, Metabase 0-Day, MCP Supply-Chain Attacks, and Router Backdoors",
-    "desc_ko": "A lot of security problems still begin with someone doing a completely normal thing. Cloning a repo. Answering a call. Leaving a box exposed. Trusting the default.\n\nThat pretty much covers the mood this week. Old bugs are back, supply chains are getting stranger, and some exploit paths are so short "
-  },
-  {
-    "source": "thn",
-    "title": "Kimsuky Builds Offline AI Stack to Boost Phishing and Automate Malware Development",
-    "desc": "North Korea's state hackers are no longer content to type prompts into public chatbots. One of the country's main espionage groups has begun running artificial intelligence (AI) offline on its own servers, connecting document-search tools to files in its possession, and collecting the software parts",
-    "url": "https://thehackernews.com/2026/08/kimsuky-builds-offline-ai-stack-that.html",
-    "date": "2026-08-10T18:49:58",
-    "title_ko": "Kimsuky Builds Offline AI Stack to Boost Phishing and Automate Malware Development",
-    "desc_ko": "North Korea's state hackers are no longer content to type prompts into public chatbots. One of the country's main espionage groups has begun running artificial intelligence (AI) offline on its own servers, connecting document-search tools to files in its possession, and collecting the software parts"
-  },
-  {
-    "source": "thn",
-    "title": "New Passkey Attacks Can Recover Synced Private Keys or Bypass Phishing-Resistant MFA",
-    "desc": "Three separate research efforts last week demonstrated ways to defeat passkey protections without breaking the cryptography they rest on.\n\nPasskeys are designed to replace reusable passwords and resist phishing. The attacks instead reused signed authentication material that Windows had exposed, abus",
-    "url": "https://thehackernews.com/2026/08/new-passkey-attacks-can-recover-synced.html",
-    "date": "2026-08-10T17:55:04",
-    "title_ko": "New Passkey Attacks Can Recover Synced Private Keys or Bypass Phishing-Resistant MFA",
-    "desc_ko": "Three separate research efforts last week demonstrated ways to defeat passkey protections without breaking the cryptography they rest on.\n\nPasskeys are designed to replace reusable passwords and resist phishing. The attacks instead reused signed authentication material that Windows had exposed, abus"
-  },
-  {
-    "source": "thn",
-    "title": "TrueConf Server Flaws Exploited to Replace Client Installers with PhantomCore",
-    "desc": "The threat actor known as Head Mare has been observed weaponizing security flaws in unpatched TrueConf servers once again in attacks targeting Russian companies spanning instrumentation, electronics, transport, energy, IT, and software development sectors.\n\nRussian cybersecurity vendor Kaspersky sai",
-    "url": "https://thehackernews.com/2026/08/head-mare-exploits-trueconf-flaws-to.html",
-    "date": "2026-08-10T17:03:41",
-    "title_ko": "TrueConf Server Flaws Exploited to Replace Client Installers with PhantomCore",
-    "desc_ko": "The threat actor known as Head Mare has been observed weaponizing security flaws in unpatched TrueConf servers once again in attacks targeting Russian companies spanning instrumentation, electronics, transport, energy, IT, and software development sectors.\n\nRussian cybersecurity vendor Kaspersky sai"
   }
 ]
