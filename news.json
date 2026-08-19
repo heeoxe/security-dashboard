@@ -1,6 +1,51 @@
 [
   {
     "source": "thn",
+    "title": "Cloudflare Workers Spectre Attack Leaks JWT From Co-Located Worker at 12 Bits/Second",
+    "desc": "Cybersecurity researchers have disclosed details of a&nbsp;remote Spectre attack&nbsp;against Cloudflare Workers that leaked a JSON Web Token (JWT) from a co-located Worker in the production environment at up to 12 bits per second, 360 times the rate of an earlier attack demonstrated in 2021.\n\nThe e",
+    "url": "https://thehackernews.com/2026/08/cloudflare-workers-spectre-attack-leaks.html",
+    "date": "2026-08-20T00:32:40",
+    "title_ko": "Cloudflare Workers Spectre Attack Leaks JWT From Co-Located Worker at 12 Bits/Second",
+    "desc_ko": "Cybersecurity researchers have disclosed details of a&nbsp;remote Spectre attack&nbsp;against Cloudflare Workers that leaked a JSON Web Token (JWT) from a co-located Worker in the production environment at up to 12 bits per second, 360 times the rate of an earlier attack demonstrated in 2021.\n\nThe e"
+  },
+  {
+    "source": "thn",
+    "title": "OpenAI Pauses Frontier RL Training as It Tightens Defenses Against Unsafe AI Behavior",
+    "desc": "OpenAI on Tuesday revealed that it paused reinforcement learning (RL) training for its latest artificial intelligence (AI) models for two weeks while it shored up additional defenses and increased the scope of its monitoring to avert another Hugging Face-like incident.\n\n\"As models become more capabl",
+    "url": "https://thehackernews.com/2026/08/openai-pauses-frontier-rl-training-as.html",
+    "date": "2026-08-19T23:36:44",
+    "title_ko": "OpenAI Pauses Frontier RL Training as It Tightens Defenses Against Unsafe AI Behavior",
+    "desc_ko": "OpenAI on Tuesday revealed that it paused reinforcement learning (RL) training for its latest artificial intelligence (AI) models for two weeks while it shored up additional defenses and increased the scope of its monitoring to avert another Hugging Face-like incident.\n\n\"As models become more capabl"
+  },
+  {
+    "source": "thn",
+    "title": "SilkParasite Espionage Campaign Targets Central Asian Governments with Five New RATs",
+    "desc": "A previously unreported cyber espionage operation dubbed SilkParasite has been observed targeting government bodies in Central Asia.\n\nThe intrusion set makes use of seven remote access tool (RAT) families, five of which have never been previously documented: DriveSilkRAT, CookiETagRAT, NomadRAT, Gog",
+    "url": "https://thehackernews.com/2026/08/silkparasite-espionage-campaign-targets.html",
+    "date": "2026-08-19T18:42:17",
+    "title_ko": "SilkParasite Espionage Campaign Targets Central Asian Governments with Five New RATs",
+    "desc_ko": "A previously unreported cyber espionage operation dubbed SilkParasite has been observed targeting government bodies in Central Asia.\n\nThe intrusion set makes use of seven remote access tool (RAT) families, five of which have never been previously documented: DriveSilkRAT, CookiETagRAT, NomadRAT, Gog"
+  },
+  {
+    "source": "thn",
+    "title": "Hackers Compromised 14,500+ Dahua Devices Using Credential Attacks, Auth Bypasses, and P2P",
+    "desc": "Cybersecurity researchers at Hunt.io have disclosed details of a campaign that they say compromised more than 14,530 Dahua devices between June 17 and July 22, 2026, using credential attacks, two authentication-bypass flaws, and a peer-to-peer (P2P) relay technique.\n\nThe activity, codenamed Operatio",
+    "url": "https://thehackernews.com/2026/08/hackers-compromised-14500-dahua-devices.html",
+    "date": "2026-08-19T17:04:28",
+    "title_ko": "Hackers Compromised 14,500+ Dahua Devices Using Credential Attacks, Auth Bypasses, and P2P",
+    "desc_ko": "Cybersecurity researchers at Hunt.io have disclosed details of a campaign that they say compromised more than 14,530 Dahua devices between June 17 and July 22, 2026, using credential attacks, two authentication-bypass flaws, and a peer-to-peer (P2P) relay technique.\n\nThe activity, codenamed Operatio"
+  },
+  {
+    "source": "thn",
+    "title": "Phishing 3.0: The Fight Moves to Agent Versus Agent",
+    "desc": "Most email defenses still do the job they did a decade ago. Scan the message, look for something malicious, block it. That worked when the danger sat in the payload, a bad link or an attachment. It stopped working when the danger moved into the message's intent, and it is failing now that the sender",
+    "url": "https://thehackernews.com/2026/08/phishing-30-fight-moves-to-agent-versus.html",
+    "date": "2026-08-19T17:00:00",
+    "title_ko": "Phishing 3.0: The Fight Moves to Agent Versus Agent",
+    "desc_ko": "Most email defenses still do the job they did a decade ago. Scan the message, look for something malicious, block it. That worked when the danger sat in the payload, a bad link or an attachment. It stopped working when the danger moved into the message's intent, and it is failing now that the sender"
+  },
+  {
+    "source": "thn",
     "title": "StopAndProtect Uses Nearly 2,000 Hacked WordPress Sites to Spread Malware and Steal Data",
     "desc": "Cybersecurity researchers have flagged a global cybercrime operation that abuses thousands of hacked WordPress websites as infrastructure to disseminate malware, commandeer infected hosts, store stolen documents, screenshots, and activity logs created to track the status of the activity.\n\n\"The opera",
     "url": "https://thehackernews.com/2026/08/stopandprotect-uses-nearly-2000-hacked.html",
@@ -403,50 +448,5 @@
     "date": "2026-08-12T14:31:54",
     "title_ko": "Attackers Exploit VMware vCenter Vulnerability to Gain Persistent Remote Access",
     "desc_ko": "Threat actors have begun to actively exploit a recently patched critical security flaw in Broadcom VMware vCenter, according to new findings from QUIRSO.\n\nThe vulnerability in question is CVE-2026-59310 (CVSS score: 9.8), a directory-traversal vulnerability in the VMware vCenter server that a malici"
-  },
-  {
-    "source": "thn",
-    "title": "Malicious LiteLLM Releases Tied to Trivy Hack May Have Exposed 2,100+ Organizations",
-    "desc": "Two malicious LiteLLM releases sat on PyPI for about 40 minutes in March carrying credential-stealing code capable of harvesting cloud keys, SSH keys, Kubernetes tokens, database passwords, and other secrets from systems that installed them.\n\nThreat intelligence firm CloudSEK now says a dataset it o",
-    "url": "https://thehackernews.com/2026/08/malicious-litellm-releases-tied-to.html",
-    "date": "2026-08-12T13:34:52",
-    "title_ko": "Malicious LiteLLM Releases Tied to Trivy Hack May Have Exposed 2,100+ Organizations",
-    "desc_ko": "Two malicious LiteLLM releases sat on PyPI for about 40 minutes in March carrying credential-stealing code capable of harvesting cloud keys, SSH keys, Kubernetes tokens, database passwords, and other secrets from systems that installed them.\n\nThreat intelligence firm CloudSEK now says a dataset it o"
-  },
-  {
-    "source": "thn",
-    "title": "SAP Commerce Cloud Flaw Could Let Unauthenticated Attackers Execute Arbitrary Code",
-    "desc": "SAP has released patches to address a maximum-severity security flaw impacting Commerce Cloud (Data Hub Adapter) that could result in arbitrary code execution.\n\nThe vulnerability, assigned the CVE identifier CVE-2026-58231, is rated 10.0 on the CVSS scoring system. It has been described as a case of",
-    "url": "https://thehackernews.com/2026/08/sap-commerce-cloud-flaw-could-let.html",
-    "date": "2026-08-12T13:01:40",
-    "title_ko": "SAP Commerce Cloud Flaw Could Let Unauthenticated Attackers Execute Arbitrary Code",
-    "desc_ko": "SAP has released patches to address a maximum-severity security flaw impacting Commerce Cloud (Data Hub Adapter) that could result in arbitrary code execution.\n\nThe vulnerability, assigned the CVE identifier CVE-2026-58231, is rated 10.0 on the CVSS scoring system. It has been described as a case of"
-  },
-  {
-    "source": "thn",
-    "title": "ShieldBreak Zero-Day PoC Claims Microsoft Defender Patch Bypass With SYSTEM Access",
-    "desc": "The security researcher going by the name Chaotic Eclipse (aka INFINITE NIGHTMARE, MSNightmare, and Nightmare-Eclipse) has released a proof-of-concept (PoC) for a new Microsoft zero-day called ShieldBreak.\n\nThe vulnerability, rooted in Microsoft Defender for Windows, demonstrates a patch bypass for ",
-    "url": "https://thehackernews.com/2026/08/shieldbreak-zero-day-poc-claims.html",
-    "date": "2026-08-12T12:11:38",
-    "title_ko": "ShieldBreak Zero-Day PoC Claims Microsoft Defender Patch Bypass With SYSTEM Access",
-    "desc_ko": "The security researcher going by the name Chaotic Eclipse (aka INFINITE NIGHTMARE, MSNightmare, and Nightmare-Eclipse) has released a proof-of-concept (PoC) for a new Microsoft zero-day called ShieldBreak.\n\nThe vulnerability, rooted in Microsoft Defender for Windows, demonstrates a patch bypass for "
-  },
-  {
-    "source": "thn",
-    "title": "Cisco ASA and FTD Flaw Exploited in the Wild Can Trigger Remote DoS",
-    "desc": "Cisco has warned that a new vulnerability impacting Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software has been exploited in the wild.\n\nThe high-severity flaw, tracked as CVE-2026-20349 (CVSS score: 8.6), is a case of insufficient error check",
-    "url": "https://thehackernews.com/2026/08/cisco-asa-and-ftd-flaw-exploited-in.html",
-    "date": "2026-08-12T11:45:58",
-    "title_ko": "Cisco ASA and FTD Flaw Exploited in the Wild Can Trigger Remote DoS",
-    "desc_ko": "Cisco has warned that a new vulnerability impacting Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software has been exploited in the wild.\n\nThe high-severity flaw, tracked as CVE-2026-20349 (CVSS score: 8.6), is a case of insufficient error check"
-  },
-  {
-    "source": "thn",
-    "title": "Microsoft Patches 398 Flaws Including a Windows Driver Zero-Day Under Active Attack",
-    "desc": "Microsoft released its monthly security updates on Tuesday, and one of the flaws it closed is already being used in attacks.\n\nThe bug sits in a core Windows kernel driver that handles network socket operations. An attacker with code already running on a machine can use it to escalate to SYSTEM. That",
-    "url": "https://thehackernews.com/2026/08/microsoft-patches-398-flaws-including.html",
-    "date": "2026-08-12T01:40:55",
-    "title_ko": "Microsoft Patches 398 Flaws Including a Windows Driver Zero-Day Under Active Attack",
-    "desc_ko": "Microsoft released its monthly security updates on Tuesday, and one of the flaws it closed is already being used in attacks.\n\nThe bug sits in a core Windows kernel driver that handles network socket operations. An attacker with code already running on a machine can use it to escalate to SYSTEM. That"
   }
 ]
