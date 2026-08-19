@@ -1,6 +1,42 @@
 [
   {
     "source": "thn",
+    "title": "StopAndProtect Uses Nearly 2,000 Hacked WordPress Sites to Spread Malware and Steal Data",
+    "desc": "Cybersecurity researchers have flagged a global cybercrime operation that abuses thousands of hacked WordPress websites as infrastructure to disseminate malware, commandeer infected hosts, store stolen documents, screenshots, and activity logs created to track the status of the activity.\n\n\"The opera",
+    "url": "https://thehackernews.com/2026/08/stopandprotect-uses-nearly-2000-hacked.html",
+    "date": "2026-08-19T16:55:28",
+    "title_ko": "StopAndProtect Uses Nearly 2,000 Hacked WordPress Sites to Spread Malware and Steal Data",
+    "desc_ko": "Cybersecurity researchers have flagged a global cybercrime operation that abuses thousands of hacked WordPress websites as infrastructure to disseminate malware, commandeer infected hosts, store stolen documents, screenshots, and activity logs created to track the status of the activity.\n\n\"The opera"
+  },
+  {
+    "source": "thn",
+    "title": "Critical macOS, SharePoint, vCenter, and Microsoft IKE Flaws Under Active Exploitation",
+    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added four critical vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, stating they are being exploited in the wild.\n\nThe shortcomings added to the KEV catalog are listed below -\n\n\n  CVE-2026-65400 (CVSS s",
+    "url": "https://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html",
+    "date": "2026-08-19T16:31:48",
+    "title_ko": "Critical macOS, SharePoint, vCenter, and Microsoft IKE Flaws Under Active Exploitation",
+    "desc_ko": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added four critical vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, stating they are being exploited in the wild.\n\nThe shortcomings added to the KEV catalog are listed below -\n\n\n  CVE-2026-65400 (CVSS s"
+  },
+  {
+    "source": "thn",
+    "title": "Microsoft Links 30+ Rotating Domains to MacSync Stealer Infrastructure",
+    "desc": "Microsoft Defender Experts have linked more than 30 web domains to MacSync Stealer, a macOS-focused information stealer, after correlating recurring endpoint and network behaviors across changing infrastructure, tracing the malware from payload retrieval through data collection, staging, and exfiltr",
+    "url": "https://thehackernews.com/2026/08/microsoft-links-30-rotating-domains-to.html",
+    "date": "2026-08-19T11:31:53",
+    "title_ko": "Microsoft Links 30+ Rotating Domains to MacSync Stealer Infrastructure",
+    "desc_ko": "Microsoft Defender Experts have linked more than 30 web domains to MacSync Stealer, a macOS-focused information stealer, after correlating recurring endpoint and network behaviors across changing infrastructure, tracing the malware from payload retrieval through data collection, staging, and exfiltr"
+  },
+  {
+    "source": "thn",
+    "title": "Clop-Linked Windchill Web Shell Decrypts Credentials and Maps Engineering Data",
+    "desc": "A JavaServer Pages (JSP) web shell deployed following the exploitation of a critical security flaw in PTC Windchill and FlexPLM servers is specifically designed for the enterprise Product Lifecycle Management (PLM) software, according to new findings from ReliaQuest.\n\nThe cybersecurity company chara",
+    "url": "https://thehackernews.com/2026/08/clop-linked-windchill-web-shell.html",
+    "date": "2026-08-19T11:09:25",
+    "title_ko": "Clop-Linked Windchill Web Shell Decrypts Credentials and Maps Engineering Data",
+    "desc_ko": "A JavaServer Pages (JSP) web shell deployed following the exploitation of a critical security flaw in PTC Windchill and FlexPLM servers is specifically designed for the enterprise Product Lifecycle Management (PLM) software, according to new findings from ReliaQuest.\n\nThe cybersecurity company chara"
+  },
+  {
+    "source": "thn",
     "title": "Microsoft Copilot Personal Flaws Could Let One Click Exfiltrate Data From Connected Apps",
     "desc": "Varonis Threat Labs has disclosed three vulnerabilities in Microsoft Copilot Personal that it said could allow a single click on a crafted link to silently pull data from connected apps and other information available to the victim's Copilot session.\n\nThe flaws, which the researchers collectively na",
     "url": "https://thehackernews.com/2026/08/microsoft-copilot-personal-flaws-could.html",
@@ -412,41 +448,5 @@
     "date": "2026-08-12T01:40:55",
     "title_ko": "Microsoft Patches 398 Flaws Including a Windows Driver Zero-Day Under Active Attack",
     "desc_ko": "Microsoft released its monthly security updates on Tuesday, and one of the flaws it closed is already being used in attacks.\n\nThe bug sits in a core Windows kernel driver that handles network socket operations. An attacker with code already running on a machine can use it to escalate to SYSTEM. That"
-  },
-  {
-    "source": "thn",
-    "title": "Kimwolf v7 Android Botnet Makes HTTP/2 DDoS Traffic Look Like Legitimate Browsing",
-    "desc": "Cybersecurity researchers have discovered a new version of the Kimwolf/AISURU Android and Internet of Things (IoT) botnet that comes with significant improvements to improve its operational resilience and conduct distributed denial-of-service (DDoS) attacks.\n\nThe new version, tracked as Kimwolf v7, ",
-    "url": "https://thehackernews.com/2026/08/kimwolf-v7-android-botnet-makes-http2.html",
-    "date": "2026-08-12T01:06:37",
-    "title_ko": "Kimwolf v7 Android Botnet Makes HTTP/2 DDoS Traffic Look Like Legitimate Browsing",
-    "desc_ko": "Cybersecurity researchers have discovered a new version of the Kimwolf/AISURU Android and Internet of Things (IoT) botnet that comes with significant improvements to improve its operational resilience and conduct distributed denial-of-service (DDoS) attacks.\n\nThe new version, tracked as Kimwolf v7, "
-  },
-  {
-    "source": "thn",
-    "title": "Zoom Annotation Flaws Could Let a Meeting Participant Hijack Another Attendee's Client",
-    "desc": "Anyone sharing their screen on a Zoom call could have taken over the computers of everyone watching, and anyone watching could have taken over the presenter's.\n\nThe flaw sat in the annotation tool, the feature that lets participants draw and type on a shared screen, and it asked nothing of the victi",
-    "url": "https://thehackernews.com/2026/08/zoom-annotation-flaws-could-let-meeting.html",
-    "date": "2026-08-12T00:38:47",
-    "title_ko": "Zoom Annotation Flaws Could Let a Meeting Participant Hijack Another Attendee's Client",
-    "desc_ko": "Anyone sharing their screen on a Zoom call could have taken over the computers of everyone watching, and anyone watching could have taken over the presenter's.\n\nThe flaw sat in the annotation tool, the feature that lets participants draw and type on a shared screen, and it asked nothing of the victi"
-  },
-  {
-    "source": "thn",
-    "title": "Sandworm-Linked UAC-0145 Uses Fake Job Interviews to Push VPN That Can Run Commands",
-    "desc": "The Computer Emergency Response Team of Ukraine (CERT-UA) has disclosed details of a new social engineering campaign orchestrated by Russian nation-state threat actors targeting IT workers in the country by masquerading as recruiters to trick them into installing malware.\n\nCERT-UA pinned the activit",
-    "url": "https://thehackernews.com/2026/08/sandworm-linked-uac-0145-uses-fake-job.html",
-    "date": "2026-08-12T00:06:47",
-    "title_ko": "Sandworm-Linked UAC-0145 Uses Fake Job Interviews to Push VPN That Can Run Commands",
-    "desc_ko": "The Computer Emergency Response Team of Ukraine (CERT-UA) has disclosed details of a new social engineering campaign orchestrated by Russian nation-state threat actors targeting IT workers in the country by masquerading as recruiters to trick them into installing malware.\n\nCERT-UA pinned the activit"
-  },
-  {
-    "source": "thn",
-    "title": "Researchers Disclose AI-Assisted SharePoint Exploit Chain Reaching Unauthenticated RCE",
-    "desc": "Security researchers found a way to enter Microsoft SharePoint servers as any user, including an administrator, with no valid account. A significant part of the work that found it was done through an AI agent.\n\nThe flaw, tracked as&nbsp;CVE-2026-55040&nbsp;(CVSS 9.1), affects SharePoint Server Subsc",
-    "url": "https://thehackernews.com/2026/08/researchers-disclose-ai-assisted.html",
-    "date": "2026-08-11T22:17:44",
-    "title_ko": "Researchers Disclose AI-Assisted SharePoint Exploit Chain Reaching Unauthenticated RCE",
-    "desc_ko": "Security researchers found a way to enter Microsoft SharePoint servers as any user, including an administrator, with no valid account. A significant part of the work that found it was done through an AI agent.\n\nThe flaw, tracked as&nbsp;CVE-2026-55040&nbsp;(CVSS 9.1), affects SharePoint Server Subsc"
   }
 ]
