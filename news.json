@@ -1,6 +1,114 @@
 [
   {
     "source": "thn",
+    "title": "Rust Supply Chain Attack Puts Build-Time Malware in Crates with 245 Million Downloads",
+    "desc": "The Rust Project has deleted malicious versions of three widely used Rust crates from crates.io after a compromised maintainer account published releases that added a typosquatted dependency whose build script downloaded and executed a remote payload during compilation.\n\nThe affected releases are ar",
+    "url": "https://thehackernews.com/2026/08/rust-supply-chain-attack-puts-build.html",
+    "date": "2026-08-21T01:52:35",
+    "title_ko": "Rust Supply Chain Attack Puts Build-Time Malware in Crates with 245 Million Downloads",
+    "desc_ko": "The Rust Project has deleted malicious versions of three widely used Rust crates from crates.io after a compromised maintainer account published releases that added a typosquatted dependency whose build script downloaded and executed a remote payload during compilation.\n\nThe affected releases are ar"
+  },
+  {
+    "source": "thn",
+    "title": "Suspected Russian Hackers Abuse Google OAuth and WhatsApp Linking to Hijack Accounts",
+    "desc": "Three distinct suspected Russian cyber espionage threat clusters have been observed leveraging legitimate authentication flows to single out individuals working in academia, aerospace and defense, governments, and think tanks across Europe, as well as academia and think tanks within the U.S.\n\nThese ",
+    "url": "https://thehackernews.com/2026/08/suspected-russian-hackers-abuse-google.html",
+    "date": "2026-08-21T01:29:19",
+    "title_ko": "Suspected Russian Hackers Abuse Google OAuth and WhatsApp Linking to Hijack Accounts",
+    "desc_ko": "Three distinct suspected Russian cyber espionage threat clusters have been observed leveraging legitimate authentication flows to single out individuals working in academia, aerospace and defense, governments, and think tanks across Europe, as well as academia and think tanks within the U.S.\n\nThese "
+  },
+  {
+    "source": "thn",
+    "title": "ThreatsDay: Gogs 10.0 RCE, n8n Workflow-to-RCE, $10M Reward, GLM-5.3 AI Exploit and More",
+    "desc": "A lot of this week’s trouble starts with something trusted doing exactly what it was allowed to do.\n\nSigned drivers get turned against defenses. Legitimate apps help malware blend in. A weak header check opens a path to code execution. Elsewhere, exposed systems, old bugs, odd hiding tricks, and AI-",
+    "url": "https://thehackernews.com/2026/08/threatsday-gogs-100-rce-n8n-workflow-to.html",
+    "date": "2026-08-20T22:53:48",
+    "title_ko": "ThreatsDay: Gogs 10.0 RCE, n8n Workflow-to-RCE, $10M Reward, GLM-5.3 AI Exploit and More",
+    "desc_ko": "A lot of this week’s trouble starts with something trusted doing exactly what it was allowed to do.\n\nSigned drivers get turned against defenses. Legitimate apps help malware blend in. A weak header check opens a path to code execution. Elsewhere, exposed systems, old bugs, odd hiding tricks, and AI-"
+  },
+  {
+    "source": "thn",
+    "title": "AI-Generated Exploit Scripts Target Siemens S7 PLCs in U.S. Critical Infrastructure",
+    "desc": "The U.S. government on Wednesday warned of an \"active threat\" targeting critical infrastructure organizations in the country using artificial intelligence (AI)-generated exploit scripts.\n\nThe activity is targeting Siemens S7 SeriesProgrammable Logic Controllers (PLCs) to conduct reconnaissance and c",
+    "url": "https://thehackernews.com/2026/08/ai-generated-exploit-scripts-target.html",
+    "date": "2026-08-20T22:29:44",
+    "title_ko": "AI-Generated Exploit Scripts Target Siemens S7 PLCs in U.S. Critical Infrastructure",
+    "desc_ko": "The U.S. government on Wednesday warned of an \"active threat\" targeting critical infrastructure organizations in the country using artificial intelligence (AI)-generated exploit scripts.\n\nThe activity is targeting Siemens S7 SeriesProgrammable Logic Controllers (PLCs) to conduct reconnaissance and c"
+  },
+  {
+    "source": "thn",
+    "title": "New Cryptographic Context Injection Attack Could Let Web Pages Steal Grok Chat Data",
+    "desc": "Adversa AI has disclosed an attack technique that it says can cause xAI's Grok chatbot to send a user's name, approximate location, subscription tier, and the prompts from the ongoing conversation to an attacker-controlled server after the user asks it to summarize an ordinary web page.\n\nThe AI secu",
+    "url": "https://thehackernews.com/2026/08/new-cryptographic-context-injection.html",
+    "date": "2026-08-20T20:06:27",
+    "title_ko": "New Cryptographic Context Injection Attack Could Let Web Pages Steal Grok Chat Data",
+    "desc_ko": "Adversa AI has disclosed an attack technique that it says can cause xAI's Grok chatbot to send a user's name, approximate location, subscription tier, and the prompts from the ongoing conversation to an attacker-controlled server after the user asks it to summarize an ordinary web page.\n\nThe AI secu"
+  },
+  {
+    "source": "thn",
+    "title": "Isolated-vm Flaw Lets Sandboxed JavaScript Escape to Host for Potential RCE",
+    "desc": "Cybersecurity researchers have disclosed a critical security flaw in isolated-vm, a popular open-source sandbox with more than 2,900 stars and 190 forks on GitHub, that could allow attackers to escape the confines of the isolated environment.\n\nThe vulnerability (\"GHSA-864f-rcv7-6rh4\"), which has yet",
+    "url": "https://thehackernews.com/2026/08/isolated-vm-flaw-lets-sandboxed.html",
+    "date": "2026-08-20T19:18:24",
+    "title_ko": "Isolated-vm Flaw Lets Sandboxed JavaScript Escape to Host for Potential RCE",
+    "desc_ko": "Cybersecurity researchers have disclosed a critical security flaw in isolated-vm, a popular open-source sandbox with more than 2,900 stars and 190 forks on GitHub, that could allow attackers to escape the confines of the isolated environment.\n\nThe vulnerability (\"GHSA-864f-rcv7-6rh4\"), which has yet"
+  },
+  {
+    "source": "thn",
+    "title": "Critical NetScaler Flaw Can Bypass Authentication on Certain Gateway and AAA Servers",
+    "desc": "Citrix has released updates to address two security flaws impacting NetScaler ADC and NetScaler Gateway deployments, including a critical-severity authentication bypass vulnerability.\n\nAccording to the cloud computing and virtualization technology company, the issues affect customer-managed NetScale",
+    "url": "https://thehackernews.com/2026/08/critical-netscaler-flaw-can-bypass.html",
+    "date": "2026-08-20T19:05:13",
+    "title_ko": "Critical NetScaler Flaw Can Bypass Authentication on Certain Gateway and AAA Servers",
+    "desc_ko": "Citrix has released updates to address two security flaws impacting NetScaler ADC and NetScaler Gateway deployments, including a critical-severity authentication bypass vulnerability.\n\nAccording to the cloud computing and virtualization technology company, the issues affect customer-managed NetScale"
+  },
+  {
+    "source": "thn",
+    "title": "Attackers Exploit Zimbra SNMP Flaw for Unauthenticated Remote Code Execution",
+    "desc": "A now-patched security flaw impacting Zimbra Collaboration (ZCS) has come under active exploitation in the wild, according to the Polish Computer Emergency Response Team (CERT Polska).\n\nThe vulnerability in question is CVE-2026-73570 (CVSS score: 8.9), which refers to a case of command injection tha",
+    "url": "https://thehackernews.com/2026/08/attackers-exploit-zimbra-snmp-flaw-for.html",
+    "date": "2026-08-20T18:54:28",
+    "title_ko": "Attackers Exploit Zimbra SNMP Flaw for Unauthenticated Remote Code Execution",
+    "desc_ko": "A now-patched security flaw impacting Zimbra Collaboration (ZCS) has come under active exploitation in the wild, according to the Polish Computer Emergency Response Team (CERT Polska).\n\nThe vulnerability in question is CVE-2026-73570 (CVSS score: 8.9), which refers to a case of command injection tha"
+  },
+  {
+    "source": "thn",
+    "title": "Zombie Card Attack Can Revive Expired Visa Cards for Contactless Payments",
+    "desc": "Researchers at the University of Massachusetts Amherst have demonstrated an attack that revives expired Visa contactless credit cards for real in-store purchases by rewriting the expiration date a point-of-sale (POS) terminal reads over near-field communication (NFC), without breaking any of the car",
+    "url": "https://thehackernews.com/2026/08/zombie-card-attack-can-revive-expired.html",
+    "date": "2026-08-20T17:31:24",
+    "title_ko": "Zombie Card Attack Can Revive Expired Visa Cards for Contactless Payments",
+    "desc_ko": "Researchers at the University of Massachusetts Amherst have demonstrated an attack that revives expired Visa contactless credit cards for real in-store purchases by rewriting the expiration date a point-of-sale (POS) terminal reads over near-field communication (NFC), without breaking any of the car"
+  },
+  {
+    "source": "thn",
+    "title": "Why \"Shady AI\" is Security's Next Big Governance Problem",
+    "desc": "In March 2026, an internal AI agent at Meta triggered a “Sev 1” incident after sensitive company and user data was exposed to employees who weren’t authorized to access it.&nbsp;\n\nThe incident began when a Meta employee posted a technical question on an internal forum. An engineer used an approved A",
+    "url": "https://thehackernews.com/2026/08/why-shady-ai-is-securitys-next-big.html",
+    "date": "2026-08-20T17:15:00",
+    "title_ko": "Why \"Shady AI\" is Security's Next Big Governance Problem",
+    "desc_ko": "In March 2026, an internal AI agent at Meta triggered a “Sev 1” incident after sensitive company and user data was exposed to employees who weren’t authorized to access it.&nbsp;\n\nThe incident began when a Meta employee posted a technical question on an internal forum. An engineer used an approved A"
+  },
+  {
+    "source": "thn",
+    "title": "CDN Tsunami Attack Abuses HTTP/3 Translation for Up to 350x DoS Amplification",
+    "desc": "Cybersecurity researchers have disclosed two denial-of-service (DoS) attacks that exploit how major content delivery networks (CDNs) convert client-facing HTTP/3 traffic into HTTP/1.1 requests to the websites they front, amplifying a low-bandwidth request stream by up to 350x against the origin serv",
+    "url": "https://thehackernews.com/2026/08/cdn-tsunami-attack-abuses-http3.html",
+    "date": "2026-08-20T17:09:35",
+    "title_ko": "CDN Tsunami Attack Abuses HTTP/3 Translation for Up to 350x DoS Amplification",
+    "desc_ko": "Cybersecurity researchers have disclosed two denial-of-service (DoS) attacks that exploit how major content delivery networks (CDNs) convert client-facing HTTP/3 traffic into HTTP/1.1 requests to the websites they front, amplifying a low-bandwidth request stream by up to 350x against the origin serv"
+  },
+  {
+    "source": "thn",
+    "title": "Manic Android Malware Exfiltrates Data From Offline Phones via Nearby Infected Devices",
+    "desc": "A new Android threat codenamed Manic has been observed actively targeting Ukrainian banks, government and identity services, and messaging applications, as well as Russian and European financial institutions, global fintech and cryptocurrency services, and military-focused communications.\n\n\"Manic si",
+    "url": "https://thehackernews.com/2026/08/manic-android-malware-exfiltrates-data.html",
+    "date": "2026-08-20T16:56:08",
+    "title_ko": "Manic Android Malware Exfiltrates Data From Offline Phones via Nearby Infected Devices",
+    "desc_ko": "A new Android threat codenamed Manic has been observed actively targeting Ukrainian banks, government and identity services, and messaging applications, as well as Russian and European financial institutions, global fintech and cryptocurrency services, and military-focused communications.\n\n\"Manic si"
+  },
+  {
+    "source": "thn",
     "title": "NASA AIT-GUI Flaws Could Let Unauthenticated Attackers Issue Spacecraft Commands",
     "desc": "Security researchers at Cycode have disclosed a chain of flaws in AIT-GUI, the browser-based operator console for NASA/JPL's open-source AMMOS Instrument Toolkit, that allow an unauthenticated attacker to issue arbitrary commands to the software's spacecraft and instrument command bus.\n\nThe chain, t",
     "url": "https://thehackernews.com/2026/08/nasa-ait-gui-flaws-could-let.html",
@@ -340,113 +448,5 @@
     "date": "2026-08-14T16:27:00",
     "title_ko": "CTM360 Uncovers Over 3,000 Recruitment Phishing URLs Using Browser-in-the-Browser (BitB) Credential Traps",
     "desc_ko": "Cybersecurity researchers have uncovered a large-scale, global recruitment-themed phishing campaign that uses fake interview scheduling pages and Browser-in-the-Browser (BitB) windows to steal Google and Facebook credentials and, in more advanced cases, relay multi-factor authentication (MFA) prompt"
-  },
-  {
-    "source": "thn",
-    "title": "Apple Warns Users in 110 Countries They May Be Targets of Mercenary Spyware",
-    "desc": "Apple on Thursday sent a fresh batch of notifications to customers whom it suspects may have been targeted by mercenary spyware attacks.\n\nIn a statement shared with TechCrunch, the iPhone maker said it alerted an unspecified number of users targeted in 110 countries and that it has notified customer",
-    "url": "https://thehackernews.com/2026/08/apple-warns-users-in-110-countries-they.html",
-    "date": "2026-08-14T16:14:34",
-    "title_ko": "Apple Warns Users in 110 Countries They May Be Targets of Mercenary Spyware",
-    "desc_ko": "Apple on Thursday sent a fresh batch of notifications to customers whom it suspects may have been targeted by mercenary spyware attacks.\n\nIn a statement shared with TechCrunch, the iPhone maker said it alerted an unspecified number of users targeted in 110 countries and that it has notified customer"
-  },
-  {
-    "source": "thn",
-    "title": "Trump Memo Paves Way for U.S. Firms to Hack and Disrupt Foreign Crime Groups",
-    "desc": "A new White House memo signed by U.S. President Donald Trump has instructed the National Coordination Center (NCC) to establish a program that would allow private sector companies to take advantage of their \"innovative capabilities\" to break into foreign Transnational Criminal Organizations (TCOs) a",
-    "url": "https://thehackernews.com/2026/08/trump-memo-paves-way-for-us-firms-to.html",
-    "date": "2026-08-14T15:08:56",
-    "title_ko": "Trump Memo Paves Way for U.S. Firms to Hack and Disrupt Foreign Crime Groups",
-    "desc_ko": "A new White House memo signed by U.S. President Donald Trump has instructed the National Coordination Center (NCC) to establish a program that would allow private sector companies to take advantage of their \"innovative capabilities\" to break into foreign Transnational Criminal Organizations (TCOs) a"
-  },
-  {
-    "source": "thn",
-    "title": "China-Linked Jewelbug Uses XG-Web for Government Espionage and Crypto Fraud",
-    "desc": "The China-linked threat actor known as Jewelbug has been observed carrying out cyber espionage operations targeting governments and militaries, while simultaneously engaging in cryptocurrency fraud.\n\n\"Both missions are administered from a single control panel, XG-Web, a browser-centric remote-access",
-    "url": "https://thehackernews.com/2026/08/china-linked-jewelbug-uses-xg-web-for.html",
-    "date": "2026-08-14T13:24:18",
-    "title_ko": "China-Linked Jewelbug Uses XG-Web for Government Espionage and Crypto Fraud",
-    "desc_ko": "The China-linked threat actor known as Jewelbug has been observed carrying out cyber espionage operations targeting governments and militaries, while simultaneously engaging in cryptocurrency fraud.\n\n\"Both missions are administered from a single control panel, XG-Web, a browser-centric remote-access"
-  },
-  {
-    "source": "thn",
-    "title": "GeoServer Zero-Day Targeted in Active Exploitation Attempts, Can Lead to RCE",
-    "desc": "A newly disclosed zero-day flaw in GeoServer is seeing active exploitation efforts, per watchTowr.\n\nThe vulnerability, which has yet to be assigned a CVE identifier, is an SQL injection vulnerability in the open-source platform that can lead to remote code execution (RCE). The security defect remain",
-    "url": "https://thehackernews.com/2026/08/unpatched-geoserver-zero-day-targeted.html",
-    "date": "2026-08-14T00:15:12",
-    "title_ko": "GeoServer Zero-Day Targeted in Active Exploitation Attempts, Can Lead to RCE",
-    "desc_ko": "A newly disclosed zero-day flaw in GeoServer is seeing active exploitation efforts, per watchTowr.\n\nThe vulnerability, which has yet to be assigned a CVE identifier, is an SQL injection vulnerability in the open-source platform that can lead to remote code execution (RCE). The security defect remain"
-  },
-  {
-    "source": "thn",
-    "title": "ThreatsDay: GhostJacking AI Attacks, EtherHiding ClickFix, Cursor CLI Flaw + 17 More Stories",
-    "desc": "Some weeks have one big security story. Others bring many smaller updates that are easy to miss but still matter. This week has plenty of them, covering cloud services, AI tools, malware, data breaches, scams, and new attack methods.\n\nThe latest ThreatsDay Bulletin puts all of these short updates in",
-    "url": "https://thehackernews.com/2026/08/threatsday-ghostjacking-ai-attacks.html",
-    "date": "2026-08-13T23:47:10",
-    "title_ko": "ThreatsDay: GhostJacking AI Attacks, EtherHiding ClickFix, Cursor CLI Flaw + 17 More Stories",
-    "desc_ko": "Some weeks have one big security story. Others bring many smaller updates that are easy to miss but still matter. This week has plenty of them, covering cloud services, AI tools, malware, data breaches, scams, and new attack methods.\n\nThe latest ThreatsDay Bulletin puts all of these short updates in"
-  },
-  {
-    "source": "thn",
-    "title": "New PATCHCORD Backdoor Targets Afghan Telecom and Indian Critical Infrastructure",
-    "desc": "Afghan telecom providers and South Asian critical infrastructure organizations have emerged as the target of a new ongoing campaign that delivers a previously undocumented backdoor called PATCHCORD.\n\nAccording to Acronis Threat Research Unit (TRU), the backdoor is a compiled C/C++ implant delivered ",
-    "url": "https://thehackernews.com/2026/08/new-patchcord-backdoor-targets-afghan.html",
-    "date": "2026-08-13T20:30:29",
-    "title_ko": "New PATCHCORD Backdoor Targets Afghan Telecom and Indian Critical Infrastructure",
-    "desc_ko": "Afghan telecom providers and South Asian critical infrastructure organizations have emerged as the target of a new ongoing campaign that delivers a previously undocumented backdoor called PATCHCORD.\n\nAccording to Acronis Threat Research Unit (TRU), the backdoor is a compiled C/C++ implant delivered "
-  },
-  {
-    "source": "thn",
-    "title": "AmnesiaStealer Hijacks Chromium Sessions to Give Attackers Live Browser Control on macOS",
-    "desc": "Cybersecurity researchers have disclosed details of a new macOS-oriented, Rust-based information stealer called AmnesiaStealer that's capable of hijacking Chromium web browsers to steal session data.\n\nThe multi-stage stealer is spread via a counterfeit GitHub download page titled \"Download for macOS",
-    "url": "https://thehackernews.com/2026/08/amnesiastealer-hijacks-chromium.html",
-    "date": "2026-08-13T19:13:14",
-    "title_ko": "AmnesiaStealer Hijacks Chromium Sessions to Give Attackers Live Browser Control on macOS",
-    "desc_ko": "Cybersecurity researchers have disclosed details of a new macOS-oriented, Rust-based information stealer called AmnesiaStealer that's capable of hijacking Chromium web browsers to steal session data.\n\nThe multi-stage stealer is spread via a counterfeit GitHub download page titled \"Download for macOS"
-  },
-  {
-    "source": "thn",
-    "title": "WindRelay Android Malware Turns Victims' Phones Into NFC Relays for Payment Fraud",
-    "desc": "A previously unseen Android near field communication (NFC) relay malware family dubbed WindRelay is being deployed in conjunction with a known remote access trojan (RAT) called SpyNote as part of a contactless payment fraud scheme.\n\nThe purpose-built malware, according to Group-IB, is designed to ca",
-    "url": "https://thehackernews.com/2026/08/windrelay-android-malware-turns-victims.html",
-    "date": "2026-08-13T17:23:14",
-    "title_ko": "WindRelay Android Malware Turns Victims' Phones Into NFC Relays for Payment Fraud",
-    "desc_ko": "A previously unseen Android near field communication (NFC) relay malware family dubbed WindRelay is being deployed in conjunction with a known remote access trojan (RAT) called SpyNote as part of a contactless payment fraud scheme.\n\nThe purpose-built malware, according to Group-IB, is designed to ca"
-  },
-  {
-    "source": "thn",
-    "title": "North Korean Remote Workers Are Infiltrating Government and Businesses: How to Expose Them Before Hiring",
-    "desc": "Companies are used to thinking about attackers as outsiders trying to break in.\n\nNorth Korean IT workers flip that model. They apply for jobs, pass interviews, receive legitimate credentials, and can end up inside the same systems companies spend millions trying to protect.\n\nThat risk is no longer t",
-    "url": "https://thehackernews.com/2026/08/north-korean-remote-workers-are.html",
-    "date": "2026-08-13T17:15:00",
-    "title_ko": "North Korean Remote Workers Are Infiltrating Government and Businesses: How to Expose Them Before Hiring",
-    "desc_ko": "Companies are used to thinking about attackers as outsiders trying to break in.\n\nNorth Korean IT workers flip that model. They apply for jobs, pass interviews, receive legitimate credentials, and can end up inside the same systems companies spend millions trying to protect.\n\nThat risk is no longer t"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Exploit SharePoint Authentication Bypass After Public PoC Release",
-    "desc": "Threat actors have begun to exploit a newly disclosed Microsoft SharePoint vulnerability following the release of a proof-of-concept (PoC) code.\n\nThe vulnerability in question is CVE-2026-55040 (CVSS score: 9.1), which refers to a critical security feature bypass that stems from weak authentication.",
-    "url": "https://thehackernews.com/2026/08/attackers-exploit-sharepoint.html",
-    "date": "2026-08-13T11:39:48",
-    "title_ko": "Attackers Exploit SharePoint Authentication Bypass After Public PoC Release",
-    "desc_ko": "Threat actors have begun to exploit a newly disclosed Microsoft SharePoint vulnerability following the release of a proof-of-concept (PoC) code.\n\nThe vulnerability in question is CVE-2026-55040 (CVSS score: 9.1), which refers to a critical security feature bypass that stems from weak authentication."
-  },
-  {
-    "source": "thn",
-    "title": "Lazarus Exploits Windows Zero-Day to Gain SYSTEM Access and Deploy Backdoor",
-    "desc": "The North Korean threat actor known as Lazarus Group has been attributed to the zero-day exploitation of a newly patched security flaw impacting Microsoft Windows to deliver a never-before-seen backdoor targeting defense and aerospace companies across France, Germany, Brazil, and India.\n\nThe activit",
-    "url": "https://thehackernews.com/2026/08/lazarus-exploits-windows-zero-day-to.html",
-    "date": "2026-08-12T23:09:27",
-    "title_ko": "Lazarus Exploits Windows Zero-Day to Gain SYSTEM Access and Deploy Backdoor",
-    "desc_ko": "The North Korean threat actor known as Lazarus Group has been attributed to the zero-day exploitation of a newly patched security flaw impacting Microsoft Windows to deliver a never-before-seen backdoor targeting defense and aerospace companies across France, Germany, Brazil, and India.\n\nThe activit"
-  },
-  {
-    "source": "thn",
-    "title": "737 Chrome VPN Extensions Caught Routing Traffic Through Proxies. Check If You Have One",
-    "desc": "A massive set of 737 free VPN and proxy extensions have been found to mainly target Russian-speaking users seeking access to blocked services with an aim to intercept browser traffic and route them through a proxy infrastructure.\n\nThe extensions, published across at least 40 Chrome Web Store develop",
-    "url": "https://thehackernews.com/2026/08/737-chrome-vpn-extensions-caught.html",
-    "date": "2026-08-12T19:39:50",
-    "title_ko": "737 Chrome VPN Extensions Caught Routing Traffic Through Proxies. Check If You Have One",
-    "desc_ko": "A massive set of 737 free VPN and proxy extensions have been found to mainly target Russian-speaking users seeking access to blocked services with an aim to intercept browser traffic and route them through a proxy infrastructure.\n\nThe extensions, published across at least 40 Chrome Web Store develop"
   }
 ]
