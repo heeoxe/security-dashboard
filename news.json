@@ -1,6 +1,42 @@
 [
   {
     "source": "thn",
+    "title": "NASA AIT-GUI Flaws Could Let Unauthenticated Attackers Issue Spacecraft Commands",
+    "desc": "Security researchers at Cycode have disclosed a chain of flaws in AIT-GUI, the browser-based operator console for NASA/JPL's open-source AMMOS Instrument Toolkit, that allow an unauthenticated attacker to issue arbitrary commands to the software's spacecraft and instrument command bus.\n\nThe chain, t",
+    "url": "https://thehackernews.com/2026/08/nasa-ait-gui-flaws-could-let.html",
+    "date": "2026-08-20T16:35:11",
+    "title_ko": "NASA AIT-GUI Flaws Could Let Unauthenticated Attackers Issue Spacecraft Commands",
+    "desc_ko": "Security researchers at Cycode have disclosed a chain of flaws in AIT-GUI, the browser-based operator console for NASA/JPL's open-source AMMOS Instrument Toolkit, that allow an unauthenticated attacker to issue arbitrary commands to the software's spacecraft and instrument command bus.\n\nThe chain, t"
+  },
+  {
+    "source": "thn",
+    "title": "ToxicPanda 2.0 and GoldDigger Expand Android Banking Attacks with On-Device Fraud",
+    "desc": "Cybersecurity researchers have shed light on an updated version of ToxicPanda (aka TgToxic) that comes with \"significant enhancements,\" including a set of 167 remote commands and expands its targeting footprint globally.\n\nZimperium zLabs, in a Wednesday report, said the Android malware also features",
+    "url": "https://thehackernews.com/2026/08/toxicpanda-20-and-golddigger-expand.html",
+    "date": "2026-08-20T16:08:28",
+    "title_ko": "ToxicPanda 2.0 and GoldDigger Expand Android Banking Attacks with On-Device Fraud",
+    "desc_ko": "Cybersecurity researchers have shed light on an updated version of ToxicPanda (aka TgToxic) that comes with \"significant enhancements,\" including a set of 167 remote commands and expands its targeting footprint globally.\n\nZimperium zLabs, in a Wednesday report, said the Android malware also features"
+  },
+  {
+    "source": "thn",
+    "title": "40 Malicious Firefox Extensions Pose as Web3 Products to Steal Wallet Secrets",
+    "desc": "A set of 40 Mozilla Firefox extensions has been found to engage in cryptocurrency wallet theft by masquerading as OKX, Rabby Wallet, TronLink, and other Web3 products.\n\nAccording to the Socket Threat Research team, the extensions are part of a broader set of 77 browser add-ons that share source code",
+    "url": "https://thehackernews.com/2026/08/40-malicious-firefox-extensions-pose-as.html",
+    "date": "2026-08-20T14:12:03",
+    "title_ko": "40 Malicious Firefox Extensions Pose as Web3 Products to Steal Wallet Secrets",
+    "desc_ko": "A set of 40 Mozilla Firefox extensions has been found to engage in cryptocurrency wallet theft by masquerading as OKX, Rabby Wallet, TronLink, and other Web3 products.\n\nAccording to the Socket Threat Research team, the extensions are part of a broader set of 77 browser add-ons that share source code"
+  },
+  {
+    "source": "thn",
+    "title": "Elementor Pro Flaw Could Let Unauthenticated Attackers Upload PHP and Execute Code",
+    "desc": "Cybersecurity researchers have disclosed details of a critical flaw in the Elementor Pro WordPress plugin that, if successfully exploited, could lead to remote code execution.\n\nThe vulnerability, tracked as CVE-2026-32475, carries a CVSS score of 9.0 out of 10.0. It has been described as a case of u",
+    "url": "https://thehackernews.com/2026/08/elementor-pro-flaw-could-let.html",
+    "date": "2026-08-20T11:34:34",
+    "title_ko": "Elementor Pro Flaw Could Let Unauthenticated Attackers Upload PHP and Execute Code",
+    "desc_ko": "Cybersecurity researchers have disclosed details of a critical flaw in the Elementor Pro WordPress plugin that, if successfully exploited, could lead to remote code execution.\n\nThe vulnerability, tracked as CVE-2026-32475, carries a CVSS score of 9.0 out of 10.0. It has been described as a case of u"
+  },
+  {
+    "source": "thn",
     "title": "Cloudflare Workers Spectre Attack Leaks JWT From Co-Located Worker at 12 Bits/Second",
     "desc": "Cybersecurity researchers have disclosed details of a&nbsp;remote Spectre attack&nbsp;against Cloudflare Workers that leaked a JSON Web Token (JWT) from a co-located Worker in the production environment at up to 12 bits per second, 360 times the rate of an earlier attack demonstrated in 2021.\n\nThe e",
     "url": "https://thehackernews.com/2026/08/cloudflare-workers-spectre-attack-leaks.html",
@@ -412,41 +448,5 @@
     "date": "2026-08-12T19:39:50",
     "title_ko": "737 Chrome VPN Extensions Caught Routing Traffic Through Proxies. Check If You Have One",
     "desc_ko": "A massive set of 737 free VPN and proxy extensions have been found to mainly target Russian-speaking users seeking access to blocked services with an aim to intercept browser traffic and route them through a proxy infrastructure.\n\nThe extensions, published across at least 40 Chrome Web Store develop"
-  },
-  {
-    "source": "thn",
-    "title": "OpenAI, Anthropic, Google API Flaw Let Weaker AI Models Decode Stronger Models' Reasoning",
-    "desc": "A newly disclosed flaw in the way OpenAI, Anthropic, and Google carried hidden AI reasoning between API calls let researchers recover internal reasoning and secrets from session logs, including API keys and passwords.\n\nThe weakness affected encrypted reasoning objects used by the providers' reasonin",
-    "url": "https://thehackernews.com/2026/08/openai-anthropic-google-api-flaw-let.html",
-    "date": "2026-08-12T17:17:38",
-    "title_ko": "OpenAI, Anthropic, Google API Flaw Let Weaker AI Models Decode Stronger Models' Reasoning",
-    "desc_ko": "A newly disclosed flaw in the way OpenAI, Anthropic, and Google carried hidden AI reasoning between API calls let researchers recover internal reasoning and secrets from session logs, including API keys and passwords.\n\nThe weakness affected encrypted reasoning objects used by the providers' reasonin"
-  },
-  {
-    "source": "thn",
-    "title": "Enterprise Defenses Recovered at the Edge and Collapsed Inside",
-    "desc": "Enterprise defenses are tuned to catch the attacks that make noise. This year's data shows attackers winning by making none.\n\nAccording to Picus Labs' new Blue Report 2026, which measured more than 338 million real attack simulations across actual client production environments in the first half of ",
-    "url": "https://thehackernews.com/2026/08/enterprise-defenses-recovered-at-edge.html",
-    "date": "2026-08-12T17:11:34",
-    "title_ko": "Enterprise Defenses Recovered at the Edge and Collapsed Inside",
-    "desc_ko": "Enterprise defenses are tuned to catch the attacks that make noise. This year's data shows attackers winning by making none.\n\nAccording to Picus Labs' new Blue Report 2026, which measured more than 338 million real attack simulations across actual client production environments in the first half of "
-  },
-  {
-    "source": "thn",
-    "title": "Adobe Patches Three CVSS 10.0 ColdFusion and Campaign Classic Flaws",
-    "desc": "Adobe has shipped updates to address multiple critical security vulnerabilities impacting ColdFusion, Commerce, and Campaign Classic that, if successfully exploited, could result in arbitrary code execution and privilege escalation.\n\nThe most severe of the flaws are listed below -\n\n\n  CVE-2026-48362",
-    "url": "https://thehackernews.com/2026/08/adobe-patches-three-cvss-100-coldfusion.html",
-    "date": "2026-08-12T16:43:03",
-    "title_ko": "Adobe Patches Three CVSS 10.0 ColdFusion and Campaign Classic Flaws",
-    "desc_ko": "Adobe has shipped updates to address multiple critical security vulnerabilities impacting ColdFusion, Commerce, and Campaign Classic that, if successfully exploited, could result in arbitrary code execution and privilege escalation.\n\nThe most severe of the flaws are listed below -\n\n\n  CVE-2026-48362"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Exploit VMware vCenter Vulnerability to Gain Persistent Remote Access",
-    "desc": "Threat actors have begun to actively exploit a recently patched critical security flaw in Broadcom VMware vCenter, according to new findings from QUIRSO.\n\nThe vulnerability in question is CVE-2026-59310 (CVSS score: 9.8), a directory-traversal vulnerability in the VMware vCenter server that a malici",
-    "url": "https://thehackernews.com/2026/08/attackers-exploit-vmware-vcenter.html",
-    "date": "2026-08-12T14:31:54",
-    "title_ko": "Attackers Exploit VMware vCenter Vulnerability to Gain Persistent Remote Access",
-    "desc_ko": "Threat actors have begun to actively exploit a recently patched critical security flaw in Broadcom VMware vCenter, according to new findings from QUIRSO.\n\nThe vulnerability in question is CVE-2026-59310 (CVSS score: 9.8), a directory-traversal vulnerability in the VMware vCenter server that a malici"
   }
 ]
