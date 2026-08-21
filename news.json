@@ -1,6 +1,42 @@
 [
   {
     "source": "thn",
+    "title": "14 Trojanized npm Packages Drop RedC2 4.0 Linux Backdoor With AI-Assisted C2",
+    "desc": "Cybersecurity researchers have discovered a set of trojanized npm packages that masquerade as working calendar and streak utilities but are engineered to stealthily deliver an artificial intelligence (AI)-powered Linux implant dubbed RedC2 4.0.\n\n\"When the module loads, it locates the bundled binary,",
+    "url": "https://thehackernews.com/2026/08/14-trojanized-npm-packages-drop-redc2.html",
+    "date": "2026-08-22T00:23:00",
+    "title_ko": "14 Trojanized npm Packages Drop RedC2 4.0 Linux Backdoor With AI-Assisted C2",
+    "desc_ko": "Cybersecurity researchers have discovered a set of trojanized npm packages that masquerade as working calendar and streak utilities but are engineered to stealthily deliver an artificial intelligence (AI)-powered Linux implant dubbed RedC2 4.0.\n\n\"When the module loads, it locates the bundled binary,"
+  },
+  {
+    "source": "thn",
+    "title": "Microsoft Defender's Own Driver Can Be Weaponized to Delete Security Software at Boot",
+    "desc": "Check Point Research has disclosed a technique that uses Microsoft Defender's own legitimately signed boot-time remediation driver to perform arbitrary kernel-level file and registry operations on Windows systems ranging from Windows 7 through Windows 11 25H2, with no software flaw exploited and no ",
+    "url": "https://thehackernews.com/2026/08/microsoft-defenders-own-driver-can-be.html",
+    "date": "2026-08-21T21:22:10",
+    "title_ko": "Microsoft Defender's Own Driver Can Be Weaponized to Delete Security Software at Boot",
+    "desc_ko": "Check Point Research has disclosed a technique that uses Microsoft Defender's own legitimately signed boot-time remediation driver to perform arbitrary kernel-level file and registry operations on Windows systems ranging from Windows 7 through Windows 11 25H2, with no software flaw exploited and no "
+  },
+  {
+    "source": "thn",
+    "title": "Android Car Malware Spreads Through Built-In Updaters for Ad Fraud, Proxy Botnet",
+    "desc": "Cybersecurity researchers have flagged a new malware family that's specifically designed to infect Android-based vehicle head unit firmware developed by DoFun.\n\nKaspersky, which discovered the threat in June 2026, said the end goal of the malware is to serve a multi-stage downloader to enable ad fra",
+    "url": "https://thehackernews.com/2026/08/android-car-malware-spreads-through.html",
+    "date": "2026-08-21T21:11:44",
+    "title_ko": "Android Car Malware Spreads Through Built-In Updaters for Ad Fraud, Proxy Botnet",
+    "desc_ko": "Cybersecurity researchers have flagged a new malware family that's specifically designed to infect Android-based vehicle head unit firmware developed by DoFun.\n\nKaspersky, which discovered the threat in June 2026, said the end goal of the malware is to serve a multi-stage downloader to enable ad fra"
+  },
+  {
+    "source": "thn",
+    "title": "Wazuh and AI For Enhanced SOC Workflows",
+    "desc": "Artificial Intelligence (AI) has become one of this decade's defining technologies. From healthcare and finance to manufacturing and education, organizations increasingly rely on AI to automate repetitive tasks, uncover patterns hidden within large datasets, and support faster decision-making. Cyber",
+    "url": "https://thehackernews.com/2026/08/wazuh-and-ai-for-enhanced-soc-workflows.html",
+    "date": "2026-08-21T16:51:39",
+    "title_ko": "Wazuh and AI For Enhanced SOC Workflows",
+    "desc_ko": "Artificial Intelligence (AI) has become one of this decade's defining technologies. From healthcare and finance to manufacturing and education, organizations increasingly rely on AI to automate repetitive tasks, uncover patterns hidden within large datasets, and support faster decision-making. Cyber"
+  },
+  {
+    "source": "thn",
     "title": "Cisco Patches Nine Crosswork and Secure Workload Flaws, Five Scoring CVSS 10.0",
     "desc": "Cisco has published another round of security updates for Crosswork platforms and Secure Workload Software as part of a continued comprehensive internal security review.\n\nFour of the security vulnerabilities affect Crosswork Data Gateway, Crosswork Network Controller, and Crosswork Planning, regardl",
     "url": "https://thehackernews.com/2026/08/cisco-patches-nine-crosswork-and-secure.html",
@@ -19,12 +55,12 @@
   },
   {
     "source": "thn",
-    "title": "Microsoft Entra ID Flaw (CVSS 10.0) Exploited in Wild, Allows Remote Code Execution",
-    "desc": "Microsoft on Thursday warned of a maximum-severity security flaw in Entra ID that it said has been exploited in the wild, but noted that no customer action is required.\n\nThe vulnerability, tracked as CVE-2026-69836 (CVSS score: 10.0), is a case of remote code execution impacting the tech giant's clo",
+    "title": "Microsoft Patches Severe Entra ID Flaw (CVSS 10.0) Allowing Remote Code Execution",
+    "desc": "Update: The story was updated after publication to note that the vulnerability has not been exploited.\n\nAlthough the security bulletin originally marked the \"Exploited\" field under the Exploitability Assessment table as \"Yes,\" on August 21, 2026, Microsoft corrected the \"Exploited\" status to \"No\" af",
     "url": "https://thehackernews.com/2026/08/microsoft-entra-id-flaw-cvss-100.html",
     "date": "2026-08-21T11:36:11",
-    "title_ko": "Microsoft Entra ID Flaw (CVSS 10.0) Exploited in Wild, Allows Remote Code Execution",
-    "desc_ko": "Microsoft on Thursday warned of a maximum-severity security flaw in Entra ID that it said has been exploited in the wild, but noted that no customer action is required.\n\nThe vulnerability, tracked as CVE-2026-69836 (CVSS score: 10.0), is a case of remote code execution impacting the tech giant's clo"
+    "title_ko": "Microsoft Patches Severe Entra ID Flaw (CVSS 10.0) Allowing Remote Code Execution",
+    "desc_ko": "Update: The story was updated after publication to note that the vulnerability has not been exploited.\n\nAlthough the security bulletin originally marked the \"Exploited\" field under the Exploitability Assessment table as \"Yes,\" on August 21, 2026, Microsoft corrected the \"Exploited\" status to \"No\" af"
   },
   {
     "source": "thn",
@@ -412,41 +448,5 @@
     "date": "2026-08-17T13:06:19",
     "title_ko": "Suspected China-Nexus Actor Exploits VMware vCenter Flaw, Deploys Babuk-Derived Ransomware",
     "desc_ko": "Cybersecurity researchers have attributed the exploitation of a newly patched security flaw in Broadcom VMware vCenter to a suspected China-nexus advanced persistent threat (APT).\n\nThe attacks involve the exploitation of CVE-2026-59310 (CVSS score: 9.8), a severe directory-traversal vulnerability in"
-  },
-  {
-    "source": "thn",
-    "title": "SAP Commerce Cloud CVE-2026-58231 Targeted in Exploitation Attempts Days After Patch",
-    "desc": "A maximum-severity security vulnerability impacting SAP Commerce Cloud is witnessing active exploitation efforts.\n\nThe vulnerability, tracked as CVE-2026-58231, is rated 10.0 on the CVSS scoring system. It relates to an instance of insufficient authorization checks and input validation.\n\n\"SAP Commer",
-    "url": "https://thehackernews.com/2026/08/sap-commerce-cloud-cve-2026-58231.html",
-    "date": "2026-08-15T14:08:46",
-    "title_ko": "SAP Commerce Cloud CVE-2026-58231 Targeted in Exploitation Attempts Days After Patch",
-    "desc_ko": "A maximum-severity security vulnerability impacting SAP Commerce Cloud is witnessing active exploitation efforts.\n\nThe vulnerability, tracked as CVE-2026-58231, is rated 10.0 on the CVSS scoring system. It relates to an instance of insufficient authorization checks and input validation.\n\n\"SAP Commer"
-  },
-  {
-    "source": "thn",
-    "title": "Apple macOS Screen Sharing Flaw Exploited on Internet-Exposed Macs to Install Monero Miner",
-    "desc": "A recently patched security flaw in Apple macOS has come under active exploitation in the wild to deploy a cryptocurrency miner, the Netherlands National Cyber Security Centre (NCSC-NL) has warned.\n\nThe vulnerability in question is CVE-2026-65400 (CVSS score: 9.8), a critical authentication issue im",
-    "url": "https://thehackernews.com/2026/08/apple-macos-screen-sharing-flaw.html",
-    "date": "2026-08-15T12:54:04",
-    "title_ko": "Apple macOS Screen Sharing Flaw Exploited on Internet-Exposed Macs to Install Monero Miner",
-    "desc_ko": "A recently patched security flaw in Apple macOS has come under active exploitation in the wild to deploy a cryptocurrency miner, the Netherlands National Cyber Security Centre (NCSC-NL) has warned.\n\nThe vulnerability in question is CVE-2026-65400 (CVSS score: 9.8), a critical authentication issue im"
-  },
-  {
-    "source": "thn",
-    "title": "Hackers Spend Nearly $7 Million on Expired Domains to Redirect Traffic to Scams and Malware",
-    "desc": "Threat actors are acquiring expired domains to inherit website traffic and reputation to redirect victims to scams and malware on a large scale.\n\nDNS threat intelligence firm Infoblox has given the name dropcatch domains to those that get a second chance, where an expired domain becomes available fo",
-    "url": "https://thehackernews.com/2026/08/hackers-spend-nearly-7-million-on.html",
-    "date": "2026-08-15T00:18:46",
-    "title_ko": "Hackers Spend Nearly $7 Million on Expired Domains to Redirect Traffic to Scams and Malware",
-    "desc_ko": "Threat actors are acquiring expired domains to inherit website traffic and reputation to redirect victims to scams and malware on a large scale.\n\nDNS threat intelligence firm Infoblox has given the name dropcatch domains to those that get a second chance, where an expired domain becomes available fo"
-  },
-  {
-    "source": "thn",
-    "title": "IAM Compliance Requirements and Best Practices",
-    "desc": "IAM compliance is the practice of demonstrating that identity and access controls are not only documented but actually enforced across users, applications, infrastructure, and non-human identities. This guide explains what IAM compliance requires, which regulations matter, and how organizations move",
-    "url": "https://thehackernews.com/2026/08/iam-compliance-requirements-and-best.html",
-    "date": "2026-08-14T22:49:49",
-    "title_ko": "IAM Compliance Requirements and Best Practices",
-    "desc_ko": "IAM compliance is the practice of demonstrating that identity and access controls are not only documented but actually enforced across users, applications, infrastructure, and non-human identities. This guide explains what IAM compliance requires, which regulations matter, and how organizations move"
   }
 ]
