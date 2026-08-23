@@ -1,5 +1,1198 @@
 [
   {
+    "cve": "CVE-2026-50540",
+    "title": "Kata Containers: Config Path Annotation Arbitrary File Loading",
+    "desc": "Kata Containers is an open source project focusing on a standard implementation of lightweight Virtual Machines (VMs) that perform like containers. Prior to version 4.0.0, kata-runtime is vulnerable to host code execution via an unvalidated configuration path annotation. The runtime accepts an arbitrary io.katacontainers.config_path pod annotation and loads the referenced host TOML file without re",
+    "cvss": 9.6,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-20",
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "kata-containers",
+        "product": "kata-containers"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-07",
+    "updated": "2026-08-23",
+    "url": "https://github.com/kata-containers/kata-containers/security/advisories/GHSA-mp2j-xm59-qfgw",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-11831",
+    "title": "Npm-serialize-javascript: cross-site scripting (xss) in serialize-javascript",
+    "desc": "A flaw was found in npm-serialize-javascript. The vulnerability occurs because the serialize-javascript module does not properly sanitize certain inputs, such as regex or other JavaScript object types, allowing an attacker to inject malicious code. This code could be executed when deserialized by a web browser, causing Cross-site scripting (XSS) attacks. This issue is critical in environments wher",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Advanced Cluster Security 4.4"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Advanced Cluster Security 4.5"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ceph Storage 7.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ceph Storage 8.1"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-02-10",
+    "updated": "2026-08-23",
+    "url": "https://access.redhat.com/errata/RHBA-2025:0304",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-5278",
+    "title": "Coreutils: heap buffer under-read in gnu coreutils sort via key specification",
+    "desc": "A flaw was found in GNU Coreutils. The sort utility's begfield() function is vulnerable to a heap buffer under-read. The program may access memory outside the allocated buffer if a user runs a crafted command using the traditional key format. A malicious input could lead to a crash or leak sensitive data.",
+    "cvss": 4.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-121"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Cost Management Metrics Operator 4"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Discovery 2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-05-27",
+    "updated": "2026-08-23",
+    "url": "https://access.redhat.com/errata/RHSA-2026:28911",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-49794",
+    "title": "Libxml: heap use after free (uaf) leads to denial of service (dos)",
+    "desc": "A use-after-free vulnerability was found in libxml2. This issue occurs when parsing XPath elements under certain circumstances when the XML schematron has the <sch:name path=\"...\"/> schema elements. This flaw allows a malicious actor to craft a malicious XML document used as input for libxml, resulting in the program's crash using libxml or other possible undefined behaviors.",
+    "cvss": 9.1,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-825"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-06-16",
+    "updated": "2026-08-23",
+    "url": "https://access.redhat.com/errata/RHSA-2025:10630",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-49796",
+    "title": "Libxml: type confusion leads to denial of service (dos)",
+    "desc": "A vulnerability was found in libxml2. Processing certain sch:name elements from the input XML file can trigger a memory corruption issue. This flaw allows an attacker to craft a malicious XML input file that can lead libxml to crash, resulting in a denial of service or other possible undefined behavior due to sensitive data being corrupted in memory.",
+    "cvss": 9.1,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-125"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-06-16",
+    "updated": "2026-08-23",
+    "url": "https://access.redhat.com/errata/RHSA-2025:10630",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-7425",
+    "title": "Libxslt: libxml2: heap use-after-free in libxslt caused by atype corruption in xmlattrptr",
+    "desc": "A flaw was found in libxslt where the attribute type, atype, flags are modified in a way that corrupts internal memory management. When XSLT functions, such as the key() process, result in tree fragments, this corruption prevents the proper cleanup of ID attributes. As a result, the system may access freed memory, causing crashes or enabling attackers to trigger heap corruption.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "GNOME",
+        "product": "libxml2"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-07-10",
+    "updated": "2026-08-23",
+    "url": "https://access.redhat.com/errata/RHBA-2025:12345",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-41992",
+    "title": "Global Buffer Overflow in GNU gzip",
+    "desc": "GNU gzip contains a global buffer overflow vulnerability in the LZH decompression logic caused by improper reuse of shared global state between different decompression formats within a single execution. GNU gzip maintains a global array that is shared across the LZ77, LZW, and LZH decompression routines and is not reinitialized between files processed in the same invocation.\nBy decompressing a spe",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-126"
+    ],
+    "affected": [
+      {
+        "vendor": "GNU",
+        "product": "gzip"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-29",
+    "updated": "2026-08-23",
+    "url": "https://cert.pl/en/posts/2026/04/CVE-2026-41991/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-2100",
+    "title": "P11-kit: null dereference via c_derivekey with specific null parameters",
+    "desc": "A flaw was found in p11-kit. A remote attacker could exploit this vulnerability by calling the C_DeriveKey function on a remote token with specific IBM kyber or IBM btc derive mechanism parameters set to NULL. This could lead to the RPC-client attempting to return an uninitialized value, potentially resulting in a NULL dereference or undefined behavior. This issue may cause an application level de",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-824"
+    ],
+    "affected": [
+      {
+        "vendor": "p11-glue",
+        "product": "p11-kit"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Cost Management Metrics Operator 4"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-03-26",
+    "updated": "2026-08-23",
+    "url": "https://access.redhat.com/errata/RHSA-2026:18143",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-1244",
+    "title": "Emacs: shell injection vulnerability in gnu emacs via custom \"man\" uri scheme",
+    "desc": "A command injection flaw was found in the text editor Emacs. It could allow a remote, unauthenticated attacker to execute arbitrary shell commands on a vulnerable system. Exploitation is possible by tricking users into visiting a specially crafted website or an HTTP URL with a redirect.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-78"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.2 Advanced Update Support"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-02-12",
+    "updated": "2026-08-23",
+    "url": "https://access.redhat.com/errata/RHSA-2025:1915",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-10840",
+    "title": "Openshift-pipelines-operator-rh: openshift-pipelines-operator: tekton-scheduler-rolebinding grants system:authenticated write access to kueue and cert-manager resources",
+    "desc": "A flaw was found in the OpenShift Pipelines operator. The tekton-scheduler-rolebinding ClusterRoleBinding grants the system:authenticated group write access to Kueue and cert-manager custom resources via the tekton-scheduler-role ClusterRole. When Kueue or cert-manager CRDs are present on the cluster, any authenticated user can disrupt workload scheduling, tamper with scheduling priorities, delete",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-732"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Builds 1.7.3"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Builds 1.8.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "OpenShift Pipelines"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "OpenShift Pipelines"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "OpenShift Pipelines"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-04",
+    "updated": "2026-08-23",
+    "url": "https://access.redhat.com/errata/RHSA-2026:36648",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-15927",
+    "title": "Quay: mirror-registry: ssrf: repo-level mirror accepts external_reference without url validation",
+    "desc": "A flaw was found in Red Hat Quay's repository-level mirror configuration\nfeature. The POST and PUT handlers in endpoints/api/mirror.py accept an\nexternal_reference parameter without SSRF validation, unlike the\norganization-level mirror handlers which apply validate_external_registry_url().\nA repository administrator can supply a crafted hostname that causes the Quay\nmirror worker to make requests ",
+    "cvss": 6.8,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-918"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Quay 3.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Quay 3.12"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Quay 3.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Quay 3.9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "mirror registry for Red Hat OpenShift 2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-21",
+    "updated": "2026-08-23",
+    "url": "https://access.redhat.com/errata/RHSA-2026:50931",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-4878",
+    "title": "Libcap: libcap: privilege escalation via toctou race condition in cap_set_file()",
+    "desc": "A flaw was found in libcap. A local unprivileged user can exploit a Time-of-check-to-time-of-use (TOCTOU) race condition in the `cap_set_file()` function. This allows an attacker with write access to a parent directory to redirect file capability updates to an attacker-controlled file. By doing so, capabilities can be injected into or stripped from unintended executables, leading to privilege esca",
+    "cvss": 6.7,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-367"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-04-09",
+    "updated": "2026-08-23",
+    "url": "https://access.redhat.com/errata/RHSA-2026:12423",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-1022",
+    "title": "Versions of the package spatie/browsershot before 5.0.5 are vulnerable to Improper Input Validation in the setHtml funct",
+    "desc": "Versions of the package spatie/browsershot before 5.0.5 are vulnerable to Improper Input Validation in the setHtml function, invoked by Browsershot::html(), which can be bypassed by omitting the slashes in the file URI (e.g., file:../../../../etc/passwd). This is due to missing validations of the user input that should be blocking file URI schemes (e.g., file:// and file:/) in the HTML content.\r\r*",
+    "cvss": 8.2,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "spatie/browsershot"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-02-05",
+    "updated": "2026-08-23",
+    "url": "https://security.snyk.io/vuln/SNYK-PHP-SPATIEBROWSERSHOT-8496747",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-14187",
+    "title": "Tutor LMS < 4.0.6 - Instructor+ Cross-Instructor Private Course Disclosure via IDOR",
+    "desc": "The Tutor LMS  WordPress plugin before 4.0.6 does not enforce per-object ownership checks on its course content type, allowing any user with the instructor role to read the content of private courses belonging to other instructors.",
+    "cvss": 2.7,
+    "severity": "LOW",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Tutor LMS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-22",
+    "updated": "2026-08-23",
+    "url": "https://wpscan.com/vulnerability/fb006829-e298-4b22-9d62-293a3b917ccd/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-14853",
+    "title": "WooCommerce Bookings < 3.9.0 - Subscriber+ Draft Bookable Product Creation via Missing Authorization",
+    "desc": "The WooCommerce Bookings WordPress plugin before 3.9.0 does not perform a capability check on one of its AJAX actions, and its nonce check can be bypassed by omitting the token, allowing users with Subscriber-level access and above to create draft bookable products.",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "WooCommerce Bookings"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-23",
+    "updated": "2026-08-23",
+    "url": "https://wpscan.com/vulnerability/dd6ec707-3943-49be-81bb-c5dd51f2c001/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-16260",
+    "title": "Post Grid, Slider & Carousel Ultimate < 1.8.1 - Contributor+ Stored XSS via Header Title Field",
+    "desc": "The Post Grid, Slider & Carousel Ultimate  WordPress plugin before 1.8.1 does not sanitise and escape one of its custom post type settings before outputting it in an HTML attribute on the admin edit screen, allowing users with the Contributor role and above to inject JavaScript that executes in the session of any administrator who opens the affected item.",
+    "cvss": 6.8,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Post Grid, Slider & Carousel Ultimate"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-22",
+    "updated": "2026-08-23",
+    "url": "https://wpscan.com/vulnerability/87c95831-d1b4-42b2-8fc7-6cba60fca400/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-16612",
+    "title": "FiboSearch < 1.34.1 - Unauthenticated Password-Protected Product Information Disclosure",
+    "desc": "The FiboSearch  WordPress plugin before 1.34.1 does not consistently exclude password-protected products from its unauthenticated AJAX endpoints, allowing unauthenticated users to disclose and enumerate password-protected products and their metadata without entering the product password. Two endpoints are affected: the autocomplete search endpoint (dgwt_wcas_ajax_search) and the Details Panel endp",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "FiboSearch"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-22",
+    "updated": "2026-08-23",
+    "url": "https://wpscan.com/vulnerability/705cf14a-2782-408a-80b1-be7a9da6bbdd/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-16738",
+    "title": "Conekta Payment Gateway < 6.2.2 - Unauthenticated Order Payment Completion via Webhook Forgery",
+    "desc": "The Conekta Payment Gateway WordPress plugin before 6.2.2 does not verify the authenticity of incoming payment gateway webhook notifications, nor bind the confirmed payment to the targeted order or verify its amount, allowing unauthenticated attackers to mark arbitrary orders as paid without payment.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Conekta Payment Gateway"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-22",
+    "updated": "2026-08-23",
+    "url": "https://wpscan.com/vulnerability/89a2917e-032c-4f0f-be44-1a50b9d6fddf/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-18052",
+    "title": "ManageWP Worker < 4.9.37 - Unauthenticated Authentication Bypass via Unsigned Auto-Login Parameters",
+    "desc": "The ManageWP Worker WordPress plugin before 4.9.37 does not bind the account being logged in to the signature which authorises the login, nor prevent an already used login link from being replayed, allowing attackers who obtain such a link to gain a session as any user on the site, including an administrator.",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "ManageWP Worker"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-22",
+    "updated": "2026-08-23",
+    "url": "https://wpscan.com/vulnerability/e1e8c313-f7ea-4f3a-85c0-4f33dfe0710d/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-19093",
+    "title": "Tutor LMS < 4.0.6 - Instructor+ Arbitrary File Read via Video Path",
+    "desc": "The Tutor LMS  WordPress plugin before 4.0.6 does not validate a stored file path before using it to stream media, allowing users with the instructor role to read arbitrary files on the server, including files outside the web root.\n\nThe readable files include the WordPress configuration file, which exposes the database credentials and the authentication keys and salts, so authentication cookies ca",
+    "cvss": 6.8,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Tutor LMS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-22",
+    "updated": "2026-08-23",
+    "url": "https://wpscan.com/vulnerability/9f8361a9-d424-4346-9d92-6f27ab9261c9/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-19221",
+    "title": "Forminator Forms < 1.57.0.5 - Admin+ Network-Wide RCE via Hub Connector API Key on Multisite",
+    "desc": "The Forminator Forms  WordPress plugin before 1.57.0.5 does not restrict a network-wide setting to network administrators, allowing an administrator of any single site on a multisite network to execute arbitrary code across the entire network.",
+    "cvss": 7.2,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Forminator Forms"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-22",
+    "updated": "2026-08-23",
+    "url": "https://wpscan.com/vulnerability/5aa85c72-2a60-4243-b370-ef0b46e98cfe/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-19222",
+    "title": "Forminator Forms < 1.57.0.7 - Authenticated Privilege Escalation via Registration Form Role Bypass",
+    "desc": "The Forminator Forms  WordPress plugin before 1.57.0.7 does not consistently enforce the role restriction it applies to registration forms, allowing users who are permitted to build forms to configure one that assigns the administrator role to any visitor who registers through it.",
+    "cvss": 6.6,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Forminator Forms"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-22",
+    "updated": "2026-08-23",
+    "url": "https://wpscan.com/vulnerability/bb3997c6-4d9a-46f6-85d7-d472dfc00829/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-1615",
+    "title": "Versions of the package jsonpath before 1.3.0 are vulnerable to Arbitrary Code Injection via unsafe evaluation of user-s",
+    "desc": "Versions of the package jsonpath before 1.3.0 are vulnerable to Arbitrary Code Injection via unsafe evaluation of user-supplied JSON Path expressions. The library relies on the static-eval module to process JSON Path input, which is not designed to handle untrusted data safely. An attacker can exploit this vulnerability by supplying a malicious JSON Path expression that, when evaluated, executes a",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "jsonpath"
+      },
+      {
+        "vendor": "n/a",
+        "product": "org.webjars.npm:jsonpath"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-02-09",
+    "updated": "2026-08-23",
+    "url": "https://security.snyk.io/vuln/SNYK-JS-JSONPATH-13645034",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-76789",
+    "title": "Slider Hero < 9.1.3 - Unauthenticated Stored XSS via Slider Type Change and Add-Slider Handlers",
+    "desc": "The Slider Hero with Video Background, Animation WordPress plugin before 9.1.3 does not have authorisation and nonce checks on two of its request handlers, and does not escape a stored setting before outputting it, allowing unauthenticated users to store malicious JavaScript which will be executed in the context of an administrator viewing the Slider Hero with Video Background, Animation WordPress",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Slider Hero with Video Background, Animation"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-22",
+    "updated": "2026-08-23",
+    "url": "https://wpscan.com/vulnerability/f9f5485c-6231-492c-b214-8da87a2bf4d1/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-76793",
+    "title": "Firebase Authentication < 1.7.1 - Unauthenticated Account Takeover via Firebase Email Claim",
+    "desc": "The Firebase Authentication WordPress plugin before 1.7.1 does not require the email address in an authentication token to be verified before matching it to a WordPress account and issuing a session, allowing unauthenticated attackers to log in as any user, including administrators.",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Firebase Authentication"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-22",
+    "updated": "2026-08-23",
+    "url": "https://wpscan.com/vulnerability/0414ef2b-0d97-41c7-9146-f31ace8b66b2/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-77000",
+    "title": "WP Social Media Login <= 1.0.6 - Unauthenticated Account Takeover via Twitter Login Flow",
+    "desc": "The WP Social Media Login WordPress plugin through 1.0.6 does not verify that a social login was actually completed with the identity provider before authenticating a visitor, allowing unauthenticated attackers to log in as any existing user, including administrators, by supplying that user's email address.",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "WP Social Media Login"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-22",
+    "updated": "2026-08-23",
+    "url": "https://wpscan.com/vulnerability/3051dece-7ecb-4911-bf13-291ebdc34bff/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-77001",
+    "title": "Social Login & Sharing buttons with Analytics By SoClever <= 1.2.0 - Unauthenticated Authentication Bypass",
+    "desc": "The Social Login & Sharing buttons with Analytics By SoClever WordPress plugin through 1.2.0 does not perform any authentication, authorisation or nonce checks in one of its publicly accessible login handlers, allowing unauthenticated attackers to obtain a valid session as any existing user, including administrators. In the default case a session as the site's original administrator account is obt",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Social Login & Sharing buttons with Analytics By SoClever"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-22",
+    "updated": "2026-08-23",
+    "url": "https://wpscan.com/vulnerability/01c78c78-3915-44da-824a-f68074985c75/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-77002",
+    "title": "SmilePass Selfie Login <= 1.0.2 - Unauthenticated Authentication Bypass",
+    "desc": "The SmilePass Selfie Login WordPress plugin through 1.0.2 does not perform any server-side verification of the identity it is asked to authenticate, allowing unauthenticated users to log in as any registered account, including administrators.",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "SmilePass Selfie Login"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-22",
+    "updated": "2026-08-23",
+    "url": "https://wpscan.com/vulnerability/51236907-a1b4-4c3b-8c39-adafcab7a2ef/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-77003",
+    "title": "Content Mask 1.8.0 - 1.8.5.4 - Contributor Publish Capability Bypass via create_new_content_mask",
+    "desc": "The Content Mask WordPress plugin before 1.8.5.5 does not check the capability required to publish the post type being created, allowing users with a role as low as Contributor to publish posts and pages on the site without holding the publish capability.",
+    "cvss": 2.7,
+    "severity": "LOW",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Content Mask"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-23",
+    "updated": "2026-08-23",
+    "url": "https://wpscan.com/vulnerability/1a78993c-1e5c-43fb-9aa4-13edc24100ee/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-77115",
+    "title": "Brave Popup Builder < 0.8.6 - Unauthenticated Reflected XSS via UTM Parameters",
+    "desc": "Brave Popup Builder (brave-popup-builder) up to version 0.8.5 reflects UTM query parameters into popup form HTML without escaping them.",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Brave"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-23",
+    "updated": "2026-08-23",
+    "url": "https://wpscan.com/vulnerability/d4a760c0-8e71-4261-a08b-9b6a296c631a/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-77116",
+    "title": "Brave Popup Builder < 0.8.6 - Subscriber+ Unpublished Popup Disclosure via Preview",
+    "desc": "Brave Popup Builder (slug: brave-popup-builder) has a broken access control issue in versions through 0.8.5. Any logged-in user - Subscriber or WooCommerce Customer is enough — can read popup content they shouldn't have access to by passing a post ID in the URL.",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Brave"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-23",
+    "updated": "2026-08-23",
+    "url": "https://wpscan.com/vulnerability/db0a775c-cbac-4918-8b10-75f4fb2d716a/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-8657",
+    "title": "Versions of the package jsondiffpatch before 0.7.6 are vulnerable to Prototype Pollution via the jsondiffpatch.patch() a",
+    "desc": "Versions of the package jsondiffpatch before 0.7.6 are vulnerable to Prototype Pollution via the jsondiffpatch.patch() and jsondiffpatch/formatters/jsonpatch.patch() APIs. An attacker can perform prototype pollution by supplying crafted delta or JSON Patch documents, as attacker-controlled property names and path segments are used to traverse and modify objects without restricting access to specia",
+    "cvss": 8.2,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "jsondiffpatch"
+      },
+      {
+        "vendor": "n/a",
+        "product": "org.webjars.npm:jsondiffpatch"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-05-16",
+    "updated": "2026-08-23",
+    "url": "https://security.snyk.io/vuln/SNYK-JS-JSONDIFFPATCH-16322990",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-2786",
+    "title": "Tempo-operator: serviceaccount token exposure leading to token and subject access reviews in openshift tempo operator",
+    "desc": "A flaw was found in Tempo Operator, where it creates a ServiceAccount, ClusterRole, and ClusterRoleBinding when a user deploys a TempoStack or TempoMonolithic instance. This flaw allows a user with full access to their namespace to extract the ServiceAccount token and use it to submit TokenReview and SubjectAccessReview requests, potentially revealing information about other users' permissions. Wh",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-200"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3.5.3"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3.5.3"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-04-02",
+    "updated": "2026-08-23",
+    "url": "https://access.redhat.com/errata/RHSA-2025:3607",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-2842",
+    "title": "Tempo-operator: tempo operator token exposition lead to read sensitive data",
+    "desc": "A flaw was found in the Tempo Operator. When the Jaeger UI Monitor Tab functionality is enabled in a Tempo instance managed by the Tempo Operator, the Operator creates a ClusterRoleBinding for the Service Account of the Tempo instance to grant the cluster-monitoring-view ClusterRole.\nThis can be exploited if a user has 'create' permissions on TempoStack and 'get' permissions on Secret in a namespa",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-200"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3.5.3"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3.5.3"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-04-02",
+    "updated": "2026-08-23",
+    "url": "https://access.redhat.com/errata/RHSA-2025:3607",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-5318",
+    "title": "Libssh: out-of-bounds read in sftp_handle()",
+    "desc": "A flaw was found in the libssh library in versions less than 0.11.2. An out-of-bounds read can be triggered in the sftp_handle function due to an incorrect comparison check that permits the function to access memory beyond the valid handle list and to return an invalid pointer, which is used in further processing. This vulnerability allows an authenticated remote attacker to potentially read unint",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-125"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-06-24",
+    "updated": "2026-08-23",
+    "url": "https://access.redhat.com/errata/RHSA-2025:18231",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-13622",
+    "title": "Kubevirt: virt-handler-rhel9: kubevirt: virt-handler migration proxy follows symlinks allowing container escape to host",
+    "desc": "A symlink following vulnerability was found in KubeVirt's virt-handler migration proxy. During live migration, virt-handler dials Unix sockets inside the target virt-launcher pod via /proc/<pid>/root/ paths using net.Dial() without symlink protection. These socket paths reside in qemu-owned directories writable by the virt-launcher user. An attacker with namespace edit and pods/exec permissions ca",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.12"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.13"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.15"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.16"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-12",
+    "updated": "2026-08-23",
+    "url": "https://access.redhat.com/errata/RHEA-2026:53670",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-76613",
+    "title": "Joomla Extension - yootheme.com - Authenticated, privileged SQL injection in YOOtheme Pro 1.0.0-5.0.40",
+    "desc": "Joomla Extension - yootheme.com - Authenticated, privileged SQL injection in YOOtheme Pro 1.0.0-5.0.40 - An SQL injection allowed any contributor-level user to inject own content into SQL queries.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-89"
+    ],
+    "affected": [
+      {
+        "vendor": "yootheme.com",
+        "product": "YOOtheme Pro extension for Joomla"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-21",
+    "updated": "2026-08-23",
+    "url": "https://www.yootheme.com/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-9804",
+    "title": "Kubevirt: kubevirt: vmexport directory symlink escape enables exporter pod file read",
+    "desc": "A flaw was found in KubeVirt's virt-exportserver component. An attacker with specific namespace-level access can exploit a path traversal vulnerability in the VMExport directory endpoint. By placing a symbolic link (symlink) within an exported filesystem Persistent Volume Claim (PVC) that points outside its designated mount root, the attacker can read arbitrary files from the exporter pod's filesy",
+    "cvss": 7.7,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-59"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.18"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.19"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.20"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.21"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-28",
+    "updated": "2026-08-23",
+    "url": "https://access.redhat.com/errata/RHSA-2026:27903",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-38620",
+    "title": "Bluetooth: HCI: Remove HCI_AMP support",
+    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: HCI: Remove HCI_AMP support\n\nSince BT_HS has been remove HCI_AMP controllers no longer has any use so\nremove it along with the capability of creating AMP controllers.\n\nSince we no longer need to differentiate between AMP and Primary\ncontrollers, as only HCI_PRIMARY is left, this also remove\nhdev->dev_type altogether.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Linux",
+        "product": "Linux"
+      },
+      {
+        "vendor": "Linux",
+        "product": "Linux"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2024-06-20",
+    "updated": "2026-08-23",
+    "url": "https://git.kernel.org/stable/c/9e6cf0eccfe15b67bf9773ecd101162dfdfed5e2",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-40973",
+    "title": "media: mtk-vcodec: potential null pointer deference in SCP",
+    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: mtk-vcodec: potential null pointer deference in SCP\n\nThe return value of devm_kzalloc() needs to be checked to avoid\nNULL pointer deference. This is similar to CVE-2022-3113.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Linux",
+        "product": "Linux"
+      },
+      {
+        "vendor": "Linux",
+        "product": "Linux"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2024-07-12",
+    "updated": "2026-08-23",
+    "url": "https://git.kernel.org/stable/c/ac79a923365ae1e524398087cf16313cdbd7a144",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-45497",
+    "title": "Openshift-api: openshift-controller-manager/build: build process in openshift allows overwriting of node pull credentials",
+    "desc": "A flaw was found in the OpenShift build process, where the docker-build container is configured with a hostPath volume mount that maps the node's /var/lib/kubelet/config.json file into the build pod. This file contains sensitive credentials necessary for pulling images from private repositories. The mount is not read-only, which allows the attacker to overwrite it. By modifying the config.json fil",
+    "cvss": 7.6,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-732"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.12"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.13"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.16"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2024-12-31",
+    "updated": "2026-08-23",
+    "url": "https://access.redhat.com/errata/RHSA-2025:10270",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-5914",
+    "title": "Libarchive: double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c",
+    "desc": "A vulnerability has been identified in the libarchive library, specifically within the archive_read_format_rar_seek_data() function. This flaw involves an integer overflow that can ultimately lead to a double-free condition. Exploiting a double-free vulnerability can result in memory corruption, enabling an attacker to execute arbitrary code or cause a denial-of-service condition.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-190"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.2 Advanced Update Support"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-06-09",
+    "updated": "2026-08-23",
+    "url": "https://access.redhat.com/errata/RHSA-2025:14130",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-68305",
+    "title": "Bluetooth: hci_sock: Prevent race in socket write iter and sock bind",
+    "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: hci_sock: Prevent race in socket write iter and sock bind\n\nThere is a potential race condition between sock bind and socket write\niter. bind may free the same cmd via mgmt_pending before write iter sends\nthe cmd, just as syzbot reported in UAF[1].\n\nHere we use hci_dev_lock to synchronize the two, thereby avoiding the\nU",
+    "cvss": null,
+    "severity": "",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Linux",
+        "product": "Linux"
+      },
+      {
+        "vendor": "Linux",
+        "product": "Linux"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-12-16",
+    "updated": "2026-08-23",
+    "url": "https://git.kernel.org/stable/c/7344feaed3c8aa46d397984ae855e6026d3c3e95",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2026-16242",
     "title": "Hypershift: konnectivity proxy-server accepts agent connections without validating client certificates",
     "desc": "A flaw was found in the Konnectivity proxy-server configuration for hosted control planes. The agent-facing listener was started without --cluster-ca-cert (and without token-based agent authentication), so client certificates were not validated. A remote attacker who can reach the Konnectivity cluster endpoint could connect as an unauthenticated agent, join the routing pool, and potentially proxy,",
@@ -35,6 +1228,44 @@
     "published": "2026-07-20",
     "updated": "2026-08-23",
     "url": "https://access.redhat.com/errata/RHSA-2026:46885",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-4740",
+    "title": "Rhacm: open cluster management (ocm): cross-cluster privilege escalation via improper kubernetes client certificate renewal validation",
+    "desc": "A flaw was found in Open Cluster Management (OCM), the technology underlying Red Hat Advanced Cluster Management (ACM). Improper validation of Kubernetes client certificate renewal allows a managed cluster administrator to forge a client certificate that can be approved by the OCM controller. This enables cross-cluster privilege escalation and may allow an attacker to gain control over other manag",
+    "cvss": 8.2,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-295"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.11"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.9.0"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-04-07",
+    "updated": "2026-08-23",
+    "url": "https://access.redhat.com/errata/RHSA-2026:11414",
     "source": "CISA Vulnrichment"
   },
   {
@@ -285,82 +1516,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2025-7195",
-    "title": "Operator-sdk: privilege escalation due to incorrect permissions of /etc/passwd",
-    "desc": "Early versions of Operator-SDK provided an insecure method to allow operator containers to run in environments that used a random UID. Operator-SDK before 0.15.2 provided a script, user_setup, which modifies the permissions of the /etc/passwd file to 664 during build time. Developers who used Operator-SDK before 0.15.2 to scaffold their operator may still be impacted by this if the insecure user_s",
-    "cvss": 6.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-276"
-    ],
-    "affected": [
-      {
-        "vendor": "operator-framework",
-        "product": "operator-sdk"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "RHEL-9-CNV-4.17"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "RHEL-9-CNV-4.18"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "RHEL-9-CNV-4.20"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Compliance Operator 1"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-08-07",
-    "updated": "2026-08-23",
-    "url": "https://access.redhat.com/errata/RHEA-2025:23406",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-2100",
-    "title": "P11-kit: null dereference via c_derivekey with specific null parameters",
-    "desc": "A flaw was found in p11-kit. A remote attacker could exploit this vulnerability by calling the C_DeriveKey function on a remote token with specific IBM kyber or IBM btc derive mechanism parameters set to NULL. This could lead to the RPC-client attempting to return an uninitialized value, potentially resulting in a NULL dereference or undefined behavior. This issue may cause an application level de",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-824"
-    ],
-    "affected": [
-      {
-        "vendor": "p11-glue",
-        "product": "p11-kit"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Cost Management 4"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-03-26",
-    "updated": "2026-08-23",
-    "url": "https://access.redhat.com/errata/RHSA-2026:18143",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2024-12085",
     "title": "Rsync: info leak via uninitialized stack contents",
     "desc": "A flaw was found in rsync which could be triggered when rsync compares file checksums. This flaw allows an attacker to manipulate the checksum length (s2length) to cause a comparison between a checksum and uninitialized memory and leak one byte of uninitialized stack data at a time.",
@@ -396,44 +1551,6 @@
     "published": "2025-01-14",
     "updated": "2026-08-23",
     "url": "https://access.redhat.com/errata/RHBA-2025:6470",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-5914",
-    "title": "Libarchive: double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c",
-    "desc": "A vulnerability has been identified in the libarchive library, specifically within the archive_read_format_rar_seek_data() function. This flaw involves an integer overflow that can ultimately lead to a double-free condition. Exploiting a double-free vulnerability can result in memory corruption, enabling an attacker to execute arbitrary code or cause a denial-of-service condition.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-190"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8.2 Advanced Update Support"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2025-06-09",
-    "updated": "2026-08-23",
-    "url": "https://access.redhat.com/errata/RHSA-2025:14130",
     "source": "CISA Vulnrichment"
   },
   {
@@ -475,51 +1592,13 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2025-7425",
-    "title": "Libxslt: libxml2: heap use-after-free in libxslt caused by atype corruption in xmlattrptr",
-    "desc": "A flaw was found in libxslt where the attribute type, atype, flags are modified in a way that corrupts internal memory management. When XSLT functions, such as the key() process, result in tree fragments, this corruption prevents the proper cleanup of ID attributes. As a result, the system may access freed memory, causing crashes or enabling attackers to trigger heap corruption.",
-    "cvss": 7.8,
-    "severity": "HIGH",
+    "cve": "CVE-2024-5042",
+    "title": "Submariner-operator: rbac permissions can allow for the spread of node compromises",
+    "desc": "A flaw was found in the Submariner project. Due to unnecessary role-based access control permissions, a privileged attacker can run a malicious container on a node that may allow them to steal service account tokens and further compromise other nodes and potentially the entire cluster.",
+    "cvss": 6.6,
+    "severity": "MEDIUM",
     "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "GNOME",
-        "product": "libxml2"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2025-07-10",
-    "updated": "2026-08-23",
-    "url": "https://access.redhat.com/errata/RHBA-2025:12345",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-1244",
-    "title": "Emacs: shell injection vulnerability in gnu emacs via custom \"man\" uri scheme",
-    "desc": "A command injection flaw was found in the text editor Emacs. It could allow a remote, unauthenticated attacker to execute arbitrary shell commands on a vulnerable system. Exploitation is possible by tricking users into visiting a specially crafted website or an HTTP URL with a redirect.",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-78"
+      "CWE-250"
     ],
     "affected": [
       {
@@ -528,64 +1607,530 @@
       },
       {
         "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+        "product": "RHODF-4.16-RHEL-9"
       },
       {
         "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
+        "product": "Red Hat Openshift Data Foundation 4.2"
       },
       {
         "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
+        "product": "Red Hat Openshift Data Foundation 4.2"
       },
       {
         "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8.2 Advanced Update Support"
+        "product": "Red Hat Openshift Data Foundation 4.2"
       }
     ],
     "exploitation": "none",
     "isKev": false,
-    "published": "2025-02-12",
+    "published": "2024-05-17",
     "updated": "2026-08-22",
-    "url": "https://access.redhat.com/errata/RHSA-2025:1915",
+    "url": "https://access.redhat.com/errata/RHSA-2024:4591",
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-10840",
-    "title": "Openshift-pipelines-operator-rh: openshift-pipelines-operator: tekton-scheduler-rolebinding grants system:authenticated write access to kueue and cert-manager resources",
-    "desc": "A flaw was found in the OpenShift Pipelines operator. The tekton-scheduler-rolebinding ClusterRoleBinding grants the system:authenticated group write access to Kueue and cert-manager custom resources via the tekton-scheduler-role ClusterRole. When Kueue or cert-manager CRDs are present on the cluster, any authenticated user can disrupt workload scheduling, tamper with scheduling priorities, delete",
-    "cvss": 7.1,
+    "cve": "CVE-2025-7195",
+    "title": "Operator-sdk: privilege escalation due to incorrect permissions of /etc/passwd",
+    "desc": "Early versions of Operator-SDK provided an insecure method to allow operator containers to run in environments that used a random UID. Operator-SDK before 0.15.2 provided a script, user_setup, which modifies the permissions of the /etc/passwd file to 664 during build time. Developers who used Operator-SDK before 0.15.2 to scaffold their operator may still be impacted by this if the insecure user_s",
+    "cvss": 6.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-276"
+    ],
+    "affected": [
+      {
+        "vendor": "operator-framework",
+        "product": "operator-sdk"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "RHEL-9-CNV-4.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "RHEL-9-CNV-4.18"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "RHEL-9-CNV-4.20"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Compliance Operator 1"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-08-07",
+    "updated": "2026-08-22",
+    "url": "https://access.redhat.com/errata/RHEA-2025:23406",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-13201",
+    "title": "Kubevirt: virt-handler-rhel9: kubevirt: safepath symlink following in virt-handler enables notify socket hijacking and node-level vm disruption",
+    "desc": "A flaw was found in KubeVirt's safepath package used by virt-handler. The OpenAtNoFollow function uses O_PATH|O_NOFOLLOW to obtain a file descriptor to a path leaf, but downstream operations resolve the path via /proc/self/fd/N using link-following syscalls. When the leaf is a symlink, the kernel dereferences it, defeating the intended no-follow protection. An attacker with access to a virt-launch",
+    "cvss": 7.3,
     "severity": "HIGH",
     "cwes": [
-      "CWE-732"
+      "CWE-61"
     ],
     "affected": [
       {
         "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Builds 1.7.2"
+        "product": "Red Hat Container Native Virtualization 4.13"
       },
       {
         "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Builds 1.8.1"
+        "product": "Red Hat Container Native Virtualization 4.14"
       },
       {
         "vendor": "Red Hat",
-        "product": "OpenShift Pipelines"
+        "product": "Red Hat Container Native Virtualization 4.15"
       },
       {
         "vendor": "Red Hat",
-        "product": "OpenShift Pipelines"
+        "product": "Red Hat Container Native Virtualization 4.16"
       },
       {
         "vendor": "Red Hat",
-        "product": "OpenShift Pipelines"
+        "product": "Red Hat Container Native Virtualization 4.17"
       }
     ],
     "exploitation": "none",
     "isKev": false,
-    "published": "2026-06-04",
+    "published": "2026-06-24",
     "updated": "2026-08-22",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36648",
+    "url": "https://access.redhat.com/errata/RHSA-2026:51031",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-16951",
+    "title": "Vulnerabilities in IBM AIX and PowerVM VIOS",
+    "desc": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a local authenticated attacker to execute arbitrary code due to a heap-based buffer overflow.",
+    "cvss": 6.7,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-787"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "AIX"
+      },
+      {
+        "vendor": "IBM",
+        "product": "PowerVM VIOS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-20",
+    "updated": "2026-08-22",
+    "url": "https://www.ibm.com/support/pages/node/7283858",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-16989",
+    "title": "Vulnerabilities in IBM AIX and PowerVM VIOS",
+    "desc": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a local attacker to gain elevated privileges due to improper resolution of symbolic links.",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-59"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "AIX"
+      },
+      {
+        "vendor": "IBM",
+        "product": "PowerVM VIOS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-20",
+    "updated": "2026-08-22",
+    "url": "https://www.ibm.com/support/pages/node/7283858",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-17422",
+    "title": "Vulnerabilities in IBM AIX and PowerVM VIOS",
+    "desc": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a local attacker to execute arbitrary code due to a buffer overflow.",
+    "cvss": 9.3,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-787"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "AIX"
+      },
+      {
+        "vendor": "IBM",
+        "product": "PowerVM VIOS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-20",
+    "updated": "2026-08-22",
+    "url": "https://www.ibm.com/support/pages/node/7283858",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-18840",
+    "title": "Vulnerabilities in IBM AIX and PowerVM VIOS",
+    "desc": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a local attacker to execute arbitrary code due to improper validation of an attacker-controlled pointer.",
+    "cvss": 8.2,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-822"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "AIX"
+      },
+      {
+        "vendor": "IBM",
+        "product": "PowerVM VIOS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-20",
+    "updated": "2026-08-22",
+    "url": "https://www.ibm.com/support/pages/node/7283858",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-18842",
+    "title": "Vulnerabilities in IBM AIX and PowerVM VIOS",
+    "desc": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a local attacker to gain elevated privileges due to an out-of-bounds write.",
+    "cvss": 8.4,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-787"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "AIX"
+      },
+      {
+        "vendor": "IBM",
+        "product": "PowerVM VIOS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-20",
+    "updated": "2026-08-22",
+    "url": "https://www.ibm.com/support/pages/node/7283858",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-47827",
+    "title": "CVE-2026-47827 – BOSH CLI Powershell Injection",
+    "desc": "Command Injection in BOSH CLI tool on windows in Cloud Foundry allows a remote attacker to execute arbitrary shell commands via command injection vulnerabilities",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Cloud Foundry Foundation",
+        "product": "BOSH CLI"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-21",
+    "updated": "2026-08-22",
+    "url": "https://www.cloudfoundry.org/blog/cve-2026-47827-bosh-cli-powershell-injection/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-70925",
+    "title": "CVE-2026-70925",
+    "desc": "",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Oracle Corporation",
+        "product": "Oracle Hyperion Financial Management"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-18",
+    "updated": "2026-08-22",
+    "url": "https://www.oracle.com/security-alerts/cspuaug2026.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-70927",
+    "title": "CVE-2026-70927",
+    "desc": "",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Oracle Corporation",
+        "product": "Oracle Workflow"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-18",
+    "updated": "2026-08-22",
+    "url": "https://www.oracle.com/security-alerts/cspuaug2026.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-70929",
+    "title": "CVE-2026-70929",
+    "desc": "",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Oracle Corporation",
+        "product": "Oracle Hyperion Financial Management"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-18",
+    "updated": "2026-08-22",
+    "url": "https://www.oracle.com/security-alerts/cspuaug2026.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-70932",
+    "title": "CVE-2026-70932",
+    "desc": "",
+    "cvss": 7.2,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Oracle Corporation",
+        "product": "Oracle Order Management"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-18",
+    "updated": "2026-08-22",
+    "url": "https://www.oracle.com/security-alerts/cspuaug2026.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-70936",
+    "title": "CVE-2026-70936",
+    "desc": "",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Oracle Corporation",
+        "product": "Oracle Hyperion Financial Management"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-18",
+    "updated": "2026-08-22",
+    "url": "https://www.oracle.com/security-alerts/cspuaug2026.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-70937",
+    "title": "CVE-2026-70937",
+    "desc": "",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Oracle Corporation",
+        "product": "Oracle Hyperion Financial Management"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-18",
+    "updated": "2026-08-22",
+    "url": "https://www.oracle.com/security-alerts/cspuaug2026.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-70939",
+    "title": "CVE-2026-70939",
+    "desc": "",
+    "cvss": 7.2,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Oracle Corporation",
+        "product": "Oracle Hyperion Financial Management"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-18",
+    "updated": "2026-08-22",
+    "url": "https://www.oracle.com/security-alerts/cspuaug2026.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-70942",
+    "title": "CVE-2026-70942",
+    "desc": "",
+    "cvss": 7.7,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Oracle Corporation",
+        "product": "Oracle Hyperion Financial Management"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-18",
+    "updated": "2026-08-22",
+    "url": "https://www.oracle.com/security-alerts/cspuaug2026.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-70943",
+    "title": "CVE-2026-70943",
+    "desc": "",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Oracle Corporation",
+        "product": "Oracle Hyperion Financial Management"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-18",
+    "updated": "2026-08-22",
+    "url": "https://www.oracle.com/security-alerts/cspuaug2026.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-70944",
+    "title": "CVE-2026-70944",
+    "desc": "",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Oracle Corporation",
+        "product": "Oracle Hyperion Financial Management"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-18",
+    "updated": "2026-08-22",
+    "url": "https://www.oracle.com/security-alerts/cspuaug2026.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-70953",
+    "title": "CVE-2026-70953",
+    "desc": "",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Oracle Corporation",
+        "product": "Oracle Commerce Platform"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-18",
+    "updated": "2026-08-22",
+    "url": "https://www.oracle.com/security-alerts/cspuaug2026.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-76018",
+    "title": "Privilege elevation in Import in Google Chrome prior to 151.0.7922.173 allowed a remote attacker leveraging social engin",
+    "desc": "Privilege elevation in Import in Google Chrome prior to 151.0.7922.173 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code outside the sandbox via a crafted file. (Chromium security severity: High)",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Google",
+        "product": "Chrome"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-20",
+    "updated": "2026-08-22",
+    "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_0404570826.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-7374",
+    "title": "Kubevirt: kubevirt virt-handler: privilege escalation and node compromise via symlink following vulnerability",
+    "desc": "A flaw was found in KubeVirt's virt-handler component. This vulnerability allows an authenticated OpenShift user with edit permissions in a single namespace to exploit improper symlink validation when connecting to virtual machine console sockets. By replacing the console socket with a symlink to the host's container runtime (CRI-O) socket, an attacker can hijack virt-handler's privileged connecti",
+    "cvss": 9.9,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-59"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.12"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.13"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.15"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.16"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-26",
+    "updated": "2026-08-22",
+    "url": "https://access.redhat.com/errata/RHSA-2026:20720",
     "source": "CISA Vulnrichment"
   },
   {
@@ -670,158 +2215,6 @@
     "published": "2026-04-30",
     "updated": "2026-08-22",
     "url": "https://access.redhat.com/errata/RHSA-2026:11511",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-13201",
-    "title": "Kubevirt: virt-handler-rhel9: kubevirt: safepath symlink following in virt-handler enables notify socket hijacking and node-level vm disruption",
-    "desc": "A flaw was found in KubeVirt's safepath package used by virt-handler. The OpenAtNoFollow function uses O_PATH|O_NOFOLLOW to obtain a file descriptor to a path leaf, but downstream operations resolve the path via /proc/self/fd/N using link-following syscalls. When the leaf is a symlink, the kernel dereferences it, defeating the intended no-follow protection. An attacker with access to a virt-launch",
-    "cvss": 7.3,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-61"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.13"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.14"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.15"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.16"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.17"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-24",
-    "updated": "2026-08-22",
-    "url": "https://access.redhat.com/errata/RHSA-2026:51031",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-13622",
-    "title": "Kubevirt: virt-handler-rhel9: kubevirt: virt-handler migration proxy follows symlinks allowing container escape to host",
-    "desc": "A symlink following vulnerability was found in KubeVirt's virt-handler migration proxy. During live migration, virt-handler dials Unix sockets inside the target virt-launcher pod via /proc/<pid>/root/ paths using net.Dial() without symlink protection. These socket paths reside in qemu-owned directories writable by the virt-launcher user. An attacker with namespace edit and pods/exec permissions ca",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-22"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.12"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.13"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.14"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.15"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.16"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-08-22",
-    "url": "https://access.redhat.com/errata/RHEA-2026:53670",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-7374",
-    "title": "Kubevirt: kubevirt virt-handler: privilege escalation and node compromise via symlink following vulnerability",
-    "desc": "A flaw was found in KubeVirt's virt-handler component. This vulnerability allows an authenticated OpenShift user with edit permissions in a single namespace to exploit improper symlink validation when connecting to virtual machine console sockets. By replacing the console socket with a symlink to the host's container runtime (CRI-O) socket, an attacker can hijack virt-handler's privileged connecti",
-    "cvss": 9.9,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-59"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.12"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.13"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.14"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.15"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.16"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-05-26",
-    "updated": "2026-08-22",
-    "url": "https://access.redhat.com/errata/RHSA-2026:20720",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-9804",
-    "title": "Kubevirt: kubevirt: vmexport directory symlink escape enables exporter pod file read",
-    "desc": "A flaw was found in KubeVirt's virt-exportserver component. An attacker with specific namespace-level access can exploit a path traversal vulnerability in the VMExport directory endpoint. By placing a symbolic link (symlink) within an exported filesystem Persistent Volume Claim (PVC) that points outside its designated mount root, the attacker can read arbitrary files from the exporter pod's filesy",
-    "cvss": 7.7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-59"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.17"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.18"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.19"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.20"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.21"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-05-28",
-    "updated": "2026-08-22",
-    "url": "https://access.redhat.com/errata/RHSA-2026:27903",
     "source": "CISA Vulnrichment"
   },
   {
@@ -3245,51 +4638,11 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-70925",
-    "title": "CVE-2026-70925",
-    "desc": "",
-    "cvss": 8.1,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Oracle Corporation",
-        "product": "Oracle Hyperion Financial Management"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-18",
-    "updated": "2026-08-22",
-    "url": "https://www.oracle.com/security-alerts/cspuaug2026.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-70926",
     "title": "CVE-2026-70926",
     "desc": "",
     "cvss": 9.8,
     "severity": "CRITICAL",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Oracle Corporation",
-        "product": "Oracle Workflow"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-18",
-    "updated": "2026-08-22",
-    "url": "https://www.oracle.com/security-alerts/cspuaug2026.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-70927",
-    "title": "CVE-2026-70927",
-    "desc": "",
-    "cvss": 7.5,
-    "severity": "HIGH",
     "cwes": [],
     "affected": [
       {
@@ -3325,26 +4678,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-70929",
-    "title": "CVE-2026-70929",
-    "desc": "",
-    "cvss": 8.1,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Oracle Corporation",
-        "product": "Oracle Hyperion Financial Management"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-18",
-    "updated": "2026-08-22",
-    "url": "https://www.oracle.com/security-alerts/cspuaug2026.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-70931",
     "title": "CVE-2026-70931",
     "desc": "",
@@ -3355,26 +4688,6 @@
       {
         "vendor": "Oracle Corporation",
         "product": "Oracle Workflow"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-18",
-    "updated": "2026-08-22",
-    "url": "https://www.oracle.com/security-alerts/cspuaug2026.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-70932",
-    "title": "CVE-2026-70932",
-    "desc": "",
-    "cvss": 7.2,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Oracle Corporation",
-        "product": "Oracle Order Management"
       }
     ],
     "exploitation": "none",
@@ -3444,82 +4757,6 @@
     "published": "2026-05-28",
     "updated": "2026-08-22",
     "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/0e0f2516-0fa7-415e-868e-6bd259bc6546?source=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-49794",
-    "title": "Libxml: heap use after free (uaf) leads to denial of service (dos)",
-    "desc": "A use-after-free vulnerability was found in libxml2. This issue occurs when parsing XPath elements under certain circumstances when the XML schematron has the <sch:name path=\"...\"/> schema elements. This flaw allows a malicious actor to craft a malicious XML document used as input for libxml, resulting in the program's crash using libxml or other possible undefined behaviors.",
-    "cvss": 9.1,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-825"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-06-16",
-    "updated": "2026-08-21",
-    "url": "https://access.redhat.com/errata/RHSA-2025:10630",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-49796",
-    "title": "Libxml: type confusion leads to denial of service (dos)",
-    "desc": "A vulnerability was found in libxml2. Processing certain sch:name elements from the input XML file can trigger a memory corruption issue. This flaw allows an attacker to craft a malicious XML input file that can lead libxml to crash, resulting in a denial of service or other possible undefined behavior due to sensitive data being corrupted in memory.",
-    "cvss": 9.1,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-125"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-06-16",
-    "updated": "2026-08-21",
-    "url": "https://access.redhat.com/errata/RHSA-2025:10630",
     "source": "CISA Vulnrichment"
   },
   {
@@ -3848,44 +5085,6 @@
     "published": "2026-08-20",
     "updated": "2026-08-21",
     "url": "https://github.com/drakkan/sftpgo/security/advisories/GHSA-h64p-8h4r-6gfh",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-4878",
-    "title": "Libcap: libcap: privilege escalation via toctou race condition in cap_set_file()",
-    "desc": "A flaw was found in libcap. A local unprivileged user can exploit a Time-of-check-to-time-of-use (TOCTOU) race condition in the `cap_set_file()` function. This allows an attacker with write access to a parent directory to redirect file capability updates to an attacker-controlled file. By doing so, capabilities can be injected into or stripped from unintended executables, leading to privilege esca",
-    "cvss": 6.7,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-367"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-04-09",
-    "updated": "2026-08-21",
-    "url": "https://access.redhat.com/errata/RHSA-2026:12423",
     "source": "CISA Vulnrichment"
   },
   {
@@ -6224,58 +7423,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-16951",
-    "title": "Vulnerabilities in IBM AIX and PowerVM VIOS",
-    "desc": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a local authenticated attacker to execute arbitrary code due to a heap-based buffer overflow.",
-    "cvss": 6.7,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-787"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "AIX"
-      },
-      {
-        "vendor": "IBM",
-        "product": "PowerVM VIOS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-20",
-    "updated": "2026-08-21",
-    "url": "https://www.ibm.com/support/pages/node/7283858",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-16989",
-    "title": "Vulnerabilities in IBM AIX and PowerVM VIOS",
-    "desc": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a local attacker to gain elevated privileges due to improper resolution of symbolic links.",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-59"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "AIX"
-      },
-      {
-        "vendor": "IBM",
-        "product": "PowerVM VIOS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-20",
-    "updated": "2026-08-21",
-    "url": "https://www.ibm.com/support/pages/node/7283858",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-17003",
     "title": "Vulnerabilities in IBM AIX and PowerVM VIOS",
     "desc": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to compromise the confidentiality and integrity of the system due to an out-of-bounds write.",
@@ -6361,32 +7508,6 @@
     "severity": "HIGH",
     "cwes": [
       "CWE-59"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "AIX"
-      },
-      {
-        "vendor": "IBM",
-        "product": "PowerVM VIOS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-20",
-    "updated": "2026-08-21",
-    "url": "https://www.ibm.com/support/pages/node/7283858",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17422",
-    "title": "Vulnerabilities in IBM AIX and PowerVM VIOS",
-    "desc": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a local attacker to execute arbitrary code due to a buffer overflow.",
-    "cvss": 9.3,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-787"
     ],
     "affected": [
       {
@@ -6564,58 +7685,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-18840",
-    "title": "Vulnerabilities in IBM AIX and PowerVM VIOS",
-    "desc": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a local attacker to execute arbitrary code due to improper validation of an attacker-controlled pointer.",
-    "cvss": 8.2,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-822"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "AIX"
-      },
-      {
-        "vendor": "IBM",
-        "product": "PowerVM VIOS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-20",
-    "updated": "2026-08-21",
-    "url": "https://www.ibm.com/support/pages/node/7283858",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-18842",
-    "title": "Vulnerabilities in IBM AIX and PowerVM VIOS",
-    "desc": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a local attacker to gain elevated privileges due to an out-of-bounds write.",
-    "cvss": 8.4,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-787"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "AIX"
-      },
-      {
-        "vendor": "IBM",
-        "product": "PowerVM VIOS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-20",
-    "updated": "2026-08-21",
-    "url": "https://www.ibm.com/support/pages/node/7283858",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-20358",
     "title": "Cisco Crosswork Security Hardening Release: August 2026",
     "desc": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Crosswork engineering team has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities.\r\n\r\nThe vulnerabilities tracked by CVE-2026-20358 are related to external control of the file system issues tha",
@@ -6742,26 +7811,6 @@
     "published": "2026-08-11",
     "updated": "2026-08-21",
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47285",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-47827",
-    "title": "CVE-2026-47827 – BOSH CLI Powershell Injection",
-    "desc": "Command Injection in BOSH CLI tool on windows in Cloud Foundry allows a remote attacker to execute arbitrary shell commands via command injection vulnerabilities",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Cloud Foundry Foundation",
-        "product": "BOSH CLI"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-21",
-    "updated": "2026-08-21",
-    "url": "https://www.cloudfoundry.org/blog/cve-2026-47827-bosh-cli-powershell-injection/",
     "source": "CISA Vulnrichment"
   },
   {
@@ -9061,26 +10110,6 @@
     "cve": "CVE-2026-76017",
     "title": "Use after free in Chromoting in Google Chrome prior to 151.0.7922.173 allowed a remote attacker to execute arbitrary cod",
     "desc": "Use after free in Chromoting in Google Chrome prior to 151.0.7922.173 allowed a remote attacker to execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: Critical)",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-20",
-    "updated": "2026-08-21",
-    "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_0404570826.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-76018",
-    "title": "Privilege elevation in Import in Google Chrome prior to 151.0.7922.173 allowed a remote attacker leveraging social engin",
-    "desc": "Privilege elevation in Import in Google Chrome prior to 151.0.7922.173 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code outside the sandbox via a crafted file. (Chromium security severity: High)",
     "cvss": 8.8,
     "severity": "HIGH",
     "cwes": [],
@@ -20983,28 +22012,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-76613",
-    "title": "Joomla Extension - yootheme.com - Authenticated, privileged SQL injection in YOOtheme Pro 1.0.0-5.0.40",
-    "desc": "Joomla Extension - yootheme.com - Authenticated, privileged SQL injection in YOOtheme Pro 1.0.0-5.0.40 - An SQL injection allowed any contributor-level user to inject own content into SQL queries.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-89"
-    ],
-    "affected": [
-      {
-        "vendor": "yootheme.com",
-        "product": "YOOtheme Pro extension for Joomla"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-21",
-    "updated": "2026-08-21",
-    "url": "https://www.yootheme.com/",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-76614",
     "title": "OpenEMR < 8.3.0 Path Traversal Information Disclosure via EDI Archive Restore",
     "desc": "OpenEMR before 8.3.0 contains a path traversal vulnerability in the EDI archive restore function. The archrestore_sel POST parameter is passed to the archive restore handler without sanitization for path traversal sequences. The handler checks whether the supplied path exists on the filesystem, and the differing response messages leak whether the target path exists. An authenticated user with EOB ",
@@ -23424,44 +24431,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2024-45497",
-    "title": "Openshift-api: openshift-controller-manager/build: build process in openshift allows overwriting of node pull credentials",
-    "desc": "A flaw was found in the OpenShift build process, where the docker-build container is configured with a hostPath volume mount that maps the node's /var/lib/kubelet/config.json file into the build pod. This file contains sensitive credentials necessary for pulling images from private repositories. The mount is not read-only, which allows the attacker to overwrite it. By modifying the config.json fil",
-    "cvss": 7.6,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-732"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.12"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.13"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.14"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.16"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-12-31",
-    "updated": "2026-08-21",
-    "url": "https://access.redhat.com/errata/RHSA-2025:10270",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2024-9355",
     "title": "Golang-fips: golang fips zeroed buffer",
     "desc": "A vulnerability was found in Golang FIPS OpenSSL. This flaw allows a malicious user to randomly cause an uninitialized buffer length variable with a zeroed buffer to be returned in FIPS mode. It may also be possible to force a false positive match between non-equal hashes when comparing a trusted computed hmac sum to an untrusted input sum if an attacker can send a zeroed buffer in place of a pre-",
@@ -23926,44 +24895,6 @@
     "published": "2026-08-19",
     "updated": "2026-08-21",
     "url": "https://vuldb.com/vuln/391391",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-5042",
-    "title": "Submariner-operator: rbac permissions can allow for the spread of node compromises",
-    "desc": "A flaw was found in the Submariner project. Due to unnecessary role-based access control permissions, a privileged attacker can run a malicious container on a node that may allow them to steal service account tokens and further compromise other nodes and potentially the entire cluster.",
-    "cvss": 6.6,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-250"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "RHODF-4.16-RHEL-9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Openshift Data Foundation 4.20"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Openshift Data Foundation 4.20"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Openshift Data Foundation 4.20"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-05-17",
-    "updated": "2026-08-21",
-    "url": "https://access.redhat.com/errata/RHSA-2024:4591",
     "source": "CISA Vulnrichment"
   },
   {
@@ -25131,28 +26062,6 @@
     "published": "2026-08-20",
     "updated": "2026-08-21",
     "url": "https://github.com/drakkan/sftpgo/security/advisories/GHSA-3vcg-pv95-pq54",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49436",
-    "title": "LinkAce vulnerable to stored XSS via 'javascript:' URI in Bulk Link API",
-    "desc": "LinkAce is a self-hosted archive to collect website links. Prior to version 2.5.7, the Bulk Link API endpoint (`POST /api/v2/bulk/links`) accepts URLs without any format validation, allowing an authenticated user to store a `javascript:` URI. The stored URI is later rendered verbatim as an `href` in Blade templates, and clicking it executes arbitrary JavaScript in the victim's browser — exfiltrati",
-    "cvss": 7.3,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Kovah",
-        "product": "LinkAce"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-08-20",
-    "updated": "2026-08-21",
-    "url": "https://github.com/Kovah/LinkAce/security/advisories/GHSA-6r73-pchm-4m39",
     "source": "CISA Vulnrichment"
   },
   {
@@ -27554,1436 +28463,6 @@
     "published": "2026-08-19",
     "updated": "2026-08-20",
     "url": "https://security.freebsd.org/advisories/FreeBSD-SA-26:44.posixshm.asc",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49787",
-    "title": "HTTP.sys Denial of Service Vulnerability",
-    "desc": "",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-770"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49787",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49795",
-    "title": "Windows Kernel Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49795",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49798",
-    "title": "Windows Kernel Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 9.3,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49798",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49800",
-    "title": "Windows Web Proxy Auto-Discovery Protocol (WPAD) Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-190",
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49800",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49802",
-    "title": "Windows USB Print Driver Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-362",
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 26H1"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2025"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2025 (Server Core installation)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49802",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49804",
-    "title": "Windows USB Video Driver Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 6.6,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49804",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49816",
-    "title": "Dell Command Update (DCU), versions prior to 5.7.1, contain a Deserialization of Untrusted Data vulnerability. A low pri",
-    "desc": "Dell Command Update (DCU), versions prior to 5.7.1, contain a Deserialization of Untrusted Data vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of Privileges.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-502"
-    ],
-    "affected": [
-      {
-        "vendor": "Dell",
-        "product": "Dell Command Update (DCU)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-19",
-    "updated": "2026-08-20",
-    "url": "https://www.dell.com/support/kbdoc/en-us/000501378/dsa-2026-309-security-update-for-dell-command-update-for-multiple-vulnerabilities",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-4740",
-    "title": "Rhacm: open cluster management (ocm): cross-cluster privilege escalation via improper kubernetes client certificate renewal validation",
-    "desc": "A flaw was found in Open Cluster Management (OCM), the technology underlying Red Hat Advanced Cluster Management (ACM). Improper validation of Kubernetes client certificate renewal allows a managed cluster administrator to forge a client certificate that can be approved by the OCM controller. This enables cross-cluster privilege escalation and may allow an attacker to gain control over other manag",
-    "cvss": 8.2,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-295"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.11"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.6"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.9"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-04-07",
-    "updated": "2026-08-20",
-    "url": "https://access.redhat.com/errata/RHSA-2026:11414",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50298",
-    "title": "Windows Spaceport.sys Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 6.8,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-190"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50298",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50303",
-    "title": "Windows Key Guard Security Feature Bypass Vulnerability",
-    "desc": "",
-    "cvss": 5.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-1240"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50303",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50308",
-    "title": "Windows NTFS Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-191",
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50308",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50310",
-    "title": "Windows Human Interface Device Information Disclosure Vulnerability",
-    "desc": "",
-    "cvss": 4.7,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-190"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50310",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50312",
-    "title": "Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 4.7,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50312",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50314",
-    "title": "Microsoft Office Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft 365 Apps for Enterprise"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Office 2016"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Office 2019"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Office 365 for Mac"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Office LTSC 2021"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50314",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50317",
-    "title": "Windows Operating Systems Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-362",
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 26H1"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2025"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2025 (Server Core installation)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50317",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50318",
-    "title": "Windows Resilient File System (ReFS) Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-121"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50318",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50322",
-    "title": "Windows Runtime Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-362",
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 26H1"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2025"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2025 (Server Core installation)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50322",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50325",
-    "title": "Win32k Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-284"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50325",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50331",
-    "title": "Windows Application Model Core API Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50331",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50333",
-    "title": "Windows Spaceport.sys Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-306"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50333",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50339",
-    "title": "Windows Push Notification Information Disclosure Vulnerability",
-    "desc": "",
-    "cvss": 5.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-200"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50339",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50340",
-    "title": "Windows Runtime Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 8.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 26H1"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2025"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2025 (Server Core installation)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50340",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50342",
-    "title": "Windows MIDI Service Module Elevation of Privileges Vulnerability",
-    "desc": "",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-284"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 26H1"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50342",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50345",
-    "title": "Windows Runtime Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-362",
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 26H1"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2025"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2025 (Server Core installation)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50345",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50364",
-    "title": "Windows Backup Service Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.3,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-59"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 26H1"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50364",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50367",
-    "title": "Windows Sensor Data Service Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-118",
-      "CWE-822"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50367",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50371",
-    "title": "Windows LUA File Virtualization Filter Driver Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-362",
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50371",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50373",
-    "title": "Windows Search Service Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-284"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50373",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50374",
-    "title": "Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 6.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50374",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50376",
-    "title": "Windows Remote Desktop Client Information Disclosure Vulnerability",
-    "desc": "",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-908"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50376",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50377",
-    "title": "Windows Kernel Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 5.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-125"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50377",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50384",
-    "title": "Windows Clip Service Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-362",
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50384",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50385",
-    "title": "Windows Runtime Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-362",
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 26H1"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2025"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2025 (Server Core installation)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50385",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50390",
-    "title": "Windows Kernel Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-843"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50390",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50391",
-    "title": "Windows Group Policy Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-269"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50391",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50399",
-    "title": "Windows Kernel Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-125"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 26H1"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50399",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50419",
-    "title": "Windows Kernel Information Disclosure Vulnerability",
-    "desc": "",
-    "cvss": 3.3,
-    "severity": "LOW",
-    "cwes": [
-      "CWE-200"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50419",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50431",
-    "title": "Windows Quality of Service (QoS) Packet Scheduler Information Disclosure Vulnerability",
-    "desc": "",
-    "cvss": 5.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-200"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50431",
     "source": "CISA Vulnrichment"
   }
 ]
