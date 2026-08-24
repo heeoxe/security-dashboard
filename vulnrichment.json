@@ -1,5 +1,1187 @@
 [
   {
+    "cve": "CVE-2025-49794",
+    "title": "Libxml: heap use after free (uaf) leads to denial of service (dos)",
+    "desc": "A use-after-free vulnerability was found in libxml2. This issue occurs when parsing XPath elements under certain circumstances when the XML schematron has the <sch:name path=\"...\"/> schema elements. This flaw allows a malicious actor to craft a malicious XML document used as input for libxml, resulting in the program's crash using libxml or other possible undefined behaviors.",
+    "cvss": 9.1,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-825"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-06-16",
+    "updated": "2026-08-24",
+    "url": "https://access.redhat.com/errata/RHSA-2025:10630",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-49796",
+    "title": "Libxml: type confusion leads to denial of service (dos)",
+    "desc": "A vulnerability was found in libxml2. Processing certain sch:name elements from the input XML file can trigger a memory corruption issue. This flaw allows an attacker to craft a malicious XML input file that can lead libxml to crash, resulting in a denial of service or other possible undefined behavior due to sensitive data being corrupted in memory.",
+    "cvss": 9.1,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-125"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-06-16",
+    "updated": "2026-08-24",
+    "url": "https://access.redhat.com/errata/RHSA-2025:10630",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-5318",
+    "title": "Libssh: out-of-bounds read in sftp_handle()",
+    "desc": "A flaw was found in the libssh library in versions less than 0.11.2. An out-of-bounds read can be triggered in the sftp_handle function due to an incorrect comparison check that permits the function to access memory beyond the valid handle list and to return an invalid pointer, which is used in further processing. This vulnerability allows an authenticated remote attacker to potentially read unint",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-125"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-06-24",
+    "updated": "2026-08-24",
+    "url": "https://access.redhat.com/errata/RHSA-2025:18231",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-9566",
+    "title": "Podman: podman kube play command may overwrite host files",
+    "desc": "There's a vulnerability in podman where an attacker may use the kube play command to overwrite host files when the kube file container a Secrete or a ConfigMap volume mount and such volume contains a symbolic link to a host file path. In a successful attack, the attacker can only control the target file to be overwritten but not the content to be written into the file.\n\nBinary-Affected: podman\nUps",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-09-05",
+    "updated": "2026-08-24",
+    "url": "https://access.redhat.com/errata/RHBA-2025:15692",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-12080",
+    "title": "Qemu-kvm: qemu-guest-agent: local privilege escalation via symlink attack in guest-ssh-add-authorized-keys",
+    "desc": "A flaw was found in the QEMU Guest Agent (qga). A local unprivileged user can exploit a vulnerability in the guest-ssh-add-authorized-keys command handler by manipulating symbolic links. This can occur either through a deterministic directory-symlink bypass or a Time-of-Check to Time-of-Use (TOCTOU) file-symlink race. Successful exploitation allows the attacker to gain ownership of arbitrary root-",
+    "cvss": 7.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-61"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-20",
+    "updated": "2026-08-24",
+    "url": "https://access.redhat.com/security/cve/CVE-2026-12080",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-26369",
+    "title": "JUNG eNet SMART HOME server 2.2.1/2.3.1 Privilege Escalation via setUserGroup",
+    "desc": "eNet SMART HOME server 2.2.1 and 2.3.1 contains a privilege escalation vulnerability due to insufficient authorization checks in the setUserGroup JSON-RPC method. A low-privileged user (UG_USER) can send a crafted POST request to /jsonrpc/management specifying their own username to elevate their account to the UG_ADMIN group, bypassing intended access controls and gaining administrative capabiliti",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-269"
+    ],
+    "affected": [
+      {
+        "vendor": "JUNG",
+        "product": "eNet SMART HOME server"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-02-15",
+    "updated": "2026-08-24",
+    "url": "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2026-5975.php",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-34100",
+    "title": "Guardian Language-System SQL Injection via id Parameter in media.php",
+    "desc": "Guardian language-system passes the id GET parameter directly into an unsanitized SQL query in media.php (line 17): SELECT id, filename, extension, type, duration, owner, private FROM files where id = '\\\".$_GET['id'].\\\"'. An authenticated attacker can perform error-based SQL injection to extract database contents.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-89"
+    ],
+    "affected": [
+      {
+        "vendor": "guardian",
+        "product": "language-system"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-08-24",
+    "url": "https://gist.github.com/cyberinforepo/d5b2771d82e1b31b8fc1c33052e08dad",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-34101",
+    "title": "Guardian Language-System SQL Injection via id Parameter in text_file.php",
+    "desc": "Guardian language-system passes the id GET parameter directly into an unsanitized SQL query in text_file.php (line 17): SELECT id, filename, extension, type, duration, owner, private FROM files where id = '\\\".$_GET['id'].\\\"'. An authenticated attacker can perform error-based SQL injection to extract database contents.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-89"
+    ],
+    "affected": [
+      {
+        "vendor": "guardian",
+        "product": "language-system"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-08-24",
+    "url": "https://gist.github.com/cyberinforepo/d5b2771d82e1b31b8fc1c33052e08dad",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-34102",
+    "title": "Guardian Language-System SQL Injection via id Parameter in job_info_get.php",
+    "desc": "Guardian language-system passes the id GET parameter directly into an unsanitized SQL query in job_info_get.php (line 16): SELECT * FROM jobs where input1 = '\\\".$_GET['id'].\\\"'. An authenticated attacker can perform error-based SQL injection to extract database contents.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-89"
+    ],
+    "affected": [
+      {
+        "vendor": "guardian",
+        "product": "language-system"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-08-24",
+    "url": "https://gist.github.com/cyberinforepo/d5b2771d82e1b31b8fc1c33052e08dad",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-34103",
+    "title": "Guardian Language-System SQL Injection via id Parameter in subtitles.php",
+    "desc": "Guardian language-system passes the id GET parameter directly into an unsanitized SQL query in subtitles.php (line 16): SELECT id, filename, extension, type FROM files where id = '\\\".$_GET['id'].\\\"'. An authenticated attacker can perform error-based SQL injection to extract database contents.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-89"
+    ],
+    "affected": [
+      {
+        "vendor": "guardian",
+        "product": "language-system"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-08-24",
+    "url": "https://gist.github.com/cyberinforepo/d5b2771d82e1b31b8fc1c33052e08dad",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-34104",
+    "title": "Guardian Language-System SQL Injection via name Parameter in designer.php",
+    "desc": "Guardian language-system passes the name GET parameter directly into an unsanitized SQL query in designer.php (line 124): SELECT * FROM complex WHERE name='\\\".$_GET['name'].\\\"'. An authenticated attacker can perform error-based SQL injection to extract database contents.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-89"
+    ],
+    "affected": [
+      {
+        "vendor": "guardian",
+        "product": "language-system"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-08-24",
+    "url": "https://gist.github.com/cyberinforepo/d5b2771d82e1b31b8fc1c33052e08dad",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-34105",
+    "title": "Guardian Language-System SQL Injection via id Parameter in translate_text.php",
+    "desc": "Guardian language-system passes the id GET parameter directly into an unsanitized SQL query in translate_text.php (line 15): SELECT id, filename, extension, type FROM files where id = '\\\".$_GET['id'].\\\"'. An authenticated attacker can perform error-based SQL injection to extract database contents.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-89"
+    ],
+    "affected": [
+      {
+        "vendor": "guardian",
+        "product": "language-system"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-01",
+    "updated": "2026-08-24",
+    "url": "https://gist.github.com/cyberinforepo/d5b2771d82e1b31b8fc1c33052e08dad",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-39910",
+    "title": "STACKIT IaaS API Privilege Escalation via Service Account Attachment",
+    "desc": "STACKIT IaaS API contains a missing authorization check vulnerability that allows authenticated, low-privileged attackers to escalate privileges to full organization compromise by attaching arbitrary service accounts to virtual machines they control. Attackers can exploit the unvalidated PUT servers service-accounts endpoint to attach high-privileged service accounts and query the Instance Metadat",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "STACKIT",
+        "product": "IaaS API"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-08",
+    "updated": "2026-08-24",
+    "url": "https://status.stackit.cloud",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-67340",
+    "title": "ArcadeDB before 26.7.2 Remote Code Execution via Trigger Scripts",
+    "desc": "ArcadeDB before 26.7.2 (arcadedb-engine) allows trigger scripts to look up host classes in java.lang.* (via Java.type) because ScriptTriggerExecutor adds java.lang.* to the allowed packages. An authenticated user with UPDATE_SCHEMA permission can create a JavaScript trigger that invokes java.lang.Runtime.getRuntime().exec() (or ProcessBuilder), achieving OS command execution when the trigger fires",
+    "cvss": 7.2,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-94"
+    ],
+    "affected": [
+      {
+        "vendor": "ArcadeData",
+        "product": "arcadedb"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-01",
+    "updated": "2026-08-24",
+    "url": "https://github.com/ArcadeData/arcadedb/security/advisories/GHSA-x9f9-r4m8-9xc2",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-7195",
+    "title": "Operator-sdk: privilege escalation due to incorrect permissions of /etc/passwd",
+    "desc": "Early versions of Operator-SDK provided an insecure method to allow operator containers to run in environments that used a random UID. Operator-SDK before 0.15.2 provided a script, user_setup, which modifies the permissions of the /etc/passwd file to 664 during build time. Developers who used Operator-SDK before 0.15.2 to scaffold their operator may still be impacted by this if the insecure user_s",
+    "cvss": 6.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-276"
+    ],
+    "affected": [
+      {
+        "vendor": "operator-framework",
+        "product": "operator-sdk"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "RHEL-9-CNV-4.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "RHEL-9-CNV-4.18"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "RHEL-9-CNV-4.20"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Compliance Operator 1"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-08-07",
+    "updated": "2026-08-24",
+    "url": "https://access.redhat.com/errata/RHEA-2025:23406",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-12725",
+    "title": "Dnsmasq: dnsmasq: heap buffer overflow in log_query() when logging unsupported ds/dnskey replies",
+    "desc": "A heap-based buffer overflow was found in dnsmasq. When DNSSEC validation and\nquery logging are both enabled, logging of DS or DNSKEY replies containing\nunsupported algorithm or digest types can cause dnsmasq to write past the end\nof an internal logging buffer. A remote attacker able to supply such a DNS\nresponse may crash the dnsmasq process, resulting in denial of service.",
+    "cvss": 5.9,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-122"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-22",
+    "updated": "2026-08-24",
+    "url": "https://access.redhat.com/security/cve/CVE-2026-12725",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-14164",
+    "title": "Libarchive: double-free vulnerability in rar5 decompression logic via dangling filtered_buf pointer in init_unpack()",
+    "desc": "A double free issue has been identified in libarchive's RAR5 reader. During parsing of a specially crafted RAR5 archive, the filtered_buf pointer may remain stale after being freed during unpacking state reinitialization. Subsequent processing of another archive entry can trigger a second free of the same memory region, resulting in a double-free condition. Successful exploitation may cause applic",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-415"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-06-30",
+    "updated": "2026-08-24",
+    "url": "https://access.redhat.com/errata/RHSA-2026:30333",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-1630",
+    "title": "Reflected XSS in WEBCON BPS",
+    "desc": "WEBCON BPS is vulnerable to Reflected XSS via one of parameters used by \"/openinmobileapp\" endpoint. An attacker can send a specially crafted URL that, when opened by an authenticated user, results in arbitrary JavaScript execution in the victim's browser.\n\nThis issue was fixed in versions 2026.1.3.109 and 2025.2.1.293.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "WEBCON",
+        "product": "WEBCON BPS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-14",
+    "updated": "2026-08-24",
+    "url": "https://cert.pl/en/posts/2026/05/CVE-2026-1630/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-48914",
+    "title": "Qemu-kvm: heap buffer overflow in virtio-blk scsi request handling",
+    "desc": "A flaw was found in QEMU's virtio-blk device. The issue arises because the device does not properly validate the size of input descriptors before writing data. A malicious guest with high privileges could exploit this vulnerability by submitting a malformed virtio-blk SCSI request, leading to an out-of-bounds write in the host heap memory and a potential denial of service (DoS) for the QEMU proces",
+    "cvss": 6.7,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-122"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-12",
+    "updated": "2026-08-24",
+    "url": "https://access.redhat.com/errata/RHSA-2026:39311",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-4878",
+    "title": "Libcap: libcap: privilege escalation via toctou race condition in cap_set_file()",
+    "desc": "A flaw was found in libcap. A local unprivileged user can exploit a Time-of-check-to-time-of-use (TOCTOU) race condition in the `cap_set_file()` function. This allows an attacker with write access to a parent directory to redirect file capability updates to an attacker-controlled file. By doing so, capabilities can be injected into or stripped from unintended executables, leading to privilege esca",
+    "cvss": 6.7,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-367"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-04-09",
+    "updated": "2026-08-24",
+    "url": "https://access.redhat.com/errata/RHSA-2026:12423",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-64612",
+    "title": "Libcupsfilters: cups-filters: libcupsfilters: cups image filter process abort via malformed png",
+    "desc": "A flaw was found in libcupsfilters and cups-filters. The PNG image reading function creates a libpng reader without installing an error recovery handler, causing the CUPS image filter process to abort when processing a malformed PNG file. An unauthenticated attacker could exploit this by submitting a specially crafted PNG print job, leading to denial of service of the in-flight print job.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-248"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-20",
+    "updated": "2026-08-24",
+    "url": "https://access.redhat.com/errata/RHSA-2026:56965",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-10805",
+    "title": "Networkmanager: networkmanager: local privilege escalation via malformed mud urls in dhclient backend",
+    "desc": "A flaw was found in NetworkManager. This local privilege escalation vulnerability exists in NetworkManager's dhclient backend when processing malformed Manufacturer Usage Description (MUD) URLs. A local user can exploit this flaw to escalate privileges by triggering a script via a crafted MUD URL, provided an administrator has explicitly configured NetworkManager to use dhclient. This issue does n",
+    "cvss": 6.7,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-78"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Multicluster Engine for Kubernetes"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-04",
+    "updated": "2026-08-24",
+    "url": "https://access.redhat.com/errata/RHSA-2026:58555",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-74949",
+    "title": "Use-after-free in the Graphics: Canvas2D component",
+    "desc": "Use-after-free in the Graphics: Canvas2D component. This vulnerability was fixed in Firefox 154, Firefox ESR 140.14, Firefox ESR 153.1, Thunderbird 154, Thunderbird 140.14, and Thunderbird 153.1.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Mozilla",
+        "product": "Firefox"
+      },
+      {
+        "vendor": "Mozilla",
+        "product": "Thunderbird"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-18",
+    "updated": "2026-08-24",
+    "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2060245",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-74987",
+    "title": "Internally found bugs fixed in Firefox ESR 140.14, Firefox ESR 153.1 and Firefox 154",
+    "desc": "Internally found bugs present in Firefox ESR 140.13, Firefox ESR 153.0 and Firefox 153. Some of these bugs showed evidence of memory corruption or another security-relevant defect and we presume that with enough effort some of these could have been exploited. This vulnerability was fixed in Firefox 154, Firefox ESR 140.14, Firefox ESR 153.1, Thunderbird 154, Thunderbird 140.14, and Thunderbird 153",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Mozilla",
+        "product": "Firefox"
+      },
+      {
+        "vendor": "Mozilla",
+        "product": "Thunderbird"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-18",
+    "updated": "2026-08-24",
+    "url": "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1500946%2C1788109%2C2045379%2C2045380%2C2049339%2C2049393%2C2053580%2C2054662%2C2054665%2C2054673%2C2054785%2C2058645",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-74988",
+    "title": "Internally found bugs fixed in Firefox ESR 153.1 and Firefox 154",
+    "desc": "Internally found bugs present in Firefox ESR 153.0 and Firefox 153. Some of these bugs showed evidence of memory corruption or another security-relevant defect and we presume that with enough effort some of these could have been exploited. This vulnerability was fixed in Firefox 154, Firefox ESR 153.1, Thunderbird 154, and Thunderbird 153.1.",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Mozilla",
+        "product": "Firefox"
+      },
+      {
+        "vendor": "Mozilla",
+        "product": "Thunderbird"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-18",
+    "updated": "2026-08-24",
+    "url": "https://bugzilla.mozilla.org/buglist.cgi?bug_id=2018164%2C2045404%2C2045507%2C2045711%2C2052403%2C2053174%2C2054643%2C2054667%2C2054671%2C2054674%2C2054687%2C2054717%2C2054761%2C2054787%2C2055676%2C2056779%2C2056781%2C2058629%2C2059019%2C2059138",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-74989",
+    "title": "Internally found bugs fixed in Firefox 154",
+    "desc": "Internally found bugs present in Firefox 153. Some of these bugs showed evidence of memory corruption or another security-relevant defect and we presume that with enough effort some of these could have been exploited. This vulnerability was fixed in Firefox 154 and Thunderbird 154.",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Mozilla",
+        "product": "Firefox"
+      },
+      {
+        "vendor": "Mozilla",
+        "product": "Thunderbird"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-18",
+    "updated": "2026-08-24",
+    "url": "https://bugzilla.mozilla.org/buglist.cgi?bug_id=2022257%2C2027351%2C2027380%2C2029289",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-74990",
+    "title": "Internally found bugs fixed in Firefox ESR 115.39, Firefox ESR 140.14, Firefox ESR 153.1 and Firefox 154",
+    "desc": "Internally found bugs present in Firefox ESR 115.38, Firefox ESR 140.13, Firefox ESR 153.0 and Firefox 153. Some of these bugs showed evidence of memory corruption or another security-relevant defect and we presume that with enough effort some of these could have been exploited. This vulnerability was fixed in Firefox 154, Firefox ESR 115.39, Firefox ESR 140.14, Firefox ESR 153.1, Thunderbird 154,",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Mozilla",
+        "product": "Firefox"
+      },
+      {
+        "vendor": "Mozilla",
+        "product": "Thunderbird"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-18",
+    "updated": "2026-08-24",
+    "url": "https://bugzilla.mozilla.org/buglist.cgi?bug_id=2045762%2C2052401%2C2058208",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-12912",
+    "title": "Libtiff: libtiff: heap-based buffer overflow via crafted pixarlog-compressed tiff image",
+    "desc": "A flaw was found in libtiff. A remote attacker could exploit this vulnerability by providing a specially crafted PixarLog-compressed TIFF image. This issue occurs when decoding Pixarlog codec images with the PIXARLOGDATAFMT_8BITABGR output format and a specific stride value, leading to a heap-based buffer overflow. This could potentially result in arbitrary code execution or a denial of service (D",
+    "cvss": 7.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-122"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-29",
+    "updated": "2026-08-24",
+    "url": "https://access.redhat.com/errata/RHSA-2026:34890",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-15706",
+    "title": "Missing Authentication for Critical Function in Management API in Baylan Water Meters's BMS",
+    "desc": "Missing authentication for critical function vulnerability in Baylan Measuring Instruments Industry and Trade Inc. Baylan Smart Meter Management Application (BMS) allows Authentication Bypass.\n\nThis issue affects Baylan Smart Meter Management Application (BMS): before v1.1.10.142.",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-306"
+    ],
+    "affected": [
+      {
+        "vendor": "Baylan Measuring Instruments Industry and Trade Inc.",
+        "product": "Baylan Smart Meter Management Application (BMS)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-20",
+    "updated": "2026-08-24",
+    "url": "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-0881",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-16242",
+    "title": "Hypershift: konnectivity proxy-server accepts agent connections without validating client certificates",
+    "desc": "A flaw was found in the Konnectivity proxy-server configuration for hosted control planes. The agent-facing listener was started without --cluster-ca-cert (and without token-based agent authentication), so client certificates were not validated. A remote attacker who can reach the Konnectivity cluster endpoint could connect as an unauthenticated agent, join the routing pool, and potentially proxy,",
+    "cvss": 9.4,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-306"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.11"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.6"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-20",
+    "updated": "2026-08-24",
+    "url": "https://access.redhat.com/errata/RHSA-2026:46885",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-17107",
+    "title": "Cluster-proxy: cluster-proxy: impersonation header injection in service-proxy grants cluster-admin on every managed cluster",
+    "desc": "A flaw was found in the cluster-proxy service-proxy component used in Red Hat Advanced Cluster Management for Kubernetes (RHACM) and multicluster-engine (MCE). The service-proxy appends impersonation group headers to proxied requests without first removing caller-supplied values, and the spoke ServiceAccount holds unrestricted impersonation permissions. An authenticated hub principal can inject an",
+    "cvss": 8.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-441"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.11"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.6"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-24",
+    "updated": "2026-08-24",
+    "url": "https://access.redhat.com/errata/RHSA-2026:46885",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-4740",
+    "title": "Rhacm: open cluster management (ocm): cross-cluster privilege escalation via improper kubernetes client certificate renewal validation",
+    "desc": "A flaw was found in Open Cluster Management (OCM), the technology underlying Red Hat Advanced Cluster Management (ACM). Improper validation of Kubernetes client certificate renewal allows a managed cluster administrator to forge a client certificate that can be approved by the OCM controller. This enables cross-cluster privilege escalation and may allow an attacker to gain control over other manag",
+    "cvss": 8.2,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-295"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.11"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.9"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-04-07",
+    "updated": "2026-08-24",
+    "url": "https://access.redhat.com/errata/RHSA-2026:11414",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-74254",
+    "title": "Joomla Extension - joomlack.fr - SQL injection in Page Builder CK < 3.6.5",
+    "desc": "Joomla Extension - joomlack.fr - SQL injection in Page Builder CK < 3.6.5 - The Joomla extension Page Builder CK is vulnerable to a SQL injection issue related to the styles model. Version 3.6.4 fixed the vector in the frontend, 3.6.5 in the backend.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-89"
+    ],
+    "affected": [
+      {
+        "vendor": "joomlack.fr",
+        "product": "Page Builder CK extension for Joomla"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-17",
+    "updated": "2026-08-24",
+    "url": "https://www.joomlack.fr/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-77812",
+    "title": "Cleartext Exposure of DJI Drone Wi-Fi Credentials via BLE",
+    "desc": "DJI drones transmit DUML (DJI Universal Markup Language) protocol messages over BLE (Bluetooth Low Energy) without encryption. When a client attempts to connect to the drone over Wi-Fi, or when the drone is switched to QuickTransfer mode, the DJI Fly application exchanges DUML messages with the drone over BLE, including the Wi-Fi credentials. An attacker within BLE range can passively sniff this t",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-311"
+    ],
+    "affected": [
+      {
+        "vendor": "DJI",
+        "product": "Neo"
+      },
+      {
+        "vendor": "DJI",
+        "product": "Neo 2"
+      },
+      {
+        "vendor": "DJI",
+        "product": "DJI Flip"
+      },
+      {
+        "vendor": "DJI",
+        "product": "Air 3"
+      },
+      {
+        "vendor": "DJI",
+        "product": "Air 3S"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-21",
+    "updated": "2026-08-24",
+    "url": "https://support.dji.com/help/content?customId=en-us03400011149&amp;spaceId=34&amp;re=US&amp;lang=en",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-1784",
+    "title": "Ose-cluster-ingress-operator: remote code execution through haproxy configuration injection",
+    "desc": "The Route OpenShift resource allows to define routes to make pods reachable at a subdomain through HAProxy. It was found that the checks performed on the spec.path YAML stanza in a Route document was insufficient and could allow a controlled injection of the HAProxy configuration.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-15"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.13"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.15"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.16"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.18"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-02",
+    "updated": "2026-08-24",
+    "url": "https://access.redhat.com/errata/RHSA-2026:23241",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-49332",
+    "title": "Openshift/oauth-proxy: openshift/oauth-proxy: underscore header smuggling enables identity impersonation on wsgi/php upstreams",
+    "desc": "A flaw was found in openshift/oauth-proxy. The proxy sets authenticated identity headers using only dash-variant keys (X-Forwarded-User) but does not strip underscore-variant keys (X_Forwarded_User) from incoming requests. WSGI and PHP frameworks normalize both variants to the same variable, allowing an authenticated low-privilege user to smuggle a forged identity that may override the legitimate ",
+    "cvss": 8.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-436"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.12"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.13"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.16"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.18"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-28",
+    "updated": "2026-08-24",
+    "url": "https://access.redhat.com/errata/RHSA-2026:50681",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-50236",
+    "title": "Openshift/console: authenticated ssrf with full response reflection and path neutralization via dev console webhook helpers in openshift console",
+    "desc": "An authenticated SSRF flaw was found in the OpenShift Console Dev Console webhook helpers. User-supplied target URLs are fetched server-side without validation, with path neutralization enabling arbitrary endpoint targeting and full response reflection from the console pod's privileged network position.",
+    "cvss": 7.4,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-918"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.18"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.19"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.2"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.21"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.22"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-11",
+    "updated": "2026-08-24",
+    "url": "https://access.redhat.com/errata/RHSA-2026:54545",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-50237",
+    "title": "Openshift/console: namespace tenant ssrf with egress bypass, catalog poisoning, and admin-mediated supply chain escalation via projecthelmchartrepository in openshift console",
+    "desc": "A Server-Side Request Forgery and supply chain flaw was found in the OpenShift Console Helm catalog proxy. A namespace tenant can plant a ProjectHelmChartRepository with an arbitrary URL that the console pod fetches server-side, bypassing tenant egress restrictions. Combined with catalog metadata poisoning and admin-mediated chart installation, this enables privilege escalation.",
+    "cvss": 7.4,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-918"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.12"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.13"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.18"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.19"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-11",
+    "updated": "2026-08-24",
+    "url": "https://access.redhat.com/errata/RHSA-2026:54188",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2026-50540",
     "title": "Kata Containers: Config Path Annotation Arbitrary File Loading",
     "desc": "Kata Containers is an open source project focusing on a standard implementation of lightweight Virtual Machines (VMs) that perform like containers. Prior to version 4.0.0, kata-runtime is vulnerable to host code execution via an unvalidated configuration path annotation. The runtime accepts an arbitrary io.katacontainers.config_path pod annotation and loads the referenced host TOML file without re",
@@ -18,8 +1200,30 @@
     "exploitation": "none",
     "isKev": false,
     "published": "2026-08-07",
-    "updated": "2026-08-23",
+    "updated": "2026-08-24",
     "url": "https://github.com/kata-containers/kata-containers/security/advisories/GHSA-mp2j-xm59-qfgw",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-18652",
+    "title": "Velociraptor STACK Type Download Path Bypasses Denied Prefix Check",
+    "desc": "Velociraptor allows reading Stacked result sets from the GUI.  Velociraptor's multi-tenant design stores sub orgs within the datastore directory. The path requested by the GUI is not correctly checked against the prefix deny list, allowing result sets to read from denied prefixes.\n\nIn particular, a user with read access to the root org can access result sets from child orgs.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "Rapid7",
+        "product": "Velociraptor"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-12",
+    "updated": "2026-08-24",
+    "url": "http://docs.velociraptor.app/announcements/advisories/cve-2026-18652/",
     "source": "CISA Vulnrichment"
   },
   {
@@ -96,82 +1300,6 @@
     "published": "2025-05-27",
     "updated": "2026-08-23",
     "url": "https://access.redhat.com/errata/RHSA-2026:28911",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-49794",
-    "title": "Libxml: heap use after free (uaf) leads to denial of service (dos)",
-    "desc": "A use-after-free vulnerability was found in libxml2. This issue occurs when parsing XPath elements under certain circumstances when the XML schematron has the <sch:name path=\"...\"/> schema elements. This flaw allows a malicious actor to craft a malicious XML document used as input for libxml, resulting in the program's crash using libxml or other possible undefined behaviors.",
-    "cvss": 9.1,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-825"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-06-16",
-    "updated": "2026-08-23",
-    "url": "https://access.redhat.com/errata/RHSA-2025:10630",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-49796",
-    "title": "Libxml: type confusion leads to denial of service (dos)",
-    "desc": "A vulnerability was found in libxml2. Processing certain sch:name elements from the input XML file can trigger a memory corruption issue. This flaw allows an attacker to craft a malicious XML input file that can lead libxml to crash, resulting in a denial of service or other possible undefined behavior due to sensitive data being corrupted in memory.",
-    "cvss": 9.1,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-125"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-06-16",
-    "updated": "2026-08-23",
-    "url": "https://access.redhat.com/errata/RHSA-2025:10630",
     "source": "CISA Vulnrichment"
   },
   {
@@ -387,44 +1515,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-4878",
-    "title": "Libcap: libcap: privilege escalation via toctou race condition in cap_set_file()",
-    "desc": "A flaw was found in libcap. A local unprivileged user can exploit a Time-of-check-to-time-of-use (TOCTOU) race condition in the `cap_set_file()` function. This allows an attacker with write access to a parent directory to redirect file capability updates to an attacker-controlled file. By doing so, capabilities can be injected into or stripped from unintended executables, leading to privilege esca",
-    "cvss": 6.7,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-367"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-04-09",
-    "updated": "2026-08-23",
-    "url": "https://access.redhat.com/errata/RHSA-2026:12423",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2025-1022",
     "title": "Versions of the package spatie/browsershot before 5.0.5 are vulnerable to Improper Input Validation in the setHtml funct",
     "desc": "Versions of the package spatie/browsershot before 5.0.5 are vulnerable to Improper Input Validation in the setHtml function, invoked by Browsershot::html(), which can be bypassed by omitting the slashes in the file URI (e.g., file:../../../../etc/passwd). This is due to missing validations of the user input that should be blocking file URI schemes (e.g., file:// and file:/) in the HTML content.\r\r*",
@@ -442,26 +1532,6 @@
     "published": "2025-02-05",
     "updated": "2026-08-23",
     "url": "https://security.snyk.io/vuln/SNYK-PHP-SPATIEBROWSERSHOT-8496747",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-14187",
-    "title": "Tutor LMS < 4.0.6 - Instructor+ Cross-Instructor Private Course Disclosure via IDOR",
-    "desc": "The Tutor LMS  WordPress plugin before 4.0.6 does not enforce per-object ownership checks on its course content type, allowing any user with the instructor role to read the content of private courses belonging to other instructors.",
-    "cvss": 2.7,
-    "severity": "LOW",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Unknown",
-        "product": "Tutor LMS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-22",
-    "updated": "2026-08-23",
-    "url": "https://wpscan.com/vulnerability/fb006829-e298-4b22-9d62-293a3b917ccd/",
     "source": "CISA Vulnrichment"
   },
   {
@@ -525,26 +1595,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-16738",
-    "title": "Conekta Payment Gateway < 6.2.2 - Unauthenticated Order Payment Completion via Webhook Forgery",
-    "desc": "The Conekta Payment Gateway WordPress plugin before 6.2.2 does not verify the authenticity of incoming payment gateway webhook notifications, nor bind the confirmed payment to the targeted order or verify its amount, allowing unauthenticated attackers to mark arbitrary orders as paid without payment.",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Unknown",
-        "product": "Conekta Payment Gateway"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-22",
-    "updated": "2026-08-23",
-    "url": "https://wpscan.com/vulnerability/89a2917e-032c-4f0f-be44-1a50b9d6fddf/",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-18052",
     "title": "ManageWP Worker < 4.9.37 - Unauthenticated Authentication Bypass via Unsigned Auto-Login Parameters",
     "desc": "The ManageWP Worker WordPress plugin before 4.9.37 does not bind the account being logged in to the signature which authorises the login, nor prevent an already used login link from being replayed, allowing attackers who obtain such a link to gain a session as any user on the site, including an administrator.",
@@ -562,46 +1612,6 @@
     "published": "2026-08-22",
     "updated": "2026-08-23",
     "url": "https://wpscan.com/vulnerability/e1e8c313-f7ea-4f3a-85c0-4f33dfe0710d/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-19093",
-    "title": "Tutor LMS < 4.0.6 - Instructor+ Arbitrary File Read via Video Path",
-    "desc": "The Tutor LMS  WordPress plugin before 4.0.6 does not validate a stored file path before using it to stream media, allowing users with the instructor role to read arbitrary files on the server, including files outside the web root.\n\nThe readable files include the WordPress configuration file, which exposes the database credentials and the authentication keys and salts, so authentication cookies ca",
-    "cvss": 6.8,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Unknown",
-        "product": "Tutor LMS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-22",
-    "updated": "2026-08-23",
-    "url": "https://wpscan.com/vulnerability/9f8361a9-d424-4346-9d92-6f27ab9261c9/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-19221",
-    "title": "Forminator Forms < 1.57.0.5 - Admin+ Network-Wide RCE via Hub Connector API Key on Multisite",
-    "desc": "The Forminator Forms  WordPress plugin before 1.57.0.5 does not restrict a network-wide setting to network administrators, allowing an administrator of any single site on a multisite network to execute arbitrary code across the entire network.",
-    "cvss": 7.2,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Unknown",
-        "product": "Forminator Forms"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-22",
-    "updated": "2026-08-23",
-    "url": "https://wpscan.com/vulnerability/5aa85c72-2a60-4243-b370-ef0b46e98cfe/",
     "source": "CISA Vulnrichment"
   },
   {
@@ -726,26 +1736,6 @@
     "published": "2026-08-22",
     "updated": "2026-08-23",
     "url": "https://wpscan.com/vulnerability/01c78c78-3915-44da-824a-f68074985c75/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-77002",
-    "title": "SmilePass Selfie Login <= 1.0.2 - Unauthenticated Authentication Bypass",
-    "desc": "The SmilePass Selfie Login WordPress plugin through 1.0.2 does not perform any server-side verification of the identity it is asked to authenticate, allowing unauthenticated users to log in as any registered account, including administrators.",
-    "cvss": 9.8,
-    "severity": "CRITICAL",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Unknown",
-        "product": "SmilePass Selfie Login"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-22",
-    "updated": "2026-08-23",
-    "url": "https://wpscan.com/vulnerability/51236907-a1b4-4c3b-8c39-adafcab7a2ef/",
     "source": "CISA Vulnrichment"
   },
   {
@@ -906,44 +1896,6 @@
     "published": "2025-04-02",
     "updated": "2026-08-23",
     "url": "https://access.redhat.com/errata/RHSA-2025:3607",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-5318",
-    "title": "Libssh: out-of-bounds read in sftp_handle()",
-    "desc": "A flaw was found in the libssh library in versions less than 0.11.2. An out-of-bounds read can be triggered in the sftp_handle function due to an incorrect comparison check that permits the function to access memory beyond the valid handle list and to return an invalid pointer, which is used in further processing. This vulnerability allows an authenticated remote attacker to potentially read unint",
-    "cvss": 5.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-125"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-06-24",
-    "updated": "2026-08-23",
-    "url": "https://access.redhat.com/errata/RHSA-2025:18231",
     "source": "CISA Vulnrichment"
   },
   {
@@ -1193,120 +2145,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-16242",
-    "title": "Hypershift: konnectivity proxy-server accepts agent connections without validating client certificates",
-    "desc": "A flaw was found in the Konnectivity proxy-server configuration for hosted control planes. The agent-facing listener was started without --cluster-ca-cert (and without token-based agent authentication), so client certificates were not validated. A remote attacker who can reach the Konnectivity cluster endpoint could connect as an unauthenticated agent, join the routing pool, and potentially proxy,",
-    "cvss": 9.4,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-306"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.1"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.1"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.11"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.17"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.6"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-20",
-    "updated": "2026-08-23",
-    "url": "https://access.redhat.com/errata/RHSA-2026:46885",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-4740",
-    "title": "Rhacm: open cluster management (ocm): cross-cluster privilege escalation via improper kubernetes client certificate renewal validation",
-    "desc": "A flaw was found in Open Cluster Management (OCM), the technology underlying Red Hat Advanced Cluster Management (ACM). Improper validation of Kubernetes client certificate renewal allows a managed cluster administrator to forge a client certificate that can be approved by the OCM controller. This enables cross-cluster privilege escalation and may allow an attacker to gain control over other manag",
-    "cvss": 8.2,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-295"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.1"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.11"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.6"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.9.0"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-04-07",
-    "updated": "2026-08-23",
-    "url": "https://access.redhat.com/errata/RHSA-2026:11414",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-1784",
-    "title": "Ose-cluster-ingress-operator: remote code execution through haproxy configuration injection",
-    "desc": "The Route OpenShift resource allows to define routes to make pods reachable at a subdomain through HAProxy. It was found that the checks performed on the spec.path YAML stanza in a Route document was insufficient and could allow a controlled injection of the HAProxy configuration.",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-15"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.13"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.14"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.15"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.16"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.18"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-02",
-    "updated": "2026-08-23",
-    "url": "https://access.redhat.com/errata/RHSA-2026:23241",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-42965",
     "title": "Openshift/router: openshift/router: cloud metadata ssrf via fqdn-typed endpointslice bypasses destination validation",
     "desc": "A flaw was found in the OpenShift Router. A user with EndpointSlice write access can exploit this vulnerability by creating a Service backed by an FQDN (Fully Qualified Domain Name) EndpointSlice that resolves to a cloud metadata endpoint. This allows the router to proxy requests to the cloud metadata endpoint, leading to the disclosure of instance credentials and other sensitive metadata. This by",
@@ -1376,120 +2214,6 @@
     "published": "2026-05-29",
     "updated": "2026-08-23",
     "url": "https://access.redhat.com/errata/RHSA-2026:27009",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49332",
-    "title": "Openshift/oauth-proxy: openshift/oauth-proxy: underscore header smuggling enables identity impersonation on wsgi/php upstreams",
-    "desc": "A flaw was found in openshift/oauth-proxy. The proxy sets authenticated identity headers using only dash-variant keys (X-Forwarded-User) but does not strip underscore-variant keys (X_Forwarded_User) from incoming requests. WSGI and PHP frameworks normalize both variants to the same variable, allowing an authenticated low-privilege user to smuggle a forged identity that may override the legitimate ",
-    "cvss": 8.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-436"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.12"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.13"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.14"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.16"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.18"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-28",
-    "updated": "2026-08-23",
-    "url": "https://access.redhat.com/errata/RHSA-2026:50681",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50236",
-    "title": "Openshift/console: authenticated ssrf with full response reflection and path neutralization via dev console webhook helpers in openshift console",
-    "desc": "An authenticated SSRF flaw was found in the OpenShift Console Dev Console webhook helpers. User-supplied target URLs are fetched server-side without validation, with path neutralization enabling arbitrary endpoint targeting and full response reflection from the console pod's privileged network position.",
-    "cvss": 7.4,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-918"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.18"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.19"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.2"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.21"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.22"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-11",
-    "updated": "2026-08-23",
-    "url": "https://access.redhat.com/errata/RHSA-2026:54545",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-50237",
-    "title": "Openshift/console: namespace tenant ssrf with egress bypass, catalog poisoning, and admin-mediated supply chain escalation via projecthelmchartrepository in openshift console",
-    "desc": "A Server-Side Request Forgery and supply chain flaw was found in the OpenShift Console Helm catalog proxy. A namespace tenant can plant a ProjectHelmChartRepository with an arbitrary URL that the console pod fetches server-side, bypassing tenant egress restrictions. Combined with catalog metadata poisoning and admin-mediated chart installation, this enables privilege escalation.",
-    "cvss": 7.4,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-918"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.12"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.13"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.18"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.19"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-11",
-    "updated": "2026-08-23",
-    "url": "https://access.redhat.com/errata/RHSA-2026:54188",
     "source": "CISA Vulnrichment"
   },
   {
@@ -1592,6 +2316,106 @@
     "source": "CISA Vulnrichment"
   },
   {
+    "cve": "CVE-2026-14187",
+    "title": "Tutor LMS < 4.0.6 - Instructor+ Cross-Instructor Private Course Disclosure via IDOR",
+    "desc": "The Tutor LMS  WordPress plugin before 4.0.6 does not enforce per-object ownership checks on its course content type, allowing any user with the instructor role to read the content of private courses belonging to other instructors.",
+    "cvss": 2.7,
+    "severity": "LOW",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Tutor LMS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-22",
+    "updated": "2026-08-22",
+    "url": "https://wpscan.com/vulnerability/fb006829-e298-4b22-9d62-293a3b917ccd/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-16738",
+    "title": "Conekta Payment Gateway < 6.2.2 - Unauthenticated Order Payment Completion via Webhook Forgery",
+    "desc": "The Conekta Payment Gateway WordPress plugin before 6.2.2 does not verify the authenticity of incoming payment gateway webhook notifications, nor bind the confirmed payment to the targeted order or verify its amount, allowing unauthenticated attackers to mark arbitrary orders as paid without payment.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Conekta Payment Gateway"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-22",
+    "updated": "2026-08-22",
+    "url": "https://wpscan.com/vulnerability/89a2917e-032c-4f0f-be44-1a50b9d6fddf/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-19093",
+    "title": "Tutor LMS < 4.0.6 - Instructor+ Arbitrary File Read via Video Path",
+    "desc": "The Tutor LMS  WordPress plugin before 4.0.6 does not validate a stored file path before using it to stream media, allowing users with the instructor role to read arbitrary files on the server, including files outside the web root.\n\nThe readable files include the WordPress configuration file, which exposes the database credentials and the authentication keys and salts, so authentication cookies ca",
+    "cvss": 6.8,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Tutor LMS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-22",
+    "updated": "2026-08-22",
+    "url": "https://wpscan.com/vulnerability/9f8361a9-d424-4346-9d92-6f27ab9261c9/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-19221",
+    "title": "Forminator Forms < 1.57.0.5 - Admin+ Network-Wide RCE via Hub Connector API Key on Multisite",
+    "desc": "The Forminator Forms  WordPress plugin before 1.57.0.5 does not restrict a network-wide setting to network administrators, allowing an administrator of any single site on a multisite network to execute arbitrary code across the entire network.",
+    "cvss": 7.2,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Forminator Forms"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-22",
+    "updated": "2026-08-22",
+    "url": "https://wpscan.com/vulnerability/5aa85c72-2a60-4243-b370-ef0b46e98cfe/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-77002",
+    "title": "SmilePass Selfie Login <= 1.0.2 - Unauthenticated Authentication Bypass",
+    "desc": "The SmilePass Selfie Login WordPress plugin through 1.0.2 does not perform any server-side verification of the identity it is asked to authenticate, allowing unauthenticated users to log in as any registered account, including administrators.",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "SmilePass Selfie Login"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-22",
+    "updated": "2026-08-22",
+    "url": "https://wpscan.com/vulnerability/51236907-a1b4-4c3b-8c39-adafcab7a2ef/",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2024-5042",
     "title": "Submariner-operator: rbac permissions can allow for the spread of node compromises",
     "desc": "A flaw was found in the Submariner project. Due to unnecessary role-based access control permissions, a privileged attacker can run a malicious container on a node that may allow them to steal service account tokens and further compromise other nodes and potentially the entire cluster.",
@@ -1627,44 +2451,6 @@
     "published": "2024-05-17",
     "updated": "2026-08-22",
     "url": "https://access.redhat.com/errata/RHSA-2024:4591",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-7195",
-    "title": "Operator-sdk: privilege escalation due to incorrect permissions of /etc/passwd",
-    "desc": "Early versions of Operator-SDK provided an insecure method to allow operator containers to run in environments that used a random UID. Operator-SDK before 0.15.2 provided a script, user_setup, which modifies the permissions of the /etc/passwd file to 664 during build time. Developers who used Operator-SDK before 0.15.2 to scaffold their operator may still be impacted by this if the insecure user_s",
-    "cvss": 6.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-276"
-    ],
-    "affected": [
-      {
-        "vendor": "operator-framework",
-        "product": "operator-sdk"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "RHEL-9-CNV-4.17"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "RHEL-9-CNV-4.18"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "RHEL-9-CNV-4.20"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Compliance Operator 1"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-08-07",
-    "updated": "2026-08-22",
-    "url": "https://access.redhat.com/errata/RHEA-2025:23406",
     "source": "CISA Vulnrichment"
   },
   {
@@ -24816,44 +25602,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-77812",
-    "title": "Cleartext Exposure of DJI Drone Wi-Fi Credentials via BLE",
-    "desc": "DJI drones transmit DUML (DJI Universal Markup Language) protocol messages over BLE (Bluetooth Low Energy) without encryption. When a client attempts to connect to the drone over Wi-Fi, or when the drone is switched to QuickTransfer mode, the DJI Fly application exchanges DUML messages with the drone over BLE, including the Wi-Fi credentials. An attacker within BLE range can passively sniff this t",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-311"
-    ],
-    "affected": [
-      {
-        "vendor": "DJI",
-        "product": "DJI Neo"
-      },
-      {
-        "vendor": "DJI",
-        "product": "DJI Neo 2"
-      },
-      {
-        "vendor": "DJI",
-        "product": "DJI Flip"
-      },
-      {
-        "vendor": "DJI",
-        "product": "DJI Air 3"
-      },
-      {
-        "vendor": "DJI",
-        "product": "DJI Air 3S"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-21",
-    "updated": "2026-08-21",
-    "url": "https://support.dji.com/help/content?customId=en-us03400011149&amp;spaceId=34&amp;re=US&amp;lang=en",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-77814",
     "title": "Infinite Image Browsing is_path_trusted Prefix Comparison Omits the Trailing Path Separator",
     "desc": "is_path_trusted in scripts/iib/api.py compares the requested path against each allowed parent directory with path.startswith(parent_path), without appending a path separator. A directory whose name merely begins with an allowed path therefore satisfies the comparison, so where /data/images is allowed a request for /data/images_private/secret.txt is treated as trusted and served by FileResponse, di",
@@ -25996,72 +26744,6 @@
     "published": "2026-08-21",
     "updated": "2026-08-21",
     "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/f26cbc41-8ed9-4dc6-a8bc-9986ecab5e6e?source=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-48749",
-    "title": "Incus has an arbitrary file read+write on host via rootfs/ symlink in malicious image",
-    "desc": "Incus is a system container and virtual machine manager. Prior to version 7.2.0, a specially crafted image can be used to read or create/write arbitrary files on the host; possibly leading to arbitrary command execution. Version 7.2.0 fixes the issue.",
-    "cvss": 9.9,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-73"
-    ],
-    "affected": [
-      {
-        "vendor": "lxc",
-        "product": "incus"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-08-21",
-    "updated": "2026-08-21",
-    "url": "https://github.com/lxc/incus/security/advisories/GHSA-2q3f-q5pq-g8wv",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-48753",
-    "title": "Incus has an arbitrary file write via path traversal in S3 multipart upload",
-    "desc": "Incus is a system container and virtual machine manager. Prior to version 7.1.0, the S3 protocol upload endpoint is vulnerable to path traversal and allows creation of arbitrary files on the host. This behavior could lead to arbitrary command execution. Version 7.1.0 fixes the issue.",
-    "cvss": 9.9,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-73"
-    ],
-    "affected": [
-      {
-        "vendor": "lxc",
-        "product": "incus"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-08-21",
-    "updated": "2026-08-21",
-    "url": "https://github.com/lxc/incus/security/advisories/GHSA-ccjc-4qc3-jxqc",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49245",
-    "title": "SFTPGo: Stored XSS via inline parameter on public shares and user file download",
-    "desc": "SFTPGo is an open source, event-driven file transfer solution. From 2.2.0 until 2.7.3, the inline query parameter on browsable-share file downloads and authenticated user-file downloads suppresses Content-Disposition: attachment, allowing an attacker-controlled HTML file stored in a share or home directory to be served as text/html in the SFTPGo web origin. An attacker who can place the file can s",
-    "cvss": 3.7,
-    "severity": "LOW",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "drakkan",
-        "product": "sftpgo"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-20",
-    "updated": "2026-08-21",
-    "url": "https://github.com/drakkan/sftpgo/security/advisories/GHSA-3vcg-pv95-pq54",
     "source": "CISA Vulnrichment"
   },
   {
@@ -27739,730 +28421,6 @@
     "published": "2026-01-10",
     "updated": "2026-08-20",
     "url": "https://github.com/remix-run/react-router/security/advisories/GHSA-2w69-qvjg-hvjx",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-25896",
-    "title": "fast-xml-parser has an entity encoding bypass via regex injection in DOCTYPE entity names",
-    "desc": "fast-xml-parser allows users to validate XML, parse XML to JS object, or build XML from JS object without C/C++ based libraries and no callback. From 4.1.3to before 5.3.5, a dot (.) in a DOCTYPE entity name is treated as a regex wildcard during entity replacement, allowing an attacker to shadow built-in XML entities (&lt;, &gt;, &amp;, &quot;, &apos;) with arbitrary values. This bypasses entity en",
-    "cvss": 9.3,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-185"
-    ],
-    "affected": [
-      {
-        "vendor": "NaturalIntelligence",
-        "product": "fast-xml-parser"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-02-20",
-    "updated": "2026-08-20",
-    "url": "https://github.com/NaturalIntelligence/fast-xml-parser/security/advisories/GHSA-m7jm-9gc2-mpf2",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-32280",
-    "title": "Unexpected work during chain building in crypto/x509",
-    "desc": "During chain building, the amount of work that is done is not correctly limited when a large number of intermediate certificates are passed in VerifyOptions.Intermediates, which can lead to a denial of service. This affects both direct users of crypto/x509 and users of crypto/tls.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Go standard library",
-        "product": "crypto/x509"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-04-08",
-    "updated": "2026-08-20",
-    "url": "https://go.dev/cl/758320",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-32475",
-    "title": "WordPress Elementor Pro plugin <= 4.2.1 - Arbitrary File Upload vulnerability",
-    "desc": "Unrestricted Upload of File with Dangerous Type vulnerability in Elementor Elementor Pro allows Using Malicious Files.\n\nThis issue affects Elementor Pro: from n/a through 4.2.1.",
-    "cvss": 9,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-434"
-    ],
-    "affected": [
-      {
-        "vendor": "Elementor",
-        "product": "Elementor Pro"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-19",
-    "updated": "2026-08-20",
-    "url": "https://patchstack.com/database/wordpress/plugin/elementor-pro/vulnerability/wordpress-elementor-pro-plugin-4-2-1-arbitrary-file-upload-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-33842",
-    "title": "Windows File Explorer Information Disclosure Vulnerability",
-    "desc": "",
-    "cvss": 5.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-200"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33842",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-34348",
-    "title": "Windows Event Logging Service Information Disclosure Vulnerability",
-    "desc": "",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-693"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34348",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-3039",
-    "title": "BIND 9 server memory exhaustion during GSS-API TKEY negotiation",
-    "desc": "BIND servers that are configured to use TKEY-based authentication via GSS-API tokens are vulnerable to excessive memory consumption when receiving and processing maliciously-constructed packets.  Typically these servers will be found in Active Directory integrated DNS deployments and/or Kerberos-secured DNS environments.\nThis issue affects BIND 9 versions 9.0.0 through 9.16.50, 9.18.0 through 9.18",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-771"
-    ],
-    "affected": [
-      {
-        "vendor": "ISC",
-        "product": "BIND 9"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-05-20",
-    "updated": "2026-08-20",
-    "url": "https://kb.isc.org/docs/cve-2026-3039",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-40378",
-    "title": "Windows Local Security Authority Subsystem Service (LSASS) Denial of Service Vulnerability",
-    "desc": "",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-789"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40378",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-41087",
-    "title": "Windows File Explorer Information Disclosure Vulnerability",
-    "desc": "",
-    "cvss": 5.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-200"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41087",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-41106",
-    "title": "Microsoft 365 Copilot Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 9.3,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-601"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft 365 Copilot"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-02",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41106",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-42039",
-    "title": "Axios: unbounded recursion in toFormData causes DoS via deeply nested request data",
-    "desc": "Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15.1 and 0.31.1, toFormData recursively walks nested objects with no depth limit, so a deeply nested value passed as request data crashes the Node.js process with a RangeError. This vulnerability is fixed in 1.15.1 and 0.31.1.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-674"
-    ],
-    "affected": [
-      {
-        "vendor": "axios",
-        "product": "axios"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-04-24",
-    "updated": "2026-08-20",
-    "url": "https://github.com/axios/axios/security/advisories/GHSA-62hf-57xw-28j9",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-42258",
-    "title": "net-imap: Command Injection via unvalidated Symbol inputs",
-    "desc": "Net::IMAP implements Internet Message Access Protocol (IMAP) client functionality in Ruby. Prior to versions 0.4.24, 0.5.14, and 0.6.4, symbol arguments to commands are vulnerable to a CRLF Injection / IMAP Command injection via Symbol arguments passed to IMAP commands. This issue has been patched in versions 0.4.24, 0.5.14, and 0.6.4.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-77",
-      "CWE-93"
-    ],
-    "affected": [
-      {
-        "vendor": "ruby",
-        "product": "net-imap"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-05-09",
-    "updated": "2026-08-20",
-    "url": "https://github.com/ruby/net-imap/security/advisories/GHSA-75xq-5h9v-w6px",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-44488",
-    "title": "Axios: Allocation of Resources Without Limits or Throttling in axios",
-    "desc": "Axios is a promise based HTTP client for the browser and Node.js. Axios versions 1.7.0 through 1.15.x did not enforce configured request and response size limits when requests were sent with the fetch adapter. Applications that selected adapter: 'fetch', or ran in environments where axios resolved to the fetch adapter, could receive or send bodies larger than maxContentLength or maxBodyLength desp",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-770"
-    ],
-    "affected": [
-      {
-        "vendor": "axios",
-        "product": "axios"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-06-11",
-    "updated": "2026-08-20",
-    "url": "https://github.com/axios/axios/security/advisories/GHSA-777c-7fjr-54vf",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-44800",
-    "title": "Windows Push Notifications Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-362",
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 23H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 26H1"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44800",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-45736",
-    "title": "ws: Uninitialized memory disclosure",
-    "desc": "ws is an open source WebSocket client and server for Node.js. Prior to 8.20.1, the websocket.close() implementation is vulnerable to uninitialized memory disclosure when a TypedArray is passed as the reason argument. This vulnerability is fixed in 8.20.1.",
-    "cvss": 4.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-908"
-    ],
-    "affected": [
-      {
-        "vendor": "websockets",
-        "product": "ws"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-05-15",
-    "updated": "2026-08-20",
-    "url": "https://github.com/websockets/ws/security/advisories/GHSA-58qx-3vcg-4xpx",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-47295",
-    "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-89"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft SQL Server 2016 Service Pack 3 (GDR)"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft SQL Server 2016 Service Pack 3 Azure Connect Feature Pack"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft SQL Server 2017 (CU 31)"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft SQL Server 2017 (GDR)"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft SQL Server 2019 (CU 32)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47295",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-47303",
-    "title": "ASP.NET Core Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-302",
-      "CWE-863",
-      "CWE-90"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": ".NET 10.0"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": ".NET 8.0"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": ".NET 9.0"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Visual Studio 2022 version 17.12"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Visual Studio 2022 version 17.14"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47303",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-47304",
-    "title": ".NET Security Feature Bypass Vulnerability",
-    "desc": "",
-    "cvss": 8.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-347",
-      "CWE-345"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": ".NET 10.0"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": ".NET 8.0"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": ".NET 9.0"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft .NET Framework 3.5"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft .NET Framework 3.5 AND 4.7.2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47304",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-47642",
-    "title": "Microsoft Excel Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft 365 Apps for Enterprise"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Office 2019"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Office 365 for Mac"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Office LTSC 2021"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Office LTSC 2024"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47642",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-48572",
-    "title": "Windows App Package Installer Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-362",
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 23H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 26H1"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48572",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49159",
-    "title": "Microsoft Graph Information Disclosure Vulnerability",
-    "desc": "",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-200"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Graph"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-24",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49159",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49173",
-    "title": "Windows Kernel Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 26H1"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49173",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49175",
-    "title": "Windows DNS Client Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 26H1"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49175",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49181",
-    "title": "Windows DHCP Client Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-191"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2012"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2012 (Server Core installation)"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2012 R2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-08-20",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49181",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49427",
-    "title": "posixshm: largepage shared memory objects not explicitly wired",
-    "desc": "Pages belonging to largepage shared memory objects were not explicitly wired.  When sendfile(2) transmitted such an object with the SF_NOCACHE flag, it freed the underlying pages after transmission even though existing mappings still referred to them.\n\nAn unprivileged local user can abuse the bug to access freed kernel memory.  This can be exploited to escalate privileges.",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-826"
-    ],
-    "affected": [
-      {
-        "vendor": "FreeBSD",
-        "product": "FreeBSD"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-19",
-    "updated": "2026-08-20",
-    "url": "https://security.freebsd.org/advisories/FreeBSD-SA-26:44.posixshm.asc",
     "source": "CISA Vulnrichment"
   }
 ]
