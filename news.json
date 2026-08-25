@@ -1,6 +1,42 @@
 [
   {
     "source": "thn",
+    "title": "Attackers Target miniOrange SAML Flaws That Can Grant WordPress Admin Access",
+    "desc": "Bad actors are attempting to exploit two severe unauthenticated authentication bypasses in the Xecurify miniOrange SAML 2.0 Single Sign On plugin that make it possible for an attacker to sign in as any WordPress user, including administrators.\n\nThe vulnerabilities, as disclosed by Patchstack, are li",
+    "url": "https://thehackernews.com/2026/08/attackers-target-miniorange-saml-flaws.html",
+    "date": "2026-08-25T14:04:07",
+    "title_ko": "Attackers Target miniOrange SAML Flaws That Can Grant WordPress Admin Access",
+    "desc_ko": "Bad actors are attempting to exploit two severe unauthenticated authentication bypasses in the Xecurify miniOrange SAML 2.0 Single Sign On plugin that make it possible for an attacker to sign in as any WordPress user, including administrators.\n\nThe vulnerabilities, as disclosed by Patchstack, are li"
+  },
+  {
+    "source": "thn",
+    "title": "Actively Exploited Oracle WebLogic Flaw Lets Unauthenticated Attackers Access Critical Data",
+    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added a maximum-severity security flaw impacting Oracle HTTP Server and Oracle WebLogic Server to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe vulnerability, tracked as CVE-2",
+    "url": "https://thehackernews.com/2026/08/actively-exploited-oracle-weblogic-flaw.html",
+    "date": "2026-08-25T11:42:35",
+    "title_ko": "Actively Exploited Oracle WebLogic Flaw Lets Unauthenticated Attackers Access Critical Data",
+    "desc_ko": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added a maximum-severity security flaw impacting Oracle HTTP Server and Oracle WebLogic Server to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe vulnerability, tracked as CVE-2"
+  },
+  {
+    "source": "thn",
+    "title": "Shipping More AI Code Than You Can Secure? Watch How to Control Remediation Debt",
+    "desc": "If your developers are using AI coding tools, you are probably already seeing the upside: faster development, more code, and less time spent on routine work.\n\nThe harder part is what comes after. AI can also introduce open-source packages at a pace your security team was never built to handle. More ",
+    "url": "https://thehackernews.com/2026/08/shipping-more-ai-code-than-you-can.html",
+    "date": "2026-08-24T23:11:30",
+    "title_ko": "Shipping More AI Code Than You Can Secure? Watch How to Control Remediation Debt",
+    "desc_ko": "If your developers are using AI coding tools, you are probably already seeing the upside: faster development, more code, and less time spent on routine work.\n\nThe harder part is what comes after. AI can also introduce open-source packages at a pace your security team was never built to handle. More "
+  },
+  {
+    "source": "thn",
+    "title": "Weedhack Malware Spreads via Fake Minecraft Clients and SEO Poisoning",
+    "desc": "Cybersecurity researchers have found that several websites are still actively distributing a malware family known as Weedhack to gamers by masquerading as Minecraft clients.\n\nMcAfee Labs said it detected and blocked more than 6,300 attempts to access malicious sites, adding that it found lookalike g",
+    "url": "https://thehackernews.com/2026/08/weedhack-malware-spreads-via-fake.html",
+    "date": "2026-08-24T23:11:11",
+    "title_ko": "Weedhack Malware Spreads via Fake Minecraft Clients and SEO Poisoning",
+    "desc_ko": "Cybersecurity researchers have found that several websites are still actively distributing a malware family known as Weedhack to gamers by masquerading as Minecraft clients.\n\nMcAfee Labs said it detected and blocked more than 6,300 attempts to access malicious sites, adding that it found lookalike g"
+  },
+  {
+    "source": "thn",
     "title": "⚡ Weekly Recap: AI-Powered PLC Attacks, GitLab Attacks, Stripe Key Leaks and More",
     "desc": "A package gets installed. A login prompt opens. A box sits exposed to the internet. Nothing looks unusual yet.\n\nThat’s roughly the mood this week. Trusted tools turn hostile, old weak spots get fresh attention, AI makes exploit work cheaper, and researchers keep finding attacks that sound harder tha",
     "url": "https://thehackernews.com/2026/08/weekly-recap-ai-powered-plc-attacks.html",
@@ -16,15 +52,6 @@
     "date": "2026-08-24T18:05:36",
     "title_ko": "WordlistLoader Delivers Amatera via ClickFix, SynkLoader Phishes Windows Passwords",
     "desc_ko": "Cybersecurity researchers have flagged two new malware families called  WordlistLoader and SynkLoader that's used to deliver next-stage payloads and likely sell access to ransomware groups.\n\nAccording to findings from Gen Digital, WordlistLoader is being used to deliver Amatera Stealer (aka ACR Stea"
-  },
-  {
-    "source": "thn",
-    "title": "Shipping More AI Code Than You Can Secure? Watch How to Control Remediation Debt",
-    "desc": "If your developers are using AI coding tools, you are probably already seeing the upside: faster development, more code, and less time spent on routine work.\n\nThe harder part is what comes after. AI can also introduce open-source packages at a pace your security team was never built to handle. More ",
-    "url": "https://thehackernews.com/2026/08/shipping-more-ai-code-than-you-can.html",
-    "date": "2026-08-24T17:28:00",
-    "title_ko": "Shipping More AI Code Than You Can Secure? Watch How to Control Remediation Debt",
-    "desc_ko": "If your developers are using AI coding tools, you are probably already seeing the upside: faster development, more code, and less time spent on routine work.\n\nThe harder part is what comes after. AI can also introduce open-source packages at a pace your security team was never built to handle. More "
   },
   {
     "source": "thn",
@@ -421,32 +448,5 @@
     "date": "2026-08-18T16:50:00",
     "title_ko": "16 Typosquatted RubyGems Packages Steal Browser Credentials and Crypto Wallets",
     "desc_ko": "Cybersecurity researchers have flagged a new typosquatting campaign targeting RubyGems users with a Windows-based information stealer.\n\nOpenSourceMalware, which discovered the activity on August 15, 2026, is tracking the threat under the moniker StubMaker. The complete list of packages published as "
-  },
-  {
-    "source": "thn",
-    "title": "SafePal Hardware Wallet Maker Says Flaw Exposed Data of Nearly 40,000 Customers",
-    "desc": "SafePal has disclosed that an authorization flaw in an order-tracking plug-in exposed the names, email addresses, shipping addresses, phone numbers, and purchase details of approximately 39,798 customers.\n\nThe hardware wallet maker said all affected customers were notified individually by email on A",
-    "url": "https://thehackernews.com/2026/08/safepal-hardware-wallet-maker-says-flaw.html",
-    "date": "2026-08-18T14:40:45",
-    "title_ko": "SafePal Hardware Wallet Maker Says Flaw Exposed Data of Nearly 40,000 Customers",
-    "desc_ko": "SafePal has disclosed that an authorization flaw in an order-tracking plug-in exposed the names, email addresses, shipping addresses, phone numbers, and purchase details of approximately 39,798 customers.\n\nThe hardware wallet maker said all affected customers were notified individually by email on A"
-  },
-  {
-    "source": "thn",
-    "title": "CISA Flags Actively Exploited Ray Flaw That Can Trigger Browser-Based RCE",
-    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added a critical flaw impacting Ray to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nRay is an open-source, Python-native distributed computing framework designed to scale artific",
-    "url": "https://thehackernews.com/2026/08/cisa-flags-actively-exploited-ray-flaw.html",
-    "date": "2026-08-18T12:04:20",
-    "title_ko": "CISA Flags Actively Exploited Ray Flaw That Can Trigger Browser-Based RCE",
-    "desc_ko": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added a critical flaw impacting Ray to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nRay is an open-source, Python-native distributed computing framework designed to scale artific"
-  },
-  {
-    "source": "thn",
-    "title": "Critical GitLab GraphQL Flaw Could Let Unauthenticated Attackers Delete Public Projects",
-    "desc": "GitLab has released security updates to address a critical vulnerability impacting its Community Edition (CE) and Enterprise Edition (EE) software that, under certain conditions, could allow an unauthenticated attacker to remotely modify or delete public projects and user data.\n\nThe flaw, tracked as",
-    "url": "https://thehackernews.com/2026/08/critical-gitlab-graphql-flaw-could-let.html",
-    "date": "2026-08-18T02:33:04",
-    "title_ko": "Critical GitLab GraphQL Flaw Could Let Unauthenticated Attackers Delete Public Projects",
-    "desc_ko": "GitLab has released security updates to address a critical vulnerability impacting its Community Edition (CE) and Enterprise Edition (EE) software that, under certain conditions, could allow an unauthenticated attacker to remotely modify or delete public projects and user data.\n\nThe flaw, tracked as"
   }
 ]
