@@ -1,6 +1,78 @@
 [
   {
     "source": "thn",
+    "title": "U.S. Sanctions Iran-Linked Hackers Behind Critical Infrastructure Breaches",
+    "desc": "The U.S. Department of the Treasury has announced fresh sanctions on Iranian cyber actors as part of what it called an \"unprecedented, whole-of-government, economic campaign\" against the nation and its enablers.\n\n\"We are launching an economic onslaught against Iran's financial connections around the",
+    "url": "https://thehackernews.com/2026/08/us-sanctions-iran-linked-hackers-behind.html",
+    "date": "2026-08-25T23:47:17",
+    "title_ko": "U.S. Sanctions Iran-Linked Hackers Behind Critical Infrastructure Breaches",
+    "desc_ko": "The U.S. Department of the Treasury has announced fresh sanctions on Iranian cyber actors as part of what it called an \"unprecedented, whole-of-government, economic campaign\" against the nation and its enablers.\n\n\"We are launching an economic onslaught against Iran's financial connections around the"
+  },
+  {
+    "source": "thn",
+    "title": "A Malicious Webpage Could Poison Your Local AI Model Behind NVIDIA NemoClaw",
+    "desc": "Oasis Security has disclosed a weakness in NVIDIA NemoClaw that could let an attacker-controlled webpage take unauthenticated control of the local Ollama instance serving an AI agent and plant hidden instructions inside the model itself.\n\nThe findings were shared with The Hacker News ahead of public",
+    "url": "https://thehackernews.com/2026/08/a-malicious-webpage-could-poison-your.html",
+    "date": "2026-08-25T19:37:37",
+    "title_ko": "A Malicious Webpage Could Poison Your Local AI Model Behind NVIDIA NemoClaw",
+    "desc_ko": "Oasis Security has disclosed a weakness in NVIDIA NemoClaw that could let an attacker-controlled webpage take unauthenticated control of the local Ollama instance serving an AI agent and plant hidden instructions inside the model itself.\n\nThe findings were shared with The Hacker News ahead of public"
+  },
+  {
+    "source": "thn",
+    "title": "WhatsApp Adds Multiple Passkeys for Phishing-Resistant Sign-Ins Across iOS and Android",
+    "desc": "Meta on Tuesday announced a set of WhatsApp account security features, including support for multiple passkeys to a single account to help users with both iOS and Android devices sign into their accounts using the phishing-resistant method.\n\nThe tech giant said more than 1 billion people use a passk",
+    "url": "https://thehackernews.com/2026/08/whatsapp-adds-multiple-passkeys-for.html",
+    "date": "2026-08-25T18:49:41",
+    "title_ko": "WhatsApp Adds Multiple Passkeys for Phishing-Resistant Sign-Ins Across iOS and Android",
+    "desc_ko": "Meta on Tuesday announced a set of WhatsApp account security features, including support for multiple passkeys to a single account to help users with both iOS and Android devices sign into their accounts using the phishing-resistant method.\n\nThe tech giant said more than 1 billion people use a passk"
+  },
+  {
+    "source": "thn",
+    "title": "Marimo Notebook Flaw Could Run MCP Commands Before Cells Execute in Edit Mode",
+    "desc": "Marimo has addressed a high-severity security flaw in its notebook software that allowed an attacker to execute an attacker-supplied Model Context Protocol (MCP) command in a specially crafted notebook, according to VulnCheck's CVE Numbering Authority (CNA) record.\n\nThe CNA record says the command c",
+    "url": "https://thehackernews.com/2026/08/marimo-notebook-flaw-could-run-mcp.html",
+    "date": "2026-08-25T18:13:51",
+    "title_ko": "Marimo Notebook Flaw Could Run MCP Commands Before Cells Execute in Edit Mode",
+    "desc_ko": "Marimo has addressed a high-severity security flaw in its notebook software that allowed an attacker to execute an attacker-supplied Model Context Protocol (MCP) command in a specially crafted notebook, according to VulnCheck's CVE Numbering Authority (CNA) record.\n\nThe CNA record says the command c"
+  },
+  {
+    "source": "thn",
+    "title": "Mirage2FA Surge Hits 4,500 US and EU Companies, Abusing Microsoft 365 Login Flows",
+    "desc": "Thousands of companies have been affected by the Mirage2FA campaign from 2024 to 2026. The commercial phishing-as-a-service toolkit targets Microsoft 365 accounts by abusing legitimate login flows and bypassing two-factor authentication.\n\nAccording to ANY.RUN research, 48% of targeted email addresse",
+    "url": "https://thehackernews.com/2026/08/mirage2fa-surge-hits-4500-us-and-eu.html",
+    "date": "2026-08-25T17:26:15",
+    "title_ko": "Mirage2FA Surge Hits 4,500 US and EU Companies, Abusing Microsoft 365 Login Flows",
+    "desc_ko": "Thousands of companies have been affected by the Mirage2FA campaign from 2024 to 2026. The commercial phishing-as-a-service toolkit targets Microsoft 365 accounts by abusing legitimate login flows and bypassing two-factor authentication.\n\nAccording to ANY.RUN research, 48% of targeted email addresse"
+  },
+  {
+    "source": "thn",
+    "title": "24 npm Packages Abuse unpkg Mirrors to Host Fake Cloudflare CAPTCHA Pages",
+    "desc": "Cybersecurity researchers have disclosed details of a new campaign that uses a cluster of 24 npm packages as free phishing infrastructure for redirecting to ClickFix-style fake CAPTCHA pages.\n\n\"While the malware is simply a single HTML page inside the npm package, and while downloading it wouldn't d",
+    "url": "https://thehackernews.com/2026/08/24-npm-packages-abuse-unpkg-mirrors-to.html",
+    "date": "2026-08-25T17:22:43",
+    "title_ko": "24 npm Packages Abuse unpkg Mirrors to Host Fake Cloudflare CAPTCHA Pages",
+    "desc_ko": "Cybersecurity researchers have disclosed details of a new campaign that uses a cluster of 24 npm packages as free phishing infrastructure for redirecting to ClickFix-style fake CAPTCHA pages.\n\n\"While the malware is simply a single HTML page inside the npm package, and while downloading it wouldn't d"
+  },
+  {
+    "source": "thn",
+    "title": "E4del and PINHOLE RATs Turn FTP Banners Into Dead Drops for Malware Commands",
+    "desc": "Cybersecurity researchers are calling attention to a new campaign that employs FTP banners as dead drop resolvers (DDRs) to deliver two previously unreported remote access trojans (RATs) tracked as E4del and PINHOLE.\n\nWhile threat actors are known to abuse legitimate services to point to additional ",
+    "url": "https://thehackernews.com/2026/08/e4del-and-pinhole-rats-turn-ftp-banners.html",
+    "date": "2026-08-25T17:03:44",
+    "title_ko": "E4del and PINHOLE RATs Turn FTP Banners Into Dead Drops for Malware Commands",
+    "desc_ko": "Cybersecurity researchers are calling attention to a new campaign that employs FTP banners as dead drop resolvers (DDRs) to deliver two previously unreported remote access trojans (RATs) tracked as E4del and PINHOLE.\n\nWhile threat actors are known to abuse legitimate services to point to additional "
+  },
+  {
+    "source": "thn",
+    "title": "Frontier AI: Vulnerability Management's Systemic Revolution",
+    "desc": "Vulnerability management has been a staple of security programs since the dawn of the cybersecurity discipline. The symbiotic relationship between vulnerability and patch management teams has also existed for that time and has gone through waves of contention and thankfulness. While this relationshi",
+    "url": "https://thehackernews.com/2026/08/frontier-ai-vulnerability-managements.html",
+    "date": "2026-08-25T16:44:07",
+    "title_ko": "Frontier AI: Vulnerability Management's Systemic Revolution",
+    "desc_ko": "Vulnerability management has been a staple of security programs since the dawn of the cybersecurity discipline. The symbiotic relationship between vulnerability and patch management teams has also existed for that time and has gone through waves of contention and thankfulness. While this relationshi"
+  },
+  {
+    "source": "thn",
     "title": "Attackers Target miniOrange SAML Flaws That Can Grant WordPress Admin Access",
     "desc": "Bad actors are attempting to exploit two severe unauthenticated authentication bypasses in the Xecurify miniOrange SAML 2.0 Single Sign On plugin that make it possible for an attacker to sign in as any WordPress user, including administrators.\n\nThe vulnerabilities, as disclosed by Patchstack, are li",
     "url": "https://thehackernews.com/2026/08/attackers-target-miniorange-saml-flaws.html",
@@ -376,77 +448,5 @@
     "date": "2026-08-19T11:31:53",
     "title_ko": "Microsoft Links 30+ Rotating Domains to MacSync Stealer Infrastructure",
     "desc_ko": "Microsoft Defender Experts have linked more than 30 web domains to MacSync Stealer, a macOS-focused information stealer, after correlating recurring endpoint and network behaviors across changing infrastructure, tracing the malware from payload retrieval through data collection, staging, and exfiltr"
-  },
-  {
-    "source": "thn",
-    "title": "Clop-Linked Windchill Web Shell Decrypts Credentials and Maps Engineering Data",
-    "desc": "A JavaServer Pages (JSP) web shell deployed following the exploitation of a critical security flaw in PTC Windchill and FlexPLM servers is specifically designed for the enterprise Product Lifecycle Management (PLM) software, according to new findings from ReliaQuest.\n\nThe cybersecurity company chara",
-    "url": "https://thehackernews.com/2026/08/clop-linked-windchill-web-shell.html",
-    "date": "2026-08-19T11:09:25",
-    "title_ko": "Clop-Linked Windchill Web Shell Decrypts Credentials and Maps Engineering Data",
-    "desc_ko": "A JavaServer Pages (JSP) web shell deployed following the exploitation of a critical security flaw in PTC Windchill and FlexPLM servers is specifically designed for the enterprise Product Lifecycle Management (PLM) software, according to new findings from ReliaQuest.\n\nThe cybersecurity company chara"
-  },
-  {
-    "source": "thn",
-    "title": "Microsoft Copilot Personal Flaws Could Let One Click Exfiltrate Data From Connected Apps",
-    "desc": "Varonis Threat Labs has disclosed three vulnerabilities in Microsoft Copilot Personal that it said could allow a single click on a crafted link to silently pull data from connected apps and other information available to the victim's Copilot session.\n\nThe flaws, which the researchers collectively na",
-    "url": "https://thehackernews.com/2026/08/microsoft-copilot-personal-flaws-could.html",
-    "date": "2026-08-18T23:17:22",
-    "title_ko": "Microsoft Copilot Personal Flaws Could Let One Click Exfiltrate Data From Connected Apps",
-    "desc_ko": "Varonis Threat Labs has disclosed three vulnerabilities in Microsoft Copilot Personal that it said could allow a single click on a crafted link to silently pull data from connected apps and other information available to the victim's Copilot session.\n\nThe flaws, which the researchers collectively na"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Exploit MLflow SSRF Flaw to Steal Cloud Credentials and Secrets",
-    "desc": "Two critical vulnerabilities impacting MLflow, an open-source artificial intelligence (AI) platform, and FUXA, an open-source, web-based SCADA / HMI software built for operational technology (OT) and industrial automation, are witnessing malicious scanning and exploitation efforts.\n\nAccording to ind",
-    "url": "https://thehackernews.com/2026/08/attackers-exploit-mlflow-ssrf-flaw-to.html",
-    "date": "2026-08-18T23:14:05",
-    "title_ko": "Attackers Exploit MLflow SSRF Flaw to Steal Cloud Credentials and Secrets",
-    "desc_ko": "Two critical vulnerabilities impacting MLflow, an open-source artificial intelligence (AI) platform, and FUXA, an open-source, web-based SCADA / HMI software built for operational technology (OT) and industrial automation, are witnessing malicious scanning and exploitation efforts.\n\nAccording to ind"
-  },
-  {
-    "source": "thn",
-    "title": "Ransom Busters Claims It Hacked Ransomware Servers, Asks Victims for Up to $60,000",
-    "desc": "A ransomware affiliate calling itself Ransom Busters has been spotted proactively sending emails to victim organizations and claims to delete stolen data from ransomware groups' servers in exchange for a fee ranging from $20,000 to $60,000.\n\n\"In these messages, the third-party offers to help the vic",
-    "url": "https://thehackernews.com/2026/08/ransom-busters-claims-it-hacked.html",
-    "date": "2026-08-18T22:28:16",
-    "title_ko": "Ransom Busters Claims It Hacked Ransomware Servers, Asks Victims for Up to $60,000",
-    "desc_ko": "A ransomware affiliate calling itself Ransom Busters has been spotted proactively sending emails to victim organizations and claims to delete stolen data from ransomware groups' servers in exchange for a fee ranging from $20,000 to $60,000.\n\n\"In these messages, the third-party offers to help the vic"
-  },
-  {
-    "source": "thn",
-    "title": "AI \"Mind Viruses\" Can Spread Between Agents Through Persistent Prompt Files",
-    "desc": "Security researchers at Anthropic and Switzerland's EPFL have demonstrated that self-propagating payloads can spread from one artificial intelligence (AI) agent to the next through the editable system prompt files that autonomous agent harnesses use to carry state between sessions.\n\nThe work, releas",
-    "url": "https://thehackernews.com/2026/08/ai-mind-viruses-can-spread-between.html",
-    "date": "2026-08-18T18:08:36",
-    "title_ko": "AI \"Mind Viruses\" Can Spread Between Agents Through Persistent Prompt Files",
-    "desc_ko": "Security researchers at Anthropic and Switzerland's EPFL have demonstrated that self-propagating payloads can spread from one artificial intelligence (AI) agent to the next through the editable system prompt files that autonomous agent harnesses use to carry state between sessions.\n\nThe work, releas"
-  },
-  {
-    "source": "thn",
-    "title": "TWINLOOT Abuses SharePoint and Teams to Steal Credentials and Move Across Networks",
-    "desc": "Cybersecurity researchers have disclosed details of a previously undocumented Python implant framework dubbed TWINLOOT.\n\n\"TWINLOOT is a modular, PyArmor-hardened Python implant designed to operate its entire command-and-control infrastructure inside trusted Microsoft services,\" Ontinue said in a tec",
-    "url": "https://thehackernews.com/2026/08/twinloot-abuses-sharepoint-and-teams-to.html",
-    "date": "2026-08-18T18:08:20",
-    "title_ko": "TWINLOOT Abuses SharePoint and Teams to Steal Credentials and Move Across Networks",
-    "desc_ko": "Cybersecurity researchers have disclosed details of a previously undocumented Python implant framework dubbed TWINLOOT.\n\n\"TWINLOOT is a modular, PyArmor-hardened Python implant designed to operate its entire command-and-control infrastructure inside trusted Microsoft services,\" Ontinue said in a tec"
-  },
-  {
-    "source": "thn",
-    "title": "One Attacker Has Scraped Both Salesforce and ServiceNow Portals Since 2025",
-    "desc": "A single piece of infrastructure has been pulling records out of Salesforce and ServiceNow customer portals across multiple industries for more than a year, according to research published this week by agent security platform Reco.\n\nThe activity, which Reco has named the City Forum campaign after a ",
-    "url": "https://thehackernews.com/2026/08/one-attacker-has-scraped-both.html",
-    "date": "2026-08-18T17:00:00",
-    "title_ko": "One Attacker Has Scraped Both Salesforce and ServiceNow Portals Since 2025",
-    "desc_ko": "A single piece of infrastructure has been pulling records out of Salesforce and ServiceNow customer portals across multiple industries for more than a year, according to research published this week by agent security platform Reco.\n\nThe activity, which Reco has named the City Forum campaign after a "
-  },
-  {
-    "source": "thn",
-    "title": "16 Typosquatted RubyGems Packages Steal Browser Credentials and Crypto Wallets",
-    "desc": "Cybersecurity researchers have flagged a new typosquatting campaign targeting RubyGems users with a Windows-based information stealer.\n\nOpenSourceMalware, which discovered the activity on August 15, 2026, is tracking the threat under the moniker StubMaker. The complete list of packages published as ",
-    "url": "https://thehackernews.com/2026/08/16-typosquatted-rubygems-packages-steal.html",
-    "date": "2026-08-18T16:50:00",
-    "title_ko": "16 Typosquatted RubyGems Packages Steal Browser Credentials and Crypto Wallets",
-    "desc_ko": "Cybersecurity researchers have flagged a new typosquatting campaign targeting RubyGems users with a Windows-based information stealer.\n\nOpenSourceMalware, which discovered the activity on August 15, 2026, is tracking the threat under the moniker StubMaker. The complete list of packages published as "
   }
 ]
