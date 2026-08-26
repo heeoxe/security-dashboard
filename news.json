@@ -1,6 +1,60 @@
 [
   {
     "source": "thn",
+    "title": "Claude Opus 4.6 Bypasses Gym Booking Limit, Cancels Other Users' Reservations in Tests",
+    "desc": "Aikido Security has published research that recreates the Australian gym-booking incident in a synthetic environment, finding that Claude Opus 4.6, running on the OpenClaw agent harness, exploited a client-side-only booking restriction in 9 of 10 runs.\n\nThe original incident was first reported by AB",
+    "url": "https://thehackernews.com/2026/08/claude-opus-46-bypasses-gym-booking.html",
+    "date": "2026-08-26T15:57:23",
+    "title_ko": "Claude Opus 4.6 Bypasses Gym Booking Limit, Cancels Other Users' Reservations in Tests",
+    "desc_ko": "Aikido Security has published research that recreates the Australian gym-booking incident in a synthetic environment, finding that Claude Opus 4.6, running on the OpenClaw agent harness, exploited a client-side-only booking restriction in 9 of 10 runs.\n\nThe original incident was first reported by AB"
+  },
+  {
+    "source": "thn",
+    "title": "OpenAI Bans Russian ChatGPT Accounts Used to Run Influence Operation",
+    "desc": "OpenAI on Tuesday said it banned a cluster of Russian ChatGPT accounts that used VPNs to bypass access restrictions and run an influence operation, which relied on its artificial intelligence (AI) tool to generate social media posts and comments that were shared on Substack, Telegram, X, Facebook an",
+    "url": "https://thehackernews.com/2026/08/openai-bans-russian-chatgpt-accounts.html",
+    "date": "2026-08-26T15:08:45",
+    "title_ko": "OpenAI Bans Russian ChatGPT Accounts Used to Run Influence Operation",
+    "desc_ko": "OpenAI on Tuesday said it banned a cluster of Russian ChatGPT accounts that used VPNs to bypass access restrictions and run an influence operation, which relied on its artificial intelligence (AI) tool to generate social media posts and comments that were shared on Substack, Telegram, X, Facebook an"
+  },
+  {
+    "source": "thn",
+    "title": "INTERPOL Operation Jackal IV Arrests 58, Identifies 263 in Global Cyber Fraud Crackdown",
+    "desc": "An eight-month INTERPOL operation targeting West African organized crime groups has led to arrests of 58 people and the identification of 263 suspects.\n\n\"The operation, which brought together 22 countries from six continents, is a response to the escalating global threat posed by West African crimin",
+    "url": "https://thehackernews.com/2026/08/interpol-operation-jackal-iv-arrests-58.html",
+    "date": "2026-08-26T13:24:12",
+    "title_ko": "INTERPOL Operation Jackal IV Arrests 58, Identifies 263 in Global Cyber Fraud Crackdown",
+    "desc_ko": "An eight-month INTERPOL operation targeting West African organized crime groups has led to arrests of 58 people and the identification of 263 suspects.\n\n\"The operation, which brought together 22 countries from six continents, is a response to the escalating global threat posed by West African crimin"
+  },
+  {
+    "source": "thn",
+    "title": "Newly SLEEPWALKER Backdoor Waits for One Crafted Packet, Then Runs Its Own Bytecode",
+    "desc": "An independent malware researcher has documented a previously unreported Windows backdoor, dubbed SLEEPWALKER, that stays inert in memory until a specifically crafted network packet reaches the machine and then runs commands written in a 23-instruction language of its own design.\n\nThe sample is an u",
+    "url": "https://thehackernews.com/2026/08/newly-sleepwalker-backdoor-waits-for.html",
+    "date": "2026-08-26T12:42:55",
+    "title_ko": "Newly SLEEPWALKER Backdoor Waits for One Crafted Packet, Then Runs Its Own Bytecode",
+    "desc_ko": "An independent malware researcher has documented a previously unreported Windows backdoor, dubbed SLEEPWALKER, that stays inert in memory until a specifically crafted network packet reaches the machine and then runs commands written in a 23-instruction language of its own design.\n\nThe sample is an u"
+  },
+  {
+    "source": "thn",
+    "title": "Critical Gitea RCE Actively Exploited as Reported Attack Drops Miner-Like Payload",
+    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday warned of active exploitation efforts targeting a recently patched critical security flaw impacting Gitea.\n\nThe vulnerability in question is CVE-2026-60004 (CVSS score: 9.8), a case of remote code execution that allows an at",
+    "url": "https://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html",
+    "date": "2026-08-26T11:57:07",
+    "title_ko": "Critical Gitea RCE Actively Exploited as Reported Attack Drops Miner-Like Payload",
+    "desc_ko": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday warned of active exploitation efforts targeting a recently patched critical security flaw impacting Gitea.\n\nThe vulnerability in question is CVE-2026-60004 (CVSS score: 9.8), a case of remote code execution that allows an at"
+  },
+  {
+    "source": "thn",
+    "title": "Fake Apple Support AI Calls Target Stolen-Device Owners for Passcodes and 2FA Codes",
+    "desc": "Cybersecurity researchers have disclosed details of a phishing-as-a-service (PhaaS) platform built to strip Apple's Activation Lock from stolen devices, using rented AI voice agents that call theft victims posing as Apple Support and ask for their device passcode.\n\nSOCRadar Threat Research Unit (STR",
+    "url": "https://thehackernews.com/2026/08/fake-apple-support-ai-calls-target.html",
+    "date": "2026-08-26T11:17:28",
+    "title_ko": "Fake Apple Support AI Calls Target Stolen-Device Owners for Passcodes and 2FA Codes",
+    "desc_ko": "Cybersecurity researchers have disclosed details of a phishing-as-a-service (PhaaS) platform built to strip Apple's Activation Lock from stolen devices, using rented AI voice agents that call theft victims posing as Apple Support and ask for their device passcode.\n\nSOCRadar Threat Research Unit (STR"
+  },
+  {
+    "source": "thn",
     "title": "U.S. Sanctions Iran-Linked Hackers Behind Critical Infrastructure Breaches",
     "desc": "The U.S. Department of the Treasury has announced fresh sanctions on Iranian cyber actors as part of what it called an \"unprecedented, whole-of-government, economic campaign\" against the nation and its enablers.\n\n\"We are launching an economic onslaught against Iran's financial connections around the",
     "url": "https://thehackernews.com/2026/08/us-sanctions-iran-linked-hackers-behind.html",
@@ -394,59 +448,5 @@
     "date": "2026-08-19T23:36:44",
     "title_ko": "OpenAI Pauses Frontier RL Training as It Tightens Defenses Against Unsafe AI Behavior",
     "desc_ko": "OpenAI on Tuesday revealed that it paused reinforcement learning (RL) training for its latest artificial intelligence (AI) models for two weeks while it shored up additional defenses and increased the scope of its monitoring to avert another Hugging Face-like incident.\n\n\"As models become more capabl"
-  },
-  {
-    "source": "thn",
-    "title": "SilkParasite Espionage Campaign Targets Central Asian Governments with Five New RATs",
-    "desc": "A previously unreported cyber espionage operation dubbed SilkParasite has been observed targeting government bodies in Central Asia.\n\nThe intrusion set makes use of seven remote access tool (RAT) families, five of which have never been previously documented: DriveSilkRAT, CookiETagRAT, NomadRAT, Gog",
-    "url": "https://thehackernews.com/2026/08/silkparasite-espionage-campaign-targets.html",
-    "date": "2026-08-19T18:42:17",
-    "title_ko": "SilkParasite Espionage Campaign Targets Central Asian Governments with Five New RATs",
-    "desc_ko": "A previously unreported cyber espionage operation dubbed SilkParasite has been observed targeting government bodies in Central Asia.\n\nThe intrusion set makes use of seven remote access tool (RAT) families, five of which have never been previously documented: DriveSilkRAT, CookiETagRAT, NomadRAT, Gog"
-  },
-  {
-    "source": "thn",
-    "title": "Hackers Compromised 14,500+ Dahua Devices Using Credential Attacks, Auth Bypasses, and P2P",
-    "desc": "Cybersecurity researchers at Hunt.io have disclosed details of a campaign that they say compromised more than 14,530 Dahua devices between June 17 and July 22, 2026, using credential attacks, two authentication-bypass flaws, and a peer-to-peer (P2P) relay technique.\n\nThe activity, codenamed Operatio",
-    "url": "https://thehackernews.com/2026/08/hackers-compromised-14500-dahua-devices.html",
-    "date": "2026-08-19T17:04:28",
-    "title_ko": "Hackers Compromised 14,500+ Dahua Devices Using Credential Attacks, Auth Bypasses, and P2P",
-    "desc_ko": "Cybersecurity researchers at Hunt.io have disclosed details of a campaign that they say compromised more than 14,530 Dahua devices between June 17 and July 22, 2026, using credential attacks, two authentication-bypass flaws, and a peer-to-peer (P2P) relay technique.\n\nThe activity, codenamed Operatio"
-  },
-  {
-    "source": "thn",
-    "title": "Phishing 3.0: The Fight Moves to Agent Versus Agent",
-    "desc": "Most email defenses still do the job they did a decade ago. Scan the message, look for something malicious, block it. That worked when the danger sat in the payload, a bad link or an attachment. It stopped working when the danger moved into the message's intent, and it is failing now that the sender",
-    "url": "https://thehackernews.com/2026/08/phishing-30-fight-moves-to-agent-versus.html",
-    "date": "2026-08-19T17:00:00",
-    "title_ko": "Phishing 3.0: The Fight Moves to Agent Versus Agent",
-    "desc_ko": "Most email defenses still do the job they did a decade ago. Scan the message, look for something malicious, block it. That worked when the danger sat in the payload, a bad link or an attachment. It stopped working when the danger moved into the message's intent, and it is failing now that the sender"
-  },
-  {
-    "source": "thn",
-    "title": "StopAndProtect Uses Nearly 2,000 Hacked WordPress Sites to Spread Malware and Steal Data",
-    "desc": "Cybersecurity researchers have flagged a global cybercrime operation that abuses thousands of hacked WordPress websites as infrastructure to disseminate malware, commandeer infected hosts, store stolen documents, screenshots, and activity logs created to track the status of the activity.\n\n\"The opera",
-    "url": "https://thehackernews.com/2026/08/stopandprotect-uses-nearly-2000-hacked.html",
-    "date": "2026-08-19T16:55:28",
-    "title_ko": "StopAndProtect Uses Nearly 2,000 Hacked WordPress Sites to Spread Malware and Steal Data",
-    "desc_ko": "Cybersecurity researchers have flagged a global cybercrime operation that abuses thousands of hacked WordPress websites as infrastructure to disseminate malware, commandeer infected hosts, store stolen documents, screenshots, and activity logs created to track the status of the activity.\n\n\"The opera"
-  },
-  {
-    "source": "thn",
-    "title": "Critical macOS, SharePoint, vCenter, and Microsoft IKE Flaws Under Active Exploitation",
-    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added four critical vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, stating they are being exploited in the wild.\n\nThe shortcomings added to the KEV catalog are listed below -\n\n\n  CVE-2026-65400 (CVSS s",
-    "url": "https://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html",
-    "date": "2026-08-19T16:31:48",
-    "title_ko": "Critical macOS, SharePoint, vCenter, and Microsoft IKE Flaws Under Active Exploitation",
-    "desc_ko": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added four critical vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, stating they are being exploited in the wild.\n\nThe shortcomings added to the KEV catalog are listed below -\n\n\n  CVE-2026-65400 (CVSS s"
-  },
-  {
-    "source": "thn",
-    "title": "Microsoft Links 30+ Rotating Domains to MacSync Stealer Infrastructure",
-    "desc": "Microsoft Defender Experts have linked more than 30 web domains to MacSync Stealer, a macOS-focused information stealer, after correlating recurring endpoint and network behaviors across changing infrastructure, tracing the malware from payload retrieval through data collection, staging, and exfiltr",
-    "url": "https://thehackernews.com/2026/08/microsoft-links-30-rotating-domains-to.html",
-    "date": "2026-08-19T11:31:53",
-    "title_ko": "Microsoft Links 30+ Rotating Domains to MacSync Stealer Infrastructure",
-    "desc_ko": "Microsoft Defender Experts have linked more than 30 web domains to MacSync Stealer, a macOS-focused information stealer, after correlating recurring endpoint and network behaviors across changing infrastructure, tracing the malware from payload retrieval through data collection, staging, and exfiltr"
   }
 ]
