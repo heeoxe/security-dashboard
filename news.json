@@ -1,6 +1,60 @@
 [
   {
     "source": "thn",
+    "title": "FBI Disrupts China-Linked QTFY Infrastructure Used to Steal Data From U.S. Organizations",
+    "desc": "The U.S. Department of Justice (DoJ) on Wednesday announced the disruption of two hacking platforms named QScan and QTRouter operated by Chinese threat actors to target critical infrastructure and other sensitive networks in the country.\n\nThe activity has been attributed to a Chinese state-sponsored",
+    "url": "https://thehackernews.com/2026/08/fbi-disrupts-china-linked-qtfy.html",
+    "date": "2026-08-26T22:12:03",
+    "title_ko": "FBI Disrupts China-Linked QTFY Infrastructure Used to Steal Data From U.S. Organizations",
+    "desc_ko": "The U.S. Department of Justice (DoJ) on Wednesday announced the disruption of two hacking platforms named QScan and QTRouter operated by Chinese threat actors to target critical infrastructure and other sensitive networks in the country.\n\nThe activity has been attributed to a Chinese state-sponsored"
+  },
+  {
+    "source": "thn",
+    "title": "Nimbus Manticore Expands Toolset With TWOSTROKE-Like Backdoor and SSH Tunneler",
+    "desc": "Cybersecurity researchers have discovered additional infrastructure and previously undocumented malware associated with Nimbus Manticore, an Iranian state-sponsored hacking group affiliated with the Islamic Revolutionary Guard Corps (IRGC).\n\nGroup-IB, in a new analysis published today, described the",
+    "url": "https://thehackernews.com/2026/08/nimbus-manticore-expands-toolset-with.html",
+    "date": "2026-08-26T21:05:05",
+    "title_ko": "Nimbus Manticore Expands Toolset With TWOSTROKE-Like Backdoor and SSH Tunneler",
+    "desc_ko": "Cybersecurity researchers have discovered additional infrastructure and previously undocumented malware associated with Nimbus Manticore, an Iranian state-sponsored hacking group affiliated with the Islamic Revolutionary Guard Corps (IRGC).\n\nGroup-IB, in a new analysis published today, described the"
+  },
+  {
+    "source": "thn",
+    "title": "NovaCookies Campaigns Abuse Genuine Docusign Notifications to Steal Microsoft 365 Sessions",
+    "desc": "Cybersecurity researchers have disclosed details of a new adversary-in-the-middle (AitM) phishing toolkit called NovaCookies that's used as a proxy to redirect Microsoft 365 sign-ins, while capturing authenticated sessions in the process.\n\nIn a report shared with The Hacker News ahead of publication",
+    "url": "https://thehackernews.com/2026/08/novacookies-campaigns-abuse-genuine.html",
+    "date": "2026-08-26T19:14:31",
+    "title_ko": "NovaCookies Campaigns Abuse Genuine Docusign Notifications to Steal Microsoft 365 Sessions",
+    "desc_ko": "Cybersecurity researchers have disclosed details of a new adversary-in-the-middle (AitM) phishing toolkit called NovaCookies that's used as a proxy to redirect Microsoft 365 sign-ins, while capturing authenticated sessions in the process.\n\nIn a report shared with The Hacker News ahead of publication"
+  },
+  {
+    "source": "thn",
+    "title": "CISA Red Team Compromised Two Critical Infrastructure Orgs, One Detected Nothing",
+    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has published the results of two red team assessments it conducted simultaneously against two critical infrastructure organizations, using what it described as similar tradecraft while recording sharply different defensive outcomes.\n\nB",
+    "url": "https://thehackernews.com/2026/08/cisa-red-team-compromised-two-critical.html",
+    "date": "2026-08-26T18:37:02",
+    "title_ko": "CISA Red Team Compromised Two Critical Infrastructure Orgs, One Detected Nothing",
+    "desc_ko": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has published the results of two red team assessments it conducted simultaneously against two critical infrastructure organizations, using what it described as similar tradecraft while recording sharply different defensive outcomes.\n\nB"
+  },
+  {
+    "source": "thn",
+    "title": "Unpatched Kaltura mwEmbed Flaws Could Let Remote Attackers Read Files and Run Code",
+    "desc": "The CERT Coordination Center (CERT/CC) has disclosed two unpatched vulnerabilities in Kaltura's HTML5 video player library that allow a remote, unauthenticated attacker to read arbitrary files from a server and execute code on it.\n\nThe flaws, tracked as CVE-2026-19913 and CVE-2026-19912, both stem f",
+    "url": "https://thehackernews.com/2026/08/unpatched-kaltura-mwembed-flaws-could.html",
+    "date": "2026-08-26T17:25:00",
+    "title_ko": "Unpatched Kaltura mwEmbed Flaws Could Let Remote Attackers Read Files and Run Code",
+    "desc_ko": "The CERT Coordination Center (CERT/CC) has disclosed two unpatched vulnerabilities in Kaltura's HTML5 video player library that allow a remote, unauthenticated attacker to read arbitrary files from a server and execute code on it.\n\nThe flaws, tracked as CVE-2026-19913 and CVE-2026-19912, both stem f"
+  },
+  {
+    "source": "thn",
+    "title": "Imagine the SOC Without a Queue: From Alert Backlog to AI Hypothesis Engine",
+    "desc": "The SOC we've always known was built around a model that guarantees most of the alert queue will never receive analyst review. There's never time. In a traditional SOC, the typical progression follows a well-known pattern: an alert arrives; a detection engine assigns a severity score. The issue then",
+    "url": "https://thehackernews.com/2026/08/imagine-soc-without-queue-from-alert.html",
+    "date": "2026-08-26T17:06:49",
+    "title_ko": "Imagine the SOC Without a Queue: From Alert Backlog to AI Hypothesis Engine",
+    "desc_ko": "The SOC we've always known was built around a model that guarantees most of the alert queue will never receive analyst review. There's never time. In a traditional SOC, the typical progression follows a well-known pattern: an alert arrives; a detection engine assigns a severity score. The issue then"
+  },
+  {
+    "source": "thn",
     "title": "Claude Opus 4.6 Bypasses Gym Booking Limit, Cancels Other Users' Reservations in Tests",
     "desc": "Aikido Security has published research that recreates the Australian gym-booking incident in a synthetic environment, finding that Claude Opus 4.6, running on the OpenClaw agent harness, exploited a client-side-only booking restriction in 9 of 10 runs.\n\nThe original incident was first reported by AB",
     "url": "https://thehackernews.com/2026/08/claude-opus-46-bypasses-gym-booking.html",
@@ -28,11 +82,11 @@
   },
   {
     "source": "thn",
-    "title": "Newly SLEEPWALKER Backdoor Waits for One Crafted Packet, Then Runs Its Own Bytecode",
+    "title": "New SLEEPWALKER Backdoor Waits for One Crafted Packet, Then Runs Its Own Bytecode",
     "desc": "An independent malware researcher has documented a previously unreported Windows backdoor, dubbed SLEEPWALKER, that stays inert in memory until a specifically crafted network packet reaches the machine and then runs commands written in a 23-instruction language of its own design.\n\nThe sample is an u",
     "url": "https://thehackernews.com/2026/08/newly-sleepwalker-backdoor-waits-for.html",
     "date": "2026-08-26T12:42:55",
-    "title_ko": "Newly SLEEPWALKER Backdoor Waits for One Crafted Packet, Then Runs Its Own Bytecode",
+    "title_ko": "New SLEEPWALKER Backdoor Waits for One Crafted Packet, Then Runs Its Own Bytecode",
     "desc_ko": "An independent malware researcher has documented a previously unreported Windows backdoor, dubbed SLEEPWALKER, that stays inert in memory until a specifically crafted network packet reaches the machine and then runs commands written in a 23-instruction language of its own design.\n\nThe sample is an u"
   },
   {
@@ -394,59 +448,5 @@
     "date": "2026-08-20T16:56:08",
     "title_ko": "Manic Android Malware Exfiltrates Data From Offline Phones via Nearby Infected Devices",
     "desc_ko": "A new Android threat codenamed Manic has been observed actively targeting Ukrainian banks, government and identity services, and messaging applications, as well as Russian and European financial institutions, global fintech and cryptocurrency services, and military-focused communications.\n\n\"Manic si"
-  },
-  {
-    "source": "thn",
-    "title": "NASA AIT-GUI Flaws Could Let Unauthenticated Attackers Issue Spacecraft Commands",
-    "desc": "Security researchers at Cycode have disclosed a chain of flaws in AIT-GUI, the browser-based operator console for NASA/JPL's open-source AMMOS Instrument Toolkit, that allow an unauthenticated attacker to issue arbitrary commands to the software's spacecraft and instrument command bus.\n\nThe chain, t",
-    "url": "https://thehackernews.com/2026/08/nasa-ait-gui-flaws-could-let.html",
-    "date": "2026-08-20T16:35:11",
-    "title_ko": "NASA AIT-GUI Flaws Could Let Unauthenticated Attackers Issue Spacecraft Commands",
-    "desc_ko": "Security researchers at Cycode have disclosed a chain of flaws in AIT-GUI, the browser-based operator console for NASA/JPL's open-source AMMOS Instrument Toolkit, that allow an unauthenticated attacker to issue arbitrary commands to the software's spacecraft and instrument command bus.\n\nThe chain, t"
-  },
-  {
-    "source": "thn",
-    "title": "ToxicPanda 2.0 and GoldDigger Expand Android Banking Attacks with On-Device Fraud",
-    "desc": "Cybersecurity researchers have shed light on an updated version of ToxicPanda (aka TgToxic) that comes with \"significant enhancements,\" including a set of 167 remote commands and expands its targeting footprint globally.\n\nZimperium zLabs, in a Wednesday report, said the Android malware also features",
-    "url": "https://thehackernews.com/2026/08/toxicpanda-20-and-golddigger-expand.html",
-    "date": "2026-08-20T16:08:28",
-    "title_ko": "ToxicPanda 2.0 and GoldDigger Expand Android Banking Attacks with On-Device Fraud",
-    "desc_ko": "Cybersecurity researchers have shed light on an updated version of ToxicPanda (aka TgToxic) that comes with \"significant enhancements,\" including a set of 167 remote commands and expands its targeting footprint globally.\n\nZimperium zLabs, in a Wednesday report, said the Android malware also features"
-  },
-  {
-    "source": "thn",
-    "title": "40 Malicious Firefox Extensions Pose as Web3 Products to Steal Wallet Secrets",
-    "desc": "A set of 40 Mozilla Firefox extensions has been found to engage in cryptocurrency wallet theft by masquerading as OKX, Rabby Wallet, TronLink, and other Web3 products.\n\nAccording to the Socket Threat Research team, the extensions are part of a broader set of 77 browser add-ons that share source code",
-    "url": "https://thehackernews.com/2026/08/40-malicious-firefox-extensions-pose-as.html",
-    "date": "2026-08-20T14:12:03",
-    "title_ko": "40 Malicious Firefox Extensions Pose as Web3 Products to Steal Wallet Secrets",
-    "desc_ko": "A set of 40 Mozilla Firefox extensions has been found to engage in cryptocurrency wallet theft by masquerading as OKX, Rabby Wallet, TronLink, and other Web3 products.\n\nAccording to the Socket Threat Research team, the extensions are part of a broader set of 77 browser add-ons that share source code"
-  },
-  {
-    "source": "thn",
-    "title": "Elementor Pro Flaw Could Let Unauthenticated Attackers Upload PHP and Execute Code",
-    "desc": "Cybersecurity researchers have disclosed details of a critical flaw in the Elementor Pro WordPress plugin that, if successfully exploited, could lead to remote code execution.\n\nThe vulnerability, tracked as CVE-2026-32475, carries a CVSS score of 9.0 out of 10.0. It has been described as a case of u",
-    "url": "https://thehackernews.com/2026/08/elementor-pro-flaw-could-let.html",
-    "date": "2026-08-20T11:34:34",
-    "title_ko": "Elementor Pro Flaw Could Let Unauthenticated Attackers Upload PHP and Execute Code",
-    "desc_ko": "Cybersecurity researchers have disclosed details of a critical flaw in the Elementor Pro WordPress plugin that, if successfully exploited, could lead to remote code execution.\n\nThe vulnerability, tracked as CVE-2026-32475, carries a CVSS score of 9.0 out of 10.0. It has been described as a case of u"
-  },
-  {
-    "source": "thn",
-    "title": "Cloudflare Workers Spectre Attack Leaks JWT From Co-Located Worker at 12 Bits/Second",
-    "desc": "Cybersecurity researchers have disclosed details of a&nbsp;remote Spectre attack&nbsp;against Cloudflare Workers that leaked a JSON Web Token (JWT) from a co-located Worker in the production environment at up to 12 bits per second, 360 times the rate of an earlier attack demonstrated in 2021.\n\nThe e",
-    "url": "https://thehackernews.com/2026/08/cloudflare-workers-spectre-attack-leaks.html",
-    "date": "2026-08-20T00:32:40",
-    "title_ko": "Cloudflare Workers Spectre Attack Leaks JWT From Co-Located Worker at 12 Bits/Second",
-    "desc_ko": "Cybersecurity researchers have disclosed details of a&nbsp;remote Spectre attack&nbsp;against Cloudflare Workers that leaked a JSON Web Token (JWT) from a co-located Worker in the production environment at up to 12 bits per second, 360 times the rate of an earlier attack demonstrated in 2021.\n\nThe e"
-  },
-  {
-    "source": "thn",
-    "title": "OpenAI Pauses Frontier RL Training as It Tightens Defenses Against Unsafe AI Behavior",
-    "desc": "OpenAI on Tuesday revealed that it paused reinforcement learning (RL) training for its latest artificial intelligence (AI) models for two weeks while it shored up additional defenses and increased the scope of its monitoring to avert another Hugging Face-like incident.\n\n\"As models become more capabl",
-    "url": "https://thehackernews.com/2026/08/openai-pauses-frontier-rl-training-as.html",
-    "date": "2026-08-19T23:36:44",
-    "title_ko": "OpenAI Pauses Frontier RL Training as It Tightens Defenses Against Unsafe AI Behavior",
-    "desc_ko": "OpenAI on Tuesday revealed that it paused reinforcement learning (RL) training for its latest artificial intelligence (AI) models for two weeks while it shored up additional defenses and increased the scope of its monitoring to avert another Hugging Face-like incident.\n\n\"As models become more capabl"
   }
 ]
