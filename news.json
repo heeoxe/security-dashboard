@@ -1,6 +1,60 @@
 [
   {
     "source": "thn",
+    "title": "⚡ Weekly Recap: Chinese Spy Proxy, AI Agents Go Off-Task, Router Backdoors and More",
+    "desc": "The boring parts caused most of the trouble.\n\nA router shipped ready to listen. A fake check turned the user into the installer. Trusted systems collected traffic and passwords, then cleaned the logs. Old bugs formed new attack chains. Even an AI agent decided its assigned task was optional.\n\nElsewh",
+    "url": "https://thehackernews.com/2026/08/weekly-recap-chinese-spy-proxy-ai.html",
+    "date": "2026-08-31T19:20:00",
+    "title_ko": "⚡ Weekly Recap: Chinese Spy Proxy, AI Agents Go Off-Task, Router Backdoors and More",
+    "desc_ko": "The boring parts caused most of the trouble.\n\nA router shipped ready to listen. A fake check turned the user into the installer. Trusted systems collected traffic and passwords, then cleaned the logs. Old bugs formed new attack chains. Even an AI agent decided its assigned task was optional.\n\nElsewh"
+  },
+  {
+    "source": "thn",
+    "title": "ValleyRAT Backdoor Hides in Signed Adware That Users Add to Antivirus Exclusions",
+    "desc": "The threat actor known as Silver Fox has been observed distributing the ValleyRAT backdoor disguised as a signed Chinese adware application, running the malware under a trusted process to slip past users who add such software to their antivirus exclusions.\n\nRussian cybersecurity vendor Kaspersky sai",
+    "url": "https://thehackernews.com/2026/08/valleyrat-backdoor-hides-in-signed.html",
+    "date": "2026-08-31T17:44:00",
+    "title_ko": "ValleyRAT Backdoor Hides in Signed Adware That Users Add to Antivirus Exclusions",
+    "desc_ko": "The threat actor known as Silver Fox has been observed distributing the ValleyRAT backdoor disguised as a signed Chinese adware application, running the malware under a trusted process to slip past users who add such software to their antivirus exclusions.\n\nRussian cybersecurity vendor Kaspersky sai"
+  },
+  {
+    "source": "thn",
+    "title": "Aurora Ransomware Operators Use Cursor AI in Attacks Against 10 Targets",
+    "desc": "Threat actors associated with Aurora (aka Aur0ra) ransomware have been observed using SpaceX's artificial intelligence (AI)-powered coding assistant Cursor to break into target networks, according to findings from CloudSEK and Gambit Security.\n\nThe two independent analyses are based on exposed infra",
+    "url": "https://thehackernews.com/2026/08/aurora-ransomware-operators-use-cursor.html",
+    "date": "2026-08-31T17:17:24",
+    "title_ko": "Aurora Ransomware Operators Use Cursor AI in Attacks Against 10 Targets",
+    "desc_ko": "Threat actors associated with Aurora (aka Aur0ra) ransomware have been observed using SpaceX's artificial intelligence (AI)-powered coding assistant Cursor to break into target networks, according to findings from CloudSEK and Gambit Security.\n\nThe two independent analyses are based on exposed infra"
+  },
+  {
+    "source": "thn",
+    "title": "Securing Claude Code: The New Compliance API, Local Visibility, and Identity Governance",
+    "desc": "Claude Code reads files, runs shell commands, invokes MCP tools, and acts through the credentials available on a developer’s machine. Anthropic’s new Compliance API endpoints give security teams their clearest view yet into that activity. They also expose a larger problem: activity logs alone cannot",
+    "url": "https://thehackernews.com/2026/08/securing-claude-code-new-compliance-api.html",
+    "date": "2026-08-31T17:01:47",
+    "title_ko": "Securing Claude Code: The New Compliance API, Local Visibility, and Identity Governance",
+    "desc_ko": "Claude Code reads files, runs shell commands, invokes MCP tools, and acts through the credentials available on a developer’s machine. Anthropic’s new Compliance API endpoints give security teams their clearest view yet into that activity. They also expose a larger problem: activity logs alone cannot"
+  },
+  {
+    "source": "thn",
+    "title": "China-Linked Fire Ant Hijacks Cisco Routers to Steal Credentials and Blind Security Logs",
+    "desc": "A China-nexus cyber espionage actor tracked as Fire Ant has expanded a long-running campaign beyond VMware hypervisors to compromise Cisco IOS XR routers, Terminal Access Controller Access-Control System (TACACS) servers, and Linux management hosts used to route, authenticate, and manage high-value ",
+    "url": "https://thehackernews.com/2026/08/china-linked-fire-ant-hijacks-cisco.html",
+    "date": "2026-08-31T14:34:55",
+    "title_ko": "China-Linked Fire Ant Hijacks Cisco Routers to Steal Credentials and Blind Security Logs",
+    "desc_ko": "A China-nexus cyber espionage actor tracked as Fire Ant has expanded a long-running campaign beyond VMware hypervisors to compromise Cisco IOS XR routers, Terminal Access Controller Access-Control System (TACACS) servers, and Linux management hosts used to route, authenticate, and manage high-value "
+  },
+  {
+    "source": "thn",
+    "title": "DoJ Corrects China Hacking Claim, Says U.S. Agencies Were Targets, Not Victims",
+    "desc": "The U.S. Department of Justice (DoJ) on Friday corrected a previously issued press statement that several of its agencies were victims of attacks carried out by Chinese threat actors, instead now pointing out that they were among those targeted.\n\nLast week, the DoJ said the National Aeronautics and ",
+    "url": "https://thehackernews.com/2026/08/doj-corrects-china-hacking-claim-says.html",
+    "date": "2026-08-31T13:26:53",
+    "title_ko": "DoJ Corrects China Hacking Claim, Says U.S. Agencies Were Targets, Not Victims",
+    "desc_ko": "The U.S. Department of Justice (DoJ) on Friday corrected a previously issued press statement that several of its agencies were victims of attacks carried out by Chinese threat actors, instead now pointing out that they were among those targeted.\n\nLast week, the DoJ said the National Aeronautics and "
+  },
+  {
+    "source": "thn",
     "title": "TerminalFix Uses Fake Cloudflare CAPTCHAs to Deploy Reverse-Tunnel Backdoor",
     "desc": "Microsoft has disclosed details of a new ClickFix variant, dubbed TerminalFix, that aims to trick users into running a malicious command in Windows Terminal or PowerShell.\n\n\"While traditional ClickFix campaigns direct victims to the Windows Run dialog, TerminalFix campaigns apply the same technique ",
     "url": "https://thehackernews.com/2026/08/terminalfix-uses-fake-cloudflare.html",
@@ -394,59 +448,5 @@
     "date": "2026-08-25T17:22:43",
     "title_ko": "24 npm Packages Abuse unpkg Mirrors to Host Fake Cloudflare CAPTCHA Pages",
     "desc_ko": "Cybersecurity researchers have disclosed details of a new campaign that uses a cluster of 24 npm packages as free phishing infrastructure for redirecting to ClickFix-style fake CAPTCHA pages.\n\n\"While the malware is simply a single HTML page inside the npm package, and while downloading it wouldn't d"
-  },
-  {
-    "source": "thn",
-    "title": "E4del and PINHOLE RATs Turn FTP Banners Into Dead Drops for Malware Commands",
-    "desc": "Cybersecurity researchers are calling attention to a new campaign that employs FTP banners as dead drop resolvers (DDRs) to deliver two previously unreported remote access trojans (RATs) tracked as E4del and PINHOLE.\n\nWhile threat actors are known to abuse legitimate services to point to additional ",
-    "url": "https://thehackernews.com/2026/08/e4del-and-pinhole-rats-turn-ftp-banners.html",
-    "date": "2026-08-25T17:03:44",
-    "title_ko": "E4del and PINHOLE RATs Turn FTP Banners Into Dead Drops for Malware Commands",
-    "desc_ko": "Cybersecurity researchers are calling attention to a new campaign that employs FTP banners as dead drop resolvers (DDRs) to deliver two previously unreported remote access trojans (RATs) tracked as E4del and PINHOLE.\n\nWhile threat actors are known to abuse legitimate services to point to additional "
-  },
-  {
-    "source": "thn",
-    "title": "Frontier AI: Vulnerability Management's Systemic Revolution",
-    "desc": "Vulnerability management has been a staple of security programs since the dawn of the cybersecurity discipline. The symbiotic relationship between vulnerability and patch management teams has also existed for that time and has gone through waves of contention and thankfulness. While this relationshi",
-    "url": "https://thehackernews.com/2026/08/frontier-ai-vulnerability-managements.html",
-    "date": "2026-08-25T16:44:07",
-    "title_ko": "Frontier AI: Vulnerability Management's Systemic Revolution",
-    "desc_ko": "Vulnerability management has been a staple of security programs since the dawn of the cybersecurity discipline. The symbiotic relationship between vulnerability and patch management teams has also existed for that time and has gone through waves of contention and thankfulness. While this relationshi"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Target miniOrange SAML Flaws That Can Grant WordPress Admin Access",
-    "desc": "Bad actors are attempting to exploit two severe unauthenticated authentication bypasses in the Xecurify miniOrange SAML 2.0 Single Sign On plugin that make it possible for an attacker to sign in as any WordPress user, including administrators.\n\nThe vulnerabilities, as disclosed by Patchstack, are li",
-    "url": "https://thehackernews.com/2026/08/attackers-target-miniorange-saml-flaws.html",
-    "date": "2026-08-25T14:04:07",
-    "title_ko": "Attackers Target miniOrange SAML Flaws That Can Grant WordPress Admin Access",
-    "desc_ko": "Bad actors are attempting to exploit two severe unauthenticated authentication bypasses in the Xecurify miniOrange SAML 2.0 Single Sign On plugin that make it possible for an attacker to sign in as any WordPress user, including administrators.\n\nThe vulnerabilities, as disclosed by Patchstack, are li"
-  },
-  {
-    "source": "thn",
-    "title": "Actively Exploited Oracle WebLogic Flaw Lets Unauthenticated Attackers Access Critical Data",
-    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added a maximum-severity security flaw impacting Oracle HTTP Server and Oracle WebLogic Server to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe vulnerability, tracked as CVE-2",
-    "url": "https://thehackernews.com/2026/08/actively-exploited-oracle-weblogic-flaw.html",
-    "date": "2026-08-25T11:42:35",
-    "title_ko": "Actively Exploited Oracle WebLogic Flaw Lets Unauthenticated Attackers Access Critical Data",
-    "desc_ko": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added a maximum-severity security flaw impacting Oracle HTTP Server and Oracle WebLogic Server to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe vulnerability, tracked as CVE-2"
-  },
-  {
-    "source": "thn",
-    "title": "Shipping More AI Code Than You Can Secure? Watch How to Control Remediation Debt",
-    "desc": "If your developers are using AI coding tools, you are probably already seeing the upside: faster development, more code, and less time spent on routine work.\n\nThe harder part is what comes after. AI can also introduce open-source packages at a pace your security team was never built to handle. More ",
-    "url": "https://thehackernews.com/2026/08/shipping-more-ai-code-than-you-can.html",
-    "date": "2026-08-24T23:11:30",
-    "title_ko": "Shipping More AI Code Than You Can Secure? Watch How to Control Remediation Debt",
-    "desc_ko": "If your developers are using AI coding tools, you are probably already seeing the upside: faster development, more code, and less time spent on routine work.\n\nThe harder part is what comes after. AI can also introduce open-source packages at a pace your security team was never built to handle. More "
-  },
-  {
-    "source": "thn",
-    "title": "Weedhack Malware Spreads via Fake Minecraft Clients and SEO Poisoning",
-    "desc": "Cybersecurity researchers have found that several websites are still actively distributing a malware family known as Weedhack to gamers by masquerading as Minecraft clients.\n\nMcAfee Labs said it detected and blocked more than 6,300 attempts to access malicious sites, adding that it found lookalike g",
-    "url": "https://thehackernews.com/2026/08/weedhack-malware-spreads-via-fake.html",
-    "date": "2026-08-24T23:11:11",
-    "title_ko": "Weedhack Malware Spreads via Fake Minecraft Clients and SEO Poisoning",
-    "desc_ko": "Cybersecurity researchers have found that several websites are still actively distributing a malware family known as Weedhack to gamers by masquerading as Minecraft clients.\n\nMcAfee Labs said it detected and blocked more than 6,300 attempts to access malicious sites, adding that it found lookalike g"
   }
 ]
