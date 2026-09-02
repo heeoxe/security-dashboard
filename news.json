@@ -1,6 +1,105 @@
 [
   {
     "source": "thn",
+    "title": "Malicious .git Configs Can Make Claude, Codex, Cursor, and Other AI Agents Run Attacker Code",
+    "desc": "Manifold Security has disclosed eight security flaws across seven command-line AI coding agents in which a repository's own Git configuration names a command that the agent runs on the developer's machine, four of them still unpatched at publication.\n\nThe command executes as the user, outside the ag",
+    "url": "https://thehackernews.com/2026/09/malicious-git-configs-can-make-claude.html",
+    "date": "2026-09-02T19:36:59",
+    "title_ko": "Malicious .git Configs Can Make Claude, Codex, Cursor, and Other AI Agents Run Attacker Code",
+    "desc_ko": "Manifold Security has disclosed eight security flaws across seven command-line AI coding agents in which a repository's own Git configuration names a command that the agent runs on the developer's machine, four of them still unpatched at publication.\n\nThe command executes as the user, outside the ag"
+  },
+  {
+    "source": "thn",
+    "title": "Malicious Apache Modules Hijack Brazilian Government Site Traffic to Push Betting Pages",
+    "desc": "A Chinese-speaking cybercrime cluster known as Gambling Goblin has been observed installing malicious Apache modules on compromised web servers run by Brazilian government and educational institutions, and using them to divert visitors to attacker-controlled pages promoting online gambling and sport",
+    "url": "https://thehackernews.com/2026/09/malicious-apache-modules-hijack.html",
+    "date": "2026-09-02T19:14:16",
+    "title_ko": "Malicious Apache Modules Hijack Brazilian Government Site Traffic to Push Betting Pages",
+    "desc_ko": "A Chinese-speaking cybercrime cluster known as Gambling Goblin has been observed installing malicious Apache modules on compromised web servers run by Brazilian government and educational institutions, and using them to divert visitors to attacker-controlled pages promoting online gambling and sport"
+  },
+  {
+    "source": "thn",
+    "title": "BGP Hijack Delivers Malicious Virtualizor Update That Establishes Persistent Root Access",
+    "desc": "Virtualizor said hackers used a Border Gateway Protocol (BGP) hijack to divert Softaculous traffic. The hackers then used the diverted update traffic to deliver a malicious Virtualizor package to some installations. A hosting-provider account separately said 5 of its 34 checked Virtualizor hyperviso",
+    "url": "https://thehackernews.com/2026/09/bgp-hijack-delivers-malicious.html",
+    "date": "2026-09-02T18:42:45",
+    "title_ko": "BGP Hijack Delivers Malicious Virtualizor Update That Establishes Persistent Root Access",
+    "desc_ko": "Virtualizor said hackers used a Border Gateway Protocol (BGP) hijack to divert Softaculous traffic. The hackers then used the diverted update traffic to deliver a malicious Virtualizor package to some installations. A hosting-provider account separately said 5 of its 34 checked Virtualizor hyperviso"
+  },
+  {
+    "source": "thn",
+    "title": "Meta Ads Push StreamRat Android Trojan That Can Gain Near-Complete Device Control",
+    "desc": "Cybersecurity researchers have disclosed details of a new Android banking trojan called StreamRat that was promoted to Spanish-speaking users through a fake television-streaming campaign on Meta and can give operators near-complete control of infected devices.\n\nThreatFabric said the campaign's adver",
+    "url": "https://thehackernews.com/2026/09/meta-ads-push-streamrat-android-trojan.html",
+    "date": "2026-09-02T17:52:02",
+    "title_ko": "Meta Ads Push StreamRat Android Trojan That Can Gain Near-Complete Device Control",
+    "desc_ko": "Cybersecurity researchers have disclosed details of a new Android banking trojan called StreamRat that was promoted to Spanish-speaking users through a fake television-streaming campaign on Meta and can give operators near-complete control of infected devices.\n\nThreatFabric said the campaign's adver"
+  },
+  {
+    "source": "thn",
+    "title": "How to Secure Enterprise AI: From Adoption to Incident Readiness",
+    "desc": "The debate about whether AI delivers business value is over. The challenge now is implementing it at scale and securely across every function while meeting board-level pressure to move fast. Organizations must focus on adopting AI at business speed without losing control of cyber risk. Download the ",
+    "url": "https://thehackernews.com/2026/09/how-to-secure-enterprise-ai-from.html",
+    "date": "2026-09-02T17:00:00",
+    "title_ko": "How to Secure Enterprise AI: From Adoption to Incident Readiness",
+    "desc_ko": "The debate about whether AI delivers business value is over. The challenge now is implementing it at scale and securely across every function while meeting board-level pressure to move fast. Organizations must focus on adopting AI at business speed without losing control of cyber risk. Download the "
+  },
+  {
+    "source": "thn",
+    "title": "Attackers Exploit Two SonicWall SMA 1000 Zero-Days That May Form an Attack Chain",
+    "desc": "SonicWall has released security updates to address two security flaws impacting its Secure Mobile Access (SMA) 1000 series VPN appliances that have been exploited in zero-day attacks.\n\nThe vulnerabilities, discovered internally by SonicWall's William Perry and Adam Babis, are listed below -\n\n\n  CVE-",
+    "url": "https://thehackernews.com/2026/09/attackers-exploit-two-sonicwall-sma.html",
+    "date": "2026-09-02T16:23:49",
+    "title_ko": "Attackers Exploit Two SonicWall SMA 1000 Zero-Days That May Form an Attack Chain",
+    "desc_ko": "SonicWall has released security updates to address two security flaws impacting its Secure Mobile Access (SMA) 1000 series VPN appliances that have been exploited in zero-day attacks.\n\nThe vulnerabilities, discovered internally by SonicWall's William Perry and Adam Babis, are listed below -\n\n\n  CVE-"
+  },
+  {
+    "source": "thn",
+    "title": "GeoNetwork Fixes Unauthenticated RCE Chain Affecting Government Geoportal Backends",
+    "desc": "Two vulnerabilities in GeoNetwork can be chained to achieve unauthenticated remote code execution (RCE) on the open-source geospatial metadata catalog, which sits behind many government and agency geoportals.\n\nThe project shipped fixes in versions 4.4.12 and 4.2.17 on July 8, 2026, and published the",
+    "url": "https://thehackernews.com/2026/09/geonetwork-fixes-unauthenticated-rce.html",
+    "date": "2026-09-02T14:48:02",
+    "title_ko": "GeoNetwork Fixes Unauthenticated RCE Chain Affecting Government Geoportal Backends",
+    "desc_ko": "Two vulnerabilities in GeoNetwork can be chained to achieve unauthenticated remote code execution (RCE) on the open-source geospatial metadata catalog, which sits behind many government and agency geoportals.\n\nThe project shipped fixes in versions 4.4.12 and 4.2.17 on July 8, 2026, and published the"
+  },
+  {
+    "source": "thn",
+    "title": "Extradited Russian Hacker Faces Charges Over Excel Malware Campaign That Infected Thousands",
+    "desc": "The U.S. Department of Justice (DoJ) has charged a Russian national, extradited from Cyprus on August 28, with using roughly 255 fake accounts on a freelance platform to send malware-laced Excel attachments to about 80,000 of its users in 2016 and 2017.\n\nSearzhudin Tamirlanovich Aktulaev, 40, was ar",
+    "url": "https://thehackernews.com/2026/09/extradited-russian-hacker-faces-charges.html",
+    "date": "2026-09-02T14:40:23",
+    "title_ko": "Extradited Russian Hacker Faces Charges Over Excel Malware Campaign That Infected Thousands",
+    "desc_ko": "The U.S. Department of Justice (DoJ) has charged a Russian national, extradited from Cyprus on August 28, with using roughly 255 fake accounts on a freelance platform to send malware-laced Excel attachments to about 80,000 of its users in 2016 and 2017.\n\nSearzhudin Tamirlanovich Aktulaev, 40, was ar"
+  },
+  {
+    "source": "thn",
+    "title": "Researchers Use Claude to Port Pre-Auth RCE Exploit From One PLC Model to Another",
+    "desc": "Forescout Research - Vedere Labs said it used Anthropic's Claude to port a working pre-authentication remote code execution (RCE) exploit from one WAGO programmable logic controller (PLC) to another, executing attacker-supplied ARM shellcode on live hardware.\n\nThe exploit targets&nbsp;CVE-2021-31886",
+    "url": "https://thehackernews.com/2026/09/researchers-use-claude-to-port-pre-auth.html",
+    "date": "2026-09-02T13:17:13",
+    "title_ko": "Researchers Use Claude to Port Pre-Auth RCE Exploit From One PLC Model to Another",
+    "desc_ko": "Forescout Research - Vedere Labs said it used Anthropic's Claude to port a working pre-authentication remote code execution (RCE) exploit from one WAGO programmable logic controller (PLC) to another, executing attacker-supplied ARM shellcode on live hardware.\n\nThe exploit targets&nbsp;CVE-2021-31886"
+  },
+  {
+    "source": "thn",
+    "title": "Attackers Exploit Critical Switchvox Flaw to Deploy Reverse Shells Without Credentials",
+    "desc": "Threat actors are exploiting a severe security vulnerability in Sangoma Switchvox, an enterprise VoIP platform, that could allow unauthenticated remote code execution.\n\nThe vulnerability in question is CVE-2026-9586 (CVSS score: 9.3), a critical unauthenticated SQL injection vulnerability in Sangoma",
+    "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-switchvox.html",
+    "date": "2026-09-02T12:38:50",
+    "title_ko": "Attackers Exploit Critical Switchvox Flaw to Deploy Reverse Shells Without Credentials",
+    "desc_ko": "Threat actors are exploiting a severe security vulnerability in Sangoma Switchvox, an enterprise VoIP platform, that could allow unauthenticated remote code execution.\n\nThe vulnerability in question is CVE-2026-9586 (CVSS score: 9.3), a critical unauthenticated SQL injection vulnerability in Sangoma"
+  },
+  {
+    "source": "thn",
+    "title": "Authorities Turn Sality's P2P Network Against Itself, Cutting Off New Malware Payloads",
+    "desc": "The U.S. Department of Justice (DoJ) on Tuesday announced the takedown of a long-standing peer-to-peer (P2P) botnet known as Sality as part of a coordinated law enforcement operation.\n\nThe effort was undertaken on August 31, 2026, by authorities from the U.S., Bulgaria, Hungary, and Romania, in coll",
+    "url": "https://thehackernews.com/2026/09/authorities-turn-salitys-p2p-network.html",
+    "date": "2026-09-02T12:26:30",
+    "title_ko": "Authorities Turn Sality's P2P Network Against Itself, Cutting Off New Malware Payloads",
+    "desc_ko": "The U.S. Department of Justice (DoJ) on Tuesday announced the takedown of a long-standing peer-to-peer (P2P) botnet known as Sality as part of a coordinated law enforcement operation.\n\nThe effort was undertaken on August 31, 2026, by authorities from the U.S., Bulgaria, Hungary, and Romania, in coll"
+  },
+  {
+    "source": "thn",
     "title": "Attackers Exploit Critical JFrog Artifactory Flaw to Mint Admin Tokens Days After Disclosure",
     "desc": "Threat actors are exploiting a newly patched critical security flaw impacting JFrog Artifactory merely days after public disclosure, according to watchTowr.\n\nThe vulnerability in question is CVE-2026-82329 (CVSS score: 9.8), a case of authentication bypass that could lead to administrative access in",
     "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-jfrog.html",
@@ -349,104 +448,5 @@
     "date": "2026-08-27T15:03:38",
     "title_ko": "GoCaracal Malware Uses Ethereum Smart Contract to Fetch Replacement C2 Address",
     "desc_ko": "Threat actors linked by Arctic Wolf to Dark Caracal with medium confidence deployed a previously undocumented Go-based malware framework, GoCaracal, during a June 2026 intrusion at an unnamed communications organization in Venezuela.\n\nGoCaracal provides operators with remote shell access and payload"
-  },
-  {
-    "source": "thn",
-    "title": "New GPUThor Rowhammer Defeats ECC on NVIDIA RTX A6000 to Gain Host Root Access",
-    "desc": "Academic researchers have disclosed a Rowhammer attack impacting NVIDIA workstation GPUs with GDDR6 memory that defeats error correction codes (ECC), the mitigation NVIDIA recommends against GPU Rowhammer, and enables denial-of-service (DoS) and privilege escalation to a root shell.\n\nDubbed GPUThor,",
-    "url": "https://thehackernews.com/2026/08/gputhor-rowhammer-defeats-ecc-on-nvidia.html",
-    "date": "2026-08-27T13:43:11",
-    "title_ko": "New GPUThor Rowhammer Defeats ECC on NVIDIA RTX A6000 to Gain Host Root Access",
-    "desc_ko": "Academic researchers have disclosed a Rowhammer attack impacting NVIDIA workstation GPUs with GDDR6 memory that defeats error correction codes (ECC), the mitigation NVIDIA recommends against GPU Rowhammer, and enables denial-of-service (DoS) and privilege escalation to a root shell.\n\nDubbed GPUThor,"
-  },
-  {
-    "source": "thn",
-    "title": "CISA Adds Six Exploited Flaws to KEV, Including NetScaler, Linux, and SQL Server Bugs",
-    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added six flaws to its Known Exploited Vulnerabilities (KEV) catalog, including a high-severity security vulnerability impacting Citrix NetScaler ADC and NetScaler Gateway, citing evidence of active exploitation.\n\nThe vuln",
-    "url": "https://thehackernews.com/2026/08/cisa-adds-six-exploited-flaws-to-kev.html",
-    "date": "2026-08-27T12:35:28",
-    "title_ko": "CISA Adds Six Exploited Flaws to KEV, Including NetScaler, Linux, and SQL Server Bugs",
-    "desc_ko": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added six flaws to its Known Exploited Vulnerabilities (KEV) catalog, including a high-severity security vulnerability impacting Citrix NetScaler ADC and NetScaler Gateway, citing evidence of active exploitation.\n\nThe vuln"
-  },
-  {
-    "source": "thn",
-    "title": "FBI Disrupts China-Linked QTFY Infrastructure Used to Steal Data From U.S. Organizations",
-    "desc": "The U.S. Department of Justice (DoJ) on Wednesday announced the disruption of two hacking platforms named QScan and QTRouter operated by Chinese threat actors to target critical infrastructure and other sensitive networks in the country.\n\nThe activity has been attributed to a Chinese state-sponsored",
-    "url": "https://thehackernews.com/2026/08/fbi-disrupts-china-linked-qtfy.html",
-    "date": "2026-08-26T22:12:03",
-    "title_ko": "FBI Disrupts China-Linked QTFY Infrastructure Used to Steal Data From U.S. Organizations",
-    "desc_ko": "The U.S. Department of Justice (DoJ) on Wednesday announced the disruption of two hacking platforms named QScan and QTRouter operated by Chinese threat actors to target critical infrastructure and other sensitive networks in the country.\n\nThe activity has been attributed to a Chinese state-sponsored"
-  },
-  {
-    "source": "thn",
-    "title": "Nimbus Manticore Expands Toolset With TWOSTROKE-Like Backdoor and SSH Tunneler",
-    "desc": "Cybersecurity researchers have discovered additional infrastructure and previously undocumented malware associated with Nimbus Manticore, an Iranian state-sponsored hacking group affiliated with the Islamic Revolutionary Guard Corps (IRGC).\n\nGroup-IB, in a new analysis published today, described the",
-    "url": "https://thehackernews.com/2026/08/nimbus-manticore-expands-toolset-with.html",
-    "date": "2026-08-26T21:05:05",
-    "title_ko": "Nimbus Manticore Expands Toolset With TWOSTROKE-Like Backdoor and SSH Tunneler",
-    "desc_ko": "Cybersecurity researchers have discovered additional infrastructure and previously undocumented malware associated with Nimbus Manticore, an Iranian state-sponsored hacking group affiliated with the Islamic Revolutionary Guard Corps (IRGC).\n\nGroup-IB, in a new analysis published today, described the"
-  },
-  {
-    "source": "thn",
-    "title": "NovaCookies Campaigns Abuse Genuine Docusign Notifications to Steal Microsoft 365 Sessions",
-    "desc": "Cybersecurity researchers have disclosed details of a new adversary-in-the-middle (AitM) phishing toolkit called NovaCookies that's used as a proxy to redirect Microsoft 365 sign-ins, while capturing authenticated sessions in the process.\n\nIn a report shared with The Hacker News ahead of publication",
-    "url": "https://thehackernews.com/2026/08/novacookies-campaigns-abuse-genuine.html",
-    "date": "2026-08-26T19:14:31",
-    "title_ko": "NovaCookies Campaigns Abuse Genuine Docusign Notifications to Steal Microsoft 365 Sessions",
-    "desc_ko": "Cybersecurity researchers have disclosed details of a new adversary-in-the-middle (AitM) phishing toolkit called NovaCookies that's used as a proxy to redirect Microsoft 365 sign-ins, while capturing authenticated sessions in the process.\n\nIn a report shared with The Hacker News ahead of publication"
-  },
-  {
-    "source": "thn",
-    "title": "CISA Red Team Compromised Two Critical Infrastructure Orgs, One Detected Nothing",
-    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has published the results of two red team assessments it conducted simultaneously against two critical infrastructure organizations, using what it described as similar tradecraft while recording sharply different defensive outcomes.\n\nB",
-    "url": "https://thehackernews.com/2026/08/cisa-red-team-compromised-two-critical.html",
-    "date": "2026-08-26T18:37:02",
-    "title_ko": "CISA Red Team Compromised Two Critical Infrastructure Orgs, One Detected Nothing",
-    "desc_ko": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has published the results of two red team assessments it conducted simultaneously against two critical infrastructure organizations, using what it described as similar tradecraft while recording sharply different defensive outcomes.\n\nB"
-  },
-  {
-    "source": "thn",
-    "title": "Unpatched Kaltura mwEmbed Flaws Could Let Remote Attackers Read Files and Run Code",
-    "desc": "The CERT Coordination Center (CERT/CC) has disclosed two unpatched vulnerabilities in Kaltura's HTML5 video player library that allow a remote, unauthenticated attacker to read arbitrary files from a server and execute code on it.\n\nThe flaws, tracked as CVE-2026-19913 and CVE-2026-19912, both stem f",
-    "url": "https://thehackernews.com/2026/08/unpatched-kaltura-mwembed-flaws-could.html",
-    "date": "2026-08-26T17:25:00",
-    "title_ko": "Unpatched Kaltura mwEmbed Flaws Could Let Remote Attackers Read Files and Run Code",
-    "desc_ko": "The CERT Coordination Center (CERT/CC) has disclosed two unpatched vulnerabilities in Kaltura's HTML5 video player library that allow a remote, unauthenticated attacker to read arbitrary files from a server and execute code on it.\n\nThe flaws, tracked as CVE-2026-19913 and CVE-2026-19912, both stem f"
-  },
-  {
-    "source": "thn",
-    "title": "Imagine the SOC Without a Queue: From Alert Backlog to AI Hypothesis Engine",
-    "desc": "The SOC we've always known was built around a model that guarantees most of the alert queue will never receive analyst review. There's never time. In a traditional SOC, the typical progression follows a well-known pattern: an alert arrives; a detection engine assigns a severity score. The issue then",
-    "url": "https://thehackernews.com/2026/08/imagine-soc-without-queue-from-alert.html",
-    "date": "2026-08-26T17:06:49",
-    "title_ko": "Imagine the SOC Without a Queue: From Alert Backlog to AI Hypothesis Engine",
-    "desc_ko": "The SOC we've always known was built around a model that guarantees most of the alert queue will never receive analyst review. There's never time. In a traditional SOC, the typical progression follows a well-known pattern: an alert arrives; a detection engine assigns a severity score. The issue then"
-  },
-  {
-    "source": "thn",
-    "title": "Claude Opus 4.6 Bypasses Gym Booking Limit, Cancels Other Users' Reservations in Tests",
-    "desc": "Aikido Security has published research that recreates the Australian gym-booking incident in a synthetic environment, finding that Claude Opus 4.6, running on the OpenClaw agent harness, exploited a client-side-only booking restriction in 9 of 10 runs.\n\nThe original incident was first reported by AB",
-    "url": "https://thehackernews.com/2026/08/claude-opus-46-bypasses-gym-booking.html",
-    "date": "2026-08-26T15:57:23",
-    "title_ko": "Claude Opus 4.6 Bypasses Gym Booking Limit, Cancels Other Users' Reservations in Tests",
-    "desc_ko": "Aikido Security has published research that recreates the Australian gym-booking incident in a synthetic environment, finding that Claude Opus 4.6, running on the OpenClaw agent harness, exploited a client-side-only booking restriction in 9 of 10 runs.\n\nThe original incident was first reported by AB"
-  },
-  {
-    "source": "thn",
-    "title": "OpenAI Bans Russian ChatGPT Accounts Used to Run Influence Operation",
-    "desc": "OpenAI on Tuesday said it banned a cluster of Russian ChatGPT accounts that used VPNs to bypass access restrictions and run an influence operation, which relied on its artificial intelligence (AI) tool to generate social media posts and comments that were shared on Substack, Telegram, X, Facebook an",
-    "url": "https://thehackernews.com/2026/08/openai-bans-russian-chatgpt-accounts.html",
-    "date": "2026-08-26T15:08:45",
-    "title_ko": "OpenAI Bans Russian ChatGPT Accounts Used to Run Influence Operation",
-    "desc_ko": "OpenAI on Tuesday said it banned a cluster of Russian ChatGPT accounts that used VPNs to bypass access restrictions and run an influence operation, which relied on its artificial intelligence (AI) tool to generate social media posts and comments that were shared on Substack, Telegram, X, Facebook an"
-  },
-  {
-    "source": "thn",
-    "title": "INTERPOL Operation Jackal IV Arrests 58, Identifies 263 in Global Cyber Fraud Crackdown",
-    "desc": "An eight-month INTERPOL operation targeting West African organized crime groups has led to arrests of 58 people and the identification of 263 suspects.\n\n\"The operation, which brought together 22 countries from six continents, is a response to the escalating global threat posed by West African crimin",
-    "url": "https://thehackernews.com/2026/08/interpol-operation-jackal-iv-arrests-58.html",
-    "date": "2026-08-26T13:24:12",
-    "title_ko": "INTERPOL Operation Jackal IV Arrests 58, Identifies 263 in Global Cyber Fraud Crackdown",
-    "desc_ko": "An eight-month INTERPOL operation targeting West African organized crime groups has led to arrests of 58 people and the identification of 263 suspects.\n\n\"The operation, which brought together 22 countries from six continents, is a response to the escalating global threat posed by West African crimin"
   }
 ]
