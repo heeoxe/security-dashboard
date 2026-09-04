@@ -1,6 +1,42 @@
 [
   {
     "source": "thn",
+    "title": "Over 440,000 Exploit Attempts Target Super Forms and Elementor Pro RCE Flaws",
+    "desc": "Threat actors are exploiting two critical security flaws in WordPress plugins Super Forms and Elementor Pro, according to findings from Wordfence.\n\nThe vulnerabilities in question are -\n\n\n  CVE-2026-14894 (CVSS score: 9.8) - A missing file type validation vulnerability in Super Forms – Drag &amp; Dr",
+    "url": "https://thehackernews.com/2026/09/over-440000-exploit-attempts-target.html",
+    "date": "2026-09-04T14:18:45",
+    "title_ko": "Over 440,000 Exploit Attempts Target Super Forms and Elementor Pro RCE Flaws",
+    "desc_ko": "Threat actors are exploiting two critical security flaws in WordPress plugins Super Forms and Elementor Pro, according to findings from Wordfence.\n\nThe vulnerabilities in question are -\n\n\n  CVE-2026-14894 (CVSS score: 9.8) - A missing file type validation vulnerability in Super Forms – Drag &amp; Dr"
+  },
+  {
+    "source": "thn",
+    "title": "Plex Urges Immediate Updates After Patching Multiple Undisclosed Security Flaws",
+    "desc": "Plex is urging users to update their instances to the latest version following the release of an update that patches multiple security flaws.\n\nThe fixes are available in Plex Media Server 1.43.3 and Plex Desktop 1.115.0. The streaming media service did not elaborate on what those issues are, but sai",
+    "url": "https://thehackernews.com/2026/09/plex-urges-immediate-updates-after.html",
+    "date": "2026-09-04T13:05:14",
+    "title_ko": "Plex Urges Immediate Updates After Patching Multiple Undisclosed Security Flaws",
+    "desc_ko": "Plex is urging users to update their instances to the latest version following the release of an update that patches multiple security flaws.\n\nThe fixes are available in Plex Media Server 1.43.3 and Plex Desktop 1.115.0. The streaming media service did not elaborate on what those issues are, but sai"
+  },
+  {
+    "source": "thn",
+    "title": "Google Releases Chrome Update to Patch Actively Exploited V8 Zero-Day",
+    "desc": "Google on Thursday released security updates to patch 12 vulnerabilities, including one that has come under active exploitation in the wild.\n\nThe high-severity vulnerability, tracked as CVE-2026-85046 (CVSS score: 8.8), has been described as a type confusion bug in V8, Chrome's JavaScript and WebAss",
+    "url": "https://thehackernews.com/2026/09/google-releases-chrome-update-to-patch.html",
+    "date": "2026-09-04T12:48:47",
+    "title_ko": "Google Releases Chrome Update to Patch Actively Exploited V8 Zero-Day",
+    "desc_ko": "Google on Thursday released security updates to patch 12 vulnerabilities, including one that has come under active exploitation in the wild.\n\nThe high-severity vulnerability, tracked as CVE-2026-85046 (CVSS score: 8.8), has been described as a type confusion bug in V8, Chrome's JavaScript and WebAss"
+  },
+  {
+    "source": "thn",
+    "title": "GPT-6 Astra Scores 100% on ExploitBench as OpenAI Blocks PoC Exploit Requests",
+    "desc": "OpenAI on Thursday officially unveiled GPT‑6 Astra, which it described as the \"world's most intelligent and aligned model.\"\n\nThe development comes days after the artificial intelligence (AI) company said the model had reached the \"Critical\" cybersecurity capability threshold under its Preparedness F",
+    "url": "https://thehackernews.com/2026/09/gpt-6-astra-scores-100-on-exploitbench.html",
+    "date": "2026-09-04T12:17:52",
+    "title_ko": "GPT-6 Astra Scores 100% on ExploitBench as OpenAI Blocks PoC Exploit Requests",
+    "desc_ko": "OpenAI on Thursday officially unveiled GPT‑6 Astra, which it described as the \"world's most intelligent and aligned model.\"\n\nThe development comes days after the artificial intelligence (AI) company said the model had reached the \"Critical\" cybersecurity capability threshold under its Preparedness F"
+  },
+  {
+    "source": "thn",
     "title": "ThreatsDay: CEO Phishing Kits, 5K Dropbox Account Hacks, OAuth Traps + 17 More Stories",
     "desc": "The worst part is how normal these attacks look. A call from IT. A shared file. A trusted app. A simple request to click “Allow.” Why break in when someone might open the door?\n\nThat idea runs through this edition. Attackers use real tools, fake login pages, old account links, and software guides th",
     "url": "https://thehackernews.com/2026/09/threatsday-ceo-phishing-kits-5k-dropbox.html",
@@ -74,11 +110,11 @@
   {
     "source": "thn",
     "title": "Researcher Releases FalconFlank PoC Showing Privilege Escalation in CrowdStrike Falcon",
-    "desc": "The security researcher known as Chaotic Eclipse (aka INFINITE NIGHTMARE, MSNightmare, and Nightmare-Eclipse) has dropped a new zero-day dubbed FalconFlank, a privilege escalation flaw impacting Crowdstrike Falcon.\n\n\"FalconFlank is a 0day privilege escalation that abuses the office malicious macros ",
+    "desc": "The security researcher known as Chaotic Eclipse (aka INFINITE NIGHTMARE, MSNightmare, and Nightmare-Eclipse) has dropped a new zero-day dubbed FalconFlank, a proof-of-concept (PoC) for a privilege escalation flaw impacting Crowdstrike Falcon.\n\n\"FalconFlank is a 0-day privilege escalation that abuse",
     "url": "https://thehackernews.com/2026/09/researcher-releases-falconflank-poc.html",
     "date": "2026-09-03T11:56:59",
     "title_ko": "Researcher Releases FalconFlank PoC Showing Privilege Escalation in CrowdStrike Falcon",
-    "desc_ko": "The security researcher known as Chaotic Eclipse (aka INFINITE NIGHTMARE, MSNightmare, and Nightmare-Eclipse) has dropped a new zero-day dubbed FalconFlank, a privilege escalation flaw impacting Crowdstrike Falcon.\n\n\"FalconFlank is a 0day privilege escalation that abuses the office malicious macros "
+    "desc_ko": "The security researcher known as Chaotic Eclipse (aka INFINITE NIGHTMARE, MSNightmare, and Nightmare-Eclipse) has dropped a new zero-day dubbed FalconFlank, a proof-of-concept (PoC) for a privilege escalation flaw impacting Crowdstrike Falcon.\n\n\"FalconFlank is a 0-day privilege escalation that abuse"
   },
   {
     "source": "thn",
@@ -412,41 +448,5 @@
     "date": "2026-08-28T20:57:26",
     "title_ko": "19 Chrome and Edge Extensions Found With Wallet-Stealing and Crypto-Draining Code",
     "desc_ko": "Cybersecurity researchers have discovered a cluster of 18 Google Chrome and one Microsoft Edge extensions that were published over the last six months and harbored wallet secret stealing and cryptocurrency draining capabilities.\n\n\nThe extensions, per Socket security researcher Karlo Zanki, share sim"
-  },
-  {
-    "source": "thn",
-    "title": "Two Unitree G1 EDU Humanoid Robot Flaws Enable Root RCE, One Starts Over Bluetooth",
-    "desc": "Security researcher Olivier Laflamme has disclosed two independent root remote code execution (RCE) chains affecting the Unitree G1 EDU, including a Bluetooth Low Energy (BLE) path that can reach root on the robot's Locomotion PC.\n\nThe flaws are tracked as&nbsp;CVE-2026-76639&nbsp;and&nbsp;CVE-2026-",
-    "url": "https://thehackernews.com/2026/08/two-unitree-g1-edu-humanoid-robot-flaws.html",
-    "date": "2026-08-28T17:37:24",
-    "title_ko": "Two Unitree G1 EDU Humanoid Robot Flaws Enable Root RCE, One Starts Over Bluetooth",
-    "desc_ko": "Security researcher Olivier Laflamme has disclosed two independent root remote code execution (RCE) chains affecting the Unitree G1 EDU, including a Bluetooth Low Energy (BLE) path that can reach root on the robot's Locomotion PC.\n\nThe flaws are tracked as&nbsp;CVE-2026-76639&nbsp;and&nbsp;CVE-2026-"
-  },
-  {
-    "source": "thn",
-    "title": "Key Reasons Why Identity Fabric Matters in 2026",
-    "desc": "An Identity Fabric knits fragmented identity systems into a coherent layer that observes how identities behave across applications, APIs, and infrastructure. As enterprise access spans more cloud services and automated workloads, identity security depends less on static configuration and more on run",
-    "url": "https://thehackernews.com/2026/08/key-reasons-why-identity-fabric-matters.html",
-    "date": "2026-08-28T17:00:00",
-    "title_ko": "Key Reasons Why Identity Fabric Matters in 2026",
-    "desc_ko": "An Identity Fabric knits fragmented identity systems into a coherent layer that observes how identities behave across applications, APIs, and infrastructure. As enterprise access spans more cloud services and automated workloads, identity security depends less on static configuration and more on run"
-  },
-  {
-    "source": "thn",
-    "title": "Three CVSS 10.0 ServiceNow Flaws Could Let Unauthenticated Attackers Execute Code and SQL",
-    "desc": "ServiceNow has released patches for four security flaws impacting the ServiceNow AI Platform, three of them rated 10.0 on the CVSS scoring system and exploitable, in certain circumstances, by an unauthenticated attacker.\n\nThe company said it deployed a security update to hosted instances and provide",
-    "url": "https://thehackernews.com/2026/08/three-cvss-100-servicenow-flaws-could.html",
-    "date": "2026-08-28T16:50:32",
-    "title_ko": "Three CVSS 10.0 ServiceNow Flaws Could Let Unauthenticated Attackers Execute Code and SQL",
-    "desc_ko": "ServiceNow has released patches for four security flaws impacting the ServiceNow AI Platform, three of them rated 10.0 on the CVSS scoring system and exploitable, in certain circumstances, by an unauthenticated attacker.\n\nThe company said it deployed a security update to hosted instances and provide"
-  },
-  {
-    "source": "thn",
-    "title": "China-Made ZBT Routers Ship With Two Implants Giving Unauthenticated Attackers Root Access",
-    "desc": "VulnCheck has disclosed two previously undocumented factory implants in firmware for routers built by Shenzhen Zhibotong Electronics (ZBT), each of which gives an unauthenticated remote attacker the ability to run commands as root on affected devices.\n\nThe implants, named SPEAKINGSTONE and DARKLANTE",
-    "url": "https://thehackernews.com/2026/08/china-made-zbt-routers-ship-with-two.html",
-    "date": "2026-08-28T16:28:29",
-    "title_ko": "China-Made ZBT Routers Ship With Two Implants Giving Unauthenticated Attackers Root Access",
-    "desc_ko": "VulnCheck has disclosed two previously undocumented factory implants in firmware for routers built by Shenzhen Zhibotong Electronics (ZBT), each of which gives an unauthenticated remote attacker the ability to run commands as root on affected devices.\n\nThe implants, named SPEAKINGSTONE and DARKLANTE"
   }
 ]
