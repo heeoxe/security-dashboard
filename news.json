@@ -1,6 +1,33 @@
 [
   {
     "source": "thn",
+    "title": "Phishing Campaign Sends Millions of Emails Using Invisible Unicode to Evade Filters",
+    "desc": "Microsoft is alerting of a \"high-volume phishing campaign\" that's using invisible Unicode tag characters to bypass email filters.\n\n\"Instead of using these characters to hide instructions from people while exposing them to AI models, the attacker used them to split financial lure words such as 'fundi",
+    "url": "https://thehackernews.com/2026/09/phishing-campaign-sends-millions-of.html",
+    "date": "2026-09-04T21:27:15",
+    "title_ko": "Phishing Campaign Sends Millions of Emails Using Invisible Unicode to Evade Filters",
+    "desc_ko": "Microsoft is alerting of a \"high-volume phishing campaign\" that's using invisible Unicode tag characters to bypass email filters.\n\n\"Instead of using these characters to hide instructions from people while exposing them to AI models, the attacker used them to split financial lure words such as 'fundi"
+  },
+  {
+    "source": "thn",
+    "title": "PostgreSQL Fixes 12-Year-Old Logical Decoding Flaw Enabling Replication-Role Code Execution",
+    "desc": "PostgreSQL has released updates to address a security flaw that allows an account with the REPLICATION attribute to run arbitrary code as the operating-system user running the database server.\n\nThe flaw, tracked as CVE-2026-6471 (CVSS score: 7.2), has been present since logical decoding was introduc",
+    "url": "https://thehackernews.com/2026/09/postgresql-fixes-12-year-old-logical.html",
+    "date": "2026-09-04T20:50:19",
+    "title_ko": "PostgreSQL Fixes 12-Year-Old Logical Decoding Flaw Enabling Replication-Role Code Execution",
+    "desc_ko": "PostgreSQL has released updates to address a security flaw that allows an account with the REPLICATION attribute to run arbitrary code as the operating-system user running the database server.\n\nThe flaw, tracked as CVE-2026-6471 (CVSS score: 7.2), has been present since logical decoding was introduc"
+  },
+  {
+    "source": "thn",
+    "title": "New Ted Backdoor Hides Inside Victims' Own HAProxy Builds to Intercept Web Traffic",
+    "desc": "A previously undocumented Linux toolkit has been found compiled directly into the trojanized HAProxy load balancers of two South Korean organizations, where it intercepted web traffic and served altered pages to selected visitors.\n\nThe attackers named the implant ted in debug strings left in the bin",
+    "url": "https://thehackernews.com/2026/09/new-ted-backdoor-hides-inside-victims.html",
+    "date": "2026-09-04T20:21:13",
+    "title_ko": "New Ted Backdoor Hides Inside Victims' Own HAProxy Builds to Intercept Web Traffic",
+    "desc_ko": "A previously undocumented Linux toolkit has been found compiled directly into the trojanized HAProxy load balancers of two South Korean organizations, where it intercepted web traffic and served altered pages to selected visitors.\n\nThe attackers named the implant ted in debug strings left in the bin"
+  },
+  {
+    "source": "thn",
     "title": "Over 440,000 Exploit Attempts Target Super Forms and Elementor Pro RCE Flaws",
     "desc": "Threat actors are exploiting two critical security flaws in WordPress plugins Super Forms and Elementor Pro, according to findings from Wordfence.\n\nThe vulnerabilities in question are -\n\n\n  CVE-2026-14894 (CVSS score: 9.8) - A missing file type validation vulnerability in Super Forms – Drag &amp; Dr",
     "url": "https://thehackernews.com/2026/09/over-440000-exploit-attempts-target.html",
@@ -421,32 +448,5 @@
     "date": "2026-08-28T22:42:15",
     "title_ko": "Attackers Chain Two PaperCut Flaws to Execute Code Without Authentication",
     "desc_ko": "Malicious actors are exploiting a newly patched security flaw in PaperCut NG and MF to execute arbitrary code on susceptible instances, as the company released a fresh emergency fix with additional hardening.\n\n\"This vulnerability gives an unauthenticated attacker remote control over PaperCut's trust"
-  },
-  {
-    "source": "thn",
-    "title": "Android 17 Adds OS-Wide ECH to Hide Website Visits From Network Providers",
-    "desc": "Google on Thursday announced new network security protections in Android 17 to bolster connection privacy, address cellular vulnerabilities, and safeguard the privacy of users' home networks.\n\nTopping the list is support for Encrypted Client Hello (ECH), a privacy standard that prevents networks fro",
-    "url": "https://thehackernews.com/2026/08/android-17-adds-os-wide-ech-to-hide.html",
-    "date": "2026-08-28T21:50:46",
-    "title_ko": "Android 17 Adds OS-Wide ECH to Hide Website Visits From Network Providers",
-    "desc_ko": "Google on Thursday announced new network security protections in Android 17 to bolster connection privacy, address cellular vulnerabilities, and safeguard the privacy of users' home networks.\n\nTopping the list is support for Encrypted Client Hello (ECH), a privacy standard that prevents networks fro"
-  },
-  {
-    "source": "thn",
-    "title": "ownCloud Flaw Exploited to Steal Nuclear Records From Philippine Research Body",
-    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added a critical security flaw impacting ownCloud to its Known Exploited Vulnerabilities (KEV) catalog following reports that a Chinese-speaking threat actor weaponized the vulnerability to target a nuclear research body in",
-    "url": "https://thehackernews.com/2026/08/snowflake-github-actions-flaw-lets.html",
-    "date": "2026-08-28T21:26:55",
-    "title_ko": "ownCloud Flaw Exploited to Steal Nuclear Records From Philippine Research Body",
-    "desc_ko": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added a critical security flaw impacting ownCloud to its Known Exploited Vulnerabilities (KEV) catalog following reports that a Chinese-speaking threat actor weaponized the vulnerability to target a nuclear research body in"
-  },
-  {
-    "source": "thn",
-    "title": "19 Chrome and Edge Extensions Found With Wallet-Stealing and Crypto-Draining Code",
-    "desc": "Cybersecurity researchers have discovered a cluster of 18 Google Chrome and one Microsoft Edge extensions that were published over the last six months and harbored wallet secret stealing and cryptocurrency draining capabilities.\n\n\nThe extensions, per Socket security researcher Karlo Zanki, share sim",
-    "url": "https://thehackernews.com/2026/08/19-chrome-and-edge-extensions-found.html",
-    "date": "2026-08-28T20:57:26",
-    "title_ko": "19 Chrome and Edge Extensions Found With Wallet-Stealing and Crypto-Draining Code",
-    "desc_ko": "Cybersecurity researchers have discovered a cluster of 18 Google Chrome and one Microsoft Edge extensions that were published over the last six months and harbored wallet secret stealing and cryptocurrency draining capabilities.\n\n\nThe extensions, per Socket security researcher Karlo Zanki, share sim"
   }
 ]
