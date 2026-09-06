@@ -1,6 +1,24 @@
 [
   {
     "source": "thn",
+    "title": "Attackers Hijack MikroTik Routers Through Internet-Exposed SSH Without Authentication",
+    "desc": "Attackers are exploiting MikroTik routers with their Secure Shell (SSH) remote-access service, which is reachable from the internet, to gain full administrative control without authentication, according to&nbsp;CERT Polska's attack warning, published on September 5.\n\nSuccessful attacks date to at le",
+    "url": "https://thehackernews.com/2026/09/attackers-hijack-mikrotik-routers.html",
+    "date": "2026-09-06T15:02:38",
+    "title_ko": "Attackers Hijack MikroTik Routers Through Internet-Exposed SSH Without Authentication",
+    "desc_ko": "Attackers are exploiting MikroTik routers with their Secure Shell (SSH) remote-access service, which is reachable from the internet, to gain full administrative control without authentication, according to&nbsp;CERT Polska's attack warning, published on September 5.\n\nSuccessful attacks date to at le"
+  },
+  {
+    "source": "thn",
+    "title": "Four REVSTEALER-Linked Modules Disable Windows Update and Defender to Run a Crypto Miner",
+    "desc": "Elastic Security Labs has documented four previously unreported programs associated with REVSTEALER, an emerging Windows information stealer, that remain on an infected machine after the stealer deletes itself.\n\nOne of them switches off Windows Update and Microsoft Defender before running a cryptocu",
+    "url": "https://thehackernews.com/2026/09/four-revstealer-linked-modules-disable.html",
+    "date": "2026-09-06T14:04:20",
+    "title_ko": "Four REVSTEALER-Linked Modules Disable Windows Update and Defender to Run a Crypto Miner",
+    "desc_ko": "Elastic Security Labs has documented four previously unreported programs associated with REVSTEALER, an emerging Windows information stealer, that remain on an infected machine after the stealer deletes itself.\n\nOne of them switches off Windows Update and Microsoft Defender before running a cryptocu"
+  },
+  {
+    "source": "thn",
     "title": "Unpatched Magento and Adobe Commerce Zero-Day Exploited to Backdoor Online Stores",
     "desc": "Attackers are exploiting a new unpatched vulnerability in Magento Open Source and Adobe Commerce that lets them run malicious code on an online store's server without logging in, Dutch e-commerce security company Sansec said in an&nbsp;advisory published on September 5.\n\nSansec, which discovered the",
     "url": "https://thehackernews.com/2026/09/unpatched-magento-and-adobe-commerce.html",
@@ -430,23 +448,5 @@
     "date": "2026-08-31T17:17:24",
     "title_ko": "Aurora Ransomware Operators Use Cursor AI in Attacks Against 10 Targets",
     "desc_ko": "Threat actors associated with Aurora (aka Aur0ra) ransomware have been observed using SpaceX's artificial intelligence (AI)-powered coding assistant Cursor to break into target networks, according to findings from CloudSEK and Gambit Security.\n\nThe two independent analyses are based on exposed infra"
-  },
-  {
-    "source": "thn",
-    "title": "Securing Claude Code: The New Compliance API, Local Visibility, and Identity Governance",
-    "desc": "Claude Code reads files, runs shell commands, invokes MCP tools, and acts through the credentials available on a developer’s machine. Anthropic’s new Compliance API endpoints give security teams their clearest view yet into that activity. They also expose a larger problem: activity logs alone cannot",
-    "url": "https://thehackernews.com/2026/08/securing-claude-code-new-compliance-api.html",
-    "date": "2026-08-31T17:01:47",
-    "title_ko": "Securing Claude Code: The New Compliance API, Local Visibility, and Identity Governance",
-    "desc_ko": "Claude Code reads files, runs shell commands, invokes MCP tools, and acts through the credentials available on a developer’s machine. Anthropic’s new Compliance API endpoints give security teams their clearest view yet into that activity. They also expose a larger problem: activity logs alone cannot"
-  },
-  {
-    "source": "thn",
-    "title": "China-Linked Fire Ant Hijacks Cisco Routers to Steal Credentials and Blind Security Logs",
-    "desc": "A China-nexus cyber espionage actor tracked as Fire Ant has expanded a long-running campaign beyond VMware hypervisors to compromise Cisco IOS XR routers, Terminal Access Controller Access-Control System (TACACS) servers, and Linux management hosts used to route, authenticate, and manage high-value ",
-    "url": "https://thehackernews.com/2026/08/china-linked-fire-ant-hijacks-cisco.html",
-    "date": "2026-08-31T14:34:55",
-    "title_ko": "China-Linked Fire Ant Hijacks Cisco Routers to Steal Credentials and Blind Security Logs",
-    "desc_ko": "A China-nexus cyber espionage actor tracked as Fire Ant has expanded a long-running campaign beyond VMware hypervisors to compromise Cisco IOS XR routers, Terminal Access Controller Access-Control System (TACACS) servers, and Linux management hosts used to route, authenticate, and manage high-value "
   }
 ]
