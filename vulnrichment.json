@@ -1,5 +1,893 @@
 [
   {
+    "cve": "CVE-2026-13201",
+    "title": "Kubevirt: virt-handler-rhel9: kubevirt: safepath symlink following in virt-handler enables notify socket hijacking and node-level vm disruption",
+    "desc": "A flaw was found in KubeVirt's safepath package used by virt-handler. The OpenAtNoFollow function uses O_PATH|O_NOFOLLOW to obtain a file descriptor to a path leaf, but downstream operations resolve the path via /proc/self/fd/N using link-following syscalls. When the leaf is a symlink, the kernel dereferences it, defeating the intended no-follow protection. An attacker with access to a virt-launch",
+    "cvss": 7.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-61"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.13"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.15"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.16"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.17"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-24",
+    "updated": "2026-09-06",
+    "url": "https://access.redhat.com/errata/RHSA-2026:51031",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-11831",
+    "title": "Npm-serialize-javascript: cross-site scripting (xss) in serialize-javascript",
+    "desc": "A flaw was found in npm-serialize-javascript. The vulnerability occurs because the serialize-javascript module does not properly sanitize certain inputs, such as regex or other JavaScript object types, allowing an attacker to inject malicious code. This code could be executed when deserialized by a web browser, causing Cross-site scripting (XSS) attacks. This issue is critical in environments wher",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Advanced Cluster Security 4.4"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Advanced Cluster Security 4.5"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ceph Storage 7.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ceph Storage 8.1"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-02-10",
+    "updated": "2026-09-06",
+    "url": "https://access.redhat.com/errata/RHBA-2025:0304",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-2786",
+    "title": "Tempo-operator: serviceaccount token exposure leading to token and subject access reviews in openshift tempo operator",
+    "desc": "A flaw was found in Tempo Operator, where it creates a ServiceAccount, ClusterRole, and ClusterRoleBinding when a user deploys a TempoStack or TempoMonolithic instance. This flaw allows a user with full access to their namespace to extract the ServiceAccount token and use it to submit TokenReview and SubjectAccessReview requests, potentially revealing information about other users' permissions. Wh",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-200"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3.5.3"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3.5.3"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-04-02",
+    "updated": "2026-09-06",
+    "url": "https://access.redhat.com/errata/RHSA-2025:3607",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-2842",
+    "title": "Tempo-operator: tempo operator token exposition lead to read sensitive data",
+    "desc": "A flaw was found in the Tempo Operator. When the Jaeger UI Monitor Tab functionality is enabled in a Tempo instance managed by the Tempo Operator, the Operator creates a ClusterRoleBinding for the Service Account of the Tempo instance to grant the cluster-monitoring-view ClusterRole.\nThis can be exploited if a user has 'create' permissions on TempoStack and 'get' permissions on Secret in a namespa",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-200"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3.5.3"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3.5.3"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift distributed tracing 3"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-04-02",
+    "updated": "2026-09-06",
+    "url": "https://access.redhat.com/errata/RHSA-2025:3607",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-5278",
+    "title": "Coreutils: heap buffer under-read in gnu coreutils sort via key specification",
+    "desc": "A flaw was found in GNU Coreutils. The sort utility's begfield() function is vulnerable to a heap buffer under-read. The program may access memory outside the allocated buffer if a user runs a crafted command using the traditional key format. A malicious input could lead to a crash or leak sensitive data.",
+    "cvss": 4.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-121"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Cost Management 4"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Discovery 2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-05-27",
+    "updated": "2026-09-06",
+    "url": "https://access.redhat.com/errata/RHSA-2026:28911",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-5318",
+    "title": "Libssh: out-of-bounds read in sftp_handle()",
+    "desc": "A flaw was found in the libssh library in versions less than 0.11.2. An out-of-bounds read can be triggered in the sftp_handle function due to an incorrect comparison check that permits the function to access memory beyond the valid handle list and to return an invalid pointer, which is used in further processing. This vulnerability allows an authenticated remote attacker to potentially read unint",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-125"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-06-24",
+    "updated": "2026-09-06",
+    "url": "https://access.redhat.com/errata/RHSA-2025:18231",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-13622",
+    "title": "Kubevirt: virt-handler-rhel9: kubevirt: virt-handler migration proxy follows symlinks allowing container escape to host",
+    "desc": "A symlink following vulnerability was found in KubeVirt's virt-handler migration proxy. During live migration, virt-handler dials Unix sockets inside the target virt-launcher pod via /proc/<pid>/root/ paths using net.Dial() without symlink protection. These socket paths reside in qemu-owned directories writable by the virt-launcher user. An attacker with namespace edit and pods/exec permissions ca",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.12"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.13"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.15"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.16"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-12",
+    "updated": "2026-09-06",
+    "url": "https://access.redhat.com/errata/RHEA-2026:53670",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-17527",
+    "title": "Virt-cdi-operator: containerized-data-importer: cdi.kubevirt.io:view aggregated clusterrole grants create on datavolumes/source, allowing unauthorized pvc clone",
+    "desc": "In containerized-data-importer (CDI), the aggregated cdi.kubevirt.io:view ClusterRole, intended to provide read-only access to CDI resources, includes a rule granting create on the datavolumes/source subresource. CDI's DataVolume clone authorization accepts this permission as sufficient to authorize cloning the contents of any PVC the caller can name, without requiring write access to the source n",
+    "cvss": 7.7,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-639"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.16"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.18"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.19"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.20"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-27",
+    "updated": "2026-09-06",
+    "url": "https://access.redhat.com/errata/RHSA-2026:59062",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-49509",
+    "title": "Out-of-bounds read vulnerability in Samsung Opensource rLottie allows Overread Buffers.\n\nThis issue affects rLottie: 256",
+    "desc": "Out-of-bounds read vulnerability in Samsung Opensource rLottie allows Overread Buffers.\n\nThis issue affects rLottie: 25648aef19187b3f87f4d9420b8d761453ad4630.",
+    "cvss": 4.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-125"
+    ],
+    "affected": [
+      {
+        "vendor": "Samsung Opensource",
+        "product": "rLottie"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-03",
+    "updated": "2026-09-06",
+    "url": "https://github.com/Samsung/rlottie/pull/604",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-9804",
+    "title": "Kubevirt: kubevirt: vmexport directory symlink escape enables exporter pod file read",
+    "desc": "A flaw was found in KubeVirt's virt-exportserver component. An attacker with specific namespace-level access can exploit a path traversal vulnerability in the VMExport directory endpoint. By placing a symbolic link (symlink) within an exported filesystem Persistent Volume Claim (PVC) that points outside its designated mount root, the attacker can read arbitrary files from the exporter pod's filesy",
+    "cvss": 7.7,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-59"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.18"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.19"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.20"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.21"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-28",
+    "updated": "2026-09-06",
+    "url": "https://access.redhat.com/errata/RHSA-2026:27903",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-4373",
+    "title": "Glib: buffer underflow on glib through glib/gstring.c via function g_string_insert_unichar",
+    "desc": "A flaw was found in GLib, which is vulnerable to an integer overflow in the g_string_insert_unichar() function. When the position at which to insert the character is large, the position will overflow, leading to a buffer underwrite.",
+    "cvss": 4.8,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-124"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.2 Advanced Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-05-06",
+    "updated": "2026-09-06",
+    "url": "https://access.redhat.com/errata/RHSA-2025:10855",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-6020",
+    "title": "Linux-pam: linux-pam directory traversal",
+    "desc": "A flaw was found in linux-pam. The module pam_namespace may use access user-controlled paths without proper protection, allowing local users to elevate their privileges to root via multiple symlink attacks and race conditions.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-06-17",
+    "updated": "2026-09-06",
+    "url": "https://access.redhat.com/errata/RHSA-2025:10024",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-4878",
+    "title": "Libcap: libcap: privilege escalation via toctou race condition in cap_set_file()",
+    "desc": "A flaw was found in libcap. A local unprivileged user can exploit a Time-of-check-to-time-of-use (TOCTOU) race condition in the `cap_set_file()` function. This allows an attacker with write access to a parent directory to redirect file capability updates to an attacker-controlled file. By doing so, capabilities can be injected into or stripped from unintended executables, leading to privilege esca",
+    "cvss": 6.7,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-367"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-04-09",
+    "updated": "2026-09-06",
+    "url": "https://access.redhat.com/errata/RHSA-2026:12423",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-54099",
+    "title": "Windows-machine-config-operator: windows-machine-config-operator: wicd csr extra-organization allows privilege escalation to system:masters",
+    "desc": "A flaw was found in the Windows Machine Config Operator (WMCO) for Red Hat OpenShift Container Platform. The WICD CSR auto-approver validates that a Certificate Signing Request contains the organization system:wicd-nodes but does not reject additional organization values such as system:masters. A compromised Windows worker node that holds WICD credentials can submit a CSR that is auto-approved and",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-269"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift for Windows Containers 10.21"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift for Windows Containers 10.22"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-22",
+    "updated": "2026-09-06",
+    "url": "https://access.redhat.com/errata/RHSA-2026:47173",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-54100",
+    "title": "Windows-machine-config-operator: windows-machine-config-operator: ssh host key not verified enables credential theft",
+    "desc": "A flaw was found in the Windows Machine Config Operator (WMCO) for Red Hat OpenShift Container Platform. WMCO establishes SSH connections to Windows worker nodes without verifying the remote server host key. An adjacent-network attacker who can intercept or redirect WMCO's SSH session can capture WICD and kubelet bootstrap credentials transferred during node configuration, enabling compromise of W",
+    "cvss": 8.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-295"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift for Windows Containers 10.21"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift for Windows Containers 10.22"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-22",
+    "updated": "2026-09-06",
+    "url": "https://access.redhat.com/errata/RHSA-2026:47173",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-16242",
+    "title": "Hypershift: konnectivity proxy-server accepts agent connections without validating client certificates",
+    "desc": "A flaw was found in the Konnectivity proxy-server configuration for hosted control planes. The agent-facing listener was started without --cluster-ca-cert (and without token-based agent authentication), so client certificates were not validated. A remote attacker who can reach the Konnectivity cluster endpoint could connect as an unauthenticated agent, join the routing pool, and potentially proxy,",
+    "cvss": 9.4,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-306"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.11"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.6"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-20",
+    "updated": "2026-09-06",
+    "url": "https://access.redhat.com/errata/RHSA-2026:46885",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-17107",
+    "title": "Cluster-proxy: impersonation-header injection grants cluster-admin on every managed cluster",
+    "desc": "A flaw was found in the cluster-proxy service-proxy component used in Red Hat Advanced Cluster Management for Kubernetes (RHACM) and multicluster-engine (MCE). The service-proxy appends impersonation group headers to proxied requests without first removing caller-supplied values, and the spoke ServiceAccount holds unrestricted impersonation permissions. An authenticated hub principal can inject an",
+    "cvss": 8.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-441"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.11"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.6"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-24",
+    "updated": "2026-09-06",
+    "url": "https://access.redhat.com/errata/RHSA-2026:46885",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-4740",
+    "title": "Rhacm: open cluster management (ocm): cross-cluster privilege escalation via improper kubernetes client certificate renewal validation",
+    "desc": "A flaw was found in Open Cluster Management (OCM), the technology underlying Red Hat Advanced Cluster Management (ACM). Improper validation of Kubernetes client certificate renewal allows a managed cluster administrator to forge a client certificate that can be approved by the OCM controller. This enables cross-cluster privilege escalation and may allow an attacker to gain control over other manag",
+    "cvss": 8.2,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-295"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.11"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.9"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-04-07",
+    "updated": "2026-09-06",
+    "url": "https://access.redhat.com/errata/RHSA-2026:11414",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-71471",
+    "title": "Acm-search-v2-rhel9: search-v2-operator: hub search cr collector.imageoverride propagated to every spoke as arbitrary container image",
+    "desc": "A flaw was found in acm-search-v2-rhel9. An attacker with administrative privileges on the hub cluster, specifically with patch access to the Search Custom Resource (CR), could exploit a vulnerability in the `Collector.ImageOverride` field. This allows the attacker to deploy an arbitrary container image across all managed clusters. The consequence is remote code execution (RCE), enabling the attac",
+    "cvss": 9,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-829"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Advanced Cluster Management for Kubernetes 2.11"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Advanced Cluster Management for Kubernetes 2.13"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Advanced Cluster Management for Kubernetes 2.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Advanced Cluster Management for Kubernetes 2.15"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Advanced Cluster Management for Kubernetes 2.16"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-12",
+    "updated": "2026-09-06",
+    "url": "https://access.redhat.com/errata/RHSA-2026:60386",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-75569",
+    "title": "Mce-operator-bundle: all github actions pinned by mutable tag, not commit sha",
+    "desc": "A flaw was found in mce-operator-bundle. The build process fetches and executes scripts from a remote repository without performing integrity checks, such as commit pinning or signature verification. This allows a malicious actor with write access to the remote repository to inject and execute arbitrary code during the build. The consequence is a compromised build process, potentially leading to t",
+    "cvss": 7.7,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-1357"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.1"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.11"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "multicluster engine for Kubernetes 2.8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-19",
+    "updated": "2026-09-06",
+    "url": "https://access.redhat.com/errata/RHSA-2026:59634",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-1784",
+    "title": "Ose-cluster-ingress-operator: remote code execution through haproxy configuration injection",
+    "desc": "The Route OpenShift resource allows to define routes to make pods reachable at a subdomain through HAProxy. It was found that the checks performed on the spec.path YAML stanza in a Route document was insufficient and could allow a controlled injection of the HAProxy configuration.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-15"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.13"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.15"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.16"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.18"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-02",
+    "updated": "2026-09-06",
+    "url": "https://access.redhat.com/errata/RHSA-2026:23241",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-42965",
+    "title": "Openshift/router: openshift/router: cloud metadata ssrf via fqdn-typed endpointslice bypasses destination validation",
+    "desc": "A flaw was found in the OpenShift Router. A user with EndpointSlice write access can exploit this vulnerability by creating a Service backed by an FQDN (Fully Qualified Domain Name) EndpointSlice that resolves to a cloud metadata endpoint. This allows the router to proxy requests to the cloud metadata endpoint, leading to the disclosure of instance credentials and other sensitive metadata. This by",
+    "cvss": 7.7,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-918"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.19"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.2"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.21"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.22"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-29",
+    "updated": "2026-09-06",
+    "url": "https://access.redhat.com/errata/RHSA-2026:54583",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-46579",
+    "title": "Openshift/router: openshift/router: mtls client certificate spoofing via unstripped x-ssl-client headers on http frontend",
+    "desc": "A flaw was found in the OpenShift Router. When a Route has `insecureEdgeTerminationPolicy` set to Allow, the HTTP frontend does not remove `X-SSL-Client-*` headers from incoming requests. This allows an unauthenticated attacker to send plain HTTP requests with crafted `X-SSL-Client-*` headers. As a result, backends relying on these headers for mutual TLS (Transport Layer Security) authentication c",
+    "cvss": 7.4,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-287"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.12"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.13"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.15"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.16"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-29",
+    "updated": "2026-09-06",
+    "url": "https://access.redhat.com/errata/RHSA-2026:27009",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-49332",
+    "title": "Openshift/oauth-proxy: openshift/oauth-proxy: underscore header smuggling enables identity impersonation on wsgi/php upstreams",
+    "desc": "A flaw was found in openshift/oauth-proxy. The proxy sets authenticated identity headers using only dash-variant keys (X-Forwarded-User) but does not strip underscore-variant keys (X_Forwarded_User) from incoming requests. WSGI and PHP frameworks normalize both variants to the same variable, allowing an authenticated low-privilege user to smuggle a forged identity that may override the legitimate ",
+    "cvss": 8.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-436"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.12"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.13"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.15"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4.16"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-28",
+    "updated": "2026-09-06",
+    "url": "https://access.redhat.com/errata/RHSA-2026:50681",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2025-15693",
     "title": "JCH Optimize 4.2.1 - 5.0.0 - Admin+ Path Traversal",
     "desc": "The JCH Optimize WordPress plugin before 5.0.1 does not properly restrict a directory path provided to one of its administrative image-browsing features to within the site, allowing high-privilege users, administrators on single-site and sub-site administrators on multisite, to enumerate directories and file names outside the web root.",
@@ -560,26 +1448,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-84221",
-    "title": "Kirki 6.0.0 - 6.2.5 - Editor+ SQLi via Content Manager Field ID",
-    "desc": "The Kirki  WordPress plugin before 6.3.0 does not escape a user-supplied identifier before using it in a SQL query, allowing users with editor-level access and above to append arbitrary SQL and read the contents of the database, including user credentials.",
-    "cvss": 6.8,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Unknown",
-        "product": "Kirki"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-05",
-    "updated": "2026-09-06",
-    "url": "https://wpscan.com/vulnerability/6c34da62-46fb-4dd4-a433-bd3df4d9fcfd/",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-84225",
     "title": "Kirki 6.0.0 - 6.2.5 - Authenticated Collaboration Comment Status Modification via IDOR",
     "desc": "The Kirki  WordPress plugin before 6.3.0 does not check that a user is allowed to act on a collaboration comment before changing its state, allowing users whom an administrator has granted content-level access to the page builder to modify comments left by other users, including on pages they cannot themselves open.",
@@ -657,46 +1525,6 @@
     "published": "2026-09-05",
     "updated": "2026-09-06",
     "url": "https://wpscan.com/vulnerability/d8dea263-5676-4e3c-9ea4-36904e1ac4d3/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-84899",
-    "title": "VikWidgetsLoader < 1.12.0 - Contributor+ Stored XSS via Gutenberg Block class_suffix",
-    "desc": "The VikWidgetsLoader  WordPress plugin before 1.12.0 does not sanitise or escape a block attribute before outputting it inside an inline script, allowing users with the Contributor role to store arbitrary JavaScript that executes in the browser of any user viewing the affected post, including the administrator who reviews the pending submission.",
-    "cvss": 6.8,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Unknown",
-        "product": "VikWidgetsLoader"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-05",
-    "updated": "2026-09-06",
-    "url": "https://wpscan.com/vulnerability/4e0beb72-d73b-4802-894d-141aadbd8d4f/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-84901",
-    "title": "Eventin < 4.1.22 - Contributor+ Site Homepage Hijack and Event Taxonomy Manipulation via Missing Authorization",
-    "desc": "The Eventin  WordPress plugin before 4.1.22 does not properly check authorization on several of its event-management REST routes, allowing users with contributor-level access and above to change the site's front-page setting to an event they do not own and to create, edit and delete global event and speaker taxonomy terms they should not be able to manage.",
-    "cvss": 4.9,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Unknown",
-        "product": "Eventin"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-05",
-    "updated": "2026-09-06",
-    "url": "https://wpscan.com/vulnerability/b1906fd4-82ab-435f-bb07-e8f2db402029/",
     "source": "CISA Vulnrichment"
   },
   {
@@ -1128,41 +1956,63 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2025-5278",
-    "title": "Coreutils: heap buffer under-read in gnu coreutils sort via key specification",
-    "desc": "A flaw was found in GNU Coreutils. The sort utility's begfield() function is vulnerable to a heap buffer under-read. The program may access memory outside the allocated buffer if a user runs a crafted command using the traditional key format. A malicious input could lead to a crash or leak sensitive data.",
-    "cvss": 4.4,
+    "cve": "CVE-2026-84221",
+    "title": "Kirki 6.0.0 - 6.2.5 - Editor+ SQLi via Content Manager Field ID",
+    "desc": "The Kirki  WordPress plugin before 6.3.0 does not escape a user-supplied identifier before using it in a SQL query, allowing users with editor-level access and above to append arbitrary SQL and read the contents of the database, including user credentials.",
+    "cvss": 6.8,
     "severity": "MEDIUM",
-    "cwes": [
-      "CWE-121"
-    ],
+    "cwes": [],
     "affected": [
       {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Cost Management Metrics Operator 4"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Discovery 2"
+        "vendor": "Unknown",
+        "product": "Kirki"
       }
     ],
     "exploitation": "none",
     "isKev": false,
-    "published": "2025-05-27",
+    "published": "2026-09-05",
     "updated": "2026-09-05",
-    "url": "https://access.redhat.com/errata/RHSA-2026:28911",
+    "url": "https://wpscan.com/vulnerability/6c34da62-46fb-4dd4-a433-bd3df4d9fcfd/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-84899",
+    "title": "VikWidgetsLoader < 1.12.0 - Contributor+ Stored XSS via Gutenberg Block class_suffix",
+    "desc": "The VikWidgetsLoader  WordPress plugin before 1.12.0 does not sanitise or escape a block attribute before outputting it inside an inline script, allowing users with the Contributor role to store arbitrary JavaScript that executes in the browser of any user viewing the affected post, including the administrator who reviews the pending submission.",
+    "cvss": 6.8,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "VikWidgetsLoader"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-05",
+    "updated": "2026-09-05",
+    "url": "https://wpscan.com/vulnerability/4e0beb72-d73b-4802-894d-141aadbd8d4f/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-84901",
+    "title": "Eventin < 4.1.22 - Contributor+ Site Homepage Hijack and Event Taxonomy Manipulation via Missing Authorization",
+    "desc": "The Eventin  WordPress plugin before 4.1.22 does not properly check authorization on several of its event-management REST routes, allowing users with contributor-level access and above to change the site's front-page setting to an event they do not own and to create, edit and delete global event and speaker taxonomy terms they should not be able to manage.",
+    "cvss": 4.9,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Eventin"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-05",
+    "updated": "2026-09-05",
+    "url": "https://wpscan.com/vulnerability/b1906fd4-82ab-435f-bb07-e8f2db402029/",
     "source": "CISA Vulnrichment"
   },
   {
@@ -1239,44 +2089,6 @@
     "published": "2025-07-10",
     "updated": "2026-09-05",
     "url": "https://access.redhat.com/errata/RHBA-2025:12345",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-4878",
-    "title": "Libcap: libcap: privilege escalation via toctou race condition in cap_set_file()",
-    "desc": "A flaw was found in libcap. A local unprivileged user can exploit a Time-of-check-to-time-of-use (TOCTOU) race condition in the `cap_set_file()` function. This allows an attacker with write access to a parent directory to redirect file capability updates to an attacker-controlled file. By doing so, capabilities can be injected into or stripped from unintended executables, leading to privilege esca",
-    "cvss": 6.7,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-367"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-04-09",
-    "updated": "2026-09-05",
-    "url": "https://access.redhat.com/errata/RHSA-2026:12423",
     "source": "CISA Vulnrichment"
   },
   {
@@ -1704,120 +2516,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2025-2786",
-    "title": "Tempo-operator: serviceaccount token exposure leading to token and subject access reviews in openshift tempo operator",
-    "desc": "A flaw was found in Tempo Operator, where it creates a ServiceAccount, ClusterRole, and ClusterRoleBinding when a user deploys a TempoStack or TempoMonolithic instance. This flaw allows a user with full access to their namespace to extract the ServiceAccount token and use it to submit TokenReview and SubjectAccessReview requests, potentially revealing information about other users' permissions. Wh",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-200"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift distributed tracing 3.5.3"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift distributed tracing 3.5.3"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift distributed tracing 3"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift distributed tracing 3"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-04-02",
-    "updated": "2026-09-05",
-    "url": "https://access.redhat.com/errata/RHSA-2025:3607",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-2842",
-    "title": "Tempo-operator: tempo operator token exposition lead to read sensitive data",
-    "desc": "A flaw was found in the Tempo Operator. When the Jaeger UI Monitor Tab functionality is enabled in a Tempo instance managed by the Tempo Operator, the Operator creates a ClusterRoleBinding for the Service Account of the Tempo instance to grant the cluster-monitoring-view ClusterRole.\nThis can be exploited if a user has 'create' permissions on TempoStack and 'get' permissions on Secret in a namespa",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-200"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift distributed tracing 3.5.3"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift distributed tracing 3.5.3"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift distributed tracing 3"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift distributed tracing 3"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-04-02",
-    "updated": "2026-09-05",
-    "url": "https://access.redhat.com/errata/RHSA-2025:3607",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-13201",
-    "title": "Kubevirt: virt-handler-rhel9: kubevirt: safepath symlink following in virt-handler enables notify socket hijacking and node-level vm disruption",
-    "desc": "A flaw was found in KubeVirt's safepath package used by virt-handler. The OpenAtNoFollow function uses O_PATH|O_NOFOLLOW to obtain a file descriptor to a path leaf, but downstream operations resolve the path via /proc/self/fd/N using link-following syscalls. When the leaf is a symlink, the kernel dereferences it, defeating the intended no-follow protection. An attacker with access to a virt-launch",
-    "cvss": 7.3,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-61"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.13"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.14"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.15"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.16"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.17"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-24",
-    "updated": "2026-09-05",
-    "url": "https://access.redhat.com/errata/RHSA-2026:51031",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-64927",
     "title": "Multicloud-operators-channel: multicloud-operators-channel: cross-namespace secret and configmap mutation via spec.secretref.namespace confused deputy",
     "desc": "A flaw was found in the multicloud-operators-channel component. This vulnerability allows a user with specific permissions to manipulate how the system handles sensitive information, known as Secrets, across different parts of the system (namespaces). By exploiting this, an attacker can modify these Secrets in unauthorized areas. This could lead to unauthorized access to information or elevated pr",
@@ -2160,120 +2858,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2025-4373",
-    "title": "Glib: buffer underflow on glib through glib/gstring.c via function g_string_insert_unichar",
-    "desc": "A flaw was found in GLib, which is vulnerable to an integer overflow in the g_string_insert_unichar() function. When the position at which to insert the character is large, the position will overflow, leading to a buffer underwrite.",
-    "cvss": 4.8,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-124"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8.2 Advanced Update Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-05-06",
-    "updated": "2026-09-05",
-    "url": "https://access.redhat.com/errata/RHSA-2025:10855",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-5318",
-    "title": "Libssh: out-of-bounds read in sftp_handle()",
-    "desc": "A flaw was found in the libssh library in versions less than 0.11.2. An out-of-bounds read can be triggered in the sftp_handle function due to an incorrect comparison check that permits the function to access memory beyond the valid handle list and to return an invalid pointer, which is used in further processing. This vulnerability allows an authenticated remote attacker to potentially read unint",
-    "cvss": 5.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-125"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-06-24",
-    "updated": "2026-09-05",
-    "url": "https://access.redhat.com/errata/RHSA-2025:18231",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-13622",
-    "title": "Kubevirt: virt-handler-rhel9: kubevirt: virt-handler migration proxy follows symlinks allowing container escape to host",
-    "desc": "A symlink following vulnerability was found in KubeVirt's virt-handler migration proxy. During live migration, virt-handler dials Unix sockets inside the target virt-launcher pod via /proc/<pid>/root/ paths using net.Dial() without symlink protection. These socket paths reside in qemu-owned directories writable by the virt-launcher user. An attacker with namespace edit and pods/exec permissions ca",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-22"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.12"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.13"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.14"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.15"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Container Native Virtualization 4.16"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-09-05",
-    "url": "https://access.redhat.com/errata/RHEA-2026:53670",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-18874",
     "title": "Volsync-addon-controller: volsync-addon-controller: annotation values rendered into yaml via text/template without escaping allows yaml injection into subscription",
     "desc": "A flaw was found in volsync-addon-controller. This vulnerability allows an attacker to inject malicious YAML (Yet Another Markup Language) code into the OpenShift Lifecycle Manager (OLM) Subscription resource. This is due to improper escaping of annotation values when they are rendered into YAML. Successful exploitation could lead to unauthorized modification or control over OLM Subscription confi",
@@ -2312,112 +2896,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2025-6020",
-    "title": "Linux-pam: linux-pam directory traversal",
-    "desc": "A flaw was found in linux-pam. The module pam_namespace may use access user-controlled paths without proper protection, allowing local users to elevate their privileges to root via multiple symlink attacks and race conditions.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-22"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-06-17",
-    "updated": "2026-09-05",
-    "url": "https://access.redhat.com/errata/RHSA-2025:10024",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-54099",
-    "title": "Windows-machine-config-operator: windows-machine-config-operator: wicd csr extra-organization allows privilege escalation to system:masters",
-    "desc": "A flaw was found in the Windows Machine Config Operator (WMCO) for Red Hat OpenShift Container Platform. The WICD CSR auto-approver validates that a Certificate Signing Request contains the organization system:wicd-nodes but does not reject additional organization values such as system:masters. A compromised Windows worker node that holds WICD credentials can submit a CSR that is auto-approved and",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-269"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "OpenShift Windows Machine Config Operator 10.21"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift for Windows Containers 10.22"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-22",
-    "updated": "2026-09-05",
-    "url": "https://access.redhat.com/errata/RHSA-2026:47173",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-54100",
-    "title": "Windows-machine-config-operator: windows-machine-config-operator: ssh host key not verified enables credential theft",
-    "desc": "A flaw was found in the Windows Machine Config Operator (WMCO) for Red Hat OpenShift Container Platform. WMCO establishes SSH connections to Windows worker nodes without verifying the remote server host key. An adjacent-network attacker who can intercept or redirect WMCO's SSH session can capture WICD and kubelet bootstrap credentials transferred during node configuration, enabling compromise of W",
-    "cvss": 8.3,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-295"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "OpenShift Windows Machine Config Operator 10.21"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift for Windows Containers 10.22"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-22",
-    "updated": "2026-09-05",
-    "url": "https://access.redhat.com/errata/RHSA-2026:47173",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-10059",
     "title": "Cluster-curator-controller: cluster-curator-controller: namespace admin can escalate to cluster-wide curator authority via clustercurator serviceaccount token",
     "desc": "A flaw was found in the Multicluster Engine for Kubernetes ClusterCurator controller. A tenant administrator with namespace-scoped privileges can exploit this vulnerability by creating a namespaced ClusterCurator. This action inadvertently grants the tenant administrator the ability to mint a token for a ServiceAccount with cluster-wide administrative authority. This leads to a privilege escalatio",
@@ -2453,82 +2931,6 @@
     "published": "2026-08-05",
     "updated": "2026-09-05",
     "url": "https://access.redhat.com/errata/RHSA-2026:59556",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-16242",
-    "title": "Hypershift: konnectivity proxy-server accepts agent connections without validating client certificates",
-    "desc": "A flaw was found in the Konnectivity proxy-server configuration for hosted control planes. The agent-facing listener was started without --cluster-ca-cert (and without token-based agent authentication), so client certificates were not validated. A remote attacker who can reach the Konnectivity cluster endpoint could connect as an unauthenticated agent, join the routing pool, and potentially proxy,",
-    "cvss": 9.4,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-306"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.1"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.1"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.11"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.17"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.6"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-20",
-    "updated": "2026-09-05",
-    "url": "https://access.redhat.com/errata/RHSA-2026:46885",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-17107",
-    "title": "Cluster-proxy: impersonation-header injection grants cluster-admin on every managed cluster",
-    "desc": "A flaw was found in the cluster-proxy service-proxy component used in Red Hat Advanced Cluster Management for Kubernetes (RHACM) and multicluster-engine (MCE). The service-proxy appends impersonation group headers to proxied requests without first removing caller-supplied values, and the spoke ServiceAccount holds unrestricted impersonation permissions. An authenticated hub principal can inject an",
-    "cvss": 8.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-441"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.1"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.1"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.11"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.17"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.6"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-24",
-    "updated": "2026-09-05",
-    "url": "https://access.redhat.com/errata/RHSA-2026:46885",
     "source": "CISA Vulnrichment"
   },
   {
@@ -3026,44 +3428,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-71471",
-    "title": "Acm-search-v2-rhel9: search-v2-operator: hub search cr collector.imageoverride propagated to every spoke as arbitrary container image",
-    "desc": "A flaw was found in acm-search-v2-rhel9. An attacker with administrative privileges on the hub cluster, specifically with patch access to the Search Custom Resource (CR), could exploit a vulnerability in the `Collector.ImageOverride` field. This allows the attacker to deploy an arbitrary container image across all managed clusters. The consequence is remote code execution (RCE), enabling the attac",
-    "cvss": 9,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-829"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Advanced Cluster Management for Kubernetes 2.11"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Advanced Cluster Management for Kubernetes 2.13"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Advanced Cluster Management for Kubernetes 2.14"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Advanced Cluster Management for Kubernetes 2.15"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Advanced Cluster Management for Kubernetes 2.16"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-12",
-    "updated": "2026-09-05",
-    "url": "https://access.redhat.com/errata/RHSA-2026:60386",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-71472",
     "title": "Acm-search-v2-rhel9: search-v2-operator: shell-command and sql injection in postgresql-start.sh via cr-supplied work_mem",
     "desc": "A flaw was found in acm-search-v2-rhel9. This vulnerability allows an authenticated attacker, such as a hub administrator or a Search Custom Resource (CR) editor, to inject malicious shell commands or SQL statements. This occurs because the WORK_MEM string provided in the Search CR is not properly validated before being used in a bash script and an SQL query. Successful exploitation could lead to ",
@@ -3479,196 +3843,6 @@
     "published": "2026-08-05",
     "updated": "2026-09-05",
     "url": "https://access.redhat.com/errata/RHSA-2026:60386",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-4740",
-    "title": "Rhacm: open cluster management (ocm): cross-cluster privilege escalation via improper kubernetes client certificate renewal validation",
-    "desc": "A flaw was found in Open Cluster Management (OCM), the technology underlying Red Hat Advanced Cluster Management (ACM). Improper validation of Kubernetes client certificate renewal allows a managed cluster administrator to forge a client certificate that can be approved by the OCM controller. This enables cross-cluster privilege escalation and may allow an attacker to gain control over other manag",
-    "cvss": 8.2,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-295"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.1"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.11"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.6"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "multicluster engine for Kubernetes 2.9"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-04-07",
-    "updated": "2026-09-05",
-    "url": "https://access.redhat.com/errata/RHSA-2026:11414",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-1784",
-    "title": "Ose-cluster-ingress-operator: remote code execution through haproxy configuration injection",
-    "desc": "The Route OpenShift resource allows to define routes to make pods reachable at a subdomain through HAProxy. It was found that the checks performed on the spec.path YAML stanza in a Route document was insufficient and could allow a controlled injection of the HAProxy configuration.",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-15"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.13"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.14"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.15"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.16"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.18"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-02",
-    "updated": "2026-09-05",
-    "url": "https://access.redhat.com/errata/RHSA-2026:23241",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-42965",
-    "title": "Openshift/router: openshift/router: cloud metadata ssrf via fqdn-typed endpointslice bypasses destination validation",
-    "desc": "A flaw was found in the OpenShift Router. A user with EndpointSlice write access can exploit this vulnerability by creating a Service backed by an FQDN (Fully Qualified Domain Name) EndpointSlice that resolves to a cloud metadata endpoint. This allows the router to proxy requests to the cloud metadata endpoint, leading to the disclosure of instance credentials and other sensitive metadata. This by",
-    "cvss": 7.7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-918"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.19"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.2"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.21"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.22"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-05-29",
-    "updated": "2026-09-05",
-    "url": "https://access.redhat.com/errata/RHSA-2026:54583",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-46579",
-    "title": "Openshift/router: openshift/router: mtls client certificate spoofing via unstripped x-ssl-client headers on http frontend",
-    "desc": "A flaw was found in the OpenShift Router. When a Route has `insecureEdgeTerminationPolicy` set to Allow, the HTTP frontend does not remove `X-SSL-Client-*` headers from incoming requests. This allows an unauthenticated attacker to send plain HTTP requests with crafted `X-SSL-Client-*` headers. As a result, backends relying on these headers for mutual TLS (Transport Layer Security) authentication c",
-    "cvss": 7.4,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-287"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.12"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.13"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.14"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.15"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.16"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-05-29",
-    "updated": "2026-09-05",
-    "url": "https://access.redhat.com/errata/RHSA-2026:27009",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49332",
-    "title": "Openshift/oauth-proxy: openshift/oauth-proxy: underscore header smuggling enables identity impersonation on wsgi/php upstreams",
-    "desc": "A flaw was found in openshift/oauth-proxy. The proxy sets authenticated identity headers using only dash-variant keys (X-Forwarded-User) but does not strip underscore-variant keys (X_Forwarded_User) from incoming requests. WSGI and PHP frameworks normalize both variants to the same variable, allowing an authenticated low-privilege user to smuggle a forged identity that may override the legitimate ",
-    "cvss": 8.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-436"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.12"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.13"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.14"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.15"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Container Platform 4.16"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-28",
-    "updated": "2026-09-05",
-    "url": "https://access.redhat.com/errata/RHSA-2026:50681",
     "source": "CISA Vulnrichment"
   },
   {
@@ -4738,44 +4912,6 @@
     "published": "2026-09-02",
     "updated": "2026-09-04",
     "url": "https://www.amd.com/en/resources/product-security/bulletin/amd-sb-7009.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-11831",
-    "title": "Npm-serialize-javascript: cross-site scripting (xss) in serialize-javascript",
-    "desc": "A flaw was found in npm-serialize-javascript. The vulnerability occurs because the serialize-javascript module does not properly sanitize certain inputs, such as regex or other JavaScript object types, allowing an attacker to inject malicious code. This code could be executed when deserialized by a web browser, causing Cross-site scripting (XSS) attacks. This issue is critical in environments wher",
-    "cvss": 5.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Advanced Cluster Security 4.4"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Advanced Cluster Security 4.5"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ceph Storage 7.1"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ceph Storage 8.1"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-02-10",
-    "updated": "2026-09-04",
-    "url": "https://access.redhat.com/errata/RHBA-2025:0304",
     "source": "CISA Vulnrichment"
   },
   {
@@ -12574,28 +12710,6 @@
     "published": "2026-05-18",
     "updated": "2026-09-04",
     "url": "https://access.redhat.com/errata/RHSA-2026:13274",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49509",
-    "title": "Out-of-bounds read vulnerability in Samsung Opensource Escargot allows Overread Buffers.\n\nThis issue affects Escargot: 2",
-    "desc": "Out-of-bounds read vulnerability in Samsung Opensource Escargot allows Overread Buffers.\n\nThis issue affects Escargot: 25648aef19187b3f87f4d9420b8d761453ad4630.",
-    "cvss": 4.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-125"
-    ],
-    "affected": [
-      {
-        "vendor": "Samsung Opensource",
-        "product": "rLottie"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-03",
-    "updated": "2026-09-04",
-    "url": "https://github.com/Samsung/rlottie/pull/604",
     "source": "CISA Vulnrichment"
   },
   {
@@ -28881,74 +28995,6 @@
     "published": "2026-03-25",
     "updated": "2026-09-04",
     "url": "https://kb.isc.org/docs/cve-2026-1519",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-22029",
-    "title": "React Router vulnerable to XSS via Open Redirects",
-    "desc": "React Router is a router for React. In @remix-run/router version prior to 1.23.2 and react-router 7.0.0 through 7.11.0, React Router (and Remix v1/v2) SPA open navigation redirects originating from loaders or actions in Framework Mode, Data Mode, or the unstable RSC modes can result in unsafe URLs causing unintended javascript execution on the client. This is only an issue if you are creating redi",
-    "cvss": 8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "remix-run",
-        "product": "react-router"
-      },
-      {
-        "vendor": "remix-run",
-        "product": "@remix-run/router"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-01-10",
-    "updated": "2026-09-04",
-    "url": "https://github.com/remix-run/react-router/security/advisories/GHSA-2w69-qvjg-hvjx",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-25639",
-    "title": "Axios affected by Denial of Service via __proto__ Key in mergeConfig",
-    "desc": "Axios is a promise based HTTP client for the browser and Node.js. Prior to versions 0.30.3 and 1.13.5, the mergeConfig function in axios crashes with a TypeError when processing configuration objects containing __proto__ as an own property. An attacker can trigger this by providing a malicious configuration object created via JSON.parse(), causing complete denial of service. This vulnerability is ",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-754"
-    ],
-    "affected": [
-      {
-        "vendor": "axios",
-        "product": "axios"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-02-09",
-    "updated": "2026-09-04",
-    "url": "https://github.com/axios/axios/security/advisories/GHSA-43fc-jf86-j433",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-27137",
-    "title": "Incorrect enforcement of email constraints in crypto/x509",
-    "desc": "When verifying a certificate chain which contains a certificate containing multiple email address constraints which share common local portions but different domain portions, these constraints will not be properly applied, and only the last constraint will be considered.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Go standard library",
-        "product": "crypto/x509"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-03-06",
-    "updated": "2026-09-04",
-    "url": "https://go.dev/cl/752182",
     "source": "CISA Vulnrichment"
   }
 ]
