@@ -1,6 +1,69 @@
 [
   {
     "source": "thn",
+    "title": "Fake IT Calls Target Executives in Microsoft 365 Data Theft and Extortion Attacks",
+    "desc": "Threat hunters have disclosed details of a widespread data theft and extortion threat cluster that's targeting Microsoft 365 and other software-as-a-service (SaaS) offerings through information technology (IT) help desk vishing, adversary-in-the-middle (AitM) token theft, and residential-proxy sign-",
+    "url": "https://thehackernews.com/2026/09/microsoft-365-attackers-use-help-desk.html",
+    "date": "2026-09-07T21:21:56",
+    "title_ko": "Fake IT Calls Target Executives in Microsoft 365 Data Theft and Extortion Attacks",
+    "desc_ko": "Threat hunters have disclosed details of a widespread data theft and extortion threat cluster that's targeting Microsoft 365 and other software-as-a-service (SaaS) offerings through information technology (IT) help desk vishing, adversary-in-the-middle (AitM) token theft, and residential-proxy sign-"
+  },
+  {
+    "source": "thn",
+    "title": "⚡ Weekly Recap: Chrome 0-Day, Router Hijacks, Coder Supply Chain Attack and More",
+    "desc": "Turning off email images should at least stop the pictures. This week, attackers had a workaround: a scannable QR code built out of text. It still appears, even with images blocked. A small detail, but an annoying one if that was a precaution you were counting on.\n\nElsewhere, a trusted software sour",
+    "url": "https://thehackernews.com/2026/09/weekly-recap-chrome-0-day-router.html",
+    "date": "2026-09-07T20:06:07",
+    "title_ko": "⚡ Weekly Recap: Chrome 0-Day, Router Hijacks, Coder Supply Chain Attack and More",
+    "desc_ko": "Turning off email images should at least stop the pictures. This week, attackers had a workaround: a scannable QR code built out of text. It still appears, even with images blocked. A small detail, but an annoying one if that was a precaution you were counting on.\n\nElsewhere, a trusted software sour"
+  },
+  {
+    "source": "thn",
+    "title": "Your Cloud Security Checklist Doesn't Work the Way You Think It Does",
+    "desc": "If managing security across multiple cloud providers wasn't hard enough, each one fails in a different way. For the 2026 Cloud Security Index, Intruder analyzed misconfiguration data from 3,000 organizations across AWS, Azure, and Google Cloud and found that risk profiles across providers have almos",
+    "url": "https://thehackernews.com/2026/09/your-cloud-security-checklist-doesnt.html",
+    "date": "2026-09-07T17:15:00",
+    "title_ko": "Your Cloud Security Checklist Doesn't Work the Way You Think It Does",
+    "desc_ko": "If managing security across multiple cloud providers wasn't hard enough, each one fails in a different way. For the 2026 Cloud Security Index, Intruder analyzed misconfiguration data from 3,000 organizations across AWS, Azure, and Google Cloud and found that risk profiles across providers have almos"
+  },
+  {
+    "source": "thn",
+    "title": "Rogue ScreenConnect Clients Spread Four-Stage VBScript Chain to Newly Connected Hosts",
+    "desc": "Cybersecurity researchers have disclosed details of worm-like activity that abuses ConnectWise ScreenConnect to distribute a malicious Visual Basic Script (VBScript) payload to newly connected systems.\n\nAccording to Huntress, three unrelated incidents have been found to use diverse initial access me",
+    "url": "https://thehackernews.com/2026/09/rogue-screenconnect-clients-spread-four.html",
+    "date": "2026-09-07T17:06:39",
+    "title_ko": "Rogue ScreenConnect Clients Spread Four-Stage VBScript Chain to Newly Connected Hosts",
+    "desc_ko": "Cybersecurity researchers have disclosed details of worm-like activity that abuses ConnectWise ScreenConnect to distribute a malicious Visual Basic Script (VBScript) payload to newly connected systems.\n\nAccording to Huntress, three unrelated incidents have been found to use diverse initial access me"
+  },
+  {
+    "source": "thn",
+    "title": "Telerik UI Padding-Oracle Bug Chained to Unauthenticated RCE — Public Exploit Released",
+    "desc": "A TantoSec proof-of-concept turns an AES-CBC \"padding oracle\" in Telerik UI for ASP.NET AJAX into unauthenticated remote code execution — but only against applications in a specific non-default configuration, and Progress patched the chain in July. There are no confirmed reports of exploitation in t",
+    "url": "https://thehackernews.com/2026/09/telerik-ui-padding-oracle-bug-chained.html",
+    "date": "2026-09-07T16:50:14",
+    "title_ko": "Telerik UI Padding-Oracle Bug Chained to Unauthenticated RCE — Public Exploit Released",
+    "desc_ko": "A TantoSec proof-of-concept turns an AES-CBC \"padding oracle\" in Telerik UI for ASP.NET AJAX into unauthenticated remote code execution — but only against applications in a specific non-default configuration, and Progress patched the chain in July. There are no confirmed reports of exploitation in t"
+  },
+  {
+    "source": "thn",
+    "title": "N-able Issues Fourth N-central Hotfix in Five Weeks for Unauthenticated RCE Flaw",
+    "desc": "Every on-premises N-central build below 2026.3.1.14 — including servers updated to Hotfix 3 a day earlier — needs Hotfix 4. N-able's incident notice says the flaw has been exploited in the wild; its release notes say that is unconfirmed.\n\nN-able has released its&nbsp;fourth hotfix&nbsp;in five weeks",
+    "url": "https://thehackernews.com/2026/09/n-able-issues-fourth-n-central-hotfix.html",
+    "date": "2026-09-07T14:01:12",
+    "title_ko": "N-able Issues Fourth N-central Hotfix in Five Weeks for Unauthenticated RCE Flaw",
+    "desc_ko": "Every on-premises N-central build below 2026.3.1.14 — including servers updated to Hotfix 3 a day earlier — needs Hotfix 4. N-able's incident notice says the flaw has been exploited in the wild; its release notes say that is unconfirmed.\n\nN-able has released its&nbsp;fourth hotfix&nbsp;in five weeks"
+  },
+  {
+    "source": "thn",
+    "title": "JSCeal Malware Can Bypass Google Authentication Using Stolen Session Cookies",
+    "desc": "Cybersecurity researchers have unpacked JSCeal, a sophisticated compiled V8 JavaScript (JSC) malware with credential harvesting, surveillance, and traffic-interception capabilities.\n\n\"The payloads are protected with javascript-obfuscator, using multiple techniques including RC4-protected strings, co",
+    "url": "https://thehackernews.com/2026/09/jsceal-malware-can-bypass-google.html",
+    "date": "2026-09-07T13:23:04",
+    "title_ko": "JSCeal Malware Can Bypass Google Authentication Using Stolen Session Cookies",
+    "desc_ko": "Cybersecurity researchers have unpacked JSCeal, a sophisticated compiled V8 JavaScript (JSC) malware with credential harvesting, surveillance, and traffic-interception capabilities.\n\n\"The payloads are protected with javascript-obfuscator, using multiple techniques including RC4-protected strings, co"
+  },
+  {
+    "source": "thn",
     "title": "Attackers Hijack MikroTik Routers Through Internet-Exposed SSH Without Authentication",
     "desc": "Attackers are exploiting MikroTik routers with their Secure Shell (SSH) remote-access service, which is reachable from the internet, to gain full administrative control without authentication, according to&nbsp;CERT Polska's attack warning, published on September 5.\n\nSuccessful attacks date to at le",
     "url": "https://thehackernews.com/2026/09/attackers-hijack-mikrotik-routers.html",
@@ -385,68 +448,5 @@
     "date": "2026-09-01T17:00:00",
     "title_ko": "Threat Actors Don’t Want Better Attacks. They Want Repeatable Ones",
     "desc_ko": "The most common way into a company last year was to ask.\n\nA web page tells the visitor to prove they are not a robot. While they read the instructions, it quietly places a command on their clipboard. Then it talks them through opening a terminal and pasting it in. The technique is called ClickFix, a"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Steal METR API Key and Consume AI Credits Worth About $600,000",
-    "desc": "METR (short for Model Evaluation and Threat Research and pronounced \"Meter\"), a research non-profit that evaluates frontier artificial intelligence (AI) models for their ability to carry out long-horizon, agentic tasks, disclosed that it suffered \"two notable security incidents\" where external actor",
-    "url": "https://thehackernews.com/2026/09/attackers-steal-metr-api-key-and.html",
-    "date": "2026-09-01T14:35:30",
-    "title_ko": "Attackers Steal METR API Key and Consume AI Credits Worth About $600,000",
-    "desc_ko": "METR (short for Model Evaluation and Threat Research and pronounced \"Meter\"), a research non-profit that evaluates frontier artificial intelligence (AI) models for their ability to carry out long-horizon, agentic tasks, disclosed that it suffered \"two notable security incidents\" where external actor"
-  },
-  {
-    "source": "thn",
-    "title": "Russia-Aligned UAC-0099 Plants Nuclear Weapon Prompt in Malware to Disrupt AI Analysis",
-    "desc": "Cybersecurity researchers have disclosed a new technique dubbed GuardBreaker that's been put to use by a Russia-aligned threat actor known as UAC-0099 against a target in Ukraine with an aim to interfere with artificial intelligence (AI)-assisted analysis.\n\nThe idea, ESET said in a series of posts o",
-    "url": "https://thehackernews.com/2026/09/russia-aligned-uac-0099-plants-nuclear.html",
-    "date": "2026-09-01T13:56:24",
-    "title_ko": "Russia-Aligned UAC-0099 Plants Nuclear Weapon Prompt in Malware to Disrupt AI Analysis",
-    "desc_ko": "Cybersecurity researchers have disclosed a new technique dubbed GuardBreaker that's been put to use by a Russia-aligned threat actor known as UAC-0099 against a target in Ukraine with an aim to interfere with artificial intelligence (AI)-assisted analysis.\n\nThe idea, ESET said in a series of posts o"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Exploit Critical Langflow and Rails Flaws in Credential-Probing and C2 Activity",
-    "desc": "Threat actors are exploiting two critical flaws impacting Langflow and Ruby on Rails, according to new findings from VulnCheck.\n\nThe vulnerabilities in question are listed below -\n\n\n  CVE-2026-0768 (CVSS score: 9.8) - A lack of proper validation of a user-supplied input vulnerability that could be e",
-    "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-langflow-and.html",
-    "date": "2026-09-01T12:52:30",
-    "title_ko": "Attackers Exploit Critical Langflow and Rails Flaws in Credential-Probing and C2 Activity",
-    "desc_ko": "Threat actors are exploiting two critical flaws impacting Langflow and Ruby on Rails, according to new findings from VulnCheck.\n\nThe vulnerabilities in question are listed below -\n\n\n  CVE-2026-0768 (CVSS score: 9.8) - A lack of proper validation of a user-supplied input vulnerability that could be e"
-  },
-  {
-    "source": "thn",
-    "title": "North Korean Job Fraud Expands Beyond IT Into Healthcare and Sales",
-    "desc": "Threat actors with ties to the Democratic People's Republic of Korea (aka DPRK or North Korea) have been observed seeking job opportunities beyond the information technology (IT) sector, with recent investigations identifying suspected workers employed in sales and marketing and the medical professi",
-    "url": "https://thehackernews.com/2026/08/north-korean-job-fraud-expands-beyond.html",
-    "date": "2026-08-31T22:54:28",
-    "title_ko": "North Korean Job Fraud Expands Beyond IT Into Healthcare and Sales",
-    "desc_ko": "Threat actors with ties to the Democratic People's Republic of Korea (aka DPRK or North Korea) have been observed seeking job opportunities beyond the information technology (IT) sector, with recent investigations identifying suspected workers employed in sales and marketing and the medical professi"
-  },
-  {
-    "source": "thn",
-    "title": "⚡ Weekly Recap: Chinese Spy Proxy, AI Agents Go Off-Task, Router Backdoors and More",
-    "desc": "The boring parts caused most of the trouble.\n\nA router shipped ready to listen. A fake check turned the user into the installer. Trusted systems collected traffic and passwords, then cleaned the logs. Old bugs formed new attack chains. Even an AI agent decided its assigned task was optional.\n\nElsewh",
-    "url": "https://thehackernews.com/2026/08/weekly-recap-chinese-spy-proxy-ai.html",
-    "date": "2026-08-31T19:20:00",
-    "title_ko": "⚡ Weekly Recap: Chinese Spy Proxy, AI Agents Go Off-Task, Router Backdoors and More",
-    "desc_ko": "The boring parts caused most of the trouble.\n\nA router shipped ready to listen. A fake check turned the user into the installer. Trusted systems collected traffic and passwords, then cleaned the logs. Old bugs formed new attack chains. Even an AI agent decided its assigned task was optional.\n\nElsewh"
-  },
-  {
-    "source": "thn",
-    "title": "ValleyRAT Backdoor Hides in Signed Adware That Users Add to Antivirus Exclusions",
-    "desc": "The threat actor known as Silver Fox has been observed distributing the ValleyRAT backdoor disguised as a signed Chinese adware application, running the malware under a trusted process to slip past users who add such software to their antivirus exclusions.\n\nRussian cybersecurity vendor Kaspersky sai",
-    "url": "https://thehackernews.com/2026/08/valleyrat-backdoor-hides-in-signed.html",
-    "date": "2026-08-31T17:44:00",
-    "title_ko": "ValleyRAT Backdoor Hides in Signed Adware That Users Add to Antivirus Exclusions",
-    "desc_ko": "The threat actor known as Silver Fox has been observed distributing the ValleyRAT backdoor disguised as a signed Chinese adware application, running the malware under a trusted process to slip past users who add such software to their antivirus exclusions.\n\nRussian cybersecurity vendor Kaspersky sai"
-  },
-  {
-    "source": "thn",
-    "title": "Aurora Ransomware Operators Use Cursor AI in Attacks Against 10 Targets",
-    "desc": "Threat actors associated with Aurora (aka Aur0ra) ransomware have been observed using SpaceX's artificial intelligence (AI)-powered coding assistant Cursor to break into target networks, according to findings from CloudSEK and Gambit Security.\n\nThe two independent analyses are based on exposed infra",
-    "url": "https://thehackernews.com/2026/08/aurora-ransomware-operators-use-cursor.html",
-    "date": "2026-08-31T17:17:24",
-    "title_ko": "Aurora Ransomware Operators Use Cursor AI in Attacks Against 10 Targets",
-    "desc_ko": "Threat actors associated with Aurora (aka Aur0ra) ransomware have been observed using SpaceX's artificial intelligence (AI)-powered coding assistant Cursor to break into target networks, according to findings from CloudSEK and Gambit Security.\n\nThe two independent analyses are based on exposed infra"
   }
 ]
