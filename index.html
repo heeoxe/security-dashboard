@@ -741,7 +741,7 @@ function filterNews() {
     if (src !== 'all') {
       if (src === 'cisa' && !itemSource.includes('cisa')) return false;
       if (src === 'thn' && !itemSource.includes('thn') && !itemSource.includes('hacker')) return false;
-      if (src === 'boan' && !itemSource.includes('boan')) return false;
+      if (src === 'bn' && !itemSource.includes('boan') && !itemSource.includes('bn')) return false;
     }
     
     if (!q) return true;
