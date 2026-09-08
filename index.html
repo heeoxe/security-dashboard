@@ -481,9 +481,23 @@
       <div class="cards" id="saved-vuln-list"></div>
     </div>
 
+    <div id="panel-saved-vuln" class="panel">
+      <div class="toolbar" style="justify-content: flex-end; margin-bottom: 1rem;">
+        <button class="btn btn-primary" onclick="openCustomItemModal('vuln')">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg> 취약점 직접 추가
+        </button>
+      </div>
+      <div class="cards" id="saved-vuln-list"></div>
+   </div>
+
     <!-- 저장된 뉴스 -->
     <div id="panel-saved-news" class="panel">
-      <div class="cards" id="saved-news-list"></div>
+      <div class="toolbar" style="justify-content: flex-end; margin-bottom: 1rem;">
+        <button class="btn btn-primary" onclick="openCustomItemModal('news')">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg> 뉴스 직접 추가
+        </button>
+      </div>
+     <div class="cards" id="saved-news-list"></div>
     </div>
 
     <!-- Business -->
