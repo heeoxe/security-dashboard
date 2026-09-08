@@ -2038,6 +2038,17 @@ function switchMemoTab(tab) {
 }
 
 function renderMemos() {
+  // newsAll이 아직 로드되지 않은 상태라면 news.json을 즉시 가져와 채움
+  if ((!window.newsAll || window.newsAll.length === 0)) {
+    try {
+      const res = await fetch('news.json');
+      if (res.ok) {
+        window.newsAll = await res.json();
+      }
+    } catch (e) {
+      console.warn('news.json 로드 실패:', e);
+    }
+  }
   const notes = loadNotes();
   const q = (document.getElementById('memo-q')?.value || '').toLowerCase();
   const statusFilter = document.getElementById('memo-status')?.value || '';
