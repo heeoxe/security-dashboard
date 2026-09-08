@@ -2038,16 +2038,17 @@ function switchMemoTab(tab) {
 }
 
 function renderMemos() {
-  // newsAll이 아직 로드되지 않은 상태라면 news.json을 즉시 가져와 채움
-  if ((!window.newsAll || window.newsAll.length === 0)) {
-    try {
-      const res = await fetch('news.json');
-      if (res.ok) {
-        window.newsAll = await res.json();
-      }
-    } catch (e) {
-      console.warn('news.json 로드 실패:', e);
-    }
+  // 비동기 로딩은 백그라운드에서 진행하고 완료 시 다시 렌더링
+  if (!window.newsAll || window.newsAll.length === 0) {
+    fetch('news.json')
+      .then(res => res.ok ? res.json() : [])
+      .then(data => {
+        window.newsAll = data;
+        // 제목이 비어있는 카드가 있다면 데이터 로드 완료 후 1회 재렌더링
+        const activeTab = document.querySelector('.memo-tab.active')?.id;
+        if (activeTab === 'memo-tab-news') renderMemos();
+      })
+      .catch(e => console.warn('news.json 로드 실패:', e));
   }
   const notes = loadNotes();
   const q = (document.getElementById('memo-q')?.value || '').toLowerCase();
