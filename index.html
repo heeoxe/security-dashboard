@@ -2067,16 +2067,41 @@ function renderMemos() {
   function memoCard([id, n], overrideDisplayId) {
     const tags = (n.tags || []).map(t => `<span class="tag">${escHtml(t)}</span>`).join('');
     const statusEl = n.status ? `<span class="badge" style="font-size:10px;background:${statusBg(n.status)};color:${statusColor(n.status)};border:1px solid ${statusColor(n.status)}40">${n.status}</span>` : '';
-    // 수정: n.title이 있으면 기사 제목을 우선 쓰고, 없으면 URL 파싱값 사용 (숫자 순번 덮어쓰기 방지)
-    let displayId = n.title || (typeof overrideDisplayId === 'string' && isNaN(overrideDisplayId) ? overrideDisplayId : '');
-    if (!displayId) {
-      try {
-        const u = new URL(id);
-        displayId = u.hostname.replace('www.', '') + u.pathname.slice(0, 50);
-      } catch {
-        displayId = id;
-      }
+  
+    // 1. 메모에 title이 없으면, 현재 로드된 전체 뉴스(newsAll)에서 URL로 제목을 즉시 매칭
+    let titleText = n.title || '';
+    if (!titleText && id.startsWith('http') && typeof newsAll !== 'undefined') {
+        const matchedNews = newsAll.find(item => item.url === id);
+    if (matchedNews && matchedNews.title) {
+      titleText = matchedNews.title;
     }
+  }
+
+    // 2. URL 경로 축약 텍스트 생성
+    let urlText = id;
+    try {
+      const u = new URL(id);
+      urlText = u.hostname.replace('www.', '') + u.pathname.slice(0, 45) + '...';
+    } catch {}
+
+    // 3. 뉴스는 제목을 크게, URL 링크를 작게 표시 / 취약점 등은 기존 ID 유지
+    const isNews = id.startsWith('http');
+    const titleDisplayHtml = isNews ? `
+      <div style="margin-bottom: 6px;">
+        <div class="card-title" style="font-size: 14px; font-weight: 600; line-height: 1.4; color: var(--text, #e2e8f0); margin-bottom: 2px;">
+        ${escHtml(titleText || urlText)}
+      </div>
+      <a href="${escHtml(id)}" target="_blank" rel="noopener noreferrer" 
+         style="font-size: 11px; color: #38bdf8; text-decoration: none; word-break: break-all; opacity: 0.85;"
+         onmouseover="this.style.textDecoration='underline'" 
+         onmouseout="this.style.textDecoration='none'">
+        🔗 ${escHtml(urlText)}
+      </a>
+    </div>
+  ` : `
+    <div class="card-title" style="margin-bottom: 4px;">${escHtml(overrideDisplayId || id)}</div>
+  `;
+    
     const memos = (n.memos || []);
     const memosHtml = memos.slice().reverse().map(m => {
       const t = m.createdAt ? new Date(m.createdAt).toLocaleString('ko-KR',{month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'}) : '';
