@@ -2076,6 +2076,10 @@ function renderMemos() {
 
 
 function memoCard([id, n], overrideDisplayId) {
+  // overrideDisplayId가 숫자이거나 비어있으면 원본 id 사용
+  const validOverride = (overrideDisplayId && isNaN(Number(overrideDisplayId))) ? overrideDisplayId : null;
+  const targetId = validOverride || id;
+  
   const tags = (n.tags || []).map(t => `<span class="tag">${escHtml(t)}</span>`).join('');
   const statusEl = n.status ? `<span class="badge" style="font-size:10px;background:${statusBg(n.status)};color:${statusColor(n.status)};border:1px solid ${statusColor(n.status)}40">${n.status}</span>` : '';
     
@@ -2113,7 +2117,7 @@ function memoCard([id, n], overrideDisplayId) {
         </a>
       </div>
     ` : `
-      <div class="card-title" style="margin-bottom: 4px;">${escHtml(overrideDisplayId || id)}</div>
+      <div class="card-title" style="margin-bottom: 4px;">${escHtml(targetId)}</div>
     `;
     
     const memos = (n.memos || []);
@@ -2142,7 +2146,7 @@ function memoCard([id, n], overrideDisplayId) {
   </div>`;
 
   document.getElementById('memo-list-vuln').innerHTML = vulnEntries.length
-    ? vulnEntries.map(memoCard).join('')
+    ? vulnEntries.map(e => memoCard(e)).join('')
     : emptyHtml(q || statusFilter ? '검색 결과가 없습니다' : '작성된 취약점 메모가 없습니다');
 
   document.getElementById('memo-list-news').innerHTML = newsEntries.length
