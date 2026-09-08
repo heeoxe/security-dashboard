@@ -565,8 +565,8 @@
 </div>
 
 <!-- 팝업 모달 -->
-<div class="detail-overlay" id="detail-overlay" onclick="closeDetail()">
-<div class="detail-panel" id="detail-panel" onclick="event.stopPropagation()">
+<div class="detail-overlay" id="detail-overlay">
+<div class="detail-panel" id="detail-panel">
   <div class="detail-header">
     <div class="detail-header-text">
       <div class="detail-source" id="dp-source"></div>
@@ -1256,6 +1256,21 @@ function closeDetail() {
   currentDetailId = null;
 }
 
+// 배경 클릭 시에만 닫히고, 드래그 탈출 시에는 닫히지 않도록 처리
+let isMouseDownOnBackdrop = false;
+const detailOverlay = document.getElementById('detail-overlay');
+
+detailOverlay.addEventListener('mousedown', (e) => {
+  isMouseDownOnBackdrop = (e.target === detailOverlay);
+});
+
+detailOverlay.addEventListener('mouseup', (e) => {
+  if (isMouseDownOnBackdrop && e.target === detailOverlay) {
+    closeDetail();
+  }
+  isMouseDownOnBackdrop = false;
+});
+  
 function setStatus(s) {
   const already = document.querySelector(`.status-chip.on[data-s="${s}"]`);
   document.querySelectorAll('.status-chip').forEach(c => c.classList.remove('on'));
