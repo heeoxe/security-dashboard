@@ -2053,12 +2053,19 @@ function renderMemos() {
   document.getElementById('memo-cnt-news').textContent = newsEntries.length;
   document.getElementById('memo-cnt-owasp').textContent = owaspEntries.length;
 
+
   function memoCard([id, n], overrideDisplayId) {
     const tags = (n.tags || []).map(t => `<span class="tag">${escHtml(t)}</span>`).join('');
     const statusEl = n.status ? `<span class="badge" style="font-size:10px;background:${statusBg(n.status)};color:${statusColor(n.status)};border:1px solid ${statusColor(n.status)}40">${n.status}</span>` : '';
-    let displayId = overrideDisplayId || id;
-    if (!overrideDisplayId) {
-      try { const u = new URL(id); displayId = u.hostname.replace('www.','') + u.pathname.slice(0,50); } catch {}
+    // 수정: n.title이 있으면 기사 제목을 우선 쓰고, 없으면 URL 파싱값 사용 (숫자 순번 덮어쓰기 방지)
+    let displayId = n.title || (typeof overrideDisplayId === 'string' && isNaN(overrideDisplayId) ? overrideDisplayId : '');
+    if (!displayId) {
+      try {
+        const u = new URL(id);
+        displayId = u.hostname.replace('www.', '') + u.pathname.slice(0, 50);
+      } catch {
+        displayId = id;
+      }
     }
     const memos = (n.memos || []);
     const memosHtml = memos.slice().reverse().map(m => {
