@@ -1,5 +1,82 @@
 [
   {
+    "source": "thn",
+    "title": "WeChat Zero-Click Worm Took Over Accounts on iPhone and Android via Incoming Calls",
+    "desc": "Researchers at the security firm Calif have built a worm that takes over a WeChat account via an incoming call and&nbsp;demonstrated it spreading&nbsp;among three test phones.\n\nThe person being called does not have to answer or touch their phone for it to work, but the caller must already be one of ",
+    "url": "https://thehackernews.com/2026/09/wechat-zero-click-worm-took-over.html",
+    "date": "2026-09-08T17:24:29"
+  },
+  {
+    "source": "thn",
+    "title": "What It Took to Reach 1 Billion Build Manifests",
+    "desc": "In the last six months, Chainguard doubled its output from 500 million to more than 1 billion container build manifests. We also surpassed 3,000 unique container images and 675,000 image versions in our catalog. Those are the headline numbers, but I want to share what's actually behind them. The num",
+    "url": "https://thehackernews.com/2026/09/what-it-took-to-reach-1-billion-build.html",
+    "date": "2026-09-08T17:19:02"
+  },
+  {
+    "source": "thn",
+    "title": "FreeIPA Flaw Chain Lets Anonymous Clients Create Reusable Administrator Credentials",
+    "desc": "A flaw in FreeIPA lets a client that has never logged in create a Kerberos identity of its own choosing in the directory and end up in the administrators group, Red Hat says.\n\nFreeIPA is the system that determines who may log in across a Linux domain and maintains all identities in a 389 Directory S",
+    "url": "https://thehackernews.com/2026/09/freeipa-flaw-chain-lets-anonymous.html",
+    "date": "2026-09-08T16:52:07"
+  },
+  {
+    "source": "thn",
+    "title": "Adobe Patches Magento Zero-Day Exploited to Deploy Rust Backdoor and PHP Web Shell",
+    "desc": "Adobe on Monday released security patches to address a maximum-severity flaw impacting Adobe Commerce and Magento Open Source that has come under active exploitation in the wild.\n\nThe vulnerability, now tracked as CVE-2026-75650 (CVSS score: 10.0), has been codenamed StyleSmuggler by Sansec, which d",
+    "url": "https://thehackernews.com/2026/09/adobe-patches-magento-zero-day.html",
+    "date": "2026-09-08T14:43:47"
+  },
+  {
+    "source": "thn",
+    "title": "BengalSEO Poisons Bing Search Results to Deliver MayaBot and Tech Support Scams",
+    "desc": "Cybersecurity researchers have disclosed details of a sprawling search engine optimization (SEO) poisoning campaign that paves the way for malware deployment and tech support scams.\n\nThe campaign, discovered by the DFIR Report in March 2026, has been codenamed BengalSEO. It has operated out of the I",
+    "url": "https://thehackernews.com/2026/09/bengalseo-poisons-bing-search-results.html",
+    "date": "2026-09-08T14:13:51"
+  },
+  {
+    "source": "thn",
+    "title": "Grindr to Pay £26 Million to Settle U.K. Claims Over HIV Status Data Sharing",
+    "desc": "Online dating app Grindr has opted to pay £26 million ($35.1 million) to settle a lawsuit in the U.K. over allegations that it shared users' personal information, including their HIV status, with third-parties.\n\nGrindr, which is the largest LGBTQ+ dating app, was sued in April 2024, accusing it of v",
+    "url": "https://thehackernews.com/2026/09/grindr-to-pay-26-million-to-settle-uk.html",
+    "date": "2026-09-08T12:30:43"
+  },
+  {
+    "source": "boannews",
+    "title": "휴네시온, AIDC 보안 기술 워크숍서 ‘N2SF 도입전략’ 공유",
+    "desc": "정보보안 전문기업 휴네시온(대표 정동섭)은 7일부터 이틀간 열린 ‘AIDC 보안 기술 워크숍’에서 ‘한국부동산원 N2SF 도입전략’을 주제로 국가 망 보안체계(N2SF) 모델 2·4의 실제 적용 전략과 구축 방향을 공유했다.이번 워크숍은 한국사이버안보학회가 주최하고 한전KDN과 N2SF연구회가 공동 주관한 행사로, 공공 AIDC 구축 및 보안 전략, AIDC 보안 특화 기술 및 공급망 보안, 국가·공공기관의 N2SF 도입전략 등을 중심으로 산·학·연·관 전문가들이 보안 기술과 적용 방안을 공유하는 자리로 마련됐다.휴네시온에서는 심재",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145733",
+    "date": "2026-09-08 18:06:15"
+  },
+  {
+    "source": "boannews",
+    "title": "“자꾸 합쳐야 하는 AI 데이터센터, AI로 ‘그린팀 보안’ 해야”",
+    "desc": "“격리하면 완벽했던 보안이지만, 합치고 연동해야 하는 AI 데이터센터 환경에서는 기존 방식은 한계가 있습니다. 설계부터 보안을 내재화한 ‘그린팀’ 보안을 AI의 힘으로 운영해야 합니다.”N2SF 연구회장을 맡고 있는 김창훈 대구대학교 컴퓨터정보공학부 교수는 7~8일 이틀간 경기도 성남시 밀리토피아 호텔 바이마린에서 열린 ‘AIDC 보안 기술 워크숍’에서 이같이 밝혔다.김 교수는 ‘AIDC CSF 설계 방향 및 한전KDN PoC 전략’을 주제로 발표했다. 이 자리에서 그는 AI 시대로 접어들면서 마주치는 기존 보안의 한계와, 인공지능",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145730",
+    "date": "2026-09-08 17:40:00"
+  },
+  {
+    "source": "boannews",
+    "title": "“무심코 방치한 API 키의 역습”... AI 열풍에 찬물 끼얹은 깃허브 공급망 공격",
+    "desc": "최근 AI 커뮤니티와 바이브코딩 진영에서 뜨거운 관심사 중 하나인 AI 기반 숏폼 비디어 생성 프로젝트를 위장한 해킹 공격이 진행돼 보안 생태계에 비상이 걸렸다. 개발자의 신뢰도를 역이용한 오픈소스 공급망 공격으로 인해 사용자들의 핵심 인증 토큰과 모델 컨텍스트 프로토콜(MCP) 설정 정보가 외부로 유출되는 사태가 발생했다.8일 보안 업계와 개발자 커뮤니티에 따르면 ‘pierrenade/short-video-generator-AI’ 레포지토리 소스코드 내에 악성 스크립트가 은밀하게 삽입된 정황이 확인됐다. 공격자들은 개발자들이 별다",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145728",
+    "date": "2026-09-08 17:30:00"
+  },
+  {
+    "source": "boannews",
+    "title": "패치 권고 놓친 나흘 사이 침입... 호주 학습 플랫폼서 108만명 정보 유출",
+    "desc": "호주 수학 학습 플랫폼 매스스페이스가 침해를 당해 107만9819명의 개인정보가 빠져나갔다. 피해자는 호주와 뉴질랜드의 △학생 △학부모·보호자 △학교 교직원 △매스스페이스 직원이다.침입 통로는 회사가 사내 데이터 분석용으로 쓰던 오픈소스 소프트웨어 메타베이스(Metabase)였다. 메타베이스는 학습 데이터를 모아 보고서로 만드는 데 쓰는 도구다.메타베이스는 8월 6일 비밀번호 재설정 기능에서 인증 없이 데이터베이스를 조작할 수 있는 취약점(CVE-2026-72898)을 공개하고 같은 날 패치를 냈다.매스스페이스는 이 권고를 놓쳤다.",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145726",
+    "date": "2026-09-08 15:35:00"
+  },
+  {
+    "source": "boannews",
+    "title": "[속담으로 배우는 100가지 보안 습관 96] 아는 것이 힘이다(6)-매크로 파일 열면 생기는 사고",
+    "desc": "보안 사고의 90%는 해킹이 아니라 ‘실수’에서 시작된다. 그래서 우리는 기술보다 습관을 배워야 한다. 속담으로 배우는 100가지 보안 습관에서는 △스마트폰 보안 △계정·비밀번호 △PC·인터넷 △생활 보안 △금융·개인정보 등 100가지 보안 습관을 속담과 연관시켜 소개한다. 보안은 어렵지 않다. 지키느냐, 안 지키느냐의 차이다. 나 하나의 습관이 모두를 지킨다는 생각으로 사소한 습관부터 실천해 보자. [편집자 주]매크로 파일을 열 때 생기는 사고는 주로 보안 설정 때문에 매크로가 차단되거나, 악성 매크로가 실행돼 시스템에 피해가 갈",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=144250",
+    "date": "2026-09-08 15:00:00"
+  },
+  {
     "source": "boannews",
     "title": "국립산림과학원, 다중위성 활용 산불정보 가시화 시스템 시범 구축",
     "desc": "산림청 국립산림과학원(원장 김용관)은 농림위성의 산불 대응 지원 활용을 확대하고 단일 위성관측의 시·공간적 한계를 보완하기 위해 ‘다중위성 융합 산불정보 가시화시스템’(가칭)을 시범 구축했다고 밝혔다.이번 시스템은 농림위성의 산불피해분석 정보와 천리안위성(GK2A), 수오미 NPP(Suomi NPP) 위성 등의 화점 정보를 하나의 화면에서 통합해 확인할 수 있도록 개발됐다. 위성별로 분산돼 있던 산불 정보를 시간대별로 표출함으로써 산불 상황을 한눈에 직관적으로 파악하고 현장과 공유할 수 있는 것이 특징이다.올해 7월 발사된 농림위성",
@@ -469,41 +546,6 @@
     "date": "2026-09-04 15:59:50"
   },
   {
-    "source": "boannews",
-    "title": "AI 에이전트부터 국가 AI 보안까지, 프라이빗에이아이가 말하는 “AI 시대 리스크 관리”",
-    "desc": "AI가 관리하는 위험의 범위가 변화하고 있다. 사용자의 명령을 수행하던 AI가 이제는 직접 해야할 일을 찾아 움직이는 시대에 접어들면서 보안위협 역시 새롭게 변화하고 있기 때문이다. 프라이빗에이아이는 이렇게 늘어나는 리스크에 개별적으로 대응하는 것이 아닌 기업 운영 전반에 걸쳐 ‘위험 관리’를 할 수 있는 체계가 필요하다고 봤다.프라이빗에이아이(PRIBIT AI, 대표 김영랑)가 반얀트리 서울에서 “PRIBIT AI Tech Summit”을 개최하고, AI 시대 기업이 직면하게 될 새로운 위험과 이를 관리하기 위한 전략을 제시했다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145658",
-    "date": "2026-09-04 15:00:39"
-  },
-  {
-    "source": "boannews",
-    "title": "종로구, 골목길 ‘스마트 보안등’ 확대... 야간 귀갓길 밝힌다",
-    "desc": "서울 종로구는 밝고 쾌적한 야간 귀갓길 조성을 위해 다음 달까지 ‘골목길 스마트 보안등 설치’를 추진한다고 4일 밝혔다.올해 설치 대상지는 혜화동을 포함한 관내 60여곳이다. 종로구는 낡고 오래된 보안등을 친환경 LED 보안등으로 교체하고, 양방향 스마트 보안등을 새로 설치할 계획이다.스마트 보안등은 보행자가 휴대전화로 서울시 ‘동행안심벨’ 앱을 내려받아 심야 시간대 안심 귀가 서비스를 실행한 뒤 보안등 근처를 지나면 조명이 자동으로 밝아지는 시스템이다. 이를 통해 어두운 골목길의 보행 환경을 개선하고 안전한 귀가를 돕는다.긴급 상",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145654",
-    "date": "2026-09-04 14:50:00"
-  },
-  {
-    "source": "boannews",
-    "title": "KISA, 지능형 CCTV 성능시험 인증제도 전면 개편… ‘정상 상황 탐지’ 의무화로 오탐지 줄인다",
-    "desc": "한국인터넷진흥원(KISA)은 공공 분야에서 활용 중인 지능형 CCTV의 신뢰성을 확보하고 실제 현장 운영 효율성을 높이기 위해 ‘지능형 CCTV 성능시험 인증제도’를 전면 개편한다고 밝히며, 9월 3일 일원동 SECTE 2세미나실에서 설명회를 진행했다.이번 개편은 2024년 진행된 감사원의 ‘인공지능(AI) 대비 실태 검사’ 결과와 이후 언론 보도를 통해 제기된 현행 제도의 한계를 극복하기 위해 마련됐다. 감사원은 당시 도입된 AI 기반 CCTV의 성능이 저조하고, 오탐지가 많아 관제 요원의 업무 부담을 가중시키고 있다고 지적했다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145656",
-    "date": "2026-09-04 14:47:40"
-  },
-  {
-    "source": "boannews",
-    "title": "오내피플 ‘캐치시큐’, AI 제품·서비스 확인 획득해 공공기관 공략 강화",
-    "desc": "개인정보보호 컴플라이언스 테크 기업 오내피플(대표 조아영)은 자사의 AI 기반 개인정보보호 SaaS 솔루션 캐치시큐가 한국정보통신기술협회의 기술 심사를 거쳐 인공지능 제품 및 서비스 확인을 정식으로 획득했다고 밝혔다.인공지능 제품 및 서비스 확인제는 인공지능 발전과 신뢰 기반 조성 등에 관한 기본법에 의거해 과학기술정보통신부, 한국정보통신기술협회, 한국인공지능·소프트웨어산업협회가 공공조달 및 도입 시 우선 고려 대상이 되는 정통 AI 기술 적용 제품을 검증하는 제도다. 캐치시큐는 AI 처리 연산체계 및 기능 동작의 유효성을 통과하며",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145657",
-    "date": "2026-09-04 14:40:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[카드뉴스] \"비밀번호도 필요 없다\"…맥북 '화면 공유' 기능서 원격 제어 치명적 결함 발견",
-    "desc": "애플 macOS의 핵심 원격 기능인 '화면 공유(Screen Sharing)' 프로토콜에서 사용자 인증 없이 원격으로 기기 제어권을 탈취할 수 있는 치명적인 취약점이 발견되었습니다.이번에 확인된 취약점은 외부 공격자가 사용자의 비밀번호 입력이나 수락 클릭 없이도 네트워크를 통해 접근할 수 있는 '무인증 침투' 결함입니다. 특히 사용자의 맥북 화면이 꺼져 있거나 잠금 상태인 백그라운드 환경에서도 관리자 수준의 권한이 그대로 실행되어 마우스 조작, 파일 탈취, 시스템 감시 등의 악의적 행위가 가능합니다.\"맥 OS는 안전하다\"는 일반적인",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145655",
-    "date": "2026-09-04 13:46:08"
-  },
-  {
     "source": "thn",
     "title": "ThreatsDay: CEO Phishing Kits, 5K Dropbox Account Hacks, OAuth Traps + 17 More Stories",
     "desc": "The worst part is how normal these attacks look. A call from IT. A shared file. A trusted app. A simple request to click “Allow.” Why break in when someone might open the door?\n\nThat idea runs through this edition. Attackers use real tools, fake login pages, old account links, and software guides th",
@@ -649,47 +691,5 @@
     "desc": "Forescout Research - Vedere Labs said it used Anthropic's Claude to port a working pre-authentication remote code execution (RCE) exploit from one WAGO programmable logic controller (PLC) to another, executing attacker-supplied ARM shellcode on live hardware.\n\nThe exploit targets&nbsp;CVE-2021-31886",
     "url": "https://thehackernews.com/2026/09/researchers-use-claude-to-port-pre-auth.html",
     "date": "2026-09-02T13:17:13"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Exploit Critical Switchvox Flaw to Deploy Reverse Shells Without Credentials",
-    "desc": "Threat actors are exploiting a severe security vulnerability in Sangoma Switchvox, an enterprise VoIP platform, that could allow unauthenticated remote code execution.\n\nThe vulnerability in question is CVE-2026-9586 (CVSS score: 9.3), a critical unauthenticated SQL injection vulnerability in Sangoma",
-    "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-switchvox.html",
-    "date": "2026-09-02T12:38:50"
-  },
-  {
-    "source": "thn",
-    "title": "Authorities Turn Sality's P2P Network Against Itself, Cutting Off New Malware Payloads",
-    "desc": "The U.S. Department of Justice (DoJ) on Tuesday announced the takedown of a long-standing peer-to-peer (P2P) botnet known as Sality as part of a coordinated law enforcement operation.\n\nThe effort was undertaken on August 31, 2026, by authorities from the U.S., Bulgaria, Hungary, and Romania, in coll",
-    "url": "https://thehackernews.com/2026/09/authorities-turn-salitys-p2p-network.html",
-    "date": "2026-09-02T12:26:30"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Exploit Critical JFrog Artifactory Flaw to Mint Admin Tokens Days After Disclosure",
-    "desc": "Threat actors are exploiting a newly patched critical security flaw impacting JFrog Artifactory merely days after public disclosure, according to watchTowr.\n\nThe vulnerability in question is CVE-2026-82329 (CVSS score: 9.8), a case of authentication bypass that could lead to administrative access in",
-    "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-jfrog.html",
-    "date": "2026-09-01T23:23:11"
-  },
-  {
-    "source": "thn",
-    "title": "Breeze Comet Executes Hundreds of Fraudulent Transactions via Brazilian Payment Systems",
-    "desc": "Brazilian financial services, retail, and e-commerce organizations have become the target of a financially motivated threat actor dubbed Breeze Comet (formerly UNC5669) since 2024.\n\nGoogle Threat Intelligence Group (GTIG) and Mandiant teams described the threat actor as \"specializing in manipulating",
-    "url": "https://thehackernews.com/2026/09/breeze-comet-executes-hundreds-of.html",
-    "date": "2026-09-01T22:49:24"
-  },
-  {
-    "source": "thn",
-    "title": "13 Malicious Packagist Packages Target Unpatched iPhones to Steal Crypto Wallet Seeds",
-    "desc": "Cybersecurity researchers have identified a set of 13 malicious Composer theme packages on Packagist that are designed to inject JavaScript into Vietnamese movie and comic streaming sites that install those libraries and initiate the deployment of spyware aimed at unpatched iOS devices.\n\n\"The inject",
-    "url": "https://thehackernews.com/2026/09/13-malicious-packagist-packages-target.html",
-    "date": "2026-09-01T19:37:20"
-  },
-  {
-    "source": "thn",
-    "title": "Iranian Hackers Pose as Recruiters to Deliver Cross-Platform RATs Through Coding Tests",
-    "desc": "The Iranian Nimbus Manticore hacking group has been attributed to two previously undocumented malware families that highlight the continued evolution of its toolset and likely expand its targeting footprint to infect Linux and Apple macOS systems using cross-platform remote access trojans (RATs) dev",
-    "url": "https://thehackernews.com/2026/09/iranian-hackers-pose-as-recruiters-to.html",
-    "date": "2026-09-01T18:38:58"
   }
 ]
