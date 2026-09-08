@@ -619,6 +619,86 @@
 </div>
 </div>
 
+<!-- 직접 추가 모달 -->
+<div class="detail-overlay" id="custom-item-overlay">
+  <div class="detail-panel" style="width: 540px; height: auto; max-height: 90vh;">
+    <div class="detail-header">
+      <div class="detail-header-text">
+        <div class="detail-title" id="custom-modal-title">항목 직접 추가</div>
+      </div>
+      <button class="detail-close" onclick="closeCustomItemModal()">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="detail-body" style="gap: 12px; padding: 1.25rem;">
+      <input type="hidden" id="custom-type" value="vuln" />
+      
+      <!-- 공통/뉴스/취약점 필드 -->
+      <div>
+        <div class="detail-section-label" id="custom-title-label">제목 *</div>
+        <input id="custom-title" type="text" placeholder="제목을 입력하세요" style="width:100%;height:36px;padding:0 12px;font-size:13px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);color:var(--text);outline:none;" />
+      </div>
+
+      <div id="custom-vuln-fields">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px;">
+          <div>
+            <div class="detail-section-label">CVE ID</div>
+            <input id="custom-cve" type="text" placeholder="예: CVE-2026-1234" style="width:100%;height:36px;padding:0 12px;font-size:13px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);color:var(--text);outline:none;" />
+          </div>
+          <div>
+            <div class="detail-section-label">심각도</div>
+            <select id="custom-sev" style="width:100%;height:36px;padding:0 12px;font-size:13px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);color:var(--text);outline:none;">
+              <option value="CRITICAL">CRITICAL</option>
+              <option value="HIGH">HIGH</option>
+              <option value="MEDIUM" selected>MEDIUM</option>
+              <option value="LOW">LOW</option>
+            </select>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+          <div>
+            <div class="detail-section-label">벤더 / 출처</div>
+            <input id="custom-vendor" type="text" placeholder="예: Microsoft, CISA" style="width:100%;height:36px;padding:0 12px;font-size:13px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);color:var(--text);outline:none;" />
+          </div>
+          <div>
+            <div class="detail-section-label">제품명</div>
+            <input id="custom-product" type="text" placeholder="예: Windows, Chrome" style="width:100%;height:36px;padding:0 12px;font-size:13px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);color:var(--text);outline:none;" />
+          </div>
+        </div>
+      </div>
+
+      <div id="custom-news-fields" style="display:none;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+          <div>
+            <div class="detail-section-label">출처명</div>
+            <input id="custom-source" type="text" placeholder="예: 보안뉴스, 직접입력" style="width:100%;height:36px;padding:0 12px;font-size:13px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);color:var(--text);outline:none;" />
+          </div>
+          <div>
+            <div class="detail-section-label">한글 제목 (선택)</div>
+            <input id="custom-title-ko" type="text" placeholder="국문 제목" style="width:100%;height:36px;padding:0 12px;font-size:13px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);color:var(--text);outline:none;" />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="detail-section-label">관련 링크 (URL)</div>
+        <input id="custom-url" type="text" placeholder="https://..." style="width:100%;height:36px;padding:0 12px;font-size:13px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);color:var(--text);outline:none;" />
+      </div>
+
+      <div>
+        <div class="detail-section-label">설명 / 요약</div>
+        <textarea id="custom-desc" placeholder="내용 및 요약 입력..." style="width:100%;min-height:80px;padding:8px 10px;font-size:12px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);color:var(--text);outline:none;line-height:1.6;resize:vertical;"></textarea>
+      </div>
+    </div>
+    <div class="detail-footer">
+      <button class="btn" onclick="closeCustomItemModal()">취소</button>
+      <button class="btn btn-primary" onclick="saveCustomItem()">추가하기</button>
+    </div>
+  </div>
+</div>
+  
+
+  
 <script>
 const PAGE = 16;
 let kevAll = [], kevFiltered = [], kevPage = 0;
@@ -669,6 +749,118 @@ function switchPanel(id, el) {
   if (id === 'nvd' && !nvdAll.length) searchNvd();
   if (id === 'mitre' && !mitreAll.length) loadMitre();
 }
+
+// 모달 열기
+function openCustomItemModal(type) {
+  document.getElementById('custom-type').value = type;
+  const isVuln = (type === 'vuln');
+
+  document.getElementById('custom-modal-title').textContent = isVuln ? '취약점 직접 추가' : '뉴스 직접 추가';
+  document.getElementById('custom-title-label').textContent = isVuln ? '취약점 명 / 제목 *' : '기사 제목 *';
+  document.getElementById('custom-vuln-fields').style.display = isVuln ? 'block' : 'none';
+  document.getElementById('custom-news-fields').style.display = isVuln ? 'none' : 'block';
+
+  // 폼 초기화
+  ['custom-title', 'custom-cve', 'custom-vendor', 'custom-product', 'custom-source', 'custom-title-ko', 'custom-url', 'custom-desc'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.value = '';
+  });
+  document.getElementById('custom-sev').value = 'MEDIUM';
+
+  document.getElementById('custom-item-overlay').classList.add('open');
+}
+
+// 모달 닫기
+function closeCustomItemModal() {
+  document.getElementById('custom-item-overlay').classList.remove('open');
+}
+
+// 데이터 저장
+function saveCustomItem() {
+  const type = document.getElementById('custom-type').value;
+  const title = document.getElementById('custom-title').value.trim();
+  const url = document.getElementById('custom-url').value.trim();
+  const desc = document.getElementById('custom-desc').value.trim();
+  const today = new Date().toISOString().split('T')[0];
+
+  if (!title) {
+    alert('제목을 입력해주세요.');
+    return;
+  }
+
+  let newItem = null;
+
+  if (type === 'vuln') {
+    const cve = document.getElementById('custom-cve').value.trim();
+    const sev = document.getElementById('custom-sev').value;
+    const vendor = document.getElementById('custom-vendor').value.trim() || 'Custom';
+    const product = document.getElementById('custom-product').value.trim() || 'Custom';
+    const id = cve || `CUSTOM-${Date.now()}`;
+
+    newItem = {
+      id: id,
+      cve: cve || id,
+      title: title,
+      sev: sev,
+      cvss: sev === 'CRITICAL' ? 9.5 : (sev === 'HIGH' ? 7.5 : (sev === 'MEDIUM' ? 5.0 : 2.5)),
+      date: today,
+      vendor: vendor,
+      product: product,
+      desc: desc,
+      url: url,
+      source: 'Custom',
+      type: 'vuln'
+    };
+  } else {
+    const source = document.getElementById('custom-source').value.trim() || 'Custom';
+    const title_ko = document.getElementById('custom-title-ko').value.trim();
+    const id = url || `custom_news_${Date.now()}`;
+
+    newItem = {
+      id: id,
+      title: title,
+      title_ko: title_ko,
+      desc: desc,
+      url: url || '#',
+      date: today,
+      source: source,
+      type: 'news'
+    };
+  }
+
+  // 중복 체크 및 추가
+  const exists = bookmarks.some(b => b.id === newItem.id);
+  if (exists) {
+    alert('이미 등록된 ID 또는 URL입니다.');
+    return;
+  }
+
+  bookmarks.unshift(newItem);
+  saveBookmarks(bookmarks);
+  updateBadges();
+
+  closeCustomItemModal();
+
+  if (type === 'vuln') {
+    renderSavedVuln();
+  } else {
+    renderSavedNews();
+  }
+}
+
+// 모달 바깥 드래그 시 닫힘 방지
+const customOverlay = document.getElementById('custom-item-overlay');
+let isCustomMouseDownBackdrop = false;
+customOverlay.addEventListener('mousedown', (e) => {
+  isCustomMouseDownBackdrop = (e.target === customOverlay);
+});
+customOverlay.addEventListener('mouseup', (e) => {
+  if (isCustomMouseDownBackdrop && e.target === customOverlay) {
+    closeCustomItemModal();
+  }
+  isCustomMouseDownBackdrop = false;
+});
+
 
 // ── News ──────────────────────────────────────────
 let newsAll = [], newsFiltered = [], newsPage = 0;
