@@ -424,7 +424,7 @@
           <option value="all">전체 소스</option>
           <option value="thn">The Hacker News</option>
           <option value="bn">boannews</option>
-          <option value="cisa">CISA Alerts</option>
+          <option value="bp">BleepingComputer</option>
         </select>
         <input id="news-q" type="text" placeholder="키워드 검색..." oninput="filterNews()" />
         <button class="btn" onclick="loadNews(true)">
@@ -675,7 +675,7 @@ let newsAll = [], newsFiltered = [], newsPage = 0;
 
 function newsSourceBadge(src) {
   const map = {
-    cisa: { label: 'CISA Alert', style: 'background:var(--cisa-bg);color:var(--cisa);border:1px solid #d0c4ee' },
+    bp: { label: 'Bleepingcomputer', style: 'background:var(--cisa-bg);color:var(--cisa);border:1px solid #d0c4ee' },
     thn:  { label: 'The Hacker News', style: 'background:#fff3e0;color:#b85c00;border:1px solid #f0d9c0' },
     bn:   { label: 'boannews', style: 'background:#e8f4fb;color:#1565a8;border:1px solid #b8d4ee' },
   };
@@ -731,7 +731,7 @@ function renderNewsPager() {
 }
 
 function filterNews() {
-  const src = document.getElementById('news-src').value; // 메뉴 선택값 (all, cisa, thn)
+  const src = document.getElementById('news-src').value; // 메뉴 선택값 (all, thn, bn, bc)
   const q = (document.getElementById('news-q').value || '').toLowerCase(); // 검색어
   
   newsFiltered = newsAll.filter(n => {
@@ -739,9 +739,9 @@ function filterNews() {
     
     // 💡 벤더사 필터 꼬임 방지를 위해 포함(includes) 조건으로 유연하게 매칭합니다.
     if (src !== 'all') {
-      if (src === 'cisa' && !itemSource.includes('cisa')) return false;
       if (src === 'thn' && !itemSource.includes('thn') && !itemSource.includes('hacker')) return false;
-      if (src === 'bn' && !itemSource.includes('boan') && !itemSource.includes('bn')) return false;
+      if (src === 'bn' && !itemSource.includes('boan') && !itemSource.includes('bn')) return false
+      if (src === 'bc' && !itemSource.includes('bleeping') && !itemSource.includes('bc')) return false;
     }
     
     if (!q) return true;
