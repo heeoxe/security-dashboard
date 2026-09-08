@@ -38,12 +38,13 @@ jobs:
           # DEEPL_KEY = os.environ.get("DEEPL_API_KEY", "")
           # DEEPL_URL = "https://api-free.deepl.com/v2/translate"
 
-          # CISA와 THN 두 가지만 딱 깔끔하게 지정
           FEEDS = {
               "cisa": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
               "thn": "https://feeds.feedburner.com/TheHackersNews",
               "boannews": "https://www.boannews.com/rss/allArticle.xml"
+              "bleepingcomputer": "https://www.bleepingcomputer.com/feed/"
           }
+          
           EXCLUDE_PREFIXES = ["[부고]"]
 
           def is_excluded(title):
