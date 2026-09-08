@@ -126,9 +126,9 @@ jobs:
                   feed_items = parse_rss(source, url)
                   all_news.extend(feed_items)
 
-              # 최신 날짜 순 정렬 및 상위 50개 커트라인
+              # 최신 날짜 순 정렬 및 상위 100개 커트라인
               all_news.sort(key=lambda x: x.get('date', ''), reverse=True)
-              all_news = all_news[:50]
+              all_news = all_news[:100]
 
               # # DeepL 번역 — 제목 + 요약 배치 처리
               # if DEEPL_KEY and all_news:
