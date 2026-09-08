@@ -1193,6 +1193,16 @@ function saveNotes(notes) {
 }
 
 function openDetail(item) {
+  // 뉴스 아이템인 경우 notes 객체에 title 자동 등록
+  if (item && item.url && item.title) {
+    const notes = loadNotes();
+    if (!notes[item.url]) notes[item.url] = { memos: [], tags: [], status: '' };
+    if (!notes[item.url].title) {
+      notes[item.url].title = item.title;
+      saveNotes(notes);
+    }
+  }
+  
   currentDetailId = item.id || item.url || item.cve || item.title;
   currentNoteStore = 'default';
 
