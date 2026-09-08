@@ -423,7 +423,7 @@
         <select id="news-src" onchange="filterNews()">
           <option value="all">전체 소스</option>
           <option value="thn">The Hacker News</option>
-          <option value="bn">Boannews</option>
+          <option value="bn">boannews</option>
           <option value="cisa">CISA Alerts</option>
         </select>
         <input id="news-q" type="text" placeholder="키워드 검색..." oninput="filterNews()" />
@@ -677,7 +677,7 @@ function newsSourceBadge(src) {
   const map = {
     cisa: { label: 'CISA Alert', style: 'background:var(--cisa-bg);color:var(--cisa);border:1px solid #d0c4ee' },
     thn:  { label: 'The Hacker News', style: 'background:#fff3e0;color:#b85c00;border:1px solid #f0d9c0' },
-    bc:   { label: 'Bleeping Computer', style: 'background:#e8f4fb;color:#1565a8;border:1px solid #b8d4ee' },
+    bn:   { label: 'boannews', style: 'background:#e8f4fb;color:#1565a8;border:1px solid #b8d4ee' },
   };
   const s = map[src] || { label: src, style: 'background:var(--bg3);color:var(--text2);border:1px solid var(--border)' };
   return `<span class="badge" style="font-size:10px;${s.style}">${s.label}</span>`;
@@ -741,6 +741,7 @@ function filterNews() {
     if (src !== 'all') {
       if (src === 'cisa' && !itemSource.includes('cisa')) return false;
       if (src === 'thn' && !itemSource.includes('thn') && !itemSource.includes('hacker')) return false;
+      if (src === 'boan' && !itemSource.includes('boan')) return false;
     }
     
     if (!q) return true;
