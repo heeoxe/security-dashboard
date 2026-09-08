@@ -41,7 +41,8 @@ jobs:
           # CISA와 THN 두 가지만 딱 깔끔하게 지정
           FEEDS = {
               "cisa": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
-              "thn": "https://feeds.feedburner.com/TheHackersNews"
+              "thn": "https://feeds.feedburner.com/TheHackersNews
+              "boannews": "https://www.boannews.com/rss/allArticle.xml"
           }
 
           def strip_html(text):
