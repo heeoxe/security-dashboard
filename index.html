@@ -2064,43 +2064,46 @@ function renderMemos() {
   document.getElementById('memo-cnt-owasp').textContent = owaspEntries.length;
 
 
-  function memoCard([id, n], overrideDisplayId) {
-    const tags = (n.tags || []).map(t => `<span class="tag">${escHtml(t)}</span>`).join('');
-    const statusEl = n.status ? `<span class="badge" style="font-size:10px;background:${statusBg(n.status)};color:${statusColor(n.status)};border:1px solid ${statusColor(n.status)}40">${n.status}</span>` : '';
-  
-    // 1. 메모에 title이 없으면, 현재 로드된 전체 뉴스(newsAll)에서 URL로 제목을 즉시 매칭
+function memoCard([id, n], overrideDisplayId) {
+  const tags = (n.tags || []).map(t => `<span class="tag">${escHtml(t)}</span>`).join('');
+  const statusEl = n.status ? `<span class="badge" style="font-size:10px;background:${statusBg(n.status)};color:${statusColor(n.status)};border:1px solid ${statusColor(n.status)}40">${n.status}</span>` : '';
+    
+    // 1. 메모에 title이 없으면, 로드된 전체 뉴스(newsAll)에서 URL로 제목 실시간 매칭
     let titleText = n.title || '';
-    if (!titleText && id.startsWith('http') && typeof newsAll !== 'undefined') {
-        const matchedNews = newsAll.find(item => item.url === id);
-    if (matchedNews && matchedNews.title) {
-      titleText = matchedNews.title;
+    const isNews = id && id.startsWith('http');
+    if (!titleText && isNews && typeof newsAll !== 'undefined' && Array.isArray(newsAll)) {
+      const matchedNews = newsAll.find(item => item.url === id);
+      if (matchedNews && matchedNews.title) {
+        titleText = matchedNews.title;
+      }
     }
-  }
 
     // 2. URL 경로 축약 텍스트 생성
     let urlText = id;
-    try {
-      const u = new URL(id);
-      urlText = u.hostname.replace('www.', '') + u.pathname.slice(0, 45) + '...';
-    } catch {}
+    if (isNews) {
+      try {
+        const u = new URL(id);
+        urlText = u.hostname.replace('www.', '') + u.pathname.slice(0, 45) + '...';
+      } catch {}
+    }
 
-    // 3. 뉴스는 제목을 크게, URL 링크를 작게 표시 / 취약점 등은 기존 ID 유지
-    const isNews = id.startsWith('http');
+    // 3. 뉴스는 기사 제목(크게) + 원본 URL 링크(작게) 표시 / 그 외(취약점, OWASP 등)는 기존 ID 유지
     const titleDisplayHtml = isNews ? `
       <div style="margin-bottom: 6px;">
         <div class="card-title" style="font-size: 14px; font-weight: 600; line-height: 1.4; color: var(--text, #e2e8f0); margin-bottom: 2px;">
-        ${escHtml(titleText || urlText)}
+          ${escHtml(titleText || urlText)}
+        </div>
+        <a href="${escHtml(id)}" target="_blank" rel="noopener noreferrer" 
+           style="font-size: 11px; color: #38bdf8; text-decoration: none; word-break: break-all; opacity: 0.85;"
+           onclick="event.stopPropagation();"
+           onmouseover="this.style.textDecoration='underline'" 
+           onmouseout="this.style.textDecoration='none'">
+          🔗 ${escHtml(urlText)}
+        </a>
       </div>
-      <a href="${escHtml(id)}" target="_blank" rel="noopener noreferrer" 
-         style="font-size: 11px; color: #38bdf8; text-decoration: none; word-break: break-all; opacity: 0.85;"
-         onmouseover="this.style.textDecoration='underline'" 
-         onmouseout="this.style.textDecoration='none'">
-        🔗 ${escHtml(urlText)}
-      </a>
-    </div>
-  ` : `
-    <div class="card-title" style="margin-bottom: 4px;">${escHtml(overrideDisplayId || id)}</div>
-  `;
+    ` : `
+      <div class="card-title" style="margin-bottom: 4px;">${escHtml(overrideDisplayId || id)}</div>
+    `;
     
     const memos = (n.memos || []);
     const memosHtml = memos.slice().reverse().map(m => {
@@ -2110,16 +2113,18 @@ function renderMemos() {
         <div style="font-size:12px;color:var(--text);line-height:1.6;white-space:pre-wrap">${escHtml(m.text)}</div>
       </div>`;
     }).join('');
+
     return `<div class="card" style="cursor:pointer" onclick="openDetailById('${escAttr(id)}')">
-      <div class="card-top">
+      <div class="card-top" style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:6px;">
+        <div style="flex:1;min-width:0;">
+          ${titleDisplayHtml}
+        </div>
         ${statusEl}
-        <div class="card-title" style="font-size:13px">${escHtml(displayId)}</div>
       </div>
       ${tags ? `<div style="margin-bottom:8px">${tags}</div>` : ''}
       ${memosHtml || '<div style="font-size:12px;color:var(--text3);padding:4px 0">메모 없음</div>'}
     </div>`;
   }
-
   const emptyHtml = (msg) => `<div class="empty">
     <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
     ${msg}
