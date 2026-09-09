@@ -2326,15 +2326,27 @@ function memoCard([id, n], overrideDisplayId) {
     ` : `
       <div class="card-title" style="margin-bottom: 4px;">${escHtml(targetId)}</div>
     `;
-    
+
     const memos = (n.memos || []);
     const memosHtml = memos.slice().reverse().map(m => {
       const t = m.createdAt ? new Date(m.createdAt).toLocaleString('ko-KR',{month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'}) : '';
-      return `<div style="border-left:2px solid var(--border2);padding:6px 10px;margin-bottom:6px">
-        <div style="font-size:10px;color:var(--text3);margin-bottom:3px">${t}</div>
-        <div style="font-size:12px;color:var(--text);line-height:1.6;white-space:pre-wrap">${escHtml(m.text)}</div>
-      </div>`;
-    }).join('');
+  
+      // 첫 줄을 소제목으로 분리
+      const lines = (m.text || '').trim().split('\n');
+      const rawTitle = lines[0] || '';
+      const memoSubtitle = rawTitle.replace(/^#+\s*/, '');
+      const memoBody = lines.slice(1).join('\n').trim();
+
+      return `<div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:10px 12px;margin-bottom:8px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:${memoBody ? '6px' : '0'};">
+        <div style="font-size:13px;font-weight:600;color:var(--text);letter-spacing:-0.2px;">
+        ${escHtml(memoSubtitle)}
+        </div>
+        <span style="font-size:11px;color:var(--text3);">${t}</span>
+        </div>
+        ${memoBody ? `<div style="font-size:12px;color:var(--text2);line-height:1.65;white-space:pre-wrap;border-top:1px solid var(--border2);padding-top:8px;margin-top:4px;">${escHtml(memoBody)}</div>` : ''}
+        </div>`;
+      }).join('');
 
     return `<div class="card" style="cursor:pointer" onclick="openDetailById('${escAttr(id)}')">
       <div class="card-top" style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:6px;">
@@ -2357,7 +2369,7 @@ function memoCard([id, n], overrideDisplayId) {
     : emptyHtml(q || statusFilter ? '검색 결과가 없습니다' : '작성된 취약점 메모가 없습니다');
 
   document.getElementById('memo-list-news').innerHTML = newsEntries.length
-    ? newsEntries.map(memoCard).join('')
+    ? newsEntries.map(e => memoCard(e)).join('')
     : emptyHtml(q || statusFilter ? '검색 결과가 없습니다' : '작성된 뉴스 메모가 없습니다');
 
   document.getElementById('memo-list-owasp').innerHTML = owaspEntries.length
