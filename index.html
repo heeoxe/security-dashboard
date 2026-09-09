@@ -1600,6 +1600,12 @@ function saveDetail() {
     note.memos.push({ text: memoText, createdAt: new Date().toISOString() });
     document.getElementById('dp-memo').value = '';
   }
+  // 모달에 열려있던 기사의 제목을 notes 객체에 영구 저장
+  if (!notes[targetId].title) {
+    const activeTitle = (typeof currentDetailItem !== 'undefined' && currentDetailItem && (currentDetailItem.title_ko || currentDetailItem.title))
+      || (typeof newsAll !== 'undefined' && newsAll.find(x => x.url === targetId)?.title);
+    if (activeTitle) notes[targetId].title = activeTitle;
+  }
   note.updatedAt = new Date().toISOString();
   notes[currentDetailId] = note;
   setNotes(notes);
