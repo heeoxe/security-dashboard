@@ -1,5 +1,124 @@
 [
   {
+    "source": "thn",
+    "title": "Your Critical Vulnerabilities Might Not Be Your Biggest Risk",
+    "desc": "Security teams have become exceptionally talented at finding vulnerabilities. Now, it’s time to turn our attention to optimizing the process for determining which of those vulnerabilities actually create a path to compromise.\n\nA critical vulnerability may look alarming on a scanner report, but if it",
+    "url": "https://thehackernews.com/2026/09/your-critical-vulnerabilities-might-not.html",
+    "date": "2026-09-11T17:00:00"
+  },
+  {
+    "source": "thn",
+    "title": "Attackers Chain JFrog Artifactory Flaws to Gain Admin Control and Plant Backdoors",
+    "desc": "Attackers have chained two flaws in JFrog Artifactory, the repository that software build pipelines pull from, to take administrator control of self-hosted servers and plant backdoors, cloud security company Wiz&nbsp;said in a report.\n\nWiz saw the attacks between August 15 and September 8. JFrog had",
+    "url": "https://thehackernews.com/2026/09/attackers-chain-jfrog-artifactory-flaws.html",
+    "date": "2026-09-11T13:01:05"
+  },
+  {
+    "source": "thn",
+    "title": "China-Linked UNC3569 Exploited Sogou Input Method Flaw to Deploy GRAYRABBIT Backdoor",
+    "desc": "A China-linked hacking group exploited a flaw in Sogou Input Method, one of the most widely used tools for typing Chinese characters on Windows, to install a backdoor on victims' computers, security company Gen Digital said in&nbsp;research published Thursday.\n\nThe attack started with a crafted link",
+    "url": "https://thehackernews.com/2026/09/china-linked-unc3569-exploited-sogou.html",
+    "date": "2026-09-11T12:44:09"
+  },
+  {
+    "source": "thn",
+    "title": "PaperCut Replaces Emergency Patches With Fixes for Two Actively Exploited Flaws",
+    "desc": "PaperCut on Thursday released a new security maintenance release that replaces all previously published emergency patches that were pushed to address two security flaws that have come under active exploitation.\n\nThe software development company said PaperCut NG/MF versions 26.0.5, 25.0.13 and 24.1.1",
+    "url": "https://thehackernews.com/2026/09/papercut-replaces-emergency-patches.html",
+    "date": "2026-09-11T12:16:18"
+  },
+  {
+    "source": "thn",
+    "title": "Cisco FMC Flaws Exploited to Steal Credentials and Deploy Qilin Ransomware",
+    "desc": "Cisco has revealed that three distinct threat clusters linked to ransomware and state-sponsored attacks have been exploiting two recently patched Secure Firewall Management Center (FMC) vulnerabilities.\n\nThe attacks leverage CVE-2026-20079 (CVSS score: 10.0), an authentication bypass vulnerability i",
+    "url": "https://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html",
+    "date": "2026-09-11T11:49:59"
+  },
+  {
+    "source": "boannews",
+    "title": "[2026 위협 인텔리전스 리포트] 사이버 전장 나침반 ‘위협 인텔리전스’(TI), AI 시대 보안 인프라로 진화",
+    "desc": "카스퍼스키는 최근 북한 연계 위협 그룹 김수키가 악성코드 제작에 생성형 AI를 활용한 정황이 포착됐다고 밝혔다. 악성코드의 주석에 사람 개발자가 좀처럼 쓰지 않는 이모티콘이 쓰이거나 어색한 문법 오류가 발견되는 등 AI를 쓴 흔적이 나타났다는 것이다. 이는 김수키뿐 아니라 대부분 지능형위협 (APT) 그룹에 공통적으로 나타나는 현상이라는 설명이다. AI 에이전트 역시 사이버 공격에 적극 활용되고 있으리란 추측이 나온다. 해커들이 인공지능(AI) 기술을 적극 활용하면서 사이버 공격이 폭증하리란 우려는 이미 현실로 나타나고 있다. 초기",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145799",
+    "date": "2026-09-11 19:45:06"
+  },
+  {
+    "source": "boannews",
+    "title": "인텔리빅스, 美 기자단에 한국 AI 산업과 ‘안전 AI’ 혁신 비전 제시",
+    "desc": "안전 AI 딥테크 기업 인텔리빅스는 지난 10일 서울 본사를 방문한 미국 주요 언론인 기자단을 대상으로 한국의 AI 산업 생태계와 안전 AI의 산업·공공 현장 적용 사례를 소개했다고 11일 밝혔다.이번 방문은 한국언론진흥재단과 미국 동서센터(East-West Center)가 공동 추진하는 ‘2026년 한미 언론교류 프로그램’의 일환이다. ‘변화하는 한미 관계의 향방: 무역, 투자 및 안보 협력을 중심으로’를 주제로 방한한 기자단에는 POLITICO, CNN, NPR, The San Diego Union-Tribune 등 미국 주요",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145796",
+    "date": "2026-09-11 17:47:49"
+  },
+  {
+    "source": "boannews",
+    "title": "개인정보위, ‘구글’ 디지털성범죄 피해정보 유출 조사 신속 추진",
+    "desc": "개인정보보호위원회(위원장 송경희, 개인정보위)는 ‘구글에 제공된 디지털성범죄물 관련 삭제 요청사항이 외부 웹사이트에 공개되었다’는 언론 보도에 따라 지난 7일 구글 측에 사실관계 확인을 위한 자료제출을 요구하는 등 조사에 착수했다고 밝혔다.개인정보위는 구글이 외부 웹사이트 운영기관에 제공한 민감한 개인정보의 규모·항목, 제공 기간 등 사실관계를 확인하고 있다.그간 구글이 삭제 요청사항을 지속적으로 웹사이트 운영기관에 제공했는지 혹은 인적 과실, 시스템 오류 등이 있었는지 등 어떤 경위로 피해가 발생했는지 면밀하게 살펴볼 계획이다.또",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145798",
+    "date": "2026-09-11 17:46:33"
+  },
+  {
+    "source": "boannews",
+    "title": "[속담으로 배우는 100가지 보안 습관 99] 아는 것이 힘이다(9)-카페에서 노트북 두고 가면 생기는 일",
+    "desc": "보안 사고의 90%는 해킹이 아니라 ‘실수’에서 시작된다. 그래서 우리는 기술보다 습관을 배워야 한다. 속담으로 배우는 100가지 보안 습관에서는 △스마트폰 보안 △계정·비밀번호 △PC·인터넷 △생활 보안 △금융·개인정보 등 100가지 보안 습관을 속담과 연관시켜 소개한다. 보안은 어렵지 않다. 지키느냐, 안 지키느냐의 차이다. 나 하나의 습관이 모두를 지킨다는 생각으로 사소한 습관부터 실천해 보자. [편집자 주]카페에서 노트북을 두고 자리를 비우면, 짧은 시간이라도 분실·도난 위험이 생길 수 있어 주의가 필요하다. 또한 매장에 따",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=144253",
+    "date": "2026-09-11 16:40:00"
+  },
+  {
+    "source": "boannews",
+    "title": "“AI 동료를 부리는 매니저로 진화하라”... 현업 전문가 6인이 짚어낸 보안의 미래",
+    "desc": "급변하는 AI 시대, 정보보안 실무자들은 AI를 일자리를 위협하는 경쟁자가 아닌 협력할 '동료'(Co-worker)로 맞이하고, 화려한 신기술 도입 이전에 보안의 '기본기'를 더욱 탄탄히 다져야 한다는 현장 전문가들의 제언이 나왔다.정보보안 실무자 커뮤니티 클라우디머스(CloudyMous)의 첫 오프라인 세미나 백미는 단연 현업 전문가 6인이 참석한 패널토론이었다. 김동현 크리밋(Cremit) 대표의 사회로 진행된 이번 토론은 150여 명의 청중이 숨을 죽인 가운데 AI 도입으로 인한 일자리 위협부터 데이터 프라이버시 통제와 쏟아지",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145791",
+    "date": "2026-09-11 16:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "GTA 6 유출본 미끼로 악성코드 4종 한꺼번에 감염시키는 공격 발견",
+    "desc": "사이버 공격자들이 게임 ‘그랜드 테프트 오토 6’(GTA 6)를 미리 해 보려는 이용자들을 노려 가짜 설치 파일에 악성코드 네 종을 담아 뿌리고 있다. 보안 기업 헌트리스(Huntress)에 따르면, 미끼는 조작된 검색 결과와 게임 커뮤니티, 토렌트 사이트, 소셜미디어 게시물을 타고 퍼진다.가짜 이미지 파일 가운데 일부는 100기가바이트를 넘는다. 용량의 대부분은 그럴듯해 보이려고 채워 넣은 쓸모없는 데이터다.설치 프로그램은 예전 GTA 5 아이콘을 달고 있다. 실행하면 유출됐다는 게임의 ‘크랙이 더는 유효하지 않아 실행이 안 될",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145794",
+    "date": "2026-09-11 14:53:24"
+  },
+  {
+    "source": "boannews",
+    "title": "조달청, 직원이 직접 만든 AI로 조달업무 혁신 가속",
+    "desc": "조달청(청장 백승보)은 11일 ‘인하우스(In-House) AI 개발 TF 성과 시연회’를 개최하고 직원들이 직접 개발해 업무에 활용하고 있는 AI 서비스 7종의 성과와 활용 사례를 공유했다.‘인하우스 AI 개발 TF’는 개발의 전 과정을 외부에 맡기지 않고 조직 내부에서 직접 수행하는 방식을 의미한다. 조달청은 디지털공정조달국장을 팀장으로 직원 26명이 참여하는 TF를 올해 2월부터 운영하고 있다.특히, 조달청은 업무망 내 안전한 AI 개발·배포 환경을 자체 구축하고 자연어로 프로그램을 개발하는 ‘바이브 코딩(Vibe Coding",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145793",
+    "date": "2026-09-11 14:10:00"
+  },
+  {
+    "source": "boannews",
+    "title": "핀텔, 30억원 규모 유상증자 완료... AI 영상분석 사업 확대",
+    "desc": "AI 기술 선도 기업인 핀텔은 30억원 규모 일반공모 방식의 유상증자 절차를 마무리했다고 11일 밝혔다. 확보한 재원을 운영자금으로 활용하면서 기존 사업 경쟁력을 강화하고 사업영역을 넓혀갈 방침이다.핀텔은 지난 9월 1일 이사회에서 유상증자를 결정하고 7~8일 청약을 진행했다. 최종 청약 경쟁률은 1.46대 1이며, 발행 주식 수는 265만7218주, 조달금액은 약 30억원이다. 신주 상장 예정일은 9월 29일이다.핀텔은 현장에서 검증한 AI 영상분석 솔루션의 수요처 확대로 매출 기반을 다각화할 방침이다. 축적한 기술력과 사업 수행",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145790",
+    "date": "2026-09-11 13:30:00"
+  },
+  {
+    "source": "boannews",
+    "title": "24시간 내 신고 및 글로벌 매출 2.5% 과징금... EU 사이버복원력법 보고 의무 11일 발효",
+    "desc": "유럽연합 회원국에서 사업하는 기업들은 취약점 악용이나 보안 사고 발견 시 24시간 내로 신고해야 한다. 과징금은 글로벌 매출 최대 2.5% 또는 1500만 유로 중 더 큰 금액을 부과받는다. 기업의 소재지와 무관하게 적용된다.9월 11일(현지시각)부터 유럽연합(EU) 사이버복원력법(CRA)의 보고 의무가 시행된다.제품에서 실제 악용되고 있는 취약점이나 심각한 보안 사고를 발견한 기업은 24시간 안에 유럽연합사이버보안청(ENISA)에 이를 알려야 한다. 이어 72시간 안에는 심각도 평가와 완화 조치를 담은 통지를 내야 한다. 수정본이",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145788",
+    "date": "2026-09-11 11:53:48"
+  },
+  {
+    "source": "boannews",
+    "title": "AI 자율보안 시대 짚은 최고 명강연자는 누구?.... ISEC 2026 베스트 스피커 어워드 시상식",
+    "desc": "국제시큐리티콘퍼런스(ISEC)은 정보보호 분야 수요와 공급측 전문가와 경영진, 실무자, 기업과 기관이 대거 참여해 산업과 기술의 최신 동향과 이슈, 지식과 경험을 공유하는 장이다. ‘AI로 구현하는 자율 보안의 미래’를 주제로 지난달 서울 코엑스에서 열린 ‘ISEC 2026’에서도 166여개의 솔루션 전시 부스와 함께 24개 트랙 124개 세션 발표가 이어지며 8100여명의 참관객에게 정보보호 산업의 현재와 미래에 대한 통찰을 제시했다. ISEC조직위원회는 행사 기간 중 전문성과 내용, 시의성, 전달 역량 등을 종합적으로 평가해 최",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145787",
+    "date": "2026-09-11 11:48:34"
+  },
+  {
+    "source": "boannews",
+    "title": "“무너진 경계 사수하라” 클라우디머스 세미나가 남긴 AI 시대 보안 과제",
+    "desc": "지난 7년간 온라인 메신저를 기반으로 정보보안 지식을 교류해 온 실무자 커뮤니티 클라우디머스(CloudyMous)가 첫 현장 세미나를 성공적으로 마무리했다.행사 주최자인 천영철 SBSi 정보보안 담당자는 환영사를 통해 “솔루션 벤더나 특정 기관 주도가 아닌 현장 최전선에서 고민하는 실무자들의 생생한 경험을 듣는 자리로 준비했다”며 “150명 남짓 모인 이 첫 세미나가 7년간 쌓아온 온라인 커뮤니티를 실질적인 실무 네트워크로 잇는 출발점이 되길 바란다”고 말했다.세미나는 변준우 토스증권 엔지니어의 강연과 함께 시작됐다. ‘—dange",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145786",
+    "date": "2026-09-11 11:45:00"
+  },
+  {
+    "source": "boannews",
+    "title": "[배종찬의 보안 빅데이터] 민감 정보까지 털린 ‘강남언니’ 개인정보 유출",
+    "desc": "2026년 9월 7일과 8일 양일간 빅데이터 분석 플랫폼 썸트렌드(SomeTrend)가 집계한 연관어 분석에 따르면, 대표적 미용·의료 플랫폼인 ‘강남언니’와 운영사 ‘힐링페이퍼’ 주변에 ‘개인정보유출’, ‘사고’, ‘api’, ‘홈페이지’라는 불안한 키워드들이 최상위에 형성됐다. 9월 초 발생한 이번 해킹 사건은 단순히 인터넷 서비스를 이용하는 개인의 일상적인 정보가 새어나간 사고가 아니다. 한국과 일본 등 이용자의 성형·미용 상담 기록과 민감한 개인 신체 데이터가 무더기로 탈취당하며 사회의 보안 안전망에 경종을 울린 초유의 민감",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145784",
+    "date": "2026-09-11 11:00:00"
+  },
+  {
     "source": "boannews",
     "title": "서울시, 세계 자살예방의 날 맞아 한강에 ‘AI 생명 안전망’ 놓는다",
     "desc": "서울특별시 미래한강본부는 세계 자살예방의 날(9월 10일)을 맞아, 한강 교량에서 발생하는 위기 상황을 인공지능(AI)이 먼저 감지하고 드론이 즉시 출동해 구조하는 ‘자살자 구조를 위한 피지컬 AI 선제 감지·자율 대응 시스템’ 사업을 본격 추진한다고 밝혔다. 이는 예방·상담이라는 기존 안전망에, 위기의 순간 물리적으로 생명을 붙잡는 ‘마지막 안전망’을 더하는 시도다.이 사업은 과학기술정보통신부와 정보통신산업진흥원(NIPA)이 주관하는 ‘2026년 AI 응용제품 신속 상용화 지원사업’에 선정된 과제로, 연간 국비 14억여원이 투입된",
@@ -82,13 +201,6 @@
     "desc": "디지털 혁신의 속도가 기업의 생존을 가르는 시대에, 사이버 위험은 IT 부서의 기술적 결함을 넘어 주가와 경영진의 법적 책임을 위협하는 최상위 경영 리스크가 되었습니다. 그러나 대다수 기업 현장에서는 여전히 본사의 획일적 보안 정책이 현업의 비즈니스 출시 속도를 가로막으며, 현업 부서와 보안팀 간의 깊은 불신과 소통 단절을 낳고 있습니다.이러한 구조적 마찰을 해소하고 보안을 비즈니스 경쟁력으로 승화시키기 위해, 선진 기업들은 ‘BISO’(Business Information Security Officer, 비즈니스 정보보호 책임자)",
     "url": "https://www.boannews.com/news/articleView.html?idxno=145777",
     "date": "2026-09-10 16:09:57"
-  },
-  {
-    "source": "boannews",
-    "title": "ADT캡스, 하나은행과 소상공인 디지털 전환 돕는다... AI CCTV 등 지원",
-    "desc": "SK쉴더스 ADT캡스가 하나은행과 함께 전국 소상공인 500개 사업장을 대상으로 디지털 솔루션 지원 사업을 진행한다고 10일 밝혔다.이 사업은 소상공인 지원 프로그램 ‘하나 파워 온 스토어’의 일환이다. 경기 침체와 인건비 상승으로 소상공인 경영 부담이 커지는 가운데, 디지털 기술 도입에 어려움을 겪는 사업장의 부담을 덜고 안정적 매장 운영을 지원한다. ADT캡스는 선정된 소상공인에 △AI CCTV △IoT 매장관리 솔루션 △키오스크 △QR오더 △클린케어 서비스 등을 지원한다. 디지털 전환에 필요한 솔루션 도입 부담을 낮추고 소상공",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145776",
-    "date": "2026-09-10 16:06:10"
   },
   {
     "source": "boannews",
@@ -427,41 +539,6 @@
     "date": "2026-09-09 11:13:07"
   },
   {
-    "source": "boannews",
-    "title": "질문 하나에 지메일 새어 나갔다... 챗GPT 계정 사이에 뚫린 숨은 통로",
-    "desc": "오픈AI 챗GPT에서 공격자가 다른 사용자의 지메일 데이터와 대화 기록을 빼돌릴 수 있는 결함이 드러났다. 오픈AI는 문제가 된 내부 서비스를 폐쇄했다. 체크포인트 연구진이 찾아내 8일(현지시각) 공개했다.문제가 된 것은 챗GPT 대화 컨테이너가 공통으로 접근하던 내부 패키지 서비스 아티팩토리(Artifactory)다. 서로 다른 계정의 대화방이 같은 공간을 들여다볼 수 있었다. 계정과 계정 사이에 공용 우편함이 하나 놓여 있던 셈이다.공격은 지시문을 심는 데서 시작한다. 대화 공유 링크나 맞춤형 GPT 제작 도구의 지시문 안에 명",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145740",
-    "date": "2026-09-09 10:23:34"
-  },
-  {
-    "source": "boannews",
-    "title": "이지서티, 경찰청 ‘온나라 2.0’에 AI 기반 개인정보 필터링 솔루션 공급",
-    "desc": "개인정보보호 전문기업 이지서티는(대표이사 김동례) 경찰청 ‘온나라 2.0 전환 사업’에 지능형 실시간 탐지 개인정보 필터링 솔루션 ‘U-PRIVACY SAFER V4.0’을 공급한다고 밝혔다.경찰청은 노후화된 온나라 1.0을 G-클라우드 기반의 온나라 2.0으로 전환해 시스템 호환성과 보안성을 강화하고 있다. 이번 사업에서 개인정보 필터링 솔루션은 직접구매 대상 상용 SW로 포함됐으며, 이지서티는 문서와 첨부파일 등을 통해 처리되는 개인정보의 유출을 방지하는 개인정보 보호 영역을 지원한다.이지서티의 ‘U-PRIVACY SAFER V",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145739",
-    "date": "2026-09-09 10:16:11"
-  },
-  {
-    "source": "boannews",
-    "title": "인텔리빅스, IFA 2026에서 ‘국산 NPU 기반 산불 조기경보·안전관제 기술’ 공개",
-    "desc": "안전 딥테크 AI 기업 인텔리빅스(대표 장정훈)는 4일부터 8일까지 독일 베를린에서 열린 국제가전전시회 ‘IFA 2026’ 에 참가해 국산 AI 반도체(NPU) 기반 산불 조기경보 및 자율형 안전관제 기술을 소개했다고 9일 밝혔다.인텔리빅스는 정보통신산업진흥원(NIPA) ‘K-AI 반도체’ 공동관(K-AI Semiconductor Pavilion)에 참가했다. 전시 부스에서는 국산 NPU와 인텔리빅스의 Vision AI·VLM 기술을 결합한 재난안전 분야 실증 성과를 소개했다.인텔리빅스는 지난해 과학기술정보통신부의 ‘온디바이스 AI",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145735",
-    "date": "2026-09-09 09:32:27"
-  },
-  {
-    "source": "boannews",
-    "title": "HS효성인포메이션시스템, Arm 서버·NPU 결합해 AI 추론 시장 공략",
-    "desc": "AI·데이터 인프라 솔루션 전문기업 HS효성인포메이션시스템(대표 양정규)이 저전력 Arm 서버 ‘GreenCore’와 신경망처리장치(NPU)를 결합한 고효율 AI 추론 인프라를 기반으로 기업 AI 서비스 운영 시장 공략에 나선다.생성형 AI와 대규모 언어 모델(LLM) 활용이 본격화되면서 AI 시장의 무게중심이 모델 개발과 학습에서 실제 업무와 서비스에 적용·운영하는 추론 단계로 이동하고 있다. 이로 인해 기업들은 모델 성능뿐 아니라 반복적으로 발생하는 추론 요청을 제한된 비용, 전력, 공간 내에서 효율적으로 처리할 수 있는 인프라",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145734",
-    "date": "2026-09-09 09:25:00"
-  },
-  {
-    "source": "boannews",
-    "title": "쏟아지는 API 자동화 공격, 진짜 ‘미토스’ 쇼크는 지금부터?",
-    "desc": "플랫폼 외부 연동을 위해 열어둔 애플리케이션 프로그래밍 인터페이스(API)가 2026년 하반기 보안 뇌관으로 급부상했다.클로드 미토스 쇼크 이후 페이블 5.1이나 GPT 솔 등 추론 능력이 강화된 차세대 AI 모델이 잇따라 출시되면서, 이를 무기화한 해커들이 기계의 속도로 API 로직의 허점을 파고드는 자동화 공격이 국내외 IT 생태계를 위협하고 있다.글로벌 버그바운티 플랫폼 버그크라우드(Bugcrowd)는 최근 보고서를 통해 AI가 기존의 방어 모델을 산산조각 내는 ‘버그마게돈(Bugmageddon)’ 사태를 경고했다. 해당 보고",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145732",
-    "date": "2026-09-09 09:00:00"
-  },
-  {
     "source": "thn",
     "title": "Slim Spider Steals Crypto Custody Secrets From Brazilian Financial Institution",
     "desc": "A previously undocumented financially motivated threat actor has been linked to attacks targeting Brazilian financial institutions since at least March 2026.\n\nCybersecurity company CrowdStrike is tracking the Brazil-based activity cluster under the name Slim Spider.\n\n\"The adversary demonstrates deep",
@@ -530,48 +607,6 @@
     "desc": "Online dating app Grindr has opted to pay £26 million ($35.1 million) to settle a lawsuit in the U.K. over allegations that it shared users' personal information, including their HIV status, with third-parties.\n\nGrindr, which is the largest LGBTQ+ dating app, was sued in April 2024, accusing it of v",
     "url": "https://thehackernews.com/2026/09/grindr-to-pay-26-million-to-settle-uk.html",
     "date": "2026-09-08T12:30:43"
-  },
-  {
-    "source": "boannews",
-    "title": "휴네시온, AIDC 보안 기술 워크숍서 ‘N2SF 도입전략’ 공유",
-    "desc": "정보보안 전문기업 휴네시온(대표 정동섭)은 7일부터 이틀간 열린 ‘AIDC 보안 기술 워크숍’에서 ‘한국부동산원 N2SF 도입전략’을 주제로 국가 망 보안체계(N2SF) 모델 2·4의 실제 적용 전략과 구축 방향을 공유했다.이번 워크숍은 한국사이버안보학회가 주최하고 한전KDN과 N2SF연구회가 공동 주관한 행사로, 공공 AIDC 구축 및 보안 전략, AIDC 보안 특화 기술 및 공급망 보안, 국가·공공기관의 N2SF 도입전략 등을 중심으로 산·학·연·관 전문가들이 보안 기술과 적용 방안을 공유하는 자리로 마련됐다.휴네시온에서는 심재",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145733",
-    "date": "2026-09-08 18:06:15"
-  },
-  {
-    "source": "boannews",
-    "title": "“자꾸 합쳐야 하는 AI 데이터센터, AI로 ‘그린팀 보안’ 해야”",
-    "desc": "“격리하면 완벽했던 보안이지만, 합치고 연동해야 하는 AI 데이터센터 환경에서는 기존 방식은 한계가 있습니다. 설계부터 보안을 내재화한 ‘그린팀’ 보안을 AI의 힘으로 운영해야 합니다.”N2SF 연구회장을 맡고 있는 김창훈 대구대학교 컴퓨터정보공학부 교수는 7~8일 이틀간 경기도 성남시 밀리토피아 호텔 바이마린에서 열린 ‘AIDC 보안 기술 워크숍’에서 이같이 밝혔다.김 교수는 ‘AIDC CSF 설계 방향 및 한전KDN PoC 전략’을 주제로 발표했다. 이 자리에서 그는 AI 시대로 접어들면서 마주치는 기존 보안의 한계와, 인공지능",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145730",
-    "date": "2026-09-08 17:40:00"
-  },
-  {
-    "source": "boannews",
-    "title": "“무심코 방치한 API 키의 역습”... AI 열풍에 찬물 끼얹은 깃허브 공급망 공격",
-    "desc": "최근 AI 커뮤니티와 바이브코딩 진영에서 뜨거운 관심사 중 하나인 AI 기반 숏폼 비디어 생성 프로젝트를 위장한 해킹 공격이 진행돼 보안 생태계에 비상이 걸렸다. 개발자의 신뢰도를 역이용한 오픈소스 공급망 공격으로 인해 사용자들의 핵심 인증 토큰과 모델 컨텍스트 프로토콜(MCP) 설정 정보가 외부로 유출되는 사태가 발생했다.8일 보안 업계와 개발자 커뮤니티에 따르면 ‘pierrenade/short-video-generator-AI’ 레포지토리 소스코드 내에 악성 스크립트가 은밀하게 삽입된 정황이 확인됐다. 공격자들은 개발자들이 별다",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145728",
-    "date": "2026-09-08 17:30:00"
-  },
-  {
-    "source": "boannews",
-    "title": "패치 권고 놓친 나흘 사이 침입... 호주 학습 플랫폼서 108만명 정보 유출",
-    "desc": "호주 수학 학습 플랫폼 매스스페이스가 침해를 당해 107만9819명의 개인정보가 빠져나갔다. 피해자는 호주와 뉴질랜드의 △학생 △학부모·보호자 △학교 교직원 △매스스페이스 직원이다.침입 통로는 회사가 사내 데이터 분석용으로 쓰던 오픈소스 소프트웨어 메타베이스(Metabase)였다. 메타베이스는 학습 데이터를 모아 보고서로 만드는 데 쓰는 도구다.메타베이스는 8월 6일 비밀번호 재설정 기능에서 인증 없이 데이터베이스를 조작할 수 있는 취약점(CVE-2026-72898)을 공개하고 같은 날 패치를 냈다.매스스페이스는 이 권고를 놓쳤다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145726",
-    "date": "2026-09-08 15:35:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[속담으로 배우는 100가지 보안 습관 96] 아는 것이 힘이다(6)-매크로 파일 열면 생기는 사고",
-    "desc": "보안 사고의 90%는 해킹이 아니라 ‘실수’에서 시작된다. 그래서 우리는 기술보다 습관을 배워야 한다. 속담으로 배우는 100가지 보안 습관에서는 △스마트폰 보안 △계정·비밀번호 △PC·인터넷 △생활 보안 △금융·개인정보 등 100가지 보안 습관을 속담과 연관시켜 소개한다. 보안은 어렵지 않다. 지키느냐, 안 지키느냐의 차이다. 나 하나의 습관이 모두를 지킨다는 생각으로 사소한 습관부터 실천해 보자. [편집자 주]매크로 파일을 열 때 생기는 사고는 주로 보안 설정 때문에 매크로가 차단되거나, 악성 매크로가 실행돼 시스템에 피해가 갈",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=144250",
-    "date": "2026-09-08 15:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "국립산림과학원, 다중위성 활용 산불정보 가시화 시스템 시범 구축",
-    "desc": "산림청 국립산림과학원(원장 김용관)은 농림위성의 산불 대응 지원 활용을 확대하고 단일 위성관측의 시·공간적 한계를 보완하기 위해 ‘다중위성 융합 산불정보 가시화시스템’(가칭)을 시범 구축했다고 밝혔다.이번 시스템은 농림위성의 산불피해분석 정보와 천리안위성(GK2A), 수오미 NPP(Suomi NPP) 위성 등의 화점 정보를 하나의 화면에서 통합해 확인할 수 있도록 개발됐다. 위성별로 분산돼 있던 산불 정보를 시간대별로 표출함으로써 산불 상황을 한눈에 직관적으로 파악하고 현장과 공유할 수 있는 것이 특징이다.올해 7월 발사된 농림위성",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145721",
-    "date": "2026-09-08 13:55:00"
   },
   {
     "source": "thn",
@@ -663,40 +698,5 @@
     "desc": "Broadcom has released security updates for two security flaws impacting VMware Workstation and Fusion, including one critical bug that could result in arbitrary code execution under certain conditions.\n\nThe vulnerability, tracked as CVE-2026-59346 (CVSS score: 9.3), is an integer-overflow vulnerabil",
     "url": "https://thehackernews.com/2026/09/critical-vmware-workstation-and-fusion.html",
     "date": "2026-09-05T21:35:08"
-  },
-  {
-    "source": "thn",
-    "title": "Trezor Says ShipMonk Breach Exposed 67,000 U.S. Customers' Data It Said Was Deleted",
-    "desc": "Hardware wallet manufacturer Trezor on Friday disclosed that another 67,000 customers from the U.S. have been impacted in a breach at its shipping provider ShipMonk.\n\nThe exposed information includes customer names, email addresses, phone numbers, shipping addresses, and order numbers between Novemb",
-    "url": "https://thehackernews.com/2026/09/trezor-says-shipmonk-breach-exposed.html",
-    "date": "2026-09-05T19:47:02"
-  },
-  {
-    "source": "thn",
-    "title": "Thousands of OpenAI Agents Quietly Turned an Abandoned Wiki Into Their Coordination Channel",
-    "desc": "A group of AI safety researchers says a fleet of autonomous agents that identified themselves as OpenAI systems left about 18,000 posts on a dormant 25-year-old German wiki between May and July 2026, using the site as a shared board to pool answers to a timed web task and pass around a way out of th",
-    "url": "https://thehackernews.com/2026/09/thousands-of-openai-agents-quietly.html",
-    "date": "2026-09-05T13:25:10"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Exploit PaperCut Flaws to Steal Credentials From Schools and Universities",
-    "desc": "Threat actors are exploiting the newly disclosed PaperCut flaws to facilitate credential theft in attacks targeting the education sector in the U.S. and Europe.\n\nThe Arctic Wolf Adversary Research Team said it observed attackers exploiting CVE-2026-81578 and CVE-2026-82078 – an authentication bypass",
-    "url": "https://thehackernews.com/2026/09/attackers-exploit-papercut-flaws-to.html",
-    "date": "2026-09-05T13:01:53"
-  },
-  {
-    "source": "thn",
-    "title": "Phishing Campaign Sends Millions of Emails Using Invisible Unicode to Evade Filters",
-    "desc": "Microsoft is alerting of a \"high-volume phishing campaign\" that's using invisible Unicode tag characters to bypass email filters.\n\n\"Instead of using these characters to hide instructions from people while exposing them to AI models, the attacker used them to split financial lure words such as 'fundi",
-    "url": "https://thehackernews.com/2026/09/phishing-campaign-sends-millions-of.html",
-    "date": "2026-09-04T21:27:15"
-  },
-  {
-    "source": "thn",
-    "title": "PostgreSQL Fixes 12-Year-Old Logical Decoding Flaw Enabling Replication-Role Code Execution",
-    "desc": "PostgreSQL has released updates to address a security flaw that allows an account with the REPLICATION attribute to run arbitrary code as the operating-system user running the database server.\n\nThe flaw, tracked as CVE-2026-6471 (CVSS score: 7.2), has been present since logical decoding was introduc",
-    "url": "https://thehackernews.com/2026/09/postgresql-fixes-12-year-old-logical.html",
-    "date": "2026-09-04T20:50:19"
   }
 ]
