@@ -1,5 +1,40 @@
 [
   {
+    "source": "boannews",
+    "title": "[단독] 현대차 협력사도 해킹… 韓 기업 공급망 위협 공포 확산",
+    "desc": "한국 주요 기업 협력사나 계열사, 해외 법인 등을 노린 공급망 공격에 대한 공포가 확산되고 있다.11일 보안 업계에 따르면 현대차 주요 부품 협력사인 A사는 최근 사이버 공격을 받아 한국인터넷진흥원(KISA)에 신고를 마쳤다.다만 이 회사의 데이터는 11일 현재 여전히 다크웹에 게시된 상태다. 공격자는 이 데이터가 A사의 “제조, 파트너, 직원, 고객 정보 등”이라며 다운로드 링크를 게시했다.공개된 게시물에 대해 국내 보안 업계 전문가가 CTI 리포트 등을 기반으로 분석한 결과, 주요 업무관련 정보의 유출 위험이 있고, 공격 루트를",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145781",
+    "date": "2026-09-12 08:50:12"
+  },
+  {
+    "source": "thn",
+    "title": "GitLab CVSS 10 File-Read Flaw Draws In-the-Wild Probes After Disclosure",
+    "desc": "GitLab has released patches to address multiple flaws, including a maximum-severity security vulnerability that has witnessed in-the-wild probes within hours of public disclosure.\n\nThe vulnerability in question is CVE-2026-85706 (CVSS score: 10.0), a path traversal issue in the repository commits AP",
+    "url": "https://thehackernews.com/2026/09/gitlab-cvss-10-file-read-flaw-draws-in.html",
+    "date": "2026-09-11T22:00:18"
+  },
+  {
+    "source": "thn",
+    "title": "Anthropic Says Seven China-Based AI Labs Ran Industrial-Scale Claude Distillation Attacks",
+    "desc": "Anthropic on Thursday said it identified and disrupted industrial-scale illicit distillation attacks against Claude from seven labs based in China, including Alibaba, Moonshot, DeepSeek, Z.ai (aka Zhipu), and MiniMax.\n\nKnowledge distillation by itself is a legitimate training method. It refers to a ",
+    "url": "https://thehackernews.com/2026/09/anthropic-says-seven-china-based-ai.html",
+    "date": "2026-09-11T21:45:29"
+  },
+  {
+    "source": "thn",
+    "title": "Claude Used to Automate Exploitation and Data Theft Across Multiple Victims",
+    "desc": "Anthropic has warned that cybercriminals and state-sponsored hackers alike are using its Claude models for cyber attacks, weapons design, propaganda, and mass surveillance between December 2025 and August 2026.\n\nThe threat actors, which the artificial intelligence (AI) company has branded Generative",
+    "url": "https://thehackernews.com/2026/09/claude-used-to-automate-exploitation.html",
+    "date": "2026-09-11T19:59:47"
+  },
+  {
+    "source": "thn",
+    "title": "Russian State-Sponsored Hackers Use Claude to Rebuild Malware After Detection",
+    "desc": "Anthropic on Thursday revealed it disrupted a campaign mounted by a Russian state-sponsored threat actor that abused Claude for developing an AI-assisted workflow to get ahead of the detection curve.\n\nThe operation has been attributed to a cyber espionage group it calls GTG-20006 (where \"GTG\" stands",
+    "url": "https://thehackernews.com/2026/09/russian-state-sponsored-hackers-use.html",
+    "date": "2026-09-11T19:40:20"
+  },
+  {
     "source": "thn",
     "title": "Your Critical Vulnerabilities Might Not Be Your Biggest Risk",
     "desc": "Security teams have become exceptionally talented at finding vulnerabilities. Now, it’s time to turn our attention to optimizing the process for determining which of those vulnerabilities actually create a path to compromise.\n\nA critical vulnerability may look alarming on a scanner report, but if it",
@@ -532,13 +567,6 @@
     "date": "2026-09-09 11:15:00"
   },
   {
-    "source": "boannews",
-    "title": "해양경찰청, 연안순찰에 드론 본격 투입",
-    "desc": "해양경찰청(장인식 해경청장 직무대행)은 연안 안전관리 사각지대를 해소하고 현장 대응 역량을 강화하기 위해 9월 2일부터 연안순찰 드론 5대를 주요 파출소에 배치하고 본격 운용에 들어갔다고 밝혔다.이번에 도입한 연안순찰 드론은 공중에서 넓은 지역을 빠르게 확인하고, 사람이 접근하기 어려운 곳까지 살필 수 있다는 장점을 활용해 갯벌·방파제 등 연안 위험지역 순찰과 인명구조를 지원한다.연안순찰 드론은 인천해양경찰서 하늘바다·영흥파출소, 태안해양경찰서 마검포파출소, 평택해양경찰서 당진파출소, 보령해양경찰서 홍원파출소에 각각 1대씩 배치됐으",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145743",
-    "date": "2026-09-09 11:13:07"
-  },
-  {
     "source": "thn",
     "title": "Slim Spider Steals Crypto Custody Secrets From Brazilian Financial Institution",
     "desc": "A previously undocumented financially motivated threat actor has been linked to attacks targeting Brazilian financial institutions since at least March 2026.\n\nCybersecurity company CrowdStrike is tracking the Brazil-based activity cluster under the name Slim Spider.\n\n\"The adversary demonstrates deep",
@@ -670,33 +698,5 @@
     "desc": "Attackers are exploiting MikroTik routers with their Secure Shell (SSH) remote-access service, which is reachable from the internet, to gain full administrative control without authentication, according to&nbsp;CERT Polska's attack warning, published on September 5.\n\nSuccessful attacks date to at le",
     "url": "https://thehackernews.com/2026/09/attackers-hijack-mikrotik-routers.html",
     "date": "2026-09-06T15:02:38"
-  },
-  {
-    "source": "thn",
-    "title": "Four REVSTEALER-Linked Modules Disable Windows Update and Defender to Run a Crypto Miner",
-    "desc": "Elastic Security Labs has documented four previously unreported programs associated with REVSTEALER, an emerging Windows information stealer, that remain on an infected machine after the stealer deletes itself.\n\nOne of them switches off Windows Update and Microsoft Defender before running a cryptocu",
-    "url": "https://thehackernews.com/2026/09/four-revstealer-linked-modules-disable.html",
-    "date": "2026-09-06T14:04:20"
-  },
-  {
-    "source": "thn",
-    "title": "Unpatched Magento and Adobe Commerce Zero-Day Exploited to Backdoor Online Stores",
-    "desc": "Attackers are exploiting a new unpatched vulnerability in Magento Open Source and Adobe Commerce that lets them run malicious code on an online store's server without logging in, Dutch e-commerce security company Sansec said in an&nbsp;advisory published on September 5.\n\nSansec, which discovered the",
-    "url": "https://thehackernews.com/2026/09/unpatched-magento-and-adobe-commerce.html",
-    "date": "2026-09-06T01:44:47"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Breached JetBrains Cadence via Unpatched TeamCity, Extracting AWS Credentials",
-    "desc": "JetBrains is urging Cadence users to revoke and rotate all credentials following a security incident last month in which unidentified threat actors exploited a recently disclosed critical vulnerability in TeamCity to breach its own environment.\n\n\"Cadence users should immediately revoke or rotate all",
-    "url": "https://thehackernews.com/2026/09/attackers-breached-jetbrains-cadence.html",
-    "date": "2026-09-05T22:22:33"
-  },
-  {
-    "source": "thn",
-    "title": "Critical VMware Workstation and Fusion Flaw Lets VM Admins Execute Host Code",
-    "desc": "Broadcom has released security updates for two security flaws impacting VMware Workstation and Fusion, including one critical bug that could result in arbitrary code execution under certain conditions.\n\nThe vulnerability, tracked as CVE-2026-59346 (CVSS score: 9.3), is an integer-overflow vulnerabil",
-    "url": "https://thehackernews.com/2026/09/critical-vmware-workstation-and-fusion.html",
-    "date": "2026-09-05T21:35:08"
   }
 ]
