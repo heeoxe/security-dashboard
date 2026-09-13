@@ -1,24 +1,395 @@
 [
   {
-    "cve": "CVE-2026-24332",
-    "title": "Discord through 2026-01-16 allows gathering information about whether a user's client state is Invisible (and not actual",
-    "desc": "Discord through 2026-01-16 allows gathering information about whether a user's client state is Invisible (and not actually offline) because the response to a WebSocket API request includes the user in the presences array (with \"status\": \"offline\"), whereas offline users are omitted from the presences array. This is arguably inconsistent with the UI description of Invisible as \"You will appear offl",
-    "cvss": 4.3,
+    "cve": "CVE-2026-77773",
+    "title": "Social Contact Form (FormyChat) < 2.15.8 - Unauthenticated Gravity Forms Entry Disclosure via formychat_get_gf_entry",
+    "desc": "The Contact Form to Chat Apps | Click to Chat to Order  WordPress plugin before 2.15.8 does not perform any capability, nonce or session check on one of its public AJAX actions, allowing unauthenticated users to read the submitted entries of any form created with a supported third-party form Contact Form to Chat Apps | Click to Chat to Order  WordPress plugin before 2.15.8.",
+    "cvss": 5.3,
     "severity": "MEDIUM",
-    "cwes": [
-      "CWE-204"
-    ],
+    "cwes": [],
     "affected": [
       {
-        "vendor": "Discord",
-        "product": "WebSocket API service"
+        "vendor": "Unknown",
+        "product": "Contact Form to Chat Apps | Click to Chat to Order"
       }
     ],
     "exploitation": "none",
     "isKev": false,
-    "published": "2026-01-22",
+    "published": "2026-09-13",
+    "updated": "2026-09-13",
+    "url": "https://wpscan.com/vulnerability/c4c15701-2149-43b4-b794-38871c0dc734/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-80071",
+    "title": "User Registration & Membership < 5.2.8 - Author+ Privilege Escalation to Administrator",
+    "desc": "The User Registration & Membership  WordPress plugin before 5.2.8 does not properly restrict who may author a membership plan or validate the plan a user attaches to their own account, allowing authenticated users with Author-level access and above to assign themselves an arbitrary role and escalate their privileges to Administrator.",
+    "cvss": 7.2,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "User Registration & Membership"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-13",
+    "updated": "2026-09-13",
+    "url": "https://wpscan.com/vulnerability/a4fbdeea-0d3b-466b-b4b6-4c4db277cd1d/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-80072",
+    "title": "User Registration & Membership < 5.2.8 - Unauthenticated Open Redirect via Login Redirect Parameters",
+    "desc": "The User Registration & Membership  WordPress plugin before 5.2.8 does not validate the destination of a post-login redirect before redirecting, allowing unauthenticated attackers to redirect visitors to an arbitrary external URL, which can be abused for phishing.",
+    "cvss": 4.7,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "User Registration & Membership"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-13",
+    "updated": "2026-09-13",
+    "url": "https://wpscan.com/vulnerability/0af2c06d-87a0-4be7-a409-ffb7ad958aad/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-86406",
+    "title": "User Registration & Membership < 5.2.8 - Subscriber+ Privilege Escalation via Membership Purchase",
+    "desc": "The User Registration & Membership  WordPress plugin before 5.2.8 does not check the capability of the user making a membership purchase, and does not validate the payment method or the plan submitted with it, allowing any authenticated user such as a subscriber to be granted the WordPress role attached to a paid plan without paying for it. Where the site owner has mapped a plan to a privileged ro",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "User Registration & Membership"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-13",
+    "updated": "2026-09-13",
+    "url": "https://wpscan.com/vulnerability/0fb4ec40-3f92-4c7e-8877-8898b355d78d/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-86407",
+    "title": "User Registration & Membership < 5.2.8 - Unauthenticated User Data Disclosure via Membership Thank You Page",
+    "desc": "The User Registration & Membership  WordPress plugin before 5.2.8 does not verify that the visitor requesting its membership confirmation page owns the account named in the request, nor that any registration or purchase has taken place, allowing unauthenticated users to retrieve another user's email address, profile fields, role and membership order details. Exploitation requires the site owner to",
+    "cvss": 3.7,
+    "severity": "LOW",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "User Registration & Membership"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-13",
+    "updated": "2026-09-13",
+    "url": "https://wpscan.com/vulnerability/2c9eb1fe-4e18-4fd0-9581-5672ffc4b598/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-88764",
+    "title": "Simple Membership < 4.7.8 - Subscriber+ Membership Level Escalation via PayPal Standard subsc_ref",
+    "desc": "The Simple Membership WordPress plugin before 4.7.8 does not validate that the membership level supplied in a PayPal payment notification matches the level configured for the paid payment button, allowing members to pay for a lower-priced membership while being granted a higher, more privileged membership level.",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Simple Membership"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-13",
+    "updated": "2026-09-13",
+    "url": "https://wpscan.com/vulnerability/54fdf46e-0385-40a3-b3bc-a862dc0fb03e/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-88912",
+    "title": "rtMedia for WordPress, BuddyPress and bbPress < 4.7.12 - Subscriber+ Arbitrary Activity Privacy Modification via IDOR",
+    "desc": "The rtMedia for WordPress, BuddyPress and bbPress WordPress plugin before 4.7.12 does not check ownership before changing the privacy level of an activity and its attached media, relying only on a nonce shared with every logged-in user, allowing users with a subscriber-level account or above to make another user's private activity public or hide it.",
+    "cvss": 4.2,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "rtMedia for WordPress, BuddyPress and bbPress"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-13",
+    "updated": "2026-09-13",
+    "url": "https://wpscan.com/vulnerability/58115528-18b6-4f2a-9f6c-d84fdcd6efb4/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-88995",
+    "title": "Bookit < 2.6.0.1 - Unauthenticated Appointment PII Disclosure via Availability Check",
+    "desc": "The Bookit — Booking & Appointment Calendar WordPress plugin before 2.6.0.1 does not properly restrict the data returned by an availability-check request, allowing unauthenticated users to retrieve other customers' appointment details, including free-text booking comments and contact information.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Bookit — Booking & Appointment Calendar"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-13",
+    "updated": "2026-09-13",
+    "url": "https://wpscan.com/vulnerability/5a6f6d75-e7b8-44ad-a0f6-f6e4938ac3d5/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-89080",
+    "title": "Really Simple Security < 9.8.1 - Unauthenticated 2FA Bypass via Email Provider State Demotion",
+    "desc": "The Really Simple Security  WordPress plugin before 9.8.1 does not prevent an unauthenticated request from resetting an account's completed email two-factor enrolment, allowing an attacker who already knows the account's password to bypass the second factor and obtain that user's session, up to administrator.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Really Simple Security"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-13",
+    "updated": "2026-09-13",
+    "url": "https://wpscan.com/vulnerability/49546064-5663-40f8-be7c-4f3faa31fa9a/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-25252",
+    "title": "An Insufficient Session Expiration vulnerability [CWE-613] in FortiOS SSL VPN 7.6.0 through 7.6.2, 7.4.0 through 7.4.6, ",
+    "desc": "An Insufficient Session Expiration vulnerability [CWE-613] in FortiOS SSL VPN 7.6.0 through 7.6.2, 7.4.0 through 7.4.6, 7.2.0 through 7.2.10, 7.0.0 through 7.0.16, 6.4 all versions may allow a remote attacker (e.g. a former admin whose account was removed and whose session was terminated) in possession of the SAML record of a user session to access or re-open that session via re-use of SAML record",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-613"
+    ],
+    "affected": [
+      {
+        "vendor": "Fortinet",
+        "product": "FortiOS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-10-14",
+    "updated": "2026-09-13",
+    "url": "https://fortiguard.fortinet.com/psirt/FG-IR-24-487",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-9800",
+    "title": "Keycloak-policy-enforcer: keycloak policy enforcer: authorization bypass via incorrect uri comparison",
+    "desc": "A flaw was found in Keycloak Policy Enforcer. This vulnerability allows any authenticated user to bypass all authorization policies, including role, scope, and User-Managed Access (UMA) permission checks. By including the configured access-denied page path within a request URL, either as a path segment or a query parameter, an attacker can gain unauthorized access to protected resources.",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-1025"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat build of Keycloak 26.4"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat build of Keycloak 26.4"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat build of Keycloak 26.4"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat build of Keycloak 26.4"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat build of Keycloak 26.4"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-25",
+    "updated": "2026-09-13",
+    "url": "https://access.redhat.com/errata/RHSA-2026:30049",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-70341",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 8.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge for Android"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge for iOS"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge for Linux"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge for MAC"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-11",
     "updated": "2026-09-12",
-    "url": "https://xmrcat.org/discord-invisibility-bypass",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70341",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-72996",
+    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
+    "desc": "",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-122",
+      "CWE-20"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1607"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1809"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 21H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 22H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 11 version 23H2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-08",
+    "updated": "2026-09-12",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-72996",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-73002",
+    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
+    "desc": "",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-190"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1607"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1809"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 21H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 22H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 11 version 23H2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-08",
+    "updated": "2026-09-12",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-73002",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-73007",
+    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
+    "desc": "",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-122"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1607"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1809"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 21H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 22H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 11 version 23H2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-08",
+    "updated": "2026-09-12",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-73007",
     "source": "CISA Vulnrichment"
   },
   {
@@ -39,6 +410,28 @@
     "published": "2026-09-12",
     "updated": "2026-09-12",
     "url": "https://wpscan.com/vulnerability/be658aa5-8f7f-4938-bf13-b2e6ed3dcf89/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-76059",
+    "title": "Langflow is vulnerable to arbitrary code execution due to multiple incomplete code security controls and missing execution guards",
+    "desc": "IBM Langflow OSS 1.0.0 through 1.11.5 An attacker who could submit custom component source code could bypass the static security scanner by crafting an annotated class-body assignment that resolved to a dangerous callable through alias tracking; the resolved value was never checked against the dangerous callable blocklist due to the logic error. If the crafted component reached the runtime executi",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-693"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-10",
+    "updated": "2026-09-12",
+    "url": "https://www.ibm.com/support/pages/node/7286666",
     "source": "CISA Vulnrichment"
   },
   {
@@ -182,9 +575,69 @@
     "source": "CISA Vulnrichment"
   },
   {
+    "cve": "CVE-2026-78448",
+    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
+    "desc": "",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-122"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1607"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1809"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 21H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 22H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 11 version 23H2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-08",
+    "updated": "2026-09-12",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78448",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2026-78569",
     "title": "Langflow is vulnerable to arbitrary code execution due to multiple incomplete code security controls and missing execution guards",
     "desc": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow an authenticated attacker to execute arbitrary code due to an incomplete denylist in the security scanner.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-78"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-10",
+    "updated": "2026-09-12",
+    "url": "https://www.ibm.com/support/pages/node/7286666",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-78575",
+    "title": "Langflow is vulnerable to arbitrary code execution due to multiple incomplete code security controls and missing execution guards",
+    "desc": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow a remote authenticated attacker to execute arbitrary commands due to improper validation of command-line arguments in the MCP stdio server configuration.",
     "cvss": 8.8,
     "severity": "HIGH",
     "cwes": [
@@ -286,6 +739,50 @@
     "source": "CISA Vulnrichment"
   },
   {
+    "cve": "CVE-2026-81204",
+    "title": "Langflow is vulnerable to arbitrary code execution due to multiple incomplete code security controls and missing execution guards",
+    "desc": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow a remote attacker to execute arbitrary code due to code injection during graph construction.",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-94"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-10",
+    "updated": "2026-09-12",
+    "url": "https://www.ibm.com/support/pages/node/7286666",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-81211",
+    "title": "Langflow is vulnerable to arbitrary code execution due to multiple incomplete code security controls and missing execution guards",
+    "desc": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow a remote authenticated attacker to execute arbitrary Python code due to improper authorization of custom components in stored flows.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-10",
+    "updated": "2026-09-12",
+    "url": "https://www.ibm.com/support/pages/node/7286666",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2026-81402",
     "title": "DS Ad Rotator <= 0.8 - Unauthenticated Arbitrary File Upload",
     "desc": "The DS Ad Rotator WordPress plugin through 0.8 does not perform any capability check, nonce verification, or file-type validation on its image upload handler, allowing unauthenticated attackers to upload arbitrary files, including PHP, to a web-accessible directory, which can lead to remote code execution.",
@@ -343,6 +840,50 @@
     "published": "2026-09-12",
     "updated": "2026-09-12",
     "url": "https://wpscan.com/vulnerability/ea7c371a-3d0b-4e09-9c76-145345ad316b/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-81940",
+    "title": "Langflow is vulnerable to arbitrary code execution due to multiple incomplete code security controls and missing execution guards",
+    "desc": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special characters in flow display names.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-94"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-10",
+    "updated": "2026-09-12",
+    "url": "https://www.ibm.com/support/pages/node/7286666",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-81941",
+    "title": "Langflow is vulnerable to arbitrary code execution due to multiple incomplete code security controls and missing execution guards",
+    "desc": "IBM Langflow OSS 1.0.0 through 1.11.5 allows an authenticated non-administrative user could execute arbitrary operating system commands on the server at the privilege level of the application process by constructing a flow with an MCP Tools component configured to use a local stdio subprocess transport. This bypasses both the LANGFLOW_CUSTOM_COMPONENT_ADMIN_ONLY and LANGFLOW_BLOCK_CODE_INTERPRETER",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-284"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-10",
+    "updated": "2026-09-12",
+    "url": "https://www.ibm.com/support/pages/node/7286666",
     "source": "CISA Vulnrichment"
   },
   {
@@ -423,6 +964,234 @@
     "published": "2026-09-12",
     "updated": "2026-09-12",
     "url": "https://wpscan.com/vulnerability/164f3fdd-00a6-482f-b3a2-78b50508011d/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-83954",
+    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
+    "desc": "",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-122"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1607"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1809"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 21H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 22H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 11 version 23H2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-08",
+    "updated": "2026-09-12",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83954",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-83967",
+    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
+    "desc": "",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-122"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1607"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1809"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 21H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 22H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 11 version 23H2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-08",
+    "updated": "2026-09-12",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83967",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-83972",
+    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
+    "desc": "",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-122"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1607"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1809"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 21H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 22H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 11 version 23H2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-08",
+    "updated": "2026-09-12",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83972",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-83982",
+    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
+    "desc": "",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-122"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1607"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1809"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 21H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 22H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 11 version 23H2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-08",
+    "updated": "2026-09-12",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83982",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-83983",
+    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
+    "desc": "",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-122"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1607"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1809"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 21H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 22H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 11 version 23H2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-08",
+    "updated": "2026-09-12",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83983",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-83985",
+    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
+    "desc": "",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-122"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1607"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 1809"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 21H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 10 Version 22H2"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Windows 11 version 23H2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-08",
+    "updated": "2026-09-12",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83985",
     "source": "CISA Vulnrichment"
   },
   {
@@ -645,6 +1414,28 @@
     "published": "2026-09-12",
     "updated": "2026-09-12",
     "url": "https://wpscan.com/vulnerability/ded55e47-568d-4702-b043-4707e4182a09/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-24332",
+    "title": "Discord through 2026-01-16 allows gathering information about whether a user's client state is Invisible (and not actual",
+    "desc": "Discord through 2026-01-16 allows gathering information about whether a user's client state is Invisible (and not actually offline) because the response to a WebSocket API request includes the user in the presences array (with \"status\": \"offline\"), whereas offline users are omitted from the presences array. This is arguably inconsistent with the UI description of Invisible as \"You will appear offl",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-204"
+    ],
+    "affected": [
+      {
+        "vendor": "Discord",
+        "product": "WebSocket API service"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-01-22",
+    "updated": "2026-09-12",
+    "url": "https://xmrcat.org/discord-invisibility-bypass",
     "source": "CISA Vulnrichment"
   },
   {
@@ -1382,44 +2173,6 @@
     "published": "2026-09-10",
     "updated": "2026-09-12",
     "url": "https://www.ibm.com/support/pages/node/7286610",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-70341",
-    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 8.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge (Chromium-based)"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge for Android"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge for iOS"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge for Linux"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge for MAC"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-11",
-    "updated": "2026-09-11",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70341",
     "source": "CISA Vulnrichment"
   },
   {
@@ -11109,519 +11862,6 @@
     "published": "2026-09-08",
     "updated": "2026-09-11",
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68844",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-72996",
-    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122",
-      "CWE-20"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-72996",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-73002",
-    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-190"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-73002",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-73007",
-    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-73007",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-76059",
-    "title": "Langflow is vulnerable to arbitrary code execution due to multiple incomplete code security controls and missing execution guards",
-    "desc": "IBM Langflow OSS 1.0.0 through 1.11.5 An attacker who could submit custom component source code could bypass the static security scanner by crafting an annotated class-body assignment that resolved to a dangerous callable through alias tracking; the resolved value was never checked against the dangerous callable blocklist due to the logic error. If the crafted component reached the runtime executi",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-693"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "Langflow OSS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-10",
-    "updated": "2026-09-11",
-    "url": "https://www.ibm.com/support/pages/node/7286666",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-78448",
-    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78448",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-78575",
-    "title": "Langflow is vulnerable to arbitrary code execution due to multiple incomplete code security controls and missing execution guards",
-    "desc": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow a remote authenticated attacker to execute arbitrary commands due to improper validation of command-line arguments in the MCP stdio server configuration.",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-78"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "Langflow OSS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-10",
-    "updated": "2026-09-11",
-    "url": "https://www.ibm.com/support/pages/node/7286666",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-81204",
-    "title": "Langflow is vulnerable to arbitrary code execution due to multiple incomplete code security controls and missing execution guards",
-    "desc": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow a remote attacker to execute arbitrary code due to code injection during graph construction.",
-    "cvss": 9.8,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-94"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "Langflow OSS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-10",
-    "updated": "2026-09-11",
-    "url": "https://www.ibm.com/support/pages/node/7286666",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-81211",
-    "title": "Langflow is vulnerable to arbitrary code execution due to multiple incomplete code security controls and missing execution guards",
-    "desc": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow a remote authenticated attacker to execute arbitrary Python code due to improper authorization of custom components in stored flows.",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "Langflow OSS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-10",
-    "updated": "2026-09-11",
-    "url": "https://www.ibm.com/support/pages/node/7286666",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-81940",
-    "title": "Langflow is vulnerable to arbitrary code execution due to multiple incomplete code security controls and missing execution guards",
-    "desc": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special characters in flow display names.",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-94"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "Langflow OSS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-10",
-    "updated": "2026-09-11",
-    "url": "https://www.ibm.com/support/pages/node/7286666",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-81941",
-    "title": "Langflow is vulnerable to arbitrary code execution due to multiple incomplete code security controls and missing execution guards",
-    "desc": "IBM Langflow OSS 1.0.0 through 1.11.5 allows an authenticated non-administrative user could execute arbitrary operating system commands on the server at the privilege level of the application process by constructing a flow with an MCP Tools component configured to use a local stdio subprocess transport. This bypasses both the LANGFLOW_CUSTOM_COMPONENT_ADMIN_ONLY and LANGFLOW_BLOCK_CODE_INTERPRETER",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-284"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "Langflow OSS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-10",
-    "updated": "2026-09-11",
-    "url": "https://www.ibm.com/support/pages/node/7286666",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-83954",
-    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83954",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-83967",
-    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83967",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-83972",
-    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83972",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-83982",
-    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83982",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-83983",
-    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83983",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-83985",
-    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83985",
     "source": "CISA Vulnrichment"
   },
   {
@@ -27653,319 +27893,6 @@
     "published": "2026-09-09",
     "updated": "2026-09-11",
     "url": "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=09",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-21101",
-    "title": "Improper input validation in DualDAR driver prior to SMR Sep-2026 Release 1 allows local privileged attackers to potenti",
-    "desc": "Improper input validation in DualDAR driver prior to SMR Sep-2026 Release 1 allows local privileged attackers to potentially execute arbitrary code with root privilege.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Samsung Mobile",
-        "product": "Samsung Mobile Devices"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-09",
-    "updated": "2026-09-11",
-    "url": "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=09",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-43829",
-    "title": "tbc",
-    "desc": "Full details and mitigation steps are currently restricted and will be published at a later date.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "tbc",
-        "product": "tbc"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-31",
-    "updated": "2026-09-11",
-    "url": "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-xxx",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-43830",
-    "title": "tbc",
-    "desc": "Full details and mitigation steps are currently restricted and will be published at a later date.",
-    "cvss": 9.8,
-    "severity": "CRITICAL",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "tbc",
-        "product": "tbc"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-31",
-    "updated": "2026-09-11",
-    "url": "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-xxx",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-43831",
-    "title": "tbc",
-    "desc": "Full details and mitigation steps are currently restricted and will be published at a later date.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "tbc",
-        "product": "tbc"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-31",
-    "updated": "2026-09-11",
-    "url": "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-xxx",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-43832",
-    "title": "tbc",
-    "desc": "Full details and mitigation steps are currently restricted and will be published at a later date.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "tbc",
-        "product": "tbc"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-31",
-    "updated": "2026-09-11",
-    "url": "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-xxx",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-43833",
-    "title": "tbc",
-    "desc": "Full details and mitigation steps are currently restricted and will be published at a later date.",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "tbc",
-        "product": "tbc"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-31",
-    "updated": "2026-09-11",
-    "url": "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-xxx",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-68889",
-    "title": "Microsoft Standard XPS Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122",
-      "CWE-190"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68889",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-69270",
-    "title": "Windows USB Audio Class driver (usbaudio.sys) Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122",
-      "CWE-20"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69270",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-69291",
-    "title": "Windows Volume Manager Extension Driver Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69291",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-69313",
-    "title": "Microsoft Standard XPS Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69313",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-69352",
-    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122",
-      "CWE-20"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69352",
     "source": "CISA Vulnrichment"
   },
   {
