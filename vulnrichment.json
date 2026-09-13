@@ -1,5 +1,813 @@
 [
   {
+    "cve": "CVE-2026-24332",
+    "title": "Discord through 2026-01-16 allows gathering information about whether a user's client state is Invisible (and not actual",
+    "desc": "Discord through 2026-01-16 allows gathering information about whether a user's client state is Invisible (and not actually offline) because the response to a WebSocket API request includes the user in the presences array (with \"status\": \"offline\"), whereas offline users are omitted from the presences array. This is arguably inconsistent with the UI description of Invisible as \"You will appear offl",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-204"
+    ],
+    "affected": [
+      {
+        "vendor": "Discord",
+        "product": "WebSocket API service"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-01-22",
+    "updated": "2026-09-12",
+    "url": "https://xmrcat.org/discord-invisibility-bypass",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-75800",
+    "title": "Frontegg SAML SSO <= 1.0.1 - Unauthenticated Account Takeover via Unverified SAMLResponse",
+    "desc": "The Frontegg SAML SSO WordPress plugin through 1.0.1 does not verify the signature or issuer of SAML authentication responses before establishing a session, allowing unauthenticated attackers to log in as any user, including administrators, as well as to create arbitrary accounts.",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Frontegg SAML SSO"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/be658aa5-8f7f-4938-bf13-b2e6ed3dcf89/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-77005",
+    "title": "Code Monkeys Proposals <= 1.0.1 - Subscriber+ Arbitrary File Deletion via Path Traversal",
+    "desc": "The CODE MONKEYS PROPOSALS  WordPress plugin through 1.0.1 does not validate a user-supplied file path before deleting a file, and does not check the capability of the user making the request, allowing any authenticated user, such as a subscriber, to delete arbitrary files on the server, which can lead to a site takeover.",
+    "cvss": 9.6,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "CODE MONKEYS PROPOSALS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/b9340774-84c2-41ec-a770-0123dd5608c2/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-77006",
+    "title": "WebTotem Backups <= 1.0.1 - Subscriber+ Arbitrary File Deletion via Path Traversal",
+    "desc": "The WebTotem Backups WordPress plugin through 1.0.1 does not validate a user-supplied file path, does not check the capability of the user making the request, and discards the result of its own CSRF check, allowing any authenticated user, such as a subscriber, to delete arbitrary files on the server, which can lead to a site takeover.",
+    "cvss": 9.6,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "WebTotem Backups"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/71bc08cb-681c-44bd-b6a0-bb5c58e31653/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-77689",
+    "title": "Amelia Pro 9.0 - 9.8 - Unauthenticated Payment Bypass",
+    "desc": "The Booking for Appointments and Events Calendar  WordPress plugin before 9.8.1 does not verify that a payment was actually taken before recording a booking as paid, trusting the payment gateway named in a public, unauthenticated booking request even when the site has never configured that gateway. This lets an unauthenticated attacker obtain confirmed, fully paid appointments and events without a",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Booking for Appointments and Events Calendar"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/ac597716-193d-419f-b55c-802ee979385e/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-77705",
+    "title": "Amelia < 2.4.10 - Amelia Manager+ WordPress Account Takeover",
+    "desc": "The Booking for Appointments and Events Calendar  WordPress plugin before 2.4.10 does not verify that the user editing a customer or employee record is entitled to modify the WordPress account linked to it, allowing users holding Amelia's customer or employee management permissions to set the password and email address of other users' WordPress accounts and take them over.",
+    "cvss": 7.2,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Booking for Appointments and Events Calendar"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/bfd0ce74-f91e-41fe-8288-7b1d34dd16fe/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-77752",
+    "title": "Temporary Login Without Password 1.5 - 1.9.8 - Multisite Subsite Admin+ Network Super Admin Privilege Escalation",
+    "desc": "The Temporary Login Without Password WordPress plugin before 1.9.9 does not verify that the user requesting a temporary login holds network super admin rights before granting the new account those rights, allowing an administrator of a single site on a multisite network to take over the whole network. The same missing check also allows an existing account, including the attacker's own, to be promo",
+    "cvss": 7.2,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Temporary Login Without Password"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/09308b99-3142-44f0-b2e1-9f4680325d2d/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-77753",
+    "title": "Temporary Login Without Password < 1.9.9 - Authenticated Temporary Access Revocation Bypass via Application Passwords",
+    "desc": "The Temporary Login Without Password WordPress plugin before 1.9.9 does not prevent a temporary user from creating an Application Password, and does not revoke one when the temporary access expires or is disabled, allowing the recipient of a temporary login to retain working access to the site over REST and XML-RPC after the administrator believes it has been withdrawn. The retained access carries",
+    "cvss": 5.5,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Temporary Login Without Password"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/9424fd42-5c77-41a9-a1fb-db568126515e/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-78152",
+    "title": "SureRank 1.6.2 - 1.10.0 - Unauthenticated Author Email Disclosure via Person Schema",
+    "desc": "The SureRank SEO  WordPress plugin before 1.10.1 does not exclude users' registered account email addresses from the structured data it outputs on public pages by default, allowing unauthenticated visitors to obtain the email address of any user who has published content.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "SureRank SEO"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/f16d3d06-6db0-4c6a-9eee-80b87d886a47/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-78569",
+    "title": "Langflow is vulnerable to arbitrary code execution due to multiple incomplete code security controls and missing execution guards",
+    "desc": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow an authenticated attacker to execute arbitrary code due to an incomplete denylist in the security scanner.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-78"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-10",
+    "updated": "2026-09-12",
+    "url": "https://www.ibm.com/support/pages/node/7286666",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-79724",
+    "title": "Langflow is vulnerable to arbitrary code execution due to multiple incomplete code security controls and missing execution guards",
+    "desc": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow a remote attacker to execute arbitrary OS commands due to improper neutralization of special elements used in an OS command.",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-78"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-10",
+    "updated": "2026-09-12",
+    "url": "https://www.ibm.com/support/pages/node/7286666",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-80491",
+    "title": "SAMO Forms <= 1.0.0 - Unauthenticated SQLi",
+    "desc": "The SAMO Forms WordPress plugin through 1.0.0 does not properly sanitise and escape user input before using it in SQL queries in several unauthenticated actions, allowing unauthenticated attackers to perform SQL injection attacks.",
+    "cvss": 8.6,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "SAMO Forms"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/765e7131-2eb4-41df-a1e0-05c8a89cb88c/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-80494",
+    "title": "Yogeta WP Cloud <= 1.0 - Unauthenticated Arbitrary File Download",
+    "desc": "The Yogeta WP Cloud WordPress plugin through 1.0 does not validate a user-supplied file path before passing it to a file-read function on a public endpoint that lacks any authorization check, allowing unauthenticated attackers to download arbitrary files from the server, including files containing sensitive credentials.",
+    "cvss": 8.6,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Yogeta WP Cloud"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/fdc0fefb-c090-4972-9867-d1090353e40c/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-81090",
+    "title": "Gpx2Graphics <= 0.3 - Arbitrary File Upload via CSRF",
+    "desc": "The Gpx2Graphics WordPress plugin through 0.3 does not perform a CSRF check when handling file uploads, nor validate the type of the uploaded file, allowing attackers to make a logged-in administrator upload arbitrary files such as PHP via a CSRF attack, leading to Remote Code Execution.",
+    "cvss": 7.2,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Gpx2Graphics"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/92e50025-cfa4-4727-bd02-8f45196021ae/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-81402",
+    "title": "DS Ad Rotator <= 0.8 - Unauthenticated Arbitrary File Upload",
+    "desc": "The DS Ad Rotator WordPress plugin through 0.8 does not perform any capability check, nonce verification, or file-type validation on its image upload handler, allowing unauthenticated attackers to upload arbitrary files, including PHP, to a web-accessible directory, which can lead to remote code execution.",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "DS Ad Rotator"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/60e82611-ddf1-4275-8c68-14694d863fca/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-81429",
+    "title": "Export & Import WPBakery Page Builder <= 1.0.2 - Stored XSS via CSRF",
+    "desc": "The Export & Import WPBakery Page Builder WordPress plugin through 1.0.2 does not perform any CSRF check on its template-import feature and does not sanitise the imported data before storing it and echoing it back, allowing attackers to make a logged-in administrator import a crafted template via a forged request that results in Stored Cross-Site Scripting executed in the administrator's session.",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Export & Import WPBakery Page Builder"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/48f67510-9fb3-4f74-a38e-31635617ba60/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-81742",
+    "title": "BE REST Endpoints <= 1.0.0 - Unauthenticated Stored XSS and Widget Manipulation",
+    "desc": "The BE REST Endpoints WordPress plugin through 1.0.0 does not perform any authorization check before allowing widgets to be read, created, updated and deleted, and does not sanitize the values it stores in them, allowing unauthenticated users to inject arbitrary web scripts which will execute in the browser of any user visiting the site.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "BE REST Endpoints"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/ea7c371a-3d0b-4e09-9c76-145345ad316b/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-82845",
+    "title": "Masteriyo LMS < 3.4.1 - Subscriber+ PHP Object Injection",
+    "desc": "The Masteriyo LMS  WordPress plugin before 3.4.1 does not prevent user-supplied values held as metadata from being deserialized when they are read back, allowing users with a minimal account to inject arbitrary PHP objects and, by way of a class shipped in a library bundled with the Masteriyo LMS  WordPress plugin before 3.4.1, write and execute arbitrary code on the server. A weaker form of the s",
+    "cvss": 9.9,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Masteriyo LMS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/5ced30ea-8b78-495f-b10c-42b3f10adcb3/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-82847",
+    "title": "Masteriyo LMS < 3.4.1 - Instructor+ Stored XSS via Course Highlights",
+    "desc": "The Masteriyo LMS  WordPress plugin before 3.4.1 does not sanitise and escape one of its course fields before outputting it back in the course editor, allowing users with the instructor role to perform Stored Cross-Site Scripting attacks against higher privileged users such as administrators.",
+    "cvss": 6.8,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Masteriyo LMS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/9cc4f7a7-e5b9-48fe-962b-f5d0753e6158/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-82851",
+    "title": "Masteriyo LMS 1.14.0 - 3.4.0 - Instructor+ Arbitrary Post Disclosure via IDOR",
+    "desc": "The Masteriyo LMS  WordPress plugin before 3.4.1 does not verify ownership of, or restrict the type of, the records a user requests for download, allowing users with the instructor role to retrieve the full content and metadata of arbitrary posts, including other instructors' private and draft courses.",
+    "cvss": 2.7,
+    "severity": "LOW",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Masteriyo LMS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/07664081-72c3-4f7e-9324-e0047b6e6d22/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-83532",
+    "title": "Custom Menu Wizard <= 3.3.1 - Contributor+ Stored XSS via Shortcode Attributes",
+    "desc": "The Custom Menu Wizard Widget WordPress plugin through 3.3.1 does not sanitize and escape several shortcode attributes before rendering them into HTML, allowing users with contributor-level access and above to inject arbitrary web scripts that execute when the affected content is viewed.",
+    "cvss": 6.8,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Custom Menu Wizard Widget"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/164f3fdd-00a6-482f-b3a2-78b50508011d/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-84023",
+    "title": "BEAR - Bulk Editor and Products Manager Professional for WooCommerce < 1.2.2 - Taxonomy Term Modification via CSRF",
+    "desc": "The BEAR  WordPress plugin before 1.2.2 does not verify a CSRF nonce or check user capabilities before updating taxonomy terms, allowing an attacker to modify arbitrary terms by tricking a logged-in privileged user into visiting a crafted page.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "BEAR"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/7adbb52f-94e2-425e-9930-2ab856961b63/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-84024",
+    "title": "BEAR - Bulk Editor and Products Manager Professional for WooCommerce < 1.2.2 - Meta Field Configuration Update via CSRF",
+    "desc": "The BEAR  WordPress plugin before 1.2.2 does not verify a CSRF nonce before saving its meta field configuration, allowing an attacker to overwrite that configuration by tricking a logged-in administrator into visiting a crafted page.",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "BEAR"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/8ea75cb0-e6f0-4ea4-a70f-f9c4e2e16681/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-84025",
+    "title": "BEAR - Bulk Editor and Products Manager Professional for WooCommerce < 1.2.2 - Authenticated Product Download URL and Meta Disclosure via IDOR",
+    "desc": "The BEAR  WordPress plugin before 1.2.2 does not perform ownership checks on several handlers that return product data by a user-supplied identifier, allowing users who are restricted to their own products to read other owners' product information, including protected downloadable file URLs and private product metadata.",
+    "cvss": 2.2,
+    "severity": "LOW",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "BEAR"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/468a9f1a-1a16-410f-97a0-8a87a974df21/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-84047",
+    "title": "Album Cover Finder <= 0.7.0 - Unauthenticated SQLi via and_action",
+    "desc": "The Album Cover Finder WordPress plugin through 0.7.0 does not properly sanitize and escape a parameter before using it in a SQL query, allowing unauthenticated users to perform SQL injection attacks.",
+    "cvss": 8.6,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Album Cover Finder"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/eebacbae-4b25-45b5-96d9-f5ba28dfd825/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-84099",
+    "title": "IDB Ecommerce (wpStoreCart 5) <= 5.0.7 - Unauthenticated PHP Object Injection via bundled wpsc-membership-pro paypal.php",
+    "desc": "The wpstorecart WordPress plugin through 5.0.7 does not prevent direct, unauthenticated access to a bundled add-on that deserializes user-supplied input without restricting the permitted classes, allowing unauthenticated attackers to inject arbitrary PHP objects, which may be escalated further when a suitable gadget chain is present on the site.",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "wpstorecart"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/11d36ab2-ac8d-42cf-91c0-dea55d7edc9a/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-84171",
+    "title": "WP Images Upload on Piclect <= 1.0 - Unauthenticated Arbitrary File Upload",
+    "desc": "The WP images upload on piclect WordPress plugin through 1.0 does not validate the name or type of uploaded files before writing them to a publicly accessible directory, allowing unauthenticated attackers to upload arbitrary files and execute arbitrary code on the server.",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "WP images upload on piclect"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/e5b9fd87-92a7-4fc6-b8b2-896b87d97c40/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-84889",
+    "title": "A path traversal vulnerability in file handling components could allow an authenticated attacker to write files to arbitrary locations on the server filesystem",
+    "desc": "IBM Langflow OSS 1.0.0 through 1.10.3 could allow a remote authenticated attacker to execute arbitrary code due to improper limitation of a pathname to a restricted directory.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Langflow OSS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-10",
+    "updated": "2026-09-12",
+    "url": "https://www.ibm.com/support/pages/node/7286656",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-85681",
+    "title": "WP Component <= 2.2.4 - Unauthenticated Privilege Escalation via Arbitrary Blog Option Update",
+    "desc": "The WP Component WordPress plugin through 2.2.4 does not have any capability or nonce checks on one of the actions it makes available to unauthenticated users, and it takes both the option name and the option value from the request, allowing unauthenticated attackers to overwrite any of the site's options. On a single site installation this leads to a full takeover, as registration can be enabled ",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "WP Component"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/c602bd9e-a825-4990-a66b-1403bbeb2cee/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-86790",
+    "title": "WP Highlight Box <= 1.0 - Contributor+ Stored XSS via highlight-box Shortcode",
+    "desc": "The WP Highlight Box WordPress plugin through 1.0 does not escape some shortcode attributes before outputting them in a page where the shortcode is embedded, which could allow users with the contributor role and above to perform Stored Cross-Site Scripting attacks.",
+    "cvss": 6.8,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "WP Highlight Box"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/b48571ae-368e-4193-977a-f22fb09db4d4/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-87759",
+    "title": "Add User Autocomplete < 1.2 - Subscriber+ Privilege Escalation",
+    "desc": "The Add User Autocomplete WordPress plugin before 1.2 does not perform any capability or nonce check before creating a pending site-membership invitation carrying a caller-supplied role, allowing any authenticated user, such as a subscriber, to grant themselves the administrator role on a multisite installation.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Add User Autocomplete"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/41020730-c79a-43b4-a902-3a34fdca90d6/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-87797",
+    "title": "Client Invoicing by Sprout Invoices < 20.8.16 - Subscriber+ Private Note Overwrite via si_edit_private_note",
+    "desc": "The Sprout Invoices  WordPress plugin before 20.8.16 does not perform a capability or ownership check before allowing a private note to be overwritten through one of its AJAX actions, allowing any authenticated user such as a subscriber to overwrite private notes on records belonging to other users.",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Sprout Invoices"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/ded55e47-568d-4702-b043-4707e4182a09/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-87842",
+    "title": "Zonify < 1.0.5 - Unauthenticated Account Login Token Disclosure",
+    "desc": "The Zonify  WordPress plugin before 1.0.5 does not perform any capability or authentication check before returning the site's stored account login token, allowing unauthenticated attackers to retrieve it and authenticate to the site owner's linked service account.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Zonify"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/fb0cafdc-d1d5-4cad-852e-b0d569ae4469/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-87888",
+    "title": "YayPricing < 3.5.7 - Subscriber+ Stored XSS via save_page_data REST Route",
+    "desc": "The YayPricing  WordPress plugin before 3.5.7 does not perform an authorization check on a REST route that saves its pricing rules, allowing users with the subscriber role and above to store JavaScript that executes in the browser of an administrator who opens the YayPricing  WordPress plugin before 3.5.7's settings page.",
+    "cvss": 8,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "YayPricing"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/19bc425d-2aa3-4b2b-bc66-ac5ea96502e0/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-87891",
+    "title": "Rox Appointment Booking < 1.2.0 - Unauthenticated Holiday Schedule Modification via REST API",
+    "desc": "The Rox Appointment Booking  WordPress plugin before 1.2.0 does not perform any capability or authorization check when saving its holiday schedule, allowing unauthenticated attackers to overwrite the dates the booking system treats as unavailable, which can block legitimate bookings or open dates the site owner intended to keep closed.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Rox Appointment Booking"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/e7f3b29e-2503-41bb-b15c-3c0ef71a3a00/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-87892",
+    "title": "Rox Appointment Booking < 1.2.0 - Unauthenticated Price Manipulation and Payment Method Restriction Bypass",
+    "desc": "The Rox Appointment Booking  WordPress plugin before 1.2.0 does not verify the order total or the selected payment method against its own server-side pricing when creating a booking, allowing unauthenticated attackers to create confirmed bookings at an arbitrary price and to bypass the site's configured payment-method restrictions.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Rox Appointment Booking"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/971084b9-5bf9-438a-a94d-435d1b1f01d1/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-87894",
+    "title": "Rox Appointment Booking 1.0.9 - 1.2.2 - Unauthenticated Customer PII Disclosure via IDOR",
+    "desc": "The Rox Appointment Booking  WordPress plugin before 1.2.3 does not perform any authorization check on the endpoint that returns a booking's confirmation details, and each booking is addressed by a sequential numeric identifier, allowing unauthenticated attackers to read any customer's name, email, phone, booking details and payment status by enumerating that identifier.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Rox Appointment Booking"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/3f098db1-5406-4a77-adb1-99a66eb806a4/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-87916",
+    "title": "WPBot 8.4.9 - 8.5.9 - Unauthenticated Chat Visitor PII Disclosure",
+    "desc": "The WPBot  WordPress plugin before 8.6.0 does not perform any capability or nonce check on the AJAX action that lists stored chat sessions, allowing unauthenticated attackers to retrieve the name, email address and phone number of every chat visitor by requesting a wide date range.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "WPBot"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/31d65e66-10b1-467a-8b20-ecf4880359e0/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-87918",
+    "title": "WPBot < 8.5.7 - Unauthenticated AI Provider API Abuse via Multiple AJAX Actions",
+    "desc": "The WPBot  WordPress plugin before 8.5.7 does not perform any authorization or nonce check on several AJAX actions that relay prompts to its configured AI providers, allowing unauthenticated attackers to make those third-party API calls, and consume the associated cost, using the site's own configured API keys.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "WPBot"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/d6b3745b-bda1-4734-b39c-75376477ba0a/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-87919",
+    "title": "Product XML Feed Manager for WooCommerce < 3.1.1 - Contributor+ Arbitrary Product Deletion via Shortcode",
+    "desc": "The Product XML Feed Manager for WooCommerce  WordPress plugin before 3.1.1 does not restrict which object method its product shortcode may call, nor check the user's capability over the targeted product, allowing users with contributor-level access to delete arbitrary WooCommerce products by previewing a post that contains the shortcode.",
+    "cvss": 4.9,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Product XML Feed Manager for WooCommerce"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "url": "https://wpscan.com/vulnerability/2e2f48d3-9106-4357-beec-4dbea02223dc/",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2026-85706",
     "title": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') in GitLab",
     "desc": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.7 before 19.1.8, 19.2 before 19.2.6, and 19.3 before 19.3.2 that, under certain conditions, an unauthenticated user could have read arbitrary files from the GitLab server due to improper path confinement and missing authentication enforcement in the repository commits API.",
@@ -574,6 +1382,44 @@
     "published": "2026-09-10",
     "updated": "2026-09-12",
     "url": "https://www.ibm.com/support/pages/node/7286610",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-70341",
+    "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 8.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge (Chromium-based)"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge for Android"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge for iOS"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge for Linux"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Edge for MAC"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-11",
+    "updated": "2026-09-11",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70341",
     "source": "CISA Vulnrichment"
   },
   {
@@ -27123,1105 +27969,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-69396",
-    "title": "Windows NDIS Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69396",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-69426",
-    "title": "Windows VOLSNAP.SYS Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69426",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-69456",
-    "title": "Microsoft Windows Speech Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69456",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-69490",
-    "title": "Windows USB Mass Storage Class Driver Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 6.8,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-125"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69490",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-69777",
-    "title": "Windows DHCP Client Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 26H1"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69777",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-6640",
-    "title": "Media Library Assistant <= 3.35 - Authenticated (Contributor+) Stored Cross-Site Scripting via mla_link_attributes Parameter",
-    "desc": "The Media Library Assistant plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'mla_link_attributes' parameter in all versions up to, and including, 3.35 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a ",
-    "cvss": 6.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "dglingren",
-        "product": "Media Library Assistant"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-11",
-    "updated": "2026-09-11",
-    "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/ac0abf8e-6efd-4cf5-ad03-8442d892a35f?source=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-70425",
-    "title": "Dell PowerScale OneFS, Versions 9.5.0.0 through 9.7.1.0, Versions 9.8.0.0 through 9.10.1.0, and Versions 9.11.0.0 throug",
-    "desc": "Dell PowerScale OneFS, Versions 9.5.0.0 through 9.7.1.0, Versions 9.8.0.0 through 9.10.1.0, and Versions 9.11.0.0 through 9.14.0.1, contain a command injection vulnerability. An admin privileged local attacker could potentially exploit this vulnerability, leading to elevation of privileges to root, impacting confidentiality, integrity, and availability.",
-    "cvss": 6.7,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-78"
-    ],
-    "affected": [
-      {
-        "vendor": "Dell",
-        "product": "PowerScale OneFS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-09",
-    "updated": "2026-09-11",
-    "url": "https://www.dell.com/support/kbdoc/en-us/000505684/dsa-2026-360-security-update-for-dell-powerscale-onefs-multiple-vulnerabilities",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-70577",
-    "title": "Windows Modern Device Management (MDM) Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70577",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-72627",
-    "title": "Adobe Experience Manager | Cross-site Scripting (DOM-based XSS) (CWE-79)",
-    "desc": "Adobe Experience Manager is affected by a DOM-based Cross-Site Scripting (XSS) vulnerability. An attacker could exploit this issue by manipulating the DOM environment to execute malicious JavaScript within the context of the victim's browser. Exploitation of this issue requires user interaction in that a victim must visit a crafted webpage. Scope is changed.",
-    "cvss": 5.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Experience Manager as a Cloud Service"
-      },
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Experience Manager 6.5 LTS"
-      },
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Experience Manager 6.5"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://helpx.adobe.com/security/products/experience-manager/apsb26-98.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-72941",
-    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-72941",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-73784",
-    "title": "HPE IceWall products, Remote Bypass of Security Restrictions",
-    "desc": "A potential security vulnerability in HPE IceWall products could be exploited to tamper SAML response, allowing an attacker to impersonate another user.",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-347"
-    ],
-    "affected": [
-      {
-        "vendor": "Hewlett Packard Enterprise",
-        "product": "HPE IceWall products"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-11",
-    "updated": "2026-09-11",
-    "url": "https://support.hpe.com/hpesc/public/docDisplay?docId=hpesbmu05142en_us&docLocale=en_US",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-75639",
-    "title": "Adobe Experience Manager | Cross-site Scripting (DOM-based XSS) (CWE-79)",
-    "desc": "Adobe Experience Manager is affected by a DOM-based Cross-Site Scripting (XSS) vulnerability. An attacker could exploit this issue by manipulating the DOM environment to execute malicious JavaScript within the context of the victim's browser. Exploitation of this issue requires user interaction in that a victim must visit a crafted webpage. Scope is changed.",
-    "cvss": 5.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Experience Manager as a Cloud Service"
-      },
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Experience Manager 6.5 LTS"
-      },
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Experience Manager 6.5"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://helpx.adobe.com/security/products/experience-manager/apsb26-98.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-75659",
-    "title": "Adobe Experience Manager | Cross-site Scripting (DOM-based XSS) (CWE-79)",
-    "desc": "Adobe Experience Manager is affected by a DOM-based Cross-Site Scripting (XSS) vulnerability. An attacker could exploit this issue by manipulating the DOM environment to execute malicious JavaScript within the context of the victim's browser. Exploitation of this issue requires user interaction in that a victim must visit a crafted webpage. Scope is changed.",
-    "cvss": 5.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Experience Manager as a Cloud Service"
-      },
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Experience Manager 6.5 LTS"
-      },
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Experience Manager 6.5"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://helpx.adobe.com/security/products/experience-manager/apsb26-98.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-75668",
-    "title": "Adobe Experience Manager | Cross-site Scripting (DOM-based XSS) (CWE-79)",
-    "desc": "Adobe Experience Manager is affected by a DOM-based Cross-Site Scripting (XSS) vulnerability. An attacker could exploit this issue by manipulating the DOM environment to execute malicious JavaScript within the context of the victim's browser. Exploitation of this issue requires user interaction in that a victim must visit a crafted webpage. Scope is changed.",
-    "cvss": 5.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Experience Manager as a Cloud Service"
-      },
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Experience Manager 6.5 LTS"
-      },
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Experience Manager 6.5"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://helpx.adobe.com/security/products/experience-manager/apsb26-98.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-75674",
-    "title": "Adobe Experience Manager | Cross-site Scripting (DOM-based XSS) (CWE-79)",
-    "desc": "Adobe Experience Manager is affected by a DOM-based Cross-Site Scripting (XSS) vulnerability. An attacker could exploit this issue by manipulating the DOM environment to execute malicious JavaScript within the context of the victim's browser. Exploitation of this issue requires user interaction in that a victim must visit a crafted webpage. Scope is changed.",
-    "cvss": 5.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Experience Manager as a Cloud Service"
-      },
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Experience Manager 6.5 LTS"
-      },
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Experience Manager 6.5"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://helpx.adobe.com/security/products/experience-manager/apsb26-98.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-75709",
-    "title": "Adobe Experience Manager | Cross-site Scripting (DOM-based XSS) (CWE-79)",
-    "desc": "Adobe Experience Manager is affected by a DOM-based Cross-Site Scripting (XSS) vulnerability. An attacker could exploit this issue by manipulating the DOM environment to execute malicious JavaScript within the context of the victim's browser. Exploitation of this issue requires user interaction in that a victim must visit a crafted webpage. Scope is changed.",
-    "cvss": 5.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Experience Manager as a Cloud Service"
-      },
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Experience Manager 6.5 LTS"
-      },
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Experience Manager 6.5"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://helpx.adobe.com/security/products/experience-manager/apsb26-98.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-75733",
-    "title": "Adobe Experience Manager | Cross-site Scripting (Stored XSS) (CWE-79)",
-    "desc": "Adobe Experience Manager is affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by a low-privileged attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim's browser when they browse to the page containing the vulnerable field. Scope is changed.",
-    "cvss": 5.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Experience Manager as a Cloud Service"
-      },
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Experience Manager 6.5 LTS"
-      },
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Experience Manager 6.5"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://helpx.adobe.com/security/products/experience-manager/apsb26-98.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-75738",
-    "title": "Adobe Experience Manager | Cross-site Scripting (Stored XSS) (CWE-79)",
-    "desc": "Adobe Experience Manager is affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by a low-privileged attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim's browser when they browse to the page containing the vulnerable field. Scope is changed.",
-    "cvss": 5.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Experience Manager as a Cloud Service"
-      },
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Experience Manager 6.5 LTS"
-      },
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Experience Manager 6.5"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://helpx.adobe.com/security/products/experience-manager/apsb26-98.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-77111",
-    "title": "Adobe Commerce | Incorrect Authorization (CWE-863)",
-    "desc": "Adobe Commerce is affected by an Incorrect Authorization vulnerability that could result in a Security feature bypass. An attacker with high privileges could leverage this vulnerability to bypass security measures and gain unauthorized write access, causing a limited disruption to availability. Exploitation of this issue does not require user interaction. Scope is changed.",
-    "cvss": 8.7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-863"
-    ],
-    "affected": [
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Commerce"
-      },
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Commerce B2B"
-      },
-      {
-        "vendor": "Adobe",
-        "product": "Magento Open Source"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://helpx.adobe.com/security/products/magento/apsb26-138.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-78484",
-    "title": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains ",
-    "desc": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to command execution.",
-    "cvss": 5.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-77"
-    ],
-    "affected": [
-      {
-        "vendor": "Dell",
-        "product": "Secure Connect Gateway 5.0 - Application"
-      },
-      {
-        "vendor": "Dell",
-        "product": "Secure Connect Gateway 5.0 - Appliance"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-09",
-    "updated": "2026-09-11",
-    "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-78492",
-    "title": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains ",
-    "desc": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Certificate Validation vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to unauthorized access.",
-    "cvss": 7.4,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-295"
-    ],
-    "affected": [
-      {
-        "vendor": "Dell",
-        "product": "Secure Connect Gateway 5.0 - Application"
-      },
-      {
-        "vendor": "Dell",
-        "product": "Secure Connect Gateway 5.0 - Appliance"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-09",
-    "updated": "2026-09-11",
-    "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-78493",
-    "title": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains ",
-    "desc": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to command execution.",
-    "cvss": 5.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-77"
-    ],
-    "affected": [
-      {
-        "vendor": "Dell",
-        "product": "Secure Connect Gateway 5.0 - Application"
-      },
-      {
-        "vendor": "Dell",
-        "product": "Secure Connect Gateway 5.0 - Appliance"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-09",
-    "updated": "2026-09-11",
-    "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-79689",
-    "title": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains ",
-    "desc": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to script injection.",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-78"
-    ],
-    "affected": [
-      {
-        "vendor": "Dell",
-        "product": "Secure Connect Gateway 5.0 - Application"
-      },
-      {
-        "vendor": "Dell",
-        "product": "Secure Connect Gateway 5.0 - Appliance"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-09",
-    "updated": "2026-09-11",
-    "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-79723",
-    "title": "Langflow is vulnerable to server-side request forgery due to missing egress validation on server-side URL fetches",
-    "desc": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow a remote authenticated attacker to obtain sensitive information due to improper validation of user-controlled API endpoints.",
-    "cvss": 5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-918"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "Langflow OSS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-10",
-    "updated": "2026-09-11",
-    "url": "https://www.ibm.com/support/pages/node/7286665",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-79741",
-    "title": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains ",
-    "desc": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to script injection.",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-77"
-    ],
-    "affected": [
-      {
-        "vendor": "Dell",
-        "product": "Secure Connect Gateway 5.0 - Application"
-      },
-      {
-        "vendor": "Dell",
-        "product": "Secure Connect Gateway 5.0 - Appliance"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-09",
-    "updated": "2026-09-11",
-    "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-79941",
-    "title": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains ",
-    "desc": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to script injection.",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-77"
-    ],
-    "affected": [
-      {
-        "vendor": "Dell",
-        "product": "Secure Connect Gateway 5.0 - Application"
-      },
-      {
-        "vendor": "Dell",
-        "product": "Secure Connect Gateway 5.0 - Appliance"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-09",
-    "updated": "2026-09-11",
-    "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-79945",
-    "title": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains ",
-    "desc": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to command execution.",
-    "cvss": 5.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-77"
-    ],
-    "affected": [
-      {
-        "vendor": "Dell",
-        "product": "Secure Connect Gateway 5.0 - Application"
-      },
-      {
-        "vendor": "Dell",
-        "product": "Secure Connect Gateway 5.0 - Appliance"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-09",
-    "updated": "2026-09-11",
-    "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-79963",
-    "title": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains ",
-    "desc": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains a Download of Code Without Integrity Check vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to command execution.",
-    "cvss": 7.4,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-494"
-    ],
-    "affected": [
-      {
-        "vendor": "Dell",
-        "product": "Secure Connect Gateway 5.0 - Application"
-      },
-      {
-        "vendor": "Dell",
-        "product": "Secure Connect Gateway 5.0 - Appliance"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-09",
-    "updated": "2026-09-11",
-    "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-7438",
-    "title": "Bold Timeline Lite <= 1.2.8 - Authenticated (Contributor+) Stored Cross-Site Scripting via Shortcode Attributes",
-    "desc": "The Bold Timeline Lite plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the `supertitle` and `subtitle` attributes of the `bold_timeline_item` shortcode in all versions up to, and including, 1.2.8 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with Contributor-level access and above, t",
-    "cvss": 6.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "boldthemes",
-        "product": "Bold Timeline Lite"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-11",
-    "updated": "2026-09-11",
-    "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/e739b324-f833-4b31-8d4c-40538c924ddf?source=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-80380",
-    "title": "DataStage on Cloud Pak for Data has several vulnerabilities due to open source software",
-    "desc": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote attacker to perform unauthorized actions due to cross-site request forgery.",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-352"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "DataStage on Cloud Pak for Data"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-10",
-    "updated": "2026-09-11",
-    "url": "https://www.ibm.com/support/pages/node/7286562",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-81046",
-    "title": "Dell ThinOS 10, versions prior to 2605_10.2616, contain a Protection Mechanism Failure vulnerability. An unauthenticated",
-    "desc": "Dell ThinOS 10, versions prior to 2605_10.2616, contain a Protection Mechanism Failure vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Arbitrary Code Execution within the application context.",
-    "cvss": 9.4,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-284"
-    ],
-    "affected": [
-      {
-        "vendor": "Dell",
-        "product": "ThinOS 10"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-10",
-    "updated": "2026-09-11",
-    "url": "https://www.dell.com/support/kbdoc/en-us/000502746/dsa-2026-389-security-update-for-dell-thinos-10-for-multiple-vulnerabilities",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-81207",
-    "title": "DataStage on Cloud Pak for Data has several vulnerabilities due to open source software",
-    "desc": "IBM DataStage on Cloud Pak for Data 5.4.0.0 allows any authenticated tenant — with no project membership or role — fully controls scheme/host/port/path of an outbound fetch originating from a shared-infrastructure pod, and the WSDL body is reflected verbatim to the caller. The ds-canvas pod sits on the OpenShift overlay with reach to co-tenant services, in-cluster CP4D APIs, and link-local address",
-    "cvss": 8.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-918"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "DataStage on Cloud Pak for Data"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-10",
-    "updated": "2026-09-11",
-    "url": "https://www.ibm.com/support/pages/node/7286562",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-81467",
-    "title": "Dell ThinOS 10, versions prior to 2605_10. 2616, contains an Improper Neutralization of Special Elements used in an OS C",
-    "desc": "Dell ThinOS 10, versions prior to 2605_10. 2616, contains an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Command execution.",
-    "cvss": 9.8,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-78"
-    ],
-    "affected": [
-      {
-        "vendor": "Dell",
-        "product": "ThinOS 10"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-10",
-    "updated": "2026-09-11",
-    "url": "https://www.dell.com/support/kbdoc/en-us/000502746/dsa-2026-389-security-update-for-dell-thinos-10-for-multiple-vulnerabilities",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-81468",
-    "title": "Dell ThinOS 10, versions prior to 2605_10. 2616, contains an Improper Neutralization of Special Elements used in an OS C",
-    "desc": "Dell ThinOS 10, versions prior to 2605_10. 2616, contains an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Command execution.",
-    "cvss": 9.1,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-78"
-    ],
-    "affected": [
-      {
-        "vendor": "Dell",
-        "product": "ThinOS 10"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-10",
-    "updated": "2026-09-11",
-    "url": "https://www.dell.com/support/kbdoc/en-us/000502746/dsa-2026-389-security-update-for-dell-thinos-10-for-multiple-vulnerabilities",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-82095",
-    "title": "DataStage on Cloud Pak for Data has several vulnerabilities due to open source software",
-    "desc": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in an OS command.",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-78"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "DataStage on Cloud Pak for Data"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-10",
-    "updated": "2026-09-11",
-    "url": "https://www.ibm.com/support/pages/node/7286562",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-82107",
-    "title": "DataStage on Cloud Pak for Data has several vulnerabilities due to open source software",
-    "desc": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to obtain sensitive information and bypass security restrictions due to improper authentication.",
-    "cvss": 9.6,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-287"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "DataStage on Cloud Pak for Data"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-10",
-    "updated": "2026-09-11",
-    "url": "https://www.ibm.com/support/pages/node/7286562",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-83999",
-    "title": "Windows Resilient File System (ReFS) Deduplication Service Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-59"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 26H1"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2025"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2025 (Server Core installation)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83999",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-84941",
-    "title": "Omada Controller XML External Entity (XXE) Injection in SAML IdP Metadata Parsing Leading to Arbitrary Local File Read",
-    "desc": "An information disclosure vulnerability in the SAML Single Sign-On (SSO) functionality of Omada Controller allows an authenticated user with SAML configuration privileges to access sensitive information due to insufficient validation of user-supplied SAML metadata. Successful exploitation could result in unauthorized disclosure of sensitive information.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-611"
-    ],
-    "affected": [
-      {
-        "vendor": "TP-Link Systems Inc.",
-        "product": "Omada Software Controller (Windows)"
-      },
-      {
-        "vendor": "TP-Link Systems Inc.",
-        "product": "Omada Software Controller (Linux)"
-      },
-      {
-        "vendor": "TP-Link Systems Inc.",
-        "product": "OC2000 v1"
-      },
-      {
-        "vendor": "TP-Link Systems Inc.",
-        "product": "OC2000 v2"
-      },
-      {
-        "vendor": "TP-Link Systems Inc.",
-        "product": "OC200 v3"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-10",
-    "updated": "2026-09-11",
-    "url": "https://support.omadanetworks.com/en/download/software/omada-controller",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-87776",
-    "title": "compression vulnerable to Denial of Service via memory leak on premature response close",
-    "desc": "compression is a Node.js and Express compression middleware. In versions before 1.8.2, when a client aborts the connection while a compressed response is still being sent, the zlib stream created to compress that response is never destroyed, so each aborted compressed response leaks its native zlib memory. A remote unauthenticated attacker can repeatedly open requests and disconnect early, exhaust",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-401",
-      "CWE-459"
-    ],
-    "affected": [
-      {
-        "vendor": "compression",
-        "product": "compression"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-11",
-    "updated": "2026-09-11",
-    "url": "https://github.com/expressjs/compression/security/advisories/GHSA-vc2v-76pw-4v95",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2025-25249",
     "title": "A heap-based buffer overflow vulnerability in Fortinet FortiOS 7.6.0 through 7.6.3, FortiOS 7.4.0 through 7.4.8, FortiOS",
     "desc": "A heap-based buffer overflow vulnerability in Fortinet FortiOS 7.6.0 through 7.6.3, FortiOS 7.4.0 through 7.4.8, FortiOS 7.2.0 through 7.2.11, FortiOS 7.0.0 through 7.0.17, FortiOS 6.4 all versions, FortiSwitchManager 7.2.0 through 7.2.6, FortiSwitchManager 7.0.0 through 7.0.5 allows attacker to execute unauthorized code or commands via specially crafted packets",
@@ -32058,66 +31805,6 @@
     "severity": "HIGH",
     "cwes": [
       "CWE-36"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "DataStage on Cloud Pak for Data"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-10",
-    "updated": "2026-09-10",
-    "url": "https://www.ibm.com/support/pages/node/7286562",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-69438",
-    "title": "Microsoft JScript Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 8.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-681"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-10",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69438",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-81550",
-    "title": "DataStage on Cloud Pak for Data has several vulnerabilities due to open source software",
-    "desc": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in an OS command.",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-78"
     ],
     "affected": [
       {
