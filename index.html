@@ -53,14 +53,14 @@
       padding: 0;
     }
 
-    /* Pretendard 폰트 전역 적용 */
-    body {
+    html, body {
       background: var(--bg);
       color: var(--text);
       font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
       font-size: 14px;
       line-height: 1.6;
-      min-height: 100vh;
+      height: 100%;
+      overflow: hidden;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -134,7 +134,7 @@
     .layout {
       display: grid;
       grid-template-columns: 210px 1fr;
-      height: calc(100vh - 56px - 65px); /* 헤더와 stat-bar를 뺀 고정 높이 */
+      height: calc(100vh - 56px - 65px);
       overflow: hidden;
     }
 
@@ -148,6 +148,21 @@
       flex-direction: column;
       gap: 1.25rem;
     }
+    /* 스크롤바 스타일 */
+    .main::-webkit-scrollbar,
+    .sidebar::-webkit-scrollbar {
+      width: 6px;
+    }
+    .main::-webkit-scrollbar-thumb,
+    .sidebar::-webkit-scrollbar-thumb {
+      background: var(--border2);
+      border-radius: 4px;
+    }
+    .main::-webkit-scrollbar-track,
+    .sidebar::-webkit-scrollbar-track {
+      background: transparent;
+    }
+  
     .nav-section {
       display: flex;
       flex-direction: column;
@@ -235,7 +250,9 @@
 
     .main {
       padding: 1.5rem 2rem;
-      overflow: auto;
+      height: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
     }
     .panel {
       display: none;
