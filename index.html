@@ -2683,13 +2683,13 @@ function memoCard([id, n], overrideDisplayId) {
       <div class="card-title" style="font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 4px;">${escHtml(targetId)}</div>
     `;
 
-    // 4. 메모 리스트 파싱 및 "가장 상단의 메모 제목" 추출
     const memos = (n.memos || []);
     const sortedMemos = memos.slice().reverse();
     
     let firstMemoHeaderTitle = '';
-    if (sortedMemos.length > 0) {
-      const firstLines = (sortedMemos[0].text || '').trim().split('\n');
+    // 뒤집힌 배열이 아닌, 원본 memos 배열의 첫 번째(가장 처음 작성된) 메모 추출
+    if (memos.length > 0) {
+      const firstLines = (memos[0].text || '').trim().split('\n');
       firstMemoHeaderTitle = (firstLines[0] || '').replace(/^#+\s*/, '').trim();
     }
 
