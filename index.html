@@ -2607,7 +2607,24 @@ function renderMemos() {
       const memoText = (n.memos || []).map(m => m.text).join(' ');
       return (memoText + id + (n.tags||[]).join(' ')).toLowerCase().includes(q);
     })
-    .sort((a, b) => (b[1].updatedAt||'').localeCompare(a[1].updatedAt||''));
+    .sort((a, b) => {
+      // 해당 아이템의 모든 메모 중 '가장 오래된(최초)' createdAt 타임스탬프 추출
+      const getFirstCreatedTime = (item) => {
+        const times = (item.memos || [])
+          .map(m => m.createdAt ? new Date(m.createdAt).getTime() : null)
+          .filter(t => t !== null && !isNaN(t));
+
+        if (item.createdAt) {
+          const itemTime = new Date(item.createdAt).getTime();
+          if (!isNaN(itemTime)) times.push(itemTime);
+        }
+
+        return times.length > 0 ? Math.min(...times) : 0;
+      };
+
+      // 최신에 처음 등록된 글이 위로 오게 하려면 (b - a), 등록된 순서대로 과거부터 보려면 (a - b)
+      return getFirstCreatedTime(b[1]) - getFirstCreatedTime(a[1]);
+    });
 
   const totalCnt = Object.values(notes).filter(n => n.memos && n.memos.length).length;
   document.getElementById('nb-memos').textContent = totalCnt;
