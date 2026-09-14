@@ -470,18 +470,13 @@
   .owasp-grid { grid-template-columns: 1fr; }
 }
 
-  /* 메모 그리드 배치 */
-#memo-list-vuln, #memo-list-news, #memo-list-owasp {
+#memo-list-vuln:not([style*="display: none"]):not([style*="display:none"]),
+#memo-list-news:not([style*="display: none"]):not([style*="display:none"]),
+#memo-list-owasp:not([style*="display: none"]):not([style*="display:none"]) {
   display: grid !important;
   grid-template-columns: repeat(2, 1fr) !important;
   gap: 14px !important;
   align-items: start !important;
-}
-
-#memo-list-vuln[style*="display: none"],
-#memo-list-news[style*="display: none"],
-#memo-list-owasp[style*="display: none"] {
-  display: none !important;
 }
 
 .memo-acc-card {
