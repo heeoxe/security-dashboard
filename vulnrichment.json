@@ -1,5 +1,71 @@
 [
   {
+    "cve": "CVE-2026-81578",
+    "title": "PaperCut MF/NG: Authentication Bypass",
+    "desc": "An improper access control vulnerability exists in the web management interface of PaperCut MF and PaperCut NG. Under specific conditions, unauthenticated remote requests targeting administrative functions can trigger backend actions prior to the  completion of access validation checks. This allows an unauthenticated remote attacker to modify certain system configurations.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-305"
+    ],
+    "affected": [
+      {
+        "vendor": "PaperCut",
+        "product": "PaperCut MF/NG"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2026-08-28",
+    "updated": "2026-09-13",
+    "url": "https://www.papercut.com/kb/Main/security-bulletin-27-aug-2026-urgent-security-advisory/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-82078",
+    "title": "PaperCut MF/NG: Unsafe Dynamic Class Loading in Database Connector",
+    "desc": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on ",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-470"
+    ],
+    "affected": [
+      {
+        "vendor": "PaperCut",
+        "product": "PaperCut MF/NG"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2026-08-28",
+    "updated": "2026-09-13",
+    "url": "https://www.papercut.com/kb/Main/security-bulletin-27-aug-2026-urgent-security-advisory/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-52295",
+    "title": "FFmpeg before 9.0 has an out-of-bounds read because the copied extradata lacked required padding before GetBitContext-ba",
+    "desc": "FFmpeg before 9.0 has an out-of-bounds read because the copied extradata lacked required padding before GetBitContext-based access in libavformat/iamf_writer.c.",
+    "cvss": 2.9,
+    "severity": "LOW",
+    "cwes": [
+      "CWE-125"
+    ],
+    "affected": [
+      {
+        "vendor": "FFmpeg",
+        "product": "FFmpeg"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-01",
+    "updated": "2026-09-13",
+    "url": "https://github.com/Kenan-Kamel/VulnerabilitiesReference/tree/main/FFmpeg/ExtradataPadding",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2026-77773",
     "title": "Social Contact Form (FormyChat) < 2.15.8 - Unauthenticated Gravity Forms Entry Disclosure via formychat_get_gf_entry",
     "desc": "The Contact Form to Chat Apps | Click to Chat to Order  WordPress plugin before 2.15.8 does not perform any capability, nonce or session check on one of its public AJAX actions, allowing unauthenticated users to read the submitted entries of any form created with a supported third-party form Contact Form to Chat Apps | Click to Chat to Order  WordPress plugin before 2.15.8.",
@@ -27819,80 +27885,6 @@
     "published": "2026-08-17",
     "updated": "2026-09-11",
     "url": "https://support.opentext.com/csm?id=ot_kb_unauthenticated&sysparm_article=KB0870915",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-18964",
-    "title": "Floating Chat Widget: Contact Chat Icons, Telegram Chat, Line Messenger, WeChat, Email, SMS, Call Button <= 3.5.9 - Reflected Cross-Site Scripting",
-    "desc": "The Floating Chat Widget: Contact Chat Icons, Telegram Chat, Line Messenger, WeChat, Email, SMS, Call Button – Chaty plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 's' parameter in all versions up to, and including, 3.5.9 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in ",
-    "cvss": 6.1,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "premio",
-        "product": "Floating Chat Widget: Contact Chat Icons, Telegram Chat, Line Messenger, WeChat, Email, SMS, Call Button – Chaty"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-11",
-    "updated": "2026-09-11",
-    "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/918af0dc-afad-4645-b4ad-8b10a34e20b2?source=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-20293",
-    "title": "Cisco UCS and UCS-Based Appliances UEFI Shell Secure Boot Bypass Vulnerability",
-    "desc": "A vulnerability in the Unified Extensible Firmware Interface (UEFI) Shell implementation of Cisco UCS Servers and UCS-based appliances could allow an authenticated attacker with valid credentials for a user account with the role of user or admin&nbsp;or an unauthenticated attacker with physical access to an affected device to bypass UEFI Secure Boot validation checks and execute unauthorized softw",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Cisco",
-        "product": "Cisco Enterprise NFV Infrastructure Software"
-      },
-      {
-        "vendor": "Cisco",
-        "product": "Cisco Unified Computing System (Managed)"
-      },
-      {
-        "vendor": "Cisco",
-        "product": "Cisco Unified Computing System (Standalone)"
-      },
-      {
-        "vendor": "Cisco",
-        "product": "Cisco Unified Computing System E-Series Software (UCSE)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-11",
-    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ucs-uefi-sb-bypass-eb6xC5GW",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-21095",
-    "title": "Heap-based buffer overflow in DNG decoder of libimagecodec.quram.so prior to SMR Sep-2026 Release 1 allows remote attack",
-    "desc": "Heap-based buffer overflow in DNG decoder of libimagecodec.quram.so prior to SMR Sep-2026 Release 1 allows remote attackers to execute arbitrary code.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Samsung Mobile",
-        "product": "Samsung Mobile Devices"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-09",
-    "updated": "2026-09-11",
-    "url": "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=09",
     "source": "CISA Vulnrichment"
   },
   {
