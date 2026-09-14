@@ -137,98 +137,78 @@
       min-height: calc(100vh - 57px - 65px);
     }
 
+    /* 다크 슬레이트 사이드바 및 액티브 바 */
     .sidebar {
       background: var(--c-dark-slate);
-      border-right: 1px solid rgba(255, 255, 255, 0.05);
-      padding: 1.25rem 0.85rem;
-      overflow-y: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 1.25rem;
+      border-right: none;
+      padding: 1.5rem 0.75rem;
+      overflow: hidden;
     }
     .nav-section {
-      display: flex;
-      flex-direction: column;
-      gap: 3px;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    }
-    .nav-section:last-of-type {
-      border-bottom: none;
+      padding: 0 0.5rem;
+      margin-bottom: 1.5rem;
     }
     .nav-label {
-      font-size: 10px;
-      font-weight: 800;
+      font-size: 11px;
+      font-weight: 700;
       color: var(--c-warm-gray-1);
       text-transform: uppercase;
-      letter-spacing: 1.5px;
-      margin-bottom: 8px;
-      padding: 0 10px;
-      opacity: 0.7;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      padding: 0 8px;
     }
     .nav-item {
       display: flex;
       align-items: center;
-      gap: 10px;
-      padding: 8px 10px;
-      border-radius: 8px;
+      gap: 8px;
+      padding: 9px 12px;
+      border-radius: var(--radius);
       cursor: pointer;
       font-size: 13px;
-      font-weight: 500;
-      color: #94A3B8;
-      transition: all 0.15s ease-in-out;
-      border: 1px solid transparent;
+      color: #D1D5DB;
+      transition: all 0.2s ease;
+      border: none;
       background: none;
       width: 100%;
       text-align: left;
-    }
-
-    .nav-item svg {
-      flex-shrink: 0;
-      background: rgba(255, 255, 255, 0.04);
-      padding: 5px;
-      width: 26px;
-      height: 26px;
-      border-radius: 6px;
-      color: #94A3B8;
-      transition: all 0.15s ease;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      position: relative;
     }
     .nav-item:hover {
-      background: rgba(255, 255, 255, 0.04);
-      color: #F1F5F9;
-    }
-    .nav-item:hover svg {
+      background: rgba(255, 255, 255, 0.08);
       color: #FFFFFF;
-      background: rgba(255, 255, 255, 0.08);
     }
-
     .nav-item.active {
-      background: rgba(255, 255, 255, 0.08);
-      border-color: rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.15);
       color: #FFFFFF;
       font-weight: 600;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     }
-    .nav-item.active svg {
-      background: var(--c-muted-blue);
-      color: #FFFFFF;
+    .nav-item.active::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 6px;
+      bottom: 6px;
+      width: 3px;
+      background: var(--c-soft-beige);
+      border-radius: 2px;
     }
-    /* 숫자 뱃지: 직사각형 미니 인덱스 뱃지로 변경 */
+    .nav-item svg {
+      flex-shrink: 0;
+    }
     .nav-badge {
       margin-left: auto;
       font-size: 10px;
-      font-weight: 700;
-      font-variant-numeric: tabular-nums;
-      background: rgba(255, 255, 255, 0.06);
-      color: #94A3B8;
+      background: rgba(255, 255, 255, 0.15);
+      color: var(--c-soft-beige);
       padding: 1px 6px;
-      border-radius: 4px;
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
     }
     .nav-badge.hot {
-      background: rgba(217, 56, 41, 0.15);
-      border-color: rgba(217, 56, 41, 0.3);
-      color: #FF6B6B;
+      background: var(--critical);
+      color: #FFFFFF;
     }
 
     .main {
