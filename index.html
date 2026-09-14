@@ -10,14 +10,11 @@
   
 <style>
   :root {
-      /* 5색 팔레트 */
       --c-dark-slate: #434B56;
       --c-muted-blue: #606F82;
       --c-soft-beige: #E0E0D8;
       --c-warm-gray-1: #C8C2B6;
       --c-warm-gray-2: #A59C91;
-
-      /* UI 테마 변수 매핑 */
       --bg: #F8F9FA;
       --bg2: #FFFFFF;
       --bg3: #F1F3F5;
@@ -29,7 +26,6 @@
       --accent: var(--c-muted-blue);
       --accent2: #EDF2F7;
       
-      /* 보안 경고 액센트 */
       --critical: #c0392b;
       --critical-bg: #fdf0ef;
       --high: #b85c00;
@@ -53,7 +49,6 @@
       padding: 0;
     }
 
-    /* Pretendard 폰트 전역 적용 */
     body {
       background: var(--bg);
       color: var(--text);
@@ -64,7 +59,6 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* 헤더 스타일 */
     header {
       background: var(--bg2);
       border-bottom: 1px solid var(--border);
@@ -95,7 +89,7 @@
       color: var(--text3);
     }
 
-    /* 4번: 상단 KPI 통계 카드 */
+    /* 상단 통계 카드 */
     .stat-bar {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -137,7 +131,7 @@
       min-height: calc(100vh - 57px - 65px);
     }
 
-    /* 다크 슬레이트 사이드바 및 액티브 바 */
+    /* 사이드바 및 액티브 바 */
     .sidebar {
       background: var(--c-dark-slate);
       border-right: none;
@@ -476,7 +470,7 @@
   .owasp-grid { grid-template-columns: 1fr; }
 }
 
-  /* 메모 2열 그리드 배치 */
+  /* 메모 그리드 배치 */
 #memo-list-vuln, #memo-list-news, #memo-list-owasp {
   display: grid !important;
   grid-template-columns: repeat(2, 1fr) !important;
@@ -484,37 +478,49 @@
   align-items: start !important;
 }
 
-/* 탭 전환 시 display: none 충돌 방지 */
 #memo-list-vuln[style*="display: none"],
 #memo-list-news[style*="display: none"],
 #memo-list-owasp[style*="display: none"] {
   display: none !important;
 }
 
-/* 카드 아코디언 스타일 */
 .memo-acc-card {
   cursor: pointer;
   transition: all 0.2s ease;
   position: relative;
+  min-height: 148px; /* 접힌 상태에서 카드의 기본 높이를 일정하게 고정 */
+  display: flex;
+  flex-direction: column;
 }
 .memo-acc-card:hover {
   border-color: var(--accent);
 }
 
-/* 기본 접힘 (상세 본문 숨김) */
 .memo-acc-card .memo-detail-body {
   display: none;
   margin-top: 12px;
   padding-top: 12px;
   border-top: 1px dashed var(--border);
 }
+.memo-acc-card .card-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 40px; 
+}
 
-/* 클릭 시 펼쳐짐 */
+.memo-acc-card > div[style*="📌"] {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .memo-acc-card.expanded .memo-detail-body {
   display: block;
 }
 
-/* 펼치기 힌트 텍스트 */
 .memo-toggle-hint {
   display: inline-flex;
   align-items: center;
@@ -522,6 +528,8 @@
   color: var(--c-muted-blue);
   margin-top: 8px;
   font-weight: 600;
+  margin-top: auto !important; /* 항상 카드 바닥 쪽에 고정 */
+  padding-top: 8px;
 }
 </style>
 </head>
