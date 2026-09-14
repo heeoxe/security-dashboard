@@ -475,6 +475,54 @@
   .cards { grid-template-columns: 1fr; }
   .owasp-grid { grid-template-columns: 1fr; }
 }
+
+  /* 메모 2열 그리드 배치 */
+#memo-list-vuln, #memo-list-news, #memo-list-owasp {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 14px !important;
+  align-items: start !important;
+}
+
+/* 탭 전환 시 display: none 충돌 방지 */
+#memo-list-vuln[style*="display: none"],
+#memo-list-news[style*="display: none"],
+#memo-list-owasp[style*="display: none"] {
+  display: none !important;
+}
+
+/* 카드 아코디언 스타일 */
+.memo-acc-card {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+.memo-acc-card:hover {
+  border-color: var(--accent);
+}
+
+/* 기본 접힘 (상세 본문 숨김) */
+.memo-acc-card .memo-detail-body {
+  display: none;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--border);
+}
+
+/* 클릭 시 펼쳐짐 */
+.memo-acc-card.expanded .memo-detail-body {
+  display: block;
+}
+
+/* 펼치기 힌트 텍스트 */
+.memo-toggle-hint {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  color: var(--c-muted-blue);
+  margin-top: 8px;
+  font-weight: 600;
+}
 </style>
 </head>
 <body>
@@ -2571,14 +2619,14 @@ function renderMemos() {
 
 
 function memoCard([id, n], overrideDisplayId) {
-  // overrideDisplayId가 숫자이거나 비어있으면 원본 id 사용
-  const validOverride = (overrideDisplayId && isNaN(Number(overrideDisplayId))) ? overrideDisplayId : null;
-  const targetId = validOverride || id;
-  
-  const tags = (n.tags || []).map(t => `<span class="tag">${escHtml(t)}</span>`).join('');
-  const statusEl = n.status ? `<span class="badge" style="font-size:10px;background:${statusBg(n.status)};color:${statusColor(n.status)};border:1px solid ${statusColor(n.status)}40">${n.status}</span>` : '';
+    // overrideDisplayId가 숫자이거나 비어있으면 원본 id 사용
+    const validOverride = (overrideDisplayId && isNaN(Number(overrideDisplayId))) ? overrideDisplayId : null;
+    const targetId = validOverride || id;
     
-    // 1. 메모에 title이 없으면, 로드된 전체 뉴스(newsAll)에서 URL로 제목 실시간 매칭
+    const tags = (n.tags || []).map(t => `<span class="tag">${escHtml(t)}</span>`).join('');
+    const statusEl = n.status ? `<span class="badge" style="font-size:10px;background:${statusBg(n.status)};color:${statusColor(n.status)};border:1px solid ${statusColor(n.status)}40">${n.status}</span>` : '';
+      
+    // 1. 뉴스는 URL로 제목 실시간 매칭
     let titleText = n.title || '';
     const isNews = id && id.startsWith('http');
     if (!titleText && isNews && typeof newsAll !== 'undefined' && Array.isArray(newsAll)) {
@@ -2588,7 +2636,7 @@ function memoCard([id, n], overrideDisplayId) {
       }
     }
 
-    // 2. URL 경로 축약 텍스트 생성
+    // 2. URL 경로 축약 텍스트
     let urlText = id;
     if (isNews) {
       try {
@@ -2597,14 +2645,14 @@ function memoCard([id, n], overrideDisplayId) {
       } catch {}
     }
 
-    // 3. 뉴스는 기사 제목(크게) + 원본 URL 링크(작게) 표시 / 그 외(취약점, OWASP 등)는 기존 ID 유지
+    // 3. 뉴스는 기사 제목 + 원본 URL 링크 / 그 외는 ID 노출
     const titleDisplayHtml = isNews ? `
-      <div style="margin-bottom: 6px;">
-        <div class="card-title" style="font-size: 14px; font-weight: 600; line-height: 1.4; color: var(--text, #e2e8f0); margin-bottom: 2px;">
+      <div style="margin-bottom: 4px;">
+        <div class="card-title" style="font-size: 14px; font-weight: 700; line-height: 1.4; color: var(--text); margin-bottom: 2px;">
           ${escHtml(titleText || urlText)}
         </div>
         <a href="${escHtml(id)}" target="_blank" rel="noopener noreferrer" 
-           style="font-size: 11px; color: #38bdf8; text-decoration: none; word-break: break-all; opacity: 0.85;"
+           style="font-size: 11px; color: var(--c-muted-blue); text-decoration: none; word-break: break-all; opacity: 0.85;"
            onclick="event.stopPropagation();"
            onmouseover="this.style.textDecoration='underline'" 
            onmouseout="this.style.textDecoration='none'">
@@ -2612,14 +2660,22 @@ function memoCard([id, n], overrideDisplayId) {
         </a>
       </div>
     ` : `
-      <div class="card-title" style="margin-bottom: 4px;">${escHtml(targetId)}</div>
+      <div class="card-title" style="font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 4px;">${escHtml(targetId)}</div>
     `;
 
+    // 4. 메모 리스트 파싱 및 "가장 상단의 메모 제목" 추출
     const memos = (n.memos || []);
-    const memosHtml = memos.slice().reverse().map(m => {
+    const sortedMemos = memos.slice().reverse();
+    
+    let firstMemoHeaderTitle = '';
+    if (sortedMemos.length > 0) {
+      const firstLines = (sortedMemos[0].text || '').trim().split('\n');
+      firstMemoHeaderTitle = (firstLines[0] || '').replace(/^#+\s*/, '').trim();
+    }
+
+    // 상세 메모 HTML (펼쳐졌을 때 나타남)
+    const memosHtml = sortedMemos.map(m => {
       const t = m.createdAt ? new Date(m.createdAt).toLocaleString('ko-KR',{month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'}) : '';
-  
-      // 첫 줄을 소제목으로 분리
       const lines = (m.text || '').trim().split('\n');
       const rawTitle = lines[0] || '';
       const memoSubtitle = rawTitle.replace(/^#+\s*/, '');
@@ -2627,24 +2683,42 @@ function memoCard([id, n], overrideDisplayId) {
 
       return `<div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:10px 12px;margin-bottom:8px;">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:${memoBody ? '6px' : '0'};">
-        <div style="font-size:13px;font-weight:600;color:var(--text);letter-spacing:-0.2px;">
-        ${escHtml(memoSubtitle)}
-        </div>
-        <span style="font-size:11px;color:var(--text3);">${t}</span>
+          <div style="font-size:13px;font-weight:600;color:var(--text);letter-spacing:-0.2px;">
+            ${escHtml(memoSubtitle)}
+          </div>
+          <span style="font-size:11px;color:var(--text3);">${t}</span>
         </div>
         ${memoBody ? `<div style="font-size:13px;color:var(--text2);line-height:1.65;white-space:pre-wrap;border-top:1px solid var(--border2);padding-top:8px;margin-top:4px;">${escHtml(memoBody)}</div>` : ''}
-        </div>`;
-      }).join('');
+      </div>`;
+    }).join('');
 
-    return `<div class="card" style="cursor:pointer" onclick="openDetailById('${escAttr(id)}')">
+    return `<div class="card memo-acc-card" onclick="this.classList.toggle('expanded')">
       <div class="card-top" style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:6px;">
         <div style="flex:1;min-width:0;">
           ${titleDisplayHtml}
         </div>
         ${statusEl}
       </div>
-      ${tags ? `<div style="margin-bottom:8px">${tags}</div>` : ''}
-      ${memosHtml || '<div style="font-size:12px;color:var(--text3);padding:4px 0">메모 없음</div>'}
+      ${tags ? `<div style="margin-bottom:6px">${tags}</div>` : ''}
+
+      <!-- 접힌 상태에서 노출되는 최상단 메모 제목 -->
+      ${firstMemoHeaderTitle ? `
+        <div style="font-size:13px; font-weight:600; color:var(--text); margin-top:6px; background:var(--bg3); padding:6px 10px; border-radius:6px; display:flex; align-items:center; gap:6px;">
+          <span>📌</span> <span>${escHtml(firstMemoHeaderTitle)}</span>
+        </div>
+      ` : ''}
+
+      <div class="memo-toggle-hint">
+        <span>▼ 상세 메모 보기</span>
+      </div>
+
+      <!-- 클릭 시 펼쳐지는 아코디언 본문 -->
+      <div class="memo-detail-body" onclick="event.stopPropagation();">
+        ${memosHtml || '<div style="font-size:12px;color:var(--text3);padding:4px 0">메모 없음</div>'}
+        <div style="display:flex; justify-content:flex-end; margin-top:10px;">
+          <button class="btn" style="height:26px; font-size:11px; padding:0 10px;" onclick="openDetailById('${escAttr(id)}'); event.stopPropagation();">수정 / 메모 추가</button>
+        </div>
+      </div>
     </div>`;
   }
   const emptyHtml = (msg) => `<div class="empty">
