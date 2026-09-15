@@ -1,5 +1,187 @@
 [
   {
+    "source": "thn",
+    "title": "Human Attacker Exploits Marimo RCE, Reaches SSH Bastion in Eight Seconds",
+    "desc": "With artificial intelligence (AI) shrinking the window between vulnerability discovery and exploitation and lowering the barrier to entry for bad actors, new findings from Sysdig show that skilled human operators can move just as swiftly after gaining initial access.\n\nIn one instance highlighted by ",
+    "url": "https://thehackernews.com/2026/09/human-attacker-exploits-marimo-rce.html",
+    "date": "2026-09-15T17:22:28"
+  },
+  {
+    "source": "thn",
+    "title": "Attack Chains, Not Just Attack Surfaces: Why Testing Individual Techniques Misses the Point",
+    "desc": "Introduction\n\nSecurity teams have gotten pretty good at testing against what can hurt them. Can this EDR agent catch this payload? Will my organization fail the phishing simulation? Does this SIEM rule fire on this particular technique? And, in more mature organizations, this testing happens continu",
+    "url": "https://thehackernews.com/2026/09/attack-chains-not-just-attack-surfaces.html",
+    "date": "2026-09-15T16:56:36"
+  },
+  {
+    "source": "thn",
+    "title": "Mass-Scanning Campaign Exploits Vite Flaw to Extract Cloud Credentials From Exposed Dev Servers",
+    "desc": "Cybersecurity researchers have disclosed details of a mass-scanning campaign that has targeted Vite deployments siphon sensitive data.\n\nThe first is an automated effort aimed at internet-exposed Vite development servers that's designed to steal cloud credentials, configurations from Amazon Web Servi",
+    "url": "https://thehackernews.com/2026/09/mass-scanning-campaign-exploits-vite.html",
+    "date": "2026-09-15T16:42:32"
+  },
+  {
+    "source": "thn",
+    "title": "LiteSpeed Enterprise Flaw Could Let One Hosting Account Gain Root Access on a Shared Server",
+    "desc": "A critical vulnerability in LiteSpeed Web Server Enterprise could let a low-privilege website user gain root access on a shared-hosting server, cPanel warned in an&nbsp;advisory published on September 14.\n\nOn such servers, many customers' sites run on a single machine, and an attacker with one of th",
+    "url": "https://thehackernews.com/2026/09/litespeed-enterprise-flaw-could-let-one.html",
+    "date": "2026-09-15T12:22:16"
+  },
+  {
+    "source": "thn",
+    "title": "Cisco Secure Email Gateway Flaw Exploited in the Wild, Enables Root Command Execution",
+    "desc": "Cisco has warned that a new critical vulnerability impacting AsyncOS Software for Cisco Secure Email Gateway has come under active exploitation in the wild.\n\nThe vulnerability, tracked as CVE-2026-76461, carries a CVSS score of 9.8 out of a maximum of 10.0. It has been described as a case of insuffi",
+    "url": "https://thehackernews.com/2026/09/cisco-secure-email-gateway-flaw.html",
+    "date": "2026-09-15T11:41:11"
+  },
+  {
+    "source": "thn",
+    "title": "China-Linked Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy GRIMWEDGE",
+    "desc": "A Chinese threat actor has been attributed to a spear-phishing campaign that exploits recently patched security flaws in Google Chrome and Microsoft Windows to deliver a malicious JavaScript backdoor called GRIMWEDGE.\n\nVolexity, which is tracking the threat cluster under the moniker UTA0560, said th",
+    "url": "https://thehackernews.com/2026/09/china-linked-hackers-exploit-chrome.html",
+    "date": "2026-09-15T11:01:05"
+  },
+  {
+    "source": "boannews",
+    "title": "“비밀번호 없어도 계정 접근” 트위치 확장 프로그램, 3만1000명 인 토큰 노출",
+    "desc": "트위치(Twitch)용 브라우저 확장 프로그램에서 약 3만1000명의 사용자 오스(OAuth) 토큰이 외부 프록시 서버로 전송된 사실이 확인됐다. 노출된 토큰을 악용할 경우 비밀번호나 2차 인증 없이도 사용자 계정의 일부 기능에 접근할 수 있어 주의가 요구된다.문제가 된 확장 프로그램은 ‘Twitch Enhanced Viewer | JeetBot’이다. 구글 크롬 웹스토어에서 약 3만명, 모질라 파이어폭스 애드온 스토어에서 604명이 사용하고 있는 것으로 파악됐다. 이 확장 프로그램은 광고 없이 트위치 콘텐츠를 시청하고 지역 제한을",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145869",
+    "date": "2026-09-15 17:42:43"
+  },
+  {
+    "source": "boannews",
+    "title": "HS효성인포메이션시스템, AI 데이터센터 현대화 전략 제시",
+    "desc": "AI·데이터 인프라 솔루션 전문기업 HS효성인포메이션시스템(대표 양정규)이 15일 부산 롯데호텔에서 ‘데이터센터 현대화 컨퍼런스 2026’을 개최했다. 엔터프라이즈 AI를 위한 데이터·인프라 구축 전략부터 프라이빗 클라우드 운영 효율화, 사이버 회복탄력성 확보 방안까지 AI 시대 데이터센터 현대화를 위한 다양한 전략과 인사이트가 공유됐다.기업 전반으로 AI 활용이 빠르게 확산되면서 대규모 AI 워크로드와 방대한 데이터를 안정적으로 처리·운영할 수 있는 데이터센터 인프라의 중요성이 커지고 있다. 특히 AI 시대엔 단순한 컴퓨팅 성능",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145867",
+    "date": "2026-09-15 17:07:54"
+  },
+  {
+    "source": "boannews",
+    "title": "망분리 풀리자 보안 고삐 죈 KT 클라우드... N2SF 맞춤형 제로 트러스트 박차",
+    "desc": "국가망 보안 정책(N2SF) 본격 도입으로 공공 클라우드 시장 변화가 본격적으로 일어나는 가운데, KT 클라우드가 단순 인프라 제공을 넘어선 클라우드 네이티브와 제로 트러스트 기반 차세대 보안 플랫폼(KCP)을 전면에 내세웠다.15일 서울 파르나스에서 열린 ‘KT 클라우드 서밋 2026’에서 전은철 KT 클라우드 보안아키텍처팀장은 ‘클라우드 네이티브 & AI 최적화 기반 보안 전략’을 주제로 발표하며 “과거 보안이 방어적이고 수동적인 재해 복구(DR)”에 머물렀다면, 향후 클라우드 보안은 “N2SF를 선제적으로 수용하는 능동적 인프",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145866",
+    "date": "2026-09-15 17:02:52"
+  },
+  {
+    "source": "boannews",
+    "title": "한국화학융합시험연구원, 영상정보처리기기 보안기능시험 기관 지정",
+    "desc": "한국화학융합시험연구원(KTR, 원장 이승렬)이 국가정보원으로부터 정부 및 공공기관에 납품하는 IP 카메라, 영상정보 저장제품 등 영상정보처리기기의 보안기능시험 기관으로 지정받았다고 밝혔다.이에 따라 KTR은 CCTV 등 관련 제품 제조사에게 보안기능시험제도에 따른 보안적합성 검증 서비스를 제공하고 보안기능 시험 확인서를 발급한다.보안기능시험제도는 국가정보원이 지정한 시험기관에서 국가용 보안요구사항 만족 여부를 검증할 경우, 보안적합성 검증절차를 생략할 수 있도록 간소화한 제도다. 보안적합성 검증은 국가정보원법 제4조와 전자정부법 제",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145865",
+    "date": "2026-09-15 16:36:23"
+  },
+  {
+    "source": "boannews",
+    "title": "[보안을 해킹하다] 프로메테우스의 불과 미노스의 미로",
+    "desc": "[편집자 주] 김정덕 교수의 특별 연재 네 번째 시간으로, 책의 제4부 ‘디지털 기술의 명암’을 다룹니다. 통제력을 벗어난 자율형 AI(프로메테우스의 불)와 극도로 복잡해진 소프트웨어 공급망(미노스의 미로)이 초래하는 새로운 차원의 위협을 경고하고, 이를 통제하기 위한 인간 중심의 거버넌스를 제안합니다. 보이지 않는 미궁과 자율형 AI의 폭주현대의 비즈니스와 일상은 데이터와 코드로 겹겹이 둘러싸인 거대한 미로 속에 놓여 있습니다. 묻는 말에만 대답하던 과거의 인공지능을 지나, 이제는 기계가 스스로 목표를 세우고 사내 시스템을 넘나드",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145864",
+    "date": "2026-09-15 15:45:13"
+  },
+  {
+    "source": "boannews",
+    "title": "스텔스몰, 다크웹 내 위협 추적 실습 교육 제공",
+    "desc": "사이버 위협 인텔리전스 전문기업 스텔스몰(대표 허영일)은 지란지교SNC와 공동으로 이 달 17일 오후 2시부터 5시까지 서울 강남구 하이퍼엠 삼성역에서 정부 및 공공기관 공무원을 대상으로 ‘2026년 하반기 한국 OSINT 마스터 클래스’를 개최한다고 15일 밝혔다.스텔스몰은 싱가포르에 본사를 둔 글로벌 사이버 인텔리전스 기업이다. 세계 35개국 수사기관과 협력해 다양한 사이버 위협 대응 프로젝트를 수행해왔다. 국내외 기관과의 긴밀한 협력을 통해 다크웹과 딥웹 등지에서 수집한 데이터를 AI 기반으로 분석하고, 이를 전 세계 수사기관",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145863",
+    "date": "2026-09-15 15:27:14"
+  },
+  {
+    "source": "boannews",
+    "title": "미래 모빌리티 노리는 사이버 위협... KISA, 현대차·기아와 실전 방어 훈련",
+    "desc": "한국인터넷진흥원(KISA)은 현대자동차·기아 판교 첨단차플랫폼(AVP) 본부에서 ‘민관 합동 자동차 사이버 침해사고 대응 모의훈련’을 실시했다고 15일 밝혔다.최근 자동차 산업은 소프트웨어와 통신 기반의 연결성이 확대되고 다수 협력사가 개발 및 생산에 참여해 다층적 공급망 구조를 띠고 있다. 개별 협력사의 보안 취약점이 차량 안전과 직결될 위험도 커졌다. 이에 KISA는 4월 현대차·기아와 체결한 업무협약의 일환으로 이번 모의훈련을 기획했다. 훈련엔 과학기술정보통신부와 국토교통부, 경찰청, 한국교통안전공단 등 관계 부처가 대거 참여",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145857",
+    "date": "2026-09-15 15:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "양자컴퓨터도 못 뚫는다... 스틸리언, PQC 탑재 보안 솔루션 상용화",
+    "desc": "스틸리언이 자사 웹 보안 솔루션 ‘웹수트’(WebSuit)와 보안 키패드 솔루션 ‘앱수트 키패드’(AppSuit Keypad)에 양자내성암호(PQC) 기술 적용을 완료했다고 15일 밝혔다.최근 양자컴퓨팅 기술 발전에 따라 기존 공개키 암호체계가 위협받는 가운데 미국 등 주요 국가들은 양자 환경에서 안전한 PQC 표준 마련 및 암호체계 전환을 추진하고 있다.이에 맞춰 스틸리언은 미국 연방정보처리표준(FIPS) 기반 양자내성암호 기술을 자사 주력 제품에 도입했다. 키 캡슐화와 전자서명엔 각각 FIPS 203과 204 표준 알고리즘인 M",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145862",
+    "date": "2026-09-15 14:56:59"
+  },
+  {
+    "source": "boannews",
+    "title": "에스투더블유, 창립 8주년 맞아 BI 개편... “글로벌 데이터 인텔리전스 도약”",
+    "desc": "에스투더블유(S2W)가 창립 8주년을 맞아 글로벌 성장 비전을 담은 새로운 브랜드 아이덴티티(BI)를 15일 공개했다.이번 BI 개편은 고유의 정체성과 차별화된 브랜딩을 강화하기 위해 추진됐다. S2W는 그동안 국가안보 및 사이버보안 영역에서 축적한 AI와 온톨로지 기술력, 빅데이터 분석 노하우를 토대로 최근 산업 특화 AI 전환(AX) 시장까지 진출하며 사업 포트폴리오를 다변화해 왔다. 새 BI에는 한층 넓어진 기술적 외연과 확장성을 담았다는 설명이다. 리브랜딩과 함께 선보인 신규 기업 이미지(CI)는 특정 기술을 연상시키는 심볼",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145859",
+    "date": "2026-09-15 14:37:11"
+  },
+  {
+    "source": "boannews",
+    "title": "쿠팡, 외부 전문가 중심 ‘정보보호 자문위원회’ 구성... 법·정책·학계서 위촉",
+    "desc": "쿠팡이 객관적이고 신뢰할 수 있는 정보보안 체계를 구축하기 위한 노력의 일환으로 각계 각층의 외부 전문가들이 참여하는 ‘정보보호 자문위원회’를 공식 출범한다고 15일 밝혔다.쿠팡은 회사의 보안 체계를 근본적으로 혁신하고 대외 신뢰도를 제고하기 위해 자문위원회를 출범했다. 쿠팡은 위원회를 통해 사내 보안 정책을 객관적으로 검증하고 고객 보호를 위한 보안 수준을 한층 끌어올릴 방침이다.정보보호 자문위원회는 정보보호·법률·경영·IT 등 외부 전문가 7명이 참여한다.먼저 자문위원회 공동위원장으로 허성욱 CPO 포럼 회장과 브렛 매티스 쿠팡",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145860",
+    "date": "2026-09-15 14:20:49"
+  },
+  {
+    "source": "boannews",
+    "title": "“실행 시점에 SBOM 생성”... 레드펜소프트, ‘엑스스캔 서버 런타임’ 조달청 나라장터 등록",
+    "desc": "소프트캠프(대표 배환국)는 자회사 레드펜소프트의 운영 서버 보안 솔루션 ‘엑스스캔 서버 런타임’(XSCAN Server Runtime)이 조달청과 제3자 단가계약을 체결하고 나라장터에 공식 등록했다고 15일 밝혔다.이번 등록으로 공공기관과 지방자치단체 등 수요기관은 별도 경쟁입찰 절차 없이 나라장터에서 엑스스캔 서버 런타임을 바로 구매해 도입할 수 있게 됐다. 소프트캠프의 자회사인 소프트웨어 공급망 보안 전문기업 레드펜소프트가 개발한 제품으로, 소프트캠프가 나라장터 등록과 공공시장 공급을 담당한다.최근 소프트웨어 공급망 공격이 늘면",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145858",
+    "date": "2026-09-15 14:07:08"
+  },
+  {
+    "source": "boannews",
+    "title": "“새로운 보안 위협, AI로 대응한다”... KISA, 정보보호 기업 대상 보안 역량 강화 교육",
+    "desc": "한국인터넷진흥원(KISA, 원장 이상중)은 정보보호 제품 개발 기업을 대상으로 ‘인공지능(AI)을 활용한 정보보호 제품 취약점 대응 역량 강화 교육’을 서울 스페이스쉐어 삼성역센터에서 실시했다고 15일 밝혔다.정보보호 제품 개발 기업의 AI 보안 위협 분석 및 대응 역량을 강화하기 위해 마련됐다. 교육엔 정보보안·물리보안 분야 정보보호 제품 개발자, 기업 보안 담당자 등 약 50명이 참가했다.교육에선 △보안 분야 AI 트렌드와 안전한 활용 △인공지능 에이전트 시대의 새로운 보안 위협 △인공지능을 활용한 악성코드 분석 사례 등이 소개",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145847",
+    "date": "2026-09-15 14:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "세이퍼존, AI-DLP에 3종 워터마킹 무료 탑재... “비주얼 해킹 원천 차단”",
+    "desc": "세이퍼존이 2025년형 엔드포인트 DLP 제품에 가시성 및 비가시성 3종 워터마킹 기능을 기본 탑재해 무료 제공한다고 15일 밝혔다.최근 스마트폰 카메라 성능이 고도화됨에 따라 중요 문서나 개인정보가 포함된 모니터 화면을 직접 촬영해 유출하는 행위가 기업과 공공기관의 보안 위협으로 급부상하고 있다. 이에 세이퍼존은 엔드포인트 DLP 솔루션에 프린터, 스크린, 화면캡처를 아우르는 3종의 워터마킹 기술을 별도 옵션이 아닌 기본 보안 기능으로 내재화(Embedded)했다.이 기능을 적용하면 별도 추가 프로그램 설치 없이 기존 DLP 에이",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145853",
+    "date": "2026-09-15 13:35:06"
+  },
+  {
+    "source": "boannews",
+    "title": "K-DATA, NIA 부설로... 데이터안심구역 등 중복 제거 “세부안 10월 말”",
+    "desc": "AI 혁신의 핵심인 ‘데이터’의 안전한 활용을 촉진하는 기관인 한국데이터산업진흥원(K-DATA)가 한국지능정보사회진흥원(NIA)로 통합된다. 인력 구성과 업무 분장 등 구체적인 운영계획은 올해 10월 말 이후 수립될 예정이다.15일 과학기술정보통신부(부총리 겸 장관 배경훈)는 3일 발표된 ‘정부 합동 공공기관 기능개혁 추진방안’에 따라 소관 공공기관 기능개혁을 추진한다고 밝혔다. 공공기관의 유사·중복 기능 일원화, 기관 간 연계성 강화가 목적이다.데이터안심구역, 가명정보, 마이데이터 등 중복 대신 ‘연계’ 정부는 K-DATA를 NI",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145851",
+    "date": "2026-09-15 13:30:37"
+  },
+  {
+    "source": "boannews",
+    "title": "유락, AI 데이터 등급 분류 ‘디파스 아크’ 출시… N2SF 시장 공략",
+    "desc": "AI 디지털 포렌식 전문기업 유락(대표 유봉석)이 국가망보안체계(N2SF) 전환과 데이터 중심 보안 환경에 대응하는 AI 기반 데이터 등급 자동 분류 솔루션 ‘디파스 아크’(DFAS Arc)를 출시한다고 15일 밝혔다. 디파스 아크는 AI가 데이터의 의미와 맥락을 분석해 기밀·민감·공개(CSO) 등급으로 자동 분류하고, 판정 근거와 승인 이력부터 암호화·삭제·감사 기록까지 데이터 관리 전 과정을 통합 지원하는 솔루션이다.유락은 N2SF 전환 과정에서 대량의 데이터를 일관된 기준으로 분류해야 하는 현장의 문제 해결에 주목했다. 기관이",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145855",
+    "date": "2026-09-15 13:23:25"
+  },
+  {
+    "source": "boannews",
+    "title": "무거워진 CISO 어깨... 이기주 회장 “보안은 기세다, 흔들림 없이 현장 지켜야”",
+    "desc": "“보안은 ‘기세’입니다. 잇따른 해킹 사고와 과징금 상향 등으로 일선의 피로도가 극에 달해 있지만, 정보보호최고책임자(CISO)들이 패기를 잃지 않고 굳건히 현장을 지켜야 할 때입니다.”이기주 한국CISO협의회장은 15일 서울 웨스틴 서울 파르나스에서 열린 ‘제156차 CISO포럼’에서 흔들림 없는 현장 리더십을 당부했다. 최근 대유행 조짐을 보이는 지능형 사이버 위협을 타개하기 위해, 이날 포럼은 ‘경찰의 신속 수사 한계와 돌파구’와 ‘AI 방어 무기화 전략’을 교차 점검하는 자리로 꾸려졌다.해커는 왜 안 잡히나?”... 경찰이",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145852",
+    "date": "2026-09-15 13:22:05"
+  },
+  {
+    "source": "boannews",
+    "title": "[배종찬의 보안 빅데이터] 내가 만든 AI 코드가 악성 코드로 변해 버린다면",
+    "desc": "AI 코드가 엄청난 재앙을 몰고 올 수 있다는 분석 보도에 관련 업계가 요동치고 있다. 빅데이터 분석 플랫폼 썸트렌드(SomeTrend)의 연관어 분석(2026년 8월 14일~9월 13일)에 따르면, ‘ai코드’는 ‘개발자’, ‘프로그램’, ‘소프트웨어’, ‘에이전트’, ‘바이브’, ‘코딩’, ‘프로젝트’ 등 소프트웨어 개발 생태계의 핵심 축으로 자리 잡았음이 확인된다. 동시에 ‘교육’, ‘수업’, ‘학생’, ‘교재’, ‘도서’, ‘산업’, ‘업무’와 같은 키워드는 AI 코드가 단순한 IT 기술을 넘어 교육 현장과 산업 전반의 표준",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145850",
+    "date": "2026-09-15 11:53:50"
+  },
+  {
+    "source": "boannews",
+    "title": "중기부, 공공데이터 활용 스타트업 모집해 PoC·사업화 지원",
+    "desc": "중소벤처기업부(장관 직무대행 제1차관 노용석)는 공공데이터를 활용해 스타트업의 기술검증(PoC)과 사업화를 지원하는 ‘공공데이터 활용 지원’ 사업에 참여할 스타트업을 10월 6일까지 모집한다고 밝혔다.정부는 4월 ‘국가창업시대 스타트업 열풍 조성방안’을 통해 국가 전략산업 분야 스타트업과 대·중견기업 및 공공기관 간 개방형 혁신을 확대하고, 의료·안전 등 기업 수요가 높은 공공데이터를 개방해 스타트업이 공공의 자원과 역량을 활용할 수 있도록 지원하는 방안을 발표했다.이에 중기부는 관계부처와 협업해 방산(국방부·방위사업청)·기후테크(",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145843",
+    "date": "2026-09-15 10:22:23"
+  },
+  {
+    "source": "boannews",
+    "title": "씨게이트 테크놀로지, 글로벌 조사 응답 기업 99% ‘AI로 스토리지 수요 증가’ 전망",
+    "desc": "씨게이트 테크놀로지(Seagate Technology)가 글로벌 기업들의 AI 도입 및 활용 확산에 따른 데이터 인프라 준비 현황을 분석한 첫 글로벌 연구 보고서인 ‘2026 데이터 인프라 준비도 보고서(Data Infrastructure Readiness Report 2026)’를 발표했다.시장조사업체 리콘 애널리틱스(Recon Analytics)가 전 세계 7개 주요 시장의 기술 의사결정권자 2,712명을 대상으로 진행한 이번 조사에 따르면, IT 리더의 99%가 향후 3년간 AI로 인해 스토리지 수요가 증가할 것으로 내다봤다.",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145844",
+    "date": "2026-09-15 10:00:17"
+  },
+  {
+    "source": "boannews",
+    "title": "수원시, 8개 기업·기관과 손잡고 ‘실물 AI 스마트도시’ 조성",
+    "desc": "수원특례시(시장 이재준)가 ‘거점형 스마트도시 조성사업’ 참여기관과 업무협약(MOU)을 체결하고, ‘실물 인공지능 기반 스마트도시 수원’ 조성을 위한 첫발을 내디뎠다.수원시는 14일 시청 중회의실에서 거점형 스마트도시 조성사업 협력체에 참여하는 8개 기업·기관과 협약을 체결하고 협력을 약속했다. 협력체는 현대자동차, 기아, 한전KDN, 가온로보틱스, 콜로세움코퍼레이션, 씨엘모빌리티, 영국씨앤피, 수원도시재단으로 구성했다.수원시는 지난 6월 국토교통부 주관 ‘2026 거점형 스마트도시 조성사업’ 공모에 선정돼 3년간 국비 최대 160",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145842",
+    "date": "2026-09-15 09:56:04"
+  },
+  {
     "source": "boannews",
     "title": "영암군, 데이터·디지털 기반 스마트도시 정책으로 국토부 장관상",
     "desc": "전남광주통합특별시 영암군(군수 우승희)이 ‘2026 대한민국 도시대상’ 우수정책 부문에서 국토교통부 장관상(기관표창)을 받았다.영암군은 부산 벡스코에서 열린 ‘2026 월드스마트시티 엑스포’에서 국토교통부와 국토연구원이 주관한 대한민국 도시대상 스마트도시 정책 분야 우수 지자체로 선정돼 장관상을 수상했다.대한민국 도시대상은 전국 지방자치단체를 대상으로 도시의 지속가능성과 생활 여건 개선을 위한 정책과 성과 등을 평가하는 국토·도시 분야 최고 권위의 상이다.영암군은 영암읍을 중심으로 한 행정·농업 생활권과 삼호읍을 중심으로 한 산업·",
@@ -350,104 +532,6 @@
     "date": "2026-09-11T11:49:59"
   },
   {
-    "source": "boannews",
-    "title": "[2026 위협 인텔리전스 리포트] 사이버 전장 나침반 ‘위협 인텔리전스’(TI), AI 시대 보안 인프라로 진화",
-    "desc": "카스퍼스키는 최근 북한 연계 위협 그룹 김수키가 악성코드 제작에 생성형 AI를 활용한 정황이 포착됐다고 밝혔다. 악성코드의 주석에 사람 개발자가 좀처럼 쓰지 않는 이모티콘이 쓰이거나 어색한 문법 오류가 발견되는 등 AI를 쓴 흔적이 나타났다는 것이다. 이는 김수키뿐 아니라 대부분 지능형위협 (APT) 그룹에 공통적으로 나타나는 현상이라는 설명이다. AI 에이전트 역시 사이버 공격에 적극 활용되고 있으리란 추측이 나온다. 해커들이 인공지능(AI) 기술을 적극 활용하면서 사이버 공격이 폭증하리란 우려는 이미 현실로 나타나고 있다. 초기",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145799",
-    "date": "2026-09-11 19:45:06"
-  },
-  {
-    "source": "boannews",
-    "title": "인텔리빅스, 美 기자단에 한국 AI 산업과 ‘안전 AI’ 혁신 비전 제시",
-    "desc": "안전 AI 딥테크 기업 인텔리빅스는 지난 10일 서울 본사를 방문한 미국 주요 언론인 기자단을 대상으로 한국의 AI 산업 생태계와 안전 AI의 산업·공공 현장 적용 사례를 소개했다고 11일 밝혔다.이번 방문은 한국언론진흥재단과 미국 동서센터(East-West Center)가 공동 추진하는 ‘2026년 한미 언론교류 프로그램’의 일환이다. ‘변화하는 한미 관계의 향방: 무역, 투자 및 안보 협력을 중심으로’를 주제로 방한한 기자단에는 POLITICO, CNN, NPR, The San Diego Union-Tribune 등 미국 주요",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145796",
-    "date": "2026-09-11 17:47:49"
-  },
-  {
-    "source": "boannews",
-    "title": "개인정보위, ‘구글’ 디지털성범죄 피해정보 유출 조사 신속 추진",
-    "desc": "개인정보보호위원회(위원장 송경희, 개인정보위)는 ‘구글에 제공된 디지털성범죄물 관련 삭제 요청사항이 외부 웹사이트에 공개되었다’는 언론 보도에 따라 지난 7일 구글 측에 사실관계 확인을 위한 자료제출을 요구하는 등 조사에 착수했다고 밝혔다.개인정보위는 구글이 외부 웹사이트 운영기관에 제공한 민감한 개인정보의 규모·항목, 제공 기간 등 사실관계를 확인하고 있다.그간 구글이 삭제 요청사항을 지속적으로 웹사이트 운영기관에 제공했는지 혹은 인적 과실, 시스템 오류 등이 있었는지 등 어떤 경위로 피해가 발생했는지 면밀하게 살펴볼 계획이다.또",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145798",
-    "date": "2026-09-11 17:46:33"
-  },
-  {
-    "source": "boannews",
-    "title": "[속담으로 배우는 100가지 보안 습관 99] 아는 것이 힘이다(9)-카페에서 노트북 두고 가면 생기는 일",
-    "desc": "보안 사고의 90%는 해킹이 아니라 ‘실수’에서 시작된다. 그래서 우리는 기술보다 습관을 배워야 한다. 속담으로 배우는 100가지 보안 습관에서는 △스마트폰 보안 △계정·비밀번호 △PC·인터넷 △생활 보안 △금융·개인정보 등 100가지 보안 습관을 속담과 연관시켜 소개한다. 보안은 어렵지 않다. 지키느냐, 안 지키느냐의 차이다. 나 하나의 습관이 모두를 지킨다는 생각으로 사소한 습관부터 실천해 보자. [편집자 주]카페에서 노트북을 두고 자리를 비우면, 짧은 시간이라도 분실·도난 위험이 생길 수 있어 주의가 필요하다. 또한 매장에 따",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=144253",
-    "date": "2026-09-11 16:40:00"
-  },
-  {
-    "source": "boannews",
-    "title": "“AI 동료를 부리는 매니저로 진화하라”... 현업 전문가 6인이 짚어낸 보안의 미래",
-    "desc": "급변하는 AI 시대, 정보보안 실무자들은 AI를 일자리를 위협하는 경쟁자가 아닌 협력할 '동료'(Co-worker)로 맞이하고, 화려한 신기술 도입 이전에 보안의 '기본기'를 더욱 탄탄히 다져야 한다는 현장 전문가들의 제언이 나왔다.정보보안 실무자 커뮤니티 클라우디머스(CloudyMous)의 첫 오프라인 세미나 백미는 단연 현업 전문가 6인이 참석한 패널토론이었다. 김동현 크리밋(Cremit) 대표의 사회로 진행된 이번 토론은 150여 명의 청중이 숨을 죽인 가운데 AI 도입으로 인한 일자리 위협부터 데이터 프라이버시 통제와 쏟아지",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145791",
-    "date": "2026-09-11 16:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "GTA 6 유출본 미끼로 악성코드 4종 한꺼번에 감염시키는 공격 발견",
-    "desc": "사이버 공격자들이 게임 ‘그랜드 테프트 오토 6’(GTA 6)를 미리 해 보려는 이용자들을 노려 가짜 설치 파일에 악성코드 네 종을 담아 뿌리고 있다. 보안 기업 헌트리스(Huntress)에 따르면, 미끼는 조작된 검색 결과와 게임 커뮤니티, 토렌트 사이트, 소셜미디어 게시물을 타고 퍼진다.가짜 이미지 파일 가운데 일부는 100기가바이트를 넘는다. 용량의 대부분은 그럴듯해 보이려고 채워 넣은 쓸모없는 데이터다.설치 프로그램은 예전 GTA 5 아이콘을 달고 있다. 실행하면 유출됐다는 게임의 ‘크랙이 더는 유효하지 않아 실행이 안 될",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145794",
-    "date": "2026-09-11 14:53:24"
-  },
-  {
-    "source": "boannews",
-    "title": "조달청, 직원이 직접 만든 AI로 조달업무 혁신 가속",
-    "desc": "조달청(청장 백승보)은 11일 ‘인하우스(In-House) AI 개발 TF 성과 시연회’를 개최하고 직원들이 직접 개발해 업무에 활용하고 있는 AI 서비스 7종의 성과와 활용 사례를 공유했다.‘인하우스 AI 개발 TF’는 개발의 전 과정을 외부에 맡기지 않고 조직 내부에서 직접 수행하는 방식을 의미한다. 조달청은 디지털공정조달국장을 팀장으로 직원 26명이 참여하는 TF를 올해 2월부터 운영하고 있다.특히, 조달청은 업무망 내 안전한 AI 개발·배포 환경을 자체 구축하고 자연어로 프로그램을 개발하는 ‘바이브 코딩(Vibe Coding",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145793",
-    "date": "2026-09-11 14:10:00"
-  },
-  {
-    "source": "boannews",
-    "title": "핀텔, 30억원 규모 유상증자 완료... AI 영상분석 사업 확대",
-    "desc": "AI 기술 선도 기업인 핀텔은 30억원 규모 일반공모 방식의 유상증자 절차를 마무리했다고 11일 밝혔다. 확보한 재원을 운영자금으로 활용하면서 기존 사업 경쟁력을 강화하고 사업영역을 넓혀갈 방침이다.핀텔은 지난 9월 1일 이사회에서 유상증자를 결정하고 7~8일 청약을 진행했다. 최종 청약 경쟁률은 1.46대 1이며, 발행 주식 수는 265만7218주, 조달금액은 약 30억원이다. 신주 상장 예정일은 9월 29일이다.핀텔은 현장에서 검증한 AI 영상분석 솔루션의 수요처 확대로 매출 기반을 다각화할 방침이다. 축적한 기술력과 사업 수행",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145790",
-    "date": "2026-09-11 13:30:00"
-  },
-  {
-    "source": "boannews",
-    "title": "24시간 내 신고 및 글로벌 매출 2.5% 과징금... EU 사이버복원력법 보고 의무 11일 발효",
-    "desc": "유럽연합 회원국에서 사업하는 기업들은 취약점 악용이나 보안 사고 발견 시 24시간 내로 신고해야 한다. 과징금은 글로벌 매출 최대 2.5% 또는 1500만 유로 중 더 큰 금액을 부과받는다. 기업의 소재지와 무관하게 적용된다.9월 11일(현지시각)부터 유럽연합(EU) 사이버복원력법(CRA)의 보고 의무가 시행된다.제품에서 실제 악용되고 있는 취약점이나 심각한 보안 사고를 발견한 기업은 24시간 안에 유럽연합사이버보안청(ENISA)에 이를 알려야 한다. 이어 72시간 안에는 심각도 평가와 완화 조치를 담은 통지를 내야 한다. 수정본이",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145788",
-    "date": "2026-09-11 11:53:48"
-  },
-  {
-    "source": "boannews",
-    "title": "AI 자율보안 시대 짚은 최고 명강연자는 누구?.... ISEC 2026 베스트 스피커 어워드 시상식",
-    "desc": "국제시큐리티콘퍼런스(ISEC)은 정보보호 분야 수요와 공급측 전문가와 경영진, 실무자, 기업과 기관이 대거 참여해 산업과 기술의 최신 동향과 이슈, 지식과 경험을 공유하는 장이다. ‘AI로 구현하는 자율 보안의 미래’를 주제로 지난달 서울 코엑스에서 열린 ‘ISEC 2026’에서도 166여개의 솔루션 전시 부스와 함께 24개 트랙 124개 세션 발표가 이어지며 8100여명의 참관객에게 정보보호 산업의 현재와 미래에 대한 통찰을 제시했다. ISEC조직위원회는 행사 기간 중 전문성과 내용, 시의성, 전달 역량 등을 종합적으로 평가해 최",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145787",
-    "date": "2026-09-11 11:48:34"
-  },
-  {
-    "source": "boannews",
-    "title": "“무너진 경계 사수하라” 클라우디머스 세미나가 남긴 AI 시대 보안 과제",
-    "desc": "지난 7년간 온라인 메신저를 기반으로 정보보안 지식을 교류해 온 실무자 커뮤니티 클라우디머스(CloudyMous)가 첫 현장 세미나를 성공적으로 마무리했다.행사 주최자인 천영철 SBSi 정보보안 담당자는 환영사를 통해 “솔루션 벤더나 특정 기관 주도가 아닌 현장 최전선에서 고민하는 실무자들의 생생한 경험을 듣는 자리로 준비했다”며 “150명 남짓 모인 이 첫 세미나가 7년간 쌓아온 온라인 커뮤니티를 실질적인 실무 네트워크로 잇는 출발점이 되길 바란다”고 말했다.세미나는 변준우 토스증권 엔지니어의 강연과 함께 시작됐다. ‘—dange",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145786",
-    "date": "2026-09-11 11:45:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[배종찬의 보안 빅데이터] 민감 정보까지 털린 ‘강남언니’ 개인정보 유출",
-    "desc": "2026년 9월 7일과 8일 양일간 빅데이터 분석 플랫폼 썸트렌드(SomeTrend)가 집계한 연관어 분석에 따르면, 대표적 미용·의료 플랫폼인 ‘강남언니’와 운영사 ‘힐링페이퍼’ 주변에 ‘개인정보유출’, ‘사고’, ‘api’, ‘홈페이지’라는 불안한 키워드들이 최상위에 형성됐다. 9월 초 발생한 이번 해킹 사건은 단순히 인터넷 서비스를 이용하는 개인의 일상적인 정보가 새어나간 사고가 아니다. 한국과 일본 등 이용자의 성형·미용 상담 기록과 민감한 개인 신체 데이터가 무더기로 탈취당하며 사회의 보안 안전망에 경종을 울린 초유의 민감",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145784",
-    "date": "2026-09-11 11:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "서울시, 세계 자살예방의 날 맞아 한강에 ‘AI 생명 안전망’ 놓는다",
-    "desc": "서울특별시 미래한강본부는 세계 자살예방의 날(9월 10일)을 맞아, 한강 교량에서 발생하는 위기 상황을 인공지능(AI)이 먼저 감지하고 드론이 즉시 출동해 구조하는 ‘자살자 구조를 위한 피지컬 AI 선제 감지·자율 대응 시스템’ 사업을 본격 추진한다고 밝혔다. 이는 예방·상담이라는 기존 안전망에, 위기의 순간 물리적으로 생명을 붙잡는 ‘마지막 안전망’을 더하는 시도다.이 사업은 과학기술정보통신부와 정보통신산업진흥원(NIPA)이 주관하는 ‘2026년 AI 응용제품 신속 상용화 지원사업’에 선정된 과제로, 연간 국비 14억여원이 투입된",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145745",
-    "date": "2026-09-11 06:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "사장님 명의 맞춤 조작 메일로 “지금 당장 송금하라”... 3일 간 100만통 이메일 보낸 AI 피싱 캠페인",
-    "desc": "실제 기업 CEO와 협력사 등을 정교하게 사칭해 기업에서 거액을 가로채려는 피싱 이메일을 3일 간 100만통 이상 발송한 대형 공격이 벌어졌다. 공격 전반에 걸쳐 인공지능(AI)이 활용된 정황이 확인됐다.마이크로소프트는 11일 AI를 활용하는 등의 방법으로 금융 사기 이메일을 100만건 이상 발송한 대규모 비즈니스 이메일 침해(BCE) 캠페인을 포착, 관련 분석 결과를 발표했다. 공격자는 여러 기업 경영진을 사칭하고, 표적에 맞춰 제작한 맞춤형 허위 송장과 가짜 이메일 대화로 피해자를 공략했다. 이를 통해 회계나 지급 담당자로 하여",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145780",
-    "date": "2026-09-11 01:00:00"
-  },
-  {
     "source": "thn",
     "title": "ThreatsDay: 200 Android Flaws, Browser-Built Phishing, 119K Scam Shops + 23 More Stories",
     "desc": "A lot of this week’s security news has the same awkward answer to one question: “Why was that allowed to work?”\n\nAn extension asks for access and takes too much. A trusted service becomes part of a phishing chain. An old bug still gets results. An exposed system stays exposed. A package looks useful",
@@ -502,55 +586,6 @@
     "desc": "Anthropic on Wednesday disclosed a fourth incident in which its artificial intelligence (AI) model broke into real third-party systems, marking the latest in a growing list of cases that have raised concerns about the security risks posed by autonomous AI agents.\n\nThe AI company said the incident da",
     "url": "https://thehackernews.com/2026/09/anthropic-ai-models-breached-real.html",
     "date": "2026-09-10T12:34:01"
-  },
-  {
-    "source": "boannews",
-    "title": "크랜베리, 글로벌 파트너와 함께한 ‘CRANBERRY TECH SUMMIT 2026’ 개최",
-    "desc": "인공지능 융합 솔루션 기업 크랜베리(대표 이은혜)가 9월 10일 서울 서초구 엘타워에서 ‘CRANBERRY TECH SUMMIT 2026’(CTS 2026)을 개최했다. 이번 행사는 공공기관과 엔터프라이즈 기업, 글로벌 IT 파트너 등 300여명의 주요 인사가 초청된 가운데, 미래 AI 환경의 변화와 새로운 협력의 가능성을 공유하고 미래 비즈니스 혁신과 비전을 제시했다.이번 서밋에서는 레노버와 인텔, 씨게이트, 제타럭스시스템, 프리뉴, 엔티에스, 지오멕스소프트, 가시, 숭실대학교 AI융합연구원, 한국첨단안전산업협회, 한국환경공단 등",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145779",
-    "date": "2026-09-10 20:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[김정덕의 지속가능 보안-7] CISO의 든든한 파트너, BISO가 온다",
-    "desc": "디지털 혁신의 속도가 기업의 생존을 가르는 시대에, 사이버 위험은 IT 부서의 기술적 결함을 넘어 주가와 경영진의 법적 책임을 위협하는 최상위 경영 리스크가 되었습니다. 그러나 대다수 기업 현장에서는 여전히 본사의 획일적 보안 정책이 현업의 비즈니스 출시 속도를 가로막으며, 현업 부서와 보안팀 간의 깊은 불신과 소통 단절을 낳고 있습니다.이러한 구조적 마찰을 해소하고 보안을 비즈니스 경쟁력으로 승화시키기 위해, 선진 기업들은 ‘BISO’(Business Information Security Officer, 비즈니스 정보보호 책임자)",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145777",
-    "date": "2026-09-10 16:09:57"
-  },
-  {
-    "source": "boannews",
-    "title": "[카드뉴스] \"중앙지검 검사라고요?\"… 기관 사칭 피싱 전화 단번에 끊어내는 팁",
-    "desc": "최근 보이스피싱 범죄 조직은 서울중앙지검 등 사법기관 및 금융감독원을 사칭하며 수신자에게 극심한 심리적 공포를 유발하는 사회공학적 기법을 지속하고 있다. 이들은 피해자의 명의가 범죄에 연루되었다고 주장하며 자산 이체나 원격 제어 앱 설치를 유도하지만, 실제 공공기관은 유선상으로 금융 거래나 애플리케이션 설치를 일체 요구하지 않는다. 발신번호 변작 기술로 인해 화면에 표시되는 전화번호는 신뢰할 수 없으므로, 의심스러운 통화 발생 시 주도권을 잡는 '역질문' 대응이 필수적이다. 상대방에게 \"소속 부서와 담당자 성함을 알려주시면 포털에",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145775",
-    "date": "2026-09-10 15:50:33"
-  },
-  {
-    "source": "boannews",
-    "title": "오리엔텀·Q퍼펙트·BTQ테크놀로지스, 양자금융·양자보안 협력 3자 MOU 체결",
-    "desc": "오리엔텀(대표 방승현)은 프랑스 큐퍼펙트(QPerfect), BTQ테크놀로지스와 양자금융 및 양자보안 협력을 위한 3자 양해각서(MOU)를 체결했다고 10일 밝혔다. BTQ테크놀로지스는 캐나다 양자기술 기업으로 미국 나스닥과 캐나다 주식거래소(CBOE)에 동시 상장돼 있다. Q퍼펙트는 BTQ테크놀로지스의 자회사로, 양자 회로를 고전 컴퓨터에서 정밀하게 모사하는 가상 양자컴퓨터 에뮬레이터 등 양자 소프트웨어를 개발한다. 오리엔텀과 Q퍼펙트는 파생상품 가격결정, 포트폴리오 최적화·리스크 관리, 금융권 머신러닝 등 분야에서 오리엔텀의 양",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145774",
-    "date": "2026-09-10 15:48:59"
-  },
-  {
-    "source": "boannews",
-    "title": "민간 주도 양자 표준화 본격화... QuINSA 제2차 국제총회 개최",
-    "desc": "국내 기업이 제안한 양자키분배(QKD) 서비스 성능 기준이 민간 표준으로 제정됐다. 양자 컴퓨팅 오류 정정과 양자 클라우드 분야 신규 표준 발굴 노력도 이어졌다. 양자AI융합센터(QCI)는 ‘QuINSA 제2차 국제총회’​를 10일 서울 삼성동 코엑스오크우드호텔에서 개최했다. 이 행사는 글로벌 양자기술 산업계의 표준화 협력을 확대하고 국내 양자기술의 국제표준화 연계를 강화하기 위해 열렸으며, 과학기술정보통신부·한국정보통신기술협회(TTA)와 공동으로 진행했다. QuINSA(Quantum Industrial Standard Associ",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145773",
-    "date": "2026-09-10 15:29:24"
-  },
-  {
-    "source": "boannews",
-    "title": "“문 부수지 않고 열쇠 주워 들어온다”... API 키 위생이 결정짓는 기업 보안",
-    "desc": "최근 국내에서 연이어 발생한 개인정보 유출 사고들을 분석해 보면 이상한 공통점이 발견된다. 피해 기업들의 서버나 인프라는 대부분 정상 작동하고 있었다. 외부 침입 흔적도, 악성코드 유입도, 제로데이 취약점도 없었다. 한 결제대행사(PG)는 자사 시스템의 직접적인 침해가 아닌 가맹점 측에서 사용하던 연동 인증정보가 유출된 것이라 해명했고, 이는 사실로 확인됐다. 유통 및 팬 커뮤니티 플랫폼에서 수십만 건의 데이터가 유출된 사건 역시 정상적인 조회용 API 호출 과정에서 발생했다.공격자는 문을 부수고 들어오지 않았다. 그저 길가에 떨어",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145771",
-    "date": "2026-09-10 15:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[카드뉴스] “데이터 유출 넘어 생명 위협까지”... 산업 현장 덮친 OT 해킹의 공포",
-    "desc": "",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145755",
-    "date": "2026-09-10 14:07:29"
   },
   {
     "source": "thn",
@@ -656,47 +691,5 @@
     "desc": "A previously undocumented financially motivated threat actor has been linked to attacks targeting Brazilian financial institutions since at least March 2026.\n\nCybersecurity company CrowdStrike is tracking the Brazil-based activity cluster under the name Slim Spider.\n\n\"The adversary demonstrates deep",
     "url": "https://thehackernews.com/2026/09/slim-spider-steals-crypto-custody.html",
     "date": "2026-09-08T21:50:23"
-  },
-  {
-    "source": "thn",
-    "title": "Liquid Hackers Return 3,400 Bitcoin Taken via Elements Bug, Still Holding $47M in BTC",
-    "desc": "Whoever took nearly 4,000 bitcoin from the Liquid Network on Sunday, September 6,&nbsp;returned 3,400 of it&nbsp;the next day, Bitcoin's public record shows. About 598.5 bitcoin has not come back.\n\nLiquid is a Bitcoin sidechain that holds real bitcoin to back a token called L-BTC. The network is sti",
-    "url": "https://thehackernews.com/2026/09/liquid-hackers-return-3400-bitcoin.html",
-    "date": "2026-09-08T20:24:30"
-  },
-  {
-    "source": "thn",
-    "title": "ChatGPT Flaw Let a Planted Prompt Send a Victim's Gmail Data to Another Account",
-    "desc": "Check Point Research said in a&nbsp;report published today&nbsp;that a single instruction planted in a ChatGPT conversation could cause ChatGPT to quietly work for an attacker while answering the user's question as usual.\n\nIn the company's proof of concept, that hidden work read data from the user's",
-    "url": "https://thehackernews.com/2026/09/chatgpt-flaw-let-planted-prompt-send.html",
-    "date": "2026-09-08T19:49:17"
-  },
-  {
-    "source": "thn",
-    "title": "Autonomous AI Agents Compromise Thousands of Credentials in Under Six Hours",
-    "desc": "Threat actors are continuing to leverage artificial intelligence (AI) to streamline their operations, with one financially motivated hacking group employing an autonomous, multi-agent attack framework to carry out a large-scale credential harvesting campaign within six hours.\n\nGoogle Threat Intellig",
-    "url": "https://thehackernews.com/2026/09/autonomous-ai-agents-compromise.html",
-    "date": "2026-09-08T19:18:16"
-  },
-  {
-    "source": "thn",
-    "title": "WeChat Zero-Click Worm Took Over Accounts on iPhone and Android via Incoming Calls",
-    "desc": "Researchers at the security firm Calif have built a worm that takes over a WeChat account via an incoming call and&nbsp;demonstrated it spreading&nbsp;among three test phones.\n\nThe person being called does not have to answer or touch their phone for it to work, but the caller must already be one of ",
-    "url": "https://thehackernews.com/2026/09/wechat-zero-click-worm-took-over.html",
-    "date": "2026-09-08T17:24:29"
-  },
-  {
-    "source": "thn",
-    "title": "What It Took to Reach 1 Billion Build Manifests",
-    "desc": "In the last six months, Chainguard doubled its output from 500 million to more than 1 billion container build manifests. We also surpassed 3,000 unique container images and 675,000 image versions in our catalog. Those are the headline numbers, but I want to share what's actually behind them. The num",
-    "url": "https://thehackernews.com/2026/09/what-it-took-to-reach-1-billion-build.html",
-    "date": "2026-09-08T17:19:02"
-  },
-  {
-    "source": "thn",
-    "title": "FreeIPA Flaw Chain Lets Anonymous Clients Create Reusable Administrator Credentials",
-    "desc": "A flaw in FreeIPA lets a client that has never logged in create a Kerberos identity of its own choosing in the directory and end up in the administrators group, Red Hat says.\n\nFreeIPA is the system that determines who may log in across a Linux domain and maintains all identities in a 389 Directory S",
-    "url": "https://thehackernews.com/2026/09/freeipa-flaw-chain-lets-anonymous.html",
-    "date": "2026-09-08T16:52:07"
   }
 ]
