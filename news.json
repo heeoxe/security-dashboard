@@ -1,6 +1,34 @@
 [
   {
     "source": "thn",
+    "title": "KREMLIN Banking Malware Hijacks Chrome and Edge to Steal Credentials and Session Tokens",
+    "desc": "Cybersecurity researchers have shed light on a previously undocumented Brazilian banking malware operation that delivers a toolkit called KREMLIN.\n\nElastic Security Labs is tracking the activity under the moniker REF9334. Active since at least May 2025, the threat actor has used lures that impersona",
+    "url": "https://thehackernews.com/2026/09/kremlin-banking-malware-hijacks-chrome.html",
+    "date": "2026-09-16T00:24:14"
+  },
+  {
+    "source": "boannews",
+    "title": "AI 시대 차세대 보안 해법 찾는다... 시큐아이, 30일 ‘맥스 서밋’ 개최",
+    "desc": "시큐아이가 30일 서울 양재동 엘타워에서 AI 시대의 보안 환경 대응을 위한 차세대 테크 콘퍼런스 ‘시큐아이 맥스 서밋’(SECUi MAX SUMMIT)을 개최한다고 16일 밝혔다.2회째를 맞는 올해엔 ‘AI가 보안을 바꾼다. 다음을 재정의하라’(AI Changes Security. Redefining What’s Next)를 주제로 기업의 안전한 AI 보안 환경 구축을 위한 기술 방향성과 실질적 전략을 공유한다. AI 고도화에 따른 네트워크 보안 솔루션의 역할 변화와 보안 운영을 혁신하는 기술 등이 다뤄지며, 실제 고객 사례를 중",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145871",
+    "date": "2026-09-16 09:48:41"
+  },
+  {
+    "source": "thn",
+    "title": "Iranian Hackers Use Telegram-Controlled Malware to Spy on Dissidents and Journalists",
+    "desc": "Cybersecurity agencies in the United States, the United Kingdom, and the Netherlands have detailed a Windows malware that they say Iran's intelligence service uses to spy on dissidents, journalists, and activists around the world.\n\nThe malware is controlled via the Telegram messaging app and can cop",
+    "url": "https://thehackernews.com/2026/09/iranian-hackers-use-telegram-controlled.html",
+    "date": "2026-09-15T21:59:51"
+  },
+  {
+    "source": "thn",
+    "title": "BambooToken Malware Uses MQTT to Control Windows and Linux Systems",
+    "desc": "Cybersecurity researchers have disclosed details of a multi-platform campaign that uses the Message Queueing Telemetry Transport (MQTT) protocol as a communication channel to control Windows and Linux systems.\n\nThe emerging malware family, codenamed BambooToken, is assessed to be active since at lea",
+    "url": "https://thehackernews.com/2026/09/bambootoken-malware-uses-mqtt-to.html",
+    "date": "2026-09-15T20:53:19"
+  },
+  {
+    "source": "thn",
     "title": "Human Attacker Exploits Marimo RCE, Reaches SSH Bastion in Eight Seconds",
     "desc": "With artificial intelligence (AI) shrinking the window between vulnerability discovery and exploitation and lowering the barrier to entry for bad actors, new findings from Sysdig show that skilled human operators can move just as swiftly after gaining initial access.\n\nIn one instance highlighted by ",
     "url": "https://thehackernews.com/2026/09/human-attacker-exploits-marimo-rce.html",
@@ -462,13 +490,6 @@
     "date": "2026-09-12 15:00:00"
   },
   {
-    "source": "boannews",
-    "title": "[단독] 현대차 협력사도 해킹... 韓 기업 공급망 위협 공포 확산",
-    "desc": "한국 주요 기업 협력사나 계열사, 해외 법인 등을 노린 공급망 공격에 대한 공포가 확산되고 있다.11일 보안 업계에 따르면 현대차 주요 부품 협력사인 A사는 최근 사이버 공격을 받아 한국인터넷진흥원(KISA)에 신고를 마쳤다.다만 이 회사의 데이터는 11일 현재 여전히 다크웹에 게시된 상태다. 공격자는 이 데이터가 A사의 “제조, 파트너, 직원, 고객 정보 등”이라며 다운로드 링크를 게시했다.공개된 게시물에 대해 국내 보안 업계 전문가가 CTI 리포트 등을 기반으로 분석한 결과, 주요 업무관련 정보의 유출 위험이 있고, 공격 루트를",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145781",
-    "date": "2026-09-12 08:50:12"
-  },
-  {
     "source": "thn",
     "title": "GitLab CVSS 10 File-Read Flaw Draws In-the-Wild Probes After Disclosure",
     "desc": "GitLab has released patches to address multiple flaws, including a maximum-severity security vulnerability that has witnessed in-the-wild probes within hours of public disclosure.\n\nThe vulnerability in question is CVE-2026-85706 (CVSS score: 10.0), a path traversal issue in the repository commits AP",
@@ -670,26 +691,5 @@
     "desc": "SAP has released security updates to address multiple vulnerabilities, including a maximum-severity flaw in SAP Extended Passport (EPP) Processing that could have a severe impact on the confidentiality, integrity, and availability of the application\n\nThe vulnerability, tracked as CVE-2026-44756 (CVS",
     "url": "https://thehackernews.com/2026/09/sap-patches-cvss-100-kernel-flaw.html",
     "date": "2026-09-09T11:55:45"
-  },
-  {
-    "source": "thn",
-    "title": "Microsoft Patches Record 974 Flaws, Including Two Exploited Windows Zero-Days",
-    "desc": "Microsoft on Tuesday broke Patch Tuesday records by addressing an earth-shattering 974 vulnerabilities spanning its software portfolio, including two flaws that it said have been actively exploited in the wild.\n\nThese include 723 flaws in Windows, 111 in Office and Office 2016, 62 in SQL, and 22 in ",
-    "url": "https://thehackernews.com/2026/09/microsoft-patches-record-974-flaws.html",
-    "date": "2026-09-09T10:11:29"
-  },
-  {
-    "source": "thn",
-    "title": "N-able N-central Pre-Auth RCE Flaw Exploited in the Wild",
-    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a maximum-severity security flaw impacting N-able N-central to its Known Exploited Vulnerabilities (KEV) catalog, requiring Federal Civilian Executive Branch (FCEB) agencies to apply the fixes by September 11, 2026.\n\nT",
-    "url": "https://thehackernews.com/2026/09/n-able-n-central-pre-auth-rce-flaw.html",
-    "date": "2026-09-09T09:57:51"
-  },
-  {
-    "source": "thn",
-    "title": "Slim Spider Steals Crypto Custody Secrets From Brazilian Financial Institution",
-    "desc": "A previously undocumented financially motivated threat actor has been linked to attacks targeting Brazilian financial institutions since at least March 2026.\n\nCybersecurity company CrowdStrike is tracking the Brazil-based activity cluster under the name Slim Spider.\n\n\"The adversary demonstrates deep",
-    "url": "https://thehackernews.com/2026/09/slim-spider-steals-crypto-custody.html",
-    "date": "2026-09-08T21:50:23"
   }
 ]
