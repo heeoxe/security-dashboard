@@ -1,5 +1,47 @@
 [
   {
+    "source": "boannews",
+    "title": "샌즈랩 NDR ‘MNX’, 주요 은행 잇따라 도입",
+    "desc": "AI 보안 전문 기업 샌즈랩(대표 김기홍)은 자사의 AI 기반 네트워크 탐지 및 대응(NDR) 솔루션 ‘MNX’가 국내 제1금융권 은행들의 도입 추진으로 금융 보안 시장에서 입지를 넓히고 있다고 17일 밝혔다. 네트워크 내부의 잠복 위협을 찾아내려는 금융권의 움직임 속에서 국산 NDR의 기술 경쟁력이 부각되고 있다는 설명이다.금융권은 대규모 거래가 오가는 네트워크의 안정성과 고객정보 보호를 함께 확보해야 하는 만큼 보안 솔루션의 기술력과 운영 신뢰성을 까다롭게 평가한다. 특히 NDR은 그동안 글로벌 보안 기업의 제품이 강세를 보여온",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145903",
+    "date": "2026-09-17 09:43:55"
+  },
+  {
+    "source": "boannews",
+    "title": "일본 디지털청, VPN 구멍으로 24만명분 정보 새어나가",
+    "desc": "일본 디지털청에서 약 24만명의 개인정보가 빠져나갔다. 디지털청은 6월 말 유지보수와 운영을 맡은 직원 계정으로 일본 정부 솔루션 서비스(GSS)의 파일에 외부인이 접근한 정황을 찾아냈다고 밝혔다.조사를 통해 7월 VPN 제품 취약점이 악용된 사실을 확인했다. 어느 VPN 제품인지는 밝히지 않았으나, 공격이 확인되기 전 이미 공개돼 있던 취약점이라고 설명했다. 새어나간 기록은 24만6000건이 넘는다. 이름이 약 23만6000건으로 가장 많고 이메일 주소가 약 23만1000건, 전화번호가 약 9만4000건이다. 실제 주소는 약 10",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145887",
+    "date": "2026-09-17 09:13:06"
+  },
+  {
+    "source": "boannews",
+    "title": "[김정덕의 지속가능 보안-8] 숫자의 거짓말: ‘심슨의 역설’과 1% 허브의 붕괴",
+    "desc": "매월 개최되는 이사회 보고 자리에서 최고경영진이 마주하는 보안 대시보드는 대체로 평온합니다. “전사 패치 준수율 99%”, “보안 규정 준수도 98%”와 같은 높은 지표값들은 조직이 완벽한 통제 아래 있다는 깊은 안도감을 줍니다. 그러나 대규모 데이터 유출과 랜섬웨어 마비 참사는 종종 이러한 완벽한 지표 보고 직후에 발생하곤 합니다. 전체 평균과 총합이라는 거시적 숫자가 보여주는 안락함 뒤편에 시스템 전체를 붕괴시키는 치명적인 틈새가 숨어 있기 때문입니다.경영진이 숫자의 외형적 성과에 취해 있을 때 조직의 보안은 가장 취약해집니다.",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145901",
+    "date": "2026-09-17 09:00:00"
+  },
+  {
+    "source": "thn",
+    "title": "Attackers Exploit Issabel Framework Flaw Enabling Unauthenticated OS Command Execution",
+    "desc": "A critical security flaw in Issabel Framework, a web-based framework for the open-source unified communications PBX software, has come under active exploitation.\n\nThe vulnerability in question is CVE-2026-89026 (CVSS v3.1 score: 9.8/CVSS v4.0 score: 9.3), which can allow an unauthenticated remote at",
+    "url": "https://thehackernews.com/2026/09/attackers-exploit-issabel-framework.html",
+    "date": "2026-09-16T21:20:59"
+  },
+  {
+    "source": "thn",
+    "title": "Three Threat Groups Target Russian Enterprises With Backdoors, Ransomware, and Wipers",
+    "desc": "Enterprises in Russia have emerged as the target of three threat activity clusters tracked as NightEagle, Hacking Cat, and Toy Ghouls, according to multiple reports from Kaspersky.\n\nThe cybersecurity vendor said it has identified attacks mounted by NightEagle (aka APT-Q-95), a threat actor known to ",
+    "url": "https://thehackernews.com/2026/09/three-threat-groups-target-russian.html",
+    "date": "2026-09-16T20:57:49"
+  },
+  {
+    "source": "thn",
+    "title": "One Extension Could Hijack AI Assistants Across Chrome, Comet, Edge, Opera Neon and Claude",
+    "desc": "Security researchers at&nbsp;Forever Security&nbsp;have shown that one ordinary browser extension could take control of the AI assistants built into five Chromium-based products: Gemini Live in Chrome, Perplexity Comet, Microsoft Edge, Opera Neon and the Claude in Chrome extension.\n\nOnce the extensi",
+    "url": "https://thehackernews.com/2026/09/one-extension-could-hijack-ai.html",
+    "date": "2026-09-16T20:06:44"
+  },
+  {
     "source": "thn",
     "title": "Attacker Hijacks AI Coding Assistant Session, Spreads Shai-Hulud Across About 100 Repositories",
     "desc": "Mandiant says an attacker hijacked an active AI coding-assistant session at an unnamed software-as-a-service provider and later spread&nbsp;Shai-Hulud&nbsp;across about 100 internal code repositories.\n\nBefore the repository spread, the assistant recommended software that the attacker had poisoned, a",
@@ -434,20 +476,6 @@
     "date": "2026-09-15 09:54:05"
   },
   {
-    "source": "boannews",
-    "title": "[김혁준의 실전형 K-시큐리티] 보이지 않는 위협, ‘선제적 방어’로 전환해야",
-    "desc": "사이버 공격으로 홈페이지가 몇 시간 동안 멈추는 것과 국방·방산 첨단기술이나 통신 인증정보가 수년간 조용히 유출되는 것은 피해의 차원이 다르다. 전자는 피해가 즉시 드러나고 복구 시점도 어느 정도 예측할 수 있다. 반면 후자는 오랫동안 피해 사실조차 드러나지 않으며, 뒤늦게 발견하더라도 이미 유출된 정보와 무너진 신뢰를 되돌리기 어렵다. 국가가 관리해야 할 사이버 위험의 무게중심은 이미 가시적 서비스 장애에서 장기적이고 은밀한 정보 탈취로 옮겨가고 있다.국가 사이버보안의 상위 개념은 국가안보 차원의 위험관리다. 모든 시스템을 같은",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145829",
-    "date": "2026-09-15 08:30:00"
-  },
-  {
-    "source": "boannews",
-    "title": "스플래시탑, AI 기반 사기 방지 솔루션 ‘스플래시탑 쉴드’ 출시",
-    "desc": "스플래시탑(Splashtop)이 개인과 가족을 위한 인공지능(AI) 기반 보안 솔루션 ‘스플래시탑 쉴드’(Splashtop Shield)을 출시했다고 14일 밝혔다. 기존 안티바이러스 기능에 온라인 사기 방지 및 무단 원격 접속 차단 기능을 결합해 악성코드와 피싱, 사기성 웹사이트 등으로부터 윈도우 PC와 맥(Mac)을 보호하는 다층적 디지털 보안 체계를 제공한다.최근 온라인 사기는 단순 악성코드 감염을 넘어, 피싱 문자나 이메일로 가짜 웹사이트 접속을 유도한 뒤 원격 접속 프로그램을 설치하게 만들어 기기를 장악하는 등 여러 공격",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145839",
-    "date": "2026-09-15 08:04:21"
-  },
-  {
     "source": "thn",
     "title": "New DDRop Attack Breaks Intel TDX and AMD SEV-SNP Confidential Computing",
     "desc": "Researchers have disclosed a new hardware attack, called DDRop, that breaks the memory protection in Intel and AMD confidential computing by silently dropping writes to a server's memory, so the processor keeps reading old encrypted data as if it were current.\n\nThe attack requires an attacker who al",
@@ -502,13 +530,6 @@
     "desc": "A malicious cross-store Twitch browser extension has leaked OAuth tokens associated with nearly 31,000 users to proxy servers operated by a Russian commercial bot service.\n\nThe extension, named \"Twitch Enhanced Viewer | JeetBot,\" lists HISHIMIRO/jeetbot.cc as its developer and has the following iden",
     "url": "https://thehackernews.com/2026/09/malicious-twitch-browser-extension.html",
     "date": "2026-09-14T12:54:39"
-  },
-  {
-    "source": "boannews",
-    "title": "“해킹 기술만큼 발표 실력도 중요해”... 대학 벽 허물고 뭉친 예비 보안인들",
-    "desc": "AI가 취약점을 찾아내고 해킹까지 하는 시대, 미래 보안 전문가들에게 필요한 역량은 무엇일까? 현업 전문가들은 해킹 기술 못지않게 컴퓨터 과학 기초와 원활한 소통 능력을 꼽는다. 아무리 뛰어난 기술력을 갖췄더라도 이를 고객사나 조직 내에서 설득력 있게 풀어낼 보고서 작성과 발표 역량, 즉 ‘소프트스킬’ 없이는 그 한계가 뚜렷하다는 조언이다.서울여자대학교 지능정보보호학부 학생회가 주최한 제15회 레몬세미나가 ‘일상의 틈을 메우는 보안: 연결된 시대, 확장되는 보안 환경’을 주제로 지난 12일 고려대학교에서 열렸다. 이번 행사는 서울여",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145836",
-    "date": "2026-09-14 17:36:51"
   },
   {
     "source": "thn",
@@ -663,26 +684,5 @@
     "desc": "The U.S. Department of Justice (DoJ) on Wednesday announced coordinated actions aimed at an illicit online marketplace called Xinbi Guarantee that offered scam services, including seizing Telegram channels used to run the service, confiscating two cryptocurrency wallets, and deploying the Scam Cente",
     "url": "https://thehackernews.com/2026/09/us-disrupts-xinbi-guarantee-scam.html",
     "date": "2026-09-09T23:56:05"
-  },
-  {
-    "source": "thn",
-    "title": "Four Spy Groups Used the Same Chrome and Windows Exploit Kit Within a Week",
-    "desc": "Multiple espionage-motivated threat activity clusters have been found deploying a previously undocumented exploit kit called BlueMoon that chains together multiple vulnerabilities in Microsoft Windows and Google Chrome.\n\nThe first in-the-wild use of BlueMoon has been attributed to the China-aligned ",
-    "url": "https://thehackernews.com/2026/09/four-spy-groups-used-same-chrome-and.html",
-    "date": "2026-09-09T22:04:05"
-  },
-  {
-    "source": "thn",
-    "title": "Infostealer Logs Expose Replayable AI Tokens That Can Bypass MFA",
-    "desc": "Cybercriminals are hijacking artificial intelligence (AI) user accounts via information stealer logs to create \"stolen keys\" that grant illicit access to tools from model providers like Google, Anthropic, and others.&nbsp;\n\nInformation stealers like Lumma Stealer or Vidar are equipped to harvest a w",
-    "url": "https://thehackernews.com/2026/09/infostealer-logs-expose-replayable-ai.html",
-    "date": "2026-09-09T19:53:55"
-  },
-  {
-    "source": "thn",
-    "title": "Webinar: Learn How to Answer “Are We Exposed?” Faster After a New CVE  ",
-    "desc": "A major vulnerability is disclosed. The alert lands immediately. Then comes the harder question: Are we actually exposed?\n\nFor many security teams, answering that means jumping between vulnerability scanners, endpoint tools, cloud inventories, SBOMs, repositories, and application data to build enoug",
-    "url": "https://thehackernews.com/2026/09/webinar-learn-how-to-answer-are-we.html",
-    "date": "2026-09-09T17:27:36"
   }
 ]
