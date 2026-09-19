@@ -1,6 +1,27 @@
 [
   {
     "source": "thn",
+    "title": "Public Exploits Released for Four Linux Kernel Flaws That Enable Local Root",
+    "desc": "A security researcher has released working exploit code for four Linux kernel flaws that each let a local user gain root, the highest level of access on a machine.\n\nKernel maintainers have fixed all four over the past few weeks, so a system running an up-to-date kernel is not affected. But the explo",
+    "url": "https://thehackernews.com/2026/09/public-exploits-released-for-four-linux.html",
+    "date": "2026-09-18T23:32:24"
+  },
+  {
+    "source": "thn",
+    "title": "New WordPress Click2Shell Flaw Forces Theme Installs, Can Chain to Code Execution",
+    "desc": "WordPress today released patches to fix a new set of vulnerabilities in its core software, one of which could allow a crafted web link, opened by a logged-in administrator, to install a theme from the official WordPress.org directory without anyone clicking Install.\n\nThe security firm pwn.ai, whose ",
+    "url": "https://thehackernews.com/2026/09/new-wordpress-click2shell-flaw-forces.html",
+    "date": "2026-09-18T22:26:19"
+  },
+  {
+    "source": "thn",
+    "title": "Transparent Tribe Deploys New Rust Backdoor Using Private GitHub Repositories for C2",
+    "desc": "The Pakistan-aligned threat group tracked as Transparent Tribe (aka APT36 and Earth Karkaddan) has been attributed to a fresh set of cyber attacks targeting government and defense entities in India and Afghanistan.\n\nThe attacks, per Zscaler ThreatLabz, involve the use of previously undocumented tool",
+    "url": "https://thehackernews.com/2026/09/transparent-tribe-deploys-new-rust.html",
+    "date": "2026-09-18T20:54:16"
+  },
+  {
+    "source": "thn",
     "title": "Microsoft Patches CVSS 10.0 Azure AI Foundry Flaw Enabling Unauthorized Privilege Escalation",
     "desc": "Microsoft has released fixes for a maximum-severity security flaw in Azure AI Foundry that could be exploited to achieve privilege escalation. No customer action is required.\n\nThe vulnerability, tracked as CVE-2026-85889, carries a CVSS score of 10.0.\n\n\"Missing authentication for critical function i",
     "url": "https://thehackernews.com/2026/09/microsoft-patches-cvss-100-azure-ai.html",
@@ -677,26 +698,5 @@
     "desc": "A malicious cross-store Twitch browser extension has leaked OAuth tokens associated with nearly 31,000 users to proxy servers operated by a Russian commercial bot service.\n\nThe extension, named \"Twitch Enhanced Viewer | JeetBot,\" lists HISHIMIRO/jeetbot.cc as its developer and has the following iden",
     "url": "https://thehackernews.com/2026/09/malicious-twitch-browser-extension.html",
     "date": "2026-09-14T12:54:39"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Use Passkey Phishing to Hijack Microsoft Cloud Accounts and Exfiltrate Data",
-    "desc": "Microsoft has disclosed details of two campaigns in which threat actors are abusing third-party email delivery infrastructure to blast financial fraud scam messages and using passkey-themed social engineering to breach cloud environments.\n\nThe first campaign, per the tech giant, involved sending ove",
-    "url": "https://thehackernews.com/2026/09/attackers-use-passkey-phishing-to.html",
-    "date": "2026-09-13T15:41:48"
-  },
-  {
-    "source": "thn",
-    "title": "CISA Adds 5 Actively Exploited Artifactory, ScreenConnect, and RouterOS Flaws to KEV",
-    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added five security flaws impacting JFrog Artifactory, ConnectWise ScreenConnect, and MikroTik RouterOS to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation in the wild.\n\nDetails of the vul",
-    "url": "https://thehackernews.com/2026/09/cisa-adds-5-actively-exploited.html",
-    "date": "2026-09-12T21:24:45"
-  },
-  {
-    "source": "thn",
-    "title": "When the Whole Company Adopts AI: What It Does to Your SOC",
-    "desc": "Over the past year, we watched a new class of alert appear in enterprise security operations centers and grow faster than anything else in the stream: alerts that were triggered by AI tools and agents. Not attacks against AI, but the ordinary, everyday footprint of an organization using it, from dev",
-    "url": "https://thehackernews.com/2026/09/when-whole-company-adopts-ai-what-it.html",
-    "date": "2026-09-12T15:54:44"
   }
 ]
