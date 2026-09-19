@@ -1,6 +1,90 @@
 [
   {
     "source": "thn",
+    "title": "Claude Opus 5 Helped Researchers Take Over OpenAI Staff Accounts via Chained Flaws",
+    "desc": "Three researchers at the security firm&nbsp;Hacktron&nbsp;used Anthropic's Claude Opus 5 to chain two flaws and take over the ChatGPT and Codex accounts of several OpenAI employees, then reach an internal OpenAI code repository.\n\nThe chain began with a bug in the software that runs OpenAI's public h",
+    "url": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html",
+    "date": "2026-09-19T15:31:10"
+  },
+  {
+    "source": "thn",
+    "title": "SolarWinds Patches ARM Hard-Coded Key Flaw Enabling Unauthenticated RCE",
+    "desc": "SolarWinds has released security updates to address a high-severity flaw in Access Rights Manager (ARM) that, if successfully exploited, could lead to an unauthenticated remote code execution vulnerability.\n\nThe vulnerability, tracked as CVE-2026-28326, is rated 8.8 out of 10.0 on the CVSS scoring s",
+    "url": "https://thehackernews.com/2026/09/solarwinds-patches-arm-hard-coded-key.html",
+    "date": "2026-09-19T15:01:17"
+  },
+  {
+    "source": "thn",
+    "title": "Critical Pre-Auth RCE in Orkes Conductor Workflow Platform Exploited in the Wild",
+    "desc": "A critical vulnerability impacting Orkes Conductor is being actively exploited in the wild, according to Fortinet.\n\nThe vulnerability in question is CVE-2026-58138 (CVSS v3.1 score: 9.8/CVSS v4 score: 9.3), which relates to a case of unauthenticated remote code execution.\n\n\"Orkes Conductor 3.21.21 b",
+    "url": "https://thehackernews.com/2026/09/critical-pre-auth-rce-in-orkes.html",
+    "date": "2026-09-19T13:48:54"
+  },
+  {
+    "source": "thn",
+    "title": "Google Gemini Broke Into Real Company Systems After Security Test Domain Mix-Up",
+    "desc": "Google's Gemini model has become the latest artificial intelligence (AI) system to access the internet and break into other companies during a cybersecurity evaluation. The development was first reported by The Wall Street Journal.\n\nThe incidents occurred in May 2026 as part of a test run conducted ",
+    "url": "https://thehackernews.com/2026/09/google-gemini-broke-into-real-company.html",
+    "date": "2026-09-19T13:21:34"
+  },
+  {
+    "source": "thn",
+    "title": "CrowdSec Says TanStack npm Attack Led to Copy of 170 Private GitHub Repositories",
+    "desc": "An attacker copied about 170 of CrowdSec's private GitHub repositories on May 22 using the account of an employee who had just left, CrowdSec&nbsp;said on September 18.\n\nThe French security company had kept his GitHub access open. CrowdSec says his laptop was compromised in May's&nbsp;supply chain a",
+    "url": "https://thehackernews.com/2026/09/crowdsec-says-tanstack-npm-attack-led.html",
+    "date": "2026-09-19T12:44:54"
+  },
+  {
+    "source": "thn",
+    "title": "CISA Flags Three Linux Kernel Vulnerabilities Exploited in the Wild",
+    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added three security flaws impacting the Linux kernel to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2025-39682 (CVSS score: 9.8) ",
+    "url": "https://thehackernews.com/2026/09/cisa-flags-three-linux-kernel.html",
+    "date": "2026-09-19T11:54:10"
+  },
+  {
+    "source": "boannews",
+    "title": "성현시스템 ‘AF2100’, SBS ‘재벌X형사2’서 지문·BLE 출입통제 기술 선봬",
+    "desc": "SBS 드라마 ‘재벌X형사2’의 주요 배경인 강하경찰서에 성현시스템의 지문리더기 ‘AF2100’이 등장해 눈길을 끌고 있다. 경찰서와 같은 보안이 중요한 공간에 실제 출입통제 리더기가 설치되면서 드라마의 현실감을 높이는 동시에, 현장에서 활용되는 보안 기술을 자연스럽게 보여주고 있다.AF2100은 기존 지문인식 기반 출입통제 리더기에 BLE(Bluetooth Low Energy) 모바일 인증 기능을 더한 제품으로, 생체인식의 보안성과 스마트폰 기반 인증의 편의성을 함께 제공한다.AF2100의 가장 큰 특징은 지문인식뿐 아니라 스마트",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145955",
+    "date": "2026-09-19 18:56:38"
+  },
+  {
+    "source": "boannews",
+    "title": "티피링크, IFA 2026서 Wi-Fi 8·스마트홈 기술 인정받아 3개 제품 혁신상",
+    "desc": "글로벌 네트워킹 및 스마트홈 선도 기업 티피링크(TP-Link)는 독일 베를린에서 열린 유럽 최대 가전 전시회 ‘IFA 2026’에서 Archer 8 Ultra, Deco 8 Ultra, Tapo T150 등 총 3개 제품이 ‘IFA Innovation Awards 2026’ 스마트홈 부문에 선정됐다고 밝혔다.IFA 혁신상은 2025년 신설된 부문으로, 기술 및 업계 전문가로 구성된 독립 심사위원단이 제품의 혁신적인 디자인과 엔지니어링을 평가해 선정한다. 티피링크는 이번 수상을 통해 안정적인 연결과 사용자 중심 설계를 강조한 차세대",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145954",
+    "date": "2026-09-19 18:55:55"
+  },
+  {
+    "source": "boannews",
+    "title": "제미나이도 보안테스트 중 외부기관 해킹",
+    "desc": "구글의 AI 모델 ‘제미나이’도 보안 테스트 중 외부기관 해킹을 일으킨 것으로 나타났다.18일(현지시간) 월스트리트저널에 따르면, 제미나이는 지난 5월 보안 평가 업체 이레귤러가 진행한 사이버 보안 시험 도중 외부 기업 3곳의 시스템에 무단 접근했다. 제미나이가 외부 기업 시스템에 임의로 침투한 사실이 확인된 첫 사례다.WSJ이 관련 문의를 하기 전까지 구글은 이 사실을 공지하지 않았다고 이 매체는 보도했다.이레귤러는 원래 인터넷을 차단하고 진행해야 하는 모의해킹 시험에서 실수로 인터넷 접속이 가능하게 했다.제미나이는 가상의 기업",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145959",
+    "date": "2026-09-19 15:43:45"
+  },
+  {
+    "source": "boannews",
+    "title": "“앤트로픽 클로드로 오픈AI 해킹 성공”... 포상금 900만원",
+    "desc": "앤트로픽의 AI 모델인 클로드를 활용해 오픈AI 해킹 시도에 성공한 사례가 나왔다. 이를 시도한 연구원들은 오픈AI에 제보해 900만원의 포상금을 받았다.AI 보안 연구업체 해크트론은 자사 연구원들이 ‘클로드 오퍼스5’ 모델로 오픈AI 직원들의 AI 챗봇 챗GPT와 코딩도구 코덱스 계정을 제어하는 데 성공했다고 18일(현지시간) 밝혔다.이들은 오픈AI의 도움말 게시판의 취약점을 통해 서버에 접속하는 데 성공했고, 여기서 오픈AI 직원들의 계정 정보를 확보했다. 이어 해당 계정 정보를 활용해 ‘모노레포’(Monorepo)라고 불리는",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145958",
+    "date": "2026-09-19 12:19:14"
+  },
+  {
+    "source": "boannews",
+    "title": "“AI 허위보고서로 미-중 전쟁날뻔”... 미군, 중국선박 나포하려다 직전 중단",
+    "desc": "미군이 AI의 허위 보고서를 근거로 중동 해역에서 중국 선박을 나포하려다 작전 실행 직전 중단하는 아찔한 일이 발생했다.18일(현지시간) CNN의 보도에 따르면, 이란과의 전쟁이 한창이던 올해 봄 “중동 해역의 중국 선박이 핵무기 프로그램 부품을 운반 중”이라는 내용의, 특수작전사령부 소속 분석관이 작성한 정보 보고서가 미군 전반에 회람됐다.이에 미군은 곧바로 선박 차단 계획에 착수, 무장 병력이 승선을 준비하고 군용기도 띄웠다.하지만 당국자들이 작전 직전 보고서를 정밀 검토한 결과, 분석관이 사용한 AI 챗봇이 선박에 실린 물질을",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145957",
+    "date": "2026-09-19 11:15:00"
+  },
+  {
+    "source": "boannews",
+    "title": "[배종찬의 보안 빅데이터] 가족마저 손쉽게 속아 넘어가는 ‘AI 딥페이크’",
+    "desc": "인공지능(AI) 기술의 급격한 발전은 인간의 삶을 비약적으로 편리하게 만들어주었으나, 동시에 ‘AI 딥페이크’라는 미지의 공포를 우리의 일상 속으로 깊숙이 끌어들였다. AI 딥페이크는 인공지능(Artificial Intelligence)과 딥러닝(Deep Learning), 그리고 가짜를 의미하는 페이크(Fake)의 합성어로, 고도화된 딥러닝 알고리즘을 활용하여 사람의 얼굴, 목소리, 체형 등 생체 데이터와 비디오·오디오 매체를 합성하고 편집함으로써 실제와 구별하기 어려운 가짜 콘텐츠를 생성해내는 최첨단 기술을 의미한다.과거에는 전",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145951",
+    "date": "2026-09-19 10:52:42"
+  },
+  {
+    "source": "thn",
     "title": "Public Exploits Released for Four Linux Kernel Flaws That Enable Local Root",
     "desc": "A security researcher has released working exploit code for four Linux kernel flaws that each let a local user gain root, the highest level of access on a machine.\n\nKernel maintainers have fixed all four over the past few weeks, so a system running an up-to-date kernel is not affected. But the explo",
     "url": "https://thehackernews.com/2026/09/public-exploits-released-for-four-linux.html",
@@ -546,48 +630,6 @@
     "date": "2026-09-16 17:57:20"
   },
   {
-    "source": "boannews",
-    "title": "애플, iOS 27 보안 업데이트... 악성 이미지로 아이폰 노리는 취약점 등 126건 대거 수정",
-    "desc": "애플이 14일(현지시각) 새 운영체제를 내놓으면서 취약점을 200개 넘게 한꺼번에 메웠다. 애플이 한 차례에 처리한 것으로는 가장 많은 규모다. 단순히 수정 건수만 많은 것이 아니라 운영체제의 핵심 영역인 커널을 비롯해 인증과 권한 관리, 웹 브라우징 등 광범위한 영역에 패치가 집중됐다.애플이 손본 범위는 iOS 27과 아이패드OS 27, 맥OS 골든게이트 27에 몰려 있다. iOS 27과 아이패드OS 27에서 약 126건을 고쳤고 이 가운데 20건이 커널 결함이다. 맥OS 골든게이트 27에서는 210건을 손봤는데 100건가량은 i",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145898",
-    "date": "2026-09-16 17:39:24"
-  },
-  {
-    "source": "boannews",
-    "title": "“복호화 없이 C2 통신 잡았다”... 씨큐비스타, ‘패킷사이버 v3.0’ 실증",
-    "desc": "씨큐비스타는 자사 차세대 NDR 솔루션 ‘패킷사이버 v3.0’(PacketCYBER)을 통해 실제 고객사 운영 환경에서 암호화된 악성 명령제어(C2) 통신을 복호화 없이 성공적으로 탐지해 냈다고 16일 밝혔다.이번 실증은 악성코드 감염 단말이 도메인 생성 알고리즘(DGA)을 이용해 C2 도메인 주소를 실시간 교체하며 외부 서버와 통신하던 것을 잡아낸 사례다. 패킷사이버 v3.0에 탑재된 암호화 트래픽 분석(ETA) 엔진 ‘EVA 분석 모듈’은 트래픽 패킷 내부를 열어보지 않고도 통신 메타데이터 패턴만을 분석해 감염 단말을 식별했다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145897",
-    "date": "2026-09-16 17:01:15"
-  },
-  {
-    "source": "boannews",
-    "title": "“네트워킹과 보안을 하나로” 포티넷, 가트너 하이브리드 메시 방화벽 최고 평가",
-    "desc": "포티넷이 ‘2026 가트너 매직 쿼드런트’의 하이브리드 메시 방화벽(HMF) 부문 보고서에서 최고 등급인 ‘리더’로 선정됐다고 16일 밝혔다. 이번 선정과 함께 포티넷은 2년 연속으로 ‘실행 능력’ 부문에서 가장 좋은 평가를 받았다.포티넷의 포티게이트 방화벽 솔루션은 자체 개발한 포티ASIC과 단일 운영체제인 포티OS를 기반으로 구동된다. 이를 통해 물리적 장비부터 가상화, 클라우드 네이티브, 서비스형 모델까지 다양한 배포 환경을 하나로 아우르며, 하이브리드 엔터프라이즈 환경 전반에 걸쳐 일관된 보호와 성능 및 운영 단순성을 제공한",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145895",
-    "date": "2026-09-16 15:52:55"
-  },
-  {
-    "source": "boannews",
-    "title": "양자 스타트업 성장 돕는다... 미래양자융합포럼, 스케일업 분과 발족",
-    "desc": "미래양자융합포럼(의장 김재완·류탁기)은 16일 국내 양자기업의 성장 지원을 목표로 하는 ‘양자산업 스케일업(Scale-up) 분과’를 신설하고, 발대식을 개최했다. 스케일업 분과는 통신·센서·컴퓨터 분과가 발굴한 유즈케이스를 실증·사업화 및 성장 지원, 투자 유치로 연결하는 역할을 맡는다. 초대 분과장은 윤지원 SDT 대표가 맡았다.국내 양자기업이 첫 고객과 성장 자본을 확보하고 글로벌 시장으로 확장하도록 돕는 산학연 실행 플랫폼 역할을 한다. 이를 위해 △성장 애로 해소 △기업 간 협업 촉진 △실증·사업화 지원 △투자·시장 연계",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145896",
-    "date": "2026-09-16 15:51:48"
-  },
-  {
-    "source": "boannews",
-    "title": "소프트캠프, CSK 2026에서 ‘접속 격리’ 전략 제시",
-    "desc": "사이버보안 전문기업 소프트캠프(대표 배환국)가 국가정보원과 국가보안기술연구소가 주최하는 '사이버 서밋 코리아(Cyber Summit Korea, CSK) 2026'에서 ‘접속 격리’ 전략을 제시한다고 16일 밝혔다.CSK는 국제사회의 사이버 위협 공동 대응을 목표로 2024년 시작된 국가 단위 사이버안보 행사로, 올해 3회째를 맞는다. 올해 행사는 ‘연결된 세상, 함께하는 보안’(Connected World, Security Together)을 주제로 9월 16일부터 18일까지 서울 코엑스에서 열린다.컨퍼런스와 국제 사이버훈련, 사",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145893",
-    "date": "2026-09-16 15:28:36"
-  },
-  {
-    "source": "boannews",
-    "title": "휴네시온, 의료분야 사이버 회복탄력성 전략 제시",
-    "desc": "정보보안 전문기업 휴네시온(대표 정동섭)은 의료 분야 랜섬웨어 대응에 있어서 ‘시스템 복수’를 넘어 ‘진료서비스 연속성’ 관점을 제시했다.휴네시온은 16일 열린 ‘제5회 랜섬웨어 레질리언스 컨퍼런스’에서 ‘의료분야 사이버 레질리언스 관점의 랜섬웨어 대응 전략’을 주제로 발표했다. 한국인터넷진흥원(KISA)이 개최한 이번 컨퍼런스는 랜섬웨어 예방·탐지·대응·복구 등 전주기 대응 전략과 관련 기술을 공유하기 위해 마련됐다.정일안 휴네시온 이사는 이날 발표에서 최근 의료분야 랜섬웨어 공격이 단순한 데이터 암호화를 넘어 의료서비스 운영 중",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145892",
-    "date": "2026-09-16 15:02:49"
-  },
-  {
     "source": "thn",
     "title": "Iranian Hackers Use Telegram-Controlled Malware to Spy on Dissidents and Journalists",
     "desc": "Cybersecurity agencies in the United States, the United Kingdom, and the Netherlands have detailed a Windows malware that they say Iran's intelligence service uses to spy on dissidents, journalists, and activists around the world.\n\nThe malware is controlled via the Telegram messaging app and can cop",
@@ -656,47 +698,5 @@
     "desc": "An attacker was operating inside the network of 3BB, one of Thailand's largest broadband providers, and maintained remote control of internal machines using a legitimate management tool called MeshCentral, threat intelligence firm Hunt.io said.\n\nThe company uncovered the intrusion by examining a ser",
     "url": "https://thehackernews.com/2026/09/3bb-attacker-used-meshcentral-backdoor.html",
     "date": "2026-09-14T23:31:49"
-  },
-  {
-    "source": "thn",
-    "title": "Telegram Desktop Flaw Lets Hidden JavaScript Exfiltrate Messages From HTML Exports",
-    "desc": "A flaw in Telegram Desktop let a bot's message plant hidden JavaScript inside chats that users exported to HTML files, security researchers at ExPatch said in a&nbsp;writeup&nbsp;published on September 12.\n\nIn Telegram, the message looked ordinary, with a link button, and the script ran only when so",
-    "url": "https://thehackernews.com/2026/09/telegram-desktop-flaw-lets-hidden.html",
-    "date": "2026-09-14T23:28:16"
-  },
-  {
-    "source": "thn",
-    "title": "Red Heron Exploits Gitea RCE to Compromise 13 Organizations Across Six Countries",
-    "desc": "A suspected Chinese threat actor tracked as Red Heron has been attributed to the rapid exploitation of a recently disclosed security vulnerability in Gitea to compromise internet-facing instances as part of a multi-national campaign.\n\n\"Red Heron scanned 1,386 Gitea instances across seven countries a",
-    "url": "https://thehackernews.com/2026/09/red-heron-exploits-gitea-rce-to.html",
-    "date": "2026-09-14T22:26:30"
-  },
-  {
-    "source": "thn",
-    "title": "WordPress Adds Automated Plugin Reviews to Block High-Risk Updates Before Distribution",
-    "desc": "WordPress has announced it's launching an automated security review for every release of a plugin before it's distributed through the WordPress.org update API so as to analyze it for potential security issues and ensure there are no risks involved.\n\n\"New plugins are reviewed before they enter the di",
-    "url": "https://thehackernews.com/2026/09/wordpress-adds-automated-plugin-reviews.html",
-    "date": "2026-09-14T21:30:04"
-  },
-  {
-    "source": "thn",
-    "title": "⚡ Weekly Recap: Rogue AI Agents, WeChat Worm, PaperCut Attacks, AI Espionage, and Rootkits",
-    "desc": "AI keeps showing up in the wrong places. Attackers are using it to speed up exploits, test defenses, and automate more of the job. Some models are also crossing lines on their own. That is not a great combination.\n\nThe rest of the week is more familiar: old bugs still working, fresh exploit chains, ",
-    "url": "https://thehackernews.com/2026/09/weekly-recap-rogue-ai-agents-wechat.html",
-    "date": "2026-09-14T20:10:34"
-  },
-  {
-    "source": "thn",
-    "title": "AI Changed the Exposure Problem. Validation Needs to Change With It.",
-    "desc": "There's a lot of noise around AI and cybersecurity right now. What’s actually important is far simpler, if often lost in the hubbub. Vulnerability discovery is getting faster and happening at a much greater scale, while defenders still have to work out which findings actually deserve their action.\n\n",
-    "url": "https://thehackernews.com/2026/09/ai-changed-exposure-problem-validation.html",
-    "date": "2026-09-14T17:28:00"
-  },
-  {
-    "source": "thn",
-    "title": "Twitch Browser Extension Leaks OAuth Tokens From Nearly 31,000 Users",
-    "desc": "A malicious cross-store Twitch browser extension has leaked OAuth tokens associated with nearly 31,000 users to proxy servers operated by a Russian commercial bot service.\n\nThe extension, named \"Twitch Enhanced Viewer | JeetBot,\" lists HISHIMIRO/jeetbot.cc as its developer and has the following iden",
-    "url": "https://thehackernews.com/2026/09/malicious-twitch-browser-extension.html",
-    "date": "2026-09-14T12:54:39"
   }
 ]
