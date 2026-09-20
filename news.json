@@ -4,7 +4,21 @@
     "title": "Claude Opus 5 Helped Researchers Take Over OpenAI Staff Accounts via Chained Flaws",
     "desc": "Three researchers at the security firm&nbsp;Hacktron&nbsp;used Anthropic's Claude Opus 5 to chain two flaws and take over the ChatGPT and Codex accounts of several OpenAI employees, then reach an internal OpenAI code repository.\n\nThe chain began with a bug in the software that runs OpenAI's public h",
     "url": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html",
-    "date": "2026-09-19T15:31:10"
+    "date": "2026-09-20T00:06:53"
+  },
+  {
+    "source": "thn",
+    "title": "Can You Prove a New CVE Is Exploitable Before Attackers Do? Learn How in This Webinar",
+    "desc": "A new CVE drops. Your scanner finds it. The severity score looks ugly.\n\nBut that still does not answer the question that matters: Can it actually be exploited in your environment?\n\nMythos-class AI is compressing the time between disclosure and working exploitation, while many security programs still",
+    "url": "https://thehackernews.com/2026/09/can-you-prove-new-cve-is-exploitable.html",
+    "date": "2026-09-19T18:58:48"
+  },
+  {
+    "source": "thn",
+    "title": "Identity Visibility in 2026: The Foundation of Identity Security",
+    "desc": "Identity visibility is a starting point for modern identity security, because stolen and misused credentials are among the most frequently reported initial access vectors in breach research, including Verizon's annual Data Breach Investigations Report. This article explains what identity visibility ",
+    "url": "https://thehackernews.com/2026/09/identity-visibility-in-2026-foundation.html",
+    "date": "2026-09-19T18:58:41"
   },
   {
     "source": "thn",
@@ -292,13 +306,6 @@
     "desc": "Every release of the Unbound DNS resolver before 1.26.1 has a critical heap overflow in its DNSSEC validator, maintainer NLnet Labs said in an&nbsp;advisory&nbsp;on Wednesday.\n\nAn attacker who controls a malicious zone and queries a vulnerable resolver can trigger it, enabling remote code execution.",
     "url": "https://thehackernews.com/2026/09/critical-unbound-dnssec-validator-flaw.html",
     "date": "2026-09-17T18:00:00"
-  },
-  {
-    "source": "thn",
-    "title": "Can You Prove a New CVE Is Exploitable Before Attackers Do? Learn How in This Webinar",
-    "desc": "A new CVE drops. Your scanner finds it. The severity score looks ugly.\n\nBut that still does not answer the question that matters: Can it actually be exploited in your environment?\n\nMythos-class AI is compressing the time between disclosure and working exploitation, while many security programs still",
-    "url": "https://thehackernews.com/2026/09/can-you-prove-new-cve-is-exploitable.html",
-    "date": "2026-09-17T17:20:00"
   },
   {
     "source": "thn",
@@ -691,12 +698,5 @@
     "desc": "Researchers have disclosed a new hardware attack, called DDRop, that breaks the memory protection in Intel and AMD confidential computing by silently dropping writes to a server's memory, so the processor keeps reading old encrypted data as if it were current.\n\nThe attack requires an attacker who al",
     "url": "https://thehackernews.com/2026/09/new-ddrop-attack-breaks-intel-tdx-and.html",
     "date": "2026-09-14T23:32:13"
-  },
-  {
-    "source": "thn",
-    "title": "3BB Attacker Used MeshCentral Backdoor for Root Access, Targeted Subscriber Credentials",
-    "desc": "An attacker was operating inside the network of 3BB, one of Thailand's largest broadband providers, and maintained remote control of internal machines using a legitimate management tool called MeshCentral, threat intelligence firm Hunt.io said.\n\nThe company uncovered the intrusion by examining a ser",
-    "url": "https://thehackernews.com/2026/09/3bb-attacker-used-meshcentral-backdoor.html",
-    "date": "2026-09-14T23:31:49"
   }
 ]
