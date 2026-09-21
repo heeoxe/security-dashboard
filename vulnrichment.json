@@ -25931,394 +25931,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-50349",
-    "title": "Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-362",
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-18",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50349",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56172",
-    "title": "Windows VHD miniport driver Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-18",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56172",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56177",
-    "title": "Windows Server Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-18",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56177",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56198",
-    "title": "Microsoft Trace Data Helper Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-125"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 26H1"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2025"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2025 (Server Core installation)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-18",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56198",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58599",
-    "title": "HEVC Video Extensions Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "HEVC Video Extensions"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "HEVC Video Extensions for Licensed Applications"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "HEVC Video Extensions from Device Manufacturer"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-18",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58599",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58600",
-    "title": "HEVC Video Extensions Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "HEVC Video Extensions"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "HEVC Video Extensions for Licensed Applications"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "HEVC Video Extensions from Device Manufacturer"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-18",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58600",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58611",
-    "title": "Xbox Gaming Services Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-285"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Xbox Gaming Services"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-18",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58611",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58649",
-    "title": ".NET Information Disclosure Vulnerability",
-    "desc": "",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-346"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": ".NET 10.0"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": ".NET 11.0"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": ".NET 8.0"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": ".NET 9.0"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Visual Studio 2022 version 17.14"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-18",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58649",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-62694",
-    "title": "Windows Installer Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-18",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62694",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-62697",
-    "title": "Windows Push Notifications Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 23H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-18",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62697",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-62706",
-    "title": "Microsoft Windows Media Foundation Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-125",
-      "CWE-121"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-09-18",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62706",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-0194",
     "title": "In multiple locations, there is a possible permission bypass due to an integer overflow. This could lead to local escala",
     "desc": "In multiple locations, there is a possible permission bypass due to an integer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
@@ -28805,6 +28417,226 @@
     "published": "2026-09-17",
     "updated": "2026-09-17",
     "url": "https://github.com/patriksimek/vm2/security/advisories/GHSA-j3hm-6rg5-mchv",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-83242",
+    "title": "CVE-2026-83242",
+    "desc": "",
+    "cvss": 7.3,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Oracle Corporation",
+        "product": "Oracle Commerce Guided Search / Oracle Commerce Experience Manager"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-15",
+    "updated": "2026-09-15",
+    "url": "https://www.oracle.com/security-alerts/cspusep2026.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-83284",
+    "title": "CVE-2026-83284",
+    "desc": "",
+    "cvss": 8.6,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Oracle Corporation",
+        "product": "Oracle BI Publisher"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-15",
+    "updated": "2026-09-15",
+    "url": "https://www.oracle.com/security-alerts/cspusep2026.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-83460",
+    "title": "CVE-2026-83460",
+    "desc": "",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Oracle Corporation",
+        "product": "Helidon"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-15",
+    "updated": "2026-09-15",
+    "url": "https://www.oracle.com/security-alerts/cspusep2026.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-87143",
+    "title": "CVE-2026-87143",
+    "desc": "",
+    "cvss": 7.4,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Oracle Corporation",
+        "product": "Oracle Hyperion Data Relationship Management"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-15",
+    "updated": "2026-09-15",
+    "url": "https://www.oracle.com/security-alerts/cspusep2026.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-87145",
+    "title": "CVE-2026-87145",
+    "desc": "",
+    "cvss": 7.3,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Oracle Corporation",
+        "product": "Oracle Hyperion Data Relationship Management"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-15",
+    "updated": "2026-09-15",
+    "url": "https://www.oracle.com/security-alerts/cspusep2026.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-87147",
+    "title": "CVE-2026-87147",
+    "desc": "",
+    "cvss": 7.7,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Oracle Corporation",
+        "product": "Oracle Hyperion Data Relationship Management"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-15",
+    "updated": "2026-09-15",
+    "url": "https://www.oracle.com/security-alerts/cspusep2026.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-87159",
+    "title": "CVE-2026-87159",
+    "desc": "",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Oracle Corporation",
+        "product": "Oracle HRMS (India)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-15",
+    "updated": "2026-09-15",
+    "url": "https://www.oracle.com/security-alerts/cspusep2026.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-87166",
+    "title": "CVE-2026-87166",
+    "desc": "",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Oracle Corporation",
+        "product": "Oracle Purchasing"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-15",
+    "updated": "2026-09-15",
+    "url": "https://www.oracle.com/security-alerts/cspusep2026.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-87167",
+    "title": "CVE-2026-87167",
+    "desc": "",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Oracle Corporation",
+        "product": "Oracle Purchasing"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-15",
+    "updated": "2026-09-15",
+    "url": "https://www.oracle.com/security-alerts/cspusep2026.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-87168",
+    "title": "CVE-2026-87168",
+    "desc": "",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Oracle Corporation",
+        "product": "Oracle Purchasing"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-15",
+    "updated": "2026-09-15",
+    "url": "https://www.oracle.com/security-alerts/cspusep2026.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-87198",
+    "title": "CVE-2026-87198",
+    "desc": "",
+    "cvss": 7.4,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Oracle Corporation",
+        "product": "Oracle Hyperion Financial Management"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-15",
+    "updated": "2026-09-15",
+    "url": "https://www.oracle.com/security-alerts/cspusep2026.html",
     "source": "CISA Vulnrichment"
   }
 ]
