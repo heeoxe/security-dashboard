@@ -1,5 +1,110 @@
 [
   {
+    "source": "thn",
+    "title": "⚡ Weekly Recap: Cisco 0-Day, AI Agent RCE, ClickFix Attacks, ClickFix Surge, and Browser Hijacks",
+    "desc": "A browser. A plugin. A package. A login screen. Normal stuff. That is basically the problem this week.\n\nThe trouble keeps showing up inside things people already trust: code that takes a bad turn, old payloads coming back, exposed systems, weak checks, fake fixes, and attack paths that look almost t",
+    "url": "https://thehackernews.com/2026/09/weekly-recap-cisco-0-day-ai-agent-rce.html",
+    "date": "2026-09-21T19:54:13"
+  },
+  {
+    "source": "thn",
+    "title": "TASK#STOMP PowerShell Backdoor Steals Documents, Wi-Fi Passwords, and Clipboard Data",
+    "desc": "Cybersecurity researchers have disclosed details of a new campaign dubbed TASK#STOMP that delivers a PowerShell backdoor designed to harvest sensitive data from compromised hosts.\n\nThe backdoor \"automatically harvests and exfiltrates business documents, watches the filesystem for new files in real t",
+    "url": "https://thehackernews.com/2026/09/taskstomp-powershell-backdoor-steals.html",
+    "date": "2026-09-21T19:45:40"
+  },
+  {
+    "source": "thn",
+    "title": "ClickFix Lures Deploy ChainScript RAT Using Polygon to Rotate C2 Infrastructure",
+    "desc": "Threat actors are leveraging ClickFix-like lures to deliver a previously undocumented remote access trojan (RAT) called ChainScript.\n\n\"ChainScript has appeared under multiple build names, including ComponentTask33, UpdateDigital, HostShared, and OrchidViolet66, while presenting itself as Spotify, Zo",
+    "url": "https://thehackernews.com/2026/09/clickfix-lures-deploy-chainscript-rat.html",
+    "date": "2026-09-21T14:09:38"
+  },
+  {
+    "source": "thn",
+    "title": "Jade Sleet Linked to Indian IT Provider Breach With FLATROOF and ROOFDECK Backdoors",
+    "desc": "The North Korean threat actor known as Jade Sleet has been attributed to the compromise of an India-based \"much smaller organization\" in the information technology (IT) services industry, once again highlighting how the adversary continues to target developers to breach target networks.\n\nCybersecuri",
+    "url": "https://thehackernews.com/2026/09/jade-sleet-linked-to-indian-it-provider.html",
+    "date": "2026-09-21T11:36:44"
+  },
+  {
+    "source": "boannews",
+    "title": "韓 선박, 해킹에 멈췄다... 선박 보안 경각심↑",
+    "desc": "한국 선박이 해킹으로 통신이 멈추고 운항이 중단됐다. 미국 국가기관 조사까지 이뤄지면서 선박 보안에 대한 경각심이 확산되고 있다. 전세계 물류의 80%가 바다에서 이뤄지는 만큼 선박 보안은 국가에 중대한 영향을 미친다. 이번 사태를 무겁게 받아들여야 한다는 게 중론이다.최근 외신 등에 따르면 미국 해안경비대가 지난 8월 멕시코만을 지나던 유조선에 직접 승선해 사이버공격 정황을 조사한 사실을 확인했다. 선박 네트워크가 외국 사이버 행위자에 의해 침해됐다는 정황이 포착됐기 때문이다. 승선한 조사 인력 중에는 FBI 사이버대응팀도 있었다",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145979",
+    "date": "2026-09-21 19:30:00"
+  },
+  {
+    "source": "boannews",
+    "title": "포티넷 포티엔드포인트, ‘AV-컴패러티브스 EPR 테스트 2026’ 서 ‘인증 리더’ 획득",
+    "desc": "글로벌 네트워크 보안 융합 솔루션 리더 포티넷(CEO 켄 지)이 AV-컴패러티브스(AV-Comparatives)의 ‘2026 엔드포인트 방어 및 대응(EPR) 테스트’에서 ‘인증 리더’(Certified Leader)를 획득했다고 밝혔다.포티넷은 2025년 포티EDR(FortiEDR)로 AV-컴패러티브스 EPR 테스트 인증을 받은 데 이어, 2026년에는 포티엔드포인트 with EDR(FortiEndpoint with EDR)로 해당 테스트의 인증 리더 등급을 획득했다. 이번 테스트에서 포티엔드포인트 with EDR은 기업의 실제",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145978",
+    "date": "2026-09-21 16:45:23"
+  },
+  {
+    "source": "boannews",
+    "title": "[한국정보공학기술사 보안을 論하다–48] 왜 개인정보 유출사고는 반복되는가?",
+    "desc": "보안 기술은 매년 진화하고 있다. 인공지능 기반 탐지(SIEM, Security Information and Event Management), 확장형 탐지·대응(XDR, Extended Detection and Response), 보안 오케스트레이션·자동화 대응(SOAR, Security Orchestration, Automation, and Response), 클라우드 네이티브 애플리케이션 보호(CNAPP, Cloud-Native Application Protection Platform), 소프트웨어 구성명세관리(SCA, Soft",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145977",
+    "date": "2026-09-21 16:31:45"
+  },
+  {
+    "source": "boannews",
+    "title": "한국디지털포렌식학회, 한국형 e디스커버리 발전방안 제시",
+    "desc": "한국디지털포렌식학회(학회장 김기범)가 한국형 e디스커버리(eDiscovery) 제도의 발전 방안을 제시하는 자리를 가졌다.한국디지털포렌식학회는 국립군산대학교 법학연구소와 공동으로 18일 국립군산대학교에서 ‘AI·디지털포렌식을 활용한 e디스커버리(eDiscovery) 제도의 법적·기술적 쟁점’을 주제로 공동학술행사를 개최했다고 21일 밝혔다.최근 ‘대·중소기업 상생협력 촉진에 관한 법률’ 개정 법률이 올해 2월 19일 공포되면서 기술자료 침해 분쟁과 관련하여 지정전문가에 의한 사실조사, 자료보전명령, 비밀유지명령, 당사자신문 등 이른",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145976",
+    "date": "2026-09-21 15:47:22"
+  },
+  {
+    "source": "boannews",
+    "title": "[인사] 개인정보보호위원회",
+    "desc": "◇ 위촉△위원 권건보△위원 김광수△위원 윤영미",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145975",
+    "date": "2026-09-21 15:24:57"
+  },
+  {
+    "source": "boannews",
+    "title": "가짜 면접으로 암호화폐 지갑 노려... 북한 워터플럼, 100개국 기기 3만대 감염",
+    "desc": "북한 해킹 조직 ‘워터플럼’(WaterPlum)이 8개월 동안 100개국이 넘는 곳에서 구직자들의 기기를 감염시켜 암호화폐 지갑 7000개 이상을 털어 간 정황을 네 나라 수사당국이 공개했다.일본과 미국, 호주, 독일 수사당국은 함께 낸 권고문에서 워터플럼이 2025년 12월부터 2026년 7월 사이 기기를 최소 3만대 감염시켰다고 밝혔다. 이렇게 모은 암호화폐 17억엔(1071만달러)어치가 북한으로 넘어갔다.워터플럼은 일자리를 미끼로 썼다. 실재하는 AI와 암호화폐, 대체불가토큰(NFT) 회사를 사칭하거나 채용·프리랜스 플랫폼에서",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145974",
+    "date": "2026-09-21 14:45:36"
+  },
+  {
+    "source": "boannews",
+    "title": "배터리 산업 미래전략 한자리에… ‘BATTERY KOREA 2026’ 개최",
+    "desc": "글로벌 배터리산업의 경쟁축이 생산능력 확대를 넘어 차세대 기술과 안전, 공급망, 탄소관리, 자원순환으로 빠르게 넓어지는 가운데 국내 배터리산업의 미래 전략을 모색하는 자리가 마련됐다.국내외 이차전지 산업의 트렌드와 미래 전략을 공유하는 ‘배터리코리아(BATTERY KOREA) 2026 : 이차전지 소재·부품·장비·리사이클링 컨퍼런스’가 21일 서울 코엑스 그랜드볼룸에서 개최됐다.올해 BA는 소재와 셀 제조에서부터 차세대 기술개발, ESS, 안전·시험인증, 글로벌 밸류체인, 탄소발자국, 사용후 배터리 재사용·재활용까지 배터리 산업 전",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145973",
+    "date": "2026-09-21 14:28:21"
+  },
+  {
+    "source": "boannews",
+    "title": "조달품질원, 품질보증조달물품 심사 체크리스트 제작·배포",
+    "desc": "조달청은 품질보증조달물품 준비 과정에서의 기업 부담 경감을 위한 ‘품질보증조달물 심사 체크리스트’를 자체 개발해 조달청·조달품질원 누리집에 게재했다.품질보증조달물품은 중소기업의 품질관리 능력을 심사해 고품질 제품을 지정하는 제도이다. 지정된 제품에 대해서는 납품검사 면제와 우수조달물품 심사 가점 등 다양한 혜택을 제공한다.그동안 품질관리 역량 전반을 평가하는 심사 특성으로 인해 관련 자료 준비 등에 어려움이 있다는 조달 현장의 목소리가 있었다.이번 ‘품질보증조달물품 심사 체크리스트’는 63개 심사 항목별 준비 서류 예시를 제공하는",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145972",
+    "date": "2026-09-21 13:45:00"
+  },
+  {
+    "source": "boannews",
+    "title": "[배종찬의 보안 빅데이터] 미중 전쟁 직전까지 몰고 갔던 ‘AI 오판’",
+    "desc": "2026년 9월, 미국 CNN 방송이 국방부 내부 소식통을 인용해 보도한 한 건의 단독 기사는 전 세계 안보 전문가들에게 커다란 충격을 던져주었다. 올 봄 이란전의 여파로 긴장이 극에 달했던 중동 해역에서 미군이 인공지능(AI)의 잘못된 판단에 속아 중국 선박을 상대로 군사 작전을 감행하기 직전까지 갔다는 사실이 뒤늦게 밝혀진 것이다.썸트렌드(SomeTrend)의 빅데이터 연관어 분석 자료(9월 17~19일)에 따르면 중심에 위치한 ‘ai오판’을 축으로 ‘미군’, ‘국방부’, ‘미국’, ‘중국’, ‘cnn’, ‘소식통’, ‘선박’,",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145971",
+    "date": "2026-09-21 13:40:00"
+  },
+  {
+    "source": "boannews",
+    "title": "금융권 취약점 공동 대응체계, 단일 플랫폼에서 ‘발견-패치-조치’ 원샷",
+    "desc": "금융보안원은 금융사와 화이트해커, SW 개발사가 참여하는 ‘금융권 SW공급망보안 플랫폼’을 통해 SW 취약점 공동 대응체계를 본격적으로 가동한다고 21일 밝혔다.금융권 SW공급망보안 플랫폼은 지난 2월부터 화이트해커의 취약점 발굴과 금융보안원의 검증, 개발사의 패치 개발, 금융회사의 조치로 이어지는 전 과정을 하나로 연계했다. 현재 178개 금융사가 참여해 SW 공급망 보안 위협에 대한 체계적인 공동 대응을 진행해 1316건의 취약점 조치 요청을 발송했다.최근 AI 활용 확산으로 취약점 제보가 급증하면서 발견된 취약점을 체계적으로",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145970",
+    "date": "2026-09-21 09:30:00"
+  },
+  {
+    "source": "boannews",
+    "title": "지란지교시큐리티, ‘2026 인적자원개발 우수기관’ 인증… HR 역량 입증",
+    "desc": "지란지교시큐리티가 ‘2026년 인적자원개발 우수기관 인증’(Best HRD)을 획득했다고 21일 밝혔다.인적자원개발 우수기관 인증은 기업의 인적자원관리(HRM)와 인적자원개발(HRD) 체계를 종합적으로 심사하는 제도다. 고용노동부와 교육부, 산업통상자원부, 중소벤처기업부 등 4개 정부 부처가 공동으로 인증을 부여한다. 인증 자격은 3년간 유지되며 올해는 총 95개 기업이 선정됐다.지란지교시큐리티는 사업 전략과 인재육성 체계를 유기적으로 연계해 운영한 점을 높게 평가받았다. 이는 직무별 전문성 강화 교육과 리더십 역량 향상 과정 등",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145966",
+    "date": "2026-09-21 09:30:00"
+  },
+  {
     "source": "boannews",
     "title": "KT, UN 산하 ITU-T SG17 정보보호 연구반서  AI·신뢰 보안 국제표준화 주도",
     "desc": "KT(대표 박윤영)가 국제연합(UN) 산하 기구 국제전기통신연합(ITU) 주관 국제표준회의에서 차세대 정보보호 분야의 국제표준화 논의를 주도했다고 21일 밝혔다.KT는 지난 7일부터 11일까지 중국 충칭에서 개최된 ITU 전기통신표준화부문 (ITU-T), 정보보호 분야 국제표준 개발 연구반(SG17) 국제표준회의에 참석했다. 이는 전 세계 정부·기업·연구기관의 정보보호 전문가들이 사이버보안, 보안 아키텍처, 개인정보보호, AI 보안 등에 대한 국제표준을 개발하는 회의이다.KT 정보보안실 개인정보보호그룹장(CPO) 김창오 상무는 IT",
@@ -476,83 +581,6 @@
     "date": "2026-09-17 16:12:39"
   },
   {
-    "source": "boannews",
-    "title": "AI로 엘리베이터 안전 지킨다... LGU유플러스-현대엘리베이터, AI 기반 원격 관제 시스템 고도화",
-    "desc": "LG유플러스와 현대엘리베이터가 손잡고 AI 기반 승강기 원격관제 시스템을 고도화한다. 미래형 승강기 서비스 생태계 구축에도 나선다.두 회사는 서울 종로구 현대그룹빌딩에서 '스마트 원격관제 플랫폼을 위한 무선서비스 및 AI·보안 분야 협력'을 위한 업무협약을 체결했다고 17일 밝혔다. 현대엘리베이터의 스마트 원격관제 플랫폼 ‘미리’(MIRI)와 승강기 간 통신 구간에 LG유플러스의사물지능통신(M2M) 서비스를 적용해 원격관제의 안정성을 높인다.보다 안전한 승강기 이용을 위해 AI 음성인식 기술이 적용된 승강기 비상통화 서비스 모델 실",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145923",
-    "date": "2026-09-17 15:57:44"
-  },
-  {
-    "source": "boannews",
-    "title": "카카오게임즈, 140명 개인정보 유출... \"악용 위험 낮다\"",
-    "desc": "카카오게임즈에서 일부 이용자 개인정보가 유출되는 사고가 터졌다. 카카오게임즈는 “12일 22시 44분 파트너스, RINK 서비스에 대한 외부의 비정상적 접근을 확인했다”며 “이 서비스 고객 140명의 개인정보가 외부로 유출된 사실을 14일 0시 50분 확인했다”고 밝혔다.파트너스 서비스에선 외부 연동을 위한 타사 식별코드 또는 타사 아이디가 빠져나갔다. RINK 서비스에선 자사 식별코드와 국가코드 일부가 빠져나갔다. 파트너스는 게임 홍보 콘텐츠 제작 지원 서비스, RINK는 PC에서 실행 중인 게임을 스마트폰으로 원격 조작할 수 있",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145922",
-    "date": "2026-09-17 15:42:01"
-  },
-  {
-    "source": "boannews",
-    "title": "광고 차단기 수준 확장 프로그램 하나로 ‘AI 비서’ 조종했다",
-    "desc": "브라우저 확장 프로그램 하나만 깔려 있으면 브라우저에 붙어 있는 AI 비서를 공격자가 대신 부릴 수 있다는 연구 결과가 나왔다.보안기업 포에버시큐리티(Forever Security) 연구진은 AI 제품 다섯 개에서 이 공격이 통한다는 사실을 시연을 통해 공개했다. 다섯개의 AI는 △크롬 제미나이 라이브 △퍼플렉시티 코멧(Perplexity Comet) △마이크로소프트 엣지 △오페라 네온(Opera Neon) △크롬용 클로드 확장 프로그램이다.확장 프로그램이 요구하는 권한은 두 가지뿐이다. 웹페이지를 고쳐 쓰는 권한과 ‘declara",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145915",
-    "date": "2026-09-17 15:09:28"
-  },
-  {
-    "source": "boannews",
-    "title": "국회 ‘공공조달포럼’ 출범... 238조원 조달시장 전략적 정책수단으로",
-    "desc": "공공조달을 단순한 정부 구매행정을 넘어 국가경제와 산업 발전을 위한 전략적 정책수단으로 발전시키고, 조달 현장의 목소리를 정책과 입법에 반영하기 위한 ‘공공조달포럼’이 공식 출범했다.‘공공조달포럼’은 9월 15일 국회도서관 소강당에서 출범식과 기념세미나를 개최하고 공식 활동에 들어갔다. 이날 행사에는 공동 주관을 맡은 정진욱·구자근 국회의원을 비롯해 조승래 국회 재정경제기획위원장, 김성원 국회 산업통상자원중소벤처기업위원장 등 국회의원 13명과 정부·학계·산업계 관계자 등 100여명이 참석했다.이날 참석한 국회의원은 김성원·김영환·구",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145914",
-    "date": "2026-09-17 13:48:10"
-  },
-  {
-    "source": "boannews",
-    "title": "네이버클라우드 “보안특파모, 컨소 비포함 기업들과도 협력 논의 중”",
-    "desc": "“사이버보안 특화 AI 파운데이션 모델 개발 사업을 글로벌로 확장하고자 합니다. 하나의 나라가 스스로를 지키는 것을 넘어 여러 나라가 서로를 지켜주는 구도를 만드는게 우리가 생각하는 국경을 넘어선 연대입니다.”김유원 네이버클라우드 대표는 17일 국가정보원과 국가보안기술연구소가 주최한 ‘사이버 서밋 코리아 2026’(CSK 2026)에서 이같이 밝혔다.김 대표는 ‘소버린 AI, 사이버안보의 새로운 경계’를 주제의 기조연설로 CSK 2026의 문을 열었다. 민간 기업이 국정원 행사의 첫 기조연설을 맡았다는 점에서 눈길을 끌었다.김 대표",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145919",
-    "date": "2026-09-17 13:40:00"
-  },
-  {
-    "source": "boannews",
-    "title": "다온기술 “반복되는 보안 투자, 자산 가시성에서 실질적인 개선 찾아야”",
-    "desc": "보안제품을 도입하고 갱신하는 일은 해마다 반복되지만, 투자한 만큼 조직의 보안 상태가 개선됐는지 설명하기는 쉽지 않다. 다온기술은 이러한 간극을 줄이기 위한 출발점으로 ‘자산 가시성’을 제시한다. 무엇을 보호하고 있으며, 어떤 자산이 관리 범위에서 빠져 있는지 확인해야 반복되는 투자를 실질적인 보안 수준 향상으로 연결할 수 있다는 메시지다.기존 계약의 갱신과 익숙한 제품군의 도입을 중심으로 보안 계획을 세우다 보면, 실제 운영 환경에서 달라진 위험을 충분히 반영하지 못할 수 있다. 제품을 추가하거나 교체하더라도 보호 대상의 누락과",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145918",
-    "date": "2026-09-17 11:51:55"
-  },
-  {
-    "source": "boannews",
-    "title": "평창군, 쓰레기 무단 투기 취약지에 이동식 CCTV 20대 설치",
-    "desc": "강원 평창군(군수 심재국)은 생활쓰레기 무단투기를 예방하고 올바른 분리배출 문화를 정착시키기 위해 주요 불법투기 취약지와 쓰담쓰담 정거장 인근에 고화질 이동식 CCTV를 설치하고 본격적인 단속과 현장 관리에 나선다.군은 올해 총사업비 8000만원을 투입해 두 차례에 걸쳐 각 10대씩 총 20대의 이동식 CCTV를 차례대로 구매·설치하며 상습 투기 지역 및 쓰레기 배출 거점에 맞춤형 감시망을 촘촘히 구축했다. 이를 통해 24시간 상시 모니터링 체계를 확립해 도시 미관 저해 요소를 원천 차단할 계획이다.이번에 도입되는 CCTV는 야간",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145913",
-    "date": "2026-09-17 10:45:11"
-  },
-  {
-    "source": "boannews",
-    "title": "美 해안경비대·FBI, 사이버공격 받은 유조선 승선 조사 “선박 OT·IT 침해 정황”",
-    "desc": "미국 해안경비대가 8월 멕시코만을 지나던 유조선에 직접 승선해 사이버공격 정황을 조사한 사실을 확인했다. 선박 네트워크가 외국 사이버 행위자에 의해 침해됐다는 정황이 포착돼 운영기술(OT)과 정보기술(IT) 시스템의 무결성을 확인하기 위해 승선했다고 해안경비대는 밝혔다.8월 21일 배에 오른 인력은 해안경비대 법집행 요원과 사이버보호팀, 선박 검사관, FBI 사이버대응팀이다. 앞서 월스트리트저널은 미국으로 향하던 유조선 최소 두 척이 사이버공격을 받았으며, 다른 한 척도 8월 24일 승선 조사를 받았다고 보도했다. 블룸버그는 그중",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145908",
-    "date": "2026-09-17 10:43:22"
-  },
-  {
-    "source": "boannews",
-    "title": "[AI 시대, 다시 책을 펴다] ‘인공지능 보안_인간의 영역을 넘어서’",
-    "desc": "그리스로마 신화에 등장하는 대장장이의 신 헤파이토스는 신기하고 유용한 것들을 뚝딱 만들어내는 재주가 있었다. 그의 창조물 중엔 해안을 순찰하는 청동 거인 ‘탈로스’와 진흙으로 정교하게 빚은 최초의 여성 ‘판도라’가 있다. 탈로스는 크레타섬 해안을 순찰하며 침입자를 감시하고 때론 공격하는 역할을 했다. 판도라는 ‘판도라의 상자’를 연 그녀다. 올림푸스의 모든 신들에게 온갖 선물을 받았지만, 호기심을 이기지 못해 제우스에게 선물받은 상자를 열었다 세상에 온갖 불행을 풀어놓고 만다. 사실 판도라는 불을 훔친 인간을 괘씸히 여겨 벌을 내리",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145904",
-    "date": "2026-09-17 10:41:43"
-  },
-  {
-    "source": "boannews",
-    "title": "인천 서해구, CCTV·비상벨 정비해 생활안전 강화",
-    "desc": "인천 서해구(구청장 구재용)가 민선 9기 출범과 함께 방범시설 정비와 교통약자 보호, 재난 취약지역 점검 등 주민 생활과 밀접한 안전관리 사업을 본격 추진한다.16일 서해구에 따르면 구는 방범용 CCTV 4개소를 신규 설치하고, 기존 카메라와 함체 40개소, 비상벨 100개소를 교체할 계획이다.민원이 잦은 지역과 범죄 예방이 필요한 지역을 중심으로 사업 대상지를 선정하고, 성능이 저하됐거나 사후관리가 어려운 장비를 정비한다. 신규 CCTV는 200만 화소 이상으로 설치하며 현장 실사 등을 거쳐 대상지를 최종 확정할 예정이다.어린이와",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145912",
-    "date": "2026-09-17 10:41:14"
-  },
-  {
-    "source": "boannews",
-    "title": "서울시, 재난 현장 지휘체계 강화 위해 ‘첨단장비대응팀’ 신설",
-    "desc": "서울시(시장 오세훈)가 대형 재난 현장의 지휘체계를 강화하고 로봇개 등 첨단 재난 대응 장비 활용을 확대하기 위한 전담 조직을 신설한다.서울시는 민선 9기 시정 비전인 ‘글로벌 TOP, 삶의 질 특별시 서울’을 뒷받침하기 위한 조직개편안을 17일 발표했다. 이번 조직개편은 재난 대응을 비롯해 건강·안전 분야의 조직과 인력을 보강하고 변화하는 행정 수요에 맞춰 조직 체계를 재설계하는 데 초점을 맞췄다.안전·재난 분야에서는 대형 재난 발생 시 서울시 소방재난본부가 현장 컨트롤타워 역할을 수행할 수 있도록 현장 지휘체계를 강화한다. 이를",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145909",
-    "date": "2026-09-17 10:39:48"
-  },
-  {
     "source": "thn",
     "title": "Attackers Exploit Issabel Framework Flaw Enabling Unauthenticated OS Command Execution",
     "desc": "A critical security flaw in Issabel Framework, a web-based framework for the open-source unified communications PBX software, has come under active exploitation.\n\nThe vulnerability in question is CVE-2026-89026 (CVSS v3.1 score: 9.8/CVSS v4.0 score: 9.3), which can allow an unauthenticated remote at",
@@ -670,33 +698,5 @@
     "desc": "Cybersecurity researchers have disclosed details of a mass-scanning campaign that has targeted Vite deployments siphon sensitive data.\n\nThe first is an automated effort aimed at internet-exposed Vite development servers that's designed to steal cloud credentials, configurations from Amazon Web Servi",
     "url": "https://thehackernews.com/2026/09/mass-scanning-campaign-exploits-vite.html",
     "date": "2026-09-15T16:42:32"
-  },
-  {
-    "source": "thn",
-    "title": "LiteSpeed Enterprise Flaw Could Let One Hosting Account Gain Root Access on a Shared Server",
-    "desc": "A critical vulnerability in LiteSpeed Web Server Enterprise could let a low-privilege website user gain root access on a shared-hosting server, cPanel warned in an&nbsp;advisory published on September 14.\n\nOn such servers, many customers' sites run on a single machine, and an attacker with one of th",
-    "url": "https://thehackernews.com/2026/09/litespeed-enterprise-flaw-could-let-one.html",
-    "date": "2026-09-15T12:22:16"
-  },
-  {
-    "source": "thn",
-    "title": "Cisco Secure Email Gateway Flaw Exploited in the Wild, Enables Root Command Execution",
-    "desc": "Cisco has warned that a new critical vulnerability impacting AsyncOS Software for Cisco Secure Email Gateway has come under active exploitation in the wild.\n\nThe vulnerability, tracked as CVE-2026-76461, carries a CVSS score of 9.8 out of a maximum of 10.0. It has been described as a case of insuffi",
-    "url": "https://thehackernews.com/2026/09/cisco-secure-email-gateway-flaw.html",
-    "date": "2026-09-15T11:41:11"
-  },
-  {
-    "source": "thn",
-    "title": "China-Linked Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy GRIMWEDGE",
-    "desc": "A Chinese threat actor has been attributed to a spear-phishing campaign that exploits recently patched security flaws in Google Chrome and Microsoft Windows to deliver a malicious JavaScript backdoor called GRIMWEDGE.\n\nVolexity, which is tracking the threat cluster under the moniker UTA0560, said th",
-    "url": "https://thehackernews.com/2026/09/china-linked-hackers-exploit-chrome.html",
-    "date": "2026-09-15T11:01:05"
-  },
-  {
-    "source": "thn",
-    "title": "New DDRop Attack Breaks Intel TDX and AMD SEV-SNP Confidential Computing",
-    "desc": "Researchers have disclosed a new hardware attack, called DDRop, that breaks the memory protection in Intel and AMD confidential computing by silently dropping writes to a server's memory, so the processor keeps reading old encrypted data as if it were current.\n\nThe attack requires an attacker who al",
-    "url": "https://thehackernews.com/2026/09/new-ddrop-attack-breaks-intel-tdx-and.html",
-    "date": "2026-09-14T23:32:13"
   }
 ]
