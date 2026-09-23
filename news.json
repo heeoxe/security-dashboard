@@ -1,5 +1,54 @@
 [
   {
+    "source": "boannews",
+    "title": "[Global Security TOP 100] 조영철 파이오링크 대표 “사이버 회복력 기업 도약 본격화... 일본 매출 51% 증가”",
+    "desc": "네트워크·보안 사업을 안정적으로 이어온 파이오링크는 올해가 ‘사이버 회복력’ 기업으로 본격 도약한 해다. 회복력 구현을 위해 보안 산업과의 협업과 AI 기반 통합 보안에 나서며 성과를 구체화하고 있다. 20년 공들인 일본 사업도 상반기 매출이 51% 증가하는 등 글로벌 도약도 눈에 띈다.Q. 귀사 및 주요 사업에 대한 소개 부탁드립니다.파이오링크는 네트워크·보안·인프라 기술과 보안서비스를 기반으로 장애와 사이버 공격에도 비즈니스가 안정적으로 지속될 수 있도록 지원하는 사이버 회복력(Cyber Resilience) 기술 기업입니다.",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146010",
+    "date": "2026-09-23 10:02:43"
+  },
+  {
+    "source": "thn",
+    "title": "Check Point Warns of Management Server Zero-Day Exploited in Targeted Attacks",
+    "desc": "Attackers exploited a previously unknown flaw in Check Point's Security Management Server in a handful of targeted attacks on July 23,&nbsp;the company said.\n\nThe flaw, CVE-2026-93616, allows an attacker who can access the server's web service to run scripts on it without logging in. Check Point rel",
+    "url": "https://thehackernews.com/2026/09/check-point-warns-of-management-server.html",
+    "date": "2026-09-22T23:59:39"
+  },
+  {
+    "source": "thn",
+    "title": "WordPress Issues Patch for Critical Flaw That Can Enable Code Execution on Some Servers",
+    "desc": "WordPress has fixed a critical flaw in its core software that lets an attacker with no account make a site load a PHP file from outside its theme folders.\n\nOn some servers, that can go further, allowing the attacker to run their own code. The fix shipped on September 22 in WordPress 7.1.2, with fixe",
+    "url": "https://thehackernews.com/2026/09/wordpress-issues-patch-for-critical.html",
+    "date": "2026-09-22T23:33:10"
+  },
+  {
+    "source": "thn",
+    "title": "Malicious npm Package Poses as Twilio Bug-Bounty Probe, Can Exfiltrate Credentials",
+    "desc": "Cybersecurity researchers have disclosed details of a malicious npm package named \"tw-pkgprobe-7731\" that masquerades as a security tool targeting developers integrating Twilio into their applications, while stealthily attempting to harvest sensitive data.\n\nThe package, named \"tw-pkgprobe-7731,\" was",
+    "url": "https://thehackernews.com/2026/09/malicious-npm-package-poses-as-twilio.html",
+    "date": "2026-09-22T23:28:15"
+  },
+  {
+    "source": "thn",
+    "title": "Microsoft Takes Down EvilTokens Device-Code Phishing Service Tied to 12,000 Inbox Compromises",
+    "desc": "Microsoft on Tuesday announced the takedown of the EvilTokens device code phishing service that it said used artificial intelligence (AI) \"at every step of the attack chain.\"\n\nThe action, carried out with authorization from the U.S. District Court for the Eastern District of Virginia, involved the e",
+    "url": "https://thehackernews.com/2026/09/microsoft-takes-down-eviltokens-device.html",
+    "date": "2026-09-22T22:33:31"
+  },
+  {
+    "source": "thn",
+    "title": "Critical Bifrost AI Gateway Flaw Lets Attackers Run Commands Without Credentials",
+    "desc": "A critical vulnerability in&nbsp;Bifrost, an open-source AI gateway that routes requests to more than 20 LLM providers, allows an unauthenticated attacker to run arbitrary commands on the gateway server with a single HTTP request.\n\nThe flaw, tracked as&nbsp;CVE-2026-90898&nbsp;(CVSS score: 9.8), aff",
+    "url": "https://thehackernews.com/2026/09/critical-bifrost-ai-gateway-flaw-lets.html",
+    "date": "2026-09-22T22:11:12"
+  },
+  {
+    "source": "thn",
+    "title": "Researcher Drops BigDiskBuster Zero-Day PoC That Blocks Microsoft Defender Updates",
+    "desc": "A zero-day proof-of-concept tool that stops Microsoft Defender from installing platform and signature updates by filling all available disk space was&nbsp;published on GitHub&nbsp;on September 19.\n\nThe tool, called BigDiskBuster, has no patch, no CVE, and no Microsoft advisory. Its author, Abdelhami",
+    "url": "https://thehackernews.com/2026/09/researcher-drops-bigdiskbuster-zero-day.html",
+    "date": "2026-09-22T21:44:04"
+  },
+  {
     "source": "thn",
     "title": "AI Agents Are Rewriting the Rules of Lateral Movement",
     "desc": "Security teams have spent decades asking whether an identity has too much access. AI agents raise a harder question: how can we determine which paths an autonomous system can discover, given the access it already has?\n\nA person may try several ways to complete a task. A deterministic application fol",
@@ -581,13 +630,6 @@
     "date": "2026-09-18T11:47:25"
   },
   {
-    "source": "boannews",
-    "title": "팔로알토 “미토스 써보니 공포마케팅 아냐... 韓 지체할 시간없어”",
-    "desc": "“미토스로 취약점 스캐닝을 해봤는데, 공포 마케팅이 아닙니다. 엔지니어 수천명이 1년간 찾은 취약점과 동일한 결과가 몇시간만에 나왔습니다. 국내에서 얼마나 많은 취약점이 나올지 아찔합니다. 지체할 시간이 없습니다.”박상규 팔로알토 네트웍스 코리아 대표는 국가정보원과 국가보안기술연구소 주최로 17일부터 이틀간 서울 삼성동 코엑스에서 열린 ‘사이버 서밋 2026’(CSK 2026)에서 이같이 말했다.박 대표는 ‘AX 시대, 필요한 국가 AI보안 전략’ 세션에 패널로 참석, 글로벌 보안 기업의 관점에서 보는 AI 사이버 위협에 대한 견해",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145953",
-    "date": "2026-09-18 16:58:50"
-  },
-  {
     "source": "thn",
     "title": "Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root",
     "desc": "A critical vulnerability in Check Point's Security Management and Log Servers could allow an attacker without login credentials to run code as root on those servers over the network.\n\nThe Security Management Server is the system that controls firewall policy and administrator access. Check Point has",
@@ -656,47 +698,5 @@
     "desc": "A security breach at Gyazo, Helpfeel's image-sharing service, exposed about 23.62 million user records, including email addresses and password hashes, the Kyoto-based company said in a&nbsp;notice&nbsp;published Wednesday.\n\nIt also exposed about 490 million image metadata records, mostly for images ",
     "url": "https://thehackernews.com/2026/09/gyazo-breach-exposes-2362-million-user.html",
     "date": "2026-09-17T13:00:01"
-  },
-  {
-    "source": "thn",
-    "title": "Cisco Warns of New Zero-Day ISE Auth Bypass (CVSS 10.0) Exploited in Active Attacks",
-    "desc": "Cisco has warned of a fresh maximum-severity security flaw impacting Identity Services Engine (ISE) that has come under active exploitation.\n\nThe vulnerability, tracked as CVE-2026-76460 (CVSS score: 10.0), could allow an unauthenticated, remote attacker to bypass authentication.\n\n\"This vulnerabilit",
-    "url": "https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html",
-    "date": "2026-09-17T12:09:40"
-  },
-  {
-    "source": "thn",
-    "title": "U.S. Seizes NightmareStresser Domains Linked to Hundreds of Thousands of DDoS Attacks",
-    "desc": "The U.S. Department of Justice (DoJ) on Tuesday announced the court-authorized seizure of internet domains associated with a distributed denial-of-service (DDoS)-for-hire service known as NightmareStresser.\n\nThe domains in question are: nightmare-stresser[.]com and nightmarestresser[.]org. Visitors ",
-    "url": "https://thehackernews.com/2026/09/us-seizes-nightmarestresser-domains.html",
-    "date": "2026-09-17T10:43:46"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Exploit Issabel Framework Flaw Enabling Unauthenticated OS Command Execution",
-    "desc": "A critical security flaw in Issabel Framework, a web-based framework for the open-source unified communications PBX software, has come under active exploitation.\n\nThe vulnerability in question is CVE-2026-89026 (CVSS v3.1 score: 9.8/CVSS v4.0 score: 9.3), which can allow an unauthenticated remote at",
-    "url": "https://thehackernews.com/2026/09/attackers-exploit-issabel-framework.html",
-    "date": "2026-09-16T21:20:59"
-  },
-  {
-    "source": "thn",
-    "title": "Three Threat Groups Target Russian Enterprises With Backdoors, Ransomware, and Wipers",
-    "desc": "Enterprises in Russia have emerged as the target of three threat activity clusters tracked as NightEagle, Hacking Cat, and Toy Ghouls, according to multiple reports from Kaspersky.\n\nThe cybersecurity vendor said it has identified attacks mounted by NightEagle (aka APT-Q-95), a threat actor known to ",
-    "url": "https://thehackernews.com/2026/09/three-threat-groups-target-russian.html",
-    "date": "2026-09-16T20:57:49"
-  },
-  {
-    "source": "thn",
-    "title": "One Extension Could Hijack AI Assistants Across Chrome, Comet, Edge, Opera Neon and Claude",
-    "desc": "Security researchers at&nbsp;Forever Security&nbsp;have shown that one ordinary browser extension could take control of the AI assistants built into five Chromium-based products: Gemini Live in Chrome, Perplexity Comet, Microsoft Edge, Opera Neon and the Claude in Chrome extension.\n\nOnce the extensi",
-    "url": "https://thehackernews.com/2026/09/one-extension-could-hijack-ai.html",
-    "date": "2026-09-16T20:06:44"
-  },
-  {
-    "source": "thn",
-    "title": "Attacker Hijacks AI Coding Assistant Session, Spreads Shai-Hulud Across About 100 Repositories",
-    "desc": "Mandiant says an attacker hijacked an active AI coding-assistant session at an unnamed software-as-a-service provider and later spread&nbsp;Shai-Hulud&nbsp;across about 100 internal code repositories.\n\nBefore the repository spread, the assistant recommended software that the attacker had poisoned, a",
-    "url": "https://thehackernews.com/2026/09/attacker-hijacks-ai-coding-assistant.html",
-    "date": "2026-09-16T19:07:07"
   }
 ]
