@@ -1,5 +1,131 @@
 [
   {
+    "source": "thn",
+    "title": "This Windows Malware is Built to Let Up to Four AI Models Vote on Its Next Move",
+    "desc": "A Windows malware called CLOSEDQUORUM is built to take orders from a vote of up to four AI models instead of an attacker's server,&nbsp;Cisco Talos said&nbsp;on September 22.\n\nThe models can choose to steal Windows credentials, saved browser passwords, and crypto wallet data. Talos has not seen this",
+    "url": "https://thehackernews.com/2026/09/windows-malware-is-built-to-let-up-to.html",
+    "date": "2026-09-23T19:47:58"
+  },
+  {
+    "source": "thn",
+    "title": "Compromised MemTensor Packages Deliver sckit Credential Stealer via npm and PyPI",
+    "desc": "Unknown threat actors have managed to compromise two legitimate MemTensor packages across the npm and Python Package Index (PyPI) repositories to push a platform-specific Go-based implant dubbed sckit designed for Windows, Linux, and macOS.\n\nAccording to reports from Aikido, SafeDep, Socket, and Ste",
+    "url": "https://thehackernews.com/2026/09/compromised-memtensor-packages-deliver.html",
+    "date": "2026-09-23T19:22:46"
+  },
+  {
+    "source": "thn",
+    "title": "New cPanel Flaw Lets a Hosting Account Run Code as Root, Take Full Server Control",
+    "desc": "A flaw in cPanel's&nbsp;CalDAV and CardDAV service&nbsp;lets anyone with a cPanel hosting account run code as root and take \"full control of the server,\" the company said on September 22.\n\nA&nbsp;second bug in the WP Toolkit plugin, used to install and manage WordPress sites, allows an account holde",
+    "url": "https://thehackernews.com/2026/09/new-cpanel-flaw-lets-hosting-account_0272795595.html",
+    "date": "2026-09-23T17:46:00"
+  },
+  {
+    "source": "thn",
+    "title": "545 Hackers Tested It First. Now XRanges for AI Scores Your Security Agent",
+    "desc": "Autonomous security agents are getting good at finding bugs. Nobody has a good way to measure how good. Point one at a realistic target and what comes back is a report the agent wrote about itself: confident prose, a list of findings, and no way to tell which of them happened. Someone with a securit",
+    "url": "https://thehackernews.com/2026/09/545-hackers-tested-it-first-now-xranges.html",
+    "date": "2026-09-23T17:17:19"
+  },
+  {
+    "source": "thn",
+    "title": "Anthropic and OpenAI Models Still Attempt Restricted Actions in Safety Tests",
+    "desc": "Anthropic and OpenAI on Tuesday announced new models, with both artificial intelligence (AI) companies noting that they are continuing to invest in improving alignment to combat risky behavior.\n\nOpus 5.5, per Anthropic, is a \"major step up from Opus 5,\" and \"achieves the best scores of any model to ",
+    "url": "https://thehackernews.com/2026/09/anthropic-and-openai-models-still.html",
+    "date": "2026-09-23T17:17:13"
+  },
+  {
+    "source": "thn",
+    "title": "Exploit Released for Unpatched Ubuntu Linux Flaw Enabling Host-Root Container Escape",
+    "desc": "A use-after-free in the Linux kernel's AF_UNIX socket subsystem can be used to escape a container and gain root on the host, security firm DepthFirst&nbsp;said in research published September 22.\n\nThe flaw, tracked as&nbsp;CVE-2026-80521&nbsp;(CVSS score: 7.8), was fixed upstream on August 6, but Ub",
+    "url": "https://thehackernews.com/2026/09/exploit-released-for-unpatched-ubuntu.html",
+    "date": "2026-09-23T16:42:18"
+  },
+  {
+    "source": "thn",
+    "title": "F5 Patches Critical BIG-IP APM Zero-Day Exploited for Unauthenticated RCE on OAuth Servers",
+    "desc": "Attackers are exploiting a critical flaw in F5 BIG-IP Access Policy Manager (APM) that lets them run code on a BIG-IP system without logging in, F5 says.\n\nThe flaw,&nbsp;CVE-2026-94127, affects only systems in which APM serves as an OAuth authorization server, issuing access tokens to applications. ",
+    "url": "https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html",
+    "date": "2026-09-23T13:59:48"
+  },
+  {
+    "source": "thn",
+    "title": "Chinese Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy CLEANGULP Malware",
+    "desc": "A Chinese threat actor codenamed UTA0565 has been observed exploiting the recently disclosed Google Chrome-Microsoft Windows exploit chain as zero-days through fake websites.\n\nThe attacks, detected on September 3 and 4, 2026, involved the chaining of two vulnerabilities in Chrome (CVE-2026-85046, CV",
+    "url": "https://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html",
+    "date": "2026-09-23T13:59:24"
+  },
+  {
+    "source": "thn",
+    "title": "Critical Next.js ImageResponse Flaw Can Lead to Server Code Execution via Crafted SVG Input",
+    "desc": "A new security vulnerability in Next.js could allow attackers to run code on a server via&nbsp;ImageResponse, the feature that generates Open Graph and other social preview images, Vercel said.\n\nThe risk applies when an app puts values an attacker controls, such as text read from the request URL, in",
+    "url": "https://thehackernews.com/2026/09/critical-nextjs-imageresponse-flaw-can.html",
+    "date": "2026-09-23T12:34:40"
+  },
+  {
+    "source": "thn",
+    "title": "ShinyHunters Claims FBI Breach, Says It Stole Data on Agents and Job Applicants",
+    "desc": "The cyber extortion group known as ShinyHunters on Tuesday claimed it had breached the U.S. Federal Bureau of Investigation and stolen data belonging to current and former employees at the agency.\n\n\"We have compromised the FBI. We hold very sensitive data on almost ALL FBI Agents and individuals who",
+    "url": "https://thehackernews.com/2026/09/shinyhunters-claims-fbi-breach-says-it.html",
+    "date": "2026-09-23T11:00:09"
+  },
+  {
+    "source": "boannews",
+    "title": "이노뎁 AI 스마트관제 적용한 창녕군, 관제 효율 10배 높여 ‘대한민국 지식대상’ 우수상",
+    "desc": "AI 영상관제 플랫폼 전문기업 이노뎁(대표이사 이성진)의 AI 스마트관제 기술을 적용한 창녕군은 행정안전부 주관 ‘제15회 대한민국 지식대상’에서 우수상(행정안전부 장관상)을 수상하는 쾌거를 달성했다. 특히 경남도 내 유일이자 창녕군 최초 수상으로, 이노뎁의 AI 스마트관제 기술을 통한 업무 혁신의 우수성을 입증했다.창녕군이 제시한 ‘AI 기반 지능형 CCTV 스마트관제 고도화를 통한 군민 안전 사각지대 해소’ 사례는 기존 육안 중심의 순차 관제에서 AI 기반 지능형 CCTV 스마트관제 자동 화면 표출 방식으로 업무체계를 전환한 것",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146022",
+    "date": "2026-09-23 15:25:00"
+  },
+  {
+    "source": "boannews",
+    "title": "[2026 네트워크·보안 스위치 제품&솔루션 리포트] “포장 안 된 땅 위에 건물만 올릴 것인가?” 산업용 네트워크·보안 스위치의 경고",
+    "desc": "산업 현장의 데이터 트래픽이 폭발적으로 늘면서 인프라의 ‘혈관’ 역할을 하는 산업용 네트워크·보안 스위치의 중요성이 그 어느 때보다 강조되고 있다. 하지만 현장의 현실은 다르다. 실제 발주 단계에서 스위치는 카메라나 NVR 등 주연급 장비에 밀려 매번 후순위 예산으로 취급되기 일쑤다. 문제는 항상 장애가 터진 후에 드러난다. 스위치 한 대의 셧다운은 곧 현장 전체 단말의 마비로 직결되며, 그로 인한 서비스 중단과 과도한 현장 출동 비용은 고스란히 운용자의 몫으로 남는다.최근에는 새로운 위협까지 얹혔다. AI를 활용해 누구나 단시간에",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145980",
+    "date": "2026-09-23 13:40:00"
+  },
+  {
+    "source": "boannews",
+    "title": "명절 노리는 AI 해킹... 금보원, 연휴 사이버 위협 비상대응 체계 가동",
+    "desc": "금융보안원이 추석 연휴 기간 AI를 악용한 사이버 위협에 대비해 통합보안관제를 강화하고 비상대응 체계를 가동한다고 23일 밝혔다.최근 AI를 악용한 사이버 공격이 정교해지고 외부에 노출된 정보를 활용한 보안 취약점 공격이 늘어남에 따라 침해사고 예방과 신속한 조치를 취하기 위한 선제적 조치다. 연휴 동안 사이버 위기경보는 ‘관심’ 단계가 유지되지만 금융보안원은 이를 ‘주의’ 단계에 준하는 수준으로 상향해 대응 태세를 유지할 방침이다.연휴 기간 금융보안원은 금융보안관제센터장 중심의 비상근무 체계를 운영하며 비상 상황 발생할 때 즉각적",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146032",
+    "date": "2026-09-23 13:21:40"
+  },
+  {
+    "source": "boannews",
+    "title": "[카드뉴스] \"전통시장 QR 찍었더니 해커 통장으로?\"… 명절 대목 노린 '물리적 큐싱' 주의보",
+    "desc": "전통시장 및 로컬 매장의 비대면 간편결제(QR 결제)가 보편화됨에 따라, 물리적 표면에 악성 코드를 덧붙여 결제 대금을 편취하는 '물리적 큐싱(Physical Qshing)' 범죄가 확산되고 있다. 공격자들은 매장의 혼잡한 틈을 타 아크릴 결제 안내판 상단에 정교하게 제작된 사기 계좌 연동 QR 스티커를 부착하는 수법을 사용한다.소비자가 이를 촬영할 경우 육안 검증 없이 피싱 결제 웹페이지로 리디렉션되거나 악성 앱 다운로드가 유도되어, 결제 대금이 상인이 아닌 범죄 조직의 대포통장으로 직결된다. 디지털 시스템 자체를 해킹하지 않고",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146029",
+    "date": "2026-09-23 11:17:49"
+  },
+  {
+    "source": "boannews",
+    "title": "“AI 시대 데이터 보안 강화”... 이테크시스템-엑사그리드 총판 계약 체결",
+    "desc": "이테크시스템이 엑사그리드와 국내 총판 계약을 체결했다고 23일 밝혔다. 양사는 이번 협약을 통해 국내 데이터 보호 및 백업 스토리지 시장 공략을 강화할 방침이다.최근 산업계 전반에 걸쳐 AI 전환이 가속화되며 데이터의 중요성이 한층 더 커졌다. 이를 노리는 랜섬웨어 공격은 단순 운영 시스템 마비를 넘어 백업 데이터를 노려 데이터 복구 체계 구축이 필수적이다. 또, 보호해야 할 데이터가 증가함에 따라 스토리지 비용 부담과 백업 운영 효율성 저하에 대한 고민도 깊어졌다.이러한 시장 흐름에 맞춰 이테크시스템과 엑사그리드는 ‘티어드 백업",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146023",
+    "date": "2026-09-23 11:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "ZKTeco, 정밀한 금속 탐지 및 스마트 관리 기능 갖춘 ‘ZK-D4330’ 출시",
+    "desc": "글로벌 보안 솔루션 전문기업 ZKTeco가 보안검색 환경의 효율성과 편의성을 높인 스마트 문형 금속 탐지기 ‘ZK-D4330’을 선보였다. ZK-D4330은 출입자가 게이트를 통과하는 과정에서 금속성 물체를 탐지해 보안검색을 지원하는 문형 금속 탐지기로, 공공시설과 관공서, 교육시설, 기업, 산업시설, 행사장 등 보안검색이 필요한 다양한 현장에 적용할 수 있는 제품이다.ZK-D4330은 최대 33개의 감지 영역을 지원하며, 현장의 보안 요구 수준에 따라 다양한 감지 영역과 감도를 조정할 수 있어 보다 정밀한 금속 탐지 환경을 구축할",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146025",
+    "date": "2026-09-23 10:59:30"
+  },
+  {
+    "source": "boannews",
+    "title": "[단독] 포스코, 삼성, 현대 연구원 개인정보 유출 정황... “한국재료부식학회 침해” 주장",
+    "desc": "포스코, 삼성, 현대 등 주요 기업들과 한국원자력연구원 등 주요 연구기관에 소속된 개인들의 정보를 판매한다고 주장하는 글이 다크포럼스에 게시됐다. 샘플 데이터에는 해당 기관 소속자들 실명이 노출돼 있다. 23일 현재 다크웹에는 한국재료부식학회로부터 탈취한 데이터라고 주장하는 게시물이 공개돼 있다. 18일에 업로드된 이 글에는 국내 주요 기업, 대학, 연구기관의 이름들이 나열돼 있다. 하지만 유출된 데이터 세트는 해당 조직들로부터 직접 탈취한게 아니라 한국재료부식학회 공격을 통해 탈취한 것으로 보인다. 게시물에는 한국재료부식학회의 홈",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146014",
+    "date": "2026-09-23 10:50:00"
+  },
+  {
+    "source": "boannews",
+    "title": "충청 지역 사이버 보안 전문가 한자리에... 2026 충청 사이버보안 콘퍼런스",
+    "desc": "충청 지역 사이버 보안 전문가 500여명이 한데 모여 AI와 사이버보안을 둘러싼 정책과 기술, 현장 문제 등을 폭넓게 논의했다. 한국과학기술정보연구원(KISTI, 원장 이식)은 22일 ‘2026 충청 사이버보안 콘퍼런스’를 대전컨벤션센터(DCC)에서 개최했다고 밝혔다. AI 발전과 안전, 최신 사이버 및 AI 보안정책을 소개하고, 기관 보안 우수 사례와 정보보호 분야 학술 성과도 공개됐다. 윤국진 KAIST AI대학 학장이 'AI 대전환 시대의 국가 AI 발전 전략'을, 김명주 ETRI 인공지능안전연구소 소장이 '지속가능한 AI 안",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146024",
+    "date": "2026-09-23 10:48:42"
+  },
+  {
     "source": "boannews",
     "title": "[Global Security TOP 100] 조영철 파이오링크 대표 “사이버 회복력 기업 도약 본격화... 일본 매출 51% 증가”",
     "desc": "네트워크·보안 사업을 안정적으로 이어온 파이오링크는 올해가 ‘사이버 회복력’ 기업으로 본격 도약한 해다. 회복력 구현을 위해 보안 산업과의 협업과 AI 기반 통합 보안에 나서며 성과를 구체화하고 있다. 20년 공들인 일본 사업도 상반기 매출이 51% 증가하는 등 글로벌 도약도 눈에 띈다.Q. 귀사 및 주요 사업에 대한 소개 부탁드립니다.파이오링크는 네트워크·보안·인프라 기술과 보안서비스를 기반으로 장애와 사이버 공격에도 비즈니스가 안정적으로 지속될 수 있도록 지원하는 사이버 회복력(Cyber Resilience) 기술 기업입니다.",
@@ -462,20 +588,6 @@
     "date": "2026-09-20 14:50:45"
   },
   {
-    "source": "boannews",
-    "title": "“로그 들여다보는 시대는 갔다”... 국제 사이버 훈련에서 맹활약한 자율형 AI",
-    "desc": "“사이버 공격은 날로 지능화되는데, 사람이 일일이 로그를 들여다보며 대응하는 기존 방식은 이미 한계에 이르렀습니다. 이제 방어의 유일한 해법은 인공지능(AI)을 통한 전 과정의 완전 자동화뿐입니다.”서울 코엑스에서 개최된 글로벌 사이버 안보 행사 CSK 2026의 부대행사로 열린 국제 사이버 훈련 ‘APEX(Allied Power Exercise) 2026’은 세계 보안 전문가들에게 큰 충격을 안겼다. 특히 이번 훈련에서 세계 최초로 실전 검증한 자율형 AI 방어팀 ‘프로젝트 팔랑크스’(Project Phalanx)가 주목받았다.다",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145960",
-    "date": "2026-09-20 12:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "“국가 R&D 과제에 AI 쓰려면 투명하고 안전하게”... 정부, 국가연구개발 AI 연구윤리 가이드",
-    "desc": "국가 연구개발에 참여한 연구자는 AI를 연구에 활용할 때 AI 생성물의 오류나 출처 진위 등을 검증해야 한다. 활용한 AI의 모델과 버전 등을 투명하게 공개하고, AI 도구는 허가한 보안 환경 안에서만 써야 한다. 과학기술정보통신부는 국가과학기술자문회의 운영위원회 심의·의결을 거쳐 이같은 내용의 ‘국가연구개발 AI 연구윤리 가이드’를 확정했다고 20일 밝혔다. 부정확한 정보 생성, 기존 자료의 편향 답습, 보안·개인정보 유출, 출처 미상 자료의 부적절한 인용 등 AI로 인한 새로운 유형의 연구윤리 위험에 대응하기 위한 국가 차원의",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145950",
-    "date": "2026-09-20 12:00:00"
-  },
-  {
     "source": "thn",
     "title": "Can You Prove a New CVE Is Exploitable Before Attackers Do? Learn How in This Webinar",
     "desc": "A new CVE drops. Your scanner finds it. The severity score looks ugly.\n\nBut that still does not answer the question that matters: Can it actually be exploited in your environment?\n\nMythos-class AI is compressing the time between disclosure and working exploitation, while many security programs still",
@@ -523,48 +635,6 @@
     "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added three security flaws impacting the Linux kernel to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2025-39682 (CVSS score: 9.8) ",
     "url": "https://thehackernews.com/2026/09/cisa-flags-three-linux-kernel.html",
     "date": "2026-09-19T11:54:10"
-  },
-  {
-    "source": "boannews",
-    "title": "성현시스템 ‘AF2100’, SBS ‘재벌X형사2’서 지문·BLE 출입통제 기술 선봬",
-    "desc": "SBS 드라마 ‘재벌X형사2’의 주요 배경인 강하경찰서에 성현시스템의 지문리더기 ‘AF2100’이 등장해 눈길을 끌고 있다. 경찰서와 같은 보안이 중요한 공간에 실제 출입통제 리더기가 설치되면서 드라마의 현실감을 높이는 동시에, 현장에서 활용되는 보안 기술을 자연스럽게 보여주고 있다.AF2100은 기존 지문인식 기반 출입통제 리더기에 BLE(Bluetooth Low Energy) 모바일 인증 기능을 더한 제품으로, 생체인식의 보안성과 스마트폰 기반 인증의 편의성을 함께 제공한다.AF2100의 가장 큰 특징은 지문인식뿐 아니라 스마트",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145955",
-    "date": "2026-09-19 18:56:38"
-  },
-  {
-    "source": "boannews",
-    "title": "티피링크, IFA 2026서 Wi-Fi 8·스마트홈 기술 인정받아 3개 제품 혁신상",
-    "desc": "글로벌 네트워킹 및 스마트홈 선도 기업 티피링크(TP-Link)는 독일 베를린에서 열린 유럽 최대 가전 전시회 ‘IFA 2026’에서 Archer 8 Ultra, Deco 8 Ultra, Tapo T150 등 총 3개 제품이 ‘IFA Innovation Awards 2026’ 스마트홈 부문에 선정됐다고 밝혔다.IFA 혁신상은 2025년 신설된 부문으로, 기술 및 업계 전문가로 구성된 독립 심사위원단이 제품의 혁신적인 디자인과 엔지니어링을 평가해 선정한다. 티피링크는 이번 수상을 통해 안정적인 연결과 사용자 중심 설계를 강조한 차세대",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145954",
-    "date": "2026-09-19 18:55:55"
-  },
-  {
-    "source": "boannews",
-    "title": "제미나이도 보안테스트 중 외부기관 해킹",
-    "desc": "구글의 AI 모델 ‘제미나이’도 보안 테스트 중 외부기관 해킹을 일으킨 것으로 나타났다.18일(현지시간) 월스트리트저널에 따르면, 제미나이는 지난 5월 보안 평가 업체 이레귤러가 진행한 사이버 보안 시험 도중 외부 기업 3곳의 시스템에 무단 접근했다. 제미나이가 외부 기업 시스템에 임의로 침투한 사실이 확인된 첫 사례다.WSJ이 관련 문의를 하기 전까지 구글은 이 사실을 공지하지 않았다고 이 매체는 보도했다.이레귤러는 원래 인터넷을 차단하고 진행해야 하는 모의해킹 시험에서 실수로 인터넷 접속이 가능하게 했다.제미나이는 가상의 기업",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145959",
-    "date": "2026-09-19 15:43:45"
-  },
-  {
-    "source": "boannews",
-    "title": "“앤트로픽 클로드로 오픈AI 해킹 성공”... 포상금 900만원",
-    "desc": "앤트로픽의 AI 모델인 클로드를 활용해 오픈AI 해킹 시도에 성공한 사례가 나왔다. 이를 시도한 연구원들은 오픈AI에 제보해 900만원의 포상금을 받았다.AI 보안 연구업체 해크트론은 자사 연구원들이 ‘클로드 오퍼스5’ 모델로 오픈AI 직원들의 AI 챗봇 챗GPT와 코딩도구 코덱스 계정을 제어하는 데 성공했다고 18일(현지시간) 밝혔다.이들은 오픈AI의 도움말 게시판의 취약점을 통해 서버에 접속하는 데 성공했고, 여기서 오픈AI 직원들의 계정 정보를 확보했다. 이어 해당 계정 정보를 활용해 ‘모노레포’(Monorepo)라고 불리는",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145958",
-    "date": "2026-09-19 12:19:14"
-  },
-  {
-    "source": "boannews",
-    "title": "“AI 허위보고서로 미-중 전쟁날뻔”... 미군, 중국선박 나포하려다 직전 중단",
-    "desc": "미군이 AI의 허위 보고서를 근거로 중동 해역에서 중국 선박을 나포하려다 작전 실행 직전 중단하는 아찔한 일이 발생했다.18일(현지시간) CNN의 보도에 따르면, 이란과의 전쟁이 한창이던 올해 봄 “중동 해역의 중국 선박이 핵무기 프로그램 부품을 운반 중”이라는 내용의, 특수작전사령부 소속 분석관이 작성한 정보 보고서가 미군 전반에 회람됐다.이에 미군은 곧바로 선박 차단 계획에 착수, 무장 병력이 승선을 준비하고 군용기도 띄웠다.하지만 당국자들이 작전 직전 보고서를 정밀 검토한 결과, 분석관이 사용한 AI 챗봇이 선박에 실린 물질을",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145957",
-    "date": "2026-09-19 11:15:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[배종찬의 보안 빅데이터] 가족마저 손쉽게 속아 넘어가는 ‘AI 딥페이크’",
-    "desc": "인공지능(AI) 기술의 급격한 발전은 인간의 삶을 비약적으로 편리하게 만들어주었으나, 동시에 ‘AI 딥페이크’라는 미지의 공포를 우리의 일상 속으로 깊숙이 끌어들였다. AI 딥페이크는 인공지능(Artificial Intelligence)과 딥러닝(Deep Learning), 그리고 가짜를 의미하는 페이크(Fake)의 합성어로, 고도화된 딥러닝 알고리즘을 활용하여 사람의 얼굴, 목소리, 체형 등 생체 데이터와 비디오·오디오 매체를 합성하고 편집함으로써 실제와 구별하기 어려운 가짜 콘텐츠를 생성해내는 최첨단 기술을 의미한다.과거에는 전",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145951",
-    "date": "2026-09-19 10:52:42"
   },
   {
     "source": "thn",
@@ -628,75 +698,5 @@
     "desc": "Cybersecurity researchers have flagged a new Android malware called RatHat that's assessed to be operated by China-based threat actors and features an artificial intelligence (AI)-powered system to navigate and control compromised devices.\n\n\n\"Distributed primarily via targeted smishing (SMS/text phi",
     "url": "https://thehackernews.com/2026/09/rathat-android-malware-abuses-adb-to.html",
     "date": "2026-09-18T11:47:25"
-  },
-  {
-    "source": "thn",
-    "title": "Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root",
-    "desc": "A critical vulnerability in Check Point's Security Management and Log Servers could allow an attacker without login credentials to run code as root on those servers over the network.\n\nThe Security Management Server is the system that controls firewall policy and administrator access. Check Point has",
-    "url": "https://thehackernews.com/2026/09/critical-check-point-management-server.html",
-    "date": "2026-09-17T23:38:28"
-  },
-  {
-    "source": "thn",
-    "title": "ThreatsDay: Self-Rewriting Agents, 800+ Flaws Patched, Insider SIM Swaps and 22 More New Stories  ",
-    "desc": "Attackers keep finding new keys. The funny part is that defenders keep inventing where to store them.\n\nThis week, those keys sit in AI tools, exposed services, old bugs, weak logins, and software sold like a monthly subscription. Some attacks use new tricks. Others just reuse what was already lying ",
-    "url": "https://thehackernews.com/2026/09/threatsday-self-rewriting-agents-800.html",
-    "date": "2026-09-17T23:02:22"
-  },
-  {
-    "source": "thn",
-    "title": "Critical Docker Sandboxes Flaw Lets Malicious Guest Code Read and Modify macOS Host Files",
-    "desc": "Malicious code running inside a Docker Sandboxes virtual machine on macOS could escape the project directory shared into it and read or change files anywhere else on the host, Docker warns in a&nbsp;security announcement&nbsp;on September 15.\n\nThe escape runs with the rights of the host account that",
-    "url": "https://thehackernews.com/2026/09/critical-docker-sandboxes-flaw-lets.html",
-    "date": "2026-09-17T21:07:56"
-  },
-  {
-    "source": "thn",
-    "title": "Iran-Linked Handala Hack Tied to HEAVYGRAM Telegram Backdoor That Can Steal Passwords",
-    "desc": "The Iran-linked \"hacktivist\" persona known as Handala Hack has been attributed to a Telegram-based surveillance backdoor called HEAVYGRAM and a Delphi-based utility known as CRUDEEXCLUDE.\n\n\"HEAVYGRAM offers builtin commands supporting remote command execution, system, network and process information",
-    "url": "https://thehackernews.com/2026/09/iran-linked-handala-hack-tied-to.html",
-    "date": "2026-09-17T19:33:13"
-  },
-  {
-    "source": "thn",
-    "title": "Critical Unbound DNSSEC Validator Flaw Could Allow RCE via a Malicious DNS Zone",
-    "desc": "Every release of the Unbound DNS resolver before 1.26.1 has a critical heap overflow in its DNSSEC validator, maintainer NLnet Labs said in an&nbsp;advisory&nbsp;on Wednesday.\n\nAn attacker who controls a malicious zone and queries a vulnerable resolver can trigger it, enabling remote code execution.",
-    "url": "https://thehackernews.com/2026/09/critical-unbound-dnssec-validator-flaw.html",
-    "date": "2026-09-17T18:00:00"
-  },
-  {
-    "source": "thn",
-    "title": "CISO's Expert Guide to Agentic Pentesting for Websites",
-    "desc": "Attackers now weaponize new vulnerabilities in about five days (Mandiant, part of Google Cloud). The median organization takes 43 days to patch one (Verizon DBIR 2026). A new free guide explains how autonomous AI agents are closing that gap, and what security leaders must demand before pointing one ",
-    "url": "https://thehackernews.com/2026/09/cisos-expert-guide-to-agentic.html",
-    "date": "2026-09-17T16:20:53"
-  },
-  {
-    "source": "thn",
-    "title": "China-Aligned FamousSparrow Deploys SparroWocky Backdoor Across Latin America",
-    "desc": "The China-aligned state-sponsored threat actor known as FamousSparrow has been observed deploying a previously unreported backdoor called SparroWocky in attacks targeting multiple countries in Latin America since at least August 2025.\n\n\"SparroWocky is a modular, C++ backdoor,\" ESET security research",
-    "url": "https://thehackernews.com/2026/09/china-aligned-famoussparrow-deploys.html",
-    "date": "2026-09-17T15:35:45"
-  },
-  {
-    "source": "thn",
-    "title": "OpenAI Reveals Six Model Incidents Involving Hidden Failures and Unauthorized Uploads",
-    "desc": "OpenAI on Wednesday disclosed six new instances of \"unexpected or concerning model behavior\" that took place over the past six months, while sharing a new framework for reporting, tracking, investigating, and disclosing model misalignment in a bid to improve transparency.\n\n\"As AI systems grow more a",
-    "url": "https://thehackernews.com/2026/09/openai-reveals-six-model-incidents.html",
-    "date": "2026-09-17T15:23:38"
-  },
-  {
-    "source": "thn",
-    "title": "BIND 9 Update Fixes 14 Flaws, Including an Unauthenticated Crash Over DNS-over-HTTPS",
-    "desc": "The Internet Systems Consortium (ISC) has released&nbsp;BIND 9.20.29 and 9.21.26&nbsp;to fix fourteen security flaws it&nbsp;disclosed&nbsp;on 16 September in BIND 9, its open-source DNS server software. One of them affects any BIND server that answers DNS-over-HTTPS (DoH).\n\nA sender with no credent",
-    "url": "https://thehackernews.com/2026/09/bind-9-update-fixes-14-flaws-including.html",
-    "date": "2026-09-17T13:30:29"
-  },
-  {
-    "source": "thn",
-    "title": "Gyazo Breach Exposes 23.62 Million User Records and 490 Million Image Metadata Records",
-    "desc": "A security breach at Gyazo, Helpfeel's image-sharing service, exposed about 23.62 million user records, including email addresses and password hashes, the Kyoto-based company said in a&nbsp;notice&nbsp;published Wednesday.\n\nIt also exposed about 490 million image metadata records, mostly for images ",
-    "url": "https://thehackernews.com/2026/09/gyazo-breach-exposes-2362-million-user.html",
-    "date": "2026-09-17T13:00:01"
   }
 ]
