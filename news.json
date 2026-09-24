@@ -1,5 +1,47 @@
 [
   {
+    "source": "boannews",
+    "title": "ZKTeco, 지문인식 출입통제 단말기 ‘F34 Lite’ 출시",
+    "desc": "글로벌 보안 솔루션 전문기업 ZKTeco가 지문인식을 기반으로 한 출입통제 및 근태관리 단말기 ‘F34 Lite’를 출시했다. F34 Lite는 출입통제에 필요한 다양한 인증 방식과 네트워크 연동 기능을 갖춘 지문인식 출입통제 단말기로, 사무실과 상업시설, 교육시설, 공장 등 다양한 환경에서 활용할 수 있도록 설계됐다.F34 Lite는 2.4인치 TFT 컬러 디스플레이를 탑재했으며, 지문과 RFID 카드, 비밀번호 등 다양한 인증 방식을 지원한다. 사용 환경과 보안 정책에 따라 적합한 인증 방식을 선택할 수 있어 편리한 출입관리 환",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146026",
+    "date": "2026-09-24 09:50:45"
+  },
+  {
+    "source": "boannews",
+    "title": "[인터뷰] 이상석 두원전자통신 대표이사 “30년 현장 땀방울, 독보적 AI 영상기술로 피어나다”",
+    "desc": "1995년 설립 이래 30년간 거친 현장 엔지니어링을 축적하며 영상보안과 스마트 ITS 시장을 지켜온 강소기업이 있다. 두원전자통신은 조달우수 ‘초고속 저조도 영상변환’ 기술로 관제센터의 최대 난제인 야간 영상 식별과 오탐을 정면 돌파했다. 나아가 ‘AI 서라운드 카메라’와 ‘비매설식 다차로 ITS’를 앞세워 미래 스마트시티와 차세대 지능형 교통체계(C-ITS) 시장을 주도하고 있다. 화려한 수식어보다 옥외 현장에서 검증된 기술의 신뢰성을 최우선으로 꼽는 이상석 대표를 만나 30년의 소회와 미래 비전을 들었다.Q. 창립 30주년을",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=145931",
+    "date": "2026-09-24 09:42:03"
+  },
+  {
+    "source": "boannews",
+    "title": "“우리 회사 하이웍스 메일 쓰는데...” 가비아 , 고객 2998명 개인정보 유출",
+    "desc": "가비아에서 외부 해킹 공격으로 개인정보가 유출되는 사고가 발생했다.가비아는 21일 외부 공격자의 비인가 접근이 일어나 고객 2998명의 개인정보가 유출된 사실을 확인했다고 밝혔다. 유출된 개인정보는 이름과 아이디, 이메일 주소, 휴대폰 번호 등이다. 비밀번호는 유출되지 않았다고 밝혔다. 피해 인원과 항목은 향후 조사 결과에 따라 달라질 수 있다. 공격자는 가비아 웹서비스 일부 기능에서 외부 검증 요청 검증이 충분하지 않았던 점을 이용해 내부 시스템에 접근, 고객 개인정보를 빼낸 것으로 회사측은 파악했다. 가비아는 유출이 확인된 고객",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146036",
+    "date": "2026-09-24 09:37:20"
+  },
+  {
+    "source": "thn",
+    "title": "Attackers Use Malicious Terraform Providers to Deliver Go Malware via HashiCorp Registry",
+    "desc": "Cybersecurity researchers have disclosed Go-based malware distributed via two Go Modules and two Terraform providers, marking the first time threat actors are using the centralized repository hosted by HashiCorp as a distribution vector for malicious payloads.\n\nAccording to Aikido, the list of Terra",
+    "url": "https://thehackernews.com/2026/09/attackers-use-malicious-terraform.html",
+    "date": "2026-09-23T23:36:30"
+  },
+  {
+    "source": "thn",
+    "title": "A Leaked GitLab Issue Email Address Lets Anyone Push Code and Run CI Jobs as You",
+    "desc": "The private email address GitLab gives you for filing issues by email is a credential. Anyone who gets it can email a patch that GitLab commits in your name, to any branch you can push to, including main, and can start CI/CD jobs that run as you.\n\nGitLab shows each user this address behind a button ",
+    "url": "https://thehackernews.com/2026/09/a-leaked-gitlab-issue-email-address.html",
+    "date": "2026-09-23T22:23:10"
+  },
+  {
+    "source": "thn",
+    "title": "MikroTrick Chain Let Attackers Take Over MikroTik Routers Without a Password or SSH Key",
+    "desc": "Two MikroTik RouterOS SSH vulnerabilities chained together let attackers take full administrative control of Internet-exposed routers without a password, SSH key, or completed authentication.\n\nThe chain, which CERT Polska calls MikroTrick, combines an SSH state-machine flaw (CVE-2026-67279) with an ",
+    "url": "https://thehackernews.com/2026/09/mikrotrick-chain-let-attackers-take.html",
+    "date": "2026-09-23T21:36:41"
+  },
+  {
     "source": "thn",
     "title": "This Windows Malware is Built to Let Up to Four AI Models Vote on Its Next Move",
     "desc": "A Windows malware called CLOSEDQUORUM is built to take orders from a vote of up to four AI models instead of an attacker's server,&nbsp;Cisco Talos said&nbsp;on September 22.\n\nThe models can choose to steal Windows credentials, saved browser passwords, and crypto wallet data. Talos has not seen this",
@@ -68,6 +110,13 @@
     "desc": "The cyber extortion group known as ShinyHunters on Tuesday claimed it had breached the U.S. Federal Bureau of Investigation and stolen data belonging to current and former employees at the agency.\n\n\"We have compromised the FBI. We hold very sensitive data on almost ALL FBI Agents and individuals who",
     "url": "https://thehackernews.com/2026/09/shinyhunters-claims-fbi-breach-says-it.html",
     "date": "2026-09-23T11:00:09"
+  },
+  {
+    "source": "boannews",
+    "title": "터미널 명령 한 줄이면 끝... 메타 AI 비서 ‘뮤즈’ 계정, 권한 없는 앱에도 넘어갔다",
+    "desc": "메타가 보안을 전면에 내세워 내놓은 맥용 AI 비서 ‘뮤즈’(Muse)에서 권한 없는 앱이나 간단한 터미널 명령만으로 이용자 계정을 통째로 장악할 수 있는 제로데이 취약점이 드러났다.취약점을 찾아내 공개한 사람은 맥OS 보안 전문가 패트릭 워들(Patrick Wardle) 오브젝티브시재단(Objective-See Foundation) 설립자다. 그는 ‘맥 악성코드의 기술’(The Art of Mac Malware) 시리즈를 쓴 연구자로, 미 항공우주국(NASA)과 국가안보국(NSA)에서 근무한 경력이 있다.메타가 몇 주 전 내놓은",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146027",
+    "date": "2026-09-23 16:00:00"
   },
   {
     "source": "boannews",
@@ -553,39 +602,11 @@
     "date": "2026-09-21 09:10:34"
   },
   {
-    "source": "boannews",
-    "title": "수처리 시설, 발전소... 핵심 인프라 겨냥 OT 공격 대책, 센스톤 웨비나에서 듣는다",
-    "desc": "최근 미국 뉴저지·앨라배마 등 최소 12개 주의 수처리시설이 사이버 공격을 받은 데 이어, 영국에서도 소규모 발전시설이 나흘간 가동을 멈추는 등 국가 기반시설을 겨냥한 공격이 잇따르면서 운영기술(OT) 보안에 비상이 걸렸다. 두 공격 모두 새로운 악성코드 없이 정상 도구와 정상 계정을 이용해 제어설비에 접근했다는 공통점이 있다.기존 OT 보안망은 이런 공격을 사전 차단하는 데 한계를 드러내고 있어 산업 현장의 위기감이 어느 때보다 높다.이러한 상황에서 센스톤은 29일 오후 2시 보안뉴스 bnTV를 통해 ‘AI 시대 OT 보안 고도화",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145731",
-    "date": "2026-09-21 08:30:00"
-  },
-  {
     "source": "thn",
     "title": "Claude Opus 5 Helped Researchers Take Over OpenAI Staff Accounts via Chained Flaws",
     "desc": "Three researchers at the security firm&nbsp;Hacktron&nbsp;used Anthropic's Claude Opus 5 to chain two flaws and take over the ChatGPT and Codex accounts of several OpenAI employees, then reach an internal OpenAI code repository.\n\nThe chain began with a bug in the software that runs OpenAI's public h",
     "url": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html",
     "date": "2026-09-20T00:06:53"
-  },
-  {
-    "source": "boannews",
-    "title": "“연체자도 피싱·스팸 차단”... 과기부-통신3사, 추석맞아 사이버 민생범죄 예방",
-    "desc": "과학기술정보통신부(부총리 겸 장관 배경훈)는 추석을 맞아 통신 3사 및 플랫폼 기업과 함께 등 사이버 민생범죄 예방에 나선다. 사이버 위협 모니터링을 강화하고, 통신비 연체자도 본인확인 및 피싱·스팸 차단 기능은 차질없이 사용할 수 있게 했다.과기정통부는 한국인터넷진흥원(KISA)과 함께 통신·교통·여행·택배·쇼핑몰 등 명절 이용이 많은 생활 밀접 서비스에 대한 사이버 위협 모니터링을 강화한다. 비상상황 발생 시 신속히 대응할 수 있도록 통신･플랫폼 및 주요 보안기업과 긴급대응 체계를 구축‧운영한다.통신 3사는 ‘24시간 비상 상황",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145963",
-    "date": "2026-09-20 18:04:46"
-  },
-  {
-    "source": "boannews",
-    "title": "남성 패션 플랫폼 ‘룩핀’, 개인정보 유출 공지...이메일·비밀번호 해시 등",
-    "desc": "남성 패션 플랫폼 ‘룩핀’ 운영사 레벨13에서 이용자들에게 개인정보 유출을 공지했다. 이메일과 비밀번호 해시 등이 유출됐다는 내용이다. 데이터 분석 도구인 ‘메타베이스’의 보안 취약점을 악용한 공격이라는 게 회사 측 분석이다.20일 룩핀이 이용자들에게 이메일로 발송한 공지문에 따르면 회사는 지난 16일 오후 3시쯤 미확인 계정을 발견하고 오후 5시30분쯤 관련 시스템의 접근을 차단했다.안내된 유출항목은 이메일 주소와 비밀번호 해시 등이다. 일부 이용자들의 경우 휴대폰 번호와 접속 IP 등이 유출되기도 했다.현재까지 이 회사의 조사에",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145962",
-    "date": "2026-09-20 15:21:58"
-  },
-  {
-    "source": "boannews",
-    "title": "KISA, 인터넷 주소 자원 관리 실태 점검 통과... 라우팅 보안 시험장 개방",
-    "desc": "한국인터넷진흥원(KISA, 원장 이상중)은 아·태지역 인터넷 주소 관리 기구(APNIC, Asia-Pacific Network Information Centre) ‘인터넷 주소 자원 관리 실태 점검'을 통과했다고 20일 밝혔다.이에 따라 우리나라 인터넷 주소 자원 관리 역량을 국제적으로 인정받았다는 게 KISA 측 설명이다. KISA는 정확한 주소관리 체계를 바탕으로 라우팅 보안 시험장도 개방할 방침이다.APNIC는 아·태 56개 국가·지역의 아이피(IP)주소와 라우터 집단인 자율시스템(AS) 번호를 관리·분배하는 국제 비영리 기구",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145961",
-    "date": "2026-09-20 14:50:45"
   },
   {
     "source": "thn",
@@ -677,26 +698,5 @@
     "desc": "A flaw in four widely used AI coding agents lets someone who controls a plugin's code repository swap the plugin an agent installs for a malicious one, even when the agent locked that plugin to a specific reviewed version, security firm&nbsp;Air Security said on Thursday.\n\nThe firm said Anthropic ha",
     "url": "https://thehackernews.com/2026/09/plugin4shell-lets-repository-owners.html",
     "date": "2026-09-18T16:31:01"
-  },
-  {
-    "source": "thn",
-    "title": "WeaselBiscuit Stealer Spreads via 13 npm Packages to Harvest Chrome Extension Storage",
-    "desc": "Cybersecurity researchers have discovered a cluster of 13 npm packages that have been found to deliver a previously undocumented JavaScript stealer codenamed WeaselBiscuit.\n\nThe new malware family, per OpenSourceMalware, exhibits functional overlaps with two malware strains associated with the Democ",
-    "url": "https://thehackernews.com/2026/09/weaselbiscuit-stealer-spreads-via-13.html",
-    "date": "2026-09-18T16:10:06"
-  },
-  {
-    "source": "thn",
-    "title": "Claimed Bug Bounty Hunter Likely Used LLM to Build PhantomRaven npm Stealer",
-    "desc": "A financially motivated threat actor has been linked to the development and distribution of a JavaScript (JS)-based information stealer known as PhantomRaven via the npm package registry.\n\n\"The developer likely wrote the malware using a large language model (LLM), an assessment made with high confid",
-    "url": "https://thehackernews.com/2026/09/claimed-bug-bounty-hunter-likely-used.html",
-    "date": "2026-09-18T14:48:03"
-  },
-  {
-    "source": "thn",
-    "title": "RatHat Android Malware Abuses ADB to Retain Shell Access After Uninstall",
-    "desc": "Cybersecurity researchers have flagged a new Android malware called RatHat that's assessed to be operated by China-based threat actors and features an artificial intelligence (AI)-powered system to navigate and control compromised devices.\n\n\n\"Distributed primarily via targeted smishing (SMS/text phi",
-    "url": "https://thehackernews.com/2026/09/rathat-android-malware-abuses-adb-to.html",
-    "date": "2026-09-18T11:47:25"
   }
 ]
