@@ -1,5 +1,68 @@
 [
   {
+    "source": "thn",
+    "title": "The SOC Doesn't Need to Start Over with Every Alert",
+    "desc": "Security leaders keep debating whether AI will produce an entirely new class of cyberattack. The nearer change is quieter and already visible: AI has made a failed attack cheap to retry.\n\nThe routine version looks like this. An attacker lands on a low-privilege cloud account, and the first try at pr",
+    "url": "https://thehackernews.com/2026/09/the-soc-doesnt-need-to-start-over-with.html",
+    "date": "2026-09-25T17:00:00"
+  },
+  {
+    "source": "thn",
+    "title": "Bitget Says Suspected North Korean Hackers Stole $351.6M After Backend Compromise",
+    "desc": "Cryptocurrency exchange Bitget said suspected North Korean threat actors have stolen $351.6 million from its hot and warm wallets.&nbsp;\n\n\"At 18:31 UTC on September 24, 2026, Bitget's security systems identified unauthorized transfers involving a limited number of hot wallets,\" BitGet said in a post",
+    "url": "https://thehackernews.com/2026/09/bitget-says-suspected-north-korean.html",
+    "date": "2026-09-25T16:05:55"
+  },
+  {
+    "source": "thn",
+    "title": "Roundcube Pre-Auth SQL Injection Flaw Actively Exploited in the Wild",
+    "desc": "The Canadian Centre for Cyber Security has warned that a now-patched Roundcube Webmail vulnerability is being actively exploited in the wild.\n\nThe vulnerability in question is CVE-2026-48842 (CVSS score: 8.1), a pre-authentication SQL injection in the virtuser_query plugin of Roundcube Webmail versi",
+    "url": "https://thehackernews.com/2026/09/roundcube-pre-auth-sql-injection-flaw.html",
+    "date": "2026-09-25T15:44:02"
+  },
+  {
+    "source": "thn",
+    "title": "Cloudflare Fixes Flaw That Let One Container Read Another Customer's Leftover Disk Data",
+    "desc": "A flaw in Cloudflare Containers let a paying customer read data that other customers' containers had left behind on the same server, Cloudflare and the researchers who found it said on Thursday.\n\nThe data came from disk space that earlier containers had used and given up, not from any live workload,",
+    "url": "https://thehackernews.com/2026/09/cloudflare-fixes-flaw-that-let-one.html",
+    "date": "2026-09-25T10:19:22"
+  },
+  {
+    "source": "thn",
+    "title": "WSO2 and Adobe Commerce Flaws Exploited in Attacks, Added to CISA KEV",
+    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA), on Thursday, added two critical security flaws impacting WSO2 and Adobe Commerce and Magento to its Known Exploited Vulnerabilities (KEV) catalog, based on evidence of active exploitation.\n\nThe vulnerabilities are listed below -\n\n\n  C",
+    "url": "https://thehackernews.com/2026/09/wso2-and-adobe-commerce-flaws-exploited.html",
+    "date": "2026-09-25T10:16:34"
+  },
+  {
+    "source": "boannews",
+    "title": "9월은 교육업계 수난시대... ‘교육 분야 웹사이트’ 해킹 피해 급증",
+    "desc": "최근 교육업계를 노린 사이버 공격이 기승을 부리고 있어 주의가 요구된다. 특히 교육업계는 학생과 학부모 모두의 정보를 담고 있어, 개인정보 유출은 물론 카드번호 등 금융정보와 주소 등 민감정보 유출로 인한 추가 피해 우려가 크다. 특히 미성년자의 경우 스스로 대응하기 어렵기 때문에 더욱 논란이 되고 있다.유아부터 초등학교 및 중고교 교육 전문 사이트 ‘하늘교육’은 9월 21일 홈페이지 일부 외부 해킹 및 개인정보 유출 정황을 파악했다고 사이트를 통해 공지했다. 유출이 의심되는 정보는 △학부모·학생 이름 △전화번호 △주소로, 지금까지",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146041",
+    "date": "2026-09-25 17:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "[2026 AI 보안 솔루션 리포트] 어시스턴트를 넘어 ‘자율형 에이전트’ 시대로... AI가 만드는 K-보안",
+    "desc": "최근 국가 차원의 가이드라인과 지침 등 컴플라이언스에서 AI 보안 솔루션을 직접 언급하면서 보안 산업에 큰 영향을 주고 있다. 공공시장을 중심으로 시작된 변화가 금융과 대기업, 공급망 등 민간 시장을 포함한 시장 자체에 빠르게 파급효과를 미치기 때문이다. 특히 N2SF(국가망보안체계) 가이드라인 해설서에서 보안 이벤트 실시간 대응에 필요한 기술로 AI 보안 솔루션을 언급하고, 국가정보원(AI 보안 가이드북, 사이버보안 실태평가 지표)과 과기정통부(생성형 AI 개발·활용을 위한 개인정보 처리 안내서) 등 ‘AI 보안 솔루션에 대한 도",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146038",
+    "date": "2026-09-25 15:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "[한국정보보호학회칼럼] 5G 특화망 보안, ‘전용망의 환상’을 넘어 상시 검증으로",
+    "desc": "5G가 약속한 혁신의 본질은 단순히 더 빠른 이동통신에 있지 않다. 제조·물류·공공 등 산업 현장이 각자의 목적에 맞는 통신망을 구축하고, 이를 기반으로 새로운 서비스와 비즈니스 모델을 만들어내는 데 있다. 국내에서는 ‘이음5G’라는 이름의 5G 특화망이 이러한 변화를 이끌고 있다. 실제 국내 5G 특화망 구축 기업·기관은 2022년 26개소에서 2025년 104개소로 4배 증가했다.특화망이 확산될수록 보안의 중요성도 커진다. 특히 경계해야 할 것은 “우리만 사용하는 전용망이기 때문에 안전하다”는 믿음이다. 특화망은 특정 공간과 허",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146039",
+    "date": "2026-09-25 13:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "재난 발생 후 72시간, 당신의 집은 버틸 수 있는가?",
+    "desc": "10월 13일은 UN이 정한 ‘국제 재난위험경감의 날’(International Day for Disaster Risk Reduction)이다. UN재난위험경감사무소(UNDRR)는 2026년 주제로 ‘회복력은 집에서 시작된다’(Resilience Starts at Home)를 제시했다. 국가 단위의 거대한 재난 대응 시스템 이전에, 가장 작은 단위인 ‘집’이 얼마나 스스로 버틸 수 있는지가 전체 사회의 회복력을 좌우한다는 메시지다.대규모 지진, 태풍, 정전 사태 같은 재난이 발생하면 전기·수도·통신 같은 일상의 기반시설이 동시다발적",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146016",
+    "date": "2026-09-25 11:00:00"
+  },
+  {
     "source": "boannews",
     "title": "“사람은 지휘하고 AI가 뛴다”... 이글루코퍼레이션이 제시한 자율형 SOC 아키텍처",
     "desc": "﻿“공격 속도가 2배 빨라졌다고 사람이 2배 빨리 일할 수는 없습니다. AI로 무장한 공격에는 AI 기반의 자율형 보안운영센터(SOC)로 맞서야만 속도 경쟁에서 살아남을 수 있습니다.”김은중 이글루코퍼레이션 사업총괄(부사장)은 지능형 자동화 공격 현황을 진단하며 보안 패러다임의 전면적인 전환이 필수적이라고 설명했다. 사이버 침해 대응 최전선에서 27년간 노하우를 축적한 1세대 보안 기업으로서 단순한 규칙 기반 탐지를 넘어 다중 AI 에이전트가 스스로 추론하고 조치하는 ‘에이전틱 SOC’(Agentic SOC)로 보안 운영의 표준을",
@@ -616,13 +679,6 @@
     "date": "2026-09-21T14:09:38"
   },
   {
-    "source": "thn",
-    "title": "Jade Sleet Linked to Indian IT Provider Breach With FLATROOF and ROOFDECK Backdoors",
-    "desc": "The North Korean threat actor known as Jade Sleet has been attributed to the compromise of an India-based \"much smaller organization\" in the information technology (IT) services industry, once again highlighting how the adversary continues to target developers to breach target networks.\n\nCybersecuri",
-    "url": "https://thehackernews.com/2026/09/jade-sleet-linked-to-indian-it-provider.html",
-    "date": "2026-09-21T11:36:44"
-  },
-  {
     "source": "boannews",
     "title": "韓 선박, 해킹에 멈췄다... 선박 보안 경각심↑",
     "desc": "한국 선박이 해킹으로 통신이 멈추고 운항이 중단됐다. 미국 국가기관 조사까지 이뤄지면서 선박 보안에 대한 경각심이 확산되고 있다. 전세계 물류의 80%가 바다에서 이뤄지는 만큼 선박 보안은 국가에 중대한 영향을 미친다. 이번 사태를 무겁게 받아들여야 한다는 게 중론이다.최근 외신 등에 따르면 미국 해안경비대가 지난 8월 멕시코만을 지나던 유조선에 직접 승선해 사이버공격 정황을 조사한 사실을 확인했다. 선박 네트워크가 외국 사이버 행위자에 의해 침해됐다는 정황이 포착됐기 때문이다. 승선한 조사 인력 중에는 FBI 사이버대응팀도 있었다",
@@ -642,61 +698,5 @@
     "desc": "보안 기술은 매년 진화하고 있다. 인공지능 기반 탐지(SIEM, Security Information and Event Management), 확장형 탐지·대응(XDR, Extended Detection and Response), 보안 오케스트레이션·자동화 대응(SOAR, Security Orchestration, Automation, and Response), 클라우드 네이티브 애플리케이션 보호(CNAPP, Cloud-Native Application Protection Platform), 소프트웨어 구성명세관리(SCA, Soft",
     "url": "https://www.boannews.com/news/articleView.html?idxno=145977",
     "date": "2026-09-21 16:31:45"
-  },
-  {
-    "source": "boannews",
-    "title": "한국디지털포렌식학회, 한국형 e디스커버리 발전방안 제시",
-    "desc": "한국디지털포렌식학회(학회장 김기범)가 한국형 e디스커버리(eDiscovery) 제도의 발전 방안을 제시하는 자리를 가졌다.한국디지털포렌식학회는 국립군산대학교 법학연구소와 공동으로 18일 국립군산대학교에서 ‘AI·디지털포렌식을 활용한 e디스커버리(eDiscovery) 제도의 법적·기술적 쟁점’을 주제로 공동학술행사를 개최했다고 21일 밝혔다.최근 ‘대·중소기업 상생협력 촉진에 관한 법률’ 개정 법률이 올해 2월 19일 공포되면서 기술자료 침해 분쟁과 관련하여 지정전문가에 의한 사실조사, 자료보전명령, 비밀유지명령, 당사자신문 등 이른",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145976",
-    "date": "2026-09-21 15:47:22"
-  },
-  {
-    "source": "boannews",
-    "title": "[인사] 개인정보보호위원회",
-    "desc": "◇ 위촉△위원 권건보△위원 김광수△위원 윤영미",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145975",
-    "date": "2026-09-21 15:24:57"
-  },
-  {
-    "source": "boannews",
-    "title": "가짜 면접으로 암호화폐 지갑 노려... 북한 워터플럼, 100개국 기기 3만대 감염",
-    "desc": "북한 해킹 조직 ‘워터플럼’(WaterPlum)이 8개월 동안 100개국이 넘는 곳에서 구직자들의 기기를 감염시켜 암호화폐 지갑 7000개 이상을 털어 간 정황을 네 나라 수사당국이 공개했다.일본과 미국, 호주, 독일 수사당국은 함께 낸 권고문에서 워터플럼이 2025년 12월부터 2026년 7월 사이 기기를 최소 3만대 감염시켰다고 밝혔다. 이렇게 모은 암호화폐 17억엔(1071만달러)어치가 북한으로 넘어갔다.워터플럼은 일자리를 미끼로 썼다. 실재하는 AI와 암호화폐, 대체불가토큰(NFT) 회사를 사칭하거나 채용·프리랜스 플랫폼에서",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145974",
-    "date": "2026-09-21 14:45:36"
-  },
-  {
-    "source": "boannews",
-    "title": "배터리 산업 미래전략 한자리에… ‘BATTERY KOREA 2026’ 개최",
-    "desc": "글로벌 배터리산업의 경쟁축이 생산능력 확대를 넘어 차세대 기술과 안전, 공급망, 탄소관리, 자원순환으로 빠르게 넓어지는 가운데 국내 배터리산업의 미래 전략을 모색하는 자리가 마련됐다.국내외 이차전지 산업의 트렌드와 미래 전략을 공유하는 ‘배터리코리아(BATTERY KOREA) 2026 : 이차전지 소재·부품·장비·리사이클링 컨퍼런스’가 21일 서울 코엑스 그랜드볼룸에서 개최됐다.올해 BA는 소재와 셀 제조에서부터 차세대 기술개발, ESS, 안전·시험인증, 글로벌 밸류체인, 탄소발자국, 사용후 배터리 재사용·재활용까지 배터리 산업 전",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145973",
-    "date": "2026-09-21 14:28:21"
-  },
-  {
-    "source": "thn",
-    "title": "Claude Opus 5 Helped Researchers Take Over OpenAI Staff Accounts via Chained Flaws",
-    "desc": "Three researchers at the security firm&nbsp;Hacktron&nbsp;used Anthropic's Claude Opus 5 to chain two flaws and take over the ChatGPT and Codex accounts of several OpenAI employees, then reach an internal OpenAI code repository.\n\nThe chain began with a bug in the software that runs OpenAI's public h",
-    "url": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html",
-    "date": "2026-09-20T00:06:53"
-  },
-  {
-    "source": "thn",
-    "title": "Can You Prove a New CVE Is Exploitable Before Attackers Do? Learn How in This Webinar",
-    "desc": "A new CVE drops. Your scanner finds it. The severity score looks ugly.\n\nBut that still does not answer the question that matters: Can it actually be exploited in your environment?\n\nMythos-class AI is compressing the time between disclosure and working exploitation, while many security programs still",
-    "url": "https://thehackernews.com/2026/09/can-you-prove-new-cve-is-exploitable.html",
-    "date": "2026-09-19T18:58:48"
-  },
-  {
-    "source": "thn",
-    "title": "Identity Visibility in 2026: The Foundation of Identity Security",
-    "desc": "Identity visibility is a starting point for modern identity security, because stolen and misused credentials are among the most frequently reported initial access vectors in breach research, including Verizon's annual Data Breach Investigations Report. This article explains what identity visibility ",
-    "url": "https://thehackernews.com/2026/09/identity-visibility-in-2026-foundation.html",
-    "date": "2026-09-19T18:58:41"
-  },
-  {
-    "source": "thn",
-    "title": "SolarWinds Patches ARM Hard-Coded Key Flaw Enabling Unauthenticated RCE",
-    "desc": "SolarWinds has released security updates to address a high-severity flaw in Access Rights Manager (ARM) that, if successfully exploited, could lead to an unauthenticated remote code execution vulnerability.\n\nThe vulnerability, tracked as CVE-2026-28326, is rated 8.8 out of 10.0 on the CVSS scoring s",
-    "url": "https://thehackernews.com/2026/09/solarwinds-patches-arm-hard-coded-key.html",
-    "date": "2026-09-19T15:01:17"
   }
 ]
