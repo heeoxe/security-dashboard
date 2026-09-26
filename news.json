@@ -1,6 +1,62 @@
 [
   {
     "source": "thn",
+    "title": "Attackers Bypass WAFs to Exploit Oracle PeopleSoft Flaw and Deploy Web Shells",
+    "desc": "Google is warning of renewed mass exploitation of a known security vulnerability in Oracle PeopleSoft as part of a campaign targeting multiple sectors globally.\n\nThe ShinyHunters-linked activity involves the weaponization of CVE-2026-35273 (CVSS score: 9.8), a critical security flaw that could resul",
+    "url": "https://thehackernews.com/2026/09/attackers-bypass-wafs-to-exploit-oracle.html",
+    "date": "2026-09-26T17:16:40"
+  },
+  {
+    "source": "thn",
+    "title": "Zero Trust for AI Agents Starts With Fixing Zero Visibility",
+    "desc": "The way we talk about AI agents is shifting, and the way we implement them requires an even more fundamental shift. While earlier discourse focused on how quickly organizations could stand up agents and how much productivity they could promise, a string of recent incidents, including a widely discus",
+    "url": "https://thehackernews.com/2026/09/zero-trust-for-ai-agents-starts-with.html",
+    "date": "2026-09-26T16:00:00"
+  },
+  {
+    "source": "thn",
+    "title": "Elementor CSRF Flaw Lets Attackers Take Over Sites After Admin Clicks Crafted Link",
+    "desc": "Details have emerged about a high-severity security flaw in the Elementor Website Builder WordPress plugin that could be exploited by an unauthenticated attacker to create rogue administrator accounts and take control of a site.\n\nThe cross-site request forgery (CSRF) vulnerability, which has yet to ",
+    "url": "https://thehackernews.com/2026/09/elementor-csrf-flaw-lets-attackers-take.html",
+    "date": "2026-09-26T15:25:22"
+  },
+  {
+    "source": "thn",
+    "title": "SharePoint RCE and MikroTik RouterOS Flaws Actively Exploited in the Wild",
+    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two security flaws impacting Microsoft SharePoint and Mikrotik RouterOS to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe vulnerabilities in question are as follows -\n\n\n ",
+    "url": "https://thehackernews.com/2026/09/sharepoint-rce-and-mikrotik-routeros.html",
+    "date": "2026-09-26T14:19:53"
+  },
+  {
+    "source": "thn",
+    "title": "Kiteworks Urges Customers to Shut Down Systems for 9 Hours Over Possible Cyber Attack",
+    "desc": "Kiteworks (formerly Accellion) is urging customers to shut down their systems as a precautionary measure for nine hours over the weekend after it received threat intelligence about an imminent cyber attack.\n\n\"Kiteworks received credible threat intelligence from federal intelligence authorities indic",
+    "url": "https://thehackernews.com/2026/09/kiteworks-urges-customers-to-shut-down.html",
+    "date": "2026-09-26T13:18:33"
+  },
+  {
+    "source": "boannews",
+    "title": "해커 표적 된 라디오 방송... 극동방송 후원 시스템 해킹 피해",
+    "desc": "극동방송이 후원자 관리 시스템에 침해 정황을 확인하고 개인정보 유출 피해 예방을 위한 긴급 대응에 나섰다. 극동방송은 개신교계 선교 라디오 방송국으로, 일반적 뉴스나 예능 같은 기능 없이 선교 사역에 주력하고 있는 특수방송사다.극동방송에 따르면, 23일 오후 5시경 후원자 관리 시스템에 외부의 권한 없는 접근이 발생한 정황이 최초 확인됐다. 극동방송은 즉시 사실관계 조사에 착수, 비정상적 접근이 18일 오후 11시경 발생한 것으로 파악했다.조사 결과, 현재 영향을 받았을 가능성이 있는 개인정보 항목은 △성명 △ 생년월일 △휴대전화번",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146045",
+    "date": "2026-09-26 17:29:15"
+  },
+  {
+    "source": "boannews",
+    "title": "﻿[Global Security TOP 100] 윤경구 파수AI CTO “안전한 AX 지원... 에이전틱 AI 플랫폼으로 시장 선도”",
+    "desc": "﻿파수AI는 본격적인 생성형 AI 시대를 맞아 AI와 데이터, 보안 영역에서 독자적인 가치를 제공하며 글로벌 AI 기업으로 도약하고 있다. 윤경구 파수AI CTO는 “에이전틱 AX 플랫폼인 ‘엘름’(Ellm)을 중심으로 포트폴리오를 확장하고 있으며, 수많은 고객 데이터를 보호하며 쌓아온 문서 이해도를 바탕으로 실용적이고 통합적인 대안을 제시하겠다”고 밝혔다.Q. 파수AI와 주요 사업에 대한 소개 부탁드립니다2000년 설립 이래 혁신적인 솔루션과 서비스를 제공해 온 파수AI는 에이전틱 AX 플랫폼 ‘엘름’(Ellm)을 중심으로 고객의",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146018",
+    "date": "2026-09-26 11:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "보조배터리, 기내 안전의 가장 약한 고리",
+    "desc": "추석 연휴인 9월 24일, 인천공항에서 다낭으로 출발하려던 여객기의 승객 가방에서 불이 났다. 발화 원인은 조사 결과를 기다려야 하지만, 비행기 안에서 리튬 배터리가 연기를 뿜는 일이 더는 드문 뉴스가 아니라는 사실은 분명하다.올해만 해도 1월 중국 싼야에서 청주로 오던 항공기에서 가방 속 보조배터리 연기로 승무원 3명이 병원에 실려갔고, 7월에는 인천을 떠나 필리핀 칼리보로 가던 항공기에서 이륙 직후 불꽃이 튀었다. ‘미국 연방항공청’(FAA)이 확인한 항공기 리튬 배터리 연기·화재·과열 사건은 2024년 89건으로 역대 최다를",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146043",
+    "date": "2026-09-26 10:21:23"
+  },
+  {
+    "source": "thn",
     "title": "Compromised GitHub Actions Came Back Online and Resumed Executing Mini Shai-Hulud Malware",
     "desc": "Two actions-cool GitHub Actions have been disabled for a second time after the repositories became accessible last week, months after they were compromised during the May 2026 Mini Shai-Hulud campaign.\n\nThe affected GitHub Actions are listed below -\n\n\n  actions-cool/issues-helper\n  actions-cool/main",
     "url": "https://thehackernews.com/2026/09/compromised-github-actions-came-back.html",
@@ -483,13 +539,6 @@
     "date": "2026-09-22T11:33:14"
   },
   {
-    "source": "thn",
-    "title": "Zyxel and Veeam Flaws Under Active Exploitation With Command and SYSTEM Access",
-    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added a now-patched security flaw impacting Zyxel GS1900 series switches to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe vulnerability, tracked as CVE-2026-7273 (CVSS score: ",
-    "url": "https://thehackernews.com/2026/09/zyxel-and-veeam-flaws-under-active.html",
-    "date": "2026-09-22T11:01:59"
-  },
-  {
     "source": "boannews",
     "title": "보안특파모 로드맵은?... ‘오퍼스4.5’ 방어 수준 및 ‘GLM5.3’ 공격 수준 목표",
     "desc": "“해외 모델로 지킬 수 없는 대한민국을 보안 특화 독자 AI 모델로 지키겠습니다.”‘미토스 충격’으로 시급성이 부각된 국가 사이버 안보 역량 내재화를 위한 ‘사이버보안 특화 AI 파운데이션 모델 개발’ 사업 10개월의 여정이 시작됐다. ‘오퍼스4.5’ 방어 수준 및 ‘GLM5.3’ 공격 수준으로 개발 후, ‘소버린AI 보안 서비스’를 글로벌로 전파한다는 목표다. 개발 사업에 선정된 네이버클라우드 컨소시엄을 대표해 김진휘 네이버클라우드 전무는 22일 서울 소공동 더그랜드 롯데 서울에서 보안특파모 개발 로드맵을 공식 발표했다.방어·공격",
@@ -649,54 +698,5 @@
     "desc": "[편집자 주] 김정덕 교수의 특별 연재 마지막 시간으로, 책의 제5부 ‘지혜와 회복'을 다룹니다. 완벽한 방어라는 환상을 버리고 사이버 회복탄력성과 인간 중심의 통제력을 강조하는 철학을 다룹니다.성벽의 종말과 스토아적 수용오랫동안 사이버 보안은 뚫리지 않는 견고한 물리적, 논리적 성벽을 쌓는 일에 온 역량을 몰두해 왔습니다. 그러나 클라우드와 초연결성의 파도는 내부와 외부의 경계를 허물었고, 완벽한 방어라는 것은 수학적 이상향 속에서만 존재하는 허구의 환상이 되었습니다. 이제 해킹과 침해 사고는 만약의 불운이 아니라 시기를 조율하고",
     "url": "https://www.boannews.com/news/articleView.html?idxno=145981",
     "date": "2026-09-22 09:00:00"
-  },
-  {
-    "source": "thn",
-    "title": "Fake LastPass Authenticator Installer Abuses Microsoft-Signed Driver to Kill Antivirus and EDR",
-    "desc": "A fake LastPass Authenticator installer offered on GitHub installs a Windows kernel driver that shuts off antivirus and other security software before a password stealer runs if a victim downloads and runs it, researchers at LastPass and Delphos Labs said on September 17.\n\nMicrosoft's own hardware-c",
-    "url": "https://thehackernews.com/2026/09/fake-lastpass-authenticator-installer.html",
-    "date": "2026-09-21T23:01:01"
-  },
-  {
-    "source": "thn",
-    "title": "Contagious Interview Campaign Compromises 30,000 Devices, Steals $10.71M in Crypto",
-    "desc": "The North Korean threat actors behind the Contagious Interview campaign have compromised at least 30,000 devices located in more than 100 countries and siphoned funds or account credentials from over 7,000 cryptocurrency wallets, according to a new joint cybersecurity advisory.\n\nThe primary targets ",
-    "url": "https://thehackernews.com/2026/09/contagious-interview-campaign.html",
-    "date": "2026-09-21T22:49:00"
-  },
-  {
-    "source": "thn",
-    "title": "Google Fined €403 Million Over GDPR Violations Tied to Location Data",
-    "desc": "Google has been&nbsp;fined €403 million&nbsp;for breaking the EU's data protection law, the GDPR, in the way three of its features handled people's location data from May 2018 to February 2020.\n\nIreland's Data Protection Commission (DPC), Google's lead regulator in the EU, also ordered the company t",
-    "url": "https://thehackernews.com/2026/09/google-fined-403-million-over-gdpr.html",
-    "date": "2026-09-21T22:27:31"
-  },
-  {
-    "source": "thn",
-    "title": "⚡ Weekly Recap: Cisco 0-Day, AI Agent RCE, ClickFix Attacks, ClickFix Surge, and Browser Hijacks",
-    "desc": "A browser. A plugin. A package. A login screen. Normal stuff. That is basically the problem this week.\n\nThe trouble keeps showing up inside things people already trust: code that takes a bad turn, old payloads coming back, exposed systems, weak checks, fake fixes, and attack paths that look almost t",
-    "url": "https://thehackernews.com/2026/09/weekly-recap-cisco-0-day-ai-agent-rce.html",
-    "date": "2026-09-21T19:54:13"
-  },
-  {
-    "source": "boannews",
-    "title": "韓 선박, 해킹에 멈췄다... 선박 보안 경각심↑",
-    "desc": "한국 선박이 해킹으로 통신이 멈추고 운항이 중단됐다. 미국 국가기관 조사까지 이뤄지면서 선박 보안에 대한 경각심이 확산되고 있다. 전세계 물류의 80%가 바다에서 이뤄지는 만큼 선박 보안은 국가에 중대한 영향을 미친다. 이번 사태를 무겁게 받아들여야 한다는 게 중론이다.최근 외신 등에 따르면 미국 해안경비대가 지난 8월 멕시코만을 지나던 유조선에 직접 승선해 사이버공격 정황을 조사한 사실을 확인했다. 선박 네트워크가 외국 사이버 행위자에 의해 침해됐다는 정황이 포착됐기 때문이다. 승선한 조사 인력 중에는 FBI 사이버대응팀도 있었다",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145979",
-    "date": "2026-09-21 19:30:00"
-  },
-  {
-    "source": "boannews",
-    "title": "포티넷 포티엔드포인트, ‘AV-컴패러티브스 EPR 테스트 2026’ 서 ‘인증 리더’ 획득",
-    "desc": "글로벌 네트워크 보안 융합 솔루션 리더 포티넷(CEO 켄 지)이 AV-컴패러티브스(AV-Comparatives)의 ‘2026 엔드포인트 방어 및 대응(EPR) 테스트’에서 ‘인증 리더’(Certified Leader)를 획득했다고 밝혔다.포티넷은 2025년 포티EDR(FortiEDR)로 AV-컴패러티브스 EPR 테스트 인증을 받은 데 이어, 2026년에는 포티엔드포인트 with EDR(FortiEndpoint with EDR)로 해당 테스트의 인증 리더 등급을 획득했다. 이번 테스트에서 포티엔드포인트 with EDR은 기업의 실제",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145978",
-    "date": "2026-09-21 16:45:23"
-  },
-  {
-    "source": "boannews",
-    "title": "[한국정보공학기술사 보안을 論하다–48] 왜 개인정보 유출사고는 반복되는가?",
-    "desc": "보안 기술은 매년 진화하고 있다. 인공지능 기반 탐지(SIEM, Security Information and Event Management), 확장형 탐지·대응(XDR, Extended Detection and Response), 보안 오케스트레이션·자동화 대응(SOAR, Security Orchestration, Automation, and Response), 클라우드 네이티브 애플리케이션 보호(CNAPP, Cloud-Native Application Protection Platform), 소프트웨어 구성명세관리(SCA, Soft",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145977",
-    "date": "2026-09-21 16:31:45"
   }
 ]
