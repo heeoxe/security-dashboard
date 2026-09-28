@@ -1,5 +1,473 @@
 [
   {
+    "cve": "CVE-2026-81655",
+    "title": "Ad Inserter 2.8.12 - 2.8.18 - Subscriber+ RCE / Stored XSS via Global Custom Fields",
+    "desc": "The Ad Inserter  WordPress plugin before 2.8.19 does not correctly restrict access to one of its settings pages, making it reachable by every logged in user under a configuration its own settings allow, and does not filter the content saved there, allowing users with a role as low as subscriber to store code which is then executed as PHP or served unescaped to site visitors.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Ad Inserter"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-27",
+    "updated": "2026-09-27",
+    "url": "https://wpscan.com/vulnerability/b189ce9a-a930-41e6-bdd1-fdcc3bfb66be/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-82841",
+    "title": "UpdraftPlus 1.23.8 - 1.26.7 - Subscriber+ Remote Storage Credential Disclosure via Migration Notice",
+    "desc": "The UpdraftPlus: WP Backup & Migration Plugin WordPress plugin before 1.26.8, UpdraftPlus: WP Backup & Migration Plugin WordPress plugin before 2.26.8.26 does not have any capability check in a routine that outputs its stored remote storage settings into admin pages when the site is left in a particular post-migration state, allowing any authenticated user, such as a subscriber, to retrieve the cr",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "UpdraftPlus: WP Backup & Migration Plugin"
+      },
+      {
+        "vendor": "Unknown",
+        "product": "UpdraftPlus: WP Backup & Migration Plugin"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-27",
+    "updated": "2026-09-27",
+    "url": "https://wpscan.com/vulnerability/52f39a82-89ee-43f1-ba9c-3ea646fb0a0e/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-84069",
+    "title": "WebFacing Email Accounts for cPanel 5.3 - 5.3.6 - Unauthenticated LFI via assets/index.php",
+    "desc": "The WebFacing™  WordPress plugin before 5.4 does not restrict access to one of its bundled scripts and does not validate a user-supplied path before using it to include a local file, allowing unauthenticated users to perform Local File Inclusion.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "WebFacing™"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-27",
+    "updated": "2026-09-27",
+    "url": "https://wpscan.com/vulnerability/04965370-b4f4-4629-a9b1-7450fcf6aeee/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-85002",
+    "title": "EmbedPress < 4.6.7 - Contributor+ Stored XSS via Instagram Carousel Block Attributes",
+    "desc": "The EmbedPress  WordPress plugin before 4.6.7 does not escape one of its block attributes before outputting it inside an HTML attribute, which could allow users with the contributor role and above to perform Stored Cross-Site Scripting attacks against higher privileged users viewing the post.",
+    "cvss": 6.8,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "EmbedPress"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-27",
+    "updated": "2026-09-27",
+    "url": "https://wpscan.com/vulnerability/ad155ea2-c804-4906-956e-e2da8050d0de/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-86609",
+    "title": "Download Manager Pro < 7.5.6 - Unauthenticated Stored XSS via Email Lock Subscription",
+    "desc": "The Download Manager WordPress plugin before 7.5.6 does not sanitise and escape data submitted through its email-locked download subscription form before outputting it back in an admin page, which could allow unauthenticated attackers to perform Stored Cross-Site Scripting attacks against administrators. This affects the commercial Pro edition only; the free Download Manager WordPress plugin befor",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Download Manager"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-27",
+    "updated": "2026-09-27",
+    "url": "https://wpscan.com/vulnerability/85ebf2d8-af69-434c-b733-8156210d6d6a/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-86839",
+    "title": "Bookly < 28.3 - Staff+ Appointment and Payment Disclosure, Modification and Deletion via IDOR",
+    "desc": "The Online Scheduling and Appointment Booking System  WordPress plugin before 28.3 does not verify that appointment and payment records requested through its staff-role AJAX actions belong to the requesting staff member, allowing authenticated attackers with a staff-level account to view, modify and delete other staff members' appointments and payments, including the associated customer's personal",
+    "cvss": 3.8,
+    "severity": "LOW",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Online Scheduling and Appointment Booking System"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-27",
+    "updated": "2026-09-27",
+    "url": "https://wpscan.com/vulnerability/3ab8b879-3ef7-4aa4-8620-1bde99697dcb/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-86841",
+    "title": "Bookly 23.2 - 28.2 - Bookly Administrator+ PHP Object Injection via Diagnostics Advanced Options",
+    "desc": "The Online Scheduling and Appointment Booking System  WordPress plugin before 28.3 does not prevent deserialization of untrusted input and does not correctly restrict a privileged maintenance feature to administrators, allowing users granted a custom booking-management capability, which an administrator must explicitly assign, to inject arbitrary PHP objects, overwrite privileged site options, and",
+    "cvss": 4.7,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Online Scheduling and Appointment Booking System"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-27",
+    "updated": "2026-09-27",
+    "url": "https://wpscan.com/vulnerability/2150717e-7564-4b29-b2e7-362dd3b480c3/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-89000",
+    "title": "WPeMatico RSS Feed Fetcher < 2.8.27 - Contributor+ SSRF via Campaign Run",
+    "desc": "The WPeMatico RSS Feed Fetcher WordPress plugin before 2.8.27 does not perform a capability check or validate the destination of a user-supplied feed URL before fetching it server-side, allowing users with contributor-level access and above to make the server issue requests to internal-only resources and read the responses back.",
+    "cvss": 4.1,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "WPeMatico RSS Feed Fetcher"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-27",
+    "updated": "2026-09-27",
+    "url": "https://wpscan.com/vulnerability/2622b685-d2a9-4bb5-aeef-3aa4ca7adcc4/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-89001",
+    "title": "WPeMatico RSS Feed Fetcher < 2.8.27 - Contributor+ Post Publication and Author Spoofing via Campaign Settings",
+    "desc": "The WPeMatico RSS Feed Fetcher WordPress plugin before 2.8.27 does not verify that a user running a feed campaign is permitted to publish content or to attribute posts to another account, allowing users with contributor-level access and above to publish posts live and set any registered user, including an administrator, as the post author.",
+    "cvss": 4.9,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "WPeMatico RSS Feed Fetcher"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-27",
+    "updated": "2026-09-27",
+    "url": "https://wpscan.com/vulnerability/829bfdc3-7a15-4d6a-9782-72d34fd114b7/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-89003",
+    "title": "WPeMatico RSS Feed Fetcher < 2.8.27 - Contributor+ SSRF via Campaign Preview",
+    "desc": "The WPeMatico RSS Feed Fetcher WordPress plugin before 2.8.27 does not perform a capability check before fetching a user-supplied URL and rendering the response, allowing users with contributor-level access and above to force the server to issue requests to internal-only hosts and read the responses back.",
+    "cvss": 4.1,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "WPeMatico RSS Feed Fetcher"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-27",
+    "updated": "2026-09-27",
+    "url": "https://wpscan.com/vulnerability/9b891cf0-c663-48ae-adf4-4693b46d0529/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-89006",
+    "title": "WPeMatico RSS Feed Fetcher < 2.8.27 - Contributor+ Stored XSS via Feed Import",
+    "desc": "The WPeMatico RSS Feed Fetcher WordPress plugin before 2.8.27 does not sanitize imported feed content before storing it as post content, allowing users with the Contributor role and above to perform Stored Cross-Site Scripting attacks.",
+    "cvss": 6.8,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "WPeMatico RSS Feed Fetcher"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-27",
+    "updated": "2026-09-27",
+    "url": "https://wpscan.com/vulnerability/680091de-610a-4665-a028-515ca6c33055/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-92436",
+    "title": "Mailchimp for WooCommerce < 6.3 - Unauthenticated Customer Email and Cart Disclosure via IDOR",
+    "desc": "The Mailchimp for WooCommerce WordPress plugin before 6.3 does not require authentication or verify ownership before loading a saved cart from a request-supplied identifier that is derived from a customer's email address, allowing an unauthenticated attacker who knows a customer's email address to confirm that the customer shops at the store and to read that customer's saved cart contents.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Mailchimp for WooCommerce"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-27",
+    "updated": "2026-09-27",
+    "url": "https://wpscan.com/vulnerability/f4d7b94a-7699-464c-a646-5946837b363a/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-92995",
+    "title": "Verge3D <= 4.13.0 - Unauthenticated Product Download Disclosure via v3d_download_file",
+    "desc": "The Verge3D Publishing and E-Commerce WordPress plugin through 4.13.0 does not restrict access to a file-download handler, allowing unauthenticated users to download the digital-goods files attached to any order without authorization.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Verge3D Publishing and E-Commerce"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-27",
+    "updated": "2026-09-27",
+    "url": "https://wpscan.com/vulnerability/184e6a19-92d4-48f6-8e54-2511e0f3f316/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-96895",
+    "title": "WP YouTube Lyte < 1.7.31 - Contributor+ Stored XSS via Embed Block Attributes",
+    "desc": "The WP YouTube Lyte WordPress plugin before 1.7.31 does not escape some attributes of YouTube embed blocks before outputting them in an HTML attribute when rendering the block, which could allow users with a role as low as contributor to perform Stored Cross-Site Scripting attacks.",
+    "cvss": 6.8,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "WP YouTube Lyte"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-27",
+    "updated": "2026-09-27",
+    "url": "https://wpscan.com/vulnerability/15978f11-a7bd-41f0-94bf-069be4d03987/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-96896",
+    "title": "Malcure Malware Shield < 19.9.7 - Multisite Subsite Admin+ Arbitrary File Write and Deletion via wpmr_ajax_request",
+    "desc": "The Malcure Malware Shield — Removal, Repair, Monitor WordPress plugin before 19.9.7 does not perform an authorisation check on one of its AJAX actions, allowing users with a subsite administrator role on a multisite network to write and delete arbitrary files in the network's shared filesystem, which can lead to remote code execution.",
+    "cvss": 7.2,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Malcure Malware Shield — Removal, Repair, Monitor"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-27",
+    "updated": "2026-09-27",
+    "url": "https://wpscan.com/vulnerability/7ab467f9-4340-464c-a436-978a5acbad3a/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-96897",
+    "title": "Optima Express 8.5.0 - 8.7.5 - Unauthenticated Author Account Creation & Application Password Rotation via ihf_clear_cache",
+    "desc": "The Optima Express IDX WordPress plugin before 8.7.6 does not perform any authorisation check on one of its AJAX actions that is available to logged-out users, allowing unauthenticated attackers to force the creation of a fixed author-role account and to repeatedly rotate its application password on any connected install.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Optima Express IDX"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-27",
+    "updated": "2026-09-27",
+    "url": "https://wpscan.com/vulnerability/f9fd04f4-282d-486f-8561-dbf02250282a/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-96899",
+    "title": "Optima Express 8.6.0 - 8.7.5 - Author+ Stored XSS via faq_script",
+    "desc": "The Optima Express IDX WordPress plugin before 8.7.6 does not properly neutralise a script value submitted through one of its REST endpoints before storing it and echoing it into the document head when the post is rendered, allowing users with a role as low as author to perform Stored Cross-Site Scripting attacks.",
+    "cvss": 6.8,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "Optima Express IDX"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-27",
+    "updated": "2026-09-27",
+    "url": "https://wpscan.com/vulnerability/649584c7-0549-4080-92f0-bf4b9e8ee789/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-97227",
+    "title": "NextScripts: Social Networks Auto-Poster < 4.4.8 - Authenticated Social Account Credential Disclosure and Data Deletion",
+    "desc": "The NextScripts: Social Networks Auto-Poster WordPress plugin before 4.4.8 does not perform capability or ownership checks on several of its AJAX actions, relying on a nonce alone, allowing users an administrator has granted access to its posting features to export the site's configured social account credentials, delete arbitrary posts and reset the NextScripts: Social Networks Auto-Poster WordPr",
+    "cvss": 5.9,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "NextScripts: Social Networks Auto-Poster"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-27",
+    "updated": "2026-09-27",
+    "url": "https://wpscan.com/vulnerability/df187bfb-47f1-4259-b955-3c676f3d8cc1/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-97319",
+    "title": "PowerPress < 11.17.2 - Contributor+ Stored XSS via Podcast Player Block",
+    "desc": "The PowerPress Podcasting plugin by Blubrry WordPress plugin before 11.17.2 does not sanitize and escape a block attribute before outputting it in a page, which could allow users with the contributor role and above to perform Stored Cross-Site Scripting attacks.",
+    "cvss": 6.8,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Unknown",
+        "product": "PowerPress Podcasting plugin by Blubrry"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-27",
+    "updated": "2026-09-27",
+    "url": "https://wpscan.com/vulnerability/6ea7d2b5-8406-4efe-9b61-465af40d9a32/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-88771",
+    "title": "A remote code execution vulnerability exists due to improper input validation, which can allow an unauthenticated attacker to execute arbitrary commands",
+    "desc": "Improper input validation vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to an unauthenticated attacker to execute arbitrary commands.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-20"
+    ],
+    "affected": [
+      {
+        "vendor": "Citrix NetScaler",
+        "product": "ADC"
+      },
+      {
+        "vendor": "Citrix NetScaler",
+        "product": "Gateway"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2026-09-27",
+    "updated": "2026-09-27",
+    "url": "https://support.citrix.com/support-home/kbsearch/article?articleNumber=CTX697096",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-88772",
+    "title": "Memory overflow vulnerability leading to Remote Code Execution or Denial of Service",
+    "desc": "Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to Remote Code Execution or Denial of Service",
+    "cvss": null,
+    "severity": "",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Citrix NetScaler",
+        "product": "ADC"
+      },
+      {
+        "vendor": "Citrix NetScaler",
+        "product": "Gateway"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2026-09-27",
+    "updated": "2026-09-27",
+    "url": "https://support.citrix.com/support-home/kbsearch/article?articleNumber=CTX697096&articleTitle=Citrix_NetScaler_ADC_and_Citrix_NetScaler_Gateway_Security_Bulletin_for_CVE_2026_88771_CVE_2026_88772_CVE_2026_88773_CVE_2026_88774_CVE_2026_88775_CVE_2026_88776_CVE_2026_88777_and_CVE_2026_88778",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-96276",
+    "title": "Flatpak: flatpak: arbitrary write in host context via flatpak build-init",
+    "desc": "If a malicious SDK container declares an extension point with a crafted `directory` path, and a developer runs `flatpak build-init --writable-sdk --sdk-extension` with that SDK, attacker-chosen files could be written outside the working directory, since the target path is resolved via a function that allows `..` traversal.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-23",
+    "updated": "2026-09-27",
+    "url": "https://access.redhat.com/security/cve/CVE-2026-96276",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2026-93988",
     "title": "QloApps through 1.7.0 Arbitrary File Read via getEmailHTML",
     "desc": "QloApps through 1.7.0 contains a path traversal vulnerability in the getEmailHTML action of admin/ajax.php that allows authenticated back-office users to read arbitrary files. Attackers can supply relative path sequences in the email parameter to bypass directory restrictions and access sensitive files including database credentials and configuration data.",
@@ -86,6 +554,1293 @@
     "source": "CISA Vulnrichment"
   },
   {
+    "cve": "CVE-2026-100208",
+    "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-190"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft 365 Apps for Enterprise"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Office LTSC 2021"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft Office LTSC 2024"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-25",
+    "updated": "2026-09-26",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-100208",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-100376",
+    "title": "TemplateSandbox can be abused for XSS by asking another user to preview a page with a certain sandbox prefix",
+    "desc": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Wikimedia Foundation Mediawiki - TemplateSandbox Extension allows Cross-Site Scripting (XSS).\n\nThis issue affects Mediawiki - TemplateSandbox Extension: from * before 1.46.1, 1.45.5, 1.43.10.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Wikimedia Foundation",
+        "product": "Mediawiki - TemplateSandbox Extension"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-25",
+    "updated": "2026-09-26",
+    "url": "https://phabricator.wikimedia.org/T430596",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-100377",
+    "title": "Revision-deleted pages can be viewed through WikiLambda's action=edit and Special:ViewAbstract",
+    "desc": "Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Wikimedia Foundation Mediawiki - WikiLambda Extension allows Excavation.\n\nThis issue affects Mediawiki - WikiLambda Extension: 1.47.0-alpha. The issue has been remediated on the `master` branch.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-200"
+    ],
+    "affected": [
+      {
+        "vendor": "Wikimedia Foundation",
+        "product": "Mediawiki - WikiLambda Extension"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-25",
+    "updated": "2026-09-26",
+    "url": "https://phabricator.wikimedia.org/T430601",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-100378",
+    "title": "Missing permission check in the Translate sandbox doRemind action",
+    "desc": "Missing Authorization vulnerability in Wikimedia Foundation Mediawiki - Translate Extension allows Accessing Functionality Not Properly Constrained by ACLs.\n\nThis issue affects Mediawiki - Translate Extension: from * before 1.46.1, 1.45.5, 1.43.10.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "Wikimedia Foundation",
+        "product": "Mediawiki - Translate Extension"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-25",
+    "updated": "2026-09-26",
+    "url": "https://phabricator.wikimedia.org/T433070",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-100379",
+    "title": "Cross-request disclosure of CentralAuth cookies in Wikipedia Android App",
+    "desc": "Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Wikimedia Foundation Wikipedia Android App allows Accessing/Intercepting/Modifying HTTP Cookies.\n\nThis issue affects Wikipedia Android App: main.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-200"
+    ],
+    "affected": [
+      {
+        "vendor": "Wikimedia Foundation",
+        "product": "Wikipedia Android App"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-25",
+    "updated": "2026-09-26",
+    "url": "https://phabricator.wikimedia.org/T433832",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-100380",
+    "title": "Reflected XSS in Wikibase Special:SetLabel language validation",
+    "desc": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Wikimedia Foundation Mediawiki - Wikibase Extension allows Cross-Site Scripting (XSS).\n\nThis issue affects Mediawiki - Wikibase Extension: from * before 1.46.1, 1.45.5, 1.43.10.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Wikimedia Foundation",
+        "product": "Mediawiki - Wikibase Extension"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-25",
+    "updated": "2026-09-26",
+    "url": "https://phabricator.wikimedia.org/T434549",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-100381",
+    "title": "UploadWizard Flickr collection and set titles allow DOM XSS",
+    "desc": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Wikimedia Foundation Mediawiki - UploadWizard Extension allows Cross-Site Scripting (XSS).\n\nThis issue affects Mediawiki - UploadWizard Extension: from * before 1.46.1, 1.45.5, 1.43.10.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Wikimedia Foundation",
+        "product": "Mediawiki - UploadWizard Extension"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-25",
+    "updated": "2026-09-26",
+    "url": "https://phabricator.wikimedia.org/T434619",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-100382",
+    "title": "Unauthenticated remote code execution through wikitext in ExternalData",
+    "desc": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in Wikimedia Foundation Mediawiki - ExternalData Extension allows OS Command Injection.\n\nThis issue affects Mediawiki - ExternalData Extension: from * before 3.7.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-78"
+    ],
+    "affected": [
+      {
+        "vendor": "Wikimedia Foundation",
+        "product": "Mediawiki - ExternalData Extension"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-25",
+    "updated": "2026-09-26",
+    "url": "https://phabricator.wikimedia.org/T434961",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-100383",
+    "title": "Stored i18n XSS in WikiLambda's VisualEditor integration",
+    "desc": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Wikimedia Foundation Mediawiki - WikiLambda Extension allows Cross-Site Scripting (XSS).\n\nThis issue affects Mediawiki - WikiLambda Extension: 1.47.0-alpha. The issue has been remediated on the `master` branch.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Wikimedia Foundation",
+        "product": "Mediawiki - WikiLambda Extension"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-25",
+    "updated": "2026-09-26",
+    "url": "https://phabricator.wikimedia.org/T434967",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-10758",
+    "title": "Esri Lerc has a security vulnerability",
+    "desc": "Esri LERC is an open-source image or raster format which supports rapid encoding and decoding for any pixel type. A Heap based Out-of-Bounds Write via Integer Overflow in LERC versions 4.1.0 and earlier may allow a remote, unauthenticated attacker who can pass specifically crafted attacker controlled imagery to an application that uses LERC to crash the application, leading to a denial of service.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-190"
+    ],
+    "affected": [
+      {
+        "vendor": "Esri",
+        "product": "Lerc"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-25",
+    "updated": "2026-09-26",
+    "url": "https://github.com/Esri/lerc/security/advisories/GHSA-cw29-mw7w-pj37",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-15273",
+    "title": "Automatic.css 4.0.0 - Unauthenticated Stored Cross-Site Scripting via REQUEST_URI",
+    "desc": "The Automatic.css plugin for WordPress is vulnerable to Stored Cross-Site Scripting via REQUEST_URI in all version 4.0.0 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts that will execute whenever an administrator accesses the Activity Log settings page.",
+    "cvss": 6.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Automatic.css",
+        "product": "Automatic.css"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-26",
+    "updated": "2026-09-26",
+    "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/07d697c5-1c15-4d3a-8637-cc4fd408f209?source=cve",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-18104",
+    "title": "IBM Db2 Mirror for i is vulnerable to obtain sensitive information []",
+    "desc": "IBM Db2 Mirror for i 7.6, 7.5, and 7.4 could allow a local attacker to obtain sensitive information due to the use of the AES Electronic Codebook (ECB) mode for encryption.",
+    "cvss": 3.3,
+    "severity": "LOW",
+    "cwes": [
+      "CWE-327"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Db2 Mirror for i"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-24",
+    "updated": "2026-09-26",
+    "url": "https://www.ibm.com/support/pages/node/7289246",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-18143",
+    "title": "Request a Quote for WooCommerce <= 2.9.2 - Unauthenticated Arbitrary File Upload via AJAX Popup Handler",
+    "desc": "The Request a Quote for WooCommerce plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.9.2 via the `afrfq_submit_quote_via_popup()` function. This is due to missing file extension and MIME type validation in the popup upload handler, which uses the raw attacker-supplied filename directly as the destination for `move_uploaded_file()`. This makes it p",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-434"
+    ],
+    "affected": [
+      {
+        "vendor": "Addify",
+        "product": "Request a Quote for WooCommerce"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-26",
+    "updated": "2026-09-26",
+    "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/3417ec27-6abf-45c7-945f-6ef456ba1187?source=cve",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-56792",
+    "title": "Dell Rugged Control Center (RCC), versions prior to 5.2.206, contain an Improper Authorization vulnerability. A low priv",
+    "desc": "Dell Rugged Control Center (RCC), versions prior to 5.2.206, contain an Improper Authorization vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of Privileges.",
+    "cvss": 4.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-287"
+    ],
+    "affected": [
+      {
+        "vendor": "Dell",
+        "product": "Rugged Control Center (RCC)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-24",
+    "updated": "2026-09-26",
+    "url": "https://www.dell.com/support/kbdoc/en-us/000506924/dsa-2026-410-security-update-for-dell-rugged-control-center-rcc-multiple-vulnerabilities",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-65660",
+    "title": "Microsoft SharePoint Server Remote Code Execution Vulnerability",
+    "desc": "",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-94"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft SharePoint Enterprise Server 2016"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft SharePoint Server 2019"
+      },
+      {
+        "vendor": "Microsoft",
+        "product": "Microsoft SharePoint Server Subscription Edition"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2026-08-11",
+    "updated": "2026-09-26",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65660",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-67279",
+    "title": "SSH Pre-Authentication Rekey State Bypass in MikroTik RouterOS",
+    "desc": "RouterOS SSH enters the connection protocol after a client-requested rekey even though user authentication was never attempted, allowing an unauthenticated client to open a session channel and send an exec request. On affected builds the server dispatches the command, enabling unauthenticated creation, overwrite, and reconstruction of files in the RouterOS managed file namespace, including support",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-841"
+    ],
+    "affected": [
+      {
+        "vendor": "Mikrotik",
+        "product": "RouterOS"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2026-09-05",
+    "updated": "2026-09-26",
+    "url": "https://cert.pl/en/posts/2026/09/mikrotik-routeros-cve",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-69865",
+    "title": "Microsoft Container Registry Elevation of Privilege Vulnerability",
+    "desc": "",
+    "cvss": 10,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-639"
+    ],
+    "affected": [
+      {
+        "vendor": "Microsoft",
+        "product": "Azure Container Registry"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-17",
+    "updated": "2026-09-26",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69865",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-71178",
+    "title": "Dell Secure Connect Gateway (SCG) Policy Manager, versions prior to 5.34.00.16, contains an Use of Non-Canonical URL Pat",
+    "desc": "Dell Secure Connect Gateway (SCG) Policy Manager, versions prior to 5.34.00.16, contains an Use of Non-Canonical URL Paths for Authorization Decisions vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Unauthorized access.",
+    "cvss": 3.7,
+    "severity": "LOW",
+    "cwes": [
+      "CWE-647"
+    ],
+    "affected": [
+      {
+        "vendor": "Dell",
+        "product": "Secure Connect Gateway (SCG) Policy Manager"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-23",
+    "updated": "2026-09-26",
+    "url": "https://www.dell.com/support/kbdoc/en-ca/000503592/dsa-2026-385-security-update-for-dell-secure-connect-gateway-policy-manager-multiple-vulnerabilities?msockid=3021cac2195069ed3194ddad186a68f9",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-71461",
+    "title": "Automation-controller: automation-controller-container: automation-controller: verbose internal exception               disclosure via hostlist bare-exception handler",
+    "desc": "HostList.list() catches bare Exception and returns str(e)\n              verbatim. Via host_filter, any authenticated user triggers\n              Django FieldError (leaking complete Host model relation\n              graph including internal reverse accessors) or PostgreSQL\n              DataError (leaking raw database error strings). Two\n              primitives: credential__search=x dumps ORM sche",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-209"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2.7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-23",
+    "updated": "2026-09-26",
+    "url": "https://access.redhat.com/errata/RHSA-2026:71177",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-75633",
+    "title": "CAI Content Credentials | Improper Input Validation (CWE-20)",
+    "desc": "CAI Content Credentials is affected by an Improper Input Validation vulnerability that could result in an application denial-of-service. An attacker could exploit this vulnerability to crash the application, leading to a denial-of-service condition. Exploitation of this issue requires user interaction in that a victim must visit a maliciously crafted URL or interact with a compromised web page.",
+    "cvss": 5.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-20"
+    ],
+    "affected": [
+      {
+        "vendor": "Adobe",
+        "product": "Content Credentials Rust SDK"
+      },
+      {
+        "vendor": "Adobe",
+        "product": "Content Credentials Command-Line Tool"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-22",
+    "updated": "2026-09-26",
+    "url": "https://helpx.adobe.com/security/products/content-authenticity-sdk/apsb26-147.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-75684",
+    "title": "Adobe Connect | Cross-site Scripting (Stored XSS) (CWE-79)",
+    "desc": "Adobe Connect is affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by an attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim's browser when they browse to the page containing the vulnerable field, potentially gaining elevated access or control over the victim's account or session. Scope is changed.",
+    "cvss": 9.3,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Adobe",
+        "product": "Adobe Connect"
+      },
+      {
+        "vendor": "Adobe",
+        "product": "Adobe Connect Android Mobile App"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-22",
+    "updated": "2026-09-26",
+    "url": "https://helpx.adobe.com/security/products/connect/apsb26-150.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-75699",
+    "title": "Adobe Campaign Classic (ACC) | Improper Control of Generation of Code ('Code Injection') (CWE-94)",
+    "desc": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+    "cvss": 10,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-94"
+    ],
+    "affected": [
+      {
+        "vendor": "Adobe",
+        "product": "Adobe Campaign Classic"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-22",
+    "updated": "2026-09-26",
+    "url": "https://helpx.adobe.com/security/products/campaign/apsb26-142.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-76648",
+    "title": "Automation-controller: automation-controller-container: aap controller: copyapiview.post() missing read                 authorization check enables job template secret                 recovery",
+    "desc": "CopyAPIView (awx/awx/api/generics.py:873) sets permission_classes =\n(IsAuthenticated,), so DRF's get_object() performs no object-level\nRBAC. The get() handler (lines 988–991) explicitly guards with\nrequest.user.can_access(obj._class_, 'read', obj) — but post()\n(lines 1001–1010) does not. POST only checks:\n\ncan_access(model, 'add', create_kwargs_check)\n\ncan_access(model, 'copy_related', obj)\n\nFor J",
+    "cvss": 8.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2.7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-23",
+    "updated": "2026-09-26",
+    "url": "https://access.redhat.com/errata/RHSA-2026:71177",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-77203",
+    "title": "Groups <= 4.6.0 - Authenticated (Subscriber+) Privilege Escalation via 'groups_join' Shortcode",
+    "desc": "The Groups – Memberships and Access Control plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 4.6.0. This is due to the groups_join() function deriving group-join eligibility from the ambient post's author capabilities via the global $post->post_author rather than from the currently authenticated user's own capabilities, while simultaneously minting a",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-269"
+    ],
+    "affected": [
+      {
+        "vendor": "itthinx",
+        "product": "Groups – Memberships and Access Control"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-26",
+    "updated": "2026-09-26",
+    "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/e86dddc9-c1d3-426b-8ec7-2e56dc3c2379?source=cve",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-77825",
+    "title": "IBM ContextForge MCP Gateway is affected by path traversal",
+    "desc": "IBM ContextForge MCP Gateway 1.0.0 through 1.0.8 was vulnerable to path traversal in its Admin API log-download endpoint (`GET /v1/admin/logs/file`). The path confinement check uses `str.startswith()` rather than proper boundary validation, allowing an authenticated admin to read `.log`, `.jsonl`, and `.json` files outside the configured `LOG_FOLDER` by supplying a filename that resolves into a si",
+    "cvss": 4.9,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "ContextForge MCP Gateway"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-24",
+    "updated": "2026-09-26",
+    "url": "https://www.ibm.com/support/pages/node/7289314",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-80151",
+    "title": "Lantronix Autonomous Out-of-Band Devices OS Command Injection via set nfs download",
+    "desc": "Lantronix SLC8000 before firmware v9.7.0.3, SLC9000 before firmware v9.7.0.2, EMG8500/EMG7500 before firmware v9.7.0.1, and all firmware versions of SLB882/SLCx-03/SLCx-02 contain a command injection vulnerability that allows authenticated attackers with the services permission to execute arbitrary shell commands as root by exploiting the set nfs download command that passes unsanitized user input",
+    "cvss": 9.1,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-78"
+    ],
+    "affected": [
+      {
+        "vendor": "LANTRONIX",
+        "product": "SLC8000"
+      },
+      {
+        "vendor": "LANTRONIX",
+        "product": "EMG8500"
+      },
+      {
+        "vendor": "LANTRONIX",
+        "product": "EMG7500"
+      },
+      {
+        "vendor": "LANTRONIX",
+        "product": "SLB882"
+      },
+      {
+        "vendor": "LANTRONIX",
+        "product": "SLCx-03"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-22",
+    "updated": "2026-09-26",
+    "url": "https://revrb.net/2026/09/21/revrb-lantern.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-80412",
+    "title": "DataStage on Cloud Pak for Data has several vulnerabilities",
+    "desc": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary code due to improper escaping of connector property values during OSH script generation.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-78"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "DataStage on Cloud Pak for Data"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-23",
+    "updated": "2026-09-26",
+    "url": "https://www.ibm.com/support/pages/node/7288649",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-81473",
+    "title": "Dell Rugged Control Center (RCC), versions prior to 5.2.206, contain an Improper Authorization vulnerability. A low priv",
+    "desc": "Dell Rugged Control Center (RCC), versions prior to 5.2.206, contain an Improper Authorization vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of Privileges.",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-287"
+    ],
+    "affected": [
+      {
+        "vendor": "Dell",
+        "product": "Rugged Control Center (RCC)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-24",
+    "updated": "2026-09-26",
+    "url": "https://www.dell.com/support/kbdoc/en-us/000506924/dsa-2026-410-security-update-for-dell-rugged-control-center-rcc-multiple-vulnerabilities",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-81537",
+    "title": "DataStage on Cloud Pak for Data has several vulnerabilities",
+    "desc": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary code due to OS command injection.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-78"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "DataStage on Cloud Pak for Data"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-23",
+    "updated": "2026-09-26",
+    "url": "https://www.ibm.com/support/pages/node/7288649",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-81548",
+    "title": "DataStage on Cloud Pak for Data has several vulnerabilities",
+    "desc": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary commands due to improper neutralization of special elements used in an OS command.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-78"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "DataStage on Cloud Pak for Data"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-24",
+    "updated": "2026-09-26",
+    "url": "https://www.ibm.com/support/pages/node/7288649",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-82003",
+    "title": "Adobe Campaign Classic (ACC) | Improper Input Validation (CWE-20)",
+    "desc": "Adobe Campaign Classic (ACC) is affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploit depends on conditions beyond the attacker's control. Exploitation of this issue does not require user interaction. Scope is changed.",
+    "cvss": 8.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-20"
+    ],
+    "affected": [
+      {
+        "vendor": "Adobe",
+        "product": "Adobe Campaign Classic"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-22",
+    "updated": "2026-09-26",
+    "url": "https://helpx.adobe.com/security/products/campaign/apsb26-142.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-82013",
+    "title": "Adobe Campaign Classic (ACC) | Server-Side Request Forgery (SSRF) (CWE-918)",
+    "desc": "Adobe Campaign Classic (ACC) is affected by a Server-Side Request Forgery (SSRF) vulnerability that could result in privilege escalation. A low-privileged attacker could exploit this vulnerability to gain elevated access to internal resources. Exploitation of this issue does not require user interaction. Scope is changed.",
+    "cvss": 9.9,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-918"
+    ],
+    "affected": [
+      {
+        "vendor": "Adobe",
+        "product": "Adobe Campaign Classic"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-22",
+    "updated": "2026-09-26",
+    "url": "https://helpx.adobe.com/security/products/campaign/apsb26-142.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-82164",
+    "title": "Dell Trusted Device Client, versions prior to 8.1.359.0, contain an Incorrect Permission Assignment for Critical Resourc",
+    "desc": "Dell Trusted Device Client, versions prior to 8.1.359.0, contain an Incorrect Permission Assignment for Critical Resource vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Information tampering.",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-732"
+    ],
+    "affected": [
+      {
+        "vendor": "Dell",
+        "product": "Trusted Device Client,"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-24",
+    "updated": "2026-09-26",
+    "url": "https://www.dell.com/support/kbdoc/en-us/000506918/dsa-2026-408-security-update-for-dell-trusted-device-client-for-an-incorrect-permission-assignment-for-critical-resource-vulnerability",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-82901",
+    "title": "Ultra Addons for Contact Form 7 <= 3.5.50 - Unauthenticated Arbitrary File Upload via Signature Form Field",
+    "desc": "The Ultra Addons for Contact Form 7 plugin for WordPress is vulnerable to Arbitrary File Upload due to insufficient file type validation in the 'uacf7_wpcf7_mail_components' function in all versions up to, and including, 3.5.50. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible. Note: This is o",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-434"
+    ],
+    "affected": [
+      {
+        "vendor": "themefic",
+        "product": "Ultra Addons for Contact Form 7"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-26",
+    "updated": "2026-09-26",
+    "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/872e1a05-aacc-44fa-93c1-8c3f7b2fb46d?source=cve",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-83964",
+    "title": "Adobe Connect | Improper Certificate Validation (CWE-295)",
+    "desc": "Adobe Connect is affected by an Improper Certificate Validation vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to disclose sensitive information. Exploitation of this issue does not require user interaction.",
+    "cvss": 6.2,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-295"
+    ],
+    "affected": [
+      {
+        "vendor": "Adobe",
+        "product": "Adobe Connect"
+      },
+      {
+        "vendor": "Adobe",
+        "product": "Adobe Connect Android Mobile App"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-22",
+    "updated": "2026-09-26",
+    "url": "https://helpx.adobe.com/security/products/connect/apsb26-150.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-84499",
+    "title": "Automation-controller: automation-controller-container: automation-controller: write-only survey password recovered in plaintext via schedule/workflowjobtemplatenode survey min/max validation error me",
+    "desc": "A flaw was found in Red Hat Ansible Automation Platform's automation-\ncontroller. Survey questions of type password are write-only and stored\nencrypted, displayed only as a placeholder on read. When a schedule or\nworkflow job template node is revalidated against a tightened survey\nspecification, the controller decrypts the stored password and includes its\nplaintext value in the minimum/maximum len",
+    "cvss": 7.7,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-209"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2.5 for RHEL 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2.5 for RHEL 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2.6 for RHEL 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2.6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2.7"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-23",
+    "updated": "2026-09-26",
+    "url": "https://access.redhat.com/errata/RHSA-2026:71113",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-84706",
+    "title": "Automation-controller: automation-controller-container: automation-controller: credential type env-injector deny-list omits process-hijacking variables (bash_env/ld_preload) allowing code execution in",
+    "desc": "A flaw was found in Ansible Automation Platform's automation-controller. The custom\nCredential Type environment-variable injector validates variable names against a\ndeny-list (an ANSIBLE_* prefix check plus a fixed ENV_BLOCKLIST) that omits\nprocess-hijacking loader variables such as BASH_ENV, ENV, LD_PRELOAD, LD_LIBRARY_PATH,\nPYTHONSTARTUP and GIT_SSH_COMMAND. Combined with the credential file inj",
+    "cvss": 7.6,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-184"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2.5 for RHEL 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2.5 for RHEL 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2.6 for RHEL 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2.6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2.7"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-23",
+    "updated": "2026-09-26",
+    "url": "https://access.redhat.com/errata/RHSA-2026:71113",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-84717",
+    "title": "Automation-controller: automation-controller: unauthenticated 200-vs-403 oracle in bitbucket data center webhook receiver enumerates webhook-enabled job templates",
+    "desc": "A flaw was found in the Ansible Automation Platform automation-controller. The unauthenticated\nBitbucket Data Center webhook receiver skips HMAC signature verification for diagnostics:ping\nevents after it has already looked up the target template, causing the endpoint to return HTTP\n200 for a template that has a Bitbucket DC webhook configured and HTTP 403 otherwise. An\nunauthenticated remote atta",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-204"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2.5 for RHEL 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2.5 for RHEL 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2.6 for RHEL 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2.6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2.7"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-23",
+    "updated": "2026-09-26",
+    "url": "https://access.redhat.com/errata/RHSA-2026:71113",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-84724",
+    "title": "Automation-controller: automation-controller: systemjob extra_vars.days argument injection into uncontainerized control-plane awx-manage process",
+    "desc": "An argument-injection flaw was found in the Ansible Automation Platform automation-controller\nsystem-job subsystem. The system-job template launch endpoint stores a user-supplied \"days\"\nvariable without running the integer validation defined elsewhere for that field, and the\ndispatcher flattens the management-command argument list into a single string with spaces before\nthe job runner re-splits it",
+    "cvss": 6.6,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-88"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2.5 for RHEL 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2.5 for RHEL 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2.6 for RHEL 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2.6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Ansible Automation Platform 2.7"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-23",
+    "updated": "2026-09-26",
+    "url": "https://access.redhat.com/errata/RHSA-2026:71113",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-84882",
+    "title": "IBM Guardium Data Protection is affected by multiple vulnerabilities.",
+    "desc": "IBM Guardium Data Protection 12.2 is vulnerable to path traversal in the Universal Connector Oracle Wallet upload component. An authenticated remote attacker could exploit this vulnerability to write arbitrary files to the system.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Guardium Data Protection"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-25",
+    "updated": "2026-09-26",
+    "url": "https://www.ibm.com/support/pages/node/7288035",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-85542",
+    "title": "IBM Guardium Data Protection is affected by multiple vulnerabilities.",
+    "desc": "IBM Guardium Data Protection 12.2 is affected by a command injection vulnerability in the GIM bundle import functionality. An authenticated attacker can provide a crafted GIM bundle that causes attacker-controlled arguments to be passed to the tar command, resulting in arbitrary command execution with elevated privileges on the Central Manager.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-78"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Guardium Data Protection"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-25",
+    "updated": "2026-09-26",
+    "url": "https://www.ibm.com/support/pages/node/7288035",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-85984",
+    "title": "miniOrange OTP Login, Verification and SMS Notifications <= 5.5.5 - Unauthenticated Authentication Bypass via 'mo_wp_login_intent' Parameter",
+    "desc": "The miniOrange OTP Login, Verification and SMS Notifications plugin for WordPress is vulnerable to Authentication Bypass via the mo_wp_login_intent parameter in all versions up to, and including, 5.5.5. This is due to a missing password-intent guard in the skip_pass_fallback-enabled configuration branch of the mo_by_pass_login() function, which treats administrator role membership alone as suffici",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-287"
+    ],
+    "affected": [
+      {
+        "vendor": "cyberlord92",
+        "product": "miniOrange OTP Login, Verification and SMS Notifications"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-26",
+    "updated": "2026-09-26",
+    "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/2895f0c2-41b6-4b11-9865-3bded4402aa9?source=cve",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-87902",
+    "title": "An unauthenticated attacker can make `get_page_template()` page-template resolution include a chosen readable local `.ph",
+    "desc": "An unauthenticated attacker can make `get_page_template()` page-template resolution include a chosen readable local `.php` file outside the active theme directories. If relevant pre-conditions for both the server and the active theme are met, this can lead to RCE.",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-98"
+    ],
+    "affected": [
+      {
+        "vendor": "WordPress",
+        "product": "WordPress"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2026-09-22",
+    "updated": "2026-09-26",
+    "url": "https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-7hp8-65ch-5whp",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-88840",
+    "title": "Busybox: busybox: tls ssl_server reads one byte out of bounds when parsing truncated clienthello",
+    "desc": "BusyBox TLS get_client_hello() reads past the end of the input buffer when parsing a truncated ClientHello message.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-125"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Hardened Images"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-23",
+    "updated": "2026-09-26",
+    "url": "https://access.redhat.com/security/cve/CVE-2026-88840",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-89276",
+    "title": "Adobe Campaign Classic (ACC) | Improper Control of Generation of Code ('Code Injection') (CWE-94)",
+    "desc": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+    "cvss": 9.9,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-94"
+    ],
+    "affected": [
+      {
+        "vendor": "Adobe",
+        "product": "Adobe Campaign Classic"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-22",
+    "updated": "2026-09-26",
+    "url": "https://helpx.adobe.com/security/products/campaign/apsb26-142.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-89325",
+    "title": "Rapid7 Insight Agent: Uncontrolled search path element in InsightVM assessment content leads to local privilege escalation",
+    "desc": "An uncontrolled search path element in InsightVM assessment content in Rapid7 Insight Agent on Windows allows a local, low-privileged user to execute arbitrary code as SYSTEM via a planted executable resolved from the machine PATH.\n\nAssessment content at or below version 0.0.261.0 included a check that invoked the `code` command without a fully qualified path from a process running as SYSTEM. The ",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-427"
+    ],
+    "affected": [
+      {
+        "vendor": "Rapid7",
+        "product": "Insight Agent"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-24",
+    "updated": "2026-09-26",
+    "url": "https://docs.rapid7.com/insight/release-notes-2026-september/#resolved-cve-2026-89325",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-91839",
+    "title": "Networkmanager-fortisslvpn: networkmanager-fortisslvpn: local privilege escalation to root via crlf injection in vpn profile credentials",
+    "desc": "A flaw was found in NetworkManager-fortisslvpn, the FortiSSLVPN plugin for NetworkManager. The nm-fortisslvpn-service improperly handles carriage-return/line-feed (CR/LF) characters in VPN connection profile credentials. A local unprivileged user can exploit this by crafting a malicious VPN profile to inject additional configuration directives. This can lead to arbitrary code execution with root p",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-93"
+    ],
+    "affected": [
+      {
+        "vendor": "GNOME",
+        "product": "NetworkManager-fortisslvpn"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-09-25",
+    "updated": "2026-09-26",
+    "url": "https://access.redhat.com/security/cve/CVE-2026-91839",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-91840",
+    "title": "Networkmanager-vpnc: networkmanager-vpnc: local privilege escalation to root via newline injection in vpn username",
+    "desc": "A flaw was found in NetworkManager-vpnc. This vulnerability allows a local unprivileged user to escalate privileges to root. By injecting a newline character into the VPN username field, an attacker can manipulate the vpnc configuration to execute an arbitrary program with root privileges when the malicious VPN connection is activated.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-93"
+    ],
+    "affected": [
+      {
+        "vendor": "GNOME",
+        "product": "NetworkManager-vpnc"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-09-25",
+    "updated": "2026-09-26",
+    "url": "https://access.redhat.com/security/cve/CVE-2026-91840",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-91841",
+    "title": "Networkmanager-vpnc: networkmanager-vpnc: incomplete fix for cve-2018-10900 allows root privilege escalation via ca-file path newline injection",
+    "desc": "A flaw was found in NetworkManager-vpnc, a VPN plugin for NetworkManager. A local unprivileged user can exploit this vulnerability by injecting a newline character into the CA-File path. This manipulation allows the user to execute arbitrary commands as the root user, leading to local privilege escalation.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-93"
+    ],
+    "affected": [
+      {
+        "vendor": "GNOME",
+        "product": "NetworkManager-vpnc"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-09-25",
+    "updated": "2026-09-26",
+    "url": "https://access.redhat.com/security/cve/CVE-2026-91841",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-92680",
+    "title": "Araxis Merge insufficiently protected credentials",
+    "desc": "Araxis Merge for Windows version 2011.4074 through 2026.0 stores user-configured credentials for remote servers in the Windows registry and does not apply sufficient cryptographic protection. An authenticated, non-administrative attacker could retrieve and unencrypt all credentials the target user has stored in Merge.",
+    "cvss": 5.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-522"
+    ],
+    "affected": [
+      {
+        "vendor": "Araxis",
+        "product": "Merge"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-24",
+    "updated": "2026-09-26",
+    "url": "https://www.araxis.com/merge/release-notes-2026#Merge-SA-26-00",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-93306",
+    "title": "This Power System update is being released to address",
+    "desc": "IBM Server Firmware FW1120.00 through FW1120.01, FW1110.00 through FW1110.31, FW1060.00 through FW1060.81, and FW950.00 through FW950.H3 is affected by a vulnerability in the ASMI web interface. An unauthenticated attacker on the management network can send a malformed HTTPS request to ASMI, causing the web server to crash with possible memory corruption and generate an error log. The ASMI web int",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-125"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Server Firmware"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-25",
+    "updated": "2026-09-26",
+    "url": "https://www.ibm.com/support/pages/node/7289331",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-93399",
+    "title": "Online Scheduling and Appointment Booking System <= 28.2 - Insecure Direct Object Reference to Unauthenticated Arbitrary Booking Token Disclosure and Deletion via 'order_id' Parameter",
+    "desc": "The Bookly plugin for WordPress is vulnerable to Insecure Direct Object Reference in versions up to, and including, 28.2 via the 'bookly_get_form_id', 'bookly_render_complete', 'bookly_add_to_calendar' and 'bookly_rollback_order' AJAX actions. This is due to the 'bookly_get_form_id' handler blindly storing the attacker-controlled 'order_id' from the submitted form_data into a new booking session, ",
+    "cvss": 9.1,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-639"
+    ],
+    "affected": [
+      {
+        "vendor": "ladela",
+        "product": "Online Scheduling and Appointment Booking System – Bookly"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-25",
+    "updated": "2026-09-26",
+    "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/d45a01e5-0e69-4d95-b609-b9002b3776da?source=cve",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-93643",
+    "title": "Zimbra Collaboration Suite OnlyOffice Integration Path Traversal Leading to Remote Code Execution via Unauthenticated /downloadas Request",
+    "desc": "When OnlyOffice/Document Editing is available, an unauthenticated remote attacker with access to an existing supported public Briefcase document can abuse unsigned save fields to perform path-traversal writes and execute commands as zimbra.",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-22",
+      "CWE-863"
+    ],
+    "affected": [
+      {
+        "vendor": "Zimbra",
+        "product": "Zimbra Collaboration Suite (ZCS)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-25",
+    "updated": "2026-09-26",
+    "url": "https://wiki.zimbra.com/wiki/Zimbra_Security_Advisories",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2026-94130",
     "title": "Joomla Extension - joomlaboat.com - Unauthenticated SQL injection in YouTube Gallery extension < 5.7.3",
     "desc": "Joomla Extension - joomlaboat.com - Unauthenticated SQL injection in YouTube Gallery extension < 5.7.3 - An SQL injection vulnerability in video search functionality and sorting allowed attackers to inject SQL commands in read queries.",
@@ -103,7 +1858,7 @@
     "exploitation": "none",
     "isKev": false,
     "published": "2026-09-26",
-    "updated": "2026-09-27",
+    "updated": "2026-09-26",
     "url": "https://joomlaboat.com/youtube-gallery",
     "source": "CISA Vulnrichment"
   },
@@ -125,7 +1880,7 @@
     "exploitation": "none",
     "isKev": false,
     "published": "2026-09-26",
-    "updated": "2026-09-27",
+    "updated": "2026-09-26",
     "url": "https://www.acymailing.com/",
     "source": "CISA Vulnrichment"
   },
@@ -147,8 +1902,179 @@
     "exploitation": "none",
     "isKev": false,
     "published": "2026-09-26",
-    "updated": "2026-09-27",
+    "updated": "2026-09-26",
     "url": "https://www.acymailing.com/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-95811",
+    "title": "Lemonldap::NG::Handler versions from 2.0.0 before 2.16.10, from 2.17.0 before 2.21.6, from 2.22.0 before 2.23.4 for Perl allow an equivalent spelling of a path to bypass the locationRules that restric",
+    "desc": "Lemonldap::NG::Handler versions from 2.0.0 before 2.16.10, from 2.17.0 before 2.21.6, from 2.22.0 before 2.23.4 for Perl allow an equivalent spelling of a path to bypass the locationRules that restrict it.\n\nThe handler matches each vhost's locationRules regular expressions against REQUEST_URI, the raw request line, while the web server routes on the path it has already percent-decoded and normaliz",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-863",
+      "CWE-180"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-09-25",
+    "updated": "2026-09-26",
+    "url": "https://gitlab.ow2.org/lemonldap-ng/lemonldap-ng/-/issues/3723",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-96446",
+    "title": "Keycloak-services: keycloak-services: par single-use bypass via prompt=none silent authentication path",
+    "desc": "A flaw was found in the Pushed Authorization Request PAR implementation of Keycloak. The issue occurs when the silent authentication path prompt=none is used, which allows the authorization process to skip certain steps if a user is already logged in. Due to this bypass, the security rule that ensures a pushed request URI is used only once is not enforced. An attacker could potentially reuse a req",
+    "cvss": 4.2,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Build of Keycloak"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Build of Keycloak"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Single Sign-On 7"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-23",
+    "updated": "2026-09-26",
+    "url": "https://access.redhat.com/security/cve/CVE-2026-96446",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-96448",
+    "title": "Keycloak-services: keycloak-services: fgap v2 composite-blind role mapping allows privilege escalation",
+    "desc": "A flaw was found in the Fine-Grained Admin Permissions (FGAP v2) feature of Keycloak, an identity and access management solution. The issue occurs when the system checks if a delegated administrator has permission to assign a specific role to a user. Because the check does not look inside composite roles to see what other permissions they contain, an administrator with limited rights can assign a ",
+    "cvss": 6.6,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-285"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Build of Keycloak"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Build of Keycloak"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Single Sign-On 7"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-25",
+    "updated": "2026-09-26",
+    "url": "https://access.redhat.com/security/cve/CVE-2026-96448",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-96611",
+    "title": "FFmpeg before 9.0 has a signed integer overflow in libavformat/mov.c. In mov_read_ispe(), uint32_t width/height values f",
+    "desc": "FFmpeg before 9.0 has a signed integer overflow in libavformat/mov.c. In mov_read_ispe(), uint32_t width/height values from a crafted HEIF ispe box are stored into signed int fields without bounds checking, allowing values exceeding INT_MAX to become negative. In read_image_grid(), accumulating these values causes signed integer overflow (undefined behavior per C17 section 6.5), which on x86 wraps",
+    "cvss": 6.9,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-190"
+    ],
+    "affected": [
+      {
+        "vendor": "FFmpeg",
+        "product": "FFmpeg"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-23",
+    "updated": "2026-09-26",
+    "url": "https://code.ffmpeg.org/FFmpeg/FFmpeg/pulls/23455",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-96749",
+    "title": "Heap out-of-bounds write via signed size overflow in BSON document encoding",
+    "desc": "An integer overflow in the BSON document encoding component of the MongoDB Python Driver's bundled native extension may occur when a single document is built from an unusually large amount of caller-supplied data. Size arithmetic is performed in a signed 32-bit type, and the guard meant to catch the overflow is written in a form whose behavior is not defined by the C language standard. A party wit",
+    "cvss": 8.4,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-190"
+    ],
+    "affected": [
+      {
+        "vendor": "MongoDB",
+        "product": "Python Driver"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-24",
+    "updated": "2026-09-26",
+    "url": "https://github.com/mongodb/mongo-python-driver/security/advisories/GHSA-v4x9-3549-crwv",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-96807",
+    "title": "In Flatpak before 1.18.1, a malicious sandboxed app can replace ~/.var/app/$appid/.ld.so with a symlink, causing regener",
+    "desc": "In Flatpak before 1.18.1, a malicious sandboxed app can replace ~/.var/app/$appid/.ld.so with a symlink, causing regenerate_ld_cache to write files at an arbitrary location. The filenames and content are not attacker controlled, making this hard to exploit.",
+    "cvss": 4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-61"
+    ],
+    "affected": [
+      {
+        "vendor": "Flatpak",
+        "product": "Flatpak"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-23",
+    "updated": "2026-09-26",
+    "url": "https://github.com/flatpak/flatpak/security/advisories/GHSA-99wv-m8rp-g58x",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-97155",
+    "title": "Fabasoft Folio Client before 2026, a locally installed component that communicates with the Fabasoft browser extension v",
+    "desc": "Fabasoft Folio Client before 2026, a locally installed component that communicates with the Fabasoft browser extension via web messaging, does not restrict which web origins may invoke its functions by default. The registry value VALIDDOMAINS, which limits permitted origins, was optional and empty by default, resulting in all domains being trusted. As a consequence, any website visited by a user w",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-346"
+    ],
+    "affected": [
+      {
+        "vendor": "Fabasoft",
+        "product": "Folio Client"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-24",
+    "updated": "2026-09-26",
+    "url": "https://help.supportservices.fabasoft.com/index.php?topic=doc/Knowledge-Base/changes-to-fabasoft-folio-client-security-settings.htm",
     "source": "CISA Vulnrichment"
   },
   {
@@ -169,7 +2095,7 @@
     "exploitation": "none",
     "isKev": false,
     "published": "2026-09-26",
-    "updated": "2026-09-27",
+    "updated": "2026-09-26",
     "url": "https://up.lomart.fr/",
     "source": "CISA Vulnrichment"
   },
@@ -192,7 +2118,7 @@
     "exploitation": "none",
     "isKev": false,
     "published": "2026-09-26",
-    "updated": "2026-09-27",
+    "updated": "2026-09-26",
     "url": "https://up.lomart.fr/",
     "source": "CISA Vulnrichment"
   },
@@ -214,7 +2140,7 @@
     "exploitation": "none",
     "isKev": false,
     "published": "2026-09-26",
-    "updated": "2026-09-27",
+    "updated": "2026-09-26",
     "url": "https://up.lomart.fr/",
     "source": "CISA Vulnrichment"
   },
@@ -237,30 +2163,108 @@
     "exploitation": "none",
     "isKev": false,
     "published": "2026-09-26",
-    "updated": "2026-09-27",
+    "updated": "2026-09-26",
     "url": "https://up.lomart.fr/",
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-85542",
-    "title": "IBM Guardium Data Protection is affected by multiple vulnerabilities.",
-    "desc": "IBM Guardium Data Protection 12.2 is affected by a command injection vulnerability in the GIM bundle import functionality. An authenticated attacker can provide a crafted GIM bundle that causes attacker-controlled arguments to be passed to the tar command, resulting in arbitrary command execution with elevated privileges on the Central Manager.",
-    "cvss": 8.8,
-    "severity": "HIGH",
+    "cve": "CVE-2026-97176",
+    "title": "Keycloak-services: keycloak-services: essential acr requirement silently bypassed via cookie authenticator",
+    "desc": "A flaw was found in the Level of Authentication enforcement mechanism of Keycloak, an identity and access management solution. The issue occurs when a client specifically requires a higher security level for a user who already has an active session at a lower level. Due to a logic error in how session re-evaluations are handled, Keycloak may incorrectly issue a token at the lower security level in",
+    "cvss": 4.2,
+    "severity": "MEDIUM",
     "cwes": [
-      "CWE-78"
+      "CWE-862"
     ],
     "affected": [
       {
-        "vendor": "IBM",
-        "product": "Guardium Data Protection"
+        "vendor": "Red Hat",
+        "product": "Red Hat Build of Keycloak"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Build of Keycloak"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Single Sign-On 7"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-24",
+    "updated": "2026-09-26",
+    "url": "https://access.redhat.com/security/cve/CVE-2026-97176",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-97404",
+    "title": "In OpenStack Zaqar before 22.0.2, WSGI transport mishandles the URL-Signature header. By sending a request with an empty",
+    "desc": "In OpenStack Zaqar before 22.0.2, WSGI transport mishandles the URL-Signature header. By sending a request with an empty URL-Signature header, an unauthenticated remote attacker who knows a target project's UUID may bypass both Keystone authentication and pre-signed URL verification, resulting in the ability to read, enumerate, create, and delete that project's queues, messages, claims, and subscr",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-348"
+    ],
+    "affected": [
+      {
+        "vendor": "OpenStack",
+        "product": "Zaqar"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-24",
+    "updated": "2026-09-26",
+    "url": "https://launchpad.net/bugs/2164987",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-97730",
+    "title": "In Netgate pfSense Plus before 26.07 and pfSense CE before 2.9.0, a Local File Inclusion (LFI) vulnerability in the Dash",
+    "desc": "In Netgate pfSense Plus before 26.07 and pfSense CE before 2.9.0, a Local File Inclusion (LFI) vulnerability in the Dashboard (index.php) widget sequence data handling allows an authenticated attacker to execute arbitrary PHP code. To exploit this, an attacker with privileges to modify Dashboard settings and write arbitrary files to the pfSense firewall system (e.g., /tmp/test.widget.php) can subm",
+    "cvss": 8.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-24"
+    ],
+    "affected": [
+      {
+        "vendor": "Netgate",
+        "product": "pfSense Plus"
+      },
+      {
+        "vendor": "Netgate",
+        "product": "pfSense CE"
       }
     ],
     "exploitation": "none",
     "isKev": false,
     "published": "2026-09-25",
-    "updated": "2026-09-27",
-    "url": "https://www.ibm.com/support/pages/node/7288035",
+    "updated": "2026-09-26",
+    "url": "https://redmine.pfsense.org/issues/16947",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-97736",
+    "title": "tinyauth before 5.1.3 allows rule bypass by appending an allowed route string. This is caused by an unanchored regular e",
+    "desc": "tinyauth before 5.1.3 allows rule bypass by appending an allowed route string. This is caused by an unanchored regular expression.",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-777"
+    ],
+    "affected": [
+      {
+        "vendor": "tinyauth",
+        "product": "tinyauth"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-25",
+    "updated": "2026-09-26",
+    "url": "https://github.com/tinyauthapp/tinyauth/security/advisories/GHSA-r27r-rr9v-vv37",
     "source": "CISA Vulnrichment"
   },
   {
@@ -830,204 +2834,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-100376",
-    "title": "TemplateSandbox can be abused for XSS by asking another user to preview a page with a certain sandbox prefix",
-    "desc": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Wikimedia Foundation Mediawiki - TemplateSandbox Extension allows Cross-Site Scripting (XSS).\n\nThis issue affects Mediawiki - TemplateSandbox Extension: from * before 1.46.1, 1.45.5, 1.43.10.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Wikimedia Foundation",
-        "product": "Mediawiki - TemplateSandbox Extension"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-25",
-    "updated": "2026-09-26",
-    "url": "https://phabricator.wikimedia.org/T430596",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-100377",
-    "title": "Revision-deleted pages can be viewed through WikiLambda's action=edit and Special:ViewAbstract",
-    "desc": "Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Wikimedia Foundation Mediawiki - WikiLambda Extension allows Excavation.\n\nThis issue affects Mediawiki - WikiLambda Extension: 1.47.0-alpha. The issue has been remediated on the `master` branch.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-200"
-    ],
-    "affected": [
-      {
-        "vendor": "Wikimedia Foundation",
-        "product": "Mediawiki - WikiLambda Extension"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-25",
-    "updated": "2026-09-26",
-    "url": "https://phabricator.wikimedia.org/T430601",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-100378",
-    "title": "Missing permission check in the Translate sandbox doRemind action",
-    "desc": "Missing Authorization vulnerability in Wikimedia Foundation Mediawiki - Translate Extension allows Accessing Functionality Not Properly Constrained by ACLs.\n\nThis issue affects Mediawiki - Translate Extension: from * before 1.46.1, 1.45.5, 1.43.10.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "Wikimedia Foundation",
-        "product": "Mediawiki - Translate Extension"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-25",
-    "updated": "2026-09-26",
-    "url": "https://phabricator.wikimedia.org/T433070",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-100379",
-    "title": "Cross-request disclosure of CentralAuth cookies in Wikipedia Android App",
-    "desc": "Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Wikimedia Foundation Wikipedia Android App allows Accessing/Intercepting/Modifying HTTP Cookies.\n\nThis issue affects Wikipedia Android App: main.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-200"
-    ],
-    "affected": [
-      {
-        "vendor": "Wikimedia Foundation",
-        "product": "Wikipedia Android App"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-25",
-    "updated": "2026-09-26",
-    "url": "https://phabricator.wikimedia.org/T433832",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-100380",
-    "title": "Reflected XSS in Wikibase Special:SetLabel language validation",
-    "desc": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Wikimedia Foundation Mediawiki - Wikibase Extension allows Cross-Site Scripting (XSS).\n\nThis issue affects Mediawiki - Wikibase Extension: from * before 1.46.1, 1.45.5, 1.43.10.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Wikimedia Foundation",
-        "product": "Mediawiki - Wikibase Extension"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-25",
-    "updated": "2026-09-26",
-    "url": "https://phabricator.wikimedia.org/T434549",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-100381",
-    "title": "UploadWizard Flickr collection and set titles allow DOM XSS",
-    "desc": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Wikimedia Foundation Mediawiki - UploadWizard Extension allows Cross-Site Scripting (XSS).\n\nThis issue affects Mediawiki - UploadWizard Extension: from * before 1.46.1, 1.45.5, 1.43.10.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Wikimedia Foundation",
-        "product": "Mediawiki - UploadWizard Extension"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-25",
-    "updated": "2026-09-26",
-    "url": "https://phabricator.wikimedia.org/T434619",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-100382",
-    "title": "Unauthenticated remote code execution through wikitext in ExternalData",
-    "desc": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in Wikimedia Foundation Mediawiki - ExternalData Extension allows OS Command Injection.\n\nThis issue affects Mediawiki - ExternalData Extension: from * before 3.7.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-78"
-    ],
-    "affected": [
-      {
-        "vendor": "Wikimedia Foundation",
-        "product": "Mediawiki - ExternalData Extension"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-25",
-    "updated": "2026-09-26",
-    "url": "https://phabricator.wikimedia.org/T434961",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-100383",
-    "title": "Stored i18n XSS in WikiLambda's VisualEditor integration",
-    "desc": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Wikimedia Foundation Mediawiki - WikiLambda Extension allows Cross-Site Scripting (XSS).\n\nThis issue affects Mediawiki - WikiLambda Extension: 1.47.0-alpha. The issue has been remediated on the `master` branch.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Wikimedia Foundation",
-        "product": "Mediawiki - WikiLambda Extension"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-25",
-    "updated": "2026-09-26",
-    "url": "https://phabricator.wikimedia.org/T434967",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-10758",
-    "title": "Esri Lerc has a security vulnerability",
-    "desc": "Esri LERC is an open-source image or raster format which supports rapid encoding and decoding for any pixel type. A Heap based Out-of-Bounds Write via Integer Overflow in LERC versions 4.1.0 and earlier may allow a remote, unauthenticated attacker who can pass specifically crafted attacker controlled imagery to an application that uses LERC to crash the application, leading to a denial of service.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-190"
-    ],
-    "affected": [
-      {
-        "vendor": "Esri",
-        "product": "Lerc"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-25",
-    "updated": "2026-09-26",
-    "url": "https://github.com/Esri/lerc/security/advisories/GHSA-cw29-mw7w-pj37",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-11871",
     "title": "Team Showcase Supreme <= 9.2 - Unauthenticated Sensitive Data Disclosure via wpm_6310_team_member_details",
     "desc": "The Team Members  WordPress plugin through 9.2 does not perform any authorization or visibility check in an unauthenticated AJAX action that returns full team member records by ID, allowing unauthenticated attackers to enumerate and disclose details, including email addresses and phone numbers, of team members the administrator has not published publicly.",
@@ -1045,28 +2851,6 @@
     "published": "2026-09-26",
     "updated": "2026-09-26",
     "url": "https://wpscan.com/vulnerability/9ca61aee-c36a-41c5-b4e7-1626c5720362/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-15273",
-    "title": "Automatic.css 4.0.0 - Unauthenticated Stored Cross-Site Scripting via REQUEST_URI",
-    "desc": "The Automatic.css plugin for WordPress is vulnerable to Stored Cross-Site Scripting via REQUEST_URI in all version 4.0.0 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts that will execute whenever an administrator accesses the Activity Log settings page.",
-    "cvss": 6.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Automatic.css",
-        "product": "Automatic.css"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-26",
-    "updated": "2026-09-26",
-    "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/07d697c5-1c15-4d3a-8637-cc4fd408f209?source=cve",
     "source": "CISA Vulnrichment"
   },
   {
@@ -1090,50 +2874,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-18104",
-    "title": "IBM Db2 Mirror for i is vulnerable to obtain sensitive information []",
-    "desc": "IBM Db2 Mirror for i 7.6, 7.5, and 7.4 could allow a local attacker to obtain sensitive information due to the use of the AES Electronic Codebook (ECB) mode for encryption.",
-    "cvss": 3.3,
-    "severity": "LOW",
-    "cwes": [
-      "CWE-327"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "Db2 Mirror for i"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-24",
-    "updated": "2026-09-26",
-    "url": "https://www.ibm.com/support/pages/node/7289246",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-18143",
-    "title": "Request a Quote for WooCommerce <= 2.9.2 - Unauthenticated Arbitrary File Upload via AJAX Popup Handler",
-    "desc": "The Request a Quote for WooCommerce plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.9.2 via the `afrfq_submit_quote_via_popup()` function. This is due to missing file extension and MIME type validation in the popup upload handler, which uses the raw attacker-supplied filename directly as the destination for `move_uploaded_file()`. This makes it p",
-    "cvss": 9.8,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-434"
-    ],
-    "affected": [
-      {
-        "vendor": "Addify",
-        "product": "Request a Quote for WooCommerce"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-26",
-    "updated": "2026-09-26",
-    "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/3417ec27-6abf-45c7-945f-6ef456ba1187?source=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-19708",
     "title": "File Manager 7.2.2 - 8.0.4 - Unauthenticated Database Backup Disclosure",
     "desc": "The File Manager WordPress plugin before 8.0.5 does not prevent unauthenticated users from downloading its database backup archives, and in some cases writes them under a fixed filename, allowing unauthenticated attackers to retrieve a full database dump including every user's email address and password hash on servers that do not apply the directory's .htaccess file.",
@@ -1151,404 +2891,6 @@
     "published": "2026-09-26",
     "updated": "2026-09-26",
     "url": "https://wpscan.com/vulnerability/a0cbfd20-7741-44d0-96c4-054a7952f81b/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-56792",
-    "title": "Dell Rugged Control Center (RCC), versions prior to 5.2.206, contain an Improper Authorization vulnerability. A low priv",
-    "desc": "Dell Rugged Control Center (RCC), versions prior to 5.2.206, contain an Improper Authorization vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of Privileges.",
-    "cvss": 4.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-287"
-    ],
-    "affected": [
-      {
-        "vendor": "Dell",
-        "product": "Rugged Control Center (RCC)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-24",
-    "updated": "2026-09-26",
-    "url": "https://www.dell.com/support/kbdoc/en-us/000506924/dsa-2026-410-security-update-for-dell-rugged-control-center-rcc-multiple-vulnerabilities",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-71178",
-    "title": "Dell Secure Connect Gateway (SCG) Policy Manager, versions prior to 5.34.00.16, contains an Use of Non-Canonical URL Pat",
-    "desc": "Dell Secure Connect Gateway (SCG) Policy Manager, versions prior to 5.34.00.16, contains an Use of Non-Canonical URL Paths for Authorization Decisions vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Unauthorized access.",
-    "cvss": 3.7,
-    "severity": "LOW",
-    "cwes": [
-      "CWE-647"
-    ],
-    "affected": [
-      {
-        "vendor": "Dell",
-        "product": "Secure Connect Gateway (SCG) Policy Manager"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-23",
-    "updated": "2026-09-26",
-    "url": "https://www.dell.com/support/kbdoc/en-ca/000503592/dsa-2026-385-security-update-for-dell-secure-connect-gateway-policy-manager-multiple-vulnerabilities?msockid=3021cac2195069ed3194ddad186a68f9",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-71461",
-    "title": "Automation-controller: automation-controller-container: automation-controller: verbose internal exception               disclosure via hostlist bare-exception handler",
-    "desc": "HostList.list() catches bare Exception and returns str(e)\n              verbatim. Via host_filter, any authenticated user triggers\n              Django FieldError (leaking complete Host model relation\n              graph including internal reverse accessors) or PostgreSQL\n              DataError (leaking raw database error strings). Two\n              primitives: credential__search=x dumps ORM sche",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-209"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2.7"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-23",
-    "updated": "2026-09-26",
-    "url": "https://access.redhat.com/errata/RHSA-2026:71177",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-75633",
-    "title": "CAI Content Credentials | Improper Input Validation (CWE-20)",
-    "desc": "CAI Content Credentials is affected by an Improper Input Validation vulnerability that could result in an application denial-of-service. An attacker could exploit this vulnerability to crash the application, leading to a denial-of-service condition. Exploitation of this issue requires user interaction in that a victim must visit a maliciously crafted URL or interact with a compromised web page.",
-    "cvss": 5.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-20"
-    ],
-    "affected": [
-      {
-        "vendor": "Adobe",
-        "product": "Content Credentials Rust SDK"
-      },
-      {
-        "vendor": "Adobe",
-        "product": "Content Credentials Command-Line Tool"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-22",
-    "updated": "2026-09-26",
-    "url": "https://helpx.adobe.com/security/products/content-authenticity-sdk/apsb26-147.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-75684",
-    "title": "Adobe Connect | Cross-site Scripting (Stored XSS) (CWE-79)",
-    "desc": "Adobe Connect is affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by an attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim's browser when they browse to the page containing the vulnerable field, potentially gaining elevated access or control over the victim's account or session. Scope is changed.",
-    "cvss": 9.3,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Connect"
-      },
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Connect Android Mobile App"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-22",
-    "updated": "2026-09-26",
-    "url": "https://helpx.adobe.com/security/products/connect/apsb26-150.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-75699",
-    "title": "Adobe Campaign Classic (ACC) | Improper Control of Generation of Code ('Code Injection') (CWE-94)",
-    "desc": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
-    "cvss": 10,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-94"
-    ],
-    "affected": [
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Campaign Classic"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-22",
-    "updated": "2026-09-26",
-    "url": "https://helpx.adobe.com/security/products/campaign/apsb26-142.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-76648",
-    "title": "Automation-controller: automation-controller-container: aap controller: copyapiview.post() missing read                 authorization check enables job template secret                 recovery",
-    "desc": "CopyAPIView (awx/awx/api/generics.py:873) sets permission_classes =\n(IsAuthenticated,), so DRF's get_object() performs no object-level\nRBAC. The get() handler (lines 988–991) explicitly guards with\nrequest.user.can_access(obj._class_, 'read', obj) — but post()\n(lines 1001–1010) does not. POST only checks:\n\ncan_access(model, 'add', create_kwargs_check)\n\ncan_access(model, 'copy_related', obj)\n\nFor J",
-    "cvss": 8.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2.7"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-23",
-    "updated": "2026-09-26",
-    "url": "https://access.redhat.com/errata/RHSA-2026:71177",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-77203",
-    "title": "Groups <= 4.6.0 - Authenticated (Subscriber+) Privilege Escalation via 'groups_join' Shortcode",
-    "desc": "The Groups – Memberships and Access Control plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 4.6.0. This is due to the groups_join() function deriving group-join eligibility from the ambient post's author capabilities via the global $post->post_author rather than from the currently authenticated user's own capabilities, while simultaneously minting a",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-269"
-    ],
-    "affected": [
-      {
-        "vendor": "itthinx",
-        "product": "Groups – Memberships and Access Control"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-26",
-    "updated": "2026-09-26",
-    "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/e86dddc9-c1d3-426b-8ec7-2e56dc3c2379?source=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-77825",
-    "title": "IBM ContextForge MCP Gateway is affected by path traversal",
-    "desc": "IBM ContextForge MCP Gateway 1.0.0 through 1.0.8 was vulnerable to path traversal in its Admin API log-download endpoint (`GET /v1/admin/logs/file`). The path confinement check uses `str.startswith()` rather than proper boundary validation, allowing an authenticated admin to read `.log`, `.jsonl`, and `.json` files outside the configured `LOG_FOLDER` by supplying a filename that resolves into a si",
-    "cvss": 4.9,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-22"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "ContextForge MCP Gateway"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-24",
-    "updated": "2026-09-26",
-    "url": "https://www.ibm.com/support/pages/node/7289314",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-80412",
-    "title": "DataStage on Cloud Pak for Data has several vulnerabilities",
-    "desc": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary code due to improper escaping of connector property values during OSH script generation.",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-78"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "DataStage on Cloud Pak for Data"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-23",
-    "updated": "2026-09-26",
-    "url": "https://www.ibm.com/support/pages/node/7288649",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-81473",
-    "title": "Dell Rugged Control Center (RCC), versions prior to 5.2.206, contain an Improper Authorization vulnerability. A low priv",
-    "desc": "Dell Rugged Control Center (RCC), versions prior to 5.2.206, contain an Improper Authorization vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of Privileges.",
-    "cvss": 8.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-287"
-    ],
-    "affected": [
-      {
-        "vendor": "Dell",
-        "product": "Rugged Control Center (RCC)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-24",
-    "updated": "2026-09-26",
-    "url": "https://www.dell.com/support/kbdoc/en-us/000506924/dsa-2026-410-security-update-for-dell-rugged-control-center-rcc-multiple-vulnerabilities",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-81537",
-    "title": "DataStage on Cloud Pak for Data has several vulnerabilities",
-    "desc": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary code due to OS command injection.",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-78"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "DataStage on Cloud Pak for Data"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-23",
-    "updated": "2026-09-26",
-    "url": "https://www.ibm.com/support/pages/node/7288649",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-81548",
-    "title": "DataStage on Cloud Pak for Data has several vulnerabilities",
-    "desc": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary commands due to improper neutralization of special elements used in an OS command.",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-78"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "DataStage on Cloud Pak for Data"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-24",
-    "updated": "2026-09-26",
-    "url": "https://www.ibm.com/support/pages/node/7288649",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-82003",
-    "title": "Adobe Campaign Classic (ACC) | Improper Input Validation (CWE-20)",
-    "desc": "Adobe Campaign Classic (ACC) is affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploit depends on conditions beyond the attacker's control. Exploitation of this issue does not require user interaction. Scope is changed.",
-    "cvss": 8.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-20"
-    ],
-    "affected": [
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Campaign Classic"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-22",
-    "updated": "2026-09-26",
-    "url": "https://helpx.adobe.com/security/products/campaign/apsb26-142.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-82013",
-    "title": "Adobe Campaign Classic (ACC) | Server-Side Request Forgery (SSRF) (CWE-918)",
-    "desc": "Adobe Campaign Classic (ACC) is affected by a Server-Side Request Forgery (SSRF) vulnerability that could result in privilege escalation. A low-privileged attacker could exploit this vulnerability to gain elevated access to internal resources. Exploitation of this issue does not require user interaction. Scope is changed.",
-    "cvss": 9.9,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-918"
-    ],
-    "affected": [
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Campaign Classic"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-22",
-    "updated": "2026-09-26",
-    "url": "https://helpx.adobe.com/security/products/campaign/apsb26-142.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-82901",
-    "title": "Ultra Addons for Contact Form 7 <= 3.5.50 - Unauthenticated Arbitrary File Upload via Signature Form Field",
-    "desc": "The Ultra Addons for Contact Form 7 plugin for WordPress is vulnerable to Arbitrary File Upload due to insufficient file type validation in the 'uacf7_wpcf7_mail_components' function in all versions up to, and including, 3.5.50. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible. Note: This is o",
-    "cvss": 9.8,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-434"
-    ],
-    "affected": [
-      {
-        "vendor": "themefic",
-        "product": "Ultra Addons for Contact Form 7"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-26",
-    "updated": "2026-09-26",
-    "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/872e1a05-aacc-44fa-93c1-8c3f7b2fb46d?source=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-83964",
-    "title": "Adobe Connect | Improper Certificate Validation (CWE-295)",
-    "desc": "Adobe Connect is affected by an Improper Certificate Validation vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to disclose sensitive information. Exploitation of this issue does not require user interaction.",
-    "cvss": 6.2,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-295"
-    ],
-    "affected": [
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Connect"
-      },
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Connect Android Mobile App"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-22",
-    "updated": "2026-09-26",
-    "url": "https://helpx.adobe.com/security/products/connect/apsb26-150.html",
     "source": "CISA Vulnrichment"
   },
   {
@@ -1612,158 +2954,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-84499",
-    "title": "Automation-controller: automation-controller-container: automation-controller: write-only survey password recovered in plaintext via schedule/workflowjobtemplatenode survey min/max validation error me",
-    "desc": "A flaw was found in Red Hat Ansible Automation Platform's automation-\ncontroller. Survey questions of type password are write-only and stored\nencrypted, displayed only as a placeholder on read. When a schedule or\nworkflow job template node is revalidated against a tightened survey\nspecification, the controller decrypts the stored password and includes its\nplaintext value in the minimum/maximum len",
-    "cvss": 7.7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-209"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2.5 for RHEL 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2.5 for RHEL 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2.6 for RHEL 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2.6"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2.7"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-23",
-    "updated": "2026-09-26",
-    "url": "https://access.redhat.com/errata/RHSA-2026:71113",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-84706",
-    "title": "Automation-controller: automation-controller-container: automation-controller: credential type env-injector deny-list omits process-hijacking variables (bash_env/ld_preload) allowing code execution in",
-    "desc": "A flaw was found in Ansible Automation Platform's automation-controller. The custom\nCredential Type environment-variable injector validates variable names against a\ndeny-list (an ANSIBLE_* prefix check plus a fixed ENV_BLOCKLIST) that omits\nprocess-hijacking loader variables such as BASH_ENV, ENV, LD_PRELOAD, LD_LIBRARY_PATH,\nPYTHONSTARTUP and GIT_SSH_COMMAND. Combined with the credential file inj",
-    "cvss": 7.6,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-184"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2.5 for RHEL 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2.5 for RHEL 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2.6 for RHEL 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2.6"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2.7"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-23",
-    "updated": "2026-09-26",
-    "url": "https://access.redhat.com/errata/RHSA-2026:71113",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-84717",
-    "title": "Automation-controller: automation-controller: unauthenticated 200-vs-403 oracle in bitbucket data center webhook receiver enumerates webhook-enabled job templates",
-    "desc": "A flaw was found in the Ansible Automation Platform automation-controller. The unauthenticated\nBitbucket Data Center webhook receiver skips HMAC signature verification for diagnostics:ping\nevents after it has already looked up the target template, causing the endpoint to return HTTP\n200 for a template that has a Bitbucket DC webhook configured and HTTP 403 otherwise. An\nunauthenticated remote atta",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-204"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2.5 for RHEL 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2.5 for RHEL 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2.6 for RHEL 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2.6"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2.7"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-23",
-    "updated": "2026-09-26",
-    "url": "https://access.redhat.com/errata/RHSA-2026:71113",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-84724",
-    "title": "Automation-controller: automation-controller: systemjob extra_vars.days argument injection into uncontainerized control-plane awx-manage process",
-    "desc": "An argument-injection flaw was found in the Ansible Automation Platform automation-controller\nsystem-job subsystem. The system-job template launch endpoint stores a user-supplied \"days\"\nvariable without running the integer validation defined elsewhere for that field, and the\ndispatcher flattens the management-command argument list into a single string with spaces before\nthe job runner re-splits it",
-    "cvss": 6.6,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-88"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2.5 for RHEL 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2.5 for RHEL 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2.6 for RHEL 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2.6"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2.7"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-23",
-    "updated": "2026-09-26",
-    "url": "https://access.redhat.com/errata/RHSA-2026:71113",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-85081",
     "title": "Multiple elFinder Plugins - DOM-based XSS via postMessage Origin Bypass",
     "desc": "The File Manager WordPress plugin before 8.0.5, FileOrganizer  WordPress plugin before 1.2.1, File Manager Pro  WordPress plugin before 2.1.3 do not correctly validate the origin of window messages received by the file browser they load on their admin screens, accepting any origin that is a leading string prefix of the site's own address, which allows an unauthenticated attacker to run arbitrary J",
@@ -1792,50 +2982,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-85984",
-    "title": "miniOrange OTP Login, Verification and SMS Notifications <= 5.5.5 - Unauthenticated Authentication Bypass via 'mo_wp_login_intent' Parameter",
-    "desc": "The miniOrange OTP Login, Verification and SMS Notifications plugin for WordPress is vulnerable to Authentication Bypass via the mo_wp_login_intent parameter in all versions up to, and including, 5.5.5. This is due to a missing password-intent guard in the skip_pass_fallback-enabled configuration branch of the mo_by_pass_login() function, which treats administrator role membership alone as suffici",
-    "cvss": 9.8,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-287"
-    ],
-    "affected": [
-      {
-        "vendor": "cyberlord92",
-        "product": "miniOrange OTP Login, Verification and SMS Notifications"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-26",
-    "updated": "2026-09-26",
-    "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/2895f0c2-41b6-4b11-9865-3bded4402aa9?source=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-88840",
-    "title": "Busybox: busybox: tls ssl_server reads one byte out of bounds when parsing truncated clienthello",
-    "desc": "BusyBox TLS get_client_hello() reads past the end of the input buffer when parsing a truncated ClientHello message.",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-125"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Hardened Images"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-23",
-    "updated": "2026-09-26",
-    "url": "https://access.redhat.com/security/cve/CVE-2026-88840",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-89237",
     "title": "Bluff Post <= 1.1.1 - Unauthenticated SQLi via 'table_name' and 'column_name' Parameters",
     "desc": "The Bluff Post WordPress plugin through 1.1.1 does not sanitise and escape parameters before using them as identifiers in a SQL query, allowing unauthenticated attackers to append additional SQL and extract sensitive information from the database.",
@@ -1853,28 +2999,6 @@
     "published": "2026-09-26",
     "updated": "2026-09-26",
     "url": "https://wpscan.com/vulnerability/92355b31-995b-4151-a414-51d3430d0fd6/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-89276",
-    "title": "Adobe Campaign Classic (ACC) | Improper Control of Generation of Code ('Code Injection') (CWE-94)",
-    "desc": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
-    "cvss": 9.9,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-94"
-    ],
-    "affected": [
-      {
-        "vendor": "Adobe",
-        "product": "Adobe Campaign Classic"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-22",
-    "updated": "2026-09-26",
-    "url": "https://helpx.adobe.com/security/products/campaign/apsb26-142.html",
     "source": "CISA Vulnrichment"
   },
   {
@@ -1917,102 +3041,6 @@
     "published": "2026-09-26",
     "updated": "2026-09-26",
     "url": "https://wpscan.com/vulnerability/f76a4694-8073-41fe-bb49-4073e6e95ac3/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-92680",
-    "title": "Araxis Merge insufficiently protected credentials",
-    "desc": "Araxis Merge for Windows version 2011.4074 through 2026.0 stores user-configured credentials for remote servers in the Windows registry and does not apply sufficient cryptographic protection. An authenticated, non-administrative attacker could retrieve and unencrypt all credentials the target user has stored in Merge.",
-    "cvss": 5.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-522"
-    ],
-    "affected": [
-      {
-        "vendor": "Araxis",
-        "product": "Merge"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-24",
-    "updated": "2026-09-26",
-    "url": "https://www.araxis.com/merge/release-notes-2026#Merge-SA-26-00",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-93306",
-    "title": "This Power System update is being released to address",
-    "desc": "IBM Server Firmware FW1120.00 through FW1120.01, FW1110.00 through FW1110.31, FW1060.00 through FW1060.81, and FW950.00 through FW950.H3 is affected by a vulnerability in the ASMI web interface. An unauthenticated attacker on the management network can send a malformed HTTPS request to ASMI, causing the web server to crash with possible memory corruption and generate an error log. The ASMI web int",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-125"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "Server Firmware"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-25",
-    "updated": "2026-09-26",
-    "url": "https://www.ibm.com/support/pages/node/7289331",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-93399",
-    "title": "Online Scheduling and Appointment Booking System <= 28.2 - Insecure Direct Object Reference to Unauthenticated Arbitrary Booking Token Disclosure and Deletion via 'order_id' Parameter",
-    "desc": "The Bookly plugin for WordPress is vulnerable to Insecure Direct Object Reference in versions up to, and including, 28.2 via the 'bookly_get_form_id', 'bookly_render_complete', 'bookly_add_to_calendar' and 'bookly_rollback_order' AJAX actions. This is due to the 'bookly_get_form_id' handler blindly storing the attacker-controlled 'order_id' from the submitted form_data into a new booking session, ",
-    "cvss": 9.1,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-639"
-    ],
-    "affected": [
-      {
-        "vendor": "ladela",
-        "product": "Online Scheduling and Appointment Booking System – Bookly"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-25",
-    "updated": "2026-09-26",
-    "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/d45a01e5-0e69-4d95-b609-b9002b3776da?source=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-96446",
-    "title": "Keycloak-services: keycloak-services: par single-use bypass via prompt=none silent authentication path",
-    "desc": "A flaw was found in the Pushed Authorization Request PAR implementation of Keycloak. The issue occurs when the silent authentication path prompt=none is used, which allows the authorization process to skip certain steps if a user is already logged in. Due to this bypass, the security rule that ensures a pushed request URI is used only once is not enforced. An attacker could potentially reuse a req",
-    "cvss": 4.2,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Build of Keycloak"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Build of Keycloak"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Single Sign-On 7"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-23",
-    "updated": "2026-09-26",
-    "url": "https://access.redhat.com/security/cve/CVE-2026-96446",
     "source": "CISA Vulnrichment"
   },
   {
@@ -2133,172 +3161,6 @@
     "published": "2026-09-26",
     "updated": "2026-09-26",
     "url": "https://wpscan.com/vulnerability/062284b2-b55d-42e2-8dda-ced7845d7df0/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-96611",
-    "title": "FFmpeg before 9.0 has a signed integer overflow in libavformat/mov.c. In mov_read_ispe(), uint32_t width/height values f",
-    "desc": "FFmpeg before 9.0 has a signed integer overflow in libavformat/mov.c. In mov_read_ispe(), uint32_t width/height values from a crafted HEIF ispe box are stored into signed int fields without bounds checking, allowing values exceeding INT_MAX to become negative. In read_image_grid(), accumulating these values causes signed integer overflow (undefined behavior per C17 section 6.5), which on x86 wraps",
-    "cvss": 6.9,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-190"
-    ],
-    "affected": [
-      {
-        "vendor": "FFmpeg",
-        "product": "FFmpeg"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-23",
-    "updated": "2026-09-26",
-    "url": "https://code.ffmpeg.org/FFmpeg/FFmpeg/pulls/23455",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-96807",
-    "title": "In Flatpak before 1.18.1, a malicious sandboxed app can replace ~/.var/app/$appid/.ld.so with a symlink, causing regener",
-    "desc": "In Flatpak before 1.18.1, a malicious sandboxed app can replace ~/.var/app/$appid/.ld.so with a symlink, causing regenerate_ld_cache to write files at an arbitrary location. The filenames and content are not attacker controlled, making this hard to exploit.",
-    "cvss": 4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-61"
-    ],
-    "affected": [
-      {
-        "vendor": "Flatpak",
-        "product": "Flatpak"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-23",
-    "updated": "2026-09-26",
-    "url": "https://github.com/flatpak/flatpak/security/advisories/GHSA-99wv-m8rp-g58x",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-97155",
-    "title": "Fabasoft Folio Client before 2026, a locally installed component that communicates with the Fabasoft browser extension v",
-    "desc": "Fabasoft Folio Client before 2026, a locally installed component that communicates with the Fabasoft browser extension via web messaging, does not restrict which web origins may invoke its functions by default. The registry value VALIDDOMAINS, which limits permitted origins, was optional and empty by default, resulting in all domains being trusted. As a consequence, any website visited by a user w",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-346"
-    ],
-    "affected": [
-      {
-        "vendor": "Fabasoft",
-        "product": "Folio Client"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-24",
-    "updated": "2026-09-26",
-    "url": "https://help.supportservices.fabasoft.com/index.php?topic=doc/Knowledge-Base/changes-to-fabasoft-folio-client-security-settings.htm",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-97176",
-    "title": "Keycloak-services: keycloak-services: essential acr requirement silently bypassed via cookie authenticator",
-    "desc": "A flaw was found in the Level of Authentication enforcement mechanism of Keycloak, an identity and access management solution. The issue occurs when a client specifically requires a higher security level for a user who already has an active session at a lower level. Due to a logic error in how session re-evaluations are handled, Keycloak may incorrectly issue a token at the lower security level in",
-    "cvss": 4.2,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Build of Keycloak"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Build of Keycloak"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Single Sign-On 7"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-24",
-    "updated": "2026-09-26",
-    "url": "https://access.redhat.com/security/cve/CVE-2026-97176",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-97404",
-    "title": "In OpenStack Zaqar before 22.0.2, WSGI transport mishandles the URL-Signature header. By sending a request with an empty",
-    "desc": "In OpenStack Zaqar before 22.0.2, WSGI transport mishandles the URL-Signature header. By sending a request with an empty URL-Signature header, an unauthenticated remote attacker who knows a target project's UUID may bypass both Keystone authentication and pre-signed URL verification, resulting in the ability to read, enumerate, create, and delete that project's queues, messages, claims, and subscr",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-348"
-    ],
-    "affected": [
-      {
-        "vendor": "OpenStack",
-        "product": "Zaqar"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-24",
-    "updated": "2026-09-26",
-    "url": "https://launchpad.net/bugs/2164987",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-97730",
-    "title": "In Netgate pfSense Plus before 26.07 and pfSense CE before 2.9.0, a Local File Inclusion (LFI) vulnerability in the Dash",
-    "desc": "In Netgate pfSense Plus before 26.07 and pfSense CE before 2.9.0, a Local File Inclusion (LFI) vulnerability in the Dashboard (index.php) widget sequence data handling allows an authenticated attacker to execute arbitrary PHP code. To exploit this, an attacker with privileges to modify Dashboard settings and write arbitrary files to the pfSense firewall system (e.g., /tmp/test.widget.php) can subm",
-    "cvss": 8.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-24"
-    ],
-    "affected": [
-      {
-        "vendor": "Netgate",
-        "product": "pfSense Plus"
-      },
-      {
-        "vendor": "Netgate",
-        "product": "pfSense CE"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-25",
-    "updated": "2026-09-26",
-    "url": "https://redmine.pfsense.org/issues/16947",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-97736",
-    "title": "tinyauth before 5.1.3 allows rule bypass by appending an allowed route string. This is caused by an unanchored regular e",
-    "desc": "tinyauth before 5.1.3 allows rule bypass by appending an allowed route string. This is caused by an unanchored regular expression.",
-    "cvss": 5.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-777"
-    ],
-    "affected": [
-      {
-        "vendor": "tinyauth",
-        "product": "tinyauth"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-25",
-    "updated": "2026-09-26",
-    "url": "https://github.com/tinyauthapp/tinyauth/security/advisories/GHSA-r27r-rr9v-vv37",
     "source": "CISA Vulnrichment"
   },
   {
@@ -3364,36 +4226,6 @@
     "published": "2026-09-23",
     "updated": "2026-09-26",
     "url": "https://github.com/MacWarrior/clipbucket-v5/pull/874",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-96448",
-    "title": "Keycloak-services: keycloak-services: fgap v2 composite-blind role mapping allows privilege escalation",
-    "desc": "A flaw was found in the Fine-Grained Admin Permissions (FGAP v2) feature of Keycloak, an identity and access management solution. The issue occurs when the system checks if a delegated administrator has permission to assign a specific role to a user. Because the check does not look inside composite roles to see what other permissions they contain, an administrator with limited rights can assign a ",
-    "cvss": 6.6,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-285"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Build of Keycloak"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Build of Keycloak"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Single Sign-On 7"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-25",
-    "updated": "2026-09-25",
-    "url": "https://access.redhat.com/security/cve/CVE-2026-96448",
     "source": "CISA Vulnrichment"
   },
   {
@@ -13275,44 +14107,6 @@
     "published": "2026-08-11",
     "updated": "2026-09-25",
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68803",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-80151",
-    "title": "Lantronix Autonomous Out-of-Band Devices OS Command Injection via set nfs download",
-    "desc": "Lantronix SLC8000 before firmware v9.7.0.3, SLC9000 before firmware v9.7.0.2, EMG8500/EMG7500 before firmware v9.7.0.1, and all firmware versions of SLB882/SLCx-03/SLCx-02 contain a command injection vulnerability that allows authenticated attackers with the services permission to execute arbitrary shell commands as root by exploiting the set nfs download command that passes unsanitized user input",
-    "cvss": 9.1,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-78"
-    ],
-    "affected": [
-      {
-        "vendor": "LANTRONIX",
-        "product": "SLC8000"
-      },
-      {
-        "vendor": "LANTRONIX",
-        "product": "EMG8500"
-      },
-      {
-        "vendor": "LANTRONIX",
-        "product": "EMG7500"
-      },
-      {
-        "vendor": "LANTRONIX",
-        "product": "SLB882"
-      },
-      {
-        "vendor": "LANTRONIX",
-        "product": "SLCx-03"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-22",
-    "updated": "2026-09-25",
-    "url": "https://revrb.net/2026/09/21/revrb-lantern.html",
     "source": "CISA Vulnrichment"
   },
   {
@@ -23416,36 +24210,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-65660",
-    "title": "Microsoft SharePoint Server Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-94"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft SharePoint Enterprise Server 2016"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft SharePoint Server 2019"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft SharePoint Server Subscription Edition"
-      }
-    ],
-    "exploitation": "active",
-    "isKev": false,
-    "published": "2026-08-11",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65660",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-65662",
     "title": "Windows GDI Information Disclosure Vulnerability",
     "desc": "",
@@ -25848,1264 +26612,6 @@
     "published": "2026-07-14",
     "updated": "2026-09-25",
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47302",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-47303",
-    "title": "ASP.NET Core Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-302",
-      "CWE-863",
-      "CWE-90"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": ".NET 10.0"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": ".NET 8.0"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": ".NET 9.0"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Visual Studio 2022 version 17.12"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Visual Studio 2022 version 17.14"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47303",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-47304",
-    "title": ".NET Security Feature Bypass Vulnerability",
-    "desc": "",
-    "cvss": 8.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-347",
-      "CWE-345"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": ".NET 10.0"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": ".NET 8.0"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": ".NET 9.0"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft .NET Framework 3.5"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft .NET Framework 3.5 AND 4.7.2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47304",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-47305",
-    "title": "Visual Studio Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-693"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Visual Studio 2022 version 17.12"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Visual Studio 2022 version 17.14"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Visual Studio 2026 version 18.7"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47305",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-47632",
-    "title": "Azure Connected Machine Agent Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-295"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Azure Connected Machine Agent"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47632",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-47642",
-    "title": "Microsoft Excel Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft 365 Apps for Enterprise"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Office 2019"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Office 365 for Mac"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Office LTSC 2021"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Office LTSC 2024"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47642",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-48561",
-    "title": "Microsoft Edge Copilot Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 9.6,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-77"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge Copilot for Android"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Edge Copilot for IOS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48561",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-48564",
-    "title": "DHCP Server Service Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2012"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2012 (Server Core installation)"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2012 R2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48564",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-48571",
-    "title": "Windows App Package Installer Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 23H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 26H1"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48571",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-48572",
-    "title": "Windows App Package Installer Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-362",
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 23H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 26H1"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48572",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-48580",
-    "title": "Microsoft Excel Information Disclosure Vulnerability",
-    "desc": "",
-    "cvss": 5.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-822"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft 365 Apps for Enterprise"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Excel 2016"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Office 2019"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Office 365 for Mac"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Office LTSC 2021"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48580",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-48581",
-    "title": "Surface Broker SDMA Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-1220"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Surface Go"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Surface Hub"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Surface Laptop Go"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Surface Laptop Go 3"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Surface Pro"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48581",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49159",
-    "title": "Microsoft Graph Information Disclosure Vulnerability",
-    "desc": "",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-200"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Microsoft Graph"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-24",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49159",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49162",
-    "title": "Microsoft Brokering File System Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 26H1"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2025"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2025 (Server Core installation)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49162",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49164",
-    "title": "Windows Active Directory Domain Services Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 8.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49164",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49165",
-    "title": "Microsoft Windows App Store Information Disclosure Vulnerability",
-    "desc": "",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-908"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49165",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49166",
-    "title": "Windows Print Configuration Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 26H1"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2025"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2025 (Server Core installation)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49166",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49167",
-    "title": "Windows Kernel Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 4.7,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49167",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49168",
-    "title": "Storage Spaces Direct Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 6.8,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-190"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49168",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49169",
-    "title": "Windows DNS Server Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2025"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2025 (Server Core installation)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49169",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49170",
-    "title": "Windows StateRepository API Server file Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-1220",
-      "CWE-285"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49170",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49171",
-    "title": "Windows Speech Runtime Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49171",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49172",
-    "title": "Windows FTP Service Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 9.8,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49172",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49173",
-    "title": "Windows Kernel Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 26H1"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49173",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49174",
-    "title": "DNS Client Tampering Vulnerability",
-    "desc": "",
-    "cvss": 6.1,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-306"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49174",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49175",
-    "title": "Windows DNS Client Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 26H1"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49175",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49176",
-    "title": "Windows WalletService Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-269",
-      "CWE-59"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49176",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49177",
-    "title": "Windows TCP/IP Information Disclosure Vulnerability",
-    "desc": "",
-    "cvss": 5.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-125"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49177",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49178",
-    "title": "Windows Active Directory Domain Services Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49178",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49180",
-    "title": "Universal Plug and Play (upnp.dll) Information Disclosure Vulnerability",
-    "desc": "",
-    "cvss": 5.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-59"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49180",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49181",
-    "title": "Windows DHCP Client Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-191"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2012"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2012 (Server Core installation)"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2012 R2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49181",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49183",
-    "title": "Windows Clipboard Server Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-362",
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 25H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49183",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49184",
-    "title": "Windows NTFS Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 8.4,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49184",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49783",
-    "title": "Secure Boot Security Feature Bypass Vulnerability",
-    "desc": "",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-358"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49783",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49784",
-    "title": "Microsoft Windows App Store Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-362",
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49784",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49787",
-    "title": "HTTP.sys Denial of Service Vulnerability",
-    "desc": "",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-770"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 Version 24H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-07-14",
-    "updated": "2026-09-25",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49787",
     "source": "CISA Vulnrichment"
   },
   {
