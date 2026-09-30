@@ -1,5 +1,173 @@
 [
   {
+    "source": "thn",
+    "title": "Cisco Warns of Attackers Exploiting Critical Authentication Bypass in SD-WAN Manager",
+    "desc": "Attackers are exploiting a new critical zero-day flaw in Cisco Catalyst SD-WAN Manager, the system companies use to manage their Cisco SD-WAN networks, Cisco said in an&nbsp;advisory&nbsp;on September 30.\n\nThe flaw, CVE-2026-76504, could allow a remote attacker with no login access to use the Manage",
+    "url": "https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html",
+    "date": "2026-09-30T20:54:54"
+  },
+  {
+    "source": "thn",
+    "title": "Attackers Abuse ChatGPT Custom GPTs to Deliver RAT via ClickFix Lures",
+    "desc": "Threat actors are abusing ChatGPT Custom GPTs to disguise them as legitimate product offerings and direct unsuspecting victims to malicious sites that employ ClickFix lures to deliver malware.\n\nHuntress, which observed the activity in late September 2026, said it marks the abuse of yet another featu",
+    "url": "https://thehackernews.com/2026/09/attackers-abuse-chatgpt-custom-gpts-to.html",
+    "date": "2026-09-30T20:30:15"
+  },
+  {
+    "source": "thn",
+    "title": "Know Your Enemy: Browser-Based Attack Techniques in 2026",
+    "desc": "Given that the browser is where business apps are accessed and used, it makes sense that attacks are happening there too. Most breaches today begin in a browser session. Often, they never leave it, with the entire attack chain from initial access to exfiltration playing out in the browser.\n\nHere are",
+    "url": "https://thehackernews.com/2026/09/know-your-enemy-browser-based-attack.html",
+    "date": "2026-09-30T17:28:00"
+  },
+  {
+    "source": "thn",
+    "title": "AI Coding Agents Exposed 13,000 Internal Images, Including Billing Records, on GitHub",
+    "desc": "AI coding agents asked to share screenshots of code changes for review have put internal company images in public GitHub repositories, security company Glow said.\n\nIts researchers found more than 13,000 internal images from developers at over 300 organizations, including customer billing records and",
+    "url": "https://thehackernews.com/2026/09/ai-coding-agents-exposed-13000-internal.html",
+    "date": "2026-09-30T17:00:00"
+  },
+  {
+    "source": "thn",
+    "title": "US-Focused CSuite Phishing Steals Microsoft 365 Sessions and Deploys RMM Tools for Remote Access",
+    "desc": "ANY.RUN researchers traced a US-focused CSuite phishing campaign across 351 sandbox analyses, with 51% of submissions coming from the United States. Technology, manufacturing, government, and consulting organizations showed the highest exposure.\n\nBy combining Microsoft 365 session theft with remote-",
+    "url": "https://thehackernews.com/2026/09/us-focused-csuite-phishing-steals.html",
+    "date": "2026-09-30T16:15:00"
+  },
+  {
+    "source": "thn",
+    "title": "Attackers Exploit NetScaler Flaw for Root Access, Deploy WHIPSHOT and SLAPSHOT",
+    "desc": "Unknown threat actors have been observed exploiting a newly patched security flaw in Citrix NetScaler ADC and NetScaler Gateway appliances to target organizations in North America and Europe.\n\nThe activity, observed by Mandiant Consulting and Google Threat Intelligence Group (GTIG) in September 2026",
+    "url": "https://thehackernews.com/2026/09/attackers-exploit-netscaler-flaw-for.html",
+    "date": "2026-09-30T13:54:35"
+  },
+  {
+    "source": "thn",
+    "title": "OpenSSL Fixes High-Severity DTLS Flaw That Can Leak Heap Memory Unencrypted",
+    "desc": "A High-severity OpenSSL flaw can leak heap memory to the other side of a DTLS connection or crash the program,&nbsp;OpenSSL said&nbsp;on September 29 as it released fixes.\n\nDTLS, the TLS variant used for UDP traffic, resends a handshake message if no reply arrives before the timer expires. The leak ",
+    "url": "https://thehackernews.com/2026/09/openssl-fixes-high-severity-dtls-flaw.html",
+    "date": "2026-09-30T13:39:28"
+  },
+  {
+    "source": "thn",
+    "title": "Citrix NetScaler CVE-2026-88772 Exploit Details Show Pre-Auth Path to Shellcode Execution",
+    "desc": "Cybersecurity researchers have disclosed technical details of a recently patched critical security flaw in Citrix NetScaler ADC and Gateway that has come under active exploitation in the wild.\n\nThe vulnerability, tracked as CVE-2026-88772 (CVSS score: 9.5), has been described as a memory overflow bu",
+    "url": "https://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html",
+    "date": "2026-09-30T11:00:30"
+  },
+  {
+    "source": "boannews",
+    "title": "맑은소프트 해킹 일파만파... 최소 22개 사이트 개인정보 유출",
+    "desc": "클라우드 학습관리 시스템(LMS)을 제공하는 온라인 교육 사이트 운영기업 ‘맑은소프트’가 9월 29일 개인정보 유출 사실을 확인(최초 유출 가능성 확인은 26일)하고 공지했다. 다만 맑은소프트는 유출된 개인정보 항목과 규모는 ‘고객센터에 별도 문의’ 해달라고만 밝혀 정확한 피해 규모 및 유출 정보의 종류는 파악되지 않았다.문제는 맑은소프트가 LMS를 제공하는 기업이라는 사실이다. LMS는 인터넷을 통해 기관이나 기업의 교육 과정을 기획부터 운영과 평가까지 관리해 주는 서비스형 학습관리 시스템으로, 온라인 교육을 운영하는 곳이 많이",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146124",
+    "date": "2026-09-30 18:39:14"
+  },
+  {
+    "source": "boannews",
+    "title": "오내피플, 엔에이치엔두레이, 엘세븐시큐리티... 개인정보 기술력 빛났다",
+    "desc": "오내피플과 엔에이치엔두레이, 엘세븐시큐리티가 개인정보 보호 분야 성과를 인정받아 ‘2026 개인정보 보호·활용 기술 대상’을 수상했다. 개인정보보호위원회(위원장 송경희)는 30일 서울 양재동 엘타워에서 열린 ‘제6회 개인정보 보호의 날 기념식’에서 2026 개인정보 보호·활용 기술 대상’에 입상한 3개 기업에 시상했다고 밝혔다. 기술대상은 개인정보 예방 중심 보호체계를 뒷받침할 수 있는 우수 개인정보 보호 기술의 확산을 촉진하고, 산업계와 상생 협력을 강화하기 위한 상이다. 개인정보위가 위원장상을 수여한다. 오내피플은 개인정보 수집",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146123",
+    "date": "2026-09-30 17:34:31"
+  },
+  {
+    "source": "boannews",
+    "title": "[카드뉴스] \"의료 보안 경보\" 피싱 메일이 연 '외주망 뒷문'… 처방전 411만 건 유출 부른 공급망 취약점",
+    "desc": "병원 본원이 아닌 의료 기기 외주업체 직원의 계정이 피싱 메일에 피격되며 411만여 명의 환자 처방 및 보험 데이터가 대규모로 유출되었다. 공격자는 가장 취약한 외주 파트너의 원격 접속망을 '뒷문' 삼아 내부 환자 관리 시스템에 침투하여 전산 인프라를 장악했다. 2차 피해 확산을 방지하기 위해 외주망에 대한 최소 권한 원칙(PoLP) 적용, 물리적 망분리, 상시 다중인증(MFA) 기반의 제로 트러스트 격리 체계 도입이 필수적이다.",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146122",
+    "date": "2026-09-30 16:16:09"
+  },
+  {
+    "source": "boannews",
+    "title": "공군기지 복무 중 벌인 이메일 사기... 미 공군 출신 2명, 기업 대금 가로채 합계 징역 189개월",
+    "desc": "미 공군 출신 2명이 여러 해에 걸쳐 기업이메일침해(BEC) 사기와 피싱에 가담해 합계 189개월의 징역형을 받았다.미국 아이오와주 법원에 따르면, 치지오케 티모시 오디메그우(Chijioke Timothy Odimegwu, 25)와 하라파트 모가지(Harafat Mogaji, 26)는 델라웨어주 도버 공군기지에 복무하던 시절 범행을 저질렀다.두 사람은 스팸과 피싱으로 피해 기업 직원의 이메일 계정 정보를 빼냈다. 이어 거래처가 보낸 것처럼 꾸민 가짜 주소의 이메일과 훔친 계정을 함께 써서, 대금이 미국 안팎의 공범들이 관리하는 계좌",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146105",
+    "date": "2026-09-30 16:03:49"
+  },
+  {
+    "source": "boannews",
+    "title": "라온시큐어가 그린 에이전틱 AI 청사진... “웹3 인증으로 믿고 쓴다”",
+    "desc": "라온시큐어가 AI의 자율성과 웹3 신뢰를 융합한 차세대 보안 전략을 선보였다. 라온시큐어는 30일 서울 페어몬트 앰배서더에서 ‘2026 시큐업’ 컨퍼런스를 개최하고, 에이전틱 AI를 안전하게 활용하기 위한 새로운 보안 패러다임을 제시했다.올해로 14회째를 맞이한 이번 행사는 ‘make Agentic AI Fun and secure’를 주제로 진행됐다. 핵심 메시지는 ‘AI의 성능보다 안전’이었다. AI가 자율성을 바탕으로 실제 업무를 수행하기 위해서는 성능 확대에 걸맞은 신원·권한·행위에 대한 엄격한 검증 및 책임 체계, 즉 AI에",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146121",
+    "date": "2026-09-30 15:35:09"
+  },
+  {
+    "source": "boannews",
+    "title": "세이퍼존, 우즈베키스탄 기업과 보안 협력... 중앙아시아 시장 진출",
+    "desc": "세이퍼존이 우즈베키스탄 기업 IT파크(IT Park)와 손잡고 중앙아시아 사이버 보안 시장 공략에 나선다고 30일 밝혔다.세이퍼존은 최근 열린 ‘ICT Week Uzbekistan 2026’ 기간 중 우즈베키스탄 IT Park 본사에서 우즈베키스탄 사이버 보안 사업 협력을 위한 양해각서(MOU)를 체결했다. 협약식엔 권창훈 세이퍼존 대표와 파루크 라술로프(Farrukh Rasulov) IT Park 디지털화 담당 디렉터(CDO) 등 주요 관계자들이 참석해 양국 간 긴밀한 협력 방안을 논의했다과거 대우그룹의 글로벌 개척 정신을 롤모델",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146119",
+    "date": "2026-09-30 15:22:41"
+  },
+  {
+    "source": "boannews",
+    "title": "S2W, 온톨로지 기반 의사결정 OS ‘SAIP’ 고도화... AX 비즈니스 확장",
+    "desc": "에스투더블유가 온톨로지(Ontology) 기반 의사결정 운영체제(OS) ‘SAIP’의 주요 기능을 고도화하며 비보안 사업 확장에 나선다고 30일 밝혔다.이번에 고도화된 SAIP는 S2W가 안보·보안 영역에서 축적해온 AI 안전성 노하우를 바탕으로 사내외에 흩어진 다양한 데이터를 구조화하고 온톨로지와 지식그래프를 활용, 산업별 특성과 기업 내부 업무 규칙, 도메인 전문가 지식까지 체계적으로 결합하는 데 초점을 맞췄다.최근 기업들이 생성형 AI와 데이터 기반 전환(AX)을 추진하는 과정에서 겪는 가장 큰 애로사항은 분산된 데이터 사일로",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146118",
+    "date": "2026-09-30 14:59:02"
+  },
+  {
+    "source": "boannews",
+    "title": "지란지교시큐리티, AI 메일보안 행동 분석 솔루션 ‘머드스코프’ 공개",
+    "desc": "지란지교시큐리티가 고도화된 이메일 위협에 대응해 임직원의 보안 행동을 AI로 분석하고 위험을 측정·관리하는 AI 기반 휴먼 리스크 관리(HRM: Human Risk Management) 플랫폼 ‘머드스코프’(MudScope)를 출시했다고 30일 밝혔다.머드스코프는 기존 수동적 위협 탐지나 연례 모의훈련에서 한 걸음 더 나아가, 임직원이 실제 보안 위협 상황에서 어떻게 대처하는지를 데이터로 측정하고 지속적으로 관리하는 사람 중심 보안 플랫폼이다. 지란지교시큐리티는 독자 개발한 보안 행동 지표 ‘MFI’(MudFix Index)를 적용",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146116",
+    "date": "2026-09-30 14:50:28"
+  },
+  {
+    "source": "boannews",
+    "title": "CISO는 임원 격상, 중과실엔 매출 3% 과징금... 정보통신망법 개정안 1일 시행",
+    "desc": "정보보호최고책임자(CISO) 지위가 임원으로 격상된다. 중과실로 반복적 침해 사고를 일으킨 사업자는 매출의 최대 3%에 이르는 과징금을 물게 된다. 과학기술정보통신부(부총리 겸 장관 배경훈)은 이같은 내용의 ‘정보통신망 이용촉진 및 정보보호 등에 관한 법률’ 개정안과 시행령이 내달 1일 시행된다고 밝혔다. 작년 연이은 대형 침해사고를 계기로 정부가 발표한 ‘범부처 정보보호 종합대책’을 제도적으로 뒷받침하기 위한 것이다.CISO 지위가 기존 임직원에서 임원으로 격상됨에 따라 중견기업 등은 CISO를 임원으로 지정해야 한다. 다만 중기",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146117",
+    "date": "2026-09-30 14:46:26"
+  },
+  {
+    "source": "boannews",
+    "title": "깃허브  시큐리티랩, AI 에이전트로 안드로이드 앱 취약점 24건 찾아",
+    "desc": "깃허브 시큐리티랩이 자체 AI 보안 에이전트로 안드로이드 앱에서 취약점 24건을 찾아냈다고 밝혔다. 사용자 위치를 몰래 추적하거나 계정을 탈취할 수 있는 결함도 들어 있었다.연구에 쓰인 도구는 ‘깃허브 시큐리티랩 태스크플로 에이전트’(Taskflow Agent)다. AI를 활용한 보안 연구 과정을 자동화하는 오픈소스 프레임워크다.연구진은 안드로이드 전용 작업 흐름을 만들어 점검을 여러 단계로 나눴다. 한 단계에선 외부에 공개된 액티비티와 서비스, 브로드캐스트 리시버, 딥링크처럼 다른 앱이 드나들 수 있는 진입점을 찾는다. 다음 단계",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146100",
+    "date": "2026-09-30 14:45:00"
+  },
+  {
+    "source": "boannews",
+    "title": "인텔리빅스, 동남아 보안 4개사와 MOU... ‘아세안 안전 AI’ 수출 교두보",
+    "desc": "인텔리빅스가 ‘테크 위크 싱가포르 2026’(Tech Week Singapore 2026) 현장에서 글로벌 보안 솔루션 기업 및 싱가포르 대표 물리보안·통신 SI 4개사와 연쇄 업무협약(MOU)을 체결하고, 동남아시아 안전 AI 시장 공략을 본격화한다고 30일 밝혔다.이번에 인텔리빅스와 손을 잡은 파트너는 글로벌 최고 수준의 통합 보안 지휘통제 플랫폼 기업 △갤러거 시큐리티(Gallagher Security)와 일본 EXEO 그룹 산하로 정부 공공 인프라 및 데이터센터 구축을 전담하는 대형 SI 기업 △에이콘 티제이(AEQON TJ",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146115",
+    "date": "2026-09-30 14:08:01"
+  },
+  {
+    "source": "boannews",
+    "title": "오내피플 캐치시큐, 2026 개인정보 보호·활용 기술 대상 수상",
+    "desc": "개인정보보호 컴플라이언스 테크 기업 오내피플은 자사의 AI 기반 개인정보보호 SaaS 솔루션 캐치시큐가 개인정보보호위원회가 주최한 2026 개인정보 보호·활용 기술 대상에서 최종 수상 기업으로 선정되어 개인정보보호위원회 위원장상을 수여받았다고 30일 밝혔다.이번 시상식은 서울 엘타워에서 개최된 제6회 개인정보보호의 날 기념식에서 진행됐다. 개인정보 보호·활용 기술 대상은 사후 대응 중심에서 사전 예방 중심의 자율적 개인정보 보호 체계로의 전환을 도모하고, 현장 기술력을 바탕으로 우수한 성과를 보인 솔루션 개발사를 선정해 시상한다.수",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146114",
+    "date": "2026-09-30 14:06:17"
+  },
+  {
+    "source": "boannews",
+    "title": "망분리 규제 완화 앞둔 금융권... MS, “보안 역량 입증해야 AI 혁신”",
+    "desc": "“망분리 규제 완화는 단순히 편의성을 높이기 위한 조치가 아닙니다. 보안 역량을 입증한 금융회사가 인공지능(AI) 기반의 고도화된 방어 체계를 구축하고 차세대 비즈니스를 주도할 수 있도록 기회를 열어주는 것입니다.”장광운 마이크로소프트(MS) 수석 보안 고문은 30일 서울 코엑스에서 열린 ‘마이크로소프트 인더스트리 서밋’에서 ‘AI 시대, 망분리 이후의 금융 보안 전략’을 주제로 발표하며 격리 중심에서 인공지능(AI) 중심으로 옮겨가는 금융 보안 흐름을 짚었다. 최근 본격화된 망분리 규제 완화 흐름을 진단하고, 이를 도약의 발판으로",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146113",
+    "date": "2026-09-30 14:04:57"
+  },
+  {
+    "source": "boannews",
+    "title": "마이크로소프트가 진단한 금융 AX, “보안 통제력이 성패 가른다”",
+    "desc": "“금융 규제는 인공지능(AI) 확산을 막는 제약이 아니라, 안전하게 확산시키는 가속 기반이 돼야 합니다.”최명근 마이크로소프트(MS) 엔터프라이즈 커머셜 금융팀 팀장은 서울 코엑스에서 열린 마이크로소프트 인더스트리 서밋에서 ‘금융 인공지능, 도입을 넘어 확산의 시대로’를 주제로 기조연설하며 이같이 말했다. 최 팀장은 한국 금융권 AI 전환의 현주소를 진단하고, “철저한 보안 통제에 기반한 전사적 인텔리전스 축적이 필요하다”고 말했다. MS가 국내 금융사를 대상으로 실시한 설문조사에 따르면, 응답자의 87%가 AI를 적용 단계 이상으",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146111",
+    "date": "2026-09-30 13:56:00"
+  },
+  {
+    "source": "boannews",
+    "title": "국가 AI 안전 생태계 조성 마스터플랜 수립 위한 민관 협의체 구성",
+    "desc": "과학기술정보통신부(부총리 겸 장관 배경훈)는 ‘(가칭)국가 AI 안전 생태계 조성 마스터플랜’ 수립을 위한 민관 실무협의체를 구성했다고 30일 밝혔다. 과기정통부는 AI 혁신과 AI 안전·신뢰 기반 강화를 위한 정책적 노력의 일환으로 정부 차원 AI 안전 마스터플랜을 만들고 있다. 실무협의체는 △국가 AI 안전 관리체계 구축 △첨단 AI 안전 대응역량 강화 △국민 일상의 AI 안전 환경 조성 등 마스터플랜의 3대 전략과 핵심과제를 점검한다. 글로벌 AI 안전 정책과 산업·기술 동향을 반영한 신규·보완 과제도 발굴한다.과기정통부를 비",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146109",
+    "date": "2026-09-30 12:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "송경희 위원장 “AI 시대 개인정보 보호 혁신”... 제6회 개인정보 보호의 날 기념식",
+    "desc": "송경희 개인정보보호위원회 위원장은 개인정보 보호의 날을 맞아 “AI 시대 개인정보 보호 혁신”을 나아갈 방향으로 제시했다.개인정보위는 30일 오전 10시 서울 엘타워 그레이스홀에서 ‘제6회 개인정보 보호의 날 기념식’을 개최하였다. 이날 기념식에는 개인정보보호 유공자 및 개인정보 분야 관계자 350여 명이 참석했다.‘신뢰로 도약하는 인공지능(AI) 혁신 사회’를 주제로 개최된 이번 기념식은 그간 정부가 추진해 온 개인정보 보호 정책의 성과를 국민과 나누고 신뢰와 보호에 기반한 인공지능·데이터 혁신의 방향을 함께 그려보는 대국민 소통",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146110",
+    "date": "2026-09-30 10:58:40"
+  },
+  {
     "source": "boannews",
     "title": "라온로드, 생성형 AI 관제 운영 플랫폼 ‘Omnis’ 정식 출시",
     "desc": "라온로드(대표 이석중)가 생성형 AI 기반 관제 운영 플랫폼 ‘옴니스’(Omnis)를 정식 출시했다.Omnis는 AI 모델, 분석 조건, 관심 영역(ROI) 등 관제에 필요한 데이터를 현장 목적에 맞게 구성하고 재난, 생활안전, 방범, 교통 및 주차 등 다양한 환경에 필요한 기능을 단계적으로 적용할 수 있도록 설계된 AI 관제 솔루션이다.이 플랫폼은 현장 영상을 분석하는 ‘Omnis Vision’과 운영자의 상황 판단 및 대응을 지원하는 ‘Omnis Ops’로 구성된다. Omnis Vision은 현장별로 설정된 관심 영역(ROI)을",
@@ -93,7 +261,7 @@
   {
     "source": "thn",
     "title": "New Spectre-v2 BTR Attack Leaks Linux Memory Despite Existing Defenses",
-    "desc": "A group of academics from VUSec and Scuola Superiore Sant'Anna have disclosed details of a new Spectre CPU vulnerability variant that affects Just-In-Time (JIT) engines present in web browsers, language runtimes, and the operating system kernel, across multiple CPU vendors.\n\nThe new Spectre-v2 varia",
+    "desc": "A group of academics from VUSec and Scuola Superiore Sant'Anna have disclosed details of a new Spectre CPU vulnerability variant that affects Just-In-Time (JIT) engines present in web browsers, language runtimes, and the operating system kernel, across multiple CPU vendors.\n\nThe new Spectre v2 varia",
     "url": "https://thehackernews.com/2026/09/new-spectre-v2-btr-attack-leaks-linux.html",
     "date": "2026-09-29T22:50:17"
   },
@@ -357,123 +525,11 @@
     "date": "2026-09-28 15:14:39"
   },
   {
-    "source": "boannews",
-    "title": "콴델라, “한국을 아시아 제조·개발 허브로... AI-양자 하이브리드 생태계 핵심 파트너”",
-    "desc": "“한국은 단순한 매출처가 아니라 글로벌 양자 생태계의 핵심 파트너입니다.” 프랑스 양자 컴퓨터 기업 콴델라가 한국을 아시아 지역 허브로 삼고 국내에서 제조 및 연구개발 파트너 발굴과 양자 생태계 조성에 나선다. 한국의 앞선 반도체 제조 역량을 자사 광자 기반 양자 컴퓨팅 기술과 결합, 인공지능(AI)과 양자를 결합한 하이브리드 시스템을 구축한다는 목표다. 니콜로 소마스키 콴델라 CEO는 28일 서울 센트로폴리스에서 열린 기자간담회에서 “광양자컴퓨터의 성능 확장은 반도체 수준의 정밀 제조와 검사 역량에 달려 있다”며 “앞으로 2년 간",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146059",
-    "date": "2026-09-28 14:52:39"
-  },
-  {
-    "source": "boannews",
-    "title": "국방 5G 노하우 세계로... KT, NATO 차세대 통신 표준화 논의 참여",
-    "desc": "KT가 북대서양조약기구(NATO)의 국방통신 표준화 프로젝트인 NATO 무선통신 표준화 프로젝트(NWCSP: NATO Wireless Communications Standards Project) 9차 회의에 국내 통신사 최초로 5G·6G 표준화위원 자격으로 참여한다고 28일 밝혔다.국방부와 한국정보통신기술협회(TTA)가 주관하는 이번 회의는 28일부터 10월 2일까지 서울 KT 광화문빌딩에서 열린다. 국내외 국방 및 정부 기관 관계자와 통신 전문가 등 100여명이 참석해 차세대 국방통신 기술 도입 지침과 국제표준을 논의한다.NWCS",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146058",
-    "date": "2026-09-28 14:01:11"
-  },
-  {
-    "source": "boannews",
-    "title": "[테크톡톡] 검색대 밖 위험, 10초 만에 가려낸다... 뉴원에스엔티, 휴대형 EVD ‘IONAB_Air’ 출격 임박",
-    "desc": "공항, 철도, 항만, 물류시설과 국가중요시설에는 다수의 사람과 물품이 이동한다. 엑스레이검색장비와 폭발물탐지시스템(EDS), 폭발물흔적탐지장비(ETD)는 정해진 검색선에서 위험물질의 반입을 차단한다. 그러나 로비와 대합실, 연결통로, 주차장, 차량 진입부처럼 고정형 장비를 설치하기 어려운 공간에서는 의심 물품이 발견돼도 현장에서 즉시 활용할 수단이 제한적일 수 있다.폭발물·마약 흔적탐지장비 전문기업 뉴원에스엔티는 이러한 보안 공백을 보완하기 위해 휴대형 비접촉 폭발물 탐지장비(EVD: Explosives Vapor Detector)",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146047",
-    "date": "2026-09-28 13:45:55"
-  },
-  {
-    "source": "boannews",
-    "title": "정보공개 앞둔 문서, 아직도 사람이 지워... 엘세븐시큐리티 “AI가 먼저 가리고 사람은 검수만”",
-    "desc": "공공기관이 공개하는 문서 한 장 뒤에는 보이지 않는 ‘지우기 노동’이 숨어 있다.‘공공기관의 정보공개에 관한 법률’ 제 9조는 사생활 침해 우려가 있는 개인정보를 비공개 대상으로 정하고 14조는 비공개 부분을 제외한 ‘부분 공개’를 규정한다.현장에서 이 조항은 담당자의 마우스 작업으로 바뀐다. 수백 쪽 문서를 넘기며 이름·주민등록번호·연락처·계좌번호를 찾아 검은 사각형을 덧씌우는 작업이 된다.전국에 지사를 둔 기관일수록 부담은 크다. 각 지사로 접수된 서류를 정보공개에 앞서 일일이 가려야 하기 때문이다. 업계에 따르면 일부 기관은",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146057",
-    "date": "2026-09-28 13:38:18"
-  },
-  {
-    "source": "boannews",
-    "title": "인터넷 선 뽑고 보안 채운 금융권... SKT·하나금융·삼성전자 ‘5G 스마트 오피스’ 가동",
-    "desc": "SK텔레콤이 하나금융그룹, 삼성전자와 손잡고 금융권 최초로 5G 특화망 기반 스마트 오피스를 구축해 운영에 들어갔다고 28일 밝혔다. 이번 프로젝트는 통신·보안·운영 역량을 결합해 금융권 업무 환경을 혁신하는 엔터프라이즈 AI 전환(AX) 사례다.5G 특화망은 기업이 전용 주파수를 활용해 특정 공간에 구축하는 맞춤형 네트워크다. 이동성과 보안성을 동시에 요구하는 디지털 업무 환경 구축에 주로 활용된다. 이번 사업 대상은 인천 청라국제도시로 이전 중인 하나금융그룹 청라 헤드쿼터와 10개 관계사, 임직원 3000여명이다. 청라 헤드쿼터",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146055",
-    "date": "2026-09-28 13:33:27"
-  },
-  {
-    "source": "boannews",
-    "title": "가짜 직원과 음성·화상 통화… CISO 41% “딥페이크 공격 경험”",
-    "desc": "정보보호최고책임자(CISO) 가운데 41%가 지난 1년 동안 직원의 음성 통화 중 딥페이크를 악용한 사회공학 공격을 한 차례 이상 겪은 것으로 나타났다. 화상 통화에서 동일한 유형의 공격을 경험했다는 비율 역시 36%에 달했다.28일 가트너는 올해 3월부터 5월까지 CISO 또는 이에 준하는 직책의 사이버보안 부문 고위 임원 297명을 대상으로 실시한 조사를 토대로 이 같이 밝혔다.조사 결과, AI는 사회공학 공격의 빈도, 개인화 수준, 설득력을 높이는 반면, 기존 탐지 징후의 신뢰도는 떨어뜨리는 것으로 나타났다.조사에 참여한 CI",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146056",
-    "date": "2026-09-28 11:54:44"
-  },
-  {
-    "source": "boannews",
-    "title": "모빌린트, ‘K-온디바이스 AI’ 4개 과제 참여.... LG전자·두산로보틱스·대동과 맞손",
-    "desc": "AI 반도체 기업 모빌린트(대표 신동주)는 산업통상부(전문기관: 한국산업기술기획평가원)가 추진하는 ‘K-온디바이스 AI 반도체 기술개발사업’의 4개 과제에 참여해 LG전자·두산로보틱스·대동과 로봇·가전에 적용할 온디바이스 AI 반도체 기술 개발에 나선다고 밝혔다.모빌린트는 LG전자의 휴머노이드, 두산로보틱스의 협동로봇, 대동의 무인 농작업 로봇 관련 과제에서 각각 AI 반도체 개발 세부과제를 주관한다. LG전자와 함께하는 AI 홈 분야에는 공동 연구개발 기관으로 참여한다. 수요기업이 실제 제품에 필요한 요구사항을 제시하고, 모빌린트",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146053",
-    "date": "2026-09-28 11:45:00"
-  },
-  {
-    "source": "boannews",
-    "title": "인텔리빅스-제9보병사단, AI 영상감시 기술 군 현장 실증 맞손",
-    "desc": "안전 AI 딥테크 기업 인텔리빅스(대표 장정훈)는 제9보병사단과 첨단 AI 국방 기술 발전 및 군 운용 환경 기반 기술 실증을 위한 업무협약(MOU)을 체결했다고 28일 밝혔다.양 기관은 22일 제9보병사단에서 업무협약식을 개최했으며, 인텔리빅스와 제9보병사단 주요 관계자들이 참석한 가운데 국방 AI 기술의 현장 적용과 실증을 위한 협력 방안을 논의했다.이번 협약은 인텔리빅스가 보유한 AI 및 영상 센서 기술과 제9보병사단의 실제 군 운용 경험을 결합해 국방 환경에 적합한 기술을 검증하고 현장 활용도를 높이기 위해 마련됐다.특히 인",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146052",
-    "date": "2026-09-28 11:40:00"
-  },
-  {
-    "source": "boannews",
-    "title": "국민·기업·정부 개인정보 보호 문화 동참... ‘2026 개인정보 보호주간’ 시작",
-    "desc": "개인부터 기업, 정부 기관에 이르러 전 국민이 개인정보 보호 문화에 동참하는 ‘2026 개인정보 보호주간’이 시작된다.개인정보보호위원회(위원장 송경희)는 28일부터 10월 2일까지 ‘2026 개인정보 보호주간’을 운영한다. 개인정보 보호에 대한 국민적 관심을 높이고 실천 문화를 확산하기 위해 매년 운영해 온 행사로, 올해는 국민, 기업, 정부가 함께 개인정보 보호문화를 만들어간다는 취지로 마련됐다.이번 보호주간에는 안전한 개인정보 활용이 인공지능(AI) 혁신의 토대가 된다는 인식을 국민과 함께 넓혀가는 데 초점을 맞췄다. 공공·민간",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146054",
-    "date": "2026-09-28 11:36:33"
-  },
-  {
-    "source": "boannews",
-    "title": "LG U+, IBCT와 국내 기업 유럽 공급망 규제 대응… 카테나-X 지원",
-    "desc": "LG유플러스가 데이터스페이스 전문기업 아이비씨티(IBCT)와 국내 제조기업의 유럽 공급망 데이터 규제 대응을 지원한다.LG유플러스는 IBCT와 ‘카테나-X(Catena-X) 사업 전략적 파트너십 체결 및 공동사업 출범식’을 열고, 국내 제조기업의 카테나-X 도입, 시스템 구축·운영 등을 지원하는 공동사업을 추진한다고 28일 밝혔다.카테나-X는 BMW, 메르세데스-벤츠, 폭스바겐 등 글로벌 제조 기업들이 참여하는 데이터 공유 생태계다. 참여 기업은 각자 데이터에 대한 통제권을 유지하면서도 규제 핵심 데이터를 표준화된 방식으로 연결하고",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146051",
-    "date": "2026-09-28 10:42:46"
-  },
-  {
-    "source": "boannews",
-    "title": "마이크로소프트 업데이트 뒤 정품 오피스 라이선스 풀려",
-    "desc": "마이크로소프트(Microsoft)가 구형 마이크로소프트 365 앱을 최신 버전으로 업데이트하기 위해 배포한 선택적 업데이트 ‘KB5002907’이 오피스 2016·2019의 정품 라이선스를 해제하거나 프로그램 자체를 삭제하는 문제를 일으켜 배포가 중단됐다.외신 블리핑컴퓨터(Bleeping Computer)에 따르면, 마이크로소프트는 관련 신고를 인지하고 원인을 조사하는 동안 KB5002907 배포를 일시 중단했다.KB5002907은 90일 이상 업데이트되지 않은 마이크로소프트 365 앱을 다시 최신 빌드로 올리기 위한 선택적 업데이",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146048",
-    "date": "2026-09-28 10:20:00"
-  },
-  {
-    "source": "boannews",
-    "title": "“딥페이크·스팸 막을 묘수 찾는다”... KISA ‘디지털 시대의 법’ 경연대회",
-    "desc": "한국인터넷진흥원(KISA)이 과학기술정보통신부와 함께 AI와 디지털 전환으로 불거진 새로운 법적 쟁점을 발굴하기 위해 ‘제1회 디지털 시대의 법’(Law for Digital) 학술 경연대회를 개최한다고 28일 밝혔다.올해 처음 마련된 이번 대회는 디지털 기술과 산업을 둘러싼 다양한 법·제도 과제를 논의하고 해결책을 모색하는 자리다. 경연 주제는 △블록체인 △스팸 △전자서명 △전자문서 △위치정보 △인터넷 주소 △디지털 분쟁조정 등 디지털 분야 법률 전반을 아우른다.경연대회는 전국 법학전문대학원 재학생과 3년 차 이하 변호사, 법학박",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146050",
-    "date": "2026-09-28 10:15:00"
-  },
-  {
-    "source": "boannews",
-    "title": "세이퍼존, 애플 심사 뚫었다... 맥 OS용 ‘보안 USB’ 사용 승인",
-    "desc": "세이퍼존이 애플(Apple)의 공식 드라이버 사용 승인을 획득하고 맥OS 환경에서 오류 없이 작동하는 보안 USB 메모리 기술을 상용화했다고 28일 밝혔다.이번 승인으로 세이퍼존은 기업 고객들에게 단일 보안 USB로 윈도우(Windows), 맥(mac), 리눅스(Linux) 등 이기종 운영체제 경계를 넘어선 멀티 OS 보안 환경을 구축을 지원한다. 특정 운영체제에 종속되지 않고 '나만 열고, 나만 보고, 나만 사용할 수 있는' 데이터 보호가 가능해진 셈이다.애플은 최근 하드웨어 및 소프트웨어 보안 정책을 대폭 강화하며 커널 영역 보",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146049",
-    "date": "2026-09-28 10:10:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[테크톡톡] 선명한 X-Ray에 똑똑한 AI를 얹다... 인씨스가 그리는 차세대 지능형 보안검색",
-    "desc": "보안검색의 경쟁력은 이제 단순히 X-Ray 영상을 생성하는 것을 넘어, 얼마나 선명한 영상을 확보하고 이를 얼마나 빠르고 일관되게 판독할 수 있는가에 달려 있다. 인씨스는 라피스캔 시스템즈(Rapiscan Systems) 900 Series의 고품질 X-Ray 영상과 자체 AI 판독 솔루션 ‘SecuEye X20’을 결합해 항공보안은 물론 공공시설과 기업의 출입보안, USB 등 저장매체 및 정보자산의 반입·반출 통제까지 적용할 수 있는 지능형 보안검색 환경을 제시하고 있다.Rapiscan Systems 900 Series, 검색 환",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146046",
-    "date": "2026-09-28 08:39:07"
-  },
-  {
     "source": "thn",
     "title": "Warning: Two Unpatched Citrix NetScaler RCE Zero-Days Under Active Exploitation",
     "desc": "Two critical vulnerabilities in Citrix NetScaler ADC and NetScaler Gateway that allow remote code execution have been exploited in the wild, Citrix confirmed on September 27. It released fixes for both, along with six other flaws. One of the two affects every deployment on an affected version, inclu",
     "url": "https://thehackernews.com/2026/09/warning-two-unpatched-citrix-netscaler.html",
     "date": "2026-09-27T13:17:57"
-  },
-  {
-    "source": "boannews",
-    "title": "[Global Securty TOP 100] 현정훈 포엠아이텍 대표이사, “343개 현장 검증된 기술력, 지능형 보안 시스템의 ‘오작동 제로’ 이끈다”",
-    "desc": "2011년 설립된 포엠아이텍(4MiTech)은 전자 PCB·엔지니어링·시스템 토털 솔루션 기업(Electronic PCB, Engineering, System Total Solution Provider)을 지향하며 견실하게 성장해 온 ICT 융합기술 전문기업이다. PCB 설계와 제작, 표면 실장 기술(SMT), 조립을 일괄 수행하는 ‘PCB 솔루션’을 필두로 전자파 노이즈를 사전에 차단하는 ‘EMC 솔루션’(시뮬레이션 및 인증), 광통신과 네트워크 장비를 공급하는 ‘설비 시스템’(Equipment System), 차세대 신기술·신제",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=145934",
-    "date": "2026-09-27 16:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "한드림넷, AI 전환(AX) 시대, 이제 ‘보안 스위치’는 선택이 아닌 필수",
-    "desc": "전 산업군에 걸쳐 AI 도입이 빠르게 진행되며 'AI 전환(AX)' 시대가 본격화되고 있다. 업무 생산성을 극대화하기 위해 기업과 기관들은 앞다투어 AI를 도입하고 있지만, 정작 AI를 악용한 사이버 공격과 내부 보안 위협에 대해서는 제대로 준비되지 않은 상태다. 과거에는 외부의 침입을 막는 경계 보안에 집중했다면, 이제는 해킹의 양상이 다변화되고 내부 정보 탈취 위험이 커짐에 따라 사용자와 가장 가까운 네트워크 접점(Access Level)에서의 보안이 그 어느 때보다 중요해졌다.이러한 보안 패러다임 변화에 발맞춰, 최근 종합 I",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146028",
-    "date": "2026-09-27 13:30:00"
   },
   {
     "source": "thn",
@@ -628,61 +684,5 @@
     "desc": "Cybersecurity researchers have disclosed details of an active TeamFiltration campaign codenamed UNK_CondorFiltration that has targeted over 5,700 accounts across 28 Microsoft 365 tenants.\n\nAccording to Proofpoint, the activity has primarily focused on Chilean retail and financial institutions. It or",
     "url": "https://thehackernews.com/2026/09/teamfiltration-compromises-seven.html",
     "date": "2026-09-24T12:02:03"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Exploit WordPress CVE-2026-87902 Within Hours of Disclosure",
-    "desc": "Threat actors have begun to actively exploit a critical security flaw in WordPress within hours of public disclosure.\n\nThe vulnerability in question is CVE-2026-87902 (CVSS score: 9.2), which could allow an unauthenticated attacker to obtain remote code execution (RCE).\n\n\"An unauthenticated attacker",
-    "url": "https://thehackernews.com/2026/09/attackers-exploit-wordpress-cve-2026.html",
-    "date": "2026-09-24T11:06:18"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Use Malicious Terraform Providers to Deliver Go Malware via HashiCorp Registry",
-    "desc": "Cybersecurity researchers have disclosed Go-based malware distributed via two Go Modules and two Terraform providers, marking the first time threat actors are using the centralized repository hosted by HashiCorp as a distribution vector for malicious payloads.\n\nAccording to Aikido, the list of Terra",
-    "url": "https://thehackernews.com/2026/09/attackers-use-malicious-terraform.html",
-    "date": "2026-09-23T23:36:30"
-  },
-  {
-    "source": "thn",
-    "title": "A Leaked GitLab Issue Email Address Lets Anyone Push Code and Run CI Jobs as You",
-    "desc": "The private email address GitLab gives you for filing issues by email is a credential. Anyone who gets it can email a patch that GitLab commits in your name, to any branch you can push to, including main, and can start CI/CD jobs that run as you.\n\nGitLab shows each user this address behind a button ",
-    "url": "https://thehackernews.com/2026/09/a-leaked-gitlab-issue-email-address.html",
-    "date": "2026-09-23T22:23:10"
-  },
-  {
-    "source": "thn",
-    "title": "MikroTrick Chain Let Attackers Take Over MikroTik Routers Without a Password or SSH Key",
-    "desc": "Two MikroTik RouterOS SSH vulnerabilities chained together let attackers take full administrative control of Internet-exposed routers without a password, SSH key, or completed authentication.\n\nThe chain, which CERT Polska calls MikroTrick, combines an SSH state-machine flaw (CVE-2026-67279) with an ",
-    "url": "https://thehackernews.com/2026/09/mikrotrick-chain-let-attackers-take.html",
-    "date": "2026-09-23T21:36:41"
-  },
-  {
-    "source": "thn",
-    "title": "This Windows Malware is Built to Let Up to Four AI Models Vote on Its Next Move",
-    "desc": "A Windows malware called CLOSEDQUORUM is built to take orders from a vote of up to four AI models instead of an attacker's server,&nbsp;Cisco Talos said&nbsp;on September 22.\n\nThe models can choose to steal Windows credentials, saved browser passwords, and crypto wallet data. Talos has not seen this",
-    "url": "https://thehackernews.com/2026/09/windows-malware-is-built-to-let-up-to.html",
-    "date": "2026-09-23T19:47:58"
-  },
-  {
-    "source": "thn",
-    "title": "Compromised MemTensor Packages Deliver sckit Credential Stealer via npm and PyPI",
-    "desc": "Unknown threat actors have managed to compromise two legitimate MemTensor packages across the npm and Python Package Index (PyPI) repositories to push a platform-specific Go-based implant dubbed sckit designed for Windows, Linux, and macOS.\n\nAccording to reports from Aikido, SafeDep, Socket, and Ste",
-    "url": "https://thehackernews.com/2026/09/compromised-memtensor-packages-deliver.html",
-    "date": "2026-09-23T19:22:46"
-  },
-  {
-    "source": "thn",
-    "title": "New cPanel Flaw Lets a Hosting Account Run Code as Root, Take Full Server Control",
-    "desc": "A flaw in cPanel's&nbsp;CalDAV and CardDAV service&nbsp;lets anyone with a cPanel hosting account run code as root and take \"full control of the server,\" the company said on September 22.\n\nA&nbsp;second bug in the WP Toolkit plugin, used to install and manage WordPress sites, allows an account holde",
-    "url": "https://thehackernews.com/2026/09/new-cpanel-flaw-lets-hosting-account_0272795595.html",
-    "date": "2026-09-23T17:46:00"
-  },
-  {
-    "source": "thn",
-    "title": "545 Hackers Tested It First. Now XRanges for AI Scores Your Security Agent",
-    "desc": "Autonomous security agents are getting good at finding bugs. Nobody has a good way to measure how good. Point one at a realistic target and what comes back is a report the agent wrote about itself: confident prose, a list of findings, and no way to tell which of them happened. Someone with a securit",
-    "url": "https://thehackernews.com/2026/09/545-hackers-tested-it-first-now-xranges.html",
-    "date": "2026-09-23T17:17:19"
   }
 ]
