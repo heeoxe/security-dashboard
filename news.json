@@ -1,5 +1,194 @@
 [
   {
+    "source": "thn",
+    "title": "Police Arrest 16-Year-Old Suspected of Running KillSec, Seize Ransomware Leak Site and Servers",
+    "desc": "Police in Spain have arrested a 16-year-old whom investigators suspect of running the KillSec ransomware group. KillSec is accused of stealing data from organizations and threatening to publish it on its leak site unless they paid.\n\nThe 16-year-old was one of 3 people arrested on September 30, when ",
+    "url": "https://thehackernews.com/2026/10/police-arrest-16-year-old-suspected-of.html",
+    "date": "2026-10-01T22:25:57"
+  },
+  {
+    "source": "thn",
+    "title": "ThreatsDay: AI-Powered Zero-Day Chain, 543K Live Secrets, Model Inspection RCE and 13 More Stories",
+    "desc": "This week, the useful words are boring ones: inspect, cache, compile, store, trust. Each sounds harmless. Each can become an attack path when a system does a little more than people expect. A model check can run code. A cache can mix up requests. A public secret can stay useful for years.\n\nThat is t",
+    "url": "https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html",
+    "date": "2026-10-01T22:15:38"
+  },
+  {
+    "source": "thn",
+    "title": "WordPress Backdoor Rebuilds Itself After Cleanup Using Files, Database, and Shared Memory",
+    "desc": "Cybersecurity researchers have shed light on a WordPress compromise in which threat actors deployed multiple persistence mechanisms to ensure that the final payload kept returning without having to infect the site again.\n\nThe backdoor has been codenamed SC after the \"SC_\" markers present in the inje",
+    "url": "https://thehackernews.com/2026/10/wordpress-backdoor-rebuilds-itself.html",
+    "date": "2026-10-01T20:07:35"
+  },
+  {
+    "source": "thn",
+    "title": "How Financial Services Companies Can Modernize Their Software Supply Chain",
+    "desc": "Every security leader at a bank, insurer, or asset manager has had a version of this conversation: Security wants to eliminate a class of vulnerabilities. Engineering explains what it would take to upgrade the platform where they live. Somebody prices out the regression testing. Somebody else raises",
+    "url": "https://thehackernews.com/2026/10/how-financial-services-companies-can.html",
+    "date": "2026-10-01T17:15:00"
+  },
+  {
+    "source": "thn",
+    "title": "OpenAI Disrupts Reasoning Extraction Campaign Linked to Moonshot AI Associates",
+    "desc": "OpenAI on Wednesday said it identified and disrupted a coordinated distillation campaign that was designed to illicitly extract protected reasoning from its artificial intelligence (AI) models.\n\nA \"core cluster of the activity,\" going back to the first week of July, has been attributed to individual",
+    "url": "https://thehackernews.com/2026/10/openai-disrupts-reasoning-extraction.html",
+    "date": "2026-10-01T16:12:36"
+  },
+  {
+    "source": "thn",
+    "title": "CISA Adds Exploited Cisco Catalyst SD-WAN Manager Auth Bypass to KEV",
+    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a critical authentication bypass flaw impacting Cisco Catalyst SD-WAN Manager to its Known Exploited Vulnerabilities (KEV), following reports of active exploitation.\n\nThe vulnerability, tracked as CVE-2026-76504 (CVS",
+    "url": "https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
+    "date": "2026-10-01T16:03:16"
+  },
+  {
+    "source": "thn",
+    "title": "Google Rolls Out Gemini 4 Argon to Trusted Cyber Defenders, Plans Guardrail-Free Version",
+    "desc": "Google on Wednesday announced its latest frontier artificial intelligence (AI) model, Gemini 4 Argon, that it said is being rolled out to a set of trusted cyber defenders through its Fairwind Program.\n\n\"It delivers frontier performance in complex workflows across real-world software engineering, ent",
+    "url": "https://thehackernews.com/2026/10/google-rolls-out-gemini-4-argon-to.html",
+    "date": "2026-10-01T13:19:36"
+  },
+  {
+    "source": "thn",
+    "title": "Apple CoreGraphics PoC Emerges as WhatsApp PDF Checks Hint at Possible Delivery Path",
+    "desc": "Security researchers have published the first public proof-of-concept for CVE-2026-86950, an Apple CoreGraphics flaw Apple says may have been used in attacks against specific targeted individuals.\n\nThe trigger is a malicious PDF with a crafted embedded font that crashes unpatched iPhones and Macs. T",
+    "url": "https://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html",
+    "date": "2026-10-01T11:24:41"
+  },
+  {
+    "source": "thn",
+    "title": "Bitget Confirms Third-Party Zero-Day Behind $387.5 Million Cryptocurrency Theft",
+    "desc": "Cryptocurrency exchange Bitget on Wednesday confirmed that attackers who stole $387.5 million last week exploited a zero-day flaw in third-party security products, citing ongoing investigation findings from SlowMist.\n\n\"Their investigation identified malicious activity involving third-party security ",
+    "url": "https://thehackernews.com/2026/10/bitget-confirms-third-party-zero-day.html",
+    "date": "2026-10-01T10:51:10"
+  },
+  {
+    "source": "thn",
+    "title": "MetaMask Security Incident Prompts Exit of Affected Ethereum Validators",
+    "desc": "MetaMask on Thursday said it's responding to what it described as an \"ongoing security incident\" impacting part of its infrastructure.\n\n\"We are actively addressing and remediating the issue internally, in coordination with external partners and security advisors,\" the software cryptocurrency wallet ",
+    "url": "https://thehackernews.com/2026/10/metamask-security-incident-prompts-exit.html",
+    "date": "2026-10-01T10:40:09"
+  },
+  {
+    "source": "thn",
+    "title": "Citrix NetScaler Post-Exploitation Payload Creates Superuser, Maps Web Shell to CSS-Like URLs",
+    "desc": "Threat actors have been observed exploiting a critical pre-authentication command injection vulnerability in Citrix NetScaler ADC and NetScaler Gateway to drop web shells and attempt theft of configuration data.\n\nLevelBlue's Threat Hunt Operations &amp; Research (THOR) team, which analyzed the explo",
+    "url": "https://thehackernews.com/2026/10/citrix-netscaler-post-exploitation.html",
+    "date": "2026-10-01T10:05:34"
+  },
+  {
+    "source": "boannews",
+    "title": "“韓 AI, 성장 속도 늦출 수 없어... ‘통제·복원력’ 속도 맞춰야”",
+    "desc": "AI ‘속도조절론’이 대두되는 가운데, 한국은 AI 개발 속도를 늦추기보다 ‘통제·복원력·검증’의 시계를 더 빨리 돌려야 한다는 목소리가 나왔다. 한국이 글로벌 다자간 수용할 수 있는 공통 기준을 설계해 제시하자는 제안도 나왔다. 대통령직속 국가AI전략위원회 보안특별위원회 이원태 위원장은 1일 서울 중구 서울스퀘어 국가AI전략위에서 열린 ‘AI 개발 속도조절론 관련 세미나’에서 이 같이 제언했다.“韓, 미·중 추격자 넘어 ‘글로벌 공통분모 설계자’로”이원태 위원장은 ‘글로벌 프런티어 AI 개발 속도조절론과 대한민국 AI의 대응전략’",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146162",
+    "date": "2026-10-01 18:41:00"
+  },
+  {
+    "source": "boannews",
+    "title": "한국지능형영상기술협회 창립총회 개최",
+    "desc": "지능형 영상기술의 발전과 산업 진흥을 촉진하고, 관련 기업·전문가·기관 간의 교류와 협력을 통해 지능형 영상기술 산업의 경쟁력 강화와 공익 증진에 기여함을 목적으로 하는 사단법인 한국지능형영상기술협회의 창립총회가 10월 1일 경기도 군포시 군포문화예술회관 세미나실에서 열렸다. 이날 창립총회에는 협회 및 회원사 관계자 40여명이 참석했다.한국지능형영상기술협회의 발기인 대표이자 이날 신임 이사장으로 선임된 김성태 이사장(에스엠에이 대표이사)은 인사말을 통해 “여러 가지 어려움 속에서도 현장을 꿋꿋이 지켜오신 대표님들의 노고에 깊은 경의",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146161",
+    "date": "2026-10-01 16:14:42"
+  },
+  {
+    "source": "boannews",
+    "title": "스미싱 원천 차단... 누리랩-NICE평가정보, 문자 발송 사업자에 ‘악성 URL 판정 API’ 서비스",
+    "desc": "누리랩이 NICE평가정보와 손잡고 인터넷발송 문자사업자를 겨냥한 '악성문자 사전차단 API'를 공급한다. 양사는 7월부터 준비를 거쳐 최근 업무제휴 계약을 체결했다.이번 협력은 개정된 전기통신사업법 시행령에 따른 규제 대응 수요를 겨냥한다. 개정안에 따라 인터넷발송 문자를 취급하는 '특수한 유형의 부가통신사업자'는 스미싱 등 속이는 행위에 이용된 문자메시지를 식별하고 차단하는 기술적 조치를 의무적으로 갖춰야 한다.‘URL 위험판정 API’는 문자 발송 직전 본문을 검사해 악성 URL과 금칙어 포함 여부를 실시간 판정하고 차단 결과를",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146158",
+    "date": "2026-10-01 16:12:59"
+  },
+  {
+    "source": "boannews",
+    "title": "시큐아이, 차세대 보안 전략 제시... ‘SECUi MAX SUMMIT 2026’ 성료",
+    "desc": "시큐아이(대표 정삼용)가 서울 양재동 엘타워에서 AI 시대의 차세대 보안 환경 대응을 위한 플래그십 컨퍼런스 ‘SECUi MAX SUMMIT’을 성공적으로 마쳤다고 밝혔다.이번 행사는 대기업, 통신사, 금융, IDC 등 다양한 분야의 최고정보책임자(CIO), 정보보호최고책임자(CISO), 정보보호 담당자 300여 명이 참석했다.“AI Changes Security. Redefining What's Next”를 주제로, 정삼용 시큐아이 대표의 인사말을 시작으로 키노트와 세션 등 총 11개의 발표가 진행됐다.키노트에서는 AI 시대를 주",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146160",
+    "date": "2026-10-01 16:07:07"
+  },
+  {
+    "source": "boannews",
+    "title": "메일함 대신 서버 노렸다... 짐브라 취약점 악용 공격, 인증 비밀값까지 털어",
+    "desc": "이메일·협업 솔루션 짐브라의 취약점(CVE-2026-73570)을 뚫은 공격자들이 메일 서버에 웹셸을 여러 개 심고 서버 전체의 인증 비밀값까지 빼냈다고 마이크로소프트가 밝혔다.마이크로소프트 보안 연구팀의 분석으로는 피해 조직이 여러 지역과 업종에 걸쳐 있고, 모든 서버에서 공격 단계가 다 나타나지는 않았다. 공격 주체는 밝혀지지 않았다.이 결함은 로그인 없이 운영체제 명령을 끼워 넣을 수 있어 심각도가 높은 취약점이다. 네트워크 관리 프로토콜(SNMP) 알림을 켜고 선택 패키지 zimbra-snmp를 설치한 서버에서 원격코드실행(",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146135",
+    "date": "2026-10-01 13:11:03"
+  },
+  {
+    "source": "boannews",
+    "title": "텔레다인 플리어 ‘Neutrino SX12 ISR1200’, 초장거리 감시·정찰 위한 고성능 MWIR 열화상 카메라",
+    "desc": "텔레다인 플리어(Teledyne FLIR)의 Neutrino® ISR Series가 장거리 지상·해양 감시 및 정찰 시스템을 위한 고성능 MWIR(Mid-Wavelength Infrared) 열화상 카메라로 주목받고 있다.Neutrino ISR Series는 MWIR 카메라 모듈과 연속 줌(CZ) 렌즈, 영상 처리 및 제어장치를 공장에서 통합·최적화한 턴키 솔루션으로, 시스템 통합업체가 카메라와 광학계를 자체 개발하고 통합하는 데 필요한 시간과 위험을 줄일 수 있도록 설계됐다.이 가운데 Neutrino SX12 ISR1200은 12",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146153",
+    "date": "2026-10-01 13:07:31"
+  },
+  {
+    "source": "boannews",
+    "title": "과기정통부, 양자내성암호 전환 경진대회·해커톤 개최",
+    "desc": "과학기술정보통신부와 한국인터넷진흥원(KISA)이 ‘제1회 양자내성암호(PQC) 전환 경진대회 및 해커톤’을 개최한다고 1일 밝혔다. 산업 현장에서 생길 수 있는 PQC 전환 이슈에 대한 다양한 해결 방안을 발굴하고 실제 시스템의 암호 체계를 PQC 체계로 전환하는 실전 기술 역량을 확보한다는 취지다.행사는 아이디어 제안·발표 중심의 경진대회와 가상환경 기반의 실전 기술 경연인 해커톤 등 두 개 분야로 나누어 열린다. 경진대회에선 PQC 전환 과정에서 발생하는 문제점의 해결 방안과 창의적 아이디어를 공모한다. 아이디어의 적정성과 구체",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146145",
+    "date": "2026-10-01 12:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "안전한 데이터 융합 성과... NIA, 가명정보 경진대회서 우수 사례 휩쓸어",
+    "desc": "한국지능정보사회진흥원(NIA)이 가명정보 결합 전문 지원을 통해 공공과 민간 데이터 융합의 실질적 성과를 입증했다.NIA는 지난 9월 30일 열린 '2026년 가명정보 활용 경진대회'에서 대상 1점, 최우수상 5점 등 총 6점의 우수 사례를 창출했다고 1일 밝혔다. 이번 대회는 총 20점의 우수사례를 시상했다. NIA는 지원한 우수사례 부문 대상 4점 중 1점, 최우수상 10점 중 5점을 휩쓸며 가명정보 결합 및 활용 분야 전문성을 인정받았다.과기정통부 지정 제1호 가명정보 결합 전문지원 기관인 NIA는 매년 '가명정보 활용 민관협",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146151",
+    "date": "2026-10-01 11:49:37"
+  },
+  {
+    "source": "boannews",
+    "title": "청주시, 2030년까지 CCTV 8000대 AI 관제체계 구축",
+    "desc": "충북 청주시(시장 이장섭)가 민선 9기를 맞아 AI 정책 전담 조직을 갖추고 AI를 도시혁신 핵심 수단으로 활용한다.청주시는 오는 2030년까지 기존 CCTV 8000대의 영상을 AI로 분석할 수 있는 관제환경을 구축하고, 사이버 위협 감시와 대청호 녹조 대응에도 AI를 활용한다고 1일 밝혔다.아울러 고독사 위험가구의 정서 변화를 살피는 에이전틱 AI 실증에 참여하고, AI 통합당직과 AI 기반 버스정보 시스템을 마련하는 등 시민 생활과 밀접한 도시 서비스로 AI 활용 범위를 확대할 방침이다.이를 위해 시는 정보통신과 내에 AI 전",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146146",
+    "date": "2026-10-01 11:46:34"
+  },
+  {
+    "source": "boannews",
+    "title": "‘영상정보관리사’ 국가공인 이끈 양홍모 차장, 개인정보위 위원장 표창",
+    "desc": "한국정보통신자격협회(ICQA, 이사장 한복수)는 협회 양홍모 차장이 지난 9월 30일 서울 양재 엘타워 그레이스홀에서 열린 ‘제6회 개인정보 보호의 날 기념식’에서 보호·활용(신기술 발전) 분야 개인정보보호위원회 위원장 표창을 받았다고 밝혔다. 이번 표창은 AI 기반 영상정보처리기기 등 신기술 환경에서 개인영상정보를 안전하게 보호하고 활용할 수 있는 전문인력 양성 기반을 마련하는 데 기여한 공로를 인정받은 것이다.한국정보통신자격협회는 정보통신·정보보호 분야의 자격 전문기관이다. 현재 영상정보관리사(국가공인·단일등급), PC정비사(국",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146149",
+    "date": "2026-10-01 11:45:36"
+  },
+  {
+    "source": "boannews",
+    "title": "서초구, 엣지형 AI CCTV 196대로 확대... 현장에서 위험 상황 실시간 감지",
+    "desc": "서울 서초구(구청장 전성수)가 AI 카메라가 현장에서 위험 상황을 직접 감지·분석하는 ‘엣지형(Edge) AI 지능형 CCTV 선별관제 시스템’(이하 ‘엣지형 AI 시스템’)을 확대 구축하며 스마트 안전관제 체계 강화에 나선다.‘지능형 CCTV 선별관제 시스템’은 AI 기술을 활용해 CCTV 영상 속 사람·차량 등 객체와 배회·쓰러짐·침입·폭행 등 이상행동을 자동으로 감지하고, 위험 상황이 발생하면 관제요원에게 즉시 알려주는 시스템이다. 구는 사고와 범죄에 신속하게 대응하기 위해 2023년부터 해당 시스템을 도입해 운영해 왔으나,",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146147",
+    "date": "2026-10-01 11:44:33"
+  },
+  {
+    "source": "boannews",
+    "title": "신한은행 고객 2만5000명 대출 관련 정보 유출... “전액 보상하겠다”",
+    "desc": "신한은행에서 고객 2만5000명의 개인정보가 유출되는 사고가 발생했다.신한은행은 최근 외부 비인가자가 비정상적인 방법으로 일부 서비스에서 고객정보를 유출한 사실을 확인했다고 1일 밝혔다. 유출 항목은 고객명, 전화번호, CI(연계정보), 연소득, 산출한도 등 대출신청 관련 개인 신용 정보다. 현재 약 2만5000여명의 고객정보가 유출된 것으로 확인됐다. 고객 주민등록번호 66건과 CI 97건 등이 포함됐다신한은행은 유출 사실 인지 직후 비상대응체계를 가동, 외부 IP를 차단하고 관련 서비스를 중단했다. 보안정책도 새로 적용했다.정상",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146150",
+    "date": "2026-10-01 11:41:57"
+  },
+  {
+    "source": "boannews",
+    "title": "검토용 스크린샷이 공개 저장소로... AI 코딩 에이전트, 기업 내부 화면 1만3000장 노출",
+    "desc": "AI 코딩 에이전트가 코드 검토에 쓸 화면 캡처를 올리다 기업 내부 이미지를 누구나 볼 수 있는 깃허브 저장소에 무더기로 공개했다고 보안 기업 글로우(Glow)가 밝혔다.글로우는 300곳 넘는 조직의 개발자들에게서 나온 내부 이미지 1만3000여장을 찾아냈다. 고객 청구 기록과 출시 전 기능 미리보기 화면도 있었다. 대형 기술 기업과 주요 AI 연구소, 대형 기업용 소프트웨어 업체, 포춘 500대 여행 기업이 포함됐다. 글로우는지난달 9일부터 이들 기업에 개별적으로 알렸고, 최근 결과를 공개했다.직원 10만명이 넘는 한 제조 대기업",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146129",
+    "date": "2026-10-01 11:30:00"
+  },
+  {
+    "source": "boannews",
+    "title": "정책·국방·클라우드... 현업 전문가가 말하는 보안 커리어 로드맵",
+    "desc": "AI와 클라우드 전환이 가속화되는 가운데, 세분화된 정보보안 직무의 현실을 공유하고 미래 생존 전략을 모색하는 자리가 열렸다. OWASP 서울 챕터는 서울 강남구 디캠프에서 ‘정보보안 직무 특집’ 세미나를 개최하고 정책, 국방, 클라우드 운영, 클라우드 서비스 제공자(CSP) 아키텍트 등 4대 보안 버티컬 전문가들의 현장 경험과 커리어 로드맵을 공유했다.공지훈 엘박스 보안정책 엔지니어(SCE)는 기획과 정책 중심이던 기존 보안 담당자의 한계를 지적하며 시스템 구현까지 직접 책임지는 융합 인재로 전환할 필요가 있다고 밝혔다. 공 엔지",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146125",
+    "date": "2026-10-01 11:09:34"
+  },
+  {
+    "source": "boannews",
+    "title": "“가격 아닌 기술로 경쟁”... KISIA, 공정경쟁 캠페인 선언",
+    "desc": "“가격 위주 경쟁으로 우리 기업이 보유한 기술과 서비스의 가치를 충분히 인정받지 못했습니다. 기술과 품질을 바탕으로 건강하게 경쟁하고 함께 성장해 나가겠습니다.”한국정보보호산업협회(KISIA, 회장 김진수)가 정보보호 산업 공정 경쟁을 선언했다.KISIA는 1일 서울 송파구 IT벤처타워 KISIA 세미나실에서 ‘국내 정보보호산업 공정경쟁 캠페인’ 선언식을 개최했다.이 캠페인은 ‘기술로 경쟁하고, 신뢰로 성장합니다’라는 슬로건 아래, 기업 간 상호 존중을 바탕으로 함께 성장하는 건강한 문화를 만들기 위해 기획됐다. 가격 위주 경쟁을",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146143",
+    "date": "2026-10-01 10:55:15"
+  },
+  {
+    "source": "boannews",
+    "title": "[양자와 보안] 엑스게이트-LIG-키페어 협력... 방산 양자보안 시장 공략",
+    "desc": "엑스게이트가 LIG디펜스&에어로스페이스, 키페어와 손잡고 미사일 및 군 위성통신 분야 양자보안 기술 도입과 차세대 보안통신 체계 구축에 나선다.엑스게이트는 LIG 및 키페어와 ‘미사일 보안 기술 고도화 및 군 위성통신 분야 경쟁력 강화를 위한 업무협약(MOU)’을 체결했다고 1일 밝혔다.3사가 각각 보유한 국방, 네트워크 보안, 암호화 기술 역량을 하나로 결합해 미래 미사일 운용 환경에 최적화된 고성능·고신뢰성 보안통신 체계를 구축한다. 양자내성암호(PQC) 등 차세대 암호기술을 적용한 공동 연구개발도 추진한다.엑스게이트는 VPN",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146144",
+    "date": "2026-10-01 10:50:57"
+  },
+  {
     "source": "boannews",
     "title": "[김정덕의 지속가능 보안-9] 그림자 노동의 역설: 통제를 넘어 ‘배려의 설계’'로",
     "desc": "오스트리아의 사상가 이반 일리치(Ivan Illich)가 주창한 ‘그림자 노동(Shadow Work)’은 경제를 지탱하지만 보상이 없는 무급 활동을 의미합니다. 산업화 시대의 그림자 노동이 가사나 통근에 머물렀다면, 오늘날 디지털 전환기 기업의 그림자 노동은 임직원들의 모니터와 스마트폰 속으로 은밀히 파고들었습니다. 주기적 비밀번호 변경, 반복되는 다중 인증, 소프트웨어 업데이트는 보안이라는 미명 아래 개인에게 전가된 전형적인 ‘디지털 가사 노동’입니다. 문제는 이 보이지 않는 노동이 직원의 전두엽을 지치게 만들어 생산성을 갉아먹고",
@@ -308,27 +497,6 @@
     "date": "2026-09-30 09:35:10"
   },
   {
-    "source": "boannews",
-    "title": "기만 늘고 보고는 부정확... 오픈AI, 안전 시험 못 넘은 ‘GPT-6.1 아스트라’ 출시 접어",
-    "desc": "오픈AI가 차기 모델 ‘GPT-6.1 아스트라’를 출시하지 않기로 했다. 내부 시험에서 이 모델이 사람의 의도를 따르는 수준이 회사 기준에 미치지 못했기 때문이다.이 결정은 월스트리트저널(WSJ)이 처음 보도했다. WSJ에 따르면 아스트라는 10월 챗GPT와 코덱스에 탑재될 예정이었다.사치 제인(Saachi Jain) 오픈AI 안전 시스템 책임자는 아스트라가 몇몇 부분에선 이전 모델보다 나아졌다고 말했다. 그러나 아스트라는 작업 범위와 권한 지키기, 자신이 어떤 작업을 했는지 사용자에게 알리기 등의 분야에서 기준을 넘지 못했다. W",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146092",
-    "date": "2026-09-30 09:32:19"
-  },
-  {
-    "source": "boannews",
-    "title": "[디지털 문단속] #7. 스마트 TV 사생활 침해 논란... 내 거실 지키는 보안 수칙",
-    "desc": "최근 미국에서 삼성전자와 LG전자 스마트 TV의 자동 콘텐츠 인식(ACR: Automatic Content Recognition) 기술을 둘러싼 개인정보 침해 논란이 소송으로 이어졌다. 거실 중심을 차지하는 스마트 TV는 카메라와 고성능 마이크가 내장된 거대한 컴퓨터와 마찬가지란 점에서 보안 논란이 일고 있다. 스마트TV는 시청자 시청 패턴은 물론, 결제 정보나 정치·종교 성향 같은 민감한 정보까지 초 단위로 수집할 수 있다. 편리함을 이유로 수집하는 이러한 데이터 통제에 문제가 생기면 내 일상이 외부로 고스란히 생중계될 수 있다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146087",
-    "date": "2026-09-30 09:26:25"
-  },
-  {
-    "source": "boannews",
-    "title": "티오리 ‘진트’, 美  국방부 통신앱 취약점 분석... DARPA 연구 사업자 선정",
-    "desc": "오펜시브 사이버 보안 기업 티오리(Theori, 대표 박세준)의 AI 기반 자율형 모의해킹 플랫폼 ‘진트’(Xint)가 미국 국방부 통신앱의 취약점을 분석한다.30일 미국 국방고등연구계획국(DARPA)의 ‘자율 AI 애플리케이션 보안’ 연구 수행 사업자로 선정됐다고 30일 밝혔다.이번 연구 사업에서 진트는 미국 국방부 전반에서 사용되는 자체 개발 애플리케이션 및 오픈소스 메신저 애플리케이션의 정밀 분석에 활용된다. 또 바이너리 분석으로 다양한 환경에서 실행되는 소프트웨어의 공급망 위험을 평가할 예정이다.진트는 이번 사업 제안 과정에",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146094",
-    "date": "2026-09-30 09:25:52"
-  },
-  {
     "source": "thn",
     "title": "French Tax Data Theft Using Stolen Staff Passwords Went Undetected for Seven Weeks",
     "desc": "An attacker used stolen passwords of staff at France's tax administration to take tax data on hundreds of thousands of taxpayers and businesses in June and July.\n\nNeither the tax administration nor France's national cybersecurity agency saw the data leave. The attack was not sophisticated, the agenc",
@@ -404,83 +572,6 @@
     "desc": "Hackers have used a malware family called NeedyMantis to maintain long-term access to networks they had already breached, Microsoft said in&nbsp;a technical analysis.\n\nThe malware has been seen in a small number of targeted intrusions at telecommunications organizations, universities, medical nonpro",
     "url": "https://thehackernews.com/2026/09/hackers-use-needymantis-to-maintain.html",
     "date": "2026-09-29T00:05:42"
-  },
-  {
-    "source": "boannews",
-    "title": "티피링크코리아, 메타버스코리아와 조달 총판 계약... 공공 네트워크 시장 공략",
-    "desc": "티피링크코리아(지사장 레븐 장)는 메타버스코리아와 조달청 다수공급자계약 사업 협력을 위한 조달총판 계약을 체결하고, 서울 여의도 티피링크코리아 사옥에서 계약 체결식을 진행했다고 29일 밝혔다.이번 계약에 따라 티피링크코리아는 네트워크 스위치와 무선 액세스 포인트(AP) 등 제품 공급을 담당하며, 메타버스코리아는 조달 사업의 유통·판매 파트너로 참여한다. 양사는 제품 공급과 조달 사업 운영 과정에서 협력해 공공기관의 네트워크 구축 수요에 대응할 계획이다.공공기관은 업무 시스템 운영과 이용자 접속 환경을 고려해 유선망과 무선망을 구축한",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146091",
-    "date": "2026-09-29 16:46:42"
-  },
-  {
-    "source": "boannews",
-    "title": "쿠도커뮤니케이션, 부천시서 AI 에이전트 기반 물리보안 통합관제 구축 나선다",
-    "desc": "쿠도커뮤니케이션(대표 김용식)이 자체 AI CITY 플랫폼 ‘CUVIA’​를 기반으로 AI 에이전트와 물리보안 통합관제 기술을 결합한 국내 최초 AI 에이전트 기반 AI CITY 선도 모델 구축에 본격 나선다.쿠도커뮤니케이션은 29일 경기도 부천시청에서 열린 ‘AI 기반 물리보안 통합관제 개발 협력 업무협약식’에 참석해 관련 기관들과 업무협약을 체결했다​고 밝혔다.이번 협약은 과학기술정보통신부 AXsprint 과제사업인 ‘AI 기반 물리보안 통합관제 시스템 개발’​의 원활한 추진과 함께 AI 에이전트 기반 실종자 찾기 시스템 활용",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146090",
-    "date": "2026-09-29 16:44:31"
-  },
-  {
-    "source": "boannews",
-    "title": "“정보보호 벤처 생태계 키운다”... KISA, 한국벤처투자와 맞손",
-    "desc": "한국인터넷진흥원(KISA)은 한국벤처투자(KVIC)와 판교 정보보호 클러스터에서 유망 정보보호 중소·벤처기업 육성을 위한 업무협약을 체결했다고 29일 밝혔다.정보보호 기업 육성을 지원하는 KISA와 벤처 투자 시장에 자금을 공급하는 한국벤처투자가 협력, 우수 기술력을 보유한 초기 정보보호 중소·벤처기업이 투자자와 접점을 넓히고 성장 기반을 마련할 수 있도록 지원한다. 주요 협력 분야는 △유망 정보보호 중소·벤처기업 발굴 및 추천 △투자유치 기회 확대 위한 공동 기업 설명회 및 투자 상담회 △유망 정보보호 중소·벤처기업 육성 체계 강",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146078",
-    "date": "2026-09-29 15:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "개인정보위원장 “연내 에이전틱 AI 가이드라인 발간”... ‘권한관리’ 강조",
-    "desc": "“AI가 에이전트로 진화함에 따라 프라이버시의 핵심도 ‘얼마나 많은 정보와 권한을 위임할 것인가’로 변화하고 있습니다. 프라이버시를 설계 단계부터 내재화 하도록한 에이전틱 AI 가이드라인을 연내 발간하겠습니다.”송경희 개인정보보호위원회 위원장은 29일 서울 양재동 엘타워에서 개인정보위가 개최한 ‘글로벌 AI 프라이버시 포럼 2026’에서 이같이 밝혔다.“얼마나 많은 권한을 위임할 것인가가 핵심”송 위원장은 이 날 ‘프라이버시가 이끄는 혁신’(Innovation powered by privacy) 세션에서 발제를 맡아 에이전틱 AI",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146084",
-    "date": "2026-09-29 14:53:11"
-  },
-  {
-    "source": "boannews",
-    "title": "울타리 넘으면 칩이 잡아 세운다... 엔비디아, AI 에이전트 감시 장치 하드웨어에 심었다",
-    "desc": "엔비디아가 28일(현지시각) 오픈 에이전트 안전 플랫폼(Open Agent Safety Platform)을 공개했다. AI 에이전트를 울타리 안에 붙잡아 두기 위해 오픈소스 소프트웨어와 참조 시스템 설계를 함께 묶었다. 시험 단계와 실제 운영 모두를 겨냥한다.배경에는 잇따른 사고가 있다. 프론티어 AI 기업들은 에이전트가 자신을 가둬 두려고 만든 평가 환경을 빠져나가 접근해선 안 되는 시스템에 접속했고, 일부 사례에선 자기가 한 일을 사실과 다르게 보고했다고 밝혔다. 엔비디아는 에이전트가 정책에 막히거나 버그를 만나거나 필요한 도구",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146083",
-    "date": "2026-09-29 14:21:40"
-  },
-  {
-    "source": "boannews",
-    "title": "“랜섬웨어 피해 막는다” 에브리존-명정보기술, 화이트디펜더 사업 ‘맞손’",
-    "desc": "에브리존과 명정보기술이 안티랜섬웨어 솔루션 ‘화이트디펜더’(WhiteDefender)를 중심으로 랜섬웨어 대응과 사업 협력 강화를 위한 전략적 업무협약을 체결했다고 29일 밝혔다.이번 협약은 데이터 복구 현장에서 확인한 랜섬웨어 피해를 줄이고 고객의 중요 데이터를 보호하자는 양사 공감대에서 추진됐다. 데이터 복구 서비스를 주력으로 하는 명정보기술은 파일이 암호화돼 업무가 중단되거나 자료를 사용할 수 없게 된 고객들을 지원하는 과정에서 암호화 행위를 신속하게 탐지·차단하는 기술의 필요성에 주목해 에브리존과 협력 방안을 모색했다. 명정",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146082",
-    "date": "2026-09-29 14:04:50"
-  },
-  {
-    "source": "boannews",
-    "title": "KISA, AI 에이전트 기반 실종자 탐색 체계 구축",
-    "desc": "한국인터넷진흥원(KISA)은 부천시청에서 AI 에이전트 기반 실종자 탐색 체계 구축을 위한 다자간 업무협약을 체결했다고 29일 밝혔다. 협약엔 부천시 등 산·학·관·경 8개 기관이 참여했다. KISA는 3월 과학기술정보통신부와 함께 ‘인공지능(AI) 기반 차세대 보안제품 상용화 지원사업’을 공모·선정하고, 선정된 쿠도커뮤니케이션·중앙대학교·한국과학기술원 컨소시엄과 함께 실종자 보호를 위한 인공지능(AI) 에이전트 기반 물리보안 통합 플랫폼을 개발 및 실증하고 있다.이번 협약은 개발 중인 플랫폼을 부천시 관제 환경과 연계해 실종자 탐",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146077",
-    "date": "2026-09-29 13:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "파수 AI, 중소기업에 ‘보안 케어’ 서비스... 단계적 보안 체계 구축 지원",
-    "desc": "파수 AI가 인력과 예산 제약으로 보안 체계 구축에 어려움을 겪는 중소기업을 위해 ‘보안 케어 서비스’를 출시했다고 29일 밝혔다.AI 발전으로 사이버 공격의 범위와 빈도가 급증하면서 기업 규모와 관계없이 보안 위협 노출이 심화하고 있다. 개인정보보호법 등 규제 강화가 맞물리며 보안 사고는 경제적 손실을 넘어 경영진의 법적 책임으로 이어지는 경영 리스크로 작용한다. 보안 케어 서비스는 파수 AI가 기업 보안 전문기업으로서 축적한 인사이트를 바탕으로 인프라, 사람, 데이터 등 보안 핵심축에 초점을 맞춰 설계됐다. IT 인프라에 잠재된",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146076",
-    "date": "2026-09-29 11:31:10"
-  },
-  {
-    "source": "boannews",
-    "title": "구글이 붙여 준 ‘인증 개발자’ 딱지... 크롬 팝업차단 확장, 챗봇 대화까지 빼냈다",
-    "desc": "크롬 웹스토어에서 팝업 차단기로 제공되던 확장 프로그램 포퍼블로커(Poper Blocker)가 이용자 정보를 대량으로 빼내는 악성코드라는 분석이 나왔다. 보안 연구조직 베이에어리어랩스(Bay Area Labs)가 찾아냈다.겉모습에는 의심할 구석이 없다. 큼직한 초록색 ‘추천’ 표시가 붙어 있고 개발사는 구글이 부여하는 ‘인증 개발자’ 자격을 갖췄다. 이 자격은 구글이 게시자의 신원을 확인하고 정책을 꾸준히 준수해 온 이력을 인정했다는 의미다. 리뷰 8만1000여건에서 평점 4.8점을 받았고 활성 이용자는 200만명 이상이다.하지만",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146075",
-    "date": "2026-09-29 10:50:42"
-  },
-  {
-    "source": "boannews",
-    "title": "조달청, 불공정 조달행위 환수제도 개편... 위반 유형별 환수금 차등화",
-    "desc": "조달청(청장 백승보)은 불공정 조달행위에 대한 책임을 강화하고 환수제도의 실효성을 높이기 위해 ‘물품구매(제조)계약 특수조건’을 개정하고 10월 1일 시행한다고 밝혔다.이번 개정은 그동안 환수금 산정을 업체가 제출한 자료에 의존하면서 발생했던 비용 입증의 어려움과 복잡한 산정절차, 자료제출 비협조에 따른 업무 지연과 법적 분쟁 등 문제를 개선하기 위한 것이다.조달청은 환수금 산정방식을 보다 명확하고 객관적으로 개선하고, 위반행위의 중대성에 따라 환수금을 차등화하는 한편, 복수의 불공정행위 발생 시 산정기준과 환수금 감액기준을 새롭게",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146072",
-    "date": "2026-09-29 10:32:47"
-  },
-  {
-    "source": "boannews",
-    "title": "렉스젠, CCTV 영상 위변조 방지 솔루션 ‘RexWatchRecorder’ GS인증 1등급 획득",
-    "desc": "AI 영상분석 및 지능형 관제 솔루션 전문기업 렉스젠(대표 안순현)은 자체 개발한 ‘렉스워치 위변조 방지 영상녹화 솔루션 v1.0’(RexWatchRecorder v1.0)이 GS(Good Software) 인증 1등급을 획득했다고 밝혔다.RexWatchRecorder는 CCTV 영상의 녹화와 저장에 무결성 검증 기능을 더한 영상보안 소프트웨어다. 영상과 함께 관리되는 무결성 정보를 활용해 저장된 영상의 변경이나 누락 여부를 확인할 수 있다. 영상을 기록하는 데 그치지 않고, 저장된 영상의 신뢰성을 점검하는 기능까지 영상 관리 과정",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146071",
-    "date": "2026-09-29 10:30:10"
   },
   {
     "source": "thn",
@@ -607,82 +698,5 @@
     "desc": "Security leaders keep debating whether AI will produce an entirely new class of cyberattack. The nearer change is quieter and already visible: AI has made a failed attack cheap to retry.\n\nThe routine version looks like this. An attacker lands on a low-privilege cloud account, and the first try at pr",
     "url": "https://thehackernews.com/2026/09/the-soc-doesnt-need-to-start-over-with.html",
     "date": "2026-09-25T17:00:00"
-  },
-  {
-    "source": "thn",
-    "title": "Bitget Says Suspected North Korean Hackers Stole $351.6M After Backend Compromise",
-    "desc": "Cryptocurrency exchange Bitget said suspected North Korean threat actors have stolen $351.6 million from its hot and warm wallets.&nbsp;\n\n\"At 18:31 UTC on September 24, 2026, Bitget's security systems identified unauthorized transfers involving a limited number of hot wallets,\" Bitget said in a post",
-    "url": "https://thehackernews.com/2026/09/bitget-says-suspected-north-korean.html",
-    "date": "2026-09-25T16:05:55"
-  },
-  {
-    "source": "thn",
-    "title": "Roundcube Pre-Auth SQL Injection Flaw Actively Exploited in the Wild",
-    "desc": "The Canadian Centre for Cyber Security has warned that a now-patched Roundcube Webmail vulnerability is being actively exploited in the wild.\n\nThe vulnerability in question is CVE-2026-48842 (CVSS score: 8.1), a pre-authentication SQL injection in the virtuser_query plugin of Roundcube Webmail versi",
-    "url": "https://thehackernews.com/2026/09/roundcube-pre-auth-sql-injection-flaw.html",
-    "date": "2026-09-25T15:44:02"
-  },
-  {
-    "source": "thn",
-    "title": "Cloudflare Fixes Flaw That Let One Container Read Another Customer's Leftover Disk Data",
-    "desc": "A flaw in Cloudflare Containers let a paying customer read data that other customers' containers had left behind on the same server, Cloudflare and the researchers who found it said on Thursday.\n\nThe data came from disk space that earlier containers had used and given up, not from any live workload,",
-    "url": "https://thehackernews.com/2026/09/cloudflare-fixes-flaw-that-let-one.html",
-    "date": "2026-09-25T10:19:22"
-  },
-  {
-    "source": "thn",
-    "title": "WSO2 and Adobe Commerce Flaws Exploited in Attacks, Added to CISA KEV",
-    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA), on Thursday, added two critical security flaws impacting WSO2 and Adobe Commerce and Magento to its Known Exploited Vulnerabilities (KEV) catalog, based on evidence of active exploitation.\n\nThe vulnerabilities are listed below -\n\n\n  C",
-    "url": "https://thehackernews.com/2026/09/wso2-and-adobe-commerce-flaws-exploited.html",
-    "date": "2026-09-25T10:16:34"
-  },
-  {
-    "source": "thn",
-    "title": "Unpatched OnePlus Flaws Let Installed Android Apps Gain Root Without Permissions",
-    "desc": "A OnePlus 15 running the latest OxygenOS can be rooted by a malicious app the owner installs, one that asks for no special permissions. A researcher, Rasmus Moorats,&nbsp;chained two flaws in OnePlus's own software&nbsp;to gain root access, the highest level of control over an Android phone.\n\nOnePlu",
-    "url": "https://thehackernews.com/2026/09/unpatched-oneplus-flaws-let-installed.html",
-    "date": "2026-09-24T23:40:18"
-  },
-  {
-    "source": "thn",
-    "title": "ThreatsDay: AI Search Poisoning, AI Coding Tool Leaking Repos, One-Click Code Execution and 13 More Stories",
-    "desc": "This week, the dangerous stuff keeps arriving dressed as something boring. An update. A login box. A search answer. A coding tool. A link you have clicked a hundred times before.\n\nThat is the thread running through the pile. Trusted paths get poisoned. Old bugs find new jobs. AI tools leak more than",
-    "url": "https://thehackernews.com/2026/09/threatsday-ai-search-poisoning-ai.html",
-    "date": "2026-09-24T23:22:43"
-  },
-  {
-    "source": "thn",
-    "title": "Placeholder third-party[.]com Referenced Across 1,700+ Repositories Now Serves Malicious Content",
-    "desc": "The \"third-party[.]com\" domain, commonly used as a documentation placeholder, has been observed serving a ClickFix lure to Windows browsers while displaying a harmless decoy to other users.\n\n\"third-party[.]com has been a generic documentation placeholder for years, the same role example.com plays,\" ",
-    "url": "https://thehackernews.com/2026/09/placeholder-third-partycom-referenced.html",
-    "date": "2026-09-24T20:57:32"
-  },
-  {
-    "source": "thn",
-    "title": "Hacked Ukrainian Sites Serve Fake Cloudflare ClickFix Lures for Psychedelic Stealer",
-    "desc": "An active ClickFix campaign has been observed compromising legitimate Ukrainian business websites to inject bogus Cloudflare verification pages and trick victims into downloading a previously undocumented information stealer called Psychedelic.\n\n\"When a visitor interacts with the page, the lure copi",
-    "url": "https://thehackernews.com/2026/09/hacked-ukrainian-sites-serve-fake.html",
-    "date": "2026-09-24T19:59:06"
-  },
-  {
-    "source": "thn",
-    "title": "Corp MDM Spyware Targets Logistics Firms, Steals New SMS and Redirects Calls",
-    "desc": "The logistics sector has become the target of a new malicious cyber campaign that distributes an Android spyware codenamed Corp MDM.\n\nAccording to Have I Been Squatted, the campaign uses fake Google Play pages branded as CEVA and TKW Logistics to distribute an Android Package Kit (APK) file that's d",
-    "url": "https://thehackernews.com/2026/09/corp-mdm-spyware-targets-logistics.html",
-    "date": "2026-09-24T17:35:27"
-  },
-  {
-    "source": "thn",
-    "title": "Secrets Sprawl Is an Identity Problem That AI Just Made Impossible to Ignore",
-    "desc": "AI coding agents are changing how quickly developers can build and ship software as well as how quickly credentials can become exposed. According to GitGuardian’s 2026 State of Secrets Sprawl Report, commits identified as AI-assisted are leaking secrets at approximately twice the rate of human-writt",
-    "url": "https://thehackernews.com/2026/09/secrets-sprawl-is-identity-problem-that.html",
-    "date": "2026-09-24T16:30:00"
-  },
-  {
-    "source": "thn",
-    "title": "17,000 URLs Reveal How ClickFix Turns Trusted Websites Into Malware Traps: Report by CTM360",
-    "desc": "ClickFix has become the most common way attackers get into enterprise networks, and it does it without an exploit, an attachment, or a file on disk. Our new global threat report traces the technique from a novelty in late 2023 to a subscription product with on-chain infrastructure and a state-sponso",
-    "url": "https://thehackernews.com/2026/09/17000-urls-reveal-how-clickfix-turns.html",
-    "date": "2026-09-24T14:44:21"
   }
 ]
