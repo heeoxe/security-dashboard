@@ -1,5 +1,40 @@
 [
   {
+    "source": "boannews",
+    "title": "AI 에이전트 보안 위험 차단... 애플, 맥OS ‘전체 디스크 접근 권한’ 규제 강화",
+    "desc": "애플이 맥(Mac) 운영체계에서 시스템 전체 데이터를 들여다볼 수 있는 ‘전체 디스크 접근 권한’(FDA) 부여 방식을 대폭 강화한다. 최근 AI 에이전트들이 사용자 메시지 등 사적 데이터에 광범위하게 접근할 수 있다는 논란에 따른 것이다. 애플은 2일(현지시간) 개발자 공지를 통해 향후 맥 사용자가 특정 앱에 전체 디스크 접근 권한을 부여할 때 ‘매우 명시적인 조치’(very explicit user action)를 거치도록 하는 추가 통제 장치를 도입한다고 밝혔다. 전체 디스크 접근 권한은 시스템 백업 유틸리티 등 특수한 앱이",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146185",
+    "date": "2026-10-03 10:11:47"
+  },
+  {
+    "source": "boannews",
+    "title": "패치 나오면 AI로 무기화... 구글, 월간 취약점 공개 1만건 넘었다",
+    "desc": "새로 공개되는 취약점이 올해 들어 두 배로 불어났고, 공격자들은 AI를 이용해 이를 더 빨리 무기로 만들고 있다고 구글 위협 인텔리전스 그룹(GTIG)이 분석했다.GTIG는 9월 30일(현지시각) 보고서에서 8월 한 달 공개된 취약점이 1만740건으로 최고치를 기록했다고 밝혔다. 1월 5045건이던 월간 공개 건수는 7월과 8월 연달아 1만건을 넘었다.올해 1~8월 실제 공격에 악용된 취약점은 141건으로 2025년 한 해 127건을 이미 넘어섰다. 이 기간 공개되고 악용된 개별 취약점 수도 2025년 전체 합계를 웃돌았다.GTIG",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146132",
+    "date": "2026-10-03 08:30:00"
+  },
+  {
+    "source": "thn",
+    "title": "GitLab Patches Critical 9.9 AI Gateway Flaw Allowing Command Execution on Self-Hosted Servers",
+    "desc": "A critical flaw in GitLab's AI Gateway could let a logged-in user with Duo Agent Platform access run commands on the gateway under certain conditions, GitLab&nbsp;said in an advisory.\n\nThe gateway is the service that connects a GitLab instance to AI models, and only organizations that host their own",
+    "url": "https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html",
+    "date": "2026-10-02T23:03:31"
+  },
+  {
+    "source": "thn",
+    "title": "Antino Backdoor Uses Outlook and OneDrive for C2 in China-Nexus Espionage Campaign",
+    "desc": "Government and policy organizations across Asia have become the target of a new campaign orchestrated by a China-nexus threat actor.\n\nThe activity, which has targeted government and policy organizations in Taiwan, India, the Philippines, Cambodia, Pakistan, Thailand, and Myanmar, involves the deploy",
+    "url": "https://thehackernews.com/2026/10/antino-backdoor-uses-outlook-and.html",
+    "date": "2026-10-02T23:03:16"
+  },
+  {
+    "source": "thn",
+    "title": "Dell CSM Flaws Enable Unauthenticated Admin Access and Root on Kubernetes Nodes",
+    "desc": "Dell has released security updates to address multiple critical security flaws in Dell Container Storage Modules (CSM) that could be exploited by bad actors to take over susceptible systems.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2026-63688 (CVSS score: 10.0) - A missing authentication for ",
+    "url": "https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html",
+    "date": "2026-10-02T22:32:12"
+  },
+  {
     "source": "thn",
     "title": "OpenAI Parts Ways With Three Safety Researchers Over Sensitive Information Mishandling",
     "desc": "OpenAI has parted ways with three members of its safety team after they leaked private information in violation of company policies, The Wall Street Journal reported.\n\n\"We have parted ways with three individuals for violating our policies on accessing and handling sensitive company information,\" a s",
@@ -511,20 +546,6 @@
     "date": "2026-09-30 15:35:09"
   },
   {
-    "source": "boannews",
-    "title": "세이퍼존, 우즈베키스탄 기업과 보안 협력... 중앙아시아 시장 진출",
-    "desc": "세이퍼존이 우즈베키스탄 기업 IT파크(IT Park)와 손잡고 중앙아시아 사이버 보안 시장 공략에 나선다고 30일 밝혔다.세이퍼존은 최근 열린 ‘ICT Week Uzbekistan 2026’ 기간 중 우즈베키스탄 IT Park 본사에서 우즈베키스탄 사이버 보안 사업 협력을 위한 양해각서(MOU)를 체결했다. 협약식엔 권창훈 세이퍼존 대표와 파루크 라술로프(Farrukh Rasulov) IT Park 디지털화 담당 디렉터(CDO) 등 주요 관계자들이 참석해 양국 간 긴밀한 협력 방안을 논의했다과거 대우그룹의 글로벌 개척 정신을 롤모델",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146119",
-    "date": "2026-09-30 15:22:41"
-  },
-  {
-    "source": "boannews",
-    "title": "S2W, 온톨로지 기반 의사결정 OS ‘SAIP’ 고도화... AX 비즈니스 확장",
-    "desc": "에스투더블유가 온톨로지(Ontology) 기반 의사결정 운영체제(OS) ‘SAIP’의 주요 기능을 고도화하며 비보안 사업 확장에 나선다고 30일 밝혔다.이번에 고도화된 SAIP는 S2W가 안보·보안 영역에서 축적해온 AI 안전성 노하우를 바탕으로 사내외에 흩어진 다양한 데이터를 구조화하고 온톨로지와 지식그래프를 활용, 산업별 특성과 기업 내부 업무 규칙, 도메인 전문가 지식까지 체계적으로 결합하는 데 초점을 맞췄다.최근 기업들이 생성형 AI와 데이터 기반 전환(AX)을 추진하는 과정에서 겪는 가장 큰 애로사항은 분산된 데이터 사일로",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146118",
-    "date": "2026-09-30 14:59:02"
-  },
-  {
     "source": "thn",
     "title": "French Tax Data Theft Using Stolen Staff Passwords Went Undetected for Seven Weeks",
     "desc": "An attacker used stolen passwords of staff at France's tax administration to take tax data on hundreds of thousands of taxpayers and businesses in June and July.\n\nNeither the tax administration nor France's national cybersecurity agency saw the data leave. The attack was not sophisticated, the agenc",
@@ -677,26 +698,5 @@
     "desc": "Google is warning of renewed mass exploitation of a known security vulnerability in Oracle PeopleSoft as part of a campaign targeting multiple sectors globally.\n\nThe ShinyHunters-linked activity involves the weaponization of CVE-2026-35273 (CVSS score: 9.8), a critical security flaw that could resul",
     "url": "https://thehackernews.com/2026/09/attackers-bypass-wafs-to-exploit-oracle.html",
     "date": "2026-09-26T17:16:40"
-  },
-  {
-    "source": "thn",
-    "title": "Zero Trust for AI Agents Starts With Fixing Zero Visibility",
-    "desc": "The way we talk about AI agents is shifting, and the way we implement them requires an even more fundamental shift. While earlier discourse focused on how quickly organizations could stand up agents and how much productivity they could promise, a string of recent incidents, including a widely discus",
-    "url": "https://thehackernews.com/2026/09/zero-trust-for-ai-agents-starts-with.html",
-    "date": "2026-09-26T16:00:00"
-  },
-  {
-    "source": "thn",
-    "title": "Elementor CSRF Flaw Lets Attackers Take Over Sites After Admin Clicks Crafted Link",
-    "desc": "Details have emerged about a high-severity security flaw in the Elementor Website Builder WordPress plugin that could be exploited by an unauthenticated attacker to create rogue administrator accounts and take control of a site.\n\nThe cross-site request forgery (CSRF) vulnerability, which has yet to ",
-    "url": "https://thehackernews.com/2026/09/elementor-csrf-flaw-lets-attackers-take.html",
-    "date": "2026-09-26T15:25:22"
-  },
-  {
-    "source": "thn",
-    "title": "SharePoint RCE and MikroTik RouterOS Flaws Actively Exploited in the Wild",
-    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two security flaws impacting Microsoft SharePoint and Mikrotik RouterOS to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe vulnerabilities in question are as follows -\n\n\n ",
-    "url": "https://thehackernews.com/2026/09/sharepoint-rce-and-mikrotik-routeros.html",
-    "date": "2026-09-26T14:19:53"
   }
 ]
