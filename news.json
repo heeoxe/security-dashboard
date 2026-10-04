@@ -1,5 +1,26 @@
 [
   {
+    "source": "boannews",
+    "title": "중국계 랜섬웨어 ‘워록’, 스페인어권 수도·통신 공략",
+    "desc": "중국계 랜섬웨어 조직 워록(Warlock)이 스페인어와 포르투갈어를 쓰는 나라들의 수도·통신 기관 등 주요 조직을 잇따라 공격하고 있다.시만텍은 이번 주 공개한 연구에서 워록이 최근 두 달 사이 수도 사업자와 통신사, 지방 정부기관, 대학 등 네 곳을 공격했다고 밝혔다. 피해 기관이 어느 나라인지는 알려지지 않았다.워록은 마이크로소프트가 ‘스톰-2603’, 시만텍이 ‘롱레그스’(Longlegs)로 추적하는 조직이다. 2025년 7월 마이크로소프트는 중국 연계 조직들이 사내 설치형 셰어포인트의 제로데이 여러 건을 엮은 ‘툴셸’(Too",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146164",
+    "date": "2026-10-04 08:30:00"
+  },
+  {
+    "source": "thn",
+    "title": "MI5 Says China’s MSS Funded Research Involving 100+ U.K.-Linked Academics",
+    "desc": "The U.K.'s domestic intelligence and security agency has warned that more than 100 academics have helped China boost its intelligence gathering efforts on behalf of Beijing's state security service.\n\nIn a \"Security Service Espionage Alert\" issued on September 30, 2026, MI5 said the \"primary purpose ",
+    "url": "https://thehackernews.com/2026/10/mi5-says-chinas-mss-funded-research.html",
+    "date": "2026-10-03T20:08:46"
+  },
+  {
+    "source": "thn",
+    "title": "Warlock Exploits SharePoint Flaws to Disable Security Tools and Deploy Ransomware",
+    "desc": "The suspected China-linked threat actor known as Warlock is still continuing to weaponize Microsoft SharePoint vulnerabilities, likely both old and new, in attacks targeting organizations in Portuguese- and Spanish-speaking countries.\n\nThe activity, observed by the Symantec and Carbon Black Threat H",
+    "url": "https://thehackernews.com/2026/10/warlock-exploits-sharepoint-flaws-to.html",
+    "date": "2026-10-03T20:06:33"
+  },
+  {
     "source": "thn",
     "title": "The State of Cybersecurity in 2026: Key Segments, Insights, and Innovations",
     "desc": "Featuring:\n\nCybersecurity is being reshaped by the expansion of cloud infrastructure, AI, distributed systems, and increasingly complex digital environments. As organizations manage more identities, devices, data, and internet-facing infrastructure, security is shifting toward continuous visibility,",
@@ -546,13 +567,6 @@
     "date": "2026-09-30T11:00:30"
   },
   {
-    "source": "boannews",
-    "title": "맑은소프트 해킹 일파만파... 최소 22개 사이트 개인정보 유출",
-    "desc": "클라우드 학습관리 시스템(LMS)을 제공하는 온라인 교육 사이트 운영기업 ‘맑은소프트’가 9월 29일 개인정보 유출 사실을 확인(최초 유출 가능성 확인은 26일)하고 공지했다. 다만 맑은소프트는 유출된 개인정보 항목과 규모는 ‘고객센터에 별도 문의’ 해달라고만 밝혀 정확한 피해 규모 및 유출 정보의 종류는 파악되지 않았다.문제는 맑은소프트가 LMS를 제공하는 기업이라는 사실이다. LMS는 인터넷을 통해 기관이나 기업의 교육 과정을 기획부터 운영과 평가까지 관리해 주는 서비스형 학습관리 시스템으로, 온라인 교육을 운영하는 곳이 많이",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146124",
-    "date": "2026-09-30 18:39:14"
-  },
-  {
     "source": "thn",
     "title": "French Tax Data Theft Using Stolen Staff Passwords Went Undetected for Seven Weeks",
     "desc": "An attacker used stolen passwords of staff at France's tax administration to take tax data on hundreds of thousands of taxpayers and businesses in June and July.\n\nNeither the tax administration nor France's national cybersecurity agency saw the data leave. The attack was not sophisticated, the agenc",
@@ -684,19 +698,5 @@
     "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Sunday added two critical Citrix NetScaler ADC and Gateway flaws to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2026-88771 (CVSS score:",
     "url": "https://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html",
     "date": "2026-09-28T12:51:49"
-  },
-  {
-    "source": "thn",
-    "title": "Warning: Two Unpatched Citrix NetScaler RCE Zero-Days Under Active Exploitation",
-    "desc": "Two critical vulnerabilities in Citrix NetScaler ADC and NetScaler Gateway that allow remote code execution have been exploited in the wild, Citrix confirmed on September 27. It released fixes for both, along with six other flaws. One of the two affects every deployment on an affected version, inclu",
-    "url": "https://thehackernews.com/2026/09/warning-two-unpatched-citrix-netscaler.html",
-    "date": "2026-09-27T13:17:57"
-  },
-  {
-    "source": "thn",
-    "title": "Lunex Stealer Abuses AMD Driver to Disable Security Monitoring and Steal Browser Credentials",
-    "desc": "The Psychedelic Stealer malware distributed via compromised Ukrainian websites using ClickFix-style Cloudflare verification checks is part of a wider malware-as-a-service (MaaS) platform called Lunex.\n\nThe new findings come from Ontinue, which described the activity as a four-stage attack chain aime",
-    "url": "https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html",
-    "date": "2026-09-26T23:52:52"
   }
 ]
