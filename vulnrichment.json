@@ -1,22 +1,78 @@
 [
   {
-    "cve": "CVE-2026-12392",
-    "title": "RPC secret disclosure via vendor data endpoint in Canonical MAAS",
-    "desc": "An information exposure vulnerability in Canonical MAAS prior to versions 3.4.10, 3.5.14, 3.6.5, 3.7.3, and 3.8.0 allows an unauthenticated attacker to retrieve the RPC secret in plaintext via the vendor data metadata endpoint. If a target machine was deployed with the 'register as rack' option enabled, an attacker who obtains or infers the machine's system ID can query the preseed/metadata server",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
+    "cve": "CVE-2026-88779",
+    "title": "Memory overflow vulnerability  leading to Denial of Service",
+    "desc": "Vulnerability in NetScaler ADC and NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 FIPS, and before 13.1-37.282; Gateway: before 14.1-73.41 and before 13.1-64.28.",
+    "cvss": null,
+    "severity": "",
     "cwes": [],
     "affected": [
       {
-        "vendor": "Canonical",
-        "product": "MAAS"
+        "vendor": "NetScaler",
+        "product": "ADC"
+      },
+      {
+        "vendor": "NetScaler",
+        "product": "Gateway"
+      }
+    ],
+    "exploitation": "active",
+    "isKev": true,
+    "published": "2026-10-04",
+    "updated": "2026-10-04",
+    "url": "https://support.citrix.com/support-home/kbsearch/article?articleNumber=CTX697174",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-7366",
+    "title": "IBM DataPower Gateway affected by HTTP request header leakage in XML-Firewall",
+    "desc": "IBM DataPower Gateway 11.0.0.0 through 11.0.0.1 and IBM DataPower Gateway 10.5.0.0 through 10.5.0.21 and IBM DataPower Gateway 10.6.0.0 through 10.6.0.9 allows a race condition that results in improper isolation of request state when handling the built‑in X‑Client‑IP header. Under concurrent request processing, X‑Client‑IP values may be contaminated across requests, enabling IP spoofing and disclo",
+    "cvss": 4.2,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-362"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "DataPower Gateway 11.0.0"
+      },
+      {
+        "vendor": "IBM",
+        "product": "DataPower Gateway 10.5.0"
+      },
+      {
+        "vendor": "IBM",
+        "product": "DataPower Gateway 10.6.0"
       }
     ],
     "exploitation": "none",
     "isKev": false,
-    "published": "2026-10-02",
+    "published": "2026-08-12",
     "updated": "2026-10-04",
-    "url": "https://github.com/canonical/maas/commit/8489979d64b0e7f124e7cef66d02b21263918f9b",
+    "url": "https://www.ibm.com/support/pages/node/7282770",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-91769",
+    "title": "TLS Hostname Verification Falls Back to CN After SAN Mismatch",
+    "desc": "PHP's OpenSSL stream peer verification checks the certificate's subjectAltName entries first and, whenever no entry matches, falls back to the Common Name. RFC 6125 requires the CN to be ignored once the certificate presents any service identity, so a certificate carrying a non-matching DNS SAN was still accepted when its CN matched the requested peer_name. A certificate trusted by the client for ",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-297"
+    ],
+    "affected": [
+      {
+        "vendor": "PHP Group",
+        "product": "PHP"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-25",
+    "updated": "2026-10-04",
+    "url": "https://github.com/php/php-src/security/advisories/GHSA-vvx9-73fr-5jjx",
     "source": "CISA Vulnrichment"
   },
   {
@@ -39,30 +95,6 @@
     "published": "2026-07-10",
     "updated": "2026-10-04",
     "url": "https://github.com/Cap-go/capgo/security/advisories/GHSA-rjr5-qxqj-cx8g",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-88779",
-    "title": "Memory overflow vulnerability  leading to Denial of Service",
-    "desc": "Vulnerability in NetScaler ADC and NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 FIPS, and before 13.1-37.282; Gateway: before 14.1-73.41 and before 13.1-64.28.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "NetScaler",
-        "product": "ADC"
-      },
-      {
-        "vendor": "NetScaler",
-        "product": "Gateway"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-04",
-    "updated": "2026-10-04",
-    "url": "https://support.citrix.com/support-home/kbsearch/article?articleNumber=CTX697174",
     "source": "CISA Vulnrichment"
   },
   {
@@ -2844,6 +2876,48 @@
     "published": "2026-09-11",
     "updated": "2026-10-03",
     "url": "https://mail.python.org/archives/list/security-announce@python.org/thread/57TBTLL2W6APMZR3A25B2YV7GL3EPTDJ/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-104470",
+    "title": "YesWiki before 4.6.7 SSRF and XSS via Bazar valeur Action",
+    "desc": "YesWiki before 4.6.7 contains a server-side request forgery vulnerability in the Bazar valeur action that allows page editors to make the server fetch arbitrary URLs. Attackers can supply loopback or internal URLs in the url parameter to probe internal services and inject unescaped remote HTML that executes scripts in viewers' browsers.",
+    "cvss": 7.4,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "YesWiki",
+        "product": "yeswiki"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-10-02",
+    "updated": "2026-10-02",
+    "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-6rvf-7pwm-6j44",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-12392",
+    "title": "RPC secret disclosure via vendor data endpoint in Canonical MAAS",
+    "desc": "An information exposure vulnerability in Canonical MAAS prior to versions 3.4.10, 3.5.14, 3.6.5, 3.7.3, and 3.8.0 allows an unauthenticated attacker to retrieve the RPC secret in plaintext via the vendor data metadata endpoint. If a target machine was deployed with the 'register as rack' option enabled, an attacker who obtains or infers the machine's system ID can query the preseed/metadata server",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Canonical",
+        "product": "MAAS"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-02",
+    "updated": "2026-10-02",
+    "url": "https://github.com/canonical/maas/commit/8489979d64b0e7f124e7cef66d02b21263918f9b",
     "source": "CISA Vulnrichment"
   },
   {
@@ -11224,28 +11298,6 @@
     "published": "2026-10-02",
     "updated": "2026-10-02",
     "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-v527-6r4j-j2w2",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-104470",
-    "title": "YesWiki before 4.6.7 SSRF and XSS via Bazar valeur Action",
-    "desc": "YesWiki before 4.6.7 contains a server-side request forgery vulnerability in the Bazar valeur action that allows page editors to make the server fetch arbitrary URLs. Attackers can supply loopback or internal URLs in the url parameter to probe internal services and inject unescaped remote HTML that executes scripts in viewers' browsers.",
-    "cvss": 7.4,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "YesWiki",
-        "product": "yeswiki"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-10-02",
-    "updated": "2026-10-02",
-    "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-6rvf-7pwm-6j44",
     "source": "CISA Vulnrichment"
   },
   {
@@ -25858,82 +25910,6 @@
     "published": "2026-09-08",
     "updated": "2026-10-01",
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69352",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-69353",
-    "title": "Windows Text Shaping Information Disclosure Vulnerability",
-    "desc": "",
-    "cvss": 5.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-125"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-10-01",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69353",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-69357",
-    "title": "Windows NDIS Elevation of Privilege Vulnerability",
-    "desc": "",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-08",
-    "updated": "2026-10-01",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69357",
     "source": "CISA Vulnrichment"
   }
 ]
