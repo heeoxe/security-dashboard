@@ -1,10 +1,192 @@
 [
   {
     "source": "thn",
+    "title": "Unpatched Critical LMCache Flaw Lets Unauthenticated Attackers Run Code Remotely",
+    "desc": "A critical vulnerability in LMCache, open-source software that speeds up large language model (LLM) servers such as vLLM, lets an attacker run code on the cache server without logging in, and no fixed version is available.\n\nThe flaw is in LMCache's&nbsp;multiprocess mode, where the cache runs as a s",
+    "url": "https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html",
+    "date": "2026-10-07T21:04:53"
+  },
+  {
+    "source": "thn",
+    "title": "PoeLLM Malware Infects 3,400+ Servers to Expand Crypto Mining Botnet",
+    "desc": "Cybersecurity researchers are calling attention to a new malware family that has been observed targeting exposed artificial intelligence (AI) and large language model (LLM) infrastructure with an aim to deploy cryptocurrency miners and further expand the scale of the botnet.\n\nThe financially motivat",
+    "url": "https://thehackernews.com/2026/10/poellm-malware-infects-3400-servers-to.html",
+    "date": "2026-10-07T21:03:51"
+  },
+  {
+    "source": "thn",
+    "title": "The Sixth Voice of the CISO Data Shows Cyber Risk Has Moved Inside the Workflow",
+    "desc": "The 2026 findings are not just a year-over-year shift. They mark the latest point in a five-year arc where resilience, AI governance, human risk, and board scrutiny are converging inside the systems where work actually happens.\n\nFor years, the enterprise cybersecurity story has been told as a straig",
+    "url": "https://thehackernews.com/2026/10/the-sixth-voice-of-ciso-data-shows.html",
+    "date": "2026-10-07T17:27:05"
+  },
+  {
+    "source": "thn",
+    "title": "FBI Warns FortiBleed Remains Active After Amassing 86,644 Fortinet Device Credentials",
+    "desc": "The U.S. Federal Bureau of Investigation (FBI) and Secret Service (USSS) on Tuesday warned that the FortiBleed credential harvesting campaign remains an active threat aimed at internet-facing Fortinet FortiGate firewalls and secure socket layer (SSL) virtual private network (VPN) gateways.\n\n\"The cam",
+    "url": "https://thehackernews.com/2026/10/fbi-warns-fortibleed-remains-active.html",
+    "date": "2026-10-07T17:26:56"
+  },
+  {
+    "source": "thn",
+    "title": "Atlassian Data Center Flaw Draws Exploitation Attempts Within Two Hours of Public Details",
+    "desc": "Threat actors have begun to exploit a newly disclosed critical security flaw impacting Atlassian Data Center products that could allow access to sensitive files under certain conditions.\n\nThe arbitrary file access flaw, tracked as CVE-2026-21589 (CVSS score: 9.3) affects multiple products, including",
+    "url": "https://thehackernews.com/2026/10/atlassian-data-center-flaw-draws.html",
+    "date": "2026-10-07T17:19:26"
+  },
+  {
+    "source": "thn",
+    "title": "What Is Agentic Pentesting? What It Proves, and Where It Stops.",
+    "desc": "If you’re evaluating an agentic pentesting solution right now, you’ve probably heard the same pitch more than once: point it at a target, and it discovers, validates, and exploits attack paths autonomously, the way a real attacker would.\n\nThat promise is worth taking seriously. It’s also worth press",
+    "url": "https://thehackernews.com/2026/10/what-is-agentic-pentesting-what-it.html",
+    "date": "2026-10-07T17:12:24"
+  },
+  {
+    "source": "thn",
+    "title": "Anthropic Expands Claude Access for Vetted Cyber Teams as Glasswing Finds 129,000 Flaws",
+    "desc": "Anthropic on Tuesday said it's expanding a program that allows vetted cybersecurity professionals to test its advanced artificial intelligence (AI) models with reduced safeguards and blocking classifiers, as the company claimed its Project Glasswing initiative uncovered at least 129,000 verified sof",
+    "url": "https://thehackernews.com/2026/10/anthropic-expands-claude-access-for.html",
+    "date": "2026-10-07T13:37:38"
+  },
+  {
+    "source": "thn",
+    "title": "100+ Compromised Websites Use Fake Cloudflare Checks to Deliver LunexStealer",
+    "desc": "The Computer Emergency Response Team of Ukraine (CERT-UA) has identified more than 100 compromised websites that have been injected with malicious JavaScript to serve an information-stealing malware called LunexStealer (aka Psychedelic Stealer).\n\nThe activity, which was observed by the agency in Sep",
+    "url": "https://thehackernews.com/2026/10/100-compromised-websites-use-fake.html",
+    "date": "2026-10-07T12:27:54"
+  },
+  {
+    "source": "thn",
     "title": "Fake ChatGPT, Gemini, and Claude Ad Portals Capture Credentials and MFA Codes",
     "desc": "Cybersecurity researchers have disclosed details of a \"human-operated phishing platform\" that impersonates advertising products for artificial intelligence (AI) chatbots like Google Gemini, Anthropic Claude, OpenAI ChatGPT, Perplexity, Meta Muse, and Manus.\n\nThe products, which claim to offer campai",
     "url": "https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html",
     "date": "2026-10-07T00:08:55"
+  },
+  {
+    "source": "boannews",
+    "title": "“공격자가 토큰 더 쓰게 만든다”... 에버스핀, AI 자동화 공격 대응 전략 제시",
+    "desc": "금융권에서 AI를 활용한 자동화 공격 우려가 커지는 가운데, 에버스핀이 자사 솔루션을 통해 AI 자율형 침투테스트 도구인 ‘아르텍스’(ARTEX)의 특징이 확인된 공격 시도를 자사 고객사 서비스에서 탐지했다고 7일 밝혔다.에버스핀에 따르면, 공격 시도는 웹 보안 솔루션인 ‘에버세이프 웹’(Eversafe Web)을 적용한 일부 고객사에서 확인됐다. AI 기반 공격 도구를 활용한 시도가 지속 발생하고 있으며, 에버세이프 웹의 방어 체계가 이러한 공격에 정상적으로 작동하고 있음을 입증했다.이번 공격에 대해 에버스핀은 공격 흐름을 △외부",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146247",
+    "date": "2026-10-07 18:22:36"
+  },
+  {
+    "source": "boannews",
+    "title": "“코어뱅킹 밖을 노려라”… 해커 먹잇감 된 모집인·영업지원 시스템",
+    "desc": "최근 7개 금융사에서 6만6000여명의 개인정보와 2200건에 달하는 법인 정보가 유출되는 대규모 연쇄 침해사고가 발생했다. 이번 사고의 핵심 원인은 코어뱅킹이 아닌 주변부 시스템의 관리 부실과 금융권 특유의 ‘시스템 동질성’으로 꼽힌다.엔키화이트햇은 이번 사태에 대해 ‘2026 금융권 연쇄 침해사고 분석과 대응방안’ 백서를 통해, 공격자들이 규제 요건을 맞추기 위해 획일화된 환경을 공략했으며 1-day 취약점과 AI 도구를 결합해 유출 규모가 커졌다고 진단했다. 회사는 일회성 점검에서 벗어나 공격자 관점에서 취약점을 선제적으로 찾",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146246",
+    "date": "2026-10-07 18:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "위키미디어 “오픈AI 에이전트, 이더패드 장악 시도”",
+    "desc": "오픈AI의 자율 AI 에이전트들이 위키백과 문서를 허가 없이 고치려 하고, 위키미디어가 운영하는 공개 메모 도구까지 장악하려 한 사실이 위키미디어재단 조사에서 드러났다.위키백과를 운영하는 비영리 위키미디어재단은 이런 내용의 조사 결과를 공개했다. 재단은 AI 에이전트들이 웹사이트와 온라인 서비스에 무단 접근을 시도한다는 보고가 잇따르자 조사에 나섰다.재단에 따르면 오픈AI 에이전트들은 위키백과 문서를 편집했지만 이 편집은 게시되지 않았다. 일부는 인용 기능을 원격 서비스 데이터를 끌어오는 프록시로 악용하려는 ‘잠재적 악성’ 편집이었",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146233",
+    "date": "2026-10-07 18:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "로그인 없이 서버 파일 열람... 아틀라시안 지라·컨플루언스 등 8개 제품서 치명적 결함",
+    "desc": "아틀라시안이 자체 제품 8종에서 로그인 없이 서버 파일을 읽어 갈 수 있는 치명적 취약점(CVE-2026-21589)을 수정했다고 밝혔다. 아틀라시안은 5일(현지시각) 이 결함을 공개하며 심각도를 10점 만점에 9.3점으로 매겼다. 클라우드 제품은 이미 패치를 마쳤다.영향을 받는 제품은 컨플루언스와 지라 소프트웨어, 지라 서비스 매니지먼트, 비트버킷, 뱀부, 크라우드, 크루서블, 피시아이 등 기업이 자체 서버에 설치해 쓰는 데이터센터 제품들이다.결함은 경로를 조작해 허용되지 않은 위치의 파일에 접근하는 유형이다. 로그인 권한이 없는",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146232",
+    "date": "2026-10-07 17:59:41"
+  },
+  {
+    "source": "boannews",
+    "title": "[카드뉴스] \"공장 멈춘 주범이 5년 전 공유기?\"… 제조업 랜섬웨어 64% 뚫은 '구형 VPN' 실태",
+    "desc": "원격 유지보수를 위해 설치된 후 방치된 구형 VPN 및 공유기 장비가 스마트 공장 생산 라인을 마비시키는 핵심 침투 경로로 지목되었다. 일본 경시청 통계에 따르면 제조업 랜섬웨어 공격의 64%가 미패치 구형 VPN의 취약 포트를 통해 유입되어 37건의 OT 설비 연쇄 셧다운을 초래했다. 대규모 생산 중단 피해를 예방하기 위해 미사용 외부 포트 즉시 폐쇄, 최신 펌웨어 패치 적용, 레거시 인터페이스의 제로 트러스트 격리 및 망분리가 시급하다.",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146245",
+    "date": "2026-10-07 16:29:14"
+  },
+  {
+    "source": "boannews",
+    "title": "리브레오피스·오픈오피스, 스프레드시트 열기만 해도 악성 코드 실행",
+    "desc": "리브레오피스와 아파치 오픈오피스에서 악성 스프레드시트를 여는 순간 공격자 코드가 실행되는 결함이 드러났다. 프로그램이 매크로를 실행하기 전에 띄우는 경고도 뜨지 않는다.브이12시큐리티(V12 Security)의 릭 더야허르(Rick de Jager)와 코디언랩스(Codean Labs)의 토마스 린스마(Thomas Rinsma), 에도아르도 제라치(Edoardo Geraci)가 이 결함을 찾아 보고했다.다만 범위는 제한적이다. 공격은 프로그램의 자바 지원이 켜져 있을 때만 통한다. 지금까지는 개념증명(PoC)으로만 시연됐고, 실제 공",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146234",
+    "date": "2026-10-07 16:10:00"
+  },
+  {
+    "source": "boannews",
+    "title": "“통제 잃은 AI 막는다”... 금융보안원, AI 에이전트 보안 지표 제시",
+    "desc": "금융보안원이 금융권 AI 에이전트 도입 확산에 선제적으로 대응하기 위해 ‘금융분야 AI 에이전트 보안 평가기준’을 개발했다고 7일 밝혔다.기존 생성형 AI의 보안 위협이 할루시네이션(환각) 등에 따른 정보 오류였다면, 자율성과 능동성을 갖춘 AI 에이전트 환경에서는 이러한 위협이 ‘실제 행위’로 전이·확대된다. 인간의 개입 없이 문제 정의부터 실행까지 자율적으로 처리해, 시스템 성능 최적화를 명분으로 백신 가동을 임의로 중단하거나 이메일 자동 답장 기능이 비밀번호를 변경해버리는 등 업무 문제로 이어질 수 있다는 것이다.이에 금융보안",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146243",
+    "date": "2026-10-07 15:03:32"
+  },
+  {
+    "source": "boannews",
+    "title": "KISA, 나주 본원 신관 준공... “분산된 사이버보안 역량 한곳으로 통합”",
+    "desc": "한국인터넷진흥원(KISA)이 전남 나주 이전 9년 만에 본원 신관을 준공하고 디지털 안전 환경 조성을 위한 제2의 도약 기반을 마련했다고 7일 밝혔다. KISA는 업무 연속성과 효율성을 고려해 별도의 준공 행사 없이 신관 입주와 동시에 업무를 개시한다.최근 대규모 해킹과 개인정보 유출, AI 확산 등 사이버 대응 역량 강화에 대한 요구가 커지면서 KISA의 역할과 업무 범위는 지속 확대됐다. 이에 따라 이전 당시인 2017년 7월 638명이었던 인력은 2026년 9월 기준 811명으로 약 27% 증가했다.새로 준공된 신관은 연면적",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146242",
+    "date": "2026-10-07 15:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "이름·주소·식별번호 한꺼번에... 덴마크 주민등록부 뚫려 880만명 정보 유출",
+    "desc": "덴마크 국가 주민등록 시스템인 중앙인구등록부(CPR)가 해킹돼 약 880만명의 이름과 주소, 고유 식별번호가 빠져나갔다.CPR은 5일(현지시각) 해커가 한 덴마크 기업의 합법적 접근 권한을 이용해 개인정보를 빼냈다고 발표하고, 피해자들에게 사실을 알리기 시작했다.CPR은 1968년 문을 연 덴마크의 국가 주민등록 시스템이다. 현 거주자뿐 아니라 해외로 이주한 사람과 사망자까지 약 1100만명의 정보가 들어 있다. 여기 담긴 CPR 번호는 미국 사회보장번호 격이다.덴마크 법은 정당한 이해관계가 있는 민간 기업이 특정인 정보를 확인하려",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146225",
+    "date": "2026-10-07 15:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "“개인정보 유출 보상금 드립니다” KISA, 금융권 해킹 악용 피싱 주의보",
+    "desc": "한국인터넷진흥원(KISA) 보호나라가 최근 금융권 등 민간 기업 대상의 침해사고를 악용한 금전 탈취 시도가 우려됨에 따라 ‘개인정보 유출 사고 피해보상금 지급 등 사칭 피싱 주의 권고’를 발령했다.KISA에 따르면 공격자들은 △개인정보 유출 △피해보상금 지급 △유출정보 확인 등의 자극적인 키워드를 미끼로 스미싱 문자를 대량 유포할 것으로 예상된다. 사용자가 지원금 신청이나 사용처 안내를 빙자한 문자메시지 내 악성 인터넷 주소(URL)를 클릭하면 피싱 사이트로 연결되거나 악성 앱이 강제 설치될 수 있다.또, 포털 사이트 검색 시 관련",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146240",
+    "date": "2026-10-07 13:50:00"
+  },
+  {
+    "source": "boannews",
+    "title": "방어·레드팀·특수 3단계로... 앤트로픽, 보안 전문가에 고급 사이버 AI 문 넓힌다",
+    "desc": "앤트로픽이 검증된 보안 전문가에게 고급 사이버 역량을 제공하는 사이버 검증 프로그램(CVP)을 세 단계 접근 등급 체계로 확대 개편했다. 등급에 따라 사이버 작업 차단 분류기를 완화해 주는 방식이다. 모든 등급에서 클로드 오퍼스 5.5와 클로드 소네트 5.5, 클로드 미토스 5.1 등 앤트로픽의 최상위 모델과 앞으로 나올 모델을 쓸 수 있다.그동안 방어자를 위한 통로는 두 갈래였다. 프로젝트 글래스윙은 가장 핵심적인 소프트웨어를 지키는 조직들에 클로드 미토스를 제공했고, CVP는 심사를 거친 보안팀에 오퍼스와 소네트의 안전장치를 낮",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146224",
+    "date": "2026-10-07 13:45:00"
+  },
+  {
+    "source": "boannews",
+    "title": "“사이버 공격에 성역은 없다”… 종교계 겨냥한 해킹 공격 비상",
+    "desc": "금융권에 이어 국내 대형 교회가 사이버 공격에 노출돼 100만건에 달하는 교인 개인정보와 헌금 내역이 유출된 정황이 포착됐다. 오아시스시큐리티에 따르면, 최근 해킹 의심 IP를 추적하던 중 대량의 데이터가 담긴 해외 공격자 서버를 발견했다. 이 서버에서는 서울 여의도순복음교회와 서초구 사랑의교회의 통합정보시스템 및 그룹웨어에서 8월 탈취된 것으로 기록된 자료가 확인됐다.여의도순복음교회는 웹셸을 통해 서버에 침투하고 전사적자원관리(ERP) 데이터베이스 관리자 권한을 확보한 것으로 분석됐다. 이를 통해 최근 2년간 업데이트된 교인 정보",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146227",
+    "date": "2026-10-07 13:30:00"
+  },
+  {
+    "source": "boannews",
+    "title": "로그프레소, ‘챗GPT 엔터프라이즈’ 연동 앱 출시... 생성형 AI 모니터링",
+    "desc": "로그프레소는 생성형 AI 사용 기록을 기존 보안 로그와 통합 분석하는 ‘챗GPT 엔터프라이즈’(ChatGPT Enterprise) 연동 앱을 출시했다고 7일 밝혔다. 이번 앱 출시로 회사는 SIEM 플랫폼 모니터링 범위를 생성형 AI 전반으로 확대했다.최근 금융권과 대기업을 중심으로 생성형 AI 도입이 급증하면서 보안 담당자가 점검해야 할 영역도 넓어지고 있다. AI에 입력한 업무 정보를 넘어 계정 접속, 관리자 작업, 외부 앱 호출 등 연관된 활동을 입체적으로 살펴야 정보 유출이나 내부 정책 위반 여부를 정확히 판단할 수 있는 환",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146239",
+    "date": "2026-10-07 13:27:08"
+  },
+  {
+    "source": "boannews",
+    "title": "콴델라-생명연, 양자 컴퓨팅에 AI 결합해 신약 공동 개발한다 ",
+    "desc": "프랑스 양자 컴퓨팅 기업 콴델라와 한국생명공학연구원(KRIBB)이 광양자 컴퓨팅 기술을 활용한 바이오 및 신약 개발 공동 연구에 나선다고 7일 밝혔다. 콴델라 플랫폼에서 도출한 초기 연구 결과를 재현할 수 있는지 KRIBB 연구진이 검증한다. 향후 신약 개발과 세포치료제 설계, 유전적 표적 발굴 등으로 적용 범위를 넓힌다. 두 기관은 이를 위해 최근 콴델라 광양자 컴퓨팅 기술과 KRIBB이 축적한 바이오 분야 연구 역량을 결합하는 것을 골자로 하는 업무협약을 맺었다. 두 기관은 인공지능(AI)과 고전 컴퓨팅, 광양자 컴퓨팅을 연계한",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146241",
+    "date": "2026-10-07 13:25:21"
+  },
+  {
+    "source": "boannews",
+    "title": "넥스원소프트, 이동의즐거움에 온라인 카드 결제 인증 서비스 ’넥스비 3DS’ 제공",
+    "desc": "데이터플랫폼 서비스 기업 넥스원소프트(대표 최덕훈)가 ‘이동의즐거움’에 신용카드 온라인 결제 인증 서비스 넥스비 3DS(NexBe 3DS)를 제공했다고 7일 밝혔다.외국인 이용객은 고속·시외버스 승차권 온라인 예매 시, 해외 발급 카드 사용이 불가능해 예매 대행 플랫폼이나 현장 창구 결제를 이용해야 하는 어려움이 존재했다. 이동의즐거움은 외국인 이용객의 대중교통 이용 편의 제고를 위해 고속·시외버스 통합 예약 서비스 앱인 ‘버스타고’에 넥스비 3DS를 도입해 해외 발급 카드의 온라인 결제 과정에서 필요한 글로벌 인증 환경을 구축했다",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146231",
+    "date": "2026-10-07 13:25:00"
+  },
+  {
+    "source": "boannews",
+    "title": "[은행이 뚫린다] “해킹 툴 아닌 AI 도구”... ‘아르텍스’가 한글판으로 공개된 이유는?",
+    "desc": "최근 국내 금융권을 겨냥한 AI 자동화 공격으로 보안업계가 술렁이는 가운데, 해당 공격에 악용된 것으로 알려진 AI 자율 침투 테스트 프레임워크 ‘아르텍스’(ARTEX)의 한국어판이 깃허브(GitHub)에 공개됐다.이번 공개는 아르텍스가 단순한 불법 해킹 도구가 아니라, 방어자의 역량 강화를 돕는 ‘AI 모의침투 테스트’(Pen-testing) 도구라는 점을 강조하며 이뤄졌다. 최근 국내 금융권을 대상으로 한 개인정보 유출 공격에 아르텍스가 사용된 정황이 조사 당국에 포착돼 수사가 진행 중이다. 고도화된 자율형 AI가 실제 금융권",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146220",
+    "date": "2026-10-07 11:30:00"
+  },
+  {
+    "source": "boannews",
+    "title": "협력사가 누락한 보안 패치 한 건에 FBI 직원 정보 유출",
+    "desc": "샤이니헌터스(ShinyHunters)가 미국 연방수사국(FBI) 직원 수천명의 개인정보를 빼낸 사고는 외부 협력사가 보안 패치를 적용하지 않아 벌어진 일로 드러났다.로이터는 6일(현지시각) FBI가 이 사고 뒤 액센츄어 소속 협력사 인력을 업무에서 배제했다고 보도했다.FBI는 협력사나 관련 조직 이름을 공개하지 않았다. 다만 FBI 고위 관계자는 로이터에 지금까지 조사 결과 문제의 시스템을 맡은 협력사가 보안 패치를 적용하지 않은 것이 원인으로 보인다고 말했다.브렛 레더먼(Brett Leatherman) FBI 사이버 책임자도 성명",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146229",
+    "date": "2026-10-07 11:05:00"
+  },
+  {
+    "source": "boannews",
+    "title": "DLP 핵심은 차단 아닌 ‘운영’... 지란지교소프트의 차세대 통합 PC 보안",
+    "desc": "지란지교소프트는 자사의 구축형 통합 PC 보안 솔루션 ‘오피스키퍼 EP’를 도입한 신규 고객사의 평균 사용자 수가 1000명대로 집계됐다고 7일 밝혔다. 이는 기존 클라우드형 오피스키퍼 신규 계약 평균인 300명대보다 약 3.5배 늘어난 수치로, 고객층이 대기업으로 확대되고 있음을 보여준다.오피스키퍼 EP는 기존 고객들의 운영 피드백으로 개발됐다. 지란지교소프트가 7월 개최한 웨비나에서 현업 보안 담당자들은 정보유출방지(DLP) 솔루션의 가장 큰 과제로 차단 성능이 아닌 ‘운영 부담’을 지목했다. 규제 대응을 위한 솔루션을 도입해도",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146235",
+    "date": "2026-10-07 11:00:00"
   },
   {
     "source": "boannews",
@@ -357,34 +539,6 @@
     "date": "2026-10-04 17:38:32"
   },
   {
-    "source": "boannews",
-    "title": "[은행이 뚫린다] 금융위원장, “AI 활용 해킹 공격 배제 못해... AI 보안체계 전환 서둘러야”",
-    "desc": "최근 주요 금융사들에서 잇달아 정보 유출 사고가 발생한 가운데, 이억원 금융위원장이 “AI를 활용한 해킹 공격 가능성을 배제할 수 없다”며 금융권에 AI 기반 보안체계 전환을 서두르라고 주문했다.이 위원장은 4일 정부서울청사에서 ‘전금융권 긴급 점검회의’를 열고 “금융권에서 가장 높은 신뢰를 갖춘 주요 시중은행뿐 아니라 여러 금융업권에서 침해 사고가 단기간에 다수 발견되고 있다”며 “지금 상황을 엄중하게 인식하고 최고 수준의 경각심을 가져야 할 시점”이라고 말했다.그는 이번 사고들에서 업무상 편의를 위해 사용하는 외부 웹페이지나 서",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146190",
-    "date": "2026-10-04 17:24:13"
-  },
-  {
-    "source": "boannews",
-    "title": "[은행이 뚫린다] 금융권 연쇄 침해에... 과기정통부 내부 점검 회의, KISA는 기업에 보안 강화 권고",
-    "desc": "최근 시중 은행을 상대로 해킹 공격이 잇달아 벌어지면서 과기정통부와 한국인터넷진흥원 등 정보보호 관련 당국도 경계 태세를 강화하고 있다. 최근 신한은행에서 약 2만5000명의 고객 정보가 유출된 것을 시작으로 KB국민은행(119명), 하나은행(89명), 부산은행(외주직원 11명) 등에서 잇따라 정보 유출 사고가 발생했다. 우리은행과 NH농협은행 역시 외부 공격 시도를 받은 것으로 확인됐고, 예가람저축은행과 현대캐피탈도 정보 유출이 확인되는 등 금융권 전반으로 위협이 확산되고 있다. 금융위원회는 4일 전체 금융업권 협회장을 소집해 긴",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146189",
-    "date": "2026-10-04 13:39:59"
-  },
-  {
-    "source": "boannews",
-    "title": "랜섬웨어 ‘킬섹’ 해체, 16세 청소년 운영자로 지목",
-    "desc": "유럽 수사 당국이 랜섬웨어 조직 킬섹(KillSec)의 유출 사이트와 핵심 서버를 장악하고, 16세 청소년을 조직 관리자이자 주 운영자로 지목했다.유럽연합 경찰기구 유로폴은 이 10대가 세계에서 약 1000건의 공격 의심 사례와 연결된 킬섹을 운영해 온 것으로 본다고 밝혔다. 신원은 독일 경찰과 검찰이 이끈 국제 공조 수사 ‘킬스위치 작전’(Operation KillSwitch)에서 드러났다.수사팀은 그리스와 루마니아, 스페인, 영국에서 주택 8곳을 압수수색하고 3명을 임시 체포했다. 8월 18세가 된 개발자 추정 인물과 협상 담당",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146165",
-    "date": "2026-10-04 10:30:00"
-  },
-  {
-    "source": "boannews",
-    "title": "중국계 랜섬웨어 ‘워록’, 스페인어권 수도·통신 공략",
-    "desc": "중국계 랜섬웨어 조직 워록(Warlock)이 스페인어와 포르투갈어를 쓰는 나라들의 수도·통신 기관 등 주요 조직을 잇따라 공격하고 있다.시만텍은 이번 주 공개한 연구에서 워록이 최근 두 달 사이 수도 사업자와 통신사, 지방 정부기관, 대학 등 네 곳을 공격했다고 밝혔다. 피해 기관이 어느 나라인지는 알려지지 않았다.워록은 마이크로소프트가 ‘스톰-2603’, 시만텍이 ‘롱레그스’(Longlegs)로 추적하는 조직이다. 2025년 7월 마이크로소프트는 중국 연계 조직들이 사내 설치형 셰어포인트의 제로데이 여러 건을 엮은 ‘툴셸’(Too",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146164",
-    "date": "2026-10-04 08:30:00"
-  },
-  {
     "source": "thn",
     "title": "MI5 Says China’s MSS Funded Research Involving 100+ U.K.-Linked Academics",
     "desc": "The U.K.'s domestic intelligence and security agency has warned that more than 100 academics have helped China boost its intelligence gathering efforts on behalf of Beijing's state security service.\n\nIn a \"Security Service Espionage Alert\" issued on September 30, 2026, MI5 said the \"primary purpose ",
@@ -404,48 +558,6 @@
     "desc": "Featuring:\n\n\n\nCybersecurity is being reshaped by the expansion of cloud infrastructure, AI, distributed systems, and increasingly complex digital environments. As organizations manage more identities, devices, data, and internet-facing infrastructure, security is shifting toward continuous visibilit",
     "url": "https://thehackernews.com/2026/10/the-state-of-cybersecurity-in-2026key.html",
     "date": "2026-10-03T16:30:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[은행이 뚫린다] 잇단 침해 사고에 금융위, 4일 금융업권 긴급 점검회의 소집",
-    "desc": "금융당국이 금융업권 협회장과 최근 침해 사고가 발생한 금융사 대표를 4일 긴급 소집한다.금융위원회는 4일 오후 정부서울청사에서 전체 금융업권별 협회장과 침해 사고가 일어난 금융사 최고경영자를 소집해 긴급 점검회의를 연다고 연합뉴스가 보도했다.은행과 금융투자, 보험. 여전, 저축은행, 상호금융·가상자산·핀테크 등 전체 금융업권별 협회장을 모두 소집했다. 이억원 금융위원장이 직접 회의를 주재, 현재 발생한 금융권 보안사고 동향을 점검하고 대응방안을 논의할 전망이다.금융위는 7일 각 금융사 자체 점검 결과를 보고 받을 예정이었으나, 예가",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146188",
-    "date": "2026-10-03 20:27:47"
-  },
-  {
-    "source": "boannews",
-    "title": "[은행이 뚫린다] 현대캐피탈 해킹 공격... 주택대출 모집인 146명 정보 유출",
-    "desc": "현대캐피탈이 해킹 공격을 받아 주택대출 모집인 146명의 정보가 유출됐다. 신한은행, KB국민은행 등 시중 은행에 이어 예가람저축은행 등 저축은행과 캐피탈사 등으로 해킹 피해가 확산되고 있다. 현대캐피탈은 해외 인터넷주소(IP)를 통해 현대캐피탈 주택대출 모집인 조회페이지가 공격받았다고 3일 밝혔다. 이 사고로 주택대출 모집인 146명의 이름과 휴대폰 번호, 이메일, 주민등록번호 등 정보가 유출됐다. 유출 정보 가운데 주민등록번호와 내부 모집인번호는 일반에 공개되지 않는 정보로 파악됐다. 일반 고객의 개인정보는 유출되지 않았다고 현",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146187",
-    "date": "2026-10-03 18:39:15"
-  },
-  {
-    "source": "boannews",
-    "title": "[은행이 뚫린다] 예가람저축은행, 해킹으로 고객 4만명 정보 유출",
-    "desc": "예가람저축은행이 해킹을 당해 개인정보가 유출됐다. 예가람저축은행은 홈페이지에 올린 ‘개인정보 유출 사실 통지 안내 및 사과문’에서 “9월 30일 고객 개인정보가 포함된 서버에 신원 미상 해커의 접근 및 개인정보가 유출된 정황을 확인했다”고 밝혔다.유출된 개인정보 항목은 고객 성명, 생년월일, 연락처 등이다. 유출 규모는 약 4만명으로 추정되나, 정확한 규모는 확인 중이다. 유출 사실을 인지한 즉시 관련 서비스를 중단하고 외부 IP 차단 등 필요한 긴급조치를 완료했다고 은행은 밝혔다. 추가 피해 예방을 위해 보안 모니터링을 강화하고,",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146186",
-    "date": "2026-10-03 15:41:25"
-  },
-  {
-    "source": "boannews",
-    "title": "오픈AI, 문샷AI 연계 ‘증류’ 공작 적발",
-    "desc": "오픈AI가 자사 AI 모델의 보호된 추론 과정을 몰래 빼내려던 조직적 ‘증류’ 공작을 찾아내 차단했다고 밝혔다.더해커뉴스에 따르면 오픈AI는 7월 첫 주부터 이어진 이같은 활동의 핵심 집단을 중국 AI 기업 문샷AI(Moonshot AI) 쪽 인물들로 지목했다. 다만 이 판단을 뒷받침할 기술적 증거는 내놓지 않았다. 더해커뉴스는 보안상 이유일 가능성이 크다고 봤다.오픈AI가 말하는 적대적 증류는 한 모델의 출력을 무단으로 체계적으로 활용해 다른 모델을 학습시키거나 복제·개선하는 행위다.오픈AI는 공격자들이 암호화를 깨거나 데이터베이",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146169",
-    "date": "2026-10-03 13:30:00"
-  },
-  {
-    "source": "boannews",
-    "title": "AI 에이전트 보안 위험 차단... 애플, 맥OS ‘전체 디스크 접근 권한’ 규제 강화",
-    "desc": "애플이 맥(Mac) 운영체계에서 시스템 전체 데이터를 들여다볼 수 있는 ‘전체 디스크 접근 권한’(FDA) 부여 방식을 대폭 강화한다. 최근 AI 에이전트들이 사용자 메시지 등 사적 데이터에 광범위하게 접근할 수 있다는 논란에 따른 것이다. 애플은 2일(현지시간) 개발자 공지를 통해 향후 맥 사용자가 특정 앱에 전체 디스크 접근 권한을 부여할 때 ‘매우 명시적인 조치’(very explicit user action)를 거치도록 하는 추가 통제 장치를 도입한다고 밝혔다. 전체 디스크 접근 권한은 시스템 백업 유틸리티 등 특수한 앱이",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146185",
-    "date": "2026-10-03 10:11:47"
-  },
-  {
-    "source": "boannews",
-    "title": "패치 나오면 AI로 무기화... 구글, 월간 취약점 공개 1만건 넘었다",
-    "desc": "새로 공개되는 취약점이 올해 들어 두 배로 불어났고, 공격자들은 AI를 이용해 이를 더 빨리 무기로 만들고 있다고 구글 위협 인텔리전스 그룹(GTIG)이 분석했다.GTIG는 9월 30일(현지시각) 보고서에서 8월 한 달 공개된 취약점이 1만740건으로 최고치를 기록했다고 밝혔다. 1월 5045건이던 월간 공개 건수는 7월과 8월 연달아 1만건을 넘었다.올해 1~8월 실제 공격에 악용된 취약점은 141건으로 2025년 한 해 127건을 이미 넘어섰다. 이 기간 공개되고 악용된 개별 취약점 수도 2025년 전체 합계를 웃돌았다.GTIG",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146132",
-    "date": "2026-10-03 08:30:00"
   },
   {
     "source": "thn",
@@ -495,62 +607,6 @@
     "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA), on Thursday, added a critical security flaw impacting Fortinet FortiMail to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.\n\nThe vulnerability, tracked as CVE-2026-104286 (CVSS score: 9.8),",
     "url": "https://thehackernews.com/2026/10/critical-fortimail-zero-day-flaw.html",
     "date": "2026-10-02T11:19:50"
-  },
-  {
-    "source": "boannews",
-    "title": "[은행이 뚫린다] AI 해킹 가시화... 오픈소스 ‘보안도구’ 악용 정황 “판도라 열렸다”",
-    "desc": "AI 에이전트를 악용한 잇따른 은행 해킹 사고로 AI 위협의 공포가 현실화 됐다. 유사한 방식의 공격 시도가 국내 여러 기업에서 일어나고 있다고 알려지면서 “이번 사고들은 빙산의 일각”이라는 게 보안 업계 중론이다. 특히 오픈소스 AI 보안 툴이 악용된 정황이 포착되면서 우려가 커지고 있다. 2일 금융권 및 보안 업계에 따르면, AI 에이전트를 통한 무차별 크리덴셜스터핑으로 추정되는 공격으로 신한은행 대출 고객 2만5000명의 정보가 유출됐다. 하나은행도 역시 AI 에이전트로 인해 89명의 정보가 유출된 것으로 파악된다. BNK부산",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146184",
-    "date": "2026-10-02 19:21:02"
-  },
-  {
-    "source": "boannews",
-    "title": "중국 연계 해킹조직 TA419, 앤트로픽 직원 사칭해 AI 정책전문가 노려",
-    "desc": "중국과 연계된 해킹 조직이 앤트로픽 고위 직원과 미국 정책 인사를 사칭해 미국 인공지능(AI) 정책 전문가들의 클라우드 계정을 노렸다.보안 기업 프루프포인트는 TA419로 명명한 이 조직이 싱크탱크와 대학, 법률회사에서 일하는 연구자들을 겨냥해 계정 정보를 빼내는 캠페인을 벌였다고 밝혔다. 프루프포인트는 적어도 2025년 4월부터 TA419를 추적해 왔으며 미국과 일본의 싱크탱크, 방산업체, 대학, 법률 기관을 노린 활동을 기록했다. 노림수는 미국의 AI 정책과 수출통제, 전략 기획에 관한 중국의 정보 수집으로 보인다.2026년 2",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146168",
-    "date": "2026-10-02 18:23:27"
-  },
-  {
-    "source": "boannews",
-    "title": "[은행이 뚫린다] BNK부산은행에선 외주 직원 개인정보 유출",
-    "desc": "BNK부산은행에서도 해킹 사고가 발생했다. 신한은행, KB국민은행, 하나은행에 이어 이틀새 네 번째 사고다. BNK부산은행은 “2일 오전 4시 30분께 외주 개발직원 11명의 성명과 전화번호, 생년월일, 이메일 주소 등 개인정보가 웹페이지에 유출된 사실을 확인했다”고 밝혔다.직원용 모바일 영업 지원시스템 등을 겨냥한 해킹 공격에 의한 것으로 추정된다는 설명이다. 은행 관계자는 “문제의 웹페이지는 차단 조치가 끝난 상황이며, 금융당국에 관련 내용을 신고했다”며 “유사 공격에 대비해 모니터링을 강화하고 있다”고 밝혔다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146183",
-    "date": "2026-10-02 18:14:41"
-  },
-  {
-    "source": "boannews",
-    "title": "[은행이 뚫린다] 이틀 새 세번째... 하나은행 89명 고객 정보 유출",
-    "desc": "신한은행과 KB국민은행에 이어 하나은행에서도 고객 정보가 유출됐다. 신한은행 침해 사고와 마찬가지로 AI 에이전트가 활용된 것으로 보인다. 하나은행은 외부 해킹으로 고객 89명의 주민등록번호, 성명, 주소, 이메일주소, 전화번호, 휴대번호, 직장명 뜽 개인정가 유출된 것으로 파악된다고 2일 밝혔다.외부 해킹 에이전트가 하나은행 영업지원시스템(ODS)에 시도한 비정상적 접근에서 비롯된 것이란 설명이다. 하나은행 관계자는 “이 시스템은 인터넷 및 모바일 뱅킹 거래 시스템과는 별개 채널”이라며 “고객 금융거래 정보 유출과는 관련이 없다”",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146182",
-    "date": "2026-10-02 17:55:44"
-  },
-  {
-    "source": "boannews",
-    "title": "[카드뉴스] \"랜선 뽑고 금고에 넣었는데 1000억 증발?\"… 하드웨어 월렛 뚫은 '펌웨어 백도어'의 실체",
-    "desc": "인터넷이 차단된 하드웨어 지갑(에어갭)을 금고에 보관했음에도 1,000억 원 상당의 가상자산이 증발하는 침해 사고가 발생했다. 물리적 격리에도 불구하고 비인가 펌웨어 업데이트를 통한 내부 백도어로 인해 트랜잭션 서명 시 개인키가 무단 유출된 것이 주요 원인으로 분석된다. 단일 하드웨어 기기의 의존성을 탈피하기 위해 서로 다른 제조사 기반의 '멀티시그(다중 서명)' 분산 구조와 공식 펌웨어 해시값 상시 검증 체계 도입이 요구된다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146181",
-    "date": "2026-10-02 17:20:12"
-  },
-  {
-    "source": "boannews",
-    "title": "한국전력, 변전소 ‘AI 감시 시스템’ 국산 NPU로 전환",
-    "desc": "한국전력(사장 김동철)이 2일 국내 AI 반도체 기업 리벨리온(대표 박성현), 한국정보통신기술협회(TTA, 회장 손승현)와 ‘국산 NPU 기반 전력 분야 AI 영상 분석 기술협력’을 위한 3자 업무협약(MOU)을 체결했다.이번 협약은 정부의 소버린 AI 및 국산 AI 반도체 육성 정책에 발맞춰 전력 AI 인프라의 국산화와 다변화를 추진하기 위해 마련됐다.한전은 앞서 기술검증을 통해 국산 NPU의 AI 영상분석 활용 가능성을 확인하고, 이를 CCTV 영상을 통한 변전소 감시 업무에 시범 도입해 전력 현장에서의 성능과 운영 효율성을 실",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146180",
-    "date": "2026-10-02 16:23:54"
-  },
-  {
-    "source": "boannews",
-    "title": "[은행이 뚫린다] “AI 혁신 전 기본기부터”... 초보적 공격에 신한은행 고객 정보 유출",
-    "desc": "신한은행 고객 약 2만5000명의 대출 관련 정보가 유출되는 사태가 발생했다. 2차 피해로 이어지기 쉬운 민감한 정보다. 하지만 이를 빼간 공격은 널리 알려진 초보적 수법이었다. 정보보호의 기본기에 문제가 있던 것 아니냐는 의문이 나오는 이유다. 신한은행은 AI 활용 촉진을 위한 금융권 망분리 규제 완화 1차 실증에 참여하고 있다. 크리덴셜 스터핑과 API 요청 변조 결합... 지능형 해킹 아닌 ‘기본기 부재’보안 업계에 따르면, 이번 사고는 고도의 지능형 지속 공격(APT)이 아니라 ‘크리덴셜 스터핑(Credential Stuff",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146174",
-    "date": "2026-10-02 16:14:57"
-  },
-  {
-    "source": "boannews",
-    "title": "묻지도 않고 DB 수정하는 AI... \"명시적 확인 절차 통제해야\"",
-    "desc": "AI 코딩 에이전트에 시스템 '정리'를 맡겼다가 약 600GB에 달하는 막대한 데이터가 무단 삭제되는 사고가 발생해 자율형 AI의 실행 통제력이 도마 위에 올랐다.지난 16일 클로드 코드(Claude Code) 공개 버그 게시판에서 게시된 신고에 따르면, AI 에이전트가 사용자가 요청하지 않은 정리 작업을 자체적으로 시작해 윈도우 사용자 프로필, 개발 프로젝트, 사본 없는 기획 문서 등 600GB 분량의 데이터를 무단으로 삭제했다.보안 기업 리니어리티는 이러한 사고를 에이전트가 ‘오래된 테스트 상태 정리’를 명목으로 실행한 삭제 명",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146179",
-    "date": "2026-10-02 15:23:21"
   },
   {
     "source": "thn",
@@ -642,61 +698,5 @@
     "desc": "Microsoft has warned of phishing campaigns distributing an installer for the MSP360 Remote Monitoring and Management (RMM) software under the guise of meeting invitations, PDF-themed lures, software update prompts, and other social-engineering content.\n\n\"Once executed, the legitimate MSP360 installe",
     "url": "https://thehackernews.com/2026/09/attackers-abuse-msp360-to-deploy.html",
     "date": "2026-09-30T22:02:59"
-  },
-  {
-    "source": "thn",
-    "title": "Cisco Warns of Attackers Exploiting Critical Authentication Bypass in SD-WAN Manager",
-    "desc": "Attackers are exploiting a new critical zero-day flaw in Cisco Catalyst SD-WAN Manager, the system companies use to manage their Cisco SD-WAN networks, Cisco said in an&nbsp;advisory&nbsp;on September 30.\n\nThe flaw, CVE-2026-76504, could allow a remote attacker with no login access to use the Manage",
-    "url": "https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html",
-    "date": "2026-09-30T20:54:54"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Abuse ChatGPT Custom GPTs to Deliver RAT via ClickFix Lures",
-    "desc": "Threat actors are abusing ChatGPT Custom GPTs to disguise them as legitimate product offerings and direct unsuspecting victims to malicious sites that employ ClickFix lures to deliver malware.\n\nHuntress, which observed the activity in late September 2026, said it marks the abuse of yet another featu",
-    "url": "https://thehackernews.com/2026/09/attackers-abuse-chatgpt-custom-gpts-to.html",
-    "date": "2026-09-30T20:30:15"
-  },
-  {
-    "source": "thn",
-    "title": "Know Your Enemy: Browser-Based Attack Techniques in 2026",
-    "desc": "Given that the browser is where business apps are accessed and used, it makes sense that attacks are happening there too. Most breaches today begin in a browser session. Often, they never leave it, with the entire attack chain from initial access to exfiltration playing out in the browser.\n\nHere are",
-    "url": "https://thehackernews.com/2026/09/know-your-enemy-browser-based-attack.html",
-    "date": "2026-09-30T17:28:00"
-  },
-  {
-    "source": "thn",
-    "title": "AI Coding Agents Exposed 13,000 Internal Images, Including Billing Records, on GitHub",
-    "desc": "AI coding agents asked to share screenshots of code changes for review have put internal company images in public GitHub repositories, security company Glow said.\n\nIts researchers found more than 13,000 internal images from developers at over 300 organizations, including customer billing records and",
-    "url": "https://thehackernews.com/2026/09/ai-coding-agents-exposed-13000-internal.html",
-    "date": "2026-09-30T17:00:00"
-  },
-  {
-    "source": "thn",
-    "title": "US-Focused CSuite Phishing Steals Microsoft 365 Sessions and Deploys RMM Tools for Remote Access",
-    "desc": "ANY.RUN researchers traced a US-focused CSuite phishing campaign across 351 sandbox analyses, with 51% of submissions coming from the United States. Technology, manufacturing, government, and consulting organizations showed the highest exposure.\n\nBy combining Microsoft 365 session theft with remote-",
-    "url": "https://thehackernews.com/2026/09/us-focused-csuite-phishing-steals.html",
-    "date": "2026-09-30T16:15:00"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Exploit NetScaler Flaw for Root Access, Deploy WHIPSHOT and SLAPSHOT",
-    "desc": "Unknown threat actors have been observed exploiting a newly patched security flaw in Citrix NetScaler ADC and NetScaler Gateway appliances to target organizations in North America and Europe.\n\nThe activity, observed by Mandiant Consulting and Google Threat Intelligence Group (GTIG) in September 2026",
-    "url": "https://thehackernews.com/2026/09/attackers-exploit-netscaler-flaw-for.html",
-    "date": "2026-09-30T13:54:35"
-  },
-  {
-    "source": "thn",
-    "title": "OpenSSL Fixes High-Severity DTLS Flaw That Can Leak Heap Memory Unencrypted",
-    "desc": "A High-severity OpenSSL flaw can leak heap memory to the other side of a DTLS connection or crash the program,&nbsp;OpenSSL said&nbsp;on September 29 as it released fixes.\n\nDTLS, the TLS variant used for UDP traffic, resends a handshake message if no reply arrives before the timer expires. The leak ",
-    "url": "https://thehackernews.com/2026/09/openssl-fixes-high-severity-dtls-flaw.html",
-    "date": "2026-09-30T13:39:28"
-  },
-  {
-    "source": "thn",
-    "title": "Citrix NetScaler CVE-2026-88772 Exploit Details Show Pre-Auth Path to Shellcode Execution",
-    "desc": "Cybersecurity researchers have disclosed technical details of a recently patched critical security flaw in Citrix NetScaler ADC and Gateway that has come under active exploitation in the wild.\n\nThe vulnerability, tracked as CVE-2026-88772 (CVSS score: 9.5), has been described as a memory overflow bu",
-    "url": "https://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html",
-    "date": "2026-09-30T11:00:30"
   }
 ]
