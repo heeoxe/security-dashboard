@@ -1,10 +1,248 @@
 [
   {
     "source": "thn",
+    "title": "Japan Sees Sharp Rise in Web Data Leaks Amid Mobile API Abuse and Metabase Attacks",
+    "desc": "Attackers behind a string of personal data leaks at Japanese organizations have abused APIs for mobile apps and targeted known software flaws, the JPCERT Coordination Center (JPCERT/CC) said.\n\nThe Tokyo-based center, which takes incident reports, based its&nbsp;October 8, 2026 alert&nbsp;on those re",
+    "url": "https://thehackernews.com/2026/10/japan-sees-sharp-rise-in-web-data-leaks.html",
+    "date": "2026-10-08T21:15:56"
+  },
+  {
+    "source": "thn",
+    "title": "UAC-0099 Targets Ukrainian Government Personnel With ASHVEIN RAT Hiding Commands in HTML",
+    "desc": "The Russia-aligned threat actor known as UAC-0099 has been attributed to a previously undocumented .NET infostealer and remote access trojan (RAT) codenamed ASHVEIN.\n\nAccording to TrendAI, the malware has been put to use in attacks targeting Ukrainian government personnel. The cybersecurity company ",
+    "url": "https://thehackernews.com/2026/10/uac-0099-targets-ukrainian-government.html",
+    "date": "2026-10-08T20:56:56"
+  },
+  {
+    "source": "thn",
+    "title": "ARTEX AI Pentesting Tool Used in Data Theft Attacks on South Korean Financial Firms",
+    "desc": "Cybersecurity researchers have disclosed details of a targeted campaign aimed at South Korean financial organizations that used an artificial intelligence (AI) pen testing tool named ARTEX to carry out the attacks.\n\nThe activity, per CrowdStrike Intelligence, was active from late September to early ",
+    "url": "https://thehackernews.com/2026/10/artex-ai-pentesting-tool-used-in-data.html",
+    "date": "2026-10-08T19:42:34"
+  },
+  {
+    "source": "thn",
+    "title": "Wazza Phishkit Targets Banking, Government, and Manufacturing Across the US, EU, and Australia",
+    "desc": "Phishing kits are no longer limited to copying a familiar login page and waiting for a victim to enter credentials. Attackers are increasingly building filtering, session management, and traffic controls into the infrastructure that delivers the phishing page itself.\n\nANY.RUN has identified Wazza, a",
+    "url": "https://thehackernews.com/2026/10/wazza-phishkit-targets-banking.html",
+    "date": "2026-10-08T16:00:00"
+  },
+  {
+    "source": "thn",
+    "title": "16 Malicious Firefox Extensions Pose as Rabby and OKX Wallets to Steal Recovery Phrases",
+    "desc": "Cybersecurity researchers have discovered a cluster of 16 malicious Mozilla Firefox extensions that are capable of stealing cryptocurrency wallet recovery phrases and private keys.\n\n\"The extensions masquerade as wallet portals, desktop utilities, and browser tools, but their code intercepts recovery",
+    "url": "https://thehackernews.com/2026/10/16-malicious-firefox-extensions-pose-as.html",
+    "date": "2026-10-08T15:16:32"
+  },
+  {
+    "source": "thn",
+    "title": "U.S. Offers Up to $10 Million for Tips on Zhang Yu, Charged in HAFNIUM Hacks",
+    "desc": "The U.S. State Department is offering up to $10 million for information leading to the identification or location of Zhang Yu, a Chinese national charged in the United States in connection with the 2021 Microsoft Exchange Server attacks known as HAFNIUM.\n\nThe reward is for information leading to his",
+    "url": "https://thehackernews.com/2026/10/us-offers-up-to-10-million-for-tips-on.html",
+    "date": "2026-10-08T13:12:04"
+  },
+  {
+    "source": "thn",
+    "title": "MonsterCloud Owner Accused of Billing Over $19M While Secretly Paying Ransoms to Decrypt Data",
+    "desc": "The U.S. Department of Justice (DoJ) on Wednesday announced charges against a 50-year-old U.S. and Israeli national for allegedly defrauding ransomware victims by secretly paying the attackers to obtain decryptors while claiming to use proprietary tools to recover their data.\n\nZohar Pinhasi (aka Zac",
+    "url": "https://thehackernews.com/2026/10/monstercloud-owner-accused-of-billing.html",
+    "date": "2026-10-08T13:11:44"
+  },
+  {
+    "source": "thn",
+    "title": "Tensorlake npm Package Compromised to Deliver Shai-Hulud Credential-Stealing Worm",
+    "desc": "The npm package known as \"tensorlake,\" a TypeScript software development kit (SDK) for Tensorlake applications, sandboxes, and cloud services, was compromised as part of a ChainDrop / Shai-Hulud supply chain attack.\n\nThe malicious version 0.5.144 \"contains obfuscated malware that harvests credential",
+    "url": "https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html",
+    "date": "2026-10-08T11:16:20"
+  },
+  {
+    "source": "thn",
     "title": "Attackers Hijack .gh, .sl, and .as Registries to Obtain Certificates for Google Domains",
     "desc": "Attackers compromised three country-code top-level domains (ccTLDs) and obtained unauthorized HTTPS certificates for several Google domains, Google&nbsp;said on October 6.\n\nGoogle's own systems were not breached, but any domain ending in .gh (Ghana), .sl (Sierra Leone) or .as (American Samoa) was pu",
     "url": "https://thehackernews.com/2026/10/attackers-hijack-gh-sl-and-as.html",
     "date": "2026-10-08T00:18:17"
+  },
+  {
+    "source": "boannews",
+    "title": "[은행이 뚫린다] “IP 차단만으론 못 막는다”... S2W가 분석한 금융권 AI 해킹 기술적 실체",
+    "desc": "최근 국내 금융권에서 연쇄적으로 발생한 유출 사고는 기존 방어망의 허점을 파고든 AI 자동화 공격의 결과로 드러났다. 이에 S2W는 위협 인텔리전스 노트를 통해 이번 사태의 기술적 원인과 공격자의 인프라 은닉 전술을 심층 분석하고, 기업과 보안 업계가 나아가야 할 실무적 대응 방안을 제시했다.코어뱅킹 밖을 노린 ‘인가’(Authorization) 우회 취약점이번 연쇄 침해사고는 악성코드를 내부망에 심는 전통적인 타깃 공격이 아니라, 대출 조회 시스템 등 상대적으로 보안 통제가 느슨한 외곽 서비스의 논리적 결함을 악용한 데 있다. S",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146287",
+    "date": "2026-10-08 18:46:24"
+  },
+  {
+    "source": "boannews",
+    "title": "국가 도메인 운영 업체 뚫리자... 구글 도메인 인증서 무단 발급, 유명 브랜드도 피해",
+    "desc": "가나와 시에라리온, 미국령 사모아의 국가 도메인을 운영하는 외부 업체가 해킹당하면서 구글 도메인 여러 개의 HTTPS 인증서가 공격자 손에 넘어갔다.구글은 이 사건 경위와 대응을 블로그에 공개하면서 이번 사건이 자사 시스템 침해와 무관하며 시스템은 어떤 식으로도 영향을 받지 않았다고 밝혔다.공격자가 노린 곳은 .GH와 .SL, .AS 도메인을 관리하는 외부 운영 업체다. 이들 업체를 뚫은 공격자는 도메인 주소가 어느 서버로 연결될지 최종 결정하는 권한 있는 DNS 기록을 바꿔 도메인을 손에 넣었다.HTTPS 인증서는 이용자가 접속한",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146250",
+    "date": "2026-10-08 18:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "“통화만 봐선 못 막는다”… KAIST, 보이스피싱 통합 분석 웹 솔루션 공개",
+    "desc": "한국과학기술원(KAIST) 사이버보안연구센터(CSRC)가 음성 통화에 한정돼 있던 보이스피싱 공격 분석 체계를 모바일 악성앱과 금융 이상거래 영역까지 넓힌 확장 전술·기법 매트릭스를 개발했다고 8일 밝혔다. 연구팀은 이 매트릭스를 반영해 통화 내용에서 악성앱과 이상거래 단계까지의 연계를 한 화면에서 분석할 수 있는 웹 솔루션도 함께 구현했다고 밝혔다.이번 연구는 지난해 10월  테크컬럼을 통해 소개된 ‘보이스피싱 전술 매트릭스’ 후속 연구다. 기존 매트릭스는 통화 중 발생하는 사기범의 심리 조작 단계를 전술과 기법으로 정",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146284",
+    "date": "2026-10-08 17:49:47"
+  },
+  {
+    "source": "boannews",
+    "title": "시 한 편에 숨긴 서버 주소... AI 서버 3400대 감염시킨 채굴 봇넷 ‘PoeLLM’",
+    "desc": "인터넷에 노출된 AI 서버를 감염시켜 암호화폐를 캐는 봇넷이 서버 3400대를 넘게 장악했다. 악성코드는 명령을 받을 서버 주소를 깃허브에 올린 시 구절 속에 숨겨 두는 수법을 썼다.루멘(Lumen)의 연구조직 블랙로터스랩스(BLL)는 이 악성코드를 ‘PoeLLM’으로 부르며 분석 결과를 공개했다. 블리핑컴퓨터가 처음 받은 보고서엔 감염 서버가 2100대로 적혀 있었으나, 연구진은 실시간 보고서에서 이를 3400대로 고쳤다. 가장 많을 때는 감염 시스템 800대가 움직였다.활동은 4월부터 이어졌고, 명령제어(C2) 서버를 최소 11",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146255",
+    "date": "2026-10-08 17:05:00"
+  },
+  {
+    "source": "boannews",
+    "title": "파이오링크, 금융권 해킹 대책으로 ‘CTEM·웹방화벽’ 등 제시",
+    "desc": "최근 금융권 침해사고를 계기로 AI 기반 사이버 공격에 대한 우려가 커지는 가운데, 파이오링크(대표 조영철)는 △지속적 위협 노출관리(CTEM)를 통한 선제적 위험 관리 △웹방화벽을 통한 실시간 공격 차단 △24시간 보안관제를 결합한 다층 방어체계를 대응책으로 제시했다.파이오링크는 아르텍스 관련 공격 차단 시그니처를 지원한다고 강조했다. 이번 금융권 공격에 활용됐다고 지목된 ‘아르텍스’(ARTEX)는 대규모언어모델(LLM)을 활용하는 AI 자율형 침투테스트 도구다. 공격 대상의 정보를 수집하고 취약점을 탐색하며, 분석 결과에 따라",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146278",
+    "date": "2026-10-08 17:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "금융권 이어 부킹앱도 뚫렸다... 골프몬, 2년 만에 또 개인정보 유출",
+    "desc": "최근 금융권을 시작으로 공공기관, 교회, 산업계 전반에 걸쳐 대규모 개인정보 유출 사고가 도미노처럼 이어지는 가운데, 골프 부킹 플랫폼 ‘골프몬’에서도 고객 개인정보가 외부로 유출되는 사고가 발생했다.골프몬이 회원들에게 발송한 ‘개인정보 유출 통지 및 사과문’에 따르면, 사측은 지난 6일 홈페이지에 대한 비정상적인 외부 접근 사실을 인지했다. 이어진 내부 조사 결과 10월 4일부터 5일까지 양일간 고객의 개인정보가 외부로 유출된 사실이 확인됐다.현재까지 파악된 유출 항목은 △이름 △전화번호 △닉네임 등 총 3가지다. 골프몬 측은 \"",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146281",
+    "date": "2026-10-08 16:59:07"
+  },
+  {
+    "source": "boannews",
+    "title": "인텔리빅스, 62억 규모 국방 AI 과제 수주로 GOP·해안초소 투입 ‘AI 경계병’ 개발",
+    "desc": "짙은 안개나 기상 악화로 시야 확보가 어려운 최전방 GOP와 해안 초소에서 수백 미터 밖의 움직임이 사람인지 야생동물인지 정확히 가려내는 차세대 ‘AI 경계병’이 본격 도입된다.안전 AI 딥테크 전문기업 인텔리빅스(대표이사 장정훈)는 방위사업청이 주관하는 ‘방산혁신기업 R&D 과제’의 주관기관으로 최종 선정돼 총 연구비 62억원 규모의 ‘차세대 국방 AI 영상감시 플랫폼’ 개발에 착수했다고 8일 밝혔다.울산과학기술원(UNIST), 성균관대학교와 공동으로 추진하는 이번 프로젝트는 눈·비·안개·야간 등 악시정 환경에서도 500m 거리의",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146279",
+    "date": "2026-10-08 16:50:00"
+  },
+  {
+    "source": "boannews",
+    "title": "“공격 현실화 전에 막는다”... 그룹아이비-UAE, 예측 기반 사이버 방어 맞손",
+    "desc": "그룹아이비(Group-IB)가 아랍에미리트(UAE)의 국가 사이버보안 비전을 주도하는 UAE 사이버보안위원회와 전략적 파트너십을 체결했다고 8일 밝혔다. 이번 협력을 통해 양 기관은 위협 인텔리전스 공유, 사고 대응 공조 체계 구축, 그리고 사이버보안 전문 인력을 위한 기술 교육 및 워크숍을 공동으로 추진한다.이번 파트너십의 핵심은 사후 대응에 머물던 보안 패러다임을 공격자 중심 위협 인텔리전스와 예측 기반 사이버보안 역량을 결합한 선제적 방어 체계로 전환하는 데 있다. 이를 위해 양측은 △사이버 위험 요소 △위협 행위자 △악성 인",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146277",
+    "date": "2026-10-08 16:18:16"
+  },
+  {
+    "source": "boannews",
+    "title": "[인사] 한국인터넷진흥원(KISA)",
+    "desc": "◇ 단장급 보임△ AI보안인재단장 오주형◇ 팀장급 보임△ AI보안정책팀장 류하성(2026년 10월 8일자)",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146269",
+    "date": "2026-10-08 16:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "SK쉴더스, AI 자동화 공격 시대 ‘Shadow IT’ 대응 가이드 공개",
+    "desc": "AI 기반 자동화 공격 도구가 사이버 킬체인을 가속화하는 가운데, SK쉴더스가 관리 사각지대에 놓인 Shadow IT와 API 보안 위협을 분석한 'AI 자동화 공격 시대, Shadow IT를 노린 침해사고 분석 및 대응 가이드'를 8일 공개했다.이번 가이드는 최근 발생한 금융권 침해사고 사례를 바탕으로 자율형 침투 도구의 작동 방식과 실제 침해 경로를 분석하고, 기업이 갖춰야 할 보안 대응 체계를 제시했다.AI는 공격 증폭기… 표적은 관리 사각지대 'Shadow IT'SK쉴더스의 화이트해커 조직 EQST는 최근 공격에 악용된 것으",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146267",
+    "date": "2026-10-08 16:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "유니온바이오메트릭스, 금융권 MFA 바람 타고 ‘얼굴인증 생체보안’ 주목",
+    "desc": "최근 국내 주요 은행과 저축은행, 캐피탈사 등을 표적으로 한 대규모 연쇄 해킹 사태가 발생한 가운데, 피해 예방의 핵심 차단막으로 ‘다중인증체계’(MFA)가 지목되면서 금융권에 선제적으로 생체인증을 도입한 사례가 다시금 조명받고 있다.생체인식 AI 인프라 보안기업 유니온바이오메트릭스(대표이사 신요식)는 NH농협은행과 농협중앙회에 얼굴인증 기반의 통합 생체인증 솔루션 ‘UBio-ezPass’(유바이오 이지패스)를 구축하며 관련 시장 공략에 나서고 있다고 6일 밝혔다.금융권과 경찰에 따르면 이번 해킹 공격은 데이터베이스(DB) 침투 방",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146270",
+    "date": "2026-10-08 15:45:00"
+  },
+  {
+    "source": "boannews",
+    "title": "[은행이 뚫린다]  ‘中 26세’ 범인 신원 흔적... “초보적 행적들, 해킹 대중화 현실로”",
+    "desc": "국내 금융권 연쇄 해킹 공격 범인의 신원에 대한 흔적이 처음으로 포착됐다. 확정할 수 있는 단계는 아니지만 ‘중국 광둥성 거주 26세’ 인물인 것으로 추정되는 단서가 나왔다. 공개출처정보(OSINT)를 통해 추적될 행적을 남긴 점 등 초보적이라고 추정할 수 있는 행적들이 감지됐다. 탈취한 데이터를 판매할 수 있는 곳을 물색하고 다닌 흔적도 남았다. 종합하면 국가배후보다는 금전적 이득을 노린 개인 일탈 가능성이 점쳐진다.8일 사이버보안 기업 크라우드스트라이크는 최근 국내 금융기업들을 대상으로 한 공격 관련 보고서를 공개했다.“동일인",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146276",
+    "date": "2026-10-08 15:30:00"
+  },
+  {
+    "source": "boannews",
+    "title": "해킹 공격 자동화 시대, KISA ‘2026 인공지능 해킹 방어 대회’ 참가자 모집",
+    "desc": "한국인터넷진흥원(KISA)은 과학기술정보통신부, 한국정보보호산업협회(KISIA)와 공동으로 ‘2026 인공지능 해킹 방어 대회’(ACDC) 예선 참가자를 오는 10월 26일까지 모집한다. 올해로 2회째를 맞이한 이번 대회는 인공지능을 활용한 방어 기술과 인공지능 자체를 겨냥한 공격에 대응하는 실전 역량을 평가하기 위해 마련됐다.대회는 인공지능 보안의 3대 핵심 영역을 중심으로 전개된다. AI를 활용해 사이버 위협에 대응하는 ‘인공지능을 활용한 보안’(AI for Security), AI 모델 자체를 공격으로부터 보호하는 ‘인공지능의",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146272",
+    "date": "2026-10-08 15:30:00"
+  },
+  {
+    "source": "boannews",
+    "title": "“기본기가 뚫리면 다 뚫린다”... 펜타시큐리티, 금융권 AI 해킹 대응 가이드 발표",
+    "desc": "펜타시큐리티가 최근 금융권에서 잇따라 발생하고 있는 개인정보 침해사고와 인공지능(AI) 활용 공격 정황에 대응하기 위한 보안 가이드를 배포했다고 밝혔다.최근 금융권에서 인증 절차가 충분히 적용되지 않은 외부 업무시스템과 정보조회 서비스 등을 표적으로 한 침해사고가 연이어 발생하고 있다. 일부 사고에서는 크리덴셜 스터핑과 AI 에이전트 및 자동화 도구를 악용한 것으로 의심되는 정황이 포착됐다. 이처럼 공격의 자동화로 인해 짧은 시간 내에 더 많은 시스템과 계정이 위협받게 되면서 기본적인 보안 체계 점검과 신속한 대응의 중요성이 커지고",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146274",
+    "date": "2026-10-08 15:20:00"
+  },
+  {
+    "source": "boannews",
+    "title": "구글 크롬 155, 취약점 247개 한 번에 패치",
+    "desc": "구글이 6일(현지시각) 크롬 155 보안 업데이트를 배포하면서 한 번에 취약점 247개를 손봤다. 고친 결함 일부는 외부 연구자가 AI를 써서 찾아냈다.이번 업데이트에서 치명적 등급 결함은 4개다. 크롬캐스트와 브라우저, 내비게이션, 트랙 구성 요소에서 나온 해제 후 사용(UAF) 결함이다. UAF는 프로그램이 이미 반납한 메모리를 다시 쓰면서 생기는 오류로, 공격자가 파고들면 원하는 코드를 실행하는 데 쓰일 수 있다.4개 가운데 1개는 구글이 자체적으로 찾았다. 나머지 3개는 연구자 신양 거(Xinyang Ge)가 제보했는데, 그",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146254",
+    "date": "2026-10-08 15:20:00"
+  },
+  {
+    "source": "boannews",
+    "title": "유니온바이오메트릭스, 171억 육군 사업 수주... ‘역대 최대’ 단일 계약",
+    "desc": "생체인식 AI 인프라 보안 전문기업 유니온바이오메트릭스(대표이사 신요식)가 부가가치세를 제외한 약 171억원 규모의 ‘2026년 과학화출입통제체계 구축사업’을 수주했다고 6일 공시했다.이번 계약은 유니온바이오메트릭스 창립 이래 단일 수주 기준 최대 규모다. 지난 2024년 100억원대 육군 사업을 성공적으로 완수한 데 이어 수주 규모를 크게 늘리면서 국방 공공보안 시장에서의 독보적 입지를 다시 한번 입증했다. 회사는 이번 대형 계약에 따른 매출 반영과 기존 사업의 성장이 시너지를 내며 올해 역대 최고 수준의 연간 매출과 전년 대비",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146265",
+    "date": "2026-10-08 14:11:37"
+  },
+  {
+    "source": "boannews",
+    "title": "훔친 계정으로 PLC까지 접근하는 해커… K-water가 세운 ‘마지막 인증 장벽’",
+    "desc": "2026년 하반기, 전 세계 주요 기반시설이 전례 없는 사이버공격 위협에 직면하며 이른바 ‘OT(운영기술) 안보 비상사태’를 맞고 있다. 해커들은 더 이상 금전을 요구하지 않고 사회적 공포와 시스템 마비 자체를 목적으로 국가 제어망 깊숙한 곳을 타격하고 있다. 특히 수십억 원을 들인 보안 솔루션을 우회하는 ‘정상 계정 탈취’ 방식의 공격이 주를 이루면서, 사후 알람(모니터링)에 의존해 온 기존 방어 체계의 전면적인 패러다임 전환이 요구되고 있다.특히 문제는 공격자가 OT망 내부에 들어왔다는 사실 자체가 아니다. 정상 계정이나 정상적",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146266",
+    "date": "2026-10-08 14:00:51"
+  },
+  {
+    "source": "boannews",
+    "title": "SKT·업스테이지, 산학연 11개 기관 연합한 ‘독자 AI 사이버보안 협의체’ 출범",
+    "desc": "SK텔레콤이 업스테이지, 국내 주요 정보보호 기업 및 대학과 손잡고 ‘독자 AI 사이버보안 협의체’를 공식 출범했다고 8일 밝혔다. 이번 협력은 정부의 ‘독자 AI 파운데이션 모델 프로젝트’에서 3단계에 진출한 SK텔레콤의 ‘A.X K’ 시리즈와 업스테이지의 ‘솔라’(Solar)를 사이버 보안 영역으로 확장하고, 방어 역량이 강화된 보안 업무 전용 AI로 육성하기 위해 마련됐다.SKT타워에서 열린 협약식에는 △SK쉴더스 △시큐아이 △안랩 △라온시큐어 △지니언스 △파이오링크 등 정보보호 기업 6곳과 △고려대 △숭실대 △부산대 등 3개",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146264",
+    "date": "2026-10-08 14:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "코로나19 연구 훔친 혐의... 미국, 중국 ‘하프늄’ 핵심 인물 장위에 현상금 1000만달러",
+    "desc": "미 국무부가 중국 해킹 공작 ‘하프늄’(Hafnium)의 핵심 인물로 지목된 중국인 장위(Zhang Yu)의 행방 정보에 현상금 1000만달러를 내걸었다.미 당국은 장위가 상하이 파이어테크(Shanghai Firetech Information Science and Technology) 책임자로 중국 정부를 위해 일했다고 주장했다. 이 공작으로 컴퓨터 수천 대가 뚫리고 문서와 이메일이 대량으로 빠져나갔다고도 했다.장위는 쉬쩌웨이(Xu Zewei)와 함께 미국 대학과 면역학자, 바이러스학자를 노려 코로나19 연구 자료를 훔친 혐의를 받",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146256",
+    "date": "2026-10-08 14:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "국립생물자원관, 드론·AI 카메라 활용 ‘야생 멧돼지 실시간 AI 감시기술’ 개발",
+    "desc": "기후에너지환경부 소속 국립생물자원관(관장 유호)은 생활주변 멧돼지 출몰에 따른 인명·재산 피해를 예방하기 위해 AI 기반의 ‘야생 멧돼지 실시간 감시기술’을 개발했다. 기존 신고 접수 후 사후 출동 방식에서 벗어나 위험 지역을 사전에 감시하고 현장 대응 속도를 대폭 끌어올리는 선제적 대응 체계가 구축된 것이다.서울시 소방재난본부 집계에 따르면 야생 멧돼지 출동 건수는 2023년 649건, 2024년 589건, 2025년 294건, 2026년 6월 기준 236건 등 도심 지역 내 야생 멧돼지 출몰과 위협이 지속되고 있어 한층 과학적인",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146260",
+    "date": "2026-10-08 13:38:10"
+  },
+  {
+    "source": "boannews",
+    "title": "조달청, ‘평가위원 선정서비스’ 전체 협상계약으로 전면 확대",
+    "desc": "조달청(청장 백승보)이 수요기관이 자체 집행하는 모든 협상에 의한 계약을 대상으로 ‘평가위원 선정서비스’를 전면 확대 시행한다. 그동안 금액이나 사업 분야에 따라 제한적으로 운영되던 제도를 대폭 개편해 공공조달 전반의 공정성과 전문성을 극대화하겠다는 취지다.‘평가위원 선정서비스’는 수요기관이 제안서 평가위원회를 구성할 때, 조달청이 확보한 우수 평가위원 인력풀(Pool)을 제공하고 나라장터 평가 시스템을 통해 평가 집행 전 과정을 지원하는 제도다.기존에는 추정가격 1억원 미만의 소규모 협상계약이나 지자체가 발주하는 소프트웨어(SW)",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146257",
+    "date": "2026-10-08 13:30:00"
+  },
+  {
+    "source": "boannews",
+    "title": "충주시 공중화장실, ‘이상음원 감지’ 비상벨 설치 확대",
+    "desc": "충주시(시장 이동석)가 공중화장실 내 강력범죄 및 이상 행동에 신속 대응하기 위해 비상벨 등 안전시설 확충을 핵심으로 한 공중화장실 안전·위생 통합 관리체계를 구축한다.시는 2027년부터 국비 5500만원을 포함한 총 1억1000만원의 예산을 투입해 관내 공중화장실에 양방향 통화가 가능한 비상벨과 이상 음원 감지 센서 등 안전 인프라를 대폭 보강한다고 밝혔다.기존 공중화장실은 각 부서별로 분산 관리돼 위급 상황 대응이나 화장실 이용 불편에 따른 각종 민원이 지속돼 왔다. 이에 대한 관리주체 소재가 명확하지 않아 문제 해결에 있어서도",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146261",
+    "date": "2026-10-08 13:12:51"
+  },
+  {
+    "source": "boannews",
+    "title": "모빌린트 AI 반도체, 누리호 5차 타고 우주 진출",
+    "desc": "AI 반도체 기업 모빌린트(대표 신동주)는 자사가 독자 개발한 AI 반도체(NPU)가가 7일 발사된 한국형발사체 누리호(KSLV-II) 5차의 부탑재위성 ‘BEE-1012’에 탑재돼 우주 궤도로 성공적으로 쏘아 올려졌다고 밝혔다. 국내 순수 기술로 설계·개발된 NPU가 실제 위성에 탑재돼 우주 환경 실증에 나선 것은 이번이 처음이다.이번에 탑재된 위성 BEE-1012는 우주 스타트업 스페이스린텍이 개발한 우주의약 실증 위성이다. 해당 위성에는 모빌린트의 대표 AI 반도체 제품인 ‘REGULUS’(레귤러스) 기반 NPU 보드 2종이",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146262",
+    "date": "2026-10-08 13:11:44"
+  },
+  {
+    "source": "boannews",
+    "title": "[김정덕의 지속가능 보안-10] 보이지 않는 뿌리의 연대: ‘균근’ 보안 생태계",
+    "desc": "사이버 공간에서 개별 기업이 쌓아 올린 독자적 방어벽은 날로 고도화되는 지능형 공격 앞에서 구조적 한계를 드러내고 있습니다. 공격자들은 다크웹과 글로벌 해킹 커뮤니티에서 제로데이 취약점과 공격 도구를 실시간으로 거래하며 초국가적인 분업 생태계를 구축했습니다. 반면 방어자들은 여전히 자체 인프라와 단일 기업의 보안 경계선 안에 갇혀 고립된 방어에 머무르는 '비대칭적 구조'에 놓여 있습니다. 공격자가 글로벌 생태계 단위로 협력할 때, 방어자가 개별 성벽에만 의존하는 각자도생은 필연적인 실패로 귀결될 수밖에 없습니다.이러한 방어의 고립성",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146263",
+    "date": "2026-10-08 11:45:48"
+  },
+  {
+    "source": "boannews",
+    "title": "제주도, 재난 발생 시 CCTV ‘특별관제’ 전환한다",
+    "desc": "재난특보가 발령되는 즉시 제주 CCTV 통합관제센터의 관제체계가 ‘일반관제’에서 ‘특별관제’로 긴급 전환된다.제주특별자치도(도지사 위성곤)는 위험 징후를 조기에 포착하고 관계기관 간 신속한 공조를 통해 인명 및 시설 피해를 최소화하고자 ‘재난유형별 CCTV 특별관제 매뉴얼’을 수립해 시범 운영에 들어갔다.이번 매뉴얼은 △강풍 △태풍 △호우 △대설 △한파 △폭염 △지진 등 7개 재난유형에 맞춰 적용된다.재난특보가 발효되면 관제센터는 즉시 특별관제 체제로 전환되며, 관제요원별로 전담 관제구역을 할당해 위험지역 중심의 집중 순환관제를 실",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146259",
+    "date": "2026-10-08 11:35:38"
+  },
+  {
+    "source": "boannews",
+    "title": "한강유역환경청, 소관 국가하천 CCTV 480곳 전체에 ‘AI 영상분석’ 도입",
+    "desc": "한강유역환경청(청장 이승환)은 하천 내 위험 상황에 선제적으로 대응하기 위해 소관 국가하천에 설치된 CCTV 480개소 전체에 AI 기반 지능형 영상분석 기능을 확대 적용한다.한강청은 올해 홍수기(6월 21일~9월 20일)에 앞서 CCTV 114개소에 소프트웨어(SW) 고도화를 통한 AI 기능을 우선 적용한 바 있다. 이어 10월부터는 나머지 366개소에 AI 영상분석 장치를 추가 설치해 연내 소관 국가하천 전체에 AI 감시체계 구축을 완료할 방침이다. 이후 내년 홍수기 전까지 AI 기능 안정화를 추진한다.기존 하천 관제 방식은 담",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146258",
+    "date": "2026-10-08 11:23:24"
   },
   {
     "source": "boannews",
@@ -315,146 +553,6 @@
     "date": "2026-10-06 17:30:00"
   },
   {
-    "source": "boannews",
-    "title": "스팸 차단 장비인 척 숨어든 리눅스 백도어... 한국과 대만 메일 장비 노렸다",
-    "desc": "리눅스 백도어가 한국과 대만에서 쓰는 이메일 보안 장비를 감염시킨 뒤 그 장비의 정상 프로그램처럼 꾸며 숨어든 사실이 드러났다.보안 기업 래피드7(Rapid7)은 새로 출범한 위협 연구 조직 래피드7인텔리전스의 첫 연구로 서로 일부 겹치는 두 갈래 공격을 공개했다. 하나는 한국 스팸 차단 솔루션을, 다른 하나는 대만 메일 보안 장비를 흉내 낸다. 두 공격 모두 흔한 이름 도용을 넘어 감염시킨 장비의 파일 이름과 방화벽이 허용하는 통신, 고유한 작동 습관까지 모방했다.한국 쪽 공격에 쓰인 BPF도어(BPFdoor)는 보안 업계에 알려",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146200",
-    "date": "2026-10-06 17:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "2003년 이후 거쳐 간 누구나 피해 가능... 덴마크공대, 최대 20만명 정보 노출 우려",
-    "desc": "덴마크공과대학교(DTU)가 계정 탈취 공격을 당해 전·현직 구성원 최대 20만명의 개인정보가 노출됐을 수 있다고 밝혔다.학교는 2일(현지시각) 발표에서 공격자가 탈취한 계정 정보로 신원·접근 관리 시스템인 DTU바센에 무단 접속해 상당한 양의 데이터를 다운로드했다고 설명했다. 정확히 어떤 정보가 유출됐는지, 몇 명이 피해를 입었는지 알 수 없다고 인정했다.DTU바센은 학교 구성원의 신원과 권한을 관리하는 시스템이다. 현재 이용자 약 4만명과 과거 이용자 약 16만명의 기록이 들어 있다. 피해 규모를 최대 20만명으로 잡은 것도 이",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146202",
-    "date": "2026-10-06 16:45:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[은행이 뚫린다-진단②] ‘중국산 AI’ 과몰입 자제... “확산 최소화·회복력에 집중”",
-    "desc": "금융기업에 연쇄적으로 해킹 공격이 이뤄지면서, 공격 도구로 지목된 ‘중국산 AI 도구’에 이목이 집중되고 있다. 이를 두고 보안 전문가들은 특정 국가의 특정 도구 자체가 본질이 아니라고 조언하고 있다. 악용된 도구의 국적으로 공격 배후를 무리하게 추정하는 것에 대한 경계다.또 오픈소스에 AI 도구가 유사한 도구는 무수하게 많기 때문에 유사한 공격이 급속도로 확산될 가능성에 빠르게 대비하는 데 집중해야 한다는 지적이다. 방어자에게도 열린 AI 도구 접근성을 공격자보다 선제적으로 활용하는 게 중요하다는 것이다.무엇보다 이번 공격 대응의",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146219",
-    "date": "2026-10-06 16:30:00"
-  },
-  {
-    "source": "boannews",
-    "title": "재난·안전 관련 자격 보유자, 공인재난관리사 1차 시험 일부·전부 면제",
-    "desc": "앞으로 재난·안전 관련 자격을 가진 사람은 보유 자격에 따라 공인재난관리사 제1차 시험 과목의 일부 또는 전부를 면제받을 수 있게 된다.행정안전부(장관 윤호중)는 10월 6일 국무회의에서 이 같은 내용을 담은 ‘재난 및 안전관리 기본법’ 개정안이 의결·공포됨에 따라 국정과제 이행을 위한 동력을 확보했다고 밝혔다. 개정안은 지난 9월 17일 국회 본회의를 통과했다.공인재난관리사는 재난관리책임기관 등에서 재난관리 기획·조정, 대응체계 구축 및 자원관리, 점검·조사·복구 등 재난관리 전(全) 과정(예방-대비-대응-복구)에 대해 일정 수준",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146218",
-    "date": "2026-10-06 16:03:04"
-  },
-  {
-    "source": "boannews",
-    "title": "API 경로 바꾸고 요청 암호화... 스틸리언, 최신 AI 해킹 방어 청사진 제시",
-    "desc": "스틸리언은 자사의 AI 기반 웹 보안 솔루션 ‘웹수트’(WebSuit)가 자체 테스트를 통해 최근 화두로 떠오른 AI 에이전트 기반 웹 및 API 공격을 성공적으로 차단했다고 6일 밝혔다.스틸리언은 AI 자율 침투테스트 도구를 활용해 API를 악용한 공격 시나리오로 검증을 진행했다. 테스트 결과, 명령행 도구인 ‘curl’을 이용한 지능적인 API 정찰 시도와 브라우저 자동화 도구 ‘Playwright’를 활용한 비정상적인 접근 모두 웹수트의 방어벽에 막힌 것으로 확인됐다. 이번 검증은 중국어 기반의 AI 침투 테스트 도구인 ‘아르",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146216",
-    "date": "2026-10-06 15:50:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[이슈칼럼] AI 해킹 시대, 서버가 뚫려도 디지털 키는 보호되어야 한다",
-    "desc": "현관 열쇠를 잃어버리면 우리는 자물쇠부터 바꾼다. 그런데 온라인 세상에서는 이상한 일이 반복된다. 열쇠가 탈취되어도 우리는 그 사실조차 모른 채 쓰던 비밀번호와 PIN 코드를 그대로 사용한다. 지금 우리가 매일 쓰는 온라인 로그인이 이렇다.이 글에서 ‘디지털 키’라고 부르는 것은 은행 앱이나 회사 시스템에 들어갈 때 쓰는 비밀번호, PIN 코드, 인증서 등 각종 인증 정보, 즉 ‘내가 나임을 증명하는 비밀’이다. 개인정보가 집 안의 귀중품이라면, 디지털 키는 그 집의 열쇠다. 귀중품을 도둑맞는 것도 큰일이지만, 열쇠까지 넘어가면 도",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146217",
-    "date": "2026-10-06 15:47:34"
-  },
-  {
-    "source": "boannews",
-    "title": "에버스핀, 전북대에 AI 활용 매크로·스크래핑 방어 솔루션 공급",
-    "desc": "에버스핀이 전북대학교에 웹 보안 솔루션 ‘에버세이프 웹’(Eversafe Web)을 공급하며 대학 웹 서비스의 소스 보호와 스크래핑 차단 지원에 나섰다.에버스핀은 지난 1일 전북대에 에버세이프 웹 구축을 완료했다고 밝혔다. 이번 솔루션 도입은 웹 소스 분석을 통한 서비스 악용과 매크로, 스크래핑 등 비인가 자동화 접근에 적극 대응해 해킹 위험을 낮추기 위한 목적이다. 대학의 웹 서비스는 다양한 이용자가 접근하는 개방성을 유지하면서도 학사 및 개인정보를 보호해야 하므로, 자동화 도구를 악용한 무단 데이터 수집은 정상 이용자의 서비스",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146213",
-    "date": "2026-10-06 15:10:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[이슈 칼럼] AI가 창을 들었다면, 우리는 방패를 준비했는가?",
-    "desc": "지난 4월 7일, 미국 앤트로픽(Anthropic)의 AI 사이버공격 시스템 ‘미토스’(Mythos)​가 세상에 알려지면서 큰 파장을 일으켰다. 미토스는 인공지능을 활용해 제로데이 취약점을 탐색하고, 실제 공격 가능성까지 보여주면서 AI가 사이버공격의 새로운 수단이 될 수 있다는 우려를 현실로 끌어올렸다. 더욱 주목해야 할 점은 미토스가 끝이 아니라는 사실이다. 최근에는 미토스보다 더욱 강력한 AI 기반 취약점 탐색 및 보안 점검 도구들이 빠르게 개발되고 있다. 과거에는 전문적인 지식과 상당한 시간, 경험이 필요했던 취약점 분석과",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146214",
-    "date": "2026-10-06 15:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[항공보안 칼럼] 조종석 내부자 테러, 25년 전 경고의 핵심이 현실이 됐다",
-    "desc": "지난 9월 30일, 두바이에서 텔아비브로 향하던 플라이두바이 FZ1073편에서 부기장이 조종실 비상용 도끼로 기장을 공격하고 조종권을 빼앗으려 했다. 기체는 급강하했지만, 다행히 기장과 승객ㆍ승무원의 대응 그리고 객실에 타고 있던 조종사의 도움으로 항공기는 사우디아라비아 타부크 공항에 비상 착륙했다.UAE 검찰총장은 이를 테러 행위 시도로 규정했으며, 동기와 조직 연계는 아직 수사 중이지만 이 사건의 핵심은 조종석에 앉아 있던 정식 승무원이 항공기를 위협했다는 점이다.필자는 국가정보원 재직 당시인 2001년 9·11 테러 직후, 당",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146212",
-    "date": "2026-10-06 14:20:00"
-  },
-  {
-    "source": "boannews",
-    "title": "토스 페이스페이, 부산국제록페스티벌 공식 결제 수단으로 참여",
-    "desc": "토스(운영사 비바리퍼블리카, 대표 이승건)의 얼굴 인식 결제 서비스 ‘페이스페이’가 부산국제록페스티벌에 공식 결제수단으로 참여했다고 6일 밝혔다. 페스티벌은 지난 2일부터 4일까지 부산 삼락생태공원에서 열렸으며, 사흘간 약 7만 명이 찾았다.이번 참여는 지갑이나 휴대폰 없이 얼굴 인식만으로 결제하는 페이스페이의 편리함을 짐 없이 가볍게 즐기고 싶은 축제 현장에서 자연스럽게 경험할 수 있도록 기획됐다. 공연을 즐기다가도 줄을 서거나 결제 수단을 꺼내 들 필요 없이, 얼굴만으로 음식과 굿즈를 살 수 있도록 했다.토스는 페스티벌에서 결제",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146211",
-    "date": "2026-10-06 14:08:24"
-  },
-  {
-    "source": "boannews",
-    "title": "[인터뷰] 엑스트라홉 “AI 보안 솔루션의 한계? 진짜 문제는 지능이 아닌 ‘데이터 품질과 컨텍스트’”",
-    "desc": "네트워크 탐지 및 대응(NDR)과 보안 운영 센터(SOC)의 핵심 가시성을 선도하는 글로벌 기업 엑스트라홉(ExtraHop)이 최근 AI와 사이버보안의 급진적 융합에 따라 자사의 핵심 역할을 강조하기 위해 한국에서의 사업을 강화하고 있다. 특히 엑스트라홉의 제품을 총괄하는 Kanaiya Vasani CPO·CMO와 Ken Chen 아시아퍼시픽 부사장(VP of Sales, APJ)이 한국을 방문해 가 직접 만나봤다.Q. 최근 엑스트라홉이 가장 주목하는 변화에 대해 말씀해 주세요Kanaiya Vasani CPO·CMO 엑스",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146210",
-    "date": "2026-10-06 14:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "포티넷 포티메일, 인증 우회해 파일 심는 제로데이 악용...5일 긴급 패치",
-    "desc": "포티넷 이메일 보안 장비 포티메일(FortiMail)에서 로그인 없이 파고들 수 있는 결함이 공격에 쓰이고 있다. 포티넷은 보안 권고문을 내고 포티메일 관리 인터페이스의 최고 등급 취약점(CVE-2026-104286)이 제로데이 공격에 악용되고 있다고 밝혔다. 결함은 그웬달 게니오(Gwendal Guégniaud) 포티넷 제품보안팀원이 내부에서 찾아냈다. 보안권고문은 1일 나왔고, 핵심 패치는 5일에야 발표됐다. 권고문에 따르면 이 결함은 파일 경로를 제한하지 못하는 경로 조작(path traversal) 오류와 널(NULL) 문자",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146197",
-    "date": "2026-10-06 14:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "유락, ‘AI 디지털 포렌식’ 앞세워 일본 시장 공략 가속",
-    "desc": "AI 디지털 포렌식 전문기업 유락(대표 유봉석)이 AI 기반 디지털 포렌식 기술을 앞세워 일본 사업 확대에 나선다. 기존 일본 사업을 발판으로 AI 데이터 분석과 데이터 리스크 관리 영역으로 사업 범위를 넓히고, 현지 파트너십을 강화한다는 전략이다. 유락은 지난 10월 2일까지 일본 도쿄 빅사이트에서 열린 ‘리스콘 도쿄 2026’(RISCON TOKYO)에서 ‘디파스’(DFAS) 시리즈를 선보여 AI 기반 데이터 분석과 현장형 포렌식 기술에 대한 현지의 높은 관심을 확인했으며, 이를 계기로 일본 시장 공략에 속도를 낸다고 6일 밝혔",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146209",
-    "date": "2026-10-06 13:26:52"
-  },
-  {
-    "source": "boannews",
-    "title": "모든 차를 기록하는 카메라 ‘플록’ ... 미 연방 판사, 경찰의 영장 없는 조회에 위헌 판결",
-    "desc": "미국 연방 판사가 경찰의 영장 없는 플록세이프티(Flock Safety) 데이터베이스 조회를 위헌으로 판결했다. 플록세이프티는 자동 번호판 인식 카메라 업체다.세라 힐(Sara Hill) 연방 판사는 이번 주 미국 오클라호마주 털사의 한 보안관보가 영장 없이 플록으로 한 여성의 번호판을 조회한 행위가 헌법이 보장하는 권리를 침해했다고 판단했다. 외신 404미디어에 따르면 이 판결이 다른 법원을 구속하는 선례는 아니다. 그래도 연방 판사가 플록 검색을 위헌으로 본 초기 사례로 꼽힌다.보안관보는 플록 데이터베이스로 이 여성의 차량 위치",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146204",
-    "date": "2026-10-06 13:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[은행이 뚫린다-진단ⓛ] 시스템 속인 ‘파라미터 변조’ 뭐길래... 약한고리 ‘내부업무시스템’ 포격",
-    "desc": "AI 에이전트 악용 사이버 공격이 국내 금융권에서 연쇄적으로 발생하고 있는 가운데, 공격 기법으로 ‘파라미터 변조’가, 이 수법이 통하게 한 취약점으로 ‘인가 미흡’이 지목되고 있다. 이중인증으로도 한계가 있는 취약점이라는 점에서 경각심을 높이고 있다. 또 고객페이지 대비 상대적으로 보안이 약한 내부 업무용 시스템을 집중적으로 노렸다는 점도 이목을 끈다.이번 국내 금융권 전방위 해킹 사고는 AI 에이전트의 자동화된 무차별 공격이 가해진 것이라는 분석이 우세하다. 자동화된 크리덴셜스터핑에서 파라미터 변조로 이어지는 공격에 신한은행이",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146208",
-    "date": "2026-10-06 12:04:15"
-  },
-  {
-    "source": "boannews",
-    "title": "사이버다임, 문서중앙화 솔루션에 DLP 기능 통합…문서 보안 관리 범위 확대",
-    "desc": "문서중앙화 솔루션 전문기업 사이버다임이 기존 문서중앙화 솔루션에 데이터 유출 방지(DLP: Data Loss Prevention) 기능을 통합하고 문서의 중앙 관리부터 외부 반출 과정에서 발생하는 정보 유출까지 관리할 수 있는 통합 보안 환경을 구축했다.사이버다임은 지난해 7월 팬타랩을 인수한 이후 양사의 기술을 기반으로 기존 문서중앙화 솔루션의 고도화를 추진해 왔다. 특히 데이터 생성부터 보호, 활용에 이르는 전 과정에서 보안을 강화할 수 있는 기반을 마련하고, 문서중앙화를 중심으로 데이터 보안 생태계를 확장하는 데 주력해왔다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146207",
-    "date": "2026-10-06 11:54:57"
-  },
-  {
-    "source": "boannews",
-    "title": "“G20서 공급망 보안을 핵심 의제로”... S2W, 영국과 안보 비전 공유",
-    "desc": "에스투더블유(S2W)는 서상덕 대표가 9월 30일부터 지난 2일(현지 시간)까지 영국에서 개최된 ‘제2차 한영고위급포럼’에 초청돼 한국과 영국 양국 간 AI 협력 비전을 논의했다고 6일 밝혔다.이번 포럼은 2023년 한영 글로벌 전략적 동반자 관계 수립 및 2025년 자유무역협정(FTA) 개선 협상 타결을 바탕으로 실질적 성과 창출을 위한 대화 플랫폼을 구축하고자 기획됐다. 행사는 양국의 경제 발전 촉진을 시작으로 안보·회복탄력성 관련 과제가 양국 성장과 번영에 미치는 영향, 디지털 및 신흥 기술 기반의 새로운 협력 기회 모색 등을",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146203",
-    "date": "2026-10-06 11:30:00"
-  },
-  {
-    "source": "boannews",
-    "title": "이 대통령 “국가 보안망 즉각 점검”·한 총리 “전면 개편”... 정부, AI 해킹 총력 대응",
-    "desc": "이재명 대통령은 최근 공공기관과 금융권에서 연이어 발생한 해킹 사고와 관련해 “관계 당국은 사건 경위를 신속하고 명확하게 파악하고 피해 최소화를 위해 필요한 인력과 자원을 집중 투입해 달라”고 6일 국무회의에서 지시했다.이 대통령은 이날 청와대에서 주재한 국무회의 모두발언에서 “일부 해킹은 인공지능(AI)을 활용한 것으로 드러나 국민의 우려와 불안이 매우 크다”며 이같이 밝혔다.최근 고도화된 사이버 위협 양상에 대한 강한 경계심도 드러냈다. 이 대통령은 “이제 AI를 활용해 특별한 능력이 없는 경우에도 해킹을 쉽게 할 수 있다”며",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146206",
-    "date": "2026-10-06 11:25:26"
-  },
-  {
-    "source": "boannews",
-    "title": "KISA·과기정통부, 한-몽 정상회담 후속 ‘사이버보안 협력’ 본격 닻 올려",
-    "desc": "한국인터넷진흥원(KISA)은 과학기술정보통신부와 공동으로 지난 5일부터 7일까지 3일간 몽골 울란바타르에서 ‘한-몽 사이버보안 협력 프로그램’을 개최한다고 6일 밝혔다. 이번 행사는 지난 7월 양국 정상회담을 기점으로 확대된 디지털 분야 협력 기조에 발맞춰, 몽골 정부의 사이버보안 정책 및 기술 협력 제안을 구체화하기 위해 마련됐다. 현장에는 몽골 디지털개발혁신통신부(MDDIC)를 비롯한 주요 정부·공공기관의 사이버보안 담당자들이 참석했다.양국은 이번 프로그램을 통해 사이버 안보 강화의 핵심인 주요 정보통신 기반 시설 보호 정책과",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146205",
-    "date": "2026-10-06 11:20:00"
-  },
-  {
-    "source": "boannews",
-    "title": "LG유플러스-우리은행, AI 통화앱 ‘익시오’ 연동해 보이스피싱 선제 차단",
-    "desc": "LG유플러스가 우리은행과 손잡고 통신과 금융 데이터를 실시간으로 연계해 보이스피싱 피해를 원천 차단하는 ‘익시오 보이스피싱 금융안심’ 서비스를 선보인다고 6일 밝혔다.금융권의 보이스피싱 대응은 주로 계좌이체 등 사후 금융거래 정보를 중심으로 진행돼, 고객이 사기범과 의심 번호로 통화하거나 악성 앱에 감염됐는지, AI 변조 음성에 노출됐는 지 등 실제 금융거래 이전 단계의 위험 신호를 파악하는 데 한계가 있었다. ‘익시오 보이스피싱 금융안심’ 서비스는 LG유플러스가 보유한 보이스피싱 위험 탐지 데이터를 활용해 금융권 단독으로는 접근하",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146201",
-    "date": "2026-10-06 10:00:00"
-  },
-  {
     "source": "thn",
     "title": "Microsoft Exchange Flaw Lets Authenticated Attackers Read Other Users' Mailboxes",
     "desc": "Microsoft has released out-of-band security updates to address a high-severity flaw in Microsoft Exchange Server that could allow an attacker to escalate privileges under certain conditions.\n\nThe vulnerability, tracked as CVE-2026-96940, is rated 8.8 on the CVSS scoring system.\n\n\"Weak authorization ",
@@ -504,41 +602,6 @@
     "date": "2026-10-05T12:10:19"
   },
   {
-    "source": "boannews",
-    "title": "서울사이버대, 학생과 교직원은 물론 졸업생까지  개인정보 유출",
-    "desc": "서울사이버대학교는 학생과 졸업생, 교직원과 채용지원자들의 개인정보가 유출된 정황이 발견됐다고 밝혔다. 특히 서울사이버대학교는 개인정보 유출을 직접 확인한 것이 아닌 한국인터넷진흥원으로부터 통지받은 것으로 알려졌다.이번에 유출된 개인정보는 학생과 졸업생의 경우 △성명 △학번 △생년월일 △연락처 △이메일 △주소 △학과 △학적상태 △입학·학력 정보 등이며, 교직원은 △성명 △사번 △소속 △연락처 △이메일 등이다. 또한 학생과 졸업생, 교직원 공통으로 암호화된 정보로 △주민등록번호 △본교 포털 비밀번호 △계좌번호 등이 유출됐으며, 현재까지",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146196",
-    "date": "2026-10-05 23:11:15"
-  },
-  {
-    "source": "boannews",
-    "title": "[배종찬의 보안 빅데이터] AI 해킹으로 무너진 금융권 보안",
-    "desc": "2026년 10월 초, 국내 금융권이 인공지능(AI)을 악용한 고도화된 해킹 공격에 동시다발적으로 노출되며 전대미문의 보안 재난에 직면했다. 썸트렌드(SomeTrend)의 2026년 10월 1일부터 3일까지의 빅데이터 연관어 분석 결과에 따르면, 이번 사태를 둘러싼 시장과 대중의 관심은 ‘금융기관’과 ‘고객정보’라는 두 가지 핵심 축을 중심으로 뚜렷하게 형성되어 있다.본래 금융기관 영역은 상품, 조건, 투자, 자금, 비용, 세금, 계약, 기준, 계획, 일정 등 정량적 금융 거래 및 자산 운용 요소와 주로 결합해 있었다. 그러나 이번",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146195",
-    "date": "2026-10-05 15:13:17"
-  },
-  {
-    "source": "boannews",
-    "title": "2021년 이후 주민등록번호 505만건, CI 278만건 유출",
-    "desc": "2021년 이후 확인된 주민등록번호 유출 규모가 505만건을 넘는 것으로 나타났다. 5일 한창민 사회민주당 의원실이 개인정보보호위원회와 금융감독원에서 제출받은 자료에 따르면, 2021년에서 올해 9월까지 개인정보위와 금감원이 처분한 사건 중 주민등록번호 유출 사례는 130건이었다. 이들 사건에서 유출된 것으로 확인된 주민등록번호 규모는 총 505만6653건이었다. 같은 사람의 주민등록번호가 반복 유출됐을 가능성이 있어 실제 피해 인원을 뜻하진 않는다. 아동권리보장원에서 일어난 3개 유출 사건에서 116만142건의 주민등록번호가 유출",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146193",
-    "date": "2026-10-05 09:11:40"
-  },
-  {
-    "source": "boannews",
-    "title": "돈 바닥날 때까지 쏟아낸 ATM... 미 재무부, 잭팟팅 악성코드 설계자 ‘프로메테우스’ 제재",
-    "desc": "미국 재무부가 현금인출기(ATM)를 조작해 돈을 강제로 쏟아내게 하는 ‘잭팟팅’ 공격의 악성코드 개발자로 지목된 인물과 그의 조직망을 제재했다.시큐리티위크에 따르면 제재 대상은 ‘프로메테우스’라는 별명으로 알려진 아니발 알렉산더 카넬론 아기레(Anibal Alexander Canelon Aguirre)와 측근, 멕시코 소재 기업 2곳이다. 재무부는 그를 ATM 잭팟팅 공격에 쓰인 악성코드의 설계자로 지목했다. 이 공격은 범죄 조직 트렌 데 아라과(TdA)와 연결돼 있으며 TdA는 주로 플루투스(Ploutus)라는 악성코드를 쓴다.카",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146167",
-    "date": "2026-10-05 08:30:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[해킹 뉴노멀-7] “지체할 시간없다, 협업하자”... 박세준 티오리 대표",
-    "desc": "박세준 티오리 대표는 AI로 인해 보법이 달라진 보안 패러다임 전환에 “지체할 시간이 없다”고 늘 말해왔다. 사실 지금은 누구나 하는 말이다. 최근 국내 금융기업들에 동시다발적으로 AI 에이전트의 공격이 가해지고 있듯, 고조된 AI의 위협에 대응하는 보안 체계로 속히 전환해야 한다는 얘기는 매일 듣는다.박 대표의 말은 행동과 성과가 따른다는 점에서 눈길을 끌었다.박 대표의 빠른 행보와 직설적인 화법이 국내 보안 업계에 낯설게 다가간 것도 사실이다. 그는 일부 국내 보안 솔루션의 한계를 지적하기도 했다. 많은 공감을 얻었지만 업계 일",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146126",
-    "date": "2026-10-05 08:00:00"
-  },
-  {
     "source": "thn",
     "title": "ShinyHunters Suspect Rey Reportedly Detained in Jordan, Helping FBI Identify Group Members",
     "desc": "A suspected member of the ShinyHunters digital extortion group, who goes by the online alias \"Rey,\" has been allegedly detained by authorities in Jordan, Reuters reported, citing three people familiar with the matter.\n\nRey, whose real name is Saif ‌al-Din Khader, is said to have been brought into cu",
@@ -551,13 +614,6 @@
     "desc": "A new China-nexus cyber espionage group known as TA419 has been attributed to multiple credential phishing campaigns targeting artificial intelligence (AI) experts working for U.S. think tanks, universities, and legal sector organizations.\n\nThe campaigns have impersonated prominent economists and AI",
     "url": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html",
     "date": "2026-10-04T12:50:32"
-  },
-  {
-    "source": "boannews",
-    "title": "[은행이 뚫린다] 과기정통부-KISA도 긴급 대응 체계... 피해 확산 방지 총력",
-    "desc": "과학기술정보통신부(부총리 겸 장관 배경훈)는 최근 발생한 금융권 해킹 사고와 관련, 한국인터넷진흥원(KISA)과 긴급 대응 체계를 가동한다고 4일 밝혔다. 금융권 해킹 사고 소관 기관은 금융위원회와 금융감독원, 금융보안원 등이다. 과기정통부와 KISA는 이같은 공격의 민간 분야 확산을 막고 추가 피해를 방지하는데 초점을 맞춘다. KISA 인터넷침해대응센터(KISC)의 대응체계를 강화해 금융권 해킹으로 인한 추가 피해 가능성에 신속히 대응할 수 있게 했다. 주요 기업 홈페이지 등에 대한 모니터링을 강화하고 침해사고 대응 인력을 보강했",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146192",
-    "date": "2026-10-04 21:22:46"
   },
   {
     "source": "thn",
@@ -642,61 +698,5 @@
     "desc": "This week, the useful words are boring ones: inspect, cache, compile, store, trust. Each sounds harmless. Each can become an attack path when a system does a little more than people expect. A model check can run code. A cache can mix up requests. A public secret can stay useful for years.\n\nThat is t",
     "url": "https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html",
     "date": "2026-10-01T22:15:38"
-  },
-  {
-    "source": "thn",
-    "title": "WordPress Backdoor Rebuilds Itself After Cleanup Using Files, Database, and Shared Memory",
-    "desc": "Cybersecurity researchers have shed light on a WordPress compromise in which threat actors deployed multiple persistence mechanisms to ensure that the final payload kept returning without having to infect the site again.\n\nThe backdoor has been codenamed SC after the \"SC_\" markers present in the inje",
-    "url": "https://thehackernews.com/2026/10/wordpress-backdoor-rebuilds-itself.html",
-    "date": "2026-10-01T20:07:35"
-  },
-  {
-    "source": "thn",
-    "title": "How Financial Services Companies Can Modernize Their Software Supply Chain",
-    "desc": "Every security leader at a bank, insurer, or asset manager has had a version of this conversation: Security wants to eliminate a class of vulnerabilities. Engineering explains what it would take to upgrade the platform where they live. Somebody prices out the regression testing. Somebody else raises",
-    "url": "https://thehackernews.com/2026/10/how-financial-services-companies-can.html",
-    "date": "2026-10-01T17:15:00"
-  },
-  {
-    "source": "thn",
-    "title": "OpenAI Disrupts Reasoning Extraction Campaign Linked to Moonshot AI Associates",
-    "desc": "OpenAI on Wednesday said it identified and disrupted a coordinated distillation campaign that was designed to illicitly extract protected reasoning from its artificial intelligence (AI) models.\n\nA \"core cluster of the activity,\" going back to the first week of July, has been attributed to individual",
-    "url": "https://thehackernews.com/2026/10/openai-disrupts-reasoning-extraction.html",
-    "date": "2026-10-01T16:12:36"
-  },
-  {
-    "source": "thn",
-    "title": "CISA Adds Exploited Cisco Catalyst SD-WAN Manager Auth Bypass to KEV",
-    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a critical authentication bypass flaw impacting Cisco Catalyst SD-WAN Manager to its Known Exploited Vulnerabilities (KEV), following reports of active exploitation.\n\nThe vulnerability, tracked as CVE-2026-76504 (CVS",
-    "url": "https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
-    "date": "2026-10-01T16:03:16"
-  },
-  {
-    "source": "thn",
-    "title": "Google Rolls Out Gemini 4 Argon to Trusted Cyber Defenders, Plans Guardrail-Free Version",
-    "desc": "Google on Wednesday announced its latest frontier artificial intelligence (AI) model, Gemini 4 Argon, that it said is being rolled out to a set of trusted cyber defenders through its Fairwind Program.\n\n\"It delivers frontier performance in complex workflows across real-world software engineering, ent",
-    "url": "https://thehackernews.com/2026/10/google-rolls-out-gemini-4-argon-to.html",
-    "date": "2026-10-01T13:19:36"
-  },
-  {
-    "source": "thn",
-    "title": "Apple CoreGraphics PoC Emerges as WhatsApp PDF Checks Hint at Possible Delivery Path",
-    "desc": "Security researchers have published the first public proof-of-concept for CVE-2026-86950, an Apple CoreGraphics flaw Apple says may have been used in attacks against specific targeted individuals.\n\nThe trigger is a malicious PDF with a crafted embedded font that crashes unpatched iPhones and Macs. T",
-    "url": "https://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html",
-    "date": "2026-10-01T11:24:41"
-  },
-  {
-    "source": "thn",
-    "title": "Bitget Confirms Third-Party Zero-Day Behind $387.5 Million Cryptocurrency Theft",
-    "desc": "Cryptocurrency exchange Bitget on Wednesday confirmed that attackers who stole $387.5 million last week exploited a zero-day flaw in third-party security products, citing ongoing investigation findings from SlowMist.\n\n\"Their investigation identified malicious activity involving third-party security ",
-    "url": "https://thehackernews.com/2026/10/bitget-confirms-third-party-zero-day.html",
-    "date": "2026-10-01T10:51:10"
-  },
-  {
-    "source": "thn",
-    "title": "MetaMask Security Incident Prompts Exit of Affected Ethereum Validators",
-    "desc": "MetaMask on Thursday said it's responding to what it described as an \"ongoing security incident\" impacting part of its infrastructure.\n\n\"We are actively addressing and remediating the issue internally, in coordination with external partners and security advisors,\" the software cryptocurrency wallet ",
-    "url": "https://thehackernews.com/2026/10/metamask-security-incident-prompts-exit.html",
-    "date": "2026-10-01T10:40:09"
   }
 ]
