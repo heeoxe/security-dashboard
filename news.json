@@ -1,6 +1,34 @@
 [
   {
     "source": "thn",
+    "title": "Attackers Hijack .gh, .sl, and .as Registries to Obtain Certificates for Google Domains",
+    "desc": "Attackers compromised three country-code top-level domains (ccTLDs) and obtained unauthorized HTTPS certificates for several Google domains, Google&nbsp;said on October 6.\n\nGoogle's own systems were not breached, but any domain ending in .gh (Ghana), .sl (Sierra Leone) or .as (American Samoa) was pu",
+    "url": "https://thehackernews.com/2026/10/attackers-hijack-gh-sl-and-as.html",
+    "date": "2026-10-08T00:18:17"
+  },
+  {
+    "source": "boannews",
+    "title": "삼성·인텔 납품 업체 어드밴테스트, 랜섬웨어 공격 몇 달 뒤 개인정보 유출 인정",
+    "desc": "일본 반도체 검사 장비 기업 어드밴테스트(Advantest)가 2월 공개한 랜섬웨어 공격으로 개인정보를 도난당했다고 인정하고 피해자들에게 통지를 시작했다.어드밴테스트는 칩 제조사가 반도체가 제대로 작동하는지 확인할 때 쓰는 자동 검사 장비를 만든다. 고객사로는 삼성과 인텔이 있다.회사는 2월 침입자가 네트워크에 들어와 랜섬웨어를 실행했다고 처음 공개했다. 당시엔 민감한 데이터가 빠져나갔는지 파악하는 중이었다.이번에 새로 낸 유출 통지문에서는 공격자가 개인 식별 정보를 가져갔다고 밝혔다. 이름과 생년월일, 연락처, 사회보장번호, 여권",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146251",
+    "date": "2026-10-08 09:55:00"
+  },
+  {
+    "source": "thn",
+    "title": "Eight Malicious npm Packages Downloaded 40,767 Times Deliver Overlord RAT and Stealer",
+    "desc": "Cybersecurity researchers have disclosed details of a long-running npm supply chain malware campaign that pushes information stealers and remote access trojans (RAT) to compromised hosts.\n\nThe campaign has been codenamed MALFEX by CloudSEK and Checkmarx. The activity is assessed to be the work of a ",
+    "url": "https://thehackernews.com/2026/10/eight-malicious-npm-packages-downloaded.html",
+    "date": "2026-10-07T23:13:20"
+  },
+  {
+    "source": "thn",
+    "title": "SonicWall Patches CVSS 10.0 Pre-Authentication SSRF Flaw in SMA1000 Appliances",
+    "desc": "SonicWall has released hotfixes for four flaws in its SMA1000 appliances, the gateways that give remote workers access to a company's network and applications. The most serious could allow an attacker without a login to send requests through the appliance and reach internal functions.\n\nSonicWall rat",
+    "url": "https://thehackernews.com/2026/10/sonicwall-patches-cvss-100-pre.html",
+    "date": "2026-10-07T21:47:44"
+  },
+  {
+    "source": "thn",
     "title": "Unpatched Critical LMCache Flaw Lets Unauthenticated Attackers Run Code Remotely",
     "desc": "A critical vulnerability in LMCache, open-source software that speeds up large language model (LLM) servers such as vLLM, lets an attacker run code on the cache server without logging in, and no fixed version is available.\n\nThe flaw is in LMCache's&nbsp;multiprocess mode, where the cache runs as a s",
     "url": "https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html",
@@ -532,13 +560,6 @@
     "date": "2026-10-04 21:22:46"
   },
   {
-    "source": "boannews",
-    "title": "한국전력 직원 2만4000명 개인정보 노출 사고",
-    "desc": "한국전력에서도 직원 개인정보 사고가 터졌다.한전은 4일 입장문을 내고 “1일 오후 3시 59분께 외부 웹페이지에 직원 개인정보가 노출된 상황을 인지했다”고 밝혔다.한전 직원 2만4000여명의 이름과 소속, 전화번호 등이 노출됐다. 주민등록번호 같은 고유식별번호나 민감정보는 노출되지 않았다고 한전은 설명했다.고객 정보도 포함되지 않았다고 밝혔다. 한전은 사고 인지 즉시 직원 개인정보 관련 내부 시스템 접속을 차단하고 문제의 웹페이지 운영사에 삭제를 요청했다고 밝혔다.노출된 정보는 인지 시점에서 약 32시간이 지난 2일 자정 무렵 삭제",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146191",
-    "date": "2026-10-04 17:38:32"
-  },
-  {
     "source": "thn",
     "title": "MI5 Says China’s MSS Funded Research Involving 100+ U.K.-Linked Academics",
     "desc": "The U.K.'s domestic intelligence and security agency has warned that more than 100 academics have helped China boost its intelligence gathering efforts on behalf of Beijing's state security service.\n\nIn a \"Security Service Espionage Alert\" issued on September 30, 2026, MI5 said the \"primary purpose ",
@@ -677,26 +698,5 @@
     "desc": "MetaMask on Thursday said it's responding to what it described as an \"ongoing security incident\" impacting part of its infrastructure.\n\n\"We are actively addressing and remediating the issue internally, in coordination with external partners and security advisors,\" the software cryptocurrency wallet ",
     "url": "https://thehackernews.com/2026/10/metamask-security-incident-prompts-exit.html",
     "date": "2026-10-01T10:40:09"
-  },
-  {
-    "source": "thn",
-    "title": "Citrix NetScaler Post-Exploitation Payload Creates Superuser, Maps Web Shell to CSS-Like URLs",
-    "desc": "Threat actors have been observed exploiting a critical pre-authentication command injection vulnerability in Citrix NetScaler ADC and NetScaler Gateway to drop web shells and attempt theft of configuration data.\n\nLevelBlue's Threat Hunt Operations &amp; Research (THOR) team, which analyzed the explo",
-    "url": "https://thehackernews.com/2026/10/citrix-netscaler-post-exploitation.html",
-    "date": "2026-10-01T10:05:34"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Exploit Zimbra Flaw to Deploy Web Shells and Harvest Authentication Secrets",
-    "desc": "Threat actors have weaponized a now-patched security flaw in Zimbra Collaboration Suite (ZCS) to deploy web shells and access mailbox data, according to findings from the Microsoft Security Research team.\n\nThe attack exploits CVE-2026-73570 (CVSS score: 8.9), an unauthenticated operating system comm",
-    "url": "https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html",
-    "date": "2026-09-30T22:16:29"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Abuse MSP360 to Deploy ScreenConnect in Dual-RMM Phishing Attacks",
-    "desc": "Microsoft has warned of phishing campaigns distributing an installer for the MSP360 Remote Monitoring and Management (RMM) software under the guise of meeting invitations, PDF-themed lures, software update prompts, and other social-engineering content.\n\n\"Once executed, the legitimate MSP360 installe",
-    "url": "https://thehackernews.com/2026/09/attackers-abuse-msp360-to-deploy.html",
-    "date": "2026-09-30T22:02:59"
   }
 ]
