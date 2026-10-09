@@ -1,10 +1,101 @@
 [
   {
     "source": "thn",
+    "title": "P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands",
+    "desc": "Cybersecurity researchers have disclosed details of a previously unseen variant of the DarkSword iOS exploit kit called P7 DarkSword.\n\n\"Compared with the variants we usually observe, P7 reduces its on-device footprint, adds on-device keychain and crypto-wallet theft, and adds two way C2 communicatio",
+    "url": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html",
+    "date": "2026-10-09T21:59:55"
+  },
+  {
+    "source": "thn",
+    "title": "TP-Link Sued by Four More U.S. States Over Router Security and China Ties",
+    "desc": "Four more U.S. states sued router maker TP-Link Systems on October 6, bringing the total to five, with &nbsp;Texas filing a suit in February. Florida, Iowa, Montana and Nebraska allege the California company misled buyers about how secure its routers are and how separate it is from China. TP-Link&nb",
+    "url": "https://thehackernews.com/2026/10/tp-link-sued-by-four-more-us-states.html",
+    "date": "2026-10-09T18:52:53"
+  },
+  {
+    "source": "thn",
+    "title": "Researchers Publish Working Exploit for Pre-Auth AnyDesk Linux Flaw That Gives Root Access",
+    "desc": "Security researchers have&nbsp;published a full working exploit&nbsp;for a pre-authentication remote code execution flaw in AnyDesk Linux that gives attackers root access before anyone approves the connection.\n\nAnyDesk patched the flaw in version 8.0.3 in June, but its&nbsp;changelog&nbsp;described ",
+    "url": "https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html",
+    "date": "2026-10-09T18:29:22"
+  },
+  {
+    "source": "thn",
+    "title": "Anthropic Launches Free AI Vulnerability Scanner for Open-Source Projects",
+    "desc": "Anthropic on Thursday unveiled OSS Scanner as an opt-in vulnerability scanner to help secure the open-source ecosystem using artificial intelligence (AI).\n\n\"It's an opt-in service informed by our experience using Claude to find vulnerabilities during Project Glasswing,\" Anthropic said. \"Projects tha",
+    "url": "https://thehackernews.com/2026/10/anthropic-launches-free-ai.html",
+    "date": "2026-10-09T18:17:28"
+  },
+  {
+    "source": "thn",
+    "title": "Attackers Exploit AhsayCBS Flaws to Deploy XMRig Miners Disguised as Microsoft Edge",
+    "desc": "Threat actors have been observed exploiting two recently disclosed flaws in the AhsayCBS backup utility to seize control of affected devices and deploy web shells and XMRig cryptocurrency miners.\n\nDetails of the flaws are below -\n\n\n  CVE-2026-105133 (CVSS v4 score: 5.5) - An improper authentication ",
+    "url": "https://thehackernews.com/2026/10/attackers-exploit-ahsaycbs-flaws-to.html",
+    "date": "2026-10-09T18:17:26"
+  },
+  {
+    "source": "thn",
+    "title": "Flax Typhoon Exploits Five Flaws as CISA Sets October 11 Deadline for Federal Agencies",
+    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added five security flaws to its Known Exploited Vulnerabilities (KEV) catalog, following their abuse by a China-linked threat actor known as Flax Typhoon.\n\nThe vulnerabilities in question are listed below -\n\n\n  CVE-2015-33",
+    "url": "https://thehackernews.com/2026/10/flax-typhoon-exploits-five-flaws-as.html",
+    "date": "2026-10-09T17:51:51"
+  },
+  {
+    "source": "thn",
+    "title": "The AI Velocity Paradox: Why Security Is Decades Behind AI Ambition",
+    "desc": "As enterprises race to deploy autonomous AI agents to accelerate business, a new report reveals they are tethered to security architectures built for a different era. The \"Horizons of Identity Security\" report from SailPoint highlights a critical “velocity paradox,” in which organizations invest in ",
+    "url": "https://thehackernews.com/2026/10/the-ai-velocity-paradox-why-security-is.html",
+    "date": "2026-10-09T17:00:00"
+  },
+  {
+    "source": "thn",
+    "title": "GoBalance Flaw Lets Attackers Hijack .onion Addresses by Recovering Tor-Format Keys",
+    "desc": "A bug in GoBalance, a tool many dark-web sites use to stay reachable during attacks, lets anyone work out the secret key that controls a site's .onion address using only public information, and then take that address over.\n\nSearchlight Cyber, which&nbsp;disclosed the flaw&nbsp;on October 8, says an ",
+    "url": "https://thehackernews.com/2026/10/gobalance-flaw-lets-attackers-hijack.html",
+    "date": "2026-10-09T14:33:24"
+  },
+  {
+    "source": "thn",
+    "title": "Three Teams Demonstrate Remote Hacks of Fully Patched Google Pixel 10 at Pwn2Own",
+    "desc": "Three research teams broke into Google's Pixel 10 on October 8 at Pwn2Own Ireland, a hacking contest in Cork whose rules require every target to be fully patched. The contest pays researchers to show working exploits and passes the flaws to the vendors. One of the three Pixel exploits earned Ikotas ",
+    "url": "https://thehackernews.com/2026/10/three-teams-demonstrate-remote-hacks-of.html",
+    "date": "2026-10-09T13:56:17"
+  },
+  {
+    "source": "thn",
+    "title": "Citrix Patches Critical NetScaler Flaw That Could Enable RCE in SAML Deployments",
+    "desc": "Citrix has released patches for yet another critical security flaw impacting NetScaler ADC and NetScaler Gateway that could result in remote code execution or denial-of-service (DoS) under certain conditions.\n\n\"CVE-2026-107406 is a memory overflow vulnerability that may lead to remote code execution",
+    "url": "https://thehackernews.com/2026/10/citrix-patches-critical-netscaler-flaw.html",
+    "date": "2026-10-09T13:41:33"
+  },
+  {
+    "source": "thn",
+    "title": "FBI Seizes 7 Domains, Disrupts Flax Typhoon Tools Used in Critical Infrastructure Intrusions",
+    "desc": "The U.S. Federal Bureau of Investigation (FBI) and Department of Justice (DoJ) have announced the disruption of malicious tools used by a China-linked advanced persistent threat group known as Flax Typhoon.\n\nTo that end, the agencies seized several domains and blocked access to platforms that were u",
+    "url": "https://thehackernews.com/2026/10/fbi-seizes-7-domains-disrupts-flax.html",
+    "date": "2026-10-09T12:09:29"
+  },
+  {
+    "source": "thn",
     "title": "FBI Says China-Linked Hackers Ran Portal Giving Third Parties Access to Stolen Emails",
     "desc": "Hackers tied to a Chinese cybersecurity company stole email from government organizations, law enforcement agencies, healthcare systems, and religious institutions in Southeast Asia, the FBI and agencies in 6 other countries said on October 8.\n\nThe company, Integrity Technology Group, has been sanct",
     "url": "https://thehackernews.com/2026/10/fbi-says-china-linked-hackers-ran.html",
     "date": "2026-10-09T00:02:21"
+  },
+  {
+    "source": "boannews",
+    "title": "‘골프 예약 앱’까지 줄줄이... 골프몬 이어 카카오 VX, 개인정보 3만 4천명 털렸다",
+    "desc": "금융권, 교회 등에 이어 이번엔 골프 예약 앱의 고객정보가 유출됐다. 우리나라를 타깃으로 한 전 방위 해킹 공습이 진행 중이다.카카오 VX가 운영하는 카카오골프예약에서 고객 개인정보 3만 4천여 건이 유출됐다고 밝혔다. 지난 7일 외부의 비인가자가 비정상적인 방법을 통해 서비스에서 고객 정보를 유출한 사실을 확인했다는 게 카카오 VX 측의 설명이다.유출 대상은 지난해 1월부터 올해 10월까지 카카오골프예약에서 국내 투어 상품을 예약한 고객으로 드러났다. 유출 항목에는 이름과 전화번호는 물론 상품명, 라운드 일자, 숙박 정보, 결제",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146291",
+    "date": "2026-10-09 18:54:32"
+  },
+  {
+    "source": "boannews",
+    "title": "[2026 영상향 SoC·NPU 제품&솔루션 리포트] 더 치열해진 영상보안의 두뇌 싸움",
+    "desc": "최근 영상보안 업계의 경쟁 축이 단순 CCTV 하드웨어에서 ‘실시간 AI 분석’, ‘엣지 AI’, ‘생성형 AI 영상 검색’, ‘프라이버시 보호’ 등으로 빠르게 이동하고 있다. 단순 영상 촬영을 넘어, 카메라 기판 위의 작은 칩셋 하나가 초당 수조~수십조 회(TOPS)의 연산을 수행하며 사람과 차량, 이상행동을 즉각 판별하는 ‘온디바이스 엣지 AI’ 시대로 진입했기 때문이다. 이에 따라 카메라와 NVR의 두뇌 역할을 하는 영상향 SoC(System on Chip)와 NPU(Neural Processing Unit)가 업계의 핵심 승",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146286",
+    "date": "2026-10-09 18:50:25"
   },
   {
     "source": "boannews",
@@ -490,20 +581,6 @@
     "date": "2026-10-07 11:00:00"
   },
   {
-    "source": "boannews",
-    "title": "[인사] 개인정보보호위원회",
-    "desc": "◇ 위촉△위원 이성엽△위원 박민철△위원 양동훈(2026. 10. 7. 자)",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146238",
-    "date": "2026-10-07 09:56:46"
-  },
-  {
-    "source": "boannews",
-    "title": "안랩 연구원, ‘암호분석경진대회’ 신호기술연구소장상 수상",
-    "desc": "안랩(대표 강석균)의 위협 정보 분석팀 ‘A-퍼스트’(A-FIRST) 소속 연구원이 포함된 ‘REPO’팀이 ‘제12회 2026 암호분석경진대회’ 시상식에서 장려상(신호기술연구소장상)을 수상했다고 7일 밝혔다.‘제12회 암호분석경진대회’는 9월 21일 서울 용산 나인트리 프리미어 로카우스 호텔에서 열렸다. ‘암호분석경진대회’는 한국정보보호학회(KIISC)와 국군 777사령부가 공동으로 주최·후원하는 국내 유일의 암호분석 분야 경진대회다. 2015년부터 매년 개최되고 있다. 참가자들은 고전 암호분석부터 블록암호, 동형암호까지 총 8개",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146230",
-    "date": "2026-10-07 09:13:38"
-  },
-  {
     "source": "thn",
     "title": "Linux Backdoors Impersonate Email Security Tools to Evade Detection in Korea and Taiwan",
     "desc": "Linux backdoors targeting telecom and network appliances in South Korea and Taiwan have been disguising their traffic as email services and seemingly legitimate processes to blend in and evade detection.\n\nThreat actors are known to name their malicious software after a legitimate operating system co",
@@ -621,82 +698,5 @@
     "desc": "A suspected member of the ShinyHunters digital extortion group, who goes by the online alias \"Rey,\" has been allegedly detained by authorities in Jordan, Reuters reported, citing three people familiar with the matter.\n\nRey, whose real name is Saif ‌al-Din Khader, is said to have been brought into cu",
     "url": "https://thehackernews.com/2026/10/shinyhunters-suspect-rey-reportedly.html",
     "date": "2026-10-04T12:52:05"
-  },
-  {
-    "source": "thn",
-    "title": "China-Aligned TA419 Targets U.S. AI Policy Experts With Microsoft AitM Phishing",
-    "desc": "A new China-nexus cyber espionage group known as TA419 has been attributed to multiple credential phishing campaigns targeting artificial intelligence (AI) experts working for U.S. think tanks, universities, and legal sector organizations.\n\nThe campaigns have impersonated prominent economists and AI",
-    "url": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html",
-    "date": "2026-10-04T12:50:32"
-  },
-  {
-    "source": "thn",
-    "title": "MI5 Says China’s MSS Funded Research Involving 100+ U.K.-Linked Academics",
-    "desc": "The U.K.'s domestic intelligence and security agency has warned that more than 100 academics have helped China boost its intelligence gathering efforts on behalf of Beijing's state security service.\n\nIn a \"Security Service Espionage Alert\" issued on September 30, 2026, MI5 said the \"primary purpose ",
-    "url": "https://thehackernews.com/2026/10/mi5-says-chinas-mss-funded-research.html",
-    "date": "2026-10-03T20:08:46"
-  },
-  {
-    "source": "thn",
-    "title": "Warlock Exploits SharePoint Flaws to Disable Security Tools and Deploy Ransomware",
-    "desc": "The suspected China-linked threat actor known as Warlock is still continuing to weaponize Microsoft SharePoint vulnerabilities, likely both old and new, in attacks targeting organizations in Portuguese- and Spanish-speaking countries.\n\nThe activity, observed by the Symantec and Carbon Black Threat H",
-    "url": "https://thehackernews.com/2026/10/warlock-exploits-sharepoint-flaws-to.html",
-    "date": "2026-10-03T20:06:33"
-  },
-  {
-    "source": "thn",
-    "title": "The State of Cybersecurity in 2026: Key Segments, Insights, and Innovations",
-    "desc": "Featuring:\n\n\n\nCybersecurity is being reshaped by the expansion of cloud infrastructure, AI, distributed systems, and increasingly complex digital environments. As organizations manage more identities, devices, data, and internet-facing infrastructure, security is shifting toward continuous visibilit",
-    "url": "https://thehackernews.com/2026/10/the-state-of-cybersecurity-in-2026key.html",
-    "date": "2026-10-03T16:30:00"
-  },
-  {
-    "source": "thn",
-    "title": "GitLab Patches Critical 9.9 AI Gateway Flaw Allowing Command Execution on Self-Hosted Servers",
-    "desc": "A critical flaw in GitLab's AI Gateway could let a logged-in user with Duo Agent Platform access run commands on the gateway under certain conditions, GitLab&nbsp;said in an advisory.\n\nThe gateway is the service that connects a GitLab instance to AI models, and only organizations that host their own",
-    "url": "https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html",
-    "date": "2026-10-02T23:03:31"
-  },
-  {
-    "source": "thn",
-    "title": "Antino Backdoor Uses Outlook and OneDrive for C2 in China-Nexus Espionage Campaign",
-    "desc": "Government and policy organizations across Asia have become the target of a new campaign orchestrated by a China-nexus threat actor.\n\nThe activity, which has targeted government and policy organizations in Taiwan, India, the Philippines, Cambodia, Pakistan, Thailand, and Myanmar, involves the deploy",
-    "url": "https://thehackernews.com/2026/10/antino-backdoor-uses-outlook-and.html",
-    "date": "2026-10-02T23:03:16"
-  },
-  {
-    "source": "thn",
-    "title": "Dell CSM Flaws Enable Unauthenticated Admin Access and Root on Kubernetes Nodes",
-    "desc": "Dell has released security updates to address multiple critical security flaws in Dell Container Storage Modules (CSM) that could be exploited by bad actors to take over susceptible systems.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2026-63688 (CVSS score: 10.0) - A missing authentication for ",
-    "url": "https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html",
-    "date": "2026-10-02T22:32:12"
-  },
-  {
-    "source": "thn",
-    "title": "OpenAI Parts Ways With Three Safety Researchers Over Sensitive Information Mishandling",
-    "desc": "OpenAI has parted ways with three members of its safety team after they leaked private information in violation of company policies, The Wall Street Journal reported.\n\n\"We have parted ways with three individuals for violating our policies on accessing and handling sensitive company information,\" a s",
-    "url": "https://thehackernews.com/2026/10/openai-parts-ways-with-three-safety.html",
-    "date": "2026-10-02T17:53:15"
-  },
-  {
-    "source": "thn",
-    "title": "Why CISOs Struggle to Answer the Board's Three Hardest Questions, and How to Fix the Report",
-    "desc": "The quarterly board meeting is two weeks out. The security team is pulling exports from the identity provider, the cloud posture tool, the vulnerability scanner, the SIEM and the EDR console. Someone is building a spreadsheet to reconcile them. Someone else is turning that spreadsheet into slides.\n\n",
-    "url": "https://thehackernews.com/2026/10/why-cisos-struggle-to-answer-boards.html",
-    "date": "2026-10-02T17:00:00"
-  },
-  {
-    "source": "thn",
-    "title": "Android 17 Advanced Protection Locks Accessibility Services to Verified Accessibility Tools",
-    "desc": "Google has announced a new security measure that limits access to Android's accessibility services to verified applications classified as Accessibility Tools when Advanced Protection is enabled.\n\nWith malicious Android applications abusing the API serving as the main conduit for malware and financia",
-    "url": "https://thehackernews.com/2026/10/android-17-advanced-protection-locks.html",
-    "date": "2026-10-02T13:31:30"
-  },
-  {
-    "source": "thn",
-    "title": "Critical FortiMail Zero-Day Flaw Exploited in Attacks Allows Unauthenticated Arbitrary File Writes",
-    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA), on Thursday, added a critical security flaw impacting Fortinet FortiMail to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.\n\nThe vulnerability, tracked as CVE-2026-104286 (CVSS score: 9.8),",
-    "url": "https://thehackernews.com/2026/10/critical-fortimail-zero-day-flaw.html",
-    "date": "2026-10-02T11:19:50"
   }
 ]
