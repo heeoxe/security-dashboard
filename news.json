@@ -1,6 +1,41 @@
 [
   {
     "source": "thn",
+    "title": "FBI Says China-Linked Hackers Ran Portal Giving Third Parties Access to Stolen Emails",
+    "desc": "Hackers tied to a Chinese cybersecurity company stole email from government organizations, law enforcement agencies, healthcare systems, and religious institutions in Southeast Asia, the FBI and agencies in 6 other countries said on October 8.\n\nThe company, Integrity Technology Group, has been sanct",
+    "url": "https://thehackernews.com/2026/10/fbi-says-china-linked-hackers-ran.html",
+    "date": "2026-10-09T00:02:21"
+  },
+  {
+    "source": "boannews",
+    "title": "쿠팡·쿠팡이츠, 9일 새벽 2시간 ‘먹통’... 심야 음식 배달, 물류 배송 멈췄다",
+    "desc": "쿠팡, 쿠팡이츠의 앱과 홈페이지가 9일 새벽 2시간 가량 먹통이 되면서 심야 음식 배달과 물류 배송이 일시적으로 중단되는 사태가 발생했다.10월 9일 0시 35분부터 약 2시간 30분 동안 쇼핑 앱(쿠팡), 배달 앱(쿠팡이츠), OTT(쿠팡플레이) 등 주요 쿠팡 계열 서비스 전반에서 동시 접속 장애가 발생한 것이다.해당 시간 대에는 ‘네트워크 연결이 원활하지 않습니다. 연결 상태를 확인하고 다시 시도해 주세요’, ‘사용자 정보를 불러오지 못했습니다’ 등의 문구가 노출되면서 앱 및 웹페이지 접속이 불가능했던 것으로 드러났다.쿠팡 물류",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146290",
+    "date": "2026-10-09 11:03:45"
+  },
+  {
+    "source": "boannews",
+    "title": "패치 하루 만에 공격 시작... 아틀라시안 지라·컨플루언스 취약점, 허니팟서 악용 시도 포착",
+    "desc": "아틀라시안 데이터센터 제품의 치명적 파일 열람 취약점(CVE-2026-21589)을 노린 공격 시도가 시작됐다. 아틀라시안이 패치를 내놓은 지 하루쯤, 기술 분석이 공개된 지 몇 시간 만이다.위협 인텔리전스 기업 프레비디안(Previdian)은 6일(현지시각) 늦게 올린 글에서 자사 허니팟 망에 악용 시도가 들어왔다고 밝히고, 공격에 쓰인 IP 목록을 X에 공유했다. 허니팟은 공격자를 끌어들이려고 일부러 열어 둔 미끼 시스템이다.이 결함은 비트버킷과 컨플루언스, 지라 서비스 매니지먼트, 지라 소프트웨어, 뱀부, 크라우드 데이터센터",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146252",
+    "date": "2026-10-09 10:13:02"
+  },
+  {
+    "source": "boannews",
+    "title": "[카드뉴스] 스크립트 해킹 끝났다… AI API로 실시간 방어망 우회하는 자율 침투의 실체",
+    "desc": "사내망에 잠입해 상용 LLM의 연산 능력을 활용하여 보안망을 실시간으로 우회하는 자율형 악성코드 'ClosedQuorum'이 등장했다. 공격 코드는 고정된 스크립트 대신 AI의 실시간 추론 명령을 수신하며 기존 탐지 체계를 무력화하고 내부 인프라에 침투한다. 생각하는 악성코드의 자율 침투를 차단하기 위해 엔드포인트 단에서의 비인가 AI API 통신 차단과 강력한 아웃바운드 트래픽 통제가 요구된다.",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146282",
+    "date": "2026-10-09 09:00:00"
+  },
+  {
+    "source": "thn",
+    "title": "ThreatsDay: Ransomware Affiliate Betrayal, WhatsApp RAT, Exposed Hacker Tools and 12 More Stories",
+    "desc": "The crooks have trust problems of their own. One ransomware affiliate decided to keep the profits for himself. Elsewhere, an attacker left a server exposed, complete with tools and traces of an intrusion. Apparently, keeping things secure is a problem on both sides of the fence.\n\nThe rest of the wee",
+    "url": "https://thehackernews.com/2026/10/threatsday-ransomware-affiliate.html",
+    "date": "2026-10-08T23:28:02"
+  },
+  {
+    "source": "thn",
     "title": "Japan Sees Sharp Rise in Web Data Leaks Amid Mobile API Abuse and Metabase Attacks",
     "desc": "Attackers behind a string of personal data leaks at Japanese organizations have abused APIs for mobile apps and targeted known software flaws, the JPCERT Coordination Center (JPCERT/CC) said.\n\nThe Tokyo-based center, which takes incident reports, based its&nbsp;October 8, 2026 alert&nbsp;on those re",
     "url": "https://thehackernews.com/2026/10/japan-sees-sharp-rise-in-web-data-leaks.html",
@@ -469,13 +504,6 @@
     "date": "2026-10-07 09:13:38"
   },
   {
-    "source": "boannews",
-    "title": "[이슈칼럼] 금융권 연쇄 사고, 제로트러스트 방향은?... ‘임금님 투명갑옷’ vs ‘해리포터 투명망토’",
-    "desc": "외부로 공개된 업무자산 접근 보호를 위한 제로트러스트 네트워크 액세스(ZTNA)를 선택할 때 ‘임금님의 투명 갑옷’과 ‘해리포터의 투명 망토’ 중 무엇을 선택할 것인가?최근 금융권의 외부 공개 업무시스템을 겨냥한 침해사고 위협이 커지면서, 정보보호최고책임자(CISO)들의 고민이 깊어지고 있다. 각종 금융권 규제 준수는 물론, 사고 발생 시, 대규모 정보 유출과 서비스 마비로 이어지는 치명적 리스크가 발생하고 ‘금융회사의 지배구조에 관한 법률’로 인해 보안 관리자 등에 대한 제재가 강화된 내용도 존재하고 있다.이때 수많은 보안 기업들",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146222",
-    "date": "2026-10-07 09:00:00"
-  },
-  {
     "source": "thn",
     "title": "Linux Backdoors Impersonate Email Security Tools to Evade Detection in Korea and Taiwan",
     "desc": "Linux backdoors targeting telecom and network appliances in South Korea and Taiwan have been disguising their traffic as email services and seemingly legitimate processes to blend in and evade detection.\n\nThreat actors are known to name their malicious software after a legitimate operating system co",
@@ -537,20 +565,6 @@
     "desc": "A new type of ClickFix attack is using compromised websites to trick users into executing a malicious payload cached in a web browser's cache.\n\n\"Instead of downloading and executing remote payloads like the typical attack pattern, in this attack, the websites pre-fetch a script payload into the brow",
     "url": "https://thehackernews.com/2026/10/clickfix-smuggles-payloads-through.html",
     "date": "2026-10-06T10:52:55"
-  },
-  {
-    "source": "boannews",
-    "title": "“대한민국이 공격당하고 있다”... 국정감사 달군 사이버보안 공백",
-    "desc": "6일 국회 과학기술정보방송통신위원회 국정감사에서 고도화되는 AI 사이버 위협 대비 부족한 예산과 플랫폼 기업들의 정보보안 부실 문제가 집중 도마 위에 올랐다. 여야 의원들은 해킹 연쇄 사고를 지적하며 범정부 차원의 컨트롤타워 부재와 삭감된 정보보호 예산을 질타했다.최형두 국민의힘 의원은 한국전력 2만4000명 정보 유출과 정부24 사태를 언급하며 해킹 사고가 늘고 있음에도 정보보호 예산 비중은 감소하고 있다고 비판했다. 차세대 보안 체계인 ‘제로트러스트’(Zero Trust) 관련 예산이 62억원에서 45억원으로 줄어든 점을 짚으며",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146223",
-    "date": "2026-10-06 18:43:58"
-  },
-  {
-    "source": "boannews",
-    "title": "샤이니헌터스 연루 의심 ‘레이’, 요르단서 구금 보도...공범 추적 돕는다",
-    "desc": "해킹 그룹 샤이니헌터스(ShinyHunters)의 일원으로 의심받는 ‘레이’(Rey)가 요르단에서 붙잡힌 뒤 미국 수사당국의 조직원 추적을 돕고 있다는 보도가 나왔다.로이터통신은 소식통을 인용해 요르단 당국이 9월 29일(현지시각) 레이를 구금했다고 보도했다. 로이터가 밝힌 레이의 본명은 사이프 알딘 카데르(Saif al-Din Khader)다. 소식통 두 명은 카데르가 FBI와 국제 수사기관의 조직원 위치 추적에 협조하고 있다고 말했다.한 소식통에 따르면 카데르는 자신의 전자기기와 디지털 대화 기록을 수사관에게 하나하나 보여 주며",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146199",
-    "date": "2026-10-06 17:30:00"
   },
   {
     "source": "thn",
@@ -684,19 +698,5 @@
     "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA), on Thursday, added a critical security flaw impacting Fortinet FortiMail to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.\n\nThe vulnerability, tracked as CVE-2026-104286 (CVSS score: 9.8),",
     "url": "https://thehackernews.com/2026/10/critical-fortimail-zero-day-flaw.html",
     "date": "2026-10-02T11:19:50"
-  },
-  {
-    "source": "thn",
-    "title": "Police Arrest 16-Year-Old Suspected of Running KillSec, Seize Ransomware Leak Site and Servers",
-    "desc": "Police in Spain have arrested a 16-year-old whom investigators suspect of running the KillSec ransomware group. KillSec is accused of stealing data from organizations and threatening to publish it on its leak site unless they paid.\n\nThe 16-year-old was one of 3 people arrested on September 30, when ",
-    "url": "https://thehackernews.com/2026/10/police-arrest-16-year-old-suspected-of.html",
-    "date": "2026-10-01T22:25:57"
-  },
-  {
-    "source": "thn",
-    "title": "ThreatsDay: AI-Powered Zero-Day Chain, 543K Live Secrets, Model Inspection RCE and 13 More Stories",
-    "desc": "This week, the useful words are boring ones: inspect, cache, compile, store, trust. Each sounds harmless. Each can become an attack path when a system does a little more than people expect. A model check can run code. A cache can mix up requests. A public secret can stay useful for years.\n\nThat is t",
-    "url": "https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html",
-    "date": "2026-10-01T22:15:38"
   }
 ]
