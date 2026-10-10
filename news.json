@@ -1,6 +1,27 @@
 [
   {
     "source": "thn",
+    "title": "Credential-Stealing GitHub Actions Workflows Planted in Tens of Thousands of Repositories",
+    "desc": "Cybersecurity researchers have disclosed details of an ongoing credential-theft campaign that has compromised two high-profile open-source maintainer accounts to push a malicious workflow into over 340 repositories.\n\n\"Using the account of Takashi Kitao, author of the 18,400-star game engine pyxel, t",
+    "url": "https://thehackernews.com/2026/10/credential-stealing-github-actions.html",
+    "date": "2026-10-10T00:44:28"
+  },
+  {
+    "source": "boannews",
+    "title": "[은행이 뚫린다] 금융권 공격 해커, 디도스 해킹그룹 ‘GodNet/VITAS’ 멤버였다",
+    "desc": "AI를 이용해 국내 금융권을 공격했던 범인이 중국계 디도스(DDoS-for-hire) 해킹그룹인 ‘GodNet/VITAS’의 커뮤니티 감독관이었음이 식별됐다. 이번 조사는 최근 해커로 특정된 중국인이 용의자로 지목되자, 휴대전화 등 개인정보가 도용됐다며 해킹 연관성을 부인한 이후 추가로 진행되면서 드러났다.보안기업 로그프레소에 따르면, 크라우드스트라이크가 공개한 ‘38.244.50[.]120’ 주소에서 추출된 Claude Code 마크다운 문서를 기반으로 용의자를 분석한 결과, 텔레그램 계정 ‘YY520CN’이 중국계 DDoS-fo",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146292",
+    "date": "2026-10-10 10:32:26"
+  },
+  {
+    "source": "thn",
+    "title": "FBI Arrests Another ShinyHunters Suspect Reportedly Involved in Its Jobs Portal Hack",
+    "desc": "The FBI has arrested another suspected co-conspirator of ShinyHunters, FBI Director Kash Patel said on October 9 in a&nbsp;post on X.\n\nShinyHunters is the extortion group that said in September it had&nbsp;breached the FBI's jobs portal&nbsp;and stolen sensitive data on almost all FBI agents and job",
+    "url": "https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html",
+    "date": "2026-10-09T23:15:26"
+  },
+  {
+    "source": "thn",
     "title": "P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands",
     "desc": "Cybersecurity researchers have disclosed details of a previously unseen variant of the DarkSword iOS exploit kit called P7 DarkSword.\n\n\"Compared with the variants we usually observe, P7 reduces its on-device footprint, adds on-device keychain and crypto-wallet theft, and adds two way C2 communicatio",
     "url": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html",
@@ -574,13 +595,6 @@
     "date": "2026-10-07 11:05:00"
   },
   {
-    "source": "boannews",
-    "title": "DLP 핵심은 차단 아닌 ‘운영’... 지란지교소프트의 차세대 통합 PC 보안",
-    "desc": "지란지교소프트는 자사의 구축형 통합 PC 보안 솔루션 ‘오피스키퍼 EP’를 도입한 신규 고객사의 평균 사용자 수가 1000명대로 집계됐다고 7일 밝혔다. 이는 기존 클라우드형 오피스키퍼 신규 계약 평균인 300명대보다 약 3.5배 늘어난 수치로, 고객층이 대기업으로 확대되고 있음을 보여준다.오피스키퍼 EP는 기존 고객들의 운영 피드백으로 개발됐다. 지란지교소프트가 7월 개최한 웨비나에서 현업 보안 담당자들은 정보유출방지(DLP) 솔루션의 가장 큰 과제로 차단 성능이 아닌 ‘운영 부담’을 지목했다. 규제 대응을 위한 솔루션을 도입해도",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146235",
-    "date": "2026-10-07 11:00:00"
-  },
-  {
     "source": "thn",
     "title": "Linux Backdoors Impersonate Email Security Tools to Evade Detection in Korea and Taiwan",
     "desc": "Linux backdoors targeting telecom and network appliances in South Korea and Taiwan have been disguising their traffic as email services and seemingly legitimate processes to blend in and evade detection.\n\nThreat actors are known to name their malicious software after a legitimate operating system co",
@@ -684,19 +698,5 @@
     "desc": "A critical security flaw impacting Rejetto HTTP File Server (HFS) is witnessing active exploitation attempts, according to VulnCheck.\n\nThe vulnerability in question is CVE-2026-61500 (CVSS score: 9.3), a case of session forgery stemming from the use of a weak pseudo-random number generator (PRNG) th",
     "url": "https://thehackernews.com/2026/10/attackers-target-rejetto-hfs-flaw-that.html",
     "date": "2026-10-05T13:39:23"
-  },
-  {
-    "source": "thn",
-    "title": "New NetScaler Zero-Day Exploited in Targeted Attacks Can Knock SAML Deployments Offline",
-    "desc": "Citrix has released security updates for a high-severity security flaw in NetScaler ADC and NetScaler Gateway that has been exploited as part of targeted zero-day attacks.\n\nThe vulnerability, tracked as CVE-2026-88779, carries a CVSS score of 8.7 out of 10.0.\n\n\"CVE-2026-88779 is a memory overflow vu",
-    "url": "https://thehackernews.com/2026/10/new-netscaler-zero-day-exploited-in.html",
-    "date": "2026-10-05T12:10:19"
-  },
-  {
-    "source": "thn",
-    "title": "ShinyHunters Suspect Rey Reportedly Detained in Jordan, Helping FBI Identify Group Members",
-    "desc": "A suspected member of the ShinyHunters digital extortion group, who goes by the online alias \"Rey,\" has been allegedly detained by authorities in Jordan, Reuters reported, citing three people familiar with the matter.\n\nRey, whose real name is Saif ‌al-Din Khader, is said to have been brought into cu",
-    "url": "https://thehackernews.com/2026/10/shinyhunters-suspect-rey-reportedly.html",
-    "date": "2026-10-04T12:52:05"
   }
 ]
