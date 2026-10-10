@@ -1,10 +1,38 @@
 [
   {
     "source": "thn",
+    "title": "The Third-Party Agent Problem: Why Security Built for AI You Chose Misses the Agents You Didn't",
+    "desc": "In environments studied for the 2026 State of Agent Security Report, roughly 1,280 third-party products now embed AI. About 282 of them sit behind single sign-on. The other thousand are invisible to identity infrastructure by default, not because anyone hid them, but because an identity stack can on",
+    "url": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
+    "date": "2026-10-10T16:30:00"
+  },
+  {
+    "source": "thn",
+    "title": "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws",
+    "desc": "Anthropic on Friday said it's cutting off live internet access for all its internal evaluations following the discovery of new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior and targeted real websites.\n\nThe AI company said it identified four broad categories",
+    "url": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
+    "date": "2026-10-10T14:48:45"
+  },
+  {
+    "source": "thn",
     "title": "Credential-Stealing GitHub Actions Workflows Planted in Tens of Thousands of Repositories",
     "desc": "Cybersecurity researchers have disclosed details of an ongoing credential-theft campaign that has compromised two high-profile open-source maintainer accounts to push a malicious workflow into over 340 repositories.\n\n\"Using the account of Takashi Kitao, author of the 18,400-star game engine pyxel, t",
     "url": "https://thehackernews.com/2026/10/credential-stealing-github-actions.html",
     "date": "2026-10-10T00:44:28"
+  },
+  {
+    "source": "boannews",
+    "title": "[은행이 뚫린다] 예가람저축은행, 고객 주민등록번호·계좌번호 유출됐는데 고지 안했다 슬그머니 수정",
+    "desc": "지난 10월 2일 AI를 악용한 해킹공격에 피해를 입었던 예가람저축은행이 홈페이지에는 고객의 ‘성명, 생년월일, 연락처’가 유출됐다고 공지했지만, 사실 주민등록번호와 계좌번호까지 유출된 것으로 알려졌다. 심지어 해당 사실을 개인정보위에만 신고했다가, 이 사실이 외부에 알려지자 홈페이지 공지를 슬그머니 바꿔놔 빈축을 사고 있다.국회 정무위원회 김형연 의원(조국혁신당)이 개인정보보호위원회로부터 제출받은 예가람저축은행의 ‘개인정보 유출사고 신고서’에 따르면, 고객 주민등록번호와 계좌번호까지 유출된 사실이 드러났다. 그러나 은행이 고객에게",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146294",
+    "date": "2026-10-10 16:08:29"
+  },
+  {
+    "source": "boannews",
+    "title": "[이슈칼럼] 해킹 당한 기관에게 과징금을 부과하는 명분",
+    "desc": "해킹을 당한 기관도 해킹의 피해자인데 왜 과징금을 부과하는 것일까. 현행법은 크게 두 가지 유형의 해킹에 대해 과징금을 부과한다. 첫째, 개인정보가 유출된 해킹에 대해서는 개인정보 보호법 제64조의2(금융분야는 신용정보법 제42조의2 등 특칙이 있으며 이 글에서 다루지 않는다), 둘째, 개인정보가 유출되지 않은 반복적 해킹에 대해서는 정보통신망법 제48조의8이 각각 과징금을 부과하는 근거조항이다. 전자는 장기간 존속된 제도인 반면, 후자는 2026년 10월 1일에 막 시행되었다. 과징금 부과 명분도 전혀 다르다.개인정보가 유출된 해",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146293",
+    "date": "2026-10-10 15:30:48"
   },
   {
     "source": "boannews",
@@ -581,20 +609,6 @@
     "date": "2026-10-07 13:25:00"
   },
   {
-    "source": "boannews",
-    "title": "[은행이 뚫린다] “해킹 툴 아닌 AI 도구”... ‘아르텍스’가 한글판으로 공개된 이유는?",
-    "desc": "최근 국내 금융권을 겨냥한 AI 자동화 공격으로 보안업계가 술렁이는 가운데, 해당 공격에 악용된 것으로 알려진 AI 자율 침투 테스트 프레임워크 ‘아르텍스’(ARTEX)의 한국어판이 깃허브(GitHub)에 공개됐다.이번 공개는 아르텍스가 단순한 불법 해킹 도구가 아니라, 방어자의 역량 강화를 돕는 ‘AI 모의침투 테스트’(Pen-testing) 도구라는 점을 강조하며 이뤄졌다. 최근 국내 금융권을 대상으로 한 개인정보 유출 공격에 아르텍스가 사용된 정황이 조사 당국에 포착돼 수사가 진행 중이다. 고도화된 자율형 AI가 실제 금융권",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146220",
-    "date": "2026-10-07 11:30:00"
-  },
-  {
-    "source": "boannews",
-    "title": "협력사가 누락한 보안 패치 한 건에 FBI 직원 정보 유출",
-    "desc": "샤이니헌터스(ShinyHunters)가 미국 연방수사국(FBI) 직원 수천명의 개인정보를 빼낸 사고는 외부 협력사가 보안 패치를 적용하지 않아 벌어진 일로 드러났다.로이터는 6일(현지시각) FBI가 이 사고 뒤 액센츄어 소속 협력사 인력을 업무에서 배제했다고 보도했다.FBI는 협력사나 관련 조직 이름을 공개하지 않았다. 다만 FBI 고위 관계자는 로이터에 지금까지 조사 결과 문제의 시스템을 맡은 협력사가 보안 패치를 적용하지 않은 것이 원인으로 보인다고 말했다.브렛 레더먼(Brett Leatherman) FBI 사이버 책임자도 성명",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146229",
-    "date": "2026-10-07 11:05:00"
-  },
-  {
     "source": "thn",
     "title": "Linux Backdoors Impersonate Email Security Tools to Evade Detection in Korea and Taiwan",
     "desc": "Linux backdoors targeting telecom and network appliances in South Korea and Taiwan have been disguising their traffic as email services and seemingly legitimate processes to blend in and evade detection.\n\nThreat actors are known to name their malicious software after a legitimate operating system co",
@@ -684,19 +698,5 @@
     "desc": "Threat actors have been observed attempting to exploit a now-patched critical security flaw impacting the Realtek Jungle software development kit (SDK) to deploy a botnet malware called Cling.\n\n\"Cling is notable not because it introduces a new propagation technique, but because it repurposes ordinar",
     "url": "https://thehackernews.com/2026/10/realtek-jungle-sdk-exploit-attempts.html",
     "date": "2026-10-05T17:16:25"
-  },
-  {
-    "source": "thn",
-    "title": "Apple Plans Tighter macOS Full Disk Access Controls Over AI Agent Data Access",
-    "desc": "Apple has announced that it's taking steps to tighten controls around a macOS setting called Full Disk Access (FDA) due to security risks posed by artificial intelligence (AI) agents.\n\n\"Some developers are using Full Disk Access in ways that could put users at risk, exposing everything on their syst",
-    "url": "https://thehackernews.com/2026/10/apple-plans-tighter-macos-full-disk.html",
-    "date": "2026-10-05T16:08:50"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Target Rejetto HFS Flaw That Enables Admin Session Forgery and RCE",
-    "desc": "A critical security flaw impacting Rejetto HTTP File Server (HFS) is witnessing active exploitation attempts, according to VulnCheck.\n\nThe vulnerability in question is CVE-2026-61500 (CVSS score: 9.3), a case of session forgery stemming from the use of a weak pseudo-random number generator (PRNG) th",
-    "url": "https://thehackernews.com/2026/10/attackers-target-rejetto-hfs-flaw-that.html",
-    "date": "2026-10-05T13:39:23"
   }
 ]
