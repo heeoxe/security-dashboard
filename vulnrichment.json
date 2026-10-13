@@ -1,5 +1,2450 @@
 [
   {
+    "cve": "CVE-2024-10963",
+    "title": "Pam: improper hostname interpretation in pam_access leads to access control bypass",
+    "desc": "A flaw was found in pam_access, where certain rules in its configuration file are mistakenly treated as hostnames. This vulnerability allows attackers to trick the system by pretending to be a trusted hostname, gaining unauthorized access. This issue poses a risk for systems that rely on this feature to control who can access certain services or terminals.",
+    "cvss": 7.4,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-287"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9.4 Extended Update Support"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2024-11-07",
+    "updated": "2026-10-13",
+    "url": "https://access.redhat.com/errata/RHSA-2024:10232",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-11218",
+    "title": "Podman: buildah: container breakout by using --jobs=2 and a race condition when building a malicious containerfile",
+    "desc": "A vulnerability was found in `podman build` and `buildah.` This issue occurs in a container breakout by using --jobs=2 and a race condition when building a malicious Containerfile. SELinux might mitigate it, but even with SELinux on, it still allows the enumeration of files and directories on the host.",
+    "cvss": 8.6,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-269"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.6 Telecommunications Update Service"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.6 Update Services for SAP Solutions"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-01-22",
+    "updated": "2026-10-13",
+    "url": "https://access.redhat.com/errata/RHSA-2025:0830",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-12085",
+    "title": "Rsync: info leak via uninitialized stack contents",
+    "desc": "A flaw was found in rsync which could be triggered when rsync compares file checksums. This flaw allows an attacker to manipulate the checksum length (s2length) to cause a comparison between a checksum and uninitialized memory and leak one byte of uninitialized stack data at a time.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-908"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6 Extended Lifecycle Support  - EXTENSION"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-01-14",
+    "updated": "2026-10-13",
+    "url": "https://access.redhat.com/errata/RHBA-2025:6470",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-0624",
+    "title": "Grub2: net: out-of-bounds write in grub_net_search_config_file()",
+    "desc": "A flaw was found in grub2. During the network boot process, when trying to search for the configuration file, grub copies data from a user controlled environment variable into an internal buffer using the grub_strcpy() function. During this step, it fails to consider the environment variable length when allocating the internal buffer, resulting in an out-of-bounds write. If correctly exploited, th",
+    "cvss": 7.6,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-787"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.2 Advanced Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-02-19",
+    "updated": "2026-10-13",
+    "url": "https://access.redhat.com/errata/RHSA-2025:2521",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-108111",
+    "title": "ruoyi-ai 3.0.0 through 3.1.0 Missing Authorization via /workflow/search",
+    "desc": "ruoyi-ai 3.0.0 through 3.1.0 contains a missing authorization vulnerability in the GET /workflow/search endpoint that exposes other users' private workflows. Authenticated non-admin users can query this endpoint, which lacks owner or is_public filtering, to list enabled private workflows in the same tenant, including UUIDs and full node and edge configurations.",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "ageerle",
+        "product": "ruoyi-ai"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-10-09",
+    "updated": "2026-10-13",
+    "url": "https://hackmd.io/@haind/cve-2026-108111-108112-ruoyi-ai-workflow-authz",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-26227",
+    "title": "VLC for Android < 3.7.0 Remote Access OTP Authentication Bypass",
+    "desc": "VideoLAN VLC for Android prior to version 3.7.0 contains an authentication bypass in the Remote Access Server feature due to missing or insufficient rate limiting on one-time password (OTP) verification. The Remote Access Server uses a 4-digit OTP and does not enforce effective throttling or lockout within the OTP validity window, allowing an attacker with network reachability to the server to rep",
+    "cvss": 3.7,
+    "severity": "LOW",
+    "cwes": [
+      "CWE-307"
+    ],
+    "affected": [
+      {
+        "vendor": "VideoLAN",
+        "product": "VLC for Android"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-02-26",
+    "updated": "2026-10-13",
+    "url": "https://www.videolan.org/vlc/download-android.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-26228",
+    "title": "VLC for Android < 3.7.0 Remote Access Path Traversal",
+    "desc": "VideoLAN VLC for Android prior to version 3.7.0 contains a path traversal vulnerability in the Remote Access Server routing for the authenticated endpoint GET /download. The file query parameter is concatenated into a filesystem path under the configured download directory without canonicalization or directory containment checks, allowing an authenticated attacker with network reachability to the ",
+    "cvss": 4.9,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-22",
+      "CWE-73"
+    ],
+    "affected": [
+      {
+        "vendor": "VideoLAN",
+        "product": "VLC for Android"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-02-26",
+    "updated": "2026-10-13",
+    "url": "https://www.videolan.org/vlc/download-android.html",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-42938",
+    "title": "Cross-Site Scripting (XSS) vulnerability in SAP NetWeaver ABAP Platform",
+    "desc": "Due to a Cross-Site Scripting (XSS) vulnerability in the SAP NetWeaver ABAP Platform, an unauthenticated attacker could generate a malicious link and make it publicly accessible. If an authenticated user clicks on this link, the injected input is processed during the website�s page generation, resulting in the creation of malicious content. When executed, this content allows the attacker to access",
+    "cvss": 6.1,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "SAP_SE",
+        "product": "SAP NetWeaver ABAP Platform"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-09-09",
+    "updated": "2026-10-13",
+    "url": "https://me.sap.com/notes/3629325",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-42009",
+    "title": "Gnutls: gnutls: denial of service via dtls packet reordering vulnerability",
+    "desc": "A flaw was found in gnutls. A remote attacker could exploit an issue in the Datagram Transport Layer Security (DTLS) packet reordering logic. The comparator function, responsible for ordering DTLS packets by sequence numbers, did not correctly handle packets with duplicate sequence numbers. This could lead to unstable packet ordering or undefined behavior, resulting in a denial of service.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-475"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-18",
+    "updated": "2026-10-13",
+    "url": "https://access.redhat.com/errata/RHSA-2026:13274",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-42010",
+    "title": "Gnutls: gnutls: authentication bypass via nul character in username",
+    "desc": "A flaw was found in gnutls. Servers configured with RSA-PSK (Rivest–Shamir–Adleman – Pre-Shared Key) wrongfully matched usernames containing a NUL character with truncated usernames. A remote attacker could exploit this by sending a specially crafted username, leading to an authentication bypass. This vulnerability allows an attacker to gain unauthorized access by circumventing the authentication ",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-170"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-07",
+    "updated": "2026-10-13",
+    "url": "https://access.redhat.com/errata/RHSA-2026:13274",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-42012",
+    "title": "Gnutls: gnutls: certificate validation bypass due to improper handling of uri and srv sans",
+    "desc": "A flaw was found in gnutls. A remote attacker could exploit this vulnerability by presenting a specially crafted certificate that contains Uniform Resource Identifier (URI) or Service (SRV) Subject Alternative Names (SANs). This could cause the certificate validation process to incorrectly fall back to checking DNS hostnames against the Common Name (CN), potentially allowing the attacker to spoof ",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-295"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-26",
+    "updated": "2026-10-13",
+    "url": "https://access.redhat.com/errata/RHSA-2026:13274",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-42013",
+    "title": "Gnutls: gnutls: certificate validation bypass due to oversized subject alternative name",
+    "desc": "A flaw was found in gnutls. When validating certificates, an oversized Subject Alternative Name (SAN) could cause the validation process to incorrectly fall back to checking the Common Name (CN) field. This could allow a remote attacker to bypass proper certificate validation, potentially leading to spoofing or man-in-the-middle attacks.",
+    "cvss": 8.2,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-295"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-26",
+    "updated": "2026-10-13",
+    "url": "https://access.redhat.com/errata/RHSA-2026:13274",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-42014",
+    "title": "Gnutls: gnutls: use-after-free in gnutls_pkcs11_token_set_pin",
+    "desc": "A flaw was found in GnuTLS. The `gnutls_pkcs11_token_set_pin` function, used for changing the Security Officer PIN, can lead to a use-after-free vulnerability. This occurs when an attacker attempts to change the PIN with a NULL old PIN for a token that lacks a protected authentication path.",
+    "cvss": 6.6,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-825"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-16",
+    "updated": "2026-10-13",
+    "url": "https://access.redhat.com/errata/RHSA-2026:13274",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-42015",
+    "title": "Gnutls: gnutls: memory corruption due to off-by-one error in pkcs#12 bag handling",
+    "desc": "A flaw was found in gnutls. An off-by-one error exists in the PKCS#12 bag element bounds check. This vulnerability allows an remote attacker to write past the internal array of a PKCS#12 bag when appending to a bag that already contains 32 elements. This memory corruption could lead to a denial of service (DoS) or potentially other unspecified impacts.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-193"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-26",
+    "updated": "2026-10-13",
+    "url": "https://access.redhat.com/errata/RHSA-2026:13274",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-5260",
+    "title": "Gnutls: gnutls: information disclosure via heap overread in rsa key exchange",
+    "desc": "A flaw was found in libgnutls. A remote attacker, by sending an extremely short premaster secret during an RSA key exchange to a server using an RSA key backed by a PKCS#11 token, could trigger a short heap overread. This memory corruption vulnerability could lead to information disclosure.",
+    "cvss": 8.2,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-126"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-05-26",
+    "updated": "2026-10-13",
+    "url": "https://access.redhat.com/errata/RHSA-2026:13274",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-27895",
+    "title": "DB2 Recovery Expert for Linux, UNIX and Windows Cross-Site Scripting",
+    "desc": "IBM DB2 Recovery Expert for Linux, UNIX and Windows 5.5 IF 2 is vulnerable to cross-site scripting. This vulnerability allows an unauthenticated attacker to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session.",
+    "cvss": 6.1,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "DB2 Recovery Expert for Linux, UNIX and Windows"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7290893",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-27896",
+    "title": "IBM Db2 Recovery Expert for Linux, Unix and Windows Cross-Site Scripting",
+    "desc": "IBM Db2 Recovery Expert for Linux, UNIX and Windows 5.5 IF 2 is vulnerable to cross-site scripting. This vulnerability allows an unauthenticated attacker to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session.",
+    "cvss": 6.1,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "DB2 Recovery Expert for Linux, UNIX and Windows"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7290893",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-27897",
+    "title": "IBM Db2 Recovery Expert for Linux, Unix and Windows Cross-Site Scripting",
+    "desc": "IBM Db2 Recovery Expert for Linux, UNIX and Windows 5.5 IF 2 is vulnerable to cross-site scripting. This vulnerability allows an unauthenticated attacker to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session.",
+    "cvss": 6.1,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "DB2 Recovery Expert for Linux, UNIX and Windows"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7290893",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-27902",
+    "title": "IBM Db2 Recovery Expert for Linux, Unix and Windows Information Disclosure",
+    "desc": "IBM DB2 Recovery Expert for Linux, UNIX and Windows 5.5 IF 2 uses a web link with untrusted references to an external site. A remote attacker could exploit this vulnerability to expose sensitive information or perform unauthorized actions on the victims’ web browser",
+    "cvss": 6.1,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-1022"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "DB2 Recovery Expert for Linux, UNIX and Windows"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7290893",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-103080",
+    "title": "WordPress Salevo plugin <= 1.3.0 - Broken Access Control vulnerability",
+    "desc": "External Control of Assumed-Immutable Web Parameter vulnerability in VillaTheme Salevo woo-boost-sales allows Input Data Manipulation.This issue affects Salevo: from n/a through 1.3.0.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-472"
+    ],
+    "affected": [
+      {
+        "vendor": "VillaTheme",
+        "product": "Salevo"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://patchstack.com/database/wordpress/plugin/woo-boost-sales/vulnerability/wordpress-salevo-plugin-1-3-0-broken-access-control-vulnerability?_s_id=cve",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-104332",
+    "title": "IBM® Db2® Denial of Service",
+    "desc": "IBM Db2 11.5.0 through 11.5.9, and 12.1.0 through 12.1.5 is vulnerable to a denial of service when executing a specially crafted query with a Materialized Query Table",
+    "cvss": 5.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-121"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Db2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7291614",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-104364",
+    "title": "IBM® Db2® Denial of Service",
+    "desc": "IBM Db2 11.5.0 through 11.5.9, and 12.1.0 through 12.1.5 could allow a local attacker to cause a denial of service due to improper input validation.",
+    "cvss": 3.3,
+    "severity": "LOW",
+    "cwes": [
+      "CWE-20"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Db2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7291615",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-105466",
+    "title": "IBM® Db2® is vulnerable to a denial of service when inserting into a table with XML columns under specific conditions",
+    "desc": "IBM Db2 11.5.0 through 11.5.9, and 12.1.0 through 12.1.5 is vulnerable to a denial of service when inserting into a table with XML columns under specific conditions.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-770"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Db2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7291608",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-107418",
+    "title": "WordPress Booktics plugin <= 1.0.28 - Broken Access Control vulnerability",
+    "desc": "Missing Authorization vulnerability in Arraytics Booktics booktics allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Booktics: from n/a through 1.0.28.",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "Arraytics",
+        "product": "Booktics"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://patchstack.com/database/wordpress/plugin/booktics/vulnerability/wordpress-booktics-plugin-1-0-28-broken-access-control-vulnerability-2?_s_id=cve",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-107862",
+    "title": "WordPress Quiz And Survey Master plugin <= 11.2.7 - Cross Site Scripting (XSS) vulnerability",
+    "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in ExpressTech Quiz And Survey Master quiz-master-next allows DOM-Based XSS.This issue affects Quiz And Survey Master: from n/a through 11.2.7.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "ExpressTech",
+        "product": "Quiz And Survey Master"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://patchstack.com/database/wordpress/plugin/quiz-master-next/vulnerability/wordpress-quiz-and-survey-master-plugin-11-2-7-cross-site-scripting-xss-vulnerability-2?_s_id=cve",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-108474",
+    "title": "In JetBrains Exposed before 1.5.1 sQL injection was possible via unescaped string arguments of several SQL functions",
+    "desc": "In JetBrains Exposed before 1.5.1 sQL injection was possible via unescaped string arguments of several SQL functions",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "JetBrains",
+        "product": "Exposed"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-09",
+    "updated": "2026-10-12",
+    "url": "https://www.jetbrains.com/privacy-security/issues-fixed/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-108475",
+    "title": "WordPress Broadcast Live Video plugin <= 7.3.6 - Broken Access Control vulnerability",
+    "desc": "Missing Authorization vulnerability in VideoWhisper.com Broadcast Live Video videowhisper-live-streaming-integration allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Broadcast Live Video: from n/a through 7.3.6.",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "VideoWhisper.com",
+        "product": "Broadcast Live Video"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://patchstack.com/database/wordpress/plugin/videowhisper-live-streaming-integration/vulnerability/wordpress-broadcast-live-video-plugin-7-3-6-broken-access-control-vulnerability?_s_id=cve",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-108476",
+    "title": "WordPress Paid Videochat Turnkey Site plugin <= 7.5.13 - Broken Access Control vulnerability",
+    "desc": "Missing Authorization vulnerability in VideoWhisper.com Paid Videochat Turnkey Site ppv-live-webcams allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Paid Videochat Turnkey Site: from n/a through 7.5.13.",
+    "cvss": 5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "VideoWhisper.com",
+        "product": "Paid Videochat Turnkey Site"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://patchstack.com/database/wordpress/plugin/ppv-live-webcams/vulnerability/wordpress-paid-videochat-turnkey-site-plugin-7-5-13-broken-access-control-vulnerability?_s_id=cve",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-108477",
+    "title": "WordPress Booktics plugin <= 1.0.28 - Broken Access Control vulnerability",
+    "desc": "Missing Authorization vulnerability in Arraytics Booktics booktics allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Booktics: from n/a through 1.0.28.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "Arraytics",
+        "product": "Booktics"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://patchstack.com/database/wordpress/plugin/booktics/vulnerability/wordpress-booktics-plugin-1-0-28-broken-access-control-vulnerability?_s_id=cve",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-108478",
+    "title": "WordPress Element Pack Elementor Addons plugin <= 8.8.8 - Cross Site Scripting (XSS) vulnerability",
+    "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in BdThemes Element Pack Elementor Addons bdthemes-element-pack-lite allows Stored XSS.This issue affects Element Pack Elementor Addons: from n/a through 8.8.8.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "BdThemes",
+        "product": "Element Pack Elementor Addons"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://patchstack.com/database/wordpress/plugin/bdthemes-element-pack-lite/vulnerability/wordpress-element-pack-elementor-addons-plugin-8-8-8-cross-site-scripting-xss-vulnerability?_s_id=cve",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-108479",
+    "title": "WordPress Patreon WordPress plugin <= 1.9.17 - Cross Site Request Forgery (CSRF) vulnerability",
+    "desc": "Cross-Site Request Forgery (CSRF) vulnerability in Patreon Patreon WordPress patreon-connect allows Cross Site Request Forgery.This issue affects Patreon WordPress: from n/a through 1.9.17.",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-352"
+    ],
+    "affected": [
+      {
+        "vendor": "Patreon",
+        "product": "Patreon WordPress"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://patchstack.com/database/wordpress/plugin/patreon-connect/vulnerability/wordpress-patreon-wordpress-plugin-1-9-17-cross-site-request-forgery-csrf-vulnerability?_s_id=cve",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-108481",
+    "title": "WordPress Patreon WordPress plugin <= 1.10.0 - Cross Site Request Forgery (CSRF) vulnerability",
+    "desc": "Cross-Site Request Forgery (CSRF) vulnerability in Patreon Patreon WordPress patreon-connect allows Cross Site Request Forgery.This issue affects Patreon WordPress: from n/a through 1.10.0.",
+    "cvss": 7.4,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-352"
+    ],
+    "affected": [
+      {
+        "vendor": "Patreon",
+        "product": "Patreon WordPress"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://patchstack.com/database/wordpress/plugin/patreon-connect/vulnerability/wordpress-patreon-wordpress-plugin-1-10-0-cross-site-request-forgery-csrf-vulnerability?_s_id=cve",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-108482",
+    "title": "WordPress Premium Addons for Elementor plugin <= 4.11.110 - Cross Site Scripting (XSS) vulnerability",
+    "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in LeapWorx Premium Addons for Elementor premium-addons-for-elementor allows Stored XSS.This issue affects Premium Addons for Elementor: from n/a through 4.11.110.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "LeapWorx",
+        "product": "Premium Addons for Elementor"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://patchstack.com/database/wordpress/plugin/premium-addons-for-elementor/vulnerability/wordpress-premium-addons-for-elementor-plugin-4-11-110-cross-site-scripting-xss-vulnerability?_s_id=cve",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-108486",
+    "title": "WordPress Forminator plugin <= 1.58.0 - Broken Access Control vulnerability",
+    "desc": "Missing Authorization vulnerability in WPMU DEV Forminator forminator allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Forminator: from n/a through 1.58.0.",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "WPMU DEV",
+        "product": "Forminator"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://patchstack.com/database/wordpress/plugin/forminator/vulnerability/wordpress-forminator-plugin-1-58-0-broken-access-control-vulnerability?_s_id=cve",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-11936",
+    "title": "Security vulnerabilities have been found in IBM Verify Identity Access and IBM Security Verify Access",
+    "desc": "IBM Security Verify Access 10.0 through 10.0.9.2 and IBM Verify Identity Access 11.0 through 11.0.3 local management interface in certain configurations is vulnerable to cross-site scripting. This vulnerability allows an authenticated user to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session",
+    "cvss": 4.9,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Security Verify Access"
+      },
+      {
+        "vendor": "IBM",
+        "product": "Verify Identity Access"
+      },
+      {
+        "vendor": "IBM",
+        "product": "Security Verify Access Container"
+      },
+      {
+        "vendor": "IBM",
+        "product": "Verify Identity Access Container"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-08",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7291628",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-11939",
+    "title": "Security vulnerabilities have been found in IBM Verify Identity Access and IBM Security Verify Access",
+    "desc": "IBM Security Verify Access 10.0 through 10.0.9.2 and IBM Verify Identity Access 11.0 through 11.0.3 may be vulnerable to audit log forgery.",
+    "cvss": 2.7,
+    "severity": "LOW",
+    "cwes": [
+      "CWE-88"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Security Verify Access"
+      },
+      {
+        "vendor": "IBM",
+        "product": "Verify Identity Access"
+      },
+      {
+        "vendor": "IBM",
+        "product": "Security Verify Access Container"
+      },
+      {
+        "vendor": "IBM",
+        "product": "Verify Identity Access Container"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-08",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7291628",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-12091",
+    "title": "Security vulnerabilities have been found in IBM Verify Identity Access and IBM Security Verify Access",
+    "desc": "IBM Security Verify Access 10.0 through 10.0.9.2 and IBM Verify Identity Access 11.0 through 11.0.3 could allow a denial of service due to a heap-based out-of-bounds read. A remote attacker could send a specially crafted request that causes a limited out‑of‑bounds memory read.",
+    "cvss": 3.7,
+    "severity": "LOW",
+    "cwes": [
+      "CWE-125"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Security Verify Access"
+      },
+      {
+        "vendor": "IBM",
+        "product": "Verify Identity Access"
+      },
+      {
+        "vendor": "IBM",
+        "product": "Security Verify Access Container"
+      },
+      {
+        "vendor": "IBM",
+        "product": "Verify Identity Access Container"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-08",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7291628",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-16678",
+    "title": "IBM Power Systems Firmware Denial of Service",
+    "desc": "IBM Power Systems Firmware FW1110.00 through FW1110.31, FW1120.00 through FW1120.01, and FW1060.00 through FW1060.81 could allow a remote authenticated attacker to cause a denial of service by exhausting connection resources due to improper resource management.",
+    "cvss": 4.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-772"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Virtualization Management Interface"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7287270",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-16830",
+    "title": "Security vulnerabilities have been found in IBM Verify Identity Access and IBM Security Verify Access",
+    "desc": "IBM Security Verify Access 10.0 through 10.0.9.2 and IBM Verify Identity Access 11.0 through 11.0.3 could allow a remote authenticated attacker to modify data and cause a denial of service due to an SQL injection vulnerability.",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-89"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Security Verify Access"
+      },
+      {
+        "vendor": "IBM",
+        "product": "Verify Identity Access"
+      },
+      {
+        "vendor": "IBM",
+        "product": "Security Verify Access Container"
+      },
+      {
+        "vendor": "IBM",
+        "product": "Verify Identity Access Container"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-08",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7291628",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-18166",
+    "title": "IBM® Db2® is vulnerable to arbitrary library loading via the CREATE WRAPPER command, allowing a privileged database user to read sensitive files from the host filesystem",
+    "desc": "IBM Db2 11.5.0 through 11.5.9, and 12.1.0 through 12.1.5 for Linux, UNIX and Windows (includes DB2 Connect Server) could allow a remote authenticated attacker to obtain sensitive information due to improper authorization when using the CREATE WRAPPER command.",
+    "cvss": 7.7,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-284"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Db2"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7291606",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-19493",
+    "title": "Security vulnerabilities have been found in IBM Verify Identity Access and IBM Security Verify Access",
+    "desc": "IBM Security Verify Access 10.0 through 10.0.9.2 and IBM Verify Identity Access 11.0 through 11.0.3 could allow a remote attacker to perform an arbitrary file write due to path traversal.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Security Verify Access"
+      },
+      {
+        "vendor": "IBM",
+        "product": "Verify Identity Access"
+      },
+      {
+        "vendor": "IBM",
+        "product": "Security Verify Access Container"
+      },
+      {
+        "vendor": "IBM",
+        "product": "Verify Identity Access Container"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-08",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7291628",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-22061",
+    "title": "CVE-2026-22061 Debug Log Information Disclosure Vulnerability in Trident",
+    "desc": "Trident versions v25.02.1 through v26.06.1 are susceptible to a vulnerability that could allow an authenticated attacker with access to debug logs to view LUKS passphrases or SMB Active Directory credentials.",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-215"
+    ],
+    "affected": [
+      {
+        "vendor": "NetApp",
+        "product": "Trident"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-09",
+    "updated": "2026-10-12",
+    "url": "https://security.netapp.com/advisory/NTAP-20261009-0026",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-32645",
+    "title": "Red Lion Controls N-Tron 700 Series Use of Hard-Coded Credentials",
+    "desc": "Default factory credentials with administrative access are enabled and persist even after configuring other administrator accounts.",
+    "cvss": 6,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-798"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Lion Controls",
+        "product": "700 Series"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-09",
+    "updated": "2026-10-12",
+    "url": "https://www.hms-networks.com/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-33818",
+    "title": "Enforce maximum recursion depth in encoding/asn1",
+    "desc": "Enforce a recursion limit in Unmarshal to prevent stack exhaustion when parsing deeply-nested, recursive structures.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Go standard library",
+        "product": "encoding/asn1"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-13",
+    "updated": "2026-10-12",
+    "url": "https://go.dev/issue/80405",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-39460",
+    "title": "Red Lion Controls N-Tron 700 Series Insufficiently Protected Credentials",
+    "desc": "Usernames and passwords, including the default factory credentials, are stored in plaintext within the configuration file. With administrator rights, the configuration file can be viewed through the CLI or they can be exported from the device through a TFTP transfer from the web interface. A TFTP transfer can be initiated through SNMP which does not require authentication.",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-522"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Lion Controls",
+        "product": "700 Series"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-09",
+    "updated": "2026-10-12",
+    "url": "https://www.hms-networks.com/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-42504",
+    "title": "Quadratic complexity in WordDecoder.DecodeHeader in mime",
+    "desc": "Decoding a maliciously-crafted MIME header containing many invalid encoded-words can consume excessive CPU.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Go standard library",
+        "product": "mime"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-02",
+    "updated": "2026-10-12",
+    "url": "https://go.dev/issue/79217",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-42689",
+    "title": "WordPress Events Manager plugin <= 7.4.7 - Race Condition vulnerability",
+    "desc": "Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition') vulnerability in Pixelite Events Manager events-manager allows Leveraging Race Conditions.This issue affects Events Manager: from n/a through 7.4.7.",
+    "cvss": 3.7,
+    "severity": "LOW",
+    "cwes": [
+      "CWE-362"
+    ],
+    "affected": [
+      {
+        "vendor": "Pixelite",
+        "product": "Events Manager"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://patchstack.com/database/wordpress/plugin/events-manager/vulnerability/wordpress-events-manager-plugin-7-4-7-race-condition-vulnerability?_s_id=cve",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-61994",
+    "title": "WordPress WP-Members plugin <= 3.5.7 - Broken Access Control vulnerability",
+    "desc": "Missing Authorization vulnerability in RocketGeek WP-Members wp-members allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WP-Members: from n/a through 3.5.7.",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-862"
+    ],
+    "affected": [
+      {
+        "vendor": "RocketGeek",
+        "product": "WP-Members"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://patchstack.com/database/wordpress/plugin/wp-members/vulnerability/wordpress-wp-members-plugin-3-5-7-broken-access-control-vulnerability?_s_id=cve",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-78388",
+    "title": "Security vulnerabilities have been found in IBM Verify Identity Access and IBM Security Verify Access",
+    "desc": "IBM Security Verify Access 10.0 through 10.0.9.2 and IBM Verify Identity Access 11.0 through 11.0.3 is vulnerable to cross-site request forgery which could allow an attacker to execute malicious and unauthorized actions transmitted from a user that the website trusts.",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-352"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Security Verify Access"
+      },
+      {
+        "vendor": "IBM",
+        "product": "Verify Identity Access"
+      },
+      {
+        "vendor": "IBM",
+        "product": "Security Verify Access Container"
+      },
+      {
+        "vendor": "IBM",
+        "product": "Verify Identity Access Container"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-08",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7291628",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-78399",
+    "title": "Security vulnerabilities have been found in IBM Verify Identity Access and IBM Security Verify Access",
+    "desc": "IBM Security Verify Access 10.0 through 10.0.9.2 and IBM Verify Identity Access 11.0 through 11.0.3 could allow an authenticated user to cause a denial of service using a specially crafted HTTP query due to improper allocation of system resources",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-770"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Security Verify Access"
+      },
+      {
+        "vendor": "IBM",
+        "product": "Verify Identity Access"
+      },
+      {
+        "vendor": "IBM",
+        "product": "Security Verify Access Container"
+      },
+      {
+        "vendor": "IBM",
+        "product": "Verify Identity Access Container"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-08",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7291628",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-81932",
+    "title": "Multiple vulnerabilities affect the Sniffer component as part of IBM Guardium Data Protection",
+    "desc": "IBM Guardium Data Protection 12.0, 12.1, and 12.2 is vulnerable to SQL injection. A remote unauthenticated attacker could send specially crafted SQL statements, which could allow the attacker to view, add, modify, or delete information in the back-end database.",
+    "cvss": 8.6,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-89"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Guardium Data Protection"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-08",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7291674",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-82096",
+    "title": "DataStage on Cloud Pak for Data Command Injection",
+    "desc": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary commands due to improper neutralization of special elements used in an OS command.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-78"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "DataStage on Cloud Pak for Data"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7288649",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-82101",
+    "title": "DataStage on Cloud Pak for Data Path Traversal",
+    "desc": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to cause a denial of service due to a path traversal vulnerability.",
+    "cvss": 9.6,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "DataStage on Cloud Pak for Data"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7288649",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-82108",
+    "title": "DataStage on Cloud Pak for Data Code Injection",
+    "desc": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in an OS command.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-94"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "DataStage on Cloud Pak for Data"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7288649",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-82110",
+    "title": "DataStage on Cloud Pak for Data Path Traversal",
+    "desc": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary code due to improper validation of pathname during a path traversal.",
+    "cvss": 9.6,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "DataStage on Cloud Pak for Data"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7288649",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-84275",
+    "title": "IBM Guardium Data Protection Path Traversal",
+    "desc": "IBM Guardium Data Protection 12.2 is vulnerable to path traversal in the GIM file-upload functionality. An unauthenticated attacker could exploit this vulnerability to write arbitrary files to the Collector.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Guardium Data Protection"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-08",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7288035",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-84276",
+    "title": "IBM Guardium Data Protection Denial of Service",
+    "desc": "IBM Guardium Data Protection 12.2.2 is affected by a denial-of-service vulnerability in the edge-controller. An unauthenticated remote attacker with network access to the edge-controller gRPC service can provide malformed task data that triggers an unchecked type assertion, causing the edge-controller process to terminate unexpectedly.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-400"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Guardium Data Protection"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-08",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7288627",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-84290",
+    "title": "Security vulnerability affects the Windows S-TAP component as part of IBM Guardium Data Protection",
+    "desc": "IBM Guardium Data Protection 12.0, 12.1, 12.2 is affected by an improper validation of user-supplied pointers in the WfpMonitor kernel driver. Certain METHOD_NEITHER IOCTL handlers dereference user-controlled pointers without adequate probing and exception handling, potentially allowing a privileged local attacker to cause a system crash or perform limited kernel-memory reads.",
+    "cvss": 5.1,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-119"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "Guardium Data Protection"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-08",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7291676",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-84418",
+    "title": "DataStage on Cloud Pak for Data Improper Certificate Validation",
+    "desc": "IBM DataStage on Cloud Pak for Data 5.4.0.0 can allow a man-in-the-middle attacker to present a forged TLS certificate, intercept the connection, and capture the IAM bearer Authorization header automatically attached by the session adapter. The captured token grants full platform-scope tenant API access, enabling the attacker to read and manipulate the victim's DataStage projects, flows, assets, a",
+    "cvss": 7.4,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-295"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "DataStage on Cloud Pak for Data"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7288649",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-85531",
+    "title": "Payment Validation Bypass in Sipay Electronic Money's OpenCart 3.x",
+    "desc": "Improper verification of cryptographic signature vulnerability in Sipay Electronic Money and Payment Services Inc. OpenCart Virtual POS Module allows Signature Spoofing by Improper Validation.\n\nThis issue affects OpenCart Virtual POS Module: from 26.8.2 before 26.9.1.",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-347"
+    ],
+    "affected": [
+      {
+        "vendor": "Sipay Electronic Money and Payment Services Inc.",
+        "product": "OpenCart Virtual POS Module"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-09",
+    "updated": "2026-10-12",
+    "url": "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-1286",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-86405",
+    "title": "Payment Validation Bypass in Sipay Electronic Money's SanalPos PrestaShop",
+    "desc": "Improper verification of cryptographic signature vulnerability in Sipay Electronic Money and Payment Services Inc. PrestaShop Virtual POS Module allows Signature Spoofing by Improper Validation.\n\nThis issue affects PrestaShop Virtual POS Module: from 26.8.1 before 26.9.1.",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-347"
+    ],
+    "affected": [
+      {
+        "vendor": "Sipay Electronic Money and Payment Services Inc.",
+        "product": "PrestaShop Virtual POS Module"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-09",
+    "updated": "2026-10-12",
+    "url": "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-1287",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-96261",
+    "title": "IBM Power Systems Firmware Buffer Overflow",
+    "desc": "IBM Power Systems Firmware FW1060.00 through FW1060.81 is affected by a vulnerability in host firmware configuration parsing. An attacker with authenticated service-level access to the service processor can write specially crafted configuration data, causing the host firmware boot stack to crash with possible memory corruption during system initialisation, resulting in an integrity and availabilit",
+    "cvss": 7.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-121"
+    ],
+    "affected": [
+      {
+        "vendor": "IBM",
+        "product": "PowerVM Hypervisor"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "url": "https://www.ibm.com/support/pages/node/7290127",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-6170",
+    "title": "Libxml2: stack buffer overflow in xmllint interactive shell command handling",
+    "desc": "A flaw was found in the interactive shell of the xmllint command-line tool, used for parsing XML files. When a user inputs an overly long command, the program does not check the input size properly, which can cause it to crash. This issue might allow attackers to run harmful code in rare configurations without modern protections.",
+    "cvss": 2.5,
+    "severity": "LOW",
+    "cwes": [
+      "CWE-121"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-06-16",
+    "updated": "2026-10-12",
+    "url": "https://access.redhat.com/errata/RHSA-2026:36734",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-107655",
+    "title": "Cups: null pointer dereference via embedded job ticket comments allows remote denial of service",
+    "desc": "A flaw was found in CUPS. When processing embedded job ticket comments within documents, the service improperly handles specific IPP attributes, causing an unhandled null pointer dereference. An unauthenticated attacker permitted to submit jobs to a shared printer queue can send a crafted Internet Printing Protocol (IPP) request to crash the print daemon, resulting in a temporary Denial of Service",
+    "cvss": 4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-476"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Hardened Images"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-10-09",
+    "updated": "2026-10-12",
+    "url": "https://access.redhat.com/errata/RHSA-2026:80679",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-13757",
+    "title": "P11-kit: stack exhaustion via unbounded recursion in rpc attribute parsing",
+    "desc": "A flaw was found in p11-kit. The RPC message attribute parsing functions p11_rpc_message_get_attribute() and p11_rpc_message_get_attribute_array_value() form a mutually-recursive call chain with no recursion depth limit when processing nested CKA_WRAP_TEMPLATE, CKA_UNWRAP_TEMPLATE, and CKA_DERIVE_TEMPLATE attributes. An unauthenticated attacker with local access to the p11-kit RPC Unix domain sock",
+    "cvss": 6.2,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-674"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Cert Manager support for Red Hat OpenShift release 1.20"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Cert Manager support for Red Hat OpenShift release 1.20"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-29",
+    "updated": "2026-10-12",
+    "url": "https://access.redhat.com/errata/RHSA-2026:37469",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-15588",
+    "title": "Gdbusserver: glib2: gdbusserver pre-authentication dos via unbounded sasl line buffering",
+    "desc": "A denial-of-service and resource exhaustion vulnerability exists within the `GDBus` component of GLib. The `gdbusauth` authentication mechanism fails to enforce proper length limitations on data lines read from a client. An unauthenticated local or remote attacker can exploit this lack of input validation by sending excessively long streams of data, causing the application to consume massive amoun",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-770"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-20",
+    "updated": "2026-10-12",
+    "url": "https://access.redhat.com/errata/RHSA-2026:39985",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-16118",
+    "title": "Xdgmime: heap-based buffer overflow in _xdg_mime_magic_parse_magic_line() in xdgmimemagic.c",
+    "desc": "A flaw was found in xdgmime. A heap-based buffer overflow can be triggered in _xdg_mime_magic_parse_magic_line() in the xdgmimemagic.c file on little-endian systems when an attacker-controlled MIME magic file in a user-writable XDG data location (e.g., in the $XDG_DATA_HOME/mime/magic path) is parsed by an application performing MIME type detection (e.g., via g_content_type_guess()). When performi",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-122"
+    ],
+    "affected": [
+      {
+        "vendor": "xdg",
+        "product": "xdgmime"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-07-17",
+    "updated": "2026-10-12",
+    "url": "https://access.redhat.com/errata/RHSA-2026:64799",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-18255",
+    "title": "Quay: quay: global read-only superuser can view robot account tokens",
+    "desc": "A flaw was found in Quay. A user configured in GLOBAL_READONLY_SUPER_USERS is able to view robot account tokens for repositories they are not a member of, allowing an attacker with read-only superuser privileges to impersonate any robot account.",
+    "cvss": 7.2,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-863"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Quay 3.10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Quay 3.12"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Quay 3.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Quay 3.15"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Quay 3.16"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-29",
+    "updated": "2026-10-12",
+    "url": "https://access.redhat.com/errata/RHSA-2026:63307",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-18382",
+    "title": "Project-koku/koku-metrics-operator: koku-metrics-operator: service-account client credentials sent to user-controlled token_url",
+    "desc": "A flaw was found in koku-metrics-operator. The operator's CostManagementMetricsConfig custom resource allows a user able to edit the CR to specify an arbitrary OAuth token endpoint. When authentication.type is set to service-account, the operator sends the tenant's Red Hat SSO client_id and client_secret to this user-controlled URL, allowing the attacker to obtain the credentials.",
+    "cvss": 6.8,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-918"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Cost Management 4"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-30",
+    "updated": "2026-10-12",
+    "url": "https://access.redhat.com/errata/RHSA-2026:81201",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-54099",
+    "title": "Windows-machine-config-operator: windows-machine-config-operator: wicd csr extra-organization allows privilege escalation to system:masters",
+    "desc": "A flaw was found in the Windows Machine Config Operator (WMCO) for Red Hat OpenShift Container Platform. The WICD CSR auto-approver validates that a Certificate Signing Request contains the organization system:wicd-nodes but does not reject additional organization values such as system:masters. A compromised Windows worker node that holds WICD credentials can submit a CSR that is auto-approved and",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-269"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift for Windows Containers 10.19"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift for Windows Containers 10.21"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift for Windows Containers 10.22"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-22",
+    "updated": "2026-10-12",
+    "url": "https://access.redhat.com/errata/RHSA-2026:47173",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-54100",
+    "title": "Windows-machine-config-operator: windows-machine-config-operator: ssh host key not verified enables credential theft",
+    "desc": "A flaw was found in the Windows Machine Config Operator (WMCO) for Red Hat OpenShift Container Platform. WMCO establishes SSH connections to Windows worker nodes without verifying the remote server host key. An adjacent-network attacker who can intercept or redirect WMCO's SSH session can capture WICD and kubelet bootstrap credentials transferred during node configuration, enabling compromise of W",
+    "cvss": 8.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-295"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift for Windows Containers 10.19"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift for Windows Containers 10.21"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift for Windows Containers 10.22"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-22",
+    "updated": "2026-10-12",
+    "url": "https://access.redhat.com/errata/RHSA-2026:47173",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58010",
+    "title": "Glib: buffer over-read in glib/gvariant-serialiser.c via gvs_tuple_is_normal()",
+    "desc": "A flaw was found in GLib. An off-by-one error can occur in the gvs_tuple_is_normal function in the glib/gvariant-serialiser.c file when doing an alignment padding check because the bounds check uses > instead of >=, causing an out-of-bounds read of only 1 byte. This issue can cause a minor information disclosure of 1 byte and a denial of service when the out-of-bounds read crosses a page boundary.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-126"
+    ],
+    "affected": [
+      {
+        "vendor": "GNOME",
+        "product": "GLib"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-30",
+    "updated": "2026-10-12",
+    "url": "https://access.redhat.com/errata/RHSA-2026:49512",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58011",
+    "title": "Glib: out-of-bounds read in glib/gdatetime.c:g_date_time_get_ymd via invalid gdatetime",
+    "desc": "A flaw was found in GLib. An out-of-bounds read of only 2 bytes can occur in the g_date_time_get_ymd function in the glib/gdatetime.c file when an invalid GDateTime object produced by the g_date_time_add_full function is processed. This flaw can corrupt the date output and potentially cause logic errors that may lead to a denial of service.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-125"
+    ],
+    "affected": [
+      {
+        "vendor": "GNOME",
+        "product": "GLib"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-06-30",
+    "updated": "2026-10-12",
+    "url": "https://access.redhat.com/errata/RHSA-2026:49512",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58012",
+    "title": "Glib: buffer over-read in g_regex_replace() via glib/gregex.c:string_append() and g_utf8_next_char()",
+    "desc": "A flaw was found in GLib. A buffer over-read can occur in the g_regex_replace function when used with the `G_REGEX_RAW` compile flag and case-change replacement escapes because the string_append function processes matched substrings using UTF-8 functions that assume valid UTF-8 input, even when the string is treated as raw bytes. This vulnerability can cause a minor information disclosure of 1-5 b",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-126"
+    ],
+    "affected": [
+      {
+        "vendor": "GNOME",
+        "product": "GLib"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-30",
+    "updated": "2026-10-12",
+    "url": "https://access.redhat.com/errata/RHSA-2026:49512",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58013",
+    "title": "Glib: buffer over-read in glib/giochannel.c via \"g_io_channel_read_line_backend\"",
+    "desc": "A flaw was found in GLib. A buffer over-read can occur in g_io_channel_read_line_backend() in the giochannel.c file when a custom line terminator with a length greater than one is set, causing memcmp to read past the GString buffer. This vulnerability can cause a minor information disclosure of 7 bytes or a denial of service when the buffer over-read crosses a page boundary.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-126"
+    ],
+    "affected": [
+      {
+        "vendor": "GNOME",
+        "product": "GLib"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-30",
+    "updated": "2026-10-12",
+    "url": "https://access.redhat.com/errata/RHSA-2026:49512",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58014",
+    "title": "Glib: off-by-one error in glib/gkeyfile.c via \"g_key_file_get_locale_string_list\"",
+    "desc": "A flaw was found in GLib. An off-by-one error can occur in the g_key_file_get_locale_string_list function in the gkeyfile.c file when loading a key file with an empty value. This flaw can cause an out-of-bounds access of 1 byte or a denial of service when the out-of-bounds access crosses a page boundary.",
+    "cvss": 7.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-193"
+    ],
+    "affected": [
+      {
+        "vendor": "GNOME",
+        "product": "GLib"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-06-30",
+    "updated": "2026-10-12",
+    "url": "https://access.redhat.com/errata/RHSA-2026:49512",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-58015",
+    "title": "Glib: path traversal in glib/gio/gdbusauthmechanismsha1.c via keyring_lookup_entry and mechanism_client_data_receive",
+    "desc": "A flaw was found in GLib. The D-Bus client-side implementation of the DBUS_COOKIE_SHA1 SASL authentication mechanism does not validate the cookie_context parameter received from the server. A malicious D-Bus server can supply a cookie_context containing path traversal sequences, causing the client to read an arbitrary file and exfiltrate sensitive data by verifying guessed file contents against a ",
+    "cvss": 5.9,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "GNOME",
+        "product": "GLib"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-30",
+    "updated": "2026-10-12",
+    "url": "https://access.redhat.com/errata/RHSA-2026:49512",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-66787",
+    "title": "Lighthouse: lighthouse: cross-cluster dns spoofing via unvalidated endpointslice ip addresses",
+    "desc": "A flaw was found in the lighthouse component of Red Hat Advanced Cluster Management for Kubernetes. This vulnerability stems from insufficient validation of advertised IP addresses within EndpointSlice objects. A compromised spoke cluster can exploit this by creating EndpointSlices with attacker-controlled IP addresses, causing other clusters' lighthouse DNS to redirect legitimate service traffic ",
+    "cvss": 8.7,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-345"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Advanced Cluster Management for Kubernetes 2.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Advanced Cluster Management for Kubernetes 2.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Advanced Cluster Management for Kubernetes 2.17"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Advanced Cluster Management for Kubernetes 2.17"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-20",
+    "updated": "2026-10-12",
+    "url": "https://access.redhat.com/errata/RHSA-2026:63016",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-97062",
+    "title": "Aureus ERP 1.6.0 Stored XSS via SVG File Upload",
+    "desc": "Aureus ERP through 1.6.0, fixed in commit 53ad76d, stores uploaded SVG files on its public disk and serves them from the application origin, allowing authenticated users to upload malicious SVG files containing JavaScript. Attackers can craft SVG files with script elements that execute in the application's origin when the file URL is opened directly, enabling session cookie theft and CSRF token ex",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Webkul",
+        "product": "Aureus ERP"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-09-24",
+    "updated": "2026-10-12",
+    "url": "https://github.com/aureuserp/aureuserp/pull/1574",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-33396",
+    "title": "An issue in karmada-io karmada v1.9.0 and before allows a local attacker to execute arbitrary code via a crafted command",
+    "desc": "An issue in karmada-io karmada v1.9.0 and before allows a local attacker to execute arbitrary code via a crafted command to get the token component. NOTE: Then maintainer states that the behavior is intended design and notes that the researcher advisory does not provide evidence of arbitrary code execution.",
+    "cvss": 8.4,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "n/a"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2024-05-02",
+    "updated": "2026-10-12",
+    "url": "https://gist.github.com/HouqiyuA/2b56a893c06553013982836abb77ba50",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-6021",
+    "title": "Libxml2: integer overflow in xmlbuildqname() leads to stack buffer overflow in libxml2",
+    "desc": "A flaw was found in libxml2's xmlBuildQName function, where integer overflows in buffer size calculations can lead to a stack-based buffer overflow. This issue can result in memory corruption or a denial of service when processing crafted input.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-787"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-06-12",
+    "updated": "2026-10-12",
+    "url": "https://access.redhat.com/errata/RHSA-2025:10630",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-104077",
+    "title": "Obsidian Desktop < 1.14.0 RCE via Slides Plugin Markdown",
+    "desc": "Obsidian Desktop before 1.14.0 contains a remote code execution vulnerability that allows attackers to craft malicious Markdown notes exploiting insufficient sanitization of the data-background-iframe attribute, which bypasses DOMPurify and is processed by the bundled Reveal.js 4.3.1 within the Slides core plugin, allowing a javascript: URL to execute in the resulting background iframe. Because No",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-79",
+      "CWE-1188"
+    ],
+    "affected": [
+      {
+        "vendor": "Obsidian",
+        "product": "Obsidian Desktop"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-08",
+    "updated": "2026-10-12",
+    "url": "https://obsidian.md/changelog/2026-10-05-desktop-v1.14.4/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-104078",
+    "title": "Obsidian Desktop < 1.14.0 RCE via MathJax Safe Filter Bypass",
+    "desc": "Obsidian Desktop before 1.14.0 contains a filter bypass vulnerability in the bundled MathJax 3.2.2 Safe component that allows attackers to execute arbitrary code by embedding a crafted \\href value with a TAB byte in the URL scheme, causing filterURL to produce an empty protocol that bypasses the configured safeProtocols restrictions. Attackers can craft a note containing a malicious MathJax formul",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-79",
+      "CWE-1188"
+    ],
+    "affected": [
+      {
+        "vendor": "Obsidian",
+        "product": "Obsidian Desktop"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-08",
+    "updated": "2026-10-12",
+    "url": "https://obsidian.md/changelog/2026-10-05-desktop-v1.14.4/",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-13201",
+    "title": "Kubevirt: virt-handler-rhel9: kubevirt: safepath symlink following in virt-handler enables notify socket hijacking and node-level vm disruption",
+    "desc": "A flaw was found in KubeVirt's safepath package used by virt-handler. The OpenAtNoFollow function uses O_PATH|O_NOFOLLOW to obtain a file descriptor to a path leaf, but downstream operations resolve the path via /proc/self/fd/N using link-following syscalls. When the leaf is a symlink, the kernel dereferences it, defeating the intended no-follow protection. An attacker with access to a virt-launch",
+    "cvss": 7.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-61"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.12"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.13"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.14"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.15"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Container Native Virtualization 4.16"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-24",
+    "updated": "2026-10-12",
+    "url": "https://access.redhat.com/errata/RHSA-2026:51031",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-18378",
+    "title": "Project-koku/koku-metrics-operator: koku-metrics-operator: cluster pull-secret token exfiltration via user-controlled api_url (ssrf / confused deputy)",
+    "desc": "A flaw was found in koku-metrics-operator. The operator's CostManagementMetricsConfig custom resource allows user able to edit the CR to specify an arbitrary upload URL. When authentication.type is set to token (the default), the cluster-global Red Hat Cloud pull-secret bearer token is attached to HTTP requests sent to this user-controlled URL, allowing the attacker to obtain the token.",
+    "cvss": 7.6,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-918"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Cost Management 4"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-30",
+    "updated": "2026-10-12",
+    "url": "https://access.redhat.com/errata/RHSA-2026:81201",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-18381",
+    "title": "Project-koku/koku-metrics-operator: koku-metrics-operator: operator service-account token exfiltration via user-controlled prometheus service_address",
+    "desc": "A flaw was found in the koku-metrics-operator for Red Hat OpenShift. The operator's CostManagementMetricsConfig custom resource allows a user able to edit the CR to specify an arbitrary upload URL. The operator attaches its own Kubernetes service-account bearer token to queries sent to this user-controlled URL, allowing the attacker to obtain the token.",
+    "cvss": 7.6,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-918"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Cost Management 4"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-07-30",
+    "updated": "2026-10-12",
+    "url": "https://access.redhat.com/errata/RHSA-2026:81201",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-86320",
+    "title": "Flatpak-builder: host code execution via `git am` hook execution in patch source extraction (`use-git-am`)",
+    "desc": "A flaw was found in flatpak-builder where Git hooks are not disabled when applying patch sources with use-git-am: true. An attacker who can provide a malicious source containing a Git post-applypatch hook can cause the hook to execute on the host during the build process, resulting in arbitrary code execution with the privileges of the user running flatpak-builder.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-94"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-09-17",
+    "updated": "2026-10-12",
+    "url": "https://access.redhat.com/errata/RHSA-2026:80495",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2025-7424",
     "title": "Libxslt: type confusion in xmlnode.psvi between stylesheet and source nodes",
     "desc": "A flaw was found in the libxslt library. The same memory field, psvi, is used for both stylesheet and input data, which can lead to type confusion during XML transformations. This vulnerability allows an attacker to crash the application or corrupt memory. In some cases, it may lead to denial of service or unexpected behavior.",
@@ -179,46 +2624,6 @@
     "published": "2026-10-05",
     "updated": "2026-10-12",
     "url": "https://access.redhat.com/security/cve/CVE-2026-105306",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-33818",
-    "title": "Enforce maximum recursion depth in encoding/asn1",
-    "desc": "Enforce a recursion limit in Unmarshal to prevent stack exhaustion when parsing deeply-nested, recursive structures.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Go standard library",
-        "product": "encoding/asn1"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-13",
-    "updated": "2026-10-12",
-    "url": "https://go.dev/issue/80405",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-42504",
-    "title": "Quadratic complexity in WordDecoder.DecodeHeader in mime",
-    "desc": "Decoding a maliciously-crafted MIME header containing many invalid encoded-words can consume excessive CPU.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Go standard library",
-        "product": "mime"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-02",
-    "updated": "2026-10-12",
-    "url": "https://go.dev/issue/79217",
     "source": "CISA Vulnrichment"
   },
   {
@@ -1708,44 +4113,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-79992",
-    "title": "Emacs: emacs: command injection via crafted filenames in tramp",
-    "desc": "A flaw was found in Emacs TRAMP. A local attacker could exploit this vulnerability by processing maliciously crafted filenames. This occurs because TRAMP concatenates login arguments without proper sanitization, which are then passed to a local shell. Successful exploitation could lead to arbitrary code execution.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-78"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 6"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-25",
-    "updated": "2026-10-12",
-    "url": "https://access.redhat.com/errata/RHSA-2026:80506",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-93687",
     "title": "braces through 3.0.3 Stack Overflow via Deeply Nested Patterns",
     "desc": "braces through 3.0.3 contains a stack overflow vulnerability in the recursive AST walkers that lack depth guards. Attackers can supply deeply nested brace patterns under the character limit to exhaust the call stack and terminate the Node.js process with an uncaught RangeError.",
@@ -2024,13 +4391,13 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-86320",
-    "title": "Flatpak-builder: host code execution via `git am` hook execution in patch source extraction (`use-git-am`)",
-    "desc": "A flaw was found in flatpak-builder where Git hooks are not disabled when applying patch sources with use-git-am: true. An attacker who can provide a malicious source containing a Git post-applypatch hook can cause the hook to execute on the host during the build process, resulting in arbitrary code execution with the privileges of the user running flatpak-builder.",
+    "cve": "CVE-2026-79992",
+    "title": "Emacs: emacs: command injection via crafted filenames in tramp",
+    "desc": "A flaw was found in Emacs TRAMP. A local attacker could exploit this vulnerability by processing maliciously crafted filenames. This occurs because TRAMP concatenates login arguments without proper sanitization, which are then passed to a local shell. Successful exploitation could lead to arbitrary code execution.",
     "cvss": 7.8,
     "severity": "HIGH",
     "cwes": [
-      "CWE-94"
+      "CWE-78"
     ],
     "affected": [
       {
@@ -2039,18 +4406,26 @@
       },
       {
         "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
       },
       {
         "vendor": "Red Hat",
         "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
       }
     ],
-    "exploitation": "poc",
+    "exploitation": "none",
     "isKev": false,
-    "published": "2026-09-17",
-    "updated": "2026-10-12",
-    "url": "https://access.redhat.com/errata/RHSA-2026:80495",
+    "published": "2026-08-25",
+    "updated": "2026-10-11",
+    "url": "https://access.redhat.com/security/cve/CVE-2026-79992",
     "source": "CISA Vulnrichment"
   },
   {
@@ -14441,44 +16816,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-107655",
-    "title": "Cups: null pointer dereference via embedded job ticket comments allows remote denial of service",
-    "desc": "A flaw was found in CUPS. When processing embedded job ticket comments within documents, the service improperly handles specific IPP attributes, causing an unhandled null pointer dereference. An unauthenticated attacker permitted to submit jobs to a shared printer queue can send a crafted Internet Printing Protocol (IPP) request to crash the print daemon, resulting in a temporary Denial of Service",
-    "cvss": 4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-476"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 6"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-10-09",
-    "updated": "2026-10-09",
-    "url": "https://access.redhat.com/security/cve/CVE-2026-107655",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-107704",
     "title": "image_optimizer 1.3.0 through 1.9.0 OS Command Injection via identify_format",
     "desc": "The image_optimizer Ruby gem 1.3.0 through 1.9.0 contains an OS command injection vulnerability in ImageOptimizer#identify_format that allows attackers to execute commands by supplying a crafted image path when the identify option is enabled. Attackers controlling the path, such as an uploaded file name, can append shell metacharacters like ';' that are executed via Ruby backticks with the Ruby pr",
@@ -15050,44 +17387,6 @@
     "published": "2026-05-11",
     "updated": "2026-10-09",
     "url": "https://github.com/erlef/cowlib/commit/177953dd51540da11090666c1f007214127a1144",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-58015",
-    "title": "Glib: path traversal in glib/gio/gdbusauthmechanismsha1.c via keyring_lookup_entry and mechanism_client_data_receive",
-    "desc": "A flaw was found in GLib. The D-Bus client-side implementation of the DBUS_COOKIE_SHA1 SASL authentication mechanism does not validate the cookie_context parameter received from the server. A malicious D-Bus server can supply a cookie_context containing path traversal sequences, causing the client to read an arbitrary file and exfiltrate sensitive data by verifying guessed file contents against a ",
-    "cvss": 5.9,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-22"
-    ],
-    "affected": [
-      {
-        "vendor": "GNOME",
-        "product": "GLib"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-30",
-    "updated": "2026-10-09",
-    "url": "https://access.redhat.com/errata/RHSA-2026:49512",
     "source": "CISA Vulnrichment"
   },
   {
@@ -17347,44 +19646,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-42013",
-    "title": "Gnutls: gnutls: certificate validation bypass due to oversized subject alternative name",
-    "desc": "A flaw was found in gnutls. When validating certificates, an oversized Subject Alternative Name (SAN) could cause the validation process to incorrectly fall back to checking the Common Name (CN) field. This could allow a remote attacker to bypass proper certificate validation, potentially leading to spoofing or man-in-the-middle attacks.",
-    "cvss": 8.2,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-295"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-05-26",
-    "updated": "2026-10-09",
-    "url": "https://access.redhat.com/errata/RHSA-2026:13274",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-93488",
     "title": "Io.netty/netty-codec-http: netty: denial of service via unbounded concurrent spdy streams",
     "desc": "A flaw was found in Netty. SpdySessionHandler accepts an unlimited number of concurrent remote-initiated streams because localConcurrentStreams defaults to Integer.MAX_VALUE and the handler provides no API to change it. A remote peer can open a SPDY connection and send a large number of SYN_STREAM frames with FLAG_FIN=0, causing unbounded heap and direct memory allocation that can lead to JVM OutO",
@@ -18279,44 +20540,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-5260",
-    "title": "Gnutls: gnutls: information disclosure via heap overread in rsa key exchange",
-    "desc": "A flaw was found in libgnutls. A remote attacker, by sending an extremely short premaster secret during an RSA key exchange to a server using an RSA key backed by a PKCS#11 token, could trigger a short heap overread. This memory corruption vulnerability could lead to information disclosure.",
-    "cvss": 8.2,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-126"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-05-26",
-    "updated": "2026-10-09",
-    "url": "https://access.redhat.com/errata/RHSA-2026:13274",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2026-75348",
     "title": "An out-of-bounds read vulnerability exists in EIPStackGroup OpENer v2.3 and master up to commit 76b95cf in the EtherNet/",
     "desc": "An out-of-bounds read vulnerability exists in EIPStackGroup OpENer v2.3 and master up to commit 76b95cf in the EtherNet/IP TCP SendRRData Common Packet Format parser. The issue occurs in CreateCommonPacketFormatStructure() when it parses recognized optional socket address information items of type 0x8000 or 0x8001 without first validating that the remaining CPF buffer contains the complete fixed s",
@@ -18802,28 +21025,6 @@
     "published": "2026-10-09",
     "updated": "2026-10-09",
     "url": "https://github.com/hotspotbilling/phpnuxbill/security/advisories/GHSA-337r-rrrc-r559",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-108111",
-    "title": "ruoyi-ai 3.0.0 through 3.1.0 Missing Authorization via /workflow/search",
-    "desc": "ruoyi-ai 3.0.0 through 3.1.0 contains a missing authorization vulnerability in the GET /workflow/search endpoint that exposes other users' private workflows. Authenticated non-admin users can query this endpoint, which lacks owner or is_public filtering, to list enabled private workflows in the same tenant, including UUIDs and full node and edge configurations.",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "ageerle",
-        "product": "ruoyi-ai"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-10-09",
-    "updated": "2026-10-09",
-    "url": "https://hackmd.io/@haind/SJnkeEUoMx",
     "source": "CISA Vulnrichment"
   },
   {
@@ -21181,1124 +23382,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-87846",
-    "title": "Shipping for Nova Poshta 1.18.7 - 1.19.8 - Unauthenticated Order Shipment Record Deletion",
-    "desc": "The Shipping for Nova Poshta WordPress plugin through 1.19.8 does not perform any authorisation, nonce or ownership checks on one of its AJAX actions available to unauthenticated users, allowing anyone to delete the shipment records of arbitrary orders and to make the store issue the carrier's waybill-deletion request for those orders using the store's own stored API credentials.",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Unknown",
-        "product": "Shipping for Nova Poshta"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-09",
-    "updated": "2026-10-09",
-    "url": "https://wpscan.com/vulnerability/e1ba1fbc-f61f-446f-a312-d725364313a6/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-89091",
-    "title": "Ansible-core: ansible-core: ansible-galaxy collection install symlink path escape allows arbitrary file write / code execution",
-    "desc": "A flaw was found in ansible-core. When installing a collection with\n`ansible-galaxy collection install`, the archive extractor validates member\npaths using lexical path normalisation (os.path.abspath) instead of resolving\nsymbolic links (os.path.realpath), and it performs no containment check on\nsymlink-typed directory members before creating them. A crafted collection\ntarball can chain symlink di",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-59"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Migration Toolkit for Applications 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Migration Toolkit for Virtualization"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "OpenShift Service Mesh 3"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Advanced Cluster Management for Kubernetes 2"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Advanced Cluster Management for Kubernetes 2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-08",
-    "updated": "2026-10-09",
-    "url": "https://access.redhat.com/security/cve/CVE-2026-89091",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-89235",
-    "title": "Testimonials by BestWebSoft 1.0.5 - 1.0.8 - Unauthenticated SQLi via 'offset' Parameter",
-    "desc": "The Testimonials by BestWebSoft WordPress plugin through 1.0.8 does not sanitise and escape a parameter before using it in a SQL query, allowing unauthenticated attackers to append additional SQL to the query.",
-    "cvss": 6.8,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Unknown",
-        "product": "Testimonials by BestWebSoft"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-09",
-    "updated": "2026-10-09",
-    "url": "https://wpscan.com/vulnerability/00801815-efc8-41f7-9984-0e81698c7f68/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-93947",
-    "title": "WordPress Traveler theme <= 3.2.9 - SQL Injection vulnerability",
-    "desc": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Shinetheme Traveler traveler allows Blind SQL Injection.This issue affects Traveler: from n/a through 3.2.9.",
-    "cvss": 9.3,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-89"
-    ],
-    "affected": [
-      {
-        "vendor": "Shinetheme",
-        "product": "Traveler"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-09",
-    "updated": "2026-10-09",
-    "url": "https://patchstack.com/database/wordpress/theme/traveler/vulnerability/wordpress-traveler-theme-3-2-9-sql-injection-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-94059",
-    "title": "WordPress Ogency theme <= 1.0.0 - Reflected Cross Site Scripting (XSS) vulnerability",
-    "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Bracketweb Ogency ogency allows Reflected XSS.This issue affects Ogency: from n/a through 1.0.0.",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Bracketweb",
-        "product": "Ogency"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-09",
-    "updated": "2026-10-09",
-    "url": "https://patchstack.com/database/wordpress/theme/ogency/vulnerability/wordpress-ogency-theme-1-0-0-reflected-cross-site-scripting-xss-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-94063",
-    "title": "WordPress Education Center theme <= 3.6.12 - Reflected Cross Site Scripting (XSS) vulnerability",
-    "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in ThemeREX Education Center education allows Reflected XSS.This issue affects Education Center: from n/a through 3.6.12.",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "ThemeREX",
-        "product": "Education Center"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-09",
-    "updated": "2026-10-09",
-    "url": "https://patchstack.com/database/wordpress/theme/education/vulnerability/wordpress-education-center-theme-3-6-12-reflected-cross-site-scripting-xss-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-94167",
-    "title": "WordPress Kubio AI Page Builder plugin <= 2.9.3 - Cross Site Scripting (XSS) vulnerability",
-    "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Extend Themes Kubio AI Page Builder kubio allows Reflected XSS.This issue affects Kubio AI Page Builder: from n/a through 2.9.3.",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Extend Themes",
-        "product": "Kubio AI Page Builder"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-09",
-    "updated": "2026-10-09",
-    "url": "https://patchstack.com/database/wordpress/plugin/kubio/vulnerability/wordpress-kubio-ai-page-builder-plugin-2-9-3-cross-site-scripting-xss-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-94632",
-    "title": "WordPress BlockStrap Page Builder - Bootstrap Blocks plugin <= 0.1.58 - Cross Site Scripting (XSS) vulnerability",
-    "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Stiofan BlockStrap Page Builder - Bootstrap Blocks blockstrap-page-builder-blocks allows Reflected XSS.This issue affects BlockStrap Page Builder - Bootstrap Blocks: from n/a through 0.1.58.",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Stiofan",
-        "product": "BlockStrap Page Builder - Bootstrap Blocks"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-09",
-    "updated": "2026-10-09",
-    "url": "https://patchstack.com/database/wordpress/plugin/blockstrap-page-builder-blocks/vulnerability/wordpress-blockstrap-page-builder-bootstrap-blocks-plugin-0-1-58-cross-site-scripting-xss-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-94665",
-    "title": "WordPress Classified Listing plugin <= 6.1.2 - Cross Site Scripting (XSS) vulnerability",
-    "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Mamunur Rashid Classified Listing classified-listing allows Stored XSS.This issue affects Classified Listing: from n/a through 6.1.2.",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Mamunur Rashid",
-        "product": "Classified Listing"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-09",
-    "updated": "2026-10-09",
-    "url": "https://patchstack.com/database/wordpress/plugin/classified-listing/vulnerability/wordpress-classified-listing-plugin-6-1-2-cross-site-scripting-xss-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-95591",
-    "title": "WordPress VikBooking Hotel Booking Engine & PMS plugin <= 1.8.14 - Cross Site Scripting (XSS) vulnerability",
-    "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in e4jvikwp VikBooking Hotel Booking Engine & PMS vikbooking allows Reflected XSS.This issue affects VikBooking Hotel Booking Engine & PMS: from n/a through 1.8.14.",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "e4jvikwp",
-        "product": "VikBooking Hotel Booking Engine & PMS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-09",
-    "updated": "2026-10-09",
-    "url": "https://patchstack.com/database/wordpress/plugin/vikbooking/vulnerability/wordpress-vikbooking-hotel-booking-engine-pms-plugin-1-8-14-cross-site-scripting-xss-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-95607",
-    "title": "WordPress WPLMS  theme <= 4.973 - SQL Injection vulnerability",
-    "desc": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in VibeThemes WPLMS  wplms allows Blind SQL Injection.This issue affects WPLMS : from n/a through 4.973.",
-    "cvss": 8.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-89"
-    ],
-    "affected": [
-      {
-        "vendor": "VibeThemes",
-        "product": "WPLMS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-09",
-    "updated": "2026-10-09",
-    "url": "https://patchstack.com/database/wordpress/theme/wplms/vulnerability/wordpress-wplms-theme-4-973-sql-injection-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-96328",
-    "title": "WordPress JNews - Pay Writer plugin <= 12.0.1 - SQL Injection vulnerability",
-    "desc": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in jegtheme JNews - Pay Writer jnews-pay-writer allows Blind SQL Injection.This issue affects JNews - Pay Writer: from n/a through 12.0.1.",
-    "cvss": 9.3,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-89"
-    ],
-    "affected": [
-      {
-        "vendor": "jegtheme",
-        "product": "JNews - Pay Writer"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-09",
-    "updated": "2026-10-09",
-    "url": "https://patchstack.com/database/wordpress/plugin/jnews-pay-writer/vulnerability/wordpress-jnews-pay-writer-plugin-12-0-1-sql-injection-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-96333",
-    "title": "WordPress GiveWP plugin <= 4.16.8.1 - Payment Bypass vulnerability",
-    "desc": "Authentication Bypass by Spoofing vulnerability in Liquid Web / StellarWP GiveWP give allows Identity Spoofing.This issue affects GiveWP: from n/a through 4.16.8.1.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-290"
-    ],
-    "affected": [
-      {
-        "vendor": "Liquid Web / StellarWP",
-        "product": "GiveWP"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-09",
-    "updated": "2026-10-09",
-    "url": "https://patchstack.com/database/wordpress/plugin/give/vulnerability/wordpress-givewp-plugin-4-16-8-1-payment-bypass-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-96518",
-    "title": "WordPress ProfilePress plugin <= 4.17.3 - Broken Access Control vulnerability",
-    "desc": "Missing Authorization vulnerability in properfraction ProfilePress wp-user-avatar allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects ProfilePress: from n/a through 4.17.3.",
-    "cvss": 5.9,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "properfraction",
-        "product": "ProfilePress"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-09",
-    "updated": "2026-10-09",
-    "url": "https://patchstack.com/database/wordpress/plugin/wp-user-avatar/vulnerability/wordpress-profilepress-plugin-4-17-3-broken-access-control-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-96761",
-    "title": "WordPress Welcart e-Commerce plugin <= 2.12.3 - Cross Site Scripting (XSS) vulnerability",
-    "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Welcart Welcart e-Commerce usc-e-shop allows Reflected XSS.This issue affects Welcart e-Commerce: from n/a through 2.12.3.",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Welcart",
-        "product": "Welcart e-Commerce"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-09",
-    "updated": "2026-10-09",
-    "url": "https://patchstack.com/database/wordpress/plugin/usc-e-shop/vulnerability/wordpress-welcart-e-commerce-plugin-2-12-3-cross-site-scripting-xss-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-103065",
-    "title": "WordPress Kirki plugin <= 6.3.1 - Arbitrary Code Execution vulnerability",
-    "desc": "Improper Validation of Specified Quantity in Input vulnerability in Themeum Kirki kirki allows Accessing Functionality Not Properly Constrained by ACLs.This issue affects Kirki: from n/a through 6.3.1.",
-    "cvss": 8.2,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-1284"
-    ],
-    "affected": [
-      {
-        "vendor": "Themeum",
-        "product": "Kirki"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-03",
-    "updated": "2026-10-09",
-    "url": "https://patchstack.com/database/wordpress/plugin/kirki/vulnerability/wordpress-kirki-plugin-6-3-1-arbitrary-code-execution-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-107831",
-    "title": "Jivejdon through 5.0 CSRF via GET-based Account and Thread Actions",
-    "desc": "Jivejdon through 5.0 contains a cross-site request forgery vulnerability that allows remote attackers to perform state-changing actions by abusing GET endpoints lacking anti-CSRF tokens. Attackers can lure authenticated users to crafted links targeting /account/protected/delAll, /account/protected/sub/delSub, or /message/updateAction to delete private messages and subscriptions or rename threads.",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-352"
-    ],
-    "affected": [
-      {
-        "vendor": "banq",
-        "product": "jivejdon"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-08",
-    "updated": "2026-10-09",
-    "url": "https://github.com/banq/jivejdon/issues/28",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-49243",
-    "title": "Webmin: Reflected XSS in the Configuration module",
-    "desc": "Webmin is a web-based system administration tool for Unix-like servers. Prior to version 2.650, Webmin users who click on a malicious link to their server are vulnerable to this XSS vulnerability that could be used to execute attacker-controlled commands. This issue has been patched in version 2.650.",
-    "cvss": 9.6,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "webmin",
-        "product": "webmin"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-29",
-    "updated": "2026-10-09",
-    "url": "https://github.com/webmin/webmin/security/advisories/GHSA-hv4w-p8jq-2rp5",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2022-2845",
-    "title": "Improper Validation of Specified Quantity in Input in vim/vim",
-    "desc": "Improper Validation of Specified Quantity in Input in GitHub repository vim/vim prior to 9.0.0218.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-1284"
-    ],
-    "affected": [
-      {
-        "vendor": "vim",
-        "product": "vim/vim"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2022-08-17",
-    "updated": "2026-10-09",
-    "url": "https://huntr.dev/bounties/3e1d31ac-1cfd-4a9f-bc5c-213376b69445",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2022-2849",
-    "title": "Heap-based Buffer Overflow in vim/vim",
-    "desc": "Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.0220.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "vim",
-        "product": "vim/vim"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2022-08-17",
-    "updated": "2026-10-09",
-    "url": "https://huntr.dev/bounties/389aeccd-deb9-49ae-9b6a-24c12d79b02e",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2022-2946",
-    "title": "Use After Free in vim/vim",
-    "desc": "Use After Free in GitHub repository vim/vim prior to 9.0.0246.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "vim",
-        "product": "vim/vim"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2022-08-23",
-    "updated": "2026-10-09",
-    "url": "https://huntr.dev/bounties/5d389a18-5026-47df-a5d0-1548a9b555d5",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-100833",
-    "title": "Contrast before 1.23.1 Image Substitution via Policy Generation",
-    "desc": "Contrast (edgelesssys/contrast) versions 1.14.0 before 1.23.1 generate runtime policies that fail to detect all container image substitutions. A bad rebase during a Kata Containers update accidentally introduced an `allow_storage` rule that accepts storage entries using the `image_guest_pull` driver without verifying the image digest. An attacker with access to the Kata agent API — for example, a ",
-    "cvss": 9.6,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-20"
-    ],
-    "affected": [
-      {
-        "vendor": "edgelesssys",
-        "product": "contrast"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-27",
-    "updated": "2026-10-09",
-    "url": "https://github.com/edgelesssys/contrast/security/advisories/GHSA-m2qg-wrxv-h898",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-101024",
-    "title": "Satel Netco Design Relative path traversal",
-    "desc": "Satel Netco Design versions prior to v2.1.7 contains a relative path traversal vulnerability in its data export functionality. An authenticated user with Viewer privileges could write attacker influenced content to file system locations accessible to the application service. Successful exploitation could result in unauthorized file creation or modification and, under certain conditions, arbitrary ",
-    "cvss": 8.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-23"
-    ],
-    "affected": [
-      {
-        "vendor": "Satel",
-        "product": "Satel Netco Design"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-08",
-    "updated": "2026-10-09",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-03",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-104628",
-    "title": "Satel Netco Design Inefficient Regular Expression Complexity",
-    "desc": "Satel Netco Design versions prior to v2.1.7 contains an inefficient regular expression complexity vulnerability. An authenticated user with Viewer privileges could submit crafted search input that causes excessive processing, potentially degrading the availability of the application.",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-1333"
-    ],
-    "affected": [
-      {
-        "vendor": "Satel",
-        "product": "Satel Netco Design"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-08",
-    "updated": "2026-10-09",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-03",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-105275",
-    "title": "Satel Netco Design Relative Path Traversal",
-    "desc": "Satel Netco Design versions prior to v2.1.7 contains a relative path traversal vulnerability in its data import functionality. An authenticated user with Viewer privileges could access file paths outside the intended directory and use observable application responses to determine whether files exist on the host system.",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-23"
-    ],
-    "affected": [
-      {
-        "vendor": "Satel",
-        "product": "Satel Netco Design"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-08",
-    "updated": "2026-10-09",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-03",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-105398",
-    "title": "CVE-2026-105398",
-    "desc": "",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [],
-    "exploitation": "",
-    "isKev": false,
-    "published": "2026-10-08",
-    "updated": "2026-10-09",
-    "url": "https://www.cve.org/CVERecord?id=CVE-2026-105398",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-105399",
-    "title": "CVE-2026-105399",
-    "desc": "",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [],
-    "exploitation": "",
-    "isKev": false,
-    "published": "2026-10-08",
-    "updated": "2026-10-09",
-    "url": "https://www.cve.org/CVERecord?id=CVE-2026-105399",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-105401",
-    "title": "CVE-2026-105401",
-    "desc": "",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [],
-    "exploitation": "",
-    "isKev": false,
-    "published": "2026-10-08",
-    "updated": "2026-10-09",
-    "url": "https://www.cve.org/CVERecord?id=CVE-2026-105401",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-105823",
-    "title": "CVE-2026-105823",
-    "desc": "",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [],
-    "exploitation": "",
-    "isKev": false,
-    "published": "2026-10-08",
-    "updated": "2026-10-09",
-    "url": "https://www.cve.org/CVERecord?id=CVE-2026-105823",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-105825",
-    "title": "CVE-2026-105825",
-    "desc": "",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [],
-    "exploitation": "",
-    "isKev": false,
-    "published": "2026-10-08",
-    "updated": "2026-10-09",
-    "url": "https://www.cve.org/CVERecord?id=CVE-2026-105825",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-105827",
-    "title": "CVE-2026-105827",
-    "desc": "",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [],
-    "exploitation": "",
-    "isKev": false,
-    "published": "2026-10-08",
-    "updated": "2026-10-09",
-    "url": "https://www.cve.org/CVERecord?id=CVE-2026-105827",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-106216",
-    "title": "Cross-site request forgery in ReadingList in Google Chrome on on Android prior to 155.0.8059.39 allowed a remote attacke",
-    "desc": "Cross-site request forgery in ReadingList in Google Chrome on on Android prior to 155.0.8059.39 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
-    "cvss": 5.4,
-    "severity": "MEDIUM",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Google",
-        "product": "Chrome"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-06",
-    "updated": "2026-10-09",
-    "url": "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_086471744.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-107715",
-    "title": "Mechanize sends credential headers to another host after an HTTP redirect",
-    "desc": "The Mechanize library is used for automating interaction with websites. Prior to 2.14.1, Mechanize sends caller-supplied credential headers to a different host after an HTTP redirect. Mechanize#request_headers= is reapplied by Mechanize::HTTP::Agent#request_add_headers even after Mechanize::HTTP::Agent#response_redirect strips per-request headers, and the protected header lists omit Proxy-Authoriz",
-    "cvss": 6.8,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-200",
-      "CWE-522"
-    ],
-    "affected": [
-      {
-        "vendor": "sparklemotion",
-        "product": "mechanize"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-10-08",
-    "updated": "2026-10-09",
-    "url": "https://github.com/sparklemotion/mechanize/security/advisories/GHSA-2mwr-xjcg-37j7",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-11318",
-    "title": "Deskin 3.3.4.3 XPC Service Privilege Escalation via Unauthenticated Installer",
-    "desc": "Deskin through 3.3.4.3 contains a privilege escalation vulnerability in the com.deskin.service.installer XPC service that allows local unprivileged attackers to execute arbitrary installer packages as root by connecting to the root-owned service without authentication. Attackers can invoke the privileged installer method to run an attacker-supplied installer, achieving full root compromise of the ",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-306"
-    ],
-    "affected": [
-      {
-        "vendor": "Zuler Technology",
-        "product": "DeskIn"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-10-08",
-    "updated": "2026-10-09",
-    "url": "https://github.com/Cr0wld3r/CVE-2026-11318",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-46569",
-    "title": "In NTFS-3G before 2026.7.7, a heap buffer overflow exists in ntfs_ib_copy_tail(), in libntfs-3g/index.c, that allows an ",
-    "desc": "In NTFS-3G before 2026.7.7, a heap buffer overflow exists in ntfs_ib_copy_tail(), in libntfs-3g/index.c, that allows an attacker to corrupt heap memory in the SUID-root ntfs-3g binary by crafting a malicious NTFS image. The overflow is triggered by extending a directory, e.g., by creating a file.",
-    "cvss": 7.7,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-07",
-    "updated": "2026-10-09",
-    "url": "https://github.com/tuxera/ntfs-3g/releases#release-2026.7.7",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-76459",
-    "title": "Cisco NX-OS Software Security Hardening Release: October 2026 - Out-of-bounds Write Vulnerabilities",
-    "desc": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco NX-OS engineering team has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities.\r\n\r\nThe vulnerabilities tracked by CVE-2026-76459 are related to out-of-bounds write issues that are grouped under ",
-    "cvss": 9.8,
-    "severity": "CRITICAL",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Cisco",
-        "product": "Cisco NX-OS Software"
-      },
-      {
-        "vendor": "Cisco",
-        "product": "Cisco NX-OS System Software in ACI Mode"
-      },
-      {
-        "vendor": "Cisco",
-        "product": "Cisco Unified Computing System (Managed)"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-07",
-    "updated": "2026-10-09",
-    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-nxosw1-cWzSbtR",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-89058",
-    "title": "Resteasy-core: resteasy: corsfilter reflects arbitrary origin with credentials under wildcard config",
-    "desc": "A flaw was found in RESTEasy's CorsFilter, which, when configured to allow all origins (\"*\"), reflects the request's Origin header back in the Access-Control-Allow-Origin response together with Access-Control-Allow-Credentials: true. This permissive cross-origin policy allows a malicious website to make credentialed cross-origin requests and read authenticated responses from a victim's session, re",
-    "cvss": 7.4,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-346"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat build of Apache Camel 4 for Quarkus 3"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat build of Apicurio Registry 3"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat build of Debezium 3"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Build of Keycloak"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-09-18",
-    "updated": "2026-10-09",
-    "url": "https://access.redhat.com/security/cve/CVE-2026-89058",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-89059",
-    "title": "Resteasy-core: resteasy: iioimageprovider unbounded image decode (decompression-bomb dos)",
-    "desc": "A flaw was found in RESTEasy's IIOImageProvider, which decodes attacker-supplied image request bodies without enforcing any limit on the declared image dimensions or pixel count. A remote, unauthenticated attacker can send a small crafted image declaring enormous dimensions to trigger a very large memory allocation, exhausting the JVM heap and resulting in a denial of service.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-409"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat build of Apache Camel 4 for Quarkus 3"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat build of Apicurio Registry 3"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat build of Debezium 3"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Build of Keycloak"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-09-18",
-    "updated": "2026-10-09",
-    "url": "https://access.redhat.com/security/cve/CVE-2026-89059",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-102783",
-    "title": "Joomla Extension - balbooa.com - Path Traversal in image preview Gridbox < 2.20.4.0",
-    "desc": "Joomla Extension - balbooa.com - Path Traversal in image preview Gridbox < 2.20.4.0 - Gridbox contains the same prefix-only containment logic in its site UploaderHelper . The showImage action resolves a request-controlled path, calls that helper, and then returns the image. If image decoding is unavailable or fails, the action streams the file directly. An existing image in a sibling directory suc",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-22"
-    ],
-    "affected": [
-      {
-        "vendor": "balbooa.com",
-        "product": "Gridbox extension for Joomla"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-08",
-    "updated": "2026-10-09",
-    "url": "https://www.balbooa.com/gridbox",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-73336",
-    "title": "Joomla! Core - [20260806] - XSS through schema.org outputs in Joomla 5.1.0-5.4.7, 6.0.0-6.1.2",
-    "desc": "Joomla! Core - [20260806] - XSS through schema.org outputs in Joomla 5.1.0-5.4.7, 6.0.0-6.1.2 - Improper escaping flags lead to an XSS vector in schema.org markup outputs.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Joomla! Project",
-        "product": "Joomla! CMS"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-18",
-    "updated": "2026-10-09",
-    "url": "https://www.joomla.org/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-107303",
-    "title": "JHipster: Generated Applications Allow Stored XSS via Unrestricted Blob ContentType Opened as Same-Origin Blob",
-    "desc": "JHipster is a development platform to quickly generate, develop, and deploy modern web applications and microservice architectures. Prior to generator-jhipster 9.4.0 and react-jhipster 1.1.0, generated applications can persist attacker-controlled Blob data and companion ContentType values, return them through generated REST endpoints, and pass them to the generated openFile helper in generators/cl",
-    "cvss": 7.6,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "jhipster",
-        "product": "generator-jhipster"
-      },
-      {
-        "vendor": "jhipster",
-        "product": "react-jhipster"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-10-08",
-    "updated": "2026-10-09",
-    "url": "https://github.com/jhipster/generator-jhipster/security/advisories/GHSA-9ffp-22j7-56r2",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-107385",
-    "title": "MariaDB Connector/Node.js: SQL injection in the text protocol when the session uses NO_BACKSLASH_ESCAPES",
-    "desc": "MariaDB Connector/Node.js is used to connect applications developed on Node.js to MariaDB and MySQL databases. Prior to 3.2.5, 3.3.4, 3.4.7, and 3.5.4, text-protocol escaping always prefixes quotes with a backslash and does not honor the session's NO_BACKSLASH_ESCAPES mode, including in Connection.escape(). When that mode is enabled, the backslash is an ordinary character, so an attacker-controlle",
-    "cvss": 7.4,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-89"
-    ],
-    "affected": [
-      {
-        "vendor": "mariadb-corporation",
-        "product": "mariadb-connector-nodejs"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-08",
-    "updated": "2026-10-09",
-    "url": "https://github.com/mariadb-corporation/mariadb-connector-nodejs/security/advisories/GHSA-r3rv-jm3r-62q2",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-107696",
-    "title": "FFmpeg through 9.0.2 Infinite Loop via RTSP Redirect Handling in rtsp.c",
-    "desc": "FFmpeg through 9.0.2 contains an infinite loop vulnerability in ff_rtsp_connect() in libavformat/rtsp.c that follows RTSP 3xx redirects without any redirect limit. Attackers controlling an RTSP server can answer every request with a 302 redirect to itself or another server, causing endless reconnects that saturate a CPU core.",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-835"
-    ],
-    "affected": [
-      {
-        "vendor": "FFmpeg",
-        "product": "FFmpeg"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-10-08",
-    "updated": "2026-10-09",
-    "url": "https://code.ffmpeg.org/FFmpeg/FFmpeg/pulls/24902",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-107700",
-    "title": "dot-access 0.0.3 through 1.0.0 Code Injection via get() Path Argument",
-    "desc": "dot-access 0.0.3 through 1.0.0 contains a code injection vulnerability that allows remote attackers to execute JavaScript by supplying crafted paths to get(). The path is concatenated into a new Function body in index.js, so attackers can reach constructor.constructor to load child_process and run operating system commands in the Node.js process.",
-    "cvss": 9.8,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-94"
-    ],
-    "affected": [
-      {
-        "vendor": "ntharim",
-        "product": "dot-access"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-10-08",
-    "updated": "2026-10-09",
-    "url": "https://gist.github.com/R3tro16/e094e4318a040f189fd5d2d33e8c3ec2",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-39717",
-    "title": "WordPress LearnPress plugin <= 4.4.10 - Broken Access Control vulnerability",
-    "desc": "Missing Authorization vulnerability in ThimPress LearnPress learnpress allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects LearnPress: from n/a through 4.4.10.",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "ThimPress",
-        "product": "LearnPress"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-02",
-    "updated": "2026-10-09",
-    "url": "https://patchstack.com/database/wordpress/plugin/learnpress/vulnerability/wordpress-learnpress-plugin-4-4-9-1-broken-access-control-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-93860",
-    "title": "In OpenStack Mistral through 23.0.0, the /v2/maintenance API controller clears the request context and calls the mainten",
-    "desc": "In OpenStack Mistral through 23.0.0, the /v2/maintenance API controller clears the request context and calls the maintenance service directly without any policy enforcement. Any holder of a valid Mistral token, regardless of assigned role, can read and change the service's cluster-wide maintenance state. Setting the state to PAUSED stops processing of new workflow and execution objects across all ",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "OpenStack",
-        "product": "Mistral"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-10-08",
-    "updated": "2026-10-09",
-    "url": "https://launchpad.net/bugs/2162789",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-60201",
-    "title": "WordPress WP Customer Area plugin <= 8.3.5 - Local File Inclusion vulnerability",
-    "desc": "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in aguilatechnologies WP Customer Area customer-area allows PHP Local File Inclusion.\n\nThis issue affects WP Customer Area: before 8.3.4.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-98"
-    ],
-    "affected": [
-      {
-        "vendor": "aguilatechnologies",
-        "product": "WP Customer Area"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-11-06",
-    "updated": "2026-10-09",
-    "url": "https://patchstack.com/database/Wordpress/Plugin/customer-area/vulnerability/wordpress-wp-customer-area-plugin-8-2-7-local-file-inclusion-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-39725",
-    "title": "CVE-2026-39725",
-    "desc": "",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [],
-    "exploitation": "",
-    "isKev": false,
-    "published": "2026-10-06",
-    "updated": "2026-10-09",
-    "url": "https://www.cve.org/CVERecord?id=CVE-2026-39725",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-1647",
-    "title": "XSS in Bootstrap title attribute for Tooltip and Popover",
-    "desc": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Bootstrap allows Cross-Site Scripting (XSS).This issue affects Bootstrap: from 3.4.1 before 4.0.0.",
-    "cvss": 5.6,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "Bootstrap",
-        "product": "Bootstrap"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2025-05-15",
-    "updated": "2026-10-09",
-    "url": "https://www.herodevs.com/vulnerability-directory/cve-2025-1647",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-42784",
-    "title": "Sequoia-openpgp: sequoia-openpgp: cryptographic integrity compromise via key flag confusion",
-    "desc": "A flaw was found in sequoia-openpgp. The library incorrectly infers key flags for older certificates when a key flags subpacket is missing, leading to a discrepancy in how key capabilities are viewed. This key flag confusion allows an attacker to bypass the back-signature check. Consequently, an attacker can illegitimately bind an arbitrary subkey to their own certificate and forge signatures, com",
-    "cvss": 7.4,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-347"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Ansible Automation Platform 2.6 for RHEL 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-09-16",
-    "updated": "2026-10-09",
-    "url": "https://access.redhat.com/errata/RHSA-2026:34160",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2020-27171",
     "title": "An issue was discovered in the Linux kernel before 5.11.8. kernel/bpf/verifier.c has an off-by-one error (with a resulta",
     "desc": "An issue was discovered in the Linux kernel before 5.11.8. kernel/bpf/verifier.c has an off-by-one error (with a resultant integer underflow) affecting out-of-bounds speculation on pointer arithmetic, leading to side-channel attacks that defeat Spectre mitigations and obtain sensitive information from kernel memory, aka CID-10d2bb2e6b1d.",
@@ -22534,613 +23617,6 @@
     "published": "2026-09-08",
     "updated": "2026-10-08",
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-81954",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2013-3900",
-    "title": "WinVerifyTrust Signature Validation Vulnerability",
-    "desc": "",
-    "cvss": 5.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-347"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2019"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2019 (Server Core installation)"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows Server 2022"
-      }
-    ],
-    "exploitation": "active",
-    "isKev": true,
-    "published": "2013-12-11",
-    "updated": "2026-10-08",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2013-3900",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2013-7285",
-    "title": "Xstream API versions up to 1.4.6 and version 1.4.10, if the security framework has not been initialized, may allow a rem",
-    "desc": "Xstream API versions up to 1.4.6 and version 1.4.10, if the security framework has not been initialized, may allow a remote attacker to run arbitrary shell commands by manipulating the processed input stream when unmarshaling XML or any supported format. e.g. JSON.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2019-05-15",
-    "updated": "2026-10-08",
-    "url": "http://seclists.org/oss-sec/2014/q1/69",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2016-0718",
-    "title": "Expat allows context-dependent attackers to cause a denial of service (crash) or possibly execute arbitrary code via a m",
-    "desc": "Expat allows context-dependent attackers to cause a denial of service (crash) or possibly execute arbitrary code via a malformed input document, which triggers a buffer overflow.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2016-05-26",
-    "updated": "2026-10-08",
-    "url": "http://rhn.redhat.com/errata/RHSA-2016-2824.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2016-3674",
-    "title": "Multiple XML external entity (XXE) vulnerabilities in the (1) Dom4JDriver, (2) DomDriver, (3) JDomDriver, (4) JDom2Drive",
-    "desc": "Multiple XML external entity (XXE) vulnerabilities in the (1) Dom4JDriver, (2) DomDriver, (3) JDomDriver, (4) JDom2Driver, (5) SjsxpDriver, (6) StandardStaxDriver, and (7) WstxDriver drivers in XStream before 1.4.9 allow remote attackers to read arbitrary files via a crafted XML document.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2016-05-17",
-    "updated": "2026-10-08",
-    "url": "http://x-stream.github.io/changes.html#1.4.9",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2016-4472",
-    "title": "The overflow protection in Expat is removed by compilers with certain optimization settings, which allows remote attacke",
-    "desc": "The overflow protection in Expat is removed by compilers with certain optimization settings, which allows remote attackers to cause a denial of service (crash) or possibly execute arbitrary code via crafted XML data.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2015-1283 and CVE-2015-2716.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2016-06-30",
-    "updated": "2026-10-08",
-    "url": "https://www.tenable.com/security/tns-2016-20",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2017-9233",
-    "title": "XML External Entity vulnerability in libexpat 2.2.0 and earlier (Expat XML Parser Library) allows attackers to put the p",
-    "desc": "XML External Entity vulnerability in libexpat 2.2.0 and earlier (Expat XML Parser Library) allows attackers to put the parser in an infinite loop using a malformed external entity definition from an external DTD.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2017-07-25",
-    "updated": "2026-10-08",
-    "url": "https://support.apple.com/HT208144",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2018-1000802",
-    "title": "Python Software Foundation Python (CPython) version 2.7 contains a CWE-77: Improper Neutralization of Special Elements u",
-    "desc": "Python Software Foundation Python (CPython) version 2.7 contains a CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability in shutil module (make_archive function) that can result in Denial of service, Information gain via injection of arbitrary files on the system or entire drive. This attack appear to be exploitable via Passage of unfiltered user",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2018-09-18",
-    "updated": "2026-10-08",
-    "url": "https://www.debian.org/security/2018/dsa-4306",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2018-11307",
-    "title": "An issue was discovered in FasterXML jackson-databind 2.0.0 through 2.9.5. Use of Jackson default typing along with a ga",
-    "desc": "An issue was discovered in FasterXML jackson-databind 2.0.0 through 2.9.5. Use of Jackson default typing along with a gadget class from iBatis allows exfiltration of content. Fixed in 2.7.9.4, 2.8.11.2, and 2.9.6.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2019-07-09",
-    "updated": "2026-10-08",
-    "url": "https://access.redhat.com/errata/RHSA-2019:1822",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2018-12022",
-    "title": "An issue was discovered in FasterXML jackson-databind prior to 2.7.9.4, 2.8.11.2, and 2.9.6. When Default Typing is enab",
-    "desc": "An issue was discovered in FasterXML jackson-databind prior to 2.7.9.4, 2.8.11.2, and 2.9.6. When Default Typing is enabled (either globally or for a specific property), the service has the Jodd-db jar (for database access for the Jodd framework) in the classpath, and an attacker can provide an LDAP service to access, it is possible to make the service execute a malicious payload.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2019-03-17",
-    "updated": "2026-10-08",
-    "url": "https://access.redhat.com/errata/RHSA-2019:0782",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2018-12122",
-    "title": "Node.js: All versions prior to Node.js 6.15.0, 8.14.0, 10.14.0 and 11.3.0: Slowloris HTTP Denial of Service: An attacker",
-    "desc": "Node.js: All versions prior to Node.js 6.15.0, 8.14.0, 10.14.0 and 11.3.0: Slowloris HTTP Denial of Service: An attacker can cause a Denial of Service (DoS) by sending headers very slowly keeping HTTP or HTTPS connections and associated resources alive for a long period of time.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-400"
-    ],
-    "affected": [
-      {
-        "vendor": "The Node.js Project",
-        "product": "Node.js"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2018-11-28",
-    "updated": "2026-10-08",
-    "url": "https://nodejs.org/en/blog/vulnerability/november-2018-security-releases/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2018-12123",
-    "title": "Node.js: All versions prior to Node.js 6.15.0, 8.14.0, 10.14.0 and 11.3.0: Hostname spoofing in URL parser for javascrip",
-    "desc": "Node.js: All versions prior to Node.js 6.15.0, 8.14.0, 10.14.0 and 11.3.0: Hostname spoofing in URL parser for javascript protocol: If a Node.js application is using url.parse() to determine the URL hostname, that hostname can be spoofed by using a mixed case \"javascript:\" (e.g. \"javAscript:\") protocol (other protocols are not affected). If security decisions are made about the URL based on the ho",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-115"
-    ],
-    "affected": [
-      {
-        "vendor": "The Node.js Project",
-        "product": "Node.js"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2018-11-28",
-    "updated": "2026-10-08",
-    "url": "https://nodejs.org/en/blog/vulnerability/november-2018-security-releases/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2018-15756",
-    "title": "DoS Attack via Range Requests",
-    "desc": "Spring Framework, version 5.1, versions 5.0.x prior to 5.0.10, versions 4.3.x prior to 4.3.20, and older unsupported versions on the 4.2.x branch provide support for range requests when serving static resources through the ResourceHttpRequestHandler, or starting in 5.0 when an annotated controller returns an org.springframework.core.io.Resource. A malicious user (or attacker) can add a range heade",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Pivotal",
-        "product": "Spring framework"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2018-10-18",
-    "updated": "2026-10-08",
-    "url": "http://www.securityfocus.com/bid/105703",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2018-16156",
-    "title": "In PaperStream IP (TWAIN) 1.42.0.5685 (Service Update 7), the FJTWSVIC service running with SYSTEM privilege processes u",
-    "desc": "In PaperStream IP (TWAIN) 1.42.0.5685 (Service Update 7), the FJTWSVIC service running with SYSTEM privilege processes unauthenticated messages received over the FjtwMkic_Fjicube_32 named pipe. One of these message processing functions attempts to dynamically load the UninOldIS.dll library and executes an exported function named ChangeUninstallString. The default install does not contain this libr",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2019-05-17",
-    "updated": "2026-10-08",
-    "url": "https://www.securifera.com/advisories/cve-2018-16156/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2018-1060",
-    "title": "python before versions 2.7.15, 3.4.9, 3.5.6rc1, 3.6.5rc1 and 3.7.0 is vulnerable to catastrophic backtracking in pop3lib",
-    "desc": "python before versions 2.7.15, 3.4.9, 3.5.6rc1, 3.6.5rc1 and 3.7.0 is vulnerable to catastrophic backtracking in pop3lib's apop() method. An attacker could use this flaw to cause denial of service.",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-20"
-    ],
-    "affected": [
-      {
-        "vendor": "[UNKNOWN]",
-        "product": "python"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2018-06-18",
-    "updated": "2026-10-08",
-    "url": "https://www.debian.org/security/2018/dsa-4306",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2018-7162",
-    "title": "All versions of Node.js 9.x and 10.x are vulnerable and the severity is HIGH. An attacker can cause a denial of service ",
-    "desc": "All versions of Node.js 9.x and 10.x are vulnerable and the severity is HIGH. An attacker can cause a denial of service (DoS) by causing a node process which provides an http server supporting TLS server to crash. This can be accomplished by sending duplicate/unexpected messages during the handshake. This vulnerability has been addressed by updating the TLS implementation.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "The Node.js Project",
-        "product": "Node.js"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2018-06-13",
-    "updated": "2026-10-08",
-    "url": "https://nodejs.org/en/blog/vulnerability/june-2018-security-releases/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2019-11136",
-    "title": "Insufficient access control in system firmware for Intel(R) Xeon(R) Scalable Processors, 2nd Generation Intel(R) Xeon(R)",
-    "desc": "Insufficient access control in system firmware for Intel(R) Xeon(R) Scalable Processors, 2nd Generation Intel(R) Xeon(R) Scalable Processors and Intel(R) Xeon(R) Processors D Family may allow a privileged user to potentially enable escalation of privilege, denial of service and/or information disclosure via local access.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "2019.2 IPU – UEFI"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2019-11-14",
-    "updated": "2026-10-08",
-    "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00280.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2019-11137",
-    "title": "Insufficient input validation in system firmware for Intel(R) Xeon(R) Scalable Processors, Intel(R) Xeon(R) Processors D",
-    "desc": "Insufficient input validation in system firmware for Intel(R) Xeon(R) Scalable Processors, Intel(R) Xeon(R) Processors D Family, Intel(R) Xeon(R) Processors E5 v4 Family, Intel(R) Xeon(R) Processors E7 v4 Family and Intel(R) Atom(R) processor C Series may allow a privileged user to potentially enable escalation of privilege, denial of service and/or information disclosure via local access.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "2019.2 IPU – UEFI"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2019-11-14",
-    "updated": "2026-10-08",
-    "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00280.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2019-12972",
-    "title": "An issue was discovered in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.32. T",
-    "desc": "An issue was discovered in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.32. There is a heap-based buffer over-read in _bfd_doprnt in bfd.c because elf_object_p in elfcode.h mishandles an e_shstrndx section of type SHT_GROUP by omitting a trailing '\\0' character.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2019-06-26",
-    "updated": "2026-10-08",
-    "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=24689",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2019-13962",
-    "title": "lavc_CopyPicture in modules/codec/avcodec/video.c in VideoLAN VLC media player through 3.0.7 has a heap-based buffer ove",
-    "desc": "lavc_CopyPicture in modules/codec/avcodec/video.c in VideoLAN VLC media player through 3.0.7 has a heap-based buffer over-read because it does not properly validate the width and height.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2019-07-18",
-    "updated": "2026-10-08",
-    "url": "http://git.videolan.org/?p=vlc/vlc-3.0.git%3Ba=commit%3Bh=2b4f9d0b0e0861f262c90e9b9b94e7d53b864509",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2019-14379",
-    "title": "SubTypeValidator.java in FasterXML jackson-databind before 2.9.9.2 mishandles default typing when ehcache is used (becau",
-    "desc": "SubTypeValidator.java in FasterXML jackson-databind before 2.9.9.2 mishandles default typing when ehcache is used (because of net.sf.ehcache.transaction.manager.DefaultTransactionManagerLookup), leading to remote code execution.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2019-07-29",
-    "updated": "2026-10-08",
-    "url": "https://lists.debian.org/debian-lts-announce/2019/08/msg00011.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2019-14439",
-    "title": "A Polymorphic Typing issue was discovered in FasterXML jackson-databind 2.x before 2.9.9.2. This occurs when Default Typ",
-    "desc": "A Polymorphic Typing issue was discovered in FasterXML jackson-databind 2.x before 2.9.9.2. This occurs when Default Typing is enabled (either globally or for a specific property) for an externally exposed JSON endpoint and the service has the logback jar in the classpath.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2019-07-30",
-    "updated": "2026-10-08",
-    "url": "https://lists.debian.org/debian-lts-announce/2019/08/msg00011.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2019-14565",
-    "title": "Insufficient initialization in Intel(R) SGX SDK Windows versions 2.4.100.51291 and earlier, and Linux versions 2.6.100.5",
-    "desc": "Insufficient initialization in Intel(R) SGX SDK Windows versions 2.4.100.51291 and earlier, and Linux versions 2.6.100.51363 and earlier, may allow an authenticated user to enable information disclosure, escalation of privilege or denial of service via local access.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Intel",
-        "product": "2019.2 IPU – Intel(R) SGX"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2019-11-14",
-    "updated": "2026-10-08",
-    "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00293.html",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2019-14892",
-    "title": "A flaw was discovered in jackson-databind in versions before 2.9.10, 2.8.11.5 and 2.6.7.3, where it would permit polymor",
-    "desc": "A flaw was discovered in jackson-databind in versions before 2.9.10, 2.8.11.5 and 2.6.7.3, where it would permit polymorphic deserialization of a malicious object using commons-configuration 1 and 2 JNDI classes. An attacker could use this flaw to execute arbitrary code.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-502",
-      "CWE-200"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "jackson-databind"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2020-03-02",
-    "updated": "2026-10-08",
-    "url": "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-14892",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2019-15218",
-    "title": "An issue was discovered in the Linux kernel before 5.1.8. There is a NULL pointer dereference caused by a malicious USB ",
-    "desc": "An issue was discovered in the Linux kernel before 5.1.8. There is a NULL pointer dereference caused by a malicious USB device in the drivers/media/usb/siano/smsusb.c driver.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2019-08-19",
-    "updated": "2026-10-08",
-    "url": "http://www.openwall.com/lists/oss-security/2019/08/20/2",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2019-15219",
-    "title": "An issue was discovered in the Linux kernel before 5.1.8. There is a NULL pointer dereference caused by a malicious USB ",
-    "desc": "An issue was discovered in the Linux kernel before 5.1.8. There is a NULL pointer dereference caused by a malicious USB device in the drivers/usb/misc/sisusbvga/sisusb.c driver.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2019-08-19",
-    "updated": "2026-10-08",
-    "url": "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.1.8",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2019-16335",
-    "title": "A Polymorphic Typing issue was discovered in FasterXML jackson-databind before 2.9.10. It is related to com.zaxxer.hikar",
-    "desc": "A Polymorphic Typing issue was discovered in FasterXML jackson-databind before 2.9.10. It is related to com.zaxxer.hikari.HikariDataSource. This is a different vulnerability than CVE-2019-14540.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2019-09-15",
-    "updated": "2026-10-08",
-    "url": "https://lists.apache.org/thread.html/0fcef7321095ce0bc597d468d150cff3d647f4cb3aef3bd4d20e1c69%40%3Ccommits.tinkerpop.apache.org%3E",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2019-17543",
-    "title": "LZ4 before 1.9.2 has a heap-based buffer overflow in LZ4_write32 (related to LZ4_compress_destSize), affecting applicati",
-    "desc": "LZ4 before 1.9.2 has a heap-based buffer overflow in LZ4_write32 (related to LZ4_compress_destSize), affecting applications that call LZ4_compress_fast with a large input. (This issue can also lead to data corruption.) NOTE: the vendor states \"only a few specific / uncommon usages of the API are at risk.\"",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2019-10-14",
-    "updated": "2026-10-08",
-    "url": "https://lists.apache.org/thread.html/9ff0606d16be2ab6a81619e1c9e23c3e251756638e36272c8c8b7fa3%40%3Cissues.arrow.apache.org%3E",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2019-18806",
-    "title": "A memory leak in the ql_alloc_large_buffers() function in drivers/net/ethernet/qlogic/qla3xxx.c in the Linux kernel befo",
-    "desc": "A memory leak in the ql_alloc_large_buffers() function in drivers/net/ethernet/qlogic/qla3xxx.c in the Linux kernel before 5.3.5 allows local users to cause a denial of service (memory consumption) by triggering pci_dma_mapping_error() failures, aka CID-1acb8f2a7a9f.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2019-11-07",
-    "updated": "2026-10-08",
-    "url": "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=1acb8f2a7a9f10543868ddd737e37424d5c36cf4",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2019-19080",
-    "title": "Four memory leaks in the nfp_flower_spawn_phy_reprs() function in drivers/net/ethernet/netronome/nfp/flower/main.c in th",
-    "desc": "Four memory leaks in the nfp_flower_spawn_phy_reprs() function in drivers/net/ethernet/netronome/nfp/flower/main.c in the Linux kernel before 5.3.4 allow attackers to cause a denial of service (memory consumption), aka CID-8572cea1461a.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2019-11-18",
-    "updated": "2026-10-08",
-    "url": "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.3.4",
     "source": "CISA Vulnrichment"
   }
 ]
