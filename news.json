@@ -1,6 +1,48 @@
 [
   {
     "source": "thn",
+    "title": "Cisco Warns of Active Attacks Exploiting New Critical Secure Email Gateway Vulnerability",
+    "desc": "Attackers are exploiting a critical flaw in Cisco Secure Email Gateway that lets a sender with no login write files to the appliance's operating system, Cisco&nbsp;said in an advisory&nbsp;on Wednesday.\n\nThe attacker sends an email with a crafted attachment through the gateway and, if it succeeds, c",
+    "url": "https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html",
+    "date": "2026-10-15T00:08:56"
+  },
+  {
+    "source": "boannews",
+    "title": "한화비전 휠체어럭비 선수단, 아시안패러게임 국가대표 4명 발탁",
+    "desc": "한화비전은 자사 소속 장애인 휠체어럭비 선수단이 ‘2026 아이치·나고야 아시안패러게임’(Aichi-Nagoya 2026 Asian Para Games) 국가대표로 출전한다고 15일 밝혔다.한화비전 소속 휠체어럭비 선수단(김건엽, 김영훈, 이성희, 황희철)은 지난 9월 제주도에서 열린 ‘제46회 전국장애인체육대회’ 혼성 휠체어럭비 쿼드(Quad) 종목에 충청북도 대표로 출전해 금메달을 목에 걸었다.혼성 휠체어럭비 쿼드(Quad) 종목은 사지(팔·다리) 기능에 제한이 있는 선수가 참가하는 세부 종목이다. 생활체육 저변 확대를 목적으로",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146401",
+    "date": "2026-10-15 09:44:52"
+  },
+  {
+    "source": "boannews",
+    "title": "하위 도메인 값 하나로 인증 정보 유출... SAP, 파이썬 개발 도구 최고 등급 결함 패치",
+    "desc": "독일 소프트웨어 기업 SAP가 10월 정기 보안 업데이트로 여러 제품의 결함 20개를 고쳤다. 가장 심각한 결함은 파이썬 개발 도구에서 나온 최고 등급 결함으로, 권한 없는 원격 공격자가 인증 정보를 빼낼 수 있다.문제의 결함(CVE-2026-89111)은 ‘SAP 클라우드 SDK 포 파이썬’에 있다. SAP 비즈니스 기술 플랫폼(BTP) 서비스 위에서 AI 에이전트와 파이썬 애플리케이션을 만들 때 쓰는 개발 도구 모음이다.결함은 여러 고객사가 하나의 앱을 나눠 쓰는 멀티테넌트 BTP 앱에서 생긴다. SAP가 13일(현지시각) 깃허",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146373",
+    "date": "2026-10-15 08:20:37"
+  },
+  {
+    "source": "thn",
+    "title": "Hackers Backdoor Nextcloud Servers Through Critical Flaw in Collabora’s Built-in CODE App",
+    "desc": "Attackers exploited a flaw in an optional Nextcloud app,&nbsp;Collabora Online - Built-in CODE Server, to plant web shells on Nextcloud servers. Three administrators&nbsp;reported the issue on GitHub, with the first logged attack on September 10.\n\nA web shell is a small file that executes any comman",
+    "url": "https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html",
+    "date": "2026-10-14T23:08:31"
+  },
+  {
+    "source": "thn",
+    "title": "Microsoft Disrupts 3 Phishing Kits Linked to Over 1 Billion Scam Messages",
+    "desc": "Microsoft and Health-ISAC, along with the Japan Cybercrime Control Center (JC3) and a coalition of private sector companies, such as Resecurity, Cloudflare, Oracle, Proofpoint, and TRM Labs, announced the disruption of three phishing kits, CoGUI (aka NX or FA), Haozi (aka Phoenix), and Iron Man Syst",
+    "url": "https://thehackernews.com/2026/10/microsoft-disrupts-3-phishing-kits.html",
+    "date": "2026-10-14T22:39:15"
+  },
+  {
+    "source": "thn",
+    "title": "U.S. Shuts Down Over 40 Laptop Farms, Charges 14 in North Korean IT Worker Fraud",
+    "desc": "The U.S. Department of Justice (DoJ) on Tuesday charged 14 people and seized about 187 computers as part of its ongoing efforts to disrupt North Korea's fraudulent remote IT worker (ITW) scheme.\n\nThe indictment charges a mix of U.S. citizens and Chinese nationals for their roles in an IT worker cons",
+    "url": "https://thehackernews.com/2026/10/us-shuts-down-over-40-laptop-farms.html",
+    "date": "2026-10-14T22:04:31"
+  },
+  {
+    "source": "thn",
     "title": "CISA Urges Immediate Ivanti Connect Secure Updates as Honeypots Log 105 Exploit Attempts",
     "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday urged organizations to take steps to immediately update their Ivanti Connect Secure (ICS) appliances and deployments to the latest version following the disclosure of an actively exploited vulnerability.\n\nThe security flaw, ",
     "url": "https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html",
@@ -169,7 +211,7 @@
   },
   {
     "source": "boannews",
-    "title": "XBOW, 크롬 연쇄 취약점 발견... 구글 버그바운티 25만달러 수상",
+    "title": "엑스보우, 크롬 연쇄 취약점 발견... 구글 버그바운티 25만달러 수상",
     "desc": "엑스보우(XBOW)는 구글 크롬 취약점 보상 프로그램(Chrome VRP)에서 보상금 25만달러를 수상했다고 14일 밝혔다. 이는 구글이 2026년 새 규정을 적용한 이후 나온 첫 크롬 ‘풀체인’(full-chain) 버그 바운티 사례이자 자율형 오펜시브 보안 플랫폼이 보상을 받은 첫 사례다.이번 성과는 엑스보우 오펜시브 보안 기술과 노하우에 오픈AI GPT-5.6 Sol 모델을 결합해 거둔 결과다. 엑스보우 AI 에이전트와 보안 연구원 1명은 6일간의 공동 작업을 통해 윈도우용 크롬을 공격하는 익스플로잇을 구현했다. 그동안 알려지",
     "url": "https://www.boannews.com/news/articleView.html?idxno=146386",
     "date": "2026-10-14 13:44:38"
@@ -497,20 +539,6 @@
     "date": "2026-10-13 10:46:29"
   },
   {
-    "source": "boannews",
-    "title": "‘보안 점검’ 이름 단 자동화 파일... 깃허브 저장소 수만 곳에 인증 정보 탈취 코드 심겨",
-    "desc": "자동화 기능 깃허브 액션(GitHub Actions)을 악용해 인증 정보를 빼돌리는 악성 워크플로가 깃허브 저장소 수만 곳에 심겼다.보안 기업 소켓(Socket)은 9일(현지시각) 기준 500개가 넘는 깃허브 계정이 7일 이후 이 워크플로를 저장소 수만 곳에 올렸다고 밝혔다. 스텝시큐리티(StepSecurity)와 깃가디언(GitGuardian)도 이 캠페인을 추적한 결과를 내놨다.이들 업체 연구원들은 이번 공격을 2025년 9월 처음 드러난 ‘고스트액션’(GhostAction) 캠페인과 연결했다. 당시엔 깃허브 이용자 327명의",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146301",
-    "date": "2026-10-13 10:30:00"
-  },
-  {
-    "source": "boannews",
-    "title": "아이온큐, 엘리시티 최대 13억달러 주식 인수... 양자 기업이 네트워크 보안 회사 품는다",
-    "desc": "양자 기술 기업 아이온큐가 제로트러스트 보안 기업 엘리시티(Elisity)를 최대 13억달러에 사들인다. 아이온큐는 12일(현지시각) 엘리시티 인수를 위한 최종 계약을 맺었다고 발표했다.인수는 주식 교환으로 진행된다. 13억달러 가운데 최대 1억5000만달러는 엘리시티 실적에 따라 지급 여부가 갈리는 조건부 대금이다. 발행할 주식 수는 거래 종료 직전 20거래일의 아이온큐 거래량가중평균가격으로 정하되, 기준 주가를 33.07~49.61달러 범위로 묶었다. 아이온큐는 4분기 안에 인수를 마칠 것으로 내다봤다.2019년 설립된 엘리시티",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146340",
-    "date": "2026-10-13 10:29:52"
-  },
-  {
     "source": "thn",
     "title": "⚡ Weekly Recap: Helpdesk 0-Days, Rogue Certs, ShinyHunters Arrest, AI-Fooling Malware and More",
     "desc": "Some meetings last longer than it took attackers to jump on a newly disclosed security flaw this week. Within hours, they were already testing it. That's not much time to read the warning, let alone do something about it.\n\nBut speed is only part of the problem. A secure connection didn't always mean",
@@ -670,33 +698,5 @@
     "desc": "The crooks have trust problems of their own. One ransomware affiliate decided to keep the profits for himself. Elsewhere, an attacker left a server exposed, complete with tools and traces of an intrusion. Apparently, keeping things secure is a problem on both sides of the fence.\n\nThe rest of the wee",
     "url": "https://thehackernews.com/2026/10/threatsday-ransomware-affiliate.html",
     "date": "2026-10-08T23:28:02"
-  },
-  {
-    "source": "thn",
-    "title": "Japan Sees Sharp Rise in Web Data Leaks Amid Mobile API Abuse and Metabase Attacks",
-    "desc": "Attackers behind a string of personal data leaks at Japanese organizations have abused APIs for mobile apps and targeted known software flaws, the JPCERT Coordination Center (JPCERT/CC) said.\n\nThe Tokyo-based center, which takes incident reports, based its&nbsp;October 8, 2026 alert&nbsp;on those re",
-    "url": "https://thehackernews.com/2026/10/japan-sees-sharp-rise-in-web-data-leaks.html",
-    "date": "2026-10-08T21:15:56"
-  },
-  {
-    "source": "thn",
-    "title": "UAC-0099 Targets Ukrainian Government Personnel With ASHVEIN RAT Hiding Commands in HTML",
-    "desc": "The Russia-aligned threat actor known as UAC-0099 has been attributed to a previously undocumented .NET infostealer and remote access trojan (RAT) codenamed ASHVEIN.\n\nAccording to TrendAI, the malware has been put to use in attacks targeting Ukrainian government personnel. The cybersecurity company ",
-    "url": "https://thehackernews.com/2026/10/uac-0099-targets-ukrainian-government.html",
-    "date": "2026-10-08T20:56:56"
-  },
-  {
-    "source": "thn",
-    "title": "ARTEX AI Pentesting Tool Used in Data Theft Attacks on South Korean Financial Firms",
-    "desc": "Cybersecurity researchers have disclosed details of a targeted campaign aimed at South Korean financial organizations that used an artificial intelligence (AI) pen testing tool named ARTEX to carry out the attacks.\n\nThe activity, per CrowdStrike Intelligence, was active from late September to early ",
-    "url": "https://thehackernews.com/2026/10/artex-ai-pentesting-tool-used-in-data.html",
-    "date": "2026-10-08T19:42:34"
-  },
-  {
-    "source": "thn",
-    "title": "Wazza Phishkit Targets Banking, Government, and Manufacturing Across the US, EU, and Australia",
-    "desc": "Phishing kits are no longer limited to copying a familiar login page and waiting for a victim to enter credentials. Attackers are increasingly building filtering, session management, and traffic controls into the infrastructure that delivers the phishing page itself.\n\nANY.RUN has identified Wazza, a",
-    "url": "https://thehackernews.com/2026/10/wazza-phishkit-targets-banking.html",
-    "date": "2026-10-08T16:00:00"
   }
 ]
