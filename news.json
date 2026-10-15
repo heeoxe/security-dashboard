@@ -1,10 +1,234 @@
 [
   {
     "source": "thn",
+    "title": "Help TDS Linked to Hotejka as 20,000+ Cloudflare Pages Domains Host Tech Support Scams",
+    "desc": "A long-running Traffic Distribution System (TDS) known as Help TDS to a Russian-language affiliate program called Hotejka, which appears to be a rebrand of a traffic monetization operation dubbed ROI777.\n\nHelp TDS is assessed to be active since at least 2017, offering PHP code templates to partners ",
+    "url": "https://thehackernews.com/2026/10/help-tds-linked-to-hotejka-as-20000.html",
+    "date": "2026-10-15T19:41:36"
+  },
+  {
+    "source": "thn",
+    "title": "NGINX Fixes 5 Flaws, Including Possible RCE and a TLS Bug That May Skip Client-Cert Checks",
+    "desc": "NGINX released&nbsp;versions 1.30.6 and 1.31.7&nbsp;on October 14 to fix five vulnerabilities, one of them present in every release since May 2005.\n\nThere are three memory bugs that F5, the company behind NGINX, says could crash a worker process or possibly let an attacker run code, and each require",
+    "url": "https://thehackernews.com/2026/10/nginx-fixes-5-flaws-including-possible.html",
+    "date": "2026-10-15T18:28:05"
+  },
+  {
+    "source": "thn",
+    "title": "Next.js Ships Out-of-Band Patch for Two Critical RCE Flaws in Caching and SVG Processing",
+    "desc": "Next.js released an&nbsp;out-of-band security update&nbsp;on October 14 that fixes two critical flaws allowing unauthenticated remote code execution, along with a high-severity denial-of-service flaw.\n\nOne code-execution flaw is in React Server Components, and the other in librsvg, the open-source l",
+    "url": "https://thehackernews.com/2026/10/nextjs-ships-out-of-band-patch-for-two.html",
+    "date": "2026-10-15T17:58:13"
+  },
+  {
+    "source": "thn",
+    "title": "Drupal Patches Critical Field UI Flaw With Unauthenticated RCE Path via Contributed Modules",
+    "desc": "Drupal core has a critical flaw in its Field UI module that could let an attacker run code on the site's server, and fixes were shipped on October 14 in Drupal 11.4.10, 11.3.19, and 10.6.19.\n\nAn attacker cannot reach the flaw through core alone, the Drupal Security Team said in&nbsp;its advisory. Se",
+    "url": "https://thehackernews.com/2026/10/drupal-patches-critical-core-rce-flaw.html",
+    "date": "2026-10-15T17:37:20"
+  },
+  {
+    "source": "thn",
+    "title": "Fake AI Attacks Spread Across US Companies: How MSSPs Can Stop Incidents Early",
+    "desc": "Attackers are impersonating popular AI products to distribute malware, steal browser sessions, and compromise business accounts. ANY.RUN linked 1,258 public sandbox analyses to fake AI campaigns between April and October of 2026.&nbsp;\n\nThe campaigns also increase operational pressure on MSSPs servi",
+    "url": "https://thehackernews.com/2026/10/fake-ai-attacks-spread-across-us.html",
+    "date": "2026-10-15T17:16:59"
+  },
+  {
+    "source": "thn",
+    "title": "Palo Alto Networks Patches PAN-OS Authenticated RCE Flaw Amid Active Exploitation",
+    "desc": "Palo Alto Networks on Wednesday issued security updates for a high-severity flaw in PAN-OS software that has come under active exploitation.\n\nThe vulnerability, tracked as CVE-2026-0322 (CVSS score: 8.6), is a case of remote code execution in the management interface.\n\n\"A remote code execution (RCE)",
+    "url": "https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html",
+    "date": "2026-10-15T17:16:49"
+  },
+  {
+    "source": "thn",
+    "title": "Why AI Confidence Is Not Validation",
+    "desc": "AI is already part of digital forensics and incident response work, with or without a policy in place to govern it. The issue is that these tools are growing more confident in their own output faster than practitioners are developing reliable ways to verify it. Without governance models and validati",
+    "url": "https://thehackernews.com/2026/10/why-ai-confidence-is-not-validation.html",
+    "date": "2026-10-15T16:34:35"
+  },
+  {
+    "source": "thn",
+    "title": "India Mandates Registered Caller Name Display on 4G and Newer Networks From November 1",
+    "desc": "The Indian government has directed telecom service providers (TSPs) in the country to mandatorily display callers' registered names along with their numbers for incoming calls starting November 1, 2026, in an effort to help people identify calls from unknown numbers and tackle spam or fraudulent cal",
+    "url": "https://thehackernews.com/2026/10/india-mandates-registered-caller-name.html",
+    "date": "2026-10-15T16:12:16"
+  },
+  {
+    "source": "thn",
+    "title": "GhostAction Compromises About 1,900 GitHub Accounts, Targets Over 30,000 Repositories",
+    "desc": "The credential-theft campaign known as GhostAction has ramped up, targeting more than 30,000 repositories across 3,000 users and organizations.\n\nThe spike, according to GitGuardian, was observed on October 8 and 9, 2026.\n\n\"This resulted from compromising the GitHub accounts of about 1,900 users. It ",
+    "url": "https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html",
+    "date": "2026-10-15T14:15:10"
+  },
+  {
+    "source": "thn",
+    "title": "Langflow's Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts",
+    "desc": "Threat actors are exploiting a critical security flaw in Langflow, according to an alert from Previdian.\n\nLangflow is an open-source platform that allows developers to build artificial intelligence (AI) applications and agentic workflows. In February 2025, DataStax, the parent company of Langflow, w",
+    "url": "https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html",
+    "date": "2026-10-15T12:37:05"
+  },
+  {
+    "source": "thn",
+    "title": "AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches",
+    "desc": "Singapore-based Ahsay Backup has released security updates to address two security flaws in AhsayCBS that have been exploited by bad actors to drop web shells and XMRig cryptocurrency miners.\n\nThe vulnerabilities in question are CVE-2026-105133 and CVE-2026-105134, which could be chained to sidestep",
+    "url": "https://thehackernews.com/2026/10/ahsaycbs-flaws-exploited-to-deploy-web.html",
+    "date": "2026-10-15T12:13:08"
+  },
+  {
+    "source": "thn",
     "title": "Cisco Warns of Active Attacks Exploiting New Critical Secure Email Gateway Vulnerability",
     "desc": "Attackers are exploiting a critical flaw in Cisco Secure Email Gateway that lets a sender with no login write files to the appliance's operating system, Cisco&nbsp;said in an advisory&nbsp;on Wednesday.\n\nThe attacker sends an email with a crafted attachment through the gateway and, if it succeeds, c",
     "url": "https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html",
     "date": "2026-10-15T00:08:56"
+  },
+  {
+    "source": "boannews",
+    "title": " “처벌보다 피해 확산 방지에 초점을”... 금융권 AI 해킹 관련 긴급 좌담회",
+    "desc": "“금융권 연쇄 해킹 사태에서 공격에 악용된 취약점이 각 기업마다 서로 다르다고 합니다. 구체적 정보를 서로 공유하면 많은 것을 얻을 수 있다는 얘기입니다. 적극적 공유에 대한 인센티브가 없고 오히려 처벌을 두려워해야 하는 이 구조가 ‘규제의 역설’입니다.”14일 보안뉴스가 개최한 ‘금융권 AI 해킹 관련 긴급 좌담회’에서 나온 목소리다.최근 AI를 활용한 공격자가 국내 금융기업들을 동시다발적으로 공격했다. 이에 대해 보안 업계와 학계, 법조계의 보안 전문가들은 “빠른 회복에 초점을 맞춰야한다”고 공통적으로 강조했다.특히 대한민국 보",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146427",
+    "date": "2026-10-15 19:21:28"
+  },
+  {
+    "source": "boannews",
+    "title": "‘장인’ 해커 시대 종말…AI로 사이버 공격 경제 논리 뒤집혔다",
+    "desc": "“더 이상 해커들은 ‘선택과 집중’을 하지 않습니다. 해킹의 목적이 돈이라고 할 때, 개인정보나 의료정보, 기타 정보가 융합된 개인정보를 해킹할 수 있다면 그것만으로도 돈이 되기 때문에 굳이 어려운 주요 자산 시스템을 해킹할 필요가 없어졌습니다.”곽경주 티오리 부사장이 가 개최한 ‘금융권 AI 해킹 공격 관련 긴급 좌담회’에서 한 말이다. AI로 사이버 공격의 경제 논리가 뒤집혔다는 얘기다. 최근 금융권을 강타한 AI 도구 기반 침해 공격은 금융사 핵심 고객 정보가 담긴 주요 시스템이 아니라 외부 영업 지원 등 주변 자산",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146414",
+    "date": "2026-10-15 19:20:47"
+  },
+  {
+    "source": "boannews",
+    "title": "“제로트러스트 전환, 레거시 보안 장비→XDR 통합이 첫 단추”",
+    "desc": "기존 레거시 보안 장비를 AI 기반 확장형 탐지 및 대응(XDR)으로 통합하면서 단계적으로 제로트러스트 성숙도 수준을 향상시켜야 한다는 주장이 나왔다.양봉열 로그프레소 대표는 15일 한국정보보호학회가 개최한 ‘제2회 제로트러스트연구회 워크숍’에서 ‘XDR 기반의 제로트러스트 아키텍처 이행 전략’을 주제로 발표했다. 제로트러스트 전환을 위해 새로운 솔루션을 도입하는 것이 아니라 기존에 보유한 보안 솔루션을 XDR로 통합하고, 발생하는 이상징후를 AI 기반으로 추론하고 검증할 수 있어야 한다는 분석이다. 양 대표는 “적지 않은 기업들이",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146424",
+    "date": "2026-10-15 18:07:37"
+  },
+  {
+    "source": "boannews",
+    "title": "“LLM이 코드 바꿔도 지문은 남는다” 샌즈랩, VB2026서 AI 변종 악성코드 추적 기법 발표",
+    "desc": "샌즈랩이 스페인 세비야에서 열리고 있는 국제 보안 컨퍼런스 ‘바이러스블러틴 (VB: Virus Bulletin) 2026’에서 AI 기반 변종 악성코드 분석 연구 성과를 공개했다고 15일 밝혔다. VB는 악성코드 분석과 사이버 위협 인텔리전스(CTI) 분야 세계적 국제 컨퍼런스다.이 연구는 VB2026 공식 발표 프로그램에 선정됐다. 전찬빈·임승범 샌즈랩 선임연구원이 14일 ‘LLM 기반 변종 악성코드의 계보 추적: GHOST는 흔적을 남기는가?’를 주제로 공동 발표했다. 두 연구원은 생성형 AI가 악성코드의 자동 변형과 변종 대량",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146423",
+    "date": "2026-10-15 18:03:54"
+  },
+  {
+    "source": "boannews",
+    "title": "카스퍼스키, 3분기 국내 웹 위협 129만건·로컬 위협 315만건 탐지",
+    "desc": "카스퍼스키는 7-9월 사이 국내 ‘카스퍼스키 시큐리티 네트워크’(KSN) 참여자 컴퓨터에서 인터넷 기반 사이버 위협 129만844건과 로컬 위협 315만5127건을 탐지했다고 15일 밝혔다.2026년 3분기 국내 사이버 위협 통계에 따르면, 국내 KSN 참여자 중 9.2%가 웹 기반 위협의 공격을 받은 것으로 나타났다. 웹 서핑 관련 위험도에서 세계 126위다. 이 기간 웹 기반 위협 관련 사용자 공격 비율 상위 5개국은 알바니아(26.9%), 방글라데시(23.9%), 뉴질랜드(19.9%), 네팔(19.7%), 슬로바키아(19.6%",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146426",
+    "date": "2026-10-15 18:00:02"
+  },
+  {
+    "source": "boannews",
+    "title": "카카오톡에서 AI 비서 안전하게 관리... 카카오, 자율 에이전트 시대 AI 윤리 원칙 ‘SPIRIT’ 공개",
+    "desc": "스스로 계획하고 행동하는 자율 에이전트 시대가 본격화되면서 AI의 권한 남용과 통제 불능 리스크가 핵심 과제로 부상했다. 카카오는 통제 주도권과 권한 등 5대 리스크 영역에 인간 감독과 비상 제어 장치를 촘촘히 연결한 새로운 AI 윤리 원칙과 실무 이행 가이드를 15일 공개했다. 카카오는 13일 카카오 AI 캠퍼스에서 열린 개발자 콘퍼런스 ‘if(kakao)26’에서 이를 공개했다. 하진화 카카오 AI 커뮤니케이션 수석은 ‘윤리를 깨는 자율 에이전트, 어떻게 대응할까?’ 세션을 통해 AI가 스스로 계획하고 행동하는 환경에서 인간의",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146422",
+    "date": "2026-10-15 17:57:34"
+  },
+  {
+    "source": "boannews",
+    "title": "포티넷코리아, 20일 ‘2026 SASE 서밋 코리아’ 개최... 망분리·AI 보안 해법 제시",
+    "desc": "포티넷이 20일 ‘2026 SASE 서밋 코리아’(SASE Summit Korea)를 온라인으로 개최한다고 15일 밝혔다. 가트너 애널리스트와 포티넷 국내외 전문가들이 참여해 차세대 보안 접속(SASE)의 미래를 짚고 이를 기존 운영 환경과 효과적으로 연계하는 방안을 다룬다.최근 정부를 비롯해 금융, 의료, 국방, 핵심 인프라 분야의 엄격한 규제 요건과 퍼블릭 클라우드 연결이 제한된 환경으로 인해 데이터 처리 및 저장 위치에 대한 통제권을 유지하려는 디지털 주권 요구가 커지고 있다. 이에 이창운 포티넷코리아 상무는 국내 망분리 및",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146421",
+    "date": "2026-10-15 17:12:41"
+  },
+  {
+    "source": "boannews",
+    "title": "파이오링크, 자체 개발 CTEM ‘블루헌터’로 미공개 오픈소스 취약점 28건 발굴",
+    "desc": "파이오링크는 자체 개발한 지속적 위협 노출 관리(CTEM) 기반 사이버 위협 관리 플랫폼 ‘블루헌터’(BlueHunter)를 활용해 기존에 알려지지 않았던 오픈소스 소프트웨어 신규 취약점 28건을 발굴했다고 15일 밝혔다. 이 가운데 2건엔 CVE가 할당됐으며, 관련 정보는 12월 공개 예정이다.‘블루헌터’는 에이전틱 AI 기반 CTEM 플랫폼으로, IT 자산과 공격 표면을 탐색하는 ‘블루모드’와 공격자 관점의 자동화된 침투 검증을 수행하는 ‘레드모드’를 통해 실제 취약점 악용 가능성을 확인한다. 파이오링크 위협분석센터는 블루헌터를",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146417",
+    "date": "2026-10-15 17:11:15"
+  },
+  {
+    "source": "boannews",
+    "title": "“오픈랜, 망 운용 개방성 높였지만 기존 신뢰 경계 무너졌다”",
+    "desc": "제로트러스트 보안 패러다임을 기반으로 개방형 무선 접속망(오픈랜, O-RAN)의 보안 위협에 대응해야 한다는 연구 결과가 나왔다.권혁찬 한국전자통신연구원(ETRI) 책임연구원은 15일 서울 서초구 양재동 aT센터에서 한국정보보호학회 개최로 열린 ‘제2회 제로트러스트연구회 워크숍’에서 ‘제로트러스트 기반 오픈랜 무선망 지능형 제어기(RIC) 접근제어 기술’을 주제로 한 연구 결과를 소개했다. 오픈랜의 악성 제어 앱(xApp) 탐지 및 접근통제 연구 결과와 AI 네트워크 보안 방향을 제시했다.오픈랜은 이동통신기지국의 개방화, 가상화,",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146419",
+    "date": "2026-10-15 17:09:09"
+  },
+  {
+    "source": "boannews",
+    "title": "직원 계정 하나로... 메타, 깃허브 해킹으로 약 1500명 개인정보 유출",
+    "desc": "메타가 해커에게 일부 깃허브 저장소를 뚫려 약 1500명의 개인정보가 영향을 받았다고 밝혔다. 피해자 대부분은 미국에서 일하는 메타 직원이며, 메타는 13일(현지시각)부터 이들에게 통지를 시작했다.메타는 몇 주 전 침입을 탐지했다. 회사에 따르면 외부 조직이 직원 한 명의 탈취된 계정 정보로 저장소에 접근했다. 메타 보안팀은 공격자의 접근을 끊고 깃허브와 수사기관을 불러들였다.메타는 시큐리티위크에 공격자가 가져간 데이터의 99%가 일부 제품과 관련된 소프트웨어 코드 같은 업무 데이터였다고 밝혔다. 나머지 1%가 개인정보였다.이 개인",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146376",
+    "date": "2026-10-15 15:05:21"
+  },
+  {
+    "source": "boannews",
+    "title": "프라이빗AI “美 TIC 참고해 금융권 제로트러스트 실현해야”",
+    "desc": "금융권 AI 기반 해킹 여파가 이어지고 있는 가운데, 미국 연방정부의 네트워크 보안 참조 모델 TIC (Trusted Internet Connections) 구조를 금융권에 적용해 분산된 보안 정책을 일관되게 관리해야 한다는 주장이 나왔다. 접근 경로와 데이터 이동을 지속적으로 검증하는 ‘제로트러스트’ 패러다임을 적용하는 것이 골자다. 김주태 프라이빗에이아이 부사장은 15일 한국정보보호학회가 개최한 ‘제2회 제로트러스트연구회 워크숍’에서 금융권 제로트러스트 허브 구축 전략을 주제로 발표했다. 김 부사장은 AI를 활용한 사이버 공격이",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146413",
+    "date": "2026-10-15 13:53:39"
+  },
+  {
+    "source": "boannews",
+    "title": "[배종찬의 보안 빅데이터] 우리 집 냉장고가 해킹당하면 어떻게 될까",
+    "desc": "최근 프랑스 전역의 대형 슈퍼마켓 체인인 ‘인터마르셰’와 ‘코오페라티브U’를 비롯해 수백 개 점포에서 운영 중인 냉장·냉동고가 사이버 공격을 받는 초유의 사태가 벌어졌다.해커들의 원격 조작으로 냉장 시설의 제상(성에 제거) 기능이 강제로 작동하면서 내부 온도가 최고 섭씨 50도에서 80도까지 치솟았고, 보관 중이던 신선·냉동식품이 대량으로 부패해 전량 폐기되는 경제적·사회적 대란이 빚어졌다. 일부 매장에서는 화재 신고까지 이어지며 현장의 물리적 안전마저 심각하게 위협받았다. 이 사건은 가상 공간의 데이터 유출을 넘어, 우리의 일상과",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146382",
+    "date": "2026-10-15 13:14:33"
+  },
+  {
+    "source": "boannews",
+    "title": "델 테크놀로지스, AI 데이터 플랫폼 강화... AI 에이전트 활용 지원",
+    "desc": "델 테크놀로지스(한국 사장 유상모)가 기업의 AI 활용을 지원하기 위해 ‘델 AI 데이터 플랫폼’(Dell AI Data Platform)의 기능을 대폭 확대한다고 밝혔다. 이번 확장은 기업 내부에 분산된 데이터에 일관된 의미와 맥락을 부여하고, AI 애플리케이션과 에이전트가 이를 신뢰할 수 있는 정보로 활용하도록 지원하는 데 초점을 맞췄다.델은 이를 통해 기업이 AI 시스템의 응답 정확도와 처리 효율성을 높이는 동시에 운영 비용을 절감하고, AI 프로젝트를 실제 비즈니스 운영 환경으로 전환하는 데 걸리는 시간을 단축할 수 있을 것",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146406",
+    "date": "2026-10-15 13:13:40"
+  },
+  {
+    "source": "boannews",
+    "title": "클로드가 취약점 제보자... curl, HTTP/2 업로드 결함 패치",
+    "desc": "수많은 프로그램에 들어가 있는 파일 전송 도구 ‘curl’이 악성 서버가 메모리를 오염시킬 수 있는 결함을 고쳤다.더핵커뉴스에 따르면 curl 개발진은 14일 8.23.0 버전을 내고 HTTP/2 업로드 처리 과정의 해제 후 사용(use-after-free) 결함(CVE-2026-92392)을 수정했다. 해제 후 사용은 이미 반납한 메모리를 프로그램이 계속 쓰는 오류다. curl 명령줄 도구와 라이브러리 libcurl 모두 영향을 받으며 2025년 2월 나온 8.12.0~8.22.0 버전에 결함이 있었다.결함은 앤트로픽이 찾았다.",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146400",
+    "date": "2026-10-15 13:11:57"
+  },
+  {
+    "source": "boannews",
+    "title": "“AI발 보안 위협, 공격·방어 비대칭 야기…ZT 강조돼야”",
+    "desc": "인공지능(AI)발 해킹 위협에 대응하는 전략으로 제로트러스트 보안 패러다임이 지목되는 가운데, 제로트러스트 관련 보안 전문가들이 한 데 모여 금융·통신 등 다양한 분야의 제로트러스트 구축 사례와 제로트러스트 관련 신기술을 논의했다.한국정보보호학회 제로트러스트연구회는 15일 서울 서초구 양재동 aT센터 그랜드볼룸에서 ‘제2회 제로트러스트연구회 워크숍’을 개최했다. 워크숍에서는 △분야별 제로트러스트 구축 사례 및 연구 △AI 레드티밍을 통한 위협 검증 △에이전틱 AI 시대의 신원·거버넌스 체계 △제로트러스트 신기술 등을 주제로 발표가",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146411",
+    "date": "2026-10-15 13:08:12"
+  },
+  {
+    "source": "boannews",
+    "title": "SINCON 2026, ‘Metamorphosis: Becoming’ 주제로 싱가포르서 개최",
+    "desc": "화이트 해커와 사이버보안 전문가들이 한자리에 모여 기술과 지식을 공유하고, 미래 보안의 방향성을 모색하는 행사인 ‘SINCON 2026’이 10월 15일부터 16일까지 양일간 싱가포르 voco Orchard Singapore 호텔에서 개최된다.IIC Productions Pte. Ltd.가 주최하는 이번 행사는 ‘Metamorphosis: Becoming’을 공식 주제로 내세웠다. 자연에서 애벌레가 나비로 완전히 다른 형태와 능력을 갖추게 되는 변태(Metamorphosis)의 개념을 인간의 사고와 기술 발전에 접목한 것으로, 단순",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146412",
+    "date": "2026-10-15 12:59:30"
+  },
+  {
+    "source": "boannews",
+    "title": "AI 보안 현장 경험 공유의 장... 토스, 보안 콘퍼런스 ‘가디언즈 26’ 접수 시작",
+    "desc": "토스 6개 계열사의 AI 기반 보안관제, 제로트러스트, 레드티밍 등 AI 보안 현장 경험을 나누는 장이 열린다.토스(운영사 비바리퍼블리카, 대표 이승건)가 11월 6일 서울 코엑스 그랜드볼룸에서 보안 콘퍼런스 '가디언즈(GUARDIANS) 26'을 개최한다고 15일 밝혔다. 참가 신청은 이날부터 21일까지 가디언즈 26 공식 홈페이지를 통해 접수 가능하다.가디언즈는 토스가 매년 여는 보안 특화 콘퍼런스로, 보안 분야의 최신 기술과 고민을 나누는 자리다. 스타트업이 보안을 주제로 대규모 행사를 여는 사례가 드문 만큼, 보안 업계와 개",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146409",
+    "date": "2026-10-15 10:40:57"
+  },
+  {
+    "source": "boannews",
+    "title": "인터엠, “지능형 안전·방송 시장 공략” AI 음향인식 플랫폼 개발 본격화",
+    "desc": "음향·방송 전문기업 인터엠(대표 조남용)이 자체 네트워크 오디오 기술에 인공지능(AI)을 접목한 차세대 음향지능(Acoustic Intelligence) 플랫폼 개발에 나선다.인터엠은 13일 서울 도봉구 방학사옥에서 AI 전문기업 크랜베리, 서울과학기술대학교 산학협력단 등 연구개발 참여기관과 ‘실환경 기반 음향 이벤트 및 다국어 음성 인지 Acoustic Intelligence 플랫폼 개발’ 과제 수행을 위한 업무협약(MOU)을 체결하고 사업 착수회의를 개최했다.이번 과제는 중소벤처기업부 ‘2026년도 중소기업기술혁신개발사업 글로벌",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146410",
+    "date": "2026-10-15 10:39:50"
+  },
+  {
+    "source": "boannews",
+    "title": "개인 계정으로 보낸 파일 100여 개... 오픈AI “애플로 간 직원이 미공개 제품 정보 가져가”",
+    "desc": "오픈AI를 떠나 애플로 간 직원이 미공개 제품 자료를 들고 나갔다고 오픈AI가 법원에서 주장했다.로이터에 따르면 오픈AI는 미국 캘리포니아주 새너제이 연방법원에 낸 서류에서, 이 직원이 미공개 제품 관련 파일 100개가 넘는 분량을 개인 계정으로 보냈다고 밝혔다. 오픈AI는 이 직원이 이후 애플 고위 경영진 앞에서 그 미공개 제품을 소개하는 발표까지 했다고 주장했다.오픈AI는 이 발표가 몇 달 전에 있었다고 밝혔다. 그리고 애플이 지금 자체 AI 제품을 만들고 있다며 이번 주 나온 애플 ‘홈뷰’(HomeView) 제품을 예로 들었다",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146405",
+    "date": "2026-10-15 10:23:38"
+  },
+  {
+    "source": "boannews",
+    "title": "신요식 유니온바이오메트릭스 대표, 4만주 추가 매수",
+    "desc": "생체인식 AI 인프라 보안 전문기업 유니온바이오메트릭스는 14일 신요식 대표가 개인 자금으로 보통주 4만주를 장내 매수했다고 공시했다. 최근 창사 이래 최대 규모의 수주와 공공조달 시장 진출 성과가 이어지는 가운데, 경영진이 직접 지분을 확대하며 회사의 중장기 성장성과 기업가치에 대한 자신감을 나타낸 것으로 풀이된다.총 매수 금액은 10월 12일 결제일 기준 1억1200만원이며, 주당 매수 단가는 2800원이다. 이에 따라 신 대표 보유주식은 312만4468주에서 316만4468주로 증가했으며, 지분율은 22.19%에서 22.47%",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146408",
+    "date": "2026-10-15 10:20:19"
+  },
+  {
+    "source": "boannews",
+    "title": "“스캔 폭격하고 안전장치 뚫는 AI 해킹툴”... 티오리, ‘아르텍스’ 분석 백서 발간",
+    "desc": "AI 해킹 도구는 짧은 시간에 수만건의 취약점 스캔 요청을 쏟아부어 서비스의 가용성에 영향을 미치는 것으로 나타났다. 공격 계획을 스스로 세운 뒤 공격 행위패턴을 남기고, 안전장치도 데이터 삭제 등 위험을 차단하기엔 역부족인 것으로 확인됐다.AI 기반 오펜시브 사이버 보안 기업 티오리(대표 박세준)가 15일 최근 국내 금융권 침해사고에서 사용 흔적이 확인된 ‘아르텍스’(ARTEX) 등 AI 해킹 도구들을 심층 분석하고, 자체 실험을 통해 검증한 위협과 대응 방안을 담은 백서를 발간했다.백서는 최근 급격히 증가하고 있는 AI 기반 공",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146407",
+    "date": "2026-10-15 10:17:54"
   },
   {
     "source": "boannews",
@@ -37,7 +261,7 @@
   {
     "source": "thn",
     "title": "U.S. Shuts Down Over 40 Laptop Farms, Charges 14 in North Korean IT Worker Fraud",
-    "desc": "The U.S. Department of Justice (DoJ) on Tuesday charged 14 people and seized about 187 computers as part of its ongoing efforts to disrupt North Korea's fraudulent remote IT worker (ITW) scheme.\n\nThe indictment charges a mix of U.S. citizens and Chinese nationals for their roles in an IT worker cons",
+    "desc": "The U.S. Department of Justice (DoJ) on Tuesday charged 14 people and seized about 187 computers and KVM devices as part of its ongoing efforts to disrupt North Korea's fraudulent remote IT worker (ITW) scheme.\n\nThe indictment charges a mix of U.S. citizens and Chinese nationals for their roles in a",
     "url": "https://thehackernews.com/2026/10/us-shuts-down-over-40-laptop-farms.html",
     "date": "2026-10-14T22:04:31"
   },
@@ -392,153 +616,6 @@
     "date": "2026-10-13T11:30:11"
   },
   {
-    "source": "boannews",
-    "title": "시놀로지 “AI 활용 열쇠는 데이터”, 솔루션 데이 2026서 데이터 관리 전략 공개",
-    "desc": "글로벌 데이터 관리 및 보안 전문기업 시놀로지(한국사업본부 총괄 빅터 왕)가 13일 서울 여의도 콘래드 서울에서 ‘시놀로지 솔루션 데이 2026’(Synology Solution Day 2026)을 개최했다. 올해 행사는 DSM(DiskStation Manager) 출시 20주년을 맞아 ‘AI 시대의 근간이 되는 데이터 가치 재조명'을 주제로 열렸다. 시놀로지는 AI 시대 기업의 데이터 저장·보호 및 효율적 활용을 위한 전략과 최신 솔루션을 소개했다.빅터 왕(Victor Wang) 시놀로지 한국사업본부 총괄은 환영사에서 “현재 전",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146365",
-    "date": "2026-10-13 17:32:18"
-  },
-  {
-    "source": "boannews",
-    "title": "개인정보위, 내년 상반기 세종 간다... 44개 기관 9929명 이전",
-    "desc": "개인정보보호위원회가 출범 16년만에 서울에서 세종으로 이전이 확정됐다.13일 행정안전부가 발표한 ‘2차 중앙행정기관 이전 추진계획’의 이전 대상에 개인정보위가 포함됐다.개인정보위는 내년 상반기 방송미디어통신위원회·원자력안전위원회·국가인권위원회·국가교육위원회·재외동포청 등과 함께 세종으로 이전한다. 개인정보위는 세종 지역 민간 임차 공간을 사용할 예정이다.개인정보위는 16년 전인 2011년 9월 ‘개인정보보호법’ 시행에 따라 출범했다. 출범 초기에는 서울 서대문구 미근동 소재 한 빌딩에 위치했으며 이후 현재 위치인 정부서울청사로 사무",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146366",
-    "date": "2026-10-13 17:26:51"
-  },
-  {
-    "source": "boannews",
-    "title": "새마을금고 400명대 개인정보 유출... 계좌정보도 포함",
-    "desc": "금융권 해킹 여파가 이어지고 있는 가운데 새마을금고에서도 400명대 정보 유출이 확인됐다.새마을금고에서 고객 400여건의 개인정보가 유출된 것으로 13일 드러났다. 새마을금고는 유출 내용을 확인하고 당국에 신고했다. 고객번호와 이름을 비롯해, △암호화된 주민번호 △계좌번호 △생년월일 △휴대폰번호 △집전화번호 △회사전화번호 △집 주소 △회사주소 △이메일주소 △계좌잔액이 유출된 것으로 확인됐다.공격은 연휴 기간인 10일 오후 이뤄졌다. 새마을금고는 앞서 외부 공격자의 비정상 접근 동향을 파악하고 차단했지만, 새로운 다수 공격을 받으면서",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146364",
-    "date": "2026-10-13 17:04:00"
-  },
-  {
-    "source": "boannews",
-    "title": "에임인텔리전스, 중동 AI 보안 시장 공략 본격화",
-    "desc": "에임인텔리전스(대표 유상윤)가 아랍에미리트(UAE) 보안 기업과 손을 맞잡았다. 중동 AI 보안 시장 공략에 박차를 가한다. 에임인텔리전스는 UAE 아부다비에 본사를 둔 사이버보안 기업 CPX홀딩과 전략적 협력을 위한 업무협약(MOU)을 체결했다고 13일 밝혔다. CPX의 현지 시장 접근성과 고객 네트워크에 에임인텔리전스의 AI 보안 기술을 결합한다. 공동 시장 진출과 AI 보안 솔루션 공동 개발도 추진한다. CPX는 UAE 대표 AI 기업 그룹42(Group42)의 계열사로 2022년 설립됐다. 600명 이상의 보안 전문가를 두고",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146363",
-    "date": "2026-10-13 16:57:15"
-  },
-  {
-    "source": "boannews",
-    "title": "에버스핀-KB국민카드-SBI, AI 에이전트 동맹... 디지털 금융 혁신 속도",
-    "desc": "에버스핀이 KB국민카드, 일본 종합금융그룹 SBI홀딩스, 합작법인 SBI에버스핀과 함께 AI 에이전트 신원 및 권한 검증과 한·일 디지털 금융 결제 협력을 위한 4자 업무협약(MOU)을 체결했다고 13일 밝혔다.이번 협약은 AI 에이전트의 신원과 권한을 안전하게 검증하는 신뢰·보안 플랫폼 ‘KYA(Know Your Agent) Trust Gateway’ 기술 실증을 위한 것이다. SBI홀딩스와 에버스핀 합작법인 SBI에버스핀은 개발 중인 KYA 기술을 바탕으로 AI 에이전트가 누구인지 확인하는 것을 넘어 어떤 이용자로부터 권한을 위",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146362",
-    "date": "2026-10-13 16:45:30"
-  },
-  {
-    "source": "boannews",
-    "title": "맑은소프트 개인정보 유출 규모 237만건... 고객사 22곳 불똥",
-    "desc": "온라인 학습관리시스템(LMS) 제공 업체 맑은소프트의 개인정보 유출 규모가 약 237만건에 달하는 것으로 나타났다. 13일 국회 정무위원회 소속 사회민주당 한창민 의원실이 개인정보보호위원회로부터 제출받은 자료에 따르면 맑은소프트가 개보위에 신고한 개인정보 유출 규모는 약 237만건인 것으로 나타났다. 다만 이는 신고 기준으로 실제 유출 규모는 다를 수 있다. 맑은소프트에 따르면 맑은소프트가 제공하는 LMS를 이용하다 유출 피해를 입은 사이트는 총 22곳으로, 국민권익위원회(권익위) 등 공공 부문과 학계, 민간 등 다양한 분야에서 피",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146361",
-    "date": "2026-10-13 16:38:12"
-  },
-  {
-    "source": "boannews",
-    "title": "금융보안원, ‘FISCON 2026’ 콘퍼런스 개최... AI로 재편될 미래 금융 대비",
-    "desc": "금융보안원은 내달 12일 여의도 콘래드서울 호텔에서 국내 최대 금융정보보호 컨퍼런스 ‘FISCON 2026’을 개최한다고 13일 밝혔다.‘Now for Next Finance’를 주제로 열리는 이번 행사는 AI로 재편될 미래 금융의 새로운 보안 전략을 모색하기 위해 마련됐다. 최근 잇따른 금융권 침해사고와 AI로 고도화되는 사이버 위협에 대한 경각심을 높이고, 선제적 보안 체계 전환을 집중 논의한다.기조강연에는 AI 보안 분야 세계적 권위자 김태수 조지아공과대학교 교수가 나서 AI가 변화시킬 사이버 공격 양상과 금융권의 대응 방향을",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146359",
-    "date": "2026-10-13 15:45:25"
-  },
-  {
-    "source": "boannews",
-    "title": "韓 금융권 강타한 AI 공격... 시스코 “네트워크-보안 통합해 ‘가시성’ 확보해야”",
-    "desc": "최근 국내 금융권에 일어난 AI 활용 사이버 공격 관련, 시스코는 네트워크와 보안의 통합을 통한 가시성 확보와 접근권한 관리의 중요성을 시사점으로 내세웠다.이번 금융권 연쇄 공격 사건에서는 ‘인가 미흡’ 취약점 등이 방어 실패의 요인으로 드러났다. 신한은행 사례의 경우, 정상 사용자인 척하며 로그인한 공격자가 권한이 없는 데이터까지 요청했다. 권한 검증이 누락된 ‘인가 미흡 취약점’이 있는 시스템은 이를 눈치채지 못한 채 데이터를 내주고 말았다.13일 기자들과 만난 자틴 사치데바 시스코 아시아태평양·일본·중국(APJC) 지역 보안",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146356",
-    "date": "2026-10-13 15:36:45"
-  },
-  {
-    "source": "boannews",
-    "title": "“AI 사용 때 민감 데이터 유출 방지”…파수AI AI 보안 솔루션, ‘세계 1위급’ 평가",
-    "desc": "파수AI의 AI 보안 솔루션 ‘AI-R-DLP’가 소매·유통 산업에서 가장 혁신적인 보안 솔루션으로 선정됐다. 파수AI는 ‘AI-R-DLP’가 ‘2026 사이버시큐리티 브레이크스루 어워드’에서 ‘올해 최고 리테일 산업 보안 솔루션’으로 선정됐다고 13일 밝혔다. ‘2026 사이버시큐리티 브레이크스루 어워드’는 글로벌 시장 인텔리전스 기업 ‘테크 브레이크스루’가 주관하며, 올해 10회를 맞이했다. 글로벌 수천개의 후보 중에서 올해의 보안 솔루션으로 선정된 셈이다. 리테일 분야는 특성상 고객 개인정보를 많이 보유하고 있으며, 생성형 A",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146357",
-    "date": "2026-10-13 15:32:03"
-  },
-  {
-    "source": "boannews",
-    "title": "카스퍼스키, 인니서 보안 전문가 컨퍼런스 ‘SAS2026’ 개최",
-    "desc": "카스퍼스키(지사장 이효은)가 인도네시아에서 보안 전문가 컨퍼런스를 개최하고, 다양한 디지털 영역을 대상으로 한 고도화된 공격 관련 사고 조사 결과를 발표한다. 카스퍼스키는 20-23일 인도네시아 발리 인터컨티넨탈 발리 리조트에서 ‘제18회 연례 시큐리티 애널리스트 서밋’(SAS 2026)을 개최한다고 13일 밝혔다. 올해 SAS 2026은 ‘기존 틀을 깨는 사이버 보안’을 주제로 세계 200여명이 참가할 예정이다. 참가자들이 각자의 방식으로 활동하는 공격자로 등장해 보안 선언문을 만드는 등의 행사가 준비돼 있다. 복잡해지는 사이버",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146352",
-    "date": "2026-10-13 15:01:55"
-  },
-  {
-    "source": "boannews",
-    "title": "통제 잃은 섀도 AI... 대화 100번 중 6번은 ‘개인정보·기업 기밀’ 샜다",
-    "desc": "현대 비즈니스 보안의 핵심이 기존 사람 중심의 식별 및 접근 관리에서 자율형 비인간 개체에 대한 ‘행동 거버넌스’ 영역으로 빠르게 이동하고 있다.아카마이는 13일 공개한 최신 인터넷 보안 현황(SOTI) 보고서 ‘속도, 확장성, 그리고 비인간 ID: 에이전틱 위협 환경’에서 자율 에이전트 확산에 따른 보안 사각지대 현황을 공개했다.이에 따르면 기업 사용자의 40% 이상이 AI 기반 브라우저 확장 프로그램을 설치해 사용 중이며, 이 중 25%는 설치 후 12개월 이내에 권한 설정을 변경한 것으로 확인됐다. 이러한 AI 확장 프로그램은",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146353",
-    "date": "2026-10-13 14:55:19"
-  },
-  {
-    "source": "boannews",
-    "title": "유클리드소프트, 구글 크롬서 ‘풀체인’ 취약점 찾아... 보상금 25만달러",
-    "desc": "유클리드소프트(대표 박주한)가 국내 기업 최초로 구글 크롬 브라우저에서 취약점을 발견하고 제보해 25만달러의 보상금을 받았다.유클리드소프트는 13일 크롬 브라우저에서 최고난도 보안 취약점 공격 기법인 ‘풀체인 익스플로잇’(full-chain exploit)을 성공적으로 구현해 구글 크롬 VRP 패널로부터 25만달러의 보상 결정을 통보받았다고 밝혔다.풀체인 익스플로잇은 하나의 취약점을 발견하는 데 그치는 것이 아니라, 여러 취약점을 연계해 브라우저 보안 경계를 단계적으로 우회하는 고난도 공격 기법이다. 이번 사례는 웹 콘텐츠에서 시작",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146351",
-    "date": "2026-10-13 14:37:48"
-  },
-  {
-    "source": "boannews",
-    "title": "보안역량 저해요소 1위 ‘조직단절’... “최고 역량 방어자는 보안·네트워크·인프라 통합 운영”",
-    "desc": "기업 보안 역량을 저해하는 가장 큰 요소로 ‘조직 단절’로 인한 협업의 어려움이 지목됐다. 가장 높은 수준의 보안 역량을 갖춘 최상위 방어자들은 보안, 네트워크, 인프라를 하나의 통합된 보안팀으로 운영하는 것으로 조사됐다.13일 시스코코리아는 서울 삼성동 아셈타워에서 기자간담회를 열고 ‘릴렌트리스 디펜스 보고서’(Relentless Defense Report)를 발표하고 자사 보안 액세스 서비스 에지(SASE) 전략을 소개했다.세계 30개 국가의 보안 전문가 8000명을 대상으로 조사한 이 보고서는 기업의 보안 대응 역량과 이를 저",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146350",
-    "date": "2026-10-13 14:21:31"
-  },
-  {
-    "source": "boannews",
-    "title": "AX 시대 맞춤형 보안… 테이텀 CNAPP, 삼성 클라우드 플랫폼에서 쓸 수 있다",
-    "desc": "테이텀 시큐리티는 자사 ‘클라우드 네이티브 애플리케이션 보호 플랫폼’(CNAPP) 솔루션이 삼성SDS 공공클라우드 서비스 ‘삼성 클라우드 플랫폼’(SCP)의 보안 카테고리에 공식 등록됐다고 13일 밝혔다.삼성SDS의 공공 클라우드는 클라우드 서비스 보안 인증(CSAP)을 취득해 법적 안정성과 강력한 데이터 보안 체계를 갖춘 정부 및 공공기관 맞춤형 클라우드 플랫폼이다. 최근 공공 부문에서 클라우드 네이티브 전환 정책과 인공지능 전환(AX) 추진이 가속화됨에 따라, 안전하고 신뢰할 수 있는 공공 전용 인프라와 맞춤형 보안 서비스를 확",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146349",
-    "date": "2026-10-13 14:10:49"
-  },
-  {
-    "source": "boannews",
-    "title": "“권한 쥔 내부자가 더 무섭다” 병원정보보안협회 ‘의료기관 내부 위협 가이드라인’ 발간",
-    "desc": "병원정보보안협회(K-HISA)가 정상 접근 권한을 가진 내부 직원에 의한 환자정보 유출 및 훼손을 방지하기 위해 ‘의료기관 내부자 위협 관리 가이드라인 및 사례집’을 발간했다고 13일 밝혔다.이 가이드라인은 의료기관에서 내부 직원이 환자정보를 무단 열람하거나 유출하는 사건이 잇따르는 가운데, 해킹이나 외부 유출 중심 방어 체계만으로는 한계가 있다는 문제의식에서 출발했다. 협회는 내부자에 의한 정보 열람이 시스템에 ‘정상 열람’으로 기록되기 때문에 기존 접근통제나 유출방지(DLP) 솔루션만으로 탐지가 어렵다고 지적했다.이를 위해 관리",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146348",
-    "date": "2026-10-13 14:07:09"
-  },
-  {
-    "source": "boannews",
-    "title": "렛츠인크립트, 2027년 2월부터 유효기간 단축... 인증서 유효기간 90일에서 64일로",
-    "desc": "웹사이트 인증서를 발급하는 렛츠인크립트(Let’s Encrypt)가 기본 인증서 유효기간을 90일에서 64일로 줄인다. 실제 운영 환경에는 2027년 2월 10일부터 적용된다.시험용 환경에 먼저 적용된다. 렛츠인크립트는 14일부터 스테이징 환경에서 64일짜리 인증서를 발급하고, 운영 환경이 바뀌기 전에 이곳에서 미리 시험해 보라고 권했다.전환은 단계적으로 이뤄진다. 마지막 90일짜리 인증서는 2027년 5월 11일께 만료될 전망이다. 렛츠인크립트는 전환 과정에서 유효한 인증서를 폐기하지 않는다. 기본 유효기간은 2028년 45일로",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146336",
-    "date": "2026-10-13 12:59:47"
-  },
-  {
-    "source": "boannews",
-    "title": "델 테크놀로지스, IBK기업은행 하남데이터센터에 ‘사이버 복원력’ 입혔다",
-    "desc": "델 테크놀로지스는 IBK기업은행 하남데이터센터의 백업 인프라를 자사 솔루션 기반으로 새롭게 구축하며, 랜섬웨어 등 사이버 위협에 대비한 사이버 복원력(Cyber Resilience) 체계를 완성했다고 13일 밝혔다.최근 금융권 전반에 걸쳐 보안 사고가 잇따르며 데이터 백업을 넘어 공격 이후의 신속한 업무 연속성 유지가 핵심 과제로 떠올랐다. 기존 물리적 테이프(Tape) 기반 백업 환경을 운영해 온 IBK기업은행은 저장 매체 노후화 및 복구 지연 등의 한계를 극복하기 위해 테이프리스(Tapeless) 방식의 대안을 모색해 왔다. 여",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146346",
-    "date": "2026-10-13 11:55:15"
-  },
-  {
-    "source": "boannews",
-    "title": "국내 해운·철강사 12곳에 랜섬웨어 공격 주장...“19일까지 협상 안 하면 데이터 공개” 협박",
-    "desc": "국내 항만과 해운, 철강 기업이 신생 랜섬웨어 그룹의 타깃이 됐다. 피해 기업들은 보안당국의 연락을 받고 대응에 나선 것으로 보인다. 랜섬웨어 그룹 ‘논’(N0n)은 13일 자신들의 다크웹 유출 전용 사이트(DLS)에 국내 항만·해운 기업 12곳을 피해 기업으로 올렸다. 이들은 자신들의 비트코인 지갑 주소를 적어둔 채 수백만달러에 달하는 비트코인을 요구하고 있다. 19일 오후 1시까지 비용을 지불하지 않으면 탈취한 모든 데이터를 공개하겠다고 협박하고 있다. 국내 피해 기업은 △부산신항만 △동국제강 △삼주마리타임 △유수로지스틱스 △B",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146345",
-    "date": "2026-10-13 11:52:47"
-  },
-  {
-    "source": "boannews",
-    "title": "“AI 실수, 실행 전 잡는다”... 리니어리티, 플로와이어에 제어 모드 탑재",
-    "desc": "AI가 단순 질의응답을 넘어 사용자를 대신해 파일 삭제나 데이터 수정을 진행하는 ‘에이전트’ 시대로 접어들면서, 기계의 오판을 사전에 통제하는 기술의 중요성이 대두되고 있다. 이에 리니어리티는 자사 AI 보안 솔루션 ‘플로와이어’(FloWire)에 AI의 위험한 실행을 사전에 차단하고 교정하는 ‘확인’(ask) 모드와 ‘안내’(guide) 모드를 새롭게 탑재했다고 12일 밝혔다.최근 AI의 자율성이 시스템 사고로 이어진 사례가 빈번하게 일어나고 있다. 지난 9월 한 AI 코딩 도구의 공개 버그 게시판은 AI가 요청받지 않은 정리 작",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146344",
-    "date": "2026-10-13 11:18:06"
-  },
-  {
-    "source": "boannews",
-    "title": "여의시스템, Cincoze 방산 특화 ‘러기드 컴퓨터’ 라인업 공개",
-    "desc": "여의시스템(대표 성명기·성제현)이 글로벌 산업용 컴퓨터 전문기업 싱코즈(Cincoze)의 방산 특화 러기드(Rugged) 컴퓨터 라인업을 앞세워 가혹한 운용 환경에서도 중단 없이 작동하는‘Mission-Ready Computing’ 솔루션 공급을 본격화한다.Cincoze는 엣지 컴퓨팅과 AI 분야에 특화된 산업용 컴퓨터 전문 브랜드로, 극한의 물리적 환경에서도 안정적 구동이 가능한 러기드 PC, GPU 기반 컴퓨팅, 산업용 패널 PC 등을 제공하고 있다.격오지 및 군용 차량 등 방산 체계에 투입되는 컴퓨팅 하드웨어는 강한 충격과 진",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146342",
-    "date": "2026-10-13 10:48:18"
-  },
-  {
-    "source": "boannews",
-    "title": "영국 AI보안연구소, 미국 프런티어 AI 모델 사전 접근권 회복",
-    "desc": "영국 AI보안연구소(AISI)가 다시 미국 AI 기업 최신 모델을 출시 전에 받아 안전성을 시험할 수 있게 됐다고 영국 일간 텔레그래프가 11일(현지시각) 단독 보도했다. 백악관이 영국 장관들의 설득 끝에 AISI의 접근 권한을 되살렸다는 내용이다.텔레그래프에 따르면 백악관은 9월 앤트로픽과 오픈AI 등 주요 AI 기업에 AISI와 모델 공유를 멈추라고 요청했다. 도널드 트럼프 행정부의 국가사이버국장실 지시가 나온 뒤 앤트로픽은 새 모델 클로드 미토스 5.1을 영국 당국자들이 검토하지 못하게 막았다.텔레그래프는 카니시카 나라얀(Ka",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146341",
-    "date": "2026-10-13 10:46:29"
-  },
-  {
     "source": "thn",
     "title": "⚡ Weekly Recap: Helpdesk 0-Days, Rogue Certs, ShinyHunters Arrest, AI-Fooling Malware and More",
     "desc": "Some meetings last longer than it took attackers to jump on a newly disclosed security flaw this week. Within hours, they were already testing it. That's not much time to read the warning, let alone do something about it.\n\nBut speed is only part of the problem. A secure connection didn't always mean",
@@ -621,82 +698,5 @@
     "desc": "Four more U.S. states sued router maker TP-Link Systems on October 6, bringing the total to five, with &nbsp;Texas filing a suit in February. Florida, Iowa, Montana and Nebraska allege the California company misled buyers about how secure its routers are and how separate it is from China. TP-Link&nb",
     "url": "https://thehackernews.com/2026/10/tp-link-sued-by-four-more-us-states.html",
     "date": "2026-10-09T18:52:53"
-  },
-  {
-    "source": "thn",
-    "title": "Researchers Publish Working Exploit for Pre-Auth AnyDesk Linux Flaw That Gives Root Access",
-    "desc": "Security researchers have&nbsp;published a full working exploit&nbsp;for a pre-authentication remote code execution flaw in AnyDesk Linux that gives attackers root access before anyone approves the connection.\n\nAnyDesk patched the flaw in version 8.0.3 in June, but its&nbsp;changelog&nbsp;described ",
-    "url": "https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html",
-    "date": "2026-10-09T18:29:22"
-  },
-  {
-    "source": "thn",
-    "title": "Anthropic Launches Free AI Vulnerability Scanner for Open-Source Projects",
-    "desc": "Anthropic on Thursday unveiled OSS Scanner as an opt-in vulnerability scanner to help secure the open-source ecosystem using artificial intelligence (AI).\n\n\"It's an opt-in service informed by our experience using Claude to find vulnerabilities during Project Glasswing,\" Anthropic said. \"Projects tha",
-    "url": "https://thehackernews.com/2026/10/anthropic-launches-free-ai.html",
-    "date": "2026-10-09T18:17:28"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Exploit AhsayCBS Flaws to Deploy XMRig Miners Disguised as Microsoft Edge",
-    "desc": "Threat actors have been observed exploiting two recently disclosed flaws in the AhsayCBS backup utility to seize control of affected devices and deploy web shells and XMRig cryptocurrency miners.\n\nDetails of the flaws are below -\n\n\n  CVE-2026-105133 (CVSS v4 score: 5.5) - An improper authentication ",
-    "url": "https://thehackernews.com/2026/10/attackers-exploit-ahsaycbs-flaws-to.html",
-    "date": "2026-10-09T18:17:26"
-  },
-  {
-    "source": "thn",
-    "title": "Flax Typhoon Exploits Five Flaws as CISA Sets October 11 Deadline for Federal Agencies",
-    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added five security flaws to its Known Exploited Vulnerabilities (KEV) catalog, following their abuse by a China-linked threat actor known as Flax Typhoon.\n\nThe vulnerabilities in question are listed below -\n\n\n  CVE-2015-33",
-    "url": "https://thehackernews.com/2026/10/flax-typhoon-exploits-five-flaws-as.html",
-    "date": "2026-10-09T17:51:51"
-  },
-  {
-    "source": "thn",
-    "title": "The AI Velocity Paradox: Why Security Is Decades Behind AI Ambition",
-    "desc": "As enterprises race to deploy autonomous AI agents to accelerate business, a new report reveals they are tethered to security architectures built for a different era. The \"Horizons of Identity Security\" report from SailPoint highlights a critical “velocity paradox,” in which organizations invest in ",
-    "url": "https://thehackernews.com/2026/10/the-ai-velocity-paradox-why-security-is.html",
-    "date": "2026-10-09T17:00:00"
-  },
-  {
-    "source": "thn",
-    "title": "GoBalance Flaw Lets Attackers Hijack .onion Addresses by Recovering Tor-Format Keys",
-    "desc": "A bug in GoBalance, a tool many dark-web sites use to stay reachable during attacks, lets anyone work out the secret key that controls a site's .onion address using only public information, and then take that address over.\n\nSearchlight Cyber, which&nbsp;disclosed the flaw&nbsp;on October 8, says an ",
-    "url": "https://thehackernews.com/2026/10/gobalance-flaw-lets-attackers-hijack.html",
-    "date": "2026-10-09T14:33:24"
-  },
-  {
-    "source": "thn",
-    "title": "Three Teams Demonstrate Remote Hacks of Fully Patched Google Pixel 10 at Pwn2Own",
-    "desc": "Three research teams broke into Google's Pixel 10 on October 8 at Pwn2Own Ireland, a hacking contest in Cork whose rules require every target to be fully patched. The contest pays researchers to show working exploits and passes the flaws to the vendors. One of the three Pixel exploits earned Ikotas ",
-    "url": "https://thehackernews.com/2026/10/three-teams-demonstrate-remote-hacks-of.html",
-    "date": "2026-10-09T13:56:17"
-  },
-  {
-    "source": "thn",
-    "title": "Citrix Patches Critical NetScaler Flaw That Could Enable RCE in SAML Deployments",
-    "desc": "Citrix has released patches for yet another critical security flaw impacting NetScaler ADC and NetScaler Gateway that could result in remote code execution or denial-of-service (DoS) under certain conditions.\n\n\"CVE-2026-107406 is a memory overflow vulnerability that may lead to remote code execution",
-    "url": "https://thehackernews.com/2026/10/citrix-patches-critical-netscaler-flaw.html",
-    "date": "2026-10-09T13:41:33"
-  },
-  {
-    "source": "thn",
-    "title": "FBI Seizes 7 Domains, Disrupts Flax Typhoon Tools Used in Critical Infrastructure Intrusions",
-    "desc": "The U.S. Federal Bureau of Investigation (FBI) and Department of Justice (DoJ) have announced the disruption of malicious tools used by a China-linked advanced persistent threat group known as Flax Typhoon.\n\nTo that end, the agencies seized several domains and blocked access to platforms that were u",
-    "url": "https://thehackernews.com/2026/10/fbi-seizes-7-domains-disrupts-flax.html",
-    "date": "2026-10-09T12:09:29"
-  },
-  {
-    "source": "thn",
-    "title": "FBI Says China-Linked Hackers Ran Portal Giving Third Parties Access to Stolen Emails",
-    "desc": "Hackers tied to a Chinese cybersecurity company stole email from government organizations, law enforcement agencies, healthcare systems, and religious institutions in Southeast Asia, the FBI and agencies in 6 other countries said on October 8.\n\nThe company, Integrity Technology Group, has been sanct",
-    "url": "https://thehackernews.com/2026/10/fbi-says-china-linked-hackers-ran.html",
-    "date": "2026-10-09T00:02:21"
-  },
-  {
-    "source": "thn",
-    "title": "ThreatsDay: Ransomware Affiliate Betrayal, WhatsApp RAT, Exposed Hacker Tools and 12 More Stories",
-    "desc": "The crooks have trust problems of their own. One ransomware affiliate decided to keep the profits for himself. Elsewhere, an attacker left a server exposed, complete with tools and traces of an intrusion. Apparently, keeping things secure is a problem on both sides of the fence.\n\nThe rest of the wee",
-    "url": "https://thehackernews.com/2026/10/threatsday-ransomware-affiliate.html",
-    "date": "2026-10-08T23:28:02"
   }
 ]
