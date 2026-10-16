@@ -1,6 +1,34 @@
 [
   {
     "source": "thn",
+    "title": "Critical PwnEscape Linux Kernel Vulnerability Lets Guest VMs Read Host Memory",
+    "desc": "A newly disclosed critical flaw in the Linux kernel allows code inside a virtual machine to read memory on the host computer it runs on. A researcher demonstrated the leak against Vercel's live cloud sandboxes, and Vercel confirmed it.\n\nThe flaw, now tracked as CVE-2026-99999 and nicknamed PwnEscape",
+    "url": "https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html",
+    "date": "2026-10-16T01:54:36"
+  },
+  {
+    "source": "thn",
+    "title": "ThreatsDay: Adobe RCE, DNS Wallet Theft, NVIDIA Container Escape, Self-Healing Backdoor + 23 More",
+    "desc": "Someone built a tool to steal data, then decided it should scare the victim for fun. Yes, that’s an actual feature. And somehow, it fits right in with this week's security stories.\n\nThe rest gets interesting in different ways. A small permission can lead to a big theft. A trusted login can hide the ",
+    "url": "https://thehackernews.com/2026/10/threatsday-adobe-rce-dns-wallet-theft.html",
+    "date": "2026-10-16T00:19:33"
+  },
+  {
+    "source": "thn",
+    "title": "Citizen Lab Traces Zero-Click Candiru Spyware Infections at Al Jazeera to Targeted Online Ads",
+    "desc": "Candiru, an Israeli maker of spyware sold to governments, infected devices at the news network Al Jazeera through ordinary online ads, in attacks that needed no click or other action from the user, researchers at&nbsp;the Citizen Lab&nbsp;said Thursday.\n\nThe hidden attack code ran the moment an ad l",
+    "url": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html",
+    "date": "2026-10-15T21:31:57"
+  },
+  {
+    "source": "thn",
+    "title": "Silent Lynx Exploits WinRAR Flaw to Deploy Reverse Shell in CIS Government Attacks",
+    "desc": "The threat actor known as Silent Lynx has been attributed to a fresh set of attacks targeting government organizations across the Commonwealth of Independent States (CIS).\n\nThe activity, observed from June 2025 through August 2026, involves four different infection chains that make use of macro-enab",
+    "url": "https://thehackernews.com/2026/10/silent-lynx-exploits-winrar-flaw-to.html",
+    "date": "2026-10-15T21:30:26"
+  },
+  {
+    "source": "thn",
     "title": "Help TDS Linked to Hotejka as 20,000+ Cloudflare Pages Domains Host Tech Support Scams",
     "desc": "A long-running Traffic Distribution System (TDS) known as Help TDS to a Russian-language affiliate program called Hotejka, which appears to be a rebrand of a traffic monetization operation dubbed ROI777.\n\nHelp TDS is assessed to be active since at least 2017, offering PHP code templates to partners ",
     "url": "https://thehackernews.com/2026/10/help-tds-linked-to-hotejka-as-20000.html",
@@ -670,33 +698,5 @@
     "desc": "In environments studied for the 2026 State of Agent Security Report, roughly 1,280 third-party products now embed AI. About 282 of them sit behind single sign-on. The other thousand are invisible to identity infrastructure by default, not because anyone hid them, but because an identity stack can on",
     "url": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
     "date": "2026-10-10T16:30:00"
-  },
-  {
-    "source": "thn",
-    "title": "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws",
-    "desc": "Anthropic on Friday said it's cutting off live internet access for all its internal evaluations until further notice following the discovery of new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior and targeted real websites.\n\nThe AI company said it identified ",
-    "url": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
-    "date": "2026-10-10T14:48:45"
-  },
-  {
-    "source": "thn",
-    "title": "Credential-Stealing GitHub Actions Workflows Planted in Tens of Thousands of Repositories",
-    "desc": "Cybersecurity researchers have disclosed details of an ongoing credential-theft campaign that has compromised two high-profile open-source maintainer accounts to push a malicious workflow into over 340 repositories.\n\n\"Using the account of Takashi Kitao, author of the 18,400-star game engine pyxel, t",
-    "url": "https://thehackernews.com/2026/10/credential-stealing-github-actions.html",
-    "date": "2026-10-10T00:44:28"
-  },
-  {
-    "source": "thn",
-    "title": "FBI Arrests Another ShinyHunters Suspect Reportedly Involved in Its Jobs Portal Hack",
-    "desc": "The FBI has arrested another suspected co-conspirator of ShinyHunters, FBI Director Kash Patel said on October 9 in a&nbsp;post on X.\n\nShinyHunters is the extortion group that said in September it had&nbsp;breached the FBI's jobs portal&nbsp;and stolen sensitive data on almost all FBI agents and job",
-    "url": "https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html",
-    "date": "2026-10-09T23:15:26"
-  },
-  {
-    "source": "thn",
-    "title": "TP-Link Sued by Four More U.S. States Over Router Security and China Ties",
-    "desc": "Four more U.S. states sued router maker TP-Link Systems on October 6, bringing the total to five, with &nbsp;Texas filing a suit in February. Florida, Iowa, Montana and Nebraska allege the California company misled buyers about how secure its routers are and how separate it is from China. TP-Link&nb",
-    "url": "https://thehackernews.com/2026/10/tp-link-sued-by-four-more-us-states.html",
-    "date": "2026-10-09T18:52:53"
   }
 ]
