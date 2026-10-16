@@ -1,6 +1,41 @@
 [
   {
     "source": "thn",
+    "title": "OpenAI Research Model Spent 3rd-Party Test ETH Without Permission to Deploy Smart Contract",
+    "desc": "OpenAI has disclosed seven new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior, including one case where its research model, after not having funds on an Ethereum test network, spent test cryptocurrency from a third-party's wallet without authorization to com",
+    "url": "https://thehackernews.com/2026/10/openai-research-model-spent-3rd-party.html",
+    "date": "2026-10-16T19:33:04"
+  },
+  {
+    "source": "thn",
+    "title": "AI Decision Models and Their Impact on AI SOC Platforms",
+    "desc": "In the space of a month, a new category of AI model went from nonexistent to everywhere. TypeSafe AI released Jev on September 15 and called it a System One model, a nod to Kahneman's fast, intuitive thinking. OpenAI announced its own Decisions API at DevDay and opened a public beta on October 6. Cr",
+    "url": "https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html",
+    "date": "2026-10-16T17:00:00"
+  },
+  {
+    "source": "thn",
+    "title": "China-Linked Hackers Exploited BeyondTrust Zero-Day to Take Over Remote Support Servers",
+    "desc": "The China-nexus cyber espionage group tracked as Armory Castle (previously UNC5221 or Warp Panda) exploited a newly disclosed security flaw in BeyondTrust Remote Support (formerly Bomgar) as a zero-day in late August 2026.\n\nThe vulnerability, tracked as CVE-2026-102764 (CVSS score: 9.3), is a case o",
+    "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html",
+    "date": "2026-10-16T12:25:55"
+  },
+  {
+    "source": "thn",
+    "title": "CERT-In Warns AI Agents Accessed Sensitive Data at Indian Organizations During Testing",
+    "desc": "AI agents being tested online reached the live systems of Indian organizations and read business records, including personal data and confidential material, CERT-In&nbsp;said in an advisory&nbsp;on October 15.\n\nThe agents went beyond their assigned tasks, and none of the organizations detected the u",
+    "url": "https://thehackernews.com/2026/10/cert-in-warns-ai-agents-accessed.html",
+    "date": "2026-10-16T12:23:09"
+  },
+  {
+    "source": "thn",
+    "title": "PEERSTITCH Malware Deployed via FortiOS Flaw Bypasses Checks on Tagged VPN Sessions",
+    "desc": "A suspected advanced threat actor has been observed exploiting a security flaw in Fortinet FortiOS to deliver a previously unreported memory-resident ARM64 malware known as PEERSTITCH.\n\nThe attack involves the exploitation of CVE-2025-61624 (CVSS score: 5.4), a path traversal flaw in the command lin",
+    "url": "https://thehackernews.com/2026/10/attackers-exploit-fortios-flaw-to.html",
+    "date": "2026-10-16T10:29:36"
+  },
+  {
+    "source": "thn",
     "title": "Critical PwnEscape Linux Kernel Vulnerability Lets Guest VMs Read Host Memory",
     "desc": "A newly disclosed critical flaw in the Linux kernel allows code inside a virtual machine to read memory on the host computer it runs on. A researcher demonstrated the leak against Vercel's live cloud sandboxes, and Vercel confirmed it.\n\nThe flaw, now tracked as CVE-2026-99999 and nicknamed PwnEscape",
     "url": "https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html",
@@ -12,6 +47,153 @@
     "desc": "Someone built a tool to steal data, then decided it should scare the victim for fun. Yes, that’s an actual feature. And somehow, it fits right in with this week's security stories.\n\nThe rest gets interesting in different ways. A small permission can lead to a big theft. A trusted login can hide the ",
     "url": "https://thehackernews.com/2026/10/threatsday-adobe-rce-dns-wallet-theft.html",
     "date": "2026-10-16T00:19:33"
+  },
+  {
+    "source": "boannews",
+    "title": "“병원 정보시스템 보안 수준 향상”... 병원정보보안협회-스패로우 ‘맞손’",
+    "desc": "병원정보보안협회와 스패로우가 병원 정보시스템의 보안 수준 향상을 위해 힘을 합치기로 했다. 병원정보보안협회와 스패로우는 15일 연세대 의료원 에비슨의생명 연구원에서 병원 정보시스템의 보안 수준 향상과 안전한 정보보호 환경 조성을 위한 업무협약(MOU)을 체결했다고 밝혔다. 의료기관 정보시스템을 침해를 당할 경우 의료 기록, 개인정보 등의 유출 등 민감한 데이터가 탈취될 우려가 있으며, 정보시스템이 침해사고로 정지될 경우 환자의 생명까지 위태로워지기 때문에 고도의 보안 수준을 갖춘 정보시스템이 요구된다. 이에 이번 협약을 통해 의료기",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146466",
+    "date": "2026-10-16 18:16:39"
+  },
+  {
+    "source": "boannews",
+    "title": "양천구, 어린이집 노후 CCTV 교체·유지관리 지원",
+    "desc": "서울 양천구(구청장 이기재)가 영유아 안전사고를 예방하고 부모가 안심할 수 있는 보육 환경을 조성하기 위해 노후 CCTV 교체 및 관리를 돕는 ‘어린이집 노후 폐쇄회로텔레비전(CCTV) 전환 지원 사업’을 본격 추진한다.2015년 영유아보육법 개정으로 어린이집 내 CCTV 설치가 의무화된 이후, CCTV는 아동학대 예방과 안전사고 입증을 위한 핵심 인프라로 작동해 왔다. 하지만 도입 10년을 경과하면서 화질 저하 및 장비 고장 등 노후화 문제가 불거졌고, 개별 어린이집이 적기에 장비를 교체·관리하기에는 재정적 부담이 컸다.양천구는",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146462",
+    "date": "2026-10-16 17:33:02"
+  },
+  {
+    "source": "boannews",
+    "title": "미 연방기관 32% ‘기초 자산 목록’조차 없어... 한계 부딪힌 글로벌 OT 보안",
+    "desc": "미 연방 민간 기관 22곳 중 약 32%에 달하는 7개 기관이 가장 기초적인 ‘OT 자산 파악’ 조차 못 하고 있다는 충격적인 실태조사(GAO)가 나왔다. 훔친 계정과 원격접속 통로를 이용해 핵심 제어장치(PLC)를 장악하는 무단 침투 위협이 현실화된 가운데, 기초적인 방어망조차 갖춰지지 않은 민낯이 드러난 것이다.이에 미국 내 보안 통제는 단순 권고를 넘어 강제화 단계로 급변하고 있다. 미 국립표준기술연구소(NIST)가 수자원 OT 원격접속 보안 가이던스를 긴급 발표한 데 이어, 민간 연합(OTCC)은 미 사이버보안 및 인프라 보",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146463",
+    "date": "2026-10-16 16:30:47"
+  },
+  {
+    "source": "boannews",
+    "title": "“사이버 범죄자끼리 싸웠다”... 샤이니헌터스 vs 클롭 다툼 무슨 일?",
+    "desc": "유명 랜섬웨어 조직 ‘클롭’(Cl0p)의 다크웹 사이트가 또다른 해킹 조직 ‘샤이니헌터스’(ShinyHunters)에 의해 사이트가 해킹당하는 일이 벌어졌다. 사이버 범죄자 간 갈등이 다른 경쟁 그룹에 대한 직접적 해킹 공격으로 이어진 것이다. 샤이니헌터스가 미국 연방 수사국(FBI)을 공격하는 기행을 벌인 탓에 현재 양 해킹 조직 간 다툼은 소강상태다. 16일 외신, 보안업계 등에 따르면 지난달 19일 샤이니헌터스는 자신들의 다크웹 유출 전용 사이트(DLS)에 클롭에 보내는 메시지를 업로드했다. 클롭의 DLS를 해킹했으니, 브랜드",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146459",
+    "date": "2026-10-16 16:05:32"
+  },
+  {
+    "source": "boannews",
+    "title": "인텔리빅스, 13년 연속 흑자 기반 일반상장 추진",
+    "desc": "안전 AI 딥테크 기업 인텔리빅스가 16일 서울 여의도 콘래드 호텔에서 IPO 기자간담회를 열고 코스닥 상장 이후 성장 전략을 공개했다.장정훈 CEO/CTO는 인텔리빅스를 ‘AI로 가장 안전한 세상을 만드는 안전 AI 딥테크 기업’이라고 소개하며, 기후위기와 산업재해, 국가안보 위협 등 다양한 위험으로부터 사람의 생명과 재산을 보호하는 것이 회사의 존재 이유라고 강조했다. 특히 현재의 CCTV 기반 관제 시스템이 사람 중심의 육안 모니터링에 의존하고 있어 사고를 실시간으로 대응하는 데 한계가 있다며, AI가 위험을 스스로 인지하고",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146452",
+    "date": "2026-10-16 15:49:29"
+  },
+  {
+    "source": "boannews",
+    "title": "AI 정보 유출부터 랜섬웨어까지 원스톱... 세이퍼존, 중앙아시아 시장 공략 본격화",
+    "desc": "세이퍼존이 우즈베키스탄 타슈켄트에서 개최된 국제 사이버 보안 행사 ‘사이버 시큐리티 서밋: 센트럴 유라시아 2026’(Cyber Security Summit: Central Eurasia 2026)에 참가해 패널 토론과 보안 솔루션 전시를 진행했다고 15일 밝혔다.이번 행사에서 알리 세이퍼존 이사는 패널토론에 참석해 급변하는 사이버 위협 환경에 대응하기 위한 차세대 보안 기술과 금융·공공기관의 보안 시스템 고도화 방안을 논의했다. 또 전시 부스를 운영하며 인공지능(AI) 기반 통합 보안 기술과 올인원 보안 솔루션을 소개하고 현지 관",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146453",
+    "date": "2026-10-16 15:46:07"
+  },
+  {
+    "source": "boannews",
+    "title": "티오리, 앤트로픽 보안 특화 AI 프로그램 참여... ‘진트’ 고도화에 활용",
+    "desc": "AI 기반 오펜시브 사이버 보안 기업 티오리(대표 박세준)가 앤트로픽의 ‘사이버 검증 프로그램’(CVP: Cyber Verification Program) 참여 기업으로 합류했다고 16일 밝혔다.앤트로픽 CVP는 별도의 자격 검증을 거친 보안 기업과 전문가에게 일반적으로 제한되는 고급 사이버 보안 AI 기능에 대한 접근권을 제공하는 프로그램이다. 이를 통해 최신 AI 모델을 악성코드 분석, 취약점 탐지, 공격 경로 검증 등 고난이도 보안 연구에 활용할 수 있다.티오리는 이번 앤트로픽 CVP 합류를 통해 자사 AI 기반 자율형 모의해",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146457",
+    "date": "2026-10-16 15:44:39"
+  },
+  {
+    "source": "boannews",
+    "title": "아우토크립트, ITS 세계총회서 차량 보안 성과 공개",
+    "desc": "아우토크립트가 19-23일 강릉에서 개최되는 ‘제32회 2026 ITS 세계총회’(ITS World Congress)에 참가해 차세대 차량 사이버보안 기술과 연구 성과를 선보인다고 16일 밝혔다.‘이동을 넘어 하나되는 세계’(Beyond Mobility, Connected World)를 주제로 열리는 이번 총회는 90개국 이상에서 6만여명이 참가하는 지능형교통체계(ITS) 분야 세계 최대 규모 국제 행사다. 아우토크립트는 강릉 컨벤션센터에서 진행되는 학술세션에서 임직원 3명이 발표자로 나서 차량·사물 통신(V2X)부터 글로벌 규제",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146455",
+    "date": "2026-10-16 15:42:51"
+  },
+  {
+    "source": "boannews",
+    "title": "한국첨단안전산업협회, ‘여성기술전문가위원회’ 출범... 여성 안전 전문가 네트워크 구축",
+    "desc": "한국첨단안전산업협회(KOHSIA, 회장 이성진)가 첨단안전 분야 여성 인재 간의 네트워크를 강화하고 기술적 협력을 다지기 위해 ‘여성기술전문가위원회’를 새롭게 선보였다.협회는 지난 14일 경기도 고양시 킨텍스 제1전시장에서 열린 ‘2026 첨단 AX 도시안전 기술 포럼’ 특설무대 행사 직후 여성기술전문가위원회 출범식을 개최했다고 밝혔다.이번 위원회는 첨단안전 분야에서 활약 중인 여성 전문가들의 풍부한 현장 지식과 기술력을 결합해 연구 협력과 정보 교류를 활성화하고, 관련 산업 내 여성 기술인의 비중과 영향력을 넓히기 위해 기획됐다.",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146451",
+    "date": "2026-10-16 15:39:56"
+  },
+  {
+    "source": "boannews",
+    "title": "[카드뉴스] \"차 한 번 빌렸을 뿐인데\"… 렌터카 플랫폼 털려 면허증 160만 장 유출된 전말",
+    "desc": "차량 렌털 및 셰어링 플랫폼 서버가 해킹당하면서 이용자 160만 명의 실물 운전면허증 사본이 해커에게 유출되었다. 신분증 사본 유출은 단순 비밀번호 유출과 달리 비대면 계좌 개설, 불법 대출, 대포폰 개통 등 지속적인 2차 범죄의 도구로 악용된다. 2차 피해를 막기 위해 플랫폼 내 사본 파기 요청과 함께 엠세이퍼 개통 제한, 신용조회 차단 서비스를 통한 사전 잠금 조치가 필수적이다.",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146454",
+    "date": "2026-10-16 15:09:25"
+  },
+  {
+    "source": "boannews",
+    "title": "금보원, 홈페이지 개편... 가시성·편의성 향상",
+    "desc": "금융보안원이 대표 홈페이지를 개편해 이용 편의성을 높였다.금융보안원은 16일 중오 정보와 서비스를 보다 쉽게 탐색할 수 있도록 대표 홈페이지를 개편했다고 밝혔다. 이용자 관점에서 메인 홈페이지를 개편하고, 금융보안원 주요 업무 및 메뉴 체계를 현행 업무에 맞춰 개편했다. 정보를 한눈에 알아보게 지원하기 위해 공지사항, 보도자료를 카드형으로 배치했다. 연구자료를 시각적으로 구성하는 등 주요 정보에 대한 가시성을 높였다. 기존에는 한 페이지에 주요 정보와 콘텐츠가 집중돼 있었으나, 영역별로 정보를 구분하고 포털 형식으로 개편한 것도 특",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146450",
+    "date": "2026-10-16 13:55:44"
+  },
+  {
+    "source": "boannews",
+    "title": "프랑스 슈퍼마켓 냉장 설비 공격, 700곳으로 늘어",
+    "desc": "프랑스 슈퍼마켓 냉장 설비를 노린 사이버 공격의 피해가 처음 알려진 것보다 두 배가량 커졌다. 공격 대상도 단포스(Danfoss) 장비에서 다른 제조사 장비로 번졌다.롤랑 레스퀴르(Roland Lescure) 프랑스 재무장관은 최근 의회에서 프랑스 슈퍼마켓 약 1만 곳 가운데 700곳가량이 피해를 봤다고 밝혔다. 앞서 나온 보도에선 300~350곳이었다. 르몽드는 공격자가 성에 제거 주기를 1시간에서 최대 8시간으로 늘려 경보가 늦게 울리도록 했다고 보도했다.프랑스 침해대응팀(CERT-FR)은 12일 단포스 AK-SM과 AK-SC",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146438",
+    "date": "2026-10-16 13:42:56"
+  },
+  {
+    "source": "boannews",
+    "title": "[Global Security TOP 100] 타이(Tai) 하이크비전코리아 사장, “관란 AI 기반 AIoT 플랫폼으로 산업 디지털 전환 확대”",
+    "desc": "하이크비전은 영상보안을 넘어 다차원 인식 기술과 하드웨어·소프트웨어 포트폴리오를 바탕으로 산업 디지털 전환을 지원하는 글로벌 AIoT 기업이다. 아큐센스(AcuSense)와 컬러뷰(ColorVu) 등 독보적인 영상 인식 기술부터 출입통제, 스마트 교통, 상업용 디스플레이, 중앙 집중식 관리 플랫폼 하이크센트럴(HikCentral)까지 포괄적인 솔루션을 선보이고 있다. 자체 AI 모델인 ‘관란(Guanlan) AI’를 기반으로 산업별 디지털 전환을 확대하고 있는 하이크비전은 2027년을 겨냥한 성장 전략을 구체화하고 있다.Q. 하이크",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146416",
+    "date": "2026-10-16 13:30:57"
+  },
+  {
+    "source": "boannews",
+    "title": "버거킹재팬, 앱 회원 기록 1118만 건 새어 나가",
+    "desc": "일본에서 버거킹 매장을 운영하는 버거킹재팬의 공식 앱 회원 정보 관리 시스템이 외부인에게 뚫려 회원 기록 약 1118만건이 유출됐다.버거킹재팬은 15일(현지시각) 공지를 내고 이 사실을 알렸다. 무단 접속은 10월 2~7일 이어졌고, 회사는 13일 유출을 확인했다.새어 나간 항목은 회원 ID와 이메일 주소, 가입 유형, 거주 지역, 성별, 생년월일, 이름, 전화번호, 모바일 주문 이용 여부, 이메일 인증 여부다. 사이버시큐리티뉴스는 모바일 주문 항목이 이용 여부만 담고 있어 구매 이력이나 주문 내용은 드러나지 않고, 거주 지역 역시",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146434",
+    "date": "2026-10-16 13:27:58"
+  },
+  {
+    "source": "boannews",
+    "title": "패스워드리스 얼라이언스, 워드프레스용 무료 ‘Passwordless X1280’ 배포",
+    "desc": "비영리기구 패스워드리스 얼라이언스(Passwordless Alliance, 대표 우종현)가 워드프레스(WordPress)용 패스워드리스 플러그인 ‘Passwordless X1280’을 개발했다고 밝혔다. Passwordless X1280은 WordPress.org 공식 플러그인 디렉터리를 통해 무료로 배포된다.워드프레스는 전 세계 웹사이트의 40% 이상, 콘텐츠 관리 시스템(CMS) 시장의 약 60%를 차지하는 세계 최대 웹 플랫폼이다. 이번 조치로 워드프레스로 운영되는 전 세계 온라인 서비스는 별도 개발 없이 플러그인 설치만으로",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146447",
+    "date": "2026-10-16 13:24:50"
+  },
+  {
+    "source": "boannews",
+    "title": "에프에스티코리아, 신사옥 준공과 함께 제네텍 ‘UEC’ 공개… 체험형 통합보안 허브 구축",
+    "desc": "통합보안 플랫폼 기업 제네텍(Genetec, 한국지사장 윤승제)의 국내 유일 유니파이드 엘리트 파트너(Unified Elite Partner)인 에프에스티코리아(FST Korea, 대표 김종필)가 경기도 고양시 덕양구 신사옥 준공과 함께 체험형 통합보안 공간 ‘유니파이드 익스피리언스 센터’(UEC: Unified Experience Center)를 공식 개관했다고 밝혔다.이번에 문을 연 UEC는 단순한 제품 전시 공간을 넘어 고객과 파트너가 실제 운영 환경에서 최신 보안 기술을 체험하고 자사 환경에 맞는 아키텍처를 검증할 수 있도록",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146441",
+    "date": "2026-10-16 13:16:42"
+  },
+  {
+    "source": "boannews",
+    "title": "센스톤, 과기정통부 피지컬AI 보안 과제에서 ‘OT 구간 보안’ 기술 개발 맡는다",
+    "desc": "OTAC 원천기술 기반 OT 보안 전문기업 센스톤(대표 유창훈)이 과학기술정보통신부와 정보통신산업진흥원(NIPA)이 함께 추진하는 ‘협업지능 시스템을 위한 피지컬AI 기반 다중 계층 보안 기술 개발’ 국책 과제의 공동연구개발기관으로 참여한다. 특히 과제의 핵심인 피지컬AI의 명령이 실제 산업설비의 동작으로 이어지는 OT 구간의 보안 기술 개발을 맡는다고 16일 밝혔다.피지컬AI 환경은 AI의 판단이 제어 명령을 거쳐 실제 설비의 동작으로 이어진다. AI 모델의 안전성과 함께, 명령이 전달되는 OT 통신 구간과 설비 접근·실행 단계의",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146445",
+    "date": "2026-10-16 11:43:23"
+  },
+  {
+    "source": "boannews",
+    "title": "광고가 화면에 뜨는 순간 공격 시작... 알자지라 기기 45대, 칸디루 스파이웨어 표적 돼",
+    "desc": "정부를 상대로 팔리는 이스라엘산 스파이웨어 칸디루(Candiru)가 온라인 광고를 타고 아랍 언론 알자지라의 장비를 노렸다는 분석이 나왔다. 이용자가 아무것도 누르지 않고 광고가 뜨기만 해도 공격이 시작되는 방식이다.캐나다 토론토대 연구소 시티즌랩은 15일(현지시각) 미국 광고 보안 기업 컨피언트(Confiant)와 함께 조사한 결과를 공개했다. 2024~2025년 알자지라 기기 최소 45대가 표적이 됐다.광고를 낸 곳은 2020년 이스라엘에 등록된 광고 업체 디스커버테크(Discover-Tech)로, 데켈 보니(Dekel Boni",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146435",
+    "date": "2026-10-16 11:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "유럽 은행, 협력사 관리 장비 통해 내부망 뚫려...인증 허술한 외부 게이트웨이 통해",
+    "desc": "유럽의 한 은행이 외부 업체가 관리하는 게이트웨이를 통해 내부망을 침입당했다.사이버시큐리티뉴스에 따르면 팔로알토네트웍스 위협 연구 조직 유닛42(Unit 42) 연구진은 최근 보고서에서 이 침입과 원격 코드 실행 시도를 공개했다. 보고서는 은행 이름이나 악성코드 이름은 밝히지 않았다. 조사 결과 유닛42는 흔적을 숨기지 않는 타입의 공격자로 평가했다. 사이버시큐리티뉴스는 확인된 고도의 첩보 작전이라기보다 기본적인 보안 빈틈을 드러낸 사건이라고 봤다.사건은 은행 보안팀이 중앙 IT 시스템에서 이상한 움직임을 알아채면서 드러났다. 조사",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146399",
+    "date": "2026-10-16 10:44:19"
+  },
+  {
+    "source": "boannews",
+    "title": "이노뎁-로보티즈AI, 자율주행 순찰로봇 기반 이동형 AI 관제 사업 추진",
+    "desc": "AI 영상관제 플랫폼 전문기업 이노뎁(대표 이성진)이 로보티즈AI(대표 김병수)와 협력해 자율주행 로봇 기반 이동형 AI 관제 사업에 뛰어든다. 고정형 CCTV 위주였던 기존 영상관제 기술을 로봇 서비스로 확장해 공공 치안·안전과 민간 시설관리 영역에서 피지컬 AI 사업을 넓혀간다.이노뎁은 자율주행 전문기업 로보티즈AI와 순찰로봇 서비스 개발 및 사업화를 위한 업무협약(MOU)을 체결했다고 15일 밝혔다. 로보티즈AI는 액츄에이터 기반 휴머노이드 솔루션 기업 로보티즈의 자율주행 사업부가 분사해 2025년 설립된 회사다. 양사는 로보",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146436",
+    "date": "2026-10-16 10:26:34"
+  },
+  {
+    "source": "boannews",
+    "title": "피싱 메시지 10억건 공급처... 마이크로소프트, 중국어권 범죄 장터 3곳 무력화",
+    "desc": "마이크로소프트가 피싱 메시지 10억건 이상을 뿌린 중국어권 사이버 범죄 장터의 핵심 서비스 세 곳을 법원 명령으로 무력화했다.시큐리티위크에 따르면 마이크로소프트와 의료 분야 정보공유기구 헬스아이색(Health-ISAC)은 미국 플로리다 남부연방지방법원 명령을 받아 얌스토어(YAM Store)와 코구이(CoGUI), 아이언맨(Iron Man)이 쓰던 도메인을 압수해 다른 곳으로 돌렸다. 범죄자들이 이 인프라로 병원과 의료기관을 자주 노리면서 헬스아이색이 민사 소송에 함께 이름을 올렸다.세 서비스는 범죄자에게 계정과 피싱 도구, 인프라",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146398",
+    "date": "2026-10-16 08:21:16"
   },
   {
     "source": "thn",
@@ -406,153 +588,6 @@
     "date": "2026-10-14 15:31:20"
   },
   {
-    "source": "boannews",
-    "title": "앤트로픽·오픈AI, 외부 평가 보고서 공개 범위 두고 줄다리기",
-    "desc": "앤트로픽과 오픈AI가 외부 평가기관이 자사 AI 모델을 검증한 결과를 어디까지 공개할 수 있는지를 두고 상당한 통제권을 요구해 왔다고 로이터가 13일 보도했다. 협상 사정을 아는 2명에 따르면 두 회사는 평가 결과가 기업 비밀을 드러낼 수 있다고 우려했다.겉으로 내건 약속과는 결이 다르다. 다리오 아모데이 앤트로픽 최고경영자(CEO)는 9월 외부 평가기관이 “편집 통제 없이” 핵심 결과를 공개할 권리를 가져야 한다고 말했다. 오픈AI도 며칠 뒤 평가기관이 편집 독립성을 가져야 한다며 동의했다.그러나 소식통 2명은 10월 5일까지도",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146377",
-    "date": "2026-10-14 15:29:38"
-  },
-  {
-    "source": "boannews",
-    "title": "라온시큐어 ‘원쉴드’ AI 제품·서비스 확인서 획득, 공공·금융 시장 정조준",
-    "desc": "라온시큐어는 자사 AI 세이프 가드레일 솔루션인 ‘원쉴드’(OneShield)가 ‘인공지능 제품·서비스 확인서’를 획득했다고 14일 밝혔다. ‘인공지능 제품·서비스 확인제도’는 한국인공지능·소프트웨어산업협회(KOSA)가 인공지능기본법에 따라 제품이나 서비스에 AI 기술이 실제 적용됐는지 확인하는 제도다. 제품에 적용된 AI의 학습·추론 특성과 기능 기여도 등을 기술적으로 심사해 확인서를 발급한다.최근 기업의 생성형 AI 도입이 확산하면서 임직원이 사내 중요 정보나 개인정보를 AI에 입력하거나, 공격자가 악성 프롬프트를 통해 AI 보",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146392",
-    "date": "2026-10-14 15:22:46"
-  },
-  {
-    "source": "boannews",
-    "title": "“망분리·보안 규제 뚫는다”... 아이티로그인, 업스테이지 손잡고 공공 AI 보급",
-    "desc": "아이티로그인이 업스테이지와 공공 부문 비즈니스 확대를 위한 전략적 파트너십을 체결하고, 중앙부처와 지방자치단체 및 공공기관을 대상으로 온프레미스(구축형) 기반 소버린 AI 공급에 나선다고 14일 밝혔다.이번 협약을 통해 아이티로그인은 업스테이지의 ‘솔라(Solar) LLM’과 비정형 문서 디지털화 및 업무 자동화를 지원하는 ‘도큐먼트 AI’(Document AI)를 공공 조달 및 행정 시장에 집중 공급한다. 보안 규제 준수와 데이터 주권(Data Sovereignty) 확보가 필수적인 공공기관 특성을 고려해 폐쇄망 내부 인프라에 안",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146391",
-    "date": "2026-10-14 15:21:20"
-  },
-  {
-    "source": "boannews",
-    "title": "인텔리빅스, 10월 30일 코스닥 상장",
-    "desc": "안전 AI 딥테크 기업 인텔리빅스가 지난달 16일 금융위원회에 제출한 증권신고서의 효력이 14일 발생함에 따라 본격적인 공모 절차에 돌입했다. 기관 투자자 수요예측과 일반청약을 거쳐 30일 코스닥시장 상장 예정이다.인텔리빅스는 최대주주와 주요 경영진 전략적 투자자의 의무보유 및 자발적 매각제한을 통해 상장 후 책임경영과 주주가치 보호에 나선다는 방침이다.증권신고서에 따르면, 전체 상장예정주식 1133만5408주 가운데 862만341주에 해당하는 76.05%가 상장 직후 매각이 제한된다. 이에 상장 직후 유통가능주식은 전체 23.95",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146390",
-    "date": "2026-10-14 15:18:05"
-  },
-  {
-    "source": "boannews",
-    "title": "트루엔 안재천 대표, 자사주 추가 매입... 책임경영 강화 및 주주가치 제고",
-    "desc": "트루엔은 안재천 대표이사가 보통주 1만4509주를 장내 매수했다고 14일 공시했다. 이로써 안 대표는 지분율 26.51%(보유 주식수 277만5359주)를 확보하게 됐다.안재천 대표는 올해 초 장내 매수에 이어 추가적인 자사주 매입을 진행하며 책임경영 의지를 이어가고 있다. 회사의 중장기 성장 가능성과 기업가치에 대한 자신감을 바탕으로 최대주주이자 대표이사로서 주주가치 제고에 적극적으로 나서고 있다는 설명이다.트루엔은 최근 하이엔드 온디바이스 AI 카메라와 소프트웨어 ‘TAEM’(Truen AI Event Manager) 중심으로",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146389",
-    "date": "2026-10-14 15:15:23"
-  },
-  {
-    "source": "boannews",
-    "title": "엘에스웨어, 인도네시아서 ‘SuSEC 2026’ 개최... 공공 사이버 SOC 시장 정조준",
-    "desc": "엘에스웨어는 13-15일 인도네시아 자카르타에서 ‘SuSEC 2026’(SUPERB Security Conference 2026)을 개최하고, 한국과 인도네시아가 공동 추진해 온 사이버보안 연구개발(R&D) 성과와 현지 정부·공공기관 맞춤형 ‘사이버 보안관제센터’(Cyber SOC) 구축 전략을 공개했다.이번 행사는 과학기술정보통신부와 정보통신기획평가원(IITP)이 지원하고 한국정보보호산업협회(KISIA)가 주관하는 ‘사이버보안 국제협력기반기술개발’ 사업의 성과 확산과 현지 사업화를 위해 마련됐다. 엘에스웨어 컨소시엄은 인도네시아",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146388",
-    "date": "2026-10-14 15:13:32"
-  },
-  {
-    "source": "boannews",
-    "title": "12개 에이전트 협업... 그룹아이비, 위협 분석 플랫폼 ‘프레빈 AI’ 공개",
-    "desc": "그룹아이비(Group-IB)는 12개 전문 AI 에이전트가 협업해 분산된 위협 정보를 연결하고 공격 맥락을 분석하는 통합 인텔리전스 플랫폼 ‘프레빈 AI’(Prevyn AI)를 14일 소개했다.최근 국내 금융권을 비롯한 주요 기관에서 해킹 사고가 잇따르고 공격 과정에 AI 도구가 악용됐을 가능성이 제기되면서, 개별 침해지표(IoC) 확인을 넘어 관련 인프라와 공격 기법을 신속히 연결해 대응 우선순위를 판단하는 역량이 중요해졌다. 프레빈 AI는 다단계 위협 조사를 지원하고 탐지 규칙 초안 작성까지 도와 보안 담당자의 신속한 후속 대응",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146387",
-    "date": "2026-10-14 15:10:02"
-  },
-  {
-    "source": "boannews",
-    "title": "[이슈칼럼] 보안, 의사 결정 중심에 놓이다... 마이크로소프트  ‘보안 최우선’ 경영",
-    "desc": "최근 여러 보안 사고가 이어지며, 정보보안에 대한 사회적 관심이 어느 때보다 높아지고 있다, 기업과 정부, 규제기관에서도 기술적 대응을 넘어 조직의 책임과 의사결정 체계, 고객과의 소통 방식에 이르기까지 폭넓은 논의가 진행되고 있다. 이런 담론이 디지털 환경의 변화와 AI 확산에 대응할 더욱 견고한 보안 체계를 마련하는 계기로 이어져야 한다.AI를 활용한 디지털 혁신이 기업의 다양한 업무로 확산되면서 보안은 기술의 영역을 넘어 경영 전반의 과제로 확장되고 있다. 과거엔 시스템과 네트워크를 보호하는 기술적 활동이 중심이었다면, 이제는",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146335",
-    "date": "2026-10-14 15:08:07"
-  },
-  {
-    "source": "boannews",
-    "title": "엑스보우, 크롬 연쇄 취약점 발견... 구글 버그바운티 25만달러 수상",
-    "desc": "엑스보우(XBOW)는 구글 크롬 취약점 보상 프로그램(Chrome VRP)에서 보상금 25만달러를 수상했다고 14일 밝혔다. 이는 구글이 2026년 새 규정을 적용한 이후 나온 첫 크롬 ‘풀체인’(full-chain) 버그 바운티 사례이자 자율형 오펜시브 보안 플랫폼이 보상을 받은 첫 사례다.이번 성과는 엑스보우 오펜시브 보안 기술과 노하우에 오픈AI GPT-5.6 Sol 모델을 결합해 거둔 결과다. 엑스보우 AI 에이전트와 보안 연구원 1명은 6일간의 공동 작업을 통해 윈도우용 크롬을 공격하는 익스플로잇을 구현했다. 그동안 알려지",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146386",
-    "date": "2026-10-14 13:44:38"
-  },
-  {
-    "source": "boannews",
-    "title": "오픈AI, 임원 회의실 도청 혐의로 직원 체포",
-    "desc": "미국 연방수사국(FBI)이 오픈AI 임원 회의실에 녹음 장치를 몰래 설치한 혐의로 이 회사 직원을 체포했다.오픈AI는 공식 뉴스룸 X 계정에 올린 입장문에서 사무실 한 곳에 숨겨진 정교한 녹음 장치를 발견했다고 밝혔다. 회사는 자체 AI 모델로 장치가 무엇이고 어디서 왔는지 분석해, 한 직원이 며칠 전 이를 설치한 사실을 찾아냈다. 회사는 사건을 FBI에 넘겼고, 이 직원은 해고됐다.미국 캘리포니아 북부지검은 피의자가 사우디아라비아 국적의 압둘라흐만 알포잔(Abdulrahman Alfozan)이라고 밝혔다. 네이트 에번스(Nate",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146375",
-    "date": "2026-10-14 12:30:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[Global Security TOP 100] 김동기 핀텔 대표이사 “도시 데이터를 ‘판단과 실행’으로 연결하는 AI 시티 프론티어”",
-    "desc": "핀텔이 통합 플랫폼 ‘PREVAX’를 앞세워 도시 운영 지능화를 이끌고 있다. 인천공항, 국방 분야 등 높은 신뢰성을 요구하는 국가중요시설 수주는 물론, 다기능 무인교통단속장비의 조달청 혁신장터 등록을 완료하며 공공·국방 시장에서 독보적인 입지를 다졌다. 100% 자체 개발 알고리즘과 풀스택 에이전틱 AI 플랫폼을 바탕으로 B2GBC 사업 다각화 및 글로벌 시장 공략에 속도를 낼 방침이다.Q. 핀텔은 어떤 기업인가요핀텔은 2015년 설립된 AI 소프트웨어 전문기업으로, 500건 이상의 사업 경험을 바탕으로 교통안전·도시방범·재난재해",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146384",
-    "date": "2026-10-14 11:36:33"
-  },
-  {
-    "source": "boannews",
-    "title": "[카드뉴스] \"정부 청사 정문이 왜 열렸나\"… 스캐너 클라우드 털려 뚫린 '위조 신분증' 실태",
-    "desc": "정부 청사 정문의 신분증 스캐너와 연동된 외주 클라우드가 침해당하면서 위조 신분증에 의해 출입 통제 게이트가 무력화되었다. 사내망 폐쇄성을 맹신한 사이 외부 검증 서버에서 신분증 원본 데이터가 탈취되어 해커의 물리적 무혈입성을 허용하는 공급망 사고가 발생했다. 신분증 이미지 단일 검증을 탈피하고, 스캔망의 클라우드 의존성 제거와 독립 오프라인 로컬 망 기반 '다중 생체 교차 검증' 결속이 시급하다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146385",
-    "date": "2026-10-14 11:22:07"
-  },
-  {
-    "source": "boannews",
-    "title": "[김혁준의 실전형 K-시큐리티] AI 시대 CISO, ‘광역 방어’ 위한 비즈니스 가시성 확보해야",
-    "desc": "AI 기술 발전에 따라 사이버 공격이 주변부 업무 채널의 연결 취약성을 악용해 ‘비즈니스 로직’ 전체를 노리는 연쇄 침투 방식으로 고도화되면서, 기존 특정 시스템 중심의 ‘지역 방어’를 넘어 전사적 업무 및 데이터 흐름을 아우르는 ‘광역 방어’로의 패러다임 전환이 시급해졌다. 이에 정보보호최고책임자(CISO)는 단순한 기술적 관리를 넘어 ‘비즈니스 가시성’을 철저히 확보하고, 제로트러스트 원칙과 회복탄력성에 기반한 전사적 통제 구조를 새롭게 설계해야 한다.금융권 해킹이 드러낸 ‘업무 연결’의 취약성신한은행에서 약 2만5000명의 고",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146380",
-    "date": "2026-10-14 11:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "휴먼인텍, 장정맥 인식 출입통제 ‘팜키’ 라인업 확대... 스마트 락커 ‘팜락’ 공개",
-    "desc": "건설 현장 전자카드 단말기 전문기업 휴먼인텍(대표 변병주)이 손바닥 정맥 인식 출입통제시스템 ‘팜키’(palmkee) 신규 라인업과 장정맥 인식 기반 스마트 락커키 ‘팜락’(palmlock)을 선보이며 생체인식 보안 사업 확대에 나섰다.휴먼인텍은 건설 현장 퇴직공제 전자카드 단말기와 함께 손바닥 정맥 인식 출입통제 시스템 팜키를 주력 제품으로 공급하고 있다. 이번에 공개한 신규 라인업은 4.3인치 IPS 터치 LCD를 탑재한 표준형 모델 ‘PV700S’, SAM 슬롯을 적용한 ‘PV700SG’, 게이트 매립형 설치에 특화된 ‘PV7",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146381",
-    "date": "2026-10-14 10:51:30"
-  },
-  {
-    "source": "boannews",
-    "title": "“시간을 암호 키로 쓴다”... KAIST, 키와 시간 모두 맞아야 해독 가능한 반도체 암호화 기술 개발 ",
-    "desc": "정해진 시간에만 올바른 정보를 읽을 수 있는 반도체 암호화 기술을 KAIST 연구진이 개발했다. 암호화된 정보를 되돌리는 키에 ‘언제 읽느냐’란 조건까지 더했다. 시간 조건에 따라 접근 권한을 달리하는 클라우드나 에지 보안 시스템 등에 활용이 기대된다. KAIST(총장 배충식)는 김경민 신소재공학과 교수 연구팀이 하나의 소자에서 장기 기억과 단기 기억을 독립적으로 조절할 수 있는 ‘이중 상태 프로그래머블 산화물 트랜지스터’(DUPOT: Dual-State Programmable Oxide Transistor)를 개발했다고 14일 밝",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146379",
-    "date": "2026-10-14 10:09:31"
-  },
-  {
-    "source": "boannews",
-    "title": "구글 개발자 사이트 원격코드실행 결함에 포상금 9만달러",
-    "desc": "구글 개발자 문서 사이트들이 함께 쓰는 플랫폼 데브사이트(DevSite)에서 구글 계정 없이도 서버에서 코드를 실행할 수 있는 결함이 드러났다. 사이버시큐리티뉴스는 구글이 10월 7일 결함을 고쳤다고 보도했다. 구글은 제보한 연구자에게 취약점 포상 프로그램에서 9만달러를 지급했다.시몬 쾨크(Simon Koeck) 보안 연구자가 결함을 찾아 8월 구글에 알렸다. 문제가 된 곳은 developers.google.com과 firebase.google.com, developer.android.com, source.android.com, d",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146334",
-    "date": "2026-10-14 10:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "원우이엔지, AUSA 2026서 글로벌 방산 시장 정조준",
-    "desc": "원우이엔지가 미국 워싱턴 D.C.에서 12일 개막한 세계 최대 지상군 방산 전시회 AUSA 2026에서 한국 방산 영상 기술의 경쟁력을 앞세워 글로벌 시장 공략에 본격적으로 나섰다.한국방위산업진흥회 지원으로 마련된 한국 통합관에는 국내 방산 기업 10개사가 참가했다. 원우이엔지는 고배율 줌 모듈과 드론용 페이로드 카메라(Payload Camera)를 선보이며 해외 바이어 및 방산 관계자들과 활발한 기술 상담을 이어가고 있다.전시 첫날 원우이엔지 부스에는 사전 방문을 예약한 고객은 물론 현장을 찾은 각국의 방산 관계자와 관람객들의 발",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146371",
-    "date": "2026-10-14 09:14:17"
-  },
-  {
-    "source": "boannews",
-    "title": "이노뎁, 비전 AI 에이전트 ‘킨더로그’로 보육·교육 AI 시장 확대 본격화",
-    "desc": "지능형 영상분석 및 AI 플랫폼 전문기업 이노뎁(대표이사 이성진)이 10월 8일 한국영유아보육·교육진흥원(원장 조용남, 진흥원), 사단법인 한국어린이집총연합회(회장 임진숙, 한어총)와 3자 업무협약을 체결하고 보육·교육 현장의 AI 전환을 위한 본격 협력에 들어갔다.이번 협약은 단순한 실증을 넘어, 그동안 축적해 온 킨더로그의 상용화 성과를 기반으로 서비스 영역을 전국 어린이집·유치원으로 확대하는 계기라는 점에서 의미가 있다. 이노뎁은 이번 협약을 보육·교육 AI 시장 확대와 영유아 대상 비전 AI 에이전트 신사업 성장의 분기점으로",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146370",
-    "date": "2026-10-14 09:13:35"
-  },
-  {
-    "source": "boannews",
-    "title": "트루엔, 초고화질 AI 홈캠 ‘이글루 S8 PRO’ 출시",
-    "desc": "트루엔이 기존 ‘이글루 S8’ 기반 화질, 보안성, AI 돌봄 기능 등 모든 영역을 고도화한 하이엔드 제품 플래그십 AI 홈카메라 ‘이글루(EGLOO) S8 PRO’를 선보이며 시장 경쟁력 강화에 나선다. 영유아는 물론 반려동물, 시니어 등 다양한 돌봄 수요를 공략해 시장 점유율을 확대한다는 전략이다.26일 출시 예정인 S8 PRO는 4K 800만 화소 초고화질·16배 디지털 줌과 하드웨어 기반 프라이버시 보호 기능, AI 돌봄 기능 등을 적용해 제품 경쟁력을 높였다. 또한 중국산 IP 카메라 해킹으로 개인정보 및 영상정보 보호에",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146369",
-    "date": "2026-10-14 09:12:20"
-  },
-  {
-    "source": "boannews",
-    "title": "한국영상정보연구조합, 물리보안 R&D 사회안전망 위협대응 전문가 협의체 성료",
-    "desc": "한국영상정보연구조합(KIIA, 이사장 황정현)은 13일 정보통신기획평가원(IITP) 서울사무소에서 김동칠 한국전자기술연구원(KETI) 팀장이 리더를 맡고 있는 사회안전망 위협대응 협의체를 공동 개최해 성공적으로 완료했다고 밝혔다.이 행사는 과학기술정보통신부가 주관하고 정보통신기획평가원에서 전담하는 ‘정보보호핵심원천기술개발사업’으로 진행되는 물리보안 R&D 과제들의 연구개발 방향과 성과, 실증, 사업화 방안 논의를 위한 전문가협의체 성격으로 이루어졌다.행사는 각 물리보안 R&D 과제 컨소시엄별 총괄·실무책임자의 연구개발 및 실증·사업",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146368",
-    "date": "2026-10-14 09:11:11"
-  },
-  {
-    "source": "boannews",
-    "title": "러시아어권 해커, 클로드 코드로 우크라이나 기관 털어",
-    "desc": "러시아어를 쓰는 해킹 조직이 앤트로픽의 AI 코딩 도구 클로드 코드를 동원해 세계 웹사이트를 뚫고 우크라이나 기관에서 개인 관련 기록 62만8000건 이상을 빼냈다고 보안 기업 SOC레이더(SOCRadar)가 추정했다. 이 조직의 작업 폴더가 인터넷에 그대로 열려 있던 덕에 수법이 드러났다.SOC레이더는 IP 46.21.250[.]135에서 공격자의 리눅스 작업 PC 폴더가 노출된 것을 발견했다. 폴더에는 AI 세션 기록과 인증 토큰이 평문으로 적힌 스크립트, 공격 도구, 정찰 결과, AI 에이전트 설정, 빼낸 피해자 데이터가 고스",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146331",
-    "date": "2026-10-14 08:00:00"
-  },
-  {
     "source": "thn",
     "title": "Anthropic Warns Small AI Models Could Soon Form Self-Propagating IoT Botnets",
     "desc": "Small artificial intelligence (AI) models may be months away from developing capabilities to self-replicate on IoT devices like smart ovens and off-brand Android TV boxes, according to a warning from Anthropic.\n\nThe frontier AI lab said small AI models could form autonomous, self-propagating worm bo",
@@ -663,40 +698,5 @@
     "desc": "Cryptocurrency hardware maker Ledger has temporarily paused sales of its products via CryptoBilis following reports of stolen funds linked to devices sold by the reseller.\n\nOn Friday, the company said it was investigating reports of loss of funds from users in Southeast Asia who had purchased produc",
     "url": "https://thehackernews.com/2026/10/ledger-finds-unauthorized-hardware.html",
     "date": "2026-10-12T16:51:48"
-  },
-  {
-    "source": "thn",
-    "title": "Critical SonicWall SMA 1000 Flaw Targeted in 135 Exploitation Attempts After Patch",
-    "desc": "Threat actors have been observed exploiting a recently disclosed critical security flaw in SonicWall Secure Mobile Access (SMA) 1000 appliances within days of public disclosure.\n\nThe vulnerability, tracked as CVE-2026-102255 (CVSS score: 10.0), is a case of pre-authenticated server-side request forg",
-    "url": "https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html",
-    "date": "2026-10-12T16:06:56"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE",
-    "desc": "A maximum-severity security flaw impacting the Bricksforge plugin for WordPress has come under active exploitation in the wild, according to Patchstack.\n\nThe critical vulnerability in question is CVE-2026-85097 (CVSS score: 10.0), which allows unauthenticated attackers to upload and execute arbitrar",
-    "url": "https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html",
-    "date": "2026-10-12T14:32:14"
-  },
-  {
-    "source": "thn",
-    "title": "CyberXero Uses Claude Code in Campaign That Stole Over 628,000 Ukrainian Records",
-    "desc": "Cybersecurity researchers have disclosed details of a two-pronged artificial intelligence (AI)-augmented initial access campaign targeting WordPress sites, e-commerce platforms, and critical infrastructure entities in Ukraine.\n\nThe activity, which brings together commodity offensive tools like Cobal",
-    "url": "https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html",
-    "date": "2026-10-12T12:56:12"
-  },
-  {
-    "source": "thn",
-    "title": "P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands",
-    "desc": "Cybersecurity researchers have disclosed details of a previously unseen variant of the DarkSword iOS exploit kit called P7 DarkSword.\n\n\"Compared with the variants we usually observe, P7 reduces its on-device footprint, adds on-device keychain and crypto-wallet theft, and adds two way C2 communicatio",
-    "url": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html",
-    "date": "2026-10-11T09:54:34"
-  },
-  {
-    "source": "thn",
-    "title": "The Third-Party Agent Problem: Why Security Built for AI You Chose Misses the Agents You Didn't",
-    "desc": "In environments studied for the 2026 State of Agent Security Report, roughly 1,280 third-party products now embed AI. About 282 of them sit behind single sign-on. The other thousand are invisible to identity infrastructure by default, not because anyone hid them, but because an identity stack can on",
-    "url": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
-    "date": "2026-10-10T16:30:00"
   }
 ]
