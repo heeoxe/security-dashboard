@@ -1,6 +1,27 @@
 [
   {
     "source": "thn",
+    "title": "Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug",
+    "desc": "A local privilege escalation exploit published today gains root on OpenBSD 7.9 by chaining a roughly 37-year-old integer overflow with a separate kernel flaw, bypassing OpenBSD's KARL kernel-address randomization and its SMAP and SMEP hardware protections. Security firm Calif, which found and report",
+    "url": "https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html",
+    "date": "2026-10-16T23:18:45"
+  },
+  {
+    "source": "thn",
+    "title": "Attackers Tampered with AOMEI Backupper's Update Servers for Minutes to Deliver a Backdoor",
+    "desc": "Attackers repeatedly changed the files that AOMEI Backupper fetches from the vendor's own update servers, in windows of five to ten minutes at a time between May and July 2026, so that any copy of the Windows backup program that checked for an update during one of those windows would download and ru",
+    "url": "https://thehackernews.com/2026/10/attackers-tampered-with-aomei.html",
+    "date": "2026-10-16T22:13:39"
+  },
+  {
+    "source": "thn",
+    "title": "UAT-11985 Uses Fake Event Invites to Target Taiwan Research Affiliates With Google AitM Phishing",
+    "desc": "Cybersecurity researchers have disclosed details of an advanced persistent threat (APT) spear-phishing campaign that has targeted individuals affiliated with Taiwan research organizations to direct victims to an adversary-in-the-middle (AitM) phishing framework designed to harvest their Google accou",
+    "url": "https://thehackernews.com/2026/10/uat-11985-uses-fake-event-invites-to.html",
+    "date": "2026-10-16T21:46:44"
+  },
+  {
+    "source": "thn",
     "title": "OpenAI Research Model Spent 3rd-Party Test ETH Without Permission to Deploy Smart Contract",
     "desc": "OpenAI has disclosed seven new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior, including one case where its research model, after not having funds on an Ethereum test network, spent test cryptocurrency from a third-party's wallet without authorization to com",
     "url": "https://thehackernews.com/2026/10/openai-research-model-spent-3rd-party.html",
@@ -677,26 +698,5 @@
     "desc": "Low-cost Android smartphones have been shipped with malicious software baked into the device firmware, allowing bad actors to covertly install apps, conduct ad fraud, and turn devices into residential proxies.\n\nThe activity, which targets Android devices built on MediaTek platforms across several br",
     "url": "https://thehackernews.com/2026/10/low-cost-android-phones-ship-with.html",
     "date": "2026-10-13T11:30:11"
-  },
-  {
-    "source": "thn",
-    "title": "⚡ Weekly Recap: Helpdesk 0-Days, Rogue Certs, ShinyHunters Arrest, AI-Fooling Malware and More",
-    "desc": "Some meetings last longer than it took attackers to jump on a newly disclosed security flaw this week. Within hours, they were already testing it. That's not much time to read the warning, let alone do something about it.\n\nBut speed is only part of the problem. A secure connection didn't always mean",
-    "url": "https://thehackernews.com/2026/10/weekly-recap-helpdesk-0-days-rogue.html",
-    "date": "2026-10-12T20:46:26"
-  },
-  {
-    "source": "thn",
-    "title": "Bring Your Own Agent: Your Employees' Assistants Are Already Logged In",
-    "desc": "The personal AI agents rollout is going about as smoothly as expected: Amazon now blocks Meta's Muse because it doesn't identify itself as a bot while browsing; Instinct keeps raising privacy concerns; and the horror stories from pretty much every personal AI agent keep piling up.\n\nRegardless, the t",
-    "url": "https://thehackernews.com/2026/10/bring-your-own-agent-your-employees.html",
-    "date": "2026-10-12T17:25:00"
-  },
-  {
-    "source": "thn",
-    "title": "Ledger Finds Unauthorized Hardware Implant in CryptoBilis-Sold Wallet Amid Fund Theft Reports",
-    "desc": "Cryptocurrency hardware maker Ledger has temporarily paused sales of its products via CryptoBilis following reports of stolen funds linked to devices sold by the reseller.\n\nOn Friday, the company said it was investigating reports of loss of funds from users in Southeast Asia who had purchased produc",
-    "url": "https://thehackernews.com/2026/10/ledger-finds-unauthorized-hardware.html",
-    "date": "2026-10-12T16:51:48"
   }
 ]
