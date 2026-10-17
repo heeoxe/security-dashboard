@@ -1,6 +1,41 @@
 [
   {
     "source": "thn",
+    "title": "MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon",
+    "desc": "Cybersecurity researchers have discovered a malicious npm package that's part of a recently disclosed software supply chain attack campaign dubbed MALFEX.\n\nThe package, named \"imgdecode,\" was uploaded to the package registry on September 30, 2026, by a user named \"malfexteste8.\" It has been download",
+    "url": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html",
+    "date": "2026-10-17T16:41:56"
+  },
+  {
+    "source": "thn",
+    "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
+    "desc": "Cybersecurity researchers are sounding the alarm related to an active campaign in which unknown threat actors are abusing a compromised Microsoft 365 (M365) credential belonging to ConnectWise Cloud Backup (formerly SkyKick) to gain unauthorized access to customers' M365 environments.\n\nConnectWise C",
+    "url": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html",
+    "date": "2026-10-17T11:46:46"
+  },
+  {
+    "source": "boannews",
+    "title": "탈취한 개인정보로 대출한도 조회... DB저축은행, 142명 개인정보 유출 추정",
+    "desc": "DB저축은행의 임직원과 프로젝트 외주인력 등 142명의 개인정보가 유출된 것으로 추정된다. 피해자의 개인정보를 이용해 대출 가한도 조회까지 시도됐다.17일 관련 업계에 따르면 DB저축은행은 이 같은 내용으로 금융감독원에 보고했다.실제 금융거래가 이뤄진 것은 아니지만, 개인정보 유출이 금융거래 관련 공격으로 이어졌다는 점에서 경각심이 높아지고 있다.유출 경로로 디지털채널 고도화 사업에 참여한 외주인력이 지목됐다. 어떤 경위로 정보 유출에 관여했는지와 고의성 여부 등은 확인 전이다.국회 정무위원회 소속 신동욱 국민의힘 의원실이 제출받은",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146470",
+    "date": "2026-10-17 13:38:12"
+  },
+  {
+    "source": "boannews",
+    "title": "OK저축은행, 계좌번호 등 고객 268명 정보 추가 유출",
+    "desc": "OK저축은행에서 추가적으로 해킹 사고가 발생해 고객 268명의 정보가 유출됐다.17일 금융권에 따르면 OK저축은행은 첫 해킹 이후 지난 15일까지 진행한 시스템 전수 점검 과정에서 모바일 수신서비스 관련 홈페이지가 공격 당한 사실을 추가로 확인했다. 공격은 15일 오전 3시 32분에서 4시간 동안 이뤄졌다. 앞서 OK저축은행은 지난 12일 대출 신청 웹페이지 해킹으로 고객 250명의 이름, 생년월일, 주소, 연 소득, 대출금액 등이 유출됐다고 밝힌 바 있다. 3일만에 추가 공격을 당한 것이다.이번 유출 피해 고객은 총 268명이다.",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146469",
+    "date": "2026-10-17 10:02:03"
+  },
+  {
+    "source": "boannews",
+    "title": "[배종찬의 보안 빅데이터] 스마트 TV가 해킹당하면 무슨 일이 벌어질까",
+    "desc": "우리의 일상생활 깊숙이 파고든 스마트 기술은 삶의 편리함을 선사했으나, 그 이면에는 새로운 형태의 사이버 위협이라는 그림자를 드리우고 있다. 최근 빅데이터 분석 플랫폼 썸트렌드(SomeTrend)가 집계한 2026년 9월 14일부터 10월 13일까지의 연관어 분석 결과에 따르면, 대중의 관심은 단순한 미디어 시청을 넘어 보안과 위협이라는 키워드로 급격히 이동하고 있음을 보여준다. 특히 해외에서 네트워크에 연결된 TV를 비롯한 스마트 가전이 해킹되어 거대한 사이버 공격의 거점으로 악용될 수 있다는 충격적인 연구 결과가 나오면서 안전지",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146467",
+    "date": "2026-10-17 08:00:00"
+  },
+  {
+    "source": "thn",
     "title": "Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug",
     "desc": "A local privilege escalation exploit published today gains root on OpenBSD 7.9 by chaining a roughly 37-year-old integer overflow with a separate kernel flaw, bypassing OpenBSD's KARL kernel-address randomization and its SMAP and SMEP hardware protections. Security firm Calif, which found and report",
     "url": "https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html",
@@ -588,27 +623,6 @@
     "date": "2026-10-14 17:09:32"
   },
   {
-    "source": "boannews",
-    "title": "55달러 TV 박스로 AI 구동... 앤트로픽 “스스로 퍼지는 AI 웜, 이르면 몇 달 안에”",
-    "desc": "AI 모델이 값싼 스마트 기기를 옮겨 다니며 스스로 복제하는 이른바 ‘AI 웜’이 머지않아 가능해질 수 있다는 앤트로픽 연구가 나왔다.앤트로픽의 윌리엄 저우(William Zhou)와 대니얼 프리먼(Daniel Freeman) 연구원은 12일(현지시각) 공개한 연구에서 AI 모델이 스마트 오븐이나 저가 안드로이드 TV 박스 같은 사물인터넷(IoT) 기기에서 자기 복제를 할 만큼 성능을 갖추기까지 몇 달밖에 남지 않았을 수 있다고 밝혔다.연구진은 자기 복제를 네 단계로 나눴다. 표적을 찾고, 기기에 접근하고, 새 기기에서 AI 모델을",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146374",
-    "date": "2026-10-14 16:45:00"
-  },
-  {
-    "source": "boannews",
-    "title": "하루 만에 결함 1411개... 마이크로소프트, 역대 최대 규모 10월 정기 패치 배포",
-    "desc": "마이크로소프트가 13일(현지시각) 10월 정기 보안 업데이트를 배포하며 결함 1411개를 한꺼번에 고쳤다. 실제 공격에 악용 중인 결함 1개와 패치 전에 내용이 공개된 결함 2개가 들어 있다.블리핑컴퓨터는 이번 업데이트를 역대 최대 규모로 집계했다. 정기 패치일 당일 공개분만 집계한 숫자로 이달 초 애저와 익스체인지 서버 등에서 먼저 고친 348개는 빠져 있다.유형별로는 권한 상승 결함이 약 677개로 가장 많았고, 원격코드실행(RCE) 결함 약 317개와 정보 노출 결함 약 254개가 뒤를 이었다. 가장 심각한 ‘긴급’ 등급은 7",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146372",
-    "date": "2026-10-14 15:34:11"
-  },
-  {
-    "source": "boannews",
-    "title": "시큐아이, 영문 사명 ‘SECUi’로 변경... 신규 CI 공개",
-    "desc": "시큐아이가 글로벌 보안 기업 정체성을 명확히 하고 시장 경쟁력을 강화하기 위해 영문 사명을 기존 ‘SECUI’에서 ‘SECUi’로 변경하고 신규 기업 이미지(CI)를 공개했다고 14일 밝혔다.이번 영문 사명 변경은 발음 인지성을 높이는 동시에 글로벌 시장을 겨냥한 브랜드 경쟁력을 한층 끌어올리기 위해 추진됐다. 새롭게 선보인 CI는 기존 ‘SECUI’의 마지막 영문자 ‘I’를 소문자 ‘i’로 바꿨다. 기존 브랜드의 연속성을 유지하면서 지능형 보안을 의미하는 ‘인텔리전스’(Intelligence)의 가치를 전면에 내세웠다.함께 공개된",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146393",
-    "date": "2026-10-14 15:31:20"
-  },
-  {
     "source": "thn",
     "title": "Anthropic Warns Small AI Models Could Soon Form Self-Propagating IoT Botnets",
     "desc": "Small artificial intelligence (AI) models may be months away from developing capabilities to self-replicate on IoT devices like smart ovens and off-brand Android TV boxes, according to a warning from Anthropic.\n\nThe frontier AI lab said small AI models could form autonomous, self-propagating worm bo",
@@ -684,19 +698,5 @@
     "desc": "Two of 31 newly disclosed flaws in Progress Software's&nbsp;MarkLogic Server&nbsp;database could let an account given only some management privileges take administrator control of the server, the company says.\n\nProgress published all 31 on October 12 and scored five of them critical. Fixes have been",
     "url": "https://thehackernews.com/2026/10/two-critical-marklogic-flaws-could-give.html",
     "date": "2026-10-13T14:14:01"
-  },
-  {
-    "source": "thn",
-    "title": "GitLab Patches CVSS 10.0 Flaw That Could Let Unauthenticated Users Run Server Code",
-    "desc": "GitLab has released patches for a maximum-severity security flaw impacting its Community Edition (CE) and Enterprise Edition (EE) software that could result in arbitrary code execution.\n\n\"GitLab has remediated an issue that, under certain conditions, could have allowed an unauthenticated user to exe",
-    "url": "https://thehackernews.com/2026/10/gitlab-patches-cvss-100-flaw-that-could.html",
-    "date": "2026-10-13T14:13:37"
-  },
-  {
-    "source": "thn",
-    "title": "Low-Cost Android Phones Ship With Preinstalled Malware That Turns Them Into Residential Proxies",
-    "desc": "Low-cost Android smartphones have been shipped with malicious software baked into the device firmware, allowing bad actors to covertly install apps, conduct ad fraud, and turn devices into residential proxies.\n\nThe activity, which targets Android devices built on MediaTek platforms across several br",
-    "url": "https://thehackernews.com/2026/10/low-cost-android-phones-ship-with.html",
-    "date": "2026-10-13T11:30:11"
   }
 ]
