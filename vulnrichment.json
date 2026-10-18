@@ -1,5 +1,68 @@
 [
   {
+    "cve": "CVE-2026-33818",
+    "title": "Enforce maximum recursion depth in encoding/asn1",
+    "desc": "Enforce a recursion limit in Unmarshal to prevent stack exhaustion when parsing deeply-nested, recursive structures.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Go standard library",
+        "product": "encoding/asn1"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-13",
+    "updated": "2026-10-17",
+    "url": "https://go.dev/issue/80405",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-42504",
+    "title": "Quadratic complexity in WordDecoder.DecodeHeader in mime",
+    "desc": "Decoding a maliciously-crafted MIME header containing many invalid encoded-words can consume excessive CPU.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Go standard library",
+        "product": "mime"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-02",
+    "updated": "2026-10-17",
+    "url": "https://go.dev/issue/79217",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-94033",
+    "title": "SourceCodester Drug Recommendation System User Management add_user cross site scripting",
+    "desc": "A vulnerability has been found in SourceCodester Drug Recommendation System 1.0. This vulnerability affects unknown code of the file /drug_recommender/Admin/add_user of the component User Management. Such manipulation of the argument txtname/txtemail/txtpassword leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used",
+    "cvss": 3.5,
+    "severity": "LOW",
+    "cwes": [
+      "CWE-79",
+      "CWE-94"
+    ],
+    "affected": [
+      {
+        "vendor": "SourceCodester",
+        "product": "Drug Recommendation System"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-09-20",
+    "updated": "2026-10-17",
+    "url": "https://vuldb.com/vuln/407961",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2026-110936",
     "title": "A vulnerability has been identified in Siemens Software Center (All versions < V4.0.9.8). The affected application loads",
     "desc": "A vulnerability has been identified in Siemens Software Center (All versions < V4.0.9.8). The affected application loads dynamic-link libraries (DLLs) from an uncontrolled search path. This could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application.",
@@ -8668,46 +8731,6 @@
     "published": "2026-05-01",
     "updated": "2026-10-16",
     "url": "https://git.kernel.org/stable/c/f6abac936a0dfd31d6c3e49205ec0ee75a8f887f",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-33818",
-    "title": "Enforce maximum recursion depth in encoding/asn1",
-    "desc": "Enforce a recursion limit in Unmarshal to prevent stack exhaustion when parsing deeply-nested, recursive structures.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Go standard library",
-        "product": "encoding/asn1"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-13",
-    "updated": "2026-10-16",
-    "url": "https://go.dev/issue/80405",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-42504",
-    "title": "Quadratic complexity in WordDecoder.DecodeHeader in mime",
-    "desc": "Decoding a maliciously-crafted MIME header containing many invalid encoded-words can consume excessive CPU.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Go standard library",
-        "product": "mime"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-02",
-    "updated": "2026-10-16",
-    "url": "https://go.dev/issue/79217",
     "source": "CISA Vulnrichment"
   },
   {
@@ -19382,45 +19405,6 @@
     "published": "2026-10-13",
     "updated": "2026-10-16",
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70033",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-70038",
-    "title": "Windows iSCSI Remote Code Execution Vulnerability",
-    "desc": "",
-    "cvss": 8.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416",
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1607"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 1809"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 21H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 10 Version 22H2"
-      },
-      {
-        "vendor": "Microsoft",
-        "product": "Windows 11 version 23H2"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-10-13",
-    "updated": "2026-10-16",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70038",
     "source": "CISA Vulnrichment"
   },
   {
