@@ -1,5 +1,285 @@
 [
   {
+    "source": "thn",
+    "title": "PHP Issues Emergency Patches for Two Critical PHP2Shell RCE Flaws as Exploit Attempts Emerge",
+    "desc": "PHP has released emergency updates that fix two critical flaws in the language itself, letting an attacker without an account run code on a web server. The fixes are in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35, and the PHP team says only updating fully protects a server.\n\nThe flaws, together called PHP",
+    "url": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html",
+    "date": "2026-10-21T19:30:00"
+  },
+  {
+    "source": "thn",
+    "title": "Google Chrome Adds ClickFix Warnings to Stop Users From Running Malicious Commands",
+    "desc": "Google on Tuesday said it's rolling out improved safeguards in its Chrome browser to secure users against ClickFix attacks when Enhanced Protection is enabled.\n\nClickFix is a popular social engineering technique in which bad actors trick users into copying and pasting malicious code directly into th",
+    "url": "https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html",
+    "date": "2026-10-21T18:45:09"
+  },
+  {
+    "source": "thn",
+    "title": "China-Aligned Bronze Sandcastle Abuses Sandboxie DLL Sideloading to Deploy Backdoors",
+    "desc": "Cybersecurity researchers have disclosed details of a previously undocumented China-aligned threat cluster known as Bronze Sandcastle that has been observed targeting organizations in Asia and Africa since mid-2025.\n\n\"The most distinctive technical marker for Bronze Sandcastle is its consistent use ",
+    "url": "https://thehackernews.com/2026/10/china-aligned-bronze-sandcastle-abuses.html",
+    "date": "2026-10-21T17:35:00"
+  },
+  {
+    "source": "thn",
+    "title": "Generative AI Is Erasing Behavioral Tells, Weakening Behavior-Only Detection, Proofpoint Reports",
+    "desc": "Generative AI has changed what a malicious email looks like. Messages that once gave themselves away through clumsy wording, generic pretexts, and reused templates now arrive fluent, personalized, and unique to each recipient, and the behavioral signals email filters have relied on for years are fad",
+    "url": "https://thehackernews.com/2026/10/generative-ai-is-erasing-behavioral.html",
+    "date": "2026-10-21T17:23:34"
+  },
+  {
+    "source": "thn",
+    "title": "PHP2Shell: What Actually Protects You Before the 14:00 UTC PHP RCE Patch, and What Doesn't",
+    "desc": "You cannot fully block the two critical PHP flaws called PHP2Shell before today's fix, and the one setting being passed around as a workaround is not enough on its own, the security firm that suggested it now says.\n\nPHP will release the fix at&nbsp;14:00 UTC on October 21&nbsp;for two flaws it rates",
+    "url": "https://thehackernews.com/2026/10/php2shell-what-actually-protects-you.html",
+    "date": "2026-10-21T16:06:53"
+  },
+  {
+    "source": "thn",
+    "title": "The Harness Is the Hard Part of Agentic Pentesting",
+    "desc": "An AppSec team can point an AI agent running on a general-purpose model at its own web apps with little setup. Sure, the model writes the attacks. But everything that makes those attacks safe to run against production and worth acting on afterward lives in the harness around the model. The harness i",
+    "url": "https://thehackernews.com/2026/10/the-harness-is-hard-part-of-agentic.html",
+    "date": "2026-10-21T16:02:40"
+  },
+  {
+    "source": "thn",
+    "title": "Attackers Hijacked Over 300 Tor Exit Relays to Intercept SSH Connections",
+    "desc": "Attackers took control of more than 300 Tor exit relays in early October and used them to redirect SSH connections to servers that stole login passwords, a researcher found.\n\nExit relays are the last hop in a Tor circuit, where traffic leaves the network for its destination. Only a password login to",
+    "url": "https://thehackernews.com/2026/10/attackers-hijacked-over-300-tor-exit.html",
+    "date": "2026-10-21T16:00:27"
+  },
+  {
+    "source": "thn",
+    "title": "PHP2Shell: Two Unpatched Critical PHP RCE Flaws (CVSS 9.2) Trigger Emergency Security Alert",
+    "desc": "This story is developing and was written before PHP's scheduled 14:00 UTC release on October 21. Once the release is out, the affected and fixed versions below are confirmed by the official advisory.\n\nPHP will ship an out-of-cycle security release at 14:00 UTC today, October 21, for two critical vul",
+    "url": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html",
+    "date": "2026-10-21T14:35:17"
+  },
+  {
+    "source": "thn",
+    "title": "Attackers Abuse UpdraftCentral Keys to Plant Backdoors on WordPress Sites",
+    "desc": "Unknown threat actors breached TeamUpdraft's website and potentially gained unauthorized access to customers' connection keys for UpdraftCentral, UpdraftVault, and UpdraftClone, using them to backdoor WordPress sites.\n\nTeamUpdraft is the developer behind UpdraftPlus, a popular WordPress backup plugi",
+    "url": "https://thehackernews.com/2026/10/attackers-abuse-updraftcentral-keys-to.html",
+    "date": "2026-10-21T14:31:12"
+  },
+  {
+    "source": "thn",
+    "title": "U.S. Orders DeepSeek Removed From Federal Civilian Systems, Bans New Purchases",
+    "desc": "U.S. federal civilian agencies must remove DeepSeek products from their information technology systems, along with any third-party products or services \"developed using DeepSeek implementations,\" under a Department of Homeland Security order.\n\nThey may also no longer buy information technology produ",
+    "url": "https://thehackernews.com/2026/10/us-orders-deepseek-removed-from-federal.html",
+    "date": "2026-10-21T13:34:17"
+  },
+  {
+    "source": "thn",
+    "title": "State Bank of India Confirms Data Leak After 3,897 Customer Records Found on Dark Web",
+    "desc": "State Bank of India has identified 3,897 customer records containing personal information in a set of about 375,000 records available on the dark web, and it does not yet know where the data came from.\n\nThe state-owned bank, India's largest, said in a&nbsp;stock-exchange filing&nbsp;dated October 21",
+    "url": "https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html",
+    "date": "2026-10-21T13:14:22"
+  },
+  {
+    "source": "thn",
+    "title": "CISA Orders Federal Agencies to Patch Exploited Plex2Shell, Siemens, and SiteGuard Flaws",
+    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added four vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, including four vulnerabilities impacting Plex Media Server that's collectively called Plex2Shell.\n\nThe vulnerabilities are listed below -\n\n\n  C",
+    "url": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
+    "date": "2026-10-21T12:56:49"
+  },
+  {
+    "source": "thn",
+    "title": "Hackers Hid Vasilek Backdoor in VMware Tools During 2-Year Russian Healthcare Intrusion",
+    "desc": "A Belarus-aligned hacktivist group spent nearly two years within the network of a Russian healthcare organization.\n\nAccording to a report published by Russian cybersecurity firm Solar, the activity has been attributed to a threat cluster dubbed Partisan Zmiy, which is also known as the Cyber Partisa",
+    "url": "https://thehackernews.com/2026/10/hackers-hid-vasilek-backdoor-in-vmware.html",
+    "date": "2026-10-21T11:35:15"
+  },
+  {
+    "source": "boannews",
+    "title": "[강릉 ITS 세계총회] 오토엘, 192채널 장거리 라이다로 스마트 교차로 공략",
+    "desc": "[강릉=보안뉴스 특별취재팀] 라이다 전문기업 오토엘이 ‘2026 강릉 ITS 세계총회’ 전시회장에서 최대 300m까지 탐지하는 장거리 라이다와 50~70m 범위의 근거리 라이다를 선보였다.장거리 제품 ‘G192’는 192채널로 구성돼 형체 인식 해상도와 정밀도가 높다. 회사 측은 192채널급 라이다가 세계적으로도 드물다고 설명했다. 오토엘은 이 제품으로 국내에서 확대되고 있는 스마트 교차로 시장을 공략한다. 스마트 교차로는 센서가 차량 흐름과 차종, 대기열을 파악해 신호 길이를 자동 조절하는 방식으로, 센서 정확도가 성능을 좌우한다",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146606",
+    "date": "2026-10-21 18:08:06"
+  },
+  {
+    "source": "boannews",
+    "title": "한국재난안전산업협회, ‘K-미래산업 혁신생태계’ 공동선언 참여... “AI·첨단교통기술, 재난안전에 접목”",
+    "desc": "한국재난안전산업협회(회장 서병일)가 지능형 교통, 스마트도시, 인공지능(AI), 자율주행, 정보통신 분야 대표 기관들과 함께 ‘K-미래산업 혁신생태계’ 구축에 나섰다.협회는 21일 강릉 컨벤션센터에서 열린 ‘K-미래산업 혁신생태계 구축 공동선언식’에 참여해 공동선언문을 채택했다. 선언식은 ‘2026 강릉 ITS 세계총회’를 계기로 한국지능형교통체계협회(ITS Korea)가 주관했다. 현장에는 한국정보통신기술협회(TTA), 스마트도시협회, 한국인공지능협회, 한국자율주행산업협회가 함께 참석했고, 한국AI·로봇산업협회는 서면으로 뜻을 함",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146605",
+    "date": "2026-10-21 17:31:55"
+  },
+  {
+    "source": "boannews",
+    "title": "KISIA, 보안 스타트업 투자유치 지원... 투자상담회 개최",
+    "desc": "한국정보보호산업협회(KISIA, 회장 김진수)가 유망 정보·물리보안 스타트업의 투자유치 역량 강화를 위해 지원에 나섰다.KISIA는 ‘2026년 유망 보안 스타트업 투자상담회’를 최근 판교 정보보호 클러스터에서 개최했다고 21일 밝혔다.이번 상담회에는 투자유치를 희망하는 보안 스타트업 8개사와 사이버보안 펀드 운용사 2개사가 참여했다. 보안 스타트업과 투자 전문가와의 1:1 맞춤형 상담을 제공하는 방식으로 진행됐다.참여 기업들은 투자기관과의 개별 상담을 통해 IR 자료 작성 및 투자유치 전략, 사업화 방향 등에 대한 전문적인 조언을",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146602",
+    "date": "2026-10-21 16:57:24"
+  },
+  {
+    "source": "boannews",
+    "title": "키즈 플랫폼 ‘놀이의발견’, 관리 시스템 해킹으로 회원 개인정보 유출",
+    "desc": "키즈 놀이·체험 플랫폼 ‘놀이의발견’에서 외부 비인가자의 불법 접근으로 회원 개인정보가 유출되는 사고가 발생했다.운영사 웅진컴퍼스는 21일 공식 공지를 통해 서비스 관리 시스템(백오피스) 침해 사실을 알렸다. 한국인터넷진흥원(KISA)과 개인정보보호위원회에 신고하는 한편 관할 경찰서에 수사를 의뢰했다고 밝혔다.침해 행위는 18일 오후 6시 45분경부터 19일 0시 50분경까지 발생했다. 외부 비인가자가 관리 시스템에 무단 접속해 내부 회원정보를 조회했으며, 웅진컴퍼스는 19일 오전 이상 징후를 감지한 뒤 접근을 차단했다.유출된 정보",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146600",
+    "date": "2026-10-21 16:38:12"
+  },
+  {
+    "source": "boannews",
+    "title": "중국어권 해커, AI 침투 테스트 도구로 기업 사이트 무더기 공격",
+    "desc": "중국어를 쓰는 공격자들이 AI 기반 침투 테스트 도구 ‘케언’(Cairn)을 악용해 여러 나라 기업 웹사이트를 자동으로 공격했다고 보안 기업 노르포지(NorForge)가 밝혔다. 존디어와 샤크닌자 등 이름난 기업도 피해 명단에 올랐다.침투 테스트는 기업이 허락을 받고 공격자 입장에서 자기 시스템의 약점을 찾는 작업이다. 케언은 이 작업을 AI로 이끄는 도구인데, 이번엔 허락 없이 공격에 쓰였다.노르포지는 인터넷에 공개된 채 방치된 AI 침투 테스트 도구의 관리 화면을 조사하다 이 활동을 찾아냈다. 노출된 관리 화면은 20개가 넘었다",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146575",
+    "date": "2026-10-21 16:30:03"
+  },
+  {
+    "source": "boannews",
+    "title": "SGA솔루션즈, 공공 N2SF 현황 분석... 현장 발목 잡는 건 ‘보안등급 분류’",
+    "desc": "공공부문의 획일적인 망분리 규제를 완화하고 데이터 중요도에 따라 보안을 차등 적용하는 국가 망 보안체계(N2SF) 도입이 추진되고 있지만, 대다수 공공기관은 여전히 초기 검토 단계에 머물러 있는 것으로 나타났다.SGA솔루션즈는 지난달 열린 ‘사이버 서밋 코리아 2026’(CSK 2026)에서 공공부문 관계자 59명을 대상으로 진행한 현장 설문 분석 결과를 21일 발표했다.조사 결과 공공 분야 응답자의 79.7%가 N2SF 도입과 관련해 구체적인 추진 계획을 세우지 못했거나 내부 검토 및 정보 수집 단계에 머물러 있다고 답했다. 전환",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146597",
+    "date": "2026-10-21 16:00:05"
+  },
+  {
+    "source": "boannews",
+    "title": "“AI 에이전트 비용 통제 한계... 보안팀 협력 필요”... 시스코, ‘2026 스플렁크 옵저버빌리티 보고서’",
+    "desc": "기업 내 자율형 AI 에이전트 도입이 확산되면서 운영 복잡성과 예측 불가능한 비용 급증이 새로운 리스크로 떠올랐다. 기업 열 곳 중 여덟 곳 이상이 AI 에이전트 활용에 따른 부작용을 우려하지만, 정작 비용과 품질을 제대로 통제하는 곳은 절반에도 미치지 못하는 것으로 나타났다.시스코는 21일 이 같은 내용을 담은 ‘2026 스플렁크 옵저버빌리티 현황 보고서: AI 시대의 예측 가능성 회복’을 발표했다. 옥스퍼드 이코노믹스와 함께 글로벌 10개국의 IT 운영 및 엔지니어링 전문가 2050명을 대상으로 조사한 결과다.조사에 따르면 응답",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146596",
+    "date": "2026-10-21 15:58:03"
+  },
+  {
+    "source": "boannews",
+    "title": "인증 없이 관리자 계정 탈취... 지멘스·로크웰 등 산업 제어 장비 결함 무더기 패치",
+    "desc": "산업 설비를 움직이는 산업 제어 시스템(ICS) 업체들이 월례 보안 업데이트를 일제히 내놨다.시큐리티위크에 따르면 지멘스와 슈나이더일렉트릭, 로크웰오토메이션은 최근 정기 패치일(패치 화요일)에 ICS 보안 권고문을 공개했다.가장 많은 권고문을 낸 곳은 지멘스다. 지멘스는 새 권고문 17건을 내고 일부 결함엔 패치를, 나머지엔 완전한 수정이 나올 때까지 쓸 완화책을 내놨다. 치명적 결함은 시마틱 S7-1500 일부 CPU와 인더스트리얼 엣지 장비, 루게드컴 크로스보우 스테이션 접근 제어기에서 나왔다. 시마틱 CPU에 들어간 GNU/리",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146404",
+    "date": "2026-10-21 13:50:16"
+  },
+  {
+    "source": "boannews",
+    "title": "송금도 카드 결제도 멈췄다... 레볼루트, 구글 클라우드 데이터센터 장애에 세계 곳곳서 먹통",
+    "desc": "핀테크 기업 레볼루트(Revolut)의 은행·결제 서비스가 20일(현지시각) 세계 곳곳에서 한동안 멈췄다. 레볼루트는 구글 클라우드 장애가 원인이었다며 모든 서비스를 복구했다고 밝혔다.보안 매체 블리핑컴퓨터에 따르면 장애 감시 사이트 다운디텍터엔 이날 이용자 수천명이 레볼루트 앱 접속과 모바일 뱅킹, 계좌 간 이체가 안 된다는 신고를 올렸다.레볼루트 상태 페이지엔 영향을 받은 서비스 28개가 올라왔다. 로그인과 카드 결제, 송금, 환전, 주식 거래, 실시간 상담 채팅까지 ‘일부 이용 불가’로 표시됐다. 돈을 보내는 일도, 고객센터에",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146590",
+    "date": "2026-10-21 13:45:45"
+  },
+  {
+    "source": "boannews",
+    "title": "쿠도커뮤니케이션, 비접촉 AI 건강관리 ‘HEALLO’ 전 세대 라이프 헬스케어 플랫폼으로 확장",
+    "desc": "AI·ICT 전문기업 쿠도커뮤니케이션(대표 김용식)이 비접촉 AI 건강관리 솔루션 ‘HEALLO’(헬로)의 서비스 영역을 단순 건강 측정에서 개인 건강 이력, 운동·여가·교육 콘텐츠를 통합 제공하는 라이프 헬스케어 플랫폼으로 확대한다고 발표했다.쿠도커뮤니케이션은 치료 후 관리에 중점을 두었던 기존 헬스케어 시장이 건강할 때부터 상태를 점검하고 운동, 식습관, 스트레스 등을 지속 관리하는 예방 중심 구조로 변모하고 있다고 설명했다.HEALLO는 착용형 장비나 센서 없이 카메라를 30초간 응시하는 것만으로 5가지 생체신호를 파악하는 비",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146587",
+    "date": "2026-10-21 13:42:32"
+  },
+  {
+    "source": "boannews",
+    "title": "트루엔, 펌웨어부터 서버까지 100% 자체 개발로 AI 홈캠 ‘이글루’ 보안 경쟁력 강화",
+    "desc": "트루엔(대표 안재천)이 자사의 AI 홈카메라 브랜드 ‘이글루’(EGLOO) 시리즈에 전 과정 자체 개발 체계를 적용해 보안 역량을 한층 끌어올렸다고 21일 발표했다.최근 국내 서버 사용을 강조하는 홈캠이 많아졌지만, 기기 내부 펌웨어나 하드웨어 구조에 대한 검증이 부족하면 여전히 보안 문제가 생길 수 있다. 이 때문에 서버 관리 방식뿐만 아니라 초기 기획 및 개발 단계부터 보안 요소를 직접 다룰 수 있는 기술력이 핵심 과제로 떠오르고 있다.트루엔의 가장 큰 강점은 제품의 기획 및 생산 전 과정을 100% 직접 진행하는 인하우스(In",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146586",
+    "date": "2026-10-21 13:40:31"
+  },
+  {
+    "source": "boannews",
+    "title": "내년 양자통신망 광주-부산으로 확대... 양자통신 상용화 실증 기반 강화",
+    "desc": "양자통신망이 내년 광주와 부산까지 확대된다. 싱가포르와 폴란드 등과 협력해 국가 안 양자보안도 실증한다. 과학기술정보통신부는 21일 판교 기업지원허브에서 ‘개방형 양자 테스트베드 고도화·확산 사업’ 착수 보고회를 연다고 밝혔다. 국내 양자통신 기술과 제품의 실증 기회를 확대하고, 상용화와 해외 진출 기반을 강화하기 위한 사업이다. 개방형 양자 테스트베드는 양자암호통신 시험망과 고가 측정 장비를 공동 활용해 개발한 기술과 제품의 성능을 확인하는 실증 공간이다. 과기정통부와 한국지능사회정보원(NIA)은 2024년 서울-판교-대전 구간에",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146595",
+    "date": "2026-10-21 13:39:23"
+  },
+  {
+    "source": "boannews",
+    "title": "[단독] 롯데카드 CISO ‘정직’ 행정소송... 금융당국 ‘처벌 만능주의’ 어쩌나",
+    "desc": "금융당국의 ‘처벌 만능주의’가 금융권 보안을 저해한다는 여론이 확산되는 가운데, 지난해 해킹 사고로 ‘3개월 정직’ 처분을 받은 전·현직 롯데카드 정보보호최고책임자(CISO)가 행정소송에 나섰다.21일 보안 업계에 따르면, 현 롯데카드 CISO의 경우 10월 1일부로 정직 처분에 따른 직무정지가 이행될 예정이었으나, 최근 처분을 취소해 달라는 행정소송을 제기했다. 소송 결과가 나오기 전까지 정직 집행을 정지해 달라는 가처분 신청도 인용됐다.이에 따라 우선은 직무를 유지하지만, 향후 행정소송에서 패소할 경우 현 직무가 정지될 뿐 아니",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146555",
+    "date": "2026-10-21 11:56:23"
+  },
+  {
+    "source": "boannews",
+    "title": "[카드뉴스] \"수조원 들인 방패인데 테스트는 0회?\"… 유럽 뒤흔든 '종이 보안'의 파멸",
+    "desc": "유럽 전역에 수십억 유로가 투입된 대규모 사이버 방어망이 실전 작동 테스트를 단 한 번도 거치지 않은 것으로 유럽 감사원(ECA) 조사 결과 드러났다. 검증 없는 인프라 방패가 뚫리면서 발생한 피해는 기업에 최대 1,500만 유로(매출의 2.5%)에 달하는 과징금 청구서로 전가되는 기형적 상황이 발생했다. 종이 위의 컴플라이언스를 넘어 모의 침투를 통한 상시 효용성 점검과 '실전 기반 검증(Validation)'을 집행해야 시스템 셧다운과 과징금 파멸을 막을 수 있다.",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146585",
+    "date": "2026-10-21 11:38:13"
+  },
+  {
+    "source": "boannews",
+    "title": "여의시스템, ‘2026 사천에어쇼’에서 방산 엣지 AI 컴퓨팅 라인업 공개",
+    "desc": "[보안뉴스 엄호식 기자] 산업용 컴퓨팅 전문기업 여의시스템(대표 성명기·성제현)이 10월 22일부터 25일까지 사천비행장 일원에서 열리는 ‘2026 사천에어쇼’에 참가해 방산 현장에 특화된 엣지 AI 컴퓨팅 솔루션을 선보이고 관련 기술 세미나를 진행한다.여의시스템은 우주항공방위산업전 부스에서 Cincoze의 러기드 GPU 컴퓨터(DS-1500 시리즈, GM-1100, DI-1200 시리즈, GP-3000)와 자체 개발한 Jetson 기반 AI BOX, 국산 NPU 기반 AI BOX, 보안 기능 스위치, 산업용 이더넷 스위치 YES",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146581",
+    "date": "2026-10-21 11:35:32"
+  },
+  {
+    "source": "boannews",
+    "title": "조달청, 기업 편의 중심으로 MAS 규정 전면 개편",
+    "desc": "[보안뉴스 엄호식 기자] 조달청(청장 백승보)은 상용소프트웨어(SW) 기업의 행정 부담을 줄이고 공공조달시장 진입 문턱을 낮추기 위해 ‘상용소프트웨어 다수공급자계약(MAS) 업무처리규정 및 특수조건’을 전면 개정해 20일부터 시행한다고 밝혔다.이번 개정은 기업이 공공조달시장 진입과 제품 운영 과정에서 겪어온 규제를 완화하고 실질적인 편의를 제공하는 데 초점을 맞췄다.우선 AI 등 정책적으로 구매 활성화가 필요한 SW의 신속한 시장 진입을 지원하기 위해 2000만원 이하 소액 범위에서는 ‘1인 등록’을 허용한다. 또한 사회적기업, 마",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146583",
+    "date": "2026-10-21 11:35:02"
+  },
+  {
+    "source": "boannews",
+    "title": "내 명함이 남의 명함첩에... 리멤버 개인정보 일부 유출에 개보위 조사 착수",
+    "desc": "비즈니스 네트워크 서비스 ‘리멤버’를 운영하는 리멤버앤컴퍼니에서 회원이 등록한 명함 속 개인정보가 다른 사용자 명함첩에 노출되는 사고가 발생했다. 사측은 시스템 장애에 따른 일시적 오류라며 해킹 가능성을 부인했다. 개인정보보호위원회는 정식 조사에 들어갔다.리멤버앤컴퍼니 공지에 따르면, 유출 사고는 12일 오후 4시 9분경 발생했다. 명함 자동 입력 프로세스 장애로 일부 명함 처리가 지연된 상황을 해소하는 과정에서 시스템 오류가 빚어졌고, 특정 시간 대 등록된 명함 중 일부 회원의 명함 정보가 다른 리멤버 회원 1~4명의 개인 명함첩",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146582",
+    "date": "2026-10-21 11:34:30"
+  },
+  {
+    "source": "boannews",
+    "title": "[Global Security TOP 100] 박상준 한국MS 보안 전략 리드 “에이전틱 보안으로 AI 혁신 지원”",
+    "desc": "AI가 기업이 일하는 방식과 비즈니스 모델을 바꿔 가고 있다. 한국마이크로소프트는 △신원 △엔드포인트 △데이터 △클라우드와 AI를 아우르는 엔드투엔드(End-to-End) 보안 역량을 바탕으로 고객의 안전한 AI 혁신을 지원하고 있다. AI가 능동적으로 보안 업무를 수행하는 ‘에이전틱 보안’(Agentic Security)과 비인간 신원까지 포괄하는 제로 트러스트 거버넌스로 차세대 보안 패러다임을 주도할 방침이다.Q. 한국마이크로소프트와 주요 보안 사업에 대한 소개 부탁드립니다.한국마이크로소프트는 AI와 클라우드를 기반으로 모든 개",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146449",
+    "date": "2026-10-21 11:30:00"
+  },
+  {
+    "source": "boannews",
+    "title": "인텔리빅스, 공모가 상단 9000원 확정",
+    "desc": "[보안뉴스 엄호식 기자] 13년 연속 흑자를 이어온 안전 AI 딥테크 기업 인텔리빅스가 기관투자자 대상 수요예측에서 약 20조8648억원 규모의 주문을 확보하며 공모가를 희망밴드 상단인 9000원으로 확정했다.인텔리빅스는 10월 12일부터 16일까지 진행한 국내외 기관투자자 수요예측에서 1234.3대 1의 경쟁률을 기록했다고 20일 밝혔다. 총 공모금액은 225억원이며, 상장 후 예상 시가총액은 약 1020억원이다.수요예측에는 2357개 기관이 참여했으며, 신청수량은 23억1431만6000주로 집계됐다. 기관투자자들의 신청가격과 수",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146579",
+    "date": "2026-10-21 11:07:22"
+  },
+  {
+    "source": "boannews",
+    "title": "체크멀, 안티 랜섬웨어 솔루션 AWS 마켓플레이스 등록",
+    "desc": "보안 전문기업 체크멀의 안티 랜섬웨어 솔루션이 아마존웹서비스(AWS) 마켓플레이스에 공식 등록됐다. 파트너 중심 유통망에서 나아가 글로벌 클라우드 플랫폼으로 사업 영역을 확장한다는 계획이다. 체크멀은 자사 안티 랜섬웨어 솔루션 ‘앱체크 프로’와 ‘앱체크 프로 포 윈도우 서버’가 AWS 마켓플레이스에 공식 등록됐다고 21일 밝혔다. 앱체크프로는 상황 인식 기반 랜섬웨어 탐지 엔지(CARB)을 탑재한 100% 시그니처리스 안티랜섬웨어 솔루션이다. 신종, 변종 랜섬웨어 행위를 실시간으로 탐지 및 차단하고, 데이터 백업부터 자동 복원까지",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146580",
+    "date": "2026-10-21 11:05:37"
+  },
+  {
+    "source": "boannews",
+    "title": "다후아테크놀로지, ‘슈퍼AI코딩’으로 영상 저장 효율 높이고 스토리지 비용 부담 낮춘다",
+    "desc": "[보안뉴스 엄호식 기자] 글로벌 영상 중심 AIoT 솔루션 기업 다후아테크놀로지가 지능형 영상 인코딩 기술 ‘슈퍼AI코딩’(Super AI Coding)을 통해 영상보안 시스템의 저장 효율을 높이고 비용 부담을 줄인다고 밝혔다.AI 인프라 확산으로 대용량 스토리지 수요가 증가하는 가운데, 영상보안 업계에서도 저장 공간과 네트워크 자원을 효율적으로 활용하는 기술의 중요성이 커지고 있다.슈퍼AI코딩은 일반 H.265 대비 저장 공간과 전송 대역폭을 최대 50% 절감할 수 있는 기술이다. 화면 전체를 동일하게 압축하는 대신 주요 객체와",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146578",
+    "date": "2026-10-21 11:01:05"
+  },
+  {
+    "source": "boannews",
+    "title": "[강릉 ITS  세계총회] 노비텍, 3.2MP·12MP 라인업 확대한 i-Nova 신규 카메라 6종 공개",
+    "desc": "[강릉=보안뉴스 특별취재팀] 노비텍이 2026 강릉 ITS 세계총회에서 3.2MP와 12MP 해상도를 지원하는 i-Nova 시리즈 신규 산업용 카메라 6종을 공개했다. 신제품은 3.2MP 해상도의 i-Nova4 시리즈 3종과 12MP 해상도의 i-Nova3 시리즈 2종, i-Nova4 시리즈 1종으로 구성됐다.12MP 제품군은 i-Nova3와 i-Nova4 시리즈로 나뉜다. i-Nova3 시리즈에는 iN3-124SC와 iN3Z-124SC-9.5Z171이, i-Nova4 시리즈에는 iN4-124SC가 포함된다. 고해상도 이미지 획득이",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146576",
+    "date": "2026-10-21 11:00:33"
+  },
+  {
+    "source": "boannews",
+    "title": "[강릉 ITS 세계총회] 국토부 한국 ITS 홍보관, 30년 발전사부터 ‘AI 기반 ITS 2030’ 청사진까지",
+    "desc": "[강릉=보안뉴스 특별취재팀] 국토교통부와 강릉시가 공동 주최하는 ‘2026 강릉 ITS 세계총회’가 10월 19일부터 23일까지 강릉 올림픽파크 일원에서 열리고 있다. 총회 전시회에 마련된 국토교통부 ‘한국 ITS 홍보관’에서는 30여년간 이어진 대한민국 ITS의 발전 과정과 미래 계획을 한눈에 확인할 수 있다. 홍보관은 ITS 국제협력센터가 운영하며, 소개 영상과 정책·기술·해외 수출 사례를 담은 키오스크 콘텐츠로 구성됐다.한국 ITS는 1990년대 도입돼 기반을 다졌고, 2007년 하이패스 전국 개통을 거쳐 2010년대 해외 수",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146509",
+    "date": "2026-10-21 10:42:56"
+  },
+  {
+    "source": "boannews",
+    "title": "KISA, K-보안 기업 日 진출 돕는다",
+    "desc": "한국인터넷진흥원(KISA)이 국내 정보보호 산업계의 일본 진출을 뒷받침한다. KISA는 과학기술정보통신부와 함께 20일 일본 도쿄에서 ‘K-시큐리티 비즈니스 데이’를 개최했다고 21일 밝혔다. KISA는 인도네시아, 사우디아라비아, 코스타리카 등 해외 전략 거점을 중심으로 정보보호 기업과 현지 기업 및 기관을 연결하는 ‘K-시큐리티 수출 상담회’를 지난해부터 운영해왔다. 이달에는 국내 기업의 일본 시장 진출 수요를 반영해 지원 지역을 일본으로 확대했다. 일본 시장은 국내 정보보호 기업들의 주요 해외 진출 시장으로 꼽힌다. 최근 사이",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146574",
+    "date": "2026-10-21 10:14:06"
+  },
+  {
+    "source": "boannews",
+    "title": "프랑스 냉장 설비 해킹 피해... EU 사이버복원력법, 단종 관리 장비엔 보안 업데이트 의무 없어",
+    "desc": "9월 유럽연합(EU) 사이버복원력법(CRA)이 시행됐지만, 최근 해킹 당한 프랑스 슈퍼마켓 냉장 설비에 대한 보안 업데이트는 어려울 것으로 보인다. EU 사이버보안청(ENISA) 설명을 근거로 해외 정보보호 전문 매체 더레코드가 내놓은 전망이다.이번 공격은 10월 초 벌어졌다. 해커들이 노린 것은 매장 냉장 설비를 인터넷으로 원격 조작하는 관리 장비다. 인터넷에 그대로 노출된 이들 장비를 장악해 일부 냉장 설비를 섭씨 50도로 계속 성에 제거 운전을 하게 만들었다. 프랑스 유통업체 앵테르마르셰와 까르푸, 모노프리, 르클레르, 쿠프라",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146569",
+    "date": "2026-10-21 10:12:30"
+  },
+  {
+    "source": "boannews",
+    "title": "[강릉 ITS 세계총회] LIG ACCUVER, AI 기반 통신 품질 분석 솔루션 공개",
+    "desc": "[강릉=보안뉴스 특별취재팀] 통신 품질 시험·검증 전문기업 LIG 아큐버(LIG ACCUVER)가 2026 강릉 ITS 세계총회에서 AI 기반 통신 품질 분석 플랫폼과 위성통신 검증 솔루션을 선보였다.LIG ACCUVER는 이동통신과 위성통신, 차량 통신 분야에서 품질 측정과 분석 기술을 제공하는 기업이다. 이번 전시에서는 다양한 현장 측정 데이터를 통합 관리하는 ‘Accuver Cloud’를 중심으로 기술력을 소개했다.Accuver Cloud는 현장에서 수집한 통신 품질 데이터를 클라우드에서 통합 관리하고 시각화하는 플랫폼이다.",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146566",
+    "date": "2026-10-21 10:01:10"
+  },
+  {
+    "source": "boannews",
+    "title": "[강릉 ITS 세계총회] 웨이티즈, V2X 검증 플랫폼으로 자율주행 안전성 높인다",
+    "desc": "[강릉=보안뉴스 특별취재팀] V2X(Vehicle to Everything) 전문기업 웨이티즈(Wayties)가 2026 강릉 ITS 세계총회에서 차량과 도로 인프라 간 통신 기반의 미래 모빌리티 안전 기술과 검증 솔루션을 공개했다.웨이티즈는 LIG그룹 계열 통신·네트워크 기업 LIG ACCUVER 산하 V2X 전문기업이다. 차량과 차량, 차량과 도로 인프라, 차량과 보행자 등이 실시간으로 정보를 주고받는 V2X 기술을 기반으로 다양한 시험·검증 솔루션을 제공하고 있다.V2X는 차량이 센서와 카메라만으로 인식하기 어려운 사각지대 위",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146565",
+    "date": "2026-10-21 10:00:11"
+  },
+  {
     "source": "boannews",
     "title": "SKT, 금감원 데이터 활용해 보이스피싱 예방 고도화",
     "desc": "SK텔레콤(대표 정재헌)이 보이스피싱 예방에 금융감독원 데이터를 활용한다. 현장 교육과 기술 협력으로 예방을 강화한다는 방침이다.SKT가 금융의 날을 맞아 금감원과 함께 보이스피싱으로 인한 금융 피해 예방 활동에 나선다고 21일 밝혔다.SKT는 금감원이 제공하는 검증된 번호를 음성·문자 스팸 필터링 시스템에 적용한다. 정상적 금융기관 연락의 오차단을 최소화하고 보이스피싱·스캠 탐지 기능도 고도화할 방침이다. 지난해 SKT는 AI 필터링으로 음성 스팸·보이스피싱 통화와 스팸 문자 약 11억건을 선제 차단한 바 있다.SKT는 20일부터",
@@ -252,132 +532,6 @@
     "date": "2026-10-20 13:33:57"
   },
   {
-    "source": "boannews",
-    "title": "티피링크, 2026 한국건설·안전박람회 통해 야외 건설현장 맞춤형 영상보안 솔루션 소개",
-    "desc": "글로벌 네트워크 및 영상보안 솔루션 기업 티피링크(TP-Link)가 10월 14일부터 16일까지 열린 ‘2026 한국건설·안전박람회’에 참가해 야외 건설현장의 보안 사각지대 최소화를 위한 지능형 영상보안 및 무선 네트워크 솔루션을 선보였다고 밝혔다.티피링크는 VIGI 영상보안 솔루션과 Omada 네트워크 솔루션을 연계해 전력 및 유선 통신 인프라가 제한적인 야외 환경에서도 효율적인 보안 모니터링 체계를 구축할 수 있는 방안을 소개했다.특히 넓은 작업구역과 잦은 시설물 이동, 외부인과 차량 출입 통제가 중요한 건설현장 환경을 고려해",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146538",
-    "date": "2026-10-20 13:32:39"
-  },
-  {
-    "source": "boannews",
-    "title": "내년부터 상장사는 모두 정보보호 공시해야",
-    "desc": "내년부터 상장사는 매출 규모에 상관 없이 정보보호 공시를 해야 한다. 정보보호 관리체계(ISMS) 인증 의무대상자 역시 의무적으로 공시를 해야 한다. 이같은 내용의 ‘정보보호산업의 진흥에 관한 법률’ 시행령 개정안이 20일 국무회의를 통과했다고 과학기술정보통신부가 밝혔다. 2027년 1월 1일 시행된다.정보보호 공시는 정보보호산업법에 따라 기업 정보보호 투자와 인력 규모, 관련 인증·평가·점검 및 활동 현황 등을 공개하는 제도다. 2022년부터 사업분야, 매출, 이용자 수 등 일정 기준에 해당하는 기업을 대상으로 의무화해 시행하고",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146533",
-    "date": "2026-10-20 13:24:37"
-  },
-  {
-    "source": "boannews",
-    "title": "AI 해킹 막은 iM뱅크 “사업성과 vs 보안 충돌하면 CEO가 보안원칙 반영해야”... 제157차 CISO 포럼",
-    "desc": "“CISO가 아무리 보안 예산과 인력을 고민해도, 결국 CEO의 메시지와 행동이 결정과 보안 문화를 바꿉니다. 기술적 용어만으로는 설득이 어렵습니다. CEO가 보안을 ‘IT 사고’가 아닌 ‘비즈니스 리스크’로 인식하게 만들어야 합니다.”20일 서울 중구 더그랜드 롯데 서울에서 열린 제157차 CISO포럼에서 나온 목소리다.이 날 포럼에서 iM뱅크 정보보호최고책임자(CISO)인 이광원 부행장은 ‘CEO의 지원과 정보보안 상시 긴장감이 만드는 보호동기’를 주제로 발표하며 CEO의 보안 의지 필요성을 강조했다.“CEO의 말보다 ‘선택’이",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146537",
-    "date": "2026-10-20 12:04:54"
-  },
-  {
-    "source": "boannews",
-    "title": "조성옥 삼성화재 CISO “AI 공격 시대, 전사가 책임지는 보안 거버넌스 필요”",
-    "desc": "AI가 취약점을 찾아내고 자율적으로 공격을 수행하는 시대에 조직이 갖춰야 할 정보보호 체계 관련 제언이 나왔다. 조성옥 삼성화재 CISO는 “탄탄한 보안 기본기 위에 AI를 더해 보다 빠른 대응과 예측·예방 기반의 보안 체계를 마련하고, 보안 부서뿐 아니라 전사가 정보보호에 책임을 지는 거버넌스를 마련해야 한다”고 밝혔다. 조성옥 CISO는 한국CISO협의회 주최로 더그랜드 롯데 서울에서 열린 ‘제157차 CISO 포럼’에서 ‘AI 시대, 신뢰를 지키는 정보보호: 사고 대응에서 예측·예방 보안으로의 전환’을 주제로 발표했다. 그는",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146536",
-    "date": "2026-10-20 11:59:12"
-  },
-  {
-    "source": "boannews",
-    "title": "슈프리마, AI 영상보안 기반 순찰로봇 ‘큐페이스 가디언’ 공개",
-    "desc": "지능형 출입통제 및 물리보안 솔루션 전문기업 슈프리마(대표 이재원, 김한철)가 10월 21일부터 24일까지 열리는 ‘2026 국제치안산업대전’(KPEX)에서 AI 영상보안 기술과 자율주행 로봇을 융합한 순찰로봇 솔루션 ‘큐페이스 가디언’(Q-Face Guardian)을 공개하고, 공공·치안 안전 시장 공략에 나선다.큐페이스 가디언은 슈프리마의 AI 얼굴인식 기반 실시간 수색자 검색 솔루션 ‘큐페이스 파인더’(Q-Face Finder)를 기반으로 자율주행 로봇 전문기업 뉴빌리티의 순찰로봇(Neubi Shield)과 사족보행 로봇(Ne",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146535",
-    "date": "2026-10-20 11:43:54"
-  },
-  {
-    "source": "boannews",
-    "title": "“방대한 웹 로그 분석해 침해 징후·잠재 공격 위험 상시 파악”",
-    "desc": "사이버 위협관리 전문 기업 나루씨큐리티(대표 김혁준)가 웹 서비스 환경에서 우려되는 AI발 위협에 대응하기 위한 웹 방어 서비스를 출시했다. 기존 방화벽 로그 중심의 침해평가 기술을 웹 영역까지 확장, 네트워크와 웹을 아우르는 AI 기반 통합 위협 대응 체계를 구현한다는 계획이다. 나루씨큐리티는 AI 웹 방어 서비스 ‘제로티카 라이트 웹’(ZeroTiCA Lite Web)을 출시했다고 20일 밝혔다. 여러 업무 시스템이 유기적으로 연결된 웹 서비스 환경에선 특정 시스템을 정기 점검하는 방식만으로는 자동화된 AI 공격 대응에 한계가",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146534",
-    "date": "2026-10-20 11:42:31"
-  },
-  {
-    "source": "boannews",
-    "title": "한국항공보안학회·한국경비협회, ‘2026 항공보안포럼’ 공동 개최",
-    "desc": "한국항공보안학회(회장 소대섭)와 한국경비협회(회장 동중영)가 10월 21일, 인천 송도컨벤시아에서 ‘대테러 환경의 변화와 민간보안 역할 강화 필요성’을 주제로 ‘2026 항공보안포럼’을 공동 개최한다고 밝혔다.이번 포럼은 한국항공보안학회 산하 대테러·대드론 전략연구위원회(위원장 김명진 강원대 교수)가 총괄하며, 한국공항공사와 인천국제공항공사, 인천국제공항보안, 한국공항보안, 에스원, 딥노이드 등 국내 주요 공기업 및 보안 첨단 기술 기업들이 대거 참여한다.이번 포럼은 개회식을 시작으로 대테러·대드론 대응과 민간경비 강화 방안을 주제",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146512",
-    "date": "2026-10-20 11:14:35"
-  },
-  {
-    "source": "boannews",
-    "title": "[강릉 ITS 세계총회] 에스오에스랩, 라이다 기반 주차관제 솔루션으로 공항 주차장 운영 효율 개선",
-    "desc": "[강릉=보안뉴스 특별취재팀] 라이다(LiDAR) 기반 공간지능 솔루션 기업 에스오에스랩이 강릉 ITS 세계총회에서 AI 기반 주차관제 솔루션을 선보이며 스마트 주차 서비스의 새로운 가능성을 제시했다.이용이 에스오에스랩 데이터솔루션사업본부장은 “실내 주차장은 카메라나 초음파 센서를 활용하는 경우가 많지만, 실외 주차장은 야간이나 악천후 환경에서도 안정적인 성능이 필요하다. 라이다 센서를 활용해 주차면 현황과 차량 이동 정보를 정확하게 분석하는 솔루션을 제공하고 있다”고 설명했다.에스오에스랩의 주차 유도 솔루션 ‘LPGS SPOT’은",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146513",
-    "date": "2026-10-20 11:10:20"
-  },
-  {
-    "source": "boannews",
-    "title": "[강릉 ITS 세계총회] 오스코, 터널 화재 초기대응 시스템 선보여",
-    "desc": "[강릉=보안뉴스 특별취재팀] ITS와 스마트도시, SOC 인프라 분야에서 다양한 솔루션을 선보여 온 미래 모빌리티 기술기업 오스코가 강릉 ITS 세계총회에서 터널 화재 발생 시 신속한 초기 대응이 가능한 스마트 인프라 솔루션 'AI 기반 터널화재 선제대응 시스템'을 선보였다.‘AI 기반 터널화재 선제대응 시스템’은 국토교통부의 디지털도로 AI 신기술 지원사업 선정제품이다. AI 영상분석과 레일형 소화 로봇을 연계해 화재 초기 진압은 물론 차량 통제와 대피 유도까지 지원하는 통합 터널 재난안전 솔루션이다.이 시스템은 화재 확산을 최소",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146514",
-    "date": "2026-10-20 11:09:39"
-  },
-  {
-    "source": "boannews",
-    "title": "[강릉 ITS 세계총회] 엠큐닉, KADIF 공동관서 범부처 자율주행 실증 현황 공개",
-    "desc": "[강릉=보안뉴스 특별취재팀] 국토교통부와 강릉시가 공동 주최하는 ‘2026 강릉 ITS 세계총회’가 10월 19일부터 23일까지 강릉 올림픽파크 일원에서 열리고 있다. 엠큐닉은 이번 총회 전시회에서 자율주행기술개발혁신사업단(KADIF) 공동관에 참여해 범부처 자율주행 기술개발 혁신사업의 실증 현황을 소개했다. 이 사업은 과학기술정보통신부·산업통상자원부·경찰청·국토교통부 4개 부처가 2021년부터 공동 추진하는 연구사업으로, 부처별로 자율주행 차량과 인프라, 센서 등 기술을 개발하고 있다.사업단은 △경찰차 △미니셔틀 △교통약자 이동",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146511",
-    "date": "2026-10-20 11:09:04"
-  },
-  {
-    "source": "boannews",
-    "title": "HS효성인포메이션시스템, 역삼 사옥 이전하고 AX센터 구축",
-    "desc": "HS효성인포메이션시스템(대표 양정규)이 서울 역삼동에 새 둥지를 틀고 AI·데이터 인프라 사업 확대에 나선다. 사옥 이전과 함께 고객의 AI 전환(AX)을 지원하는 전용 공간을 마련하고, 제품 성능 검증과 기술 시연 시설도 확충했다.새 사옥의 핵심은 고객 맞춤형 AI 전환을 지원하는 ‘AX센터’다. 고객이 다양한 AI 솔루션과 플랫폼을 직접 경험하고, 전문가와 함께 자사 환경에 적합한 도입 전략을 구체화할 수 있도록 구성했다. 기존 BMT룸도 고도화해 실제 운영 환경을 고려한 제품 검증과 기술 시연 기능을 강화했다.AX센터에서는 엔",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146522",
-    "date": "2026-10-20 11:08:00"
-  },
-  {
-    "source": "boannews",
-    "title": "“취약점 검증 코드가 악성코드 통로로”... S2W, VB2026서 신종 공급망 공격 경고",
-    "desc": "보안 취약점을 검증하는 연구자의 분석 환경까지 파고드는 신종 소프트웨어 공급망 공격이 확인됐다. 에스투더블유(S2W)는 스페인 세비야에서 열린 국제 보안 컨퍼런스 ‘VB2026’에서 ‘개념증명’(PoC) 코드를 악용한 공급망 공격 실태와 AI 기반 탐지 기술을 발표했다고 20일 밝혔다.‘VB 컨퍼런스’는 영국 바이러스 불러틴이 1991년부터 주관해 온 악성코드 및 ‘위협 인텔리전스’(TI) 분야 대표 국제 학술행사다. S2W는 2021년부터 6년 연속 발표자로 참가해 북한 연계 해킹 조직 추적과 다크웹 위협 등 실사례 기반 인텔리전",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146519",
-    "date": "2026-10-20 11:05:49"
-  },
-  {
-    "source": "boannews",
-    "title": "에브리존, 인니서 랜섬웨어 대응 솔루션 ‘화이트디펜더’ 선봬",
-    "desc": "에브리존(대표 홍승균)이 인도네시아에서 현지 고객 대상으로 행위 기반 랜섬웨어 탐지·차단 기술을 소개했다. 현지 파트너십을 확대하면서 동남아 지역 진출을 가속화한다. 에브리존은 인도네시아에서 열린 보안 행사에 참가해 안티랜섬웨어 솔루션 ‘화이트디펜더’를 전시하고, 현지 고객 대상 세미나와 파트너 협력 강화 활동을 진행했다고 20일 밝혔다. 화이트디펜더는 악성코드의 시그니처에 의존하지 않고 파일 암호화 등 랜섬웨어 의심 행위 자체를 분석해 원인을 원천 차단한다. 특히 순간 백업과 자동 복원을 연계해 랜섬웨어 공격 이후 데이터를 보호할",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146532",
-    "date": "2026-10-20 11:03:35"
-  },
-  {
-    "source": "boannews",
-    "title": "AI 들이자 오히려 서툴러졌다... 피싱 조직 TA4903, 바이브 코딩 키트에 관리 화면까지 노출",
-    "desc": "AI가 해커를 더 위협적으로 만든다는 이야기가 많지만 실제 현장에선 AI 탓에 공격이 더 허술해지고 있다는 분석이 나왔다. 실력 있는 조직은 오히려 AI를 거의 쓰지 않는다는 진단도 있다.다크리딩은 최근 프루프포인트와 비트디펜더 연구원들의 분석을 바탕으로 이런 흐름을 짚었다.대표 사례는 프루프포인트가 추적해 온 TA4903이다. 5년째 계정 정보 피싱과 기업이메일사기(BEC)를 벌여 온 이 조직은 한때 미국 정부를 사칭하며 공들인 PDF와 잘 만든 QR코드, 그럴듯한 접속 페이지를 썼다.3월부터는 미끼 작성과 표적 선정, 계정 정보",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146440",
-    "date": "2026-10-20 10:08:12"
-  },
-  {
-    "source": "boannews",
-    "title": "진명아이앤씨, FIX 2026서 화재감지 카메라·재난방송 시스템 선보인다",
-    "desc": "지능형 영상감시장치·음향 시스템 전문기업 진명아이앤씨(대표이사 허미향)가 21일 대구 엑스코에서 개막하는 ‘미래혁신기술박람회’(FIX 2026)의 일환으로 열리는 ‘제21회 대한민국 ICT융합 엑스포’에 참가해 재난안전 분야 조달청 우수제품을 선보인다.이번 전시에서는 화재를 신속하게 탐지하는 ‘트리플 디텍터 화재감지 카메라’와 재난 발생 시 긴급방송을 빠르게 전달하는 ‘재난방지 강화 방송시스템’을 중심으로 관련 기술을 소개한다. 대구시가 제조업의 AI 전환과 피지컬 AI 산업 육성을 추진하는 가운데, 진명아이앤씨는 영상감시와 방송",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146526",
-    "date": "2026-10-20 10:03:21"
-  },
-  {
-    "source": "boannews",
-    "title": "ADT캡스, 출동대원 심폐소생술 교육 확대해 현장 응급 대응 역량 강화",
-    "desc": "SK쉴더스(대표 민기식) 물리보안 브랜드 ADT캡스가 출동대원의 심폐소생술(CPR) 교육을 확대하며 현장 응급 대응 역량 강화에 나섰다.ADT캡스는 19일 SK쉴더스 서울 삼성동 사옥에서 대한적십자사와 함께 출동대원 대상 심폐소생술 교육을 진행했다고 20일 밝혔다. 올해 다섯 번째로 마련된 이번 교육은 대한적십자사 전문 강사진의 지도 아래 심폐소생술 이론과 실습, 자동심장충격기(AED) 사용법, 기도폐쇄 응급처치 등으로 구성됐다. 참가자들은 실제 응급상황을 가정한 반복 훈련을 통해 심정지 환자 발생 시 초기 대응 절차와 응급처치 방",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146524",
-    "date": "2026-10-20 10:01:24"
-  },
-  {
-    "source": "boannews",
-    "title": "스틸리언 ‘앱수트’, 인니 금융권 러브콜... 국영·지방은행 모바일 앱 보안 공급",
-    "desc": "스틸리언이 인도네시아 주요 은행 두 곳에 모바일 앱 보안 솔루션을 공급하며 동남아 금융권 공략을 본격화한다. 현지 국영은행과 지방은행의 기술 검증 및 솔루션 교체 수요를 확보하며 모바일 보안 입지를 넓혀가고 있다.스틸리언은 인도네시아 국영은행 BTN(Bank Tabungan Negara)과 북부수마트라 지방은행 Bank Sumut에 모바일 앱 보안 솔루션 ‘앱수트’(AppSuit)를 공급한다고 20일 밝혔다.주택금융을 다루는 주요 국영은행인 BTN은 글로벌 보안 제품들과의 기술 비교검증(BMT)을 거쳐 가맹점용 모바일 앱 보안 도구",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146521",
-    "date": "2026-10-20 09:58:05"
-  },
-  {
-    "source": "boannews",
-    "title": "[이슈 칼럼] 결제토큰으로 토큰증권 T+0 앞당길 수 있다.",
-    "desc": "토큰증권에 의한 자본시장의 혁신은 거래가 체결된 당일 정산이 완료되는 ‘당일 결제’(T+0)까지 이뤄져야 완성됐다고 할 수 있을 것이다. T+0를 위해 정부는 3단계에서 스테이블코인 도입을 계획하고 있다. 순차적이고 합리적인 방법이긴 하지만 T+0가 실현되려면 시간이 꽤 걸릴 것 같다. T+0를 조금 더 빨리 실현하는 방법으로 자본시장 전용 결제토큰을 검토해 볼 필요가 있다. 그런데 결제토큰을 도입하려면 합당한 IT 인프라가 필요하다. 인프라 구축의 속성상 시장 참여자 각각이 구축하는 것보다 공동으로 구축하는 것이 훨씬 경제적이다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146525",
-    "date": "2026-10-20 09:53:10"
-  },
-  {
     "source": "thn",
     "title": "Hackers Exploit Plex2Shell Flaws to Install Crypto Miners and Linux Proxy Backdoor",
     "desc": "Threat actors have begun to exploit a chain of vulnerabilities in Plex Media Server to deploy cryptocurrency miners and reverse proxy software, a day after a proof-of-concept (PoC) went public.\n\nAccording to a researcher who goes by the online alias boredhackerblog, the exploitation activity involve",
@@ -432,69 +586,6 @@
     "desc": "An intruder reached a legacy system at OpenCode on the night of October 16 and may have exposed the third-party AI provider keys that users had saved in OpenCode Console, the company said.\n\nConsole is OpenCode's optional hosted service: a workspace saves its own OpenAI, Anthropic, or Google key ther",
     "url": "https://thehackernews.com/2026/10/opencode-console-breach-may-have.html",
     "date": "2026-10-19T11:37:08"
-  },
-  {
-    "source": "boannews",
-    "title": "윈도우 11 10월 업데이트 뒤 ‘스마트 앱 컨트롤’ 먹통...꺼 뒀던 보안 기능 다시 못 켠다",
-    "desc": "마이크로소프트가 윈도우 11 10월 보안 업데이트(KB5127648)를 설치한 일부 기기에서 보안 기능 ‘스마트 앱 컨트롤’(Smart App Control)을 켤 수 없는 오류가 생긴다고 인정했다.마이크로소프트는 KB5127648 안내문에 이 내용을 추가하고 “일부 기기는 윈도우 보안 앱에서 스마트 앱 컨트롤을 켜지 못할 수 있다”고 밝혔다.스마트 앱 컨트롤은 윈도우 11에 들어 있는 보호 기능이다. 마이크로소프트의 앱 인텔리전스 서비스와 코드 무결성 기능을 바탕으로 위험할 수 있는 앱과 실행 파일을 막는다. 마이크로소프트 디펜더",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146485",
-    "date": "2026-10-19 18:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "안드로이드 원격제어 악성코드 ‘위안쿵’, 결제 PIN까지 노려",
-    "desc": "스마트폰 화면을 엿보며 원격으로 조종하고, 비밀번호와 결제 PIN까지 빼내는 안드로이드 원격제어 악성코드 ‘위안쿵’(YuanKong)의 구조를 보안 연구 기관 스타랩스(Star Labs)가 공개했다.스타랩스는 같은 위안쿵 인증서로 서명된 드로퍼 110개와 그 안에 숨은 하위 악성 앱 57개를 분석했다. 드로퍼는 겉보기엔 평범하지만 안에 진짜 악성 앱을 숨겨 두었다가 풀어서 설치하는 프로그램이다.분석된 샘플은 문자나 연락처, 통화 기록, 카메라, 마이크 권한을 요구하지 않은 대신 장애인이나 노약자를 위한 스마트폰 사용을 돕는 접근성",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146486",
-    "date": "2026-10-19 17:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[강릉 ITS 세계총회] 노부히코 호호카베 日 경찰청 부국장 “디지털 인프라·도로 안전 기술 결합해 교통약자 이동권 보장”",
-    "desc": "[강릉=보안뉴스 특별취재팀] 19일 개막한 ‘2026 강릉 ITS 세계총회’에서 노부히코 호호카베 일본 경찰청 교통국 부국장이 아시아·태평양 지역을 대표해 ‘일본의 차세대 ITS 정책과 교통안전·접근성 향상 전략’을 주제로 기조연설을 진행했다.호호카베 부국장은 “도시 문제에는 단순한 해법이 없다”며 “ITS 네트워크는 끊임없이 변화하는 세계의 요구에 대응하는 데 핵심적인 역할을 한다”고 강조했다.그는 일본 경찰청이 추진 중인 첨단 교통관리 시스템(UTMS)과 지능형 신호 제어 기술을 소개하고, 고령화와 지방 소도시의 이동성 저하 문",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146503",
-    "date": "2026-10-19 16:30:00"
-  },
-  {
-    "source": "boannews",
-    "title": "커넥트와이즈 백업 앱 신원 뚫려 고객사 마이크로소프트 365 줄줄이 침해",
-    "desc": "커넥트와이즈의 클라우드 백업 서비스에 쓰이는 앱 신원이 공격자 손에 넘어가 이 서비스를 쓰는 고객사 마이크로소프트 365 환경이 잇따라 침해됐다. 마이크로소프트 위협 인텔리전스는 이를 진행 중인 공급망 공격으로 규정했다.커넥트와이즈 클라우드 백업(옛 스카이킥 클라우드 백업)은 관리서비스제공업체(MSP)와 기업 IT 팀이 마이크로소프트 365와 구글 워크스페이스의 메일, 파일을 백업하고 복구하는 데 쓰는 서비스다. 백업을 하려면 고객사 메일함과 파일을 열어 볼 수 있어야 한다. 그래서 이 서비스는 마이크로소프트 365의 계정·권한 관",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146484",
-    "date": "2026-10-19 16:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[강릉 ITS 세계총회] 김상표 퀄컴코리아 사장, C‑V2X와 AI 결합이 미래 교통안전의 핵심",
-    "desc": "[강릉=보안뉴스 특별취재팀] 19일 개막한 ‘2026 강릉 ITS 세계총회’에서 김상표 퀄컴코리아 사장이 ‘C-V2X와 온디바이스 AI가 견인하는 지능형 모빌리티 생태계’를 주제로 특별 기조연설을 진행했다.김 사장은 무선통신과 온디바이스 AI의 융합이 미래 교통이 직면한 안전(Safety), 효율(Efficiency), 지속가능성(Sustainability) 문제를 해결하는 핵심 기술이라고 강조했다.그는 카메라와 레이더, 라이다 등 차량 센서가 가진 시야각 한계를 극복하기 위해 차량과 차량, 보행자, 도로 인프라가 실시간으로 정보를",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146501",
-    "date": "2026-10-19 15:50:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[은행이 뚫린다] “보조자에서 지휘관으로”... 바이브 해킹과 28초 침투가 무너뜨린 골든타임",
-    "desc": "생성형 AI가 단순 질문에 답하던 ‘보조자’(Assistant)를 넘어 사이버 공격 전 과정을 조율하고 실행하는 ‘지휘관’(Orchestrator)으로 진화하면서 공방의 시간차와 경제성이 뿌리째 흔들리고 있다. 과거 막대한 자원과 숙련된 전문 인력을 갖춘 국가 배후 조직만 수행할 수 있었던 다중 표적 해킹 캠페인을 이제는 소규모 범죄 집단이나 개인도 기계의 속도로 감행하는 시대가 열렸다.‘앤트로픽’(Anthropic)이 발표한 ‘2026년 9월 AI 악용 탐지 및 대응 보고서’(Detecting and countering misus",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146493",
-    "date": "2026-10-19 15:50:00"
-  },
-  {
-    "source": "boannews",
-    "title": "소프트캠프, 日 주요 도시 돌며 파트너데이 개최... 현지 시장 공략 가속",
-    "desc": "소프트캠프가 일본 도쿄를 시작으로 주요 거점 도시를 순회하는 현지 파트너 행사를 열고 일본 보안 시장 공략을 본격화한다. 원격 접속과 클라우드 문서보안 솔루션을 앞세워 현지 유통망과의 공동 영업 전선을 구축하고, 일본 공공 및 지자체 보안 시장 진입 속도를 끌어올린다는 구상이다.소프트캠프는 지난 16일 도쿄에서 ‘소프트캠프 재팬 파트너데이 2026’의 첫 일정을 시작했다고 19일 밝혔다. 이번 행사는 도쿄를 출발해 후쿠오카와 나고야를 거쳐 다시 도쿄로 이어지는 총 4회 순회 일정으로 진행된다.소프트캠프는 지역별 파트너들과 현장 대면",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146508",
-    "date": "2026-10-19 15:48:05"
-  },
-  {
-    "source": "boannews",
-    "title": "[강릉 ITS 세계총회] 2010년 이후 16년 만에 국내 개최... “중소도시서 미래 모빌리티 해법 찾는다”",
-    "desc": "[강릉=보안뉴스 특별취재팀] 국토교통부(장관 홍지선)와 강릉시(시장 김중남)가 공동 주최하는 ‘2026 강릉 ITS 세계총회’가 10월 19일 강릉컨벤션센터에서 열린 개회식을 시작으로 5일간의 일정에 돌입했다. 총회는 23일까지 강릉 올림픽파크 일원에서 진행된다.ITS 세계총회는 전 세계 ITS 분야의 정부·기업·학계·연구기관 등이 모여 정책과 연구 성과를 공유하고 최신 기술을 교류하는 국제회의다. 우리나라에서는 1998년 서울, 2010년 부산에 이어 세 번째이자 16년 만의 개최다.‘이동을 넘어 하나되는 세계’(Beyond Mo",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146498",
-    "date": "2026-10-19 15:30:00"
-  },
-  {
-    "source": "boannews",
-    "title": "세이퍼존, ARM 기반 ‘macOS 27’ 통합 DLP 선봬",
-    "desc": "맥(Mac) 도입 확산과 생성형 AI 활용 급증으로 이기종 운영체제(OS) 간 보안 격차가 새로운 위험으로 떠오른 가운데, 세이퍼존이 애플의 최신 시스템 환경에 맞춘 엔드포인트 보안 통제 기술을 선보였다.세이퍼존은 애플 실리콘 전용 최신 운영체제인 ‘macOS 27 골든 게이트’(Golden Gate)에 대응해 ‘내부정보유출방지’(DLP)와 생성형 AI 통제 기능을 통합 지원한다고 19일 밝혔다.최근 기업 업무 환경에서 윈도우뿐만 아니라 맥 사용자가 빠르게 늘고 있지만, 운영체제별로 보안 통제 범위나 정책 적용 방식이 달라 통합 보",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146507",
-    "date": "2026-10-19 15:26:31"
   },
   {
     "source": "thn",
@@ -600,96 +691,5 @@
     "desc": "The threat actor known as Silent Lynx has been attributed to a fresh set of attacks targeting government organizations across the Commonwealth of Independent States (CIS).\n\nThe activity, observed from June 2025 through August 2026, involves four different infection chains that make use of macro-enab",
     "url": "https://thehackernews.com/2026/10/silent-lynx-exploits-winrar-flaw-to.html",
     "date": "2026-10-15T21:30:26"
-  },
-  {
-    "source": "thn",
-    "title": "Help TDS Linked to Hotejka as 20,000+ Cloudflare Pages Domains Host Tech Support Scams",
-    "desc": "A long-running Traffic Distribution System (TDS) known as Help TDS to a Russian-language affiliate program called Hotejka, which appears to be a rebrand of a traffic monetization operation dubbed ROI777.\n\nHelp TDS is assessed to be active since at least 2017, offering PHP code templates to partners ",
-    "url": "https://thehackernews.com/2026/10/help-tds-linked-to-hotejka-as-20000.html",
-    "date": "2026-10-15T19:41:36"
-  },
-  {
-    "source": "thn",
-    "title": "NGINX Fixes 5 Flaws, Including Possible RCE and a TLS Bug That May Skip Client-Cert Checks",
-    "desc": "NGINX released&nbsp;versions 1.30.6 and 1.31.7&nbsp;on October 14 to fix five vulnerabilities, one of them present in every release since May 2005.\n\nThere are three memory bugs that F5, the company behind NGINX, says could crash a worker process or possibly let an attacker run code, and each require",
-    "url": "https://thehackernews.com/2026/10/nginx-fixes-5-flaws-including-possible.html",
-    "date": "2026-10-15T18:28:05"
-  },
-  {
-    "source": "thn",
-    "title": "Next.js Ships Out-of-Band Patch for Two Critical RCE Flaws in Caching and SVG Processing",
-    "desc": "Next.js released an&nbsp;out-of-band security update&nbsp;on October 14 that fixes two critical flaws allowing unauthenticated remote code execution, along with a high-severity denial-of-service flaw.\n\nOne code-execution flaw is in React Server Components, and the other in librsvg, the open-source l",
-    "url": "https://thehackernews.com/2026/10/nextjs-ships-out-of-band-patch-for-two.html",
-    "date": "2026-10-15T17:58:13"
-  },
-  {
-    "source": "thn",
-    "title": "Drupal Patches Critical Field UI Flaw With Unauthenticated RCE Path via Contributed Modules",
-    "desc": "Drupal core has a critical flaw in its Field UI module that could let an attacker run code on the site's server, and fixes were shipped on October 14 in Drupal 11.4.10, 11.3.19, and 10.6.19.\n\nAn attacker cannot reach the flaw through core alone, the Drupal Security Team said in&nbsp;its advisory. Se",
-    "url": "https://thehackernews.com/2026/10/drupal-patches-critical-core-rce-flaw.html",
-    "date": "2026-10-15T17:37:20"
-  },
-  {
-    "source": "thn",
-    "title": "Fake AI Attacks Spread Across US Companies: How MSSPs Can Stop Incidents Early",
-    "desc": "Attackers are impersonating popular AI products to distribute malware, steal browser sessions, and compromise business accounts. ANY.RUN linked 1,258 public sandbox analyses to fake AI campaigns between April and October of 2026.&nbsp;\n\nThe campaigns also increase operational pressure on MSSPs servi",
-    "url": "https://thehackernews.com/2026/10/fake-ai-attacks-spread-across-us.html",
-    "date": "2026-10-15T17:16:59"
-  },
-  {
-    "source": "thn",
-    "title": "Palo Alto Networks Patches PAN-OS Authenticated RCE Flaw Amid Active Exploitation",
-    "desc": "Palo Alto Networks on Wednesday issued security updates for a high-severity flaw in PAN-OS software that has come under active exploitation.\n\nThe vulnerability, tracked as CVE-2026-0322 (CVSS score: 8.6), is a case of remote code execution in the management interface.\n\n\"A remote code execution (RCE)",
-    "url": "https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html",
-    "date": "2026-10-15T17:16:49"
-  },
-  {
-    "source": "thn",
-    "title": "Why AI Confidence Is Not Validation",
-    "desc": "AI is already part of digital forensics and incident response work, with or without a policy in place to govern it. The issue is that these tools are growing more confident in their own output faster than practitioners are developing reliable ways to verify it. Without governance models and validati",
-    "url": "https://thehackernews.com/2026/10/why-ai-confidence-is-not-validation.html",
-    "date": "2026-10-15T16:34:35"
-  },
-  {
-    "source": "thn",
-    "title": "India Mandates Registered Caller Name Display on 4G and Newer Networks From November 1",
-    "desc": "The Indian government has directed telecom service providers (TSPs) in the country to mandatorily display callers' registered names along with their numbers for incoming calls starting November 1, 2026, in an effort to help people identify calls from unknown numbers and tackle spam or fraudulent cal",
-    "url": "https://thehackernews.com/2026/10/india-mandates-registered-caller-name.html",
-    "date": "2026-10-15T16:12:16"
-  },
-  {
-    "source": "thn",
-    "title": "GhostAction Compromises About 1,900 GitHub Accounts, Targets Over 30,000 Repositories",
-    "desc": "The credential-theft campaign known as GhostAction has ramped up, targeting more than 30,000 repositories across 3,000 users and organizations.\n\nThe spike, according to GitGuardian, was observed on October 8 and 9, 2026.\n\n\"This resulted from compromising the GitHub accounts of about 1,900 users. It ",
-    "url": "https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html",
-    "date": "2026-10-15T14:15:10"
-  },
-  {
-    "source": "thn",
-    "title": "Langflow's Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts",
-    "desc": "Threat actors are exploiting a critical security flaw in Langflow, according to an alert from Previdian.\n\nLangflow is an open-source platform that allows developers to build artificial intelligence (AI) applications and agentic workflows. In February 2025, DataStax, the parent company of Langflow, w",
-    "url": "https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html",
-    "date": "2026-10-15T12:37:05"
-  },
-  {
-    "source": "thn",
-    "title": "AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches",
-    "desc": "Singapore-based Ahsay Backup has released security updates to address two security flaws in AhsayCBS that have been exploited by bad actors to drop web shells and XMRig cryptocurrency miners.\n\nThe vulnerabilities in question are CVE-2026-105133 and CVE-2026-105134, which could be chained to sidestep",
-    "url": "https://thehackernews.com/2026/10/ahsaycbs-flaws-exploited-to-deploy-web.html",
-    "date": "2026-10-15T12:13:08"
-  },
-  {
-    "source": "thn",
-    "title": "Cisco Warns of Active Attacks Exploiting New Critical Secure Email Gateway Vulnerability",
-    "desc": "Attackers are exploiting a critical flaw in Cisco Secure Email Gateway that lets a sender with no login write files to the appliance's operating system, Cisco&nbsp;said in an advisory&nbsp;on Wednesday.\n\nThe attacker sends an email with a crafted attachment through the gateway and, if it succeeds, c",
-    "url": "https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html",
-    "date": "2026-10-15T00:08:56"
-  },
-  {
-    "source": "thn",
-    "title": "Hackers Backdoor Nextcloud Servers Through Critical Flaw in Collabora’s Built-in CODE App",
-    "desc": "Attackers exploited a flaw in an optional Nextcloud app,&nbsp;Collabora Online - Built-in CODE Server, to plant web shells on Nextcloud servers. Three administrators&nbsp;reported the issue on GitHub, with the first logged attack on September 10.\n\nA web shell is a small file that executes any comman",
-    "url": "https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html",
-    "date": "2026-10-14T23:08:31"
   }
 ]
