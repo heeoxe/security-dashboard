@@ -1,6 +1,76 @@
 [
   {
     "source": "thn",
+    "title": "Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases",
+    "desc": "GitLab released fixes on October 21 for a flaw that lets an attacker run code on a self-managed server without logging in, and it affects every version of the software going back to 7.0, released in 2014.\n\nThe fix matters even for administrators who patched nine days earlier: the October 12 update c",
+    "url": "https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html",
+    "date": "2026-10-22T00:27:34"
+  },
+  {
+    "source": "boannews",
+    "title": "전 세계 웹사이트 70% 쓰는 PHP, 치명적 보안 결함 발견... 정부·기업 '비상'",
+    "desc": "웹사이트 구축에 널리 쓰이는 프로그래밍 언어 PHP에서 치명적인 보안 취약점 2건이 확인되면서 세계 각국 정부와 기업이 긴급 대응에 나섰다. 별도의 로그인 절차 없이 서버에서 악성 코드를 실행할 수 있는 결함으로 실제 공격 시도까지 포착되자 일부 기관과 기업은 웹사이트 운영을 일시 중단했다.21일(현지시각) PHP 개발·관리팀이 발표한 보안 권고문에 따르면 ‘PHP2Shell’로 명명된 취약점 2건(CVE-2026-109618, CVE-2026-109619)은 인증받지 않은 외부 공격자에게 원격 코드 실행을 허용할 수 있다. PHP",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146621",
+    "date": "2026-10-22 09:30:12"
+  },
+  {
+    "source": "boannews",
+    "title": "[K-Security in Japan] ICTK, 독보적 하드웨어 보안 기술로 일본 시장 진출",
+    "desc": "미국과 유럽 등 글로벌 무대에서 먼저 기술력을 인정받은 ICTK가 잠재력이 풍부한 일본 보안 시장 공략을 본격화한다. 하드웨어 기반 보안 제품의 특성상 일본 내 생산과 촘촘한 현지 기업 파트너십이 필수적인 만큼, 현재 3개의 현지 대리점을 통해 고객 접점을 넓히고 있다. 일본 시장은 도입 결정까지의 과정이 까다롭고 일본어 매뉴얼 및 밀착 기술 지원이 필수적이지만, 한번 채택되면 국방이나 공공 분야처럼 잘 바꾸지 않는다는 장점이 있다. ICTK는 이러한 특성을 반영해 장기적인 안목으로 파트너십을 구축하며 올해 의미 있는 실적 도출을",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146619",
+    "date": "2026-10-22 08:04:04"
+  },
+  {
+    "source": "boannews",
+    "title": "[김정덕의 지속가능 보안-12] AX 시대, 신뢰 침식과 ‘자가 치유’ 보안",
+    "desc": "전통적인 기업 보안 거버넌스는 CISO가 지휘봉을 쥐고 수십 개의 보안 도구를 일사불란하게 통제하는 ‘오케스트라’에 비유되어 왔습니다. 공격의 속도가 인간의 인지 범위 내에 머물던 결정론적 기계의 시대에는 이 중앙 집중식 통제 모델이 유효한 방어선처럼 보였습니다.그러나 인공지능 전환(AX)으로 비즈니스 환경이 급변하면서 오케스트라 무대는 통제 불능의 카오스에 직면했습니다. 생성형 AI로 무장한 공격자들이 초단위로 변종 위협을 쏟아내는 상황에서 인간 지휘자의 결재와 매뉴얼은 너무나 느립니다. 지휘봉이 멈칫하는 사이 침해는 전사를 관통",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146601",
+    "date": "2026-10-22 08:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "[K-Security in Japan] S2W, 현지 법인 설립하고 퀘이사·자비스로 일본 시장 공략",
+    "desc": "수년간의 철저한 준비 끝에 올해 일본 현지 법인을 설립한 S2W는 높은 시장성과 지리적 이점 가진 일본을 해외 진출의 첫단추로 삼았다. 주목할 점은 법인 설립 이전부터 이미 현지 고객을 확보했다는 것이다. S2W의 제품을 접한 일본 고객이 먼저 문을 두드렸던 것이다.S2W는 성공적인 시장 안착을 위해 법인장을 포함한 전 직원을 현지인으로 채용했으며, 서비스 플랫폼의 UI와 모든 관련 자료를 완벽하게 일본어로 구축해 고객 편의성을 극대화했다. 한국 제품 특유의 빠른 대응 역량에 외산 제품에 대한 거부감이 적은 일본 시장의 특성이 맞물",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146618",
+    "date": "2026-10-22 07:50:02"
+  },
+  {
+    "source": "boannews",
+    "title": "개인정보처리방침이 공급망 공격에 쓰인다?... 수탁사 공개 의무 ‘갑론을박’",
+    "desc": "제3자에게 개인정보의 처리 업무를 위탁하는 경우 수탁사 정보를 개인정보처리방침에 올리는 현행 체계가 공급망 공격 위협을 도리어 높인다는 지적이 나온다. 특히 인공지능(AI)이 노출된 자산의 취약점을 빠르게 찾아내고 자율적으로 이를 악용하는 것이 추세가 된 만큼 이같은 위협은 더욱 커졌다는 것이다. 반면 정보주체가 자기 개인정보가 어디로 위탁되고 있는지 파악하는 것은 당연한 권리이며, 수탁사 스스로 보안 체계를 고도화해 보안 위협에 대응할 수 있어야 한다는 의견도 나온다. 21일 한 금융사 정보보호최고책임자(CISO)는 “개인정보처리",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146604",
+    "date": "2026-10-22 07:30:00"
+  },
+  {
+    "source": "boannews",
+    "title": "[K-Security in Japan] 스패로우, ‘공급망 보안’으로 일본 정조준",
+    "desc": "스패로우가 일본 시장에 본격적으로 진출한 지는 7~8년이지만, 이를 위한 준비 기간까지 합치면 10여년에 달할 정도로 공을 들였다. 초기에는 브랜드 인지도 확보에 어려움을 겪었으나, 소프트웨어 품질 진단 및 컨설팅 전문 기업인 ‘베리서브’(Veriserve)와 파트너십을 맺으며 활로를 찾았다. 스패로우는 일본 특유의 산업 환경에 맞춰 매뉴얼과 가이드라인을 완벽히 현지화하는 데 집중했다.일본 내에서 보안에 대한 관심이 높아지면서 스패로우 제품 도입을 검토하거나 유통을 요청하는 일본 기업들이 피부로 느낄 만큼 크게 늘고 있다. 최근 파",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146617",
+    "date": "2026-10-22 07:11:20"
+  },
+  {
+    "source": "boannews",
+    "title": "[K-Security in Japan] 파이오링크, 철저한 현지화와 제로트러스트로 일본 보안 시장 정조준",
+    "desc": "파이오링크가 일본 지사를 설립하며 본격적으로 일본 시장에 진출한 것은 2005년경이다. 해외 진출에 대한 자체적인 열망도 컸지만, 일본 현지에서 파이오링크의 '로드 밸런서(Load Balancer)'에 대한 직접적인 요청이 들어온 것이 결정적인 계기가 됐다. 당시 일본은 한국보다 시장 규모가 5배 이상 큰 국가로 꼽힐만큼 매력적인 곳이었다.조영철 파이오링크 대표는 일본 시장 안착의 핵심 비결로 현지 파트너사와의 긴밀한 소통을 바탕으로 한 ‘현지화’를 꼽았다. 파이오링크는 파트너사가 제안하는 아이디어를 적극 수용해, 현지에서 필요로",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146616",
+    "date": "2026-10-22 07:00:48"
+  },
+  {
+    "source": "thn",
+    "title": "LiteLLM Compromised in Supply Chain Attack Delivering Credential Stealer and Backdoor",
+    "desc": "The popular LiteLLM Python package has been compromised as part of a software supply chain attack that delivered a credential stealer and a backdoor, according to reports from SafeDep, Socket, StepSecurity, and Upwind.\n\nThe compromise affects LiteLLM 1.107.0, distributed through PyPI wheels and Dock",
+    "url": "https://thehackernews.com/2026/10/litellm-compromised-in-supply-chain.html",
+    "date": "2026-10-21T23:31:57"
+  },
+  {
+    "source": "thn",
+    "title": "OpenAI's GPT-6 Agent Removed Safety Monitoring, Then Falsely Denied Doing So",
+    "desc": "OpenAI has revealed that two artificial intelligence (AI) agents powered by GPT-6.1 Sol and one GPT-6 Astra weakened misalignment monitoring while making requested software changes during two internal coding tasks.\n\nThe AI company said the incident took place on October 3 and 6, 2026, for Sol and As",
+    "url": "https://thehackernews.com/2026/10/openais-gpt-6-agent-removed-safety.html",
+    "date": "2026-10-21T22:03:47"
+  },
+  {
+    "source": "thn",
     "title": "PHP Issues Emergency Patches for Two Critical PHP2Shell RCE Flaws as Exploit Attempts Emerge",
     "desc": "PHP has released emergency updates that fix two critical flaws in the language itself, letting an attacker without an account run code on a web server. The fixes are in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35, and the PHP team says only updating fully protects a server.\n\nThe flaws, together called PHP",
     "url": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html",
@@ -483,55 +553,6 @@
     "date": "2026-10-20 15:55:45"
   },
   {
-    "source": "boannews",
-    "title": "마이크로소프트, AI 에이전트 통제 모델 공개... “내부 직원처럼 지속 감시해야”",
-    "desc": "기업 내부 시스템과 데이터에 접근해 업무를 수행하는 AI 에이전트가 통제 범위를 벗어날 수 있다는 우려가 커지고 있다. 마이크로소프트는 사내에 배치된 자율형 AI 에이전트를 ‘에이전틱 내부자’(Agentic Insider)로 규정하고, 행동 위험을 실시간으로 추적·제어하는 새로운 보안 통제 모델을 20일 제시했다.기존 AI 보안이 외부 공격자의 악용을 차단하는 데 집중했다면, 이번 접근법은 조직 내부에서 구동되는 에이전트의 위험성에 주목한다. 기업이 직접 도입한 모델이라도 목표 달성 과정에서 의도치 않은 수단을 선택하는 ‘보상 해킹",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146544",
-    "date": "2026-10-20 15:50:05"
-  },
-  {
-    "source": "boannews",
-    "title": "에버스핀, AI 해킹 위협 IP 21만개 탐지... “공개 목록 대비 7800배”",
-    "desc": "최근 금융권을 겨냥한 AI 자동화 해킹이 잇따른 가운데, 기존에 공개된 위협 인터넷 프로토콜(IP) 목록보다 수천 배 많은 공격 진원지가 웹 서비스 전반에 침투하고 있다는 분석이 나왔다.에버스핀은 자사 웹 보안 솔루션 고객사 7곳을 분석한 결과, 9월 1일부터 10월 17일까지 21만784개의 위협 IP와 6204만6671건의 공격 시도를 탐지했다고 20일 밝혔다. 이번에 식별된 위협 IP 규모는 금융권 해킹 사태와 관련해 6일 공개된 위협 IP 수 27개와 비교해 약 7800배에 달한다.조사 대상 7곳은 금융사 3곳, 공공기관 2",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146546",
-    "date": "2026-10-20 15:47:17"
-  },
-  {
-    "source": "boannews",
-    "title": "“SDV·로봇 아우르는 통합 보안 입증” 아우토크립트, 美 오토테크 어워즈 수상",
-    "desc": "자율주행과 커넥티드 기술 발전으로 ‘소프트웨어 정의차량’(SDV)과 이동형 로봇 등 지능형 운송 기기의 보안 위협이 커지는 가운데, 국내 자동차 보안 기술이 글로벌 무대에서 역량을 인정받았다.아우토크립트는 미국 산업정보 조사기관 테크 브레이크스루가 주관하는 ‘2026 오토테크 브레이크스루 어워즈’(AutoTech Breakthrough Awards)에서 ‘올해의 자동차 사이버보안 기업’에 선정됐다고 20일 밝혔다.이번 수상은 차량 기획·설계부터 폐차에 이르는 생애주기 전반의 보안 관리와 통합 엔지니어링 기술력이 바탕이 됐다. 아우토",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146547",
-    "date": "2026-10-20 15:44:06"
-  },
-  {
-    "source": "boannews",
-    "title": "KISA, 아시아·아프리카·중남미 보안 관계자들과 협력 방향 논의",
-    "desc": "한국인터넷진흥원(KISA)이 아시아·아프리카·중남미 각국 정부 고위급 인사 및사이버보안 관계자들과 각국 디지털 환경과 정책 수요를 고려한 맞춤형 협력 방안을 모색했다. KISA는 19-22일 열리는 ‘글로벌 인공지능 및 디지털 서밋 2026’을 계기로 세계 각국 정부 고위급 인사와 사이버보안 관계자들이 한국을 방문, KISA를 찾아 보안 분야 협력을 위한 논의가 이어졌다고 20일 밝혔다. 이 기간 KISA를 찾은 이들은 △모잠비크 통신·디지털전환부 △코스타리카 과학혁신기술통신부 △벨리즈 경제개혁부 및 총리실 등의 장관급 대표단과 △",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146548",
-    "date": "2026-10-20 15:42:13"
-  },
-  {
-    "source": "boannews",
-    "title": "전세계 중소중견기업 86% “1년간 사이버 공격 한번 이상 겪어”",
-    "desc": "전세계 중소중견기업의 86%가 최근 1년간 최소 한 차례 사이버 사고를 겪은 것으로 나타났다. 가장 빈번한 사이버 공격 대상은 ‘고객 데이터’다.20일 카스퍼스키(한국지사장 이효은)는 최근 1년간 중소중견기업에서 발생한 가장 심각한 사이버 사고의 주요 피해에 대한 조사결과를 토대로 이같이 밝혔다. 공격자들의 주요 목적, 가장 빈번하게 공격받은 부서 등을 분석한 조사다. 카스퍼스키 내부 연구센터가 세계 18개국 1800명을 대상으로 실시한 조사 결과다.조사 결과 중소중견기업의 IT 및 IT 보안 담당자 가운데 86%가 지난 1년간 한",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146541",
-    "date": "2026-10-20 14:28:13"
-  },
-  {
-    "source": "boannews",
-    "title": "[은행이 뚫린다] 전리품이자 핵심 도구 된 API 키... AI 시대 예상 못한 레거시 시스템 위험 노출",
-    "desc": "사이버 위협의 표적이 인간 계정에서 소프트웨어 공급망과 ‘API 키’, ‘세션 토큰’ 등 비인간 신원 자산으로 빠르게 이동하고 있다. 피해자 환경에 이미 있는 정상 도구를 악용하는 ‘리빙 오프 더 랜드’(Living off the Land) 전술이 AI 공급망 자체로 확장되면서, AI의 대량 자동 호출 위협을 고려하지 않고 설계된 레거시 시스템과 외주 공급망 위기가 고조되고 있다.최근 나온 앤트로픽 ‘2026년 AI 악용 탐지 및 대응 보고서’는 해커들이 피해 기업에서 탈취한 AI API 키와 세션 토큰으로 세 가지 이득을 동시에",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146540",
-    "date": "2026-10-20 14:16:58"
-  },
-  {
-    "source": "boannews",
-    "title": "[Global Security TOP 100] 이기연 프로브디지털 대표 “보는 CCTV에서 ‘듣고 느끼는’ AI 복합센서 플랫폼 기업으로 도약”",
-    "desc": "2007년 설립 이후 IP 영상보안 분야를 선도해 온 프로브디지털이 AI와 센서 기술을 결합한 차세대 지능형 안전·보안 솔루션으로 사업 영역을 대폭 확장하고 있다. 자체 개발 IP 모듈 기술력을 바탕으로 이상음원 감지, 화재 사전 감지, 만공차 카메라 등 혁신 솔루션을 선보이며 영상 감시에서 현장의 위험을 스스로 판단하는 지능형 센서 플랫폼 기업으로 거듭나고 있다.Q. 프로브디지털은 어떤 기업인가요프로브디지털은 2007년 설립 이래 네트워크 카메라와 IP 영상보안 기술 혁신을 이끌어온 전문기업입니다. 자체 개발한 IP 모듈을 바탕으",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146446",
-    "date": "2026-10-20 13:33:57"
-  },
-  {
     "source": "thn",
     "title": "Hackers Exploit Plex2Shell Flaws to Install Crypto Miners and Linux Proxy Backdoor",
     "desc": "Threat actors have begun to exploit a chain of vulnerabilities in Plex Media Server to deploy cryptocurrency miners and reverse proxy software, a day after a proof-of-concept (PoC) went public.\n\nAccording to a researcher who goes by the online alias boredhackerblog, the exploitation activity involve",
@@ -670,26 +691,5 @@
     "desc": "A newly disclosed critical flaw in the Linux kernel allows code inside a virtual machine to read memory on the host computer it runs on. A researcher demonstrated the leak against Vercel's live cloud sandboxes, and Vercel confirmed it.\n\nThe flaw, now tracked as CVE-2026-99999 and nicknamed PwnEscape",
     "url": "https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html",
     "date": "2026-10-16T01:54:36"
-  },
-  {
-    "source": "thn",
-    "title": "ThreatsDay: Adobe RCE, DNS Wallet Theft, NVIDIA Container Escape, Self-Healing Backdoor + 23 More",
-    "desc": "Someone built a tool to steal data, then decided it should scare the victim for fun. Yes, that’s an actual feature. And somehow, it fits right in with this week's security stories.\n\nThe rest gets interesting in different ways. A small permission can lead to a big theft. A trusted login can hide the ",
-    "url": "https://thehackernews.com/2026/10/threatsday-adobe-rce-dns-wallet-theft.html",
-    "date": "2026-10-16T00:19:33"
-  },
-  {
-    "source": "thn",
-    "title": "Citizen Lab Traces Zero-Click Candiru Spyware Infections at Al Jazeera to Targeted Online Ads",
-    "desc": "Candiru, an Israeli maker of spyware sold to governments, infected devices at the news network Al Jazeera through ordinary online ads, in attacks that needed no click or other action from the user, researchers at&nbsp;the Citizen Lab&nbsp;said Thursday.\n\nThe hidden attack code ran the moment an ad l",
-    "url": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html",
-    "date": "2026-10-15T21:31:57"
-  },
-  {
-    "source": "thn",
-    "title": "Silent Lynx Exploits WinRAR Flaw to Deploy Reverse Shell in CIS Government Attacks",
-    "desc": "The threat actor known as Silent Lynx has been attributed to a fresh set of attacks targeting government organizations across the Commonwealth of Independent States (CIS).\n\nThe activity, observed from June 2025 through August 2026, involves four different infection chains that make use of macro-enab",
-    "url": "https://thehackernews.com/2026/10/silent-lynx-exploits-winrar-flaw-to.html",
-    "date": "2026-10-15T21:30:26"
   }
 ]
