@@ -1,6 +1,34 @@
 [
   {
     "source": "thn",
+    "title": "BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations",
+    "desc": "Diplomatic organizations in Central Asia have been targeted by a sophisticated new Unified Extensible Firmware Interface (UEFI) bootkit called BlackX.\n\nThe activity, which singled out diplomatic entities in Tajikistan, Uzbekistan, and Turkmenistan in early 2026, is suspected to be orchestrated by a ",
+    "url": "https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html",
+    "date": "2026-10-24T00:20:13"
+  },
+  {
+    "source": "boannews",
+    "title": "대한항공 고객 예약번호 유출... 글로벌 외주망 뚫린 ‘공급망 사고’",
+    "desc": "대한항공 고객의 예약번호가 여객 예약·발권 시스템을 위탁 운영하는 글로벌 항공 IT 기업 ‘아마데우스’(Amadeus)를 통해 유출됐다. 대한항공 자체 전산망은 침해되지 않았으나, 협력사의 시스템 계정 인증정보가 도용되면서 고객 정보 노출 사고로 이어졌다.대한항공에 따르면, 회사는 지난 20일 밤 10시 44분경 아마데우스로부터 비인가 접근으로 인한 개인정보 유출 정황을 통보받고 안전 조치에 착수했다. 대한항공 측은 통보 직후 자체 시스템을 점검한 결과 내부 데이터베이스(DB) 침해 정황은 확인되지 않았다고 밝혔다.이번 사고는 아마",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146720",
+    "date": "2026-10-24 09:29:16"
+  },
+  {
+    "source": "thn",
+    "title": "Ruby Fixes Three Regex Engine Bugs Responsible for Four Critical GitLab RCE Flaws",
+    "desc": "Ruby has released versions 4.0.9, 3.4.12, and 3.3.13 to fix three bugs in Onigmo, the regular expression engine built into the language. The bugs lie behind four critical security flaws that GitLab patched over the past month.\n\nGitLab found that a specially crafted pattern could corrupt memory while",
+    "url": "https://thehackernews.com/2026/10/ruby-fixes-three-regex-engine-bugs.html",
+    "date": "2026-10-23T23:24:08"
+  },
+  {
+    "source": "thn",
+    "title": "Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions",
+    "desc": "Cybersecurity researchers have discovered an artificial intelligence (AI)-driven intrusion ecosystem run by affiliates of the INC and The Gentlemen ransomware groups.\n\nCentral to the operation is an \"Autonomous Red Team Kill Chain Framework\" referred to as Phantom. The threat actor is assessed to be",
+    "url": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
+    "date": "2026-10-23T23:20:47"
+  },
+  {
+    "source": "thn",
     "title": "Hackers Breach Enterprise Firewalls and VPNs, Exposing Over 70,000 Credentials",
     "desc": "Cybersecurity researchers have disclosed details of a large-scale campaign that has targeted exposed network edge devices such as Fortinet FortiGate and Palo Alto Networks GlobalProtect firewalls.\n\n\"Artifacts from this investigation also indicate that operators in this campaign have obtained access ",
     "url": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html",
@@ -8,14 +36,14 @@
   },
   {
     "source": "thn",
-    "title": "PHP Warns of Another Unpatched RCE Two Days After Emergency PHP2Shell Patches",
+    "title": "PHP Warns of Another Unpatched RCE Risk Two Days After Emergency PHP2Shell Patches",
     "desc": "PHP has warned of another way an attacker could run code on a web server, two days after it shipped emergency fixes for the critical PHP2Shell flaws.\n\nThe new issue, assigned CVE-2026-115560, affects only web applications configured in an unusual way, and PHP considers it an unlikely risk.The projec",
     "url": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html",
     "date": "2026-10-23T16:55:43"
   },
   {
     "source": "thn",
-    "title": "Russian-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack",
+    "title": "Russia-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack",
     "desc": "The Russian state-sponsored hacking group Sandworm teamed up with another threat actor to carry out a destructive wiping attack targeting a Ukrainian logistics company last year.\n\nAccording to ESET, the attack involved UAC-0099 (aka Earth Sirrush) obtaining initial access to the target on July 16, 2",
     "url": "https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html",
     "date": "2026-10-23T16:41:23"
@@ -497,13 +525,6 @@
     "date": "2026-10-22 16:58:13"
   },
   {
-    "source": "boannews",
-    "title": "“로그인 없이 개발 서버 뚫린다” 깃랩, CVSS 10점 치명적 결함 긴급 패치",
-    "desc": "웹 기반 데브옵스(DevOps) 플랫폼 깃랩에서 위험도 최고치인 ‘공통 취약점 점수 시스템’(CVSS) 10.0점 만점의 보안 취약점이 발견돼 긴급 패치가 배포됐다.깃랩은 커뮤니티 에디션(CE)과 엔터프라이즈 에디션(EE) 전반에서 비인증 사용자가 서버 내 임의 코드를 실행할 수 있는 치명적 결함 등을 수정한 보안 업데이트를 발표했다. 자체 관리형 서버의 즉각적 업그레이드를 권고했다. 한국인터넷진흥원(KISA)도 22일 국내 이용 기업과 기관에 신속히 패치를 적용하라고 공지했다. 정규식 컴파일 허점 노린 ‘CVSS 10.0’...",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146661",
-    "date": "2026-10-22 16:53:32"
-  },
-  {
     "source": "thn",
     "title": "LiteLLM Compromised in Supply Chain Attack Delivering Credential Stealer and Backdoor",
     "desc": "The popular LiteLLM Python package has been compromised as part of a software supply chain attack that delivered a credential stealer and a backdoor, according to reports from SafeDep, Socket, StepSecurity, and Upwind.\n\nThe compromise affects LiteLLM 1.107.0, distributed through PyPI wheels and Dock",
@@ -677,26 +698,5 @@
     "desc": "ConnectWise on Monday said it has taken remediation measures, including strengthening administrative-access protections and resetting accounts and replacing application credentials, as it continues to respond to a security incident that led to unauthorized access to application identities associated",
     "url": "https://thehackernews.com/2026/10/connectwise-resets-credentials-as-cloud.html",
     "date": "2026-10-20T16:26:08"
-  },
-  {
-    "source": "thn",
-    "title": "Hackers Hijack Five OVHcloud CLI Releases to Distribute Secret-Stealing Malware",
-    "desc": "An attacker used a contributor's GitHub account to replace the download archives on five existing releases of OVHcloud's command-line tool on Monday, October 19. The account had been hijacked, and the new files were a build designed to steal secrets stored on the disk of any machine that runs it, th",
-    "url": "https://thehackernews.com/2026/10/hackers-hijack-five-ovhcloud-cli.html",
-    "date": "2026-10-20T13:51:29"
-  },
-  {
-    "source": "thn",
-    "title": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
-    "desc": "Siemens has addressed a DLL sideloading vulnerability impacting Siemens Software Center that it said has been exploited in ClickFix attacks.\n\nThe high-severity vulnerability, tracked as CVE-2026-110936 (CVSS v4 score: 8.4), could allow an attacker to place a specially-crafted DLL in a directory the ",
-    "url": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
-    "date": "2026-10-20T12:41:45"
-  },
-  {
-    "source": "thn",
-    "title": "Ex-OpenAI Engineer Detained in Spy Device Case as Saudi Royal Contacts Emerge",
-    "desc": "A U.S. court on Monday granted the U.S. government's request to detain a former OpenAI engineer accused of planting a recording device in an executive conference room at the company's San Francisco office to allegedly steal sensitive secrets.\n\nIn a new court filing Sunday, prosecutors revealed that ",
-    "url": "https://thehackernews.com/2026/10/ex-openai-engineer-detained-in-spy.html",
-    "date": "2026-10-20T11:23:16"
   }
 ]
