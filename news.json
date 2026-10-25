@@ -1,6 +1,34 @@
 [
   {
     "source": "thn",
+    "title": "OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication",
+    "desc": "OpenAI has announced plans to conduct frontier model training with no live internet access, as it resumes reinforcement learning (RL) training and internal inference of its most advanced AI models.\n\n\"Based on the current state of alignment research, monitoring systems, and the security of internet i",
+    "url": "https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html",
+    "date": "2026-10-25T12:24:29"
+  },
+  {
+    "source": "boannews",
+    "title": "“공장 멈추는 랜섬웨어 막는다” 안랩, 일본서 IT·OT 통합 CPS 솔루션 제시",
+    "desc": "일본 제조 현장을 겨냥한 랜섬웨어 공격이 잇따르며 설비 운영 중단 우려가 커진 가운데, 안랩이 정보기술(IT)과 ‘운영기술’(OT)을 아우르는 통합 보안 체계를 앞세워 현지 시장 공략에 속도를 낸다.안랩은 지난 21일부터 23일까지 일본 도쿄에서 열린 정보보안 전문 전시회 ‘시큐리티 데이즈 폴 2026 도쿄’(Security Days Fall 2026 Tokyo)에 참가해 ‘사이버물리시스템’(CPS) 보안 전략과 솔루션을 선보였다고 25일 밝혔다. 지난 6월 ‘인터롭 도쿄 2026’ 출전에 이어 일본 내 신규 사업 기회를 발굴하기",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146728",
+    "date": "2026-10-25 11:45:00"
+  },
+  {
+    "source": "boannews",
+    "title": "가짜 윈도우 경고 사기, 클라우드플레어 페이지 2만 개 동원",
+    "desc": "기술지원 사기 조직이 클라우드플레어의 무료 웹페이지 서비스를 발판으로 세를 넓히고 있다. 컴퓨터가 잠겼다는 가짜 경고로 피해자가 전화를 걸게 한 뒤 원격으로 PC를 장악하는 수법이다.인포블록스(Infoblox)는 적어도 2017년부터 활동한 트래픽 분배 시스템 헬프 TDS(Help TDS)의 배후를 러시아어권 제휴 프로그램 호테이카(Hotejka)로 지목한 분석을 최근 내놨다.트래픽 분배 시스템은 일종의 중계소다. 해킹된 웹사이트와 악성 광고, 소셜미디어 게시물, 검색 스팸으로 들어온 방문자를 받아 지역과 기기 정보, IP 평판,",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146444",
+    "date": "2026-10-25 11:16:00"
+  },
+  {
+    "source": "boannews",
+    "title": "2026 국방정보기술 워크숍 개최... ‘AI 과학기술강군’ 미래 국방 ICT 한자리에",
+    "desc": "첨단 정보통신기술(ICT)을 군 전반에 융합해 미래 전장 환경을 주도할 ‘인공지능’(AI) 과학기술강군 육성 전략을 논의하는 교류의 장이 열렸다. 군 지휘부와 정부 부처, 산·학·연 정보통신기술 및 보안 전문가들이 한자리에 모여 국방 혁신 방안을 공유하는 ‘2026 국방정보기술 워크숍’이 개최됐다.이번 워크숍은 급변하는 글로벌 안보 지형과 기술 패권 경쟁 속에서 AI와 클라우드, 빅데이터 등 민간의 첨단 디지털 기술을 군 지휘통제 및 작전 체계에 신속히 접목하기 위한 해법을 모색하기 위해 마련됐다. 행사에는 각 군 정보화·통신 분야",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146726",
+    "date": "2026-10-25 10:45:24"
+  },
+  {
+    "source": "thn",
     "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
     "desc": "A memory-corruption flaw in Google's Brotli decoder sits in many programs that unpack Brotli-compressed data, among them Bun, the Python&nbsp;Brotli&nbsp;and&nbsp;brotlicffi&nbsp;packages, and Envoy proxies set up to decompress Brotli.\n\nTracked as&nbsp;CVE-2026-111497, the flaw allows crafted compre",
     "url": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
@@ -539,27 +567,6 @@
     "date": "2026-10-22T00:27:34"
   },
   {
-    "source": "boannews",
-    "title": "[K-Security in Japan] 에이아이스페라, SaaS 편의성 무기로 일본 ASM 시장 신흥 강자로 부상",
-    "desc": "2022년 일본 시장에 발을 내디딘 에이아이스페라(AI Spera)는 2023년부터 대기업을 중심으로 본격적인 매출을 일으키며 쾌속 순항 중이다.눈길을 끄는 점은 복잡한 오프라인 영업망 없이, 일본 내 온라인 비즈니스와 홈페이지를 통해 자발적인 도입 문의와 기술 검증(POC)이 활발히 이뤄지고 있다는 점이다. SaaS(서비스형 소프트웨어) 형태로 제공되어 현지 직원의 방문이나 복잡한 구축 과정이 필요 없고, 초기부터 엔화 결제를 지원하는 등 서비스 접근성을 극대화한 로컬라이제이션이 빛을 발했다.공격 표면 관리 ‘ASM’ 수요 급증.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146670",
-    "date": "2026-10-22 23:11:41"
-  },
-  {
-    "source": "boannews",
-    "title": "[K-Security in Japan] 쿼드마이너, 철저한 ‘커스터마이징’으로 일본 NDR 시장 파고든다",
-    "desc": "설립 초기부터 글로벌 시장을 정조준했던 쿼드마이너는 2021년경 일본에 진출해 현지 법인과 상장사 규모의 대형 총판을 두며 탄탄한 영업망을 구축했다.쿼드마이너가 파악한 일본 시장의 가장 큰 특징은 보안 환경과 요구사항이 한국과 판이하게 다르다는 점이다. 자동화 수준, 네트워크 감시 환경 등에서 현지 고객들의 독특한 요구사항이 빗발치는 만큼, 쿼드마이너는 단순 번역을 넘어 일본 시장의 입맛에 맞게 제품 자체를 뜯어고치는 수준의 강도 높은 커스터마이징 전략을 채택해 경쟁력을 끌어올리고 있다.네트워크 블랙박스 주력...일본 전용 버전 개",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146669",
-    "date": "2026-10-22 23:03:18"
-  },
-  {
-    "source": "boannews",
-    "title": "[K-Security in Japan] 안랩, 일본 진출 20년 노하우로 B2B 시장 본격 공략",
-    "desc": "2002년에 일본에 진출해 20년이 넘는 업력을 자랑하는 안랩이 지난해부터 기업용(B2B) 보안 시장을 겨냥해 대대적인 드라이브를 걸고 있다. 현지 법인과 파트너사를 통해 완벽한 일문화 매뉴얼과 맞춤형 고객 지원을 제공해 온 안랩은, 최근 일본의 특수한 산업 환경에 주목했다.중소규모 공장이 밀집한 ‘제조 강국’ 일본은 여전히 구형 레거시 OS를 사용하거나 폐쇄망을 맹신하는 경향이 짙어, USB와 IoT 기기, 그리고 휴먼 에러로 인한 보안 사고에 매우 취약하다.‘안랩 EPS·XTD’로 랜섬웨어 대응...내년 EDR 출시로 공세 강화",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146668",
-    "date": "2026-10-22 22:37:12"
-  },
-  {
     "source": "thn",
     "title": "LiteLLM Compromised in Supply Chain Attack Delivering Credential Stealer and Backdoor",
     "desc": "The popular LiteLLM Python package has been compromised as part of a software supply chain attack that delivered a credential stealer and a backdoor, according to reports from SafeDep, Socket, StepSecurity, and Upwind.\n\nThe compromise affects LiteLLM 1.107.0, distributed through PyPI wheels and Dock",
@@ -691,12 +698,5 @@
     "desc": "A Chinese-speaking criminal pointed autonomous AI agents at company websites and let them break in with almost no help, and a security researcher watched it happen because the operators left their control panels open on the internet.\n\nThe agents tried more than 1,200 sites and reached websites belon",
     "url": "https://thehackernews.com/2026/10/hackers-use-autonomous-ai-agents-to.html",
     "date": "2026-10-20T19:37:17"
-  },
-  {
-    "source": "thn",
-    "title": "Pegasus Spyware Infection Confirmed on Serbian University Rector's iPhone Days Before Election",
-    "desc": "The iPhone of Vladan Đokić, rector of the University of Belgrade and a prominent supporter of Serbia's student protest movement, was infected with NSO Group's Pegasus spyware in 2026, the&nbsp;Citizen Lab said&nbsp;on October 19.\n\nThe finding came six days before Serbia's October 25 snap parliamenta",
-    "url": "https://thehackernews.com/2026/10/pegasus-spyware-infection-confirmed-on.html",
-    "date": "2026-10-20T18:29:44"
   }
 ]
