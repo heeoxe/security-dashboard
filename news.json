@@ -1,5 +1,40 @@
 [
   {
+    "source": "boannews",
+    "title": "로그프레소, ‘PHP2셸’ 진단 앱 출시... “외부 노출 넘어 내부망까지 전수조사”",
+    "desc": "PHP 원격 코드 실행 취약점 ‘PHP2셸’(PHP2Shell) 위협이 고조되는 가운데, 외부 서비스뿐 아니라 사내망에 숨은 취약 자산까지 손쉽게 찾아내는 전용 진단 도구가 나왔다.로그프레소는 PHP2셸 취약점을 진단하는 ‘PHP2셸 스캐너’ 앱을 자사 스토어에 공개했다고 26일 밝혔다. 21일 취약점 식별과 임시 조치 방안을 담은 기술 권고문을 게시한 데 이어, 24일 고객 대상 진단 도구를 선보이며 실질적인 대응 지원에 나섰다.PHP2셸은 웹 개발 언어 PHP의 코어 엔진에서 발견된 원격 코드 실행(RCE) 결함인 ‘CVE-20",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146733",
+    "date": "2026-10-26 09:32:30"
+  },
+  {
+    "source": "boannews",
+    "title": "롯데 모바일 상품권 ‘기프티엘’ 털렸다... 1만8359명 계좌번호 유출",
+    "desc": "롯데그룹 계열 모바일 교환권 플랫폼 ‘기프티엘’(giftiel)이 외부 해킹 공격을 받아 1만8000여명의 고객 개인정보와 계좌번호가 유출됐다.기프티엘을 운영하는 스푼은 홈페이지에 개인정보 유출 사실 안내 및 사과문을 게시하고, 22일 외부 비인가 접근(해킹)으로 인해 일부 고객의 개인정보가 유출된 사실을 확인했다고 밝혔다. 이번 침해 사고로 정보가 유출된 피해 고객은 1만8359명으로 파악됐다.확인된 유출 항목은 △이름 △휴대폰번호 △이메일 △환불 계좌번호 등 4개 항목이다. 일반적인 연락처 정보에 더해 상품권 환불 과정에서 등록",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146737",
+    "date": "2026-10-26 09:29:44"
+  },
+  {
+    "source": "boannews",
+    "title": "에프원시큐리티, ‘PHP2셸’ 차단 검증 완료... 무료 웹 진단 도구 배포",
+    "desc": "글로벌 웹 인프라를 위협하는 ‘PHP2셸’(PHP2Shell) 원격 코드 실행 취약점에 대응해 국내 보안 기업이 웹 방화벽을 통한 실전 차단 성능을 검증하고 무료 점검 도구 보급에 나섰다.에프원시큐리티는 최근 공개된 PHP 코어 엔진 원격 코드 실행(RCE) 취약점 ‘PHP2셸’에 대해 자사 통합 웹 보안 서비스 ‘UWSS’(Unified Web Security Service)의 탐지 및 차단 성능 검증을 마쳤다고 26일 밝혔다. 취약점 노출 여부를 판별할 수 있는 기업용 무료 자가진단 도구도 함께 배포했다.‘PHP2셸’은 PHP",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146735",
+    "date": "2026-10-26 09:27:15"
+  },
+  {
+    "source": "thn",
+    "title": "Unpatched Tailscale SSH Flaws Could Let a Hacked Device Reach Root on Other Servers",
+    "desc": "A single hacked device on a Tailscale network can be used to gain root access to other servers it can reach, according to a security researcher who published the findings this week.\n\nThe attack requires two things: Tailscale SSH set up to allow port forwarding, and an attacker who already controls o",
+    "url": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
+    "date": "2026-10-25T23:14:09"
+  },
+  {
+    "source": "thn",
+    "title": "PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking",
+    "desc": "Threat actors have been observed using agentic artificial intelligence (AI) platforms for post-exploitation activity following the abuse of the PHP2Shell vulnerabilities tracked as CVE-2026-109618 and CVE-2026-109619.\n\n\"In one case, the attackers targeted a government entity in Europe and within two",
+    "url": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
+    "date": "2026-10-25T22:49:46"
+  },
+  {
     "source": "thn",
     "title": "OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication",
     "desc": "OpenAI has announced plans to conduct frontier model training with no live internet access, as it resumes reinforcement learning (RL) training and internal inference of its most advanced AI models.\n\n\"Based on the current state of alignment research, monitoring systems, and the security of internet i",
@@ -455,27 +490,6 @@
     "date": "2026-10-23 01:35:06"
   },
   {
-    "source": "boannews",
-    "title": "[K-Security in Japan] 쿤텍, 10여 차례 발품으로 찾은 파트너십… 일본 AI·공급망 보안 정조준",
-    "desc": "중국과 인도 시장 진출에 성공한 쿤텍이 글로벌 확장의 다음 타깃으로 일본 시장을 겨냥했다. 지리적 이점이 커 꼼꼼한 사후지원을 생명으로 여기는 일본 고객들에게 신속하고 완벽한 서비스를 제공할 수 있다는 판단에서다.쿤텍은 일본 시장 안착의 핵심을 ‘파트너십’에 두고 1년이 넘는 기간 동안 10회 이상 일본 현지 전시회를 직접 뛰어다니며 시행착오 끝에 최근 유력 파트너사와의 계약을 목전에 두고 있다. 아울러 홈페이지는 물론 모든 솔루션과 가이드라인을 매뉴얼 기반으로 완벽하게 일본어로 번역해 현지 고객들의 까다로운 눈높이를 맞췄다.AI",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146677",
-    "date": "2026-10-23 01:35:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[K-Security in Japan] 엔키화이트햇, 2027년 1월 일본 지사 설립… ‘오펜시브 보안’으로 일본 정조준",
-    "desc": "엔키화이트햇(ENKI)은 한국보다 시장 규모가 크고 성장세가 뚜렷한 일본을 핵심 글로벌 공략지로 삼고, 단기적인 성과보다는 긴 호흡의 시장 안착을 준비하고 있다.올해 초 일본 현지 파트너사인 ‘제로시큐리티’와 손을 잡으며 파트너사는 영업을, 엔키화이트햇은 서비스 및 기술 지원을 전담하는 효율적인 협업 체계를 구축했다.엔키화이트햇은 자국 내 데이터 보관을 선호하는 일본 고객들의 특성을 고려해 일본 리전의 AWS를 활용하고 로컬 거대언어모델(LLM)을 적용하는 등 철저한 현지화를 진행 중이다. 또한, 내년 1월에는 현지 지사를 정식으로",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146672",
-    "date": "2026-10-23 01:32:20"
-  },
-  {
-    "source": "boannews",
-    "title": "[K-Security in Japan] 플레인비트, 디지털 포렌식·침해사고 대응 기술로 일본 보안 시장 노린다",
-    "desc": "동남아시아 시장 공략을 위해 싱가포르 지사를 성공적으로 안착시킨 플레인비트가 글로벌 사업 확장의 다음 무대로 일본을 선택했다. 최근 일본 내 기업 및 기관을 대상으로 한 해킹과 침해 사고가 급증하면서, 사후 대응과 분석에 필수적인 디지털 포렌식에 대한 현지 고객들의 관심이 크게 높아진 상황이다.플레인비트는 이러한 시장의 요구에 발맞춰 신제품 출시에 따른 기술 일문화 작업을 착실히 준비하고 있으며, 일본 현지에서 디지털 포렌식 및 침해사고 대응(DFIR) 사업의 시너지를 극대화할 수 있는 유통·기술 파트너사 발굴에 총력을 기울이고 있",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146671",
-    "date": "2026-10-23 01:29:58"
-  },
-  {
     "source": "thn",
     "title": "eMudhra to Exit Global SSL/TLS Business After 8 Intermediate CA Keys Found Easily Guessable",
     "desc": "eMudhra, an Indian certificate authority (CA), will withdraw from its global SSL/TLS certificate business,&nbsp;its board decided on Thursday. The decision came five days after a researcher&nbsp;reported recovering the private keys&nbsp;of eight of its intermediate CA certificates.\n\neMudhra said it ",
@@ -684,19 +698,5 @@
     "desc": "Cybersecurity researchers have released a proof-of-concept (PoC) exploit for a recently patched critical security flaw impacting Fortinet FortiSIEM that could result in arbitrary code execution.\n\nThe vulnerability, tracked as CVE-2026-106173 (CVSS score: 9.4), is a critical path traversal flaw that ",
     "url": "https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html",
     "date": "2026-10-20T21:08:52"
-  },
-  {
-    "source": "thn",
-    "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
-    "desc": "Palo Alto Networks has disclosed that it's continuing to observe exploitation of a now-patched security flaw impacting&nbsp; PAN-OS and Prisma Access by ransomware actors.\n\nThe activity relates to CVE-2026-0257 (CVSS score: 7.8), an authentication bypass flaw that could be exploited by bad actors to",
-    "url": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html",
-    "date": "2026-10-20T21:02:27"
-  },
-  {
-    "source": "thn",
-    "title": "Hackers Use Autonomous AI Agents to Breach Company Websites, Target Over 1,200 Sites",
-    "desc": "A Chinese-speaking criminal pointed autonomous AI agents at company websites and let them break in with almost no help, and a security researcher watched it happen because the operators left their control panels open on the internet.\n\nThe agents tried more than 1,200 sites and reached websites belon",
-    "url": "https://thehackernews.com/2026/10/hackers-use-autonomous-ai-agents-to.html",
-    "date": "2026-10-20T19:37:17"
   }
 ]
