@@ -1,5 +1,236 @@
 [
   {
+    "source": "thn",
+    "title": "PHP2Shell Attack Roots 25 Servers, Breaches U.S. Government-Affiliated Network",
+    "desc": "Cybersecurity researchers have disclosed details of what appears to be an artificial intelligence (AI)-assisted attack orchestrated by a suspected China-nexus threat actor that has leveraged the PHP2Shell vulnerabilities to breach exposed systems.\n\nThe activity, which was observed on October 25, 202",
+    "url": "https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html",
+    "date": "2026-10-28T21:32:45"
+  },
+  {
+    "source": "thn",
+    "title": "Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch",
+    "desc": "Threat actors are beginning to probe for a newly patched critical vulnerability in Oracle E-Business Suite (EBS), according to threat intelligence firm Defused Cyber.\n\nThe vulnerability in question is CVE-2026-101767 (CVSS score: 9.8) in the Oracle Application Object Library of Oracle E-Business Sui",
+    "url": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
+    "date": "2026-10-28T18:18:03"
+  },
+  {
+    "source": "thn",
+    "title": "Critical 16-Year-Old UEFI Flaw Can Run Code Before Secure Boot on Network-Booting Servers",
+    "desc": "A critical 16-year-old flaw in EDK II, the open-source code that most hardware makers use to build UEFI firmware, can allow an attacker to run code on a machine before its operating system loads, but only while the machine is booting over the network.\n\nUEFI firmware is the software that runs first w",
+    "url": "https://thehackernews.com/2026/10/critical-16-year-old-uefi-flaw-can-run.html",
+    "date": "2026-10-28T17:20:00"
+  },
+  {
+    "source": "thn",
+    "title": "Wazuh and AI for Enhanced SOC Workflows",
+    "desc": "Artificial Intelligence (AI) has become one of this decade's defining technologies. From healthcare and finance to manufacturing and education, organizations increasingly rely on AI to automate repetitive tasks, uncover patterns hidden within large datasets, and support faster decision-making. Cyber",
+    "url": "https://thehackernews.com/2026/10/wazuh-and-ai-for-enhanced-soc-workflows.html",
+    "date": "2026-10-28T17:00:00"
+  },
+  {
+    "source": "thn",
+    "title": "Adobe Fixes 8 Critical Campaign Classic Flaws Allowing Code Execution and Security Bypass",
+    "desc": "Adobe has released patches to address multiple critical security flaws in Campaign Classic that, if successfully exploited, could result in arbitrary code execution, security feature bypass, and privilege escalation.\n\nThe list of eight vulnerabilities is as follows -\n\n\n  CVE-2026-104351 (CVSS score:",
+    "url": "https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html",
+    "date": "2026-10-28T16:45:51"
+  },
+  {
+    "source": "thn",
+    "title": "American Organizations Under Attack: Skyw4lker Device Code Phishing Campaign Exposed",
+    "desc": "Modern phishing campaigns can compromise American businesses without relying on traditional credential theft. Attackers can abuse legitimate cloud services, authentication mechanisms, and trusted business workflows to gain access to corporate accounts while leaving fewer obvious signs behind.\n\nANY.R",
+    "url": "https://thehackernews.com/2026/10/american-organizations-under-attack.html",
+    "date": "2026-10-28T16:00:00"
+  },
+  {
+    "source": "thn",
+    "title": "Anthropic's Unreleased AI Model Chains Flaws Into Working Chrome, Safari, Windows and Linux Exploits",
+    "desc": "An unreleased Anthropic AI model found security flaws in Chrome, Safari, Android, Windows, and Linux and chained them into working proof-of-concept exploits, the company said in its latest report.\n\nThe exploits were built in the lab after the model was prompted, not seen in any real attack, and Anth",
+    "url": "https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html",
+    "date": "2026-10-28T13:45:07"
+  },
+  {
+    "source": "thn",
+    "title": "FBI Seizes Virtualine Domain Over Alleged Criminal Hosting and Bitcoin Money Laundering",
+    "desc": "The U.S. Department of Justice (DoJ) on Tuesday announced the seizure of a domain associated with a bulletproof hosting provider (BPH) named Virtualine.\n\nThe move was in response to the service being used to commit and facilitate prolific criminal activity, including \"the advertisement of sexually e",
+    "url": "https://thehackernews.com/2026/10/fbi-seizes-virtualine-domain-over.html",
+    "date": "2026-10-28T13:07:50"
+  },
+  {
+    "source": "thn",
+    "title": "Japan's GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach",
+    "desc": "Japan's GMO Internet Group is&nbsp;offering up to $1 million in total&nbsp;for tips that help catch the attackers who breached its Onamae.com Desktop Cloud service, after refusing to pay an extortion demand.\n\nThe reward program opened on October 28 and pays only if a tip helps lead to an arrest or a",
+    "url": "https://thehackernews.com/2026/10/japans-gmo-offers-1-million-bounty-to.html",
+    "date": "2026-10-28T12:43:21"
+  },
+  {
+    "source": "thn",
+    "title": "Tailscale Patches SSH Flaws That Could Let Hacked Devices Gain Root Access on Other Servers",
+    "desc": "Tailscale has released&nbsp;version 1.104.4&nbsp;to fix flaws in its built-in SSH server that could let an attacker reach services and files on other servers that only the&nbsp;root&nbsp;user should be able to touch.\n\nThe flaws are in how&nbsp;Tailscale SSH&nbsp;forwards network connections, a job t",
+    "url": "https://thehackernews.com/2026/10/tailscale-patches-ssh-flaws-that-could.html",
+    "date": "2026-10-28T11:50:37"
+  },
+  {
+    "source": "thn",
+    "title": "ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws",
+    "desc": "The critical Oracle PeopleSoft bug that ShinyHunters has exploited since May is not one flaw but three chained together, the researchers who reported it said this week.\n\nOracle patched all three under a single identifier,&nbsp;CVE-2026-35273, in June. Its root is a server-side request forgery (SSRF)",
+    "url": "https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html",
+    "date": "2026-10-28T11:34:58"
+  },
+  {
+    "source": "thn",
+    "title": "Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges",
+    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added two vulnerabilities impacting Adobe Commerce and Magento, and Google's Brotli decoder library to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe vulnerabilities are liste",
+    "url": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
+    "date": "2026-10-28T11:12:26"
+  },
+  {
+    "source": "boannews",
+    "title": "[단독] ‘PHP 직격탄’ 워드프레스·그누보드 국내 사이트 46만개 육박... 호스팅 의존도 높아 [PHP 파장]",
+    "desc": "전세계 웹사이트의 70%를 차지하는 프로그래밍 언어 PHP에 치명적 취약점 ‘PHP2셸’(PHP2Shell)이 발견된 가운데, 대표적 PHP 기반 홈페이지 제작 도구인 ‘워드프레스’와 ‘그누보드’로 제작한 국내 웹사이트가 46만여개에 달하는 것으로 나타났다. 국내 웹 환경은 호스팅 의존도가 높아 호스팅 업체들의 보안 역량과 신속한 조치가 중요하다는 분석이 나온다.워드프레스 못지않은 ‘그누보드’ 비중… 호스팅 이용률 높아28일 가 에스케어와 조사한 바에 따르면, 해외 도구인 워드프레스를 활용해 제작된 국내 사이트는 24만1",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146844",
+    "date": "2026-10-28 18:04:51"
+  },
+  {
+    "source": "boannews",
+    "title": "인도 최대 국영은행 SBI, 고객정보 3897건 다크웹 유출…해킹 경로 '미궁'",
+    "desc": "인도 국영은행인 인도국영은행(SBI)의 고객 개인정보 수천 건이 다크웹에서 발견되면서 금융정보 유출 우려가 커지고 있다. 해커가 대규모 은행 자료를 판매하겠다고 주장한 가운데 SBI는 일부 고객정보의 외부 노출을 인정했지만 정확한 유출 경로와 피해 규모는 파악하지 못한 상태다.최근 SBI가 증권거래소에 제출한 공시에 따르면 은행은 다크웹에서 확보한 약 37만5000건의 자료를 분석해 고객 개인정보가 포함된 기록 3897건을 확인했다. 다만 은행은 이 수치가 잠정적인 조사 결과이며 실제 정보의 진위와 노출 범위에 대해서는 추가 확인이",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146620",
+    "date": "2026-10-28 17:11:19"
+  },
+  {
+    "source": "boannews",
+    "title": "씨게이트, 2027 회계연도 1분기 매출 42억달러로 수익성·현금창출 동반 성장",
+    "desc": "씨게이트 테크놀로지가 2027 회계연도(FY27) 1분기 매출 42억3300만달러를 기록하며 높은 수익성과 현금 창출 능력을 다시 한번 입증했다. 씨게이트는 FY27 1분기 GAAP(일반회계기준) 기준 매출총이익률 57.3%, 영업이익률 48.8%, 순이익 17억6100만달러를 기록했다고 발표했다. 비GAAP 기준으로는 매출총이익률 57.8%, 영업이익률 50.7%, 순이익 17억8100만달러를 달성했다.희석주당순이익(EPS)은 GAAP 기준 7.59달러, 비GAAP 기준 7.68달러를 기록했다. 전년 동기 GAAP 기준 2.43달",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146843",
+    "date": "2026-10-28 16:59:04"
+  },
+  {
+    "source": "boannews",
+    "title": "디웨이브, 양자 어닐링 + 게이트 기술 동시 제공... “국내 산업 최적화 문제 해결”",
+    "desc": "디웨이브(D-Wave)가 양자 컴퓨팅을 활용한 산업 분야 최적화 기술을 앞세워 국내 및 아시아 시장 공략에 나선다. 이를 위해 LG CNS와 협력한다. 양자 어닐링과 게이트 방식 등 두 가지 주요 양자 컴퓨팅 기술을 동시에 제공한다는 계획이다. 앨런 바라츠 디웨이브 CEO는 28일 서울 광화문 포시즌스호텔에서 열린 ‘큐비츠 아시아 2026’에서 “양자 컴퓨팅은 고난도 연산 문제를 해결하기 위한 에너지 효율적 컴퓨팅”이라며 “현재 인공지능(AI)과 고성능 컴퓨팅의 전력 문제를 해결할 핵심 대안”이라고 말했다. 그는 “디웨이브 양자 어",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146842",
+    "date": "2026-10-28 15:55:21"
+  },
+  {
+    "source": "boannews",
+    "title": "[PHP 파장] 국내 대학 5곳, ‘PHP2셸’ 노출됐나... 취약 가능성 커 패치 시급",
+    "desc": "국내 지방 소재 대학교 5곳이 세계 웹사이트에 널리 사용되는 프로그래밍 언어 PHP의 치명적 보안 취약점 ‘PHP2셸’(PHP2Shell) 위협에 노출된 상태로 메인 홈페이지를 운영 중인 것으로 추정된다. 이는 외부에 PHP 버전을 노출하고 있는 경우만 집계한 것으로, 적지 않은 대학들이 PHP2셸에 노출돼 있을 가능성을 배제할 수 없다. 이런 가운데 최근 PHP2셸을 악용한 공격이 실제 벌어지고 있는 만큼, 취약한 상태로 운영되고 있는 웹사이트에 대한 신속한 패치가 필요한 실정이다. 외부에서 PHP 버전을 직접 확인할 수 있다는",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146837",
+    "date": "2026-10-28 15:45:53"
+  },
+  {
+    "source": "boannews",
+    "title": "[카드뉴스] \"GPT와 음성 대화했을 뿐인데\"… 목소리 톤·억양까지 털리는 '생체 데이터' 유출 주의보",
+    "desc": "생성형 AI와 나눈 음성 대화는 단순 휘발성 대화가 아니며, 이용자의 목소리 톤과 억양 등 고유 생체 식별 데이터가 클라우드에 영구 저장될 수 있다. 무기한 보관된 음성 데이터가 AI 모델 재학습에 활용될 경우 향후 딥페이크 음성 복제 및 사회공학적 사기 범죄의 표적이 될 위험이 존재한다. 피해를 예방하기 위해 설정에서 '음성 데이터 모델 학습 활용'을 끄고 오디오 캐시를 정기적으로 삭제하며, 민감 정보의 음성 발화를 지양해야 한다.",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146836",
+    "date": "2026-10-28 14:48:24"
+  },
+  {
+    "source": "boannews",
+    "title": "중기부 '스케일업 팁스' 선정으로 날개 단 센스톤, OT 보안 허브 고도화",
+    "desc": "센스톤이 중기부 스케일업 팁스에 최종 선정돼 국내 기반시설과 산업현장 OT 보안 강화에 나선다.OTAC 원천기술 기반 OT 보안 전문기업 센스톤(대표 유창훈)은 중소벤처기업부와 중소기업기술정보진흥원(TIPA) 주관 ‘2026년 스케일업 팁스(특화형 2차)’에 최종 선정됐다고 28일 밝혔다.이번 과제로 30억원의 연구개발비를 확보한 센스톤은 OT 인증보안 게이트웨이 ‘OTAC Trusted Access Gateway’(TAG)를 인증 후 세션·권한 제어 등 OT 보안 핵심 기능을 아우르는 허브로 확장·개발한다.센스톤이 선정된 '스케일",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146835",
+    "date": "2026-10-28 14:27:40"
+  },
+  {
+    "source": "boannews",
+    "title": "오마다, 알파원헬스케어에 통합 네트워크 구축… 의료 인프라 안정성 강화",
+    "desc": "기업용 네트워크 솔루션 전문 브랜드 오마다(Omada)가 경기도 안산 소재의 종합 건강검진센터 알파원헬스케어에 고성능 통합 유·무선 네트워크 인프라를 성공적으로 구축했다고 발표했다.이번 프로젝트는 약 500평 규모의 대형 검진센터 공간 내에서 전자의무기록(EMR), 의료영상저장전송시스템(PACS), 처방전달시스템(OCS) 등 핵심 의료 정보 시스템과 각종 진단 장비, 직원 업무용 단말, 방문객용 Wi-Fi를 과부하 없이 안정적으로 운영하기 위해 추진됐다.의료기관 특성상 순간적인 네트워크 마비나 장애는 진료 및 검사 중단 등 중대한",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146834",
+    "date": "2026-10-28 14:07:46"
+  },
+  {
+    "source": "boannews",
+    "title": "국립소방연구원, 짙은 연기 뚫는 ‘시각 강화 열화상 카메라’ 개발해 전국 4개 관서 시범 배치",
+    "desc": "소방청 국립소방연구원(원장 김연상)이 화재 현장의 짙은 농연과 암흑 속에서도 인명과 장애물을 명확하게 식별할 수 있는 ‘소방용 시각 강화 열화상 카메라’를 개발하고, 전국 4개 소방관서에 시범 배치해 11월 27일까지 현장 적용성 검증을 추진한다고 밝혔다.그동안 밀폐된 구획 화재 현장은 고농도 연기와 불완전 연소 물질로 인해 가시거리가 극도로 짧아져, 대원들의 진입 안전사고 위험이 크고 신속한 구조대상자 탐색에 어려움을 겪어왔다.이를 해결하고자 국립소방연구원은 한국전기연구원(KERI)의 저전력 FPGA(Field-Programmab",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146832",
+    "date": "2026-10-28 13:47:27"
+  },
+  {
+    "source": "boannews",
+    "title": "기후에너지환경부, 충북 청주 국도 17호선에 ‘AI 로드킬 예방 시스템’ 시범 운영",
+    "desc": "기후에너지환경부(장관 김성환)가 충청북도 청주시 서원구 남이면 척산리 국도 17호선 구간에 인공지능(AI) 기반 ‘동물 찻길 사고(로드킬) 예방 시스템’을 구축하고 본격적인 시범 운영에 들어간다.동물 찻길 사고는 야생동물 생사뿐 아니라 운전자의 인명 및 재산 피해, 나아가 2차 추돌 사고로 이어지는 주요 위험 요인이다. 특히 교차로나 도로 진출입로는 생태통로나 유도 울타리 같은 물리적 차단 시설을 설치하기 힘들어 고도화된 감지 솔루션 도입이 시급한 실정이었다.이번에 적용되는 예방 시스템은 도로 변 CCTV 영상이 야생동물의 출현을",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146833",
+    "date": "2026-10-28 13:45:39"
+  },
+  {
+    "source": "boannews",
+    "title": "선박 사이버 규제 파고 넘는다... 싸이터 ‘CYTUR-SBOM’, 글로벌 선급 인증 확보",
+    "desc": "국제 해운업계의 사이버 복원력 규제가 강화되는 가운데, 싸이터의 선박 기자재 사이버보안 관리 플랫폼 ‘CYTUR-SBOM’이 일본선급(ClassNK)과 이탈리아선급(RINA)으로부터 기술 인증 및 신기술 승인을 동시에 획득했다고 28일 밝혔다.이번 성과는 국제선급협회(IACS)의 사이버 복원력 공통규칙인 ‘UR E26’과 ‘UR E27’이 본격 적용되는 시점에 거둔 결실이다. 이들 규정은 2024년 7월 1일 이후 건조 계약이 체결된 선박을 대상으로 컴퓨터 기반 시스템(CBS)의 하드웨어·소프트웨어 자산 목록과 네트워크 구성 정보를",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146831",
+    "date": "2026-10-28 11:50:10"
+  },
+  {
+    "source": "boannews",
+    "title": "CISA, ‘PHP2셸’ KEV 지정…취약점 실제 악용 공식 인정",
+    "desc": "미국 사이버보안 당국이 ‘PHP2셸’(PHP2Shell)을 ‘실제 악용된 취약점’(KEV)으로 지정했다. PHP2셸이 실제로 공격자들에게 악용되고 있다는 방증이다. 미국 사이버보안·인프라보안국(CISA)은 26일(현지시간) PHP2셸 취약점 2건(CVE-2026-109618, CVE-2026-109619)을 KEV 목록에 등록했다. PHP2셸을 공격자들이 실제로 악용되고 있다는 것을 미국 보안 당국이 공식적으로 인정한 셈이다.실제 PHP2셸은 북한 해커 조직으로 알려진 ‘라자루스’가 공격에 악용하려는 정황이 포착되기도 했다. 아델",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146830",
+    "date": "2026-10-28 11:46:22"
+  },
+  {
+    "source": "boannews",
+    "title": "씨게이트, HAMR·SMR 기반 대용량 스토리지 상호운용성 검증... 브로드컴·MS 애저와 맞손",
+    "desc": "씨게이트 테크놀로지(Seagate Technology, 대표 데이브 모슬리)가 폭증하는 인공지능(AI) 및 클라우드 워크로드에 발맞춰 대용량 스토리지의 효율적 확장을 지원하는 고성능 상호운용성 성과를 발표했다.씨게이트의 차세대 ‘모자이크’(Mozaic) 드라이브는 열보조자기기록(HAMR) 기술에 데이터 트랙을 고밀도로 겹쳐 배치하는 기와식 자기기록(SMR) 방식을 결합해 저장 용량을 극대화한 제품이다.해당 드라이브는 브로드컴의 호스트 버스 어댑터(HBA) 승인 공급업체 목록(AVL)에 최초이자 유일하게 등재된 SMR 하드 드라이브로",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146828",
+    "date": "2026-10-28 11:46:06"
+  },
+  {
+    "source": "boannews",
+    "title": "[인사] 개인정보보호위원회",
+    "desc": "◇서기관 승진△혁신기획담당관실 김푸르나△개인정보보호정책과 이정수△조사총괄과 나일청△조사총괄과 장수용 ◇과학기술서기관 승진△신기술개인정보과 최재민(2026. 10. 28. 자)",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146827",
+    "date": "2026-10-28 11:33:24"
+  },
+  {
+    "source": "boannews",
+    "title": "스타트업 금융 플랫폼 ‘고위드’ 해킹... 고객사 정보 유출 비상",
+    "desc": "B2B 핀테크 기업 고위드(Gowid)의 지출최적화 서비스에서 외부 침해사고가 발생해 고객사 담당자 개인정보와 청구 정보가 유출됐다. 공격자는 시스템 내부 결제 기능을 파고들어 비정상 반복 결제를 유발했으나, 회사 측은 결제 전액을 즉시 취소하고 비정상 접근 경로를 차단했다고 공지했다.고위드 공지에 따르면, 이번 침해사고는 지난 27일 확인됐다. 사고는 지출최적화 서비스 중 ‘GWS 구독 이용료’ 청구·결제 기능에서 발생했으며, 주력 서비스인 고위드 법인카드는 이번 사고와 무관하게 정상적으로 이용할 수 있다고 밝혔다.이번 사고로 유",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146826",
+    "date": "2026-10-28 11:32:34"
+  },
+  {
+    "source": "boannews",
+    "title": "AI스페라, 인터폴 사이버범죄 분석 지원… ‘게이트웨이’ 이니셔티브 참여",
+    "desc": "AI스페라(대표 강병탁)가 자사 사이버 위협 인텔리전스(CTI) 플랫폼 ‘크리미널 IP’(Criminal IP)를 기반으로 국제형사경찰기구(인터폴)의 사이버범죄 분석을 지원한다.AI스페라는 인터폴과 글로벌 사이버범죄 대응을 위한 협약을 체결하고, 인터폴의 ‘게이트웨이’(Gateway) 이니셔티브에 참여한다고 28일 밝혔다.이번 협약은 AI스페라의 사이버 위협 인텔리전스 플랫폼 ‘크리미널 IP’(Criminal IP)를 기반으로 사이버범죄 분석에 필요한 정보와 기술 전문성을 공유하기 위해 마련됐다. AI스페라는 크리미널 IP의 위협",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146825",
+    "date": "2026-10-28 11:27:50"
+  },
+  {
+    "source": "boannews",
+    "title": "국내 AI·IT·보안 담당자 10명 중 9명 ‘섀도우 AI’ 쓴다",
+    "desc": "국내 주요 기업 및 기관의 인공지능(AI), IT, 보안 담당자 10명 중 9명은 조직 내에서 승인되지 않거나 직원이 임의로 업무에 사용하는 AI, 즉 ‘섀도우 AI’를 사용하는 것으로 나타났다. 섀도우 AI는 내부 데이터 유출, 규제 위반 등 보안 위협이 존재하기 때문에 섀도우 AI로 인한 리스크를 최소화해야 한다는 목소리가 나온다. 파수AI는 국내 주요 기업 및 기관의 AI, IT, 보안 담당자 151명을 대상으로 자체 진행한 설문조사 결과를 바탕으로 한 ‘통제 밖의 지능-국내 조직의 섀도우 AI 사용 실태와 대응 현황’ 보고서",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146824",
+    "date": "2026-10-28 11:21:03"
+  },
+  {
+    "source": "boannews",
+    "title": "파이오링크, EDR과 MDR 결합한 보안관제 제공",
+    "desc": "정보보안 및 네트워크 전문기업 파이오링크(대표 조영철)가 엔드포인트 탐지·대응(EDR) 솔루션 공급과 관리형 탐지·대응(MDR) 서비스를 결합한 고객 맞춤형 보안관제 사업을 추진한다고 28일 밝혔다. 기존 보안관제 역량을 서버와 업무 단말 등 엔드포인트 영역으로 확장한다는 게 회사 측 설명이다.최근 랜섬웨어, 지능형 지속 위협(APT), AI 기반 자동화 공격 등 사이버 위협이 고도화되면서 네트워크 경계뿐 아니라 서버와 사용자 단말에서 발생하는 위협을 신속하게 탐지하고 대응하는 역량이 중요해지고 있다. 하지만 EDR을 도입하더라도",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146823",
+    "date": "2026-10-28 11:19:22"
+  },
+  {
+    "source": "boannews",
+    "title": "[2026 대한민국 상장기업 리포트-1] 영상보안 기업 13곳, 실적은 양극화, AI는 가속화... 갈림길에 선 영상보안 업계",
+    "desc": "2026년 상반기 국내 보안산업은 기술 혁신과 시장 환경 변화가 동시에 맞물리며 새로운 전환점을 맞이했다. 생성형 AI 확산에 따른 산업 구조 변화가 본격화되는 가운데 기업들은 사업 포트폴리오 재편과 신성장동력 확보에 속도를 냈고, 일부는 신규 시장 개척과 투자 확대를 통해 미래 경쟁력 강화에 나섰다. 반면 경영 효율화와 재무 건전성 확보, 시장 신뢰 회복이라는 과제에 직면한 기업들도 적지 않았다. 특히 상장 보안기업들의 실적은 단순한 매출 규모를 넘어 각 기업이 어떤 전략을 선택하고 어떤 분야에 역량을 집중하고 있는지를 보여주는",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146767",
+    "date": "2026-10-28 11:19:00"
+  },
+  {
+    "source": "boannews",
+    "title": "마이크로소프트, 이머드라 인증서 7개 윈도우서 신뢰 철회",
+    "desc": "마이크로소프트가 인증기관 이머드라(eMudhra)의 최상위 인증서 6개 등 7개를 윈도우 신뢰 목록에서 빼는 비정기 업데이트를 26일 배포했다. 엣지 브라우저에서도 27일 같은 인증서 7개가 빠진다.인증서는 웹사이트나 프로그램이 진짜임을 증명하는 디지털 신분증이다. 최상위 인증서가 중간 인증서를 보증하고, 중간 인증서가 다시 개별 웹사이트 인증서를 보증한다.발단은 이머드라 중간 인증서 8개의 비밀 키다. 2025년 4월 만들어진 이 키들은 값이 256보다 작아 숫자 256개만 대입하면 누구나 찾을 수 있었다. 이 키로는 정상 웹사이",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146811",
+    "date": "2026-10-28 11:05:00"
+  },
+  {
+    "source": "boannews",
+    "title": "“2단계 심사 도입 및 재도전 규제 폐지” 조달청, ‘해외조달 유망기업(G-PASS)’ 제도 개편",
+    "desc": "조달청(청장 백승보)이 해외 조달시장 진출 유망기업(G-PASS기업)의 역량 검증과 사후관리를 한층 강화하는 한편, 기업 현장의 행정적 부담은 줄여주는 방향으로 ‘G-PASS 지정 제도’를 전면 개편한다.이번 개정은 글로벌 시장에서 실질적인 경쟁력을 갖춘 기업을 체계적으로 발굴하고, 지정 이후의 성과 관리를 내실화하는 데 초점을 맞췄다. 해외 진출 역량에 대한 사전·사후 검증은 촘촘히 옭아매되, 성과가 입증된 우수 기업이나 재도전 기업에 대해서는 진입 장벽을 대폭 낮추겠다는 취지다.우선 G-PASS기업 지정심사 체계를 전면 개편해",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146821",
+    "date": "2026-10-28 10:57:27"
+  },
+  {
     "source": "boannews",
     "title": "그룹아이비, 프로스트앤설리번 ‘ERMM 플랫폼’ 리더 선정... 혁신 지수 최고점",
     "desc": "그룹아이비(Group-IB)는 시장조사기관 프로스트앤설리번이 발표한 ‘2026 기업 리스크 완화 및 관리(ERMM) 프로스트 레이더’에서 비저너리 리더(Visionary Leader)로 선정됐다고 28일 밝혔다.프로스트앤설리번은 외부 공격 표면뿐 아니라 기업 내부 자산 위험까지 종합 평가하는 ‘기업 리스크 완화 및 관리’(ERMM) 플랫폼 공급업체 30여개사를 심사해 15개 대표 기업을 선별했다. 그룹아이비는 ‘공격 표면 관리’(ASM)와 ‘사이버 위협 인텔리전스’(CTI), ‘디지털 리스크 보호’(DRP)를 유기적으로 통합한 성과",
@@ -280,125 +511,6 @@
     "date": "2026-10-27 15:17:25"
   },
   {
-    "source": "boannews",
-    "title": "“선박 보안 기술 검증”... KISA, 선박 사이버 침해 대응 성능 시험장 첫 공개",
-    "desc": "한국인터넷진흥원(KISA)이 실제 선박 운항 환경에서 사이버 공격을 재현하고, 보안 기술 검증이 가능한지 점검하는 시험장을 처음으로 공개했다. KISA는 27일 국립한국해양대학교와 함께 선박 사이버 침해사고 대응 기술 실증을 위한 ‘선박 사이버 침해사고 성능 시험장(테스트 베드) 공동 시연회’를 부산 국립한국해양대학교에서 개최했다. KISA는 과학기술정보통신부와 정보통신기획평가원의 지원을 받아 지난해 4월부터 ‘선박 사이버 침해사고 분석 기술 및 탐지·대응 기술 개발’ 연구를 수행 중이다. 같은해 7월에는 국립한국해양대학교 등과 업",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146761",
-    "date": "2026-10-27 15:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "“AI 장애 분석, 정답은 데이터 표준화”... 크래프톤·올리브영의 실전 관제 실험",
-    "desc": "기업 현장에 AI 기반 장애 분석과 자율 관제 도구가 빠르게 보급되고 있지만, 파편화된 모니터링 데이터의 ‘표준화’와 인간의 최종 검증 없이는 AI 에이전트가 제성능을 낼 수 없다는 현업 기술 리더들의 진단이 나왔다.27일 서울 코엑스에서 열린 ‘데이터독 서밋 서울 2026’에서 오른 크래프톤과 CJ올리브영은 대규모 글로벌 트래픽 환경에서 시행착오 끝에 정립한 실전 AI 옵저버빌리티 아키텍처를 공유했다.크래프톤은 전사 게임을 뒷받침하는 ‘크래프톤 퍼블리싱 플랫폼’(KPP)의 ‘평균 복구 시간’(MTTR)을 단축하기 위한 노력을 소개",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146780",
-    "date": "2026-10-27 14:54:11"
-  },
-  {
-    "source": "boannews",
-    "title": "“AI 시대 승부처는 자율성”... 데이터독, ‘관측·보호·실행’ 청사진 제시",
-    "desc": "데이터독(Datadog)이 개발·운영·보안 전 주기를 하나로 묶는 차세대 ‘자율 운영’(Autonomy) 비전을 선언했다. 생성형 AI 확산으로 코드 배포 속도가 빨라진 이면에서 시스템 복잡성과 보안 공격 표면이 폭증하자, 파편화된 도구를 단일 플랫폼으로 통합해 제어하겠다는 전략이다.데이터독은 27일 서울 코엑스에서 ‘데이터독 서밋 서울 2026’을 열고 차세대 AI 옵저버빌리티 및 보안 로드맵을 발표했다. 엄수창 데이터독 한국 지사장은 “AI가 소프트웨어 개발부터 운영까지 모든 방식을 바꾸는 시대의 핵심 화두는 인간의 통제 아래",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146778",
-    "date": "2026-10-27 14:33:01"
-  },
-  {
-    "source": "boannews",
-    "title": "[PHP 파장] PHP2셸, 실제 서버 침투 정황 첫 확인... 510만대 노출에 보안 우려",
-    "desc": "PHP 서버를 겨냥한 치명적 보안 취약점 ‘PHP2셸’(PHP2Shell)이 단순 공격 시도를 넘어 실제 원격코드실행(RCE)으로 이어진 정황이 확인됐다. 인터넷에 노출된 PHP 서버가 510만대를 웃도는 가운데 패치가 없는 별도의 취약점까지 공개되면서 서버 보안에 대한 우려가 커지고 있다.27일 보안 업계에 따르면 아델 카리미 퍼플렉시티 탐지·대응 책임자는 공격자들의 활동을 관찰하기 위해 구축한 허니팟에서 PHP2셸 취약점을 이용한 원격 명령 실행을 확인했다고 밝혔다. 그동안 공개된 공격 코드와 침투 시도가 실제 악용으로 이어졌다",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146756",
-    "date": "2026-10-27 14:15:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[2026 제로트러스트 보안 솔루션 리포트] 제로트러스트, 개념 검토는 끝났다... 이제는 ‘실증과 확산’",
-    "desc": "최근 진행된 국정감사에서 제로트러스트 관련 투자가 줄어든 점이 이슈가 됐다. 최형두 국회 과학기술정보방송통신위원회 위원이 제로트러스트 예산이 2025년 62억원에서 2026년 45억원으로 27% 줄었다면서, 미국과 일본이 관련 정책을 강화하고 있는 상황과 대비된다고 지적한 것이다. 그렇다면 실제 한국의 제로트러스트 산업은 어떻게 흘러가고 있을까?국내외에서 발생한 대형 보안사건들은 공격자가 목표물을 직접 해킹하기보다는 ‘공급망’(서드파티)이나, 다른 곳에서 유출된 ‘자격증명’을 통해 정상 사용자로 위장한 후 횡적 이동(Lateral",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146775",
-    "date": "2026-10-27 14:05:24"
-  },
-  {
-    "source": "boannews",
-    "title": "쿤텍  “AI 공격 현실된 시대, 숨은 자산 ‘빨리’ 가시화”",
-    "desc": "“AI 에이전트 시대에는 자산 가시화와 취약점 및 위협 탐지, 대응 시간을 가장 짧게 만드는 것이 피해를 최소화하고 공격을 막는 방법입니다. 완벽하게 막겠다는 약속만큼이나 공격자보다 빠르게 위협을 발견하고, 차단하고, 조치하는 것이 중요합니다.”최근 PHP2셸(PHP2Shell)이나 노드2셀(Node2Shell) 등 알려진 취약점을 노린 공격의 확산 속도가 전례 없이 빨라진 가운데, 쿤텍이 AI의 도입부터 운영, 데이터 활용에 이르는 ‘전 주기 통합 보안 체계’를 제안했다.쿤텍은 27일 서울 양재동 엘타워에서 기자간담회를 열고 자산",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146773",
-    "date": "2026-10-27 13:43:27"
-  },
-  {
-    "source": "boannews",
-    "title": "포티넷 “PHP2셸, 보안·인프라·애플리케이션 팀 공동 대응해야”",
-    "desc": "‘PHP2셸’ (PHP2Shell) 대응을 위해서는 보안, 애플리케이션, 인프라 팀이 함께 대응해야 한다는 제언이 나왔다. 취약점의 영향을 받는 환경을 파악하고, 업데이트 배포, 임시보호, 침해여부 조사 등 다방면의 대응이 필요하다는 이유에서다. 글로벌 네트워크 보안 기업 포티넷(대표 켄 지)은 27일 PHP 런타임에서 발견된 치명적 원격 코드 실행(RCE) 취약점 PHP2셸 대응 가이드를 공개했다. PHP2셸은 PHP 런타임에서 발견된 치명적 취약점 2건을 일컫는 말이다. 두 취약점은 취약점 심각도 평가 기준인 CVSS 4.0에서",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146770",
-    "date": "2026-10-27 13:13:44"
-  },
-  {
-    "source": "boannews",
-    "title": "KB국민은행 개인정보 유출 추가 확인…119명→2210명 확산",
-    "desc": "KB국민은행의 개인(신용)정보 유출 사고 피해 규모가 당초 119명에서 2000명 이상으로 늘었다.KB국민은행은 26일 ‘기존 개인(신용)정보 유출 관련 추가 안내’ 공지를 통해 2일 공지한 정보유출 사고에 대한 후속 점검 과정에서 최초 확인된 119명 이외에 2091명(고객 1631명, 전현직 임직원 460명)의 개인(신용) 정보가 유출된 사실을 확인했다고 밝혔다. 이로써 KB 국민은행의 유출사고 피해 규모는 총 2210명이 됐다. 이번에 확인된 유출은 2일 발생한 사고와 동일한 사고다. 기존 정보유출 원인에 대한 분석 과정에서",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146769",
-    "date": "2026-10-27 11:51:18"
-  },
-  {
-    "source": "boannews",
-    "title": "이지서티, 공공기관에 ‘사용자 중심’ 개인정보 비식별 체계 구축",
-    "desc": "개인정보보호 전문 기업 이지서티(대표 김동례)가 공공기관에 ‘임직원 참여형’ 개인정보 비식별 처리 체계를 구축했다. 이지서티는 익명의 공공기관에 개인정보 필터링 솔루션 ‘유프라이버시 세이퍼 V4.0’(U-PRIVACY SAFER V4.0)을 기반으로 한 사용자 중심 개인정보 비식별 지원체계를 구축했다고 27일 밝혔다. 사용자가 직접 문서 내 개인정보 포함 여부를 최종 확인하고 세밀하게 비식별 조치를 수행할 수 있도록 기능을 대폭 강화한 체계다. 콘텐츠 등록 단계에서 제공되는 자동 탐지·마스킹 기능에 임직원의 직접 참여형 비식별 처리",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146768",
-    "date": "2026-10-27 11:22:37"
-  },
-  {
-    "source": "boannews",
-    "title": "HPE, 기업용 와이파이 보안 취약점 72개 발견…8개는 ‘최고 위험’ 등급",
-    "desc": "휴렛팩커드엔터프라이즈(HPE)의 기업용 무선 네트워크 운영체제에서 보안 취약점 72개가 한꺼번에 발견됐다. 이 가운데 8개는 최고 위험 등급으로 분류됐으며 일부 결함은 공격자가 로그인 절차 없이 원격에서 장비를 장악하는 데 악용될 수 있어 기업 네트워크 관리자들의 주의가 요구된다.최근 HPE는 기업용 무선 네트워크 운영체제인 아루바OS(ArubaOS)의 취약점 72개를 수정하는 보안 업데이트를 공개했다. 이번 취약점은 AOS-8과 AOS-10 두 계열에 영향을 미친다. HPE는 기업 고객들에게 가능한 한 신속하게 보안 패치를 적용할",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146736",
-    "date": "2026-10-27 11:18:44"
-  },
-  {
-    "source": "boannews",
-    "title": "KISIA, 유망 보안 스타트업 대상 투자상담회 개최",
-    "desc": "한국정보보호산업협회(KISIA)가 유망 정보·물리보안 스타트업을 위한 투자상담회를 개최했다. KISIA는 유망 정보·물리보안 스타트업의 투자유치 역량 강화를 위한 ‘2026년 유망 보안 스타트업 투자 상담회’를 최근 판교 정보보호 클러스터에서 개최했다고 27일 밝혔다. 이번 투자상담회에는 보안 스타트업 8개사와 사이버보안 펀드 운용사 2개사가 참여했다. 투자유치를 희망하는 보안 스타트업을 대상으로 투자 전문가와의 일대일 맞춤형 상담을 제공하는 방식으로 열렸다. 참여 기업들은 투자 기관과의 개별 상담을 통해 IR 자료 작성 및 투자유",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146766",
-    "date": "2026-10-27 11:12:53"
-  },
-  {
-    "source": "boannews",
-    "title": "브로틀리 보안 결함, Node.js 넘어 파이썬·닷넷 확산... 원격코드실행 위험",
-    "desc": "구글이 개발한 압축 라이브러리 ‘브로틀리’(Brotli)에서 메모리 손상을 일으키는 보안 취약점이 발견되면서 주요 소프트웨어 개발 환경에 긴급 업데이트가 이어지고 있다. 노드제이에스(Node.js)에서 처음 확인된 결함이 파이썬과 마이크로소프트 닷넷(.NET) 등에도 영향을 미치는 것으로 드러났으며, 원격코드실행(RCE) 가능성까지 제기됐다.27일 보안 업계에 따르면 구글과 마이크로소프트(MS)를 비롯한 주요 개발사들은 브로틀리 압축 해제 과정에서 발생하는 취약점 ‘CVE-2026-111497’에 대응하기 위해 수정 버전을 배포하고",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146757",
-    "date": "2026-10-27 10:43:15"
-  },
-  {
-    "source": "boannews",
-    "title": "[인터뷰] 이인호 태양테크 대표, “스마트폴과 스마트팩토리로 미래 도시 인프라 시장 선도”",
-    "desc": "보통 사람들은 영상보안 시스템을 이야기할 때 CCTV 카메라와 지능형 영상분석 소프트웨어를 먼저 떠올린다. 하지만 그 첨단 장비들이 24시간 365일 비바람 속에서도 안정적으로 운영될 수 있도록 지지하고 보호하는 물리적 기반 인프라 역시 결코 빼놓을 수 없는 핵심 요소다. 약 20년간 CCTV용 금속기둥(폴)과 제어함체를 전문적으로 설계·제작해 온 태양테크는 보이지 않는 곳에서 대한민국 영상보안 인프라를 묵묵히 지탱해 온 기업이다. 태양테크는 단순 금속구조물 가공을 넘어 조달청 우수제품과 혁신제품 지정, 업계 유일의 품질보증조달물품",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146727",
-    "date": "2026-10-27 10:32:00"
-  },
-  {
-    "source": "boannews",
-    "title": "밀집 군중 안전에서 산업 폐쇄망 안전까지... 디지털트윈연구자포럼,  2026 추계학술대회 특별세션 개최",
-    "desc": "디지털트윈연구자포럼(DTRF)은 최근 강릉 세인트존스호텔에서 열린 ‘한국인터넷정보학회 2026 추계 학술대회’에서 ‘디지털트윈연구자포럼 특별세션’을 개최했다고 27일 밝혔다. 디지털트윈 분야 최신 연구개발 성과를 학계 연구자들과 공유하고 논의했다. 특별세션엔 한국전자기술연구원(KETI), 한국전자통신연구원(ETRI), 디토닉 연구진이 총 9편의 연구논문을 발표했다. 디지털트윈 연합기술부터 자율형 디지털트윈까지 연구 성과 9편 공유세션 1에선 KETI 연구진이 △디지털 트윈 환경을 위한 레이캐스팅 기반 UIUX 동적 배치 방법 △공연",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146762",
-    "date": "2026-10-27 10:24:14"
-  },
-  {
-    "source": "boannews",
-    "title": "지란지교소프트, 생성형 AI 보안 솔루션 ‘AX필터 2.0’ GS인증 1등급 획득",
-    "desc": "지란지교소프트(대표 박승애·유병완)는 자사 생성형 인공지능(AI) 정보 유출 방지 솔루션 ‘AX필터 2.0’이 굿소프트웨어(GS) 인증 1등급을 획득했다고 27일 밝혔다. AX필터 2.0은 생성형 AI에 입력하는 프롬프트를 전송 전 검사해 개인정보 등을 마스킹하거나 전송을 차단하는 보안 솔루션이다. 사내 보안 정책에 따라 생성형 AI 서비스별 접속 허용 및 차단, 부서별 이용 시간 등을 설정할 수 있다. GS인증은 소프트웨어의 기능, 성능, 사용성, 보안성 등을 시험·평가하는 국가 품질 인증 제도다. 등급은 1등급과 2등급으로 나뉜",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146758",
-    "date": "2026-10-27 09:48:46"
-  },
-  {
-    "source": "boannews",
-    "title": "“도구에서 주체로”... 한국정보공학기술사회 꼽은 2027년 생존 조건",
-    "desc": "AI가 인간의 명령을 기다리는 단순 ‘도구’를 넘어 스스로 목표를 세우고 다단계 업무를 완수하는 ‘주체’로 진화하면서 기업 보안 지형이 뿌리째 흔들리고 있다. 자율화된 에이전트의 확산은 업무 생산성을 끌어올리는 반면, 통제되지 않은 기계 권한과 설정 오류를 노리는 전례 없는 공격 표면을 노출하기 때문이다.한국정보공학기술사회(KAPIE) 미래융합기술원은 이 같은 변화를 진단한 ‘2027년 10대 전략 기술 트렌드’ 보고서를 발표하고 핵심 화두로 ‘인공지능 자율화 생태계의 도래와 초자동화 사이버 방어 전략’을 제시했다. 올해 화두였던",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146754",
-    "date": "2026-10-27 09:30:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[2026 ITS 리포트] 강릉 ITS 세계총회로 본 대한민국 ITS Next 30 Years의 조건",
-    "desc": "집중호우가 쏟아지는 밤, 도심 지하차도에 물이 차오르기 시작했다고 가정해 보자. 수위 센서가 이상을 감지하고, 교통정보센터는 진입 차단 신호를 내보내며, 도로전광판과 내비게이션은 우회 경로를 안내한다. 이 과정에서 재난 장비도 중요하지만, 지능형교통체계(ITS)의 역할도 크다.지난 10월 19일부터 23일까지 강릉 올림픽파크 일원에서 열린 ‘2026 강릉 ITS 세계총회’에서도 이 흐름이 확인됐다. ITS는 교통 기술을 넘어 위험을 감지하고, 알리고, 대응을 지원하는 국가 안전 인프라가 됐다. 동시에 도로 장비와 차량, 관제센터가",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146729",
-    "date": "2026-10-27 07:30:00"
-  },
-  {
     "source": "thn",
     "title": "Hackers Infect 953 Online Stores With Scanner-Evading JavaScript, Mostly on Magento",
     "desc": "An unknown threat actor has infected 953 online stores, most of them running Magento, as part of a long-running campaign active since July 2025.\n\nAccording to Dutch e-commerce security company Sansec, the activity is designed to add a small piece of code to the store's pages that, when visited by un",
@@ -467,34 +579,6 @@
     "desc": "A malicious instruction file sitting in a developer's Downloads folder tried to make their AI coding agent install a known-malicious npm package, security firm&nbsp;Forever Security said&nbsp;in a report published last week.\n\nThe company caught the attempt on a real customer's machine and stopped th",
     "url": "https://thehackernews.com/2026/10/malicious-file-in-downloads-folder.html",
     "date": "2026-10-26T11:33:48"
-  },
-  {
-    "source": "boannews",
-    "title": "미래에셋생명, 사이버 침해사고로 개인정보 유출... “전사적 비상대응 가동”",
-    "desc": "미래에셋생명에서 사이버 침해사고가 발생해 고객 개인정보가 유출됐다. 금융권 전반의 보안 관리 강화 요구가 커지는 가운데 생명보험사 주요 시스템이 해커 공격을 허용해 비상이 걸렸다.미래에셋생명은 26일 “지난 25일 당사 일부 시스템의 이상 증상을 확인하고 사이버 침해사고를 인지해 긴급 대응 중”이라며 “외부 전문기관과 사고를 상세히 분석해 침해에 따른 개인정보 유출을 오늘 새벽 확인했다”고 공지했다.정확한 유출 대상과 항목은 현재 파악 중이다. 미래에셋생명은 사고 인지 즉시 전사적 비상대응체계를 가동하고, 공격 근원지 IP 차단과",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146752",
-    "date": "2026-10-26 16:01:14"
-  },
-  {
-    "source": "boannews",
-    "title": "“AI 기반 공격, 자산 식별·전문가·AI 도구 연계해야 대응 가능”",
-    "desc": "금융권 대상 인공지능(AI) 자율 침투테스트 도구 ‘아르텍스’(ARTEX) 악용 공격 여파가 이어지고 있는 가운데, 오펜시브 시큐리티 전문기업 케이알시큐리티(대표 박용운)가 전문 화이트해커들을 투입해 KB국민은행 사고 대응 보안 역량을 점검했다. 실제 침투테스트에 참여한 케이알시큐리티 소속 전문가들은 AI 기반 자동화 공격 위협이 고도화되는 상황에서 공격 표면 관리(ASM)와 숙련된 침투테스터의 중요성을 다시 한 번 체감했다는 후기를 남겼다. 케이알시큐리티는 26일 이번 금융권 사고와 관련해 KB국민은행의 사고 대응을 위한 보안 점",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146750",
-    "date": "2026-10-26 15:57:01"
-  },
-  {
-    "source": "boannews",
-    "title": "SDT,“기존 산업에 양자 보안 접목 QX 이끈다”",
-    "desc": "SDT(대표 윤지원)가 양자보안 기술이 적용된 양자보안 카메라를 앞세워 양자 기술의 산업 접목에 나선다.SDT는 내달 3-5일 서울 코엑스에서 열리는 ‘AIoT 국제전시회’에서 ‘양자전환(QX) 인더스트리얼 솔루션’을 선보인다고 26일 밝혔다. 양자 기술을 영상 관제, 공공시설 안전관리, 지하 기반시설 안전관리 등에 결합해 전통 산업을 확장한다. 이 회사는 예측 불가능한 순수 암호 키를 생성해 해킹 시도를 차단하는 양자난수생성기(QRNG)와 양자 컴퓨팅으로도 뚫을 수 없는 양자내성암호(PQC) 기술을 보유했다.이들 기술을 산업용 카",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146749",
-    "date": "2026-10-26 15:14:20"
-  },
-  {
-    "source": "boannews",
-    "title": "앤트로픽 AI, 보안 시험 도중 '돌발 행동'... 인간 사칭에 악성코드 유포 시도",
-    "desc": "앤트로픽의 인공지능(AI) 모델 ‘클로드 미토스 5’가 영국 정부의 사이버 보안 시험 도중 평가와 무관한 외부 개발자들의 오픈소스 프로젝트에 악성코드를 삽입하려 한 사실이 드러났다. AI가 실제 사람을 사칭해 코드 변경 승인을 요구하고 악성 행위가 발각된 뒤에도 공격을 이어가면서 자율형 AI의 통제 문제가 부각됐다.앤트로픽은 클로드 미토스 5를 대상으로 진행한 사이버 보안 평가에서 AI가 허용된 시험 범위를 벗어나 외부 개발자와 접촉한 사례를 확인했다. 앞서 영국 AI보안연구소(AISI)는 7월 이러한 문제를 인지했고, 이번에 앤트",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146730",
-    "date": "2026-10-26 15:00:00"
   },
   {
     "source": "thn",
@@ -614,89 +698,5 @@
     "desc": "AI agents paying for API calls with the&nbsp;x402 SDKs&nbsp;could sign a payment for their full balance of a supported token if a malicious API asked for it,&nbsp;security firm V12 said&nbsp;on October 22.\n\nThe cause was the SDKs' default client, which set no spending limit until releases on August ",
     "url": "https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html",
     "date": "2026-10-23T14:05:45"
-  },
-  {
-    "source": "thn",
-    "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
-    "desc": "Threat actors have been observed unsuccessfully attempting to exploit the newly disclosed PHP2Shell vulnerabilities to rope infected systems into a Mirai botnet variant called Potassium, as it emerges that weaponizing the flaws may be harder than previously thought.\n\nThe attacks aim to exploit CVE-2",
-    "url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
-    "date": "2026-10-23T13:10:45"
-  },
-  {
-    "source": "thn",
-    "title": "The AI Agent Nobody Owns: Watch Expert Webinar On Your Newest Insider Threat",
-    "desc": "Right now, there is probably an AI agent running on a laptop somewhere in your network. It stores API keys and database passwords, can access your internal systems, and works without anyone watching.\n\nNobody reviewed its access. Nobody owns it.\n\nIf an employee had that much reach with that little ov",
-    "url": "https://thehackernews.com/2026/10/the-ai-agent-nobody-owns-watch-expert.html",
-    "date": "2026-10-23T00:35:35"
-  },
-  {
-    "source": "thn",
-    "title": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks",
-    "desc": "Attackers are exploiting a zero-day SQL injection flaw in Arista's VeloCloud Orchestrator (VCO), the&nbsp;central management system&nbsp;for VeloCloud SD-WAN networks, the company said in an&nbsp;advisory&nbsp;on October 22.\n\nThe flaw lets anyone who can log in to the orchestrator, even with a read-",
-    "url": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
-    "date": "2026-10-23T00:35:17"
-  },
-  {
-    "source": "thn",
-    "title": "eMudhra to Exit Global SSL/TLS Business After 8 Intermediate CA Keys Found Easily Guessable",
-    "desc": "eMudhra, an Indian certificate authority (CA), will withdraw from its global SSL/TLS certificate business,&nbsp;its board decided on Thursday. The decision came five days after a researcher&nbsp;reported recovering the private keys&nbsp;of eight of its intermediate CA certificates.\n\neMudhra said it ",
-    "url": "https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html",
-    "date": "2026-10-22T23:42:43"
-  },
-  {
-    "source": "thn",
-    "title": "ThreatsDay: AI Secrets Leak, PingCAP Source Theft, Signal Hang-Up Flaw, Laravel Auth Bypass + 21 More",
-    "desc": "This week has already been rough for cybersecurity. Critical PHP and GitLab RCE flaws, serious Linux security bugs, compromised eMudhra certificates, a Node.js RCE flaw, a hacked LiteLLM release, and hundreds of hijacked Tor relays. That's a lot to deal with in just a few days. And the week isn't ev",
-    "url": "https://thehackernews.com/2026/10/threatsday-ai-secrets-leak-pingcap.html",
-    "date": "2026-10-22T23:15:44"
-  },
-  {
-    "source": "thn",
-    "title": "Two CVSS 9.0 Linux KSMBD RCE Flaws Disclosed on Public Mailing Lists Before Kernel Fixes",
-    "desc": "Linux servers running KSMBD, the kernel's built-in SMB server, are exposed to two publicly reported remote code execution flaws rated 9.0 by&nbsp;Trend Micro's Zero Day Initiative, with no fix yet in the mainline kernel.\n\nOne of them, ZDI-CAN-33774, can be triggered before any network authentication",
-    "url": "https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html",
-    "date": "2026-10-22T22:31:53"
-  },
-  {
-    "source": "thn",
-    "title": "Meta Ordered to Pay $25 Billion After Court Finds 43 Million Privacy Violations",
-    "desc": "Social media giant Meta was ordered to pay 25 billion in penalties by a New Mexico court on Wednesday as part of a data privacy lawsuit that sprang from the company's Cambridge Analytica data scandal, which came to light in 2018.\n\nAccording to multiple reports from the Associated Press, the New York",
-    "url": "https://thehackernews.com/2026/10/meta-ordered-to-pay-25-billion-after.html",
-    "date": "2026-10-22T21:42:31"
-  },
-  {
-    "source": "thn",
-    "title": "INTERPOL Arrests 1,462 Suspects, Disrupts 10,909 Cybercrime Networks in Global Crackdown",
-    "desc": "INTERPOL on Thursday announced that a coordinated law enforcement action has disrupted 10,909 malicious networks and recovered more than $105 million in illicit funds.\n\nIn tandem, the effort saw law enforcement agencies from 21 countries arrest 1,462 suspects. Codenamed Operation Serengeti III, the ",
-    "url": "https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html",
-    "date": "2026-10-22T19:08:22"
-  },
-  {
-    "source": "thn",
-    "title": "Railway Says Intruder May Have Accessed Customer Secrets, Urges Credential Rotation",
-    "desc": "Platform-as-a-Service (PaaS) provider Railway on Wednesday disclosed \"anomalous activity\" related to systems that store customer environment variables.\n\nUpon further investigation, the company found that an unauthorized third party may have gained access to encrypted environment variables, and, in s",
-    "url": "https://thehackernews.com/2026/10/railway-says-intruder-may-have-accessed.html",
-    "date": "2026-10-22T16:45:42"
-  },
-  {
-    "source": "thn",
-    "title": "OpenCode Flaw Lets Malicious MCP Servers Execute Code During Sign-In on Windows and WSL",
-    "desc": "A flaw in the OpenCode AI coding agent allowed a malicious or hijacked MCP server to run code on a developer's Windows or WSL machine when the developer signed in. OpenCode connects to MCP (Model Context Protocol) servers to add outside tools, and such code would run with the developer's own access.",
-    "url": "https://thehackernews.com/2026/10/opencode-flaw-lets-malicious-mcp.html",
-    "date": "2026-10-22T16:14:05"
-  },
-  {
-    "source": "thn",
-    "title": "LiteLLM Suspects GitHub Token Leak in AI Gateway Logs Behind Malicious Package Release",
-    "desc": "LiteLLM on Wednesday disclosed that threat actors compromised \"multiple independent security controls\" to push a malicious version of the Python package containing a credential stealer and a backdoor.\n\nOn October 21, 2026, LiteLLM's release pipeline was compromised to push 1.107.0 to the Docker Hub ",
-    "url": "https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html",
-    "date": "2026-10-22T13:58:48"
-  },
-  {
-    "source": "thn",
-    "title": "Node.js Brotli Decoder Bug Could Allow Remote Code Execution in All Supported Versions",
-    "desc": "Node.js released&nbsp;security updates&nbsp;on October 21 for its three supported release lines, 22.x, 24.x and 26.x, fixing 10 flaws. The most serious is a bug in the Brotli decompression code that Node.js bundles, which the project says can allow remote code execution, meaning an attacker could ru",
-    "url": "https://thehackernews.com/2026/10/nodejs-brotli-decoder-bug-could-allow.html",
-    "date": "2026-10-22T13:17:22"
   }
 ]
