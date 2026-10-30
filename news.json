@@ -1,6 +1,69 @@
 [
   {
     "source": "thn",
+    "title": "TeamViewer Flaw Lets Remote Computers Attack Users Who Connect to Control Them",
+    "desc": "TeamViewer has fixed a flaw that lets the machine being controlled in a remote session attack the computer that connected to control it. In a TeamViewer session, the computer that connects and takes control is the viewer, and the machine it controls is the host.\n\nA malicious or compromised host can ",
+    "url": "https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html",
+    "date": "2026-10-30T20:47:28"
+  },
+  {
+    "source": "thn",
+    "title": "WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours",
+    "desc": "Threat actors have been observed attempting to exploit a high-severity security flaw in WordPress Core shortly after patches were released.\n\nThe vulnerability, which does not have a CVE identifier, relates to a case of remote code execution impacting WordPress Core versions 4.7 through 7.1.3. It car",
+    "url": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html",
+    "date": "2026-10-30T19:38:14"
+  },
+  {
+    "source": "thn",
+    "title": "Trezor Warns of Suspected Hardware Implant in One of Its Wallets Sold by CryptoBilis",
+    "desc": "A Trezor Safe 5 hardware wallet bought from the reseller CryptoBilis has an extra circuit board that sends out the recovery phrase over a mobile network, a customer has reported.\n\nTrezor has not yet examined the device. It is telling everyone who bought a Trezor from CryptoBilis since March 2026 to ",
+    "url": "https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html",
+    "date": "2026-10-30T17:51:56"
+  },
+  {
+    "source": "thn",
+    "title": "Why Urgent Security Fixes Aren't Fixed. Observe, Prove, Act, Confirm Gets Them Moving",
+    "desc": "The alert is critical. The fix is known. And the ticket sits in a queue for days. Security teams understand the risk, but the people who keep applications available need proof that the change won’t break anything.&nbsp;\n\nTheir concerns are practical. An IPS protection could block legitimate traffic.",
+    "url": "https://thehackernews.com/2026/10/why-urgent-security-fixes-arent-fixed.html",
+    "date": "2026-10-30T17:28:53"
+  },
+  {
+    "source": "thn",
+    "title": "Syrian Hacker Behind Fake Tweet That Triggered $136 Billion Market Drop Gets 42 Months in Prison",
+    "desc": "Ahmad Umar Agha, a Syrian Electronic Army hacker known online as \"Th3Pr0,\" has been&nbsp;sentenced by a U.S. federal court&nbsp;to 42 months in prison for his role in a hacking conspiracy that targeted Western news outlets.\n\nThe conspiracy was organized and led by members of former Syrian President ",
+    "url": "https://thehackernews.com/2026/10/syrian-hacker-behind-fake-tweet-that.html",
+    "date": "2026-10-30T16:10:45"
+  },
+  {
+    "source": "thn",
+    "title": "Official Claude Code Extension on Cursor Marketplace Trojanized with Persistent SSH Backdoor",
+    "desc": "Cybersecurity researchers have disclosed that a trojanized version of Anthropic's official Claude Code extension was distributed through the Cursor Marketplace as a legitimate update, attempting to install a persistent SSH backdoor on affected systems.\n\nThe malicious update, version 2.1.313, was dis",
+    "url": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html",
+    "date": "2026-10-30T14:25:47"
+  },
+  {
+    "source": "thn",
+    "title": "Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw",
+    "desc": "Drupal has warned that threat actors are exploiting a \"highly critical\" security flaw in its Commerce Core component.\n\nThe vulnerability, tracked as CVE-2026-118539 (CVSS score: N/A), is a case of missing authorization affecting Commerce Core versions from 0.0.0 to 2.41 and from 3.0.0 to 3.3.13.\n\n\"T",
+    "url": "https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html",
+    "date": "2026-10-30T13:15:30"
+  },
+  {
+    "source": "thn",
+    "title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
+    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Cisco and GitLab software to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2026-97229 (CVSS score: 10.0",
+    "url": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
+    "date": "2026-10-30T12:57:05"
+  },
+  {
+    "source": "thn",
+    "title": "Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen",
+    "desc": "Cryptocurrency giant Binance said on Thursday that a \"security incident\" on its platform has impacted about $6.3 billion worth of assets.\n\nThe world's biggest cryptocurrency exchange said nearly $3 billion of those assets have been frozen on-chain so far.&nbsp;\n\nTether and Circle said they have froz",
+    "url": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html",
+    "date": "2026-10-30T09:44:59"
+  },
+  {
+    "source": "thn",
     "title": "ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories",
     "desc": "Some attacks take real skill. Others just need someone to leave a door open. This week has both. Exposed passwords, old bugs still getting exploited, and trusted software doing things it shouldn't.\n\nThere's a strange mix of clever tricks and careless mistakes. Hackers are borrowing trust from famili",
     "url": "https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html",
@@ -8,8 +71,106 @@
   },
   {
     "source": "boannews",
+    "title": "한화시스템, 임직원 개인정보 유출 정황... “방산·금융은 무관”",
+    "desc": "한화시스템 임직원들의 개인정보가 유출된 정황이 발견돼 조사가 이뤄지고 있다.30일 한화시스템에 따르면 일부 계열사의 외부 접속 계정을 통한 내부망 비인가 접근 정황이 확인돼 한국인터넷진흥원(KISA)과 개인정보보호위원회에 신고했다. 한화시스템 관계자는 “비인가 접근 확인 즉시 관련 인터넷프로토콜(IP)과 접속 경로를 차단하고 긴급 보안점검과 모니터링 강화 등 보안조치를 즉각 시행했다”며 “피해사실 확인 즉시 관계 법령에 따라 유관기관에 신고했으며, 현재 임직원 및 협력사 보호와 추가 피해 방지를 위해 필요한 보안조치를 지속 중”이라",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146904",
+    "date": "2026-10-30 18:26:48"
+  },
+  {
+    "source": "boannews",
+    "title": "바이낸스 8조원 규모 가상자산 탈취 배후에 北 라자루스 지목",
+    "desc": "세계 최대 가상자산 거래소 바이낸스가 당한 약 63억달러(한화 약 8조4000억원) 규모 탈취 해킹 공격의 배후에 북한 해킹 조직이 있다는 분석이 나왔다. 30일(현지시간) 가상자산 전문매체 코인데스크는 다수의 블록체인 분석 업체를 인용, 북한 해킹 조직 라자루스가 불법 무기 프로그램 자금을 조달하기 위해 바이낸스를 해킹, 약 63억달러의 암호화폐 자산을 탈취했다고 보도했다. 블록체인 분석 회사 TRM은 라자루스 하위 조직 ‘트레이더트레이터스’(TraderTraitor)를 이번 바이낸스 해킹 배후로 지목하며, 이에 대해 높은 확신을",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146903",
+    "date": "2026-10-30 17:34:06"
+  },
+  {
+    "source": "boannews",
+    "title": "GS건설 ‘자이’ 입주민 개인정보 유출... 이름, 주소, 연락처에 ‘거주유형’도",
+    "desc": "GS건설 ‘자이’ 아파트 입주민들의 개인정보가 유출됐다. GS건설은 이와 관련 한국인터넷진흥원(KISA) 및 개인정보보호위원회에 신고를 마쳤다.30일 GS건설 자이는 아파트 커뮤니티 시설 예약 관리 시스템(구 FMCS 등)에 대한 외부 비인가 접근으로 인한 개인정보 유출 사실을 확인했다. 자이통합고객센터는 이같은 사실을 입주민들에게 문자 메시지로 안내했다.안내문에 따르면 GS건설은 28일 23시 29분경 비정상 접근 정황을 인지해 즉시 차단하고 로그를 정밀 분석했다. 그 결과 28일 22시 15분경 외부 비인가 접근이 발생한 사실을",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146902",
+    "date": "2026-10-30 17:04:38"
+  },
+  {
+    "source": "boannews",
+    "title": "라쿠텐 마리타임, “IACS 규제 넘어 실전 복원력으로”...  ‘MATS 2026’  ‘마리타임 AI & 테크 서밋 2026’ 개최",
+    "desc": "선박의 디지털 전환과 AI 도입이 가속화되면서 사이버보안이 안전 운항과 해상 운영 연속성을 가르는 핵심 변수로 떠오른 가운데, 글로벌 선급과 조선·해운업계가 모여 국제 규제 대응과 사이버 복원력 해법을 논의했다.라쿠텐 심포니의 해양 사이버보안 브랜드 라쿠텐 마리타임(Rakuten Maritime)은 28일 ‘하얏트 플레이스 부산 연산’에서 해사 산업의 AI·디지털화·사이버보안을 다루는 국제 서밋 ‘마리타임 AI & 테크 서밋 2026’(MATS 2026)을 열었다.‘미래 해양 산업으로 나아가는 안전한 이정표’(Navigating a",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146899",
+    "date": "2026-10-30 16:16:39"
+  },
+  {
+    "source": "boannews",
+    "title": "한국항공보안학회, ‘2026 항공보안포럼’ 개최... K-보안장비 국산화 논의",
+    "desc": "한국항공보안학회(회장 소대섭)가 경운대학교, 한서대학교와 손잡고 30일 경북 구미코 세미나실에서 ‘K-항공보안장비 국산화 가속화 방안’을 주제로 ‘2026년 항공보안포럼’을 개최했다.이번 행사는 해외 의존도가 높았던 항공보안장비 산업에서 인공지능(AI)과 정밀 센서 등 국내 기술을 적용한 국산화 성과를 나누고, 산·학·연·관 공조를 통해 국산 항공보안 인프라의 독자적인 경쟁력을 확보하고자 추진됐다. 현장에는 주최 측을 비롯해 한국공항공사, 인천국제공항공사, 인천국제공항보안, 한국공항보안 등 공항 운영 기관과 딥노이드, 에스원, 에스",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146874",
+    "date": "2026-10-30 16:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "인천국제공항, 네트워크 장애로 출국 수속 차질... “항공기 지연은 없어”",
+    "desc": "인천국제공항 항공사 네트워크에서 장애가 발생해 출국수속 절차에 차질이 발생하고 있다. 제1여객터미널 항공사 8곳과 제2여객터미널 5곳에서 통신이 간헐적으로 끊기는 것으로 나타났다.30일 인천국제공항공사에 따르면 이날 오전 4시 30분부터 항공권 발권 시스템을 연결하는 항공사 네트워크에 장애가 발생하고 있다.발권 업무가 지연되면서 각 항공사 체크인 카운터에서는 출국을 앞둔 이용객들이 수속 절차에 불편을 겪고 있다.인천국제공항공사는 항공사들이 이용하는 미국 에어링크(ARINC)의 글로벌 네트워크 불안정이 장애의 요인인 것으로 보고 대책",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146898",
+    "date": "2026-10-30 14:54:09"
+  },
+  {
+    "source": "boannews",
+    "title": "[2026 대한민국 상장기업 리포트-3] 매출은 늘어도 웃지 못한다, 통합보안 3사의 서로 다른 고민은?",
+    "desc": "매출 성장만으로 웃을 수 없는 보안업계다. 외형 확대에도 수익성이 뒷걸음질 치는 기업이 있는가 하면, 글로벌 데이터센터 시장에서 새로운 성장 기회를 확보한 기업도 있다. 여기에 대규모 지사업구조 재편, 경영진 교체까지 맞물리면서 국내 주요 통합보안 기업들의 경영 전략에도 변화가 나타나고 있다. 2026년 통합보안 업계의 경쟁은 시장 점유율 확대를 넘어 수익성 확보와 미래 성장동력 발굴로 확장되는 모습이다.슈프리마, 매출 80% 해외에서, 성장판은 데이터센터로글로벌 바이오인식 출입보안 전문기업 슈프리마의 2026년 상반기 매출액은 7",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146783",
+    "date": "2026-10-30 14:34:00"
+  },
+  {
+    "source": "boannews",
+    "title": "“내부망 PHP 장비 96% 취약점 노출”... 지니언스 “NAS·공유기 등 즉시 점검·패치”",
+    "desc": "외부 인터넷에 노출된 웹서버보다 기업 내부망에 숨어 있는 장비가 ‘PHP2셸’(PHP2Shell) 악용 위협에 더 심각하다는 실측 분석 결과가 나왔다. 30일 AI 보안 통합 플랫폼 기업 지니언스(대표 이동범)가 인터넷 접점이나 기업 내부망에 연결된 네트워크 연결 스토리지(NAS), 공유기 등 네트워크 장비, 방화벽 등이 사이버 공격의 다음 핵심 타깃이 될 가능성이 매우 높다고 분석했다. 이에 기업 및 기관들의 즉각적인 내부 자산 점검과 선제적 조치를 촉구했다.‘PHP2셸’(PHP2Shell)은 전세계 인터넷 사이트 제작에 널리쓰이",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146896",
+    "date": "2026-10-30 13:31:55"
+  },
+  {
+    "source": "boannews",
+    "title": "중국 AI 코딩 모델, 미국 방산업체 겨냥한 보안 편향 의혹... 70%가 해킹 가능",
+    "desc": "중국산 인공지능(AI) 코딩 모델이 미국 방산업체를 위한 프로그램을 개발할 때 중국 방산업체용보다 보안에 취약한 코드를 생성한다는 실험 결과가 나왔다. 특히 보안을 강화하라는 지시에도 국가별 취약성 격차가 유지된 반면 모델 내부 가중치를 수정한 이후에는 차이가 사라져 AI 학습 과정에서 형성된 편향 가능성이 제기됐다.보안기업 히룬도(Hirundo)에 따르면 알리바바의 AI 코딩 모델 '큐웬3-코더-30B-A3B-인스트럭트(Qwen3-Coder-30B-A3B-Instruct)'를 대상으로 실시한 실험에서 미국 방산업체용으로 생성된 웹",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146627",
+    "date": "2026-10-30 13:30:00"
+  },
+  {
+    "source": "boannews",
+    "title": "캘리포니아 학생 개인정보, 시험기관 파일 전송 서버 계정 하나로 유출",
+    "desc": "미국 캘리포니아주 공립학교 전·현직 학생들의 개인 기록이 주 학력평가를 대행하는 비영리 시험기관의 파일 전송 서버에서 복사돼 나갔다. 공격자는 탈취한 로그인 정보 하나로 넉 달 가까이 서버를 드나들었다.캘리포니아주 교육부(CDE)의 유출 통지에 따르면 권한을 받지 않 누군가가 5월 22일~9월 18일 탈취한 로그인 정보로 미국교육평가원(ETS)의 파일 전송 서버(SFTP)에 접속했다. ETS는 캘리포니아주의 주 단위·연방 시험을 맡아 온 기관이다. ETS는 침입이 끝나고 일주일 뒤인 9월 25일에야 이상 활동을 알아챘다.SFTP는",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146520",
+    "date": "2026-10-30 13:24:19"
+  },
+  {
+    "source": "boannews",
+    "title": "두산디지털이노베이션, 美 방산 사이버보안 ‘CMMC RPO’ 자격 획득... 시장 진입로 연다",
+    "desc": "미국 국방 공급망 진입을 위한 사이버보안 요건이 단계적으로 강화되는 가운데, 국내 방산 및 제조 기업의 미국 시장 진출을 지원하는 공인 컨설팅 체계가 마련됐다. 두산 디지털이노베이션BU(DDI)는 ‘사이버보안 성숙도 모델 인증’(CMMC) 공식 인정기구인 ‘사이버 AB’로부터 ‘공식 컨설팅 기관’(RPO) 자격을 취득했다고 30일 밝혔다.미국 국방부는 방위산업 공급망에 참여하는 세계 협력사들의 보안 수준을 검증하기 위해 CMMC 인증 취득을 의무화하고 있다. 핵심 설계 도면과 미분류 주요 기술 데이터(CUI) 유출을 방지하기 위한",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146894",
+    "date": "2026-10-30 13:04:05"
+  },
+  {
+    "source": "boannews",
+    "title": "여의시스템, AI 시대 차세대 전력 인프라 네트워크 선보여.. 모싸와  BIXPO 2026 참가",
+    "desc": "여의시스템(대표 성명기·성제현)이 글로벌 산업용 네트워크 전문기업 모싸(Moxa)와 함께 11월 4-6일 광주 김대중컨벤션센터에서 열리는 ‘2026 빛가람국제전력기술엑스포(BIXPO 2026)’에 참가한다.여의시스템과 모싸는 디지털 변전소와 소프트웨어 정의 변전소(Software-Defined Substation), 고가용성 네트워크와 AI 데이터센터 등 차세대 전력 인프라를 위한 네트워크 기술을 선보인다. 하드웨어 중심에서 소프트웨어 정의(Software-Defined)로 진화하는 전력 인프라를 주제로 디지털 변전소와 소프트웨어",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146895",
+    "date": "2026-10-30 11:55:31"
+  },
+  {
+    "source": "boannews",
+    "title": "국내외 가상자산거래소 노린 해킹, 금전 피해로 이어졌다",
+    "desc": "국내외에서 가상자산거래소를 노린 해킹 공격이 계속되면서 실제 금전적 피해로까지 이어졌다. 프라뱅에선 1억원가량의 금전 피해가 발생했으며, 빗썸에선 고객 개인정보가 유출됐다. 세계 최대 가상자산거래소 바이낸스에서도 수십억달러에 달하는 금전 피해가 발생한 것으로 추정된다. 가상자산거래소 빗썸은 29일 사내 시스템 해킹 사고로 고객 6444명의 개인정보가 유출됐다고 밝힌 바 있다. 이 중 5600명의 개인정보는 암호화된 상태로, 실제 844명의 정보만 직접 노출됐다. 임직원 715명의 개인정보도 유출됐다. 빗썸은 이날 홈페이지 공지에서",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146893",
+    "date": "2026-10-30 11:30:32"
+  },
+  {
+    "source": "boannews",
+    "title": "미 국방부, 군기지 냉동고 잇단 고장 해킹 의심 수사",
+    "desc": "미국 국방부가 8월 미국 곳곳의 군 기지에서 음식을 상하게 만든 냉동고 고장을 해킹 의심 사건으로 보고 있다. 로이터가 사안을 잘 아는 관계자를 인용해 29일(현지시각) 보도했다.관계자 가운데 한 명은 군 수사관들이 이달 프랑스 슈퍼마켓 영업에 차질을 준 상업용 냉동고 사이버 공격을 두고 프랑스와 연락하고 있다고 말했다.고장이 난 곳은 장병들이 식료품을 사는 기지 내 매장 ‘커미서리’다. 로이터가 기지들의 당시 페이스북 게시물과 웹사이트 공지를 살펴본 결과, 8월 말 최소 6곳에서 냉동고 이상이 일어났다.적어도 한 곳에선 냉동고가",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146885",
+    "date": "2026-10-30 11:24:36"
+  },
+  {
+    "source": "boannews",
     "title": "[PHP 파장] 시놀로지 NAS서 취약점 발견... 기업 파일 등 공격 노출 우려",
-    "desc": "네트워크 저장장치(NAS) 제조사 시놀로지(Synology)가 자사 일부 제품에 대한PHP 취약점 관련 보안 업데이트를 배포했다. 한국인터넷진흥원(KISA)은 시놀로지가 제공하는 이번 보안 업데이트를 실시할 것을 권유하는 공지를 냈다.30일 대만 NAS 제조사 시놀로지는 세계 웹 생태계 주요 프로그래밍 언어 PHP에서 발견된 취약점 ‘PHP2셸’(PHP2Shell)에 자사 NAS 내 실행되는 일부 애플리케이션 및 PHP 모듈이 영향 받을 수 있다고 밝혔다.보안 업데이트 대상은 자체 운영체제 DSM에 적용된 PHP 7.3~8.4 버전",
+    "desc": "네트워크 저장장치(NAS) 제조사 시놀로지(Synology)가 자사 일부 제품에 대한 PHP 취약점 관련 보안 업데이트를 배포했다. 한국인터넷진흥원(KISA)은 시놀로지가 제공하는 이번 보안 업데이트를 실시할 것을 권유하는 공지를 냈다.30일 대만 NAS 제조사 시놀로지는 세계 웹 생태계 주요 프로그래밍 언어 PHP에서 발견된 취약점 ‘PHP2셸’(PHP2Shell)에 자사 NAS 내 실행되는 일부 애플리케이션 및 PHP 모듈이 영향 받을 수 있다고 밝혔다.보안 업데이트 대상은 자체 운영체제 DSM에 적용된 PHP 7.3~8.4 버",
     "url": "https://www.boannews.com/news/articleView.html?idxno=146891",
     "date": "2026-10-30 11:11:20"
   },
@@ -448,104 +609,6 @@
     "date": "2026-10-28T11:12:26"
   },
   {
-    "source": "boannews",
-    "title": "[단독] ‘PHP 직격탄’ 워드프레스·그누보드 국내 사이트 46만개 육박... 호스팅 의존도 높아 [PHP 파장]",
-    "desc": "전세계 웹사이트의 70%를 차지하는 프로그래밍 언어 PHP에 치명적 취약점 ‘PHP2셸’(PHP2Shell)이 발견된 가운데, 대표적 PHP 기반 홈페이지 제작 도구인 ‘워드프레스’와 ‘그누보드’로 제작한 국내 웹사이트가 46만여개에 달하는 것으로 나타났다. 국내 웹 환경은 호스팅 의존도가 높아 호스팅 업체들의 보안 역량과 신속한 조치가 중요하다는 분석이 나온다.워드프레스 못지않은 ‘그누보드’ 비중… 호스팅 이용률 높아28일 가 에스케어와 조사한 바에 따르면, 해외 도구인 워드프레스를 활용해 제작된 국내 사이트는 24만1",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146844",
-    "date": "2026-10-28 18:04:51"
-  },
-  {
-    "source": "boannews",
-    "title": "인도 최대 국영은행 SBI, 고객정보 3897건 다크웹 유출…해킹 경로 '미궁'",
-    "desc": "인도 국영은행인 인도국영은행(SBI)의 고객 개인정보 수천 건이 다크웹에서 발견되면서 금융정보 유출 우려가 커지고 있다. 해커가 대규모 은행 자료를 판매하겠다고 주장한 가운데 SBI는 일부 고객정보의 외부 노출을 인정했지만 정확한 유출 경로와 피해 규모는 파악하지 못한 상태다.최근 SBI가 증권거래소에 제출한 공시에 따르면 은행은 다크웹에서 확보한 약 37만5000건의 자료를 분석해 고객 개인정보가 포함된 기록 3897건을 확인했다. 다만 은행은 이 수치가 잠정적인 조사 결과이며 실제 정보의 진위와 노출 범위에 대해서는 추가 확인이",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146620",
-    "date": "2026-10-28 17:11:19"
-  },
-  {
-    "source": "boannews",
-    "title": "씨게이트, 2027 회계연도 1분기 매출 42억달러로 수익성·현금창출 동반 성장",
-    "desc": "씨게이트 테크놀로지가 2027 회계연도(FY27) 1분기 매출 42억3300만달러를 기록하며 높은 수익성과 현금 창출 능력을 다시 한번 입증했다. 씨게이트는 FY27 1분기 GAAP(일반회계기준) 기준 매출총이익률 57.3%, 영업이익률 48.8%, 순이익 17억6100만달러를 기록했다고 발표했다. 비GAAP 기준으로는 매출총이익률 57.8%, 영업이익률 50.7%, 순이익 17억8100만달러를 달성했다.희석주당순이익(EPS)은 GAAP 기준 7.59달러, 비GAAP 기준 7.68달러를 기록했다. 전년 동기 GAAP 기준 2.43달",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146843",
-    "date": "2026-10-28 16:59:04"
-  },
-  {
-    "source": "boannews",
-    "title": "디웨이브, 양자 어닐링 + 게이트 기술 동시 제공... “국내 산업 최적화 문제 해결”",
-    "desc": "디웨이브(D-Wave)가 양자 컴퓨팅을 활용한 산업 분야 최적화 기술을 앞세워 국내 및 아시아 시장 공략에 나선다. 이를 위해 LG CNS와 협력한다. 양자 어닐링과 게이트 방식 등 두 가지 주요 양자 컴퓨팅 기술을 동시에 제공한다는 계획이다. 앨런 바라츠 디웨이브 CEO는 28일 서울 광화문 포시즌스호텔에서 열린 ‘큐비츠 아시아 2026’에서 “양자 컴퓨팅은 고난도 연산 문제를 해결하기 위한 에너지 효율적 컴퓨팅”이라며 “현재 인공지능(AI)과 고성능 컴퓨팅의 전력 문제를 해결할 핵심 대안”이라고 말했다. 그는 “디웨이브 양자 어",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146842",
-    "date": "2026-10-28 15:55:21"
-  },
-  {
-    "source": "boannews",
-    "title": "[PHP 파장] 국내 대학 5곳, ‘PHP2셸’ 노출됐나... 취약 가능성 커 패치 시급",
-    "desc": "국내 지방 소재 대학교 5곳이 세계 웹사이트에 널리 사용되는 프로그래밍 언어 PHP의 치명적 보안 취약점 ‘PHP2셸’(PHP2Shell) 위협에 노출된 상태로 메인 홈페이지를 운영 중인 것으로 추정된다. 이는 외부에 PHP 버전을 노출하고 있는 경우만 집계한 것으로, 적지 않은 대학들이 PHP2셸에 노출돼 있을 가능성을 배제할 수 없다. 이런 가운데 최근 PHP2셸을 악용한 공격이 실제 벌어지고 있는 만큼, 취약한 상태로 운영되고 있는 웹사이트에 대한 신속한 패치가 필요한 실정이다. 외부에서 PHP 버전을 직접 확인할 수 있다는",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146837",
-    "date": "2026-10-28 15:45:53"
-  },
-  {
-    "source": "boannews",
-    "title": "[카드뉴스] \"GPT와 음성 대화했을 뿐인데\"… 목소리 톤·억양까지 털리는 '생체 데이터' 유출 주의보",
-    "desc": "생성형 AI와 나눈 음성 대화는 단순 휘발성 대화가 아니며, 이용자의 목소리 톤과 억양 등 고유 생체 식별 데이터가 클라우드에 영구 저장될 수 있다. 무기한 보관된 음성 데이터가 AI 모델 재학습에 활용될 경우 향후 딥페이크 음성 복제 및 사회공학적 사기 범죄의 표적이 될 위험이 존재한다. 피해를 예방하기 위해 설정에서 '음성 데이터 모델 학습 활용'을 끄고 오디오 캐시를 정기적으로 삭제하며, 민감 정보의 음성 발화를 지양해야 한다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146836",
-    "date": "2026-10-28 14:48:24"
-  },
-  {
-    "source": "boannews",
-    "title": "중기부 '스케일업 팁스' 선정으로 날개 단 센스톤, OT 보안 허브 고도화",
-    "desc": "센스톤이 중기부 스케일업 팁스에 최종 선정돼 국내 기반시설과 산업현장 OT 보안 강화에 나선다.OTAC 원천기술 기반 OT 보안 전문기업 센스톤(대표 유창훈)은 중소벤처기업부와 중소기업기술정보진흥원(TIPA) 주관 ‘2026년 스케일업 팁스(특화형 2차)’에 최종 선정됐다고 28일 밝혔다.이번 과제로 30억원의 연구개발비를 확보한 센스톤은 OT 인증보안 게이트웨이 ‘OTAC Trusted Access Gateway’(TAG)를 인증 후 세션·권한 제어 등 OT 보안 핵심 기능을 아우르는 허브로 확장·개발한다.센스톤이 선정된 '스케일",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146835",
-    "date": "2026-10-28 14:27:40"
-  },
-  {
-    "source": "boannews",
-    "title": "오마다, 알파원헬스케어에 통합 네트워크 구축… 의료 인프라 안정성 강화",
-    "desc": "기업용 네트워크 솔루션 전문 브랜드 오마다(Omada)가 경기도 안산 소재의 종합 건강검진센터 알파원헬스케어에 고성능 통합 유·무선 네트워크 인프라를 성공적으로 구축했다고 발표했다.이번 프로젝트는 약 500평 규모의 대형 검진센터 공간 내에서 전자의무기록(EMR), 의료영상저장전송시스템(PACS), 처방전달시스템(OCS) 등 핵심 의료 정보 시스템과 각종 진단 장비, 직원 업무용 단말, 방문객용 Wi-Fi를 과부하 없이 안정적으로 운영하기 위해 추진됐다.의료기관 특성상 순간적인 네트워크 마비나 장애는 진료 및 검사 중단 등 중대한",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146834",
-    "date": "2026-10-28 14:07:46"
-  },
-  {
-    "source": "boannews",
-    "title": "국립소방연구원, 짙은 연기 뚫는 ‘시각 강화 열화상 카메라’ 개발해 전국 4개 관서 시범 배치",
-    "desc": "소방청 국립소방연구원(원장 김연상)이 화재 현장의 짙은 농연과 암흑 속에서도 인명과 장애물을 명확하게 식별할 수 있는 ‘소방용 시각 강화 열화상 카메라’를 개발하고, 전국 4개 소방관서에 시범 배치해 11월 27일까지 현장 적용성 검증을 추진한다고 밝혔다.그동안 밀폐된 구획 화재 현장은 고농도 연기와 불완전 연소 물질로 인해 가시거리가 극도로 짧아져, 대원들의 진입 안전사고 위험이 크고 신속한 구조대상자 탐색에 어려움을 겪어왔다.이를 해결하고자 국립소방연구원은 한국전기연구원(KERI)의 저전력 FPGA(Field-Programmab",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146832",
-    "date": "2026-10-28 13:47:27"
-  },
-  {
-    "source": "boannews",
-    "title": "기후에너지환경부, 충북 청주 국도 17호선에 ‘AI 로드킬 예방 시스템’ 시범 운영",
-    "desc": "기후에너지환경부(장관 김성환)가 충청북도 청주시 서원구 남이면 척산리 국도 17호선 구간에 인공지능(AI) 기반 ‘동물 찻길 사고(로드킬) 예방 시스템’을 구축하고 본격적인 시범 운영에 들어간다.동물 찻길 사고는 야생동물 생사뿐 아니라 운전자의 인명 및 재산 피해, 나아가 2차 추돌 사고로 이어지는 주요 위험 요인이다. 특히 교차로나 도로 진출입로는 생태통로나 유도 울타리 같은 물리적 차단 시설을 설치하기 힘들어 고도화된 감지 솔루션 도입이 시급한 실정이었다.이번에 적용되는 예방 시스템은 도로 변 CCTV 영상이 야생동물의 출현을",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146833",
-    "date": "2026-10-28 13:45:39"
-  },
-  {
-    "source": "boannews",
-    "title": "선박 사이버 규제 파고 넘는다... 싸이터 ‘CYTUR-SBOM’, 글로벌 선급 인증 확보",
-    "desc": "국제 해운업계의 사이버 복원력 규제가 강화되는 가운데, 싸이터의 선박 기자재 사이버보안 관리 플랫폼 ‘CYTUR-SBOM’이 일본선급(ClassNK)과 이탈리아선급(RINA)으로부터 기술 인증 및 신기술 승인을 동시에 획득했다고 28일 밝혔다.이번 성과는 국제선급협회(IACS)의 사이버 복원력 공통규칙인 ‘UR E26’과 ‘UR E27’이 본격 적용되는 시점에 거둔 결실이다. 이들 규정은 2024년 7월 1일 이후 건조 계약이 체결된 선박을 대상으로 컴퓨터 기반 시스템(CBS)의 하드웨어·소프트웨어 자산 목록과 네트워크 구성 정보를",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146831",
-    "date": "2026-10-28 11:50:10"
-  },
-  {
-    "source": "boannews",
-    "title": "CISA, ‘PHP2셸’ KEV 지정…취약점 실제 악용 공식 인정",
-    "desc": "미국 사이버보안 당국이 ‘PHP2셸’(PHP2Shell)을 ‘실제 악용된 취약점’(KEV)으로 지정했다. PHP2셸이 실제로 공격자들에게 악용되고 있다는 방증이다. 미국 사이버보안·인프라보안국(CISA)은 26일(현지시간) PHP2셸 취약점 2건(CVE-2026-109618, CVE-2026-109619)을 KEV 목록에 등록했다. PHP2셸을 공격자들이 실제로 악용되고 있다는 것을 미국 보안 당국이 공식적으로 인정한 셈이다.실제 PHP2셸은 북한 해커 조직으로 알려진 ‘라자루스’가 공격에 악용하려는 정황이 포착되기도 했다. 아델",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146830",
-    "date": "2026-10-28 11:46:22"
-  },
-  {
-    "source": "boannews",
-    "title": "씨게이트, HAMR·SMR 기반 대용량 스토리지 상호운용성 검증... 브로드컴·MS 애저와 맞손",
-    "desc": "씨게이트 테크놀로지(Seagate Technology, 대표 데이브 모슬리)가 폭증하는 인공지능(AI) 및 클라우드 워크로드에 발맞춰 대용량 스토리지의 효율적 확장을 지원하는 고성능 상호운용성 성과를 발표했다.씨게이트의 차세대 ‘모자이크’(Mozaic) 드라이브는 열보조자기기록(HAMR) 기술에 데이터 트랙을 고밀도로 겹쳐 배치하는 기와식 자기기록(SMR) 방식을 결합해 저장 용량을 극대화한 제품이다.해당 드라이브는 브로드컴의 호스트 버스 어댑터(HBA) 승인 공급업체 목록(AVL)에 최초이자 유일하게 등재된 SMR 하드 드라이브로",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146828",
-    "date": "2026-10-28 11:46:06"
-  },
-  {
-    "source": "boannews",
-    "title": "[인사] 개인정보보호위원회",
-    "desc": "◇서기관 승진△혁신기획담당관실 김푸르나△개인정보보호정책과 이정수△조사총괄과 나일청△조사총괄과 장수용 ◇과학기술서기관 승진△신기술개인정보과 최재민(2026. 10. 28. 자)",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146827",
-    "date": "2026-10-28 11:33:24"
-  },
-  {
     "source": "thn",
     "title": "CyberStrikeAI Uses 44 AI Agents to Automate Hacking Operations Against Japan Targets",
     "desc": "Cybersecurity researchers have disclosed details of three cyber attacks targeting organizations in Japan in which artificial intelligence (AI) was a key element, either in the driving seat or to assist a human operator.\n\nTrendAI, which analyzed three exposed server environments used by threat actors",
@@ -628,68 +691,5 @@
     "desc": "An unknown threat actor has infected 953 online stores, most of them running Magento, as part of a long-running campaign active since July 2025.\n\nAccording to Dutch e-commerce security company Sansec, the activity is designed to add a small piece of code to the store's pages that, when visited by un",
     "url": "https://thehackernews.com/2026/10/hackers-infect-953-online-stores-with.html",
     "date": "2026-10-26T23:42:22"
-  },
-  {
-    "source": "thn",
-    "title": "PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw",
-    "desc": "PHP has rebuilt its official Windows packages for PHP 8.2 through 8.5 to fix CVE-2026-111497, a flaw in the Brotli compression library that the packages include. The flaw can let an attacker corrupt memory and potentially run code.\n\nPHP says the flaw can be reached through the cURL extension when th",
-    "url": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
-    "date": "2026-10-26T23:15:57"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Use Microsoft Teams IT Support Scams to Deploy Malware and Ransomware",
-    "desc": "Cybersecurity researchers are calling attention to what they say is a \"recurring social engineering pattern\" across hundreds of cases in which threat actors use Microsoft Teams' external chat creation feature to conduct impersonation scams or to deliver malware.\n\n\"A consistent pattern of attacker be",
-    "url": "https://thehackernews.com/2026/10/attackers-use-microsoft-teams-it.html",
-    "date": "2026-10-26T21:22:40"
-  },
-  {
-    "source": "thn",
-    "title": "⚡ Weekly Recap: This2Shell, That2Shell, Everything's an RCE? Rogue AI, Supply Chain Chaos and More",
-    "desc": "This2Shell, That2Shell, Everything2Shell. That's pretty much how the last week went. Critical bugs that let attackers run code remotely are showing up everywhere. Hackers are scanning for targets, some flaws are already being used in attacks, and security teams have more urgent patches than they can",
-    "url": "https://thehackernews.com/2026/10/weekly-recap-this2shell-that2shell.html",
-    "date": "2026-10-26T19:36:13"
-  },
-  {
-    "source": "thn",
-    "title": "Two Critical Wasmtime Flaws Could Let Malicious WebAssembly Modules Escape Sandboxes",
-    "desc": "Two critical flaws in&nbsp;Wasmtime, a WebAssembly runtime that can be built into other software, could allow a malicious WebAssembly module to escape the sandbox intended to contain it, the project's maintainers say.\n\nAn attacker would first need a vulnerable Wasmtime build to compile a module they",
-    "url": "https://thehackernews.com/2026/10/two-critical-wasmtime-flaws-could-let.html",
-    "date": "2026-10-26T17:22:41"
-  },
-  {
-    "source": "thn",
-    "title": "Between alerts: What Attackers Do in the Spaces Ordinary Detection Misses",
-    "desc": "Every SOC struggles with a pile of alerts. Very few of those alerts explain how an attack started or how it progressed. Network data, like that from a network detection and response (NDR) platform, connects individual alerts into one timeline, and it feeds the defensive systems that can tie all even",
-    "url": "https://thehackernews.com/2026/10/between-alerts-what-attackers-do-in.html",
-    "date": "2026-10-26T16:53:56"
-  },
-  {
-    "source": "thn",
-    "title": "uCreator Android Spyware Can Steal Telegram 2FA Passwords and Clone WeChat Accounts",
-    "desc": "A rentable Android spyware kit called uCreator takes over Telegram and WeChat accounts by hiding its code inside working copies of the two apps, researcher Ovi found. It only reaches people who install one of these tampered copies, spread outside the official app stores, or who run WeChat inside the",
-    "url": "https://thehackernews.com/2026/10/ucreator-android-spyware-can-steal.html",
-    "date": "2026-10-26T15:24:02"
-  },
-  {
-    "source": "thn",
-    "title": "Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations",
-    "desc": "Cybersecurity researchers have disclosed a Microsoft 365 campaign that has been observed leveraging an adversary-in-the-middle (AitM) relay to capture sign-in sessions and then replay the stolen tokens to break into email accounts at 79 organizations.\n\nHuntress, which observed the activity between J",
-    "url": "https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html",
-    "date": "2026-10-26T14:05:51"
-  },
-  {
-    "source": "thn",
-    "title": "Gheist Uses Stolen GitHub Tokens to Steal Private Repository Secrets via Actions Logs",
-    "desc": "An automated campaign is using stolen GitHub tokens to plant workflows that print a repository's secrets into its GitHub Actions logs, which the attackers then download before deleting the runs. The attacks have succeeded in private repositories and GitHub Enterprise environments, according to&nbsp;",
-    "url": "https://thehackernews.com/2026/10/gheist-uses-stolen-github-tokens-to.html",
-    "date": "2026-10-26T13:19:46"
-  },
-  {
-    "source": "thn",
-    "title": "Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installing Malware",
-    "desc": "A malicious instruction file sitting in a developer's Downloads folder tried to make their AI coding agent install a known-malicious npm package, security firm&nbsp;Forever Security said&nbsp;in a report published last week.\n\nThe company caught the attempt on a real customer's machine and stopped th",
-    "url": "https://thehackernews.com/2026/10/malicious-file-in-downloads-folder.html",
-    "date": "2026-10-26T11:33:48"
   }
 ]
