@@ -1,6 +1,62 @@
 [
   {
     "source": "thn",
+    "title": "CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key",
+    "desc": "A critical flaw in Canonical's LXD and MicroCloud let an attacker log in as a trusted client without holding that client's private key. To do it, the attacker had to reach their HTTPS API over the network and have the trusted client's public certificate.\n\nOnce in, the attacker would act as that clie",
+    "url": "https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html",
+    "date": "2026-11-01T14:21:31"
+  },
+  {
+    "source": "thn",
+    "title": "Hackers Steal About $2.7 Million From Polymarket Traders via Hijacked DebugBear Script",
+    "desc": "Malicious code on the website of prediction market Polymarket sold some signed-in traders' positions and moved their funds to the hackers on October 29. The code had replaced a page-speed script that the site loaded from an outside company.\n\nPolymarket says&nbsp;it is refunding about $2.7 million to",
+    "url": "https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html",
+    "date": "2026-11-01T12:55:40"
+  },
+  {
+    "source": "thn",
+    "title": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist",
+    "desc": "The U.S. Federal Bureau of Investigation (FBI) has officially attributed the theft of more than $6 billion in virtual assets to TraderTraitor, a North Korea-aligned elite hacking group also tracked as Jade Sleet, Pressure Chollima, PUKCHONG, Slow Pisces, and UNC4899.\n\nThe FBI, along with the U.S. Se",
+    "url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
+    "date": "2026-11-01T12:33:00"
+  },
+  {
+    "source": "thn",
+    "title": "NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection",
+    "desc": "Cybersecurity researchers have disclosed details of what has been described as a \"highly sophisticated infection chain\" targeting government organizations in Asia.\n\nThe activity, detailed by Kaspersky this week, targeted a custom Windows 10 build used exclusively by government entities in Asia and i",
+    "url": "https://thehackernews.com/2026/11/netamloader-malware-targets-government.html",
+    "date": "2026-11-01T12:32:58"
+  },
+  {
+    "source": "boannews",
+    "title": "바이낸스 탈취 자산, 북한이 털었던 비트겟 탈취 자산과 섞였다",
+    "desc": "역대 최대 규모의 가상자산 탈취 사건인 바이낸스(Binance) 해킹 사건에서 탈취된 자산이 지난달 발생한 비트겟(Bitget) 해킹 사건의 자금과 실시간으로 섞이는 정황이 발견됐다. 비트겟 해킹 역시 북한의 소행으로 지목된 사건이다.보안기업 체이널리시스는 현지 시각 30일 보고서를 통해 이번 바이낸스 해킹 공격의 전개 과정과 유출된 자금의 흐름을 분석했다.이번 공격은 10월 29일 미국 동부 시간으로 오후 4시 20분경 시작됐다. 해커들은 가상자산 믹싱 서비스인 토네이도캐시(Tornado Cash)를 통해 초기 자금을 조달한 뒤,",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146912",
+    "date": "2026-11-01 14:00:57"
+  },
+  {
+    "source": "boannews",
+    "title": "[한국정보보호학회 칼럼] AI 시대의 금융보안, 망분리에서 제로트러스트로",
+    "desc": "2026년 9월 30일부터 10월 3일까지 신한은행, KB국민은행, 하나은행, BNK부산은행에 이어 예가람저축은행, 웰컴저축은행, 현대캐피탈까지 총 7개의 금융회사에서 짧은 기간 동안 보안사고가 잇따라 발생했다. 인터넷·모바일뱅킹 등 대고객 서비스에는 영향이 없었지만, 정보조회 서비스와 직원 업무지원 서비스 등 부가시스템에서 정보유출이 발생했다. 사고 유형별로는 본인확인 절차 누락, 직원용 모바일 단말기의 접근통제 미흡, 웹 취약점에 대한 조치 미흡 등이 주요 원인으로 분석되고 있다.아울러 공격자가 AI 도구를 활용해 다수 금융회사",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146911",
+    "date": "2026-11-01 10:41:19"
+  },
+  {
+    "source": "boannews",
+    "title": "LGU+-교육부-티오리한국, AI·정보보호 영재교육원 교육과정 고도화 나선다",
+    "desc": "LG유플러스는 교육부와 사이버보안 전문기업 티오리한국과 함께 AI 시대 정보보안 전문가 육성에 나선다고 밝혔다. 최근 AI 발전과 전방위적 해킹 이슈로 사이버보안의 중요성이 커지면서, LG유플러스가 보유한 보안 전문성과 네트워크·AI 인프라를 활용해 미래 보안 인재의 실전 역량을 키우겠다는 의지다.지난 10월 31일, LG유플러스와 교육부, 티오리한국은 서울 강서구 LG사이언스파크에서 ‘AI·정보보호 영재교육원 운영 지원을 위한 업무협약’을 체결했다. 이번 협약식에는 홍관희 LG유플러스 정보보안센터장(CISO/CPO, 전무), 김도",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146910",
+    "date": "2026-11-01 10:06:01"
+  },
+  {
+    "source": "boannews",
+    "title": "[배종찬의 보안 빅데이터] 북한 지뢰도발보다 더 경악할 북한 사이버 해킹",
+    "desc": "최근 안보 지형은 눈에 보이는 물리적 국경을 넘어 눈에 보이지 않는 사이버 공간으로 급격히 확장되고 있다. 특히 국가 주요 인프라와 금융망을 노린 지능형 사이버 공격은 이제 단순한 해킹 시도를 넘어 국가의 존립과 국민의 삶을 흔드는 중대한 안보 위협으로 떠올랐다. 빅데이터 플랫폼 썸트렌드(SomeTrend)가 지난달 19일부터 28일까지 집계한 빅데이터 연관어 분석 결과에 따르면, 최근 가장 뜨겁게 떠오른 핵심 키워드는 ‘북한 해킹’, ‘라자루스’, ‘PHP’, ‘금융기관’, 그리고 ‘정부’였다.글로벌 웹사이트에서 널리 쓰이는 프로",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146886",
+    "date": "2026-11-01 09:49:00"
+  },
+  {
+    "source": "thn",
     "title": "Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
     "desc": "American blockchain analysis firm Chainalysis said it was the target of a cybersecurity incident in which an external actor accessed non-sensitive customer data.\n\nHowever, the company noted that the breach did not result in unauthorized access to its investigation content, authentication credentials",
     "url": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
@@ -511,34 +567,6 @@
     "date": "2026-10-29 14:01:05"
   },
   {
-    "source": "boannews",
-    "title": "마이리얼트립, 유출사고…‘고유식별정보’ 여권번호도 유출",
-    "desc": "여행 플랫폼 마이리얼트립에서 개인정보 유출사고가 발생했다. 유출된 항목엔 여권번호 등 고유식별정보도 포함된 것으로 나타났다. 마이리얼트립은 29일 홈페이지에서 “25일 외부 권한 없는 자에 의한 비정상적 접근으로 개인정보가 유출된 것이 확인됐다”고 공지했다. 공지에 따르면, 유출된 항목은 △성명 △이메일 △휴대전화번호 △생년월일 △성별 △암호화된 비밀번호 △여권번호 △여권만료일 등이다. 여권번호와 여권 만료일은 일부 이용자의 정보만 유출됐다. 결제 관련 데이터는 유출되지 않은 것으로 나타났다. 유출 규모도 확인되지 않았다.다만 여권",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146862",
-    "date": "2026-10-29 13:53:18"
-  },
-  {
-    "source": "boannews",
-    "title": "중국 스마트 도어락, 가정 보안 허브로 진화",
-    "desc": "지난 3월 중국 상하이에서 열린 데스만(Desman) 신제품 발표회에서는 AI를 기반으로 한 스마트 도어락이 공개됐다. 해당 제품은 택배 도착 여부를 스스로 판단해 알림을 보내고, 이웃과 낯선 방문자를 구분해 사용자에게 알려준다. 고령자용 모델은 주름 변화에도 얼굴을 인식할 수 있으며, 가족에게 부모의 출입 현황을 실시간으로 전달하는 기능도 갖췄다. 출입 편의성 향상에 초점이 맞춰졌던 스마트 도어락은 이제 AI를 바탕으로 외부 상황을 인식하고 대응하는 가정 보안 플랫폼으로 진화하고 있다.스마트 도어락은 지문과 얼굴 등 생체 정보와",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146774",
-    "date": "2026-10-29 13:41:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[PHP 파장] 미국, 우리나라 등 25개 서버 PHP2셸 공격에 루트 권한 뺏겨",
-    "desc": "최근 발견된 PHP2셸(PHP2Shell) 취약점을 이용한 공격으로 미국과 우리나라 등에서 25개 서버가 장악된 정황이 드러났다. 이중엔 미국 정부 기관과 연관된 시스템 3곳이 포함됐다. 이스라엘 보안 기업 드림은 PHP2셸 취약점과 리눅스 커널 권한 상승 취약점 ‘프래그네시아’(Fragnesia)를 결합해 우리나라를 비롯, 미국과 일본, 대만 내 서버 25개의 최고관리자 권한을 탈취한 정황을 파악했다고 최근 밝혔다. 공격은 25일 포착됐다. 중국 연계 그룹이 인공지능(AI)을 사용해 공격을 벌인 것으로 보인다. 공격자는 특정 글로",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146860",
-    "date": "2026-10-29 13:30:00"
-  },
-  {
-    "source": "boannews",
-    "title": "오라클 EBS 치명적 결함, 패치 일주일 만에 공격자 움직임",
-    "desc": "오라클이 20일 수정한 E-비즈니스 스위트(EBS) 치명적 결함(CVE-2026-101767)을 찾아다니는 공격자 움직임이 포착됐다. 패치가 나온 지 일주일 만이다.이 결함은 EBS 핵심 구성 요소인 애플리케이션 오브젝트 라이브러리에 있다. 블리핑컴퓨터에 따르면 인증받지 않은 공격자가 HTTP로 네트워크에 접근할 수 있으면 복잡하지 않은 공격으로 시스템을 장악할 수 있다. 오라클은 10월 정기 보안 업데이트에서 이 결함을 수정하고, 지체 없이 패치를 적용하라고 당부했다.위협 인텔리전스 기업 디퓨즈드(Deused)는 27일(현지시각)",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146856",
-    "date": "2026-10-29 13:06:54"
-  },
-  {
     "source": "thn",
     "title": "Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns",
     "desc": "The China-nexus cyber espionage group known as Volt Typhoon has been attributed to a now-disrupted covert access network dubbed Silent Train that has been put to use for zero-day exploitation and strategic access.\n\n\"First identified in late 2023, Silent Train uses rotating chains of compromised SOHO",
@@ -663,33 +691,5 @@
     "desc": "Apple on Monday backported fixes for a high-severity security flaw that was exploited in real-world cyber attacks to older devices.\n\nThe vulnerability, tracked as CVE-2026-86950 (CVSS score: 8.8), is an out-of-bounds write affecting CoreGraphics that could result in arbitrary code execution when pro",
     "url": "https://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html",
     "date": "2026-10-27T19:29:09"
-  },
-  {
-    "source": "thn",
-    "title": "Microsoft Authenticator Flaw Let Permissionless Android Apps Steal Work Account Tokens",
-    "desc": "Microsoft has fixed a flaw in its Authenticator app for Android that let a malicious app with no permissions pose as a trusted Microsoft app, such as Teams, and collect sign-in tokens for a victim's work account.\n\nMicrosoft tracks the flaw as&nbsp;CVE-2026-80097&nbsp;and fixed it in Authenticator fo",
-    "url": "https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html",
-    "date": "2026-10-27T17:39:50"
-  },
-  {
-    "source": "thn",
-    "title": "Keystone to Destroy 18,835 Hardware Wallets After Hackers Steal Device Verification Key",
-    "desc": "An attacker who gained access to Keystone's website obtained the key that its hardware wallets use to prove they are genuine, the company said in a&nbsp;statement&nbsp;on October 26.\n\nSomeone with that key could build counterfeit devices that pass the online check owners use to verify a Keystone. A ",
-    "url": "https://thehackernews.com/2026/10/keystone-to-destroy-18835-hardware.html",
-    "date": "2026-10-27T17:16:00"
-  },
-  {
-    "source": "thn",
-    "title": "AI-Generated Fake Login Pages Are Making Account Takeovers Easier",
-    "desc": "Fake login pages are nothing new, but generative AI is making them easier to build and more convincing. Attackers can recreate familiar login screens, impersonate trusted brands and tailor phishing attempts to specific employees or organizations.&nbsp;\n\nSome fake login pages go beyond stealing passw",
-    "url": "https://thehackernews.com/2026/10/ai-generated-fake-login-pages-are.html",
-    "date": "2026-10-27T17:02:46"
-  },
-  {
-    "source": "thn",
-    "title": "Lazarus Abuses South Korean Security Software to Deploy Malware Using Post-Quantum Encryption",
-    "desc": "The North Korea-linked Lazarus Group has been attributed to a cyber espionage campaign dubbed Operation FlashHole targeting at least three organizations in South Korea spanning the construction, software, and wire-communication equipment manufacturing sectors.\n\nAccording to Russian cybersecurity com",
-    "url": "https://thehackernews.com/2026/10/lazarus-abuses-south-korean-security.html",
-    "date": "2026-10-27T17:02:31"
   }
 ]
