@@ -1,5 +1,208 @@
 [
   {
+    "source": "thn",
+    "title": "⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
+    "desc": "Some attacks this week didn't need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password. Small things that people barely think about. Yet each was enough to cause serious trouble.\n\nThen there were the bigger messes. Billions stolen, hidden networks o",
+    "url": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
+    "date": "2026-11-02T22:27:56"
+  },
+  {
+    "source": "thn",
+    "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
+    "desc": "A botnet of more than 1.3 million Android devices, mostly TV set-top boxes, lost control of its servers in late October in a takedown led by Google.\n\nGoogle says&nbsp;it is highly confident that device maker Videostrong intentionally put a backdoor in the boxes and sold access to criminals.\n\nThey us",
+    "url": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
+    "date": "2026-11-02T21:20:26"
+  },
+  {
+    "source": "thn",
+    "title": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
+    "desc": "Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026.\n\nAccording to a report published by Dream Research Labs, the campaign has led to the compromise of a",
+    "url": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
+    "date": "2026-11-02T20:16:05"
+  },
+  {
+    "source": "thn",
+    "title": "Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers",
+    "desc": "Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code,&nbsp;IBM said last week.\n\nLangflow is an open-source tool for building AI agents and workflows, and&nbsp;its vulnerability reports go to IBM. Every release from 1.0.0 through 1.12.",
+    "url": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
+    "date": "2026-11-02T17:20:00"
+  },
+  {
+    "source": "thn",
+    "title": "Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy",
+    "desc": "Forty percent of security teams now use AI every day, and another 56% are testing it. Only 4% have no plans to adopt it, according to Prophet Security's State of AI in Security Operations 2026 survey of more than 250 CISOs, SOC leaders and practitioners. For the teams still testing, the next decisio",
+    "url": "https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html",
+    "date": "2026-11-02T17:00:00"
+  },
+  {
+    "source": "thn",
+    "title": "Attackers Pose as IT Support on Microsoft Teams, Abuse AD CS to Steal Company Data",
+    "desc": "Attackers posing as IT support on Microsoft Teams talked employees into giving them remote control of their PCs. They then used insecure Active Directory Certificate Services (AD CS) settings to obtain login certificates for privileged accounts, including one for a domain controller.\n\nMicrosoft said",
+    "url": "https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html",
+    "date": "2026-11-02T16:38:45"
+  },
+  {
+    "source": "thn",
+    "title": "Government Linux Servers Targeted With SysGoRAT and Suspected AI-Generated Scripts",
+    "desc": "Cybersecurity researchers have disclosed details of a cyber espionage campaign specifically targeting Linux infrastructure associated with government entities and state-affiliated infrastructure.\n\nThe activity, observed by Palo Alto Networks Unit 42 between October 2025 and April 2026, has been trac",
+    "url": "https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html",
+    "date": "2026-11-02T16:19:59"
+  },
+  {
+    "source": "thn",
+    "title": "New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value",
+    "desc": "Cybersecurity researchers have discovered a new Windows infostealer malware called VOLTA-AUTODOXER (aka VOLTA) that makes use of a large language model (LLM) to rank a victim's stolen data by their monetization value.\n\nLike other typical stealer families, VOLTA is equipped to harvest passwords and c",
+    "url": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html",
+    "date": "2026-11-02T11:21:07"
+  },
+  {
+    "source": "boannews",
+    "title": "AI가 뚫어낸 리눅스 커널... 우분투에 치명적 제로클릭 원격 실행 취약점 경보",
+    "desc": "AI가 클라우드와 서버의 뼈대인 리눅스 커널 네트워킹 스택의 심층 취약점을 스스로 찾아내고, 원격에서 사용자 개입 없이 시스템 최고 관리자(root) 권한을 탈취하는 ‘제로클릭’(Zero-click) 공격 체인을 완성해 보안 업계에 충격을 주고 있다.글로벌 오픈소스 리눅스 배포판 ‘우분투’(Ubuntu) 개발사 캐노니컬과 미국 국립표준기술연구원(NIST)은 최근 리눅스 커널의 네트워크 메모리 관리 결함 ‘CVE-2026-98432’에 대해 공통 취약점 점수 시스템(CVSS) 최고 수준인 9.8점을 부여하고 긴급 보안 권고를 발표했다",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146897",
+    "date": "2026-11-02 19:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "미리보기 한 번에 비공개 대화까지...챗GPT 공유 링크 결함, 8일 만에 수정",
+    "desc": "챗GPT 공유 링크 하나로 공격자 코드가 피해자 계정에서 실행돼 비공개 대화까지 읽어 갈 수 있던 결함이 드러났다. 오픈AI는 신고 8일 만에 결함을 고쳤다.보안 기업 파라미터(Parameter)는 10월 18일 오픈AI 버그바운티로 이 문제를 신고했다. 오픈AI는 처음엔 두 번째 등급(P2)으로 분류했다가 직접 재현한 뒤 가장 심각한 등급인 P1로 올렸다. 26일까지 웹 화면 두 버전 모두에 수정을 적용했고, 파라미터는 수정이 끝난 28일 분석 내용을 공개했다. 포상금은 5000달러다.공격에 필요한 것은 평범한 공유 링크 하나뿐이",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146919",
+    "date": "2026-11-02 18:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "조달청, 11월 한 달간 무분별입찰 집중 신고 기간 운영하며 불공정 행위 근절",
+    "desc": "조달청(청장 백승보)이 조달기업의 정당한 낙찰 기회를 보장하고 공정한 경쟁 환경을 조성하기 위해 11월 30일까지 ‘무분별입찰 집중 신고 기간’을 운영한다고 발표했다.이번 집중 신고 기간은 사업자등록만 마친 뒤 낙찰을 받아 브로커 등을 통해 물품을 납품하고 수수료만 챙기는 등 실제 공급 능력이 없는 부실 업체들을 공공조달시장에서 차단하기 위해 추진된다.신고 대상은 조달청과 계약을 체결한 후 직접 이행하지 않는 계약상대자와, 낙찰 시 수수료 지급을 조건으로 입찰 참여를 유도하거나 특정 제조·공급사와의 계약을 교사하는 브로커 등이다.불",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146935",
+    "date": "2026-11-02 17:30:25"
+  },
+  {
+    "source": "boannews",
+    "title": "성남시, 2026 스마트도시 특화단지 조성사업 업무협약 체결 및 본격 착수",
+    "desc": "성남시(시장 신상진)가 지난 10월 29일 오후 ‘2026년 스마트도시 특화단지 조성사업’의 성공적 추진을 위해 10개 관계기관과 업무협약을 맺고 사업 착수보고회를 개최했다고 밝혔다.이번 사업은 지난 6월 국토교통부 공모에 성남시가 최종 선정됨에 따라 마련됐다. 협약식에는 성남시를 필두로 차세대융합기술연구원, 분당서울대학교병원, 카카오헬스케어, 가천대학교 등 총 10개 산·학·연·관이 참석해 상호 협조 체계 구축을 다짐했다.성남시 스마트도시 특화단지 조성사업은 국비 71억5000만원을 포함해 2026년부터 2028년까지 3년간 총",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146932",
+    "date": "2026-11-02 17:30:00"
+  },
+  {
+    "source": "boannews",
+    "title": "“AI 도구와 공급망 결함에 방어 시차 붕괴”... OWASP, 10월 보안사고 톺아봐",
+    "desc": "AI 침투 도구의 보편화와 오픈소스 핵심 엔진 취약점, 공급망 계정 유출이 한 달 새 동시다발로 터져 나오며 기업 보안 조직의 대응 체계가 한계 시험대에 올랐다.국제 웹 보안 표준화 기구 OWASP 한국 지부인 OWASP 서울 챕터는 지난달 30일 서울 역삼동 디캠프 선릉에서 ‘최신 보안사고 톺아보기 그리고 이야기 해보기’를 주제로 정기 세미나를 개최했다. 발표자로 나선 김동현 크리밋 대표는 10월 한 달간 국내외를 강타한 주요 보안 사고의 원인과 방어 과제를 시간순으로 짚었다. 김 대표는 월초 잇따른 국내 금융권 유출 사고의 공통",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146938",
+    "date": "2026-11-02 17:15:00"
+  },
+  {
+    "source": "boannews",
+    "title": "‘한방에 8조원’ 바이낸스 해킹... ‘격리’와 ‘권한관리’ 경각심↑",
+    "desc": "20분만에 10개 블록체인이 털리며 8조원이 넘는 피해가 발생한 바이낸스 해킹 사고로 ‘격리’와 ‘권한관리’, ‘엔드포인트 보안’의 중요성이 크게 부각되고 있다.위협인텔리전스 기업 SOC레이더(SOCRadar)는 바이낸스 해킹 사태의 전말을 분석한 보고서를 통해 “서명 경로를 블록체인 네트워크별로 격리하고, 개발자와 운영자들의 단말기를 ‘티어제로’(Tier-Zero, 최상위 보안 자산)으로 관리해야 한다”고 제언했다.‘한꺼번에 처리’ 편리함 악용해 50개 권한 요청SOC레이더 분석에 따르면, 이번 바이낸스 공격의 시작은 사내 인프라",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146940",
+    "date": "2026-11-02 17:10:00"
+  },
+  {
+    "source": "boannews",
+    "title": "[더존비즈온 사태] “계약 끝난 지 11개월 지났는데”…성현회계법인 개인정보 유출 가능성",
+    "desc": "BDO성현회계법인(성현회계법인)에서 더존비즈온 침해사고 관련 개인정보 유출 가능성이 제기됐다. 성현회계법인은 더존비즈온과 계약이 지난해 말 끝났음에도 불구하고 11개월이 지났음에도 개인정보가 유출됐을 가능성이 나왔다. 성현회계법인은 지난달 30일 ‘개인정보 유출 가능성 안내’ 공지사항을 통해 “고객사 업무 대행 서비스를 담당하는 일부 부서가 과거 이용했던 더존비즈온의 데이터 백업 서비스(APO)와 관련해 외부 침해로 인한 개인정보 유출 가능성이 있다는 통지를 지난달 28일 접수했다”며 “이 서비스는 지난해 말일 자도 계약이 종료돼",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146941",
+    "date": "2026-11-02 17:02:54"
+  },
+  {
+    "source": "boannews",
+    "title": "[더존비즈온 사태] 급여 계좌부터 가족 주민번호까지... 더존비즈온 해킹이 ‘중대 사고’인 이유",
+    "desc": "더존비즈온이 두 차례 해킹으로 고객사 개인정보가 유출됐을 가능성이 알려지면서 과학기술정보통신부와 한국인터넷진흥원이 민관합동조사단을 구성한 지 일주일이 지났다. 당시 과기정통부는 더존비즈온 해킹을 ‘중대한 사고’로 판단하고 통신 3사와 쿠팡, 티빙에 이어 민관합동조사단을 구성했다고 밝혔다.그렇다면 더존비즈온 해킹 사건은 왜 민관합동조사단을 꾸릴 정도로 ‘중대 사고’로 꼽힐까? 그 이유를 알려면 먼저 공격당한 서비스와 그 서비스에 담겨 있던 정보에 대해 알아야 한다.우선, 더존비즈온의 해킹 사건에서 피해를 입은 것은 스마트 A 10과",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146948",
+    "date": "2026-11-02 17:01:39"
+  },
+  {
+    "source": "boannews",
+    "title": "보안인들의 네트워크 축제  ‘제6회 더 시큐리티컵 골프대회’ 성황리 개최",
+    "desc": "국내 보안 분야 종사자들의 소통과 인적 네트워크 강화를 위한 ‘제6회 더 시큐리티컵 골프대회’(THE SECURITY CUP 2026)가 지난 10월 30일 강원도 원주시 센추리21CC에서 성황리에 개최됐다.이번 행사는 국내 최대 보안 전문 매체 보안뉴스와 보안 종합 월간지 시큐리티월드, 더비엔, 인포마마켓비엔이 공동 주최했다. 아울러 한국정보보호최고책임자협의회, 한국정보보호산업협회, 한국첨단안전산업협회, 한국재난안전산업협회, 한국산업기술보호협회, 한국영상정보연구조합, 한국영상보안산업협동조합 등 주요 유관 협·단체들이 후원기관으로",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146939",
+    "date": "2026-11-02 16:02:17"
+  },
+  {
+    "source": "boannews",
+    "title": "[더존비즈온 사태] 한국공항보안, 개인정보 유출 가능성…배우자 정보도 포함됐나",
+    "desc": "한국공항보안에서도 더존비즈온 백업 서비스 침해 여파로 개인정보 유출 가능성이 제기됐다. 한국공항보안은 지난달 30일 “지난달 28일 더존비즈온의 백업 서버에 비인가자의 접근 및 일부 암호화된 데이터의 유출이 있었다는 통지를 받았으며, 재 당사 정보의 실제 유출 여부·범위와 사고 발생 시점·경위는 조사 중”이라고 밝혔다. 공지에 따르면 유출 가능성이 있는 개인정보 항목은 △사원코드 △성명 △부서 △주민등록번호 △성별 △생년월일 △내외국인 구분 △우편번호 △주소 △전화번호 △비상연락처 △이메일 △입사일 △퇴직일 △재직구분 △고용형태 △",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146937",
+    "date": "2026-11-02 15:10:00"
+  },
+  {
+    "source": "boannews",
+    "title": "“자연어로 묻고 맥락까지 파악” 시큐아이, AI 위협 인텔리전스 서비스 ‘STIC’",
+    "desc": "다크웹과 텔레그램 등 폐쇄형 채널을 통해 유출되는 계정 정보와 고도화된 악성코드를 단일 포털에서 AI로 추적·분석하는 위협 인텔리전스 플랫폼이 시장에 나왔다.시큐아이는 AI 기술을 접목한 위협 인텔리전스(TI) 서비스 ‘스틱’(STIC, SECUi Threat Intelligence Center)을 출시했다고 2일 밝혔다.스틱은 위협 정보의 수집부터 정밀 분석, 배포, 현장 보안 장비 연동까지 전 과정을 아우른 통합 데이터베이스(DB) 및 웹 포털 기반 서비스다. 글로벌 위협 정보와 시큐아이가 자체 수집한 국내외 보안 데이터를 결합",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146933",
+    "date": "2026-11-02 14:23:22"
+  },
+  {
+    "source": "boannews",
+    "title": "[더존비즈온 사태] 국기원, 개인정보 유출 가능성…더존비즈온 해킹 여파",
+    "desc": "더존비즈온 침해사고 여파로 국기원도 개인정보 유출 가능성이 제기됐다.국기원은 지난달 30일 공지사항을 통해 “행정업무 처리를 위해 이용 중인 외부 시스템(더존비즈온 ERP)의 백업 서비스에서 보안 사고가 발생해 국기원 데이터의 일부 개인정보가 유출됐을 가능성이 있다고 통보받았다”며 “국기원의 자료가 실제 반출 대상에 포함됐는지는 아직 확인되지 않았으며 현재 관련 조사가 진행 중”이라고 밝혔다. 공지에 따르면 유출 가능성이 있는 개인정보 항목은 △직원정보 △각종 임명 및 상훈 정보 △기타·사업소득자 정보 중 성명 △생년월일 또는 주민",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146936",
+    "date": "2026-11-02 14:16:44"
+  },
+  {
+    "source": "boannews",
+    "title": "태안군, CPTED 기법 적용한 안심귀갓길 조성으로 군민 보행안전 확보",
+    "desc": "태안군(군수 윤희신)이 태안경찰서와 함께 범죄예방 환경설계(CPTED) 기법을 반영한 ‘안심귀갓길 조성사업’을 추진하며, 관내 학교 주변 통학로와 생활 골목길 등 3개 지역의 보행 환경을 대폭 개선했다고 밝혔다.태안군은 매년 태안경찰서와 손잡고 관내 안전 취약지역을 합동 점검해 왔다. 현장 점검 과정에서 발굴된 보행 위험 요소를 정비하고 필요한 곳에 맞춤형 안전 시설물을 지속적으로 확충하고 있다.특히 올해는 태안초등학교, 태안중학교, 태안여자중학교 등 주요 통학로와 주택가 골목길처럼 군민들의 이동이 많은 생활 밀접 공간을 중심으로",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146931",
+    "date": "2026-11-02 14:05:55"
+  },
+  {
+    "source": "boannews",
+    "title": "포티넷, 3분기 매출 20% 뛴 2조7872억... 연간 전망치 일제히 상향",
+    "desc": "인공지능(AI) 인프라 확산에 따른 보안 수요 확대와 제품 판매 호조에 힘입어 포티넷이 분기 매출 20억달러 선을 넘어섰다.포티넷은 2026년 3분기 매출이 전년 동기 대비 20% 증가한 20억8000만달러(2조7872억원)를 기록했다고 2일 밝혔다. 같은 기간 청구액(Billings)은 29% 늘어난 23억4000만달러(3조1356억원)로 집계됐다.제품 매출은 전년 동기 대비 37% 급증한 7억6500만달러(1조251억원)를 달성하며 실적 성장을 견인했다. 수익성 지표도 개선돼 ‘미국 일반회계기준’(GAAP) 영업이익률은 34%,",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146918",
+    "date": "2026-11-02 13:25:00"
+  },
+  {
+    "source": "boannews",
+    "title": "카스퍼스키, 인터폴 ‘세렝게티III’ 작전에 기술 분석 지원",
+    "desc": "카스퍼스키(한국지사장 이효은)는 인터폴(INTERPOL)이 주도한 국제 사이버 범죄 단속 작전 ‘세렝게티 III 작전’(Operation Serengeti III )에 데이터와 기술 분석을 지원했다고 2일 밝혔다.카스퍼스키는 위협 연구 전문 조직인 카스퍼스키 위협 연구 전문 센터를 통해 위협 인텔리전스 데이터와 기술 분석을 제공했다. 이번 작전을 통해 용의자 1462명이 검거됐으며, 1억500만 달러 규모의 자금이 회수됐다.2026년 6월 29일부터 8월 31일까지 진행된 세렝게티 작전은 이번이 세 번째다. 인터폴은 이번 작전을 위",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146925",
+    "date": "2026-11-02 13:20:00"
+  },
+  {
+    "source": "boannews",
+    "title": "인터폴, 아프리카 사이버 범죄자 1462명 검거... 그룹아이비 인텔리전스 공조",
+    "desc": "피해자 6만5929명, 피해액 3억8500만달러(약 5152억원)를 넘어선 초국가적 사이버 범죄 조직을 소탕하기 위해 국제 사법기관과 민간 보안 기업이 대규모 공조 수사를 펼쳤다.그룹아이비(Group-IB는 인터폴이 주도한 아프리카 지역 사이버 범죄 소탕 작전인 ‘세렝게티 III 작전’(Operation Serengeti III)에 위협 인텔리전스를 지원했다고 2일 밝혔다.인터폴이 지난 6월부터 8월까지 조율한 이번 작전은 아프리카 21개국 법 집행기관이 참여했다. 당국은 피싱, 기업 이메일 침해(BEC), 랜섬웨어, 온라인 사기,",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146927",
+    "date": "2026-11-02 13:16:58"
+  },
+  {
+    "source": "boannews",
+    "title": "“사후 대응에서 사전 식별로”... 테이텀시큐리티, 제조업 AI·클라우드 통제선 구축",
+    "desc": "모빌리티와 조선 등 영남권 주력 제조업 인프라에 클라우드 전환과 생성형 AI 도입이 본격화되면서, 늘어난 인프라 복잡성과 확장된 관리 영역을 선제 통제하는 보안 체계가 핵심 과제로 부상했다.테이텀시큐리티는 영남권 주요 모빌리티·조선 기업의 IT 리더와 실무자를 대상으로 AI·클라우드 보안 대응 전략을 공유했다고 2일 밝혔다.제조 현장의 디지털 전환 가속화로 클라우드와 AI 활용 범위가 넓어지면서 관리해야 할 인프라 자산과 잠재적 공격 접점 역시 급증하는 추세다. 테이텀시큐리티는 이번 강연에서 기업이 주목해야 할 보안 위협을 진단하고",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146926",
+    "date": "2026-11-02 13:15:00"
+  },
+  {
+    "source": "boannews",
+    "title": "유·무인 복합체계 시대, 군수도 AI 전환... 네이버클라우드 실증 착수",
+    "desc": "드론과 유·무인 복합체계 등 첨단 무기체계 도입이 가속화되며, 부품 조달부터 예방 정비·물류 수송에 이르는 군수 지원 체계 전반을 데이터 중심의 인공지능(AI) 기반으로 재편하는 작업이 본격화된다.네이버클라우드는 육군 군수사령부와 ‘미래 전장 환경 최적화 및 실전형 AI 군수 역량 강화를 위한 업무협약’을 체결했다고 2일 밝혔다.육군 군수사령부는 보급·정비·수송 등 육군 군수 지원 전반을 총괄 관리하는 핵심 부대다. 복잡다단해지는 미래 전장 환경에서는 무기체계 정비 주기 단축과 보급 효율화가 전투력 유지의 결정적 요인으로 꼽히면서,",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146929",
+    "date": "2026-11-02 13:14:43"
+  },
+  {
+    "source": "boannews",
+    "title": "“우리 해킹 포럼 정상 영업합니다”…PHP2셸로 문 닫았던 다크웹 포럼 활동 재개",
+    "desc": "해커들의 ‘정보 암시장’ 역할을 하는 다크웹 포럼이 ‘PHP2셸’로 문을 닫았다가 최근 다시 사이트를 열고 공격 활동을 이어가고 있다.2일  취재를 종합하면 불법 해킹 포럼 ‘다크포럼스’(Darkforums)가 지난달 29일 사이트 업데이트를 발표했다. 다크포럼스 운영자로 알려진 ‘녹스’(Knox)는 지난달 29일 포럼 내 공지사항을 통해 “안정성을 개선하고 더 원활한 사용 경험을 제공하기 위해 여러 문제를 해결했으며, 플랫폼의 보호성과 신뢰성을 강화하기 위한 추가 보안 개선 조치를 완료했다”며 “플랫폼 색상도 녹색 계열",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146930",
+    "date": "2026-11-02 13:10:00"
+  },
+  {
+    "source": "boannews",
+    "title": "[이슈칼럼] AI가 정찰을 끝낼 때, 방어자는 아직 자산을 세고 있다",
+    "desc": "10월 초 시작된 금융권 연쇄 침해는 시중은행에서 저축은행, 캐피털사까지 16개 금융사로 번졌다. 유출된 개인정보는 약 10만건에 이른다. 금융위원회는 10월 4일 전 금융권 긴급 점검회의를 열고, 외부에 노출된 IT 자산과 서비스부터 점검하라고 지시했다.이번 사고를 이전과 다르게 만든 것은 공격 방식이다. 공격자는 오픈소스로 공개된 AI 자율 침투테스트 도구에 대규모 언어모델(LLM)을 결합해 공격을 자동화한 것으로 분석됐다. 대상 시스템의 정보를 모으고, 취약점을 찾아 검증하고, 공격 계획을 세우는 정찰 과정을 기계가 대신한 것",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146928",
+    "date": "2026-11-02 11:41:50"
+  },
+  {
+    "source": "boannews",
+    "title": "커서 마켓에 변조된 ‘클로드 코드’ 올라와... 최대 5000명 설치",
+    "desc": "AI 코딩 편집기 커서(Cursor)의 확장 프로그램 마켓에 앤트로픽 코딩 도우미 ‘클로드 코드’를 변조한 확장 프로그램이 정식 확장 아이디를 단 채 올라와, 최대 5000명이 설치했다. 커서는 마켓을 잠시 닫고 문제의 버전을 내렸다.커서는 변조판을 미국 태평양시간 10월 29일 오전 2시27분께~오후 1시35분께 설치할 수 있었다고 밝혔다. 커서가 처음 지목한 버전은 2.1.313이고, 이후 공지를 고쳐 2.1.312도 넣었다. 커서는 변조판이 앤트로픽이 만든 버전이 아니라고 밝혔다.확장 프로그램은 개발자가 편집기에 기능을 더할",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146915",
+    "date": "2026-11-02 11:00:00"
+  },
+  {
     "source": "boannews",
     "title": "“AI 도입 시 권한 통제 누락되면 기밀 유출” 인젠트, 보안 기반 AX 전략 제시",
     "desc": "사내 전자문서를 AI 검색 파이프라인에 연동하는 과정에서 원본 문서의 접근 권한이 제대로 동기화되지 않으면 기밀 정보가 무단 노출될 수 있다는 지적이 나왔다.인젠트는 지난달 30일 ‘문서중앙화에서 AX 플랫폼으로–AI가 신뢰하는 지식은 어디서 오는가’를 주제로 온라인 웨비나를 열고, 문서 보안과 데이터 통합을 결합한 AI 전환(AX) 전략을 발표했다.기업들이 사내 규정이나 계약서 등 비정형 문서를 AI 에이전트와 연계할 때 접근 제어의 공백이 발생하기 쉽다. 원본 문서 시스템의 열람 권한이 AI 지식 데이터베이스(DB)에 실시간으로",
@@ -44,7 +247,7 @@
   {
     "source": "thn",
     "title": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist",
-    "desc": "The U.S. Federal Bureau of Investigation (FBI) has officially attributed the theft of more than $6 billion in virtual assets to TraderTraitor, a North Korea-aligned elite hacking group also tracked as Jade Sleet, Pressure Chollima, PUKCHONG, Slow Pisces, and UNC4899.\n\nThe FBI, along with the U.S. Se",
+    "desc": "The U.S. Federal Bureau of Investigation (FBI) has officially attributed the theft of more than $6 billion in virtual assets from Binance to TraderTraitor, a North Korea-aligned elite hacking group also tracked as Jade Sleet, Pressure Chollima, PUKCHONG, Slow Pisces, and UNC4899.\n\nThe FBI, along wit",
     "url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
     "date": "2026-11-01T12:33:00"
   },
@@ -329,90 +532,6 @@
     "date": "2026-10-30 13:30:00"
   },
   {
-    "source": "boannews",
-    "title": "캘리포니아 학생 개인정보, 시험기관 파일 전송 서버 계정 하나로 유출",
-    "desc": "미국 캘리포니아주 공립학교 전·현직 학생들의 개인 기록이 주 학력평가를 대행하는 비영리 시험기관의 파일 전송 서버에서 복사돼 나갔다. 공격자는 탈취한 로그인 정보 하나로 넉 달 가까이 서버를 드나들었다.캘리포니아주 교육부(CDE)의 유출 통지에 따르면 권한을 받지 않 누군가가 5월 22일~9월 18일 탈취한 로그인 정보로 미국교육평가원(ETS)의 파일 전송 서버(SFTP)에 접속했다. ETS는 캘리포니아주의 주 단위·연방 시험을 맡아 온 기관이다. ETS는 침입이 끝나고 일주일 뒤인 9월 25일에야 이상 활동을 알아챘다.SFTP는",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146520",
-    "date": "2026-10-30 13:24:19"
-  },
-  {
-    "source": "boannews",
-    "title": "두산디지털이노베이션, 美 방산 사이버보안 ‘CMMC RPO’ 자격 획득... 시장 진입로 연다",
-    "desc": "미국 국방 공급망 진입을 위한 사이버보안 요건이 단계적으로 강화되는 가운데, 국내 방산 및 제조 기업의 미국 시장 진출을 지원하는 공인 컨설팅 체계가 마련됐다. 두산 디지털이노베이션BU(DDI)는 ‘사이버보안 성숙도 모델 인증’(CMMC) 공식 인정기구인 ‘사이버 AB’로부터 ‘공식 컨설팅 기관’(RPO) 자격을 취득했다고 30일 밝혔다.미국 국방부는 방위산업 공급망에 참여하는 세계 협력사들의 보안 수준을 검증하기 위해 CMMC 인증 취득을 의무화하고 있다. 핵심 설계 도면과 미분류 주요 기술 데이터(CUI) 유출을 방지하기 위한",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146894",
-    "date": "2026-10-30 13:04:05"
-  },
-  {
-    "source": "boannews",
-    "title": "여의시스템, AI 시대 차세대 전력 인프라 네트워크 선보여.. 모싸와  BIXPO 2026 참가",
-    "desc": "여의시스템(대표 성명기·성제현)이 글로벌 산업용 네트워크 전문기업 모싸(Moxa)와 함께 11월 4-6일 광주 김대중컨벤션센터에서 열리는 ‘2026 빛가람국제전력기술엑스포(BIXPO 2026)’에 참가한다.여의시스템과 모싸는 디지털 변전소와 소프트웨어 정의 변전소(Software-Defined Substation), 고가용성 네트워크와 AI 데이터센터 등 차세대 전력 인프라를 위한 네트워크 기술을 선보인다. 하드웨어 중심에서 소프트웨어 정의(Software-Defined)로 진화하는 전력 인프라를 주제로 디지털 변전소와 소프트웨어",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146895",
-    "date": "2026-10-30 11:55:31"
-  },
-  {
-    "source": "boannews",
-    "title": "국내외 가상자산거래소 노린 해킹, 금전 피해로 이어졌다",
-    "desc": "국내외에서 가상자산거래소를 노린 해킹 공격이 계속되면서 실제 금전적 피해로까지 이어졌다. 프라뱅에선 1억원가량의 금전 피해가 발생했으며, 빗썸에선 고객 개인정보가 유출됐다. 세계 최대 가상자산거래소 바이낸스에서도 수십억달러에 달하는 금전 피해가 발생한 것으로 추정된다. 가상자산거래소 빗썸은 29일 사내 시스템 해킹 사고로 고객 6444명의 개인정보가 유출됐다고 밝힌 바 있다. 이 중 5600명의 개인정보는 암호화된 상태로, 실제 844명의 정보만 직접 노출됐다. 임직원 715명의 개인정보도 유출됐다. 빗썸은 이날 홈페이지 공지에서",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146893",
-    "date": "2026-10-30 11:30:32"
-  },
-  {
-    "source": "boannews",
-    "title": "미 국방부, 군기지 냉동고 잇단 고장 해킹 의심 수사",
-    "desc": "미국 국방부가 8월 미국 곳곳의 군 기지에서 음식을 상하게 만든 냉동고 고장을 해킹 의심 사건으로 보고 있다. 로이터가 사안을 잘 아는 관계자를 인용해 29일(현지시각) 보도했다.관계자 가운데 한 명은 군 수사관들이 이달 프랑스 슈퍼마켓 영업에 차질을 준 상업용 냉동고 사이버 공격을 두고 프랑스와 연락하고 있다고 말했다.고장이 난 곳은 장병들이 식료품을 사는 기지 내 매장 ‘커미서리’다. 로이터가 기지들의 당시 페이스북 게시물과 웹사이트 공지를 살펴본 결과, 8월 말 최소 6곳에서 냉동고 이상이 일어났다.적어도 한 곳에선 냉동고가",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146885",
-    "date": "2026-10-30 11:24:36"
-  },
-  {
-    "source": "boannews",
-    "title": "[PHP 파장] 시놀로지 NAS서 취약점 발견... 기업 파일 등 공격 노출 우려",
-    "desc": "네트워크 저장장치(NAS) 제조사 시놀로지(Synology)가 자사 일부 제품에 대한 PHP 취약점 관련 보안 업데이트를 배포했다. 한국인터넷진흥원(KISA)은 시놀로지가 제공하는 이번 보안 업데이트를 실시할 것을 권유하는 공지를 냈다.30일 대만 NAS 제조사 시놀로지는 세계 웹 생태계 주요 프로그래밍 언어 PHP에서 발견된 취약점 ‘PHP2셸’(PHP2Shell)에 자사 NAS 내 실행되는 일부 애플리케이션 및 PHP 모듈이 영향 받을 수 있다고 밝혔다.보안 업데이트 대상은 자체 운영체제 DSM에 적용된 PHP 7.3~8.4 버",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146891",
-    "date": "2026-10-30 11:11:20"
-  },
-  {
-    "source": "boannews",
-    "title": "“단말부터 네트워크까지 한 번에”... 세이퍼존, 베트남서 올인원 AI 보안 솔루션 선봬",
-    "desc": "생성형 AI를 악용한 지능형 공격과 내부 데이터 유출 위협이 국경을 넘어 확산하는 가운데, 국내 보안기업이 동남아 현지에서 단일 에이전트 기반의 통합 보안 기술을 선보였다.세이퍼존은 베트남 하노이에서 열린 ‘2026 한-베트남 AI·디지털 포럼’에 참가해 단말과 네트워크를 아우르는 ‘올인원 AI 보안 솔루션’을 전시했다고 30일 밝혔다.이번 포럼은 디지털 전환 속도가 빠른 베트남에서 양국 간 AI 및 디지털 협력 방안을 모색하기 위해 마련됐다. 최근 금융사와 공공기관을 겨냥한 사이버 침투가 정교해지고 내부자에 의한 기밀 유출 사고가",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146890",
-    "date": "2026-10-30 10:56:31"
-  },
-  {
-    "source": "boannews",
-    "title": "“가짜 얼굴 막는다”... 유니온바이오메트릭스  ‘위조 얼굴 판별 출입통제시스템’ 조달청 우수조달물품 선정",
-    "desc": "유니온바이오메트릭스(대표 신요식)는 자사 ‘위조 얼굴 판별이 가능한 출입통제시스템’이 조달청 우수조달물품으로 지정됐다고 30일 밝혔다. 다른 사람의 사진이나 영상, 입체 가면 등을 이용해 다른 사람으로 가장해 출입하는 것을 막을 수 있다. 9월 혁신시제품 선정에 이어 이번에 우수조달물품으로도 지정됐다. 이를 바탕으로 공공부문 수주와 매출 확대에 나선다.우수조달물품에 지정되면 공공기관이 별도 경쟁입찰 없이 수의계약으로 구매할 수 있다. 기업은 공공기관 납품 기회를 넓히고, 공공기관은 우수한 제품을 간편하게 도입할 수 있다. 조달청에",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146889",
-    "date": "2026-10-30 10:54:09"
-  },
-  {
-    "source": "boannews",
-    "title": "피앤피시큐어, FISCON 2026서 ‘비주얼 해킹’ 막는 페이스락커 공개",
-    "desc": "계정 탈취 공격과 스마트폰 촬영 등 화면 노출을 노린 ‘비주얼 해킹’(Visual Hacking) 위협이 금융권을 겨냥하는 가운데, 접속부터 업무 수행 전 과정의 화면 보안을 통제하는 기술이 공개된다.피앤피시큐어는 내달 12일 서울 여의도 콘래드 서울 호텔에서 열리는 금융정보보호 컨퍼런스 ‘FISCON 2026’에 참가해 화면정보 유출 방지 및 안면인증 솔루션 ‘페이스락커’(FaceLocker)를 선보인다고 30일 밝혔다. 올해 20주년을 맞아 ‘Now for Next Finance’를 주제로 열리는 FISCON 2026은 AI 확",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146887",
-    "date": "2026-10-30 10:31:33"
-  },
-  {
-    "source": "boannews",
-    "title": "[카드뉴스] \"냉장고 문 열었더니 인터넷 털렸다?\"… 스마트 가전 노린 '홈 네트워크 해킹' 실태",
-    "desc": "스마트 냉장고 등 보안 백신이 취약한 가정용 IoT 기기가 해커의 내부망 침투 통로 및 좀비 PC 기지로 악용되고 있다. 가전 기기가 장악될 경우 동일한 홈 네트워크 내 스마트폰과 PC로 악성 트래픽이 전파되어 금융 정보 유출과 디도스 공격으로 이어진다. 피해를 차단하기 위해 공유기 게스트 네트워크 기능을 활용한 가전 전용 와이파이 망분리와 기본 비밀번호 변경 조치가 요구된다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146888",
-    "date": "2026-10-30 10:20:06"
-  },
-  {
-    "source": "boannews",
-    "title": "[단독] 미래에셋생명 유출사고, ‘웹셸’ 업로드 취약점 때문?",
-    "desc": "미래에셋생명 유출 사고의 원인으로 ‘웹셸’(Web Shell) 업로드 취약점이 지목된다. 29일 한 정보보호 전문가는 에 “26일 미래에셋생명 침해 사고 발생 이후 금융권 안팎에서 이와 관련이 깊어 보이는 침해지표(IoC)가 긴급 공유됐다”며 “웹셸 업로드 취약점을 악용한 공격에 당했으며, 이후 공격자는 ‘토르’(Tor) 브라우저 등을 사용하는 등 해외에서 여러 IP를 경유해 데이터 유출을 시도한 것으로 보인다”고 밝혔다. 앞서 미래에셋생명은 25일 일부 시스템에서 이상 증상을 확인하고 26일 개인정보 유출 사실을 파악한",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146869",
-    "date": "2026-10-30 09:56:36"
-  },
-  {
-    "source": "boannews",
-    "title": "보안 기업들, 피스콘 2026에서 AI 보안 등 제품 선보여",
-    "desc": "국내 정보보호 기업들이 금융권 보안 역량을 선보이는 장이 열린다.한국정보보호산업협회(KISIA, 회장 김진수)는 11월 12일 서울 여의도 콘래드 호텔에서 열리는 금융정보보호 컨퍼런스 ‘피스콘 2026’(FISCON 2026)에서 정보보호 기업 전시회를 개최한다고 30일 밝혔다.피스콘 2026은 금융보안원과 금융정보보호협의회, 금융보안포럼이 공동 주최하는 국내 최대 금융 정보보호 컨퍼런스다. 올해는‘나우 포 넥스트 파이낸스’(Now for Next Finance)라는 주제로 개최된다.KISIA는 이번 컨퍼런스의 후원 기관으로 참여함",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146883",
-    "date": "2026-10-30 09:47:08"
-  },
-  {
     "source": "thn",
     "title": "Linux Kernel TCP Flaw With 9.8 CVSS Score Affects Ubuntu, Red Hat and Other Distributions",
     "desc": "A flaw in the Linux kernel's TCP code, tracked as&nbsp;CVE-2026-98432, affects Ubuntu, Red Hat Enterprise Linux (RHEL), and other Linux distributions. The kernel's own CVE team rates it 9.8 out of 10 on the CVSS scale.\n\nAnthropic said&nbsp;on October 27 that its AI model wrote an exploit that uses t",
@@ -504,76 +623,6 @@
     "date": "2026-10-29T11:20:17"
   },
   {
-    "source": "boannews",
-    "title": "끝없이 이어지는 개인정보 유출... SK플래닛, 고객 환급계좌까지 털렸다",
-    "desc": "개인정보 유출 사건이 끝도 없이 이어지고 있다. 이번엔 SK플래닛으로 일부 고객의 이름, 전화번호, 이메일, 구매쿠폰 일련번호, 환급계좌 등이 유출됐다.SK플래닛은 28일 18시 40분경 외부의 비정상적인 접근 정황을 확인해 즉시 차단했으며, 현재 구체적인 유출 여부 및 대상 고객을 확정하기 위한 정밀 조사를 진행하고 있다고 문자로 공지했다.현재까지 파악된 개인정보 유출 항목은 일부 고객의 이름, 전화번호, 이메일, 구매쿠폰 일련번호, 환급계좌 등이다. 회사 측은 조사가 완료되는 대로 상세 내용과 피해 여부 조회 방법을 개별 문자",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146878",
-    "date": "2026-10-29 22:32:58"
-  },
-  {
-    "source": "boannews",
-    "title": "진에어, 1454명 개인정보 유출…“비밀번호·결제내역 등은 안전”",
-    "desc": "진에어에서 1400명 이상의 개인정보가 유출되는 사고가 발생했다. 비밀번호나 금융정보, 결제 내역 등 악용 우려가 큰 핵심 민간 정보는 유출되지 않았다는 설명이다. 진에어는 29일 공지사항을 통해 “내부 시스템에 대한 외부의 비정상적인 접근 정황이 확인됐다”며 “사고에 대한 조사는 진행 중이나 현재까지 파악된 바에 의하면 회원정보 조회 API에 대한 외부 비정상적인 공격이 발생해 지난 28일 공격 IP를 차단하는 등 보호조치를 완료했다”고 밝혔다.이번 유출 사고로 유출된 회원정보는 총 1454명이다. 유출 항목은 △아이디 △성명 △",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146877",
-    "date": "2026-10-29 18:55:11"
-  },
-  {
-    "source": "boannews",
-    "title": "크랜베리, KAIST와 업무협약... 사운드 AI 기술 고도화 착수",
-    "desc": "AI 음향분석 전문기업 크랜베리(대표이사 이은혜)가 29일 크랜베리 본사에서 KAIST 소음 및 진동제어 연구센터(NOVIC+)와 사운드(Sound) AI 기술 고도화 및 산업 적용 확대를 위한 업무협약(MOU)을 체결했다고 밝혔다.크랜베리가 보유한 현장 중심의 사운드 AI 및 에지(Edge) AI 기술과 KAIST NOVIC+의 음향·진동 분석 및 인공지능 연구 역량을 결합해 원천 기술 개발부터 현장 검증, 사업화에 이르는 전주기 협력 체계를 구축한다. 양측은 음향 데이터 구축과 신호처리, AI 모델 개발 및 기술 검증 영역에서",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146876",
-    "date": "2026-10-29 17:21:56"
-  },
-  {
-    "source": "boannews",
-    "title": " [PHP 파장] 패치 공개 일주일, 국내 서버 적용률 5.5%... 94% 무방비",
-    "desc": "PHP 엔진 원격 코드 실행 취약점 ‘PHP2셸’(PHP2Shell) 공식 패치가 공개된지 일주일이 지난 29일 오전 현재, 국내 서버들 가운데 패치 적용률은 6%가 채 안되는 것으로 나타났다. 94%가 아직 무방비인 셈이다. 패치가 안되는 PHP 구버전을 쓰는 서버들 가운데, 패치 적용이 가능한 신버전으로 업데이트한 서버도 약 4%에 불과한 것으로 추정된다. 29일  에스케어와 함께 조사한 결과, PHP를 쓰는 국내 서버들 가운데 패치 대상 서버의 27.3%만이 패치가 적용된 수정판을 사용하는 것으로 나타났다. PHP",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146873",
-    "date": "2026-10-29 16:56:26"
-  },
-  {
-    "source": "boannews",
-    "title": "조달청, 2026년 제4차 혁신제품 87개 신규 지정",
-    "desc": "조달청(청장 백승보)이 29일 정부대전청사에서 ‘2026년 제4차 혁신제품 지정서 수여식’을 개최하고 총 87개 신규 혁신제품에 지정서를 전달했다.이번에 지정 승인을 받은 제품들은 인공지능(AI), 바이오헬스, 로봇 등 미래 신산업을 견인할 첨단 기술을 비롯해 국민 안전 확보, 생활환경 개선, 탄소중립 실현 등 공공 현장 과제를 해결할 다채로운 기술들이 적용됐다.의료 진단 분야에서는 AI 기반 △CT 영상 조영증강 솔루션과 △뇌 MRI 영상분석 시스템이 선정돼 의료 검사 정확도를 한층 끌어올릴 것으로 기대된다. 재난·안전 분야에서는",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146872",
-    "date": "2026-10-29 16:18:29"
-  },
-  {
-    "source": "boannews",
-    "title": "구글서 '아마존' 검색했을 뿐인데... 가짜 광고에 악성코드 감염 위험",
-    "desc": "구글 검색 광고를 통해 아마존 이용자를 가짜 로그인 페이지로 유인한 뒤 악성코드를 설치하는 사이버 공격이 발견됐다. 공격자들은 사람인지 확인하는 보안 절차를 위장해 이용자가 직접 악성 명령을 실행하도록 유도했으며 수십 년 전 개발된 윈도우 내장 도구까지 활용해 정보 탈취와 원격 접속을 시도했다.보안업체 헌트리스(Huntress)의 새라 레디시 보안 운영 분석가와 스파이크 브랜트 위협 인텔리전스 수석 사고 지휘관이 공개한 분석 보고서에 따르면 이번 공격은 구글에서 'amazon business'를 검색한 이용자를 대상으로 이뤄졌다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146625",
-    "date": "2026-10-29 16:11:16"
-  },
-  {
-    "source": "boannews",
-    "title": "소니 네트워크 커뮤니케이션즈 해킹... 258만 고객 개인정보 유출",
-    "desc": "소니 그룹의 ISP 자회사 ‘소니 네트워크 커뮤니케이션즈(Sony Network Communications)’가 운영하는 인터넷 접속 서비스 ‘So-net’과 위탁 운영 중이던 ‘plala’의 고객 정보 258만5481건의 회원정보가 유출됐다.소니 네트워크 커뮤니케이션즈는 10월 27일 공지를 통해 외부의 무단 접근(해킹)으로 자사 서버에 보관중이던 258만명의 고객정보가 유출됐다고 밝혔다. 소니의 ISP 서비스인 ‘소넷(So-net)’ 이용자 정보 214만1986명과 일본 최대 이통사 ‘NTT도코모’의 광인터넷 서비스 ‘푸라라’(",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146870",
-    "date": "2026-10-29 16:00:11"
-  },
-  {
-    "source": "boannews",
-    "title": "“건강검진표 확인해 보세요”... ‘건강검진 시즌’ 노린 피싱 기승",
-    "desc": "건강검진이 몰리는 10~12월에 진입하면서 이를 노린 피싱 시도에 주의해야 한다. 29일  취재를 종합하면 한 제보자는 최근 국민건강보험공단을 사칭해 ‘건강검진표 및 안내문 알림’ 등의 피싱 메일을 받았다.피싱 메일의 형태를 보면 발송 기관에 공단을 표시해 두고, ‘확인하러 가기’ 버튼을 누르도록 유도하고 있다. 얼핏 보면 정말 공단에서 보낸 공식 메일처럼 보이지만, 사실 피싱 메일이다. ‘확인하러 가기’ 버튼을 누르면 공단 홈페이지로 위조해 놓은 피싱 사이트로 연결돼 ID, 비밀번호, 주민등록번호 등 개인정보를 입력하도",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146868",
-    "date": "2026-10-29 15:54:52"
-  },
-  {
-    "source": "boannews",
-    "title": "공개 도구 그대로 쓴 셸 탈취 시도... 브로틀리 압축 결함, 실제 공격 시작",
-    "desc": "구글 브로틀리(Brotli) 압축 해제 결함(CVE-2026-111497)을 노린 실제 공격이 시작됐다. 미국 사이버보안·인프라보안청(CISA)은 27일(현지시각) 이 결함을 악용 확인 취약점(KEV) 목록에 올렸다.브로틀리는 여러 소프트웨어에서 널리 쓰이는 오픈소스 압축 라이브러리다. 결함은 압축을 풀 때 처리 결과를 제대로 확인하지 않아 생긴다. 공격자가 조작한 압축 데이터를 보내면 인증 없이도 메모리를 손상시키거나 메모리 정보를 유출할 수 있고, 서비스를 중단시키거나 코드를 실행할 가능성도 있다. 브로콜리2셸(Broccoli2",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146853",
-    "date": "2026-10-29 15:01:27"
-  },
-  {
-    "source": "boannews",
-    "title": "금융보안원 “금융권 해킹, 북한 소행 단정 어려워”",
-    "desc": "금융보안원은 최근 금융권에 일어난 연쇄 해킹 공격에 대해 “북한 소행이라 단정하기 어렵다”고 밝혔다.29일 금보원은 최근 금융권 해킹이 북한 IP 공격으로 첫 확인되었다는 등의 내용을 일부 언론에서 보도한 것에 대해 설명 자료를 냈다.금보원은 앞서 21일 북한 IP의 금융사 접근이 대량 탐지되어 사원사들에게 주의를 공지한 바 있다.금보원 관계자는 이에 대해 “다수의 트래픽 공격 시도 등 징후가 있을 경우 금융사 보안 강화를 위해 통상적으로 취하는 조치”라며 “특정 국가를 공격주체로 염두해 공지한 것은 아니다”라고 밝혔다.공격자의 출",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146867",
-    "date": "2026-10-29 14:58:50"
-  },
-  {
     "source": "thn",
     "title": "Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns",
     "desc": "The China-nexus cyber espionage group known as Volt Typhoon has been attributed to a now-disrupted covert access network dubbed Silent Train that has been put to use for zero-day exploitation and strategic access.\n\n\"First identified in late 2023, Silent Train uses rotating chains of compromised SOHO",
@@ -642,61 +691,5 @@
     "desc": "An unreleased Anthropic AI model found security flaws in Chrome, Safari, Android, Windows, and Linux and chained them into working proof-of-concept exploits, the company said in its latest report.\n\nThe exploits were built in the lab after the model was prompted, not seen in any real attack, and Anth",
     "url": "https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html",
     "date": "2026-10-28T13:45:07"
-  },
-  {
-    "source": "thn",
-    "title": "FBI Seizes Virtualine Domain Over Alleged Criminal Hosting and Bitcoin Money Laundering",
-    "desc": "The U.S. Department of Justice (DoJ) on Tuesday announced the seizure of a domain associated with a bulletproof hosting provider (BPH) named Virtualine.\n\nThe move was in response to the service being used to commit and facilitate prolific criminal activity, including \"the advertisement of sexually e",
-    "url": "https://thehackernews.com/2026/10/fbi-seizes-virtualine-domain-over.html",
-    "date": "2026-10-28T13:07:50"
-  },
-  {
-    "source": "thn",
-    "title": "Japan's GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach",
-    "desc": "Japan's GMO Internet Group is&nbsp;offering up to $1 million in total&nbsp;for tips that help catch the attackers who breached its Onamae.com Desktop Cloud service, after refusing to pay an extortion demand.\n\nThe reward program opened on October 28 and pays only if a tip helps lead to an arrest or a",
-    "url": "https://thehackernews.com/2026/10/japans-gmo-offers-1-million-bounty-to.html",
-    "date": "2026-10-28T12:43:21"
-  },
-  {
-    "source": "thn",
-    "title": "Tailscale Patches SSH Flaws That Could Let Hacked Devices Gain Root Access on Other Servers",
-    "desc": "Tailscale has released&nbsp;version 1.104.4&nbsp;to fix flaws in its built-in SSH server that could let an attacker reach services and files on other servers that only the&nbsp;root&nbsp;user should be able to touch.\n\nThe flaws are in how&nbsp;Tailscale SSH&nbsp;forwards network connections, a job t",
-    "url": "https://thehackernews.com/2026/10/tailscale-patches-ssh-flaws-that-could.html",
-    "date": "2026-10-28T11:50:37"
-  },
-  {
-    "source": "thn",
-    "title": "ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws",
-    "desc": "The critical Oracle PeopleSoft bug that ShinyHunters has exploited since May is not one flaw but three chained together, the researchers who reported it said this week.\n\nOracle patched all three under a single identifier,&nbsp;CVE-2026-35273, in June. Its root is a server-side request forgery (SSRF)",
-    "url": "https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html",
-    "date": "2026-10-28T11:34:58"
-  },
-  {
-    "source": "thn",
-    "title": "Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges",
-    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added two vulnerabilities impacting Adobe Commerce and Magento, and Google's Brotli decoder library to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe vulnerabilities are liste",
-    "url": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
-    "date": "2026-10-28T11:12:26"
-  },
-  {
-    "source": "thn",
-    "title": "CyberStrikeAI Uses 44 AI Agents to Automate Hacking Operations Against Japan Targets",
-    "desc": "Cybersecurity researchers have disclosed details of three cyber attacks targeting organizations in Japan in which artificial intelligence (AI) was a key element, either in the driving seat or to assist a human operator.\n\nTrendAI, which analyzed three exposed server environments used by threat actors",
-    "url": "https://thehackernews.com/2026/10/cyberstrikeai-uses-44-ai-agents-to.html",
-    "date": "2026-10-27T23:56:46"
-  },
-  {
-    "source": "thn",
-    "title": "GoAhead TLS Flaws Allow Revoked Client Certificates and Enable Session Decryption",
-    "desc": "The GoAhead embedded web server loaded a certificate revocation list into its default TLS backend but never turned revocation checking on, so a revoked client certificate could still pass login on affected setups.\n\nThe flaw is in builds that use the OpenSSL backend with mutual-TLS, where the server ",
-    "url": "https://thehackernews.com/2026/10/goahead-tls-flaws-allow-revoked-client.html",
-    "date": "2026-10-27T19:29:48"
-  },
-  {
-    "source": "thn",
-    "title": "Apple Backports Fix for Exploited CoreGraphics Flaw to Older iPhones and iPads",
-    "desc": "Apple on Monday backported fixes for a high-severity security flaw that was exploited in real-world cyber attacks to older devices.\n\nThe vulnerability, tracked as CVE-2026-86950 (CVSS score: 8.8), is an out-of-bounds write affecting CoreGraphics that could result in arbitrary code execution when pro",
-    "url": "https://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html",
-    "date": "2026-10-27T19:29:09"
   }
 ]
