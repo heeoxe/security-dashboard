@@ -1,5 +1,19 @@
 [
   {
+    "source": "thn",
+    "title": "Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
+    "desc": "Passwords and API keys that developers typed into commands they approved in Claude Code are sitting in public GitHub repositories, where anyone can read them.\n\nWhen a user selects \"Yes, and don't ask again,\" Anthropic's AI coding assistant can save the command, word-for-word, including the secret, i",
+    "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+    "date": "2026-11-07T12:14:17"
+  },
+  {
+    "source": "boannews",
+    "title": "한국융합보안학회, 2026 추계학술대회 성료... 22개 기관 논문 75편 발표",
+    "desc": "한국융합보안학회(회장 이동휘)는 6일 성신여자대학교에서 ‘2026 한국융합보안학회 추계학술대회 및 워크숍’을 개최했다고 밝혔다.이번 학술대회에는 22개 기관에서 총 75편의 논문이 제출돼, 융합보안·AI보안·개인정보보안 등 분야별 10개 구두발표 세션과 2개 포스터발표 세션에서 발표됐다.특별 세션에서는 김석주 한국트렌드마이크로 이사와 이상국 안랩 전무가 각각 ‘에이전틱 AI가 가져올 새로운 위협’, ‘AI 시대 보안 동향 및 제언’을 주제로 발표했다. 개회식에서는 이동휘 회장의 개회사와 이원호 성신여자대학교 부총장, 김현준 한국사회",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147085",
+    "date": "2026-11-07 13:55:45"
+  },
+  {
     "source": "boannews",
     "title": "미래에셋증권도 침해... 고객-임직원 3만9000명 정보 유출",
     "desc": "국내 최대 증권사 미래에셋증권에서 해킹으로 고객과 임직원 정보가 유출되는 사고가 터졌다. 미래에셋증권은 4일과 5일 모바일웹 휴대폰 인증 로그인 서비스와 그룹웨어 ‘mi-global’을 겨냥한 외부 공격이 연달아 일어났다고 밝혔다. 이로 인해 고객 3800여명이 개설한 계좌번호와 임직원 3만5255명의 개인정보가 유출됐다. 고객 정보 중 예금주 이름 등 다른 민감 정보는 빠져나가지 않았다는 설명이다. 유출된 임직원 개인정보는 이름, 사번, 이메일주소, 휴대폰 번호, 암호화된 비밀번호 등이다. 주민등록번호와 여권번호, 운전면허번호,",
@@ -476,13 +490,6 @@
     "date": "2026-11-05 10:22:21"
   },
   {
-    "source": "boannews",
-    "title": "혈액 냉장실 온도 설정값 치솟아... 프랑스혈액원, 냉장 설비 공급업체 거쳐 공격받아",
-    "desc": "프랑스 국가 혈액 기관인 프랑스혈액원(EFS)의 혈액 보관 냉장실 설정이 사이버 공격으로 바뀌었다. 공격받은 곳은 혈액원이 아니라 냉장 설비를 공급하는 업체였다.혈액원은 시설 3곳의 냉장실을 감시·제어하는 시스템이 2일(현지시간) 공격을 받았다고 밝혔다. 냉장실 온도와 성에 제거 기준값이 극도로 높은 수준까지 올라갔다. 이 냉장실들은 배포 전 혈액 제품과 생체 시료를 보관하는 곳이다.혈액원의 감시·경보 시스템이 변화를 빠르게 잡아냈고, 직원들은 장비를 고치거나 제품을 다른 시설로 옮겼다. 수혈용 혈장 팩과 의약품 원료로 쓰는 혈장은",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147015",
-    "date": "2026-11-05 10:20:21"
-  },
-  {
     "source": "thn",
     "title": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
     "desc": "A flaw in APT, the package manager for Debian and Ubuntu, allows an attacker who can modify package downloads to swap a checked package for their own.\n\nThe attacker's code then runs as root, according to advisories that&nbsp;Debian,&nbsp;Ubuntu, and&nbsp;APT's developers&nbsp;published on November 4",
@@ -691,12 +698,5 @@
     "desc": "Forty percent of security teams now use AI every day, and another 56% are testing it. Only 4% have no plans to adopt it, according to Prophet Security's State of AI in Security Operations 2026 survey of more than 250 CISOs, SOC leaders and practitioners. For the teams still testing, the next decisio",
     "url": "https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html",
     "date": "2026-11-02T17:00:00"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Pose as IT Support on Microsoft Teams, Abuse AD CS to Steal Company Data",
-    "desc": "Attackers posing as IT support on Microsoft Teams talked employees into giving them remote control of their PCs. They then used insecure Active Directory Certificate Services (AD CS) settings to obtain login certificates for privileged accounts, including one for a domain controller.\n\nMicrosoft said",
-    "url": "https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html",
-    "date": "2026-11-02T16:38:45"
   }
 ]
