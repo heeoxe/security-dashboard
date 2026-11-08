@@ -1,5 +1,19 @@
 [
   {
+    "source": "boannews",
+    "title": "잇단 가상자산 거래소 해킹... 금감원, 가상자산사업자 CISO 소집한다",
+    "desc": "금융당국과 국내 가상자산 기업 정보보호최고책임자(CISO)가 한자리에 모여 가상자산 분야 보안 대책을 논의한다.8일 관련 업계에 따르면, 금융감독원은 19일 가상자산업권 해킹 사고 관련 대응 회의를 연다. 최근 국내외 가상자산 거래소를 겨냥한 해킹 사고가 잇따름에 따라 대응 방안을 공동 논의하기 위해서다. 거래소와 커스터디(수탁) 기업 등 국내 모든 가상자산사업자 CISO가 참석 대상이다. 각사 보안 관리 운영 실태를 점검하고 해킹 예방 및 대응 방안 등을 논의할 것으로 알려졌다.앞서 금융위원회도 5일 가상자산사업자를 포함한 전 금",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147086",
+    "date": "2026-11-08 09:50:50"
+  },
+  {
+    "source": "boannews",
+    "title": "알파인 리눅스, 깃랩 서버 공격 시도에 통째로 재구축",
+    "desc": "경량 리눅스 배포판 알파인 리눅스가 개발용 깃랩 서버를 노린 공격 시도를 겪은 뒤 서버를 처음부터 다시 지었다. 공격이 성공한 흔적은 없었지만, 성공했다면 흔적이 남지 않는 결함이라 서버가 뚫린 것으로 보고 대응했다.알파인은 최근 이 같은 경위를 공개했다. 깃랩은 개발자들이 소스코드를 함께 관리하는 서비스로, 알파인은 이 서버에 배포판 패키지를 만드는 원본 저장소(aports)를 두고 있다.공격자가 노린 것은 최고 등급의 원격코드실행(RCE) 취약점(CVE-2026-97229)이다. 깃랩이 수정판을 낸 지 일주일 뒤였다.알파인은 1",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146881",
+    "date": "2026-11-08 09:27:03"
+  },
+  {
     "source": "thn",
     "title": "Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
     "desc": "Passwords and API keys that developers typed into commands they approved in Claude Code are sitting in public GitHub repositories, where anyone can read them.\n\nWhen a user selects \"Yes, and don't ask again,\" Anthropic's AI coding assistant can save the command, word-for-word, including the secret, i",
@@ -474,20 +488,6 @@
     "desc": "프랑스 은행 그룹 크레디뮈튀엘아르케아(Crédit Mutuel Arkéa)가 협력업체를 거쳐 들어온 공격자에게 거액을 빼앗겼다. 은행은 4일(현지시각) 저녁 성명을 내고 이를 “정교한 공격”이라고 밝혔다.사건은 은행보다 블록체인 추적가가 먼저 알렸다. 익명으로 활동하는 미국 블록체인 추적 전문가 잭XBT(ZachXBT)가 2일 텔레그램에 관련 내용을 올렸고, 이후 피해 기관으로 아르케아를 지목했다. 그는 공격이 며칠에 걸쳐 이어졌고 1억3300만달러 넘게 빠져나갔다고 추산했다. 암호화폐 거래소 계좌 출금 내역과 자금 세탁용으로 보이",
     "url": "https://www.boannews.com/news/articleView.html?idxno=147013",
     "date": "2026-11-05 10:55:07"
-  },
-  {
-    "source": "boannews",
-    "title": "SK쉴더스, 채용부터 현장 업무까지 전 과정 안전관리 체계 강화",
-    "desc": "SK쉴더스(대표 민기식)가 현장 구성원의 안전이 곧 고객 안전의 시작이라는 인식 아래 채용 단계부터 직무 교육, 실제 업무 현장에 이르기까지 전 과정 안전관리 체계를 대폭 강화하고 있다고 5일 밝혔다.SK쉴더스는 현장 업무 특성을 반영해 사고 발생 후 대응보다는 위험 요인을 사전에 제거하는 예방 중심의 안전관리에 집중하고 있다. 입사 시 기본 역량을 철저히 점검하고, 입사 후에는 직무별 실습 및 체험형 교육을 제공하는 등 전방위적 안전 활동을 펼치고 있다.우선 현장 출동대원 채용 과정에서는 실제 업무에 필수적인 운전 역량을 엄격히",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147021",
-    "date": "2026-11-05 10:30:37"
-  },
-  {
-    "source": "boannews",
-    "title": "[더존비즈온 사태] 11월5일 유출 의심 기업 현황... 서울시 육아종합지원센터 유출 가능성",
-    "desc": "서울시 육아종합지원센터도 더존비즈온 해킹 사태로 인한 개인정보 유출 가능성이 제기됐다. 센터는 3일 더존비즈온 백업서버 외부 침입에 따라 개인정보가 유출됐을 가능성이 있다고 공지했다. 공지사항에 따르면 지난달 18일 더존비즈온의 ‘스마트 A 10’ 및 백업 서버 내 보관 개인정보 일부가 유출됐을 가능성이 나왔다. 센터는 지난 9월30일자로 백업 서비스 이용을 종료했으나, 더존비즈온이 데이터를 삭제하지 않고 보관하고 있다가 이번 유출 가능성이 제기됐다고 밝혔다. 유출 가능성이 있는 항목은 전·현직 직원, 강사 및 자문, 회의 참여자",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147019",
-    "date": "2026-11-05 10:22:21"
   },
   {
     "source": "thn",
