@@ -1,5 +1,271 @@
 [
   {
+    "cve": "CVE-2023-39198",
+    "title": "Kernel: qxl: race condition leading to use-after-free in qxl_mode_dumb_create()",
+    "desc": "A race condition was found in the QXL driver in the Linux kernel. The qxl_mode_dumb_create() function dereferences the qobj returned by the qxl_gem_object_create_with_handle(), but the handle is the only one holding a reference to it. This flaw allows an attacker to guess the returned handle value and trigger a use-after-free issue, potentially leading to a denial of service or privilege escalatio",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2023-11-09",
+    "updated": "2026-11-07",
+    "url": "https://access.redhat.com/errata/RHSA-2024:2394",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2023-39328",
+    "title": "Openjpeg: denail of service via crafted image file",
+    "desc": "A vulnerability was found in OpenJPEG similar to CVE-2019-6988. This flaw allows an attacker to bypass existing protections and cause an application crash through a maliciously crafted file.",
+    "cvss": 5.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-400"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2024-07-09",
+    "updated": "2026-11-07",
+    "url": "https://access.redhat.com/security/cve/CVE-2023-39328",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2023-3106",
+    "title": "Kernel: netlink socket crash (null pointer deref) in netlink_dump function",
+    "desc": "A NULL pointer dereference vulnerability was found in netlink_dump. This issue can occur when the Netlink socket receives the message(sendmsg) for the XFRM_MSG_GETSA, XFRM_MSG_GETPOLICY type message, and the DUMP flag is set and can cause a denial of service or possibly another unspecified impact. Due to the nature of the flaw, privilege escalation cannot be fully ruled out, although it is unlikel",
+    "cvss": 6.6,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-476"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2023-07-12",
+    "updated": "2026-11-07",
+    "url": "https://access.redhat.com/security/cve/CVE-2023-3106",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2023-3347",
+    "title": "Samba: smb2 packet signing is not enforced when \"server signing = required\" is set",
+    "desc": "A vulnerability was found in Samba's SMB2 packet signing mechanism. The SMB2 packet signing is not enforced if an admin configured \"server signing = required\" or for SMB2 connections to Domain Controllers where SMB2 packet signing is mandatory. This flaw allows an attacker to perform attacks, such as a man-in-the-middle attack, by intercepting the network traffic and modifying the SMB2 messages be",
+    "cvss": 5.9,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-347"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2023-07-20",
+    "updated": "2026-11-07",
+    "url": "https://access.redhat.com/errata/RHSA-2023:4325",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2023-42755",
+    "title": "Kernel: rsvp: out-of-bounds read in rsvp_classify()",
+    "desc": "A flaw was found in the IPv4 Resource Reservation Protocol (RSVP) classifier in the Linux kernel. The xprt pointer may go beyond the linear part of the skb, leading to an out-of-bounds read in the `rsvp_classify` function. This issue may allow a local user to crash the system and cause a denial of service.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-125"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2023-10-05",
+    "updated": "2026-11-07",
+    "url": "https://access.redhat.com/errata/RHSA-2024:2950",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2023-43788",
+    "title": "Libxpm: out of bounds read in xpmcreatexpmimagefrombuffer()",
+    "desc": "A vulnerability was found in libXpm due to a boundary condition within the XpmCreateXpmImageFromBuffer() function. This flaw allows a local attacker to trigger an out-of-bounds read error and read the contents of memory on the system.",
+    "cvss": 5.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-125"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2023-10-10",
+    "updated": "2026-11-07",
+    "url": "https://access.redhat.com/errata/RHSA-2024:2146",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2023-52356",
+    "title": "Libtiff: segment fault in libtiff  in tiffreadrgbatileext() leading to denial of service",
+    "desc": "A segment fault (SEGV) flaw was found in libtiff that could be triggered by passing a crafted tiff file to the TIFFReadRGBATileExt() API. This flaw allows a remote attacker to cause a heap-buffer overflow, leading to a denial of service.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-122"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2024-01-25",
+    "updated": "2026-11-07",
+    "url": "https://access.redhat.com/errata/RHSA-2024:5079",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2019-16447",
     "title": "Adobe Illustrator CC versions 23.1 and earlier have a binary planting vulnerability. Successful exploitation could lead ",
     "desc": "Adobe Illustrator CC versions 23.1 and earlier have a binary planting vulnerability. Successful exploitation could lead to local code execution.",
@@ -7220,1070 +7486,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-83542",
-    "title": "Apache OFBiz: Unauthenticated RCE via login-page widget injection",
-    "desc": "Improper Control of Generation of Code ('Code Injection') in Apache OFBiz 24.09 before 24.09.08 on all platforms allows a remote unauthenticated attacker to execute arbitrary code on the server by staging crafted widget XML in a multipart upload and overriding the mainDecoratorLocation used by a manager login route through an anonymous JSON request, causing OFBiz to load the staged XML through its",
-    "cvss": 9.8,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-94"
-    ],
-    "affected": [
-      {
-        "vendor": "Apache Software Foundation",
-        "product": "Apache OFBiz"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-11-05",
-    "updated": "2026-11-06",
-    "url": "https://lists.apache.org/thread.html/7b2syzksp7klt9fvhdg0olldvs2g83lz",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2023-5675",
-    "title": "Quarkus: authorization flaw in quarkus resteasy reactive and classic when \"quarkus.security.jaxrs.deny-unannotated-endpoints\" or \"quarkus.security.jaxrs.default-roles-allowed\" properties are used.",
-    "desc": "A flaw was found in Quarkus. When a Quarkus RestEasy Classic or Reactive JAX-RS endpoint has its methods declared in the abstract Java class or customized by Quarkus extensions using the annotation processor, the authorization of these methods will not be enforced if it is enabled by either 'quarkus.security.jaxrs.deny-unannotated-endpoints' or 'quarkus.security.jaxrs.default-roles-allowed' proper",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-285"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat build of Quarkus 2.13.9.Final"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat build of Quarkus 2.13.9.Final"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat build of Quarkus 3.2.9.Final"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat build of Quarkus 3.2.9.Final"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-04-25",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/errata/RHSA-2024:0494",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2023-6270",
-    "title": "Kernel: aoe: improper reference count leads to use-after-free vulnerability",
-    "desc": "A flaw was found in the ATA over Ethernet (AoE) driver in the Linux kernel. The aoecmd_cfg_pkts() function improperly updates the refcnt on `struct net_device`, and a use-after-free can be triggered by racing between the free on the struct and the access through the `skbtxq` global queue. This could lead to a denial of service condition or potential code execution.",
-    "cvss": 7,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 6"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-01-04",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/security/cve/CVE-2023-6270",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2023-6841",
-    "title": "Keycloak: amount of attributes per object is not limited and it may lead to dos",
-    "desc": "A denial of service vulnerability was found in keycloak where the amount of attributes per object is not limited,an attacker by sending repeated HTTP requests could cause a resource exhaustion when the application send back rows with long attribute values.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-231"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat build of Quarkus"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Fuse 7"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Mobile Application Platform 4"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat OpenShift Application Runtimes"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-09-10",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/security/cve/CVE-2023-6841",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-0567",
-    "title": "Gnutls: rejects certificate chain with distributed trust",
-    "desc": "A vulnerability was found in GnuTLS, where a cockpit (which uses gnuTLS) rejects a certificate chain with distributed trust. This issue occurs when validating a certificate chain with cockpit-certificate-ensure. This flaw allows an unauthenticated, remote client or attacker to initiate a denial of service attack.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-347"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9.2 Extended Update Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "RHODF-4.15-RHEL-9"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2024-01-16",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/errata/RHSA-2024:0533",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-10041",
-    "title": "Pam: libpam: libpam vulnerable to read hashed password",
-    "desc": "A vulnerability was found in PAM. The secret information is stored in memory, where the attacker can trigger the victim program to execute by sending characters to its standard input (stdin). As this occurs, the attacker can train the branch predictor to execute an ROP chain speculatively. This flaw could result in leaked passwords, such as those found in /etc/shadow while performing authenticatio",
-    "cvss": 4.7,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-922"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9.4 Extended Update Support"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-10-23",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/errata/RHSA-2024:10379",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-12086",
-    "title": "Rsync: rsync server leaks arbitrary client files",
-    "desc": "A flaw was found in rsync. It could allow a server to enumerate the contents of an arbitrary file from the client's machine. This issue occurs when files are being copied from a client to a server. During this process, the rsync server will send checksums of local data to the client to compare with in order to determine what data needs to be sent to the server. By sending specially constructed che",
-    "cvss": 6.1,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-390"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9.6 Extended Update Support"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-01-14",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/errata/RHBA-2025:6470",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-12088",
-    "title": "Rsync: --safe-links option bypass leads to path traversal",
-    "desc": "A flaw was found in rsync. When using the `--safe-links` option, the rsync client fails to properly verify if a symbolic link destination sent from the server contains another symbolic link within it. This results in a path traversal vulnerability, which may lead to arbitrary file write outside the desired directory.",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-22"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-01-14",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/errata/RHBA-2025:6470",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-12243",
-    "title": "Gnutls: gnutls impacted by inefficient der decoding in libtasn1 leading to remote dos",
-    "desc": "A flaw was found in GnuTLS, which relies on libtasn1 for ASN.1 data processing. Due to an inefficient algorithm in libtasn1, decoding certain DER-encoded certificate data can take excessive time, leading to increased resource consumption. This flaw allows a remote attacker to send a specially crafted certificate, causing GnuTLS to become unresponsive or slow, resulting in a denial-of-service condi",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-407"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2025-02-10",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/errata/RHSA-2025:17361",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-2467",
-    "title": "Perl-crypt-openssl-rsa: side-channel attack in pkcs#1 v1.5 padding mode (marvin attack)",
-    "desc": "A timing-based side-channel flaw exists in the perl-Crypt-OpenSSL-RSA package, which could be sufficient to recover plaintext across a network in a Bleichenbacher-style attack. To achieve successful decryption, an attacker would have to be able to send a large number of trial messages. The vulnerability affects the legacy PKCS#1v1.5 RSA encryption padding mode.",
-    "cvss": 5.9,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-208"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 6"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-04-25",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/security/cve/CVE-2024-2467",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-7006",
-    "title": "Libtiff: null pointer dereference in tif_dirinfo.c",
-    "desc": "A null pointer dereference flaw was found in Libtiff via `tif_dirinfo.c`. This issue may allow an attacker to trigger memory allocation failures through certain means, such as restricting the heap space size or injecting faults, causing a segmentation fault. This can cause an application crash, eventually leading to a denial of service.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-476"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9.2 Extended Update Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-08-08",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/errata/RHSA-2024:6360",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-7383",
-    "title": "Libnbd: nbd server improper certificate validation",
-    "desc": "A flaw was found in libnbd. The client did not always correctly verify the NBD server's certificate when using TLS to connect to an NBD server. This issue allows a man-in-the-middle attack on NBD traffic.",
-    "cvss": 7.4,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-295"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-08-05",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/errata/RHSA-2024:6757",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-0620",
-    "title": "Samba: smbd doesn't pick up group membership changes when re-authenticating an expired smb session",
-    "desc": "A flaw was found in Samba. The smbd service daemon does not pick up group membership changes when re-authenticating an expired SMB session. This issue can expose file shares until clients disconnect and then connect again.",
-    "cvss": 4.9,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-552"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 6"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 6"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-06-06",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/security/cve/CVE-2025-0620",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-1118",
-    "title": "Grub2: commands/dump: the dump command is not in lockdown when secure boot is enabled",
-    "desc": "A flaw was found in grub2. Grub's dump command is not blocked when grub is in lockdown mode, which allows the user to read any memory information, and an attacker may leverage this in order to extract signatures, salts, and other sensitive information from the memory.",
-    "cvss": 4.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-501"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-02-19",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/errata/RHSA-2025:16154",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-3359",
-    "title": "Gnuplot: segmentation fault via io_str_init_static_internal function",
-    "desc": "A flaw was found in GNUPlot. A segmentation fault via IO_str_init_static_internal may jeopardize the environment.",
-    "cvss": 6.2,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-754"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 6"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-04-07",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/security/cve/CVE-2025-3359",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-46397",
-    "title": "Xfig: xfig: stack-overflow allows possible code execution via local input manipulation",
-    "desc": "A flaw was found in xfig. This vulnerability allows possible code execution via local input manipulation via bezier_spline function.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-120"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9.4 Extended Update Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9.6 Extended Update Support"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-04-23",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/errata/RHSA-2026:0700",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-46398",
-    "title": "Xfig: fig2dev stack-overflow via read_objects",
-    "desc": "In xfig diagramming tool, a stack-overflow while running fig2dev allows memory corruption via local input manipulation via read_objects function.",
-    "cvss": 5.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-121"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 6"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-04-23",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/security/cve/CVE-2025-46398",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-46399",
-    "title": "Xfig: transfig: fig2dev segmentation fault vulnerability",
-    "desc": "A flaw was found in fig2dev. This vulnerability allows availability via local input manipulation via genge_itp_spline function.",
-    "cvss": 5.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-476"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 6"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-04-23",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/security/cve/CVE-2025-46399",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-46400",
-    "title": "Xfig: fig2dev segmentation fault in read_arcobject",
-    "desc": "In xfig diagramming tool, a segmentation fault while running fig2dev allows an attacker to availability via local input manipulation via read_arcobject function.",
-    "cvss": 5.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-476"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 6"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-04-23",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/security/cve/CVE-2025-46400",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-4035",
-    "title": "Libsoup: cookie domain validation bypass via uppercase characters in libsoup",
-    "desc": "A flaw was found in libsoup. When handling cookies, libsoup clients mistakenly allow cookies to be set for public suffix domains if the domain contains at least two components and includes an uppercase character. This bypasses public suffix protections and could allow a malicious website to set cookies for domains it does not own, potentially leading to integrity issues such as session fixation.",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-178"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 6"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-04-29",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/errata/RHSA-2025:8128",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-5318",
-    "title": "Libssh: out-of-bounds read in sftp_handle()",
-    "desc": "A flaw was found in the libssh library in versions less than 0.11.2. An out-of-bounds read can be triggered in the sftp_handle function due to an incorrect comparison check that permits the function to access memory beyond the valid handle list and to return an invalid pointer, which is used in further processing. This vulnerability allows an authenticated remote attacker to potentially read unint",
-    "cvss": 5.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-125"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-06-24",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/errata/RHSA-2025:18231",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-5987",
-    "title": "Libssh: invalid return code for chacha20 poly1305 with openssl backend",
-    "desc": "A flaw was found in libssh when using the ChaCha20 cipher with the OpenSSL library. If an attacker manages to exhaust the heap space, this error is not detected and may lead to libssh using a partially initialized cipher context. This occurs because the OpenSSL error code returned aliases with the SSH_OK code, resulting in libssh not properly detecting the error returned by the OpenSSL library. Th",
-    "cvss": 8.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-393"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-07-07",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/errata/RHSA-2025:23483",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-62229",
-    "title": "Xorg: xmayland: use-after-free in xpresentnotify structure creation",
-    "desc": "A flaw was found in the X.Org X server and Xwayland when processing X11 Present extension notifications. Improper error handling during notification creation can leave dangling pointers that lead to a use-after-free condition. This can cause memory corruption or a crash, potentially allowing an attacker to execute arbitrary code or cause a denial of service.",
-    "cvss": 7.3,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "X.Org",
-        "product": "Xwayland"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 6 Extended Lifecycle Support  - EXTENSION"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-10-30",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/errata/RHSA-2025:19432",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-62230",
-    "title": "Xorg: xwayland: use-after-free in xkb client resource removal",
-    "desc": "A flaw was discovered in the X.Org X server’s X Keyboard (Xkb) extension when handling client resource cleanup. The software frees certain data structures without properly detaching related resources, leading to a use-after-free condition. This can cause memory corruption or a crash when affected clients disconnect.",
-    "cvss": 7.3,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-416"
-    ],
-    "affected": [
-      {
-        "vendor": "X.Org",
-        "product": "Xwayland"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 6 Extended Lifecycle Support  - EXTENSION"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-10-30",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/errata/RHSA-2025:19432",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-62231",
-    "title": "Xorg: xmayland: value overflow in xkbsetcompatmap()",
-    "desc": "A flaw was identified in the X.Org X server’s X Keyboard (Xkb) extension where improper bounds checking in the XkbSetCompatMap() function can cause an unsigned short overflow. If an attacker sends specially crafted input data, the value calculation may overflow, leading to memory corruption or a crash.",
-    "cvss": 7.3,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-190"
-    ],
-    "affected": [
-      {
-        "vendor": "X.Org",
-        "product": "Xwayland"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 6 Extended Lifecycle Support  - EXTENSION"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-10-30",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/errata/RHSA-2025:19432",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-6021",
-    "title": "Libxml2: integer overflow in xmlbuildqname() leads to stack buffer overflow in libxml2",
-    "desc": "A flaw was found in libxml2's xmlBuildQName function, where integer overflows in buffer size calculations can lead to a stack-based buffer overflow. This issue can result in memory corruption or a denial of service when processing crafted input.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-787"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-06-12",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/errata/RHSA-2025:10630",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-7519",
-    "title": "Polkit: xml policy file with a large number of nested elements may lead to out-of-bounds write",
-    "desc": "A flaw was found in polkit. When processing an XML policy with 32 or more nested elements in depth, an out-of-bounds write can be triggered. This issue can lead to a crash or other unexpected behavior, and arbitrary code execution is not discarded. To exploit this flaw, a high-privilege account is needed as it's required to place the malicious policy file properly.",
-    "cvss": 6.7,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-787"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 6"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-07-14",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/security/cve/CVE-2025-7519",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-0810",
-    "title": "Gix-date: gix-date: undefined behavior due to invalid string generation",
-    "desc": "A flaw was found in gix-date. The `gix_date::parse::TimeBuf::as_str` function can generate strings containing invalid non-UTF8 characters. This issue violates the internal safety invariants of the `TimeBuf` component, leading to undefined behavior when these malformed strings are subsequently processed. This could potentially result in application instability or other unforeseen consequences.",
-    "cvss": 7.1,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-135"
-    ],
-    "affected": [
-      {
-        "vendor": "GitoxideLabs",
-        "product": "gitoxide"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Logging Subsystem for Red Hat OpenShift"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Logging Subsystem for Red Hat OpenShift"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Logging Subsystem for Red Hat OpenShift"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Logging Subsystem for Red Hat OpenShift"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-01-26",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/security/cve/CVE-2026-0810",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-106805",
-    "title": "A resource exhaustion issue exists in Free5GC v4.2.3 during PFCP Session Establishment failure handling. When the SMF do",
-    "desc": "A resource exhaustion issue exists in Free5GC v4.2.3 during PFCP Session Establishment failure handling. When the SMF does not receive a PFCP Session Establishment Response from the UPF, allocated UE IP address resources are not properly released. Repeated failed session establishment attempts can therefore exhaust the UE IP address pool, preventing new UEs from establishing PDU sessions and resul",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "n/a",
-        "product": "n/a"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2026-11-02",
-    "updated": "2026-11-05",
-    "url": "https://github.com/free5gc/free5gc/issues/1162",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2014-125137",
     "title": "C97net qEngine CMS through 6.0.0, Kemana Directory through 1.5.6, Cart Engine through 3.0.0 Local File Inclusion via admin/task.php",
     "desc": "C97net qEngine CMS through 6.0.0, Kemana Directory through 1.5.6, and Cart Engine through 3.0.0 contain a local file inclusion vulnerability in the run parameter of admin/task.php. Authenticated administrators can supply directory traversal sequences in the run parameter to include and disclose local files readable by the web server.",
@@ -8336,44 +7538,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2020-25720",
-    "title": "Samba: check attribute access rights for ldap adds of computers",
-    "desc": "A vulnerability was found in Samba where a delegated administrator with permission to create objects in Active Directory can write to all attributes of the newly created object, including security-sensitive attributes, even after the object's creation. This issue occurs because the administrator owns the object due to the lack of an Access Control List (ACL) at the time of creation and later being",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-266"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 6"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 6"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-11-17",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/security/cve/CVE-2020-25720",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2021-47650",
     "title": "ASoC: soc-compress: prevent the potentially use of null pointer",
     "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nASoC: soc-compress: prevent the potentially use of null pointer\n\nThere is one call trace that snd_soc_register_card()\n->snd_soc_bind_card()->soc_init_pcm_runtime()\n->snd_soc_dai_compress_new()->snd_soc_new_compress().\nIn the trace the 'codec_dai' transfers from card->dai_link,\nand we can see from the snd_soc_add_pcm_runtime() in\n",
@@ -8419,44 +7583,6 @@
     "published": "2025-02-26",
     "updated": "2026-11-05",
     "url": "https://git.kernel.org/stable/c/4ab7e453a3ee88c274cf97bee9487ab92a66d313",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2022-2127",
-    "title": "Samba: out-of-bounds read in winbind auth_crap",
-    "desc": "An out-of-bounds read vulnerability was found in Samba due to insufficient length checks in winbindd_pam_auth_crap.c. When performing NTLM authentication, the client replies to cryptographic challenges back to the server. These replies have variable lengths, and Winbind fails to check the lan manager response length. When Winbind is used for NTLM authentication, a maliciously crafted request can t",
-    "cvss": 5.9,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-125"
-    ],
-    "affected": [
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8.6 Extended Update Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8.8 Extended Update Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 9"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2023-07-20",
-    "updated": "2026-11-05",
-    "url": "https://access.redhat.com/errata/RHSA-2023:6667",
     "source": "CISA Vulnrichment"
   },
   {
@@ -15321,6 +14447,1124 @@
     "published": "2025-05-02",
     "updated": "2026-11-05",
     "url": "https://git.kernel.org/stable/c/baafa2960731211837d8fc04ff3873ecb7440464",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2023-5675",
+    "title": "Quarkus: authorization flaw in quarkus resteasy reactive and classic when \"quarkus.security.jaxrs.deny-unannotated-endpoints\" or \"quarkus.security.jaxrs.default-roles-allowed\" properties are used.",
+    "desc": "A flaw was found in Quarkus. When a Quarkus RestEasy Classic or Reactive JAX-RS endpoint has its methods declared in the abstract Java class or customized by Quarkus extensions using the annotation processor, the authorization of these methods will not be enforced if it is enabled by either 'quarkus.security.jaxrs.deny-unannotated-endpoints' or 'quarkus.security.jaxrs.default-roles-allowed' proper",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-285"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat build of Quarkus 2.13.9.Final"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat build of Quarkus 2.13.9.Final"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat build of Quarkus 3.2.9.Final"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat build of Quarkus 3.2.9.Final"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2024-04-25",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/errata/RHSA-2024:0494",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2023-6270",
+    "title": "Kernel: aoe: improper reference count leads to use-after-free vulnerability",
+    "desc": "A flaw was found in the ATA over Ethernet (AoE) driver in the Linux kernel. The aoecmd_cfg_pkts() function improperly updates the refcnt on `struct net_device`, and a use-after-free can be triggered by racing between the free on the struct and the access through the `skbtxq` global queue. This could lead to a denial of service condition or potential code execution.",
+    "cvss": 7,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2024-01-04",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/security/cve/CVE-2023-6270",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2023-6841",
+    "title": "Keycloak: amount of attributes per object is not limited and it may lead to dos",
+    "desc": "A denial of service vulnerability was found in keycloak where the amount of attributes per object is not limited,an attacker by sending repeated HTTP requests could cause a resource exhaustion when the application send back rows with long attribute values.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-231"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat build of Quarkus"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Fuse 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Mobile Application Platform 4"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Application Runtimes"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2024-09-10",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/security/cve/CVE-2023-6841",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-0567",
+    "title": "Gnutls: rejects certificate chain with distributed trust",
+    "desc": "A vulnerability was found in GnuTLS, where a cockpit (which uses gnuTLS) rejects a certificate chain with distributed trust. This issue occurs when validating a certificate chain with cockpit-certificate-ensure. This flaw allows an unauthenticated, remote client or attacker to initiate a denial of service attack.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-347"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9.2 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "RHODF-4.15-RHEL-9"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2024-01-16",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/errata/RHSA-2024:0533",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-10041",
+    "title": "Pam: libpam: libpam vulnerable to read hashed password",
+    "desc": "A vulnerability was found in PAM. The secret information is stored in memory, where the attacker can trigger the victim program to execute by sending characters to its standard input (stdin). As this occurs, the attacker can train the branch predictor to execute an ROP chain speculatively. This flaw could result in leaked passwords, such as those found in /etc/shadow while performing authenticatio",
+    "cvss": 4.7,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-922"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9.4 Extended Update Support"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2024-10-23",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/errata/RHSA-2024:10379",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-12086",
+    "title": "Rsync: rsync server leaks arbitrary client files",
+    "desc": "A flaw was found in rsync. It could allow a server to enumerate the contents of an arbitrary file from the client's machine. This issue occurs when files are being copied from a client to a server. During this process, the rsync server will send checksums of local data to the client to compare with in order to determine what data needs to be sent to the server. By sending specially constructed che",
+    "cvss": 6.1,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-390"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9.6 Extended Update Support"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-01-14",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/errata/RHBA-2025:6470",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-12088",
+    "title": "Rsync: --safe-links option bypass leads to path traversal",
+    "desc": "A flaw was found in rsync. When using the `--safe-links` option, the rsync client fails to properly verify if a symbolic link destination sent from the server contains another symbolic link within it. This results in a path traversal vulnerability, which may lead to arbitrary file write outside the desired directory.",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-22"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-01-14",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/errata/RHBA-2025:6470",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-12243",
+    "title": "Gnutls: gnutls impacted by inefficient der decoding in libtasn1 leading to remote dos",
+    "desc": "A flaw was found in GnuTLS, which relies on libtasn1 for ASN.1 data processing. Due to an inefficient algorithm in libtasn1, decoding certain DER-encoded certificate data can take excessive time, leading to increased resource consumption. This flaw allows a remote attacker to send a specially crafted certificate, causing GnuTLS to become unresponsive or slow, resulting in a denial-of-service condi",
+    "cvss": 5.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-407"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-02-10",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/errata/RHSA-2025:17361",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-2467",
+    "title": "Perl-crypt-openssl-rsa: side-channel attack in pkcs#1 v1.5 padding mode (marvin attack)",
+    "desc": "A timing-based side-channel flaw exists in the perl-Crypt-OpenSSL-RSA package, which could be sufficient to recover plaintext across a network in a Bleichenbacher-style attack. To achieve successful decryption, an attacker would have to be able to send a large number of trial messages. The vulnerability affects the legacy PKCS#1v1.5 RSA encryption padding mode.",
+    "cvss": 5.9,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-208"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2024-04-25",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/security/cve/CVE-2024-2467",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-7006",
+    "title": "Libtiff: null pointer dereference in tif_dirinfo.c",
+    "desc": "A null pointer dereference flaw was found in Libtiff via `tif_dirinfo.c`. This issue may allow an attacker to trigger memory allocation failures through certain means, such as restricting the heap space size or injecting faults, causing a segmentation fault. This can cause an application crash, eventually leading to a denial of service.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-476"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9.2 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2024-08-08",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/errata/RHSA-2024:6360",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-7383",
+    "title": "Libnbd: nbd server improper certificate validation",
+    "desc": "A flaw was found in libnbd. The client did not always correctly verify the NBD server's certificate when using TLS to connect to an NBD server. This issue allows a man-in-the-middle attack on NBD traffic.",
+    "cvss": 7.4,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-295"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2024-08-05",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/errata/RHSA-2024:6757",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-0620",
+    "title": "Samba: smbd doesn't pick up group membership changes when re-authenticating an expired smb session",
+    "desc": "A flaw was found in Samba. The smbd service daemon does not pick up group membership changes when re-authenticating an expired SMB session. This issue can expose file shares until clients disconnect and then connect again.",
+    "cvss": 4.9,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-552"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-06-06",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/security/cve/CVE-2025-0620",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-1118",
+    "title": "Grub2: commands/dump: the dump command is not in lockdown when secure boot is enabled",
+    "desc": "A flaw was found in grub2. Grub's dump command is not blocked when grub is in lockdown mode, which allows the user to read any memory information, and an attacker may leverage this in order to extract signatures, salts, and other sensitive information from the memory.",
+    "cvss": 4.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-501"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-02-19",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/errata/RHSA-2025:16154",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-3359",
+    "title": "Gnuplot: segmentation fault via io_str_init_static_internal function",
+    "desc": "A flaw was found in GNUPlot. A segmentation fault via IO_str_init_static_internal may jeopardize the environment.",
+    "cvss": 6.2,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-754"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-04-07",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/security/cve/CVE-2025-3359",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-46397",
+    "title": "Xfig: xfig: stack-overflow allows possible code execution via local input manipulation",
+    "desc": "A flaw was found in xfig. This vulnerability allows possible code execution via local input manipulation via bezier_spline function.",
+    "cvss": 7.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-120"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9.4 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9.6 Extended Update Support"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-04-23",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/errata/RHSA-2026:0700",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-46398",
+    "title": "Xfig: fig2dev stack-overflow via read_objects",
+    "desc": "In xfig diagramming tool, a stack-overflow while running fig2dev allows memory corruption via local input manipulation via read_objects function.",
+    "cvss": 5.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-121"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-04-23",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/security/cve/CVE-2025-46398",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-46399",
+    "title": "Xfig: transfig: fig2dev segmentation fault vulnerability",
+    "desc": "A flaw was found in fig2dev. This vulnerability allows availability via local input manipulation via genge_itp_spline function.",
+    "cvss": 5.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-476"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-04-23",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/security/cve/CVE-2025-46399",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-46400",
+    "title": "Xfig: fig2dev segmentation fault in read_arcobject",
+    "desc": "In xfig diagramming tool, a segmentation fault while running fig2dev allows an attacker to availability via local input manipulation via read_arcobject function.",
+    "cvss": 5.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-476"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-04-23",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/security/cve/CVE-2025-46400",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-4035",
+    "title": "Libsoup: cookie domain validation bypass via uppercase characters in libsoup",
+    "desc": "A flaw was found in libsoup. When handling cookies, libsoup clients mistakenly allow cookies to be set for public suffix domains if the domain contains at least two components and includes an uppercase character. This bypasses public suffix protections and could allow a malicious website to set cookies for domains it does not own, potentially leading to integrity issues such as session fixation.",
+    "cvss": 4.3,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-178"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-04-29",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/errata/RHSA-2025:8128",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-5318",
+    "title": "Libssh: out-of-bounds read in sftp_handle()",
+    "desc": "A flaw was found in the libssh library in versions less than 0.11.2. An out-of-bounds read can be triggered in the sftp_handle function due to an incorrect comparison check that permits the function to access memory beyond the valid handle list and to return an invalid pointer, which is used in further processing. This vulnerability allows an authenticated remote attacker to potentially read unint",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-125"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-06-24",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/errata/RHSA-2025:18231",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-5987",
+    "title": "Libssh: invalid return code for chacha20 poly1305 with openssl backend",
+    "desc": "A flaw was found in libssh when using the ChaCha20 cipher with the OpenSSL library. If an attacker manages to exhaust the heap space, this error is not detected and may lead to libssh using a partially initialized cipher context. This occurs because the OpenSSL error code returned aliases with the SSH_OK code, resulting in libssh not properly detecting the error returned by the OpenSSL library. Th",
+    "cvss": 8.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-393"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-07-07",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/errata/RHSA-2025:23483",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-62229",
+    "title": "Xorg: xmayland: use-after-free in xpresentnotify structure creation",
+    "desc": "A flaw was found in the X.Org X server and Xwayland when processing X11 Present extension notifications. Improper error handling during notification creation can leave dangling pointers that lead to a use-after-free condition. This can cause memory corruption or a crash, potentially allowing an attacker to execute arbitrary code or cause a denial of service.",
+    "cvss": 7.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "X.Org",
+        "product": "Xwayland"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6 Extended Lifecycle Support  - EXTENSION"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-10-30",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/errata/RHSA-2025:19432",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-62230",
+    "title": "Xorg: xwayland: use-after-free in xkb client resource removal",
+    "desc": "A flaw was discovered in the X.Org X server’s X Keyboard (Xkb) extension when handling client resource cleanup. The software frees certain data structures without properly detaching related resources, leading to a use-after-free condition. This can cause memory corruption or a crash when affected clients disconnect.",
+    "cvss": 7.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "X.Org",
+        "product": "Xwayland"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6 Extended Lifecycle Support  - EXTENSION"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-10-30",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/errata/RHSA-2025:19432",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-62231",
+    "title": "Xorg: xmayland: value overflow in xkbsetcompatmap()",
+    "desc": "A flaw was identified in the X.Org X server’s X Keyboard (Xkb) extension where improper bounds checking in the XkbSetCompatMap() function can cause an unsigned short overflow. If an attacker sends specially crafted input data, the value calculation may overflow, leading to memory corruption or a crash.",
+    "cvss": 7.3,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-190"
+    ],
+    "affected": [
+      {
+        "vendor": "X.Org",
+        "product": "Xwayland"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6 Extended Lifecycle Support  - EXTENSION"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-10-30",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/errata/RHSA-2025:19432",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-6021",
+    "title": "Libxml2: integer overflow in xmlbuildqname() leads to stack buffer overflow in libxml2",
+    "desc": "A flaw was found in libxml2's xmlBuildQName function, where integer overflows in buffer size calculations can lead to a stack-based buffer overflow. This issue can result in memory corruption or a denial of service when processing crafted input.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-787"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2025-06-12",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/errata/RHSA-2025:10630",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-7519",
+    "title": "Polkit: xml policy file with a large number of nested elements may lead to out-of-bounds write",
+    "desc": "A flaw was found in polkit. When processing an XML policy with 32 or more nested elements in depth, an out-of-bounds write can be triggered. This issue can lead to a crash or other unexpected behavior, and arbitrary code execution is not discarded. To exploit this flaw, a high-privilege account is needed as it's required to place the malicious policy file properly.",
+    "cvss": 6.7,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-787"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-07-14",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/security/cve/CVE-2025-7519",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-0810",
+    "title": "Gix-date: gix-date: undefined behavior due to invalid string generation",
+    "desc": "A flaw was found in gix-date. The `gix_date::parse::TimeBuf::as_str` function can generate strings containing invalid non-UTF8 characters. This issue violates the internal safety invariants of the `TimeBuf` component, leading to undefined behavior when these malformed strings are subsequently processed. This could potentially result in application instability or other unforeseen consequences.",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-135"
+    ],
+    "affected": [
+      {
+        "vendor": "GitoxideLabs",
+        "product": "gitoxide"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Logging Subsystem for Red Hat OpenShift"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Logging Subsystem for Red Hat OpenShift"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Logging Subsystem for Red Hat OpenShift"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Logging Subsystem for Red Hat OpenShift"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-01-26",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/security/cve/CVE-2026-0810",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-106805",
+    "title": "A resource exhaustion issue exists in Free5GC v4.2.3 during PFCP Session Establishment failure handling. When the SMF do",
+    "desc": "A resource exhaustion issue exists in Free5GC v4.2.3 during PFCP Session Establishment failure handling. When the SMF does not receive a PFCP Session Establishment Response from the UPF, allocated UE IP address resources are not properly released. Repeated failed session establishment attempts can therefore exhaust the UE IP address pool, preventing new UEs from establishing PDU sessions and resul",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "n/a",
+        "product": "n/a"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2026-11-02",
+    "updated": "2026-11-05",
+    "url": "https://github.com/free5gc/free5gc/issues/1162",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2020-25720",
+    "title": "Samba: check attribute access rights for ldap adds of computers",
+    "desc": "A vulnerability was found in Samba where a delegated administrator with permission to create objects in Active Directory can write to all attributes of the newly created object, including security-sensitive attributes, even after the object's creation. This issue occurs because the administrator owns the object due to the lack of an Access Control List (ACL) at the time of creation and later being",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-266"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 6"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2024-11-17",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/security/cve/CVE-2020-25720",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2022-2127",
+    "title": "Samba: out-of-bounds read in winbind auth_crap",
+    "desc": "An out-of-bounds read vulnerability was found in Samba due to insufficient length checks in winbindd_pam_auth_crap.c. When performing NTLM authentication, the client replies to cryptographic challenges back to the server. These replies have variable lengths, and Winbind fails to check the lan manager response length. When Winbind is used for NTLM authentication, a maliciously crafted request can t",
+    "cvss": 5.9,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-125"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.6 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.8 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2023-07-20",
+    "updated": "2026-11-05",
+    "url": "https://access.redhat.com/errata/RHSA-2023:6667",
     "source": "CISA Vulnrichment"
   },
   {
@@ -24598,6 +24842,28 @@
     "source": "CISA Vulnrichment"
   },
   {
+    "cve": "CVE-2026-83542",
+    "title": "Apache OFBiz: Unauthenticated RCE via login-page widget injection",
+    "desc": "Improper Control of Generation of Code ('Code Injection') in Apache OFBiz 24.09 before 24.09.08 on all platforms allows a remote unauthenticated attacker to execute arbitrary code on the server by staging crafted widget XML in a multipart upload and overriding the mainDecoratorLocation used by a manager login route through an anonymous JSON request, causing OFBiz to load the staged XML through its",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-94"
+    ],
+    "affected": [
+      {
+        "vendor": "Apache Software Foundation",
+        "product": "Apache OFBiz"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-11-05",
+    "updated": "2026-11-05",
+    "url": "https://lists.apache.org/thread.html/7b2syzksp7klt9fvhdg0olldvs2g83lz",
+    "source": "CISA Vulnrichment"
+  },
+  {
     "cve": "CVE-2026-117934",
     "title": "Use-after-free in the Layout component",
     "desc": "Use-after-free in the Layout component. This vulnerability was fixed in Firefox 159, Firefox ESR 115.44, Firefox ESR 153.6, Thunderbird 159, and Thunderbird 153.6.",
@@ -27392,279 +27658,45 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2024-9264",
-    "title": "Grafana SQL Expressions allow for remote code execution",
-    "desc": "The SQL Expressions experimental feature of Grafana allows for the evaluation of `duckdb` queries containing user input. These queries are insufficiently sanitized before being passed to `duckdb`, leading to a command injection and local file inclusion vulnerability. Any user with the VIEWER or higher permission is capable of executing this attack.  The `duckdb` binary must be present in Grafana's",
-    "cvss": 9.9,
+    "cve": "CVE-2013-10004",
+    "title": "Telecommunication Software SAMwin Contact Center Suite Password SAMwinLIBVB.dll passwordScramble improper authentication",
+    "desc": "A vulnerability classified as critical was found in Telecommunication Software SAMwin Contact Center Suite 5.1. This vulnerability affects the function passwordScramble in the library SAMwinLIBVB.dll of the component Password Handler. Incorrect implementation of a hashing function leads to predictable authentication possibilities. Upgrading to version 6.2 is able to address this issue. It is recom",
+    "cvss": 6.5,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-287"
+    ],
+    "affected": [
+      {
+        "vendor": "Telecommunication Software",
+        "product": "SAMwin Contact Center Suite"
+      }
+    ],
+    "exploitation": "poc",
+    "isKev": false,
+    "published": "2022-05-24",
+    "updated": "2025-04-15",
+    "url": "http://www.modzero.ch/advisories/MZ-13-07_SAMwin_Collisions.txt",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2006-5610",
+    "title": "PHP remote file inclusion vulnerability in player/includes/common.php in Teake Nutma Foing, as modified in Fully Modded ",
+    "desc": "PHP remote file inclusion vulnerability in player/includes/common.php in Teake Nutma Foing, as modified in Fully Modded phpBB (phpbbfm) 2021.4.40, allows remote attackers to execute arbitrary PHP code via a URL in the phpbb_root_path parameter.",
+    "cvss": 9.8,
     "severity": "CRITICAL",
-    "cwes": [
-      "CWE-94"
-    ],
-    "affected": [
-      {
-        "vendor": "Grafana",
-        "product": "Grafana"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2024-10-18",
-    "updated": "2026-11-04",
-    "url": "https://grafana.com/security/security-advisories/cve-2024-9264/",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-9632",
-    "title": "Xorg-x11-server: tigervnc: heap-based buffer overflow privilege escalation vulnerability",
-    "desc": "A flaw was found in the X.org server. Due to improperly tracked allocation size in _XkbSetCompatMap, a local attacker may be able to trigger a buffer overflow condition via a specially crafted payload, leading to denial of service or local privilege escalation in distributions where the X.org server is run with root privileges.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-122"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 6 Extended Lifecycle Support  - EXTENSION"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-10-30",
-    "updated": "2026-11-04",
-    "url": "https://access.redhat.com/errata/RHSA-2024:10090",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2024-9675",
-    "title": "Buildah: buildah allows arbitrary directory mount",
-    "desc": "A vulnerability was found in Buildah. Cache mounts do not properly validate that user-specified paths for the cache are within our cache directory, allowing a `RUN` instruction in a Container file to mount an arbitrary directory from the host (read/write) into the container as long as those files can be accessed by the user running Buildah.",
-    "cvss": 7.8,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-22"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8.6 Telecommunications Update Service"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8.6 Update Services for SAP Solutions"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2024-10-09",
-    "updated": "2026-11-04",
-    "url": "https://access.redhat.com/errata/RHBA-2024:10967",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-0107",
-    "title": "Expedition: OS Command Injection Vulnerability",
-    "desc": "An OS command injection vulnerability in Palo Alto Networks Expedition enables an unauthenticated attacker to run arbitrary OS commands as the www-data user in Expedition, which results in the disclosure of usernames, cleartext passwords, device configurations, and device API keys for firewalls running PAN-OS software.",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-78"
-    ],
-    "affected": [
-      {
-        "vendor": "Palo Alto Networks",
-        "product": "Cloud NGFW"
-      },
-      {
-        "vendor": "Palo Alto Networks",
-        "product": "Expedition"
-      },
-      {
-        "vendor": "Palo Alto Networks",
-        "product": "Panorama"
-      },
-      {
-        "vendor": "Palo Alto Networks",
-        "product": "PAN-OS"
-      },
-      {
-        "vendor": "Palo Alto Networks",
-        "product": "Prisma Access"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2025-01-11",
-    "updated": "2026-11-04",
-    "url": "https://security.paloaltonetworks.com/PAN-SA-2025-0001",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-0131",
-    "title": "GlobalProtect App: Incorrect Privilege Management Vulnerability in OPSWAT MetaDefender Endpoint Security SDK",
-    "desc": "An incorrect privilege management vulnerability in the OPSWAT MetaDefender Endpoint Security SDK used by the Palo Alto Networks GlobalProtect™ app on Windows devices allows a locally authenticated non-administrative Windows user to escalate their privileges to NT AUTHORITY\\SYSTEM. However, execution requires that the local user also successfully exploits a race condition, which makes this vulnerab",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-266"
-    ],
-    "affected": [
-      {
-        "vendor": "OPSWAT",
-        "product": "MetaDefender Endpoint Security SDK"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-05-14",
-    "updated": "2026-11-04",
-    "url": "https://security.paloaltonetworks.com/CVE-2025-0131",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-0624",
-    "title": "Grub2: net: out-of-bounds write in grub_net_search_config_file()",
-    "desc": "A flaw was found in grub2. During the network boot process, when trying to search for the configuration file, grub copies data from a user controlled environment variable into an internal buffer using the grub_strcpy() function. During this step, it fails to consider the environment variable length when allocating the internal buffer, resulting in an out-of-bounds write. If correctly exploited, th",
-    "cvss": 7.6,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-787"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8.2 Advanced Update Support"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-02-19",
-    "updated": "2026-11-04",
-    "url": "https://access.redhat.com/errata/RHSA-2025:2521",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-0893",
-    "title": "Symantec Diagnostic Tool (SymDiag), prior to 3.0.79, may be susceptible to a Privilege Escalation vulnerability.",
-    "desc": "Symantec Diagnostic Tool (SymDiag), prior to 3.0.79, may be susceptible to a Privilege Escalation vulnerability.",
-    "cvss": 7.8,
-    "severity": "HIGH",
     "cwes": [],
     "affected": [
       {
-        "vendor": "Symantec",
-        "product": "Symantec Diagnostic Tool"
+        "vendor": "n/a",
+        "product": "n/a"
       }
     ],
     "exploitation": "none",
     "isKev": false,
-    "published": "2025-02-19",
-    "updated": "2026-11-04",
-    "url": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/25417",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-0966",
-    "title": "IBM InfoSphere Information Server SQL injection",
-    "desc": "IBM InfoSphere Information Server 11.7 vulnerable to SQL injection. A remote attacker could send specially crafted SQL statements, which could allow the attacker to view, add, modify, or delete information in the back-end database.",
-    "cvss": 7.6,
-    "severity": "HIGH",
-    "cwes": [
-      "CWE-89"
-    ],
-    "affected": [
-      {
-        "vendor": "IBM",
-        "product": "InfoSphere Information Server"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2025-06-25",
-    "updated": "2026-11-04",
-    "url": "https://www.ibm.com/support/pages/node/7236613",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-10230",
-    "title": "Samba: command injection in wins server hook script",
-    "desc": "A flaw was found in Samba, in the front-end WINS hook handling: NetBIOS names from registration packets are passed to a shell without proper validation or escaping. Unsanitized NetBIOS name data from WINS registration packets are inserted into a shell command and executed by the Samba Active Directory Domain Controller’s wins hook, allowing an unauthenticated network attacker to achieve remote com",
-    "cvss": 10,
-    "severity": "CRITICAL",
-    "cwes": [
-      "CWE-78"
-    ],
-    "affected": [
-      {
-        "vendor": "",
-        "product": ""
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 10"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 6"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 6"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat Enterprise Linux 7"
-      }
-    ],
-    "exploitation": "poc",
-    "isKev": false,
-    "published": "2025-11-07",
-    "updated": "2026-11-04",
-    "url": "https://access.redhat.com/security/cve/CVE-2025-10230",
+    "published": "2006-10-31",
+    "updated": "2025-04-03",
+    "url": "http://secunia.com/advisories/22499",
     "source": "CISA Vulnrichment"
   }
 ]
