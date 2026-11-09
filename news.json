@@ -1,5 +1,187 @@
 [
   {
+    "source": "thn",
+    "title": "Hackers Exploit Qubole's Trusted AWS Access to Breach Customer Accounts and Steal Data",
+    "desc": "An attacker broke into AWS accounts belonging to multiple Qubole customers between October 14 and October 26 and stole stored secrets and data, cloud security company Wiz said today.\n\nThe attacker used credentials for an AWS account that Qubole's platform uses to reach those customers. How the attac",
+    "url": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html",
+    "date": "2026-11-09T23:21:21"
+  },
+  {
+    "source": "thn",
+    "title": "Hackers Compromise Ethersphere's bee-js and Swarm Desktop to Deliver Wallet-Stealing Malware",
+    "desc": "Attackers used the Ethersphere project's own release automation to publish malicious versions of two of its tools for the Swarm decentralized storage network: bee-js 13.3.0 and Swarm Desktop 0.56.2.\n\nBoth releases download and run code built to steal the wallet key that Swarm Desktop keeps for its n",
+    "url": "https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html",
+    "date": "2026-11-09T23:06:28"
+  },
+  {
+    "source": "thn",
+    "title": "Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia",
+    "desc": "The South Asian cyber espionage group known as Bitter (aka APT-C-08, APT-Q-37, Hazy Tiger, Orange Yali, T-APT-17, and TA397) has been observed targeting South Asian organizations with a previously unreported remote access trojan called PapRAT.\n\n\"PapRAT has both C++ and Rust implementations,\" Fortine",
+    "url": "https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html",
+    "date": "2026-11-09T20:01:29"
+  },
+  {
+    "source": "thn",
+    "title": "⚡ Weekly Recap: SSHole Exploited, APT Root RCE, Robot Takeovers, 15K Hacked Sites, and More",
+    "desc": "A system doesn't always need a complicated bug to let someone in. Sometimes, a blank password is enough. That's one of the bigger stories this week. And it gets worse when the tools meant to keep systems updated or running safely become part of the attack.\n\nElsewhere, attackers are hiding inside nor",
+    "url": "https://thehackernews.com/2026/11/weekly-recap-sshole-exploited-apt-root.html",
+    "date": "2026-11-09T18:58:25"
+  },
+  {
+    "source": "thn",
+    "title": "Default 'admin:admin' Server Password Helps Researchers Hack Two Automakers, Unlock and Start Cars",
+    "desc": "The login systems behind two car brands' mobile apps could be taken over completely, two security researchers found, allowing them to access any customer's account and, for an owner with a connected car, unlock the doors and start the engine.\n\nBoth apps signed customers in through ForgeRock, an iden",
+    "url": "https://thehackernews.com/2026/11/default-adminadmin-server-password.html",
+    "date": "2026-11-09T16:57:53"
+  },
+  {
+    "source": "thn",
+    "title": "Web3Auth Flaw Exploited to Steal Keplr Crypto, Provider Empties Other Wallets for Safety",
+    "desc": "Some people who set up a Keplr crypto wallet with their Google or Apple account have had money stolen by an attacker.\n\nKeplr uses a company called Web3Auth to run that Google and Apple sign-in. The attacker used a security flaw at that company to reach the wallets, both companies said late last week",
+    "url": "https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html",
+    "date": "2026-11-09T16:26:25"
+  },
+  {
+    "source": "thn",
+    "title": "LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks",
+    "desc": "Everyone running LNbits, a free, open-source Bitcoin Lightning wallet system, should shut down their servers now because of a wave of attacks, the project said yesterday.\n\nIt has several security fixes to release and asked operators to be careful until they are out. One operator said new accounts us",
+    "url": "https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html",
+    "date": "2026-11-09T15:31:21"
+  },
+  {
+    "source": "thn",
+    "title": "Taiwan-Based Hacker Used BOSSAI AI Agents to Steal Taipei Emergency Dispatch Records",
+    "desc": "A single attacker using AI agents pulled emergency dispatch records covering seven Taipei districts, researchers at Acronis's Threat Research Unit said last week.\n\nThe agents also found a Taipei fire department platform exposing patient data from 2018, including ECG readings and ambulance video foot",
+    "url": "https://thehackernews.com/2026/11/taiwan-based-hacker-used-bossai-ai.html",
+    "date": "2026-11-09T14:31:50"
+  },
+  {
+    "source": "thn",
+    "title": "Former OpenAI Engineer Pleads Not Guilty to Planting Covert Device in Executive Meeting Room",
+    "desc": "The OpenAI engineer who was arrested and charged last month for planting a covert audio recording device in the company's office has pleaded not guilty.\n\nAccording to reports from Bloomberg and CNBC, Saudi national Abdulrahman Alfozan made an appearance in San Francisco federal court on Friday, wher",
+    "url": "https://thehackernews.com/2026/11/former-openai-engineer-pleads-not.html",
+    "date": "2026-11-09T12:35:48"
+  },
+  {
+    "source": "thn",
+    "title": "U.S. Agencies Warn Refrigeration Controller Attacks Could Cause Fires and Inventory Losses",
+    "desc": "U.S. government agencies have warned that threat actors are actively targeting industrial refrigeration and cold-chain monitoring systems globally with an aim to cause service disruptions, fire hazards, and loss of inventory.\n\n\"The actors may exploit vulnerabilities or weaknesses in unpatched or int",
+    "url": "https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html",
+    "date": "2026-11-09T11:45:10"
+  },
+  {
+    "source": "thn",
+    "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
+    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity vulnerability impacting SonicWall SonicOS to its Known Exploited Vulnerabilities (KEV) catalog, following reports that it said may have been exploited in real-world attacks.\n\nThe vulnerability, tracked as CVE-",
+    "url": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
+    "date": "2026-11-09T11:35:24"
+  },
+  {
+    "source": "boannews",
+    "title": "“AI 시대 개인정보 보호, CPO·CEO 함께 결정해야”... 개인정보 정책 포럼 개최",
+    "desc": "개인정보 사전 예방 노력이 사고 때 과징금 산정 등에 반영돼야 한다는 목소리가 높다. 정부는 개인정보 보호를 위한 예방 체계 구축에 적극 투자한 기업은 사고가 날 때 과징금을 감경할 수 있는 조치를 강화했다고 설명했다.한국개인정보보호책임자협의회(KCPO)와 개인정보보호위원회는 9일 서울 양재동 엘타워에서 ‘2026 개인정보정책포럼’을 개최했다. 이날 행사에는 개인정보보호최고책임자(CPO), 개인정보보호 실무자 등 관계자들이 참석해 ‘신뢰·책임 기반으로 안심할 수 있는 개인정보 보호체계 구현’을 주제로 논의를 이어갔다. 이 행사는 개",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147117",
+    "date": "2026-11-09 17:27:16"
+  },
+  {
+    "source": "boannews",
+    "title": "출시 2주 앞둔 ‘GTA 6’ 미끼로... 가짜 유출 빌드·PC판·모바일판 사기 사이트 우후죽순",
+    "desc": "11월 19일 출시되는 인기 게임 ‘GTA 6’(Grand Theft Auto VI)를 앞두고, 유출 빌드와 얼리 액세스, 모바일판을 내건 사기 사이트가 쏟아지고 있다.보안 기업 넷크래프트(Netcraft)는 7월 1일~10월 27일 새로 등록된 GTA 6 관련 도메인을 분석해 이 같은 실태를 공개했다. 미끼는 크게 네 갈래였다. 유출자 이름을 내건 사이트, 얼리 액세스를 약속하는 사이트, 있지도 않은 모바일판을 광고하는 사이트, 게임을 무료로 배포한다는 사이트다.수법은 다양했다. 악성코드를 심거나 돈을 먼저 요구했다. 다운로드 파",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147061",
+    "date": "2026-11-09 17:01:52"
+  },
+  {
+    "source": "boannews",
+    "title": "혼자서 AI 에이전트 12개 지휘... 대만 해커, 소방 응급 시스템 뚫고 환자 기록 빼내",
+    "desc": "대만의 해커 한 명이 AI 에이전트 12개를 엮어 11개국 수백 개 조직을 공격했다. 표적은 응급 서비스와 은행, 대학, 군 시스템 등이다. 보안 기업 아크로니스(Acronis)는 최근 의료 데이터와 개인 기록이 실제로 빠져나간 사실을 확인했다.아크로니스 위협연구팀은 잘못 설정된 개발 서버로 보이는 곳을 발견했다. 들여다보니 파일 9만개 이상과 로그 약 9GB, 대화 기록, 공격 도구, 피해자 데이터가 담긴 완전한 공격 플랫폼이었다. 이름은 ‘보스AI’(BOSSAI)다. 아크로니스는 AI의 힘을 빌려 혼자서 조직 수준의 공격을 벌이",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147057",
+    "date": "2026-11-09 16:11:57"
+  },
+  {
+    "source": "boannews",
+    "title": "취약점 공개 사흘이면 공격 시작... 고위험 결함 71%, 일주일 안에 악용",
+    "desc": "보안 취약점이 공개된 뒤 실제 공격에 쓰이기까지 평균 사흘이 걸렸다. 보안 기업 래피드7(Rapid7)이 최근 낸 ‘2026년 3분기 위협 동향 보고서’ 결과다.래피드7은 3분기에 새로 공격에 쓰인 고위험 취약점 43개를 추적했다. 이 중 71%는 공개 첫 주에 악용됐다. 43개 가운데 34개는 로그인도, 피해자가 링크를 누르는 등의 행동도 필요 없었다. 인터넷에 연결된 시스템이라면 바로 침입 통로가 될 수 있다.헬프넷시큐리티는 정해진 일정에 맞춰 패치하는 조직이 위험한 취약점 가운데 당장 공격받을 것을 먼저 골라내야 하는 처지가",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146815",
+    "date": "2026-11-09 16:08:29"
+  },
+  {
+    "source": "boannews",
+    "title": "“AI 위협 헌팅 실력 세계 1위”... 팀 BoB, 이지스 CTF 우승",
+    "desc": "‘차세대 보안리더 양성 과정’(BoB) 교육생과 수료생으로 꾸려진 한국 대표팀이 글로벌 해킹대회 챔피언들이 총출동한 국제 AI 보안 대회에서 정상에 올랐다.한국인터넷진흥원(KISA)은 BoB 수료생·교육생 5인으로 구성된 ‘TEAM BoB’가 11월7일부터 8일까지 대만 국립성공대학교(NCKU)에서 열린 ‘이지스(AEGIS) CTF 국제초청전’ 우승을 차지했다고 9일 밝혔다.이번 대회에는 대만 10개 팀과 전년도 우승팀 1개 팀, 국제 초청팀 5개 팀 등 총 16개 팀이 참가해 실력을 겨뤘다. 특히 데프콘 CTF에서 2024년과 2",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147115",
+    "date": "2026-11-09 16:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "“AI 에이전트 분석 총망라”... 디지털포렌식학회 동계대회 개최",
+    "desc": "생성형 AI 에이전트와 LLM 환경에서 디지털 증거를 규명하고 법적 쟁점을 논의하기 위해 산·학·연·관 전문가들이 한자리에 모였다.한국디지털포렌식학회는 경찰청, 한국저작권보호원과 공동 주최하고 플레인비트가 주관한 ‘2026 한국디지털포렌식학회 동계학술대회’를 9일 서울 양재동 엘타워에서 개최했다. 이번 행사에는 해양경찰청, 카카오, 쿤텍 등 주요 기관과 기업, 대학 연구실이 후원했다.역대 최대 규모로 논문이 접수된 이번 학술대회에서는 AI 에이전트 포렌식을 비롯해 LLM 플랫폼·로그 분석, 온디바이스 AI, 멀티미디어 딥페이크 등",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147116",
+    "date": "2026-11-09 15:56:26"
+  },
+  {
+    "source": "boannews",
+    "title": "해커 서버까지 선제 접근... 일본, 100억엔 긴급 사이버 대책에 ‘톱건’팀 11월 말 출범",
+    "desc": "일본 정부가 대기업과 정부 기관에서 잇따른 해킹과 정보 유출에 맞서 100억엔(약 6300만달러) 규모의 긴급 사이버보안 대책을 발표했다.시큐리티위크에 따르면 다카이치 사나에 일본 총리는 각료 회의에서 AI로 만든 공격의 시대엔 신속한 대응이 필수라며 기관과 기업에 대비를 강화하라고 주문했다. 다카이치 총리는 “정부의 모든 자원을 투입해 일본 전체의 대응 역량을 높이자”고 말했다.침해 사고는 기업과 정부 기관 수십 곳에 퍼졌다. 이번 대책의 목표는 민관이 정보를 나누고 피해자를 빠르게 도와 복구까지 이어 가는 사회다.정부는 ‘능동적",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147089",
+    "date": "2026-11-09 14:14:53"
+  },
+  {
+    "source": "boannews",
+    "title": "공유기·프린터 수억 대에 들어간 웹서버... ‘고어헤드’, 취소된 인증서로도 접속 허용",
+    "desc": "공유기와 프린터, 산업용 제어기의 관리 화면을 띄우는 소형 웹서버 고어헤드(GoAhead)에서 보안 결함 11건이 고쳐졌다. 고친 버전은 나왔지만 장비 주인이 직접 적용할 방법은 없다. 제조사가 펌웨어 업데이트를 내놔야 한다.고어헤드는 장비 제조사가 제품에 넣어 쓰는 웹서버다. 제작사 엠베드디스(EmbedThis)는 수억 대 장비에 들어가 있다고 밝히고 있다. 고객으로 HP와 오라클, 지멘스, 캐논, 록웰, 디링크, 컴캐스트를 꼽지만, 더해커뉴스는 이 가운데 결함이 있는 설정을 쓰는 것으로 확인된 곳은 없다고 밝혔다.결함은 세바스티",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=146810",
+    "date": "2026-11-09 14:11:58"
+  },
+  {
+    "source": "boannews",
+    "title": "인텔리빅스, 바르셀로나 스마트시티 엑스포에서 안전 AI 기술력 호평",
+    "desc": "안전 인공지능(AI) 딥테크 기업 인텔리빅스가 스페인 바르셀로나에서 열린 ‘스마트시티 엑스포 월드 콩그레스 2026’(Smart City Expo World Congress 2026, 이하 SCEWC 2026)’에 참가해 안전 AI 기술력'에 대해 참가자들의 호평을 받았다고 9일 밝혔다.지난 11월 3일부터 5일까지 스페인 바르셀로나에서 개최된 SCEWC 2026은 전 세계 140개국, 약 3만명이 방문하고 1276개 기업이 참가한 세계 최대 규모의 스마트시티 국제 행사다. 각국 도시 정부와 글로벌 기업이 모여 미래 도시 정책과 혁",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147111",
+    "date": "2026-11-09 13:27:34"
+  },
+  {
+    "source": "boannews",
+    "title": "[디지털 문단속] #8. 안방 대화가 서버로?... AI 스피커 음성 통제 가이드",
+    "desc": "“오늘 날씨 어때?”나 음악 재생을 요청하는 일상적인 대화가 인공지능(AI) 스피커 개발사의 클라우드 서버에 고스란히 녹음돼 보관된다. 거실의 스마트 TV부터 로봇청소기, 홈캠 등 집안의 다양한 사물이 인터넷으로 연결된 초연결 시대, 편리함 뒤에 무심코 지나친 음성 데이터는 사생활 유출의 뇌관이 될 수 있다. 기업들은 음성 인식 모델 학습을 이유로 녹음 데이터를 보존하지만, 사용자가 기기를 부르지 않았음에도 TV 소리나 주변 대화를 호출어로 오인식해 임의로 녹음하는 사례가 빈번하다. 클라우드 계정이 침해당하면 가족 간의 사적인 대화",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147113",
+    "date": "2026-11-09 13:27:03"
+  },
+  {
+    "source": "boannews",
+    "title": "시도 8건에 미끼 서버 최고 권한까지... 오픈SSH ‘SSHole’ 공개 9시간 안 돼 공격 포착",
+    "desc": "서버 원격 접속 프로그램 오픈SSH의 인증 우회 결함 ‘SSHole’(CVE-2026-123158)이 공개 9시간도 안 돼 실제 공격 시도에 쓰였다. 이 취약점은 비밀번호 사용이 막힌 계정으로 서버에 들어가게 해 준다.위협 정보 기업 프레비디안(Previdian)이 이 공격을 관측했다. 프레비디안은 미끼로 차려 둔 알파인 리눅스(Alpine Linux) 서버 한 대에서 공격자가 최고 관리자 권한까지 획득하는 것을 확인했다. 알파인 리눅스의 기본 오픈SSH 서버 설정이 이 취약점의 영향권에 든다.프레비디안 관측 결과 공격 시도는 모두",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147103",
+    "date": "2026-11-09 12:30:00"
+  },
+  {
+    "source": "boannews",
+    "title": "[이슈 칼럼] 알고도 털린 8조4000억원: 보안의 가장 오래된 취약점, ‘사람’",
+    "desc": "지난 10월29일, 세계 최대 가상자산 거래소 바이낸스(Binance)에서 약 63억달러, 한화 약 8조4000억원 규모의 가상자산이 탈취됐다.북한 정찰총국 연계 해킹 조직 ‘트레이더트레이터’(TraderTraitor)가 배후로 지목된 이번 사건에서 가장 뼈아픈 대목은 천문학적인 피해 규모만이 아니다. 공격의 최초 침투 경로가 엔지니어의 ‘가짜 채용 면접’이었다는 사실이다.공격자는 구직 플랫폼을 통해 바이낸스 엔지니어에게 접근해 화상 면접을 진행하며 신뢰를 쌓았고, 코딩 과제를 가장한 악성 파일을 전달했다. 엔지니어는 이를 회사의",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147003",
+    "date": "2026-11-09 11:52:02"
+  },
+  {
+    "source": "boannews",
+    "title": "권태경 연세대 교수 공동연구팀, AI 취약점 자동 탐지·실시간 차단 플랫폼 ‘GenAISecurity’ 실증",
+    "desc": "과학기술정보통신부·정보통신기획평가원(IITP)의 지원을 받은 연세대학교 AI보안연구실이 ‘AI 모델 취약성 분석, 평가 기술 및 생성정보 비밀성 판단 도구 개발’ 과제의 현황 보고와 실증 행사를 11월 3일 연세대학교 신촌캠퍼스 새천년관에서 개최했다고 밝혔다.생성형 AI와 에이전틱 AI(Agentic AI)의 업무 현장 도입이 가속화되면서, AI 모델 자체를 겨냥한 보안 위협 대응이 핵심 과제로 떠오르고 있다. 학습된 기밀 데이터가 외부로 새어 나가는 ‘비밀성(Confidentiality) 위협’과 모델이 변조되어 오작동을 일으키는",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147110",
+    "date": "2026-11-09 11:44:58"
+  },
+  {
+    "source": "boannews",
+    "title": "“안경인 줄 알았는데 몰래 촬영” 스마트 글래스 사생활 침해 경보",
+    "desc": "스마트 글래스 보급 확대로 사생활 침해와 시험 부정행위 등 현실적 위협이 커졌다. 화장실이나 탈의실, 시험장 등 촬영이 제한되는 장소에서 무분별하게 이용하다간 처벌을 받을 수도 있다. 개인정보보호위원회는 9일 스마트 글래스의 기술적 특성과 개인정보 침해 위험 요인을 분석하고 이용자와 사업자가 준수해야 할 유의사항을 담은 심층 보고서를 발간했다. 개인정보위는 스마트 글래스 관련 시장이 급성장함에 따라 국내 정식 출시에 앞서 제조사와 사전 면담을 진행했다. 연내 구체적 안전 수칙을 담은 가이드라인도 배포할 방침이다.스마트 글래스는 카메",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147107",
+    "date": "2026-11-09 11:35:24"
+  },
+  {
+    "source": "boannews",
+    "title": "[한국정보공학기술사 보안을 論하다–51] AI 위협의 진화, 우리에게 주어진 현실적 과제는 무엇인가?",
+    "desc": "인공지능 모델이 세대를 거듭하며, 그 능력이 사이버 보안 위협으로 전이될 수 있다는 우려가 업계의 화두로 떠올랐다. 특히 앤트로픽의 미토스 모델이 사람의 지시 없이 스스로 취약점을 찾아내고 익스플로잇까지 생성하는 능력을 보이자, 개발사가 오용을 막을 안전장치를 아직 확보하지 못했다며 일반 공개를 보류하는 이례적인 일까지 벌어졌다. AI가 취약점을 찾아내고, 익스플로잇을 생산하고, 스스로 공격에 나선다. ‘AI발 위협’이라는 말이 더 이상 과장으로 들리지 않는다.그런데 잠시 우리의 현실을 돌아보자. 2025년, 대한민국은 사이버 사고",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147106",
+    "date": "2026-11-09 11:30:00"
+  },
+  {
     "source": "boannews",
     "title": "[이슈칼럼] 클라우드 시대의 시한폭탄 ‘고정 키’, 동적 인증으로 제로트러스트 보안 강화해야",
     "desc": "최근 클라우드 전환과 DevOps 환경의 확산으로 기업의 IT 인프라는 가상 머신(VM), 컨테이너(Kubernetes), CI/CD 파이프라인 등으로 빠르게 분산되고 있다. 이에 따라 공격 방식도 제로데이(Zero-day) 취약점 악용뿐 아니라 정당하게 발급된 관리자 계정과 SSH 키, API 토큰 등 인증정보를 탈취해 내부망 시스템에 직접 접근하는 형태로 다양해지고 있다.전통적인 비밀번호 인증은 크리덴셜 스터핑, 피싱, 키로깅 등 다양한 공격에 노출될 수 있다. 이를 보완하기 위해 도입된 SSH 공개키 인증 역시 서버별로 사용자",
@@ -65,7 +247,7 @@
   {
     "source": "boannews",
     "title": "해킹만큼 무서운 ‘긴급점검’... 보안 현장, 점검표 작성에 날 샌다",
-    "desc": "금융감독원, 금융보안원, 과학기술정보통신부, 방송미디어통신위원회, 국회…기업 보안 담당자들은 쏟아지는 해킹 사고 만큼 쏟아지는 ‘긴급점검’에 피로감을 느낀다.해킹이 일상화된 가운데, 6일 보안 담당자들 사이에서는 당국의 ‘긴급점검’ 대응에 방어 시간을 오히려 뺏긴다는 목소리가 나온다. 최근 일련의 해킹 사고들이 엄중한 사안인만큼 긴급점검의 취지 자체는 이견이 없다. 하지만 복수의 기관이 동시다발적으로 점검표 제출을 요구해 중복 업무가 발생하고, 특히 점검의 실효성이 의문이란 반응이다.“기관별로 산발적인 긴급점검 남발보다 일원화된 컨",
+    "desc": "금융감독원, 금융보안원, 과학기술정보통신부, 방송미디어통신위원회, 국회…기업 보안 담당자들은 쏟아지는 해킹 사고 만큼 쏟아지는 ‘긴급점검’에 피로감을 느낀다.해킹이 일상화된 가운데, 9일 보안 담당자들 사이에서는 당국의 ‘긴급점검’ 대응에 방어 시간을 오히려 뺏긴다는 목소리가 나온다. 최근 일련의 해킹 사고들이 엄중한 사안인만큼 긴급점검의 취지 자체는 이견이 없다. 하지만 복수의 기관이 동시다발적으로 점검표 제출을 요구해 중복 업무가 발생하고, 특히 점검의 실효성이 의문이란 반응이다.“기관별로 산발적인 긴급점검 남발보다 일원화된 컨",
     "url": "https://www.boannews.com/news/articleView.html?idxno=147012",
     "date": "2026-11-09 08:57:52"
   },
@@ -315,83 +497,6 @@
     "date": "2026-11-06 11:15:00"
   },
   {
-    "source": "boannews",
-    "title": "30시간 만에 루트 공격 코드 948개... 오픈AI, AI로 리눅스 커널 결함 찾고 패치까지",
-    "desc": "오픈AI가 출시를 앞둔 사이버 보안 특화 AI 모델로 리눅스 커널 결함을 찾아 검증하고, 작동하는 권한 상승 공격 코드 948개와 패치를 만들어 냈다고 밝혔다.권한 상승 취약점은 일반 사용자 계정으로 들어온 공격자가 시스템 전체를 다루는 관리자 권한, 즉 루트를 얻게 해 주는 결함이다. 오픈AI는 6월 GPT-5.5-사이버 모델이 찾은 권한 상승 공격 코드 24개를 공개했는데, 이번엔 그 과정을 에이전트 체계로 만들었다.체계는 5단계다. 먼저 에이전트가 낮은 권한 사용자도 닿을 수 있는 보안 관련 코드를 골라 후보 결함을 찾는다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147055",
-    "date": "2026-11-06 10:55:12"
-  },
-  {
-    "source": "boannews",
-    "title": "DJI, 야간 비행과 기상 악조건에 강한 플래그십 드론 ‘Matrice 5T’ 출시",
-    "desc": "민간용 드론 및 촬영 기술 기업 DJI(CEO 프랭크 왕)가 최신 소형 엔터프라이즈 플래그십 드론 ‘Matrice 5T’(매트리스 5T)를 6일 공식 출시했다.Matrice 5T는 소형 엔터프라이즈 드론 최초로 LiDAR(라이다), 밀리미터파(mmWave) 레이더, 전방위 비전 감지 시스템을 하나로 통합한 제품이다. IP55 등급의 방진·방수 성능과 최대 59분의 비행시간을 갖췄으며, 영하 20℃에서 영상 50℃에 이르는 극한의 환경에서도 가동된다. 긴급 대응, 재해 조사, 주요 시설물 점검 및 고정밀 측량 등 공공과 산업 전반의",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147058",
-    "date": "2026-11-06 10:51:34"
-  },
-  {
-    "source": "boannews",
-    "title": "한화비전, 클라우드 서비스 4종 글로벌 보안 표준 SOC2 Type2 검증 획득",
-    "desc": "한화비전(대표 김기철)이 자사 주요 클라우드 서비스 4종이 글로벌 최고 수준의 보안 감사 기준인 ‘SOC(System and Organization Controls)2 Type2’ 검증을 통과했다고 6일 밝혔다.이번 검증 획득으로 한화비전은 글로벌 표준에 부합하는 클라우드 보안 및 운영 통제 시스템을 수립하고 효과적으로 실행하고 있음을 공식 입증했다.SOC2는 미국공인회계사협회(AICPA)가 제정한 서비스 조직 내부통제 감사 기준이다. 독립 감사기관이 평가해 글로벌 시장에서 데이터 관리 안전성을 입증하는 핵심 척도로 꼽힌다. 특히",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147059",
-    "date": "2026-11-06 10:50:57"
-  },
-  {
-    "source": "boannews",
-    "title": "PC·윈도우 이어 리눅스까지... 에브리존, ‘화이트디펜더’ 전 제품군 GS 1등급",
-    "desc": "에브리존은 자사 리눅스 서버 전용 안티랜섬웨어 솔루션 ‘화이트디펜더 리눅스서버’(WhiteDefender Linux Server)가 GS인증 1등급을 획득했다고 6일 밝혔다. GS인증은 국제표준에 따라 기능적합성과 성능효율성, 호환성, 신뢰성, 보안성 등 소프트웨어 품질을 종합 평가하는 국가 공인 인증 제도다.최근 기업과 기관 주요 인프라로 쓰이는 리눅스 서버 관리 소프트웨어의 취약점을 악용해 서버 내부로 침투한 뒤 데이터를 암호화하는 침해 사고가 이어지고 있다. 9월 11일 시행된 개인정보보호법 개정안은 랜섬웨어 공격으로 개인정보",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147062",
-    "date": "2026-11-06 10:48:39"
-  },
-  {
-    "source": "boannews",
-    "title": "KAIST, AI 에이전트 간 통신도 신원·권한 검증하는 체계 연구한다",
-    "desc": "한국과학기술원(KAIST)이 기존 보안 체계로 잡아내기 힘든 ‘AI 에이전트 간 숨은 지시 삽입 공격’을 방어하기 위한 연구를 지속하고 있다. 사람이 중요한 서비스에 로그인할 때 계정 정보를 입력하듯 에이전트끼리 통신할 때에도 상대 에이전트의 신원과 권한을 여러 단계에 걸쳐 확인하는 방식이다. KAIST 사이버보안연구센터는 5일 이같은 연구를 골자로 한 ‘AI 에이전트 간 다중인증 프레임워크 및 통신 암호화 기술’을 연구하고 있다고 밝혔다. 이 기술은 에이전트 간 통신에서 상대 에이전트의 신원과 권한을 다중으로 확인하는 기술이다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147047",
-    "date": "2026-11-06 10:45:05"
-  },
-  {
-    "source": "boannews",
-    "title": "한국후지필름BI, 산학협력으로 미래 인쇄 인재 육성 지원 프로그램 성료",
-    "desc": "한국후지필름비즈니스이노베이션(대표이사 사장 코타케 시게타)가 4-5일 신구대학교 프린트미디어과 및 동국대학교 GCS(Graphic Communication Science) 연계전공 학생들을 대상으로 진행한 ‘미래 인쇄인 성장 지원 프로그램’을 성공적으로 마쳤다고 6일 밝혔다.이번 프로그램은 최근 인쇄 산업 내 전문 인력 부족 현상이 심화하는 가운데, 인쇄 및 디자인 전공 학생들에게 최신 디지털 인쇄 솔루션을 체험할 기회를 제공하고 산학협력 네트워크를 강화하고자 기획됐다. 학생들이 직접 제작한 포트폴리오를 실물 인쇄물로 구현함으로써",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147063",
-    "date": "2026-11-06 10:41:48"
-  },
-  {
-    "source": "boannews",
-    "title": "인텔리빅스, 전국 수소충전소 대기차량 실시간 집계 시스템 구축... AI 영상 분석 기반",
-    "desc": "수소차 운전자가 충전소로 출발하기 전 차량 대기 현황을 사전에 확인할 수 있도록 인텔리빅스가 AI 영상분석 시스템을 구축한다.안전 인공지능(AI) 딥테크 기업 인텔리빅스(대표 장정훈)는 한국석유관리원이 발주한 ‘영상분석장비 설치지원을 통한 디지털고객만족센터 개선 사업’을 수주했다고 6일 밝혔다. 인텔리빅스는 전국 수소충전소 15곳에 AI 영상분석 장비와 카메라를 설치하고, 기존 운영시스템과 연계하는 구축 작업을 2026년 12월까지 완료할 계획이다.이번 시스템 구축으로 전국 수소충전소 이용자들의 고질적 불편 사항이었던 ‘깜깜이 충전",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147064",
-    "date": "2026-11-06 10:40:29"
-  },
-  {
-    "source": "boannews",
-    "title": "아톤, 日 기업과 손잡고 현지 시장 공략 박차",
-    "desc": "아톤이 일본 핀테크 기업과 협업해 일본 시장 공략을 위한 닻을 올린다. 아톤은 6일 일본 핀테크 기업 ‘알코즈’와 일본 시장 진출을 위한 업무협약(MOU)을 맺고 일본 시장 진출에 나선다고 밝혔다. 일본 현지에서 기업 대상 해킹 공격이 잇따르면서 일본 정부는 산업 전반에 인증 강화 등의 보안 체계 강화를 주문하고 있다. 아톤은 양자내성암호(PQC) 인증과 피싱 방지 서비스로 현지 수요처를 발굴한다는 계획이다. 양사는 일본 시장과 사업 정보를 공유하고 현지 잠재 고객과 사업 기회를 함께 발굴한다는 방침이다. 아톤이 일본 시장 공략을",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147068",
-    "date": "2026-11-06 10:36:36"
-  },
-  {
-    "source": "boannews",
-    "title": "\"공격 자율화 시대 진입, 회복력 갖춘 소버린 AI 국가로\"... 2026 한국사이버안보학회 학술대회",
-    "desc": "“AI로 인해 공격의 지능화를 넘어 자율화 영역으로 들어가고 있습니다. 공격이 발생하더라도 국가 기능을 신속하게 회복할 수 있는 소버린 AI 국가로 발전해야 합니다.”5일부터 서울 역삼동 과학기술컨벤션센터에서 이틀간 열리는 ‘2026 한국사이버안보학회 학술대회 및 정기총회’에서 나온 목소리다.한국사이버안보학회가 국가정보원과 함께 개최한 이번 학술대회는 ‘소버린 AI 시대 국가 사이버안보’를 주제로 열렸다.이 자리에서 국가 사이버안보를 이끄는 민·관·학 주요 관계자들은 “AI로 자율 공격이 현실화되는 시대에 새로운 사이버 안보 패러다",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147051",
-    "date": "2026-11-06 09:13:14"
-  },
-  {
-    "source": "boannews",
-    "title": "[카드뉴스] \"담당자 잠든 사이 초당 수만 번 타격\"… AI 공격 56% 폭증이 부른 '자율 보안' 비상",
-    "desc": "기계 학습을 탑재한 AI 기반 사이버 공격이 56% 급증하며 초당 수만 번의 무차별 타격으로 인간의 수동 방어 한계를 넘어섰다. AI 공격 봇은 취약점 스캔부터 변종 악성코드 생성 및 침투를 24시간 자율 실행하여 기존 단일 방어선을 무력화한다. 시스템 전면 셧다운을 막기 위해서는 비인가 트래픽을 즉각 차단하고 공격 경로를 사전 격리하는 '실시간 AI 자율 방어 체계' 도입이 시급하다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147033",
-    "date": "2026-11-06 09:10:00"
-  },
-  {
-    "source": "boannews",
-    "title": "‘활동 중’ 신생 랜섬웨어 조직만 59곳 식별... “AI로 급증”",
-    "desc": "AI를 악용한 공격이 본격화되면서 신생 랜섬웨어 조직도 크게 늘어난 것으로 나타났다. 5일 랜섬웨어 추적 사이트 등에 따르면 올해 처음 식별된 랜섬웨어 조직 중 활성화된 조직은 총 59곳으로 집계됐다. 활성화된 신생 랜섬웨어 조직이 올해 DLS에 피해 기업을 등록(공격)한 건수는 5일 기준 총 1656건이다. 이는 5일 기준 올해 전체 건수인 9014건 대비 약 18%를 차지한다. 9월부터 현재까지 2개월간 식별된 랜섬웨어 조직만 지난해 한 해 동안 식별된 전체 조직 수에 육박한다. 2025년 한 해 동안 처음 식별된 랜섬웨어 조직",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147040",
-    "date": "2026-11-06 07:45:00"
-  },
-  {
     "source": "thn",
     "title": "OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux",
     "desc": "Attackers can log in to accounts that have no password, such as SSH key-only accounts, on some Alpine Linux servers running the standard openssh-server package. They need network access to the server, an account name, and a password between 257 and 1,024 bytes long.\n\nOpenSSH, which rates the flaw cr",
@@ -460,34 +565,6 @@
     "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a medium-severity security flaw impacting multiple Apple operating systems to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.\n\nThe vulnerability in question is CVE-2024-27",
     "url": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
     "date": "2026-11-05T10:47:04"
-  },
-  {
-    "source": "boannews",
-    "title": "[더존비즈온 사태] 11월5일 유출 의심 기업 현황... e스포츠단 T1 유출 가능성",
-    "desc": "글로벌 e스포츠 구단 T1도 더존비즈온 해킹 사태로 인한 개인정보 유출 가능성을 공지했다.T1은 지난달 30일 홈페이지를 통해 외부 업체의 데이터 백업 서비스에서 침해사고가 발생함에 따라 보관 데이터 내 개인정보가 유출됐을 가능성이 있다고 5일 공지했다.유출 가능성이 있는 대상과 항목은 2026년 3월31일 이전까지 시스템에 등록된 전·현직 임직원 및 부양가족, 인턴·아르바이트 근무자, 선수단(감독·코치·선수 및 외국인 스태프), T1 아카데미 강사 및 서포터즈, 프리랜서, 출연자·연사·인플루언서·통역인, 임대인, 자산 매입 개인",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147045",
-    "date": "2026-11-05 18:07:39"
-  },
-  {
-    "source": "boannews",
-    "title": "‘페이커’ 속한 T1, 더존 백업 솔루션 취약점으로 ‘개인정보 유출’ 우려",
-    "desc": "글로벌 최정상급 e스포츠 구단인 T1까지 더존비즈온의 백업 서버 침해 사고로 인한 개인정보 유출 위험에 노출됐다.T1은 5일 공식 홈페이지를 통해 ‘개인정보 유출 가능성 안내’ 공지를 게재하고, 과거 이용했던 더존비즈온의 데이터 백업 솔루션 침해로 인한 정보 노출 위험을 안내했다.리그 오브 레전드(LoL) 월드 챔피언십 최다 우승 기록을 보유하고 ‘페이커’ 이상혁이 활동하는 구단으로 국내외 두터운 팬덤과 다국적 선수단을 보유한 글로벌 인기 구단의 특성에 맞춰 외국인 선수·스태프와 해외 관계자들을 위한 영문 안내문(Notice of",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147046",
-    "date": "2026-11-05 18:06:23"
-  },
-  {
-    "source": "boannews",
-    "title": "큐샌, 제9회 파트너스 데이 개최... 차세대 스토리지 기술 및 성과 공유",
-    "desc": "스토리지 전문기업 큐샌(QSAN)이 11월 5일 서울 롯데시티호텔 구로에서 ‘2026 제9회 큐샌 파트너스 데이’(QSAN Partner’s Day)를 성황리에 개최했다.큐샌과 위드앤아이티가 주최하고 씨게이트가 후원한 이번 행사에는 관계자들이 참석해 차세대 스토리지 기술 발전 방향과 주요 고객 구축 사례를 나누고 파트너사와의 동반성장 방안을 모색했다.첫 발표를 맡은 전혁승 큐샌 차장은 ‘스토리지 혁신의 현재와 미래’를 주제로 핵심 기술력과 향후 개발 로드맵을 발표했다. 폭증하는 데이터 환경에 대응하기 위한 스케일아웃(Scale-ou",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147041",
-    "date": "2026-11-05 17:29:03"
-  },
-  {
-    "source": "boannews",
-    "title": "“저위험 결함도 엮이면 침투로” 위드네트웍스, 약점 연결 고리 끊는 CTEM 제시",
-    "desc": "위드네트웍스는 지난 4일부터 5일까지 부산 벡스코 제2전시장에서 열린 ‘2026 부산 사이버보안 콘퍼런스’에 참가해 지속적 위협 노출 관리(CTEM) 기반 자산·취약점 통합 관리 플랫폼 ‘withVTM’을 선보였다고 6일 밝혔다.부산광역시와 한국주택금융공사, 국가정보원 지부가 주최하고 한국정보보호학회가 주관한 이번 콘퍼런스는 ‘AI시대 안전한 사이버 해양수도 부산’을 주제로 열렸으며 민·관·학 관계자 1000여명이 참석했다.위드네트웍스는 이번 행사에서 관리 목록에 없는 외부 노출 자산과 방치된 저위험 취약점의 결합 위험을 조명했다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147043",
-    "date": "2026-11-05 17:28:14"
   },
   {
     "source": "thn",
@@ -621,82 +698,5 @@
     "desc": "Your team is remediating more vulnerabilities than ever, yet your breach risk has barely changed. You’re spending too much time and effort on exposures attackers may never exploit, while higher-risk exposures sit, waiting in the queue. Gartner®’s report on exposure prioritization states that fewer t",
     "url": "https://thehackernews.com/2026/11/the-4-elements-of-exposure.html",
     "date": "2026-11-03T16:48:20"
-  },
-  {
-    "source": "thn",
-    "title": "Russia-Aligned Gorbag Hackers Exploit WinRAR Flaw to Deploy Data-Stealing Malware",
-    "desc": "A Russia-aligned threat actor known as Gorbag has been observed using simple information stealer malware in attacks targeting Ukrainian organizations.\n\n\"Active since at least February 2025, the group has focused exclusively on Ukrainian targets, with a clear preference for law enforcement and justic",
-    "url": "https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html",
-    "date": "2026-11-03T16:30:45"
-  },
-  {
-    "source": "thn",
-    "title": "Hackers Exploit BTCPay Server Flaw to Steal Bitcoin and Litecoin From Hot Wallets",
-    "desc": "BTCPay Server, a self-hosted, open-source cryptocurrency payment processor, has urged users to install the latest version of its software in response to reports of Bitcoin and Litecoin being stolen from hot wallets on instances running older versions.\n\n\"Our investigation found that these attacks tar",
-    "url": "https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html",
-    "date": "2026-11-03T14:01:48"
-  },
-  {
-    "source": "thn",
-    "title": "Synology NAS Devices Targeted in Ransomware Attacks Exploiting Patched DSM Flaw",
-    "desc": "Synology is urging customers to update the DiskStation Manager (DSM) software powering its Network Attached Storage (NAS) devices following ransomware attacks.\n\nThe Taiwanese vendor said it observed threat actors exploiting a vulnerability patched in December 2024 to target devices running outdated ",
-    "url": "https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html",
-    "date": "2026-11-03T13:13:07"
-  },
-  {
-    "source": "thn",
-    "title": "New Wave of Refrigeration Cyberattacks Hits Supermarkets Across Europe, Forcing Stores to Pull Food",
-    "desc": "Attackers remotely changed the settings on refrigeration controls at supermarkets in Belgium, Sweden, Estonia and other European countries overnight into Monday, November 2, warming fridges and freezers.\n\nNo chain reported more than several dozen affected stores, and some had to throw away chilled a",
-    "url": "https://thehackernews.com/2026/11/second-wave-of-cyberattacks-hits.html",
-    "date": "2026-11-03T12:57:07"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors",
-    "desc": "A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed.\n\nThe vulnerability, tracked as CVE-2026-58115 (CVSS score: 10.0), is a case of missing authentication for a critical function that could be exploited by an ",
-    "url": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
-    "date": "2026-11-03T11:04:41"
-  },
-  {
-    "source": "thn",
-    "title": "Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials",
-    "desc": "Threat actors are attempting to exploit an unpatched maximum-severity security vulnerability in the CryptoPayment Gateway WordPress plugin, according to findings from Defused Cyber.\n\nThe vulnerability in question is CVE-2026-81648, which carries a CVSS score of 10.0. Successful exploitation of the f",
-    "url": "https://thehackernews.com/2026/11/attackers-target-unpatched.html",
-    "date": "2026-11-03T11:04:37"
-  },
-  {
-    "source": "thn",
-    "title": "⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
-    "desc": "Some attacks this week didn't need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password. Small things that people barely think about. Yet each was enough to cause serious trouble.\n\nThen there were the bigger messes. Billions stolen, hidden networks o",
-    "url": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
-    "date": "2026-11-02T22:27:56"
-  },
-  {
-    "source": "thn",
-    "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
-    "desc": "A botnet of more than 1.3 million Android devices, mostly TV set-top boxes, lost control of its servers in late October in a takedown led by Google.\n\nGoogle says&nbsp;it is highly confident that device maker Videostrong intentionally put a backdoor in the boxes and sold access to criminals.\n\nThey us",
-    "url": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
-    "date": "2026-11-02T21:20:26"
-  },
-  {
-    "source": "thn",
-    "title": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
-    "desc": "Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026.\n\nAccording to a report published by Dream Research Labs, the campaign has led to the compromise of a",
-    "url": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
-    "date": "2026-11-02T20:16:05"
-  },
-  {
-    "source": "thn",
-    "title": "Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers",
-    "desc": "Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code,&nbsp;IBM said last week.\n\nLangflow is an open-source tool for building AI agents and workflows, and&nbsp;its vulnerability reports go to IBM. Every release from 1.0.0 through 1.12.",
-    "url": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
-    "date": "2026-11-02T17:20:00"
-  },
-  {
-    "source": "thn",
-    "title": "Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy",
-    "desc": "Forty percent of security teams now use AI every day, and another 56% are testing it. Only 4% have no plans to adopt it, according to Prophet Security's State of AI in Security Operations 2026 survey of more than 250 CISOs, SOC leaders and practitioners. For the teams still testing, the next decisio",
-    "url": "https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html",
-    "date": "2026-11-02T17:00:00"
   }
 ]
