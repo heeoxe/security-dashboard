@@ -1,5 +1,194 @@
 [
   {
+    "source": "thn",
+    "title": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
+    "desc": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant.\n\nThe activity, observed by Huntress in October 2026, involves the exploitation of a chain comprising CVE-2026-105133 and CVE-2026-105134 to bypa",
+    "url": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
+    "date": "2026-11-10T21:30:55"
+  },
+  {
+    "source": "thn",
+    "title": "Blind Eagle Uses Fake Court Notices to Deliver Remote Access Trojan Across Latin America",
+    "desc": "The threat actor known as Blind Eagle has resurfaced with a new campaign targeting organizations in Latin America through judicial and administrative-themed phishing lures to deliver a remote access trojan (RAT) that shares its lineage with AsyncRAT and DCRat.\n\n\"The campaign uses Portuguese and Span",
+    "url": "https://thehackernews.com/2026/11/blind-eagle-uses-fake-court-notices-to.html",
+    "date": "2026-11-10T21:28:44"
+  },
+  {
+    "source": "thn",
+    "title": "Fireworks AI Breach Widens to Expose Customer Billing Data and Incomplete Model Weights",
+    "desc": "Fireworks AI disclosed on Monday that its investigation into a security incident first reported early last month&nbsp; uncovered further malicious activity, affecting account and billing information, alongside secrets, datasets, and incomplete models for a \"limited set of accounts.\"\n\nIn a notice pub",
+    "url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
+    "date": "2026-11-10T21:03:59"
+  },
+  {
+    "source": "thn",
+    "title": "Binance Warns of iOS Sandbox Escape That Could Expose Crypto Wallet Keys, No Fix Confirmed",
+    "desc": "An iOS sandbox escape published on GitHub lets an app read other apps' files on iPhones running iOS 26 and 27. That puts seed phrases, private keys, and login credentials at risk of exposure to malicious apps, Binance warned today. Apple's updates for iOS 26 and 27, released yesterday, do not list a",
+    "url": "https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html",
+    "date": "2026-11-10T17:45:31"
+  },
+  {
+    "source": "thn",
+    "title": "Beyond the Alert: The Case for Rich Network Data",
+    "desc": "At some point your security will fail. This isn’t pessimism. It’s not because your team and tools aren’t sophisticated enough. It’s the reason we have detections in the first place. And, it’s why once we accept that prevention has its limits, we arrive at an interdiction strategy: finding and disrup",
+    "url": "https://thehackernews.com/2026/11/beyond-alert-case-for-rich-network-data.html",
+    "date": "2026-11-10T17:08:13"
+  },
+  {
+    "source": "thn",
+    "title": "Apple Patches iMessage Group Chat Privacy Flaws and Bluetooth Pairing Vulnerabilities",
+    "desc": "An iMessage flaw could let a remote attacker join a group chat and receive its messages, Apple said yesterday, and it released updates to fix it. The updates also fix a separate iMessage flaw that could let someone added to a group access messages sent before they joined.\n\nAs of today, other updates",
+    "url": "https://thehackernews.com/2026/11/apple-patches-imessage-group-chat.html",
+    "date": "2026-11-10T15:46:51"
+  },
+  {
+    "source": "thn",
+    "title": "Russian Turla Hackers Use New Cereal Malware to Steal Emails From Government Exchange Servers",
+    "desc": "The Russia-aligned state-sponsored threat actor known as Turla (aka Snake) is wielding a previously undocumented cyber espionage toolset called Cereal that's used to break into victims' Microsoft Exchange servers with an aim to surreptitiously collect emails.\n\nAccording to an ESET report shared with",
+    "url": "https://thehackernews.com/2026/11/russian-turla-hackers-use-new-cereal.html",
+    "date": "2026-11-10T15:37:29"
+  },
+  {
+    "source": "thn",
+    "title": "SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution",
+    "desc": "Four flaws that attackers could exploit without logging in were fixed today as part of SAP's monthly Security Patch Day—the vendor rates all four 10.0, the maximum CVSS score.\n\nThree are in the SAP NetWeaver application server, the software SAP systems run on, and one is in the Web Dispatcher, which",
+    "url": "https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html",
+    "date": "2026-11-10T15:32:40"
+  },
+  {
+    "source": "thn",
+    "title": "France Blames Iran for Sabotage Attack on Refrigeration Controllers at About 700 Retail Sites",
+    "desc": "An October cyberattack on refrigeration controllers at about 700 French retail sites was carried out by a cyber unit of Iran's Islamic Revolutionary Guard Corps (IRGC), the French government said yesterday.\n\nThe attackers broke into controllers on the night of October 11 and changed their defrost se",
+    "url": "https://thehackernews.com/2026/11/france-blames-iran-for-sabotage-attack.html",
+    "date": "2026-11-10T14:38:20"
+  },
+  {
+    "source": "thn",
+    "title": "Anthropic's Claude Fable 5.2 Beats GPT-6 Cyber in Multi-Stage Cyberattack Benchmark",
+    "desc": "Anthropic on Monday released Claude Fable 5.2 and Claude Mythos 5.2 models, which it said exhibit improvements in coding, reasoning, and vision.\n\nDuring pre-release training, the large language models (LLMs) helped its engineers \"complete otherwise-infeasible software migrations, designed three work",
+    "url": "https://thehackernews.com/2026/11/anthropics-claude-fable-52-beats-gpt-6.html",
+    "date": "2026-11-10T13:46:14"
+  },
+  {
+    "source": "thn",
+    "title": "Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026",
+    "desc": "Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild.\n\nThe high-severity vulnerability, assigned the CVE identifier CVE-2026-125350 (CVSS score: N/A), has been described as a use-after-free bug in the XML componen",
+    "url": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
+    "date": "2026-11-10T12:22:54"
+  },
+  {
+    "source": "thn",
+    "title": "N-able Takes N-central Cloud Offline After Researcher Discloses 33 Zero-Days with PoC Exploits",
+    "desc": "N-able said it has taken N-central Hosted Environments offline and is urging on-premises customers to shut down their servers until further notice following the public disclosure of over 30 vulnerabilities collectively tracked as Able2Shell.\n\n\"As a precautionary measure, we are temporarily taking ou",
+    "url": "https://thehackernews.com/2026/11/n-able-takes-hosted-n-central-offline.html",
+    "date": "2026-11-10T12:14:36"
+  },
+  {
+    "source": "thn",
+    "title": "CISA Warns of Active Exploitation of OpenSSH, GPUStack, FreeSWITCH, and IBM Flaws",
+    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added four security flaws impacting GPUStack, SignalWire FreeSwitch, OpenBSD OpenSSH, and IBM Aspera Faspex to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe vulnerabilities ar",
+    "url": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html",
+    "date": "2026-11-10T12:01:42"
+  },
+  {
+    "source": "boannews",
+    "title": "[단독] 국보연 신임 소장에  임정석 책임연구원 내정",
+    "desc": "국가보안기술연구소 신임 소장으로 임정석 책임연구원이 내정됐다.10일 보안 업계에 따르면, 이 날 국보연 최종 후보자 3인에 대한 심사와 면접을 마치고 임 연구원이 차기 소장으로 결정됐다.앞서 지난 8월 14일 한국전자통신연구원(ETRI)는 부설기관인 국보연 소장 초빙 공고를 냈다. 이후 ETRI는 9월 28일 소장후보자심사위원회를 개최해 지원자들 가운데 최종 3인의 후보자를 소장선임위원회에 추천했다. 추천된 3인은 김소정 전 국가안보실 사이버안보비서관, 손기욱 현 한국사이버안보학회장(서울과학기술대학교 컴퓨터공학과 교수), 임정석 현",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147157",
+    "date": "2026-11-10 23:26:14"
+  },
+  {
+    "source": "boannews",
+    "title": "금융보안원, 해킹으로 정보 유출... 금융위 등 신고",
+    "desc": "금융권 보안을 전담하는 금융보안원이 해킹 공격을 당해 금융사 보안 상태 관련 일부 정보가 유출돼 파장이 예상된다. 10일 금융권에 따르면, 금융보안원은 전날 금융보안원 정보보호 상시평가 사이트가 해킹 공격을 당해 일부 정보가 유출돼 금융위원회 등 금융당국에 신고 절차를 밟은 것으로 알려졌다. 금융보안원 정보보호 상시평가 사이트는 금융회사들의 보안상태 평가를 지원하는 기능이다. 이번 해킹 사고로 금융사가 제출한 보안 상태 관련 정보 일부가 유출됐을 가능성도 제기된다. 올해 정보보호 상시평가 대상은 3000개사 수준이다.당국 관계자는",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147156",
+    "date": "2026-11-10 20:18:48"
+  },
+  {
+    "source": "boannews",
+    "title": "Omada·VIGI, 충북 제천 방치 빈집 리모델링 사업에 네트워크 및 보안 인프라 지원",
+    "desc": "네트워크 및 영상보안 솔루션 전문 브랜드 오마다(Omada)와 비기(VIGI)가 충북 제천에서 추진되는 빈집 리모델링 프로젝트에 첨단 네트워크 장비와 CCTV 보안 인프라를 후원했다고 밝혔다.이번 프로젝트는 10년 이상 방치된 제천 지역의 노후 주택을 리모델링해 해외 방문객과 외국인 유학생을 위한 한국어 교육 및 문화 체험·교류 거점으로 재생하기 위해 마련됐다. 기존 건물을 철거하는 대신 공간의 가치를 회복하고 지역사회에 새로운 교육 및 문화 기능을 더하는 것이 핵심 목표다.Omada는 시설 내 안정적인 유무선 네트워크 환경을 조성",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147154",
+    "date": "2026-11-10 17:33:56"
+  },
+  {
+    "source": "boannews",
+    "title": "네트워크 카메라 30주년 맞은 엑시스, “영상보안 중심은 엣지로”... ‘AEC 서울’ 개소",
+    "desc": "엑시스 커뮤니케이션즈(한국 지사장 문수현)가 세계 최초 네트워크 카메라 개발 30주년을 맞아 서울 체험센터를 개소하고, 엣지 AI(Edge AI)와 사이버보안을 축으로 한 기술 전략 및 국내 시장 확대 계획을 공개했다.엑시스는 10일 서울 강남구 신사동 뉴서울빌딩 내 엑시스 코리아 사무실에서 ‘엑시스 체험 센터 서울’(AEC 서울: Axis Experience Center Seoul) 개소식을 열었다. 이번 센터는 기존 가산동 솔루션 데모센터를 확장·개편한 공간으로, 네트워크 카메라, 오디오, 인터콤, 환경 센서, 영상관리시스템(V",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147153",
+    "date": "2026-11-10 17:04:02"
+  },
+  {
+    "source": "boannews",
+    "title": "한일네트웍스 랜섬웨어 공격받아... “즉시 차단, 유출 피해 없어”",
+    "desc": "유베이스 그룹 IT 인프라 자회사 한일네트웍스에서 랜섬웨어 공격이 발생했던 사실이 뒤늦게 알려졌다. 한일네트워크는 공격 확인 즉시 방어 조치를 시행해 외부로 정보가 유출되지는 않았다는 입장이다. 그러나 한일네트웍스가 카드사 등 금융사들을 고객사로 두고 있는 만큼 금융당국은 한일네트웍스 랜섬웨어로 인한 피해가 없는지 점검하고 있다.10일 유베이스 그룹에 따르면 이달 2일 한일네트웍스가 관리하는 일부 서버에 랜섬웨어 공격이 발생했다. 한일네트웍스는 공격 확인 즉시 차단 및 방어 조치를 시행, 개인정보를 포함한 중요 정보가 외부로 유출된",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147152",
+    "date": "2026-11-10 16:47:27"
+  },
+  {
+    "source": "boannews",
+    "title": "슈퍼컴퓨터 갖춘 대학만 골라... 미국 대학 해킹해 코인 채굴한 혐의로 캐나다인 2명 기소",
+    "desc": "캐나다인 2명이 미국 대학들의 컴퓨터를 해킹해 암호화폐를 채굴한 혐의로 미국 연방 대배심에 기소됐다. 35세 라이언 제임스 로치(Ryan James Roach)와 41세 매슈 제임스 스터빙스(Mathiew James Stubbings)다.두 사람은 보호 대상 컴퓨터에서 정보를 빼내고 손상을 입히기로 공모한 혐의, 보호 대상 컴퓨터에서 정보를 빼낸 혐의, 보호 대상 컴퓨터를 고의로 손상한 혐의를 받는다. 유죄가 인정되면 각각 최대 징역 10년과 벌금 25만달러에 처해질 수 있다.법원 문서에 따르면 범행은 2016년 6월~2019년 1",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147018",
+    "date": "2026-11-10 16:27:01"
+  },
+  {
+    "source": "boannews",
+    "title": "[더존비즈온 사태] 11월10일 유출 의심 기업 현황... 애자일소다·전남정보문화산업진흥원 유출 가능성",
+    "desc": "더존비즈온 APO 백업서비스에서 발생한 침해사고로 NH농협은행 AI 전문 자회사 애자일소다에서도 개인정보 유출 가능성이 제기됐다. 유출 가능성이 있는 항목은 △임직원 인적사항 △연락처 △고유식별정보 △금융정보 △인사·급여·세무정보 등이다. 애자일소다는 사고 이후 보안 강화 조치 및 모니터링을 진행하고 있으며, 관계기관 신고를 마치고 보안 전문업체를 통한 조사를 진행하고 있다. 전남정보문화산업진흥원도 더존비즈온 APO 백업서비스 관련 서버에 대한 침해사고로 개인정보 유출 가능성이 제기됐다. 유출 가능성이 있는 항목은 현재 조사 중이다",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147151",
+    "date": "2026-11-10 16:18:02"
+  },
+  {
+    "source": "boannews",
+    "title": "주차장 앱 사칭 “보상 받으세요” 피싱 알림톡 보내... 외부 대행사 뚫려",
+    "desc": "모빌리티 주차 플랫폼 ‘모두의주차장’을 사칭한 악성 피싱 카카오톡 알림톡이 무차별 살포돼 이용자 주의가 요구된다.모두의주차장은 8일 카카오톡 알림톡 발송을 대행하는 외부 위탁사 ‘커넥트웨이브’(서비스명 비즈뿌리오)의 시스템 침해사고로 회사 명의를 도용한 피싱 알림톡이 비정상 발송된 사실을 확인하고 긴급 대응에 들어갔다고 10일 밝혔다. 공지에 따르면 외부 공격자는 알림톡 중개 대행사 시스템을 뚫은 뒤 ‘충전금 및 적립금 소멸 안내’라며 ‘1000 Pi 보상을 받으세요’ 등의 문구와 함께 피싱 인터넷 주소(URL)를 대량 유포했다.",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147150",
+    "date": "2026-11-10 16:07:14"
+  },
+  {
+    "source": "boannews",
+    "title": "“AI 시대, 디지털 증거로 진실 증명”... ‘K-디지털포렌식 위크 2026’ 개막",
+    "desc": "국가안보 강화와 사이버 범죄 억제력 향상을 위한 디지털 증거 확보 기술의 현황 공유와 방향 모색의 장이 열렸다.국가보안기술연구소(소장 황수훈)가 서울 서초구 엘타워에서 ‘AI 시대, 진실을 증명하다’를 주제로 개최한 ‘K-디지털포렌식 위크 2026’이 10일 개막했다. 9일 한국디지털포렌식학회 동계학술대회로 시작한 이번 행사는 11일까지 사흘간 열린다.이번 행사는 AI 의 급속한 발전과 디지털 환경 변화에 대응해 국가 디지털포렌식 기술의 발전 방향을 모색하고, 수사·조사기관과 산업계, 학계 및 연구기관 간 협력체계를 강화하기 위해",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147149",
+    "date": "2026-11-10 15:58:28"
+  },
+  {
+    "source": "boannews",
+    "title": "“외교 마찰 없이 해킹 국가배후 지목하려면?”...  김휘강 사이버안보비서관 제언은",
+    "desc": "“사이버 공격 범죄 5건 중 4건이 미제로 남습니다. 해킹 국가 배후 지목은 외교 문제를 일으킵니다. ‘증거’를 확보하는 디지털 포렌식 역량은 곧 외교 역량이며, 범죄 억제력을 갖추기 위한 국가 핵심 경쟁력입니다.”김휘강 청와대 국가안보실 사이버안보비서관은 10일 서울 양재 엘타워에서 열린 ‘K-디지털포렌식위크’에서 ‘AI 시대 국가 사이버 안보의 미래와 디지털 포렌식의 전략적 역할’을 주제로 기조연설하며 이같이 밝혔다.김 비서관은 사이버 범죄의 배후 국가를 지목할 때 발생하는 외교 마찰과, 해킹 범죄의 낮은 범인 검거율을 언급했다",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147147",
+    "date": "2026-11-10 15:46:12"
+  },
+  {
+    "source": "boannews",
+    "title": "앤트로픽 ‘클로드’ 국내 기업 계정 100여개 노출 가능성",
+    "desc": "앤트로픽의 생성형 인공지능(AI) 서비스 클로드에서 국내 기업용 계정 100여건이 유출됐다는 신고가 당국에 접수됐다. 10일 개인정보보호위원회(개인정보위)에 따르면, 앤트로픽은 지난달 31일 개인정보 유출 사고를 신고했다. 다만 아직 사전 검토 단계로 개인정보위가 정식 조사에 착수하지는 않았다. 이번 유출 사고 원인으로 외부 보안 기업이 제3자 소프트웨어 취약점을 이용해 앤트로픽 내부 시스템에 무단 접근하면서 계정정보가 노출됐을 가능성이 제기됐다. 앞서 워싱턴포스트 보도에 따르면 캐시드럴은 앤트로픽이 승인한 버그바운티 프로그램에 참",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147148",
+    "date": "2026-11-10 15:38:11"
+  },
+  {
+    "source": "boannews",
+    "title": "농협은행 AI 자회사 애자일소다, 외부 백업 서버 침해 노출",
+    "desc": "NH농협은행의 AI 전문 자회사 애자일소다가 이용 중인 외부 회계·인사 백업 시스템이 해킹 공격에 노출됐다. 임직원 인사 및 급여 정보 유출 여부를 조사 중이다.10일 애자일소다는 이용 중인 더존비즈온 ‘APO’ 백업 서비스에서 발생한 침해 사고로 인한 개인정보 유출 가능성을 확인하고 관계기관과 조사를 벌이고 있다고 공지했다.애자일소다는 더존비즈온 전사 자원관리 솔루션 ‘더존 아이큐브’(iCUBE)에 데이터를 보관해 왔다. 침해 조사 대상 데이터에는 △임직원 인적사항 △연락처 △고유식별정보 △금융정보 △인사·급여·세무정보 등이 포함",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147145",
+    "date": "2026-11-10 15:22:00"
+  },
+  {
+    "source": "boannews",
+    "title": "설정 파일 받는 순간 노려... 중국 연계 해커, 중국어 입력기 ‘소거우’ DNS 조작해 백도어 설치",
+    "desc": "중국 정부 이익을 위해 움직이는 것으로 의심되는 해킹 조직이 중국어 입력기 소거우(Sogou)의 통신 경로를 조작해 감시용 백도어를 심었다. 입력기가 설정 파일을 받으려고 서버에 요청하는 순간을 노렸다.슬로바키아 보안 기업 이셋은 ‘슬리피눈차크’(SlippyNunchucks)로 부르는 이 조직이 윈도우용 소거우 입력기의 도메인 주소 변환(DNS)을 조작해 백도어 ‘다크비질’(DarkVigil)을 심었다고 밝혔다. 이셋은 7월 1일부터 이 공격을 관측했고, 홍콩과 태국, 일본, 베트남, 오만, 스리랑카의 조직과 중국어 사용자가 표적이",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147016",
+    "date": "2026-11-10 14:13:46"
+  },
+  {
+    "source": "boannews",
+    "title": "심석태 세명대 특임교수, 인신윤위 신임 위원장 취임",
+    "desc": "심석태 법무법인 세종 고문 겸 세명대학교 저널리즘대학원 특임교수가 인터넷신문윤리위원회 지휘봉을 잡는다. 인터넷신문윤리위원회(인신윤위)는 10일 오전 11시 서울 중구 한국프레스센터에서 심석태 신임 위원장 취임식을 가졌다고 밝혔다. 심 위원장은 이날 업무를 시작했다. 심 위원장은 개정된 인신윤위 정관에 따라 한국인터넷신문협회(인신협) 추천을 받아 5일 임시총회를 거쳐 선임됐다. 심 위원장은 SBS 보도본부장과 뉴미디어국장, 한국언론법학회 회장 등을 역임했다. 심 위원장은 취임사에서 “새롭게 거버넌스를 정비한 인터넷신문윤리위원회가 디지",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147143",
+    "date": "2026-11-10 14:04:50"
+  },
+  {
     "source": "boannews",
     "title": "포커스에이아이, 해병대 AI 공모전 우수상 수상",
     "desc": "포커스에이아이가 ‘2026년 제1회 해병대 인공지능(AI) 아이디어 시제품 개발 공모전’에서 한국AI·SW테스팅협회장상(우수상)을 수상했다고 10일 밝혔다. 이번 수상으로 포커스에이아이는 영상 AI 기술을 활용한 군 감시장비 지능화 역량을 인정받았으며, 국방 및 공공안전 분야로 기술 적용 범위를 확대해 나갈 계획이다.이 공모전은 해병대사령부와 동국대학교, 한국AI·SW테스팅협회가 공동 주최한 행사로, 해병대 장병들이 제안한 현장 중심 아이디어에 민간기업의 AI 기술을 접목해 실질적인 시제품을 개발하고 국방 분야 AI 활용 확산을 지",
@@ -329,109 +518,11 @@
     "date": "2026-11-09 10:09:07"
   },
   {
-    "source": "boannews",
-    "title": "FIDO 얼라이언스, 12월 1일 서울서 ‘패스키 데이’ 세미나 개최",
-    "desc": "글로벌 온라인 인증 기술 표준화 단체 FIDO 얼라이언스(FIDO Alliance)가 12월 1일 서울 강남구 한국과학기술회관에서 ‘2026 FIDO 얼라이언스 서울 세미나 - 패스키 데이 인 서울’(Passkey Day in Seoul)을 개최한다.FIDO 얼라이언스는 전 세계 350여개 회원사와 함께 패스워드와 일회용 비밀번호(OTP)의 보안 취약점과 사용자 불편을 개선하기 위한 국제 인증 표준을 개발·보급하고 있다. 이번 세미나는 패스키(Passkey)의 국내외 도입 현황과 성과를 공유하고, AI 시대에 요구되는 차세대 디지털",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147093",
-    "date": "2026-11-09 10:02:41"
-  },
-  {
-    "source": "boannews",
-    "title": "금보원, 보이스피싱 대응 위해 AI 전격 투입",
-    "desc": "금융보안원이 금융권 보이스피싱 대응 역량 강화를 위해 금융권 보이스피싱 예방 지원 플랫폼 ‘ASAP’에 AI 모델을 탑재한다. 금융보안원은 9일 ASAP에 AI 기반 이상금융거래 탐지 모델을 탐재하고 금융회사가 활용할 수 있는 AI 피싱지수 조회 API 서비스를 제공한다고 밝혔다. AI 피싱지수는 보이스피싱 의심거래의 실제 보이스피싱 가능성을 AI가 평가해 점수화한 지표다. ASAP에 탑재되는 AI 모델은 데이터 공유 없이 프라이버시·보안을 유지하는 연합학습 기술로 인터넷은행 3사의 사기 탐지 노하우가 녹아 있다. 인터넷은행 3사가",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147102",
-    "date": "2026-11-09 10:01:41"
-  },
-  {
-    "source": "boannews",
-    "title": "SGA솔루션즈, FISCON 2026서 ‘풀스택 마이크로 세그멘테이션’ 선뵌다",
-    "desc": "통합 IT보안 전문 기업 SGA솔루션즈(대표 최영철)가 12일 열리는 금융정보보호 컨퍼런스(FISCON 2026)에서 ‘풀스택 마이크로 세그멘테이션’ 전략을 제시한다. SGA솔루션즈는 9일 FISCON 2026을 통해 애플리케이션부터 OS·커널 레벨까지 보안통제 범위를 확대하는 ‘풀스택 마이크로 세그멘테이션’ 전략을 소개할 계획이라고 밝혔다. 특히 SGA솔루션즈는 글로벌 제로트러스트 세그멘테이션 기업 일루미오와의 기술 협력을 기반으로 서버 접근통제 및 커널 레벨 보안 기술력을 일루미오의 애플리케이션 영역 마이크로 세그멘테이션 기술과",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147094",
-    "date": "2026-11-09 09:55:40"
-  },
-  {
-    "source": "boannews",
-    "title": "안랩·안랩클라우드메이트, 하반기 공개채용 시작",
-    "desc": "인공지능(AI) 보안 플랫폼 기업 안랩(대표 강석균)과 자회사 안랩클라우드메이트가 올해 하반기 공개채용을 진행한다.안랩은 안랩클라우드메이트와 이달 29일까지 전 직군 대상 하반기 신입·경력 공개채용을 진행한다고 9일 밝혔다. AI를 중심으로 보안 환경이 급변하고 있는 만큼 미래 성장 동력을 확보하는 차원에서 채용 규모를 늘렸다는 설명이다. 모집 직무는 △소프트웨어 개발 △웹 개발 △AI/ML(머신러닝) 개발 △보안위협 분석 △데브옵스 △품질관리 △국내영업 △세일즈 엔지니어 △보안 컨설팅 △기술지원 엔지니어 △제품·서비스 기획 △IT",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147090",
-    "date": "2026-11-09 09:52:54"
-  },
-  {
-    "source": "boannews",
-    "title": "해킹만큼 무서운 ‘긴급점검’... 보안 현장, 점검표 작성에 날 샌다",
-    "desc": "금융감독원, 금융보안원, 과학기술정보통신부, 방송미디어통신위원회, 국회…기업 보안 담당자들은 쏟아지는 해킹 사고 만큼 쏟아지는 ‘긴급점검’에 피로감을 느낀다.해킹이 일상화된 가운데, 9일 보안 담당자들 사이에서는 당국의 ‘긴급점검’ 대응에 방어 시간을 오히려 뺏긴다는 목소리가 나온다. 최근 일련의 해킹 사고들이 엄중한 사안인만큼 긴급점검의 취지 자체는 이견이 없다. 하지만 복수의 기관이 동시다발적으로 점검표 제출을 요구해 중복 업무가 발생하고, 특히 점검의 실효성이 의문이란 반응이다.“기관별로 산발적인 긴급점검 남발보다 일원화된 컨",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147012",
-    "date": "2026-11-09 08:57:52"
-  },
-  {
-    "source": "boannews",
-    "title": "유럽 덮친 냉장 시설 해킹 주의보... 정부, 국내 관련 사업자에 보안 점검 권고",
-    "desc": "유럽과 미국에서 냉장 설비 해킹으로 피해가 이어지면서 우리 정부도 피해 예방에 나섰다. 8일 관련 업계에 따르면, 과학기술정보통신부는 민간 사업자와 관련 협단체에 해외 냉장 설비 해킹 사례를 전파하고 보안 점검을 해 달라고 권고했다. 이를 위해 산업통상자원부, 중소벤처기업부, 식품의약품안전처, 농림축산식품부 등 관계 부처에 협조를 요청했다. 한국냉동공조산업협회 등에도 협조를 요청했다. 정부는 출하 당시 설정된 초기 비밀번호를 변경하고 비밀번호 관리를 강화하라고 사업자에 권고했다. 설비를 원격 모니터링하거나 제어할 때엔 가상사설망(V",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147088",
-    "date": "2026-11-08 15:35:28"
-  },
-  {
-    "source": "boannews",
-    "title": "SM엔터 계열 3사, 외부 해킹으로 임직원 정보 유출",
-    "desc": "SM엔터테인먼트와 팬 소통 플랫폼 ‘버블’을 운영하는 자회사 디어유가 외부 해킹 공격을 당해 임직원 개인정보가 유출됐다. 역시 SM엔터테인먼트 계열사인 공연기획사 드림메이커엔터테인먼트에서도 임직원 정보가 빠져나갔다.8일 SM엔터테인먼트는 “내부 보안 모니터링 과정에서 외부 공격자가 비인가된 방식으로 전자결재시스템 등 업무 시스템에 접근해 일부 문서 파일을 외부로 유출한 사실을 확인했다”고 밝혔다. 사건 발생 시점은 4일 경으로 추정된다. 유출 항목엔 이름과 휴대폰 번호, 주소, 계좌번호, 주민등록번호, 소속, 계약서 내 기재 정보",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147087",
-    "date": "2026-11-08 15:08:02"
-  },
-  {
-    "source": "boannews",
-    "title": "나토 회원국 해군 조선소, 러시아 APT28에 뚫려",
-    "desc": "러시아 정부 지원 해킹 조직 APT28이 나토 회원국의 해군 함정 조선소에 침투했다는 분석이 나왔다.브로드컴 산하 시만텍 위협 헌터 팀은 이 활동을 ‘스왈로테일’(Swallowtail)이라는 이름으로 추적한 보고서를 보안 매체 더해커뉴스에 공유했다. APT28은 팬시베어, 포레스트 블리자드로도 불린다.시만텍에 따르면 표적은 나토 회원국 두 곳의 법 집행기관과 해군 조선소, 군용 항공기 엔진 제조사다. 모두 외국 정보기관이 관심을 가질 정보를 쥔 곳이다. 두 나라가 어디인지, 법 집행기관과 엔진 제조사가 실제로 뚫렸는지는 알려지지 않",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146591",
-    "date": "2026-11-08 12:48:00"
-  },
-  {
-    "source": "boannews",
-    "title": "잇단 가상자산 거래소 해킹... 금감원, 가상자산사업자 CISO 소집한다",
-    "desc": "금융당국과 국내 가상자산 기업 정보보호최고책임자(CISO)가 한자리에 모여 가상자산 분야 보안 대책을 논의한다.8일 관련 업계에 따르면, 금융감독원은 19일 가상자산업권 해킹 사고 관련 대응 회의를 연다. 최근 국내외 가상자산 거래소를 겨냥한 해킹 사고가 잇따름에 따라 대응 방안을 공동 논의하기 위해서다. 거래소와 커스터디(수탁) 기업 등 국내 모든 가상자산사업자 CISO가 참석 대상이다. 각사 보안 관리 운영 실태를 점검하고 해킹 예방 및 대응 방안 등을 논의할 것으로 알려졌다.앞서 금융위원회도 5일 가상자산사업자를 포함한 전 금",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147086",
-    "date": "2026-11-08 09:50:50"
-  },
-  {
-    "source": "boannews",
-    "title": "알파인 리눅스, 깃랩 서버 공격 시도에 통째로 재구축",
-    "desc": "경량 리눅스 배포판 알파인 리눅스가 개발용 깃랩 서버를 노린 공격 시도를 겪은 뒤 서버를 처음부터 다시 지었다. 공격이 성공한 흔적은 없었지만, 성공했다면 흔적이 남지 않는 결함이라 서버가 뚫린 것으로 보고 대응했다.알파인은 최근 이 같은 경위를 공개했다. 깃랩은 개발자들이 소스코드를 함께 관리하는 서비스로, 알파인은 이 서버에 배포판 패키지를 만드는 원본 저장소(aports)를 두고 있다.공격자가 노린 것은 최고 등급의 원격코드실행(RCE) 취약점(CVE-2026-97229)이다. 깃랩이 수정판을 낸 지 일주일 뒤였다.알파인은 1",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146881",
-    "date": "2026-11-08 09:27:03"
-  },
-  {
     "source": "thn",
     "title": "Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
     "desc": "Passwords and API keys that developers typed into commands they approved in Claude Code are sitting in public GitHub repositories, where anyone can read them.\n\nWhen a user selects \"Yes, and don't ask again,\" Anthropic's AI coding assistant can save the command, word-for-word, including the secret, i",
     "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
     "date": "2026-11-07T12:14:17"
-  },
-  {
-    "source": "boannews",
-    "title": "한국융합보안학회, 2026 추계학술대회 성료... 22개 기관 논문 75편 발표",
-    "desc": "한국융합보안학회(회장 이동휘)는 6일 성신여자대학교에서 ‘2026 한국융합보안학회 추계학술대회 및 워크숍’을 개최했다고 밝혔다.이번 학술대회에는 22개 기관에서 총 75편의 논문이 제출돼, 융합보안·AI보안·개인정보보안 등 분야별 10개 구두발표 세션과 2개 포스터발표 세션에서 발표됐다.특별 세션에서는 김석주 한국트렌드마이크로 이사와 이상국 안랩 전무가 각각 ‘에이전틱 AI가 가져올 새로운 위협’, ‘AI 시대 보안 동향 및 제언’을 주제로 발표했다. 개회식에서는 이동휘 회장의 개회사와 이원호 성신여자대학교 부총장, 김현준 한국사회",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147085",
-    "date": "2026-11-07 13:55:45"
-  },
-  {
-    "source": "boannews",
-    "title": "미래에셋증권도 침해... 고객-임직원 3만9000명 정보 유출",
-    "desc": "국내 최대 증권사 미래에셋증권에서 해킹으로 고객과 임직원 정보가 유출되는 사고가 터졌다. 미래에셋증권은 4일과 5일 모바일웹 휴대폰 인증 로그인 서비스와 그룹웨어 ‘mi-global’을 겨냥한 외부 공격이 연달아 일어났다고 밝혔다. 이로 인해 고객 3800여명이 개설한 계좌번호와 임직원 3만5255명의 개인정보가 유출됐다. 고객 정보 중 예금주 이름 등 다른 민감 정보는 빠져나가지 않았다는 설명이다. 유출된 임직원 개인정보는 이름, 사번, 이메일주소, 휴대폰 번호, 암호화된 비밀번호 등이다. 주민등록번호와 여권번호, 운전면허번호,",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147084",
-    "date": "2026-11-07 09:44:57"
-  },
-  {
-    "source": "boannews",
-    "title": "[배종찬의 보안 빅데이터] 대통령 전용기를 뒤흔든 보안 명단 유출 사태",
-    "desc": "최근 전체 뉴스를 뒤흔든 공군 1호기 탑승자 명단 유출 사건은 국가 안보와 정보 관리 체계의 현주소를 가감 없이 드러낸 중대한 충격파다. 빅데이터 분석 플랫폼 썸트렌드(2026년 11월1~4일 기준)의 연관어 분석을 보면, 이번 사태의 심각성과 파장이 사회 전반에 얼마나 깊게 투영돼 있는지 명확히 드러난다.분석 결과의 중심에 자리 잡은 ‘공군 1호기’를 축으로 ‘이재명’, ‘부부’, ‘청와대’, ‘경호처’, ‘외교부’, ‘여권’, ‘벨기에’, ‘파일’, ‘개인정보’, ‘악성코드’, ‘보안’, ‘경찰’, ‘대응’, ‘조치’ 등 핵심",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147044",
-    "date": "2026-11-07 08:30:00"
-  },
-  {
-    "source": "boannews",
-    "title": "이후기 건양대 교수, 한국융합보안학회 14대 회장 선출",
-    "desc": "이후기 건양대 스마트보안학과 교수가 6일 한국융합보안학회 14대 회장으로 선출됐다.한국융합보안학회는 국내 사이버보안 및 융합보안 분야 학술 연구와 기술 발전, 산·학·연·군 협력을 선도하는 전문 학술단체다. 2001년 출범 이후 학술등재지 '융합보안논문지'를 발간하며 국가 보안 연구 역량 강화와 정보보호 전문인재 양성에 기여해 왔다.이후기 신임 회장은 학회 부회장, 감사, 상임이사 등 주요 보직을 두루 역임하며 학술 연구 활성화와 산학협력 확대에 기여해 왔다. 학회 운영 경험과 융합보안 분야의 전문성을 바탕으로 학회의 발전을 이끌어",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147083",
-    "date": "2026-11-07 00:51:52"
   },
   {
     "source": "thn",
@@ -607,96 +698,5 @@
     "desc": "Two flaws in the Xen hypervisor allow a malicious guest virtual machine (VM) to read and write the memory of other VMs on the same host, including dom0.\n\nDom0 is the VM that, by default, has full permissions and manages the others. Patches are out, and there is no known mitigation, the Xen Project s",
     "url": "https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html",
     "date": "2026-11-04T17:16:27"
-  },
-  {
-    "source": "thn",
-    "title": "Radio With No Radar: Why Agent Runtime Security Fails Without the Layers Beneath It",
-    "desc": "Nearly every agent security pitch now ends on the same promise: the product stops the bad action in real time. The promise holds for one kind of agent, the kind whose traffic passes through a gateway the enterprise owns. Most agents never touch one.\n\nOne recent case shows what that gap looks like in",
-    "url": "https://thehackernews.com/2026/11/radio-with-no-radar-why-agent-runtime.html",
-    "date": "2026-11-04T17:04:20"
-  },
-  {
-    "source": "thn",
-    "title": "China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor",
-    "desc": "A China-aligned threat actor known as SlippyNunchucks has been attributed to a Domain Name System (DNS) hijacking operation abusing insecure HTTP communications in Windows versions of Sogou Input Method as part of a surveillance campaign designed to deploy an implant called DarkVigil (aka FDMTP).\n\nT",
-    "url": "https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html",
-    "date": "2026-11-04T16:54:31"
-  },
-  {
-    "source": "thn",
-    "title": "Russian Police Arrest 3 Suspected VasyGrek Hackers, Dismantle Criminal Infrastructure",
-    "desc": "Russian authorities have arrested three suspected members of a threat group known as VasyGrek and dismantled its criminal infrastructure.\n\nAlso known as Fluffy Wolf, the threat actor has a history of targeting Russian and international companies since 2016.\n\nThe Ministry of Internal Affairs of the R",
-    "url": "https://thehackernews.com/2026/11/russian-police-arrest-3-suspected.html",
-    "date": "2026-11-04T13:47:11"
-  },
-  {
-    "source": "thn",
-    "title": "Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction",
-    "desc": "A critical Android flaw could allow an attacker to run code on a phone without any user action remotely, Google said in its&nbsp;November security bulletin.\n\nThe flaw, CVE-2026-58868, affects Android 14 through 17. Phones get the fix with security patch level 2026-11-01 or later, which phone makers ",
-    "url": "https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html",
-    "date": "2026-11-04T13:16:15"
-  },
-  {
-    "source": "thn",
-    "title": "CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades",
-    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a security flaw in WordPress Core to the Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe high-severity vulnerability, tracked as CVE-2026-119977 (CVSS score: 8.1), is a case of Time",
-    "url": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
-    "date": "2026-11-04T11:13:11"
-  },
-  {
-    "source": "thn",
-    "title": "mSecure Warns Users to Change Passwords, Reset 2FA and Passkeys After Suspicious Activity",
-    "desc": "Customers of the mSecure password manager are being urged to act now to protect the confidential information they store in it, possibly by changing passwords, resetting two-factor authentication (2FA), and removing passkeys.\n\nThe warning came in an email sent on November 3 in the name of developer m",
-    "url": "https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html",
-    "date": "2026-11-04T00:16:38"
-  },
-  {
-    "source": "thn",
-    "title": "Chainstack Reports Production Systems Breach Exposing Customer Data and Password Hashes",
-    "desc": "Blockchain infrastructure provider Chainstack on Tuesday disclosed that it was targeted in a cyber attack that allowed an unauthorized party to gain access to some parts of its infrastructure.\n\nThe incident is assessed to be part of a large-scale, artificial intelligence (AI)-powered attack campaign",
-    "url": "https://thehackernews.com/2026/11/chainstack-reports-production-systems.html",
-    "date": "2026-11-03T23:46:19"
-  },
-  {
-    "source": "thn",
-    "title": "Binance Reveals How Fake Job Interviews and AI Tool Abuse Led to $6.43 Billion Theft",
-    "desc": "Binance on Tuesday said the record-setting theft of $6.43 billion in assets from the world's largest cryptocurrency exchange was the culmination of a \"sophisticated, multi-stage campaign\" that involved the use of a tampered Homebrew installation and recruitment-themed social engineering attack targe",
-    "url": "https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html",
-    "date": "2026-11-03T22:25:58"
-  },
-  {
-    "source": "thn",
-    "title": "Barracuda Flaws Could Be Chained to Bypass Authorization and Gain Root Access",
-    "desc": "Barracuda has disclosed details of two vulnerabilities affecting its products that, if chained together, could allow an attacker to bypass authorization controls and gain root access to a susceptible device.\n\nThe vulnerabilities, a pre-authentication authorization bypass vulnerability and a command ",
-    "url": "https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html",
-    "date": "2026-11-03T21:29:19"
-  },
-  {
-    "source": "thn",
-    "title": "Google Warns LLMjacking Attacks Are Costing Some Enterprises Up to $1 Million in Cloud Charges",
-    "desc": "Google on Monday warned that threat actors are hijacking enterprise access to Large Language Models (LLMs) to fraudulently leverage expensive computing resources and AI services.\n\nThe tactic is called LLMjacking, a form of resource hijacking adapted for the LLM era, where an attacker obtains an API ",
-    "url": "https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html",
-    "date": "2026-11-03T21:11:53"
-  },
-  {
-    "source": "thn",
-    "title": "cPGuard Update Channel Hijacked to Backdoor Linux Servers and Collect Password Hashes",
-    "desc": "An attacker broke into the update system of the cPGuard security tool on November 2 and used it to send a malicious script to customers' Linux servers.\n\nThe script installed a backdoor and collected password hashes and other sensitive files from servers that ran it, cPGuard maker OPSSHIELD said in a",
-    "url": "https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html",
-    "date": "2026-11-03T20:46:32"
-  },
-  {
-    "source": "thn",
-    "title": "Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Releases Fixes for Testing",
-    "desc": "Fixed kernels for a&nbsp;use-after-free vulnerability in the Linux kernel's IPv4 TCP code&nbsp;are now available for Red Hat Enterprise Linux 8, 9, and 10, while Ubuntu's fixes for its three newest long-term-support releases remain in its opt-in testing channel with no date for a regular update.\n\nTh",
-    "url": "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
-    "date": "2026-11-03T16:53:53"
-  },
-  {
-    "source": "thn",
-    "title": "The 4 Elements of Exposure Prioritization and How to Operationalize Them",
-    "desc": "Your team is remediating more vulnerabilities than ever, yet your breach risk has barely changed. You’re spending too much time and effort on exposures attackers may never exploit, while higher-risk exposures sit, waiting in the queue. Gartner®’s report on exposure prioritization states that fewer t",
-    "url": "https://thehackernews.com/2026/11/the-4-elements-of-exposure.html",
-    "date": "2026-11-03T16:48:20"
   }
 ]
