@@ -1,6 +1,76 @@
 [
   {
     "source": "thn",
+    "title": "Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation",
+    "desc": "Zoom has released software updates to address two security flaws impacting Zoom Workplace for Windows, including a critical bug that could result in privilege escalation on affected systems.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2026-108186 (CVSS score: 9.6) - An improper input validation ",
+    "url": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
+    "date": "2026-11-11T21:42:46"
+  },
+  {
+    "source": "thn",
+    "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
+    "desc": "Cybersecurity researchers have disclosed details of a campaign in which an emerging agentic penetration testing platform called AntiFox has been used to steal Amazon Web Services (AWS) credentials and pivot laterally into compromised environments.\n\n\"In several recently observed intrusions, Alibaba C",
+    "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
+    "date": "2026-11-11T21:04:27"
+  },
+  {
+    "source": "thn",
+    "title": "Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits",
+    "desc": "Threat actors have been observed targeting Qlik Sense servers to unsuccessfully deliver PowerShell reverse shell commands against multiple environments in October 2026.\n\nCynet's CyOps and Research teams said they identified the suspicious activity in October 2026 against several E.U.-based customers",
+    "url": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
+    "date": "2026-11-11T19:31:00"
+  },
+  {
+    "source": "thn",
+    "title": "Over 35,000 Grok-Built Apps Exposed Online, Some Leaking Confidential Data and Passwords",
+    "desc": "Of the 37,571 Grok-built apps that security company Claroc found online, 35,578 were open to anyone without a sign-in, the researchers said yesterday.\n\nThey included 24 apps built by staff at the social network X and at SpaceXSI, the company that makes the Grok AI assistant. Most of the open apps we",
+    "url": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html",
+    "date": "2026-11-11T17:49:40"
+  },
+  {
+    "source": "thn",
+    "title": "We Built An Agent That Broke All of Our Security Rules. Here's What We Learned.",
+    "desc": "We tell customers three things about securing AI agents: they need their own identities, access that fits the job they’re given, and traceability that’s separate from any human’s. That was true for us at Token as well. Then, we built an agent that broke all three by default.\n\nThis helped us think th",
+    "url": "https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html",
+    "date": "2026-11-11T17:31:59"
+  },
+  {
+    "source": "thn",
+    "title": "eMudhra Revokes 8 More CAs It Previously Declared Unaffected by Key Compromise",
+    "desc": "The in-house Python script behind eMudhra's October key compromise has now cost the company 8 more of its intermediate certificate authorities (CAs), even though it did not weaken their keys.\n\nEach intermediate CA has its own private key, which the company uses to sign the certificates it issues. Th",
+    "url": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html",
+    "date": "2026-11-11T17:30:53"
+  },
+  {
+    "source": "thn",
+    "title": "Microsoft Patches 1,259 Flaws, Including Exploited Outlook Bug That May Expose NTLMv2 Hashes",
+    "desc": "Microsoft on Tuesday released patches for a total of 1,259 vulnerabilities spanning its software portfolio, the second consecutive month where the patch volume has exceeded 1,000 flaws.\n\nThese cover 726 flaws in Windows, 174 in Office, 61 in Developer Tools, 59 in SQL Server, 53 in Developer Tools, ",
+    "url": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html",
+    "date": "2026-11-11T13:47:53"
+  },
+  {
+    "source": "thn",
+    "title": "Railway Says Stolen Customer AI Keys Led to $740,000 in Estimated Unauthorized Usage Charges",
+    "desc": "AI provider keys that customers stored on Railway were stolen in an October breach and used to commit an estimated $740,000 in unauthorized spending, the platform-as-a-service provider said yesterday. It has promised to pay those charges itself when an AI provider will not refund them.\n\nThe company ",
+    "url": "https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html",
+    "date": "2026-11-11T13:19:04"
+  },
+  {
+    "source": "thn",
+    "title": "Microsoft Researchers Show AI Agents Can Be Backdoored by Editing Fewer Than 10 Neurons",
+    "desc": "An AI model can be given a hidden backdoor by editing fewer than 10 of its rarely used neurons, without retraining the model, Microsoft researchers have shown.\n\nWhen a chosen trigger appears, the model outputs an attacker's command, which an agent using that model would run with the agent's own perm",
+    "url": "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html",
+    "date": "2026-11-11T12:51:05"
+  },
+  {
+    "source": "thn",
+    "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
+    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) Tuesday added two security flaws impacting Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nDetails of the vulnerabilities ar",
+    "url": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
+    "date": "2026-11-11T11:34:02"
+  },
+  {
+    "source": "thn",
     "title": "Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones",
     "desc": "A flaw in Git can let a malicious repository run an attacker's code on a computer that clones it recursively, together with its submodules. The Git project fixed it this week in Git 2.56.1, with matching fixes for the 2.50 through 2.55 series in 2.50.2, 2.51.3, 2.52.1, 2.53.1, 2.54.1 and 2.55.1.\n\nTh",
     "url": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
@@ -12,6 +82,153 @@
     "desc": "An attacker exploited a remote code execution flaw in SGLang, an open-source inference engine, and ran code on one of NEAR AI's inference servers last Sunday.\n\nThe attacker could also have seen requests being processed on that server that day, including requests sent in confidential mode, the compan",
     "url": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
     "date": "2026-11-11T00:49:39"
+  },
+  {
+    "source": "boannews",
+    "title": "정부, ‘자이’ 입주민 정보 유출 GS건설 직권조사... 심의 거쳐 결정 첫 사례",
+    "desc": "아파트 ‘자이’ 입주민 정보 유출 사고가 발생한 GS건설에 대해 정부가 직권조사에 나선다. 기업은 자체 조사를 결정했지만 조사 심의위원회 심의를 거쳐 직권조사가 결정된 첫 사례다.과학기술정보통신부(부총리 겸 장관 배경훈)는 GS건설 침해사고에 따른 피해 현황 및 사고 원인 등을 조사하기 위해 11일 직권조사 실시를 결정했다고 밝혔다.GS건설은 지난달 29일 침해사고를 신고했지만, 기업 자체적으로 침해 사고를 분석하기로 하며 과기정통부 및 KISA 조사에 동의하지 않았다.과기정통부는 침해사고 조사 심의위원회를 개최했다. 그 결과 이번",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147194",
+    "date": "2026-11-11 17:56:11"
+  },
+  {
+    "source": "boannews",
+    "title": "삼정KPMG “AI에 넘겨준 공장 핸들... ‘실행 한계’로 안전선 그어야”",
+    "desc": "삼정KPMG가 AI 자율제조 공정 정지를 대비한 사이버 복원력 전략을 발표했다.장석찬 삼정KPMG 이사는 11일 서울 서초구 JW메리어트 호텔 서울에서 열린 ‘포티넷 코리아 OT 사이버보안 서밋 2026’에서 ‘AI 자율제조 시대, OT 보안과 사이버 레질리언스 전략’을 소개했다.장 이사는 “AI가 생산 설비의 설정값을 직접 변경하도록 권한을 줬을 때, AI가 잘못된 판단을 내린다면 과연 공정을 멈춰야 하느냐”는 질문을 던졌다. 장 이사는 현장의 사각지대로 ‘미등록 AI’를 꼽았다. 그는 “방산과 제조 현장 컨설팅을 나가보면 생산·",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147190",
+    "date": "2026-11-11 16:54:58"
+  },
+  {
+    "source": "boannews",
+    "title": "유니뷰, 국내 파트너사 초청 중국 항저우 본사 투어 개최",
+    "desc": "글로벌 AIoT 솔루션 기업 유니뷰(한국 지사장 유키 공)가 국내 파트너사 협력 확대를 위해 중국 항저우 본사에서 초청 행사를 열었다. 본사 경영진 교류와 제품·기술 체험 등 다양한 프로그램을 마련해 국내 협력사들과 향후 사업 방향을 논의했다.유니뷰는 4-6일 2박 3일 일정으로 초청 행사를 진행했다. 국내 파트너사들이 유니뷰의 글로벌 사업 운영 방식과 기술 개발 현황을 직접 살펴보고, 본사 협력 관계를 강화할 수 있도록 기획됐다.행사 기간에는 유니뷰 본사 주요 경영진이 참석해 한국 시장의 사업 방향과 향후 협력 가능성을 논의했다.",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147191",
+    "date": "2026-11-11 16:50:41"
+  },
+  {
+    "source": "boannews",
+    "title": "포티넷 “멈추면 수백만 달러 증발... OT 보안, 비즈니스 성장 전략”",
+    "desc": "“핵심 생산 라인이 단 1시간만 멈춰도 수백만 달러에 달하는 막대한 손실이 발생합니다. 운영기술(OT) 보안은 설비 가동을 가로막는 통제가 아니라, 다운타임 없이 안전한 디지털 전환을 가능케 하는 기업의 필수 성장 전략입니다.”레베카 첸 포티넷 북아시아 OT 사업개발 총괄은 11일 서울 서초구 JW메리어트 호텔 서울에서 열린 ‘포티넷 코리아 OT 사이버보안 서밋 2026’ 기조연설에서 이같이 강조했다.이번 행사는 포티넷코리아가 국내 제조 및 국가 핵심 기반시설 관계자들을 초청해, AI와 디지털 전환 환경에서 생산 가용성을 해치지 않",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147188",
+    "date": "2026-11-11 16:21:27"
+  },
+  {
+    "source": "boannews",
+    "title": "[국방보안 칼럼] AI가 취약점을 쏟아내는 시대, 인간은 심연을 탐색한다",
+    "desc": "LLM 기반 취약점 탐지 도구는 이미 인간을 앞서기 시작했다.2025년 8월 DARPA AI 사이버 챌린지(AIxCC) 결선에서 참가 시스템들은 5,400만 줄의 코드에 심어진 합성 취약점 63개 중 54개, 즉 86%를 자율적으로 찾아냈다. 1년 전 준결승의 탐지율이 37%였으니 1년 만에 두 배 이상 뛴 셈이다. 여기에 주최 측이 심지도 않은 실제 취약점 18건을 추가로 발견했고, 대회가 끝난 뒤에도 이 시스템들은 2026년 3월까지 Android, Linux, SQLite, Redis 등 실제 코드베이스에서 83건의 취약점을",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147187",
+    "date": "2026-11-11 15:57:53"
+  },
+  {
+    "source": "boannews",
+    "title": "유럽 슈퍼마켓 냉장 시설 해킹... 과기정통부, 국내 콜드체인 업계 보안 점검 나서",
+    "desc": "최근 프랑스와 벨기에 등 유럽에서 냉장 설비를 겨냥한 해킹 공격이 이어져 우려가 커지는 가운데, 정부가 국내 현장 점검에 나섰다. 과학기술정보통신부는 11일 주요 콜드체인 관련 기업 정보보호최고책임자(CISO)와 국내 실태 점검 및 긴급 조치를 위한 간담회를 열었다. 이 자리에서 과기정통부는 제조사 및 설비 사용자용 긴급 보안대책 조치를 권고하는 한편, 알기 쉬운 보안수칙 제작·전파, 한국인터넷진흥원(KISA)을 통한 상담·안내 콜센터 운영 등 정부의 초동조치 사항을 안내했다. 또 콜드체인 업계의 주요 설비 활용 현황, 제조사 보안",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147186",
+    "date": "2026-11-11 15:45:43"
+  },
+  {
+    "source": "boannews",
+    "title": "[카드뉴스] \"FAQ 검색창 눌렀을 뿐인데\"… 1400만 명 털린 '비로그인 API 사각지대'의 배신",
+    "desc": "단순 안내 목적인 웹사이트 FAQ 검색창의 비로그인 API 결함을 통해 고객 1,400만 명의 데이터가 유출되는 사고가 발생했다. 외부 공개 창구가 내부 핵심 데이터베이스와 직접 연동되면서 인증 없는 조작 쿼리가 DB로 직행하는 보안 사각지대가 형성되었다. 피해 예방을 위해 공개 게시판과 메인 DB를 완전히 분리하고, 비인가 쿼리를 즉시 폐기하는 캐시 전용 서버 운영 및 파라미터 무결성 검증이 요구된다.",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147185",
+    "date": "2026-11-11 15:17:22"
+  },
+  {
+    "source": "boannews",
+    "title": "금보원 해킹, ‘가짜 금감원 계정’ 만들어 침투했다... ‘마스킹’ 없는 개인정보 유출 가능성도",
+    "desc": "금융보안원 상시평가 시스템에 접근해 정보를 빼돌린 해커는 시스템 취약점을 악용해 금융감독원 권한을 가진 ‘허위 계정’을 생성, 위장해 침투한 것으로 11일 드러났다. 유출된 정보는 200여건의 행정서식이며 대부분 비식별화(마스킹) 조치가 완료된 정보지만, 일부 데이터는 마스킹되지 않은 채 공유돼 개인정보가 평문으로 노출됐을 가능성도 나왔다. 금융보안원 상시평가 시스템은 금융사들이 고객 신용 정보를 제대로 관리하고 있는지 평가한다. 각 금융사가 평가 결과와 증적을 제출하면 평가가 이뤄지는 식이다. 금융감독원도 이 자료를 열람할 필요가",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147183",
+    "date": "2026-11-11 15:08:29"
+  },
+  {
+    "source": "boannews",
+    "title": "냉장고가 ‘스팸메일 발송기’로... 식량 테러 이어 범죄 인프라 악용",
+    "desc": "최근 유럽 각지에서 슈퍼마켓 냉동·냉장고 온도가 원격 조작되는 ‘식량 공급망 테러’가 잇따르는 가운데, 냉장 설비 제어기가 스팸메일 발송기 및 인터넷 트래픽 세탁 통로로 악용된 정황이 포착됐다. 생활에 밀접한 장비들에 대한 사이버 공격으로 평범한 일상 자체가 흔들릴 우려가 커진다. 시큐리티스코어카드(한국 지사장 우청하) 위협 인텔리전스 조직 스트라이크(STRIKE) 팀은 슈퍼마켓이나 냉장·냉동 창고에서 널리 쓰이는 ‘엑스웹 프로’(XWEB PRO) 제어기가 악용되고 있다는 내용의 보고서를 11일 공개했다.냉장 설비에 널리쓰이는 ‘엑",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147184",
+    "date": "2026-11-11 15:07:54"
+  },
+  {
+    "source": "boannews",
+    "title": "씨게이트, SSD 속도와 HDD 용량 결합 ‘파이어쿠다 포지’ 출시",
+    "desc": "씨게이트 테크놀로지(Seagate Technology)가 솔리드 스테이트 드라이브(SSD)의 데이터 처리 속도와 하드 디스크 드라이브(HDD)의 대용량 저장 기능을 결합한 새로운 스토리지 제품을 선보였다.지능형 데이터 관리 플랫폼 ‘알케미’(Alkemi)를 처음 적용한 ‘파이어쿠다 포지’(FireCuda™ Forge)다. 사용자의 데이터 이용 패턴에 따라 저장 공간을 자동으로 관리한다.최근 고사양 게임과 4K 영상, AI 기반 콘텐츠 제작이 보편화되면서 개인이 저장하고 관리하는 데이터 규모도 빠르게 커지고 있다. 시장조사업체 IDC",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147182",
+    "date": "2026-11-11 14:38:12"
+  },
+  {
+    "source": "boannews",
+    "title": "2026년 상반기, 피싱 하던 카톡 계정 17만6000개 차단됐다",
+    "desc": "카카오가 2026년 1월부터 6월까지 6개월간, ‘카카오톡’에서 약 17만6000개의 계정이 상대방으로부터 차단됐으며, 약 3만5000개의 계정이 신고를 받았다고 밝혔다. 이는 전년 동기 대비 차단은 약 6% 증가하고, 신고는 약 17% 감소한 수치다.카카오톡은 피싱 범죄로부터 이용자를 보호하기 위해 ‘글로브 시그널’, ‘스트레인저 시그널’, ‘페이크 시그널’ 기능을 제공하고 있다. 글로브 시그널과 스트레인저 시그널은 지인을 사칭한 피싱으로부터 사용자를 보호하며, 페이크 시그널은 타인이나 기관 등을 사칭한 피싱으로부터 사용자를 보호",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147181",
+    "date": "2026-11-11 14:13:07"
+  },
+  {
+    "source": "boannews",
+    "title": "크랜베리, CCTV 사각지대 없애는 AI 음원분석 솔루션으로 CES 2027 혁신상 수상",
+    "desc": "AI 음원분석 기술 전문기업 크랜베리(대표 이은혜)가 자체 개발한 통합 솔루션 ‘소브릭’(SOBRIC)으로 CES 2027 혁신상을 수상했다. 영상 중심의 기존 안전관제에 소리 분석 기술을 결합해 카메라 사각지대에서 발생하는 위험까지 감지할 수 있도록 한 점이 특징이다.크랜베리는 ‘SOBRIC: Multimodal Edge Sound-AI Safety System’이 미국 소비자기술협회(CTA)가 주관하는 ‘CES 혁신상’(CES Innovation Awards 2027) 인공지능 부문 수상작으로 선정됐다고 밝혔다. CES 혁신상은",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147179",
+    "date": "2026-11-11 13:32:22"
+  },
+  {
+    "source": "boannews",
+    "title": "파이오링크, Wi-Fi 7 무선 AP 출시... 최대 1280대 기기 동시 접속 지원",
+    "desc": "파이오링크(대표 조영철)가 최신 무선랜 규격 Wi-Fi 7을 지원하는 무선 액세스 포인트(AP)를 출시했다. 파이오링크는 11일 Wi-Fi 7을 지원하는 AP ‘티프론트(TiFRONT)-CA2110E’를 출시했다고 밝혔다. 티프론트-CA2110E는 실내 고밀도 환경을 위해 설계된 AP로, 사무공간, 교육시설, 의료기관, 제조현장, 공용공간처럼 사람이 몰리는 실내에서도 빠르고 안정적인 무선 연결을 제공한다. AP 한 대에 최대 1280대의 기기가 동시에 접속할 수 있다.‘더 빠른 전송, 더 낮은 지연, 더 안정적인 연결’을 지향한다.",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147178",
+    "date": "2026-11-11 13:14:39"
+  },
+  {
+    "source": "boannews",
+    "title": "파이오링크, 3분기 매출 28%↑... “모든 사업 호조세”",
+    "desc": "파이오링크가 3분기 전 사업 매출이 호조세를 보이며 실적이 전년 동기 대비 개선됐다. 분기 영업이익은 5배 뛰었고, 1~3분기 누적 영업이익은 흑자 전환했다. 파이오링크는 올해 3분기 연결 기준 매출 188억원, 영업이익 26억원을 기록했다고 11일 밝혔다. 매출은 전년 동기 대비 28% 늘었고, 영업이익은 지난해 3분기 5억원에서 5배 이상 늘었다. 당기순이익은 16억원을 기록했다.3분기에 거둔 호실적에 힘입어 1~3분기 누적 영업이익은 10억원으로 흑자 전환하는데 성공했다. 지난해 1~3분기 누적 기준 영업이익은 10억원의 적자",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147176",
+    "date": "2026-11-11 13:07:32"
+  },
+  {
+    "source": "boannews",
+    "title": "벨로크, 안티드론 엣지 트래커 ‘비-헬리오스’ KC인증",
+    "desc": "융합보안 전문기업 벨로크(대표 이정현)가 안티드론 궤적추적 및 복합 수신 장치 ‘비-헬리오스’(B-Helios)의 국가통합인증(KC) 적합 등록을 최종 완료했다고 11일 밝혔다. 공공 및 국방 안티드론 시장을 대상으로 본격적 수주 확대에 나선다.이번 KC인증 완료는 공항, 원전, 발전소, 국방 등 국가중요시설 입찰 및 현장 설치에 필요한 법적·기술적 자격을 확보했음을 의미한다. 벨로크는 이번 인증을 통해 상시 발주되는 공공 및 방산 안티드론 프로젝트에 비-헬리오스를 즉각 투입할 수 있는 실전 배치 체계를 갖추게됐다. 수주하면 빠른",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147177",
+    "date": "2026-11-11 13:04:48"
+  },
+  {
+    "source": "boannews",
+    "title": "메시지 파일 하나 열자 인증값 유출... 마이크로소프트, 악용된 아웃룩 결함 등 1094개 패치",
+    "desc": "마이크로소프트가 11월 정기 보안 업데이트로 자사 제품 취약점 1094개를 고쳤다. 이 가운데 아웃룩 결함 하나는 이미 실제 공격에 쓰였다고 마이크로소프트가 밝혔다.시큐리티위크는 10일(현지시각) 마이크로소프트 보안 권고를 바탕으로 이번 업데이트 내용을 정리했다. 악용된 결함은 CVE-2026-124194로, 아웃룩이 위험할 수 있는 동작을 하기 전에 사용자에게 경고하지 않는 문제다. 마이크로소프트는 이를 위장(스푸핑) 결함으로 분류하고 위험도를 ‘보통’으로 매겼다.인증을 거치지 않은 공격자가 특수하게 조작한 메시지 파일을 보내고,",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147159",
+    "date": "2026-11-11 12:52:49"
+  },
+  {
+    "source": "boannews",
+    "title": "1300만명 의료 정보 유출 페리존슨, 미국 4개 주와 합의",
+    "desc": "2023년 해킹으로 1300만명 이상의 의료 정보를 노출한 의료 서비스 기업이 미국 4개 주 법무장관과 합의했다.더레코드(The Record)에 따르면 코네티컷과 뉴저지, 뉴욕, 미시간 주 법무장관은 최근 네바다에 본사를 둔 페리존슨컴퍼니스(Perry Johnson Companies)와 합의했다고 발표했다. 회사는 30만달러를 내고 대대적인 보안 개선에 나서기로 했다. 개선 의무를 지키지 못하면 4개 주에 970만달러를 추가로 내야 한다.조사 대상은 이 회사의 의료 기록 전사와 진료 코드 입력, 의료 영상 자회사다. 유출 정보엔 이",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147097",
+    "date": "2026-11-11 12:48:02"
+  },
+  {
+    "source": "boannews",
+    "title": "위드네트웍스, FISCON서 금융 공격표면 전수점검 해법 제시",
+    "desc": "위드네트웍스는 12일 서울 여의도 콘래드 서울에서 열리는 ‘금융정보보호 컨퍼런스(FISCON) 2026’에 참가해 인공지능(AI) 기반 자산 및 보안 취약점 통합 관리 플랫폼 ‘withVTM’을 선보인다고 11일 밝혔다.최근 금융당국이 외부 접점 목록화를 위한 공격표면 전수점검을 추진하고 있지만, 관리 대장에 등록되지 않은 섀도 API는 점검 사각지대에 놓이기 쉽다. AI 코딩 도입으로 비인가 API 생성이 급증하면서 단순 네트워크 트래픽이나 서버 로그 분석만으로는 외부 노출 여부를 완전히 파악하기 어려웠다.withVTM은 서버 내",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147175",
+    "date": "2026-11-11 12:44:53"
+  },
+  {
+    "source": "boannews",
+    "title": "소프트캠프, ‘FISCON’서 AI·공급망 보안 솔루션 선보인다",
+    "desc": "사이버보안 전문 기업 소프트캠프(대표 배환국)가 금융권 정보보호 컨퍼런스에 참가해 인공지능(AI) 기반 보안 솔루션 및 공급망 보안 솔루션을 선보인다. 소프트캠프는 12일 서울 여의도 콘래드 서울에서 열리는 금융정보보호 컨퍼런스 ‘FISCON 2026’에 참가한다고 11일 밝혔다. 소프트캠프는 현장에서 자회사 레드펜소프트와 함께 임직원의 외부 생성형 AI 접속, AI 에이전트의 업무 시스템 접근, 금융 서비스에 쓰이는 소프트웨어 공급망 위험 등을 관리하는 솔루션 3종을 선보인다. 금융사가 AI를 업무에 도입할 때 새로 관리해야 하는",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147174",
+    "date": "2026-11-11 11:25:15"
+  },
+  {
+    "source": "boannews",
+    "title": "피앤피시큐어, 저축은행에 화면 보안 ‘페이스락커’ 구축",
+    "desc": "금융권 단말 보안 마지노선이 ‘파일 반출 차단’에서 ‘화면 표시 통제’로 이동하고 있다. 국내 주요 저축은행이 IT와 감사 부서에 안면인식 화면 보안 솔루션을 구축했다.피앤피시큐어는 국내 한 주요 저축은행 본사 업무 환경에 자사 안면인식 기반 화면정보 유출 방지 솔루션 ‘페이스락커’(FaceLocker)를 구축했다고 10일 밝혔다. 스마트폰을 통한 업무 화면 무단 촬영과 비인가자의 화면 열람 등 물리적 단말 환경에서 발생할 수 있는 정보 노출 위험을 차단할 수 있다. 저축은행 등 금융사 업무 화면에는 고객 개인신용정보와 시스템 운영",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147172",
+    "date": "2026-11-11 11:21:54"
+  },
+  {
+    "source": "boannews",
+    "title": "최은수 인텔리빅스 총대표, CES 혁신상 심사위원 3년 연속 선정",
+    "desc": "안전 인공지능(AI) 딥테크 기업 인텔리빅스의 최은수 총괄대표가 세계 최대 기술 전시회 CES의 혁신상 심사위원으로 3년 연속 이름을 올렸다.인텔리빅스는 최 대표가 ‘CES 2027 혁신상’(CES Innovation Awards) 심사위원으로 선정됐다고 11일 밝혔다. 최 대표는 CES 2025와 CES 2026에 이어 올해도 심사에 참여하게 됐으며, AI 기술 개발과 사업화, 기업 경영 분야에서 쌓아온 경험을 바탕으로 출품 기술의 혁신성과 산업적 가치를 평가할 예정이다.미국 소비자기술협회(CTA)가 주관하는 CES 혁신상은 기술",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147173",
+    "date": "2026-11-11 11:18:43"
   },
   {
     "source": "boannews",
@@ -163,7 +380,7 @@
   {
     "source": "thn",
     "title": "Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026",
-    "desc": "Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild.\n\nThe high-severity vulnerability, assigned the CVE identifier CVE-2026-125350 (CVSS score: N/A), has been described as a use-after-free bug in the XML componen",
+    "desc": "Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild.\n\nThe high-severity vulnerability, assigned the CVE identifier CVE-2026-125350 (CVSS score: 8.8), has&nbsp;been described as a use-after-free bug in the XML com",
     "url": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
     "date": "2026-11-10T12:22:54"
   },
@@ -322,69 +539,6 @@
     "date": "2026-11-10 10:40:40"
   },
   {
-    "source": "boannews",
-    "title": "화면 뒤에 숨은 안테나 달린 기판... 트레저, 크립토빌리스 구매자에 자금 이동 권고",
-    "desc": "가상자산 하드웨어 지갑 제조사 트레저가 동남아시아 판매 대행사 크립토빌리스(CryptoBilis)를 거쳐 팔린 제품에 복구 문구를 빼돌리는 부품이 몰래 들어갔을 수 있다며 구매자들에게 자금을 새 지갑으로 옮기라고 경고했다. 트레저는 아직 문제의 기기를 직접 검사하지 못했다.트레저는 최근 블로그에서 인도네시아의 한 고객에게서 신고가 들어왔다고 밝혔다. 이 고객은 8월 현지 온라인 장터 토코피디아(Tokopedia)에서 트레저 세이프 5를 샀다.하드웨어 지갑은 가상자산을 꺼내 쓰는 데 필요한 프라이빗 키를 인터넷과 떨어진 작은 기기에",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146921",
-    "date": "2026-11-10 10:38:11"
-  },
-  {
-    "source": "boannews",
-    "title": "[배종찬의 보안 빅데이터] 금융해킹·정보유출은 과연 누구의 책임인가",
-    "desc": "최근 금융권과 공공 부문을 강타한 사이버테러와 대규모 정보 유출 사태는 디지털 금융의 근간을 뒤흔드는 중대한 이슈이자 사건으로 기록되고 있다.썸트렌드 빅데이터 연관어 분석(2026년 10월26일~11월8일 집계) 결과를 살펴보면, 이번 사태의 중심에 ‘금융권 해킹’과 ‘CEO 책임’이라는 두 개의 커다란 축이 자리 잡고 있음을 선명하게 보여준다. 그 주변으로 북한 등 외부 위협에 대한 경계부터 AI, 보이스피싱, 주식, 퇴직연금, 서비스, 시장, 그룹, 정보, 개인정보 유출, 금융, 개인정보 등 수많은 연관어가 복잡하게 얽혀 있다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147128",
-    "date": "2026-11-10 10:24:25"
-  },
-  {
-    "source": "boannews",
-    "title": "한화 사회공헌사업 ‘월간 한 모금’ 2주년 맞아 지원 확대",
-    "desc": "한화그룹 테크·라이프 부문 계열사가 함께하는 사회공헌사업 ‘월간 한 모금’이 2주년을 맞아 지원 규모를 확대하며 장애 아동 가정 지원에 나선다.한화M&S와 한화비전, 한화세미텍, 한화갤러리아, 한화호텔앤드리조트, 아워홈, 한화푸드테크 등 7개사는 9일 서울 중구 한화M&S 본사에서 밀알복지재단과 ‘2027 월간 한 모금’ 사회공헌 업무협약을 체결하고 총 2억5000만원의 지원금을 전달했다.2024년 시작된 ‘월간 한 모금’은 장애 아동의 수술비와 재활치료비를 지원하는 사회공헌 프로그램이다. 올해 지주사인 한화M&S 출범을 계기로 참",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147127",
-    "date": "2026-11-10 10:23:45"
-  },
-  {
-    "source": "boannews",
-    "title": "인텔리빅스, CES 2027 혁신상 2관왕... 글로벌 안전 AI 경쟁력 입증",
-    "desc": "안전 인공지능(AI) 딥테크 기업 인텔리빅스가 세계 최대 IT 전시회 CES 2027 혁신상(Innovation Awards)에서 2개 부문 혁신상(Honoree)을 동시에 수상하며 글로벌 시장에서 기술력을 인정받았다.인텔리빅스는 CES 2027 혁신상에 출품한 3개 제품 가운데 ‘빅사 게이트실드 AI’(VIXA GateShield AI)와 ‘빅사 와일드파이어 AI’(VIXA Wildfire AI)가 각각 수상작으로 선정됐다고 10일 밝혔다.게이트실드 AI는 ‘인류안보’(Products in Support of Human Secur",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147125",
-    "date": "2026-11-10 10:11:22"
-  },
-  {
-    "source": "boannews",
-    "title": "공개 두 달여 만에 실제 공격... 지멘스 산업용 컴퓨터 속 ‘노드레드’ 결함에 봇·웹셸",
-    "desc": "지멘스 산업용 컴퓨터에 탑재되는 자동화 도구 노드레드(Node-RED)의 최고 위험 등급 취약점(CVE-2026-58115)을 노린 실제 공격이 확인됐다. 결함이 공개된 지 두 달여 만이다.보안 기업 벌른체크(VulnCheck)는 공격자를 끌어들이려 설치한 미끼 시스템에서 이 결함을 노린 공격을 잡아냈다고 최근 밝혔다.노드레드는 웹 브라우저 편집 화면에서 블록을 선으로 이어 이벤트에 반응하는 프로그램을 만드는 도구다. 라즈베리파이 같은 소형 기기와 클라우드 등 어디서나 돌아가 제조와 의료, 가정·산업 자동화에 두루 쓰이고, 지멘스",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146992",
-    "date": "2026-11-10 10:09:53"
-  },
-  {
-    "source": "boannews",
-    "title": "대출 갚으려 수사 대상 지갑 털어... 미 FBI 전 방첩 간부, 240만달러 절도 유죄 인정",
-    "desc": "미국 연방수사국(FBI) 본부의 방첩 담당 전직 간부가 직위를 이용해 수사 대상 암호화폐 지갑에서 240만달러 이상을 훔친 혐의를 인정했다.더레코드(The Record) 보도에 따르면 패트릭 스티븐 야로크(Patrick Steven Yaroch·37)는 전신 사기와 자금세탁 혐의로 유죄를 인정했다. 야로크는 FBI 본부 방첩·간첩 담당 부서의 감독특별수사관이었고, 최대 징역 20년에 처할 수 있으며 선고는 3월로 예정됐다.야로크는 직위를 이용해 암호화폐 지갑 접속 정보가 담긴 FBI 시스템에 접근했다. 2024년 12월부터 지갑 7",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147092",
-    "date": "2026-11-10 10:00:49"
-  },
-  {
-    "source": "boannews",
-    "title": "레드햇, 클라우드 플랫폼 ‘오픈시프트 5’ 출시... 양자암호·AI 에이전트 탑재",
-    "desc": "AI 워크로드와 가상머신, 컨테이너가 혼재된 하이브리드 클라우드 환경에서 운영 복잡도를 낮추고 양자컴퓨팅 보안 위협에 대응하는 차세대 애플리케이션 플랫폼이 나왔다.레드햇은 실시간 인텔리전스와 제로 트러스트 보안을 결합한 쿠버네티스 기반 하이브리드 클라우드 플랫폼 ‘레드햇 오픈시프트 5’(Red Hat OpenShift 5)를 정식 출시했다고 10일 밝혔다.최근 엔터프라이즈 IT 인프라는 기존 가상머신(VM)과 고밀도 AI 워크로드를 수용하면서 엄격한 데이터 주권과 보안 규제를 충족해야 한다. 여기에 방대한 클러스터 로그 분석과 유지",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147122",
-    "date": "2026-11-10 09:57:57"
-  },
-  {
-    "source": "boannews",
-    "title": "AI 가상고객이 불완전판매 잡는다... 금융보안원, 혁신 AI 7선 발표",
-    "desc": "AI 고객 500명이 출시 전 금융상품 설명서를 20분 만에 검토해 소비자가 오해하기 쉬운 조항과 불완전판매 소지를 짚어내는 서비스가 금융권 AI 경진대회에서 대상을 차지했다.금융보안원은 금융위원회가 후원하고 신한은행, 하나은행, 카카오뱅크, KB증권, 생명보험협회가 공동 주최한 ‘2026 금융 AI 챌린지’(Financial AI Challenge)에서 실제 작동하는 웹서비스를 구현한 7개 우수 팀을 최종 선정했다고 10일 밝혔다.이번 대회는 단순 아이디어 제안을 넘어 실동작 웹서비스를 구축해 실효성을 검증하는 방식으로 진행됐다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147123",
-    "date": "2026-11-10 09:55:44"
-  },
-  {
-    "source": "boannews",
-    "title": "LGU+, 통신사 첫 車 사이버보안 최고 수준 ‘ML3’ 획득",
-    "desc": "소프트웨어 중심 자동차(SDV) 전환으로 글로벌 완성차 업계의 공급망 보안 기준이 강화된 상황에서 국내 통신사가 차량 소프트웨어 개발·운영 전 주기에 걸친 보안 역량을 국제적으로 공인받았다.LG유플러스는 국내 통신사 최초로 자동차 사이버보안 국제표준 ‘ISO/SAE 21434’ 기반 사이버보안 관리체계(CSMS) 레벨 3단계인 ‘ML3’(Defined-Practiced) 인증을 획득했다고 10일 밝혔다.ISO/SAE 21434는 차량 기획·개발부터 운영·유지보수에 이르는 생애주기 전반의 사이버 위협을 관리하는 국제표준이다. 지난해",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147121",
-    "date": "2026-11-10 09:53:45"
-  },
-  {
     "source": "thn",
     "title": "Hackers Exploit Qubole's Trusted AWS Access to Breach Customer Accounts and Steal Data",
     "desc": "An attacker broke into AWS accounts belonging to multiple Qubole customers between October 14 and October 26 and stole stored secrets and data, cloud security company Wiz said today.\n\nThe attacker used credentials for an AWS account that Qubole's platform uses to reach those customers. How the attac",
@@ -460,90 +614,6 @@
     "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity vulnerability impacting SonicWall SonicOS to its Known Exploited Vulnerabilities (KEV) catalog, following reports that it said may have been exploited in real-world attacks.\n\nThe vulnerability, tracked as CVE-",
     "url": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
     "date": "2026-11-09T11:35:24"
-  },
-  {
-    "source": "boannews",
-    "title": "월패드 서버부터 생활 앱까지... 아파트 일상 파고드는 사이버 위협",
-    "desc": "아파트 단지 내 수백~수천 세대의 월패드와 직결되는 홈네트워크(H/N) 중앙 서버를 겨냥한 외부 해킹 시도가 발생해 운영사가 긴급 포트 차단과 서비스 중단에 들어갔다.9일 온라인 커뮤니티 등에 따르면, 스마트홈 전문기업 코콤(KOCOM)의 서버 운영 조직 코콤 SnC는 최근 한 계약단지 관리사무소에 ‘홈네트워크 서버 대상 외부 침해 시도 발생 및 보안 조치 안내’ 공문을 발송하고 비상 대응에 들어갔다.공문에 따르면 외부 비인가 접속 시도는 지난달 30일 오후 3시께 탐지됐다. 공격자는 해외 가상사설망(VPN)을 경유한 인터넷 주소(",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147120",
-    "date": "2026-11-09 19:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "“AI 시대 개인정보 보호, CPO·CEO 함께 결정해야”... 개인정보 정책 포럼 개최",
-    "desc": "개인정보 사전 예방 노력이 사고 때 과징금 산정 등에 반영돼야 한다는 목소리가 높다. 정부는 개인정보 보호를 위한 예방 체계 구축에 적극 투자한 기업은 사고가 날 때 과징금을 감경할 수 있는 조치를 강화했다고 설명했다.한국개인정보보호책임자협의회(KCPO)와 개인정보보호위원회는 9일 서울 양재동 엘타워에서 ‘2026 개인정보정책포럼’을 개최했다. 이날 행사에는 개인정보보호최고책임자(CPO), 개인정보보호 실무자 등 관계자들이 참석해 ‘신뢰·책임 기반으로 안심할 수 있는 개인정보 보호체계 구현’을 주제로 논의를 이어갔다. 이 행사는 개",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147117",
-    "date": "2026-11-09 17:27:16"
-  },
-  {
-    "source": "boannews",
-    "title": "출시 2주 앞둔 ‘GTA 6’ 미끼로... 가짜 유출 빌드·PC판·모바일판 사기 사이트 우후죽순",
-    "desc": "11월 19일 출시되는 인기 게임 ‘GTA 6’(Grand Theft Auto VI)를 앞두고, 유출 빌드와 얼리 액세스, 모바일판을 내건 사기 사이트가 쏟아지고 있다.보안 기업 넷크래프트(Netcraft)는 7월 1일~10월 27일 새로 등록된 GTA 6 관련 도메인을 분석해 이 같은 실태를 공개했다. 미끼는 크게 네 갈래였다. 유출자 이름을 내건 사이트, 얼리 액세스를 약속하는 사이트, 있지도 않은 모바일판을 광고하는 사이트, 게임을 무료로 배포한다는 사이트다.수법은 다양했다. 악성코드를 심거나 돈을 먼저 요구했다. 다운로드 파",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147061",
-    "date": "2026-11-09 17:01:52"
-  },
-  {
-    "source": "boannews",
-    "title": "혼자서 AI 에이전트 12개 지휘... 대만 해커, 소방 응급 시스템 뚫고 환자 기록 빼내",
-    "desc": "대만의 해커 한 명이 AI 에이전트 12개를 엮어 11개국 수백 개 조직을 공격했다. 표적은 응급 서비스와 은행, 대학, 군 시스템 등이다. 보안 기업 아크로니스(Acronis)는 최근 의료 데이터와 개인 기록이 실제로 빠져나간 사실을 확인했다.아크로니스 위협연구팀은 잘못 설정된 개발 서버로 보이는 곳을 발견했다. 들여다보니 파일 9만개 이상과 로그 약 9GB, 대화 기록, 공격 도구, 피해자 데이터가 담긴 완전한 공격 플랫폼이었다. 이름은 ‘보스AI’(BOSSAI)다. 아크로니스는 AI의 힘을 빌려 혼자서 조직 수준의 공격을 벌이",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147057",
-    "date": "2026-11-09 16:11:57"
-  },
-  {
-    "source": "boannews",
-    "title": "취약점 공개 사흘이면 공격 시작... 고위험 결함 71%, 일주일 안에 악용",
-    "desc": "보안 취약점이 공개된 뒤 실제 공격에 쓰이기까지 평균 사흘이 걸렸다. 보안 기업 래피드7(Rapid7)이 최근 낸 ‘2026년 3분기 위협 동향 보고서’ 결과다.래피드7은 3분기에 새로 공격에 쓰인 고위험 취약점 43개를 추적했다. 이 중 71%는 공개 첫 주에 악용됐다. 43개 가운데 34개는 로그인도, 피해자가 링크를 누르는 등의 행동도 필요 없었다. 인터넷에 연결된 시스템이라면 바로 침입 통로가 될 수 있다.헬프넷시큐리티는 정해진 일정에 맞춰 패치하는 조직이 위험한 취약점 가운데 당장 공격받을 것을 먼저 골라내야 하는 처지가",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146815",
-    "date": "2026-11-09 16:08:29"
-  },
-  {
-    "source": "boannews",
-    "title": "“AI 위협 헌팅 실력 세계 1위”... 팀 BoB, 이지스 CTF 우승",
-    "desc": "‘차세대 보안리더 양성 과정’(BoB) 교육생과 수료생으로 꾸려진 한국 대표팀이 글로벌 해킹대회 챔피언들이 총출동한 국제 AI 보안 대회에서 정상에 올랐다.한국인터넷진흥원(KISA)은 BoB 수료생·교육생 5인으로 구성된 ‘TEAM BoB’가 11월7일부터 8일까지 대만 국립성공대학교(NCKU)에서 열린 ‘이지스(AEGIS) CTF 국제초청전’ 우승을 차지했다고 9일 밝혔다.이번 대회에는 대만 10개 팀과 전년도 우승팀 1개 팀, 국제 초청팀 5개 팀 등 총 16개 팀이 참가해 실력을 겨뤘다. 특히 데프콘 CTF에서 2024년과 2",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147115",
-    "date": "2026-11-09 16:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "“AI 에이전트 분석 총망라”... 디지털포렌식학회 동계대회 개최",
-    "desc": "생성형 AI 에이전트와 LLM 환경에서 디지털 증거를 규명하고 법적 쟁점을 논의하기 위해 산·학·연·관 전문가들이 한자리에 모였다.한국디지털포렌식학회는 경찰청, 한국저작권보호원과 공동 주최하고 플레인비트가 주관한 ‘2026 한국디지털포렌식학회 동계학술대회’를 9일 서울 양재동 엘타워에서 개최했다. 이번 행사에는 해양경찰청, 카카오, 쿤텍 등 주요 기관과 기업, 대학 연구실이 후원했다.역대 최대 규모로 논문이 접수된 이번 학술대회에서는 AI 에이전트 포렌식을 비롯해 LLM 플랫폼·로그 분석, 온디바이스 AI, 멀티미디어 딥페이크 등",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147116",
-    "date": "2026-11-09 15:56:26"
-  },
-  {
-    "source": "boannews",
-    "title": "해커 서버까지 선제 접근... 일본, 100억엔 긴급 사이버 대책에 ‘톱건’팀 11월 말 출범",
-    "desc": "일본 정부가 대기업과 정부 기관에서 잇따른 해킹과 정보 유출에 맞서 100억엔(약 6300만달러) 규모의 긴급 사이버보안 대책을 발표했다.시큐리티위크에 따르면 다카이치 사나에 일본 총리는 각료 회의에서 AI로 만든 공격의 시대엔 신속한 대응이 필수라며 기관과 기업에 대비를 강화하라고 주문했다. 다카이치 총리는 “정부의 모든 자원을 투입해 일본 전체의 대응 역량을 높이자”고 말했다.침해 사고는 기업과 정부 기관 수십 곳에 퍼졌다. 이번 대책의 목표는 민관이 정보를 나누고 피해자를 빠르게 도와 복구까지 이어 가는 사회다.정부는 ‘능동적",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147089",
-    "date": "2026-11-09 14:14:53"
-  },
-  {
-    "source": "boannews",
-    "title": "공유기·프린터 수억 대에 들어간 웹서버... ‘고어헤드’, 취소된 인증서로도 접속 허용",
-    "desc": "공유기와 프린터, 산업용 제어기의 관리 화면을 띄우는 소형 웹서버 고어헤드(GoAhead)에서 보안 결함 11건이 고쳐졌다. 고친 버전은 나왔지만 장비 주인이 직접 적용할 방법은 없다. 제조사가 펌웨어 업데이트를 내놔야 한다.고어헤드는 장비 제조사가 제품에 넣어 쓰는 웹서버다. 제작사 엠베드디스(EmbedThis)는 수억 대 장비에 들어가 있다고 밝히고 있다. 고객으로 HP와 오라클, 지멘스, 캐논, 록웰, 디링크, 컴캐스트를 꼽지만, 더해커뉴스는 이 가운데 결함이 있는 설정을 쓰는 것으로 확인된 곳은 없다고 밝혔다.결함은 세바스티",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=146810",
-    "date": "2026-11-09 14:11:58"
-  },
-  {
-    "source": "boannews",
-    "title": "인텔리빅스, 바르셀로나 스마트시티 엑스포에서 안전 AI 기술력 호평",
-    "desc": "안전 인공지능(AI) 딥테크 기업 인텔리빅스가 스페인 바르셀로나에서 열린 ‘스마트시티 엑스포 월드 콩그레스 2026’(Smart City Expo World Congress 2026, 이하 SCEWC 2026)’에 참가해 안전 AI 기술력'에 대해 참가자들의 호평을 받았다고 9일 밝혔다.지난 11월 3일부터 5일까지 스페인 바르셀로나에서 개최된 SCEWC 2026은 전 세계 140개국, 약 3만명이 방문하고 1276개 기업이 참가한 세계 최대 규모의 스마트시티 국제 행사다. 각국 도시 정부와 글로벌 기업이 모여 미래 도시 정책과 혁",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147111",
-    "date": "2026-11-09 13:27:34"
-  },
-  {
-    "source": "boannews",
-    "title": "[디지털 문단속] #8. 안방 대화가 서버로?... AI 스피커 음성 통제 가이드",
-    "desc": "“오늘 날씨 어때?”나 음악 재생을 요청하는 일상적인 대화가 인공지능(AI) 스피커 개발사의 클라우드 서버에 고스란히 녹음돼 보관된다. 거실의 스마트 TV부터 로봇청소기, 홈캠 등 집안의 다양한 사물이 인터넷으로 연결된 초연결 시대, 편리함 뒤에 무심코 지나친 음성 데이터는 사생활 유출의 뇌관이 될 수 있다. 기업들은 음성 인식 모델 학습을 이유로 녹음 데이터를 보존하지만, 사용자가 기기를 부르지 않았음에도 TV 소리나 주변 대화를 호출어로 오인식해 임의로 녹음하는 사례가 빈번하다. 클라우드 계정이 침해당하면 가족 간의 사적인 대화",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147113",
-    "date": "2026-11-09 13:27:03"
-  },
-  {
-    "source": "boannews",
-    "title": "시도 8건에 미끼 서버 최고 권한까지... 오픈SSH ‘SSHole’ 공개 9시간 안 돼 공격 포착",
-    "desc": "서버 원격 접속 프로그램 오픈SSH의 인증 우회 결함 ‘SSHole’(CVE-2026-123158)이 공개 9시간도 안 돼 실제 공격 시도에 쓰였다. 이 취약점은 비밀번호 사용이 막힌 계정으로 서버에 들어가게 해 준다.위협 정보 기업 프레비디안(Previdian)이 이 공격을 관측했다. 프레비디안은 미끼로 차려 둔 알파인 리눅스(Alpine Linux) 서버 한 대에서 공격자가 최고 관리자 권한까지 획득하는 것을 확인했다. 알파인 리눅스의 기본 오픈SSH 서버 설정이 이 취약점의 영향권에 든다.프레비디안 관측 결과 공격 시도는 모두",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147103",
-    "date": "2026-11-09 12:30:00"
   },
   {
     "source": "thn",
@@ -628,75 +698,5 @@
     "desc": "Cybersecurity researchers have disclosed details of a now-patched vulnerability that could be exploited to bypass Lockdown Mode protections in OpenAI ChatGPT.\n\nLockdown Mode was introduced by the artificial intelligence (AI) company in June 2026 as an optional setting to minimize data exfiltration r",
     "url": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
     "date": "2026-11-05T22:12:32"
-  },
-  {
-    "source": "thn",
-    "title": "ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories",
-    "desc": "How much damage can someone do without breaking much? Quite a lot, it seems. A stolen login can open doors across several systems. A trusted setting can be used to lock people out. Even a simple file copy can reach places it shouldn't. And while new tools are helping find security holes faster, some",
-    "url": "https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html",
-    "date": "2026-11-05T20:11:10"
-  },
-  {
-    "source": "thn",
-    "title": "Is Your Exposure Management Platform Leaving You Exposed? Five Tests to Find Out",
-    "desc": "A critical finding can move through several security tools and still leave the organization exposed.&nbsp;\n\nThe vulnerability has a severity score, and a ticket has reached the queue. Progress then depends on information the finding may lack: who owns the system, whether attackers can reach it, what",
-    "url": "https://thehackernews.com/2026/11/is-your-exposure-management-platform.html",
-    "date": "2026-11-05T17:55:00"
-  },
-  {
-    "source": "thn",
-    "title": "OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run",
-    "desc": "OpenAI on Wednesday detailed a pipeline that employed an upcoming cyber-focused artificial intelligence (AI) model to validate and patch 948 local privilege escalation vulnerabilities in Linux for $1.2 million in API costs.\n\n\"Our prototype identified and analyzed 2,308 candidate Linux kernel finding",
-    "url": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
-    "date": "2026-11-05T17:38:54"
-  },
-  {
-    "source": "thn",
-    "title": "5 Active Cyber Threats That Put US Enterprises at Risk in October 2026",
-    "desc": "October 2026 brought another wave of cyber threats targeting US businesses, with attackers exploiting trusted platforms, legitimate authentication processes, and everyday business workflows. For enterprises, these campaigns raise the stakes beyond individual security incidents, increasing the risk o",
-    "url": "https://thehackernews.com/2026/11/5-active-cyber-threats-that-put-us.html",
-    "date": "2026-11-05T15:36:19"
-  },
-  {
-    "source": "thn",
-    "title": "Apple to Start Scanning Publicly Shared iCloud Photos and Files for Harmful Content",
-    "desc": "Apple has revealed that it plans to start checking public iCloud links for harmful content starting with iOS 27.3, iPadOS 27.3, macOS 27.3, and visionOS 27.3.\n\nThe change specifically applies to scenarios where users share iCloud content, such as photos in iCloud Photos or files in iCloud Drive, by ",
-    "url": "https://thehackernews.com/2026/11/apple-to-start-scanning-publicly-shared.html",
-    "date": "2026-11-05T14:43:28"
-  },
-  {
-    "source": "thn",
-    "title": "CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access",
-    "desc": "The Indian Computer Emergency Response Team (CERT-In) has disclosed that an artificial intelligence (AI)-assisted threat actor it tracks as Crafty Falcon is targeting organizations in the Banking, Financial Services, and Insurance (BFSI) sectors in the country.\n\nDescribing the threat as active and o",
-    "url": "https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html",
-    "date": "2026-11-05T14:12:03"
-  },
-  {
-    "source": "thn",
-    "title": "Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution",
-    "desc": "Zyxel GS1900 network switches that received the vendor's earlier fix for an actively exploited flaw are still open to the exploit attackers used, researchers at Binarly found.\n\nThe exploit lets anyone who can reach a switch's web management interface run commands on it without logging in. Zyxel has ",
-    "url": "https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html",
-    "date": "2026-11-05T12:36:33"
-  },
-  {
-    "source": "thn",
-    "title": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
-    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a medium-severity security flaw impacting multiple Apple operating systems to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.\n\nThe vulnerability in question is CVE-2024-27",
-    "url": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
-    "date": "2026-11-05T10:47:04"
-  },
-  {
-    "source": "thn",
-    "title": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
-    "desc": "A flaw in APT, the package manager for Debian and Ubuntu, allows an attacker who can modify package downloads to swap a checked package for their own.\n\nThe attacker's code then runs as root, according to advisories that&nbsp;Debian,&nbsp;Ubuntu, and&nbsp;APT's developers&nbsp;published on November 4",
-    "url": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
-    "date": "2026-11-04T22:30:46"
-  },
-  {
-    "source": "thn",
-    "title": "SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records",
-    "desc": "SonicWall has warned of two vulnerabilities impacting end-of-life Global Management System (GMS) systems that it said will not be patched.\n\nDetails of the security flaws, which affect SonicWall GMS 9.5.2 and earlier versions, are below -\n\n\n  CVE-2026-109593 (CVSS score: 9.1) - An unauthenticated fil",
-    "url": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html",
-    "date": "2026-11-04T22:30:38"
   }
 ]
