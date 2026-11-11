@@ -1,8 +1,99 @@
 [
   {
     "source": "thn",
+    "title": "Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones",
+    "desc": "A flaw in Git can let a malicious repository run an attacker's code on a computer that clones it recursively, together with its submodules. The Git project fixed it this week in Git 2.56.1, with matching fixes for the 2.50 through 2.55 series in 2.50.2, 2.51.3, 2.52.1, 2.53.1, 2.54.1 and 2.55.1.\n\nTh",
+    "url": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
+    "date": "2026-11-11T00:53:10"
+  },
+  {
+    "source": "thn",
+    "title": "SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users",
+    "desc": "An attacker exploited a remote code execution flaw in SGLang, an open-source inference engine, and ran code on one of NEAR AI's inference servers last Sunday.\n\nThe attacker could also have seen requests being processed on that server that day, including requests sent in confidential mode, the compan",
+    "url": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
+    "date": "2026-11-11T00:49:39"
+  },
+  {
+    "source": "boannews",
+    "title": "‘돈 내거나 유출’ 협박 글에 바이낸스 반박... 3억3500만명 정보 판매 주장은 사기 가능성",
+    "desc": "가상자산 거래소 바이낸스가 이용자 3억3500만명의 정보를 판다는 해킹 포럼 판매글을 두고 시스템 침해 증거가 없으며 사기 가능성이 크다고 밝혔다.블리핑컴퓨터에 따르면 샤이니헌터스(ShinyHunters) 이름을 쓴 판매자는 최근 새로 등장한 사이버범죄 포럼에 글을 올렸다. 그가 내건 값은 90만달러다. 판매 품목으로는 본인확인(KYC) 서류와 내부 인프라 정보, 계정 비밀번호, 가상자산 지갑 프라이빗 키, 거래 내역, 이메일, 전화번호를 들었다. 바이낸스엔 돈을 내거나 유출을 감수하라고 협박했다.샤이니헌터스는 갈취 조직으로 알려진",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147129",
+    "date": "2026-11-11 10:55:59"
+  },
+  {
+    "source": "boannews",
+    "title": "슈프리마, 글로벌 파트너 300명 경주 집결... AI 기반 차세대 통합보안 전략 공개",
+    "desc": "지능형 출입통제 및 물리보안 솔루션 기업 슈프리마(대표 이재원, 김한철)가 11-12일 경북 경주 라한셀렉트 호텔에서 글로벌 파트너 컨퍼런스 ‘슈프리마 글로벌 파트너 프로그램(SGPP) 2026’을 개최한다. 생체인증 원천 기술과 보안 중심 설계를 기반으로 한 차세대 통합보안 전략을 공개한다.올해 SGPP에는 북미·남미·영국·유럽·중동·인도·일본·아시아 등 8개 해외 법인과 주요 글로벌 파트너사, 본사 임직원 등 약 300명이 참여한다. 행사 개최 이래 처음으로 해외 법인 전 직원이 참석해 지역별 사업 경험과 향후 성장 전략을 공유",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147170",
+    "date": "2026-11-11 10:40:53"
+  },
+  {
+    "source": "boannews",
+    "title": "금보원 상시평가 해킹 파장... “단순 서식” vs “취약점 지도 노출”",
+    "desc": "금융권 보안 관리 실태를 점검하고 침해사고 대응을 총괄하는 금융보안원의 법정 평가 시스템 ‘정보보호 상시평가’ 시스템이 외부 해킹 공격에 뚫려 내부 자료가 유출됐다.금융보안원은 유출 데이터가 단순 행정서식과 일부 이용자 정보이며, 핵심 보안 정보는 빠져나가지 않았다고 해명했다. 반면 금융권 보안 현장에선 전자금융감독규정에 따라 의무 제출하는 상시평가 증빙자료의 민감도를 고려할 때 실제 위험도를 축소 평가했다는 지적이 나온다.장애 초기 침해 사실을 숨기고 ‘서버 개편’으로 둘러대는 등 불투명한 대응을 한 것도 논란이다. 금융보안원은",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147166",
+    "date": "2026-11-11 10:34:58"
+  },
+  {
+    "source": "boannews",
+    "title": "트럼프, CISA 국장 후보로 팔란티어 CIO 지명",
+    "desc": "도널드 트럼프 미국 대통령이 사이버보안·기반시설보안국(CISA) 국장 후보로 마이클 로사피오(Michael LoSapio) 팔란티어 최고정보책임자(CIO)를 지명했다고 9일(현지시간) 백악관이 밝혔다. 인력과 예산이 크게 줄고 공화당의 비판을 오래 받아 온 CISA로선 전환점이 될 수 있는 인사다.CISA엔 트럼프 대통령 재집권 뒤 상원 인준을 거친 국장이 한 명도 없었다. 앞서 지명된 숀 플랭키(Sean Plankey)는 의회에서 몇 달째 계류된 끝에 올해 후보에서 물러났고, 2월부터 닉 앤더슨(Nick Andersen)이 국장",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147169",
+    "date": "2026-11-11 10:24:16"
+  },
+  {
+    "source": "boannews",
+    "title": "조달청, 평가위원 189명 얼굴 사진 유출... AI 프로그램 개발 중 챗GPT에 전송",
+    "desc": "조달청이 AI 프로그램 개발과정에서 조달청 평가위원 189명의 얼굴 사진이 챗GPT에 전송됐다고 밝혔다. 이번에 유출된 개인정보는 사진이 전부지만, 가장 민감한 정보 중 하나인 얼굴 사진이 유출된 만큼 2차 피해가 우려된다.2026년 7월부터 10월까지 업무 개선을 위해 AI 프로그램을 개발하던 중 일부 평가위원(189명)의 온라인 평가 시 촬영된 얼굴 사진이 외부 생성형 AI 서비스인 ‘챗GPT’에 전송된 것으로 확인됐다.조달청은 유출 정황이 의심되는 상황에서 선행적으로 개인정보 유출 경위와 범위를 확인하고, 외부 서비스에 전송된",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147168",
+    "date": "2026-11-11 10:00:06"
+  },
+  {
+    "source": "boannews",
+    "title": "KISA 대민 웹 서비스 7곳 ‘긴급 보안 점검’으로 접속 불가",
+    "desc": "한국인터넷진흥원(KISA)의 일부 대민 웹 서비스가 긴급 보안 점검으로 사이트를 닫은 상태다. KISA 홈페이지는 10일 오전 9시 기준 일부 대민 웹 서비스 홈페이지가 접속이 불가능한 상태다. 접속이 안 되는 홈페이지는 △KISA 아카데미 △암호이용활성화 △정보보호 공시 종합 포털 △정보보호 및 개인정보보호 관리체계(ISMS-P) 누리집 △개인정보침해 신고센터 △전자문서통합지원센터 △불법스팸대응센터 등이다. 각 홈페이지에 접속하면 긴급 보안 점검 안내 화면이 표시된다. 개인정보 침해 신고센터 등 중요 대민 웹 서비스도 접속이 불가",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147162",
+    "date": "2026-11-11 09:59:01"
+  },
+  {
+    "source": "boannews",
+    "title": "안랩 연구 인력들, 디지털포렌식 챌린지 2026  ‘문제풀이’ 우수상",
+    "desc": "AI-네이티브 보안 플랫폼 기업 안랩(대표 강석균)은 자사 연구 인력으로 구성된 ‘트루에듀케이션’(TrueEducation) 팀이 ‘디지털포렌식 챌린지 2026’ 문제풀이 분야 우수상을 수상했다고 11일 밝혔다. 시상식은 10일 서울 양재 엘타워에서 열렸다.디지털포렌식 챌린지는 국가정보원이 디지털포렌식 분야의 신기술 개발과 우수 인재 양성을 위해 매년 주최하는 글로벌 대회다. ‘문제풀이’와 ‘기술공모’ 두 분야에서 일반(민간)·학생·공공 부문으로 나뉜다.문제풀이 분야에는 총 110개 팀이 출전해 AI 코딩 취약점 탐색, 가상자산 추",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147164",
+    "date": "2026-11-11 09:56:52"
+  },
+  {
+    "source": "boannews",
+    "title": "KT텔레캅, AI 돌봄사업 확대... 전국 10만 가구 응급안전 책임진다",
+    "desc": "KT텔레캅(대표 서영수)이 AI 기술을 활용한 공공 돌봄서비스 확대에 나선다. 독거노인과 장애인 등 돌봄이 필요한 전국 약 10만 가구에 응급상황 감지부터 안부 확인, 긴급구조 연계까지 지원하는 통합 안전관리 서비스를 제공한다.KT텔레캅은 6월 수주한 보건복지부 ‘응급안전안심서비스 5차 사업’의 본격 운영에 들어갔다고 11일 밝혔다. 앞서 9월까지 가정 내 장비 설치와 서비스 전용 앱 개발, 시범운영 등 사전 준비를 마쳤다.이 사업은 5년에 걸쳐 769억원의 예산이 투입되는 대규모 공공 돌봄 프로젝트다. KT텔레캅 설립 이후 수주한",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147163",
+    "date": "2026-11-11 09:54:35"
+  },
+  {
+    "source": "boannews",
+    "title": "넷앤드, SSH CA 기반 ‘SecureKey’로 소스코드에 숨은 접속키 위협 대응",
+    "desc": "늘어난 접속키 유출 사고 사례를 분석·대응하기 위해 통합 접근제어 및 계정관리(IAM) 전문 기업 넷앤드(대표 신호철)가 SSH CA 기반 동적 인증 솔루션 ‘시큐어키’(SecureKey)의 활용방안을 제안했다.최근 공격 사례를 살펴보면, 공격자들은 복잡한 제로데이(Zero-day) 취약점을 노리기보다, 개발 및 운영 환경의 접속키, DB 계정 정보 등 정적 자격 증명을 탈취해 내부망으로 연쇄 침투하는 횡적 이동(Lateral Movement)하는 방식을 주로 사용했다.넷앤드는 이에 대응하기 위해 접속키 관리 과정에서 발생할 수 있",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147108",
+    "date": "2026-11-11 09:05:00"
+  },
+  {
+    "source": "thn",
+    "title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
+    "desc": "French software company Vates VMS has warned of a critical security vulnerability in Xen Orchestra that it said is being actively exploited in the wild.\n\nThe authentication bypass flaw, which does not yet have a CVE identifier, is tracked as VSA-2026-062.\n\n\"REST cookie parsing turns authenticationTo",
+    "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
+    "date": "2026-11-10T23:42:21"
+  },
+  {
+    "source": "thn",
+    "title": "Three China-Nexus Espionage Campaigns Linked Through Sparrow Malware Ecosystem",
+    "desc": "Three distinct threat activity clusters with shared infrastructure and malware code similarities have been observed targeting telecommunications providers, government organizations, military entities, research institutions, and critical infrastructure across Latin America, Asia, and Europe over the ",
+    "url": "https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html",
+    "date": "2026-11-10T23:13:23"
+  },
+  {
+    "source": "thn",
     "title": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
-    "desc": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant.\n\nThe activity, observed by Huntress in October 2026, involves the exploitation of a chain comprising CVE-2026-105133 and CVE-2026-105134 to bypa",
+    "desc": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant.\n\nThe activity, observed by Huntress in early October 2026, involves the exploitation of a chain comprising CVE-2026-105133 and CVE-2026-105134 t",
     "url": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
     "date": "2026-11-10T21:30:55"
   },
@@ -15,7 +106,7 @@
   },
   {
     "source": "thn",
-    "title": "Fireworks AI Breach Widens to Expose Customer Billing Data and Incomplete Model Weights",
+    "title": "Fireworks AI Confirms Wider Breach Affecting Customer Datasets, Model Weights and Notion AI Chats",
     "desc": "Fireworks AI disclosed on Monday that its investigation into a security incident first reported early last month&nbsp; uncovered further malicious activity, affecting account and billing information, alongside secrets, datasets, and incomplete models for a \"limited set of accounts.\"\n\nIn a notice pub",
     "url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
     "date": "2026-11-10T21:03:59"
@@ -93,7 +184,7 @@
   {
     "source": "boannews",
     "title": "[단독] 국보연 신임 소장에  임정석 책임연구원 내정",
-    "desc": "국가보안기술연구소 신임 소장으로 임정석 책임연구원이 내정됐다.10일 보안 업계에 따르면, 이 날 국보연 최종 후보자 3인에 대한 심사와 면접을 마치고 임 연구원이 차기 소장으로 결정됐다.앞서 지난 8월 14일 한국전자통신연구원(ETRI)는 부설기관인 국보연 소장 초빙 공고를 냈다. 이후 ETRI는 9월 28일 소장후보자심사위원회를 개최해 지원자들 가운데 최종 3인의 후보자를 소장선임위원회에 추천했다. 추천된 3인은 김소정 전 국가안보실 사이버안보비서관, 손기욱 현 한국사이버안보학회장(서울과학기술대학교 컴퓨터공학과 교수), 임정석 현",
+    "desc": "국가보안기술연구소 신임 소장으로 임정석 책임연구원이 내정됐다.10일 보안 업계에 따르면, 이 날 국보연 최종 후보자 3인에 대한 심사와 면접을 마치고 임 연구원이 차기 소장으로 내부 결정됐다.앞서 지난 8월 14일 한국전자통신연구원(ETRI)는 부설기관인 국보연 소장 초빙 공고를 냈다. 이후 ETRI는 9월 28일 소장후보자심사위원회를 개최해 지원자들 가운데 최종 3인의 후보자를 소장선임위원회에 추천했다. 추천된 3인은 김소정 전 국가안보실 사이버안보비서관, 손기욱 현 한국사이버안보학회장(서울과학기술대학교 컴퓨터공학과 교수), 임정",
     "url": "https://www.boannews.com/news/articleView.html?idxno=147157",
     "date": "2026-11-10 23:26:14"
   },
@@ -142,7 +233,7 @@
   {
     "source": "boannews",
     "title": "주차장 앱 사칭 “보상 받으세요” 피싱 알림톡 보내... 외부 대행사 뚫려",
-    "desc": "모빌리티 주차 플랫폼 ‘모두의주차장’을 사칭한 악성 피싱 카카오톡 알림톡이 무차별 살포돼 이용자 주의가 요구된다.모두의주차장은 8일 카카오톡 알림톡 발송을 대행하는 외부 위탁사 ‘커넥트웨이브’(서비스명 비즈뿌리오)의 시스템 침해사고로 회사 명의를 도용한 피싱 알림톡이 비정상 발송된 사실을 확인하고 긴급 대응에 들어갔다고 10일 밝혔다. 공지에 따르면 외부 공격자는 알림톡 중개 대행사 시스템을 뚫은 뒤 ‘충전금 및 적립금 소멸 안내’라며 ‘1000 Pi 보상을 받으세요’ 등의 문구와 함께 피싱 인터넷 주소(URL)를 대량 유포했다.",
+    "desc": "모빌리티 주차 플랫폼 ‘모두의주차장’을 사칭한 악성 피싱 카카오톡 알림톡이 무차별 살포돼 이용자 주의가 요구된다.모두의주차장은 8일 카카오톡 알림톡 발송을 대행하는 외부 위탁사 커넥트웨이브의 시스템 침해사고로 회사 명의를 도용한 피싱 알림톡이 비정상 발송된 사실을 확인하고 긴급 대응에 들어갔다고 10일 밝혔다. 공지에 따르면 외부 공격자는 알림톡 중개 대행사 시스템을 뚫은 뒤 ‘충전금 및 적립금 소멸 안내’라며 ‘1000 Pi 보상을 받으세요’ 등의 문구와 함께 피싱 인터넷 주소(URL)를 대량 유포했다. 이 링크는 금융 피해나 악",
     "url": "https://www.boannews.com/news/articleView.html?idxno=147150",
     "date": "2026-11-10 16:07:14"
   },
@@ -455,69 +546,6 @@
     "date": "2026-11-09 12:30:00"
   },
   {
-    "source": "boannews",
-    "title": "[이슈 칼럼] 알고도 털린 8조4000억원: 보안의 가장 오래된 취약점, ‘사람’",
-    "desc": "지난 10월29일, 세계 최대 가상자산 거래소 바이낸스(Binance)에서 약 63억달러, 한화 약 8조4000억원 규모의 가상자산이 탈취됐다.북한 정찰총국 연계 해킹 조직 ‘트레이더트레이터’(TraderTraitor)가 배후로 지목된 이번 사건에서 가장 뼈아픈 대목은 천문학적인 피해 규모만이 아니다. 공격의 최초 침투 경로가 엔지니어의 ‘가짜 채용 면접’이었다는 사실이다.공격자는 구직 플랫폼을 통해 바이낸스 엔지니어에게 접근해 화상 면접을 진행하며 신뢰를 쌓았고, 코딩 과제를 가장한 악성 파일을 전달했다. 엔지니어는 이를 회사의",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147003",
-    "date": "2026-11-09 11:52:02"
-  },
-  {
-    "source": "boannews",
-    "title": "권태경 연세대 교수 공동연구팀, AI 취약점 자동 탐지·실시간 차단 플랫폼 ‘GenAISecurity’ 실증",
-    "desc": "과학기술정보통신부·정보통신기획평가원(IITP)의 지원을 받은 연세대학교 AI보안연구실이 ‘AI 모델 취약성 분석, 평가 기술 및 생성정보 비밀성 판단 도구 개발’ 과제의 현황 보고와 실증 행사를 11월 3일 연세대학교 신촌캠퍼스 새천년관에서 개최했다고 밝혔다.생성형 AI와 에이전틱 AI(Agentic AI)의 업무 현장 도입이 가속화되면서, AI 모델 자체를 겨냥한 보안 위협 대응이 핵심 과제로 떠오르고 있다. 학습된 기밀 데이터가 외부로 새어 나가는 ‘비밀성(Confidentiality) 위협’과 모델이 변조되어 오작동을 일으키는",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147110",
-    "date": "2026-11-09 11:44:58"
-  },
-  {
-    "source": "boannews",
-    "title": "“안경인 줄 알았는데 몰래 촬영” 스마트 글래스 사생활 침해 경보",
-    "desc": "스마트 글래스 보급 확대로 사생활 침해와 시험 부정행위 등 현실적 위협이 커졌다. 화장실이나 탈의실, 시험장 등 촬영이 제한되는 장소에서 무분별하게 이용하다간 처벌을 받을 수도 있다. 개인정보보호위원회는 9일 스마트 글래스의 기술적 특성과 개인정보 침해 위험 요인을 분석하고 이용자와 사업자가 준수해야 할 유의사항을 담은 심층 보고서를 발간했다. 개인정보위는 스마트 글래스 관련 시장이 급성장함에 따라 국내 정식 출시에 앞서 제조사와 사전 면담을 진행했다. 연내 구체적 안전 수칙을 담은 가이드라인도 배포할 방침이다.스마트 글래스는 카메",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147107",
-    "date": "2026-11-09 11:35:24"
-  },
-  {
-    "source": "boannews",
-    "title": "[한국정보공학기술사 보안을 論하다–51] AI 위협의 진화, 우리에게 주어진 현실적 과제는 무엇인가?",
-    "desc": "인공지능 모델이 세대를 거듭하며, 그 능력이 사이버 보안 위협으로 전이될 수 있다는 우려가 업계의 화두로 떠올랐다. 특히 앤트로픽의 미토스 모델이 사람의 지시 없이 스스로 취약점을 찾아내고 익스플로잇까지 생성하는 능력을 보이자, 개발사가 오용을 막을 안전장치를 아직 확보하지 못했다며 일반 공개를 보류하는 이례적인 일까지 벌어졌다. AI가 취약점을 찾아내고, 익스플로잇을 생산하고, 스스로 공격에 나선다. ‘AI발 위협’이라는 말이 더 이상 과장으로 들리지 않는다.그런데 잠시 우리의 현실을 돌아보자. 2025년, 대한민국은 사이버 사고",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147106",
-    "date": "2026-11-09 11:30:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[이슈칼럼] 클라우드 시대의 시한폭탄 ‘고정 키’, 동적 인증으로 제로트러스트 보안 강화해야",
-    "desc": "최근 클라우드 전환과 DevOps 환경의 확산으로 기업의 IT 인프라는 가상 머신(VM), 컨테이너(Kubernetes), CI/CD 파이프라인 등으로 빠르게 분산되고 있다. 이에 따라 공격 방식도 제로데이(Zero-day) 취약점 악용뿐 아니라 정당하게 발급된 관리자 계정과 SSH 키, API 토큰 등 인증정보를 탈취해 내부망 시스템에 직접 접근하는 형태로 다양해지고 있다.전통적인 비밀번호 인증은 크리덴셜 스터핑, 피싱, 키로깅 등 다양한 공격에 노출될 수 있다. 이를 보완하기 위해 도입된 SSH 공개키 인증 역시 서버별로 사용자",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147105",
-    "date": "2026-11-09 10:15:44"
-  },
-  {
-    "source": "boannews",
-    "title": "금융사·클라우드 노린 ‘아르텍스’ 공격 속여서 막는다... 숭실대, 차세대 기만 방어 실증",
-    "desc": "스스로 취약점을 찾아 침투하는 자율형 AI 해킹 도구를 가짜 서버로 유인해 공격을 무력화하는 기만 방어 기술이 국내 연구진에 의해 개발됐다.숭실대학교 AI안전성연구센터 연구팀은 자율 침투 AI ‘아르텍스’(ARTEX)를 가짜 복제 서버로 유인해 실제 서버 침해를 0건으로 차단하는 기만 기술 ‘과자집’(Gingerbread House)을 개발하고, 관련 연구 논문을 오픈액세스 학술저널 아카이브(arXiv)에 9일 공개했다.최근 AI 에이전트가 실제 사이버 침해에 쓰이기 시작했다. 7월 공개된 아르텍스는 국가 배후 해킹 조직이 2250",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147104",
-    "date": "2026-11-09 10:13:38"
-  },
-  {
-    "source": "boannews",
-    "title": "김동선 한화M&S 사장, 338만주 추가 공개매수... 소액주주 보호 나서",
-    "desc": "김동선 한화머시너리앤서비스홀딩스(한화M&S) 미래전략총괄 사장이 추가 공개매수에 나선다. 최근 주가 변동성이 확대되는 가운데 소액주주 보호와 책임경영 의지를 재차 강조하기 위한 조치라는 설명이다.한화M&S는 김 사장이 보통주 약 338만주(지분 약 4%)를 대상으로 공개매수를 실시한다고 9일 밝혔다. 공개매수 기간은 11월 9일부터 30일까지이며, 공개매수 가격은 주당 8000원이다. 총 투입 규모는 약 270억원으로 전액 김 사장의 개인 자금으로 마련된다.이번 공개매수는 이달 초 진행된 1차 공개매수에 이은 두 번째 조치다. 앞서",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147099",
-    "date": "2026-11-09 10:10:59"
-  },
-  {
-    "source": "boannews",
-    "title": "“일·쉼 균형 잡힌 일터”... 오내피플, 문체부 ‘여가친화인증’ 획득",
-    "desc": "오내피플이 임직원의 일과 여가생활 균형을 보장하는 모범적인 근로 환경을 인정받아 정부의 여가친화인증을 획득했다.오내피플은 문화체육관광부가 주최하고 지역문화진흥원이 주관하는 ‘2026년 여가친화인증’ 공모에서 신규 인증 기업으로 최종 선정됐다고 9일 밝혔다.여가친화인증은 국민여가활성화기본법 제16조에 따라 근로자가 일과 여가생활을 조화롭게 병행할 수 있도록 모범적인 여가친화경영을 실천하는 기업과 기관을 선정하는 제도다. 서류 심사와 임직원 대상 설문조사, 심층 면접조사 등을 거쳐 여가시간 확보와 활동 지원, 조직문화 형성, 경영진의",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147098",
-    "date": "2026-11-09 10:09:53"
-  },
-  {
-    "source": "boannews",
-    "title": "“AI 취약점 정보, 실전 방어로 잇는다” 이스트시큐리티, ‘프로젝트 캐노피’ 합류",
-    "desc": "AI가 자동으로 식별한 소프트웨어 취약점 정보를 실전 엔드포인트 방어 체계로 전환하기 위해 민간 보안기업과 공익 AI 보안 연합이 손을 잡았다.이스트시큐리티는 공익 AI 보안 이니셔티브인 ‘프로젝트 캐노피’(Project Canopy)에 ‘디펜딩 파트너’(Defending Partner)로 합류했다고 9일 밝혔다.프로젝트 캐노피는 비영리 사단법인 프로젝트 플라즈마가 운영하는 공익 AI 보안 연합이다. AI 기술을 활용해 소프트웨어와 디지털 인프라의 취약점을 선제 탐색하고 대응하는 것을 목표로 하며, 보안 자원이 부족한 공익·민생 인",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147100",
-    "date": "2026-11-09 10:09:07"
-  },
-  {
     "source": "thn",
     "title": "Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
     "desc": "Passwords and API keys that developers typed into commands they approved in Claude Code are sitting in public GitHub repositories, where anyone can read them.\n\nWhen a user selects \"Yes, and don't ask again,\" Anthropic's AI coding assistant can save the command, word-for-word, including the secret, i",
@@ -670,33 +698,5 @@
     "desc": "SonicWall has warned of two vulnerabilities impacting end-of-life Global Management System (GMS) systems that it said will not be patched.\n\nDetails of the security flaws, which affect SonicWall GMS 9.5.2 and earlier versions, are below -\n\n\n  CVE-2026-109593 (CVSS score: 9.1) - An unauthenticated fil",
     "url": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html",
     "date": "2026-11-04T22:30:38"
-  },
-  {
-    "source": "thn",
-    "title": "Researchers Uncover Prompt Adware Hidden in OpenAI Codex Jailbreak Toolkit",
-    "desc": "Cybersecurity researchers have disclosed details of an OpenAI Codex jailbreak bundle that's designed to modify an artificial intelligence (AI) agent's trusted instructions to insert advertisements for a third-party AI gateway.\n\nThe phenomenon has been codenamed prompt adware by Check Point Research.",
-    "url": "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html",
-    "date": "2026-11-04T21:36:43"
-  },
-  {
-    "source": "thn",
-    "title": "APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits",
-    "desc": "The Russia-linked threat actor known as APT29 is presumed to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called Plerdy SEO Tracker.\n\n\"The injected Java",
-    "url": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
-    "date": "2026-11-04T19:57:52"
-  },
-  {
-    "source": "thn",
-    "title": "Critical Rails Flaw Lets Attackers Write Server Files via Crafted ImageMagick Uploads",
-    "desc": "A critical flaw in Ruby on Rails could allow an unauthenticated attacker to write arbitrary files on an app's server by uploading a crafted file if the app processes uploads using ImageMagick. The Rails project disclosed the flaw in&nbsp;an advisory&nbsp;and fixed it in versions 8.1.4.1 and 8.0.5.2.",
-    "url": "https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html",
-    "date": "2026-11-04T17:37:04"
-  },
-  {
-    "source": "thn",
-    "title": "Xen Hypervisor Flaws Let One Malicious VM Read and Write Any Other VM's Memory",
-    "desc": "Two flaws in the Xen hypervisor allow a malicious guest virtual machine (VM) to read and write the memory of other VMs on the same host, including dom0.\n\nDom0 is the VM that, by default, has full permissions and manages the others. Patches are out, and there is no known mitigation, the Xen Project s",
-    "url": "https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html",
-    "date": "2026-11-04T17:16:27"
   }
 ]
