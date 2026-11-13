@@ -1,5 +1,159 @@
 [
   {
+    "source": "thn",
+    "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
+    "desc": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server.\n\nThe flaw, tracked",
+    "url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
+    "date": "2026-11-13T22:23:08"
+  },
+  {
+    "source": "thn",
+    "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
+    "desc": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out.\n\nOne of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need cont",
+    "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
+    "date": "2026-11-13T20:57:05"
+  },
+  {
+    "source": "thn",
+    "title": "FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+    "desc": "The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme codenamed FaceStealer in the last 18 months.\n\nA",
+    "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+    "date": "2026-11-13T19:58:58"
+  },
+  {
+    "source": "thn",
+    "title": "Trezor Confirms Hidden Implants in CryptoBilis-Sold Wallets That Can Steal Recovery Phrases",
+    "desc": "Three Trezor Safe 5 wallets bought from the reseller CryptoBilis contain an implant, an extra circuit board that can copy their recovery phrases, hardware wallet maker Trezor said yesterday.\n\nThe implant reads the phrase from the wallet's screen and sends it over the mobile network to a server contr",
+    "url": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
+    "date": "2026-11-13T19:24:20"
+  },
+  {
+    "source": "thn",
+    "title": "When an AI Agent Goes Wrong, Can You Stop It?",
+    "desc": "Suppose an AI agent is asked to sort support tickets and look up account details. A ticket contains instructions that lead the agent to export records to an unfamiliar destination. The agent can make the request because its identity has access to the records and its connected tools allow the action.",
+    "url": "https://thehackernews.com/2026/11/when-ai-agent-goes-wrong-can-you-stop-it.html",
+    "date": "2026-11-13T17:22:31"
+  },
+  {
+    "source": "thn",
+    "title": "SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users",
+    "desc": "A newly identified spying group used hacked equipment inside Asian mobile operators to intercept the calls and texts of selected people, mostly in Taiwan.\n\nEnea, a telecom and cybersecurity software company based in Stockholm, found the group's attack sources in at least six Asian countries and name",
+    "url": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
+    "date": "2026-11-13T16:40:40"
+  },
+  {
+    "source": "thn",
+    "title": "Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins",
+    "desc": "An international police operation took down servers behind Gootloader, CastleRAT and StealC this week. Criminals used the three malware tools to gain access to computers, steal passwords, and launch ransomware attacks.\n\nPolice also seized about 6.4 million stolen logins belonging to more than 40,000",
+    "url": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
+    "date": "2026-11-13T16:25:03"
+  },
+  {
+    "source": "thn",
+    "title": "Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files",
+    "desc": "An unknown threat actor has been observed targeting unpatched Check Point Security Gateways to obtain initial access via the PHP2Shell vulnerabilities and then a previously unreported local privilege escalation flaw in Gaia OS&nbsp; to deploy a backdoor called TSGA.\n\nThe activity, detailed by Check ",
+    "url": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
+    "date": "2026-11-13T13:35:49"
+  },
+  {
+    "source": "thn",
+    "title": "Hackers Exploit N-central Flaws to Infect 21 Servers, Including 19 Running Hotfix 2",
+    "desc": "N-able on Thursday said it's taking additional precautions in the wake of public disclosure of a new set of flaws tracked as 4EverAble2Shell and Agent2Shell.\n\n\"We are restricting certain N-central features and integrations,\" the company said in a Thursday update. \"These measures may affect some func",
+    "url": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
+    "date": "2026-11-13T11:13:28"
+  },
+  {
+    "source": "boannews",
+    "title": "쏘카 사내 관리 시스템 침해... 임직원·협력사 일부 개인정보 유출",
+    "desc": "쏘카 사내 관리 시스템에서 전·현직 임직원과 협력사 관계자 일부의 개인정보가 유출됐다. 쏘카는 외부 공격자가 내부 인증정보를 도용해 사내 관리 시스템에 비정상 접근한 사실을 확인하고 비상대응 체계를 가동했다고 13일 밝혔다. 사내 업무용 관리 시스템이 침해됐으며, 일반 카셰어링 서비스 이용 고객 정보는 유출 대상에 포함되지 않았다고 회사는 밝혔다.조사 결과 유출 항목은 정보주체별로 다르며, 업무 관련 일부 정보로 확인됐다. 전현직 임직원 일부의 이름과 사내 이메일 주소(퇴사자의 비활성화된 이메일 포함)가 조회됐고, 차량 이동·관리를",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147260",
+    "date": "2026-11-13 19:08:05"
+  },
+  {
+    "source": "boannews",
+    "title": "[단독] 협업 도구 ‘두레이’ 해킹... API 서비스 차단",
+    "desc": "협업 플랫폼 두레이(Dooray)에서 침해 정황이 포착됐다. 이로 인해 두레이는 API 서비스를 중단한 상태다.NHN두레이는 13일 “이날 새벽 외부인 계정 접근 시도가 확인돼 민간 및 공공 고객사 계정 보호 및 추가 피해 예방을 위한 긴급 보안 조치를 진행했다”며 “이에 따라 기존 서비스 API 및 관리자 API 키를 모두 폐기했으며, 현재 해당 API를 이용할 수 없다”고 공지했다.API 서비스의 안정화 작업을 마치고 안정성이 확보되는대로 서비스를 재개할 방침이다. 현재 API 키 혹은 개인정보 유출 여부는 파악 중이다. 회사",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147258",
+    "date": "2026-11-13 18:43:16"
+  },
+  {
+    "source": "boannews",
+    "title": "[2026 SSL VPN 리포트] 원격접속 넘어 제로트러스트로... SSL VPN 시장, 전환 기로에 서다",
+    "desc": "코로나 팬데믹 이후 원격 근무나 재택 근무가 일상화됐다. 집이나 카페에서 다양한 기기로 사내 망에 접속하게 되면서 정보보호를 위해 관리해야 할 접점도 늘었다. 코로나19는 잠잠해졌지만, 일하는 방식이 모바일과 클라우드 환경 중심으로 변하는 추세는 되돌릴 수 없는 상황이다. 인공지능(AI) 서비스와 업무용 AI 에이전트 활용이 늘어나면서 더더욱 폐쇄망 안에 업무 환경을 가두기 어렵게 됐다.최근엔 사물인터넷(IoT)이나 산업 설비, CCTV, 드론 관제센터 연결 등 새로운 비대면 접속 수요도 늘어나고 있다. 이에 따라 사내 망과 외부",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147259",
+    "date": "2026-11-13 18:37:24"
+  },
+  {
+    "source": "boannews",
+    "title": "씨엠아이텍, ‘태국 시큐테크 2026’서 비접촉 얼굴·홍채 생체인증 솔루션 공개",
+    "desc": "생체인증 전문기업 씨엠아이텍(CMITech)이 18-20일 태국 방콕 퀸 시리킷 국립컨벤션센터(QSNCC) 3·4홀에서 열리는 국제 보안 전시회 ‘Secutech Thailand 2026’에 참가해 동남아 물리보안 및 신원인증 시장 공략에 나선다.씨엠아이텍은 상업시설과 산업 현장의 출입통제 및 신원확인에 최적화된 비접촉 생체인증 솔루션과 함께 자사 기술이 적용된 태국 전자여권 프로젝트 등 국가 신분 인증 사업 레퍼런스도 함께 소개한다. 주력 출품작은 △이동 중인 사용자를 멈춤 없이 식별하는 워크스루형 얼굴인식 단말기 ‘NOVAFAC",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147257",
+    "date": "2026-11-13 17:40:47"
+  },
+  {
+    "source": "boannews",
+    "title": "“AI 기반 안전관리 혁신 성과”... KT, 대한민국 인터넷대상 국무총리상 수상",
+    "desc": "KT(대표 박윤영)가 인공지능(AI)과 데이터 기반으로 국가 핵심 통신 인프라의 안전성을 높였다는 평가를 받았다. KT는 AI와 데이터 기반의 통신시설 안전관리 혁신 성과를 인정받아 ‘제21회 대한민국 인터넷대상’ 인터넷 비즈니스 부문 국무총리상을 수상했다고 13일 밝혔다. 대한민국 인터넷대상은 인터넷 산업 발전과 디지털 혁신에 기여한 기업과 기관을 선정해 시상하는 정부 포상이다. KT는 초고속 인터넷망을 활용해 전국 자사 빌딩에 ICT 기반 설비관리와 24시간 3중 원격관제·모바일 안전관리 체계를 구축하고, 이를 화재예방 인터넷",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147255",
+    "date": "2026-11-13 15:55:35"
+  },
+  {
+    "source": "boannews",
+    "title": "그룹아이비, 싱가포르 경찰청 ‘암호화폐 사기 예방 작전’ 참여",
+    "desc": "그룹아이비(지사장 김기태)가 싱가포르 암호화폐 사기 예방 작전에 참여해 400억원에 달하는 피해 예방에 기여했다. 그룹아이비는 13일 국제 사이버 범죄 대응 및 사기 피해 예방을 위해 싱가포르 경찰청(SPF) 사이버사령부가 주요하는 암호화폐 사기 예방 작전 ‘오퍼레이션 스피어’에 참여했다고 밝혔다. 작전을 통해 그룹아이비는 사기 피해자 1115명 보호 및 잠재적 피해액 3632만싱가폴달러(한화 약 386억2000만원)을 예방하는 성과를 냈다. 오퍼레이션 스피어는 암호화폐 거래 정보를 분석해 사기 피해 가능성이 있는 사람을 조기에 식",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147253",
+    "date": "2026-11-13 15:05:42"
+  },
+  {
+    "source": "boannews",
+    "title": "광주 동구 마을공동체 앱 ‘우리동네do반장’ 2101명 개인정보 유출",
+    "desc": "전남광주 동구가 운영하는 마을공동체 참여 앱에서 2000명 이상의 개인정보 유출 사고가 발생했다. 동구청은 동구 마을공동체 참여 앱 ‘우리동네do반장’ 내 공지사항을 통해 “‘우리동네do반장’ 관리자 페이지에 접속 인증이 적용되지 않은 보안 취약점이 있어 외부에서 관리자 페이지에 접속, 개인정보를 유출한 사실이 5일 확인됐다”고 밝혔다.공지에 따르면 유출된 개인정보 건수는 2101명분이다. 유출 개인정보 항목은 △이름 △휴대전화번호 △닉네임 △행정동명 △포인트정립액 등이다. 주민등록번호 등 민감정보나 금융 관련 정보는 시스템에서 관",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147251",
+    "date": "2026-11-13 14:06:41"
+  },
+  {
+    "source": "boannews",
+    "title": "해킹 막은 메이플스토리 유니버스 “가상자산 유출 없어”",
+    "desc": "메이플스토리 유니버스가 서버 침해사고에 조기 대응해 가상자산 탈취 피해를 막았다. 보안 업계에서는 외부 서버와 개발자 API 키 등 ‘비인간 자격증명’(Non-Human Identity) 관리가 서비스 안전을 좌우한다는 점을 보여준 사례라고 말한다.메이플스토리 유니버스 운영진은 13일 공식 SNS 공지에서 전날 발생한 오프체인 서버 인프라 일부의 비인가 외부 접근을 확인하고 즉시 차단 조치를 완료했다고 밝혔다. 운영진은 추가 피해를 막기 위해 12일 오후 1시(한국 시간) 전체 서비스를 긴급 점검으로 전환했다.메이플스토리 유니버스는",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147252",
+    "date": "2026-11-13 14:04:38"
+  },
+  {
+    "source": "boannews",
+    "title": "젠슨 황 사임, CEO 불륜 너머 ‘AI 반도체 안보전’",
+    "desc": "젠슨 황 엔비디아 최고경영자(CEO)가 사내외 불륜 스캔들로 결국 대표직에서 물러난 가운데, 보안 업계에서는 이번 퇴진의 이면에 AI 가속기 확보를 둘러싼 미·중 간 물밑 정보전과 사법적 파국을 피하기 위한 미 방첩당국의 ‘경고성 봉합’이라는 고도의 안보 계산등이 깔려 있다는 해석이 나온다.엔비디아는 12일(현지시간) 황 전 CEO가 사장·CEO·이사직에서 즉시 사임했다고 발표했다. 이사회는 콜레트 크레스 최고재무책임자(CFO)를 임시 CEO로, 하비 존스 이사를 창사 이래 첫 의장으로 선임하고 정식 후임 인선에 착수했다.황 전 C",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147249",
+    "date": "2026-11-13 14:01:28"
+  },
+  {
+    "source": "boannews",
+    "title": "“사이버 범죄 대응 역량 기여”…  두나무, ‘2026 사이버치안대상’ 경찰청장 감사장",
+    "desc": "디지털자산 거래소 업비트를 운영하는 두나무(대표 오경석)는 FDI팀 김대현 연구원이 ‘2026 사이버치안대상’ 시상식에서 경찰청장 감사장을 받았다고 13일 밝혔다.지난 6일 경찰청이 주최한 사이버치안대상 시상식은 사이버치안 발전에 기여한 유공자들의 공적을 기리는 자리로 마련됐다. 김대현 연구원은 디지털자산 관련 범죄 대응을 위한 기술과 전문 지식을 공유하고 수사기관의 범죄 수사 지원 및 교육 활동에 기여한 공로를 인정받았다.김대현 연구원은 두나무 FDI팀 소속으로 디지털자산 관련 범죄 대응을 위한 기술적 전문성을 바탕으로 수사 지원",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147250",
+    "date": "2026-11-13 13:38:49"
+  },
+  {
+    "source": "boannews",
+    "title": "[더존비즈온 사태] 11월13일 유출 의심 기업 현황... 13곳 기업·기관 유출 가능성",
+    "desc": "더존비즈온 침해사고로 추가로 13곳의 기업 및 기관에서 개인정보 유출 가능성이 제기됐다. 더존비즈온 침해사고로 인한 개인정보 유출 가능성 공지를 최근 업로드한 기업 및 기관은 △광주광역시 관광공사 △영산대학교 산학협력단 △한국제품안전관리원 △신진에스엠 △회계법인 리안 △THE열심히 △건강한신체활동연구소 △스몹컴퍼니 △KAC공항서비스 △노원문화재단 도서관기획실 △발렉스특수물류 △행복마루 △전북콘텐츠융합진흥원 등 13곳이다.유출된 항목을 보면 주로 더존비즈온 백업 서비스에 저장된 개인정보들에서 유출 가능성이 나왔다. 일부 기관의 경우",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147248",
+    "date": "2026-11-13 13:38:01"
+  },
+  {
+    "source": "boannews",
+    "title": "한국항공보안학회, 16일 국회서 ‘고도화되는 드론 테러 대응’ 토론회 개최",
+    "desc": "전 세계적으로 드론을 악용한 하이브리드 테러 위협이 고도화되는 가운데, 국가중요시설과 공항의 보안 체계를 재점검하고 실효성 있는 방호 대책을 모색하는 정책 토론회가 국회에서 열린다.한국항공보안학회(회장 소대섭)는 16일 서울 여의도 국회의원회관 제6간담회실에서 ‘고도화되는 드론 테러, 국가 항공보안의 패러다임 대전환’을 주제로 토론회를 개최한다고 밝혔다. 더불어민주당 부승찬 의원실, 항공안전기술원과 공동 주최하며 학회 산하 대테러·대드론 전략연구위원회(위원장 김명진 강원대 교수)가 총괄한다.토론회에는 국방부·경찰청·국토교통부 등 관",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147245",
+    "date": "2026-11-13 13:36:20"
+  },
+  {
+    "source": "boannews",
+    "title": "토스, ‘금융보안 AI 해킹방어 대회’ 대상... 토스증권도 최우수상",
+    "desc": "모바일 금융 서비스 토스가 ‘금융보안 AI 해킹 방어 대회’ 대상을 받았다. 토스증권도 최우수상을 수상했다. 토스계열은 6년 연속 이 대회 정상을 지켰다.13일 비바리퍼블리카(대표 이승건)는 이 같은 수상 소식을 전했다. 이 대회는 금융보안원이 주최하고 금융위원회가 후원하는 국내 대표 금융권 보안 대회다. 기존 ‘금융보안 위협분석 대회’(FIESTA)를 인공지능(AI)을 활용한 공격과 방어 역량을 검증하는 실전형 대회로 올해 새롭게 개편한 것으로, 토스는 개편 이후 열린 첫 대회에서 정상에 올랐다.올해 대회는 본선에 오른 10개 팀",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147247",
+    "date": "2026-11-13 12:20:21"
+  },
+  {
     "source": "boannews",
     "title": "[카드뉴스] \"우리 회사는 안 털렸는데 월급 명세서가 샜다?\"… 수만 개 기업 덮친 'ERP 백업망'",
     "desc": "개별 기업이 직접 해킹당하지 않았음에도, 수만 개 기업의 급여와 장부를 통합 보관하던 대형 ERP 백업망이 제로데이 공격에 뚫리며 연쇄 유출 위기가 발생했다. 백업 소프트웨어의 보안 취약점 하나가 전체 고객사 백본 침투로 이어져 임직원의 연봉, 계좌번호, 인사 기록을 동시에 노출시키는 공급망 위협을 드러냈다. 연쇄 붕괴를 막기 위해 주 전산망과 백업 시스템을 물리적으로 분리하는 '불변(Immutable) 오프라인 격리' 구축과 모듈별 데이터 접근 권한 분산이 필수적이다.",
@@ -448,104 +602,6 @@
     "date": "2026-11-11 16:54:58"
   },
   {
-    "source": "boannews",
-    "title": "유니뷰, 국내 파트너사 초청 중국 항저우 본사 투어 개최",
-    "desc": "글로벌 AIoT 솔루션 기업 유니뷰(한국 지사장 유키 공)가 국내 파트너사 협력 확대를 위해 중국 항저우 본사에서 초청 행사를 열었다. 본사 경영진 교류와 제품·기술 체험 등 다양한 프로그램을 마련해 국내 협력사들과 향후 사업 방향을 논의했다.유니뷰는 4-6일 2박 3일 일정으로 초청 행사를 진행했다. 국내 파트너사들이 유니뷰의 글로벌 사업 운영 방식과 기술 개발 현황을 직접 살펴보고, 본사 협력 관계를 강화할 수 있도록 기획됐다.행사 기간에는 유니뷰 본사 주요 경영진이 참석해 한국 시장의 사업 방향과 향후 협력 가능성을 논의했다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147191",
-    "date": "2026-11-11 16:50:41"
-  },
-  {
-    "source": "boannews",
-    "title": "포티넷 “멈추면 수백만 달러 증발... OT 보안, 비즈니스 성장 전략”",
-    "desc": "“핵심 생산 라인이 단 1시간만 멈춰도 수백만 달러에 달하는 막대한 손실이 발생합니다. 운영기술(OT) 보안은 설비 가동을 가로막는 통제가 아니라, 다운타임 없이 안전한 디지털 전환을 가능케 하는 기업의 필수 성장 전략입니다.”레베카 첸 포티넷 북아시아 OT 사업개발 총괄은 11일 서울 서초구 JW메리어트 호텔 서울에서 열린 ‘포티넷 코리아 OT 사이버보안 서밋 2026’ 기조연설에서 이같이 강조했다.이번 행사는 포티넷코리아가 국내 제조 및 국가 핵심 기반시설 관계자들을 초청해, AI와 디지털 전환 환경에서 생산 가용성을 해치지 않",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147188",
-    "date": "2026-11-11 16:21:27"
-  },
-  {
-    "source": "boannews",
-    "title": "[국방보안 칼럼] AI가 취약점을 쏟아내는 시대, 인간은 심연을 탐색한다",
-    "desc": "LLM 기반 취약점 탐지 도구는 이미 인간을 앞서기 시작했다.2025년 8월 DARPA AI 사이버 챌린지(AIxCC) 결선에서 참가 시스템들은 5,400만 줄의 코드에 심어진 합성 취약점 63개 중 54개, 즉 86%를 자율적으로 찾아냈다. 1년 전 준결승의 탐지율이 37%였으니 1년 만에 두 배 이상 뛴 셈이다. 여기에 주최 측이 심지도 않은 실제 취약점 18건을 추가로 발견했고, 대회가 끝난 뒤에도 이 시스템들은 2026년 3월까지 Android, Linux, SQLite, Redis 등 실제 코드베이스에서 83건의 취약점을",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147187",
-    "date": "2026-11-11 15:57:53"
-  },
-  {
-    "source": "boannews",
-    "title": "유럽 슈퍼마켓 냉장 시설 해킹... 과기정통부, 국내 콜드체인 업계 보안 점검 나서",
-    "desc": "최근 프랑스와 벨기에 등 유럽에서 냉장 설비를 겨냥한 해킹 공격이 이어져 우려가 커지는 가운데, 정부가 국내 현장 점검에 나섰다. 과학기술정보통신부는 11일 주요 콜드체인 관련 기업 정보보호최고책임자(CISO)와 국내 실태 점검 및 긴급 조치를 위한 간담회를 열었다. 이 자리에서 과기정통부는 제조사 및 설비 사용자용 긴급 보안대책 조치를 권고하는 한편, 알기 쉬운 보안수칙 제작·전파, 한국인터넷진흥원(KISA)을 통한 상담·안내 콜센터 운영 등 정부의 초동조치 사항을 안내했다. 또 콜드체인 업계의 주요 설비 활용 현황, 제조사 보안",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147186",
-    "date": "2026-11-11 15:45:43"
-  },
-  {
-    "source": "boannews",
-    "title": "[카드뉴스] \"FAQ 검색창 눌렀을 뿐인데\"… 1400만 명 털린 '비로그인 API 사각지대'의 배신",
-    "desc": "단순 안내 목적인 웹사이트 FAQ 검색창의 비로그인 API 결함을 통해 고객 1,400만 명의 데이터가 유출되는 사고가 발생했다. 외부 공개 창구가 내부 핵심 데이터베이스와 직접 연동되면서 인증 없는 조작 쿼리가 DB로 직행하는 보안 사각지대가 형성되었다. 피해 예방을 위해 공개 게시판과 메인 DB를 완전히 분리하고, 비인가 쿼리를 즉시 폐기하는 캐시 전용 서버 운영 및 파라미터 무결성 검증이 요구된다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147185",
-    "date": "2026-11-11 15:17:22"
-  },
-  {
-    "source": "boannews",
-    "title": "금보원 해킹, ‘가짜 금감원 계정’ 만들어 침투했다... ‘마스킹’ 없는 개인정보 유출 가능성도",
-    "desc": "금융보안원 상시평가 시스템에 접근해 정보를 빼돌린 해커는 시스템 취약점을 악용해 금융감독원 권한을 가진 ‘허위 계정’을 생성, 위장해 침투한 것으로 11일 드러났다. 유출된 정보는 200여건의 행정서식이며 대부분 비식별화(마스킹) 조치가 완료된 정보지만, 일부 데이터는 마스킹되지 않은 채 공유돼 개인정보가 평문으로 노출됐을 가능성도 나왔다. 금융보안원 상시평가 시스템은 금융사들이 고객 신용 정보를 제대로 관리하고 있는지 평가한다. 각 금융사가 평가 결과와 증적을 제출하면 평가가 이뤄지는 식이다. 금융감독원도 이 자료를 열람할 필요가",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147183",
-    "date": "2026-11-11 15:08:29"
-  },
-  {
-    "source": "boannews",
-    "title": "냉장고가 ‘스팸메일 발송기’로... 식량 테러 이어 범죄 인프라 악용",
-    "desc": "최근 유럽 각지에서 슈퍼마켓 냉동·냉장고 온도가 원격 조작되는 ‘식량 공급망 테러’가 잇따르는 가운데, 냉장 설비 제어기가 스팸메일 발송기 및 인터넷 트래픽 세탁 통로로 악용된 정황이 포착됐다. 생활에 밀접한 장비들에 대한 사이버 공격으로 평범한 일상 자체가 흔들릴 우려가 커진다. 시큐리티스코어카드(한국 지사장 우청하) 위협 인텔리전스 조직 스트라이크(STRIKE) 팀은 슈퍼마켓이나 냉장·냉동 창고에서 널리 쓰이는 ‘엑스웹 프로’(XWEB PRO) 제어기가 악용되고 있다는 내용의 보고서를 11일 공개했다.냉장 설비에 널리쓰이는 ‘엑",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147184",
-    "date": "2026-11-11 15:07:54"
-  },
-  {
-    "source": "boannews",
-    "title": "씨게이트, SSD 속도와 HDD 용량 결합 ‘파이어쿠다 포지’ 출시",
-    "desc": "씨게이트 테크놀로지(Seagate Technology)가 솔리드 스테이트 드라이브(SSD)의 데이터 처리 속도와 하드 디스크 드라이브(HDD)의 대용량 저장 기능을 결합한 새로운 스토리지 제품을 선보였다.지능형 데이터 관리 플랫폼 ‘알케미’(Alkemi)를 처음 적용한 ‘파이어쿠다 포지’(FireCuda™ Forge)다. 사용자의 데이터 이용 패턴에 따라 저장 공간을 자동으로 관리한다.최근 고사양 게임과 4K 영상, AI 기반 콘텐츠 제작이 보편화되면서 개인이 저장하고 관리하는 데이터 규모도 빠르게 커지고 있다. 시장조사업체 IDC",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147182",
-    "date": "2026-11-11 14:38:12"
-  },
-  {
-    "source": "boannews",
-    "title": "2026년 상반기, 피싱 하던 카톡 계정 17만6000개 차단됐다",
-    "desc": "카카오가 2026년 1월부터 6월까지 6개월간, ‘카카오톡’에서 약 17만6000개의 계정이 상대방으로부터 차단됐으며, 약 3만5000개의 계정이 신고를 받았다고 밝혔다. 이는 전년 동기 대비 차단은 약 6% 증가하고, 신고는 약 17% 감소한 수치다.카카오톡은 피싱 범죄로부터 이용자를 보호하기 위해 ‘글로브 시그널’, ‘스트레인저 시그널’, ‘페이크 시그널’ 기능을 제공하고 있다. 글로브 시그널과 스트레인저 시그널은 지인을 사칭한 피싱으로부터 사용자를 보호하며, 페이크 시그널은 타인이나 기관 등을 사칭한 피싱으로부터 사용자를 보호",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147181",
-    "date": "2026-11-11 14:13:07"
-  },
-  {
-    "source": "boannews",
-    "title": "크랜베리, CCTV 사각지대 없애는 AI 음원분석 솔루션으로 CES 2027 혁신상 수상",
-    "desc": "AI 음원분석 기술 전문기업 크랜베리(대표 이은혜)가 자체 개발한 통합 솔루션 ‘소브릭’(SOBRIC)으로 CES 2027 혁신상을 수상했다. 영상 중심의 기존 안전관제에 소리 분석 기술을 결합해 카메라 사각지대에서 발생하는 위험까지 감지할 수 있도록 한 점이 특징이다.크랜베리는 ‘SOBRIC: Multimodal Edge Sound-AI Safety System’이 미국 소비자기술협회(CTA)가 주관하는 ‘CES 혁신상’(CES Innovation Awards 2027) 인공지능 부문 수상작으로 선정됐다고 밝혔다. CES 혁신상은",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147179",
-    "date": "2026-11-11 13:32:22"
-  },
-  {
-    "source": "boannews",
-    "title": "파이오링크, Wi-Fi 7 무선 AP 출시... 최대 1280대 기기 동시 접속 지원",
-    "desc": "파이오링크(대표 조영철)가 최신 무선랜 규격 Wi-Fi 7을 지원하는 무선 액세스 포인트(AP)를 출시했다. 파이오링크는 11일 Wi-Fi 7을 지원하는 AP ‘티프론트(TiFRONT)-CA2110E’를 출시했다고 밝혔다. 티프론트-CA2110E는 실내 고밀도 환경을 위해 설계된 AP로, 사무공간, 교육시설, 의료기관, 제조현장, 공용공간처럼 사람이 몰리는 실내에서도 빠르고 안정적인 무선 연결을 제공한다. AP 한 대에 최대 1280대의 기기가 동시에 접속할 수 있다.‘더 빠른 전송, 더 낮은 지연, 더 안정적인 연결’을 지향한다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147178",
-    "date": "2026-11-11 13:14:39"
-  },
-  {
-    "source": "boannews",
-    "title": "파이오링크, 3분기 매출 28%↑... “모든 사업 호조세”",
-    "desc": "파이오링크가 3분기 전 사업 매출이 호조세를 보이며 실적이 전년 동기 대비 개선됐다. 분기 영업이익은 5배 뛰었고, 1~3분기 누적 영업이익은 흑자 전환했다. 파이오링크는 올해 3분기 연결 기준 매출 188억원, 영업이익 26억원을 기록했다고 11일 밝혔다. 매출은 전년 동기 대비 28% 늘었고, 영업이익은 지난해 3분기 5억원에서 5배 이상 늘었다. 당기순이익은 16억원을 기록했다.3분기에 거둔 호실적에 힘입어 1~3분기 누적 영업이익은 10억원으로 흑자 전환하는데 성공했다. 지난해 1~3분기 누적 기준 영업이익은 10억원의 적자",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147176",
-    "date": "2026-11-11 13:07:32"
-  },
-  {
-    "source": "boannews",
-    "title": "벨로크, 안티드론 엣지 트래커 ‘비-헬리오스’ KC인증",
-    "desc": "융합보안 전문기업 벨로크(대표 이정현)가 안티드론 궤적추적 및 복합 수신 장치 ‘비-헬리오스’(B-Helios)의 국가통합인증(KC) 적합 등록을 최종 완료했다고 11일 밝혔다. 공공 및 국방 안티드론 시장을 대상으로 본격적 수주 확대에 나선다.이번 KC인증 완료는 공항, 원전, 발전소, 국방 등 국가중요시설 입찰 및 현장 설치에 필요한 법적·기술적 자격을 확보했음을 의미한다. 벨로크는 이번 인증을 통해 상시 발주되는 공공 및 방산 안티드론 프로젝트에 비-헬리오스를 즉각 투입할 수 있는 실전 배치 체계를 갖추게됐다. 수주하면 빠른",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147177",
-    "date": "2026-11-11 13:04:48"
-  },
-  {
-    "source": "boannews",
-    "title": "메시지 파일 하나 열자 인증값 유출... 마이크로소프트, 악용된 아웃룩 결함 등 1094개 패치",
-    "desc": "마이크로소프트가 11월 정기 보안 업데이트로 자사 제품 취약점 1094개를 고쳤다. 이 가운데 아웃룩 결함 하나는 이미 실제 공격에 쓰였다고 마이크로소프트가 밝혔다.시큐리티위크는 10일(현지시각) 마이크로소프트 보안 권고를 바탕으로 이번 업데이트 내용을 정리했다. 악용된 결함은 CVE-2026-124194로, 아웃룩이 위험할 수 있는 동작을 하기 전에 사용자에게 경고하지 않는 문제다. 마이크로소프트는 이를 위장(스푸핑) 결함으로 분류하고 위험도를 ‘보통’으로 매겼다.인증을 거치지 않은 공격자가 특수하게 조작한 메시지 파일을 보내고,",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147159",
-    "date": "2026-11-11 12:52:49"
-  },
-  {
     "source": "thn",
     "title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
     "desc": "French software company Vates VMS has warned of a critical security vulnerability in Xen Orchestra that it said is being actively exploited in the wild.\n\nThe authentication bypass flaw, which does not yet have a CVE identifier, is tracked as VSA-2026-062.\n\n\"REST cookie parsing turns authenticationTo",
@@ -635,68 +691,5 @@
     "desc": "Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild.\n\nThe high-severity vulnerability, assigned the CVE identifier CVE-2026-125350 (CVSS score: 8.8), has&nbsp;been described as a use-after-free bug in the XML com",
     "url": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
     "date": "2026-11-10T12:22:54"
-  },
-  {
-    "source": "thn",
-    "title": "N-able Takes N-central Cloud Offline After Researcher Discloses 33 Zero-Days with PoC Exploits",
-    "desc": "N-able said it has taken N-central Hosted Environments offline and is urging on-premises customers to shut down their servers until further notice following the public disclosure of over 30 vulnerabilities collectively tracked as Able2Shell.\n\n\"As a precautionary measure, we are temporarily taking ou",
-    "url": "https://thehackernews.com/2026/11/n-able-takes-hosted-n-central-offline.html",
-    "date": "2026-11-10T12:14:36"
-  },
-  {
-    "source": "thn",
-    "title": "CISA Warns of Active Exploitation of OpenSSH, GPUStack, FreeSWITCH, and IBM Flaws",
-    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added four security flaws impacting GPUStack, SignalWire FreeSwitch, OpenBSD OpenSSH, and IBM Aspera Faspex to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe vulnerabilities ar",
-    "url": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html",
-    "date": "2026-11-10T12:01:42"
-  },
-  {
-    "source": "thn",
-    "title": "Hackers Exploit Qubole's Trusted AWS Access to Breach Customer Accounts and Steal Data",
-    "desc": "An attacker broke into AWS accounts belonging to multiple Qubole customers between October 14 and October 26 and stole stored secrets and data, cloud security company Wiz said today.\n\nThe attacker used credentials for an AWS account that Qubole's platform uses to reach those customers. How the attac",
-    "url": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html",
-    "date": "2026-11-09T23:21:21"
-  },
-  {
-    "source": "thn",
-    "title": "Hackers Compromise Ethersphere's bee-js and Swarm Desktop to Deliver Wallet-Stealing Malware",
-    "desc": "Attackers used the Ethersphere project's own release automation to publish malicious versions of two of its tools for the Swarm decentralized storage network: bee-js 13.3.0 and Swarm Desktop 0.56.2.\n\nBoth releases download and run code built to steal the wallet key that Swarm Desktop keeps for its n",
-    "url": "https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html",
-    "date": "2026-11-09T23:06:28"
-  },
-  {
-    "source": "thn",
-    "title": "Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia",
-    "desc": "The South Asian cyber espionage group known as Bitter (aka APT-C-08, APT-Q-37, Hazy Tiger, Orange Yali, T-APT-17, and TA397) has been observed targeting South Asian organizations with a previously unreported remote access trojan called PapRAT.\n\n\"PapRAT has both C++ and Rust implementations,\" Fortine",
-    "url": "https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html",
-    "date": "2026-11-09T20:01:29"
-  },
-  {
-    "source": "thn",
-    "title": "⚡ Weekly Recap: SSHole Exploited, APT Root RCE, Robot Takeovers, 15K Hacked Sites, and More",
-    "desc": "A system doesn't always need a complicated bug to let someone in. Sometimes, a blank password is enough. That's one of the bigger stories this week. And it gets worse when the tools meant to keep systems updated or running safely become part of the attack.\n\nElsewhere, attackers are hiding inside nor",
-    "url": "https://thehackernews.com/2026/11/weekly-recap-sshole-exploited-apt-root.html",
-    "date": "2026-11-09T18:58:25"
-  },
-  {
-    "source": "thn",
-    "title": "Default 'admin:admin' Server Password Helps Researchers Hack Two Automakers, Unlock and Start Cars",
-    "desc": "The login systems behind two car brands' mobile apps could be taken over completely, two security researchers found, allowing them to access any customer's account and, for an owner with a connected car, unlock the doors and start the engine.\n\nBoth apps signed customers in through ForgeRock, an iden",
-    "url": "https://thehackernews.com/2026/11/default-adminadmin-server-password.html",
-    "date": "2026-11-09T16:57:53"
-  },
-  {
-    "source": "thn",
-    "title": "Web3Auth Flaw Exploited to Steal Keplr Crypto, Provider Empties Other Wallets for Safety",
-    "desc": "Some people who set up a Keplr crypto wallet with their Google or Apple account have had money stolen by an attacker.\n\nKeplr uses a company called Web3Auth to run that Google and Apple sign-in. The attacker used a security flaw at that company to reach the wallets, both companies said late last week",
-    "url": "https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html",
-    "date": "2026-11-09T16:26:25"
-  },
-  {
-    "source": "thn",
-    "title": "LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks",
-    "desc": "Everyone running LNbits, a free, open-source Bitcoin Lightning wallet system, should shut down their servers now because of a wave of attacks, the project said yesterday.\n\nIt has several security fixes to release and asked operators to be careful until they are out. One operator said new accounts us",
-    "url": "https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html",
-    "date": "2026-11-09T15:31:21"
   }
 ]
