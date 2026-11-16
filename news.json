@@ -210,6 +210,244 @@
     "date": "Fri, 06 Nov 26 12:00:00 +0000"
   },
   {
+    "source": "thn",
+    "title": "Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches",
+    "desc": "Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting to deploying autonomous multi-agent offensive frameworks like ARTEX, CAIRN, CyberStrikeAI, and PentAGI to execute multi-stage intrusions at greater operational velocity.\n\n",
+    "url": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
+    "date": "2026-11-16T19:30:00"
+  },
+  {
+    "source": "thn",
+    "title": "⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",
+    "desc": "A default password opened doors it never should have. A trusted update delivered malware. Even a security feature became a way to break in. Different stories, same problem: the things meant to protect us aren't always doing their job.\n\nMeanwhile, AI is making bug hunting faster, old flaws are still ",
+    "url": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
+    "date": "2026-11-16T18:57:20"
+  },
+  {
+    "source": "thn",
+    "title": "Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login",
+    "desc": "Six flaws in Danfoss AK-SM800A refrigeration controllers could let a remote attacker take over a controller without logging in, Dutch security consultancy Midnight Blue said earlier this week.\n\nNo patch is available, and the researchers say the newest firmware, version 5.4.0, does not fix the flaws.",
+    "url": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
+    "date": "2026-11-16T18:04:21"
+  },
+  {
+    "source": "thn",
+    "title": "Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware",
+    "desc": "Cybersecurity researchers have disclosed details of a new variant of CoffeeLoader, a malware designed to deliver additional payloads to infected machines.\n\n\"On launch, the NSIS-based installer executable dropped a file named '7z.dll' into a temporary directory and ran it through rundll32.exe,\" Kaspe",
+    "url": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
+    "date": "2026-11-16T18:03:18"
+  },
+  {
+    "source": "thn",
+    "title": "SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
+    "desc": "A financially motivated threat activity cluster tracked as REF3364 has been attributed to a Linux-focused cryptocurrency mining operation that tampers with the readings used to detect high GPU workloads.\n\nCentral to the intrusion is a toolkit called SANSAR, a Rust-based orchestrator that receives co",
+    "url": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
+    "date": "2026-11-16T15:02:57"
+  },
+  {
+    "source": "thn",
+    "title": "Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
+    "desc": "Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records.\n\nThe records, which Amazon's threat intelligence team captured with decoy servers, describe stolen k",
+    "url": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
+    "date": "2026-11-16T13:04:21"
+  },
+  {
+    "source": "thn",
+    "title": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
+    "desc": "An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server.\n\nThe activity, documented by Kaspersky's ICS CERT team after it was contacted by the affected developer",
+    "url": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
+    "date": "2026-11-16T12:23:34"
+  },
+  {
+    "source": "boannews",
+    "title": "‘세기의 개혁’ 내건 독일... 연방정보국, 해외 위협 보고 넘어 해킹·서버 차단까지",
+    "desc": "독일 연방의회가 13일(현지시각) 정보기관에 외국 시스템 침투와 적대 세력 공급망 교란, 적대 국가 해킹 조직 서버 차단 권한을 주는 법안을 통과시켰다.표결 결과는 찬성 308표, 반대 190표, 기권 71표다. 전후 최대 규모의 정보기관법 개편으로 불리는 이 법안은 프리드리히 메르츠 총리 내각이 초안을 승인한 지 몇 달 만에 의회 문턱을 넘었다.니나 바르켄(Nina Warken) 총리실장은 처음 이 권한을 제안할 때 정보기관이 드론 공장이나 화학무기 연구소를 겨냥한 사이버 작전을 펴고, 적대 국가가 지원하는 해킹 조직의 서버를 무",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147283",
+    "date": "2026-11-16 18:01:00"
+  },
+  {
+    "source": "boannews",
+    "title": "“쌓여있는 메일, 24시간 뒤 삭제”... 마이크로소프트 365 장애 틈탄 피싱 메일 기승",
+    "desc": "12일(현지시각) 일어난 마이크로소프트 365 장애를 미끼로 쓴 피싱 메일이 돌고 있다. 마이크로소프트는 이 공격을 공식 경고했다.마이크로소프트 위협 인텔리전스 팀은 13일부터 이 메일들을 포착했다. 메일은 장애 동안 받지 못하고 서버에 쌓여 있던 메일이 24시간 안에 삭제된다며, 복구하려면 링크를 누르라고 재촉했다. 장애로 고객 메일이나 결제 연락을 놓쳤을까 걱정하던 직장인이라면 서두르기 쉬운 내용이다.가짜 메일은 마이크로소프트 서비스 상태 공지를 흉내 냈다. 본문엔 기업용 메일 서비스 익스체인지 온라인의 실제 장애 번호인 EX1",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147278",
+    "date": "2026-11-16 17:40:00"
+  },
+  {
+    "source": "boannews",
+    "title": "금융당국 ‘580개 금융사 보안 전수점검’ 본격화... 연말 CEO 서명 제출",
+    "desc": "금융감독원이 지난 5일 금융위원회가 발표한 전 금융권 보안 강화 방안의 후속 조치로, 오는 12월 31일까지 대표이사(CEO) 서명을 받은 외부 접점 및 내부통제 전수점검 결과를 제출하라는 지침을 내놨다.금감원 디지털금융총괄부는 16일 금융권 대상 ‘외부 접점 전수점검 및 내부통제 점검’ 설명회를 열고 구체적인 점검 기준과 제출 일정을 안내했다. 앞서 금융당국은 지난 5일 서울 여의도 금융보안원에서 열린 ‘AI 시대 보안 체계 혁신을 위한 전 금융권 간담회’에서 9월 30일 이후 금융권 침해사고가 37개사 40건(유출 정보 47만3",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147309",
+    "date": "2026-11-16 17:33:27"
+  },
+  {
+    "source": "boannews",
+    "title": "ZKTeco, AI 자율주행 순찰로봇 ‘RobotGo’ 시리즈 출시",
+    "desc": "글로벌 보안·출입통제 전문기업 ZKTeco가 AI 기반 자율주행 순찰로봇 신제품 ‘RobotGo-Mini’와 ‘RobotGo-Max’를 선보이며 지능형 순찰 및 공간관리 시장 확대에 나섰다. 새롭게 출시된 RobotGo 시리즈는 바퀴와 다리의 장점을 결합한 하이브리드 이동 방식을 채택하고 AI 영상분석 기술을 접목해 단순 순찰을 넘어 현장 상황을 스스로 인식·분석하는 차세대 보안 플랫폼으로 개발됐다.RobotGo-Mini는 강화학습 기반 AI 동작 제어 기술을 적용한 소형 순찰로봇이다. 좁은 통로나 시설 내부 등 제한된 공간에서도",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147312",
+    "date": "2026-11-16 17:30:00"
+  },
+  {
+    "source": "boannews",
+    "title": "‘AI 콜센터’ 메타엠 해킹... 병원 등 150개 고객사 공급망 위협 잠재",
+    "desc": "AI 고객 상담센터 서비스 기업인 메타엠이 해킹을 당했다. 이 곳의 AI 상담 서비스를 이용하는 150개 고객사에 공급망 위협이 잠재된 셈이다. 실제로 가상자산 거래소, 중고거래 장터, 병원 등 다양한 분야의 고객사들이 메타엠에 개인정보를 위탁하고 있다. 이에 연쇄 개인정보 유출로 이어질 수 있다는 우려가 제기된다.개인 연락처에 상담내용까지… 코인원·번개장터 유출16일 메타엠에 따르면 외부의 불법적인 접근으로 고객사의 고객상담 관련 업무 일부 시스템이 침해됐다. 이 시스템에 저장된 일부 개인정부가 무단으로 조회되거나 외부로 반출된",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147307",
+    "date": "2026-11-16 17:25:00"
+  },
+  {
+    "source": "boannews",
+    "title": "벨로크, 3분기 보안서비스 매출 39.4% 성장 “4분기 성수기 효과로 연간 흑자전환”",
+    "desc": "벨로크가 올해 3분기 누적 매출액 161억1000만원, 영업손실 14억8000만원을 기록했다. 일시적 수주 공백으로 조정을 거쳤으나 반복 매출 기반의 보안서비스 매출이 전년 동기 대비 39.4% 늘었고, 4분기 성수기 효과와 차세대 안티드론 신사업을 앞세워 연간 흑자전환을 추진한다.벨로크는 13일 이 같은 내용의 3분기 누적실적을 발표했다. 1~3분기는 보안 업계의 계절적 비수기로 꼽히는 시기로, 벨로크 역시 지난해 3분기 누적 영업손실 13억원을 기록한 뒤 프로젝트 구축 완료와 납품 검수가 집중되는 4분기 성수기 효과를 통해 연간",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147306",
+    "date": "2026-11-16 17:12:00"
+  },
+  {
+    "source": "boannews",
+    "title": "기업·기관 아닌 ‘일반인’도 노린다... ‘픽스’ 계열 공격 주의보",
+    "desc": "익숙한 화면을 표시하고 속여 악성코드를 실행하거나 정보를 탈취하는 사회공학적 공격 사례가 계속해서 발견되고 있다. 특히 가짜 ‘로봇인증’(CAPCHA, 캡차)을 표시하고 악성 명령어를 사용자가 직접 입력하도록 유도하는 ‘클릭픽스’(ClickFix) 공격 등 ‘픽스’(Fix) 계열 공격이 성행하고 있다. 이에 전문가들은 인터넷 사용자는 물론 기업 및 기관의 침해사고 예방을 위한 각별한 주의가 필요하다고 당부한다. 16일 보안업계에 따르면 올해 픽스 계열 공격이 국내에서도 포착되는 등 전 세계에 걸쳐 성행하는 것으로 나타났다. 글로벌",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147305",
+    "date": "2026-11-16 17:10:00"
+  },
+  {
+    "source": "boannews",
+    "title": "이노뎁, 3분기 영업익 흑자전환... 연결 기준 연간 흑자·주주환원 본격화",
+    "desc": "AI 영상관제 플랫폼 전문기업 이노뎁이 올해 3분기 별도 기준 영업이익 흑자전환에 성공하며 수익성 회복에 청신호를 켰다. 고정비 절감과 유지보수 사업 확대를 통한 체질 개선 효과가 본격화된 가운데 공공 AI 전환(AX), 민간 산업시설, 로봇 관제 등 신규 시장 진출도 속도를 내고 있다.이노뎁의 3분기 별도 기준 매출액은 125억5000만원으로 전년 동기 대비 6.5% 증가했다. 영업이익은 1억5000만원을 기록하며 지난해 같은 기간 17억3000만원 영업손실에서 흑자로 전환했다. 매출총이익률은 42.7%로 약 5%포인트 상승했으며",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147308",
+    "date": "2026-11-16 16:50:35"
+  },
+  {
+    "source": "boannews",
+    "title": "행안부 이메일 시스템 SSO 털렸다... 300개 계정 비정상 접근",
+    "desc": "행정안전부의 업무용 이메일 시스템에 외부인의 비정상적인 접근이 감지돼 정부가 점검에 착수했다. 연말까지 원인을 규명하고 보안 대책을 마련한다는 계획이다. 행정안전부는 9일 유관기관으로부터 행정기관의 업무용 이메일 등에 대한 외부 해킹 사실을 통보받고, 정확한 사고 원인과 피해 현황을 파악하기 위해 관계기관 합동점검에 착수했다고 16일 밝혔다. 현재까지 확인된 바에 따르면 공격자는 일부 지방정부의 취약한 네트워크를 통해 국가정보자원관리원이 운영하는 행정업무용 이메일 시스템 등의 통합 로그인(SSO) 취약점을 악용해 접근한 것으로 파악",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147304",
+    "date": "2026-11-16 16:40:00"
+  },
+  {
+    "source": "boannews",
+    "title": "연쇄 침해 겪은 대학가... “사립대 보안 사각지대·연구망 정보 수집 위협 살펴야”",
+    "desc": "국내 대학 28곳의 산학·연구 시스템 데이터가 외부 해킹 포럼에 유포된 데 이어 올해 주요 대학에서도 침해사고가 잇따랐다. 대학 부설 연구소 등을 겨냥한 ‘테킨트’(TECHINT) 기반 정보 수집 위협에 대학 보안을 국가 안보 차원에서 살펴야 한다는 지적이 나온다. 최근 해외 해킹 포럼과 텔레그램 채널에 국내 28개 대학 31개 시스템의 내부 데이터(3.44GB)가 게시됐다. 앞서 지난 8월 11일 공격을 받은 서강대는 사흘 뒤인 14일 침해 사실을 확인하고 약 18만명의 정보가 유출됐다고 밝혔으며, 연세대 역시 10월 포털 해킹으",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147302",
+    "date": "2026-11-16 16:35:32"
+  },
+  {
+    "source": "boannews",
+    "title": "[배종찬의 보안 빅데이터] AI안경·단추 카메라에 수능 불신 대폭발하나",
+    "desc": "최근 생성형 AI와 초소형 전자기기를 악용한 지능형 부정행위가 국가 자격시험과 입시 제도의 공정성을 뒤흔들며 사회적 공분을 자아내고 있다. 빅데이터와 소셜 빅데이터 분석 플랫폼 썸트렌드(SomeTrend)가 집계한 2026년 11월 8일부터 16일까지의 연관어 네트워크를 살펴보면, ‘ai안경’, ‘세무사’, ‘수석’, ‘합격자’, ‘수험생’, ‘시험’, ‘기술’, ‘스마트폰’, ‘카메라’, ‘성적’, ‘만점’, ‘감독관’, ‘한국산업인력공단’, ‘수능’ 등의 핵심 키워드가 거미줄처럼 얽혀 폭발적인 사회적 관심을 방증하고 있다. 최근",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147301",
+    "date": "2026-11-16 16:30:00"
+  },
+  {
+    "source": "boannews",
+    "title": "KISIA, 개인정보보호 국가인적자원개발컨소시엄 교육 성료... 최우수 기관 선정",
+    "desc": "한국정보보호산업협회(KISIA, 회장 김진수)는 2026년 개인정보보호 국가인적자원개발컨소시엄 재직자 역량향상 교육훈련을 성료했다고 16일 밝혔다. 또 2025년도 사업 성과평가에서 최우수기관(S등급)으로 선정됐다고 밝혔다.국가인적자원개발컨소시엄은 고용노동부와 한국산업인력공단이 주최하는 직업능력개발훈련 사업이다. 공동훈련센터로 지정된 훈련기관이 기업과 협약을 맺고 재직자들을 위한 맞춤형 교육을 제공한다.KISIA는 2022년 공동훈련센터로 처음 지정돼 2023년도와 2024년도 2년 연속 A등급을 받았다. 이어 ‘2025년도 컨소시",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147299",
+    "date": "2026-11-16 16:12:53"
+  },
+  {
+    "source": "boannews",
+    "title": "SGA솔루션즈, 3분기 누적 기준 연결 매출 사상 첫 1000억원 돌파",
+    "desc": "통합 IT보안 전문 기업 SGA솔루션즈(대표 최영철)가 3분기까지 누적된 연결 기준 매출액이 1000억원을 돌파했다. 3분기 기준 누적 연결 매출이 1000억원대를 돌파한 것은 SGA솔루션즈가 창사한 이래 처음 있는 일이다. SGA솔루션즈는 올해 3분기 누적 연결 매출액이 1074억원을 기록했다고 16일 밝혔다. 3개 분기 만에 지난해 연간 매출액인 616억원도 크게 웃돌았다. 같은 기간 영업이익은 19억원을 기록해 전년 동기 대비 69.6% 줄었다. 영업이익은 전년 동기 투자자산 처분이익 반영에 따른 기저효과 등으로 감소했다. 다",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147300",
+    "date": "2026-11-16 16:12:00"
+  },
+  {
+    "source": "boannews",
+    "title": "‘NETAND Security Day 2026’ 성료... 넷앤드, “AI 시대 접근통제 확장 필수”",
+    "desc": "통합 접근제어 및 계정관리(IAM) 솔루션 전문기업 넷앤드(대표 신호철)가 11월 12일, 고객 대상 보안 세미나 ‘NETAND Security Day 2026’를 서울 구로구 포포인츠바이쉐라톤에서 개최했다고 밝혔다.이번 세미나는 ‘AI 시대의 공격, 접근통제는 어디까지 준비하셨나요?’를 주제로 마련됐다. 이는 최근 AI 기술을 악용한 사이버 공격으로 보안 사고가 연이어 발생함에 따라, 기업과 기관의 시스템 접근통제 전략을 점검하고 실질적인 대응 방안을 공유하기 위함이다.특히 빠르고 정교해진 AI를 활용한 사이버 공격에 대응하기 위",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147303",
+    "date": "2026-11-16 13:46:07"
+  },
+  {
+    "source": "boannews",
+    "title": "과기정통부, MS 장애 관련 국내 이용자 불편 최소화 나선다",
+    "desc": "과학기술정보통신부(과기정통부)가 마이크로소프트(MS) 글로벌 서비스 장애 관련 국내 이용자 불편 최소화를 위해 서비스 복구 및 피해 상황을 점검하고 있다. 과기정통부는 16일 MS 글로벌 서비스 장애와 관련해 피해 상황 점검 및 서비스 복구 등 대응에 나서고 있으며, 국내 주요 플랫폼 사업자들에도 장애 예방을 위한 자체 시스템 점검을 실시토록 조치했다고 밝혔다. 과기정통부에 따르면, 13일 MS365 서비스에 장애가 발생해 국내 일부 기업에서도 이메일 송수신에 차질이 발생한 것으로 알려졌다. MS는 이번 장애가 사이버 공격이나 AI",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147298",
+    "date": "2026-11-16 13:45:00"
+  },
+  {
+    "source": "boannews",
+    "title": "한국생산성본부인증원, 이재근 신임 원장 취임... “국내 최고 ISMS-P 인증 기관 도약”",
+    "desc": "한국생산성본부인증원을 이재근 신임 원장이 새로 이끈다. 이 신임 원장은 이번 취임을 계기로 국내 최고의 정보보호 및 개인정보보호 관리체계(ISMS-P) 인증심사 기관으로 도약하겠다는 포부다. 한국생산성본부인증원은 16일 이 신임 원장 취임을 계기로 국내 최고 ISMS-P 인증 심사 기관 및 정보보호, 인공지능(AI) 전문 기관으로서 한 단계 도약하기 위한 본격적인 행보에 나선다고 밝혔다. 인증원은 사이버 위협이 날로 고도화되고 지능화됨에 따라 보안 사고가 특정 기업을 넘어서 산업 전반과 국가 경제에 미치는 파급력 역시 급격히 확대되",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147290",
+    "date": "2026-11-16 13:34:00"
+  },
+  {
+    "source": "boannews",
+    "title": "공공기관 양자 위협, 이렇게 대비하라... 국정원, 양자 시대 대비 암호 사용 지침 제시",
+    "desc": "보안 강도가 112비트 이하인 대칭 키 암호는 2031년 1월부터 사용이 제한된다. 양자내성암호(PQC) 전환을 위해 우선 기관에서 쓰이는 공개 키 암호 사용 현황을 파악할 필요가 있다. 국가정보원은 16일 국가보안기술연구소와 함께 이같은 내용의 국가·공공기관 ‘암호 안전성 기준’과 ‘양자내성암호 전환 가이드북’을 공개했다. 양자 컴퓨터 발전에 따른 현행 암호 기술 무력화에 대응하기 위한 PQC 전환 추진 계획의 일환이다. 정부는 2023년 ‘범국가 양자내성암호 전환 마스터플랜’과 2025년 ‘범국가 양자내성 암호체계 전환 종합 추",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147297",
+    "date": "2026-11-16 13:28:09"
+  },
+  {
+    "source": "boannews",
+    "title": "“일·생활 균형, 인재 역량 발휘 기반”...  AI스페라, ‘워라밸 포인트 기업’ 선정",
+    "desc": "“일·생활 균형은 인재가 장기적으로 역량을 발휘할 수 있는 기반입니다.”사이버 위협 인텔리전스 플랫폼 ‘크리미널 IP’(Criminal IP)를 운영하는 AI스페라(AI SPERA, 대표 강병탁)가 일·생활 균형 기업으로 인정받았다.AI스페라는 16일 서울시가 운영하는 ‘중소기업 워라밸 포인트제’ 기업에 선정됐다고 발표했다.‘서울시 중소기업 워라밸 포인트제’는 서울 소재 중소기업의 출산·양육 친화 및 일·생활 균형을 위한 제도 운영 실적을 확인해 포인트와 등급을 부여한다. 기업의 일·생활 균형 문화 확산을 지원하는 제도다.AI스페라",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147294",
+    "date": "2026-11-16 13:18:00"
+  },
+  {
+    "source": "boannews",
+    "title": "KT텔레캅, 창립 20주년 맞아 ‘AX 보안기업’ 비전 선포",
+    "desc": "KT그룹 보안전문기업 KT텔레캅(대표 서영수)이 창립 20주년을 맞아 기념행사를 개최하고, 고객의 일상을 케어하는 ‘AX(AI Transformation) 보안기업’으로의 도약 비전을 선포했다. AI와 케어(Care) 기술을 기반으로 지능형 보안 서비스를 강화하고 돌봄 사업까지 확대해 새로운 성장동력을 확보한다는 전략이다.KT텔레캅은 최근 임직원이 참석한 가운데 ‘스무살 생일파티’를 주제로 20주년 기념행사를 진행했다. 행사에서는 노사 공동 축하 인사와 케이크 커팅식, 소통 다과회 등이 마련됐으며, 지난 20년간 회사 성장에 기여한",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147288",
+    "date": "2026-11-16 13:15:00"
+  },
+  {
+    "source": "boannews",
+    "title": "명지대, 국방 우주 분야 교육·연구 위해 美 ISR 업체 ‘맞손’",
+    "desc": "명지대학교 방산안보연구소가 국방 우주 분야 전문 교육과 연구를 위해 미국 국방우주·정보감시정찰(ISR) 분야 전문 기업과 힘을 합치기로 했다. 명지대학교는 지난 11일 미국 ISR 분야 전문 기업 ‘Integrity ISR’과 국방 우주 전문인력 양성 및 인공지능(AI) 기반 우주정보 활용 역량 강화를 위한 양해각서를 체결했다고 밝혔다. 양 기관은 국방우주 분야의 전문교육과 공동 연구를 위한 협력체계를 구축한다는 계획이다. 이번 협약은 명지대 방산안보연구소 산하 국방우주안보연구센터와 국방 AI센터를 중심으로 추진됐다. 최근에는 소형",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147292",
+    "date": "2026-11-16 13:10:34"
+  },
+  {
+    "source": "boannews",
+    "title": "엔클라우드, 삼척시 체육시설에 AI 클라우드 영상관제 서비스 구축",
+    "desc": "클라우드 전문기업 엔클라우드(대표 김원헌)가 강원특별자치도 삼척시 체육시설에 AI 기반 클라우드 영상관제 서비스를 구축하고 공공시장 확대에 나선다. 기존의 구축형 CCTV 관제시스템과 달리 클라우드 환경에서 영상을 통합 관리하는 방식으로, 공공시설의 영상관제 운영에 새로운 선택지를 제시한다.엔클라우드는 지난 1월 삼척시 체육시설을 대상으로 클라우드 네이티브 AI 영상관제 서비스 ‘더엔’(The N) 구축을 완료했다. 이번 사업은 과학기술정보통신부가 운영하는 디지털서비스 이용지원시스템을 통해 삼척시체육시설관리사업소와 계약을 체결해 추",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147210",
+    "date": "2026-11-16 13:10:00"
+  },
+  {
+    "source": "boannews",
+    "title": "티피링크 타포, 유·무선 전원 지원 스마트 비디오 도어벨 ‘Tapo D235L’ 출시",
+    "desc": "티피링크(한국 지사장 레븐 장)의 스마트홈 브랜드 ‘타포’(Tapo)가 배터리와 유선 전원 방식을 모두 지원하는 스마트 비디오 도어벨 ‘Tapo D235L’을 국내 시장에 출시한다. 설치 환경에 따라 전원 공급 방식을 선택할 수 있으며, 온디바이스 AI 기반 객체 인식과 고화질 영상 녹화 기능을 갖춘 것이 특징이다.Tapo D235L은 2K 500만 화소 영상과 180° 초광각 시야각을 지원한다. 방문객의 얼굴뿐 아니라 전신과 현관 앞에 놓인 택배까지 넓은 범위를 확인할 수 있도록 설계됐다. 야간에는 적외선 기반 흑백 영상과 풀 컬",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147287",
+    "date": "2026-11-16 13:04:19"
+  },
+  {
+    "source": "boannews",
+    "title": "일본 오사카시, 외부 업체 해킹으로 이메일 주소 100만건 유출",
+    "desc": "일본 오사카시 온라인 행정 서비스 이용자의 이메일 주소 100만건 이상이 외부 업체 해킹으로 유출됐다. 오사카시는 이 사실을 알리고 시민들에게 수상한 메일을 조심하라고 당부했다.유출은 시 시스템이 아니라 외부 서비스에서 일어났다. 플랫폼 관리 업체 TKC가 메일 발송에 쓰던 서비스 아라라(Arara)가 해킹당했다.시는 2026년 7월~10월 31일 오사카시 시스템에서 메일을 받은 사람이라면 주소가 유출됐다고 밝혔다. 아울러 오사카시를 사칭한 수상한 메일이 오면 링크나 첨부 파일을 열지 말라고 당부했다.이와 함께, 아라라는 11월 2",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147279",
+    "date": "2026-11-16 13:02:32"
+  },
+  {
+    "source": "boannews",
+    "title": "LG U+, 클라우드 기반 보안 플랫폼 ‘U+SASE’ 출시",
+    "desc": "LG유플러스(대표 홍범식)가 기업의 네트워크와 보안을 통합 관리할 수 있는 클라우드 기반 보안 플랫폼 ‘U+SASE’를 정식 출시했다고 16일 밝혔다.U+SASE는 정식 출시 전 이미 전국 초·중·고교 약 400여 곳에 유해 사이트 접속 차단 보안 웹 게이트웨이(SWG) 기능을 제공하고 있다.‘U+SASE’는 본사와 지사, 데이터센터, 클라우드, 재택·원격근무 환경 등 모든 업무 공간 속 네트워크 연결과 보안 기능을 한 플랫폼에서 통합 관리할 수 있는 서비스다. LG유플러스는 클라우드 보안 전문 기업 모니터랩과 협력해 ‘U+SASE",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147291",
+    "date": "2026-11-16 12:58:41"
+  },
+  {
+    "source": "boannews",
+    "title": "포티넷코리아 새 수장에 김종덕 지사장... “AI 보안·안전한 도입 지원”",
+    "desc": "포티넷코리아는 30년 이상 IT·보안 업계에 몸담은 김종덕 전 데이터이쿠 코리아 지사장을 신임 지사장으로 선임했다고 16일 밝혔다. 연세대학교 경제학과를 졸업한 김 지사장은 1990년 한국IBM 시스템 엔지니어로 입사해 스트라투스테크놀로지스 코리아, 블루코트 코리아, 한국EMC RSA정보보안사업부, 뉴타닉스 코리아, 하시코프 코리아, 데이터이쿠 코리아 등 다국적 IT 기업 한국 지사장을 역임했다.특히 김 지사장은 2002년부터 2006년까지 포티넷코리아 지사장을 맡아 국내 사업과 파트너 생태계를 초기부터 구축했다. 재임 당시 KT,",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147293",
+    "date": "2026-11-16 12:50:00"
+  },
+  {
+    "source": "boannews",
+    "title": "SK쉴더스, 북한산국립공원 자연숲 복원 활동... 자생식물 800주 식재",
+    "desc": "SK쉴더스(대표 민기식)가 북한산국립공원사무소와 함께 자연숲 복원 활동을 진행하며 생물다양성 보전을 위한 환경경영 확대에 나섰다. 기존 탄소 감축 중심의 ESG 활동을 산림 생태계 보호와 복원으로 넓히고, 임직원이 직접 참여하는 환경보호 활동을 강화한다는 취지다.SK쉴더스는 16일 북한산국립공원 내 자연숲 복원 활동을 진행했다고 밝혔다. 이번 활동에는 임직원 50여 명이 참여해 약 900㎡ 규모의 대상지에 팥배나무와 국수나무, 생강나무 등 북한산에 자생하는 수종 800주를 심었다.식재 활동과 함께 기존 식생의 생장을 방해하는 생태계",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147289",
+    "date": "2026-11-16 11:44:11"
+  },
+  {
+    "source": "boannews",
+    "title": "타포 TC74, KISA·소비자원 IP 카메라 보안성 평가서 ‘양호’ 획득",
+    "desc": "티피링크(TP-Link)는 스마트홈 브랜드 타포(Tapo)의 홈카메라 ‘TC74’가 한국인터넷진흥원(KISA)과 한국소비자원의 IP카메라 보안성 종합평가에서 ‘양호’ 등급을 획득했다고 밝혔다. 평가 대상 10개 제품 가운데 양호 등급을 받은 제품은 TC74를 포함해 3개다.양 기관은 지난 12일 시중에 유통 중인 IP 카메라 10종을 대상으로 보안 점검 결과를 발표했다. 평가는 기기 보안, 모바일 애플리케이션 보안, 제조사 보안 정책 및 관리 체계 등 총 37개 항목에 걸쳐 진행됐다.타포 홈카메라는 계정 보안 강화를 위해 2단계 인",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147286",
+    "date": "2026-11-16 11:42:36"
+  },
+  {
     "source": "boannews",
     "title": "NHN두레이 개인정보 유출 확인... API 키도 유출",
     "desc": "제3자의 비정상적인 API 호출 등 API 관련 공격 동향을 확인하고 API 서비스를 중단했던 협업 도구 ‘두레이’(Dooray)에서 결국 개인정보가 유출된 것으로 나타났다. NHN두레이는 14일 민간 및 공공 보안 침해사고 및 개인정보 유출 관련 안내 공지를 업로드하며 “일부 고객사 계정에서 외부인에 의한 보안 침해사고가 발생한 사실이 확인됐다”며 “추가 피해 방지를 위한 긴급 보안 조치를 진행하고, 한국인터넷진흥원(KISA) 및 개인정보보호위원회에 신고를 마쳤다”고 밝혔다. 앞서 NHN두레이는 13일 새벽 외부인의 계정 접근 시",
@@ -448,132 +686,6 @@
     "date": "2026-11-13 18:37:24"
   },
   {
-    "source": "boannews",
-    "title": "씨엠아이텍, ‘태국 시큐테크 2026’서 비접촉 얼굴·홍채 생체인증 솔루션 공개",
-    "desc": "생체인증 전문기업 씨엠아이텍(CMITech)이 18-20일 태국 방콕 퀸 시리킷 국립컨벤션센터(QSNCC) 3·4홀에서 열리는 국제 보안 전시회 ‘Secutech Thailand 2026’에 참가해 동남아 물리보안 및 신원인증 시장 공략에 나선다.씨엠아이텍은 상업시설과 산업 현장의 출입통제 및 신원확인에 최적화된 비접촉 생체인증 솔루션과 함께 자사 기술이 적용된 태국 전자여권 프로젝트 등 국가 신분 인증 사업 레퍼런스도 함께 소개한다. 주력 출품작은 △이동 중인 사용자를 멈춤 없이 식별하는 워크스루형 얼굴인식 단말기 ‘NOVAFAC",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147257",
-    "date": "2026-11-13 17:40:47"
-  },
-  {
-    "source": "boannews",
-    "title": "“AI 기반 안전관리 혁신 성과”... KT, 대한민국 인터넷대상 국무총리상 수상",
-    "desc": "KT(대표 박윤영)가 인공지능(AI)과 데이터 기반으로 국가 핵심 통신 인프라의 안전성을 높였다는 평가를 받았다. KT는 AI와 데이터 기반의 통신시설 안전관리 혁신 성과를 인정받아 ‘제21회 대한민국 인터넷대상’ 인터넷 비즈니스 부문 국무총리상을 수상했다고 13일 밝혔다. 대한민국 인터넷대상은 인터넷 산업 발전과 디지털 혁신에 기여한 기업과 기관을 선정해 시상하는 정부 포상이다. KT는 초고속 인터넷망을 활용해 전국 자사 빌딩에 ICT 기반 설비관리와 24시간 3중 원격관제·모바일 안전관리 체계를 구축하고, 이를 화재예방 인터넷",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147255",
-    "date": "2026-11-13 15:55:35"
-  },
-  {
-    "source": "boannews",
-    "title": "그룹아이비, 싱가포르 경찰청 ‘암호화폐 사기 예방 작전’ 참여",
-    "desc": "그룹아이비(지사장 김기태)가 싱가포르 암호화폐 사기 예방 작전에 참여해 400억원에 달하는 피해 예방에 기여했다. 그룹아이비는 13일 국제 사이버 범죄 대응 및 사기 피해 예방을 위해 싱가포르 경찰청(SPF) 사이버사령부가 주요하는 암호화폐 사기 예방 작전 ‘오퍼레이션 스피어’에 참여했다고 밝혔다. 작전을 통해 그룹아이비는 사기 피해자 1115명 보호 및 잠재적 피해액 3632만싱가폴달러(한화 약 386억2000만원)을 예방하는 성과를 냈다. 오퍼레이션 스피어는 암호화폐 거래 정보를 분석해 사기 피해 가능성이 있는 사람을 조기에 식",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147253",
-    "date": "2026-11-13 15:05:42"
-  },
-  {
-    "source": "boannews",
-    "title": "광주 동구 마을공동체 앱 ‘우리동네do반장’ 2101명 개인정보 유출",
-    "desc": "전남광주 동구가 운영하는 마을공동체 참여 앱에서 2000명 이상의 개인정보 유출 사고가 발생했다. 동구청은 동구 마을공동체 참여 앱 ‘우리동네do반장’ 내 공지사항을 통해 “‘우리동네do반장’ 관리자 페이지에 접속 인증이 적용되지 않은 보안 취약점이 있어 외부에서 관리자 페이지에 접속, 개인정보를 유출한 사실이 5일 확인됐다”고 밝혔다.공지에 따르면 유출된 개인정보 건수는 2101명분이다. 유출 개인정보 항목은 △이름 △휴대전화번호 △닉네임 △행정동명 △포인트정립액 등이다. 주민등록번호 등 민감정보나 금융 관련 정보는 시스템에서 관",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147251",
-    "date": "2026-11-13 14:06:41"
-  },
-  {
-    "source": "boannews",
-    "title": "해킹 막은 메이플스토리 유니버스 “가상자산 유출 없어”",
-    "desc": "메이플스토리 유니버스가 서버 침해사고에 조기 대응해 가상자산 탈취 피해를 막았다. 보안 업계에서는 외부 서버와 개발자 API 키 등 ‘비인간 자격증명’(Non-Human Identity) 관리가 서비스 안전을 좌우한다는 점을 보여준 사례라고 말한다.메이플스토리 유니버스 운영진은 13일 공식 SNS 공지에서 전날 발생한 오프체인 서버 인프라 일부의 비인가 외부 접근을 확인하고 즉시 차단 조치를 완료했다고 밝혔다. 운영진은 추가 피해를 막기 위해 12일 오후 1시(한국 시간) 전체 서비스를 긴급 점검으로 전환했다.메이플스토리 유니버스는",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147252",
-    "date": "2026-11-13 14:04:38"
-  },
-  {
-    "source": "boannews",
-    "title": "젠슨 황 사임, CEO 불륜 너머 ‘AI 반도체 안보전’",
-    "desc": "젠슨 황 엔비디아 최고경영자(CEO)가 사내외 불륜 스캔들로 결국 대표직에서 물러난 가운데, 보안 업계에서는 이번 퇴진의 이면에 AI 가속기 확보를 둘러싼 미·중 간 물밑 정보전과 사법적 파국을 피하기 위한 미 방첩당국의 ‘경고성 봉합’이라는 고도의 안보 계산등이 깔려 있다는 해석이 나온다.엔비디아는 12일(현지시간) 황 전 CEO가 사장·CEO·이사직에서 즉시 사임했다고 발표했다. 이사회는 콜레트 크레스 최고재무책임자(CFO)를 임시 CEO로, 하비 존스 이사를 창사 이래 첫 의장으로 선임하고 정식 후임 인선에 착수했다.황 전 C",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147249",
-    "date": "2026-11-13 14:01:28"
-  },
-  {
-    "source": "boannews",
-    "title": "“사이버 범죄 대응 역량 기여”…  두나무, ‘2026 사이버치안대상’ 경찰청장 감사장",
-    "desc": "디지털자산 거래소 업비트를 운영하는 두나무(대표 오경석)는 FDI팀 김대현 연구원이 ‘2026 사이버치안대상’ 시상식에서 경찰청장 감사장을 받았다고 13일 밝혔다.지난 6일 경찰청이 주최한 사이버치안대상 시상식은 사이버치안 발전에 기여한 유공자들의 공적을 기리는 자리로 마련됐다. 김대현 연구원은 디지털자산 관련 범죄 대응을 위한 기술과 전문 지식을 공유하고 수사기관의 범죄 수사 지원 및 교육 활동에 기여한 공로를 인정받았다.김대현 연구원은 두나무 FDI팀 소속으로 디지털자산 관련 범죄 대응을 위한 기술적 전문성을 바탕으로 수사 지원",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147250",
-    "date": "2026-11-13 13:38:49"
-  },
-  {
-    "source": "boannews",
-    "title": "[더존비즈온 사태] 11월13일 유출 의심 기업 현황... 13곳 기업·기관 유출 가능성",
-    "desc": "더존비즈온 침해사고로 추가로 13곳의 기업 및 기관에서 개인정보 유출 가능성이 제기됐다. 더존비즈온 침해사고로 인한 개인정보 유출 가능성 공지를 최근 업로드한 기업 및 기관은 △광주광역시 관광공사 △영산대학교 산학협력단 △한국제품안전관리원 △신진에스엠 △회계법인 리안 △THE열심히 △건강한신체활동연구소 △스몹컴퍼니 △KAC공항서비스 △노원문화재단 도서관기획실 △발렉스특수물류 △행복마루 △전북콘텐츠융합진흥원 등 13곳이다.유출된 항목을 보면 주로 더존비즈온 백업 서비스에 저장된 개인정보들에서 유출 가능성이 나왔다. 일부 기관의 경우",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147248",
-    "date": "2026-11-13 13:38:01"
-  },
-  {
-    "source": "boannews",
-    "title": "한국항공보안학회, 16일 국회서 ‘고도화되는 드론 테러 대응’ 토론회 개최",
-    "desc": "전 세계적으로 드론을 악용한 하이브리드 테러 위협이 고도화되는 가운데, 국가중요시설과 공항의 보안 체계를 재점검하고 실효성 있는 방호 대책을 모색하는 정책 토론회가 국회에서 열린다.한국항공보안학회(회장 소대섭)는 16일 서울 여의도 국회의원회관 제6간담회실에서 ‘고도화되는 드론 테러, 국가 항공보안의 패러다임 대전환’을 주제로 토론회를 개최한다고 밝혔다. 더불어민주당 부승찬 의원실, 항공안전기술원과 공동 주최하며 학회 산하 대테러·대드론 전략연구위원회(위원장 김명진 강원대 교수)가 총괄한다.토론회에는 국방부·경찰청·국토교통부 등 관",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147245",
-    "date": "2026-11-13 13:36:20"
-  },
-  {
-    "source": "boannews",
-    "title": "토스, ‘금융보안 AI 해킹방어 대회’ 대상... 토스증권도 최우수상",
-    "desc": "모바일 금융 서비스 토스가 ‘금융보안 AI 해킹 방어 대회’ 대상을 받았다. 토스증권도 최우수상을 수상했다. 토스계열은 6년 연속 이 대회 정상을 지켰다.13일 비바리퍼블리카(대표 이승건)는 이 같은 수상 소식을 전했다. 이 대회는 금융보안원이 주최하고 금융위원회가 후원하는 국내 대표 금융권 보안 대회다. 기존 ‘금융보안 위협분석 대회’(FIESTA)를 인공지능(AI)을 활용한 공격과 방어 역량을 검증하는 실전형 대회로 올해 새롭게 개편한 것으로, 토스는 개편 이후 열린 첫 대회에서 정상에 올랐다.올해 대회는 본선에 오른 10개 팀",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147247",
-    "date": "2026-11-13 12:20:21"
-  },
-  {
-    "source": "boannews",
-    "title": "[카드뉴스] \"우리 회사는 안 털렸는데 월급 명세서가 샜다?\"… 수만 개 기업 덮친 'ERP 백업망'",
-    "desc": "개별 기업이 직접 해킹당하지 않았음에도, 수만 개 기업의 급여와 장부를 통합 보관하던 대형 ERP 백업망이 제로데이 공격에 뚫리며 연쇄 유출 위기가 발생했다. 백업 소프트웨어의 보안 취약점 하나가 전체 고객사 백본 침투로 이어져 임직원의 연봉, 계좌번호, 인사 기록을 동시에 노출시키는 공급망 위협을 드러냈다. 연쇄 붕괴를 막기 위해 주 전산망과 백업 시스템을 물리적으로 분리하는 '불변(Immutable) 오프라인 격리' 구축과 모듈별 데이터 접근 권한 분산이 필수적이다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147246",
-    "date": "2026-11-13 10:46:43"
-  },
-  {
-    "source": "boannews",
-    "title": "델 테크놀로지스, 6세대 AMD 에픽 탑재 ‘파워엣지’ 서버 2종 공개",
-    "desc": "델 테크놀로지스(Dell Technologies)가 AMD의 6세대 에픽(EPYC) 프로세서를 탑재한 서버 신제품 ‘델 파워엣지 R9825’(Dell PowerEdge R9825)와 ‘델 파워엣지 R9815’(Dell PowerEdge R9815)를 공개했다.두 제품은 공랭식 설계를 기본으로 채택해 기업과 공공기관이 기존 데이터센터 시설을 재설계하지 않고도 고성능 컴퓨팅 환경을 구축할 수 있도록 지원한다. 워크로드 증가에 따라 다이렉트 리퀴드 쿨링(직접 액체 냉각)으로 전환할 수 있는 유연성도 갖췄다.듀얼 소켓 3U 규격의 R982",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147243",
-    "date": "2026-11-13 10:42:46"
-  },
-  {
-    "source": "boannews",
-    "title": "티피링크 타포, 매터(Matter) 지원 로봇청소기 ‘Tapo RV30 Max Plus Gen 2’ 출시",
-    "desc": "티피링크(TP-Link) 스마트홈 브랜드 타포(Tapo)가 스마트홈 표준 프로토콜 매터(Matter)를 지원하는 로봇청소기 신제품 ‘Tapo RV30 Max Plus Gen 2’를 출시했다.이번 신제품은 기존 ‘Tapo RV30 Max Plus’의 후속 모델로, 흡입력을 대폭 끌어올리고 자동 커팅 브러시와 반려동물 털 수거 모드를 새롭게 적용해 청소 성능과 사용자 편의성을 강화했다.Tapo RV30 Max Plus Gen 2는 최대 1만3000Pa의 강력한 흡입력을 제공한다. 기존 모델(5300Pa) 대비 약 2.5배 향상된 성능으",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147244",
-    "date": "2026-11-13 10:42:20"
-  },
-  {
-    "source": "boannews",
-    "title": "카카오워크 해킹, 업무 정보 줄줄... ‘종단간 암호화’ 무색",
-    "desc": "업무용 협업 도구 카카오워크가 해킹을 당해 개인정보와 업무정보까지 유출됐다.13일 카카오엔터프라이즈에 따르면 카카오워크의 서비스 제공자 디케이테크인에서 외부 공격자의 비정상적 접근으로 일부 이용자 개인정보가 유출됐다. 카카오엔터프라이즈는 이 같은 내용을 공식 홈페이지에 안내했다.디케이테크인은 카카오 그룹 자회사다. 안내문에 따르면, 공격은 9일 발생했다. 이 과정에서 일부 이용자의 개인정보가 유출된 사실이 확인됐다. 디케이테크인은 구체적 사고 경위와 추가 유출 여부, 피해 범위를 조사하고 있다.유출된 항목은 △이름 △닉네임 △부서",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147242",
-    "date": "2026-11-13 10:36:15"
-  },
-  {
-    "source": "boannews",
-    "title": "KB캐피탈, 외부 공격으로 고객·임직원 개인정보 유출",
-    "desc": "KB캐피탈에서 외부 공격으로 고객과 임직원 개인정보 유출 사고가 터졌다.KB캐피탈은 악의적 공격으로 10일 고객과 협력사, 임직원의 개인정보가 유출된 사실을 확인했다고 13일 공지했다. 유출 사고는 ‘자동차임대자산관리시스템’에서 발생했으며, 금융거래와는 무관한 시스템이라고 회사는 설명했다.현재까지 파악된 유출 인원은 총 1811이다. 일반 고객이 20명이고, 나머지 1791명은 협력사 직원과 KB캐피탈 임직원이다.개인별 유출 항목은 KB캐피탈 홈페이지 ‘개인정보 유출여부 조회’ 메뉴에서 확인할 수 있다. 고객의 경우 △이름 △생년월",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147240",
-    "date": "2026-11-13 10:24:33"
-  },
-  {
-    "source": "boannews",
-    "title": "‘플라이빗’ 개인정보 40건 유출... 다우기술 그룹웨어 해킹 3번째 피해",
-    "desc": "다우기술 그룹웨어를 노린 공격에 또 한 곳의 가상자산 거래소가 개인정보 유출 사고를 겪었다. 가상자산 거래소 플라이빗에서도 40명의 개인정보 유출 사고가 발생한 것이다. 빗썸, 한양증권 등에 이어 세 번째 사고다. 플라이빗을 운영하는 한국디지털거래소는 이달 5일 “최근 사내 그룹웨어 시스템 운영사인 다우기술을 통한 외부 비인가 접근으로, 유관기관의 정보제공 요청 메일의 첨부파일에 포함된 일부 고객의 개인정보가 유출된 사실을 확인했다”고 공지했다. 한국디지털거래소는 이달 1일 새벽 침해사고에 따른 유출 사실을 인지하기 전부터 인가된",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147241",
-    "date": "2026-11-13 10:19:40"
-  },
-  {
-    "source": "boannews",
-    "title": "CISA, 시스코 브로드웍스·오픈웨이브 결함 악용 경고",
-    "desc": "미국 사이버보안·인프라보안청(CISA)이 통신 서비스 업체들이 쓰는 제품의 결함 2건을 실제 공격에 악용된 취약점으로 지정했다. 하나는 시스코 브로드웍스(BroadWorks)에서, 다른 하나는 오픈웨이브(Openwave) 웹메일의 문서 변환 기능에서 나왔다.CISA는 10일(현지시각) 두 결함을 알려진 악용 취약점(KEV) 목록에 올리고 연방 기관에 24일까지 패치하라고 요구했다. 시큐리티위크에 따르면 이날 목록엔 바라쿠다 결함 2건과 아웃룩·크롬 제로데이도 함께 올라갔다.브로드웍스 결함(CVE-2026-20320)은 XML 외부",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147196",
-    "date": "2026-11-13 10:04:55"
-  },
-  {
-    "source": "boannews",
-    "title": "마이크로소프트 365 장애로 아웃룩·팀즈 세계 곳곳서 먹통",
-    "desc": "마이크로소프트의 업무용 클라우드 서비스 마이크로소프트 365에서 12일(현지시각) 대규모 장애가 나 세계 곳곳 이용자가 아웃룩 메일과 팀즈 메신저, AI 비서 코파일럿을 제대로 쓰지 못했다.블리핑컴퓨터에 따르면 장애는 미국 동부시간 오후 1시26분 시작됐다. 이날 오후 장애 신고 사이트 다운디텍터엔 아웃룩과 마이크로소프트 365, 팀즈, 코파일럿, 애저, 원드라이브, 마이크로소프트 스토어 관련 불만이 한꺼번에 몰렸다.마이크로소프트는 공지(MO1550821)에서 고객이 익스체인지 온라인과 팀즈, 셰어포인트 온라인, 마이크로소프트 36",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147233",
-    "date": "2026-11-13 09:56:52"
-  },
-  {
     "source": "thn",
     "title": "Webinar: See How Identity Blind Spots Put Your SOC at Risk and How to Close Them",
     "desc": "Security teams have more alerts, logs, and monitoring tools than ever. Yet when an attack happens, one simple question can still take too long to answer: Who or what is behind this activity, and what can they access?\n\nA suspicious login might belong to an employee. An unusual API call could come fro",
@@ -586,117 +698,5 @@
     "desc": "A search result isn't always safe. An access request isn't always harmless. And a familiar account doesn't always mean a familiar person is using it. Simple things to remember. Yet a surprising amount of this week's trouble starts right there.\n\nAttackers are using fake websites, stolen access, and t",
     "url": "https://thehackernews.com/2026/11/threatsday-59-linux-kernel-bugs-falcon.html",
     "date": "2026-11-12T23:32:51"
-  },
-  {
-    "source": "thn",
-    "title": "New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access",
-    "desc": "Public exploit code released earlier this week claims that a local Windows user can gain SYSTEM privileges through the Common Log File System driver.\n\nThe proof of concept, called SignDrop, targets a log-authentication feature added to the driver last year. It abuses how clfs.sys creates companion f",
-    "url": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
-    "date": "2026-11-12T23:20:27"
-  },
-  {
-    "source": "thn",
-    "title": "Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images in a Registry",
-    "desc": "A critical flaw in Red Hat Quay allows an attacker who can access a Quay registry to read and overwrite private container images in every repository.\n\nQuay enables anonymous access by default, and while it is enabled, the attacker needs no account. When it is off, anyone with a valid account can sti",
-    "url": "https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html",
-    "date": "2026-11-12T21:57:01"
-  },
-  {
-    "source": "thn",
-    "title": "Citrix Patches 12 NetScaler and Secure Access Client Flaws, Including Authentication Bypass",
-    "desc": "Citrix has released patches for multiple critical security flaws impacting NetScaler ADC, Citrix NetScaler Gateway, and NetScaler Console that could lead to denial-of-service (DoS) or an authentication bypass.\n\nThe critical vulnerabilities that impact NetScaler ADC and NetScaler Gateway are listed b",
-    "url": "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
-    "date": "2026-11-12T21:08:49"
-  },
-  {
-    "source": "thn",
-    "title": "186 Fake AI Domains Redirect Users to ClickFix Lures, Browser Malware, and Search Hijackers",
-    "desc": "Cybersecurity researchers have found that lookalike domains masquerading as artificial intelligence (AI) tools are being used to serve ClickFix-style lures, browser-hijacking malware, and a set of extensions that hijack user searches.\n\nThis delivery pattern has been codenamed TypoPrompting by Island",
-    "url": "https://thehackernews.com/2026/11/186-fake-ai-domains-redirect-users-to.html",
-    "date": "2026-11-12T20:45:40"
-  },
-  {
-    "source": "thn",
-    "title": "SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths",
-    "desc": "The ongoing campaign targeting ConnectWise ScreenConnect deployments involves the exploitation of a now-patched critical security flaw in the remote access software, and not a new vulnerability, it has emerged.\n\nBlackpoint Cyber's Adversary Pursuit Group (APG), which shared the details with The Hack",
-    "url": "https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html",
-    "date": "2026-11-12T18:38:28"
-  },
-  {
-    "source": "thn",
-    "title": "Google Cloud Warns Three AMD Turin CPU Flaws Could Leak Data Across Processes in VMs",
-    "desc": "Google Cloud VMs on AMD Turin chips need a guest OS patch and a stop-and-start to protect against three CPU side-channel flaws, Google said this week.\n\nThe company has already applied mitigations against attacks between VMs, and between VMs and the host. Inside a VM, the flaws may let an attacker wi",
-    "url": "https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html",
-    "date": "2026-11-12T17:39:14"
-  },
-  {
-    "source": "thn",
-    "title": "New N-central Exploits Work Against Patched Servers, Enable Root RCE and Windows SYSTEM Access",
-    "desc": "N-able on Thursday said it's investigating a new public disclosure containing claims of additional vulnerabilities in on-premise versions of N-central running version 2026.4.1 HF2.\n\n\"Based on our initial review, the server issue described depends on a non-default configuration in which the Legacy AP",
-    "url": "https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html",
-    "date": "2026-11-12T17:21:43"
-  },
-  {
-    "source": "thn",
-    "title": "Calendar Invites and Live Proxies: Inside a Google Session Hijacking Campaign",
-    "desc": "Since mid-August 2026, a phishing operation has been stealing live Google sessions from corporate users. Every check defenders normally lean on to judge a link came back clean, and the operator designed it that way on purpose.\n\nThe Threat Research team at Material Security spotted the campaign and h",
-    "url": "https://thehackernews.com/2026/11/calendar-invites-and-live-proxies.html",
-    "date": "2026-11-12T17:21:31"
-  },
-  {
-    "source": "thn",
-    "title": "PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution",
-    "desc": "PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution.\n\nThe security flaw, tracked as CVE-2026-126325, carries a CVSS v4 score of 9.2 out of a maximum of 10.0.\n\nIt has been described a",
-    "url": "https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html",
-    "date": "2026-11-12T17:03:15"
-  },
-  {
-    "source": "thn",
-    "title": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
-    "desc": "A critical flaw in MongoDB Server allows an unauthenticated attacker to send two requests that trigger a crash on the database server. The crash occurs only if that server is later chosen to take over as the main server while it still lacks some recent changes.\n\nMongoDB, the company that makes the d",
-    "url": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
-    "date": "2026-11-12T14:55:00"
-  },
-  {
-    "source": "thn",
-    "title": "Node.js Fixes 16 Flaws, Including HTTP/2 Bugs That Crash Servers and Leak Other Connections' Data",
-    "desc": "A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines. A second HTTP/2 flaw can cause a server to send a client pieces of its memory, including responses intended for other connections.\n\nFixed ve",
-    "url": "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html",
-    "date": "2026-11-12T13:50:37"
-  },
-  {
-    "source": "thn",
-    "title": "Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories",
-    "desc": "Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to Aikido Security, a security software company.\n\nThe stealer is built to take the secrets and cloud credentials that a repository's CI w",
-    "url": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
-    "date": "2026-11-12T12:12:47"
-  },
-  {
-    "source": "thn",
-    "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
-    "desc": "A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-2026-119618, it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday.\n\nOnly servers with HTTP/2 enabled are affected, according to R",
-    "url": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
-    "date": "2026-11-12T10:42:26"
-  },
-  {
-    "source": "thn",
-    "title": "ScreenConnect Attacks Target at Least 288 Endpoints Across 48 Organizations With Rogue Clients",
-    "desc": "ConnectWise has taken the precautionary step of disabling five third-party extensions in partner environments following reports of unauthorized access.\n\nIn an advisory posted on its site, the company said there is no evidence that the incident involves a compromise of its infrastructure or a vulnera",
-    "url": "https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html",
-    "date": "2026-11-12T10:09:48"
-  },
-  {
-    "source": "boannews",
-    "title": "“선내 OT부터 육상 IT까지” 싸이터·플레인비트, 해양 침해대응 맞손",
-    "desc": "해양·선박 사이버보안 전문기업 싸이터는 디지털 포렌식 전문기업 플레인비트와 선박 및 해양 인프라의 사이버 사고조사·침해대응 역량 강화를 위한 업무협약(MOU)을 체결했다고 12일 밝혔다.선박과 해양 인프라는 항해·기관·통신 등 운항기술(OT) 시스템과 정보기술(IT) 환경이 복합 연결돼 있다. 이 때문에 사이버 사고가 발생하면 일반 IT 환경과 달리 선박 시스템 구조에 대한 이해와 체계적인 디지털 증거 수집·분석 역량이 동시에 필요하다.양사는 각자 전문 영역을 결합해 사고 원인 분석부터 증거 확보, 침해대응, 사후 보안 개선까지 전",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147229",
-    "date": "2026-11-12 17:40:23"
-  },
-  {
-    "source": "boannews",
-    "title": "NSHC, 공공·국방 AI 보안 전략 발표... 3단계 선제 예방 강조",
-    "desc": "엔에스에이치씨(NSHC)가 공공·국방 분야의 AI 보안 전략을 발표했다.NSHC(대표 최병규)는 윤선희 GA사업팀 이사가 12일 대전대학교에서 열린 ‘2026 국방혁신 AI유무인복합체계 발전 세미나’에 연사로 나서 ‘AI 해커 시대의 공공·국방 AX 전략’을 주제로 강연했다고 밝혔다. 이번 세미나는 지난 3월 NSHC와 대전대 군사학과가 체결한 AI유무인복합체계(MUM-T) 및 사이버보안 전문인재 양성 산학협력 업무협약(MOU)의 후속 프로그램으로 마련됐다.발표에 나선 윤 이사는 먼저 AI가 스스로 코드 취약점을 추론해 공격까지 감",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147232",
-    "date": "2026-11-12 17:40:07"
   }
 ]
