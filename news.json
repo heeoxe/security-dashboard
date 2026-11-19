@@ -15,9 +15,9 @@
   },
   {
     "source": "cisa",
-    "title": "Siemens ROS#",
-    "desc": "View CSAF\nSummary\nROS# before version 2.3.1 contains a code injection vulnerability that could allow an attacker that is able to pass a crafted message definition file to the user to inject arbitrary code into the generated program. Siemens has released a new version for ROS# and recommends to updat",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06",
+    "title": "Siemens Simcenter Femap",
+    "desc": "View CSAF\nSummary\nSimcenter Femap is affected by an out of bounds read vulnerability that could be triggered when the application reads files in X_T format. This could allow an attacker to crash the application or execute arbitrary code. Siemens has released a new version for Simcenter Femap and rec",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10",
     "date": "Tue, 17 Nov 26 12:00:00 +0000"
   },
   {
@@ -57,9 +57,9 @@
   },
   {
     "source": "cisa",
-    "title": "Siemens Simcenter Femap",
-    "desc": "View CSAF\nSummary\nSimcenter Femap is affected by an out of bounds read vulnerability that could be triggered when the application reads files in X_T format. This could allow an attacker to crash the application or execute arbitrary code. Siemens has released a new version for Simcenter Femap and rec",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10",
+    "title": "Siemens ROS#",
+    "desc": "View CSAF\nSummary\nROS# before version 2.3.1 contains a code injection vulnerability that could allow an attacker that is able to pass a crafted message definition file to the user to inject arbitrary code into the generated program. Siemens has released a new version for ROS# and recommends to updat",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06",
     "date": "Tue, 17 Nov 26 12:00:00 +0000"
   },
   {
@@ -78,23 +78,9 @@
   },
   {
     "source": "cisa",
-    "title": "Siemens RUGGEDCOM APE1808",
-    "desc": "View CSAF\nSummary\nFortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens recommends to update Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support t",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
-    "date": "Tue, 17 Nov 26 12:00:00 +0000"
-  },
-  {
-    "source": "cisa",
     "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
     "desc": "CISA has added one new vulnerability to its&nbsp;Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\n\nCVE-2026-115731 Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability\n\nThis type of vulnerability is a frequent attack vector for malicious ",
     "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog",
-    "date": "Tue, 17 Nov 26 12:00:00 +0000"
-  },
-  {
-    "source": "cisa",
-    "title": "Siemens SIMATIC WinCC",
-    "desc": "View CSAF\nSummary\nGraphics Designer of SIMATIC WinCC before V8.2 contains an implicit active content execution vulnerability upon opening files, which could allow an attacker to cause arbitrary code execution on the device. Siemens is preparing fixes and recommends specific mitigations for products ",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-09",
     "date": "Tue, 17 Nov 26 12:00:00 +0000"
   },
   {
@@ -106,17 +92,24 @@
   },
   {
     "source": "cisa",
+    "title": "Siemens SIMATIC WinCC",
+    "desc": "View CSAF\nSummary\nGraphics Designer of SIMATIC WinCC before V8.2 contains an implicit active content execution vulnerability upon opening files, which could allow an attacker to cause arbitrary code execution on the device. Siemens is preparing fixes and recommends specific mitigations for products ",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-09",
+    "date": "Tue, 17 Nov 26 12:00:00 +0000"
+  },
+  {
+    "source": "cisa",
+    "title": "Siemens RUGGEDCOM APE1808",
+    "desc": "View CSAF\nSummary\nFortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens recommends to update Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support t",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
+    "date": "Tue, 17 Nov 26 12:00:00 +0000"
+  },
+  {
+    "source": "cisa",
     "title": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
     "desc": "CISA has added six new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\n\nCVE-2026-20320 Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability&nbsp;\nCVE-2026-111560 Barracuda Networks Multiple Products OS Co",
     "url": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
     "date": "Tue, 10 Nov 26 12:00:00 +0000"
-  },
-  {
-    "source": "cisa",
-    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-    "desc": "CISA has added one new vulnerability to its&nbsp;Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\n\nCVE-2026-119977 WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability\n\nThis type of vulnerability is a frequent attack vector for malici",
-    "url": "https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog",
-    "date": "Tue, 03 Nov 26 12:00:00 +0000"
   },
   {
     "source": "cisa",
@@ -127,30 +120,30 @@
   },
   {
     "source": "cisa",
-    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-    "desc": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\n\nCVE-2026-97229 GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound vulnerability\nCVE-2026-76418 Cisco Secure Firewall ASA Software and Ci",
-    "url": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-    "date": "Thu, 29 Oct 26 12:00:00 +0000"
+    "title": "Elecbrakes EB2, VM1, ELBC2000",
+    "desc": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to gain control of the brakes of a trailer, modify the firmware, disable the brake lights, modify the brake conditions or disable other critical safety features.\nThe following versions of Elecbrakes EB2, VM1, ",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02",
+    "date": "Thu, 19 Nov 26 12:00:00 +0000"
+  },
+  {
+    "source": "cisa",
+    "title": "libumqtt",
+    "desc": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could allow a remote attacker to cause a denial of service, memory corruption, or information disclosure.\nThe following versions of libumqtt are affected:\n\nlibumqtt &lt;=1.1.1 (CVE-2026-125132)\n\n\n\n\n\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 8.6\nlibu",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03",
+    "date": "Thu, 19 Nov 26 12:00:00 +0000"
+  },
+  {
+    "source": "cisa",
+    "title": "Autonomy Logic OpenPLC Runtime",
+    "desc": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could allow several unauthenticated admin accounts to be created.\nThe following versions of Autonomy Logic OpenPLC Runtime are affected:\n\nOpenPLC Runtime &lt;=4.2.4 (CVE-2026-126088)\n\n\n\n\n\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 8.1\nAutonomy Logic\n",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01",
+    "date": "Thu, 19 Nov 26 12:00:00 +0000"
   },
   {
     "source": "cisa",
     "title": "Siemens RUGGEDCOM APE1808",
     "desc": "View CSAF\nSummary\nPalo Alto Networks has published information on vulnerabilities in PAN-OS related to PHP2Shell vulnerabilities. This advisory lists the related Siemens Industrial products affected by these vulnerabilities. Customers are advised to consult and implement the workarounds provided in ",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05",
-    "date": "Thu, 12 Nov 26 12:00:00 +0000"
-  },
-  {
-    "source": "cisa",
-    "title": "Siemens Desigo, Gridscale",
-    "desc": "View CSAF\nSummary\nOn October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remot",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02",
-    "date": "Thu, 12 Nov 26 12:00:00 +0000"
-  },
-  {
-    "source": "cisa",
-    "title": "Siemens Industrial Edge Management",
-    "desc": "View CSAF\nSummary\nSiemens is currently assessing the impact of Node2Shell (CVE-2026-111497) on Industrial Edge. Please check your Industrial Edge Management (IEM) setup: - No Management Applications installed: No action is required. Although the affected Brotli library is included in the IEM softwar",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03",
     "date": "Thu, 12 Nov 26 12:00:00 +0000"
   },
   {
@@ -169,10 +162,17 @@
   },
   {
     "source": "cisa",
-    "title": "Post-Quantum Questions to Ask Your Vendors",
-    "desc": "CISA, the Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) and the National Security Agency (NSA) released joint guidance and an accompanying quick-reference list to help organizations assess vendor readiness for transitioning to post-quantum cryptography (PQC). As quan",
-    "url": "https://www.cisa.gov/resources-tools/resources/post-quantum-questions-ask-your-vendors",
-    "date": "Thu, 05 Nov 26 12:00:00 +0000"
+    "title": "Siemens Desigo, Gridscale",
+    "desc": "View CSAF\nSummary\nOn October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remot",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02",
+    "date": "Thu, 12 Nov 26 12:00:00 +0000"
+  },
+  {
+    "source": "cisa",
+    "title": "Siemens Industrial Edge Management",
+    "desc": "View CSAF\nSummary\nSiemens is currently assessing the impact of Node2Shell (CVE-2026-111497) on Industrial Edge. Please check your Industrial Edge Management (IEM) setup: - No Management Applications installed: No action is required. Although the affected Brotli library is included in the IEM softwar",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03",
+    "date": "Thu, 12 Nov 26 12:00:00 +0000"
   },
   {
     "source": "cisa",
@@ -183,17 +183,17 @@
   },
   {
     "source": "cisa",
+    "title": "Post-Quantum Questions to Ask Your Vendors",
+    "desc": "CISA, the Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) and the National Security Agency (NSA) released joint guidance and an accompanying quick-reference list to help organizations assess vendor readiness for transitioning to post-quantum cryptography (PQC). As quan",
+    "url": "https://www.cisa.gov/resources-tools/resources/post-quantum-questions-ask-your-vendors",
+    "date": "Thu, 05 Nov 26 12:00:00 +0000"
+  },
+  {
+    "source": "cisa",
     "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
     "desc": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.&nbsp;\n\nCVE-2026-102895 GPUStack Improper Authentication Vulnerability&nbsp;\nCVE-2026-116779 SignalWire FreeSwitch Code Injection Vulnerability&nbsp;\nCVE-2026-123158",
     "url": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
     "date": "Mon, 09 Nov 26 12:00:00 +0000"
-  },
-  {
-    "source": "cisa",
-    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-    "desc": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\n\nCVE-2026-111357 Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability\nCVE-2026-118527 Ivanti Connect Secure Generation of Predictable Num",
-    "url": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-    "date": "Fri, 30 Oct 26 12:00:00 +0000"
   },
   {
     "source": "cisa",
@@ -211,10 +211,150 @@
   },
   {
     "source": "thn",
+    "title": "phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
+    "desc": "PHP's default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment. When combined with a second weakness, such as a suitable gadget chain in the app, those objects can allow the attacker to run code on the server.\n\nToday's PHP",
+    "url": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
+    "date": "2026-11-19T22:29:56"
+  },
+  {
+    "source": "thn",
+    "title": "PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
+    "desc": "The PHP Foundation has released security updates to address multiple critical security flaws that could be exploited to achieve remote code execution on affected deployments, including CVE-2026-115560.\n\nThe release of the patch follows an advance notice in which the project maintainers alerted users",
+    "url": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
+    "date": "2026-11-19T20:48:07"
+  },
+  {
+    "source": "thn",
+    "title": "Critical VMware vCenter Flaw (CVSS 9.8) Lets Network Attackers Bypass Authentication",
+    "desc": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today.\n\nFixed versions are out for all supported branches, and the company lists no workaround. vCenter ",
+    "url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
+    "date": "2026-11-19T20:41:06"
+  },
+  {
+    "source": "thn",
+    "title": "Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites",
+    "desc": "Under specific conditions, a critical vulnerability in Drupal core can allow an attacker without login credentials to use the built-in installer to attempt to reinstall a site.\n\nThat can lead to a site takeover or remote code execution, and the project rates the vulnerable configurations as uncommon",
+    "url": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html",
+    "date": "2026-11-19T20:03:06"
+  },
+  {
+    "source": "thn",
+    "title": "Everything Is a Web Application, Including Your Firewall",
+    "desc": "One of the early targets of PHP2Shell exploitation was the firewall. On October 28, Palo Alto Networks confirmed that attackers were exploiting the two PHP vulnerabilities, CVE-2026-109618 and CVE-2026-109619, against PAN-OS management interfaces exposed to the internet. Both flaws let anyone execut",
+    "url": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
+    "date": "2026-11-19T17:22:23"
+  },
+  {
+    "source": "thn",
+    "title": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
+    "desc": "N-able on Wednesday disclosed that unknown threat actors gained unauthorized access to one of the servers in the Mail Assure and Spam Experts Hosted Cloud, causing it to disable management interfaces and APIs.\n\n\"We have taken steps to mitigate the threat and are continuing to harden our services to ",
+    "url": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
+    "date": "2026-11-19T15:01:26"
+  },
+  {
+    "source": "thn",
+    "title": "Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE",
+    "desc": "Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. For five of them, its maintainers say, proof-of-concept exploits, or PoCs, have shown that crafted input can run code on the machine.\n\n\"We are aware of PoCs that prove some of them can be us",
+    "url": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
+    "date": "2026-11-19T14:12:11"
+  },
+  {
+    "source": "thn",
+    "title": "Researcher Demonstrates Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle",
+    "desc": "Low-privilege database accounts that cannot read a single application table can still be used to run code on the database server itself, a researcher has shown, by reaching memory-corruption bugs in the engine code behind ordinary SQL.\n\nThe exploits, published yesterday, are the researcher's proofs ",
+    "url": "https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html",
+    "date": "2026-11-19T13:44:00"
+  },
+  {
+    "source": "thn",
+    "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
+    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added four vulnerabilities impacting Synology DiskStation Manager (DSM), BerriAI LiteLLM, Apache Axis, and Vanderbilt University Research Electronic Data Capture (REDCap) to its Known Exploited Vulnerabilities (KEV) catalo",
+    "url": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
+    "date": "2026-11-19T13:30:00"
+  },
+  {
+    "source": "thn",
+    "title": "PHP Warns of Critical Security Flaws Affecting All Supported Versions, Fixes Coming November 19",
+    "desc": "The maintainers of the PHP programming language on Wednesday issued an advisory announcing an upcoming security release that addresses critical flaws.\n\nThe release is scheduled for November 19, 2026, between 2 and 2:30 p.m. UTC.\n\n\"These releases are part of PHP's regular four-week release cycle and ",
+    "url": "https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html",
+    "date": "2026-11-19T10:03:46"
+  },
+  {
+    "source": "thn",
     "title": "10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers",
     "desc": "A flaw in NGINX's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in.\n\nThe decade-old flaw, CVE-2026-123007, dubbed \"nginx2root,\" has been present in NGINX's open-source code since version 1.9.5, released on September 22, 2015. Fixed versions 1",
     "url": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
     "date": "2026-11-19T00:01:17"
+  },
+  {
+    "source": "boannews",
+    "title": "전국민 휴대폰 울린 ‘역사적 수능’... AI 부정행위, 끝없는 ‘창과 방패’ 전쟁 서막",
+    "desc": "삑~~~~! 카페에서도, 사무실에서도 모든 시민의 휴대폰에서 동시에 재난문자가 울렸다. “수능시험 부정방지 문자니 놀라지 마시라”는 내용이다.2026년 11월 19일, 수험생들은 AI 부정행위가 국가적 이슈로 수면 위에 오른 ‘역사적 수능’을 마쳤다. 우여곡절 끝에 치러진 ‘2027년 대학수학능력시험’은 이미 만연해진 AI 부정행위를 둘러싼 ‘끝없는 창과 방패의 싸움’의 서막이었다. “AI 사회에 필연적으로 동반되는 악용 문제에 대한 기술적 대책과 윤리적 종합대책 마련이 시급하다”는 게 학계의 중론이다.공을 쏘아 올린 것은 국가전문",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147395",
+    "date": "2026-11-19 18:30:40"
+  },
+  {
+    "source": "boannews",
+    "title": "[보안 최전선 ⑨] 김동현 크리밋 대표 “보안은 관문 아닌 파트너… 핵심 자산 지켜야 속도 산다”",
+    "desc": "“과징금을 피하려고 체크리스트만 채우는 보안은 한계가 뚜렷합니다. 우리 비즈니스에서 가장 치명적인 핵심 자산이 무엇인지 고민하고 이를 안전하게 지킬 길을 찾을 때, 비로소 비즈니스 속도와 보안이 함께 달릴 수 있습니다.”김동현 크리밋 대표의 보안 인생은 중고등학생 시절 운영진으로 몸담았던 게임 서버에서 시작됐다. 동시 접속자가 3만~4만명에 달하던 놀이터가 DDoS 공격으로 하루아침에 무너지자, 그는 놀이터를 지키겠다는 마음으로 정보보안에 뛰어들었다.이후 무선 보안 기업에서 와이파이·블루투스 보안 개발과 연구를 맡았고, 보안 교육·",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147393",
+    "date": "2026-11-19 18:05:00"
+  },
+  {
+    "source": "boannews",
+    "title": "한국공항보안·한국원자력환경공단, 공항 보안검색 현장 방사선 안전관리 강화 ‘맞손’",
+    "desc": "한국공항보안 안전보안본부(본부장 이종명)는 19일 경북 경주시 한국원자력환경공단 코라디움에서 한국원자력환경공단 중저준위사업본부(본부장 이길남)와 보안검색 종사자의 방사선 안전관리 강화를 위한 업무협약(MOU)을 체결했다고 밝혔다.이번 협약은 공항 보안검색 현장에서 운용 중인 X-ray 검색장비의 방사선 노출 수준을 객관적으로 검증하고, 전문기관의 기술적 역량을 활용해 체계적인 방사선 안전관리 기반을 마련하기 위해 추진됐다.협약에 따라 양 기관은 △방사선 측정 및 결과 분석 △안전관리 개선방안 협의 △후속 점검 및 재측정 △방사선 안",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147389",
+    "date": "2026-11-19 16:48:00"
+  },
+  {
+    "source": "boannews",
+    "title": "조달청, 공공기관 자체조달 4만5000건 점검통해 법령 위반 2049건 시정요구",
+    "desc": "조달청(청장 백승보)은 ‘공공기관 자체조달 법령위반 사항 점검’ 결과, 2026년 10월 말 기준 총 4만5689건을 점검해 2049건에 대해 시정을 요구했다고 밝혔다.주요 위반 유형은 △입찰참가자격 부당제한(56.2%)이 가장 많았으며, △입찰공고 기간 미준수(34.7%) △협상계약 기준 위반(6.1%) 순으로 집계됐다. 기관별 평균 시정률은 계약 경험이 많은 지방정부가 4.2%로 교육기관(6.4%)보다 낮았다.특히 시정요구 경험 유무에 따라 위반율 격차가 뚜렷했다. 시정요구 이력이 없는 기관의 평균 위반율은 지방정부 14.4%,",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147388",
+    "date": "2026-11-19 16:45:00"
+  },
+  {
+    "source": "boannews",
+    "title": "러시아 해커 ‘콜드렐릭’, 동료 사칭해 미국 기관 연쇄 침투",
+    "desc": "러시아 연계 해킹 조직 ‘콜드렐릭’(Cold Relic)이 한 미국 기관의 클라우드를 털어 얻은 정보로 다른 미국 기관까지 연쇄적으로 침투했다. 구글은 이 사건을 분석한 보고서를 18일(현지시각) 공개했다.구글 보안 자회사 맨디언트와 구글 위협인텔리전스그룹(GTIG)은 2026년 미국 한 기관의 침해 사고를 조사했다. 공격자는 이 공격에 2025년 말 다른 미국 기관을 해킹해 얻은 데이터와 직원 명부, 계정 정보를 썼다. 콜드렐릭은 콜드리버(COLDRIVER), 칼리스토(Callisto), 스타블리자드(Star Blizzard) 등",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147371",
+    "date": "2026-11-19 16:30:00"
+  },
+  {
+    "source": "boannews",
+    "title": "[자바 취약점 비상] 개인정보위, ‘자바4셸’ 예방조치 당부... 미조치 시 대규모 유출사고 우려",
+    "desc": "자바(Java) 환경에서 발견된 치명적인 취약점을 두고 당국이 예방조치를 당부했다.개인정보보호위원회(개인정보위)는 최근 자바 실행환경에서의 보안 취약점이 공개됨에 따라, 자바 기반 시스템을 운영하는 공공기관과 민간기업 등 개인정보처리자에게 개인정보 유출 예방을 위한 보호 조치를 당부했다.18일 오전에 발표된 ‘자바4셸’(Java4Shell)은 공격자가 별도의 인증 없이도 대상 시스템에 원격으로 임의의 명령을 실행할 수 있는 취약점이다. CVE(공개취약점) ID는 CVE-2026-114938로 명명됐다. 자바는 사회 전반의 다양한 업",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147387",
+    "date": "2026-11-19 15:32:53"
+  },
+  {
+    "source": "boannews",
+    "title": "실제 사업자 번호 넣은 가짜 정부 메일까지... 미국 트럭 운송업계 노린 공격 세 갈래",
+    "desc": "미국 트럭 운송·물류 업계를 겨냥한 사이버 공격 세 갈래가 한꺼번에 드러났다. 운송사업자를 관리하는 정부기관을 사칭하거나 화물 중개 서류와 화물 거래 사이트로 위장해 계정과 돈, 업무용 PC를 노렸다.악성코드 분석 서비스 업체 애니런(ANY.RUN)은 17일(현지시각) 미국 물류 업계를 노린 세 갈래 공격을 분석한 보고서를 공개했다.첫째인 ‘헬로프렌즈’(HelloFriends)는 미국 연방자동차운송안전청(FMCSA)을 사칭한다. 애니런이 분석한 메일 한 통은 공격자가 소유한 도메인에서 발송됐는데, 수신자의 실제 운송사업자번호(USD",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147373",
+    "date": "2026-11-19 15:30:00"
+  },
+  {
+    "source": "boannews",
+    "title": "[자바 취약점 비상] 우리 조직도 자바 취약점? 자바4셸 탐지 도구를 써보자",
+    "desc": "자바4셸(Java4Shell)이라 불리는 보안 취약점 ‘CVE-2026-114938’이 공개되며 전 세계 기업과 기관에 비상이 걸렸다. 자바는 오랜 기간 대표적 개발 언어로 자리잡았고, 특히 기업 백엔드는 물론 금융과 대규모 공공시스템에서 비중이 매우 높다. 우리나라 역시 행정·공공기관 정보시스템의 71.3%가 자바 기반으로 구축된 것으로 알려졌다.보안담당자들이 가장 먼저 확인해야 할 것은 바로 “우리 조직에서 얼마나 자바를 사용하고 있는지”와 “자바4셸 취약점에 노출될 가능성이 있는 자바 실행 환경이 얼마나 존재하는 지”다.이때",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147386",
+    "date": "2026-11-19 14:30:41"
+  },
+  {
+    "source": "boannews",
+    "title": "에이리스, AI 기반 X-ray 스마트글라스 탐지 기술 개발 성공",
+    "desc": "인공지능(AI) 스마트글라스를 이용한 시험 부정행위와 산업기밀 유출 우려가 커지는 가운데, AI 보안검색 전문기업 에이리스(대표 김정미)가 X-ray 영상에서 스마트글라스를 자동으로 식별하는 AI 탐지 기술을 개발했다.스마트글라스는 일반 안경과 외형이 비슷하지만 초소형 카메라와 마이크 등 전자장치를 내장해 영상 촬영과 정보 수집이 가능하다. 이에 시험장에서는 부정행위 수단으로, 반도체 제조시설과 연구소 등에서는 정보 유출 위험 요인으로 지목되고 있다.특히 대규모 인원이 출입하는 시험장에서는 감독관이 스마트글라스 착용 여부를 일일이",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147376",
+    "date": "2026-11-19 13:41:24"
+  },
+  {
+    "source": "boannews",
+    "title": "라온피플, GPU 서버 없는 VLM 영상관제 ‘오딘 AI 엣지’ 출시",
+    "desc": "AI 및 머신비전 전문기업 라온피플(대표 이석중)이 별도의 고가 GPU 서버 없이 시각언어모델(VLM) 기반 영상관제를 구현할 수 있는 ‘오딘 AI 엣지’(Odin AI Edge)를 출시했다고 19일 밝혔다.‘오딘 AI 엣지’는 영상 속 사람의 행동과 주변 환경을 분석해 상황의 맥락을 파악하는 VLM 기반 영상관제 솔루션이다. AI 분석과 관제 소프트웨어, 영상저장(NVR) 기능을 하나의 디바이스에 통합한 온디바이스형 제품으로 현장에서 직접 VLM 추론을 수행한다. 별도의 GPU 서버나 관제 소프트웨어를 추가 구매하지 않고도 4채널",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147385",
+    "date": "2026-11-19 13:30:00"
   },
   {
     "source": "boannews",
@@ -225,7 +365,7 @@
   },
   {
     "source": "boannews",
-    "title": "“영어권 기준으론 AI 안전 못 잰다”... 에임임인텔리전스, ‘NeurIPS 2026’ 논문 채택",
+    "title": "“영어권 기준으론 AI 안전 못 잰다”... 에임인텔리전스, ‘NeurIPS 2026’ 논문 채택",
     "desc": "에임인텔리전스의 다국어 AI 안전성 평가 논문이 ‘NeurIPS 2026’에 채택됐다.에임인텔리전스는 연구 논문 ‘XL-SafetyBench’가 신경정보처리시스템학회(NeurIPS) 평가·데이터셋 트랙 심사를 통과했다고 19일 밝혔다. 올해 40회째인 NeurIPS 2026은 오는 12월 호주 시드니와 미국 애틀랜타, 프랑스 파리에서 열린다. XL-SafetyBench는 한국·미국·일본·인도 등 10개국의 법과 제도, 문화를 반영한 거대언어모델(LLM) 안전성 벤치마크다. 연구팀은 각국 현지 언어로 문항 5500개를 만들고 국가별",
     "url": "https://www.boannews.com/news/articleView.html?idxno=147380",
     "date": "2026-11-19 12:20:00"
@@ -558,145 +698,5 @@
     "desc": "세무사 시험 수석 합격자가 감독관 앞에서 초소형 카메라와 AI를 이용해 160문항 중 159개를 맞힌 첨단 부정행위 사실이 적발되었다. 이에 청와대와 민·관·군은 수능 시험장 열화상 카메라 투입, 국가자격시험 전수조사, IT 자산 전수조사 및 SBOM 조기 도입 등 총력 대응에 나섰다. 보이지 않는 AI 악용과 첨단 침투를 차단하기 위해 열화상 탐지·전파 격리와 상시적인 공급망 전수 검증 체계 구축이 요구된다.",
     "url": "https://www.boannews.com/news/articleView.html?idxno=147346",
     "date": "2026-11-18 10:32:02"
-  },
-  {
-    "source": "boannews",
-    "title": "“AI로 보안 운영 자동화”... AI스페라, 위협 노출 관리 플랫폼 ‘AITEM’ 출시",
-    "desc": "‘크리미널 IP’에 공격표면관리(ASM) 뿐 아니라 지속적 위협 노출 관리(CTEM)와 모의해킹까지 더해져 AI를 기반으로 모의해킹부터 위협 분석까지 자동화할 수 있게 됐다.사이버 위협 인텔리전스 전문기업 AI스페라(대표 강병탁)는 AI 기반 위협 노출 관리 플랫폼 ‘크리미널 IP 에이아이템’(Criminal IP AITEM)을 19일 정식 출시한다고 18일 밝혔다.AITEM은 기업의 서버와 웹사이트 등에 노출된 보안 위험을 탐지하고, AI 에이전트로 위협 분석과 반복적인 보안 업무를 자동화하는 플랫폼이다. ‘크리미널 IP ASM’",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147345",
-    "date": "2026-11-18 10:20:00"
-  },
-  {
-    "source": "boannews",
-    "title": "윈도우 11의 AI 코딩 도구 추적 기능 발견... 사생활 보호하려면 '진단 데이터' 꺼야",
-    "desc": "윈도우 11에 사용자가 쓰는 AI 코딩 에이전트를 가려내 진단 데이터 보고서에 담는 기능이 들어 있다는 분석이 나왔다. 개발자 PC에서 클로드나 코덱스, 커서 같은 도구가 돌아가는지가 마이크로소프트에 전송될 수 있다는 얘기다.보안 연구원 쉬성 리(Xusheng Li)는 이 내용을 개인 블로그에 공개했다. 처음 단서를 찾은 뒤 X에 알렸고, 이후 프로그램 분석 도구 바이너리닌자(Binary Ninja)로 파일을 뜯어본 기술 분석 전문을 올렸다.쉬성 리가 분석한 파일은 MissionControlAggregator.dll이다. 윈도우 원",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147340",
-    "date": "2026-11-18 10:20:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[자바 취약점 비상] “인터넷 공개 서비스부터!”... 과기정통부, 자바 취약점 긴급점검 권고",
-    "desc": "자바(JAVA) 보안 취약점이 발견됨에 따라 버전과 실행환경을 긴급히 점검하고, 인터넷에 공개된 서비스부터 우선 조치하라는 정부 권고가 내려왔다.과학기술정보통신부(부총리 겸 장관 배경훈)와 한국인터넷진흥원(KISA)은 자바 실행환경인 오픈제이디케이(OpenJDK)에서 보안 취약점이 발견됨에 따라, 긴급 점검과 보안 업데이트를 권고했다.공격자가 악용할 경우 악성코드 실행 등의 피해가 발생할 수 있다. 이에 과기정통부는 보호나라 보안공지에 따라 신속하게 보안조치를 해줄 것을 당부했다.자바란 웹서비스, 그룹웨어, ERP 등 다양한 프로그",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147343",
-    "date": "2026-11-18 09:59:51"
-  },
-  {
-    "source": "boannews",
-    "title": "[자바 취약점 비상] 오라클, ‘자바4셸’ 등 RCE 취약점 11건 긴급 패치... “즉시 업데이트 필수”",
-    "desc": "국내는 물론 전 세계적으로 인프라 전반에서 광범위하게 사용되는 자바(Java) 생태계에 또다시 대형 보안 경고등이 켜졌다. ‘자바4셸’(Java4Shell, CVE-2026-114938)에 대한 오라클의 공식 보안 업데이트가 마침내 배포됐다. 오라클을 비롯한 한국인터넷진흥원(KISA) 등 관계기관에서는 17.0.21.1, 21.0.13.1과 같은 최신 패치 빌드로 즉시 전환할 것을 권고했다. 오라클(Oracle)은 17일(현지시간) ‘2026년 11월 긴급 보안 패치 업데이트’(CSPU)를 발표했다. 이번 긴급 패치에는 자바4셸 관",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147336",
-    "date": "2026-11-18 08:08:26"
-  },
-  {
-    "source": "boannews",
-    "title": "[자바 취약점 비상] PHP 이어 ‘자바’(Java)도 뚫렸다... 대기업·공공기관 핵심 서버 ‘보안 경보’",
-    "desc": "대부분 IT 시스템에 널리 쓰이는 프로그래밍 언어 자바(Java)에서 치명적 보안 취약점이 발견됐다. 이 취약점을 악용하면 공격자는 로그인 등 인증 절차를 거치지 않아도 원격으로 시스템 내부에서 악성코드를 실행할 수 있다. 위험도 역시 최고 수준으로 분류됐다. 패치 공개 즉시 조치에 들어가야 한다. 17일 보안 업계에 따르면, 자바에서 메모리 손상 취약점이 발견됐다. 이 취약점을 악용하면 자바 애플리케이션에서 인증 이전에 원격 코드 실행(RCE)이 가능한 것으로 알려졌다. 보안업계 안팎에서는 이 취약점을 ‘자바4셸’(Java4She",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147325",
-    "date": "2026-11-18 07:05:00"
-  },
-  {
-    "source": "thn",
-    "title": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
-    "desc": "Oracle is preparing to release security patches for 11 vulnerabilities in Java SE on Tuesday, November 17, 2026, all of which may be exploited remotely without authentication, as separate reports warn of a potentially critical remote code execution (RCE) flaw affecting OpenJDK.\n\nThe 11 vulnerabiliti",
-    "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
-    "date": "2026-11-17T20:47:36"
-  },
-  {
-    "source": "thn",
-    "title": "Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers",
-    "desc": "Artificial intelligence (AI), blockchain, and logistics sectors across Europe and the U.S. have emerged as the target of a large-scale, industrialized campaign dubbed Trigram.\n\n\"Trigram is a large-scale campaign that impersonates about 50 brands in the blockchain and AI sectors, to trick developers ",
-    "url": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html",
-    "date": "2026-11-17T20:47:28"
-  },
-  {
-    "source": "thn",
-    "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
-    "desc": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it.\n\nIn March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malici",
-    "url": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
-    "date": "2026-11-17T17:55:06"
-  },
-  {
-    "source": "thn",
-    "title": "Researchers Detail iPhone Flaw That Let Apps Record Audio Despite Denied Microphone Permission",
-    "desc": "A now-patched flaw in Apple's audio service let apps on iPhones and iPads record audio even after the user tapped \"Don't Allow\" on the microphone prompt.\n\nThe first security updates with the fix came out on August 17. Neither Apple nor the two researchers who found the flaw report that it was used i",
-    "url": "https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html",
-    "date": "2026-11-17T17:44:36"
-  },
-  {
-    "source": "thn",
-    "title": "New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels",
-    "desc": "Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage legitimate services like Microsoft SharePoint and GitHub for command‑and‑control (C2).\n\nThe activity has been codenamed Operation ShadowClou",
-    "url": "https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html",
-    "date": "2026-11-17T16:50:18"
-  },
-  {
-    "source": "thn",
-    "title": "Apple Tightens macOS App Permissions to Limit Data Access Amid AI Agent Security Risks",
-    "desc": "Apple on Monday introduced new controls that allow Mac users to give more granular access to data they give to apps, including those that use artificial intelligence (AI) agents.\n\nThe changes, currently previewed in macOS 27.3 beta 2, relate to increased transparency and more options for two of its ",
-    "url": "https://thehackernews.com/2026/11/apple-tightens-macos-app-permissions-to.html",
-    "date": "2026-11-17T16:37:31"
-  },
-  {
-    "source": "thn",
-    "title": "Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors",
-    "desc": "An attacker exploited a flaw in Optimizely Web Experimentation to plant malicious code in some of the scripts that customers' websites load from the service, Optimizely said early today.\n\nVisitors to sites run by at least 178 organizations, including CNN, the BBC and Zoom, received the code yesterda",
-    "url": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html",
-    "date": "2026-11-17T12:42:13"
-  },
-  {
-    "source": "thn",
-    "title": "ConnectWise Warns ScreenConnect Attacks Continue as SCKit Targets Unpatched Systems",
-    "desc": "ConnectWise on Monday said it completed its investigation into unauthorized access targeting partner ScreenConnect environments, and recommended customers to ensure that the technician client is running version 26.6.5 or later.\n\nThe company said additional activity targeting on-premises environments",
-    "url": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html",
-    "date": "2026-11-17T11:59:27"
-  },
-  {
-    "source": "thn",
-    "title": "N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners",
-    "desc": "N-able has released a new security update to address additional critical security flaws impacting N-central.\n\nDescribing N-central 2026.4 Hotfix 3 as a critical security update, the company said it includes a number of security patches and fixes that enhance the security of the Remote Monitoring and",
-    "url": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html",
-    "date": "2026-11-17T10:30:34"
-  },
-  {
-    "source": "boannews",
-    "title": "프로젝트 끝나고 안 지운 키... 바라쿠다 클라우드, AI 해킹 도구에 44시간 뚫려",
-    "desc": "네트워크·이메일 보안 기업 바라쿠다의 클라우드 환경이 11월 초 침해됐다. 공격자는 훔친 클라우드 접속 키로 들어와 오픈소스 AI 침투 테스트 도구 아르텍스(ARTEX)로 내부를 휘젓고 다녔다.공격자는 11월 1~2일 44시간 동안 클라우드 계정 10개가량에 접근했다. 침입은 4일 발견됐다. 바라쿠다는 조사 결과 아르텍스가 쓰인 이번 공격을 ‘기계 속도 침입’이라고 불렀다.출발점은 바라쿠다가 예전 프로젝트 기간에 외부 AI 업체에 내준 클라우드 접속 키였다. 이 업체가 작업을 마친 뒤에도 바라쿠다는 키를 폐기하지 않았다. 바라쿠다는",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147316",
-    "date": "2026-11-17 19:45:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[배종찬의 보안 빅데이터] 통신차단까지 무력화된 수능 AI 부정행위 우려",
-    "desc": "어느덧 아침저녁으로 ‘쌀쌀한 날씨’가 이어지는 가운데, 1년 동안 구슬땀을 흘려온 수험생들의 결실을 맺는 대학수학능력시험이 코앞으로 다가왔다.최근 빅데이터 분석 매체인 썸트렌드(SomeTrend)의 2026년 11월 12~15일 빅데이터 분석 결과에 따르면, 세무사 등 주요 국가 자격시험에서 AI 안경, 초소형 단추 카메라, 좁쌀 이어폰 등을 동원한 지능형 ‘부정행위’가 수면 위로 드러나면서 사회적 ‘우려’가 최고조에 달하고 있다.이는 더 이상 단순한 일탈을 넘어 우리 사회의 신뢰 시스템을 뒤흔드는 ‘문제 크다’와 ‘위험 있다’는",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147327",
-    "date": "2026-11-17 18:10:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[신간] 현직 기술사 3인이 쓴 2027 정보보안기사 비법서... 수제비 필기 기본서 제2판 출간",
-    "desc": "2027년 변경된 출제기준을 반영한 ‘2027 수제비 정보보안기사 필기 기본서 [제2판]’가 20일 출간된다.수험서 전문 브랜드 수제비 출판사가는 기존 수험서의 기출 복원 중심 구성에서 나아가 2027년 개편되는 한국방송통신전파진흥원(KCA)의 출제 기준에 맞춰 목차와 이론 체계를 전면 재구성했다. 이번 제2판 집필에는 수제비 시리즈 대표 저자인 윤영빈 기술사와 문광석 기술사, 김영호 기술사 등 보안 정책 수립과 ‘국가직무능력표준’(NCS) 모듈 개발 경험을 보유한 현직 기술사 3인이 참여했다.개정판은 총 2권(989쪽) 분량으로",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147328",
-    "date": "2026-11-17 16:32:17"
-  },
-  {
-    "source": "boannews",
-    "title": "모니터랩, ‘FISCON 2026’서 제로트러스트·AI 보안 전략 제시",
-    "desc": "모니터랩이 최근 서울 여의도 콘래드 서울에서 열린 금융정보보호 컨퍼런스 ‘FISCON 2026’에 참가해 제로트러스트·AI 보안 전략을 선보였다고 17일 밝혔다.올해 FISCON 2026은 ‘Now for Next Finance’를 주제로 AI 기반 사이버 위협 고도화에 따른 금융권 보안 대응 전략과 AI 보안체계 전환 방향을 모색하기 위해 마련됐다. 모니터랩은 SWG·CASB·GenAI Security·RBI·ZTNA 등 제로트러스트 기반 솔루션에 웹 애플리케이션 보안 솔루션 WAAP과 파일 무해화 솔루션 CDR을 결합한 통합 포",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147334",
-    "date": "2026-11-17 16:25:56"
-  },
-  {
-    "source": "boannews",
-    "title": "28개 대학 연쇄해킹 충격... 아르텍스 활용해 ‘rERP’ 집중 타격했다",
-    "desc": "국내 28개 대학을 동시에 해킹했다고 주장하는 공격자가 등장한 가운데, 공격 과정에서 아르텍스(ARTEX)를 사용했을 가능성이 포착됐다. 대학 공통 연구행정통합시스템 ‘rERP’를 집중 타격한 것으로 분석됐다. rERP는 다수 대학이 사용하는 산학협력단 표준 연구행정 시스템이다. 공격자 입장에선 여러 대학의 산학협력 연구 정보들을 동시다발적으로 탈취할 수 있는 효율적 공급망이란 얘기다. 17일 보안 업계에 따르면 최근 ‘KimJEN’이라는 활동명의 공격자가 한국 대학들 데이터를 탈취했다고 주장하며 31개의 압축 파일(ac.kr.zi",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147326",
-    "date": "2026-11-17 16:24:26"
-  },
-  {
-    "source": "boannews",
-    "title": "KISIA, 인도네시아 대학생 정보보호 교육... 글로벌 인재풀 구축",
-    "desc": "한국정보보호산업협회(KISIA, 회장 김진수)와 과학기술정보통신부(부총리 겸 장관 배경훈)는 글로벌 인재풀 구축을 목적으로 인도네시가 대학생을 초청해 정보보호 교육을 제공했다. KISIA는 온라인 교육 우수 수료생 10명을 국내로 초청해 일주일간 오프라인 교육 프로그램을 운영했다고 17일 밝혔다.이 교육 프로그램은 국내 정보보호 기업의 글로벌 사업 경쟁력 강화와 해외 현지 인력 활용 기반 마련이 목적이다. KISIA는 2023년부터 현지 전문 인력을 다양한 형태로 활용할 수 있도록 인도네시아 정보보호 인재 발굴 및 인력풀(DB) 구",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147333",
-    "date": "2026-11-17 15:59:30"
   }
 ]
