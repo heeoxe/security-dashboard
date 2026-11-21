@@ -78,16 +78,9 @@
   },
   {
     "source": "cisa",
-    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-    "desc": "CISA has added one new vulnerability to its&nbsp;Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\n\nCVE-2026-115731 Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability\n\nThis type of vulnerability is a frequent attack vector for malicious ",
-    "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog",
-    "date": "Tue, 17 Nov 26 12:00:00 +0000"
-  },
-  {
-    "source": "cisa",
-    "title": "Siemens meta-iot2050",
-    "desc": "View CSAF\nSummary\nmeta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could allow an attacker which is able to manipulate a configuration file to have arbitrary commands run as root. Siemens is preparing fi",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11",
+    "title": "Siemens RUGGEDCOM APE1808",
+    "desc": "View CSAF\nSummary\nFortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens recommends to update Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support t",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
     "date": "Tue, 17 Nov 26 12:00:00 +0000"
   },
   {
@@ -99,9 +92,16 @@
   },
   {
     "source": "cisa",
-    "title": "Siemens RUGGEDCOM APE1808",
-    "desc": "View CSAF\nSummary\nFortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens recommends to update Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support t",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
+    "title": "Siemens meta-iot2050",
+    "desc": "View CSAF\nSummary\nmeta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could allow an attacker which is able to manipulate a configuration file to have arbitrary commands run as root. Siemens is preparing fi",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11",
+    "date": "Tue, 17 Nov 26 12:00:00 +0000"
+  },
+  {
+    "source": "cisa",
+    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+    "desc": "CISA has added one new vulnerability to its&nbsp;Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\n\nCVE-2026-115731 Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability\n\nThis type of vulnerability is a frequent attack vector for malicious ",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog",
     "date": "Tue, 17 Nov 26 12:00:00 +0000"
   },
   {
@@ -110,13 +110,6 @@
     "desc": "CISA has added six new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\n\nCVE-2026-20320 Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability&nbsp;\nCVE-2026-111560 Barracuda Networks Multiple Products OS Co",
     "url": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
     "date": "Tue, 10 Nov 26 12:00:00 +0000"
-  },
-  {
-    "source": "cisa",
-    "title": "Subnet Solutions PowerSYSTEM Center",
-    "desc": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to execute unauthorized SQL commands and gain access to unauthorized resources.\nThe following versions of Subnet Solutions PowerSYSTEM Center are affected:\n\nPowerSYSTEM Center 2020 &lt;=5.29.x (CVE-2026-63017)",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01",
-    "date": "Tue, 03 Nov 26 12:00:00 +0000"
   },
   {
     "source": "cisa",
@@ -141,16 +134,16 @@
   },
   {
     "source": "cisa",
-    "title": "Siemens RUGGEDCOM APE1808",
-    "desc": "View CSAF\nSummary\nPalo Alto Networks has published information on vulnerabilities in PAN-OS related to PHP2Shell vulnerabilities. This advisory lists the related Siemens Industrial products affected by these vulnerabilities. Customers are advised to consult and implement the workarounds provided in ",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05",
+    "title": "Siemens Building Automation and Energy Products",
+    "desc": "View CSAF\nSummary\nOn October 21, 2026, the PHP project and security researchers disclosed two critical, unauthenticated remote code execution vulnerabilities in the core PHP language runtime known as \"php2shell\" (tracked as CVE-2026-109618 and CVE-2026-109619). This advisory covers the status of imp",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01",
     "date": "Thu, 12 Nov 26 12:00:00 +0000"
   },
   {
     "source": "cisa",
-    "title": "Siemens Building Automation and Energy Products",
-    "desc": "View CSAF\nSummary\nOn October 21, 2026, the PHP project and security researchers disclosed two critical, unauthenticated remote code execution vulnerabilities in the core PHP language runtime known as \"php2shell\" (tracked as CVE-2026-109618 and CVE-2026-109619). This advisory covers the status of imp",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01",
+    "title": "Siemens RUGGEDCOM APE1808",
+    "desc": "View CSAF\nSummary\nPalo Alto Networks has published information on vulnerabilities in PAN-OS related to PHP2Shell vulnerabilities. This advisory lists the related Siemens Industrial products affected by these vulnerabilities. Customers are advised to consult and implement the workarounds provided in ",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05",
     "date": "Thu, 12 Nov 26 12:00:00 +0000"
   },
   {
@@ -197,6 +190,13 @@
   },
   {
     "source": "cisa",
+    "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+    "desc": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\n\nCVE-2025-42884 SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability\nCVE-2026-76466 Cisco Expressway Series Use of Hard-coded",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+    "date": "Fri, 20 Nov 26 12:00:00 +0000"
+  },
+  {
+    "source": "cisa",
     "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
     "desc": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\n\n\n\nCVE-2026-114713 UnrealIRCd Improper Neutralization of Delimiters Vulnerability\n\n\n\n\nCVE-2026-123039 Check Point Multiple Products Incorrect Permission Assignment f",
     "url": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
@@ -208,6 +208,13 @@
     "desc": "CISA has added one new vulnerability to its&nbsp;Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\n\nCVE-2026-19868 SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability\n\nThis type of vulnerability is a frequent attack vector for malicious c",
     "url": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog",
     "date": "Fri, 06 Nov 26 12:00:00 +0000"
+  },
+  {
+    "source": "thn",
+    "title": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
+    "desc": "Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages.\n\nThe vulnerability, tracked as CVE-2026-23871, has been described as a case of incomplete validation of external ad-reply URL",
+    "url": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html",
+    "date": "2026-11-20T23:27:20"
   },
   {
     "source": "thn",
@@ -691,12 +698,5 @@
     "desc": "A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif, the security research firm that disclosed it this week.\n\nThe flaw is present in Java 17.0.6 and later, and the vulnerable code runs ",
     "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
     "date": "2026-11-18T17:25:49"
-  },
-  {
-    "source": "thn",
-    "title": "Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are",
-    "desc": "AI is speeding up how software is built, which means more code, more changes, and more chances for vulnerabilities to reach production. It's speeding up how attackers find and exploit them too, with time-to-exploit now down to a single day. Security testing has to keep up with both.\n\nAI pentesting h",
-    "url": "https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html",
-    "date": "2026-11-18T16:33:57"
   }
 ]
