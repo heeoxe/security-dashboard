@@ -211,6 +211,34 @@
   },
   {
     "source": "thn",
+    "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
+    "desc": "Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week.\n\nSome of the stolen requests were flagged as Zero Data Retention, the setting that is supposed to mean a promp",
+    "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+    "date": "2026-11-22T10:36:55"
+  },
+  {
+    "source": "thn",
+    "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
+    "desc": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it.\n\nGhostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the ",
+    "url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
+    "date": "2026-11-22T10:33:41"
+  },
+  {
+    "source": "boannews",
+    "title": "한전, ‘한전ON’·조달망 뚫려 개인정보 152만여건 유출... 주민번호·카드번호까지 털려",
+    "desc": "한국전력공사(한전)의 고객 서비스 플랫폼 ‘한전ON’과 전자조달시스템(SRM)이 사이버 공격을 받아 총 152만여건의 개인정보가 유출됐다.한전은 22일 한전ON 이용자 65만487명과 구매·공사·용역 업무에 쓰는 전자조달시스템 이용자 86만9761명 등 총 152만248건의 개인정보 유출 사실을 확인했다고 밝혔다. 한전ON에서는 전기사용 고객의 △고객번호 △성명 △고유식별정보(주민·외국인등록번호) △전화번호 △주소 △은행명 △계좌번호 △예금주명 △카드사 △카드번호 △카드명의자 △요금 및 청구정보 등 12개 항목이 유출됐다. 전자조달",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147429",
+    "date": "2026-11-22 19:57:10"
+  },
+  {
+    "source": "boannews",
+    "title": "블랙다이아몬드 코리아, 공급망 피해로 개인정보 유출 가능성 안내 “택배 사칭 주의”",
+    "desc": "블랙다이아몬드 코리아가 주문·배송용 외부 통합 전사적 자원관리(ERP) 서버의 비정상 접근 정황을 통보받고 개인정보 유출 가능성을 공지했다.미국 아웃도어 기업의 한국 지사인 블랙다이아몬드 코리아는 지난 20일 공식 홈페이지에 ‘출고 시스템 점검으로 인한 발송 지연’ 제목의 긴급공지를 올려 외주 주문 시스템 침해사고 경위를 밝혔다. 회사에 따르면 지난 19일 외부 통합 ERP 서비스사 서버에서 외부인의 비정상 접근 정황이 확인됐으며, 블랙다이아몬드 코리아는 같은 날 오전 7시 이를 통보받아 인지했다.유출 가능성이 제기된 항목은 △이름",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147428",
+    "date": "2026-11-22 15:55:12"
+  },
+  {
+    "source": "thn",
     "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
     "desc": "A malicious webpage could extract a Meta Muse user's private conversations and stored memories from the assistant without triggering any approval prompt, researchers have shown.\n\nThe same attack could be extended to reach the credentials Muse stores for the user's connected accounts.\n\nThe work was a",
     "url": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
@@ -670,33 +698,5 @@
     "desc": "더존비즈온 침해사고로 한국전자인증 등 4곳의 피해 기업이 발생했다. 이들 기업에서도 개인정보 유출 가능성이 제기된 것이다.피해 기업 4곳은 △한국전자인증 △곡성군미래교육재단 △광주연구원 △광주여성재단 등이다.먼저 한국전자인증은 임직원 및 퇴직자의 성명, 주민등록번호(뒷6자리 암호화), 휴대전화번호, 이메일 주소, 계좌번호의 유출 가능성이 제기됐다. 회사는 관계기관에 신고를 마친 상태다.광주연구원에서는 이름, 생년월일, 주민등록번호, 계좌번호, 소득정보, 주소, 연락처, 등이 유출됐을 가능성이 나왔다.광주여성재단, 곡성군미래교육재단",
     "url": "https://www.boannews.com/news/articleView.html?idxno=147382",
     "date": "2026-11-19 10:27:40"
-  },
-  {
-    "source": "boannews",
-    "title": "엔키화이트햇 “웹 넘어 실행환경 점검 필수”... ‘자바4셸’ 내부 점검 스크립트·분석 보고서 배포",
-    "desc": "엔키화이트햇이 자바 원격 코드 실행 취약점 진단 도구와 분석 보고서를 긴급 배포했다.엔키화이트햇은 자바(Java)의 원격 코드 실행(RCE) 취약점 ‘자바4셸’(Java4Shell·CVE-2026-114938) 존재 여부를 검사하는 ‘Java4Shell 내부 점검 스크립트’와 취약점 분석 보고서를 18일 배포했다고 19일 밝혔다. 자바4셸은 공통취약점평가시스템(CVSS) 4.0 기준 9.2점의 치명적 위험도를 기록한 결함으로, 자바 내부 Base64 디코딩 가속 기능(AVX-512 VBMI)이 조작된 입력을 처리할 때 메모리 손상을",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147372",
-    "date": "2026-11-19 10:17:39"
-  },
-  {
-    "source": "boannews",
-    "title": "성남시, 2030년까지 스마트도시 서비스 27개 추진... AI 재난 예측체계 구축",
-    "desc": "경기 성남시(시장 신상진)가 인공지능(AI)을 활용한 재난 예측과 공공서비스 통합 등 27개 스마트도시 서비스를 2030년까지 단계적으로 도입한다. AI 기술을 도시 안전과 행정서비스에 접목해 시민 편의를 높이고, 재난 발생에 선제적으로 대응하는 도시 운영체계를 구축한다는 계획이다.성남시는 지난 18일 용역 완료보고회를 열고 국토교통부 승인을 받은 ‘2026~2030년 성남시 스마트도시계획’과 단계별 이행 방안을 발표했다. 이번 계획은 향후 5년간 성남시 전역의 스마트도시 조성과 운영 방향을 담은 중장기 계획이다.시는 지난해 4월부",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147374",
-    "date": "2026-11-19 10:10:00"
-  },
-  {
-    "source": "boannews",
-    "title": "미 정보수장들, 잇따른 전산 장애에도 적국 공격 징후 없다고 밝혀",
-    "desc": "최근 미국에서 잇달아 터진 대형 전산 장애를 두고 트럼프 행정부 고위 당국자들이 외국의 조직적 사이버 공격은 아니라고 밝혔다. 18일(현지시각) 열린 미 하원 국토안보위원회 연례 세계 위협 청문회에서다.더레코드에 따르면 일주일 사이 미국에선 마이크로소프트 제품의 세계적 먹통, 연방항공청(FAA)의 4시간짜리 전국 이륙 중지, 은행 시스템 오류, 국가안보국(NSA) 내부망 장애가 연달아 일어났다. 여야 정책 결정자들과 대중 사이에선 외국 적대 세력의 소행일 수 있다는 불안이 커졌다.제이 클레이턴(Jay Clayton) 국가정보장(DN",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147369",
-    "date": "2026-11-19 10:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "패치 엿새 만에 악용 경보... 싱가포르, 아파치 웹서버 HTTP/2 결함 즉시 업데이트 권고",
-    "desc": "아파치 HTTP 서버의 원격코드실행(RCE) 취약점(CVE-2026-119618)이 공격에 악용되고 있다는 경보가 나왔다. 싱가포르 사이버보안청(CSA)은 17일 경보를 내고 이 결함이 활발히 악용되고 있다는 보고가 있으며, 개념증명(PoC) 코드도 공개돼 있다고 밝혔다. CSA는 심각도를 높은 등급으로 매겼다. 다만 피해 기관이나 공격 규모, 공격 주체는 밝히지 않았다.결함은 웹 통신 규약 HTTP/2를 처리하는 mod_http2 모듈에 있다. 여러 처리 과정이 동시에 같은 데이터를 건드릴 때 순서를 제대로 맞추지 못하는 문제로,",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147370",
-    "date": "2026-11-19 09:35:00"
   }
 ]
