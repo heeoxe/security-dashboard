@@ -1,40 +1,455 @@
 [
   {
-    "cve": "CVE-2026-15565",
-    "title": "Undertow: undertow-websockets: undertow: pre-auth dos on websocket endpoint with @serverendpoint class with any @onmessage method",
-    "desc": "A flaw was found in Undertow. A remote attacker can cause Out of Memory on websockets endpoint without authentication on any @ServerEndpoint class that has any @OnMessage method. This allows an attacker to cause Denial of Service attack without authentication and using only a standard WebSocket handshake.",
-    "cvss": 7.5,
-    "severity": "HIGH",
+    "cve": "CVE-2026-15223",
+    "title": "An improper export control defect in ChatEventDispatchActivity (com.vivo.agent.business.chatmode.activity.ChatEventDispa",
+    "desc": "An improper export control defect in ChatEventDispatchActivity (com.vivo.agent.business.chatmode.activity.ChatEventDispatchActivity) of Vivo Assistant allows a local malicious application to execute voice commands without user interaction via a crafted Intent, which may lead to unauthorized phone calls, SMS sending, access to private data such as location and calendar entries, and modification of ",
+    "cvss": null,
+    "severity": "",
     "cwes": [
-      "CWE-120"
+      "CWE-926",
+      "CWE-306"
     ],
     "affected": [
       {
-        "vendor": "Red Hat",
-        "product": "Red Hat JBoss Enterprise Application Platform 7.4.25"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat JBoss Enterprise Application Platform 7.4 ELS on RHEL 7"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat JBoss Enterprise Application Platform 7.4 ELS on RHEL 7"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat JBoss Enterprise Application Platform 7.4 ELS on RHEL 7"
-      },
-      {
-        "vendor": "Red Hat",
-        "product": "Red Hat JBoss Enterprise Application Platform 7.4 ELS on RHEL 7"
+        "vendor": "vivo",
+        "product": "Vivo Assistant"
       }
     ],
     "exploitation": "none",
     "isKev": false,
-    "published": "2026-08-11",
+    "published": "2026-11-20",
+    "updated": "2026-11-23",
+    "url": "https://www.vivo.com/en/support/security-advisory-detail?id=28",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-71220",
+    "title": "Gfs2-utils: gfs2-utils: stack out-of-bounds write via unchecked di_height in gfs2_edit",
+    "desc": "A stack out-of-bounds write vulnerability was found in gfs2-utils. In gfs2_edit, the di_height field from on-disk inode metadata is used as an array index without bounds checking, causing a stack buffer overflow that may lead to arbitrary code execution when processing crafted GFS2 filesystem images.",
+    "cvss": 7,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-787"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9.8 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-03",
+    "updated": "2026-11-23",
+    "url": "https://access.redhat.com/errata/RHSA-2026:100509",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-71221",
+    "title": "Gfs2-utils: gfs2-utils: stack out-of-bounds write via unchecked height in savemeta",
+    "desc": "A stack out-of-bounds write vulnerability was found in gfs2-utils. In savemeta, the height value from on-disk inode metadata is used as a loop bound without bounds checking, causing a stack buffer overflow that may lead to arbitrary code execution when processing crafted GFS2 filesystem images.",
+    "cvss": 7,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-787"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9.8 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-03",
+    "updated": "2026-11-23",
+    "url": "https://access.redhat.com/errata/RHSA-2026:100509",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-97023",
+    "title": "Flatpak: flatpak: arbitrary file deletion in root context via path traversal in deploy directory export/bin",
+    "desc": "A path traversal vulnerability in Flatpak's handling of the export/bin directory during app deployment allows a malicious Flatpak app to cause deletion of attacker-chosen files outside the deployment directory when the app is installed or upgraded. In system-wide installations, the deletion is performed as root.",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-61"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-28",
+    "updated": "2026-11-23",
+    "url": "https://access.redhat.com/errata/RHSA-2026:100668",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-97024",
+    "title": "Flatpak: flatpak: arbitrary write in root context via path traversal in deploy directory files/etc",
+    "desc": "A path traversal vulnerability in Flatpak's handling of the files/etc directory during app deployment allows a malicious Flatpak app to cause certain host system files (such as passwd, group, machine-id, or resolv.conf) to be emptied or replaced with a symlink when the app is installed or upgraded. In system-wide installations, the write is performed as root.",
+    "cvss": 7.1,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-61"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10.0 Extended Update Support"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-09-29",
+    "updated": "2026-11-23",
+    "url": "https://access.redhat.com/errata/RHSA-2026:100668",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-86565",
+    "title": "Dpdk: dpdk: guest can desynchronize virtqueue size from inflight descriptor table size, causing out-of-bounds write",
+    "desc": "A flaw was found in DPDK lib/vhost. A guest can desynchronize virtqueue size from inflight descriptor table size, causing an out-of-bounds write in the host vhost process.",
+    "cvss": 8.2,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-787"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Fast Datapath for Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-14",
+    "updated": "2026-11-23",
+    "url": "https://access.redhat.com/errata/RHSA-2026:102088",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-86567",
+    "title": "Dpdk: dpdk: vduse handler fails to invalidate vring pointers when iotlb is invalidated, leading to use-after-unmap",
+    "desc": "A flaw was found in DPDK lib/vhost. The VDUSE handler fails to invalidate vring pointers when the IOTLB is invalidated, leading to use-after-unmap.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-416"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Fast Datapath for Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-14",
+    "updated": "2026-11-23",
+    "url": "https://access.redhat.com/errata/RHSA-2026:102087",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-86848",
+    "title": "Dpdk: dpdk: time-of-check/time-of-use vulnerability allowing guest-triggered out-of-bounds write in vhost-crypto",
+    "desc": "A flaw was found in DPDK lib/vhost vhost-crypto. The indirect-descriptor snapshot double-fetches a guest descriptor next index, allowing a malicious guest to cause an out-of-bounds access in the host backend.",
+    "cvss": 8.8,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-367"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Fast Datapath for Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 10"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 8"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat Enterprise Linux 9"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-10-14",
+    "updated": "2026-11-23",
+    "url": "https://access.redhat.com/errata/RHSA-2026:102088",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-69224",
+    "title": "AIOHTTP's Unicode processing of header values could cause parsing discrepancies",
+    "desc": "AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Versions 3.13.2 and below of the Python HTTP parser may allow a request smuggling attack with the presence of non-ASCII characters. If a pure Python version of AIOHTTP is installed (i.e. without the usual C extensions) or AIOHTTP_NO_EXTENSIONS is enabled, then an attacker may be able to execute a request smuggling atta",
+    "cvss": null,
+    "severity": "",
+    "cwes": [
+      "CWE-444"
+    ],
+    "affected": [
+      {
+        "vendor": "aio-libs",
+        "product": "aiohttp"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-01-05",
     "updated": "2026-11-22",
-    "url": "https://access.redhat.com/errata/RHSA-2026:53644",
+    "url": "https://github.com/aio-libs/aiohttp/security/advisories/GHSA-69f9-5gxw-wvc2",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-33818",
+    "title": "Enforce maximum recursion depth in encoding/asn1",
+    "desc": "Enforce a recursion limit in Unmarshal to prevent stack exhaustion when parsing deeply-nested, recursive structures.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Go standard library",
+        "product": "encoding/asn1"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-13",
+    "updated": "2026-11-22",
+    "url": "https://go.dev/issue/80405",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-42504",
+    "title": "Quadratic complexity in WordDecoder.DecodeHeader in mime",
+    "desc": "Decoding a maliciously-crafted MIME header containing many invalid encoded-words can consume excessive CPU.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [],
+    "affected": [
+      {
+        "vendor": "Go standard library",
+        "product": "mime"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-06-02",
+    "updated": "2026-11-22",
+    "url": "https://go.dev/issue/79217",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2025-15284",
+    "title": "arrayLimit bypass in bracket notation allows DoS via memory exhaustion",
+    "desc": "Improper Input Validation vulnerability in qs (parse modules) allows HTTP DoS.\n\nThis issue affects qs: < 6.14.1.\n\n\nSummary\n\n\n\n\n\nThe arrayLimit option in qs did not enforce limits for bracket notation (a[]=1&a[]=2), only for indexed notation (a[0]=1). This is a consistency bug; arrayLimit should apply uniformly across all array notations.\n\n\n\nNote: The default parameterLimit of 1000 effectively miti",
+    "cvss": 3.7,
+    "severity": "LOW",
+    "cwes": [
+      "CWE-20"
+    ],
+    "affected": [
+      {
+        "vendor": "",
+        "product": ""
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-12-29",
+    "updated": "2026-11-22",
+    "url": "https://github.com/ljharb/qs/security/advisories/GHSA-6rw7-vpxm-498p",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-133968",
+    "title": "monailabel (aka MONAI Label) before 0.8.6 allows directory traversal, with resultant remote code execution, via the imag",
+    "desc": "monailabel (aka MONAI Label) before 0.8.6 allows directory traversal, with resultant remote code execution, via the image parameter to the PUT /datastore/image endpoint, as exploited in the wild starting in September 2026.",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-24"
+    ],
+    "affected": [
+      {
+        "vendor": "Project-MONIA",
+        "product": "MONAI Label"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-11-20",
+    "updated": "2026-11-22",
+    "url": "https://github.com/Project-MONAI/MONAILabel/security/advisories/GHSA-qc22-rmgc-vg94",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-13237",
+    "title": "File Entity (fieldable files) - Moderately critical - Cross Site Scripting, Access bypass - SA-CONTRIB-2024-001",
+    "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Drupal File Entity (fieldable files) allows Cross-Site Scripting (XSS).\n\nThis issue affects File Entity (fieldable files): from 7.x-1.0 before 7.X-2.38.",
+    "cvss": 5.4,
+    "severity": "MEDIUM",
+    "cwes": [
+      "CWE-79"
+    ],
+    "affected": [
+      {
+        "vendor": "Drupal",
+        "product": "File Entity (fieldable files)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-01-09",
+    "updated": "2026-11-22",
+    "url": "https://www.drupal.org/sa-contrib-2024-001",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-13276",
+    "title": "File Entity (fieldable files) - Moderately critical - Information Disclosure - SA-CONTRIB-2024-040",
+    "desc": "Insertion of Sensitive Information Into Sent Data vulnerability in Drupal File Entity (fieldable files) allows Forceful Browsing.\n\nThis issue affects File Entity (fieldable files): from 7.X-* before 7.X-2.39.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-201"
+    ],
+    "affected": [
+      {
+        "vendor": "Drupal",
+        "product": "File Entity (fieldable files)"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-01-09",
+    "updated": "2026-11-22",
+    "url": "https://www.drupal.org/sa-contrib-2024-040",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2024-13280",
+    "title": "Persistent Login - Moderately critical - Access bypass - SA-CONTRIB-2024-044",
+    "desc": "Insufficient Session Expiration vulnerability in Drupal Persistent Login allows Forceful Browsing.\n\nThis issue affects Persistent Login: from 1.0.0 before 1.8.0 and from 2.0.0 before 2.2.2.",
+    "cvss": 9.8,
+    "severity": "CRITICAL",
+    "cwes": [
+      "CWE-613"
+    ],
+    "affected": [
+      {
+        "vendor": "Drupal",
+        "product": "Persistent Login"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2025-01-09",
+    "updated": "2026-11-22",
+    "url": "https://www.drupal.org/sa-contrib-2024-044",
     "source": "CISA Vulnrichment"
   },
   {
@@ -255,68 +670,6 @@
     "published": "2026-10-12",
     "updated": "2026-11-22",
     "url": "https://github.com/frappe/erpnext/security/advisories/GHSA-jp5q-723q-g826",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2025-69224",
-    "title": "AIOHTTP's Unicode processing of header values could cause parsing discrepancies",
-    "desc": "AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Versions 3.13.2 and below of the Python HTTP parser may allow a request smuggling attack with the presence of non-ASCII characters. If a pure Python version of AIOHTTP is installed (i.e. without the usual C extensions) or AIOHTTP_NO_EXTENSIONS is enabled, then an attacker may be able to execute a request smuggling atta",
-    "cvss": null,
-    "severity": "",
-    "cwes": [
-      "CWE-444"
-    ],
-    "affected": [
-      {
-        "vendor": "aio-libs",
-        "product": "aiohttp"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-01-05",
-    "updated": "2026-11-22",
-    "url": "https://github.com/aio-libs/aiohttp/security/advisories/GHSA-69f9-5gxw-wvc2",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-33818",
-    "title": "Enforce maximum recursion depth in encoding/asn1",
-    "desc": "Enforce a recursion limit in Unmarshal to prevent stack exhaustion when parsing deeply-nested, recursive structures.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Go standard library",
-        "product": "encoding/asn1"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-08-13",
-    "updated": "2026-11-22",
-    "url": "https://go.dev/issue/80405",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-42504",
-    "title": "Quadratic complexity in WordDecoder.DecodeHeader in mime",
-    "desc": "Decoding a maliciously-crafted MIME header containing many invalid encoded-words can consume excessive CPU.",
-    "cvss": 7.5,
-    "severity": "HIGH",
-    "cwes": [],
-    "affected": [
-      {
-        "vendor": "Go standard library",
-        "product": "mime"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-06-02",
-    "updated": "2026-11-22",
-    "url": "https://go.dev/issue/79217",
     "source": "CISA Vulnrichment"
   },
   {
@@ -1152,6 +1505,44 @@
     "published": "2026-09-18",
     "updated": "2026-11-22",
     "url": "https://access.redhat.com/errata/RHSA-2026:69440",
+    "source": "CISA Vulnrichment"
+  },
+  {
+    "cve": "CVE-2026-15565",
+    "title": "Undertow: undertow-websockets: undertow: pre-auth dos on websocket endpoint with @serverendpoint class with any @onmessage method",
+    "desc": "A flaw was found in Undertow. A remote attacker can cause Out of Memory on websockets endpoint without authentication on any @ServerEndpoint class that has any @OnMessage method. This allows an attacker to cause Denial of Service attack without authentication and using only a standard WebSocket handshake.",
+    "cvss": 7.5,
+    "severity": "HIGH",
+    "cwes": [
+      "CWE-120"
+    ],
+    "affected": [
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat JBoss Enterprise Application Platform 7.4.25"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat JBoss Enterprise Application Platform 7.4 ELS on RHEL 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat JBoss Enterprise Application Platform 7.4 ELS on RHEL 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat JBoss Enterprise Application Platform 7.4 ELS on RHEL 7"
+      },
+      {
+        "vendor": "Red Hat",
+        "product": "Red Hat JBoss Enterprise Application Platform 7.4 ELS on RHEL 7"
+      }
+    ],
+    "exploitation": "none",
+    "isKev": false,
+    "published": "2026-08-11",
+    "updated": "2026-11-21",
+    "url": "https://access.redhat.com/errata/RHSA-2026:53644",
     "source": "CISA Vulnrichment"
   },
   {
@@ -27102,270 +27493,6 @@
     "source": "CISA Vulnrichment"
   },
   {
-    "cve": "CVE-2026-129040",
-    "title": "WordPress WP User Manager plugin <= 2.10.4 - Broken Access Control vulnerability",
-    "desc": "Missing Authorization vulnerability in WP User Manager WP User Manager wp-user-manager allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WP User Manager: from n/a through 2.10.4.",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "WP User Manager",
-        "product": "WP User Manager"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-11-17",
-    "updated": "2026-11-18",
-    "url": "https://patchstack.com/database/wordpress/plugin/wp-user-manager/vulnerability/wordpress-wp-user-manager-plugin-2-10-4-broken-access-control-vulnerability-5?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-129041",
-    "title": "WordPress WP User Manager plugin <= 2.10.4 - Broken Access Control vulnerability",
-    "desc": "Missing Authorization vulnerability in WP User Manager WP User Manager wp-user-manager allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WP User Manager: from n/a through 2.10.4.",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "WP User Manager",
-        "product": "WP User Manager"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-11-17",
-    "updated": "2026-11-18",
-    "url": "https://patchstack.com/database/wordpress/plugin/wp-user-manager/vulnerability/wordpress-wp-user-manager-plugin-2-10-4-broken-access-control-vulnerability-4?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-129045",
-    "title": "WordPress JetFormBuilder plugin <= 3.6.8.1 - Broken Access Control vulnerability",
-    "desc": "Missing Authorization vulnerability in Crocoblock JetFormBuilder jetformbuilder allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects JetFormBuilder: from n/a through 3.6.8.1.",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "Crocoblock",
-        "product": "JetFormBuilder"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-11-17",
-    "updated": "2026-11-18",
-    "url": "https://patchstack.com/database/wordpress/plugin/jetformbuilder/vulnerability/wordpress-jetformbuilder-plugin-3-6-8-1-broken-access-control-vulnerability-2?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-129051",
-    "title": "WordPress WP User Manager plugin <= 2.10.4 - Broken Access Control vulnerability",
-    "desc": "Missing Authorization vulnerability in WP User Manager WP User Manager wp-user-manager allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WP User Manager: from n/a through 2.10.4.",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "WP User Manager",
-        "product": "WP User Manager"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-11-17",
-    "updated": "2026-11-18",
-    "url": "https://patchstack.com/database/wordpress/plugin/wp-user-manager/vulnerability/wordpress-wp-user-manager-plugin-2-10-4-broken-access-control-vulnerability-3?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-129053",
-    "title": "WordPress Knit Pay plugin <= 9.6.5.0 - Broken Access Control vulnerability",
-    "desc": "Missing Authorization vulnerability in Knit Pay Knit Pay knit-pay allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Knit Pay: from n/a through 9.6.5.0.",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "Knit Pay",
-        "product": "Knit Pay"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-11-17",
-    "updated": "2026-11-18",
-    "url": "https://patchstack.com/database/wordpress/plugin/knit-pay/vulnerability/wordpress-knit-pay-plugin-9-6-5-0-broken-access-control-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-129057",
-    "title": "WordPress All In One Login plugin <= 2.5.1 - Sensitive Data Exposure vulnerability",
-    "desc": "Insertion of Sensitive Information Into Sent Data vulnerability in WPExperts All In One Login change-wp-admin-login allows Retrieve Embedded Sensitive Data.This issue affects All In One Login: from n/a through 2.5.1.",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-201"
-    ],
-    "affected": [
-      {
-        "vendor": "WPExperts",
-        "product": "All In One Login"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-11-17",
-    "updated": "2026-11-18",
-    "url": "https://patchstack.com/database/wordpress/plugin/change-wp-admin-login/vulnerability/wordpress-all-in-one-login-plugin-2-5-1-sensitive-data-exposure-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-129059",
-    "title": "WordPress Sunshine Photo Cart plugin <= 3.8.1 - Broken Access Control vulnerability",
-    "desc": "Missing Authorization vulnerability in WP Sunshine Sunshine Photo Cart sunshine-photo-cart allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Sunshine Photo Cart: from n/a through 3.8.1.",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "WP Sunshine",
-        "product": "Sunshine Photo Cart"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-11-17",
-    "updated": "2026-11-18",
-    "url": "https://patchstack.com/database/wordpress/plugin/sunshine-photo-cart/vulnerability/wordpress-sunshine-photo-cart-plugin-3-8-1-broken-access-control-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-129060",
-    "title": "WordPress Booking and Rental Manager plugin <= 2.8.4 - Broken Access Control vulnerability",
-    "desc": "Missing Authorization vulnerability in Magepeople inc. Booking and Rental Manager booking-and-rental-manager-for-woocommerce allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Booking and Rental Manager: from n/a through 2.8.4.",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "Magepeople inc.",
-        "product": "Booking and Rental Manager"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-11-17",
-    "updated": "2026-11-18",
-    "url": "https://patchstack.com/database/wordpress/plugin/booking-and-rental-manager-for-woocommerce/vulnerability/wordpress-booking-and-rental-manager-plugin-2-8-4-broken-access-control-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-129061",
-    "title": "WordPress Spectra plugin <= 2.20.5 - Broken Access Control vulnerability",
-    "desc": "Missing Authorization vulnerability in Brainstorm Force Spectra ultimate-addons-for-gutenberg allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Spectra: from n/a through 2.20.5.",
-    "cvss": 5.4,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "Brainstorm Force",
-        "product": "Spectra"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-11-17",
-    "updated": "2026-11-18",
-    "url": "https://patchstack.com/database/wordpress/plugin/ultimate-addons-for-gutenberg/vulnerability/wordpress-spectra-plugin-2-20-5-broken-access-control-vulnerability-2?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-129062",
-    "title": "WordPress UiChemy plugin <= 5.5.3 - Cross Site Scripting (XSS) vulnerability",
-    "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in POSIMYTH Innovations UiChemy uichemy allows Stored XSS.This issue affects UiChemy: from n/a through 5.5.3.",
-    "cvss": 6.5,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-79"
-    ],
-    "affected": [
-      {
-        "vendor": "POSIMYTH Innovations",
-        "product": "UiChemy"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-11-17",
-    "updated": "2026-11-18",
-    "url": "https://patchstack.com/database/wordpress/plugin/uichemy/vulnerability/wordpress-uichemy-plugin-5-5-3-cross-site-scripting-xss-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-129064",
-    "title": "WordPress Nexter Blocks plugin <= 5.0.10 - Broken Access Control vulnerability",
-    "desc": "Missing Authorization vulnerability in POSIMYTH Innovations Nexter Blocks the-plus-addons-for-block-editor allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Nexter Blocks: from n/a through 5.0.10.",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "POSIMYTH Innovations",
-        "product": "Nexter Blocks"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-11-17",
-    "updated": "2026-11-18",
-    "url": "https://patchstack.com/database/wordpress/plugin/the-plus-addons-for-block-editor/vulnerability/wordpress-nexter-blocks-plugin-5-0-10-broken-access-control-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-129068",
-    "title": "WordPress Sky Addons for Elementor plugin <= 4.2.0 - Broken Access Control vulnerability",
-    "desc": "Missing Authorization vulnerability in Shahidul Islam Sky Addons for Elementor sky-elementor-addons allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Sky Addons for Elementor: from n/a through 4.2.0.",
-    "cvss": 4.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "Shahidul Islam",
-        "product": "Sky Addons for Elementor"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-11-17",
-    "updated": "2026-11-18",
-    "url": "https://patchstack.com/database/wordpress/plugin/sky-elementor-addons/vulnerability/wordpress-sky-addons-for-elementor-plugin-4-2-0-broken-access-control-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
     "cve": "CVE-2025-71469",
     "title": "GPAC before 26.02.0 Type Confusion DoS via XMT/BT Scene Loader",
     "desc": "GPAC before 26.02.0 contains a type confusion vulnerability in ctxload_process() that passes non-object descriptors to ODS_SetupOD() without checking the descriptor tag. Attackers can supply a crafted XMT file with a URL-bearing descriptor that crashes MP4Box or other GPAC-based applications in gf_scene_ns_connect_object(), causing denial of service.",
@@ -27886,28 +28013,6 @@
     "published": "2026-11-16",
     "updated": "2026-11-17",
     "url": "https://patchstack.com/database/wordpress/plugin/wp-job-manager/vulnerability/wordpress-wp-job-manager-plugin-2-4-10-content-injection-vulnerability?_s_id=cve",
-    "source": "CISA Vulnrichment"
-  },
-  {
-    "cve": "CVE-2026-129046",
-    "title": "WordPress JetFormBuilder plugin <= 3.6.8.1 - Broken Access Control vulnerability",
-    "desc": "Missing Authorization vulnerability in Crocoblock JetFormBuilder jetformbuilder allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects JetFormBuilder: from n/a through 3.6.8.1.",
-    "cvss": 5.3,
-    "severity": "MEDIUM",
-    "cwes": [
-      "CWE-862"
-    ],
-    "affected": [
-      {
-        "vendor": "Crocoblock",
-        "product": "JetFormBuilder"
-      }
-    ],
-    "exploitation": "none",
-    "isKev": false,
-    "published": "2026-11-16",
-    "updated": "2026-11-17",
-    "url": "https://patchstack.com/database/wordpress/plugin/jetformbuilder/vulnerability/wordpress-jetformbuilder-plugin-3-6-8-1-broken-access-control-vulnerability?_s_id=cve",
     "source": "CISA Vulnrichment"
   }
 ]
