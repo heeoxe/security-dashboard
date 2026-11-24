@@ -211,6 +211,139 @@
   },
   {
     "source": "thn",
+    "title": "OpenAI and Cisco Unveil AI-Assisted Linux Security Tool to Block Exploits Before Patching",
+    "desc": "OpenAI and Cisco have teamed up to launch Shirudo (meaning \"shield\" in Japanese), an open-source Linux runtime that allows artificial intelligence (AI) agents to defend systems without downtime.\n\n\"It lets agents write dynamic eBPF controls to shield systems from exploits, giving defenders more time ",
+    "url": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html",
+    "date": "2026-11-24T11:32:57"
+  },
+  {
+    "source": "thn",
+    "title": "Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day",
+    "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added two flaws impacting N-able MailAssure and MONAI Label to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe critical vulnerabilities are listed below -\n\n\n  CVE-2026-134624 (C",
+    "url": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html",
+    "date": "2026-11-24T11:32:45"
+  },
+  {
+    "source": "boannews",
+    "title": "김종덕 포티넷코리아 지사장 “방화벽만 센 회사 아냐... ‘포티OS’로 AI 보안 승부”",
+    "desc": "김종덕 포티넷코리아 지사장이 24일 그랜드 인터컨티넨탈 서울 파르나스에서 열린 ‘포티넷 AI 사이버보안 서밋 APAC 2026’에서 통합 플랫폼 중심의 AI 보안 비전을 밝혔다. AI·클라우드 업계를 거쳐 최근 합류한 그는 방화벽 중심의 인식을 넘어 자체 운영체제 기반 통합 플랫폼으로 AI 에이전트 시대의 보안 난제를 풀겠다고 강조했다.김 지사장은 이날 환영사에서 기업 보안의 중심축이 대규모언어모델(LLM)에서 AI 에이전트로 옮겨갔다고 진단했다. 국내 대기업 현장은 부서마다 에이전트를 50~100개씩 만들라는 도입 압박이 거세지만",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147494",
+    "date": "2026-11-24 15:09:24"
+  },
+  {
+    "source": "boannews",
+    "title": "한국 주도 패스워드리스 국제표준, 타지키스탄 민간으로 확산",
+    "desc": "패스워드리스 얼라이언스(Passwordless Alliance, 대표 우종현)는 10일 타지키스탄 두샨베에서 국제표준 ITU-T X.1280 기반 패스워드리스 인증 기술을 주제로 세미나를 개최했다고 밝혔다.이번 세미나는 타지키스탄 정부 산하 통신청과 현지 통신사업자 토직텔레콤(TojikTelecom)·텔레콤젠(TelecomZehn), 패스워드리스 얼라이언스가 공동 주관했다. 현지 IT파크 입주기업과 대학, 일반 기업 관계자 등 약 50명이 참석했다.타지키스탄 통신청은 앞서 공공 서비스 포털에 패스워드리스 얼라이언스의 무료 인증 소프",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147495",
+    "date": "2026-11-24 15:00:24"
+  },
+  {
+    "source": "boannews",
+    "title": "[2026 보안 이슈 결산-1] 사람보다 빠르고 뛰어난 AI 해커... 미토스 충격",
+    "desc": "2026년에도 대한민국은 연이은 대형 보안 사고로 시끄러웠습니다. 여기에 AI가 사람이 감당할 수 없는 기계의 속도로 취약점을 찾아내고 공격 코드를 짜 자동화된 공격을 가하기 시작했습니다. AI가 보안의 모든 문법을 새로 쓰는 원년이었던 올해 보안 분야 주요 이슈를 돌아보며 보다 안전한 내년을 준비하는 시간을 갖고자 합니다. [편집자주]2026년 지난 4월 앤트로픽이 공개한 AI 모델 ‘미토스’(Mythos)는 보안 전문가들조차 수십 년간 발견하지 못했던 제로데이 취약점을 단기간에 무더기로 찾아내며 전 세계에 충격을 안겼다. 특히",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147421",
+    "date": "2026-11-24 14:11:33"
+  },
+  {
+    "source": "boannews",
+    "title": "자동 승인 한 번에 비밀번호까지... 클로드 코드 설정 파일 1122개서 비밀 값 무더기 노출",
+    "desc": "앤트로픽의 AI 코딩 도구 클로드 코드가 사용자가 승인한 명령을 비밀번호째 프로젝트 파일에 저장하고, 이 파일이 공개 깃허브 저장소로 올라가 비밀번호와 접속 키 같은 비밀 값 1379개가 노출됐다.소프트웨어 보안 기업 아피로(Apiiro)는 공개 저장소를 조사해 이 같은 결과를 내놨다고 더해커뉴스(The Hacker News)가 보도했다.클로드 코드는 셸 명령을 실행하기 전에 대부분 사용자에게 허락을 구한다. 이때 ‘예, 다시 묻지 않기’를 고르면 허용 규칙이 프로젝트 안 .claude/settings.local.json 파일에 저",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147091",
+    "date": "2026-11-24 13:30:00"
+  },
+  {
+    "source": "boannews",
+    "title": "엔키화이트햇, 12월 11일 코스닥 상장 “오펜시브 AI로 금융·공공 잡는다”",
+    "desc": "“기존 상장 보안사가 모두 방어 중심인 국내 시장에서 유일한 공격자 관점 상장사로서 AI 해킹 시대의 보안 공백을 메우겠습니다.”내달 11일 상장을 앞둔 엔키화이트햇이 24일 서울 여의도에서 코스닥 상장 기자간담회를 열고 AI 기반 오펜시브(공격형) 보안 중심 성장 전략을 밝혔다.이성권 엔키화이트햇 대표는 이날 간담회에서 AI가 취약점 탐색과 공격 코드 생성을 자동화하면서 사람이 패치하고 방어하는 속도를 앞질렀다고 진단했다. 방화벽이나 백신 같은 기존 경계 보안은 “현관문과 대문, 금고만 설치한 집과 같아 벽과 천장, 지하로 뚫고",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147492",
+    "date": "2026-11-24 13:25:31"
+  },
+  {
+    "source": "boannews",
+    "title": "박남춘 제11대 인천국제공항공사 사장 취임, “안전·AI 기반 미래공항 전형 열겠다”",
+    "desc": "인천국제공항공사는 제11대 사장으로 박남춘 전 인천광역시장이 11월 23일 공식 취임했다고 밝혔다. 개항 25년만에 국제여객 세계 1위(2026년 상반기 기준)로 도약한 인천공항은 박 사장 취임을 계기로 ‘세계 최고 공항을 넘어 대한민국 성장 플랫폼’으로 거듭나겠다는 구상이다.박 사장은 이날 공사 대강당에서 열린 취임식에서 ‘과감한 변화와 혁신’을 취임 일성으로 내걸고, 직후 현장 부서를 찾아 공항 운영 상황을 직접 점검했다. 그는 “임기 내 취항도시 200개, 연간여객 9000만명을 달성해 ‘24시간 게이트웨이 허브’(Gatewa",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147491",
+    "date": "2026-11-24 12:16:37"
+  },
+  {
+    "source": "boannews",
+    "title": "웰컴페이먼츠·KIS정보통신서도 개인정보 유출",
+    "desc": "온라인 결제 전문 기업 웰컴페이먼츠와 KIS정보통신에서 개인정보 유출 사고가 발생했다. KIS정보통신은 21일 공지사항을 내고 “권한 없는 자가 당사 VAN 업무지원 웹서비스(UBMS) 서버에 비정상적으로 접근해 일부 고객 및 임직원의 개인정보가 유출된 사실을 19일 확인했다”고 밝혔다. 유출 규모는 총 862건으로 고객 208건, 임직원 654건이다. 유출 항목은 대리점 영업관리 서비스(UBMS) 중 자동이체출금서비스(CMS) 이용 고객의 △성명 △전화번호 △휴대폰번호 △이메일주소 △생년월일과 입금정산서비스(셈플러스) 1:1 문의",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147490",
+    "date": "2026-11-24 12:12:34"
+  },
+  {
+    "source": "boannews",
+    "title": "슈프리마, 16년 연속 ‘글로벌 Top 50 보안 기업’ 선정",
+    "desc": "지능형 출입통제 및 물리보안 솔루션 전문기업 슈프리마(대표 이재원, 김한철)가 글로벌 보안 전문 매체 A&S가 발표한 ‘2026 글로벌 Top 50 보안 기업’에 16년 연속 선정됐다. 2011년부터 매해 순위권에 진입한 슈프리마는 올해 선정 기업 중 매출 성장률 상위 10개사에도 이름을 올렸다.A&S는 매년 전 세계 주요 보안 기업의 매출과 수익성을 평가해 50대 기업을 선정한다. 이번 순위는 2025 회계연도 실적을 기준으로 산정됐으며, 매출 성장률은 2024년 대비 증가율을 반영했다. 슈프리마는 올해 Top 50에 포함된 출입",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147488",
+    "date": "2026-11-24 12:00:15"
+  },
+  {
+    "source": "boannews",
+    "title": "하승태 한국아이티에스 대표, 산업통상부장관 표창 수상",
+    "desc": "영상감시 및 인공지능(AI) 보안 솔루션 전문기업 한국아이티에스(대표 하승태)는 하승태 대표이사가 11월 17일 서울 코엑스에서 열린 ‘2026 제품안전의 날’ 기념식에서 제품안전관리 유공(개인 부문) 산업통상부장관 표창을 수상했다고 밝혔다.산업통상부 국가기술표준원이 주최하고 한국제품안전관리원이 주관한 이번 행사는 제품 안전성 강화를 통해 국민 생활 안심에 기여한 유공자를 격려하기 위해 마련됐다.하승태 대표는 2012년 취임 이후 13년 6개월간 지속적인 연구개발(R&D)을 통해 영상감시 장비의 안전성과 내구성을 혁신한 공로를 인정",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147486",
+    "date": "2026-11-24 11:28:55"
+  },
+  {
+    "source": "boannews",
+    "title": "이글루, 개발자 컨퍼런스 ‘IDC 2026’ 개최",
+    "desc": "이글루코퍼레이션(대표 이득춘)이 자율형 보안 운영 센터(SOC) 구현을 위해 실무 개발진들이 현장에서 축적한 기술 노하우를 공유하는 자리를 마련했다. 이글루는 지난 11일 서울 송파구 본사에서 ‘이글루 개발자 컨퍼런스 2026’을 개최했다고 24일 밝혔다. 이 행사는 실무 개발자들이 현장에서 축적한 노하우를 나누고, 자율형 SOC 구현을 위한 에이전틱 SOC 로드맵을 점검하기 위해 마련됐다. 올해는 ‘기술과 경험의 주파수를 맞추자’는 취지로 열렸다. 다수의 AI 에이전트가 신호를 주고받으며 자율 대응하는 ‘에이전틱 SOC’의 원리를",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147487",
+    "date": "2026-11-24 11:27:06"
+  },
+  {
+    "source": "boannews",
+    "title": "레드펜소프트 취약점 관리 플랫폼, 네트워크 장비 보안 점검 기능 추가",
+    "desc": "소프트캠프의 자회사 레드펜소프트는 자사 통합 취약점 관리 플랫폼 ‘엑스스캔 시큐어 에셋’(XSCAN Secure Asset)에 네트워크 장비 보안 점검 기능도 추가 제공한다고 24일 밝혔다.이번 업데이트로 기업은 개발·반입 소프트웨어와 운영 서버에 이어 스위치, 라우터, 방화벽의 취약점과 보안 설정을 같은 플랫폼에서 점검할 수 있다.방화벽과 라우터 등 네트워크 장비는 공개된 취약점을 악용한 침입의 표적이 될 수 있다. 미국 사이버보안·인프라보안국(CISA) 등 관계기관도 공동 권고에서 네트워크 장비 취약점 패치와 비인가 설정 변경",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147485",
+    "date": "2026-11-24 11:17:02"
+  },
+  {
+    "source": "boannews",
+    "title": "지란지교소프트 ‘PC필터’, 日 핵심 업무용 SaaS 부문 선진기술상 받아",
+    "desc": "지란지교소프트(대표 박승애·유병완)는 일본 ‘ASPIC AI 클라우드 어워드 2026’ 클라우드 서비스 기간업무계 부문에서 선진기술상을 수상했다고 24일 밝혔다. 지란지교 그룹의 일본 관계사 제이시큐리티(JSecurity)가 현지에 PC필터 클라우드 서비스를 공급하고 있다.이번 행사는 일본클라우드산업협회(ASPIC)가 주최하고 일본 총무성 등이 후원하며 올해 19회째다. 협회는 올해 생성형 AI용 AI 클라우드 서비스 부문을 신설해 기존 클라우드 서비스 부문과 두 갈래로 심사했다. 지란지교소프트 PC필터는 클라우드 서비스 부문 가운",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147484",
+    "date": "2026-11-24 11:06:40"
+  },
+  {
+    "source": "boannews",
+    "title": "몸값 내지 말라던 복구 업체의 두 얼굴... FBI 함정에 걸려 사기 혐의 기소",
+    "desc": "랜섬웨어 피해 기업에 몸값을 내지 않고도 데이터를 되살려 준다고 홍보해 온 미국 복구 업체의 공동 창업자가 뒤로는 해커에게 돈을 주고 복호화 키를 사들인 혐의로 기소됐다.크렙스온시큐리티는 후안 리카르도 팔라시오 에스코바르(Juan Ricardo Palacio Escobar) 랜섬웨어헬프(ransomwarehelp.com) 공동 창업자가 전신 사기 혐의로 기소됐다고 최근 보도했다. 랜섬웨어헬프는 플로리다의 6년 차 업체다. 팔라시오는 마이애미와 콜롬비아 메데인에 사는 52세 남성으로, 기소장은 이번 주 로드아일랜드에서 나왔다.회사 홈",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147437",
+    "date": "2026-11-24 10:37:09"
+  },
+  {
+    "source": "boannews",
+    "title": "LG유플러스, 데이터독과 손잡고 ‘익시오’ 장애 대응·품질 고도화",
+    "desc": "LG유플러스가 데이터독과 손잡고 자사 AI 통화 에이전트 ‘익시오’(ixi-O) 운영 체계를 개선한다고 24일 밝혔다.LG유플러스는 글로벌 옵저버빌리티(Observability) 플랫폼 기업 데이터독(Datadog)의 ‘비츠 AI’(Bits AI)를 익시오 운영에 적용해 고객 불편과 장애 대응 역량을 검증했다. 비츠 AI는 서비스 운영 과정에서 나오는 데이터를 AI로 분석해 이상 징후를 찾고 문제 원인과 영향 범위를 파악하는 기술이다.LG유플러스는 8월부터 약 3개월간 데이터독의 디자인 파트너 프로그램에 참여해 비츠 AI를 실제 익",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147479",
+    "date": "2026-11-24 10:15:51"
+  },
+  {
+    "source": "boannews",
+    "title": "비자, 위협 인텔리전스 플랫폼 출시... 월 9000만건 공격 차단 역량 담아",
+    "desc": "비자는 금융 분야 특화 위협 정보를 제공하는 ‘비자 위협 인텔리전스 플랫폼’(VTIP: Visa Threat Intelligence Platform)을 아태 지역에 출시한다고 24일 밝혔다. 사이버 인텔리전스와 결제 인텔리전스를 결합한 플랫폼으로, 금융기관의 사이버 위협 탐지와 부정거래 대응을 지원한다. VTIP는 비자가 자사 글로벌 결제 네트워크 보호에 쓰는 보안 역량을 바탕으로 금융 부문에 특화해 설계됐다. 비자는 200개국 이상에서 매월 약 9000만건의 사이버 공격과 1100만건의 피싱 이메일을 차단하며, 이 가운데 결제 위",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147474",
+    "date": "2026-11-24 10:03:11"
+  },
+  {
+    "source": "boannews",
+    "title": "‘rERP’ 해킹, 파장은?... 약한 고리 대학 노린 ‘산학연’ 전체 위기",
+    "desc": "최근 연구행정통합시스템(rERP) 집중 공격 형태로 국내 대학을 겨냥한 해킹 사고가 연쇄적으로 일어나면서, ‘산학연’ 가운데 약한 고리인 대학을 파고든 연구보안 공급망 위협이 심각한 문제로 떠오르고 있다. 23일 학계에 따르면, 최근 연쇄 해킹 피해로 다크웹에 게시된 28개 대학 목록에 포함된 학교들이 잇따라 개인정보 유출 공지를 하고 있다. 일부 대학은 공격 당한 rERP 운영 중단을 공지했다. “대학 서버 공격해 rERP 침투했을 것”최근 ‘김젠’(KimJEN)이라는 활동명의 공격자가 한국 대학에서 탈취한 데이터라 주장하며 31",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147469",
+    "date": "2026-11-24 09:43:01"
+  },
+  {
+    "source": "boannews",
+    "title": "7월 생긴 결함 11월에야 탐지... 마이크로소프트 엔트라 모니터링 도구 악용돼 고객사 정보 노출",
+    "desc": "마이크로소프트의 계정 관리 서비스 엔트라에 딸린 모니터링 도구에서 결함이 악용돼 공격자가 고객사 정보를 읽어 갔다. 결함은 7월 생겼지만 마이크로소프트가 알아챈 것은 11월이다.사이버시큐리티뉴스는 22일(현지시각) 레딧에 공유된 마이크로소프트 고객 공지를 인용해 이 사실을 보도했다. 공지에 따르면 공격자가 얻은 것은 조직 기록을 읽기만 할 수 있는 권한이었고, 메일함이나 메시지는 대상이 아니었다.문제의 도구는 엔트라 커넥트 헬스(Entra Connect Health)다. 기업이 자체 서버에서 운영하는 계정 시스템의 경보와 성능, 동",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147436",
+    "date": "2026-11-24 08:30:00"
+  },
+  {
+    "source": "thn",
     "title": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
     "desc": "The China-aligned threat actor known as Webworm is suspected to be using a custom version of the open-source SoftEther VPN Bridge tool in an attempt to remove recognizable detection fingerprints, while disguising it as network-monitoring software to establish covert remote access to compromised netw",
     "url": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
@@ -565,138 +698,5 @@
     "desc": "Threat actors have been observed exploiting a recently disclosed critical security flaw in Cisco Expressway to breach a Russian organization shortly after the public release of a proof-of-concept (PoC) exploit.\n\nThe activity involves the exploitation of CVE-2026-76466 (CVSS score: 9.8), a vulnerabil",
     "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
     "date": "2026-11-20T16:02:50"
-  },
-  {
-    "source": "thn",
-    "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
-    "desc": "The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026.\n\nThe vulnerability, tracked as CVE-2026-123890 (CVSS score: 9.8), is a case of auth",
-    "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
-    "date": "2026-11-20T15:08:15"
-  },
-  {
-    "source": "thn",
-    "title": "ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs  ",
-    "desc": "Threat actors have been observed using the ROMULUS ClickFix malware delivery platform to deliver a previously undocumented remote access trojan (RAT) that shares similarities with CNCMachineRMS.\n\n\"ROMULUS likely operates as a delivery service, distributing CNCMachineRMS and Legion Loader through sep",
-    "url": "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html",
-    "date": "2026-11-20T12:41:39"
-  },
-  {
-    "source": "thn",
-    "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
-    "desc": "A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in. Whoever uses it gets only a limited account, not administrator control of the machine.\n\nThe method was posted yesterday by a researcher w",
-    "url": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
-    "date": "2026-11-20T11:00:01"
-  },
-  {
-    "source": "thn",
-    "title": "ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
-    "desc": "The easiest way to fool someone is to give them something they already expect. A job offer. A message about a service outage. A familiar app. Nothing looks strange at first. And that's the problem. This week's stories show how ordinary things are being used to steal data, spread malware, and get peo",
-    "url": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
-    "date": "2026-11-20T00:17:58"
-  },
-  {
-    "source": "boannews",
-    "title": "컬리 개인정보 유출 사고, 큐레이터 1만699명·일반 고객 2명 피해",
-    "desc": "컬리가 외부 공격자의 인증정보 탈취로 제휴 마케팅 참여자 ‘컬리 큐레이터’ 1만699명의 개인정보와 일반 고객 2명의 회원번호가 유출됐다.컬리는 김슬아 대표 명의의 사과문을 내고 “외부의 불법 접근으로 컬리 큐레이터 프로그램에 참여한 큐레이터 1만699명의 개인정보와 일반 고객 2명의 회원번호가 유출된 사실을 확인했다”고 20일 밝혔다.공지에 따르면, 외부 공격자는 지난 17일 비정상적인 방식으로 컬리 시스템에 접근해 인증정보를 탈취한 뒤 업무 시스템에 무단 침입했다. 회사는 침입 사실을 인지한 직후 차단 조치를 진행하고, 이튿날인",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147426",
-    "date": "2026-11-20 20:26:35"
-  },
-  {
-    "source": "boannews",
-    "title": "카타르 물리보안 시장, ‘개별 장비’서 ‘AI 기반 통합 보안’으로 확대",
-    "desc": "카타르 물리보안 시장이 전통적인 개별 장비 중심에서 CCTV와 영상감시, 출입통제, 스마트 도어록, 생체인식, 침입감지, 인터폰, 외곽경계 보안, 영상분석, 보안관리 플랫폼이 결합하는 ‘통합 보안’ 환경으로 빠르게 전환되고 있다. 상업·주거용 부동산과 숙박시설, 교통, 인프라, 스마트도시 개발에 대한 지속적인 투자가 시장 성장을 뒷받침하고 있으며, 주요 공공시설과 국가 차원의 대형 프로젝트 수요도 탄탄하다. 이와 함께 디지털 전환이 가속화되면서 물리보안과 사이버보안의 융합도 속도를 내고 있다.이러한 시장 변화는 기술력을 갖춘 한국",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147417",
-    "date": "2026-11-20 17:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "급여·휴가 시스템 열흘 넘게 차질... EU 집행위원회, AI 해킹 도구 ‘아르텍스’ 공격 인정",
-    "desc": "유럽연합(EU) 행정부인 집행위원회가 공개된 AI 해킹 도구를 동원한 사이버 공격을 받아 직원용 인사 시스템이 한동안 차질을 빚은 것으로 알려졌다. 집행위원회는 언론 보도가 나온 뒤인 19일(현지시각) 공격 사실을 공식 확인했다.토마 레니에(Thomas Regnier) 집행위원회 대변인은 이날 기자들에게 첫 징후를 10월 22일 포착했다고 밝혔다. 그는 이번 공격을 ‘AI가 만들어 낸 사이버 공격’이라고 불렀지만, 어떤 도구가 쓰였는지와 공격자 동기는 밝히지 않았다.도구 이름은 정치 매체 폴리티코 보도로 먼저 알려졌다. 보도에 따르",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147398",
-    "date": "2026-11-20 17:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "공짜 게임 주겠다더니 구글 비밀번호 요구... ‘GTA 6’ 열기 파고든 사기 기승",
-    "desc": "인기 게임 ‘GTA 6’를 향한 관심을 노린 사기가 쏟아지고 있다. 구글 비밀번호를 빼 가는 가짜 무료 배포 사이트, 코인 지갑을 노리는 결제 페이지 등 수법도 다양하다.스테판 다시치(Stefan Dasic) 맬웨어바이트(Malwarebytes) 선임 악성코드 연구 엔지니어는 18일(현지시각) 공개한 분석에서 이런 미끼들을 정리했다. 그는 일부는 계정 정보를 훔치려 하고 나머지는 수수료를 챙기려 한다고 말했다.눈에 띄는 수법은 PS5와 엑스박스, PC용 게임을 공짜로 준다는 사이트다. ‘프로모션 조건’을 채우면 게임을 준다며 ‘구글",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147400",
-    "date": "2026-11-20 16:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "조달청·한국정책학회, AI 시대 공공조달 미래전략 세미나 공동 개최",
-    "desc": "조달청(청장 백승보)은 11월 20일 서울지방조달청에서 한국정책학회와 공동으로 ‘공공조달의 오늘과 내일: 2026년 성과와 AI 시대의 미래전략’ 세미나를 개최했다.이번 세미나는 인공지능(AI)과 데이터 등 급변하는 기술 환경에 대응해 공공조달의 새로운 역할과 중장기 발전 방향을 모색하기 위해 마련됐다. 현장에서는 공급망 안정과 공정한 조달시장 질서 확립 등 핵심 정책과제를 점검하고, 데이터·AI를 활용한 조달행정 지능화 및 혁신조달 생태계 조성 방안을 집중 논의했다.1부 세션은 ‘공급망 위기 대응과 공정한 조달시장 질서 확립’을",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147410",
-    "date": "2026-11-20 15:30:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[2026 PC 보안 솔루션 리포트] ‘에이전트 다이어트’ 나선 PC 보안, 덜어낼 것과 남길 것",
-    "desc": "PC 보안 업계의 화두는 ‘에이전트 다이어트’다. 업무용 PC 한 대에 겹겹이 쌓인 보안 프로그램을 덜어내자는 것이다. 그런데 다이어트를 외치는 사이에도 PC에는 새 에이전트가 올라간다. 생성형 AI로 중요 정보가 새어 나가는 걸 막겠다는 보안 기능이 대표적이다. 줄여야 한다는 데는 모두 동의하지만, 무엇을 줄일지에 대한 답은 아직 없다.현장의 생각도 비슷하다. 보안 담당자들은 기능별 제품을 따로 운영하는 지금의 방식에서 벗어나겠다고 말하면서도, 모든 기능을 하나로 합치기보다는 통합 제품과 전문 제품을 함께 쓰는 쪽을 택하고 있다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147391",
-    "date": "2026-11-20 15:30:00"
-  },
-  {
-    "source": "boannews",
-    "title": "‘PHP2셸’ 후속 ‘PHP애프터셸’ 등장... 상위 버전 재패치 필요",
-    "desc": "전 세계 70%에 달하는 웹사이트와 기업 백엔드 시스템의 기반이 되는 PHP에서 다시 한 번 굵직한 보안 패치가 발표됐다. 지난달 발견된 ‘PHP2셸’(PHP2Shell)에 대응하는 패치를 적용했더라도 이번에 공개된 보안 취약점은 그 이상의 패치 버전을 요구하고 있기 때문에 다시 한 번 대대적인 패치가 적용될 필요가 있어 보인다. PHP개발진은 19일 17건의 CVE(공개 취약점)에 대응하는 패치 버전을 발표했다. 8.5.13, 8.4.28, 8.3.37, 8.2.36 버전으로 나왔다. 이번 업데이트는 ‘PHP애프터셸’(PHPAft",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147415",
-    "date": "2026-11-20 15:22:09"
-  },
-  {
-    "source": "boannews",
-    "title": "센스톤 ‘OTAC TAG’, 백악관·텍사스 추진 ‘수도 인프라 사이버 방어’ 프로젝트 합류",
-    "desc": "OT 보안 전문기업 센스톤(대표 유창훈)이 미국 텍사스 사이버사령부(Texas Cyber Command, 이하 TXCC)가 주관하는 핵심 인프라 보호 프로젝트 ‘Project Watershed 250’에 OTAC(One-Time Authentication Code) 기술로 참여한다.센스톤은 미국 산업·핵심 인프라 보안 전문기업 어플라이드 시큐리티 컨버전스(Applied Security Convergence, 이하 ASC)가 이끄는 컨소시엄의 유일한 기술 파트너로 이름을 올리며 함께하게 됐다. TXCC가 최근 발표한 1기 참여 기관",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147416",
-    "date": "2026-11-20 14:46:41"
-  },
-  {
-    "source": "boannews",
-    "title": "KISA, 민간과 협력해 악성문자 5억건·스팸 전화 1200만건 차단",
-    "desc": "한국인터넷진흥원(KISA)은 민간 기업들과의 협력을 통해 악성문자 5억건 및 스팸 전화 1200만건을 차단했다.KISA와 방송미디어통신위원회는 ‘2026 스팸 데이터 개방 성과 공유회'를 서울 피스앤파크 컨벤션에서 개최했다고 20일 밝혔다.이번 성과 공유회는 스팸 데이터 개방 협력 기관·기업과 그간의 성과를 공유하고, 불법스팸 대응체계의 개선 방향을 논의하기 위해 마련됐다. 주요 내용은 △2026년 불법스팸 유통 현황 △한국인터넷 진흥원의 스팸 데이터 개방 추진 현황 △분야별 스팸 데이터 활용 사례 및 주요 성과 등이다.불법스팸은",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147411",
-    "date": "2026-11-20 14:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "“애플에 백도어 요구 명령, 비밀 아냐”... 영국 재판소, 정부 ‘함구 원칙’에 제동",
-    "desc": "영국 정부가 그동안 애플에 비밀 명령을 내렸는지를 두고 ‘확인도 부인도 할 수 없다’며 입을 닫아 온 태도가 법정에서 받아들여지지 않았다. 영국 수사권한재판소(IPT)는 19일(현지시각) 판결에서, 애플이 이 명령을 받았다고 인정하면 국가안보가 위험해진다는 내무부의 주장을 물리쳤다.문제의 명령은 2016년 제정된 수사권한법에 따라 내무장관이 기업에 암호화 해제 등 기술적 조치를 비밀리에 의무화할 수 있는 ‘기술역량통지’(TCN)다. 판결문은 명령 내용을 밝히지 않았다. 다만 테크크런치는 영국 정부가 이 명령으로 애플에 암호화된 고객",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147399",
-    "date": "2026-11-20 14:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "JP모건체이스 협력업체 공격받아... 고객 이름·이메일 노출 가능성 공지",
-    "desc": "JP모건체이스가 자사에 서비스를 제공하는 협력업체들이 사이버 공격을 받아 일부 고객의 이름과 이메일 주소가 노출됐을 수 있다고 19일(현지시각) 밝혔다.JP모건과 체이스는 이날 X 공식 계정에 같은 내용의 성명을 올렸다. 회사에 서비스를 제공하는 협력업체들이 사이버 공격 표적이 됐으며 공격자들이 이 업체들이 보관하던 일부 마케팅 데이터에 접근한 것으로 보인다는 내용이다. 은행은 이 데이터에 일부 고객 이름과 이메일 주소가 들어 있을 수 있다고 설명했다.은행 서비스엔 차질이 없었다. 은행은 필요한 경우 영향받은 고객에게 직접 연락해",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147403",
-    "date": "2026-11-20 13:30:00"
-  },
-  {
-    "source": "boannews",
-    "title": "[카드뉴스] 카드번호는 빠졌다지만… 내 실제 항공편 꿰뚫는 '정밀 스미싱' 주의보",
-    "desc": "141개 항공사 예약망을 관리하는 외부 공급업체 '아마데우스'의 계정이 탈취되어 2023년 8월부터 3년 넘게 탑승객 예약 정보가 노출되었다. 결제 정보는 제외되었으나 실제 항공편과 예약번호가 유출되면서 이를 악용한 정교한 항공사 사칭 결항·변경 스미싱 위험이 급증하고 있다. 피해를 막기 위해 소비자는 문자의 외부 URL 클릭을 금지해야 하며, 기업은 외부 공급망 계정의 다중인증(MFA)과 접근 통제를 전면 재정비해야 한다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147414",
-    "date": "2026-11-20 11:50:32"
-  },
-  {
-    "source": "boannews",
-    "title": "가상화 관리 콘솔 v센터에 최고 등급 인증 우회 결함... 브로드컴, 긴급 업데이트 권고",
-    "desc": "브로드컴이 VM웨어 v센터(vCenter)에서 인증을 건너뛸 수 있는 최고 등급 결함(CVE-2026-123890)을 고친 업데이트를 19일(현지시각) 내놨다. 브로드컴이 제시한 임시 우회책은 없다. 다만 브로드컴은 각 조직 환경에 다른 완화 수단이 있을 수 있다고 했다.v센터는 기업이 가상화 서버인 ESX 호스트와 그 위에서 돌아가는 가상머신을 한곳에서 관리하는 콘솔이다. 브로드컴은 보안 권고에서 v센터의 VM웨어 디렉터리 서비스에 인증 우회 결함이 있어, 네트워크로 접근할 수 있는 공격자가 인증 없이 무단 접근할 수 있다고 밝혔",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147404",
-    "date": "2026-11-20 11:25:00"
-  },
-  {
-    "source": "boannews",
-    "title": "다후아코리아, 11월 30일 저장용량 최대 78% 줄이는 ‘슈퍼 AI 코딩’ 웨비나 개최",
-    "desc": "영상 중심 AIoT 솔루션 기업 다후아테크놀로지코리아(이하 다후아코리아)가 오는 11월 30일 오후 2시부터 1시간 동안 ‘슈퍼 AI 코딩(Super AI Coding)’ 웨비나를 유튜브 라이브로 개최한다고 밝혔다.이번 웨비나는 다수의 CCTV를 운영하거나 영상을 장기간 보관하는 현장에서 핵심 객체의 화질을 유지하면서 저장 자원을 효율적으로 활용할 수 있는 기술 원리와 국내 현장 테스트 결과를 공유하기 위해 마련됐다.‘슈퍼 AI 코딩’은 장면과 객체의 중요도에 따라 비트레이트를 차등 배분하는 H.265 기반 지능형 인코딩 기술이다.",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147409",
-    "date": "2026-11-20 11:22:59"
-  },
-  {
-    "source": "boannews",
-    "title": "유락, 중동 AI 디지털 포렌식’ 사업 확대... ‘사이섹 오만 2026’ 참가",
-    "desc": "디지털 포렌식 전문기업 유락(대표 유봉석)이 오만에서 AI 디지털 포렌식 사업을 확대하고, 나아가 현지 중동 시장 공략에 본격 나선다.유락은 19일 오만 무스카트에서 개최된 ‘사이섹 오만 2026’(CYSEC OMAN)에 참가해 AI 디지털 포렌식 솔루션 ‘디파스’(DFAS) 시리즈를 선보였다고 20일 밝혔다. 오만에서 구축해 온 기존 디지털 포렌식 사업 기반을 AI 기반 데이터 분석과 보안·감사 분야로 확대할 계획이다.사이섹 오만은 중동·아프리카·아시아 지역의 정부·금융·통신·에너지 분야 보안 의사결정권자들이 참여한 사이버보안 컨",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147408",
-    "date": "2026-11-20 11:05:00"
   }
 ]
