@@ -8,9 +8,9 @@
   },
   {
     "source": "cisa",
-    "title": "Schneider Electric EcoStruxure Power Build Rapsody software",
-    "desc": "View CSAF\nSummary\nSchneider Electric is aware of a vulnerability in its EcoStruxure™ Power Build Rapsody product. The EcoStruxure™ Power Build Rapsody is used to enter or import the single line diagram, to get the extensive bill of material of your switchboard, including all devices, connection item",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-02",
+    "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+    "desc": "CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\n\n\n\nCVE-2026-131914 Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability&nbsp;\n\n\n\n\nCVE-2026-132165 Drupal Core Remote Code Execution Vulnerability&nbsp;\n",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
     "date": "Tue, 24 Nov 26 12:00:00 +0000"
   },
   {
@@ -22,6 +22,13 @@
   },
   {
     "source": "cisa",
+    "title": "Schneider Electric EcoStruxure Power Build Rapsody software",
+    "desc": "View CSAF\nSummary\nSchneider Electric is aware of a vulnerability in its EcoStruxure™ Power Build Rapsody product. The EcoStruxure™ Power Build Rapsody is used to enter or import the single line diagram, to get the extensive bill of material of your switchboard, including all devices, connection item",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-02",
+    "date": "Tue, 24 Nov 26 12:00:00 +0000"
+  },
+  {
+    "source": "cisa",
     "title": "AutomationDirect C-More EA9 Programming Software",
     "desc": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could allow attackers to corrupt application memory and cause instability or a crash, potentially leading to arbitrary code execution, if a user is convinced to open a malicious file.\nThe following versions of AutomationDirect C-More EA",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-01",
@@ -29,9 +36,9 @@
   },
   {
     "source": "cisa",
-    "title": "Siemens SIMATIC WinCC",
-    "desc": "View CSAF\nSummary\nGraphics Designer of SIMATIC WinCC before V8.2 contains an implicit active content execution vulnerability upon opening files, which could allow an attacker to cause arbitrary code execution on the device. Siemens is preparing fixes and recommends specific mitigations for products ",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-09",
+    "title": "Siemens RUGGEDCOM APE1808",
+    "desc": "View CSAF\nSummary\nFortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens recommends to update Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support t",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
     "date": "Tue, 17 Nov 26 12:00:00 +0000"
   },
   {
@@ -39,6 +46,13 @@
     "title": "Dorsett Controls InfoScan",
     "desc": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to retrieve sensitive system information, access application data without authorization, recover stored credentials, or intercept and manipulate network communications.\nThe following versions of Dorsett Contro",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-01",
+    "date": "Tue, 17 Nov 26 12:00:00 +0000"
+  },
+  {
+    "source": "cisa",
+    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+    "desc": "CISA has added one new vulnerability to its&nbsp;Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\n\nCVE-2026-115731 Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability\n\nThis type of vulnerability is a frequent attack vector for malicious ",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog",
     "date": "Tue, 17 Nov 26 12:00:00 +0000"
   },
   {
@@ -71,9 +85,9 @@
   },
   {
     "source": "cisa",
-    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-    "desc": "CISA has added one new vulnerability to its&nbsp;Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\n\nCVE-2026-115731 Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability\n\nThis type of vulnerability is a frequent attack vector for malicious ",
-    "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "title": "Siemens meta-iot2050",
+    "desc": "View CSAF\nSummary\nmeta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could allow an attacker which is able to manipulate a configuration file to have arbitrary commands run as root. Siemens is preparing fi",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11",
     "date": "Tue, 17 Nov 26 12:00:00 +0000"
   },
   {
@@ -106,16 +120,9 @@
   },
   {
     "source": "cisa",
-    "title": "Siemens RUGGEDCOM APE1808",
-    "desc": "View CSAF\nSummary\nFortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens recommends to update Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support t",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
-    "date": "Tue, 17 Nov 26 12:00:00 +0000"
-  },
-  {
-    "source": "cisa",
-    "title": "Siemens meta-iot2050",
-    "desc": "View CSAF\nSummary\nmeta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could allow an attacker which is able to manipulate a configuration file to have arbitrary commands run as root. Siemens is preparing fi",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11",
+    "title": "Siemens SIMATIC WinCC",
+    "desc": "View CSAF\nSummary\nGraphics Designer of SIMATIC WinCC before V8.2 contains an implicit active content execution vulnerability upon opening files, which could allow an attacker to cause arbitrary code execution on the device. Siemens is preparing fixes and recommends specific mitigations for products ",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-09",
     "date": "Tue, 17 Nov 26 12:00:00 +0000"
   },
   {
@@ -191,13 +198,6 @@
   {
     "source": "cisa",
     "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
-    "desc": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.&nbsp;\n\nCVE-2026-102895 GPUStack Improper Authentication Vulnerability&nbsp;\nCVE-2026-116779 SignalWire FreeSwitch Code Injection Vulnerability&nbsp;\nCVE-2026-123158",
-    "url": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-    "date": "Mon, 09 Nov 26 12:00:00 +0000"
-  },
-  {
-    "source": "cisa",
-    "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
     "desc": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\n\nCVE-2025-42884 SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability\nCVE-2026-76466 Cisco Expressway Series Use of Hard-coded",
     "url": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
     "date": "Fri, 20 Nov 26 12:00:00 +0000"
@@ -208,6 +208,125 @@
     "desc": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\n\n\n\nCVE-2026-114713 UnrealIRCd Improper Neutralization of Delimiters Vulnerability\n\n\n\n\nCVE-2026-123039 Check Point Multiple Products Incorrect Permission Assignment f",
     "url": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
     "date": "Fri, 13 Nov 26 12:00:00 +0000"
+  },
+  {
+    "source": "boannews",
+    "title": "과기정통부, 내달4일 ‘정보보호 공시’ 전국 순회 설명회 시작",
+    "desc": "과학기술정보통신부가 내달 4일부터 정보보호 공시 순회 설명회를 연다고 25일 밝혔다. 이번 행사는 10월 공포된 정보보호산업의 진흥에 관한 법률 시행령 개정에 맞춰 마련됐다.과기정통부는 2027년 정보보호 공시 의무대상 확대를 앞두고 신규 기업의 제도 이해와 이행 준비를 지원한다. 행사에선 공시제도 개요와 신규 의무대상 적용 기준, 관련 법령·고시 개정사항을 설명한다. 한국인터넷진흥원(KISA)은 자료 작성과 등록 방법, 가이드라인, 교육·상담 등 실무 지원 방안을 안내한다.기존·신규 의무대상 기업과 공시에 관심 있는 기업 관계자는",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147521",
+    "date": "2026-11-25 12:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "“AI 시대 보안 주권·정책 논의”... KISA, 워크숍 개최",
+    "desc": "인공지능(AI) 보안 주권 확보를 위한 사이버보안 정책 방향을 모색하는 산학연 논의의 장이 펼쳐진다. 한국인터넷진흥원(KISA)과 한국정보보호학회(KIISC)는 과학기술정보통신부와 함께 내달 4일 서울 섬유센터 3층 텍스파홀에서 ‘2026 사이버보안 정책 포럼 워크숍’을 개최한다고 25일 밝혔다. 이번 워크숍은 인공지능 기술 발전으로 사이버 공격이 고도화되고 보안 환경이 급변하는 가운데, 사이버 위협 대응 역량 강화와 인공지능 보안 주권 확보를 위한 정책 방향을 논의하기 위해 마련됐다. 워크숍은 3개 세션으로 나눠 열린다. 첫 번째",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147508",
+    "date": "2026-11-25 12:00:00"
+  },
+  {
+    "source": "boannews",
+    "title": "감염 8분 만에 훔친 계정 로그인... 클릭픽스와 원격 도구, AI 코딩 도구까지 공격 통로",
+    "desc": "정보 탈취 악성코드에 감염되면 공격자가 평균 8분 만에 훔친 계정으로 로그인한다는 분석이 나왔다.보안 기업 일래스틱의 보안위협 조직(Elastic Security Threat Command)이 보고서에서 고객 PC의 정보 탈취 악성코드 침해 사례 27건을 분석한 결과다. 정보 탈취 악성코드는 저장된 비밀번호와 브라우저 세션 정보, 결제 정보를 긁어 간다. 세션 정보를 가져가면 비밀번호 없이도 계정을 쓸 수 있다. 이번 사례에서 탈취는 정식 서명을 받은 원격 관리 도구나 브라우저 업데이터, 제조사 설치 프로그램, 애플의 스크립트 도구",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147134",
+    "date": "2026-11-25 11:15:00"
+  },
+  {
+    "source": "boannews",
+    "title": "경찰 신문 녹취가 비밀번호 없이 인터넷에... 녹취 전사 기업 타이거피시, 고객 자료 노출",
+    "desc": "경찰과 검찰, 정부 부처, 실리콘밸리 기술 대기업이 쓰는 미국 녹취 전사 업체 타이거피시(Tigerfish)가 고객이 맡긴 녹취록과 원본 파일을 인터넷에 그대로 노출했다가 뒤늦게 막았다.테크크런치는 샌프란시스코 소재 타이거피시가 이 보안 허점을 막았다고 보도했다.노출된 자료엔 경찰 신문 녹취록과 보디캠 영상 녹취록, 고객이 맡긴 원본 음성과 영상이 있었다. 경찰서와 검찰청 등 고객에게 보낸 청구서도 섞여 있었다.자료는 아마존 클라우드 저장소 S3에 있었다. 저장소 목록이 공개돼 있었고, 추측하기 쉬운 웹 주소로 비밀번호 없이 누구나",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147438",
+    "date": "2026-11-25 11:12:19"
+  },
+  {
+    "source": "boannews",
+    "title": "이동화 솔텍인포넷 대표, “산업용 네트워크의 신경망, 글로벌 시장을 연결하다”",
+    "desc": "산업용 네트워크 전문기업 솔텍인포넷이 독자 개발 운영체제(OS) ‘SONOS’ 기반 통신 플랫폼을 앞세워 국방, 철도, 피지컬 AI 등 미래 산업 시장 공략에 박차를 가하고 있다. 창업 이후 약 30년간 축적한 광통신·네트워크 기술력을 바탕으로 단순 장비 제조사를 넘어 고객의 복잡한 통신 과제를 해결하는 ‘기술 기반 서비스 기업’으로의 도약을 선언했다.이동화 솔텍인포넷 대표이사는 “AI가 산업 현장의 두뇌라면 산업용 네트워크는 이를 연결하는 신경망”이라며 “독자 개발 운영체제인 SONOS를 중심으로 국방, 철도, 로봇 등 고부가가치",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147471",
+    "date": "2026-11-25 11:02:39"
+  },
+  {
+    "source": "boannews",
+    "title": "에버스핀, 전국 대학 대상 ‘에버세이프 웹’ 무상 PoC 추진",
+    "desc": "에버스핀이 전국 대학을 대상으로 웹 보안 무상 기술검증(PoC)을 추진한다고 25일 밝혔다.에버스핀은 AI 악용 공격과 대학 개인정보 유출 사고가 이어지자 방어 수준 점검을 돕기 위해 이번 프로모션을 마련했다. 대학 홈페이지와 학사·행정 서비스는 학생과 교직원 개인정보를 다루는 외부 공개 영역이다. 에버스핀은 침해사고가 확인되지 않았더라도 외부 공격 유입 현황과 기존 보안체계의 대응력을 검증할 필요가 있다고 설명했다.에버스핀은 대학이 초기 비용 부담 없이 실제 운영 환경에서 에버세이프 웹(Eversafe Web)의 대응 효과와 운영",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147522",
+    "date": "2026-11-25 10:56:03"
+  },
+  {
+    "source": "boannews",
+    "title": "취약점 패치 전 임시 방패... 오픈AI·시스코, 리눅스 서버 지키는 ‘시루도’ 공개",
+    "desc": "오픈AI와 시스코가 보안 패치를 적용하기 전까지 리눅스 서버를 임시로 보호하는 오픈소스 도구 ‘시루도’(Shirudo)를 23일(현지시간) 공개했다. AI 에이전트가 취약점을 분석해 맞춤형 방패를 만들고, 운영자가 승인하면 서비스를 멈추지 않고 적용하는 구조를 목표로 내걸었다.시루도는 방패를 뜻하는 일본어에서 따온 이름이다.오픈AI는 패치를 시험하고 배포하는 데 여전히 며칠에서 몇 주가 걸린다고 설명했다. 그렇다고 위험한 동작을 통째로 막기도 어렵다. 공격 코드와 정상 요청이 같은 리눅스 동작을 쓰는 경우가 많아, 무작정 막으면 서",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147509",
+    "date": "2026-11-25 10:46:56"
+  },
+  {
+    "source": "boannews",
+    "title": "벨로크-이스트소프트, ‘영상에 질문하는’ AI 관제 서비스 개발 협력",
+    "desc": "벨로크와 이스트소프트는 24일 벨로크 서울지사에서 연계 서비스 개발과 공동 사업화를 위한 업무협약(MOU)을 맺었다고 25일 밝혔다.양사는 벨로크의 딥러닝 기반 CCTV 영상분석 솔루션 ‘B-iOTR’과 이스트소프트의 AI 에이전트 ‘앨런’(Alan)을 결합한 대화형 AI 관제 서비스 모델을 공동 기획·개발한다. 협약 유효기간은 발효일로부터 3년이다.이번 협력은 현장 이벤트를 감지해 담당자에게 알리는 기존 영상분석 방식에 대화형 질의응답과 요약 기능을 더하는 데 초점을 맞췄다. 양사는 현재 기술 연계 방식과 적용 가능한 기능 범위를",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147516",
+    "date": "2026-11-25 10:38:44"
+  },
+  {
+    "source": "boannews",
+    "title": "테이텀시큐리티, AI 에이전트·MCP 권한 경계 해법 제시",
+    "desc": "테이텀시큐리티가 오는 4일 토크아이티 생방송에서 ‘AI 에이전트, 실행 권한은 어떻게 통제하나?’를 주제로 강연을 진행한다고 25일 밝혔다.기업들은 AI를 단순 질의응답을 넘어 파일 조회와 코드 수정, 테스트 실행, 업무 시스템 호출에 쓴다. 에이전트에 일을 맡기면 사용자 권한도 함께 넘어가지만 접근 차단의 실제 효과는 검증이 부족하다는 설명이다.테이텀시큐리티는 이번 방송에서 AI 코딩 에이전트의 실행 권한 통제 실험 결과를 공개한다. 실제 제품 환경에서 특정 파일 읽기를 막고 접근을 시도한 결과 7개 경로 중 6개에서 정보가 노출",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147518",
+    "date": "2026-11-25 10:37:17"
+  },
+  {
+    "source": "boannews",
+    "title": "美 CIA·국가정보국도 털려... 기밀 정보 아니지만 조합하면 위험",
+    "desc": "미국 중앙정보국(CIA)과 국가정보국(ODNI)이 최근 사이버 공격을 받아 일부 비기밀 데이터가 유출되는 사고가 발생했다고 외신들이 24일(현지시간) 보도했다.이번에 침해된 정보는 위성 이미지, 소셜미디어 게시물, 상업용 빅데이터 등 공개 출처 자료를 수집·가공해 첩보를 생산하는 시스템이다.개별 데이터는 공개된 정보라 하더라도, 여러 자료가 조합될 경우 민감한 국가 안보 정보로 활용될 위험이 있다는 우려가 나온다.국가정보국은 “정확한 유출 규모는 확인되지 않았으나 일급기밀망은 피해를 보지 않았으며, ODNI 역시 주요 업무와 기밀",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147519",
+    "date": "2026-11-25 10:35:59"
+  },
+  {
+    "source": "boannews",
+    "title": "[카드뉴스] \"내 정보 몸값 30배 뛴다\"… 개인정보 유출 시 '피해 입증 없이 최대 300만 원' 배상 시대",
+    "desc": "개정 개인정보보호법 시행으로 개인정보 유출 시 피해 입증 없이도 청구 가능한 법정 손해배상 한도가 기존 10만 원에서 최대 300만 원으로 상향되었다. 기업이 무과실을 입증하지 못하면 배상 책임을 지도록 입증책임이 전환되었으나, 9월 11일 법 시행 이후 발생한 사고부터 적용되므로 사고 일자 확인이 필수적이다. 피해자는 형식적인 소액 합의나 쿠폰 수령을 지양하고, 유출 통지서와 사고 일자를 캡처해 보관한 뒤 집단분쟁조정 및 법정 손해배상 청구를 통해 권리를 행사해야 한다.",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147517",
+    "date": "2026-11-25 10:23:35"
+  },
+  {
+    "source": "boannews",
+    "title": "상담 창까지 구현하고 카드 번호 요구... 숙소 예약 플랫폼 베낀 가짜 사이트 적발",
+    "desc": "인기 숙소 예약 플랫폼을 그대로 베낀 가짜 사이트가 여행객에게 비밀번호와 개인정보, 카드 번호를 요구하다 적발돼 폐쇄됐다.보안 기업 포트라(Fortra)의 FIRE팀이 이런 사이트들을 찾아내 폐쇄했다고 헬프넷시큐리티(Help Net Security)가 보도했다. 가짜 사이트엔 집주인 이름과 평점, 후기까지 실려 있었다. 다만 기사엔 사이트나 피해자 수가 나오지 않는다.포트라의 엘리스 노이만(Elyse Neumann)은 공격 시점이 계산된 것이라고 설명했다. 여행일이 다가올수록 사람들이 더 빨리 클릭한다는 점을 범죄자들이 안다는 설명",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147101",
+    "date": "2026-11-25 09:57:00"
+  },
+  {
+    "source": "boannews",
+    "title": "LGU+ 익시오, ‘가족 보호 알리미’로 보이스피싱 위험 가족에게 즉시 알려",
+    "desc": "LG유플러스(대표 홍범식)는 AI 통화 앱 ‘익시오’(ixi-O)에 ‘가족 보호 알리미’ 서비스가 추가됐다고 25일 밝혔다.가족 보호 알리미는 보이스피싱 의심 통화 등 위험 상황을 감지하면 사전에 등록한 가족에게 즉시 알려주는 기능이다. 고령층과 디지털 취약계층이 위기 상황에 혼자 대응하지 않도록 가족의 신속한 확인과 대응을 돕기 위한 취지다. 기존에는 익시오가 통화 중인 고객에게 보이스피싱 위험을 직접 경고했다면, 이제 가족도 위험 상황을 문자메시지로 확인할 수 있다.익시오 이용자는 위험 상황을 전달받을 가족을 최대 10명까지 등",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147514",
+    "date": "2026-11-25 09:52:35"
+  },
+  {
+    "source": "boannews",
+    "title": "[2026 보안 이슈 결산-3] 웹이 위험에 빠졌다... PHP2셸 취약점 파문",
+    "desc": "PHP는 웹사이트 구축에 널리 쓰이는 프로그래밍 언어다. 세계 전체 웹사이트의 70-80%가 PHP를 기반으로 작동한다. 이 PHP에서 치명적 보안 취약점이 발견돼 세계 각국 기업과 정부 등이 긴급 대응에 나섰다. 별도 로그인 절차 없이 원격으로 서버에 악성 코드를 실행할 수 있는 위험성 높은 취약점이다.PHP를 운영하는 PHP재단은 10월 21일(현지시간) ‘PHP2셸’(PHP2Shell)로 명명한 취약점 CVE-2026-109618와 CVE-2026-109619에 대한 긴급 보안 패치를 발행했다. 두 취약점 모두 공통 취약점 평",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147419",
+    "date": "2026-11-25 09:45:00"
+  },
+  {
+    "source": "boannews",
+    "title": "한국후지필름BI, ‘마이크로소프트 365 월간 웨비나’ 정기 개최",
+    "desc": "한국후지필름비즈니스이노베이션(대표 코타케 시게타, 이하 한국후지필름BI)이 기업 고객의 마이크로소프트 365(Microsoft 365) 활용 역량 강화와 업무 생산성 향상을 위한 ‘마이크로소프트 365 월간 웨비나’를 오는 12월 2일부터 정기 개최한다고 밝혔다.관심 있는 직장인과 기업 고객 누구나 무료로 참석할 수 있는 이번 정기 웨비나는 매달 새로운 실무 주제를 선정해 현장 중심의 구체적인 활용법을 제시할 계획이다.12월 2일 오후 2시에 열리는 첫 회차는 ‘같은 M365인데, 파일 저장은 왜 다를까? - 팀즈·쉐어포인트·원드라",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147507",
+    "date": "2026-11-25 09:27:56"
+  },
+  {
+    "source": "boannews",
+    "title": "HS효성인포메이션시스템, AI·핵심 업무용 하이엔드 블록 스토리지 출시",
+    "desc": "HS효성인포메이션시스템(대표 양정규)은 히타치 밴타라(Hitachi Vantara)가 인공지능(AI)과 기업 핵심 업무(미션 크리티컬) 워크로드를 지원하는 차세대 올플래시 NVMe 블록 스토리지 ‘VSP One Block 하이엔드’를 출시했다고 밝혔다.AI 활용이 확대되면서 대규모 데이터의 실시간 처리와 안정적인 인프라 운영의 중요성이 커지고 있다. S&P 글로벌 마켓 인텔리전스의 ‘AI 인프라 동향 및 연구 과제’ 보고서에 따르면 응답자의 70% 이상이 기존 IT 인프라로는 향후 AI 및 머신러닝(ML) 워크로드를 충분히 지원하기",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147506",
+    "date": "2026-11-25 09:26:43"
+  },
+  {
+    "source": "boannews",
+    "title": "양자보안 산학연 전문가 한자리에… 한국정보보호학회 양자보안워크숍 워크숍 개최",
+    "desc": "산학연 양자 보안 분야 연구자와 전문가가 모여 양자 보안 최신 기술 동향을 공유하는 자리가 열린다. 한국정보보호학회(회장 김호원)는 내달 3-4일 강릉 스카이베이호텔에서 양자보안연구회 하반기 워크숍을 개최한다고 25일 밝혔다. 양자보안워크숍은 한국정보보호학회가 주관하는 대표 학술행사 중의 하나다. 양자키분배(QKD)와 양자내성암호(PQC)로 대변되는 양자보안 기술 최신 동향을 공유하고 산업계･학계･연구계 교류 활성화를 위해 매년 상반기와 하반기 두 차례 열린다. 올해는 서승현 한양대 교수와 석우진 한국과학기술정보연구원(KISTI)",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147422",
+    "date": "2026-11-25 08:30:00"
   },
   {
     "source": "thn",
@@ -558,125 +677,6 @@
     "desc": "AI 보안 기업 리니어리티(Linearity)가 기업을 겨냥한 사이버 공격을 조기에 식별하는 웹 허니팟 솔루션 ‘FLOWIRE Trap’을 출시했다고 23일 밝혔다. 고객사 도메인에 허니팟을 배치해 기업을 겨냥한 정찰과 공격을 탐지하며, 행동 분석을 통해 AI 에이전트 기반 공격도 가려낸다.올해 국내 금융권을 연쇄적으로 노린 해킹에 대규모 언어모델(LLM)을 활용한 자율 침투도구 ‘아르텍스’(ARTEX)가 쓰인 정황이 보고되면서, AI가 스스로 취약점을 찾아 공격하는 위협이 현실화됐다. 그러나 실제 웹사이트엔 정상 방문자와 공격자가",
     "url": "https://www.boannews.com/news/articleView.html?idxno=147459",
     "date": "2026-11-23 16:08:18"
-  },
-  {
-    "source": "boannews",
-    "title": "국정원장 후보에 강금실 전 장관 지명... “국제공조로 사이버 위협 풀어나갈 인물”",
-    "desc": "차기 국가정보원장으로 강금실 전 법무부 장관이 지명됐다.23일 임광현 대통령 비서실장은 브리핑을 통해 이재명 대통령이 강 전 장관을 국정원장 후보자로 지명했다고 발표했다.강 후보자는 故 노무현 전 대통령 정권 시절인 지난 2003년 2월부터 2004년 7월까지 제55대 법무부 장관을 지냈다.임 실장은 강 후보자에 대해 “권력기관의 중립을 지켜온 소신으로 국정원에 대한 민주적 통제를 강화하고, 사이버 위협 등 새로운 안보 과제를 국제 공조 속에 결단력 있게 풀어나갈 적임자”라고 설명했다.이와 함께 외교부 장관 후보자로는 임웅순 청와대",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147458",
-    "date": "2026-11-23 16:02:16"
-  },
-  {
-    "source": "boannews",
-    "title": "안랩, AI 포렌식 분석으로 ‘KDFS 챌린지 2026’ 우수상 수상",
-    "desc": "안랩은 자사 인력이 속한 팀이 ‘KDFS 챌린지 2026’ 우수상을 받았다고 23일 밝혔다.안랩은 김승학 안랩 A-FIRST팀 매니저와 이준규 안랩 A-CERT팀 매니저가 타사 인원과 꾸린 ‘Monday’팀이 지난 9일 열린 ‘KDFS 챌린지 2026’(Korean Digital Forensics Society Challenge 2026)에서 우수상(경찰청장상)을 받았다고 밝혔다. Monday팀은 이번 대회에서 전체 3위, 일반 트랙 1위를 기록했다.KDFS 챌린지는 한국디지털포렌식학회가 2014년부터 매년 주최하는 디지털 포렌식",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147453",
-    "date": "2026-11-23 15:24:33"
-  },
-  {
-    "source": "boannews",
-    "title": "아우토크립트, ‘AutoHack 2026’ 3년 연속 후원... 모빌리티 보안 인재 육성",
-    "desc": "아우토크립트는 18-20일 광주 김대중컨벤션센터에서 열린 자동차 해킹·방어 경진대회 ‘CO-SHOW AutoHack 2026’을 후원했다고 23일 밝혔다.이 대회는 첨단분야 혁신융합대학사업(COSS)의 미래자동차 컨소시엄과 데이터보안활용·융합 컨소시엄이 공동 개최하고 국민대학교가 주관했다. 예선에 27개팀 100여명이 참가해 본선에서 10개팀 39명이 경쟁했다.이진우 아우토크립트 CAM 연구소장은 본선에 앞서 17일 열린 오리엔테이션에서 특강을 맡았다. 이 소장은 ‘일상에서 개발까지, 나만의 소프트웨어 공방 만들기’를 주제로 자동차",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147456",
-    "date": "2026-11-23 14:54:38"
-  },
-  {
-    "source": "boannews",
-    "title": "KISIA, 1587개 중소기업에 랜섬웨어 대응 솔루션 무상 제공",
-    "desc": "한국정보보호산업협회(KISIA, 회장 김진수)가 랜섬웨어 위협에 대한 민·관·학 공동 대응 활동을 통해 1587개 중소기업에 랜섬웨어 대응 솔루션을 무상으로 제공했다.KISIA는 17일 ‘제8차 민·관·학 합동 랜섬웨어 대응 협의체 회의’를 개최했다고 23일 밝혔다.민·관·학 합동 랜섬웨어 대응 협의체는 2021년 3월 발족 이래 랜섬웨어 위협에 대응하기 위한 민·관·학 공동 논의를 지속해 왔다. 협의체 논의를 통해 도출된 ‘랜섬웨어 대응 솔루션 무상지원 사업’을 추진해 중소기업의 정보보호 역량 강화에 기여하고 있다. 이 사업을 통",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147454",
-    "date": "2026-11-23 14:28:19"
-  },
-  {
-    "source": "boannews",
-    "title": "[한국정보공학기술사 보안을 論하다–52] AI의 민주화가 만든 새로운 보안 사각지대",
-    "desc": "생성형 AI는 질문하고 문서를 작성하는 도구를 넘어 여러 시스템과 도구를 활용해 업무를 수행하는 에이전틱 AI(Agentic AI)로 활용 범위가 더욱 확대되고 있다. 여기에 범용인공지능(AGI: Artificial General Intelligence)을 목표로 기술을 발전시켜 온 오픈AI가 최근 공개한 GPT-6 아스트라는 복잡한 문제를 추론하고 다양한 도구를 활용해 여러 업무를 통합적으로 수행하는 등 AI의 범용성을 한층 높이고 있다. 이처럼 생성형 AI가 단순한 콘텐츠 생성 도구에서 실제 업무를 수행하는 실행 도구로 진화하면",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147452",
-    "date": "2026-11-23 13:59:12"
-  },
-  {
-    "source": "boannews",
-    "title": "“AI 에이전트는 독립된 신원”...‘옥테인 온 더 로드 서울’ 성료",
-    "desc": "글로벌 아이덴티티 보안 기업 옥타(한국대표 황규언)가 급격히 확산되는AI 를 활용한 해킹 공격에 맞설 AI 에이전트 시대 보안 해법을 국내 고객들과 공유했다. 옥타 솔루션을 통한 쿠팡의 제로트러스트 사례 등이 공유됐다.옥타는 19일 서울 강남구 호텔 엘리에나에서 개최한 ‘옥테인 온 더 로드 서울’(Oktane on the Road Seoul) 행사를 성황리에 마무리했다고 23일 밝혔다.전 세계 20개 이상의 도시를 순회하는 글로벌 로드쇼의 일환으로 열린 이번 연례 고객 행사에선 9월 미국 라스베이거스에서 열린 연례 최대 컨퍼런스 ‘",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147451",
-    "date": "2026-11-23 13:44:45"
-  },
-  {
-    "source": "boannews",
-    "title": "예별손보 고객 66명 개인정보 유출... 수탁업체 해킹에 피해 확산",
-    "desc": "예별손해보험에서 과거 단체상해보험 계약 1건과 관련된 피보험자 66명의 개인정보가 유출되는 사고가 발생했다. 수탁업체 전산 시스템이 해킹 공격을 당하면서 피해가 번진 것이다.예별손해보험은 “보험계약을 중개한 엘케이보험중개의 전산시스템에 외부의 불법적 접근으로 인한 침해사고가 발생해 이 과정에서 보험계약과 관련된 개인정보가 유출된 사실을 확인했다”고 최근 공지했다. 예별손해보험 수탁업체인 엘케이보험중개에서 단체보험 보험금 청구 서비스 시스템의 보안 취약점을 이용한 해킹이 일어나 개인정보가 유출됐다. 이로 인해 과거 단체 상해보험 계약",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147448",
-    "date": "2026-11-23 12:05:52"
-  },
-  {
-    "source": "boannews",
-    "title": "“선의의 해커가 찾은 보안구멍 202개, 장애없이 조치 완료”",
-    "desc": "선의의 해커 698명이 국내 기업과 기관에서 1343건의 취약점을 신고해 이 중 202개 유효 취약점이 전수 조치됐다.국가인공지능전략위원회(위원장 대통령)과 과학기술정보통신부(부총리 겸 장관 배경훈), 국가정보원, 한국인터넷진흥원(KISA)은 23일 서울 엘리에나호텔에서 국내 최초로 추진한 ‘보안 취약점 신고·조치·공개(CVD/VDP) 제도’(보안취약점 상시 신고조치제) 시범사업 성과공유회 및 시상식을 개최했다.보안취약점 상시 신고조치제는 선의의 해커가 취약점을 합법적으로 찾고 신고할 수 있도록 하는 ‘취약점 공개 정책’(VDP)와",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147442",
-    "date": "2026-11-23 12:00:00"
-  },
-  {
-    "source": "boannews",
-    "title": "LG유플러스, 협력사 160 곳 취약점 점검... “공급망 보안 강화”",
-    "desc": "LG유플러스(대표 홍범식)가 협력사 160곳의 보안 취약점 점검을 완료했다고 23일 밝혔다. 점검 대상을 확대해 상시 점검을 지속, 안전한 공급망 보안 체계를 구축해 나간다는 방침이다. 최근 기업을 직접 공격하는 대신 협력사 등 제3자를 통해 침해를 시도하는 공급망 보안 위협이 커졌다. 이에 따라 LG유플러스는 선제적으로 공급망 보안을 강화하기 위해 협력사 취약점을 점검했다.버라이즌의 ‘2026 데이터 침해 조사 보고서’에 따르면 전체 데이터 침해 사고 중 제3자가 연관된 비중은 48%로, 전년 30%보다 18%포인트 상승했다.LG",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147444",
-    "date": "2026-11-23 11:43:00"
-  },
-  {
-    "source": "boannews",
-    "title": "AI 비서가 대화창 훔쳐본다... 시그널, 아이폰·안드로이드서 스크린샷 막아",
-    "desc": "암호화 메신저 시그널이 휴대폰 운영체제에 들어온 AI 에이전트가 대화 내용을 읽어 가지 못하도록 앱 화면 캡처를 막기 시작했다. 아이폰에선 앱 안 스크린샷을 아예 막는다. 안드로이드에선 AI 비서가 화면을 읽으려는 순간을 알아챘을 때만 화면 보호 기능을 켠다. 다만 이를 알아챌 수 없는 안드로이드 기기도 있다.시그널을 운영하는 시그널재단은 최근 메러디스 휘태커(Meredith Whittaker) 의장 명의 블로그 글에서 이 조치를 발표했다.구글은 안드로이드에 제미나이 인텔리전스를, 애플은 시리 AI에 화면 내용을 알아보는 온스크린",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147432",
-    "date": "2026-11-23 11:40:07"
-  },
-  {
-    "source": "boannews",
-    "title": "[더존비즈온 사태] 11월23일 현황... 제네시스랩·인천공항시설관리 등 2곳 추가",
-    "desc": "더존비즈온 침해사고로 제네시스랩, 인천공항시설관리 등 2곳에서도 개인정보 유출 가능성이 나왔다. 이로써 더존비즈온 해킹으로 인해 개인정보 유출 가능성이 제기된 곳은 총 48곳에 달한다.제네시스랩은 더존비즈온으로부터 데이터 백업 서비스(APO) 서버에 불법적인 접근이 발생해 저장된 이루 데이터가 외부로 반출된 정황이 있다는 통지를 받았다.유출 가능성이 있는 항목은 제네시스랩 전·현직 임직원의 성명, 주민등록번호, 계좌번호, 주소 등이다.제네시스랩은 수탁사 보유 데이터 현황 및 보관·파기 실태 점검을 진행하며, 개인정보보호위원회 등 관",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147443",
-    "date": "2026-11-23 11:19:40"
-  },
-  {
-    "source": "boannews",
-    "title": "기술개발에 개인정보 활용하려면 안전장치 마련해야... 개인정보위, ‘개보법’ 개정안 입법예고",
-    "desc": "개인정보보호위원회(위원장 송경희)가 인공지능(AI) 개발 등 기술 개발을 목적으로 개인정보를 활용할 때 필요한 안전장치 및 위험요인평가 기준을 마련했다. 개인정보위는 AI 기술 개발을 위한 개인정보 처리 특례의 세부 기준과 절차를 담은 ‘개인정보보호법 시행령’ 일부 개정령안을 마련해 23일부터 내년 1월4일까지 입법예고한다고 밝혔다. 이번 개정안은 적법하게 수집한 개인정보를 일정한 요건 아래 인공지능 기술 개발을 목적으로 이용할 수 있도록 하는 것이 골자다.특례 적용에 필요한 강화된 안전조치 기준이 마련됐다. 기존 안전성 확보조치",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147440",
-    "date": "2026-11-23 11:00:46"
-  },
-  {
-    "source": "boannews",
-    "title": "삼성증권 고객 개인정보 8241건 유출... ‘고객의소리’ 서비스 노린 해킹",
-    "desc": "삼성증권에서 해킹으로 고객 개인정보 8000여건이 유출되는 사고가 발생했다. 삼성증권은 23일 공지사항을 통해 “21일 오후 외부 비인가자가 비정상적인 방법을 통해 홈페이지 내 고객의소리(VOC) 접수 서비스에 접근했으며, VOC 시스템에 업로드한 일부 첨부파일이 유출된 사실을 확인했다”고 밝혔다. 유출된 정보는 VOC를 접수하며 업로드한 총 8241명의 첨부파일이다. 이름, 계좌번호, 주소, 연락처, 운전면허번호 등 총 13개 항목이 유출됐다. 고객별로 유출 항목은 상이하다. 삼성증권은 유출 사실을 인지한 후 즉시 공격에 사용된",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147441",
-    "date": "2026-11-23 10:57:57"
-  },
-  {
-    "source": "boannews",
-    "title": "해킹도 필요 없어... 그록으로 만든 앱 3만5000여개 무방비 노출",
-    "desc": "AI 챗봇 그록의 앱 제작 기능으로 만든 앱 3만5000여개가 로그인 없이 누구나 열어 볼 수 있는 상태였다. 일부 앱엔 환자 정보와 직원 명단, 평문 비밀번호가 그대로 들어 있었다.보안 연구진 클라록(Claroc)이 최근 그록의 ‘빌드 모드’로 만든 앱을 조사한 결과다. 빌드 모드는 채팅으로 만든 앱을 grok.me 주소 아래에 바로 게시해 주는 기능이다. 클라록은 이 앱들에 닿는 데 해킹이 전혀 필요 없었다고 밝혔다.클라록은 grok.me 주소 4만3500여개를 하나씩 열었다. 아무 데도 로그인하지 않은 채 사생활 보호 모드 브",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147205",
-    "date": "2026-11-23 10:54:39"
-  },
-  {
-    "source": "boannews",
-    "title": "포럼 가입 기록 하나가 단서... 랜섬웨어 ‘킬린’ 운영자로 러시아 36세 남성 지목",
-    "desc": "미국 보안 전문 기자 브라이언 크렙스(Brian Krebs)가 랜섬웨어 조직 ‘킬린’(Qilin) 운영자로 러시아 상트페테르부르크에 사는 36세 남성을 지목했다. 운영자가 여러 해에 걸쳐 남긴 신원 관리 실수를 이어 붙인 결과다.킬린은 2022년 9월부터 활동한 서비스형 랜섬웨어 조직이다. 랜섬웨어를 하부 조직원에게 빌려주고 몸값을 나누는데, 하부 조직원이 몸값의 80% 이상을 가져간다. 데이터를 훔친 뒤 파일까지 암호화하는 이중 협박을 쓰고, 최근 석 달 동안 피해자를 최소 365곳 냈다고 주장했다. NCC그룹은 보고서에서 킬린을",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147200",
-    "date": "2026-11-23 10:44:50"
-  },
-  {
-    "source": "boannews",
-    "title": "안광호 인텔리빅스 상무, 중기부 장관 표창",
-    "desc": "안전 인공지능(AI) 전문기업 인텔리빅스는 안광호 AI융합사업그룹 상무가 ‘2026년 중소기업 국내외 판로 개척 및 마케팅 유공자 포상’에서 중소벤처기업부 장관 표창을 수상했다고 23일 밝혔다.안 상무는 지난 20일 서울 양재 엘타워에서 열린 ‘2026 공공구매 촉진대회’에서 수상의 영예를 안았다. 중소벤처기업부가 주관하는 이 포상은 중소기업의 국내외 판로 개척과 마케팅 활성화에 기여한 유공자를 발굴해 격려하기 위해 마련됐다.안 상무는 AI융합사업그룹을 총괄하며 기존 공공시장에 집중됐던 사업 영역을 국방·에너지·제조·물류 등 민간",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147439",
-    "date": "2026-11-23 10:29:04"
-  },
-  {
-    "source": "boannews",
-    "title": "이스트시큐리티, 앤트로픽 사이버 검증 프로그램 ‘CVP’ 합류",
-    "desc": "이스트소프트 보안 전문 자회사 이스트시큐리티(대표 정상원)가 앤트로픽이 추진하는 ‘사이버 검증 프로그램’(CVP)에 합류한다. 이스트시큐리티는 CVP 합류를 통해 앤트로픽 클로드를 활용해 자사 소프트웨어 및 시스템의 취약점 연구를 강화하고, 연구 결과를 ‘알약 에이전틱 엔드포인트 탐지 및 대응(EDR)’ 등 보안 제품 역량 강화에 반영하겠다고 23일 밝혔다. CVP는 앤트로픽이 검증된 보안 전문가와 조직의 사이버 방어 업무를 지원하는 프로그램이다. 참여자는 허용된 엄무 범위 안에서 사이버보안 관련 안전장치가 일부 조정된 AI 모델",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147431",
-    "date": "2026-11-23 09:17:35"
   },
   {
     "source": "thn",
