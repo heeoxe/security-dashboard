@@ -43,58 +43,9 @@
   },
   {
     "source": "cisa",
-    "title": "Siemens Industrial Software Products",
-    "desc": "View CSAF\nSummary\nOn October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remot",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04",
-    "date": "Tue, 17 Nov 26 12:00:00 +0000"
-  },
-  {
-    "source": "cisa",
-    "title": "Dorsett Controls InfoScan",
-    "desc": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to retrieve sensitive system information, access application data without authorization, recover stored credentials, or intercept and manipulate network communications.\nThe following versions of Dorsett Contro",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-01",
-    "date": "Tue, 17 Nov 26 12:00:00 +0000"
-  },
-  {
-    "source": "cisa",
-    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-    "desc": "CISA has added one new vulnerability to its&nbsp;Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\n\nCVE-2026-115731 Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability\n\nThis type of vulnerability is a frequent attack vector for malicious ",
-    "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog",
-    "date": "Tue, 17 Nov 26 12:00:00 +0000"
-  },
-  {
-    "source": "cisa",
-    "title": "Siemens Mendix Studio Pro",
-    "desc": "View CSAF\nSummary\nMendix Studio Pro contains multiple vulnerabilities in the MCP Server, that could allow an attacker with network access to interact with the server remotely or trick a user's browser into sending unauthorized requests, potentially leading to unauthorized data access, tool execution",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-05",
-    "date": "Tue, 17 Nov 26 12:00:00 +0000"
-  },
-  {
-    "source": "cisa",
-    "title": "Siemens .NET Client Library for SIMATIC S7 Webserver API",
-    "desc": "View CSAF\nSummary\n.NET Client Library for SIMATIC S7 Webserver API contains multiple vulnerabilities that could allow an attacker to obtain sensitive information or write arbitrary files outside the intended download directory. Siemens has released a new version for .NET Client Library for SIMATIC S",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-02",
-    "date": "Tue, 17 Nov 26 12:00:00 +0000"
-  },
-  {
-    "source": "cisa",
-    "title": "Critical Java Vulnerability Requires Immediate Patching",
-    "desc": "Purpose\nCISA strongly urges organizations to immediately patch the recently disclosed Oracle Java vulnerability CVE-2026-114938. This critical memory-corruption vulnerability, known as “Java4Shell,” affects the Base64 decoder of the x86-64 HotSpot Java Virtual Machine (JVM), which is part of the Jav",
-    "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching",
-    "date": "Tue, 17 Nov 26 12:00:00 +0000"
-  },
-  {
-    "source": "cisa",
-    "title": "Siemens meta-iot2050",
-    "desc": "View CSAF\nSummary\nmeta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could allow an attacker which is able to manipulate a configuration file to have arbitrary commands run as root. Siemens is preparing fi",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11",
-    "date": "Tue, 17 Nov 26 12:00:00 +0000"
-  },
-  {
-    "source": "cisa",
-    "title": "Siemens Simcenter Femap",
-    "desc": "View CSAF\nSummary\nSimcenter Femap is affected by an out of bounds read vulnerability that could be triggered when the application reads files in X_T format. This could allow an attacker to crash the application or execute arbitrary code. Siemens has released a new version for Simcenter Femap and rec",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10",
+    "title": "Siemens SIMATIC",
+    "desc": "View CSAF\nSummary\nThe products listed below contain an authentication bypass vulnerability that could allow an on-path attacker to take over the session of a legitimate user and execute arbitrary code with the privileges of the victim user. Siemens is preparing fixes and recommends specific mitigati",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-08",
     "date": "Tue, 17 Nov 26 12:00:00 +0000"
   },
   {
@@ -106,16 +57,9 @@
   },
   {
     "source": "cisa",
-    "title": "Siemens SIMATIC",
-    "desc": "View CSAF\nSummary\nThe products listed below contain an authentication bypass vulnerability that could allow an on-path attacker to take over the session of a legitimate user and execute arbitrary code with the privileges of the victim user. Siemens is preparing fixes and recommends specific mitigati",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-08",
-    "date": "Tue, 17 Nov 26 12:00:00 +0000"
-  },
-  {
-    "source": "cisa",
-    "title": "Siemens Industrial Automation Software Products",
-    "desc": "View CSAF\nSummary\nOn October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remot",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-03",
+    "title": "Siemens Simcenter Femap",
+    "desc": "View CSAF\nSummary\nSimcenter Femap is affected by an out of bounds read vulnerability that could be triggered when the application reads files in X_T format. This could allow an attacker to crash the application or execute arbitrary code. Siemens has released a new version for Simcenter Femap and rec",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10",
     "date": "Tue, 17 Nov 26 12:00:00 +0000"
   },
   {
@@ -127,10 +71,73 @@
   },
   {
     "source": "cisa",
+    "title": "Siemens meta-iot2050",
+    "desc": "View CSAF\nSummary\nmeta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could allow an attacker which is able to manipulate a configuration file to have arbitrary commands run as root. Siemens is preparing fi",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11",
+    "date": "Tue, 17 Nov 26 12:00:00 +0000"
+  },
+  {
+    "source": "cisa",
+    "title": "Siemens Industrial Software Products",
+    "desc": "View CSAF\nSummary\nOn October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remot",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04",
+    "date": "Tue, 17 Nov 26 12:00:00 +0000"
+  },
+  {
+    "source": "cisa",
     "title": "Siemens SIMATIC WinCC",
     "desc": "View CSAF\nSummary\nGraphics Designer of SIMATIC WinCC before V8.2 contains an implicit active content execution vulnerability upon opening files, which could allow an attacker to cause arbitrary code execution on the device. Siemens is preparing fixes and recommends specific mitigations for products ",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-09",
     "date": "Tue, 17 Nov 26 12:00:00 +0000"
+  },
+  {
+    "source": "cisa",
+    "title": "Critical Java Vulnerability Requires Immediate Patching",
+    "desc": "Purpose\nCISA strongly urges organizations to immediately patch the recently disclosed Oracle Java vulnerability CVE-2026-114938. This critical memory-corruption vulnerability, known as “Java4Shell,” affects the Base64 decoder of the x86-64 HotSpot Java Virtual Machine (JVM), which is part of the Jav",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching",
+    "date": "Tue, 17 Nov 26 12:00:00 +0000"
+  },
+  {
+    "source": "cisa",
+    "title": "Siemens .NET Client Library for SIMATIC S7 Webserver API",
+    "desc": "View CSAF\nSummary\n.NET Client Library for SIMATIC S7 Webserver API contains multiple vulnerabilities that could allow an attacker to obtain sensitive information or write arbitrary files outside the intended download directory. Siemens has released a new version for .NET Client Library for SIMATIC S",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-02",
+    "date": "Tue, 17 Nov 26 12:00:00 +0000"
+  },
+  {
+    "source": "cisa",
+    "title": "Siemens Mendix Studio Pro",
+    "desc": "View CSAF\nSummary\nMendix Studio Pro contains multiple vulnerabilities in the MCP Server, that could allow an attacker with network access to interact with the server remotely or trick a user's browser into sending unauthorized requests, potentially leading to unauthorized data access, tool execution",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-05",
+    "date": "Tue, 17 Nov 26 12:00:00 +0000"
+  },
+  {
+    "source": "cisa",
+    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+    "desc": "CISA has added one new vulnerability to its&nbsp;Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\n\nCVE-2026-115731 Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability\n\nThis type of vulnerability is a frequent attack vector for malicious ",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "date": "Tue, 17 Nov 26 12:00:00 +0000"
+  },
+  {
+    "source": "cisa",
+    "title": "Dorsett Controls InfoScan",
+    "desc": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to retrieve sensitive system information, access application data without authorization, recover stored credentials, or intercept and manipulate network communications.\nThe following versions of Dorsett Contro",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-01",
+    "date": "Tue, 17 Nov 26 12:00:00 +0000"
+  },
+  {
+    "source": "cisa",
+    "title": "Siemens Industrial Automation Software Products",
+    "desc": "View CSAF\nSummary\nOn October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remot",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-03",
+    "date": "Tue, 17 Nov 26 12:00:00 +0000"
+  },
+  {
+    "source": "cisa",
+    "title": "libumqtt",
+    "desc": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could allow a remote attacker to cause a denial of service, memory corruption, or information disclosure.\nThe following versions of libumqtt are affected:\n\nlibumqtt &lt;=1.1.1 (CVE-2026-125132)\n\n\n\n\n\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 8.6\nlibu",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03",
+    "date": "Thu, 19 Nov 26 12:00:00 +0000"
   },
   {
     "source": "cisa",
@@ -148,23 +155,9 @@
   },
   {
     "source": "cisa",
-    "title": "libumqtt",
-    "desc": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could allow a remote attacker to cause a denial of service, memory corruption, or information disclosure.\nThe following versions of libumqtt are affected:\n\nlibumqtt &lt;=1.1.1 (CVE-2026-125132)\n\n\n\n\n\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 8.6\nlibu",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03",
-    "date": "Thu, 19 Nov 26 12:00:00 +0000"
-  },
-  {
-    "source": "cisa",
-    "title": "Siemens Building Automation and Energy Products",
-    "desc": "View CSAF\nSummary\nOn October 21, 2026, the PHP project and security researchers disclosed two critical, unauthenticated remote code execution vulnerabilities in the core PHP language runtime known as \"php2shell\" (tracked as CVE-2026-109618 and CVE-2026-109619). This advisory covers the status of imp",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01",
-    "date": "Thu, 12 Nov 26 12:00:00 +0000"
-  },
-  {
-    "source": "cisa",
-    "title": "Siemens Industrial Edge Management",
-    "desc": "View CSAF\nSummary\nSiemens is currently assessing the impact of Node2Shell (CVE-2026-111497) on Industrial Edge. Please check your Industrial Edge Management (IEM) setup: - No Management Applications installed: No action is required. Although the affected Brotli library is included in the IEM softwar",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03",
+    "title": "Siemens Desigo, Gridscale",
+    "desc": "View CSAF\nSummary\nOn October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remot",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02",
     "date": "Thu, 12 Nov 26 12:00:00 +0000"
   },
   {
@@ -176,16 +169,16 @@
   },
   {
     "source": "cisa",
-    "title": "Siemens Desigo, Gridscale",
-    "desc": "View CSAF\nSummary\nOn October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remot",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02",
+    "title": "Siemens RUGGEDCOM APE1808",
+    "desc": "View CSAF\nSummary\nPalo Alto Networks has published information on vulnerabilities in PAN-OS related to PHP2Shell vulnerabilities. This advisory lists the related Siemens Industrial products affected by these vulnerabilities. Customers are advised to consult and implement the workarounds provided in ",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05",
     "date": "Thu, 12 Nov 26 12:00:00 +0000"
   },
   {
     "source": "cisa",
-    "title": "Siemens RUGGEDCOM APE1808",
-    "desc": "View CSAF\nSummary\nPalo Alto Networks has published information on vulnerabilities in PAN-OS related to PHP2Shell vulnerabilities. This advisory lists the related Siemens Industrial products affected by these vulnerabilities. Customers are advised to consult and implement the workarounds provided in ",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05",
+    "title": "Siemens Building Automation and Energy Products",
+    "desc": "View CSAF\nSummary\nOn October 21, 2026, the PHP project and security researchers disclosed two critical, unauthenticated remote code execution vulnerabilities in the core PHP language runtime known as \"php2shell\" (tracked as CVE-2026-109618 and CVE-2026-109619). This advisory covers the status of imp",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01",
     "date": "Thu, 12 Nov 26 12:00:00 +0000"
   },
   {
@@ -194,6 +187,13 @@
     "desc": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\n\nCVE-2026-133968 Project MONAI MONAI Label Path Traversal Vulnerability\n\n\n&nbsp;CVE-2026-134624 N-able Mail Assure (SpamExperts) Server-Side Request Forgery (SSRF) V",
     "url": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog",
     "date": "Mon, 23 Nov 26 12:00:00 +0000"
+  },
+  {
+    "source": "cisa",
+    "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+    "desc": "CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\n\nCVE-2026-120705 OSGeo GeoServer XML Injection Vulnerability\n\n\n\nCVE-2026-129243 OSGeo GeoServer Incorrect Authorization Vulnerability&nbsp;\n\n\n\n\nCVE-2026-136716 Dru",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/27/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+    "date": "Fri, 27 Nov 26 12:00:00 +0000"
   },
   {
     "source": "cisa",
@@ -208,6 +208,41 @@
     "desc": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\n\n\n\nCVE-2026-114713 UnrealIRCd Improper Neutralization of Delimiters Vulnerability\n\n\n\n\nCVE-2026-123039 Check Point Multiple Products Incorrect Permission Assignment f",
     "url": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
     "date": "Fri, 13 Nov 26 12:00:00 +0000"
+  },
+  {
+    "source": "boannews",
+    "title": "삼성증권 개인정보 유출, 8241명→1만2168명 확대",
+    "desc": "삼성증권에서 발생한 개인정보 유출 사고 규모가 당초 발표한 8000명대에서 늘어나 1만2000명을 넘어섰다. 기존 유출 파일을 분석하는 과정에서 추가 개인정보 유출 건이 확인된 것이다. 삼성증권은 28일 고객정보 유출 파일에 대한 2차 정밀검증을 거친 결과 3927명의 개인·신용정보 유출이 추가 확인됐다고 밝혔다.이로써 삼성증권의 개인정보 유출 사고 피해 규모는 종전 8241명에서 1만2168명으로 늘었다.앞서 지난 21일 삼성증권은 VOC 시스템에서 고객 8241명의 첨부파일이 유출됐다고 밝혔다. 유출 정보는 이름과 계좌번호, 주",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147605",
+    "date": "2026-11-28 10:44:13"
+  },
+  {
+    "source": "boannews",
+    "title": "[신간] “사이버 레질리언스, 기업 업무 지속성 지키는 ‘경영 과제’”",
+    "desc": "사이버 공격을 당하더라도 기업의 핵심 업무 시스템을 멈추지 않고 어떻게 지속할 수 있는지에 대한 중요한 질문이 던져졌다. 조영철 파이오링크 대표는 손기욱 서울과학기술대 교수, 강정민 고려대 세종캠퍼스 교수, 이화영 아레스 사이버전략연구소 대표 등 ‘사이버 회복력 포럼’ 구성원들과 ‘사이버 레질리언스 – 기업과 기관의 미래 사이버 경영 전략’ 저서를 집필, 출간했다고 28일 밝혔다.이번 신간은 보안을 단순한 IT 실무 영역이 아닌 ‘경영의 언어’로 풀어냈다. 복구 속도의 결정적 차이는 기술적 대응력 자체보다 위기 시 누가 최종 의사결",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147604",
+    "date": "2026-11-28 10:24:56"
+  },
+  {
+    "source": "boannews",
+    "title": "인터넷우체국 해킹에 11만4000명 개인정보 유출",
+    "desc": "인터넷우체국 해킹으로 11만명 이상의 고객 개인정보가 유출된 것으로 확인됐다. 이는 현재까지 분석이 완료된 하루 분량의 유출 정보로, 추가적으로 유출이 발생할 가능성도 크다. 과학기술정보통신부 우정사업본부는 28일 외부의 불법적 해킹 공격으로 고객 개인정보가 포함된 우편물 접수 정보가 유출된 사실을 확인했다고 밝혔다. 현재 정확한 개인정보 유출 대상과 전체 피해 규모를 파악 중이지만, 하루 분량의 개인정보 유출 고객은 법인을 포함해 총 11만3855명으로 확인됐다. 유출 정보는 17일부터 24일까지 배달 중이었던 등기우편물 고객의",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147603",
+    "date": "2026-11-28 09:14:02"
+  },
+  {
+    "source": "boannews",
+    "title": "[2026 보안 이슈 결산-10] AI 안전·생체인식 확산, 기술 고도화 속 신뢰성 확보 과제",
+    "desc": "2026년은 AI 안전 기술과 생체인식의 활용 영역이 한층 확대된 해였다. AI 안전관제는 영상 감시에서 위험 상황을 실시간으로 감지하고 대응을 지원하는 방향으로 발전했으며, 생체인식은 출입통제에서 금융과 결제, 공공 서비스로 적용 범위를 넓혔다. 기술의 발전과 함께 인식 정확도와 위조 방지, 개인정보 보호 등 신뢰성 확보도 중요한 과제로 떠올랐다.올해 AI 안전 분야에서 두드러진 변화는 ‘사후 확인’에서 ‘사전 감지·예방’으로의 전환이다. 산업현장과 무인매장 등에서 사고 발생 후 영상을 확인하는 기존 방식만으로는 피해를 줄이는 데",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147467",
+    "date": "2026-11-28 08:45:00"
+  },
+  {
+    "source": "boannews",
+    "title": "[2026 보안 이슈 결산-9] AI가 진화시킨 영상보안, 신뢰성이 화두로",
+    "desc": "2026년 국내 영상보안 시장은 생성형 AI와 엣지 AI를 중심으로 기술 혁신과 보안 강화를 동시에 경험한 한 해였다. 영상 속 상황을 이해하고 설명하는 AI 관제 기술이 공공과 민간 현장에 빠르게 확산된 반면, IP 카메라 해킹과 개인정보 유출 우려가 커지면서 보안 인증 강화와 공급망 리스크 대응 역시 업계 주요 과제로 떠올랐다.생성형·엣지 AI로 진화한 지능형 관제시각언어모델(VLM)을 활용한 영상관제 기술은 올해 영상보안 시장에서 가장 주목받은 변화 중 하나였다. 생성형 AI는 단순 객체 인식을 넘어 행동과 주변 환경을 종합적",
+    "url": "https://www.boannews.com/news/articleView.html?idxno=147476",
+    "date": "2026-11-28 07:54:00"
   },
   {
     "source": "thn",
@@ -614,41 +649,6 @@
     "desc": "AI 보안 기업 리니어리티(Linearity)가 AI 에이전트의 메모리 오염(Memory Poisoning) 위험성과 대응 방안을 연구한 논문이 국제 정보시스템 보안 및 프라이버시 학술대회 ‘ICISSP 2027’에 채택됐다고 26일 밝혔다.공격자가 AI에 잘못된 정보를 기억하게 만들면, 이후 사용자가 정상적인 업무를 지시하더라도 중요 정보가 외부로 유출될 수 있다는 내용이다.최근 AI 에이전트는 질문에 답하는 것을 넘어 직접 프로그램을 실행하고 외부 시스템에 접속하는 등 다양한 업무를 수행한다. 업무 효율을 높이기 위해 과거에 수",
     "url": "https://www.boannews.com/news/articleView.html?idxno=147565",
     "date": "2026-11-26 11:38:14"
-  },
-  {
-    "source": "boannews",
-    "title": "에브리존, 리눅스 서버용 랜섬웨어 대응 ‘화이트디펜더’ 국내 최초 조달 등록",
-    "desc": "랜섬웨어 대응 전문 보안기업 에브리존(대표 홍승균)이 국내 최초로 리눅스 서버용 안티랜섬웨어 제품을 조달 등록했다. 에브리존은 리눅스 서버용 안티랜섬웨어 솔루션 ‘화이트디펜더 리눅스 서버’가 리눅스 서버용 안티랜섬웨어 제품으로는 국내 최초로 조달 등록을 완료했다고 26일 밝혔다. 앞서 ‘화이트디펜터 리눅스 서버’는 GS인증 1등급을 취득한 바 있다. 이로써 공공조달 공급 경로를 확보하면서 공공기관의 리눅스 서버 데이터 보호와 랜섬웨어 침해 대응을 지원한다. 리눅스 서버는 행정자료와 업무 문서, 각종 서비스 운영에 필요한 중요 데이터",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147557",
-    "date": "2026-11-26 10:46:14"
-  },
-  {
-    "source": "boannews",
-    "title": "원패스워드, 백엔드 침해 공식 공지... 관리 데이터·소스코드 유출",
-    "desc": "원패스워드(1Password)가 백엔드 침해로 일부 고객 관리 데이터와 비공개 소스코드가 유출됐다고 25일(현지시간) 공지했다. 핵심 암호화 저장소인 볼트(vault)는 안전하다는 입장이지만, 로그인 이메일과 접속 기록이 노출돼 2차 피싱과 개발망 보안 점검이 시급해졌다.원패스워드는 공식 블로그를 통해 지난 19일 직원 1명의 기업용 깃허브(GitHub) 계정이 침해된 정황을 포착해 조사에 착수했다고 밝혔다. 공격자는 탈취한 계정으로 비공개 저장소의 소스코드를 복제하고 내부 지속적 통합·배포(CI/CD) 시스템에 접근했다. 이어 백",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147556",
-    "date": "2026-11-26 10:43:37"
-  },
-  {
-    "source": "boannews",
-    "title": "넥스원소프트, 재외국민 인증 절차 개선으로 국내 디지털 서비스 접근성 강화",
-    "desc": "넥스원소프트(대표 최덕훈)는 통합인증 서비스 ‘넥스비싸인’(NexBe Sign)의 재외국민 인증 절차를 개선했다고 25일 밝혔다.넥스비싸인은 간편인증과 전자서명, 본인확인, 재외국민 인증 기능을 제공하는 통합인증 서비스다. 이번 업데이트는 여권·증명서 관련 민원을 처리하는 ‘재외동포365민원포털’과 국내 공문서의 해외 제출을 지원하는 ‘대한민국 아포스티유’ 등 재외국민이 이용하는 주요 서비스의 인증 편의성을 높이는 데 초점을 맞췄다.기존에는 이용자가 인증서를 먼저 선택한 뒤 성명과 생년월일, 휴대전화번호 등 개인정보를 입력해야 했다",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147553",
-    "date": "2026-11-26 10:17:20"
-  },
-  {
-    "source": "boannews",
-    "title": "더플러스, AI 영상분석 SW KISA 지능형 CCTV 성능시험 4개 항목 통과",
-    "desc": "영상보안 통합 솔루션 전문기업 더플러스(대표 이홍규)는 자체 개발한 인공지능(AI) 영상분석 소프트웨어 ‘T-AIPLUS V1.0’이 한국인터넷진흥원(KISA)의 지능형 CCTV 성능시험에서 일반분야 4개 항목을 통과했다고 밝혔다.지자체 CCTV 관제체계의 지능화와 산업현장의 AI 영상분석 수요가 확대되면서 이상행동 탐지 기술의 신뢰성이 중요해지고 있다. KISA 지능형 CCTV 성능시험은 영상분석 기술의 탐지 성능을 객관적인 기준에 따라 평가하는 제도다. 더플러스는 배회·침입·싸움 감지 3개 항목에서 가시광(RGB)과 적외선(IR",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147555",
-    "date": "2026-11-26 10:15:11"
-  },
-  {
-    "source": "boannews",
-    "title": "FIFA도 뚫렸다... 해킹 조직 데이터 공개",
-    "desc": "국제축구연맹(FIFA)이 해커가 개인정보와 업무 정보 일부에 무단으로 접근했다고 인정했다. 신생 해킹 조직이 FIFA 데이터를 훔쳤다며 사이버 범죄 포럼에 공개한 뒤 나온 확인이다.FIFA는 해커가 “제한된 범위의 개인·업무 정보에 대한 무단 접근”을 했다고 밝혔다. FIFA 대변인은 법 집행기관을 포함한 관계 당국과 긴밀히 협력하고 있다고 말했다. 대변인은 이어 정보, 특히 개인정보를 불법으로 빼내 공개한 행위를 규탄하며 심각하고 용납할 수 없는 사생활 침해라고 밝혔다.사건은 해킹 조직 핸섬보이해킹클럽(Handsome Boy Ha",
-    "url": "https://www.boannews.com/news/articleView.html?idxno=147547",
-    "date": "2026-11-26 09:48:10"
   },
   {
     "source": "thn",
